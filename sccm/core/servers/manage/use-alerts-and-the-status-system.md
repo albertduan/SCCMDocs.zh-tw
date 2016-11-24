@@ -204,7 +204,7 @@ ms.openlocfilehash: dda2e3af6ae14a949af5c70f300f8c7c6772e1a8
 |設定電子郵件警示訂閱|請參閱本主題中的 [Management tasks for alerts](#BKMK_Manage) 一節。|  
 |監視警示|請參閱本主題中的 [監視警示](#BKMK_MonitorAlerts)|  
 
-###  <a name="a-namebkmkmanagea-management-tasks-for-alerts"></a><a name="BKMK_Manage"></a> 警示的管理工作  
+###  <a name="a-namebkmkmanagea-management-tasks-for-alerts"></a><a name="BKMK_Manage"></a> Management tasks for alerts  
 
 ##### <a name="to-manage-general-alerts"></a>管理一般警示  
 

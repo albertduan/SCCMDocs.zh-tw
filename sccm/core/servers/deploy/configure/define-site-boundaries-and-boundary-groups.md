@@ -118,7 +118,7 @@ System Center Configuration Manager 的界限會在您的內部網路上定義�
 
 7.  按一下 [確定]  關閉界限內容，並儲存設定。  
 
-##  <a name="a-namebkmkboundarygroupsa-boundary-groups"></a><a name="BKMK_BoundaryGroups"></a> 界限群組  
+##  <a name="a-namebkmkboundarygroupsa-boundary-groups"></a><a name="BKMK_BoundaryGroups"></a> Boundary groups  
  將界限群組建立到與邏輯網路相關的網路位置 (或界限) 使其更容易管理您的基礎結構。 您必須先將界限指派給界限群組，才能使用界限群組。 用戶端將界限群組組態用於：  
 
 -   自動站台指派  

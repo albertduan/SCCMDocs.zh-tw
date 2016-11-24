@@ -29,7 +29,7 @@ ms.openlocfilehash: ae331ee9f1cc276f64b7f6501b383c67648f72f3
 
  請使用下列章節的內容，以新版的 Windows 重新整理現有的電腦。  
 
-##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 規劃  
+##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 方案  
 
 -   **規劃並實作基礎結構需求**  
 

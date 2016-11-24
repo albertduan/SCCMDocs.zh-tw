@@ -32,7 +32,7 @@ ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
 
  使用下列章節來管理 Windos 即服務。
 
-##  <a name="a-namebkmkprerequisitesa-prerequisites"></a><a name="BKMK_Prerequisites"></a>必要條件  
+##  <a name="a-namebkmkprerequisitesa-prerequisites"></a><a name="BKMK_Prerequisites"></a> 先決條件  
  若要查看 Windows 10 服務儀表板中的資料，您必須執行下列作業：  
 
 -   Windows 10 電腦都必須使用 Configuration Manager 軟體更新，並以 Windows Server Update Services (WSUS) 進行軟體更新管理。 當電腦使用 Windows Update for Business (或 Windows Insiders) 來進行軟體更新管理時，電腦將不會在 Windows 10 服務方案中評估。 如需詳細資訊，請參閱 [Integration with Windows Update for Business in Windows 10](../../sum/deploy-use/integrate-windows-update-for-business-windows-10.md)。  

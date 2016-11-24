@@ -33,7 +33,7 @@ ms.openlocfilehash: c672595a06a45bec840f17743636ef6f502af49f
 
 -   **規劃並實作基礎結構需求**  
 
-     必須要備妥數個基礎結構需求，才能部署作業系統，例如 Windows ADK、Windows 部署服務 (WDS)、支援的硬碟設定等。如需詳細資訊，請參閱 [System Center Configuration Manager 中作業系統部署的基礎結構需求](../plan-design/infrastructure-requirements-for-operating-system-deployment.md)。  
+     必須要備妥數個基礎結構需求，才能部署作業系統，例如 Windows ADK、Windows 部署服務 (WDS)、支援的硬碟設定等。如需詳細資訊，請參閱[作業系統部署的基礎結構需求](../plan-design/infrastructure-requirements-for-operating-system-deployment.md)。  
 
 ##  <a name="a-namebkmkconfigurea-configure"></a><a name="BKMK_Configure"></a> 設定  
 
