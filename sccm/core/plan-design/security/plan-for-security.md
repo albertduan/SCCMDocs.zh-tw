@@ -107,7 +107,7 @@ ms.openlocfilehash: f38d7275a39d16f9e6cf90334a46668fcc860bc1
 
 不同於網站設定，當您註冊行動裝置或 Mac 電腦，以及為無線網路佈建 Intel AMT 型電腦時，您可能必須匯入根 CA 憑證。  
 
-###  <a name="a-namebkmkplanningforclientcertificateselectiona-planning-for-pki-client-certificate-selection"></a><a name="BKMK_PlanningForClientCertificateSelection"></a> 規劃 PKI 用戶端憑證選擇  
+###  <a name="a-namebkmkplanningforclientcertificateselectiona-planning-for-pki-client-certificate-selection"></a><a name="BKMK_PlanningForClientCertificateSelection"></a> Planning for PKI client certificate selection  
  如果您的 IIS 網站系統會使用 PKI 用戶端憑證，以透過 HTTP 供用戶端驗證之用，或是透過 HTTPS 供用戶端驗證及加密之用時，請規劃 Windows 用戶端如何選取可供 Configuration Manager 使用的憑證。  
 
 > [!NOTE]  

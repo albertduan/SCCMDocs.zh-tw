@@ -49,7 +49,7 @@ System Center Configuration Manager 內部部署行動裝置管理需要設定�
 
 -   [將具有相同的根的憑證匯出為網頁伺服器憑證](#bkmk_exportCert)  
 
-##  <a name="a-namebkmkconfigcaa-configure-the-certification-authority-ca-for-crl-publishing"></a><a name="bkmk_configCa"></a> 設定用來發行 CRL 的憑證授權單位 (CA)  
+##  <a name="a-namebkmkconfigcaa-configure-the-certification-authority-ca-for-crl-publishing"></a><a name="bkmk_configCa"></a> 設定用來發佈 CRL 的憑證授權單位 (CA)  
  憑證授權單位 (CA) 預設會使用以 LDAP 為基礎的憑證撤銷清單 (CRL) 來允許已加入網域之裝置的連線。 您必須將以 HTTP 為基礎的 CRL 新增到 CA，才能讓未加入網域的裝置藉由該 CA 發行的憑證受到信任。 必須要有這些憑證，才能在裝載 Configuration Manager 站台系統角色的伺服器與已註冊內部部署行動裝置管理的裝置之間進行 SSL 通訊。  
 
  請依照下列步驟來設定 CA，使其自動發佈 CRL 資訊來發行憑證，以允許已加入網域和未加入網域之裝置的受信任連線：  
@@ -145,7 +145,7 @@ System Center Configuration Manager 內部部署行動裝置管理需要設定�
 
 5.  在 [IIS 管理員] 主控台的 [連線] 底下，選取網頁伺服器，然後在右邊的 [動作] 窗格中，按一下 **[重新啟動]**。  
 
-##  <a name="a-namebkmkexportcerta-export-the-certificate-with-the-same-root-as-the-web-server-certificate"></a><a name="bkmk_exportCert"></a> 將具有相同根的憑證匯出為網頁伺服器憑證  
+##  <a name="a-namebkmkexportcerta-export-the-certificate-with-the-same-root-as-the-web-server-certificate"></a><a name="bkmk_exportCert"></a> 將具有相同的根的憑證匯出為網頁伺服器憑證  
  「Active Directory 憑證服務」通常會在所有已加入網域的裝置上安裝來自 CA 的必要憑證。 但未加入網域的裝置如果沒有來自根 CA 的憑證，則無法與站台系統角色進行通訊。 若要取得裝置與站台系統角色通訊所需的憑證，您可以從繫結到網頁伺服器的憑證進行匯出。  
 
  請依照下列步驟來匯出網頁伺服器憑證的根憑證。  

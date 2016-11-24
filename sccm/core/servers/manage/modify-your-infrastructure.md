@@ -147,7 +147,7 @@ ms.openlocfilehash: fc58e77841baedd45649d676e98c736fa91e5bf2
 
  在每一部可能會支援遠端 Configuration Manager 主控台的 SMS 提供者電腦上，重複執行此程序。  
 
-##  <a name="a-namebkmkdbconfiga-modify-the-site-database-configuration"></a><a name="bkmk_dbconfig"></a> 修改站台資料庫設定  
+##  <a name="a-namebkmkdbconfiga-modify-the-site-database-configuration"></a><a name="bkmk_dbconfig"></a> 修改站台資料庫組態  
  安裝某個站台後，您可以經由在管理中心網站伺服器或主要站台伺服器上執行安裝程式，來修改站台資料庫和站台資料庫伺服器的設定。 您可以將站台資料庫移到相同電腦上的 SQL Server 新執行個體，或移到執行受支援 SQL Server 版本的另一台電腦上。 次要站台資料庫設定不支援這些變更及相關的變更。  
 
  如需支援限制的詳細資訊，請參閱 [Support policy for manual database changes in a Configuration Manager environment](https://support.microsoft.com/kb/3106512)(在 Configuration Manager 環境中手動變更資料庫的支援原則)。  
