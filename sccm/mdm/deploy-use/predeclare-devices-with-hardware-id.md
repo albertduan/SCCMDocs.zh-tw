@@ -16,15 +16,15 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: 43d67aa664037c6da83260d5ada8e574510a8f7b
+ms.sourcegitcommit: 6cd640085e90b2945326e3fa942ae9bd7b8f7e24
+ms.openlocfilehash: 2550fef062b5ef508e4c0492a5a9c63ffcb9084a
 
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>使用 IMEI 或 iOS 序號預先宣告裝置
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-您可以透過匯入國際站移動設備識別碼 (IMEI) 號碼或 iOS 序號，識別公司擁有的裝置。 您可以上傳一個包含裝置 IMEI 編號的逗號分隔值 (.csv) 檔案，也可以手動輸入裝置資訊。  匯入的資訊將會設定裝置清單中註冊為「公司」之裝置的「擁有權」。 每一位存取服務的使用者還是需要 Intune 授權。  
+您可以透過匯入國際站移動設備識別碼 (IMEI) 號碼或 iOS 序號，識別公司擁有的裝置。 您可以上傳一個包含裝置 IMEI 編號的逗號分隔值 (.csv) 檔案，也可以手動輸入裝置資訊。  匯入的資訊將會設定裝置清單中註冊為**公司**之裝置的**擁有權**。 每一位存取服務的使用者還是需要 Intune 授權。  
 
 ## <a name="predeclare-corporate-owned-devices-with-imei-or-ios-serial-number"></a>使用 IMEI 或 iOS 序號預先宣告公司擁有的裝置
 
@@ -49,7 +49,7 @@ ms.openlocfilehash: 43d67aa664037c6da83260d5ada8e574510a8f7b
       - 資料行 2：iOS 序號
       - 資料行 3︰裝置的作業系統︰
          - IOS – 所有 iOS 裝置
-         - WINDOWS – 包含 Windows Phone、Window 10 行動裝置和 Windows 電腦
+         - WINDOWS - 包含 Windows 手機、Window 10 行動裝置和 Windows 電腦
          - ANDROID – 所有 Android 裝置
       - 資料行 4：詳細資料 (選用) – Configuration Manager 主控台中所顯示的其他裝置資訊。 1024 個字元限制。
 

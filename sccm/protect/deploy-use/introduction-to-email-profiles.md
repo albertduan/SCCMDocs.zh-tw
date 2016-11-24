@@ -45,7 +45,7 @@ ms.openlocfilehash: 83066e1f0e3c6536649e9b74ca13562c9d817619
 
  除了在裝置上設定電子郵件帳戶外，您也可以設定連絡人、行事曆和工作的同步處理設定。  
 
- 當您建立電子郵件設定檔時，您可以在其中加入各種安全性設定，包括藉由使用 System Center Configuration Manager 憑證設定檔佈建的識別憑證、加密憑證和簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](introduction-to-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
+ 當您建立電子郵件設定檔時，可以在其中加入各種安全性設定，包括使用 System Center Configuration Manager 憑證設定檔所佈建的識別憑證、加密憑證和簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](introduction-to-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
 
 
 

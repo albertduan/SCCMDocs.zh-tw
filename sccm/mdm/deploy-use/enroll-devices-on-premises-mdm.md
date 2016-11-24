@@ -41,7 +41,7 @@ ms.openlocfilehash: 911139148a18b2d5044962406a0847cdc97ab9d6
 >   
 >  -   Windows 10 Enterprise  
 > -   Windows 10 Pro  
-> -   Windows 10 團隊 \(從 Configuration Manager 1602 版開始\)  
+> -   Windows 10 團隊版 \(從 Configuration Manager 1602 版開始\)  
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise   
 

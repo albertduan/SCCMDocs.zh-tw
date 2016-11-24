@@ -65,7 +65,7 @@ ms.openlocfilehash: 75f5ddfdc84185ee27bf60416e54d37295928156
  如需詳細資訊，請參閱   
 [監視 System Center Configuration Manager 的階層及複寫基礎結構](../../../core/servers/manage/monitor-hierarchy-and-replication-infrastructure.md)主題中的[關於複寫連結分析師](../../../core/servers/manage/monitor-hierarchy-and-replication-infrastructure.md#BKMK_RLA)。  
 
- **針對裝載站台、站台資料庫伺服器，以及遠端站台系統角色的電腦，安裝所有適用的作業系統重大更新：** 安裝 Configuration Manager更新之前，請為每一個適用的站台系統安裝任何重大更新。 如果您安裝的更新需要重新啟動，請先重新啟動適用的電腦再開始進行更新。  
+ **針對裝載站台、站台資料庫伺服器，以及遠端站台系統角色的電腦，安裝所有適用的作業系統重大更新：**安裝 Configuration Manager更新之前，請為每一個適用的站台系統安裝任何重大更新。 如果您安裝的更新需要重新啟動，請先重新啟動適用的電腦再開始進行更新。  
 
  **停用主要站台的管理點資料庫複本：**如果主要站台已啟用管理點資料庫複本，Configuration Manager 即無法成功更新此主要站台。 在下列情況之前先停用資料庫複寫：  
 

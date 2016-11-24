@@ -43,7 +43,7 @@ ms.openlocfilehash: c3c9bce02a177e755bb259634a7feab381a41466
 |**移動**|開啟 [移動選取的項目]  對話方塊，您可以在其中將選取的查詢移至先前在 [查詢]  節點下建立的資料夾。|沒有其他資訊。|  
 
 ## <a name="see-also"></a>另請參閱  
- [System Center Configuration Manager 中查詢的操作和維護](../../../core/servers/manage/operations-and-maintenance-for-queries.md)
+ [System Center Configuration Manager 中查詢的作業和維護](../../../core/servers/manage/operations-and-maintenance-for-queries.md)
 
 
 
