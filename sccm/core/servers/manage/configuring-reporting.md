@@ -142,7 +142,7 @@ ms.openlocfilehash: 7c7fb75ec6be7a24afe2bb8038998fb58b10e331
     > [!NOTE]  
     >  當建立報告資料夾，並將報告複製到報表伺服器時，Configuration Manager 會判斷物件的適用語言。 如果站台上已安裝關聯的語言套件，Configuration Manager 會以和站台上報表伺服器所執行作業系統相同的語言來建立物件。 如果沒有可用的語言，則會以英文建立和顯示報告。 當您在不含語言套件的站台上安裝 Reporting Services 點時，會安裝英文版的報告。 如果在安裝 Reporting Services 點後安裝語言套件，您必須先解除安裝再重新安裝 Reporting Serivces 點，才能使用具適當語言套件的報告。 如需語言套件的詳細資訊，請參閱 [Language Packs in System Center Configuration Manager](../deploy/install/language-packs.md) (System Center Configuration Manager 的語言套件)。  
 
-###  <a name="a-namebkmkfileinstallationandsecuritya-file-installation-and-report-folder-security-rights"></a><a name="BKMK_FileInstallationAndSecurity"></a> 檔案安裝與報告資料夾安全性權限  
+###  <a name="a-namebkmkfileinstallationandsecuritya-file-installation-and-report-folder-security-rights"></a><a name="BKMK_FileInstallationAndSecurity"></a> 檔案安裝與報表資料夾安全性權限  
  Configuration Manager 會執行下列動作，安裝 Reporting Services 點和設定 Reporting Services：  
 
 > [!IMPORTANT]  
@@ -280,7 +280,7 @@ ms.openlocfilehash: 7c7fb75ec6be7a24afe2bb8038998fb58b10e331
 ## <a name="upgrading-sql-server"></a>升級 SQL Server  
  您升級 SQL Server 及作為 Reporting Services 點資料來源的 SQL Server Reporting Services 後，可能會在從 Configuration Manager 主控台執行或編輯報告時發生錯誤。 為了可從 Configuration Manager 主控台正常執行報告，您必須移除站台的 Reporting Services 點站台系統角色，然後重新安裝。 不過升級後，您可以繼續從網際網路瀏覽器成功執行及編輯報告。  
 
-##  <a name="a-namebkmkconfigurereportoptionsa-configure-report-options"></a><a name="BKMK_ConfigureReportOptions"></a> 設定報告選項  
+##  <a name="a-namebkmkconfigurereportoptionsa-configure-report-options"></a><a name="BKMK_ConfigureReportOptions"></a> 設定報表選項  
  使用 Configuration Manager 站台的報告選項選取預設 Reporting Services 點，用來管理您的報告。 雖然一個站台可以有多個 Reporting Services 點，但是只有報告選項中選取的預設報告伺服器會用來管理報告。 利用下列程序設定站台的報告選項。  
 
 #### <a name="to-configure-report-options"></a>若要設定報告選項  
@@ -294,7 +294,7 @@ ms.openlocfilehash: 7c7fb75ec6be7a24afe2bb8038998fb58b10e331
 4.  在清單中選取預設報告伺服器，然後按一下 [確定] 。 如果清單中未列出 Reporting Services 點，請確認您已在站台中成功安裝及設定 Reporting Services 點。  
 
 ## <a name="next-steps"></a>後續步驟
-[報告的作業和維護](operations-and-maintenance-for-reporting.md)
+[報告作業和維護](operations-and-maintenance-for-reporting.md)
 
 
 
