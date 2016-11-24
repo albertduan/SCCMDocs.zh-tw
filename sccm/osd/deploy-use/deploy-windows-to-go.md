@@ -118,7 +118,7 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
 
         -   未安裝 Configuration Manager 用戶端的電腦  
 
-        -   未匯入至 Configuration Manager 的電腦  
+        -   未匯入 Configuration Manager 的電腦  
 
         -   Configuration Manager 未探索到的電腦  
 

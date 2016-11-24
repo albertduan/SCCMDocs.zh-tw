@@ -82,7 +82,7 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 
 7.  WSUS 同步處理管理員會一次將一個要求傳送至於網站上其他軟體更新點上執行的 WSUS。 其他更新點上的 WSUS 伺服器會設定為網站中預設軟體更新點上所執行 WSUS 的複本。  
 
-##  <a name="a-namebkmksumcompliancea-software-updates-compliance-assessment"></a><a name="BKMK_SUMCompliance"></a> 軟體更新相容性評估  
+##  <a name="a-namebkmksumcompliancea-software-updates-compliance-assessment"></a><a name="BKMK_SUMCompliance"></a> Software updates compliance assessment  
  您在 Configuration Manager 中將軟體更新部署至用戶端電腦之前，請先掃描用戶端電腦上的軟體更新相容性。 系統會針對每一個軟體更新建立狀態訊息，其中包含更新的相容性狀態。 狀態訊息會大量傳送至管理點，再傳送至網站伺服器，相容性狀態會在該處插入網站資料庫中。 軟體更新的相容性狀態會在 Configuration Manager 主控台中顯示。 您可以在需要更新的電腦上部署和安裝軟體更新。 下面各節提供有關相容性狀態的資訊，並且描述掃描軟體更新相容性的程序。  
 
 ### <a name="software-updates-compliance-states"></a>軟體更新相容性狀態  

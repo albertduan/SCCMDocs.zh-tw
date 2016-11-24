@@ -142,7 +142,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
     > [!TIP]  
     >  當備份維護工作失敗時，您可以藉由停止再重新啟動 SMS_SITE_BACKUP 服務，重新啟動備份工作。  
 
-###  <a name="a-namebkmkdpmbackupa-using-data-protection-manager-to-back-up-your-site-database"></a><a name="BKMK_DPMBackup"></a> 使用 Data Protection Manager 備份站台資料庫  
+###  <a name="a-namebkmkdpmbackupa-using-data-protection-manager-to-back-up-your-site-database"></a><a name="BKMK_DPMBackup"></a> 使用 Data Protection Manager 備份網站資料庫  
  您可以使用 System Center 2012 Data Protection Manager (DPM) 來備份站台資料庫。 您必須在網站資料庫電腦的 DPM 中建立新的保護群組。 在 [建立新保護群組精靈] 的 [選擇群組成員]  頁面上，您可以從資料來源清單選取 SMS 寫入器服務，然後選取網站資料庫作為適當的成員。 如需使用 DPM 備份網站資料庫的詳細資訊，請參閱 TechNet 上的 [Data Protection Manager Documentation Library (Data Protection Manager 文件庫)](http://go.microsoft.com/fwlink/?LinkId=272772) 。  
 
 > [!IMPORTANT]  
@@ -255,7 +255,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 > [!NOTE]  
 >  安裝程式在伺服器上偵測到現有的 Configuration Manager 站台時，您就可以啟動站台復原，不過站台伺服器的復原選項有限。 例如，若您在現有網站伺服器上執行安裝程式，當您選擇復原時，就可以復原網站資料庫伺服器，但會停用復原網站伺服器的選項。  
 
-####  <a name="a-namebkmksitedatabaserecoveryoptiona-site-database-recovery-options"></a><a name="BKMK_SiteDatabaseRecoveryOption"></a> 站台資料庫復原選項  
+####  <a name="a-namebkmksitedatabaserecoveryoptiona-site-database-recovery-options"></a><a name="BKMK_SiteDatabaseRecoveryOption"></a> 網站資料庫復原選項  
  執行安裝程式時，針對網站資料庫，您有以下復原選項：  
 
 -   **使用備份組復原站台資料庫**：如果您在站台資料庫失敗前，已於站台上執行**備份站台伺服器**維護工作期間，建立了 Configuration Manager 站台資料庫的備份，請使用此選項。 若您有階層，則會從主要網站的管理中心網站，或管理中心網站的參照主要網站，擷取最後一次進行網站資料庫備份後，對網站資料庫所做的變更。 當您復原獨立主要網站的網站資料庫時，您會遺失最後一次備份後的網站變更。  
@@ -292,7 +292,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 ##### <a name="example-scenario-2"></a>範例案例 2  
  **管理中心網站重新初始化來自主要站台的站台資料**：復原程序會從管理中心網站資料庫中移除該主要站台的現有站台資料，並以從主要站台複製的站台資料加以取代。 其他主要網站的網站資料則不受影響。  
 
-####  <a name="a-namebkmksitedbrecoveryscenariosa-site-database-recovery-scenarios"></a><a name="BKMK_SiteDBRecoveryScenarios"></a> 站台資料庫復原案例  
+####  <a name="a-namebkmksitedbrecoveryscenariosa-site-database-recovery-scenarios"></a><a name="BKMK_SiteDBRecoveryScenarios"></a> 網站資料庫復原案例  
  從備份還原站台資料庫後，Configuration Manager 會嘗試還原站台內上次資料庫備份後的變更以及全域資料。 下文說明從備份還原站台資料庫之後，Configuration Manager 會啟動的動作。  
 
  **復原的站台是管理中心網站：**  

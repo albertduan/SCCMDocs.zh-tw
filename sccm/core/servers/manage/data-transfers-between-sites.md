@@ -28,7 +28,7 @@ ms.openlocfilehash: 1abd28aa4ce4f946f6328f8f7924b5f5a81e640c
 System Center Configuration Manager 會使用**檔案複寫**與**資料庫複寫**在站台之間傳送不同類型的資訊。  本主題中的主題可協助您了解 Configuration Manager 如何在站台之間移動資料，以及您如何管理該資料在網路之間的傳輸。  
 
 
-##  <a name="a-namebkmkfileroutea-file-based-replication"></a><a name="bkmk_fileroute"></a> 檔案複寫  
+##  <a name="a-namebkmkfileroutea-file-based-replication"></a><a name="bkmk_fileroute"></a> File-based replication  
  Configuration Manager 會使用檔案複寫在階層中網站間傳送檔案資料。 這項資料包括您想要部署至子網站中發佈點的應用程式和套件，以及傳送至進行處理所在父網站的未經處理探索資料記錄等內容。  
 
  站台之間以檔案為主的通訊會透過 **TCP/IP 連接埠 445** 來使用 **伺服器訊息區**(SMB) 通訊協定。 您可以指定包括頻寬節流和脈衝模式的組態來控制經網路傳輸的資料量，並且進行排程，以控制經網路傳送資料的時間。  
@@ -72,7 +72,7 @@ System Center Configuration Manager 會使用**檔案複寫**與**資料庫複�
 
 若要管理網站的傳送者，請展開 [系統管理]  工作區中的 [階層設定]  節點，然後選取 [網站]  ，接著按一下您要管理之網站的 [內容]  。 按一下 [傳送者]  索引標籤，變更傳送者設定。  
 
-##  <a name="a-namebkmkdbrepa-database-replication"></a><a name="bkmk_dbrep"></a> 資料庫複寫  
+##  <a name="a-namebkmkdbrepa-database-replication"></a><a name="bkmk_dbrep"></a> Database replication  
 Configuration Manager 資料庫複寫會使用 SQL Server 來傳輸資料，以及合併站台資料庫中的變更和儲存在階層中其他站台資料庫中的資訊。  
 
 -   這可讓所有站台共用相同資訊  
@@ -186,7 +186,7 @@ Configuration Manager 會將資料庫複寫複製的資料分類為全域資料�
 > [!IMPORTANT]  
 >  分散式檢視及資料複寫排程，都是資料庫複寫連結的互斥設定。  
 
-###  <a name="a-namebkmkschedulesa-schedule-transfers-of-site-data-on-database-replication-links"></a><a name="BKMK_schedules"></a> 排程資料庫複寫連結上的站台資料傳送  
+###  <a name="a-namebkmkschedulesa-schedule-transfers-of-site-data-on-database-replication-links"></a><a name="BKMK_schedules"></a> 資料庫複寫連結上的站台資料傳送排程  
 為了協助您控制從子主網站複寫網站資料到管理中心網站所用的網路頻寬，您可以排定何時使用複寫連結，並指定何時複寫不同類型的網站資料。 您可以控制主要網站何時複寫狀態訊息、清查和計量資料。 次要網站的資料庫複寫連結不支援網站資料的排程。 無法排定全域資料傳送的時程。  
 
 設定資料庫複寫連結排程時，您可以限制只從主要網站將選定網站資料傳送到管理中心網站，並且可以設定複寫不同類型網站資料的不同時間。  
@@ -194,7 +194,7 @@ Configuration Manager 會將資料庫複寫複製的資料分類為全域資料�
 > [!IMPORTANT]  
 >  分散式檢視及資料複寫排程，都是資料庫複寫連結的互斥設定。  
 
-###  <a name="a-namebkmksummarizedbreplicationa-summarization-of-database-replication-traffic"></a><a name="BKMK_SummarizeDBReplication"></a> 資料庫複寫流量的摘要  
+###  <a name="a-namebkmksummarizedbreplicationa-summarization-of-database-replication-traffic"></a><a name="BKMK_SummarizeDBReplication"></a> 資料庫複寫流量摘要  
 每個站台都會定期將有關周遊包括站台在內的資料庫複寫連結之網路流量的資料，製作成摘要。 此摘要資料可用於資料庫複寫報告中。 複寫連結上的兩個網站，都會將周遊複寫連結的網路流量製做為摘要。 資料的摘要是由裝載網站資料庫的 SQL Server 所執行。 製作資料摘要後，此資訊便會複寫至其他網站做為全域資料。  
 
 根據預設，每隔 15 分鐘便會摘要一次。 您可以藉由編輯資料庫複寫連結內容中的 [摘要間隔]  ，修改網路流量摘要的頻率。 摘要的頻率會影響您在資料庫複寫報告中檢視的資訊。 您可以將此間隔時間修改為 5 到 60 分鐘。 當您增加摘要的頻率時，便會增加複寫連結上各網站的 SQL Server 處理負載。  

@@ -23,7 +23,7 @@ ms.openlocfilehash: a720a38962aee33f0d6a7c9ca447dd98d7e0c24e
 
 #  <a name="a-namebkmksumsynca-synchronize-software-updates"></a><a name="BKMK_SUMSync"></a> 同步處理軟體更新
 
-*適用於：System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
  Configuration Manager 中的軟體更新同步處理是擷取符合您所設定準則的軟體更新中繼資料的程序。 這包含特定產品、分類和語言。 一般而言，管理中心網站或獨立主要站台上的軟體更新點，會從 Microsoft Update 擷取中繼資料。 接著，頂層站台會將同步處理要求傳送至其他站台。 當站台接收到來自父站台的同步處理要求時，站台的軟體更新點會從其上游[同步處理來源](../plan-design/plan-for-software-updates.md#BKMK_SyncSource)擷取軟體更新中繼資料。 如需軟體更新同步處理程序的詳細資訊，請參閱[軟體更新同步處理](../understand/software-updates-introduction.md#BKMK_Synchronization)。
 

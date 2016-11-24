@@ -234,7 +234,7 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 
 -   請參閱 SQL Server 文件庫中 [將次要複本從可用性群組移除](https://msdn.microsoft.com/library/hh213149\(v=sql.120\).aspx) 中的資訊。  
 
-##  <a name="a-namebkmkremovea-move-the-site-database-from-an-availability-group-back-to-a-single-instance-sql-server"></a><a name="bkmk_remove"></a> 將站台資料庫從可用性群組移回單一執行個體 SQL Server  
+##  <a name="a-namebkmkremovea-move-the-site-database-from-an-availability-group-back-to-a-single-instance-sql-server"></a><a name="bkmk_remove"></a> 將站台資料庫從可用性群組移回到單一執行個體 SQL Server  
  當您不想再將站台資料庫裝載在可用性群組中時，請使用下列程序。  
 
 #### <a name="to-move-the-site-database-from-an-availability-group-back-to-a-single-instance-sql-server"></a>將站台資料庫從可用性群組移回到單一執行個體 SQL Server  

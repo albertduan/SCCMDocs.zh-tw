@@ -33,7 +33,7 @@ ms.openlocfilehash: 77a0825346b461cdc3b36e5aabcb1e4e83135d6e
 
  安裝用戶端之後，即可在 Configuration Manager 主控台中指定 [用戶端設定] 來設定用戶端代理程式，而設定方式與 Windows 用戶端相同。 如需詳細資訊，請參閱  [Client settings for Linux and UNIX servers](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ClientSettingsforLnU)。  
 
-##  <a name="a-namebkmkaboutinstallpackagesa-about-client-installation-packages-and-the-universal-agent"></a><a name="BKMK_AboutInstallPackages"></a> 關於用戶端安裝套件和 Universal Agent  
+##  <a name="a-namebkmkaboutinstallpackagesa-about-client-installation-packages-and-the-universal-agent"></a><a name="BKMK_AboutInstallPackages"></a> 有關用戶端安裝封裝和通用的代理程式  
  若要在特定平台上安裝 Linux 和 UNIX 的用戶端，您必須使用安裝用戶端之電腦的適用用戶端安裝封裝。 從 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=525184)下載的每個用戶端都包含適用的用戶端安裝套件。 除了用戶端安裝封裝之外，用戶端下載還會包括管理每部電腦上用戶端安裝的 **install** 指令碼。  
 
  當您安裝用戶端時，您可以使用相同的程序和命令列屬性不論您使用用戶端安裝套件。  
@@ -222,7 +222,7 @@ ms.openlocfilehash: 77a0825346b461cdc3b36e5aabcb1e4e83135d6e
 
  在您解除安裝 Linux 和 UNIX Configuration Manager 用戶端之後，不需要重新啟動電腦。  
 
-##  <a name="a-namebkmkconfiglnuclientcommuincationsa-configure-request-ports-for-the-client-for-linux-and-unix"></a><a name="BKMK_ConfigLnUClientCommuincations"></a> 設定 Linux 和 UNIX 用戶端的要求連接埠  
+##  <a name="a-namebkmkconfiglnuclientcommuincationsa-configure-request-ports-for-the-client-for-linux-and-unix"></a><a name="BKMK_ConfigLnUClientCommuincations"></a> 設定 Linux 和 UNIX 用戶端要求連接埠  
  與 Windows 用戶端類似，Linux 和 UNIX Configuration Manager 用戶端會使用 HTTP 和 HTTPS 來與 Configuration Manager 站台系統通訊。 Configuration Manager 用戶端用來通訊的連接埠稱為要求連接埠。  
 
  當您安裝 Linux 和 UNIX Configuration Manager 用戶端時，可以指定 **-httpport** 和 **-httpsport** 安裝內容來變更用戶端預設要求連接埠。 當您未指定安裝在屬性和自訂的值時，用戶端會使用預設值。 預設值為 **80** HTTP 流量和 **443** 的 HTTPS 流量。  
@@ -231,7 +231,7 @@ ms.openlocfilehash: 77a0825346b461cdc3b36e5aabcb1e4e83135d6e
 
  如需用戶端通訊連接埠號碼的詳細資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端通訊連接埠](../../../core/clients/deploy/configure-client-communication-ports.md)。  
 
-##  <a name="a-namebkmkconfigclientmpa-configure-the-client-for-linux-and-unix-to-locate-management-points"></a><a name="BKMK_ConfigClientMP"></a> 設定 Linux 和 UNIX 用戶端來找出管理點  
+##  <a name="a-namebkmkconfigclientmpa-configure-the-client-for-linux-and-unix-to-locate-management-points"></a><a name="BKMK_ConfigClientMP"></a> 設定用於 Linux 和 UNIX 找出管理點的用戶端  
  安裝 Linux 和 UNIX Configuration Manager 用戶端時，必須指定作為初始連絡點使用的管理點。  
 
  Linux 和 UNIX Configuration Manager 用戶端會在用戶端安裝時連絡這個管理點。 如果用戶端無法連絡管理點，則用戶端軟體會繼續重試，直到成功為止。  

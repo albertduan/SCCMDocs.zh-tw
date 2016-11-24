@@ -20,7 +20,7 @@ ms.openlocfilehash: 133f29aa3f515054b23ba70f1a1dfd3eedaa56c8
 
 #  <a name="a-namebkmkautodeploya-automatically-deploy-software-updates"></a><a name="BKMK_AutoDeploy"></a> 自動部署軟體更新  
 
-適用於：System Center Configuration Manager (最新分支)
+*適用於：System Center Configuration Manager (最新分支)*
 
  您可經由將新的軟體更新新增到與現用部署相關聯的更新群組，或使用自動部署規則 (ADR)，來自動部署軟體更新。 您通常會使用 ADR 部署每月軟體更新 (一般稱為「週二修補程式日」更新) 以及管理定義更新。 如果需要協助來判斷哪種部署方法最適合您，請參閱[部署軟體更新](deploy-software-updates.md)
 

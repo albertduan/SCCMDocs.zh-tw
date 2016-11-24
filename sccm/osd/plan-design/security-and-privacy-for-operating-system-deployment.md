@@ -28,7 +28,7 @@ ms.openlocfilehash: 7f83b9d30f933c7b8cc0a527e8a65d321b7ee786
 
 本主題包含 System Center Configuration Manager 中作業系統部署的安全性和隱私權資訊。  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-operating-system-deployment"></a><a name="BKMK_Security_HardwareInventory"></a> 作業系統部署的安全性最佳做法  
+##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-operating-system-deployment"></a><a name="BKMK_Security_HardwareInventory"></a> 作業系統部署的安全性最佳作法  
  當您以 Configuration Manager 來部署作業系統時，可使用下列安全性最佳做法：  
 
 -   **實作存取控制以保護可開機媒體**  

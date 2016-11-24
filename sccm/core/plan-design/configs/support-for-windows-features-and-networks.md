@@ -119,7 +119,7 @@ Configuration Manager 不支援透過 DirectAccess 進行下列作業：
 ##  <a name="a-namebkmknata-network-address-translation"></a><a name="bkmk_NAT"></a> 網路位址轉譯  
  除非站台支援位於網際網路上的用戶端，且用戶端偵測到它已連線到網際網路，否則 Configuration Manager 不支援網路位址轉譯 (NAT)。 如需以網際網路為基礎之用戶端管理的詳細資訊，請參閱[在 System Center Configuration Manager 中規劃管理以網際網路為基礎的用戶端](../../../core/clients/deploy/plan/plan-for-managing-internet-based-clients.md)。  
 
-##  <a name="a-namebkmkstoragea-specialized-storage-technology"></a><a name="bkmk_storage"></a> 專門的儲存體技術  
+##  <a name="a-namebkmkstoragea-specialized-storage-technology"></a><a name="bkmk_storage"></a> 專門儲存體技術  
  Configuration Manager 可以與硬體搭配運作，但硬體必須是安裝 Configuration Manager 元件之作業系統版本的 Windows 硬體相容性清單上已通過認證的硬體。 站台伺服器角色需要 NTFS 檔案系統，以便設定目錄和檔案權限。 因為 Configuration Manager 假設它有完整的邏輯磁碟機擁有權，所以在不同電腦上執行的站台系統無法共用任何儲存技術上的邏輯磁碟分割。 不過，每一部電腦可以在共用存放裝置的相同實體磁碟分割上，使用不同的邏輯磁碟分割。  
 
  **支援注意事項：**  

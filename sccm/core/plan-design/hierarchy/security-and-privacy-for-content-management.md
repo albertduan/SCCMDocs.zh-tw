@@ -33,7 +33,7 @@ ms.openlocfilehash: fcc3c74e50a4cdac9337178f5fcfe710f0fa17a5
 
 -   [System Center Configuration Manager 中作業系統部署的安全性和隱私權](../../../osd/plan-design/security-and-privacy-for-operating-system-deployment.md)  
 
-##  <a name="a-namebkmksecuritycontentmanagementa-security-best-practices-for-content-management"></a><a name="BKMK_Security_ContentManagement"></a> 內容管理的安全性最佳作法  
+##  <a name="a-namebkmksecuritycontentmanagementa-security-best-practices-for-content-management"></a><a name="BKMK_Security_ContentManagement"></a> 內容管理的安全性最佳做法  
  利用下列安全性最佳作法進行內容管理：  
 
  **對於內部網路上的發佈點，請考慮使用 HTTPS 和 HTTP 的優缺點** - 在大部分案例下，使用 HTTP 和封裝存取帳戶以獲得授權，能提供比使用具加密但沒有授權的 HTTPS 更高的安全性。 不過，如果您的內容中包含機密資料，而您想要在傳送時加密資料，請使用 HTTPS。  

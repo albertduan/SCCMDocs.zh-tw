@@ -31,7 +31,7 @@ ms.openlocfilehash: 5a52386c6327ded3c5a400c7a046a6a12af96bae
  安裝 Configuration Manager 用戶端前，請先確定所有必要條件已就緒，而且已完成所有必要的部署設定。 如需詳細資訊，請參閱[在 System Center Configuration Manager 將用戶端部署至 Windows 電腦的必要條件](../../../core/clients/deploy/prerequisites-for-deploying-clients-to-windows-computers.md)。  
 
 
-##  <a name="a-namebkmkclientpusha-how-to-install-configuration-manager-clients-by-using-client-push"></a><a name="BKMK_ClientPush"></a> 如何使用用戶端推入來安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkclientpusha-how-to-install-configuration-manager-clients-by-using-client-push"></a><a name="BKMK_ClientPush"></a> 如何使用用戶端推入安裝 Configuration Manager 用戶端  
 
  使用用戶端推入安裝，在 Configuration Manager 探索到的電腦上安裝 Configuration Manager 用戶端軟體。 您可以為網站設定用戶端推入安裝，用戶端安裝將會在網站設定的界限 (如果這些界限已設定為界限群組) 內探索到的電腦上自動執行。 或者，您可以針對特定集合或集合中的資源執行 [用戶端推入安裝精靈]，以起始用戶端推入安裝。  
 
@@ -281,7 +281,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
  如果沒有使用 **/Source** 內容來指定安裝來源，而且沒有使用 **/MP** 內容來指定可從中取得安裝的管理點，只要已針對 Configuration Manager 延伸架構並將站台發佈到「Active Directory 網域服務」，CCMSetup.exe 便可透過搜尋「Active Directory 網域服務」來尋找管理點。 此外，用戶端可以使用 DNS 或 WINS 尋找管理點。  
 
-##  <a name="a-namebkmkclientappa-how-to-install-configuration-manager-clients-by-using-a-package-and-program"></a><a name="BKMK_ClientApp"></a> 如何使用套件和程式安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkclientappa-how-to-install-configuration-manager-clients-by-using-a-package-and-program"></a><a name="BKMK_ClientApp"></a> 如何使用封裝和程式安裝 Configuration Manager 用戶端  
  您可以使用 Configuration Manager 來建立和部署套件與程式，將您階層中所選電腦的用戶端軟體升級。 套件定義檔案會在套件內容填入一般常用值的 Configuration Manager 時一併提供。 您可以指定其他命令列內容，以自訂用戶端安裝行為。  
 
 > [!NOTE]  
@@ -314,7 +314,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
 9. 將套件發佈至所有您想要裝載用戶端升級套件的發佈點。 然後，您可以將套件部署到包含您要升級之 Configuration Manager 用戶端的電腦集合。  
 
-##  <a name="a-namebkmkclientimagea-how-to-install-configuration-manager-clients-by-using-computer-imaging"></a><a name="BKMK_ClientImage"></a> 如何使用電腦映像來安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkclientimagea-how-to-install-configuration-manager-clients-by-using-computer-imaging"></a><a name="BKMK_ClientImage"></a> 如何使用電腦映像安裝 Configuration Manager 用戶端  
  您可以在用來在企業中建置電腦的主要映像電腦上，預先安裝 Configuration Manager 用戶端軟體。 若要在主要電腦上安裝用戶端，請不要為該用戶端指定網站碼。 電腦從此主要映像進行映像處理時，會包含 Configuration Manager 用戶端，且必須在安裝完成時完成站台指派。  
 
 > [!IMPORTANT]  

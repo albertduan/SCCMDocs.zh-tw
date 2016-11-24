@@ -39,7 +39,7 @@ ms.openlocfilehash: 1e648b94a475bda2b35d69ff0a8863d2e0d248fb
 > [!TIP]  
 >  如果您從舊版的 Configuration Manager \(例如 Configuration Manager 2007 或 System Center 2012 Configuration Manager\) 升級伺服器基礎結構，建議您先完成伺服器升級 (包含安裝所有的最新分支更新)，然後再升級 Configuration Manager 用戶端。   最新的最新分支更新包含最新版本的用戶端，因此最好在您安裝所有要使用的 Configuration Manager 更新之後，執行用戶端升級。  
 
-##  <a name="a-namebkmkconfiga-to-configure-automatic-client-upgrades-to-use-a-preproduction-collection"></a><a name="BKMK_config"></a> 設定自動用戶端升級以使用進入生產階段前集合  
+##  <a name="a-namebkmkconfiga-to-configure-automatic-client-upgrades-to-use-a-preproduction-collection"></a><a name="BKMK_config"></a> 設定自動升級用戶端使用進入生產階段前集合  
 
 1. 設定集合，內含您要在其中部署進入生產階段前用戶端的電腦。 如需如何執行此步驟的詳細資訊，請參閱[如何建立集合](..\collections\create-collections.md)。
 
@@ -71,7 +71,7 @@ ms.openlocfilehash: 1e648b94a475bda2b35d69ff0a8863d2e0d248fb
     > [!NOTE]
     > 在進入生產階段前集合中，裝載站台系統角色之電腦上的部署狀態可能會報告為 **[未啟動]** ，即使用戶端成功部署也一樣。 當您將用戶端升階為生產階段時，就會正確報告部署狀態。
 
-##  <a name="a-namebkmkpromotea-to-promote-the-new-client-to-production"></a><a name="BKMK_promote"></a> 將新用戶端升級至生產環境  
+##  <a name="a-namebkmkpromotea-to-promote-the-new-client-to-production"></a><a name="BKMK_promote"></a> 將新用戶端升級到生產環境  
 
 1.  在 Configuration Manager 主控台中，開啟 [系統管理] > [雲端服務] > [更新與服務]，然後按一下 [將生產階段前用戶端升階]。
 

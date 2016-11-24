@@ -610,7 +610,7 @@ ms.openlocfilehash: 538cb9795586115ad8b52b44fb82b50a0abdbaa2
  **特定磁碟機**  
  在特定磁碟機上停用 BitLocker。 使用下拉式清單來指定要停用 BitLocker 的磁碟機。  
 
-##  <a name="a-namebkmkdownloadpackagecontenta-download-package-content"></a><a name="BKMK_DownloadPackageContent"></a> 下載套件內容  
+##  <a name="a-namebkmkdownloadpackagecontenta-download-package-content"></a><a name="BKMK_DownloadPackageContent"></a> 下載封裝內容  
  使用 [下載封裝內容]  工作順序步驟，以下載下列任何封裝類型：  
 
 -   作業系統映像  
@@ -1153,7 +1153,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **針對沒有 TPM 的電腦，或是未啟用 TPM 時，略過此步驟**  
  選取此選項，可在電腦硬體不支援 TPM，或是未啟用 TPM 時，略過磁碟機加密。 例如，當您將作業系統部署至虛擬機器時，就可以使用此選項。  
 
-##  <a name="a-namebkmkreleasestatestorea-release-state-store"></a><a name="BKMK_ReleaseStateStore"></a> 釋放狀態存放區  
+##  <a name="a-namebkmkreleasestatestorea-release-state-store"></a><a name="BKMK_ReleaseStateStore"></a> 和 [釋放狀態存放區]  
  使用 [釋放狀態存放區]  工作順序步驟，以通知狀態移轉點，已完成擷取或還原動作。 此步驟可搭配使用 [要求狀態存放區] 、[擷取使用者狀態] 和 [還原使用者狀態]  工作順序步驟，以使用狀態移轉點和使用者狀態移轉工具 (USMT) 來移轉使用者狀態資料。  
 
  如需在部署作業系統時管理使用者狀態的詳細資訊，請參閱[管理使用者狀態](../get-started/manage-user-state.md)。  
@@ -1184,7 +1184,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **說明**  
  以較詳細的資訊來描述此步驟中所採取的動作。  
 
-##  <a name="a-namebkmkrequeststatestorea-request-state-store"></a><a name="BKMK_RequestStateStore"></a> 要求狀態存放區  
+##  <a name="a-namebkmkrequeststatestorea-request-state-store"></a><a name="BKMK_RequestStateStore"></a> 工作順序步驟來搭配 [要求狀態存放區]  
  使用 [要求狀態存放區]  工作順序步驟，以要求在從電腦擷取狀態，或是將狀態還原至電腦時，能夠存取狀態移轉點。  
 
  如需在部署作業系統時管理使用者狀態的詳細資訊，請參閱[管理使用者狀態](../get-started/manage-user-state.md)。  
@@ -1543,7 +1543,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **值**  
  與工作順序變數相關聯的值。 該值可以是 %<變數名稱\>% 語法中的另一個工作順序變數。  
 
-##  <a name="a-namebkmksetupwindowsandconfigmgra-setup-windows-and-configmgr"></a><a name="BKMK_SetupWindowsandConfigMgr"></a> 設定 Windows 和 ConfigMgr  
+##  <a name="a-namebkmksetupwindowsandconfigmgra-setup-windows-and-configmgr"></a><a name="BKMK_SetupWindowsandConfigMgr"></a> varname  
  使用 [設定 Windows 和 ConfigMgr]  工作順序步驟來執行從 Windows PE 到新作業系統的轉換。 此工作順序步驟是部署任何作業系統的必要部分。 它會將 Configuration Manager 用戶端安裝到新的作業系統中，並準備好讓工作順序繼續在新的作業系統中執行。  
 
  此步驟只會在 Windows PE 中執行。 它不會在標準作業系統中執行。 如需此工作順序動作的工作順序變數詳細資訊，請參閱[設定 Windows 和 ConfigMgr 工作順序動作變數](task-sequence-action-variables.md#BKMK_SetupWindows)。  

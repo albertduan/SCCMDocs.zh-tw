@@ -27,7 +27,7 @@ ms.openlocfilehash: 59c13b65cf93fa12218336e1a03b8f7c2d82aa5f
 
 本主題包含 System Center Configuration Manager 中硬體清查的安全性與隱私權資訊。  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-hardware-inventory"></a><a name="BKMK_Security_HardwareInventory"></a> 硬體清查的安全性最佳作法  
+##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-hardware-inventory"></a><a name="BKMK_Security_HardwareInventory"></a> 硬體清查的安全性最佳做法  
  當您要收集來自用戶端的硬體清查資料時，請使用下列安全性最佳做法：  
 
 |安全性最佳作法|詳細資訊|  

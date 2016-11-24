@@ -20,7 +20,7 @@ ms.openlocfilehash: b9e922c526750a04b3b7b7b24106fcb8900e73fa
 
 #  <a name="a-namebkmksumdeploya-deploy-software-updates"></a><a name="BKMK_SUMDeploy"></a> 部署軟體更新  
 
-*適用於：System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
 軟體更新部署階段是部署軟體更新的程序。 不論您如何部署軟體更新，更新通常會新增到軟體更新群組，軟體更新會下載到發佈點，然後更新群組會部署至用戶端。 在您建立部署時，會將相關軟體更新原則傳送至用戶端電腦，然後從發佈點將軟體更新內容檔案下載到用戶端電腦上的本機快取，接著就能從用戶端安裝軟體更新。 網際網路上的用戶端則會從 Microsoft Update 下載內容。  
 

@@ -28,7 +28,7 @@ ms.openlocfilehash: ce7bb5194b6cca7ab0fa3829655c4b51f6725097
 
 本文包含 System Center Configuration Manager 中的用戶端以及由 Exchange Server 連接器所管理之行動裝置的安全性與隱私權資訊：  
 
-##  <a name="a-namebkmksecuritycliientsa-security-best-practices-for-clients"></a><a name="BKMK_Security_Cliients"></a> 用戶端的安全性最佳作法  
+##  <a name="a-namebkmksecuritycliientsa-security-best-practices-for-clients"></a><a name="BKMK_Security_Cliients"></a> 用戶端的安全性最佳做法  
  當 Configuration Manager 接受來自執行 Configuration Manager 用戶端之裝置的資料時，可能會引發用戶端攻擊網站的風險。 例如傳送格式錯誤的清查，或者嘗試使網站系統超載。 因此，只能將 Configuration Manager 用戶端部署至您信任的裝置。 此外，使用以下安全性最佳作法有助於保護網站不受 Rogue 或遭盜用的裝置攻擊：  
 
  **使用公開金鑰基礎結構 (PKI) 憑證，以執行 IIS 的站台系統進行用戶端通訊。**  
@@ -146,7 +146,7 @@ ms.openlocfilehash: ce7bb5194b6cca7ab0fa3829655c4b51f6725097
 
  此用戶端設定允許 Configuration Manager 用戶端執行未簽署的 PowerShell 指令碼，如此可能會造成用戶端電腦執行惡意程式。 如果您必須選取此選項，請使用自訂用戶端設定，並只將其指派至必須執行未簽署之 PowerShell 指令碼的用戶端電腦。  
 
-##  <a name="a-namebkmkmobilea-security-best-practices-for-mobile-devices"></a><a name="bkmk_mobile"></a> 行動裝置的安全性最佳作法  
+##  <a name="a-namebkmkmobilea-security-best-practices-for-mobile-devices"></a><a name="bkmk_mobile"></a> 行動裝置的安全性最佳做法  
  **您以 Configuration Manager 註冊且支援網際網路的行動裝置：將註冊 proxy 點安裝在周邊網路，並將註冊點安裝在內部網路**  
 
  此角色隔離有助於保護註冊點不受攻擊。 如果註冊點受到破壞，攻擊者可以取得憑證進行驗證，並且盜取註冊行動裝置的使用者認證。  
@@ -199,7 +199,7 @@ ms.openlocfilehash: ce7bb5194b6cca7ab0fa3829655c4b51f6725097
 
  如需 Exchange Server 連接器所需之基本 Cmdlet 的清單，請參閱[使用 System Center Configuration Manager 和 Exchange 管理行動裝置](../../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)。  
 
-##  <a name="a-namebkmkmacsa-security-best-practices-for-macs"></a><a name="bkmk_macs"></a> Mac 的安全性最佳作法  
+##  <a name="a-namebkmkmacsa-security-best-practices-for-macs"></a><a name="bkmk_macs"></a> Mac 的安全性最佳做法  
  **對於 Mac 電腦：儲存和存取來自安全位置的用戶端來源檔案。**  
 
  Configuration Manager 不會確認用戶端來源檔案是否已遭竄改。 請從信任的來源下載這些檔案並且以安全的方式儲存和存取。  

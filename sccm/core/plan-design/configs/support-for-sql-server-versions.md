@@ -152,7 +152,7 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
 
 -   次要網站  
 
-##  <a name="a-namebkmksqlconfiga-required-configurations-for-sql-server"></a><a name="bkmk_SQLConfig"></a> 必要的 SQL Server 設定  
+##  <a name="a-namebkmksqlconfiga-required-configurations-for-sql-server"></a><a name="bkmk_SQLConfig"></a> 必要的 SQL Server 組態  
  以下是您用於站台資料庫的所有 SQL Server 安裝 (包括 SQL Server Express) 的必要設定。 如果 Configuration Manager 在安裝次要站台時一併安裝 SQL Server Express，就會自動為您進行這些設定。  
 
  **SQL Server 架構版本：**  
@@ -195,7 +195,7 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
 
   站台資料庫會要求啟用 SQL Server 通用語言執行平台 (CLR)。 當 Configuration Manager 安裝時，會自動啟用此功能。 如需 CLR 的詳細資訊，請參閱 [SQL Server CLR 整合簡介](https://msdn.microsoft.com/library/ms254498\(v=vs.110\).aspx)  
 
-##  <a name="a-namebkmkoptionala-optional-configurations-for-sql-server"></a><a name="bkmk_optional"></a> 選擇性的 SQL Server 設定  
+##  <a name="a-namebkmkoptionala-optional-configurations-for-sql-server"></a><a name="bkmk_optional"></a> 選擇性的 SQL Server 組態  
  下列組態可選擇性用於使用完整 SQL Server 安裝的各個資料庫。  
 
  **SQL Server 服務：**  
