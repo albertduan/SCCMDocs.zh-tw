@@ -103,7 +103,7 @@ LTSB 支援使用下列 Windows 電腦作業系統作為站台系統。  每個�
 
 -   所有 Windows Embedded 裝置都不支援應用程式類別目錄。  
 
--   您必須先在內嵌裝置上安裝 Microsoft Windows WMI 指令碼封裝，才能在以 Windows XP 為基礎的 Windows Embedded 裝置上監視偵測到的惡意程式碼。 使用 Windows Embedded Target Designer 安裝這個封裝。 **WBEMDISP.DLL** 和 **WBEMDISP.TLB** 檔案必須存在，且在內嵌裝置上的資料夾 **%windir%\System32\WBEM** 中註冊，以確保會報告偵測到的惡意程式碼。  
+-   您必須先在內嵌裝置上安裝 Microsoft Windows WMI 指令碼封裝，才能在以 Windows XP 為基礎的 Windows Embedded 裝置上監視偵測到的惡意程式碼。 使用 Windows Embedded Target Designer 安裝這個封裝。 **WBEMDISP.DLL** 和 **WBEMDISP.TLB** 檔案必須存在，且在內嵌裝置的 **%windir%\System32\WBEM** 資料夾中註冊，以確保會報告偵測到的惡意程式碼。  
 
 **支援的作業系統：**  
 -   **Windows 10 Enterprise 2016 LTSB** (x86、x64)  
@@ -122,7 +122,7 @@ LTSB 支援使用下列 Windows 電腦作業系統作為站台系統。  每個�
 
 -   行動裝置用戶端需要 0.78 MB 或儲存空間來安裝用戶端。 行動裝置上的記錄可能需要最多 256 KB 的額外儲存空間。    
 
--   這些行動裝置的功能因平台和用戶端類型而異。 如需 Configuration Manager 針對行動裝置舊版用戶端所支援之管理功能的資訊，請參閱[選擇 System Center Configuration Manager 的裝置管理解決方案](/sccm/core/plan-design/choose-a-device-management-solution)。  
+-   這些行動裝置的功能因平台和用戶端類型而異。 如需 Configuration Manager 針對行動裝置舊版用戶端所支援之管理功能的相關資訊，請參閱[選擇 System Center Configuration Manager 的裝置管理解決方案](/sccm/core/plan-design/choose-a-device-management-solution)。  
 
 **支援的作業系統：**  
 
@@ -175,94 +175,94 @@ Linux 和 UNIX 作業系統支援僅限本節所列的作業系統，並不包�
 
 |版本|檔案|  
 |-|-|  
-|5.3 版 (Power)|ccm-Aix53ppc.&lt;版本\>.tar|  
-|6.1 版 (Power)|ccm-Aix61ppc.&lt;版本\>.tar|  
-|7.1 版 (Power)|ccm-Aix71ppc.&lt;版本\>.tar|  
+|5.3 版 (Power)|ccm-Aix53ppc.&lt;組建\>.tar|  
+|6.1 版 (Power)|ccm-Aix61ppc.&lt;組建\>.tar|  
+|7.1 版 (Power)|ccm-Aix71ppc.&lt;組建\>.tar|  
 
 ### <a name="centos"></a>CentOS  
 
 |版本|檔案|  
 |-|-|  
-|第 5 版 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 5 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
-|第 6 版 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 6 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
-|第 7 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
+|第 5 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 5 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
+|第 6 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 6 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
+|第 7 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
 
 ### <a name="debian"></a>Debian  
 
 |版本|檔案|    
 |-|-|  
-|第 5 版 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 5 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
-|第 6 版 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 6 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
-|第 7 版 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 7 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
-|第 8 版 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 8 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
+|第 5 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 5 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
+|第 6 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 6 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
+|第 7 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 7 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
+|第 8 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 8 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
 
 ### <a name="hp-ux"></a>HP-UX  
 
 |版本|檔案|  
 |-|-|  
-|11iv2 版 IA64|ccm-HpuxB.11.23i64.&lt;版本\>.tar|  
-|11iv2 版 PA-RISC|ccm-HpuxB.11.23PA.&lt;版本\>.tar|  
-|11iv3 版 IA64|ccm-HpuxB.11.31i64.&lt;版本\>.tar|  
-|11iv3 版 PA-RISC|ccm-HpuxB.11.31PA.&lt;版本\>.tar|  
+|11iv2 版 IA64|ccm-HpuxB.11.23i64.&lt;組建\>.tar|  
+|11iv2 版 PA-RISC|ccm-HpuxB.11.23PA.&lt;組建\>.tar|  
+|11iv3 版 IA64|ccm-HpuxB.11.31i64.&lt;組建\>.tar|  
+|11iv3 版 PA-RISC|ccm-HpuxB.11.31PA.&lt;組建\>.tar|  
 
 ### <a name="oracle-linux"></a>Oracle Linux  
 
 |版本|檔案|    
 |-|-|  
-|第 5 版 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 5 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
-|第 6 版 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 6 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
-|第 7 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
+|第 5 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 5 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
+|第 6 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 6 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
+|第 7 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
 
 ### <a name="red-hat-enterprise-linux-rhel"></a>Red Hat Enterprise Linux (RHEL)  
 
 |版本|檔案|  
 |-|-|  
-|第 4 版 x86|ccm-RHEL4x86.&lt;版本\>.tar|  
-|第 4 版 x64|ccm-RHEL4x64.&lt;版本\>.tar|  
-|第 5 版 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 5 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
-|第 6 版 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 6 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
-|第 7 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
+|第 4 版 x86|ccm-RHEL4x86.&lt;組建\>.tar|  
+|第 4 版 x64|ccm-RHEL4x64.&lt;組建\>.tar|  
+|第 5 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 5 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
+|第 6 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 6 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
+|第 7 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
 
 ### <a name="solaris"></a>Solaris  
 
 |版本|檔案|   
 |-|-|  
-|第 9 版 SPARC|ccm-Sol9sparc.&lt;版本\>.tar|  
-|第 10 版 x86|ccm-Sol10x86.&lt;版本\>.tar|  
-|第 10 版 SPARC|ccm-Sol10sparc.&lt;版本\>.tar|  
-|第 11 版 x86|ccm-Sol11x86.&lt;版本\>.tar|  
-|第 11 版 SPARC|ccm-Sol11sparc.&lt;版本\>.tar|  
+|第 9 版 SPARC|ccm-Sol9sparc.&lt;組建\>.tar|  
+|第 10 版 x86|ccm-Sol10x86.&lt;組建\>.tar|  
+|第 10 版 SPARC|ccm-Sol10sparc.&lt;組建\>.tar|  
+|第 11 版 x86|ccm-Sol11x86.&lt;組建\>.tar|  
+|第 11 版 SPARC|ccm-Sol11sparc.&lt;組建\>.tar|  
 
 ### <a name="suse-linux-enterprise-server-sles"></a>SUSE Linux Enterprise Server (SLES)  
 
 |版本|檔案|  
 |-|-|  
-|第 9 版 x86|ccm-SLES9x86.&lt;版本\>.tar|  
-|第 10 版 SP1 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 10 版 SP1 x86|ccm-Universalx64.&lt;版本\>.tar|  
-|第 11 版 SP1 x86|ccm-Universalx86.&lt;版本\>.tar|  
-|第 11 版 SP1 x64|ccm-Universalx64.&lt;版本\>.tar|  
-|第 12 版 x64|ccm-Universalx64.&lt;版本\>.tar|  
+|第 9 版 x86|ccm-SLES9x86.&lt;組建\>.tar|  
+|第 10 版 SP1 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 10 版 SP1 x86|ccm-Universalx64.&lt;組建\>.tar|  
+|第 11 版 SP1 x86|ccm-Universalx86.&lt;組建\>.tar|  
+|第 11 版 SP1 x64|ccm-Universalx64.&lt;組建\>.tar|  
+|第 12 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
 
 ### <a name="ubuntu"></a>Ubuntu  
 
 |版本|檔案|    
 |-|-|  
-|10.04 版 LTS x86|ccm-Universalx86.&lt;版本\>.tar|  
-|10.04 版 LTS x64|ccm-Universalx64.&lt;版本\>.tar|  
-|12.04 版 LTS x86|ccm-Universalx86.&lt;版本\>.tar|  
-|12.04 版 LTS x64|ccm-Universalx64.&lt;版本\>.tar|  
-|14.04 版 LTS x86|ccm-Universalx86.&lt;版本\>.tar|  
+|10.04 版 LTS x86|ccm-Universalx86.&lt;組建\>.tar|  
+|10.04 版 LTS x64|ccm-Universalx64.&lt;組建\>.tar|  
+|12.04 版 LTS x86|ccm-Universalx86.&lt;組建\>.tar|  
+|12.04 版 LTS x64|ccm-Universalx64.&lt;組建\>.tar|  
+|14.04 版 LTS x86|ccm-Universalx86.&lt;組建\>.tar|  
 |14.04 版 LTS x64|ccm-Universalx64.&lt;版本\>.tar|  
 
 ### <a name="exchange-server-connector"></a>Exchange Server 連接器
