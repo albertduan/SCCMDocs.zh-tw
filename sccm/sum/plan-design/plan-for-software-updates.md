@@ -84,7 +84,7 @@ ms.openlocfilehash: 69f2c9c3c098013679e12d8578a780130adb94be
 
 -   如果掃描程序已啟動，但用戶端在掃描完成前關機，此情況不會視為掃描失敗，也不會將此狀況計為四次重試的計數中。  
 
-###  <a name="a-namebkmkmanuallyswitchsupsamanually-switch-clients-to-a-new-software-update-point"></a><a name="BKMK_ManuallySwitchSUPs"></a> 手動將用戶端切換到新軟體更新點
+###  <a name="a-namebkmkmanuallyswitchsupsamanually-switch-clients-to-a-new-software-update-point"></a><a name="BKMK_ManuallySwitchSUPs"></a>手動將用戶端切換到新軟體更新點
 從 Configuration Manager 版本 1606 開始，您可以啟用讓 Configuration Manager 用戶端在主動式軟體更新點發生問題時切換到新軟體更新點的選項。 只有在用戶端從管理點接收到多個軟體更新點時，此選項才會導致變更。  
 
 在裝置集合或一組選取的裝置上啟用此選項。 啟用之後，用戶端會在下次掃描時尋找另一個軟體更新點。 根據 WSUS 組態設定 (更新分類、產品、軟體更新點是否共用 WSUS 資料庫等)，切換到新軟體更新點將會產生額外的網路流量。 因此，您應該只在必要時才使用此選項。  
@@ -252,7 +252,7 @@ ms.openlocfilehash: 69f2c9c3c098013679e12d8578a780130adb94be
 > [!IMPORTANT]  
 >  Configuration Manager 會儲存一份產品清單，以及您可以在第一次安裝軟體更新點時從中選擇的產品系列。 在您完成軟體更新同步處理之前，可能無法選取在 Configuration Manager 發行後發行的產品和產品系列，因為同步處理會更新可供您選擇的可用產品和產品系列清單。 最佳作法是在您第一次同步處理軟體更新之前清除所有產品。 在初始同步處理後，從 [軟體更新點元件內容] 選取產品，然後重新初始同步處理。  
 
-###  <a name="a-namebkmksupersedencerulesasupersedence-rules"></a><a name="BKMK_SupersedenceRules"></a> 取代規則  
+###  <a name="a-namebkmksupersedencerulesasupersedence-rules"></a><a name="BKMK_SupersedenceRules"></a>取代規則  
  通常，取代其他軟體更新的軟體更新，會執行下列一個或多個動作：  
 
 -   增強、改進或更新由一個或多個先前發行之更新所提供的修正程式。  
