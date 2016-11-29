@@ -145,7 +145,7 @@ ms.openlocfilehash: 7d1f55786a42650395fcb66ee4917434feecb630
 
     -   **詳細資料：** 指定安裝程式必要條件檔案的路徑。 根據 **PrerequisiteComp** 值而定，安裝程式會使用此路徑儲存下載的檔案或尋找之前下載的檔案。  
 
-##  <a name="a-namebkmkunattendeda-unattended-setup-script-file-keys"></a><a name="bkmk_Unattended"></a> 自動的安裝程式指令碼檔索引鍵  
+##  <a name="a-namebkmkunattendeda-unattended-setup-script-file-keys"></a><a name="bkmk_Unattended"></a> 自動安裝程式指令碼檔索引鍵  
  使用以下各節有助於建立自動安裝的指令碼。 下表列出可用的安裝指令碼索引鍵、其對應的值、是否為必要、用於何種安裝類型，以及該索引鍵的簡單說明。  
 
 ### <a name="unattended-install-for-a-central-administration-site"></a>管理中心網站的自動安裝  
