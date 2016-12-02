@@ -66,7 +66,7 @@ ms.openlocfilehash: aeeb902fad7444534cafa7f9cb984ce8764471b0
 
     -   此站台系統角色的每個執行個體支援由階層所支援的用戶端數目上限。  
 
-## <a name="a-namebkmkrolesa-site-system-roles"></a><a name="bkmk_roles"></a> 站台系統角色    
+## <a name="a-namebkmkrolesa-site-system-roles"></a><a name="bkmk_roles"></a> Site system roles    
 
 **應用程式類別目錄 Web 服務點：**  
 

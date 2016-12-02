@@ -24,7 +24,7 @@ ms.openlocfilehash: 2b73a59023aa2658c0920beab5cf7706e40601c9
 ---
 # <a name="planning-for-client-deployment-to-windows-embedded-devices-in-system-center-configuration-manager"></a>規劃將用戶端部署至 System Center Configuration Manager 中的Windows Embedded 裝置
 
-*適用於：System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
 <a name="BKMK_DeployClientEmbedded"></a> 如果您的 Windows Embedded 裝置不包含 System Center Configuration Manager 用戶端，且該裝置符合必要的相依性，您可以使用任何一種用戶端安裝方法。 如內嵌裝置支援寫入篩選器，您必須先停用這些篩選器再安裝用戶端，等到用戶端安裝完畢並指派至網站後，再度重新啟用篩選器。  
 

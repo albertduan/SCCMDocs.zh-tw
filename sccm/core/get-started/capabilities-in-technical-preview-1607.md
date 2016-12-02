@@ -29,7 +29,7 @@ ms.openlocfilehash: 4d2a9f9b32b898bfe549f2613689c8dbfd22e339
 
 **以下是您可以使用此版本試用的新功能。**  
 
-## <a name="a-namedmpeditionaimprovements-to-the-windows-10-edition-upgrade-policy"></a><a name="dmp_edition"></a>Windows 10 版本升級原則的改進
+## <a name="a-namedmpeditionaimprovements-to-the-windows-10-edition-upgrade-policy"></a><a name="dmp_edition"></a>改進 Windows 10 版本升級原則
 
 在此版本中，已對此原則做了下列改進：
 

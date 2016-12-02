@@ -35,7 +35,7 @@ System Center Configuration Manager 1606 更新，是執行版本為 1511 或 16
 
 
 
-## <a name="a-nameupdatesandservicingaupdates-and-servicing"></a><a name="updatesandservicing"></a> 更新及服務
+## <a name="a-nameupdatesandservicingaupdates-and-servicing"></a><a name="updatesandservicing"></a>更新及服務
 
 ### <a name="changes-for-the-updates-and-servicing-node"></a>更新和服務節點有所變更
 Configuration Manager 主控台的更新與服務變更如下︰
@@ -47,14 +47,14 @@ Configuration Manager 主控台的更新與服務變更如下︰
     在 [監視] 工作區中，[Site Servicing status] (站台服務狀態) 節點已重新命名為 [更新與服務狀態]。
 - **更多安裝狀態：**
 
-    當您檢視站台的更新安裝狀態時，主控台現在會分開顯示下列動作的詳細資料︰
+    當您檢視站台的更新安裝狀態時，主控台現在會分開顯示下列動作的詳細資料：
     - **下載** (僅適用於服務連接點站台系統角色安裝所在的頂層站台)
     - **複寫**
     - **必要條件檢查**
     - **安裝**
 
   此外，現在各步驟都有更詳細的資訊，包括在哪一個記錄檔中可以檢視詳細資訊。  
--   **重試先決條件失敗的新選項︰**
+-   **新增在先決條件失敗時重試的選項︰**
 
     在 [管理] 和 [監視] 工作區的 [更新與服務] 節點，其功能區上皆包含名為 [忽略先決條件警告] 的新按鈕。
 
@@ -64,7 +64,7 @@ Configuration Manager 主控台的更新與服務變更如下︰
 
 - **更整潔的更新檢視畫面：**
 
-    當您檢視 [更新與服務] 節點時，您現在只會看到最近安裝的更新，以及可供安裝的任何新的更新。 若要檢視先前安裝的更新，請按一下功能區顯示的新 [記錄] 按鈕。  
+    當您檢視 [更新與服務] 節點時，您現在只會看到最近安裝的更新，以及可供安裝之任何新的更新。 若要檢視先前安裝的更新，請按一下功能區顯示的新 [歷程記錄] 按鈕。  
 
 -   **進入生產階段前已重新命名的選項︰**
 
@@ -84,7 +84,7 @@ Configuration Manager 主控台的更新與服務變更如下︰
 ## <a name="a-nameaccessibilitya-accessibility"></a><a name="accessibility"></a> 協助工具
 自 1606 版開始，若要瀏覽到工作區的不同節點，您可以輸入節點名稱的第一個字母。 每個按鍵動作都會游標移至以該字母開頭的下一個節點，而且在使用螢幕助讀程式時，助讀程式會讀出該節點的名稱。 如需協助工具選項的詳細資訊，請參閱 [System Center Configuration Manager 的協助工具功能](../../../core/understand/accessibility-features.md)。
 
-## <a name="a-nameadministrationaadministration"></a><a name="administration"></a> 管理
+## <a name="a-nameadministrationaadministration"></a><a name="administration"></a>管理
 Configuration Manager 主控台的管理變更如下︰
 ### <a name="oms-connector"></a>OMS 連接器
 
@@ -210,7 +210,7 @@ Endpoint Protection 可協助管理及監視 Windows Defender 進階威脅防護
 
 ### <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>使用 IMEI 或 iOS 序號預先宣告裝置
 
-您可以透過匯入國際站移動設備識別碼 (IMEI) 號碼或 iOS 序號，識別屬公司擁有的裝置。 您可以上傳一個包含裝置 IMEI 編號的逗號分隔值 (.csv) 檔案，也可以手動輸入裝置資訊。 匯入的資訊將會設定裝置清單中註冊為**公司**之裝置的**擁有權**。 每一位存取服務的使用者還是需要 Intune 授權。
+您可以透過匯入國際站移動設備識別碼 (IMEI) 號碼或 iOS 序號，識別公司擁有的裝置。 您可以上傳一個包含裝置 IMEI 編號的逗號分隔值 (.csv) 檔案，也可以手動輸入裝置資訊。 匯入的資訊將會設定裝置清單中註冊為**公司**之裝置的**擁有權**。 每一位存取服務的使用者還是需要 Intune 授權。
 
 如需詳細資訊，請參閱[使用 IMEI 或 iOS 序號預先宣告裝置](../../../mdm/deploy-use/predeclare-devices-with-hardware-id.md)。
 

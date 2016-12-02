@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d22f29ad5c5d193e387bd172899902cc1604c8a0
+ms.sourcegitcommit: 783fb4d61aab83ad64b9cec332e90d6c9de59f47
+ms.openlocfilehash: b1ed3011356a794b7b0913a1c8f189230d8957b2
 
 
 ---
@@ -27,6 +27,9 @@ ms.openlocfilehash: d22f29ad5c5d193e387bd172899902cc1604c8a0
 *適用於：System Center Configuration Manager (最新分支)*
 
 在安裝第一個新的 System Center Configuration Manager 階層站台前，您應該了解可用的 Configuration Manager 拓撲、可用的站台類型及彼此的關聯性，以及每個站台類型提供的管理範圍。 然後，在考量可減少需要安裝之站台數目的內容管理選項之後，您可以有效率地提供您目前業務需求的拓撲規劃，稍後再擴充以管理未來的成長。  
+
+> [!NOTE]
+> 在規劃 Configuration Manager 的新安裝時，請注意[版本資訊]( /sccm/core/servers/deploy/install/release-notes)，其中詳細說明使用中版本目前的問題。 此版本資訊適用於 Configuration Manager 的所有分支。  不過，當您使用 [Technical Preview 分支]( /sccm/core/get-started/technical-preview)時，您會在每一版的 Technical Preview 文件中發現只有該分支才會出現的問題。  
 
 ##  <a name="a-namebkmktopologya-hierarchy-topology"></a><a name="bkmk_topology"></a> 階層拓樸  
  階層拓撲從單一獨立主要站台與管理中心網站之階層的頂層 (頂層) 站台連線的主要和次要站台的群組。    
@@ -80,7 +83,7 @@ ms.openlocfilehash: d22f29ad5c5d193e387bd172899902cc1604c8a0
 
 -   您可以設定檔案複寫和資料庫複寫，以控制階層中各站台間的通訊。 這包括排程站台資料的資料庫複寫，以及管理站台間檔案資料傳輸的頻寬。  
 
-##  <a name="a-namebkmkchoosepriimarya-determine-when-to-use-a-primary-site"></a><a name="BKMK_ChoosePriimary"></a> 判斷何時使用主要站台  
+##  <a name="a-namebkmkchoosepriimarya-determine-when-to-use-a-primary-site"></a><a name="BKMK_ChoosePriimary"></a> 判斷何時使用主要站台。  
  使用主要站台管理用戶端。 您可以安裝主要站台，作為管理中心網站底下的子主要站台，或是作為新階層的第一個站台。 安裝成階層中第一個站台的主要站台會建立獨立主要站台。 子主要站台和獨立主要站台都支援以次要站台作為主要站台的子站台。  
 
  針對下列任何一種理由，考慮使用主要站台：  
@@ -106,7 +109,7 @@ ms.openlocfilehash: d22f29ad5c5d193e387bd172899902cc1604c8a0
 
 -   主要站台使用資料庫複寫，直接與其管理中心網站進行通訊 (當安裝新的站台時自動設定)。  
 
-##  <a name="a-namebkmkchoosesecondarya-determine-when-to-use-a-secondary-site"></a><a name="BKMK_ChooseSecondary"></a> 判斷何時使用次要站台  
+##  <a name="a-namebkmkchoosesecondarya-determine-when-to-use-a-secondary-site"></a><a name="BKMK_ChooseSecondary"></a> 判斷何時使用次要站台。  
  使用次要站台管理在低頻寬網路上部署內容與用戶端資料的傳輸。  
 
  您可經由管理中心網站或次要站台的直接父主要站台來管理次要站台。 次要站台必須連結到主要站台，並且您無法在還未解除安裝的狀況下，將其移至不同的父站台，然後重新安裝為新主要站台下的子站台。 不過，您可以在兩個對等次要站台間路由內容，協助管理以檔案為基礎的部署內容複寫。 為將用戶端資料移轉到主要站台上，次要站台會使用以檔案為基礎的複寫。 次要站台也會使用資料庫複寫，以與其父主要站台進行通訊。  
@@ -115,9 +118,9 @@ ms.openlocfilehash: d22f29ad5c5d193e387bd172899902cc1604c8a0
 
 -   您不需要有針對系統管理使用者的連線區域點。  
 
--   您必須管理將部署內容移轉到階層中較低的站台。  
+-   您必須管理將部署內容移轉到階層中較低的站台  
 
--   您必須管理傳送到階層中較高站台的用戶端資訊。  
+-   您必須管理傳送到階層中較高站台的用戶端資訊  
 
  如果您不想安裝次要站台，又有用戶端位於遠端位置，請考慮使用 Windows BranchCache，或安裝用來進行頻寬控制與排程的發佈點。 您可以搭配或不搭配次要站台，使用這些內容管理選項，不過它們可以幫助您減少必須安裝的站台和伺服器數量。 如需 Configuration Manager 中內容管理選項的資訊，請參閱[判斷何時要使用內容管理選項](#BKMK_ChooseSecondaryorDP)。  
 
@@ -134,7 +137,7 @@ ms.openlocfilehash: d22f29ad5c5d193e387bd172899902cc1604c8a0
 
 -   安裝次要站台時會自動部署位於次要站台伺服器上的管理點和發佈點。  
 
-##  <a name="a-namebkmkchoosesecondaryordpa-determine-when-to-use-content-management-options"></a><a name="BKMK_ChooseSecondaryorDP"></a> 判斷何時要使用內容管理選項  
+##  <a name="a-namebkmkchoosesecondaryordpa-determine-when-to-use-content-management-options"></a><a name="BKMK_ChooseSecondaryorDP"></a> 判斷何時要使用內容管理選項。  
  如果您有用戶端位於遠端位置，請考慮使用一個或多個內容管理選項，不要使用主要或次要站台。 在您使用 Windows BRanchCache、設定頻寬控制的發佈點，或手動將內容複製到發佈點 (預先設置內容) 時，您經常可以移除安裝一個站台的需求。  
 
 

@@ -194,7 +194,7 @@ ms.openlocfilehash: be158c1d893a1c1aae19c6cf2fd3a678a59d4f9e
 
 -   在 [部署軟體精靈] 的 [應用程式設定原則] 頁面中，請將您建立的應用程式設定原則與應用程式中的相容部署類型建立關聯。  
 
-##  <a name="a-namebkmkcompliance1601a-improvements-to-compliance-settings"></a><a name="bkmk_compliance1601"></a> 相容性設定的增強功能  
+##  <a name="a-namebkmkcompliance1601a-improvements-to-compliance-settings"></a><a name="bkmk_compliance1601"></a> 合規性設定的增強功能  
  在 1601 Technical Preview 中，我們已新增下列功能的支援：  
 
 ### <a name="microsoft-edge-browser-settings"></a>Microsoft Edge 瀏覽器設定  

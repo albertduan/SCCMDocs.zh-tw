@@ -236,7 +236,7 @@ ms.openlocfilehash: 4d30cd85cb59f8f27704979074470bb06310054b
  **徵兆**  
 
  您收到訊息，通知您「**Windows Defender 或 **  
- **Endpoint Protection 並未監視電腦，因為程式的服務已停止。您應該立即重新啟動該服務。**」  
+ **Endpoint Protection 並未監視電腦，因為程式的服務已停止。您應該立即重新啟動該服務。**  
 
  **解決方案**  
 

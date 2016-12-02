@@ -71,7 +71,7 @@ ms.openlocfilehash: 4616ba44485e4c528297441f1cf99e25add2dcf3
 
  如需詳細步驟，請參閱 [透過 System Center Configuration Manager Technical Preview 管理 Office 365 用戶端更新](https://technet.microsoft.com/library/mt628083.aspx)。  
 
-##  <a name="a-namebkmkalwasyona-support-for-sql-server-alwayson-for-highly-available-databases"></a><a name="BKMK_AlwasyOn"></a> 支援 SQL Server AlwaysOn 高可用性資料庫  
+##  <a name="a-namebkmkalwasyona-support-for-sql-server-alwayson-for-highly-available-databases"></a><a name="BKMK_AlwasyOn"></a> 支援適用於高可用性資料庫的 SQL Server AlwaysOn  
  Configuration Manager 現在支援使用 SQL Server AlwaysOn 可用性群組來裝載站台資料庫。  當您安裝新的站台時，您可以指示安裝程式使用可用性群組，而不是一般 SQL Server 執行個體。  
 
 > [!NOTE]  

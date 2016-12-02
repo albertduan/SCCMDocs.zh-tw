@@ -44,7 +44,7 @@ ms.openlocfilehash: cd03ddda0a39704a5715f7ed8d620daaefb57653
 
  本主題中的下列案例提供一些範例步驟，協助您部署及監視組織中的 Configuration Manager 安全性軟體更新。
 
-##  <a name="a-namebkmkstep1a-step-1-create-a-software-update-group-for-yearly-compliance"></a><a name="BKMK_Step1"></a> 步驟 1：建立年度相容性軟體更新群組  
+##  <a name="a-namebkmkstep1a-step-1-create-a-software-update-group-for-yearly-compliance"></a><a name="BKMK_Step1"></a> 步驟 1：建立年度合規性軟體更新群組  
  John 會建立一個軟體更新群組，用於監視 2016 年發行之所有安全性軟體更新的相容性。 他會執行下表中的步驟。  
 
 |程序|參考|  
@@ -75,7 +75,7 @@ ms.openlocfilehash: cd03ddda0a39704a5715f7ed8d620daaefb57653
 |John 會確認測試部署是否順利完成。|[軟體更新部署狀態](monitor-software-updates.md#BKMK_SUDeployStatus)|  
 |John 會將兩個部署更新為包含生產工作站和伺服器的新集合。|沒有其他資訊|  
 
-##  <a name="a-namebkmkstep5a-step-5-monitor-compliance-for-deployed-software-updates"></a><a name="BKMK_Step5"></a> 步驟 5：監視所部署之軟體更新的相容性  
+##  <a name="a-namebkmkstep5a-step-5-monitor-compliance-for-deployed-software-updates"></a><a name="BKMK_Step5"></a> 步驟 5：監視所部署之軟體更新的合規性  
  John 會監視軟體更新部署的相容性。 他會執行下表中的步驟。  
 
 |程序|參考|  

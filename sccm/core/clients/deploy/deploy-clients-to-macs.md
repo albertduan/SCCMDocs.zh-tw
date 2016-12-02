@@ -357,7 +357,7 @@ ms.openlocfilehash: eae9e76085a95cb09fe01a32fd4b57294bc1cc20
 >   
 >  CmDiagnostics 收集的資訊會新增至 ZIP 檔案，該檔案儲存於電腦桌面上且命名為 cmdiag-<主機名稱\>**-**<日期和時間\>.zip。  
 
-####  <a name="a-namebkmkenrollr2a-to-enroll-the-client-by-using-the-mac-computer-enrollment-wizard"></a><a name="BKMK_EnrollR2"></a> 使用 Mac [電腦註冊精靈] 註冊用戶端  
+####  <a name="a-namebkmkenrollr2a-to-enroll-the-client-by-using-the-mac-computer-enrollment-wizard"></a><a name="BKMK_EnrollR2"></a> To enroll the client by using the Mac Computer Enrollment Wizard  
 
 1.  在完成安裝用戶端後，[電腦註冊精靈] 便會開啟。 按 [下一步]  以繼續歡迎頁面。  
 
@@ -383,7 +383,7 @@ ms.openlocfilehash: eae9e76085a95cb09fe01a32fd4b57294bc1cc20
 
 3.  按 [下一步]  以繼續，然後完成精靈。  
 
-##  <a name="a-nameuninstallmacclienta-uninstalling-the-mac-client"></a><a name="uninstallMacClient"></a> 解除安裝 Mac 用戶端  
+##  <a name="a-nameuninstallmacclienta-uninstalling-the-mac-client"></a><a name="uninstallMacClient"></a> Uninstalling the Mac client  
  若要解除安裝 Mac 用戶端，請使用您從網路下載之 Mac 用戶端檔案隨附的 CMUninstall 指令檔。 利用下列程序，協助您從 Mac 電腦解除安裝 Configuration Manager 用戶端。  
 
 #### <a name="to-uninstall-the-mac-client"></a>解除安裝 Mac 用戶端  
@@ -399,14 +399,14 @@ ms.openlocfilehash: eae9e76085a95cb09fe01a32fd4b57294bc1cc20
 
 3.  如有必要，您可以手動移除 Configuration Manager 所使用的用戶端驗證憑證，或者予以撤銷。 CMUnistall 不會移除或撤銷此憑證。  
 
-##  <a name="a-namebkmkrenewa-renewing-the-mac-client-certificate"></a><a name="BKMK_Renew"></a> 更新 Mac 用戶端憑證  
+##  <a name="a-namebkmkrenewa-renewing-the-mac-client-certificate"></a><a name="BKMK_Renew"></a> Renewing the Mac client certificate  
  請使用下列其中一種方法更新 Mac 用戶端憑證：  
 
 -   [Renewing the Mac client certificate by using the Renew Certificate Wizard](#BKMK_UI)  
 
 -   [Renewing the Mac client certificate manually](#BKMK_Man)  
 
-###  <a name="a-namebkmkuia-renewing-the-mac-client-certificate-by-using-the-renew-certificate-wizard"></a><a name="BKMK_UI"></a> 使用更新憑證精靈更新 Mac 用戶端憑證  
+###  <a name="a-namebkmkuia-renewing-the-mac-client-certificate-by-using-the-renew-certificate-wizard"></a><a name="BKMK_UI"></a> Renewing the Mac client certificate by using the Renew Certificate Wizard  
  請依照下列程序來設定並使用 Configuration Manager 中的 [更新憑證精靈]。  
 
 ##### <a name="to-renew-the-mac-client-certificate-by-using-the-renew-certificate-wizard"></a>使用更新憑證精靈更新 Mac 用戶端憑證  
@@ -447,7 +447,7 @@ ms.openlocfilehash: eae9e76085a95cb09fe01a32fd4b57294bc1cc20
     > [!NOTE]  
     >  如果精靈沒有開啟，或是如果您意外關閉精靈，請從 [Configuration Manager]  喜好設定頁面按一下 [更新]  ，開啟精靈。  
 
-###  <a name="a-namebkmkmana-renewing-the-mac-client-certificate-manually"></a><a name="BKMK_Man"></a> 手動更新 Mac 用戶端憑證  
+###  <a name="a-namebkmkmana-renewing-the-mac-client-certificate-manually"></a><a name="BKMK_Man"></a> Renewing the Mac client certificate manually  
  Mac 用戶端憑證的一般有效期為 1 年。 Configuration Manager 不會自動更新在註冊期間所要求的使用者憑證，因此您必須使用下列程序來手動更新憑證。  
 
 > [!IMPORTANT]  
@@ -543,7 +543,7 @@ ms.openlocfilehash: eae9e76085a95cb09fe01a32fd4b57294bc1cc20
 
 17. 重新啟動 Mac 電腦。  
 
-##  <a name="a-namebkmkmanualcertifcateinstallationa-use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager"></a><a name="BKMK_ManualCertifcateInstallation"></a> 使用獨立於 Configuration Manager 的憑證要求和安裝方法  
+##  <a name="a-namebkmkmanualcertifcateinstallationa-use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager"></a><a name="BKMK_ManualCertifcateInstallation"></a> Use a certificate request and installation method that is independent from Configuration Manager  
  若不使用 Configuration Manager 註冊，而選擇在 Configuration Manager 以外個別要求並安裝用戶端憑證，所需的設定步驟可能稍有不同︰  
 
 1.  執行步驟 1、2、4、6 (選用) 和 8。  

@@ -35,7 +35,7 @@ ms.openlocfilehash: 92a08908f284abb02ce8000122b0839c474616d7
 
 如需為遠端發佈點設定排程及節流設定的詳細資訊，請參閱 [Install and configure distribution points for System Center Configuration Manager](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points) (為 System Center Configuration Manager 安裝及設定發佈點)。  
 
-##  <a name="a-namebkmkprestagingcontentaprestaged-content"></a><a name="BKMK_PrestagingContent"></a> 預先設置的內容  
+##  <a name="a-namebkmkprestagingcontentaprestaged-content"></a><a name="BKMK_PrestagingContent"></a>預先設置的內容  
  您可以預先設置內容，先將內容檔加入站台伺服器或發佈點上的內容庫，然後再發佈該內容。  
 
 -   因為內容檔已經存在於內容庫中，所以當您發佈內容時，就不會透過網路傳送。  

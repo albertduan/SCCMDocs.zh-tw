@@ -6,8 +6,7 @@
 
 # [規劃和設計](plan-design/prerequisites-for-certificate-profiles.md)
 ## [憑證設定檔必要條件](plan-design/prerequisites-for-certificate-profiles.md)
-### [SCEP 的憑證基礎結構](plan-design/prerequisites-for-certificate-profiles.md)
-### [.PFX 的憑證基礎結構](plan-design/prerequisites-for-certificate-profiles.md)
+### [憑證基礎結構](plan-design/certificate-infrastructure.md)
 ### [憑證設定檔的憑證範本權限](plan-design/planning-for-certificate-template-permissions.md)
 ### [憑證設定檔安全性和隱私權](plan-design/security-and-privacy-for-certificate-profiles.md)
 

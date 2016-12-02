@@ -40,23 +40,23 @@ ms.openlocfilehash: 862291f52d5a1bb34fb5483806972fcf70f158a8
 
 **支援的作業系統：**  
 
--  **Windows Server 2016** - Standard、Datacenter <sup>1</sup>
+-  **Windows Server 2016**  – Standard、Datacenter <sup>1</sup>
   - 從具有 KB3186654 之 Hotfix 彙總套件的 Configuration Manager 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援 Windows Server 2016。  
 
 
--   **Windows Server 2012 R2** (x64) - Standard、Datacenter <sup>1</sup>    
+-   **Windows Server 2012 R2** (x64) – Standard、Datacenter <sup>1</sup>    
 
 -   **Windows Storage Server 2012 R2** (x64)    
 
--   **Windows Server 2012** (x64) - Standard、Datacenter <sup>1</sup>    
+-   **Windows Server 2012** (x64) – Standard、Datacenter <sup>1</sup>    
 
 -   **Windows Storage Server 2012** (x64)    
 
--   **Windows Server 2008 R2 (含 SP1)** (x64) - Standard、Enterprise、Datacenter <sup>1</sup>    
+-   **Windows Server 2008 R2 (含 SP1)** (x64) – Standard、Enterprise、Datacenter <sup>1</sup>    
 
 -   **Windows Storage Server 2008 R2** (x86、x64) - Workgroup、Standard、Enterprise    
 
--   **Windows Server 2008 (含 SP2)** (x86、x64) - Standard、Enterprise、Datacenter <sup>1</sup>    
+-   **Windows  Server 2008 (含 SP2)** (x86、x64) - Standard、Enterprise、Datacenter <sup>1</sup>    
 
 -   **Windows 10 企業版長期維護** (x86、x64) <sup>3</sup>    
 
@@ -66,7 +66,7 @@ ms.openlocfilehash: 862291f52d5a1bb34fb5483806972fcf70f158a8
 
 -   **Windows 8** (x86、x64) - 專業版、企業版    
 
--   **Windows 7 (含 SP1)** (x86、x64) - 專業版、企業版、旗艦版    
+-   **Windows 7 (含 SP1)** (x86、x64) – 專業版、企業版、旗艦版    
 
 -   **Windows Server 2012 R2 的 Server Core 安裝** (x64) <sup>2</sup>    
 
@@ -295,7 +295,7 @@ ms.openlocfilehash: 862291f52d5a1bb34fb5483806972fcf70f158a8
 |12.04 版 LTS x86|ccm-Universalx86.&lt;組建\>.tar|  
 |12.04 版 LTS x64|ccm-Universalx64.&lt;組建\>.tar|  
 |14.04 版 LTS x86|ccm-Universalx86.&lt;組建\>.tar|  
-|14.04 版 LTS x64|ccm-Universalx64.&lt;組建\>.tar|  
+|14.04 版 LTS x64|ccm-Universalx64.&lt;版本\>.tar|  
 
 ##  <a name="a-namebkmkintuneosa-mobile-devices-enrolled-by-microsoft-intune"></a><a name="bkmk_IntuneOS"></a> 由 Microsoft Intune 註冊的行動裝置  
  如需您整合 Microsoft Intune 與 Configuration Manager 時可以管理之電腦與裝置的相關詳細資訊，請參閱 Microsoft Intune 文件庫中的下列兩個主題：  

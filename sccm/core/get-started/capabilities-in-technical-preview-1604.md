@@ -28,7 +28,7 @@ ms.openlocfilehash: 512bbb1c8f2b4811be7770bda5fa2236a2dc7e06
 
  以下是您可以使用此版本試用的新功能。  
 
-##  <a name="a-namebkmkwindowsvppa-manage-volume-purchased-apps-from-the-windows-store-for-business"></a><a name="BKMK_WindowsVPP"></a> 從商務用 Windows 市集管理大量採購應用程式  
+##  <a name="a-namebkmkwindowsvppa-manage-volume-purchased-apps-from-the-windows-store-for-business"></a><a name="BKMK_WindowsVPP"></a> 從商務用 Windows 市集管理大量購買的應用程式  
  [商務用 Windows 市集](https://www.microsoft.com/en-us/business-store)是您可以在其中為您的組織尋找並個別或大量採購應用程式的地方。 藉由將市集連線到 Configuration Manager，您便可以從 Configuration Manager 主控台管理大量採購應用程式，例如：  
 
 -   您可以將已購買的應用程式清單與 Configuration Manager 進行同步處理  
@@ -146,7 +146,7 @@ ms.openlocfilehash: 512bbb1c8f2b4811be7770bda5fa2236a2dc7e06
     > [!NOTE]  
     >  若要使用 Technical Preview 和單一發佈點來完成這項工作，請針對您所有用戶端的網路連線，將發佈點設定成慢一點。 然後，將內容發佈到單一用戶端。  在該用戶端取得內容之後，您可以將內容發佈到額外的用戶端，這些用戶端應該會先找到本機對等電腦來做為內容來源，然後才使用從用戶端位置被視為太慢的發佈點。  
 
-##  <a name="a-namebkmkpassporta-support-for-passport-for-work-as-a-ksp"></a><a name="bkmk_passport"></a> 支援以 Passport for Work 作為 KSP  
+##  <a name="a-namebkmkpassporta-support-for-passport-for-work-as-a-ksp"></a><a name="bkmk_passport"></a> 對以 Passport for Work 做為 KSP 的支援  
  System Center Configuration Manager 可讓您與 Microsoft Passport for Work 整合，這是一個使用 Active Directory 或 Azure Active Directory 帳戶來取代密碼、智慧卡或虛擬智慧卡的替代登入方法。  
 Passport 可讓您使用使用者筆勢登入，而不使用密碼。 使用者筆勢可能是簡單的 PIN、生物識別驗證 (例如 Windows Hello) 或外部裝置 (例如指紋辨識器)。  
 

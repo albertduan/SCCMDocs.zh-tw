@@ -200,10 +200,10 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 9. 按一下 [儲存]  將報告儲存至報告伺服器。 您可以在 [監視]  工作區的 [報告]  節點中，執行新報告。  
 
-##  <a name="a-namebkmkmanagereportsubscriptionsa-manage-report-subscriptions"></a><a name="BKMK_ManageReportSubscriptions"></a> 管理報表訂閱  
+##  <a name="a-namebkmkmanagereportsubscriptionsa-manage-report-subscriptions"></a><a name="BKMK_ManageReportSubscriptions"></a> 管理報告訂閱  
  SQL Server Reporting Services 中的報告訂閱可讓您設定以電子郵件自動傳遞指定的報告，或依排程的間隔傳遞至檔案共用。 使用 System Center 2012 Configuration Manager 中的 [建立訂閱精靈] 來設定報告訂閱。  
 
-###  <a name="a-namebkmkreportsubscriptionfilesharea-create-a-report-subscription-to-deliver-a-report-to-a-file-share"></a><a name="BKMK_ReportSubscriptionFileShare"></a> 建立報告訂閱將報告傳遞至檔案共用  
+###  <a name="a-namebkmkreportsubscriptionfilesharea-create-a-report-subscription-to-deliver-a-report-to-a-file-share"></a><a name="BKMK_ReportSubscriptionFileShare"></a> 建立報告訂閱，將報告傳遞至檔案共用  
  當您建立報告訂閱將報告傳遞至檔案共用時，報告會以指定的格式複製到您指定的檔案共用。 您一次只能訂閱和要求傳遞一份報告。  
 
  與報告伺服器所裝載和管理的報告不同的是，傳遞至共用資料夾的報告為靜態檔案。 針對報告定義的互動功能對於做為檔案儲存在檔案系統上的報告沒有作用。 互動功能會做為靜態項目呈現。 如果報告包含圖表，則會使用預設呈現方式。 如果報告連結至另一個報告，連結會轉譯為靜態文字。 如果您要在傳遞的報告中保留互動功能，請改用電子郵件傳遞。 如需電子郵件傳遞的詳細資訊，請參閱本主題稍後的 [建立報告訂閱以使用電子郵件傳遞報告](#BKMK_ReportSubscriptionEmail) 章節。  

@@ -28,7 +28,7 @@ ms.openlocfilehash: 1d97e7646adbb02a03b33b5efc56c1658364956e
 
  以下是您可以使用此版本試用的新功能。  
 
-##  <a name="a-namebkmkdevicehealtha-device-health-attestation"></a><a name="bkmk_devicehealth"></a> 裝置健康情況證明  
+##  <a name="a-namebkmkdevicehealtha-device-health-attestation"></a><a name="bkmk_devicehealth"></a> 裝置健全狀況證明  
  從 Technical Preview 1512 開始，系統管理員可以在 Configuration Manager 中檢視 Windows 10 裝置健康情況證明的狀態。  這項功能適用於 Configuration Manager 以及搭配 Microsoft Intune 使用的 Configuration Manager。 系統管理員可透過裝置健全狀況證明，確認該用戶端電腦具有可信任的 BIOS、TPM 以及開機軟體設定。 若要支援裝置健全狀況證明，用戶端裝置必須執行 Win10，同時啟用 TPM 2。 裝置健全狀況證明會顯示為下列各項啟用的裝置數目：  
 
 -   早期啟動反惡意程式碼  

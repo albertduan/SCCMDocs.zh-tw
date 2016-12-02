@@ -52,7 +52,7 @@ ms.openlocfilehash: aa88f18247b49995bff4a4a6f5fd1e1ed70ca214
 
 -   [移轉內容時內容的擁有權](#About_Migrating_Content)  
 
-##  <a name="a-nameaboutshareddpsinmigrationa-share-distribution-points-between-source-and-destination-hierarchies"></a><a name="About_Shared_DPs_in_Migration"></a>在來源和目的地階層之間共用發佈點  
+##  <a name="a-nameaboutshareddpsinmigrationa-share-distribution-points-between-source-and-destination-hierarchies"></a><a name="About_Shared_DPs_in_Migration"></a> 在來源和目的地階層之間共用發佈點  
 在移轉期間，您可以將來源階層的發佈點與目的地階層共用。 您可以使用共用發佈點將移轉自來源階層的內容立即提供給目的地階層中的用戶端，而不需重新建立該內容，然後將它發佈至目的地階層中的新發佈點。 當目的地階層中的用戶端要求部署至您共用之發佈點的內容時，共用發佈點就可做為有效的內容位置提供給用戶端。  
 
  只要來自來源階層的移轉保持作用中，除了目的地階層中用戶端的有效內容位置外，您還可以將發佈點升級或重新指派至目的地階層。 您可以升級 Configuration Manager 2007 共用的發佈點，並重新指派 System Center 2012 Configuration Manager 共用的發佈點。 當您升級或重新指派共用發佈點時，發佈點便會從來源階層移除，並且成為目的地階層中的發佈點。 升級或重新指派共用發佈點之後，您可以在來源階層的移轉完成後繼續使用目的地階層中的發佈點。 如需如何升級共用發佈點的詳細資訊，請參閱[規劃升級 Configuration Manager 2007 共用發佈點](#Planning_to_Upgrade_DPs)。 如需如何重新指派共用發佈點的資訊，請參閱 [Planning to Reassign System Center Configuration Manager Distribution Points](#BKMK_ReassignDistPoint) (規劃重新指派 System Center Configuration Manager 發佈點)。  
@@ -91,7 +91,7 @@ ms.openlocfilehash: aa88f18247b49995bff4a4a6f5fd1e1ed70ca214
 
 已共用發佈點之後，您就可以變更來源階層中任何共用發佈點的設定。 您對發佈點設定所做的變更會在下一次資料收集週期後反映於目的地階層中。 更新後符合共用資格的發佈點會自動共用，而資格不符的發佈點則會停止共用。 例如，您的發佈點可能未設定為使用內部網路 FQDN 且一開始未與目的地階層共用。 您為該發佈點設定 FQDN 之後，下一次資料收集週期就會識別此設定，而發佈點就會與目的地階層共用。  
 
-##  <a name="a-nameplanningtoupgradedpsa-planning-to-upgrade-configuration-manager-2007-shared-distribution-points"></a><a name="Planning_to_Upgrade_DPs"></a>規劃升級 Configuration Manager 2007 共用發佈點  
+##  <a name="a-nameplanningtoupgradedpsa-planning-to-upgrade-configuration-manager-2007-shared-distribution-points"></a><a name="Planning_to_Upgrade_DPs"></a> 規劃升級 Configuration Manager 2007 共用發佈點  
 從 Configuration Manager 2007 來源階層移轉時，您可以升級共用發佈點使其成為 System Center Configuration Manager 發佈點。 您可以升級主要站台和次要站台的發佈點。 升級程序會從 Configuration Manager 2007 階層移除發佈點，並使其成為目的地階層中的站台系統伺服器。 此程序也會將發佈點上的現有內容複製到發佈點電腦上的新位置。 接著升級程序會修改內容的副本，以建立儲存單一版本搭配目的地階層中的內容部署使用。 因此，當您升級發佈點時，不需要重新發佈 Configuration Manager 2007 發佈點上裝載的移轉內容。  
 
 在 Configuration Manager 將內容轉換成單一執行個體存放區後，Configuration Manager 會刪除發佈點電腦上的原始來源內容以釋出磁碟空間，而不會使用原始來源內容位置。  
@@ -105,8 +105,8 @@ ms.openlocfilehash: aa88f18247b49995bff4a4a6f5fd1e1ed70ca214
 
 |發佈點類型|不是位於站台伺服器之站台系統電腦上的發佈點|不是位於站台伺服器且裝載其他站台系統角色之站台系統電腦上的發佈點|次要站台伺服器上的發佈點|  
 |--------------------------------|-----------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------|  
-|標準發佈點|[是]|否|[是]|  
-|伺服器共用上的發佈點<sup>1</sup>|[是]|否|否|  
+|標準發佈點|[是]|否|是|  
+|伺服器共用上的發佈點<sup>1</sup>|是|否|否|  
 |子目錄發佈點|[是]|否|否|  
 
  <sup>1</sup> System Center Configuration Manager 不支援伺服器共用作為站台系統，但支援位於伺服器共用上的 Configuration Manager 2007 發佈點升級。 當您升級位於伺服器共用上的 Configuration Manager 2007 發佈點時，發佈點類型會自動轉換成伺服器，而您必須選取發佈點電腦上用來儲存內容儲存單一版本的磁碟機。  
@@ -118,7 +118,7 @@ ms.openlocfilehash: aa88f18247b49995bff4a4a6f5fd1e1ed70ca214
 
 升級安裝在 Configuration Manager 2007 次要站台伺服器上的發佈點時，會將次要站台從來源階層解除安裝。 雖然此案例稱為次要站台升級，卻只適用於發佈點站台系統角色。 結果是次要站台無法升級，而且會解除安裝。 而這只在過去是次要站台伺服器的電腦上留下目的地階層的發佈點。 由於會從來源階層移除次要站台，若您打算升級次要站台上的發佈點，請參閱本主題中的[規劃升級 Configuration Manager 2007 次要站台](#BKMK_UpgradeSS)一節。  
 
-###  <a name="a-namebkimkupgradeprocessa-distribution-point-upgrade-process"></a><a name="BKIMK_UpgradeProcess"></a>發佈點升級程序  
+###  <a name="a-namebkimkupgradeprocessa-distribution-point-upgrade-process"></a><a name="BKIMK_UpgradeProcess"></a> 發佈點升級程序  
 您可以使用 Configuration Manager 主控台，升級您已經與目的地階層共用的 Configuration Manager 2007 發佈點。 升級共用的發佈點時，會從 Configuration Manager 2007 站台解除安裝發佈點，然後安裝為附加至您在目的地階層中指定之主要或次要站台的發佈點。 升級程序會為儲存在該發佈點上的移轉內容建立副本，然後將此副本轉換成單一執行個體內容存放區。 當 Configuration Manager 將套件轉換成單一執行個體內容存放區時，若該套件的 [從發佈點執行程式] 未設定一或多個公告，就會從發佈點電腦上的 SMSPKG 共用刪除該套件。  
 
 若要升級發佈點，Configuration Manager 會使用設定為從來源站台的 SMS 提供者收集資料的 [來源站台存取帳戶]。 雖然此帳戶只需要站台物件的 [讀取] 權限，即可收集來源站台的資料，它仍必須擁有 [站台] 類別的 [刪除] 和 [修改] 權限，才能在升級期間成功從 Configuration Manager 2007 站台移除發佈點。  

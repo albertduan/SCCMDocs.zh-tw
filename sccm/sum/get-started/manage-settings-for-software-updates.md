@@ -20,9 +20,9 @@ ms.openlocfilehash: 4d7ffc12a3626f35a4481a3dcaed40abc0bbdac0
 
 ---
 
-#  <a name="a-namebkmkmanagesusettingsa-manage-settings-for-software-updates"></a><a name="BKMK_ManageSUSettings"></a>管理軟體更新的設定  
+#  <a name="a-namebkmkmanagesusettingsa-manage-settings-for-software-updates"></a><a name="BKMK_ManageSUSettings"></a> 管理軟體更新的設定  
 
-*適用對象：System Center Configuration Manager (最新分支)*
+*適用於：System Center Configuration Manager (最新分支)*
 
 在 Configuration Manager 中同步處理軟體更新後，設定並確認下列各區段中的設定。
 

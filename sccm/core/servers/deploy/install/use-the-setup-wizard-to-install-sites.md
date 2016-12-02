@@ -28,7 +28,7 @@ ms.openlocfilehash: 9552ac1b77acfce6a398ec6e74f1be3686ee15a4
 
 若要安裝次要站台，您必須從 Configuration Manager 主控台安裝站台。  次要站台不支援指令碼命令列安裝。
 
-## <a name="a-namebkmkprimarya-install-a-central-administration-site-or-primary-site"></a><a name="bkmk_primary"></a> 安裝管理中心網站或主要站台
+## <a name="a-namebkmkprimarya-install-a-central-administration-site-or-primary-site"></a><a name="bkmk_primary"></a>  安裝管理中心網站或主要站台
 使用下列程序來安裝管理中心網站或主要站台，或將評估站台升級至完整授權 Configuration Manager 站台。   
 
 開始站台安裝之前，請先熟悉下列各文中的詳細資料︰
@@ -37,7 +37,7 @@ ms.openlocfilehash: 9552ac1b77acfce6a398ec6e74f1be3686ee15a4
 
 如果您要將管理中心網站安裝為站台擴充案例的一部分，請先檢閱本主題的[擴充獨立主要站台](../../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md#bkmk_expand)一節，再使用下列程序。
 
-### <a name="a-namebkmkinstallpria-to-install-a-primary-or-central-administration-site"></a><a name="bkmk_installpri"></a> 安裝主要站台或管理中心網站
+### <a name="a-namebkmkinstallpria-to-install-a-primary-or-central-administration-site"></a><a name="bkmk_installpri"></a>  安裝主要站台或管理中心網站
 
 1.  在您要安裝站台的電腦上，執行 **&lt;InstallationMedia\>\SMSSETUP\BIN\X64\Setup.exe** 以啟動 [System Center Configuration Manager 安裝精靈]。  
 

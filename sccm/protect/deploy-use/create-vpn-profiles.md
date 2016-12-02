@@ -16,8 +16,8 @@ caps.handback.revision: 0
 ms.author: nbigman
 ms.manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: e215b33ca24370ddd0e1b892d6ebe559023852a2
-ms.openlocfilehash: ccea5cb46bf69dbb88f6fcb217a73c7939be0b02
+ms.sourcegitcommit: a65de5feae2ff44f938ce8b7e3c8d23d560bb180
+ms.openlocfilehash: bcea8676c163a8aba1bc7f3364fde52375f52429
 
 
 ---
@@ -131,7 +131,7 @@ ms.openlocfilehash: ccea5cb46bf69dbb88f6fcb217a73c7939be0b02
             >  
             >  當連線類型為 [PPTP] 時，執行 iOS 的裝置僅支援 [RSA SecurID] 和 [MSCHAP v2] 作為驗證方法。 若要避免回報錯誤，請將獨立的 PPTP VPN 設定檔部署至執行 iOS 的裝置。  
 
-               - [條件式存取] 和 [企業資料保護主要網域] 設定，只有在未使用 Intune 的情況下使用 Configuration Manager 時才予以支援，並且可以選擇 [進階] 進行存取。
+               - [條件式存取] 和 [企業資料保護主要網域] 設定，只有在未使用 Intune 的情況下使用 Configuration Manager 時才予以支援，並且可以選擇 [進階] 進行存取。 如需企業資料保護的相關資訊，請參閱[使用 Microsoft Intune 建立 Windows 資訊保護 (WIP) 原則](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/create-wip-policy-using-intune)。
         
         ![設定 VPN 的條件存取](../media/vpn-conditional-access.png)
 

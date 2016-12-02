@@ -1,0 +1,145 @@
+---
+title: "更新 | System Center Configuration Manager"
+description: "了解稱為「更新和服務」的主控台內服務方式，可讓您輕鬆尋找並安裝建議的更新。"
+ms.custom: na
+ms.date: 10/06/2016
+ms.prod: configuration-manager
+ms.reviewer: na
+ms.suite: na
+ms.technology:
+- configmgr-other
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: 3a832943-580a-4a40-b454-961d0854ac2b
+caps.latest.revision: 51
+caps.handback.revision: 0
+author: Brenduns
+ms.author: brenduns
+manager: angrobe
+translationtype: Human Translation
+ms.sourcegitcommit: cfb523c6198e4ac2782de6fa8a8654050a283ca7
+ms.openlocfilehash: 7684c4b9a2a12ed7b9ddcddffe1125b3d47daa36
+
+
+---
+# <a name="updates-for-system-center-configuration-manager"></a>System Center Configuration Manager 的更新
+
+*適用於：System Center Configuration Manager (最新分支)*
+
+System Center Configuration Manager 使用稱為**更新和服務**的主控台內服務方式，可輕鬆尋找並為您的 Configuration Manager 基礎結構安裝建議的更新。 此主控台內的服務方式會以頻外更新的方式進行增補，例如適用於需要解決客戶環境特定問題的 hotfix。  
+
+ **下列主題可協助您了解如何尋找並安裝 System Center Configuration Manager 的不同更新類型：**  
+
+-   [安裝適用於 System Center Configuration Manager 的主控台內更新](../../../core/servers/manage/install-in-console-updates.md)  
+
+-   [使用 System Center Configuration Manager 的服務連接工具](../../../core/servers/manage/use-the-service-connection-tool.md)  
+
+-   [使用更新註冊工具將 Hotfix 匯入 System Center Configuration Manager](../../../core/servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)  
+
+-   [使用 Hotfix 安裝程式來安裝 System Center Configuration Manager 更新](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)  
+
+
+##  <a name="a-namebkmkbaselinesa-baseline-and-update-versions"></a><a name="bkmk_Baselines"></a> 基準和更新版本  
+ 初始版本的 System Center Configuration Manager 最新分支是 1511 版本。 這是基準版本︰  
+
+-   在新階層中安裝新的站台時，請使用最新的基準版本。  
+
+-   您必須使用基準版本從 System Center 2012 Configuration Manager 進行升級。  
+
+-   新的基準版本會定期發行。 當您使用較新的基準版本安裝新的階層時，請避免在升級基礎結構之後安裝原始的 1511 基準版本。  
+
+安裝基準版本之後，其他的 Configuration Manager 版本會在主控台內的更新中提供。 主控台內更新會將您的基礎結構更新為最新版本的 Configuration Manager。  
+
+-   您安裝主控台內更新以更新頂層站台的版本。  
+
+-   除非您在主要站台中設定的維護視窗加以封鎖，否則您在管理中心網站安裝的更新自動在子系主要站台中安裝。  
+
+-   您必須在主控台中手動將次要站台更新為新版本。  
+
+當您安裝更新時，更新會在站台伺服器中名為 CD.Latest 的資料夾中儲存該版本的安裝檔案。 如需這些檔案的詳細資訊，請參閱 [System Center Configuration Manager 的 CD.Latest 資料夾](../../../core/servers/manage/the-cd.latest-folder.md)。  
+
+-   您會在站台復原期間使用 CD.Latest 資料夾中的檔案，在不執行基準版本的階層中安裝其他站台。  
+
+-   您無法使用 CD.Latest 中的安裝檔案來安裝新階層的第一個站台，或從 System Center 2012 Configuration Manager 升級站台。  
+
+部分 Configuration Manager 的更新會在針對現有基礎結構的主控台內更新版本，及新的基準版本中提供。  
+
+下列版本的 Configuration Manager 可在基準版本、更新版本或兩者中提供：  
+
+|版本|可用時間|基準|主控台內更新|  
+|-------------|-----------------------|--------------|------------------------|  
+|**1511**<br /><br /> 5.00.8325.1000|12/8/2015|是|否|  
+|**1602**<br /><br /> 5.00.8355.1000|3/11/2016|否|是|
+|**1606**<br /><br /> 5.00.8412.1000|7/22/2016|否|是|
+|**1606** 與 1606 Hotfix 彙總套件 (KB3186654) </br></br>5.00.8412.1307 *(注意 1)* |10/12/2016|是|否|
+*(注意 1)* 這個 1606 基準媒體是 Microsoft System Center 2016 或 System Center Configuration Manager (最新分支和長期維護分支 1606) 版本的一部分。
+
+要檢查您 Configuration Manager 站台的版本，請移至主控台左上角的 **關於 System Center Configuration Manager** (會顯示新站台和主控台版本)。  
+
+##  <a name="a-namebkmkinconsolea-in-console-updates-and-servicing"></a><a name="bkmk_inconsole"></a> 主控台內更新及服務  
+ 當您使用 System Center Configuration Manager 的生產環境就緒安裝時，也請參考最新分支，您安裝的大部分更新在更新及服務通道中均有提供。 這個方法會識別、下載和提供適用於您目前基礎結構版本和組態的更新，且僅會包括 Microsoft 建議所有客戶進行的更新。   
+ 它們包括：  
+
+-   新版本，例如版本 1602  
+
+-   更新，包括您目前版本的新功能  
+
+-   適用於您 Configuration Manager 版本的 Hotfix，所有客戶均應安裝  
+
+主控台內更新可提供更高的穩定性，並可解決常見的問題。 這些更新會取代舊版產品 Service Pack、累積更新、適用於所有客戶的 Hotfix 以及Microsoft Intune 的延伸模組。 這些更新也適用於以下一或多個情況：  
+
+-   主要和管理中心網站伺服器  
+
+-   站台系統角色和站台系統伺服器  
+
+-   SMS 提供者執行個體  
+
+-   Configuration Manager 主控台  
+
+-   Configuration Manager 用戶端  
+
+Configuration Manager 會在您同步服務連接點站台系統角色與 Microsoft 雲端服務和下載中心時，為您探索新的更新：  
+
+-   當您的服務連線端點處於線上模式時，您的站台會每天自動與 Microsoft 同步，以自動識別適用於您基礎結構的新更新。  若要下載更新和更新的可轉散發檔案，裝載服務連接點站台系統角色的電腦會使用**系統**內容來存取下列網際網路位置︰go.microsoft.com 和 download.microsoft.com。 如需服務連接點所連線之其他位置的相關資訊，請參閱[關於 System Center Configuration Manager 中的服務連接點](../../../core/servers/deploy/configure/about-the-service-connection-point.md)中的[網際網路存取需求](../../../core/servers/deploy/configure/about-the-service-connection-point.md#bkmk_urls)。  
+
+-   當您的服務連線端點處於離線模式時，請使用服務連線工具來手動與 Microsoft 雲端進行同步。 如需詳細資訊，請參閱 [Use the Service Connection Tool for System Center Configuration Manager](../../../core/servers/manage/use-the-service-connection-tool.md)。  
+
+-   主控台內更新會取代需要個別尋找和安裝個別更新、Service Packs 及新功能的需求。  
+
+-   您只會安裝所選擇的主控台內更新，且在安裝部分更新時，可以選擇想要啟月及使用的個別功能。 如需詳細資訊，請參閱[從更新啟用選擇性功能](../../../core/servers/manage/install-in-console-updates.md#bkmk_options)。  
+
+安裝主控台內更新時：  
+
+-   會自動執行必要條件檢查。 您也可以在開始安裝前先執行這項檢查。  
+
+-   它會在管理中心網站 (如果有的話) 及主要站台中自動安裝。 您可以使用[站台伺服器的服務視窗](../../../core/servers/manage/install-in-console-updates.md#bkmk_ServiceWindow)控制每個主要站台伺服器都可以更新其基礎結構的時間。  
+
+-   站台伺服器更新後，所有受影響的站台系統角色 (包括 SMS 提供者執行個體) 都會自動更新。 Configuration Manager 主控台也會提示主控台使用者在站台安裝更新之後更新主控台。  
+
+-   如果更新包括 Configuration Manager 用戶端，您可以選擇在進入生產階段前環境中測試更新，或立即將更新套用到所有用戶端。  
+
+-   更新主要站台之後，次要站台不會自動更新。 相反地，您必須起始次要站台的更新。  
+
+> [!NOTE]  
+>  System Center Configuration Manager (最新分支) 的生產版本、長期維護分支以及 System Center Configuration Manager 的 Technical Preview 是不同的版本。 因此，適用於一個分支的更新無法做為其他分支的主控台內更新。 如需可用分支的詳細資訊，請參閱[我應該使用哪個 Configuration Manager 分支？](/sccm/core/understand/which-branch-should-i-use)
+
+##  <a name="a-namebkmkoutofbanda-out-of-band-hotfixes"></a><a name="bkmk_outofband"></a> 頻外 Hotfix  
+某些 Hotfix 是針對解決特定問題而發行，或是適用於所有客戶，但無法使用主控台內的方法來安裝，因此可用性十分有限。 這些修正程式是以頻外方式傳送，並不會在 Microsoft 雲端服務中出現。  
+
+一般而言，當您在尋找修正程式或對 Configuration Manager 部署有問題時，可在 Microsoft 客戶支援服務、知識庫文章或 [System Center Configuration Manager 團隊部落格](https://blogs.technet.microsoft.com/configmgrteam)中了解頻外 Hotfix。  
+
+您可使用下列方式之一，手動安裝這些修正程式：  
+
+-   **更新註冊工具：** 此工具可手動將 Hotfix 匯入您的 Configuration Manager 主控台並在此處安裝，如同自動探索的主控台內更新。 使用下列檔案名稱結構的更新會使用此方式： **.update.exe**。  此類型的 Hotfix 完整名稱為：**&lt;產品\>-&lt;產品版本\>-&lt;知識庫文章識別碼\>-ConfigMgr.Update.exe**  
+
+     如需詳細資訊，請參閱[使用更新註冊工具將 Hotfix 匯入 System Center Configuration Manager](../../../core/servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)。  
+
+-   **Hotfix 安裝程式：** 此工具用來手動安裝無法使用主控台內方式安裝的 Hotfix。 使用下列檔案名稱結構的修正程式可使用此方式： **&lt;產品\>-&lt;產品版本\>-&lt;知識庫文章識別碼\>-&lt;平台\>-&lt;語言\>.exe**  
+
+     如需詳細資訊，請參閱[使用 Hotfix 安裝程式來安裝 System Center Configuration Manager 更新](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)  
+
+
+
+<!--HONumber=Nov16_HO1-->
+
+

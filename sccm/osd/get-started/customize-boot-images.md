@@ -38,7 +38,7 @@ Configuration Manager 的每個版本都可支援特定版本的 Windows 評定�
 
      Windows PE 10  
 
--   **無法從 Configuration Manager 主控台自訂之開機映像的 Windows PE 支援版本**  
+-   **無法從 Configuration Manager 主控台自訂之開機映像的支援 Windows PE 版本**  
 
      Windows PE 3.1<sup>1</sup> 和 Windows PE 5  
 

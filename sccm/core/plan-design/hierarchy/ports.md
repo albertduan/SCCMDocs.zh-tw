@@ -79,39 +79,39 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 
 -   &lt; -- > 表示兩部電腦皆可起始通訊  
 
-###  <a name="a-namebkmkportsaia-asset-intelligence-synchronization-point----microsoft"></a><a name="BKMK_PortsAI"></a> Asset Intelligence 同步處理點 -- > Microsoft  
+###  <a name="a-namebkmkportsaia-asset-intelligence-synchronization-point----microsoft"></a><a name="BKMK_PortsAI"></a> Asset Intelligence 同步處理點 -- &gt; Microsoft  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443|  
 
-###  <a name="a-namebkmkportsai-to-sqla-asset-intelligence-synchronization-point----sql-server"></a><a name="BKMK_PortsAI-to-SQL"></a> Asset Intelligence 同步處理點 -- > SQL Server  
+###  <a name="a-namebkmkportsai-to-sqla-asset-intelligence-synchronization-point----sql-server"></a><a name="BKMK_PortsAI-to-SQL"></a> Asset Intelligence 同步處理點 -- &gt; SQL Server  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |透過 TCP SQL|--|1433 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsappcatalogservice-sqla-application-catalog-web-service-point----sql-server"></a><a name="BKMK_PortsAppCatalogService-SQL"></a> 應用程式類別目錄 Web 服務點 -- > SQL Server  
+###  <a name="a-namebkmkportsappcatalogservice-sqla-application-catalog-web-service-point----sql-server"></a><a name="BKMK_PortsAppCatalogService-SQL"></a> 應用程式類別目錄 Web 服務點 -- &gt; SQL Server  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |透過 TCP SQL|--|1433 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsappcatalogwebsitepointappcatalogwebservicepointa-application-catalog-website-point----application-catalog-web-service-point"></a><a name="BKMK_PortsAppCatalogWebSitePoint_AppCatalogWebServicePoint"></a> 應用程式類別目錄網站點 -- > 應用程式類別目錄 Web 服務點  
+###  <a name="a-namebkmkportsappcatalogwebsitepointappcatalogwebservicepointa-application-catalog-website-point----application-catalog-web-service-point"></a><a name="BKMK_PortsAppCatalogWebSitePoint_AppCatalogWebServicePoint"></a> 應用程式類別目錄網站點 -- &gt; 應用程式類別目錄 Web 服務點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |超文字傳輸通訊協定 (HTTP)|--|80 (請參閱註 2， **可用的替代連接埠**)|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsclient-appcatalogwebsitepointa-client----application-catalog-website-point"></a><a name="BKMK_PortsClient-AppCatalogWebsitePoint"></a> 用戶端 -- > 應用程式類別目錄網站點  
+###  <a name="a-namebkmkportsclient-appcatalogwebsitepointa-client----application-catalog-website-point"></a><a name="BKMK_PortsClient-AppCatalogWebsitePoint"></a> 用戶端 -- &gt; 應用程式類別目錄網站點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |超文字傳輸通訊協定 (HTTP)|--|80 (請參閱註 2， **可用的替代連接埠**)|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsclient-clientwakeupa-client----client"></a><a name="BKMK_PortsClient-ClientWakeUp"></a> 用戶端 -- > 用戶端  
+###  <a name="a-namebkmkportsclient-clientwakeupa-client----client"></a><a name="BKMK_PortsClient-ClientWakeUp"></a> 用戶端 -- &gt; 用戶端  
  除下表所列的連接埠外，用戶端設定喚醒 Proxy 時，喚醒 Proxy 也會使用網際網路控制訊息通訊協定 (ICMP) 回應其中一個用戶端傳至另一個用戶端的要求訊息。 此通訊用於確認網路上的另一台用戶端電腦是否處於喚醒狀態。 ICMP 有時稱為 TCP/IP Ping 命令。 ICMP 沒有 UDP 或 TCP 通訊協定號碼，因此未列在下表中。 不過，這些用戶端電腦或子網路內中介網路裝置上的所有主機型防火牆都必須允許 ICMP 流量，否則喚醒 Proxy 通訊不會成功。  
 
 |說明|UDP|TCP|  
@@ -119,34 +119,34 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |網路喚醒|9 (請參閱註 2， **可用的替代連接埠**)|--|  
 |喚醒 proxy|25536 (請參閱註 2， **可用的替代連接埠**)|--|  
 
-###  <a name="a-namebkmkportsclient-policymodulea-client----configuration-manager-policy-module-network-device-enrollment-service"></a><a name="BKMK_PortsClient-PolicyModule"></a> 用戶端 -- > Configuration Manager 原則模組 (網路裝置註冊服務)  
+###  <a name="a-namebkmkportsclient-policymodulea-client----configuration-manager-policy-module-network-device-enrollment-service"></a><a name="BKMK_PortsClient-PolicyModule"></a> 用戶端 -- &gt; Configuration Manager 原則模組 (網路裝置註冊服務)  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |超文字傳輸通訊協定 (HTTP)||80|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443|  
 
-###  <a name="a-namebkmkportsclient-clouddpa-client----cloud-based-distribution-point"></a><a name="BKMK_PortsClient-CloudDP"></a> 用戶端 -- > 雲端發佈點  
+###  <a name="a-namebkmkportsclient-clouddpa-client----cloud-based-distribution-point"></a><a name="BKMK_PortsClient-CloudDP"></a> 用戶端 -- &gt; 雲端發佈點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443|  
 
-###  <a name="a-namebkmkportsclient-dpa-client----distribution-point"></a><a name="BKMK_PortsClient-DP"></a> 用戶端 -- > 發佈點  
+###  <a name="a-namebkmkportsclient-dpa-client----distribution-point"></a><a name="BKMK_PortsClient-DP"></a> 用戶端 -- &gt; 發佈點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |超文字傳輸通訊協定 (HTTP)|--|80 (請參閱註 2， **可用的替代連接埠**)|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsclient-dp2a-client----distribution-point-configured-for-multicast"></a><a name="BKMK_PortsClient-DP2"></a> 用戶端 -- > 設定用於多點傳送的發佈點  
+###  <a name="a-namebkmkportsclient-dp2a-client----distribution-point-configured-for-multicast"></a><a name="BKMK_PortsClient-DP2"></a> 用戶端 -- &gt; 設定用於多點傳送的發佈點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |伺服器訊息區 (SMB)|--|445|  
 |多點傳送通訊協定|63000-64000|--|  
 
-###  <a name="a-namebkmkportsclient-dp3a-client----distribution-point-configured-for-pxe"></a><a name="BKMK_PortsClient-DP3"></a> 用戶端 -- > 設定用於 PXE 的發佈點  
+###  <a name="a-namebkmkportsclient-dp3a-client----distribution-point-configured-for-pxe"></a><a name="BKMK_PortsClient-DP3"></a> 用戶端 -- &gt; 設定用於 PXE 的發佈點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -154,13 +154,13 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |簡單式檔案傳輸通訊協定 (TFTP)|69 (請參閱註 4 **Trivial FTP (TFTP) 精靈**)|--|  
 |開機資訊交涉階層 (BINL)|4011|--|  
 
-###  <a name="a-namebkmkportsclient-fspa-client----fallback-status-point"></a><a name="BKMK_PortsClient-FSP"></a> 用戶端 -- > 後援狀態點  
+###  <a name="a-namebkmkportsclient-fspa-client----fallback-status-point"></a><a name="BKMK_PortsClient-FSP"></a> 用戶端 -- &gt; 後援狀態點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |超文字傳輸通訊協定 (HTTP)|--|80 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsclient-gcdca-client----global-catalog-domain-controller"></a><a name="BKMK_PortsClient-GCDC"></a> 用戶端 -- > 通用類別目錄網域控制站  
+###  <a name="a-namebkmkportsclient-gcdca-client----global-catalog-domain-controller"></a><a name="BKMK_PortsClient-GCDC"></a> 用戶端 -- &gt; 通用類別目錄的網域控制站  
  Configuration Manager 用戶端屬於工作群組電腦或設定僅用於網際網路通訊時，不會與通用類別目錄伺服器通訊。  
 
 |說明|UDP|TCP|  
@@ -168,7 +168,7 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |LDAP 的通用類別目錄|--|3268|  
 |通用類別目錄的 LDAP SSL|--|3269|  
 
-###  <a name="a-namebkmkportsclient-mpa-client----management-point"></a><a name="BKMK_PortsClient-MP"></a> 用戶端 -- > 管理點  
+###  <a name="a-namebkmkportsclient-mpa-client----management-point"></a><a name="BKMK_PortsClient-MP"></a> 用戶端 -- &gt; 管理點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -176,14 +176,14 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |超文字傳輸通訊協定 (HTTP)|--|80 (請參閱註 2， **可用的替代連接埠**)|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsclient-supa-client----software-update-point"></a><a name="BKMK_PortsClient-SUP"></a> 用戶端 -- > 軟體更新點  
+###  <a name="a-namebkmkportsclient-supa-client----software-update-point"></a><a name="BKMK_PortsClient-SUP"></a> 用戶端 -- &gt; 軟體更新點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |超文字傳輸通訊協定 (HTTP)|--|80 或 8530 (請參閱註 3， **Windows Server Update Services**)|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 或 8531 (請參閱註 3， **Windows Server Update Services**)|  
 
-###  <a name="a-namebkmkportsclient-smpa-client----state-migration-point"></a><a name="BKMK_PortsClient-SMP"></a> 用戶端 -- > 狀態移轉點  
+###  <a name="a-namebkmkportsclient-smpa-client----state-migration-point"></a><a name="BKMK_PortsClient-SMP"></a> 用戶端 -- &gt; 狀態移轉點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -191,20 +191,20 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 (請參閱註 2， **可用的替代連接埠**)|  
 |伺服器訊息區 (SMB)|--|445|  
 
-###  <a name="a-namebkmkportsconsole-clienta-configuration-manager-console----client"></a><a name="BKMK_PortsConsole-Client"></a> Configuration Manager 主控台 -- > 用戶端  
+###  <a name="a-namebkmkportsconsole-clienta-configuration-manager-console----client"></a><a name="BKMK_PortsConsole-Client"></a> Configuration Manager 主控台 -- &gt; 用戶端  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |遠端控制 (控制)|--|2701|  
 |遠端協助 (RDP 和 RTC)|--|3389|  
 
-###  <a name="a-namebkmkportsconsole-interneta-configuration-manager-console----internet"></a><a name="BKMK_PortsConsole-Internet"></a> Configuration Manager 主控台 -- > 網際網路  
+###  <a name="a-namebkmkportsconsole-interneta-configuration-manager-console----internet"></a><a name="BKMK_PortsConsole-Internet"></a> Configuration Manager 主控台 -- &gt; 網際網路  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |超文字傳輸通訊協定 (HTTP)|--|80|  
 
-###  <a name="a-namebkmkportsconsole-rspa-configuration-manager-console----reporting-services-point"></a><a name="BKMK_PortsConsole-RSP"></a> Configuration Manager 主控台 -- > Reporting Services 點  
+###  <a name="a-namebkmkportsconsole-rspa-configuration-manager-console----reporting-services-point"></a><a name="BKMK_PortsConsole-RSP"></a> Configuration Manager 主控台 -- &gt; Reporting Services 點  
 
 ||||  
 |-|-|-|  
@@ -212,26 +212,26 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |超文字傳輸通訊協定 (HTTP)|--|80 (請參閱註 2， **可用的替代連接埠**)|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsconsole-sitea-configuration-manager-console----site-server"></a><a name="BKMK_PortsConsole-Site"></a> Configuration Manager 主控台 -- > 站台伺服器  
+###  <a name="a-namebkmkportsconsole-sitea-configuration-manager-console----site-server"></a><a name="BKMK_PortsConsole-Site"></a> Configuration Manager 主控台 -- &gt; 網站伺服器  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |RPC (與 WMI 的初始連線，用於尋找提供者系統)|--|135|  
 
-###  <a name="a-namebkmkportsconsole-providera-configuration-manager-console----sms-provider"></a><a name="BKMK_PortsConsole-Provider"></a> Configuration Manager 主控台 -- > SMS 提供者  
+###  <a name="a-namebkmkportsconsole-providera-configuration-manager-console----sms-provider"></a><a name="BKMK_PortsConsole-Provider"></a> Configuration Manager 主控台 -- &gt; SMS 提供者  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |RPC 端點對應程式|135|135|  
 |RPC|--|DYNAMIC (請參閱註 6， **動態連接埠**)|  
 
-###  <a name="a-namebkmkportscertificateregistationpointpolicymodulea-configuration-manager-policy-module-network-device-enrollment-service----certificate-registration-point"></a><a name="BKMK_PortsCertificateRegistationPoint_PolicyModule"></a> Configuration Manager 原則模組 (網路裝置註冊服務) -- > 憑證登錄點  
+###  <a name="a-namebkmkportscertificateregistationpointpolicymodulea-configuration-manager-policy-module-network-device-enrollment-service----certificate-registration-point"></a><a name="BKMK_PortsCertificateRegistationPoint_PolicyModule"></a> Configuration Manager 原則模組 (網路裝置註冊服務) -- &gt; 憑證登錄點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsdistmpa-distribution-point----management-point"></a><a name="BKMK_PortsDist_MP"></a> 發佈點 -- > 管理點  
+###  <a name="a-namebkmkportsdistmpa-distribution-point----management-point"></a><a name="BKMK_PortsDist_MP"></a> 發佈點 -- &gt; 管理點  
  在下列情況中，發佈點會與管理點通訊：  
 
 -   報告預先設置內容的狀態  
@@ -247,49 +247,49 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |超文字傳輸通訊協定 (HTTP)|--|80 (請參閱註 2， **可用的替代連接埠**)|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsendpointprotectioninterneta-endpoint-protection-point----internet"></a><a name="BKMK_PortsEndpointProtection_Internet"></a> Endpoint Protection 點 -- > 網際網路  
+###  <a name="a-namebkmkportsendpointprotectioninterneta-endpoint-protection-point----internet"></a><a name="BKMK_PortsEndpointProtection_Internet"></a> Endpoint Protection 點 -- &gt; 網際網路  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |超文字傳輸通訊協定 (HTTP)|--|80|  
 
-###  <a name="a-namebkmkportsep-to-sqla-endpoint-protection-point----sql-server"></a><a name="BKMK_PortsEP-to-SQL"></a> Endpoint Protection 點 -- > SQL Server  
+###  <a name="a-namebkmkportsep-to-sqla-endpoint-protection-point----sql-server"></a><a name="BKMK_PortsEP-to-SQL"></a> Endpoint Protection 點 -- &gt; SQL Server  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |透過 TCP SQL|--|1433 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsenrollmentproxyenrollmentpointa-enrollment-proxy-point----enrollment-point"></a><a name="BKMK_PortsEnrollmentProxyEnrollmentPoint"></a> 註冊 Proxy 點 -- > 註冊點  
+###  <a name="a-namebkmkportsenrollmentproxyenrollmentpointa-enrollment-proxy-point----enrollment-point"></a><a name="BKMK_PortsEnrollmentProxyEnrollmentPoint"></a> 註冊 Proxy 點 -- &gt; 註冊點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsenrollmentenrollmentsqla-enrollment-point----sql-server"></a><a name="BKMK_PortsEnrollmentEnrollmentSQL"></a> 註冊點 -- > SQL Server  
+###  <a name="a-namebkmkportsenrollmentenrollmentsqla-enrollment-point----sql-server"></a><a name="BKMK_PortsEnrollmentEnrollmentSQL"></a> 註冊點 -- &gt; SQL Server  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |透過 TCP SQL|--|1433 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsexchangeconnectorhosteda-exchange-server-connector----exchange-online"></a><a name="BKMK_PortsExchangeConnectorHosted"></a> Exchange Server 連接器 -- > Exchange Online  
+###  <a name="a-namebkmkportsexchangeconnectorhosteda-exchange-server-connector----exchange-online"></a><a name="BKMK_PortsExchangeConnectorHosted"></a> Exchange Server 連接器 -- &gt; Exchange Online  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |Windows 透過 HTTPS 的遠端管理|--|5986|  
 
-###  <a name="a-namebkmkportsexchangeconnectoronprema-exchange-server-connector----on-premises-exchange-server"></a><a name="BKMK_PortsExchangeConnectorOnPrem"></a> Exchange Server 連接器 -- > 內部部署 Exchange Server  
+###  <a name="a-namebkmkportsexchangeconnectoronprema-exchange-server-connector----on-premises-exchange-server"></a><a name="BKMK_PortsExchangeConnectorOnPrem"></a> Exchange Server 連接器 -- &gt; 內部部署 Exchange Server  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |透過 HTTP 的 Windows 遠端管理|--|5985|  
 
-###  <a name="a-namebkmkportsmacenrollmentproxypointa-mac-computer----enrollment-proxy-point"></a><a name="BKMK_PortsMacEnrollmentProxyPoint"></a> Mac 電腦 -- > 註冊 Proxy 點  
+###  <a name="a-namebkmkportsmacenrollmentproxypointa-mac-computer----enrollment-proxy-point"></a><a name="BKMK_PortsMacEnrollmentProxyPoint"></a> Mac 電腦 -- &gt; 註冊 Proxy 點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443|  
 
-###  <a name="a-namebkmkportsmp-dca-management-point----domain-controller"></a><a name="BKMK_PortsMP-DC"></a> 管理點 -- > 網域控制站  
+###  <a name="a-namebkmkportsmp-dca-management-point----domain-controller"></a><a name="BKMK_PortsMP-DC"></a> 管理點 -- &gt; 網域控制站  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -309,31 +309,31 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |RPC|--|DYNAMIC (請參閱註 6， **動態連接埠**)|  
 |伺服器訊息區 (SMB)|--|445|  
 
-###  <a name="a-namebkmkportsmp-sqla-management-point----sql-server"></a><a name="BKMK_PortsMP-SQL"></a> 管理點 -- > SQL Server  
+###  <a name="a-namebkmkportsmp-sqla-management-point----sql-server"></a><a name="BKMK_PortsMP-SQL"></a> 管理點 -- &gt; SQL Server  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |透過 TCP SQL|--|1433 (請參閱註 2， **可用的替代連接埠**)|  
 
-###  <a name="a-namebkmkportsmobiledeviceclient-enrollmentproxypointa-mobile-device----enrollment-proxy-point"></a><a name="BKMK_PortsMobileDeviceClient-EnrollmentProxyPoint"></a> 行動裝置 -- > 註冊 Proxy 點  
+###  <a name="a-namebkmkportsmobiledeviceclient-enrollmentproxypointa-mobile-device----enrollment-proxy-point"></a><a name="BKMK_PortsMobileDeviceClient-EnrollmentProxyPoint"></a> 行動裝置 -- &gt; 註冊 Proxy 點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443|  
 
-###  <a name="a-namebkmkportsmobiledeviceclient-windowsintunea-mobile-device----microsoft-intune"></a><a name="BKMK_PortsMobileDeviceClient-WindowsIntune"></a> 行動裝置 -- > Microsoft Intune  
+###  <a name="a-namebkmkportsmobiledeviceclient-windowsintunea-mobile-device----microsoft-intune"></a><a name="BKMK_PortsMobileDeviceClient-WindowsIntune"></a> 行動裝置 -- &gt; Microsoft Intune  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443|  
 
-###  <a name="a-namebkmkportsrsp-sqla-reporting-services-point----sql-server"></a><a name="BKMK_PortsRSP-SQL"></a> Reporting Services 點 -- > SQL Server  
+###  <a name="a-namebkmkportsrsp-sqla-reporting-services-point----sql-server"></a><a name="BKMK_PortsRSP-SQL"></a> Reporting Services 點 --&gt; SQL Server  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |透過 TCP SQL|--|1433 (請參閱註 2，替代的連接埠可用)|  
 
-###  <a name="a-namebkmkportsintuneconnector-windowsintunea-service-connection-point----microsoft-intune"></a><a name="BKMK_PortsIntuneConnector-WindowsIntune"></a> 服務連接點 -- > Microsoft Intune  
+###  <a name="a-namebkmkportsintuneconnector-windowsintunea-service-connection-point----microsoft-intune"></a><a name="BKMK_PortsIntuneConnector-WindowsIntune"></a> 服務連接點 -- &gt; Microsoft Intune  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -364,19 +364,19 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |RPC 端點對應程式|135|135|  
 |RPC|--|DYNAMIC (請參閱註 6， **動態連接埠**)|  
 
-###  <a name="a-namebkmkportssite-clienta-site-server----client"></a><a name="BKMK_PortsSite-Client"></a> 站台伺服器 -- > 用戶端  
+###  <a name="a-namebkmkportssite-clienta-site-server----client"></a><a name="BKMK_PortsSite-Client"></a> 網站伺服器 -- &gt; 用戶端  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |網路喚醒|9 (請參閱註 2， **可用的替代連接埠**)|--|  
 
-###  <a name="a-namebkmkportssiteserver-clouddpa-site-server----cloud-based-distribution-point"></a><a name="BKMK_PortsSiteServer-CloudDP"></a> 站台伺服器 -- > 雲端發佈點  
+###  <a name="a-namebkmkportssiteserver-clouddpa-site-server----cloud-based-distribution-point"></a><a name="BKMK_PortsSiteServer-CloudDP"></a> 網站伺服器 -- &gt; 雲端發佈點  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443|  
 
-###  <a name="a-namebkmkportssite-dpa-site-server----distribution-point"></a><a name="BKMK_PortsSite-DP"></a> 站台伺服器 -- > 發佈點  
+###  <a name="a-namebkmkportssite-dpa-site-server----distribution-point"></a><a name="BKMK_PortsSite-DP"></a> 網站伺服器 -- &gt; 發佈點  
  (請參閱註 5， **網站伺服器與網站系統之間的通訊**)  
 
 |說明|UDP|TCP|  
@@ -385,7 +385,7 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |RPC 端點對應程式|135|135|  
 |RPC|--|DYNAMIC (請參閱註 6， **動態連接埠**)|  
 
-###  <a name="a-namebkmkportssite-dca-site-server----domain-controller"></a><a name="BKMK_PortsSite-DC"></a> 站台伺服器 -- > 網域控制站  
+###  <a name="a-namebkmkportssite-dca-site-server----domain-controller"></a><a name="BKMK_PortsSite-DC"></a> 網站伺服器 -- &gt; 網域控制站  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -437,7 +437,7 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |RPC 端點對應程式|135|135|  
 |RPC|--|DYNAMIC (請參閱註 6， **動態連接埠**)|  
 
-###  <a name="a-namebkmkportsite-interneta-site-server----internet"></a><a name="BKMK_PortSite-Internet"></a> 站台伺服器 -- > 網際網路  
+###  <a name="a-namebkmkportsite-interneta-site-server----internet"></a><a name="BKMK_PortSite-Internet"></a> 網站伺服器 -- &gt; 網際網路  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -466,7 +466,7 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |-----------------|---------|---------|  
 |伺服器訊息區 (SMB)|--|445|  
 
-###  <a name="a-namebkmkportssite-sqla-site-server----sql-server"></a><a name="BKMK_PortsSite-SQL"></a> 站台伺服器 -- > 站台伺服器  
+###  <a name="a-namebkmkportssite-sqla-site-server----sql-server"></a><a name="BKMK_PortsSite-SQL"></a> 網站伺服器 -- &gt; SQL Server  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -480,7 +480,7 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |RPC 端點對應程式|135|135|  
 |RPC|--|DYNAMIC (請參閱註 6， **動態連接埠**)|  
 
-###  <a name="a-namebkmkportssite-providera-site-server----sms-provider"></a><a name="BKMK_PortsSite-Provider"></a> 站台伺服器 -- > SMS 提供者  
+###  <a name="a-namebkmkportssite-providera-site-server----sms-provider"></a><a name="BKMK_PortsSite-Provider"></a> 網站伺服器 -- &gt; SMS 提供者  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
@@ -505,26 +505,26 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |伺服器訊息區 (SMB)|--|445|  
 |RPC 端點對應程式|135|135|  
 
-###  <a name="a-namebkmkportsprovider-sqla-sms-provider----sql-server"></a><a name="BKMK_PortsProvider-SQL"></a> SMS 提供者 -- > SQL Server  
+###  <a name="a-namebkmkportsprovider-sqla-sms-provider----sql-server"></a><a name="BKMK_PortsProvider-SQL"></a> SMS 提供者 -- &gt; SQL Server  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |透過 TCP SQL|--|1433 (請參閱註 2，替代的連接埠可用)|  
 
-###  <a name="a-namebkmkportssup-interneta-software-update-point----internet"></a><a name="BKMK_PortsSUP-Internet"></a> 軟體更新點 -- > 網際網路  
+###  <a name="a-namebkmkportssup-interneta-software-update-point----internet"></a><a name="BKMK_PortsSUP-Internet"></a> 軟體更新點 -- &gt; 網際網路  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |超文字傳輸通訊協定 (HTTP)|--|80 (請參閱註 1， **Proxy 伺服器連接埠**)|  
 
-###  <a name="a-namebkmkportssup-wsusa-software-update-point----upstream-wsus-server"></a><a name="BKMK_PortsSUP-WSUS"></a> 軟體更新點 -- > 上游 WSUS 伺服器  
+###  <a name="a-namebkmkportssup-wsusa-software-update-point----upstream-wsus-server"></a><a name="BKMK_PortsSUP-WSUS"></a> 軟體更新點 -- &gt; 上游 WSUS 伺服器  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |超文字傳輸通訊協定 (HTTP)|--|80 或 8530 (請參閱註 3， **Windows Server Update Services**)|  
 |安全超文字傳輸通訊協定 (HTTPS)|--|443 或 8531 (請參閱註 3， **Windows Server Update Services**)|  
 
-###  <a name="a-namebkmkportssql-sqla-sql-server----sql-server"></a><a name="BKMK_PortsSQL-SQL"></a> SQL Server -- > SQL Server  
+###  <a name="a-namebkmkportssql-sqla-sql-server----sql-server"></a><a name="BKMK_PortsSQL-SQL"></a> SQL Server --&gt; SQL Server  
  網站間資料庫複寫需要其中一個網站上的 SQL 直接與其父網站或子網站的 SQL Server 通訊。  
 
 |說明|UDP|TCP|  
@@ -535,7 +535,7 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 > [!TIP]  
 >  Configuration Manager 不需要使用連接埠 UDP 1434 的 SQL Server 瀏覽器。  
 
-###  <a name="a-namebkmkportsstatemigrationpoint-to-sqla-state-migration-point----sql-server"></a><a name="BKMK_PortsStateMigrationPoint-to-SQL"></a> 狀態移轉點 -- > SQL Server  
+###  <a name="a-namebkmkportsstatemigrationpoint-to-sqla-state-migration-point----sql-server"></a><a name="BKMK_PortsStateMigrationPoint-to-SQL"></a> 狀態移轉點 -- &gt;SQL Server  
 
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  

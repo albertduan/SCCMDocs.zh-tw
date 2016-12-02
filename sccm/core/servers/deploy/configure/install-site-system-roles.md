@@ -38,7 +38,7 @@ ms.openlocfilehash: 780ef516ddc641d53e1d2d4a5f559795cfd22cbb
 
 -   Configuration Manager 會使用**站台系統安裝帳戶**來安裝網站系統角色。 您可在執行適用之精靈時指定此帳戶，以建立新網站系統，或將系統角色新增至現有網站系統伺服器。 根據預設，此帳戶是網站伺服器電腦的本機系統帳戶，但您可指定網域使用者帳戶來當成網站系統安裝帳戶使用。 如需詳細資訊，請參閱 [System Center Configuration Manager 中使用的帳戶](../../../../core/plan-design/hierarchy/accounts.md)主題中的＜站台系統安裝帳戶＞。  
 
-##  <a name="a-namebkmkinstalla-to-install-site-system-roles-on-an-existing-site-system-server"></a><a name="bkmk_Install"></a> 若要在現有站台系統伺服器上安裝站台系統角色  
+##  <a name="a-namebkmkinstalla-to-install-site-system-roles-on-an-existing-site-system-server"></a><a name="bkmk_Install"></a> 在現有站台系統伺服器上安裝站台系統角色  
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理] 。  
 

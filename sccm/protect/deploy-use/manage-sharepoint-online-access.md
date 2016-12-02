@@ -136,7 +136,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 SharePoin
  接著，設定原則要求只有受管理和相容的裝置才可以存取 SharePoint Online。 這項原則會儲存在 Azure Active Directory。
 
  >[!NOTE]
- >您也可以在 Azure AD 管理主控台中建立條件式存取原則。 Azure AD 管理主控台可讓您在其他條件式存取原則之外，如 Multi-Factor Authentication，建立 Intune 裝置條件式存取原則 (稱為 Azure AD 裝置型條件式存取原則)。 您也可以設定 Azure AD 支援的 Salesforce 和 Box 等協力廠商企業應用程式的條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件式存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。  
+ >您也可以在 Azure AD 管理主控台中建立條件式存取原則。 Azure AD 管理主控台可讓您在其他條件存取原則之外 (例如 Multi-Factor Authentication)，建立 Intune 裝置條件存取原則 (稱為 Azure AD 裝置型條件存取原則)。 您也可以設定 Azure AD 支援的 Salesforce 和 Box 等協力廠商企業應用程式的條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件式存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
@@ -164,7 +164,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 SharePoin
 
 4.  在 SharePoint Online 和商務用 OneDrive 的 **[瀏覽器存取]** 下方，您可以選擇只允許透過下列支援的瀏覽器存取 Exchange Online︰Safari (iOS) 和 Chrome (Android)。 來自其他瀏覽器的存取將會受到封鎖。  您針對 OneDrive [應用程式存取] 所選取的相同平台限制也適用於此處。
 
-    在 **Android** 裝置上，使用者必須啟用瀏覽器存取。  若要完成這項動作，使用者必須在已註冊的裝置啟用 â€œ啟用瀏覽器存取â€ 選項，如下所示︰
+    在 **Android** 裝置上，使用者必須啟用瀏覽器存取。  若要完成這項動作，使用者必須在已註冊的裝置啟用 [啟用瀏覽器存取] 選項，如下所示︰
     1.  啟動 **公司入口網站應用程式**。
     2.  透過三個點 (â€¦) 或硬體功能表按鈕，移至 [設定] 頁面。
     3.  按下 **[啟用瀏覽器存取]** 按鈕。

@@ -46,7 +46,7 @@ ms.openlocfilehash: 12ea958e18a291a1b88e342b204e633d3bdf869f
 
     -   [軟體更新](../../sum/get-started/synchronize-software-updates.md)必須在 Configuration Manager 主控台中進行同步處理。  
 
-    -   Configuration Manager 主控台中必須加入[應用程式](../../apps/deploy-use/create-applications.md)。  
+    -   Configuration Manager 主控台中必須新增[應用程式](../../apps/deploy-use/create-applications.md)。  
 
 ###  <a name="a-namebkmkcreatebuildcapturetsa-create-a-build-and-capture-task-sequence"></a><a name="BKMK_CreateBuildCaptureTS"></a> 建立組建和擷取工作順序  
  請使用下列程序，以使用工作順序建立參照電腦和擷取作業系統。  

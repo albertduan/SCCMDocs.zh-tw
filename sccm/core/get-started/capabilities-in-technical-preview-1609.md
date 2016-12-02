@@ -391,7 +391,7 @@ Configuration Manager 1609 Technical Preview 引進了新的儀表板。 若要�
 >[!NOTE]
 >部署 Office 365 應用程式之後，您可以建立自動部署規則，以維護應用程式。 若要建立適用於 Office 365 應用程式的 ADR，請按一下 [Create an ADR] (建立 ADR)，然後在選擇產品時選取 [Office 365 用戶端]。 如需詳細資訊，請參閱[自動部署軟體更新](/sccm/sum/deploy-use/automatically-deploy-software-updates)。
 
-## <a name="a-namebkmkueficonversionaimprovements-for-bios-to-uefi-conversion"></a><a name="BKMK_UEFIConversion"></a> BIOS 轉換成 UEFI 的改進
+## <a name="a-namebkmkueficonversionaimprovements-for-bios-to-uefi-conversion"></a><a name="BKMK_UEFIConversion"></a>BIOS 轉換成 UEFI 的改進
 您現在可以使用新變數 TSUEFIDrive 來自訂作業系統部署工作順序，如此一來，「重新啟動電腦」步驟就會在硬碟上準備用於轉換成 UEFI 的 FAT32 磁碟分割。 下列程序提供範例，說明如何建立工作順序步驟，以準備用於將 BIO 轉換成 UEFI 的硬碟。
 
 #### <a name="to-prepare-the-fat32-partition-for-the-conversion-to-uefi"></a>若要準備用於轉換成 UEFI 的 FAT32 磁碟分割：
