@@ -6,7 +6,7 @@ layout: HubPage
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 11/18/2016
 ms.topic: hubpage
 ms.prod: configuration-manager
 ms.technology:
@@ -15,8 +15,8 @@ ms.suite: ems
 ms.assetid: a89ecd55-fe24-4f40-86c4-8a91dd683a1c
 toc_rel: /sccm/toc.json
 translationtype: Human Translation
-ms.sourcegitcommit: 06506ef41638c2c518b02b3b13ab3453fe5de5af
-ms.openlocfilehash: 2ed99aa90915903056ee43074e0d19a1e018b9a4
+ms.sourcegitcommit: a10fb140adfc1109a49760d601b5fca3d93d4b39
+ms.openlocfilehash: 690b516b6be4380b566649adacfafcc8f920373c
 
 ---
 # <a name="system-center-configuration-manager-documentation"></a>System Center Configuration Manager 文件
@@ -35,7 +35,7 @@ ms.openlocfilehash: 2ed99aa90915903056ee43074e0d19a1e018b9a4
         <ul class="column column-half">
           <li><a href="/sccm/core/understand/introduction">介紹 Configuration Manager</a></li>
           <li><a href="/sccm/core/get-started/evaluate-with-lab-environment">建置專屬實驗室環境來評估 System Center Configuration Manager</a></li>
-          <li><a href="/sccm/core/plan-design/changes/whats-new-in-version-1606">System Center Configuration Manager 1606 版的新功能</a></li>
+          <li><a href="/sccm/core/plan-design/changes/whats-new-in-version-1610">System Center Configuration Manager 1610 版的新功能</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/sccm/core/plan-design/changes/features-and-capabilities">System Center Configuration Manager 的功能</a></li>
@@ -288,6 +288,43 @@ ms.openlocfilehash: 2ed99aa90915903056ee43074e0d19a1e018b9a4
               </ul>
             </section>
           </li>
+
+
+<li class="journey-step">
+            <header class="journey-step-header row">
+              <a href="/sccm/develop/core/misc/system-center-configuration-manager-sdk">
+                <div class="title column-third">
+                  <span class="step-number">8</span>
+                  <p>Configuration Manager 開發和自動化</p>
+                </div>
+                <p class="description column-two-thirds">了解如何擴充 Configuration Manager 以及將其自動化。</p>
+              </a>
+            </header>
+            <section class="journey-step-elements content">
+              <ul class="row">
+                <li class="column-third">
+                  <a href="/sccm/develop/core/understand/configuration-manager-programming-fundamentals">
+                    <h3>Configuration Manager 程式設計基本概念</h3>
+                    <p>深入了解能協助您順利進行 Configuration Manager 程式設計的基本程式設計技術。</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="/sccm/develop/reference/configuration-manager-reference">
+                    <h3>Configuration Manager 參考</h3>
+                    <p>提供受管理 SMS 提供者程式庫、Configuration Manager 類別結構描述、擴充 WMI 查詢語言 (WQL)、具名值與限定詞，以及 Configuration Manager 主控台程式庫的詳細資訊。</p>
+                  </a>
+                </li>
+                <li class="column-third">
+                  <a href="https://docs.microsoft.com/powershell/sccm/configurationmanager/vlatest/configurationmanager">
+                    <h3>Configuration Manager Cmdlet</h3>
+                    <p>提供 Configuration Manager Cmdlet 的線上說明檔，包括示範 Cmdlet 使用方法的各個 Cmdlet 和範例詳細資訊。</p>
+                  </a>
+                </li>
+              </ul>
+            </section>
+          </li>
+
+
       </section>
     </div>
     <div class="section-border">
@@ -317,6 +354,6 @@ ms.openlocfilehash: 2ed99aa90915903056ee43074e0d19a1e018b9a4
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 
