@@ -18,7 +18,8 @@ manager: angrobe
 robots: noindex,nofollow
 
 ---
-# MICROSOFT SYSTEM CENTER CONFIGURATION MANAGER
+# MICROSOFT SYSTEM CENTER ENDPOINT PROTECTION
+
 **請注意：** 貴用戶使用軟體應受　貴用戶 \(或　貴公司\) 已取得之 Microsoft 伺服器軟體或 Microsoft 線上服務存取授權合約的條款及條件拘束。 例如，若　貴用戶係為：  
   
 -   大量授權客戶或服務供應商，則　貴用戶使用軟體時，應受　貴用戶大量授權合約或服務供應商授權合約之條款及條件拘束；  
