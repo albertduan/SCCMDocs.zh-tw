@@ -1,5 +1,5 @@
 ---
-title: "建立 Android 應用程式 | System Center Configuration Manager"
+title: "建立 Android 應用程式 | Microsoft Docs"
 description: "查看在您建立和部署 Android 裝置的應用程式時，必須考慮的事項。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,19 +16,19 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: b600217338e2f0fb3b077036c59aaea13f76c0d6
+ms.sourcegitcommit: 6a28028faa5ecd7c3d3d4c055481c10467189b38
+ms.openlocfilehash: 5819613172d7ddf88133e802507e8e92c149a885
 
 ---
 # <a name="create-android-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立 Android 應用程式
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-建立和部署 Android 裝置的應用程式時，除了建立應用程式的其他 System Center Configuration Manager 需求和程序之外，還必須考慮下列項目。  
+當您建立和部署 Android 裝置的應用程式時，請記住下列考慮。  
 
 ## <a name="general-considerations"></a>一般考量
 
-Configuration Manager 支援部署 Android 的下列應用程式類型：
+Configuration Manager 支援部署下列適用於 Android 的應用程式類型：
 
 |裝置類型|支援的檔案|
 |-|-|
@@ -38,10 +38,10 @@ Configuration Manager 支援部署 Android 的下列應用程式類型：
 
 |裝置類型|支援的動作|
 |-|-|
-|Android|[可用]、[必要] (但使用者必須同意安裝)、[解除安裝] (同樣需要使用者同意)。|
+|Android|**可用**、**必要**。 使用者必須同意安裝和解除安裝。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

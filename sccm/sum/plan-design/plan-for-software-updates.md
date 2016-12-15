@@ -1,12 +1,12 @@
 ---
 
-title: "規劃軟體更新 | System Center Configuration Manager"
+title: "規劃軟體更新 | Microsoft Docs"
 description: "在 System Center Configuration Manager 生產環境中使用軟體更新之前，請務必先規劃軟體更新點基礎結構。"
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 69f2c9c3c098013679e12d8578a780130adb94be
+ms.sourcegitcommit: b1c68b233097ef3a744dd25b3fb919660f0b2244
+ms.openlocfilehash: 16415fb54a2cf91747990c94ffea0076effe525b
 
 
 ---
@@ -34,8 +34,16 @@ ms.openlocfilehash: 69f2c9c3c098013679e12d8578a780130adb94be
 
 -   當軟體更新點電腦上執行的是 WSUS，而且軟體更新點與其他站台系統角色共存時，軟體更新點最多可支援 25,000 個用戶端。  
 
--   軟體更新點可以支援最多 150,000 個用戶端，前提是遠端電腦符合 WSUS 需求以支援此用戶端數目。   
-    根據預設，Configuration Manager 不支援將軟體更新點設定為 NLB 叢集。 不過，您可以使用 Configuration Manager SDK，在 NLB 叢集上設定最多四個軟體更新點。  
+-   當遠端電腦符合 WSUS 需求、將 WSUS 與 Configuration Manager 搭配使用，而且您設定了下列各項時，軟體更新點就能支援多達 150,000 個用戶端：
+
+    IIS 應用程式集區：
+    - 將 WsusPool 佇列長度增加至 2000
+    - 將 WsusPool 專用記憶體限制增加為 4 倍，或設為 0 (無限制)      
+
+    如需軟體更新點的硬體需求詳細資訊，請參閱[站台系統的建議硬體](/sccm/core/plan-design/configs/recommended-hardware#a-namebkmkscalesiesystemsa-site-systems)。
+
+-   根據預設，Configuration Manager 不支援將軟體更新點設定為 NLB 叢集。 不過，您可以使用 Configuration Manager SDK，在 NLB 叢集上設定最多四個軟體更新點。  
+
 
 ### <a name="capacity-planning-for-software-updates-objects"></a>軟體更新物件的容量規劃  
  使用下列容量資訊規劃軟體更新物件。  
@@ -300,6 +308,6 @@ ms.openlocfilehash: 69f2c9c3c098013679e12d8578a780130adb94be
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

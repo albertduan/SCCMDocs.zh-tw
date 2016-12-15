@@ -1,5 +1,5 @@
 ---
-title: "規劃站台系統角色 | System Center Configuration Manager"
+title: "規劃站台系統角色 | Microsoft Docs"
 description: "規劃 System Center Configuration Manager 階層時，考量站台系統伺服器和站台系統角色。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 5f8d051a92cd74938f1a5235b37f02ebe0ff542c
+ms.sourcegitcommit: 2b00cfcec0959716d69a1605018f33d30287fee9
+ms.openlocfilehash: a2e57aac01fff3c28b4acfcf58bcd786bd3e62c4
 
 
 ---
@@ -35,7 +35,7 @@ ms.openlocfilehash: 5f8d051a92cd74938f1a5235b37f02ebe0ff542c
 
  如果您要設定具有 Proxy 的站台系統伺服器以供站台系統角色使用，請參閱 [可使用 Proxy 伺服器的站台系統角色](#bkmk_proxy)。  
 
-##  <a name="a-namebkmkplanrolesa-site-system-roles"></a><a name="bkmk_planroles"></a> 站台系統角色  
+##  <a name="a-namebkmkplanrolesa-site-system-roles"></a><a name="bkmk_planroles"></a> Site system roles  
  站台系統角色會安裝在電腦上，以提供站台額外的功能。 範例包括：  
 
 -   額外的管理點，讓站台可以支援更多裝置，直至站台支援的容量。  
@@ -72,6 +72,8 @@ ms.openlocfilehash: 5f8d051a92cd74938f1a5235b37f02ebe0ff542c
 -   **憑證登錄點** - 一種站台系統角色，它與執行網路裝置註冊服務的伺服器通訊，以管理使用簡單憑證註冊通訊協定 (SCEP) 的裝置憑證要求。  只有主要站台和管理中心網站支援這個角色。   即使單一憑證登錄點可提供功能給整個階層，為了協助負載平衡憑證要求，您可以在站台以及相同階層中的多個站台安裝此角色的多個執行個體。 當多個執行個體存在於階層中時，用戶端會隨機指派到其中一個憑證登錄點。  
 
      每個憑證登錄點都需存取個別的網路裝置註冊服務執行個體。 您不能將兩個 (含) 以上的憑證登錄點設定為使用同一個網路裝置註冊服務。 此外，憑證登錄點不能安裝在執行網路裝置註冊服務的同一部伺服器上。  
+
+- **雲端管理閘道連接器端點** - 用來與[雲端管理閘道](/sccm/core/clients/manage/setup-cloud-management-gateway)通訊的站台系統角色。 
 
 -   **發佈點** - 一種站台系統角色，其包含可供用戶端下載的來源檔案，例如應用程式內容、軟體套件、軟體更新、作業系統映像和開機映像。 依預設，這個角色在站台安裝時會安裝到新的主要及次要站台的站台伺服器電腦上，但在管理中心網站上不支援。  您可以在支援的站台和相同階層中的多個站台，安裝此角色的多個執行個體。  如需詳細資訊，請參閱 [Fundamental concepts for content management in System Center Configuration Manager](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md) (System Center Configuration Manager 的內容管理基本概念) 和[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
@@ -150,6 +152,6 @@ ms.openlocfilehash: 5f8d051a92cd74938f1a5235b37f02ebe0ff542c
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 

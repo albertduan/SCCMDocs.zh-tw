@@ -1,8 +1,8 @@
 ---
-title: "使用 System Center Configuration Manager 建立獨立媒體"
+title: "使用 System Center Configuration Manager 建立獨立媒體 | Microsoft Docs"
 description: "使用獨立媒體，在未連線至 Configuration Manager 站台或網路的電腦上部署作業系統。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 142965671c6808146f9072aeb50e3f4c47e1da68
+ms.sourcegitcommit: 06ade037c580d64503e6b8b5c3bf31004ab0650b
+ms.openlocfilehash: b566c101b58774805a6ff103fd0c9ad16603ed34
 
 
 ---
@@ -39,101 +39,124 @@ Configuration Manager 中的獨立媒體包含在未連線至 Configuration Mana
 ##  <a name="a-namebkmkcreatestandalonemediaa-create-stand-alone-media"></a><a name="BKMK_CreateStandAloneMedia"></a> 建立獨立媒體  
  使用 [建立工作順序媒體精靈] 建立獨立媒體之前，請先確定符合下列條件：  
 
-|工作|說明|  
-|----------|-----------------|  
-|建立部署作業系統的工作順序|作為獨立媒體的一部分，您必須指定工作順序以部署作業系統。 如需建立新工作順序的步驟，請參閱[在 System Center Configuration Manager 中建立工作順序以安裝作業系統](create-a-task-sequence-to-install-an-operating-system.md)。<br /><br /> 獨立媒體不支援下列動作：<br /><br /> -   工作順序中的 [自動套用驅動程式] 步驟。 不支援自動從驅動程式類別目錄套用裝置驅動程式，但您可以選擇 [套用驅動程式封裝] 步驟，讓 Windows 安裝程式可以使用一組指定的驅動程式。<br />-   安裝軟體更新。<br />-   在部署作業系統之前安裝軟體。<br />-   為使用者與目的地電腦建立關聯，以支援使用者裝置親和性。<br />-   動態套件會透過 [安裝套件] 工作來進行安裝。<br />-   動態應用程式會透過 [安裝應用程式] 工作來進行安裝。<br /><br /> <br /><br /> 如果您部署作業系統的工作順序包含[安裝套件](../../osd/understand/task-sequence-steps.md#BKMK_InstallPackage)步驟，而且您在管理中心網站建立獨立媒體，就有可能會發生錯誤。 管理中心網站並未包含執行工作順序期間啟用軟體發佈代理程式所需的所有用戶端設定原則。 CreateTsMedia.log 檔案中，可能會出現下列錯誤：<br /><br /> "WMI method SMS_TaskSequencePackage.GetClientConfigPolicies failed (0x80041001)"<br /><br /> 若獨立媒體包含 [安裝套件] 步驟，您必須在啟用軟體發佈代理程式的主要站台建立獨立媒體，或是在工作順序中[設定 Windows 和 ConfigMgr](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 步驟之後、第一個[安裝套件](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr)步驟之前新增**執行命令列**步驟。 [執行命令列]  步驟會執行 WMIC 命令，在第一個安裝套件步驟執行之前啟用軟體發佈代理程式。 您可以在 [執行命令列]  工作順序中使用下列內容：<br /><br /> **命令列**：**WMIC /命名空間:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE**|  
-|發佈與工作順序相關聯的所有內容|您必須將工作順序所需的所有內容都發佈到至少一個發佈點。 這包括開機映像、作業系統映像，以及其他相關聯的檔案。 精靈會在建立獨立媒體時從發佈點收集資訊。 您必須擁有該發佈點上內容庫的 **[讀取]** 存取權限。  如需詳細資訊，請參閱[發佈工作順序所參考的內容](manage-task-sequences-to-automate-tasks.md#BKMK_DistributeTS)。|  
-|準備卸除式 USB 磁碟機|針對卸除式 USB 磁碟機：<br /><br /> 如果您即將使用卸除式 USB 磁碟機，USB 磁碟機必須連接至精靈執行所在的電腦，並作為卸除式裝置讓 Windows 能夠偵測到。 精靈會在建立媒體時直接寫入 USB 磁碟機。 獨立媒體使用 FAT32 檔案系統。 您無法在內容包含大小超過 4 GB 的檔案的 USB 快閃磁碟機上建立獨立媒體。|  
-|建立輸出資料夾|針對 CD/DVD 組：<br /><br /> 在您執行 [建立工作順序媒體精靈] 建立 CD 或 DVD 組的媒體之前，必須先為精靈所建立的輸出檔案建立資料夾。 針對 CD 或 DVD 組所建立的媒體會做為 .iso 檔直接寫入該資料夾中。|  
+### <a name="create-a-task-sequence-to-deploy-an-operating-system"></a>建立部署作業系統的工作順序
+作為獨立媒體的一部分，您必須指定工作順序以部署作業系統。 如需建立新工作順序的步驟，請參閱[在 System Center Configuration Manager 中建立工作順序以安裝作業系統](create-a-task-sequence-to-install-an-operating-system.md)。
 
- 利用下列程序，建立卸除式 USB 磁碟機或 CD/DVD 組的獨立媒體。  
+獨立媒體不支援下列動作：
+- 工作順序中的自動套用驅動程式步驟。 不支援自動從驅動程式類別目錄套用裝置驅動程式，但您可以選擇 [套用驅動程式封裝] 步驟，讓 Windows 安裝程式可以使用一組指定的驅動程式。
+- 工作順序中的下載套件內容步驟。 管理點資訊無法在獨立媒體上使用，因此嘗試列舉內容位置的步驟將會失敗。
+- 安裝軟體更新。
+- 在部署作業系統之前安裝軟體。
+- 為使用者與目的地電腦建立關聯，以支援使用者裝置親和性。
+- 動態套件會透過 [安裝套件] 工作來進行安裝。
+- 動態應用程式會透過 [安裝應用程式] 工作來進行安裝。
 
-#### <a name="to-create-stand-alone-media"></a>建立獨立媒體  
+如果您部署作業系統的工作順序包含[安裝套件](../../osd/understand/task-sequence-steps.md#BKMK_InstallPackage)步驟，而且您在管理中心網站建立獨立媒體，就有可能會發生錯誤。 管理中心網站並未包含執行工作順序期間啟用軟體發佈代理程式所需的所有用戶端設定原則。 CreateTsMedia.log 檔案中，可能會出現下列錯誤：<br /><br /> "WMI method SMS_TaskSequencePackage.GetClientConfigPolicies failed (0x80041001)"<br /><br /> 若獨立媒體包含 [安裝套件] 步驟，您必須在啟用軟體發佈代理程式的主要站台建立獨立媒體，或是在工作順序中[設定 Windows 和 ConfigMgr](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 步驟之後、第一個[安裝套件](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr)步驟之前新增**執行命令列**步驟。 [執行命令列]  步驟會執行 WMIC 命令，在第一個安裝套件步驟執行之前啟用軟體發佈代理程式。 您可以在 [執行命令列]  工作順序中使用下列內容：<br /><br />
+```WMIC /namespace:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE
+```
 
-1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
+### Distribute all content associated with the task sequence
+You must distribute all content that is required by the task sequence the  to at least one distribution point. This includes the boot image, operating system image, and other associated files. The wizard gathers the information from the distribution point when it creates the stand-alone media. You must have **Read** access rights to the content library on that distribution point.  For details, see [Distribute content referenced by a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DistributeTS).
 
-2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
+### Prepare the removable USB drive
+*For a removable USB drive:*
 
-3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立工作順序媒體]  以啟動 [建立工作順序媒體精靈]。  
+If you are going to use a removable USB drive, the USB  drive must be connected to the computer where the wizard is run and the USB drive must be detectable by Windows as a removal device. The wizard writes directly to the USB drive when it creates the media. Stand-alone media uses a FAT32 file system. You cannot create stand-alone media on a USB flash drive whose content contains a file over 4 GB in size.
 
-4.  在 [選取媒體類型]  頁面指定下列選項，然後按 [下一步] 。  
+### Create an output folder
+*For a CD/DVD set:*
 
-    -   選取 [獨立媒體] 。  
+Before you run the Create Task Sequence Media Wizard to create media for a CD or DVD set, you must create a folder for the output files created by the wizard. Media that is created for a CD or DVD set is written as .iso files directly to the folder.
 
-    -   如果您想要允許作業系統在不需使用者輸入的情況下進行部署，便可選取 [允許自動部署作業系統] 。 當您選取此選項時，系統不會提示使用者輸入網路設定資訊或選用的工作順序。 不過，如果媒體已設定為使用密碼保護，仍會提示使用者輸入密碼。  
 
-5.  在 [媒體類型]  頁面上，指定媒體是快閃磁碟機還是 CD/DVD 組，然後按一下以設定下列項目：  
+ Use the following procedure to create stand-alone media for a removable USB drive or a CD/DVD set.  
+
+## To create stand-alone media  
+
+1.  In the Configuration Manager console, click **Software Library**.  
+
+2.  In the **Software Library** workspace, expand **Operating Systems**, and then click **Task Sequences**.  
+
+3.  On the **Home** tab, in the **Create** group, click **Create Task Sequence Media** to start the Create Task Sequence Media Wizard.  
+
+4.  On the **Select Media Type** page, specify the following options, and then click **Next**.  
+
+    -   Select **Stand-alone media**.  
+
+    -   Optionally, if you want to allow the operating system to be deployed without requiring user input, select **Allow unattended operating system deployment**. When you select this option the user is not prompted for network configuration information or for optional task sequences. However, the user is still prompted for a password if the media is configured for password protection.  
+
+5.  On the **Media Type** page, specify whether the media is a flash drive or a CD/DVD set, and then click configure the following:  
 
     > [!IMPORTANT]  
-    >  獨立媒體使用 FAT32 檔案系統。 您無法在內容包含大小超過 4 GB 的檔案的 USB 快閃磁碟機上建立獨立媒體。  
+    >  Stand-alone media uses a FAT32 file system. You cannot create stand-alone media on a USB flash drive whose content contains a file over 4 GB in size.  
 
-    -   如果您選取 [USB 快閃磁碟機] ，請指定要在其中儲存內容的磁碟機。  
+    -   If you select **USB flash drive**, specify the drive where you want to store the content.  
 
-    -   如果您選取 [CD/DVD 組] ，請指定媒體容量及輸出檔案的名稱和路徑。 精靈會將輸出檔案寫入此位置。 例如︰**\\\servername\folder\outputfile.iso**  
+    -   If you select **CD/DVD set**, specify the capacity of the media and the name and path of the output files. The wizard writes the output files to this location. For example: **\\\servername\folder\outputfile.iso**  
 
-         如果媒體容量太小，無法儲存整個內容，則會建立多個檔案，而且您必須將內容儲存到多個 CD 或 DVD 上。 需要多個媒體時，Configuration Manager 會在其建立的每個輸出檔案名稱上新增序號。 此外，如果您同時部署應用程式與作業系統，且應用程式無法完全安裝在單一媒體上，Configuration Manager 會將應用程式儲存在多個媒體上。 獨立媒體執行時，Configuration Manager 會提示使用者儲存應用程式的下一個媒體。  
+         If the capacity of the media is too small to store the entire content, multiple files are created and you must store the content on multiple CDs or DVDs. When multiple media is required, Configuration Manager adds a sequence number to the name of each output file that it creates. In addition, if you deploy an application along with the operating system and the application cannot fit on a single media, Configuration Manager stores the application across multiple media. When the stand-alone media is run, Configuration Manager prompts the user for the next media where the application is stored.  
 
         > [!IMPORTANT]  
-        >  如果您選取現有的 .iso 映像，[工作順序媒體精靈] 會在您繼續進行精靈的下一頁時從磁碟機或共用刪除映像。 即使您取消精靈，還是會刪除現有映像。  
+        >  If you select an existing .iso image, the Task Sequence Media Wizard deletes that image from the drive or share as soon as you proceed to the next page of the wizard. The existing image is deleted, even if you then cancel the wizard.  
 
-     按一下 [下一步] 。  
+     Click **Next**.  
 
-6.  在 **[安全性]** 頁面上，輸入強式密碼以協助保護媒體，然後按一下 **[下一步]**。 如果您指定密碼，則需要密碼才能使用媒體。  
+6.  On the **Security** page, enter a strong password to help protect the media, and then click **Next**. If you specify a password, the password is required to use the media.  
 
     > [!IMPORTANT]  
-    >  在獨立媒體上，只有工作順序步驟與其變數會進行加密。 剩餘的媒體內容則不會加密，因此切勿在工作順序指令碼中包括任何敏感資訊。 使用工作順序變數儲存與實作所有敏感資訊。  
+    >  On stand-alone media, only the task sequence steps and their variables are encrypted. The remaining content of the media is not encrypted, so do not include any sensitive information in task sequence scripts. Store and implement all sensitive information by using task sequence variables.  
 
-7.  在 [獨立 CD/DVD]  頁面上，指定部署作業系統的工作順序，然後按 [下一步] 。 精靈只會讓您選取與開機映像相關聯的工作順序。  
+7.  On the **Stand-Alone CD/DVD** page, specify the task sequence that deploys the operating system, and then click **Next**. The wizard lets you select only those task sequences that are associated with a boot image.  
 
-8.  在 **[發佈點]** 頁面上，指定包含工作順序所需內容的發佈點，然後按一下 **[下一步]**。  
+8.  On the **Distribution Points** page, specify the distribution points that contain the content required by the task sequence, and then click **Next**.  
 
-     Configuration Manager 只會顯示擁有內容的發佈點。 您必須先將所有與工作順序相關聯的內容 (開機映像、作業系統映像等) 發佈到至少一個發佈點，才能繼續。 發佈內容之後，您可以重新啟動精靈，或移除在這個頁面上已選取的任何發佈點，移至前一頁，然後再回到 **[發佈點]** 頁面，以重新整理發佈點清單。 如需發佈內容的詳細資訊，請參閱[發佈工作順序所參考的內容](manage-task-sequences-to-automate-tasks.md#BKMK_DistributeTS)。 如需發佈點和內容管理的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
+     Configuration Manager will only display distribution points that have the content. You must distribute all of the content associated with the task sequence (boot image, operating system image, etc.) to at least one distribution point before you can continue. After you distribute the content, you can either restart the wizard or remove any distribution points that you already selected  on this page, go to the previous page, and then back to the **Distribution Points** page to refresh the distribution point list. For more information about distributing content, see [Distribute content referenced by a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DistributeTS). For more information about distribution points and content management, see [Manage content and content infrastructure for System Center Configuration Manager](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md).  
 
     > [!NOTE]  
-    >  您必須擁有該發佈點上內容庫的 **[讀取]** 存取權限。  
+    >  You must have **Read** access rights to the content library on the distribution points.  
 
-9. 在 [自訂]  頁面指定下列資訊，然後按 [下一步] 。  
+9. On the **Customization** page, specify the following information, and then click **Next**.  
 
-    -   指定工作順序用於部署作業系統的變數。  
+    -   Specify the variables that the task sequence uses to deploy the operating system.  
 
-    -   指定您想要在工作順序之前執行的任何啟動前置命令。 啟動前置命令是在執行工作順序以安裝作業系統前，能夠在 Windows PE 中與使用者互動的指令碼或可執行檔。 如需媒體之啟動前置命令的詳細資訊，請參閱 [System Center Configuration Manager 中工作順序媒體的啟動前置命令](../understand/prestart-commands-for-task-sequence-media.md)。  
+    -   Specify any prestart commands that you want to run before the task sequence. Prestart commands are a script or an executable that can interact with the user in Windows PE before the task sequence runs to install the operating system. For more information about prestart commands for media, see [Prestart commands for task sequence media in System Center Configuration Manager](../understand/prestart-commands-for-task-sequence-media.md).  
 
-         您也可以選取 [包含啟動前置命令的檔案]  ，加入任何啟動前置命令所需的檔案。  
+         Optionally, select **Files for the prestart command** to include any required files for the prestart command.  
 
         > [!TIP]  
-        >  在建立工作順序媒體時，工作順序會將套件識別碼和啟動前置命令列 (包括任何工作順序變數的值) 寫入執行 Configuration Manager 主控台之電腦的 CreateTSMedia.log 記錄檔中。 您可以檢閱這個記錄檔來驗證工作順序變數的值。  
+        >  During task sequence media creation, the task sequence writes the package ID and prestart command-line, including the value for any task sequence variables, to the CreateTSMedia.log log file on the computer that runs the Configuration Manager console. You can review this log file to verify the value for the task sequence variables.  
 
-10. 完成精靈。  
+10. Complete the wizard.  
 
- 獨立媒體檔案 (.iso) 已於目的地資料夾中建立。 如果您已選取 **[獨立 CD/DVD]**，現在就可以將輸出檔案複製到一組 CD 或 DVD 上。  
+ The stand-alone media files (.iso) are created in the destination folder. If you selected **Stand-Alone CD/DVD**, you can now copy the output files to a set of CDs or DVDs.  
 
-##  <a name="a-namebkmkstandalonemediatsexamplea-example-task-sequence-for-stand-alone-media"></a><a name="BKMK_StandAloneMediaTSExample"></a> 獨立媒體工作順序範例  
- 當您建立工作順序來使用獨立媒體將作業系統部署，請使用下表做為指南。 資料表會協助您決定您的工作順序步驟及如何組織和組織成邏輯群組的那些工作順序步驟的一般順序。 您所建立的工作順序可能會因這個範例並可以包含更多或較少的工作順序步驟和群組。  
+##  <a name="BKMK_StandAloneMediaTSExample"></a> Example task sequence for stand-alone media  
+ Use the following table as a guide as you create a task sequence to deploy an operating system using stand-alone media. The table will help you decide the general sequence for your task sequence steps and how to organize and structure those task sequence steps into logical groups. The task sequence that you create might vary from this sample and can contain more or fewer task sequence steps and groups.  
 
 > [!NOTE]  
->  您永遠必須使用工作序列媒體精靈] 來建立獨立的媒體。  
+>  You must always use the Task Sequence Media Wizard to create stand-alone media.  
 
-|工作序列群組或步驟|說明|  
+|Task Sequence Group or Step|Description|  
 |---------------------------------|-----------------|  
-|擷取檔案和設定 - **(新工作順序群組)**|建立工作序列群組。 工作序列群組會保持在一起的較佳的組織及錯誤控制類似的工作順序步驟。|  
-|擷取 Windows 設定|您可以使用此工作順序步驟來識別擷取自之前重新安裝映像，目的地電腦上的現有作業系統的 Microsoft Windows 設定。 您可以擷取電腦名稱、 使用者和組織資訊和時區設定。|  
-|擷取網路設定|您可以使用此工作順序步驟來擷取接收工作順序的電腦的網路設定。 您可以擷取該電腦和網路介面卡設定資訊的網域或工作群組成員資格。|  
-|擷取使用者檔案和設定 - **(新工作順序子群組)**|建立工作序列群組內的工作序列群組。 這個子群組包含擷取使用者狀態資料從現有作業系統之前重新安裝映像的目的地電腦上所需的步驟。 類似的初始群組您加入這個子群組會保持類似工作順序步驟在一起，以進一步組織及錯誤控制。|  
-|設定本機狀態的位置|您可以使用此工作順序步驟來指定使用受保護的路徑的工作順序變數的本機位置。 使用者狀態會儲存在硬碟上受保護的目錄。|  
-|擷取使用者狀態|您可以使用此工作順序步驟來擷取使用者檔案和設定您想要移轉至新的作業系統。|  
-|安裝作業系統- **(新工作順序群組)**|建立另一個工作序列子群組。 這個子群組包含安裝作業系統所需的步驟。|  
-|重新開機到 Windows PE 或硬碟|您可以使用此工作順序步驟來指定會接收此工作順序的電腦重新啟動選項。 此步驟中會顯示訊息給使用者指出如此才能繼續安裝將會重新啟動電腦。<br /><br /> 此步驟中使用唯讀 **_SMSTSInWinPE** 工作順序變數。 如果相關聯的值等於 **false** 工作順序步驟將會繼續。|  
-|套用作業系統|您可以使用此工作順序步驟來安裝到目的地電腦上的作業系統映像。 這項步驟會刪除該磁碟區上的所有檔案 (除了 Configuration Manager 特定控制項檔案之外)，然後將 WIM 檔案中包含的所有磁碟區映像套用至相對應循序磁碟區。 您也可以指定 **sysprep** 回應檔案來設定要用於安裝的磁碟分割。|  
-|套用 Windows 設定|您可以使用此工作順序步驟來設定目的地電腦的 Windows 設定組態資訊。 您可以將套用的 windows 設定是使用者和組織資訊、 產品或授權金鑰資訊、 時區、 和本機系統管理員密碼。|  
-|套用網路設定|您可以使用此工作順序步驟來指定目的地電腦的網路或工作群組組態資訊。 您也可以指定電腦使用 DHCP 伺服器是否可靜態指派 IP 位址資訊。|  
-|套用驅動程式套件|若要讓 [Windows 安裝程式可供使用驅動程式套件中所有的裝置驅動程式中使用此工作順序步驟。 在獨立的媒體上都必須包含所有必要的裝置驅動程式。|  
-|安裝作業系統 - **(新工作順序群組)**|建立另一個工作序列子群組。 這個子群組包含安裝 Configuration Manager 用戶端所需的步驟。|  
-|[安裝套件]|使用此工作順序步驟來安裝 Configuration Manager 用戶端軟體。 Configuration Manager 會安裝並註冊 Configuration Manager 用戶端 GUID。 您可以在 **[安裝內容]** 視窗中指派必要的安裝參數。|  
-|還原使用者檔案和設定 - **(新工作順序群組)**|建立另一個工作序列子群組。 這個子群組包含還原使用者狀態所需的步驟。|  
-|還原使用者狀態|您可以使用此工作順序步驟來起始使用者狀態移轉工具 (USMT) 從擷取使用者狀態動作的使用者狀態和已擷取的設定還原至目的電腦。|  
+|Capture File and Settings - **(New Task Sequence Group)**|Create a task sequence group. A task sequence group keeps similar task sequence steps together for better organization and error control.|  
+|Capture Windows Settings|Use this task sequence step to identify the Microsoft Windows settings that are captured from the existing operating system on the destination computer prior to reimaging. You can capture the computer name, user and organizational information, and the time zone settings.|  
+|Capture Network Settings|Use this task sequence step to capture network settings from the computer that receives the task sequence. You can capture the domain or workgroup membership of the computer and the network adapter setting information.|  
+|Capture User Files and Settings - **(New Task Sequence Sub-Group)**|Create a task sequence group within a task sequence group. This sub-group contains the steps needed to capture user state data from the existing operating system on the destination computer prior to reimaging. Similar to the initial group that you added, this sub-group keeps similar task sequence steps together for better organization and error control.|  
+|Set Local State Location|Use this task sequence step to specify a local location using the protected path task sequence variable. The user state is stored on a protected directory on the hard drive.|  
+|Capture User State|Use this task sequence step to capture the user files and settings you want to migrate to the new operating system.|  
+|Install Operating System - **(New Task Sequence Group)**|Create another task sequence sub-group. This sub-group contains the steps needed to install the operating system.|  
+|Reboot to Windows PE or hard disk|Use this task sequence step to specify restart options for the computer that receives this task sequence. This step will display a message to the user indicating that the computer will be restarted so that the installation can continue.<br /><br /> This step uses the read-only **_SMSTSInWinPE** task sequence variable. If the associated value equals **false** the task sequence step will continue.|  
+|Apply Operating System|Use this task sequence step to install the operating system image onto the destination computer. This step deletes all files on that volume (with the exception of Configuration Manager-specific control files) and then applies all volume images contained in the WIM file to the corresponding sequential disk volume. You can also specify a **sysprep** answer file to configure which disk partition to use for the installation.|  
+|Apply Windows Settings|Use this task sequence step to configure the Windows settings configuration information for the destination computer. The windows settings you can apply are user and organizational information, product or license key information, time zone, and the local administrator password.|  
+|Apply Network Settings|Use this task sequence step to specify the network or workgroup configuration information for the destination computer. You can also specify if the computer uses a DHCP server or you can statically assign the IP address information.|  
+|Apply Driver Package|Use this task sequence step to make all device drivers in a driver package available for use by Windows setup. All necessary device drivers must be contained on the stand-alone media.|  
+|Setup Operating System - **(New Task Sequence Group)**|Create another task sequence sub-group. This sub-group contains the steps needed to install the Configuration Manager client.|  
+|Setup Windows and ConfigMgr|Use this task sequence step to install the Configuration Manager client software. Configuration Manager installs and registers the Configuration Manager client GUID. You can assign the necessary installation parameters in the **Installation properties** window.|  
+|Restore User Files and Settings - **(New Task Sequence Group)**|Create another task sequence sub-group. This sub-group contains the steps needed to restore the user state.|  
+|Restore User State|Use this task sequence step to initiate the User State Migration Tool (USMT) to restore the user state and settings that were captured from the Capture User State Action to the destination computer.|  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

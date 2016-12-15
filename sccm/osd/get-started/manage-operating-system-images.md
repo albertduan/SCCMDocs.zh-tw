@@ -1,8 +1,8 @@
 ---
-title: "管理作業系統映像 | Configuration Manager"
+title: "管理作業系統映像 | Microsoft Docs"
 description: "在 Configuration Manager 中，深入了解儲存在 Windows 映像處理 (WIM) 檔案中的作業系統映像管理方法。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 3c0801afa6a967faabf186f70685b701ba2a95d8
+ms.sourcegitcommit: 03722ff4f480cd26842e395fe1f7ec8359e2b33e
+ms.openlocfilehash: 6953c3834ca303b949f22436010a87b3da9688dc
 
 
 ---
@@ -85,7 +85,7 @@ Configuration Manager 中的作業系統映像儲存為 Windows 映像 (WIM) 檔
  作業系統映像發佈至發佈點的方式，與您發佈其他內容的方式相同。 在大部分情況下，您必須在部署作業系統之前，將作業系統映像發佈至至少一個發佈點。 如需發佈作業系統映像的步驟，請參閱 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)。  
 
 ##  <a name="a-namebkmkosimagesapplyupdatesa-apply-software-updates-to-an-operating-system-image"></a><a name="BKMK_OSImagesApplyUpdates"></a> 將軟體更新套用至作業系統映像  
- 適用於作業系統映像中作業系統的新軟體更新會定期發行。 當然，在您可將軟體更新套用至映像之前，必須先使軟體更新基礎結構就緒，並已成功同步處理軟體更新。 如需詳細資訊，請參閱 [Deploy software updates](../../sum/deploy-use/deploy-software-updates.md) (部署軟體更新)。  
+ 適用於作業系統映像中作業系統的新軟體更新會定期發行。 在您可將軟體更新套用至映像之前，必須先使軟體更新基礎結構就緒、已成功同步處理軟體更新，並已將軟體更新下載至站台伺服器上的內容庫。 如需詳細資訊，請參閱 [Deploy software updates](../../sum/deploy-use/deploy-software-updates.md) (部署軟體更新)。  
 
  您可以依指定的排程將適用的軟體更新套用至映像。 依照您指定的排程，Configuration Manager 會將您選取的軟體更新套用至作業系統映像，然後選擇性地將更新映像發佈至發佈點。 有關作業系統映像的資訊會儲存在站台資料庫中，包括匯入時已套用的軟體更新。 最初新增時已套用至映像的軟體更新也會儲存在站台資料庫中。 當您啟動精靈將軟體更新套用至作業系統映像時，精靈會擷取尚未套用至映像的可用軟體更新清單供您選取。 Configuration Manager 會從站台伺服器上的內容庫複製軟體更新，並將此軟體更新套用至作業系統映像。  
 
@@ -142,6 +142,6 @@ Configuration Manager 中的作業系統映像儲存為 Windows 映像 (WIM) 檔
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

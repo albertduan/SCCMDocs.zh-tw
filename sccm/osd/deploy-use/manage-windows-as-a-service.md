@@ -1,8 +1,8 @@
 ---
-title: "管理 Windows 即服務 | Configuration Manager"
+title: "管理 Windows 即服務 | Microsoft Docs"
 description: "System Center Configuration Manager 的功能可協助您檢視環境中的 Windows 即服務狀態，以隨時更新。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
+ms.sourcegitcommit: 3f44505c977b511223a083a960f871371c0ff133
+ms.openlocfilehash: 1885968006ef5be1f507e94e0d33918174b1af12
 
 
 ---
@@ -134,14 +134,15 @@ ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
 
     -   **指定此服務方案應該適用的 Windows 整備狀態**：選取下列其中一項：  
 
-        -   **發行就緒 (最新分支)**：  
+        -   **發行就緒 (最新分支)**：在 CB 服務模型中，當 Microsoft 發行功能更新之後即可供使用。
 
-        -   **商務就緒 (商務的最新分支)**：  
+        -   **商務就緒 (最新商務分支)**：CBB 服務分支通常用於廣泛部署。 CBB 服務分支中的 Windows 10 用戶端只是稍後才會接收到 CB 服務分支中 Windows 10 的相同組建。
 
-    -   **Microsoft 發行新的升級之後，您想要在您的環境中部署之前等待的天數**：  
+    -   **Microsoft 發行新的升級之後，您想要在您的環境中部署之前等待的天數**：如果目前的日期是在發行日期加上您設定此設定的天數之後，Configuration Manager 會評估是否要在部署中包含升級。
 
     -   在 Configuration Manager 1602 版之前，按一下 [預覽] 可檢視與整備狀態相關的 Windows 10 更新。  
 
+    如需詳細資訊，請參閱[服務分支](https://technet.microsoft.com/itpro/windows/manage/waas-overview#servicing-branches)。
 7.  自 Configuration Manager 1602 版開始，在 [升級] 頁面上設定搜尋準則，可以篩選要加入服務方案中的升級。 只有符合指定準則的升級會新增至相關聯的部署。  
 
      按一下 **[預覽]** 可檢視符合指定準則的升級。  
@@ -168,7 +169,7 @@ ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
         > [!NOTE]  
         >  實際安裝的期限時間是顯示的期限時間，加上最多 2 小時的隨機總時間。 這能減少對同時在部署中安裝更新之目的地集合裡所有用戶端電腦的潛在影響。  
         >   
-        >  您可以設定 [電腦代理程式]  用戶端設定的 [停用期限隨機設定]  ，針對必要的更新停用安裝隨機延遲。 如需詳細資訊，請參閱 [Computer Agent](../../core/clients/deploy/about-client-settings.md#BKMK_ComputerAgentDeviceSettings)。  
+        >  您可以設定 [電腦代理程式]  用戶端設定的 [停用期限隨機設定]  ，針對必要的更新停用安裝隨機延遲。 如需詳細資訊，請參閱 [Computer Agent](../../core/clients/deploy/about-client-settings.md#computer-agent)。  
 
 9. 在 [使用者經驗] 頁面，設定以下設定：  
 
@@ -220,7 +221,12 @@ ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
  在您完成精靈後，服務方案就會執行。 它會將符合指定準則的更新新增至軟體更新群組、將更新下載至站台伺服器上的內容庫、將更新發佈至設定的發佈點，然後將軟體更新群組部署至目標集合中的用戶端。  
 
 ##  <a name="a-namebkmkmodifyservicingplana-modify-a-servicing-plan"></a><a name="BKMK_ModifyServicingPlan"></a> 修改服務方案  
- 您從 Windows 10 服務儀表板建立基本服務方案之後，或是需要變更現有服務方案的設定時，可以移至服務方案的內容。 利用下列程序修改服務方案的內容。  
+您從 Windows 10 服務儀表板建立基本服務方案之後，或是需要變更現有服務方案的設定時，可以移至服務方案的內容。
+
+> [!NOTE]
+> 當您建立服務方案時，您可以在無法於精靈中使用的服務方案內容中進行設定。 精靈會針對下列各項的設定使用預設設定：下載設定、部署設定，以及警示。  
+
+利用下列程序修改服務方案的內容。  
 
 #### <a name="to-modify-the-properties-of-a-servicing-plan"></a>修改服務方案的內容  
 
@@ -228,10 +234,34 @@ ms.openlocfilehash: 0ed06bb30d1277afa71d1eb2d045ea0ebc87912a
 
 2.  在 [軟體程式庫] 工作區中，展開 [Windows 10 服務] 、按一下 [服務方案] ，然後選取您要修改的服務方案。  
 
-3.  在 [首頁]  索引標籤上，按一下 [內容]  以開啟所選服務方案的內容。  
+3.  在 [首頁]  索引標籤上，按一下 [內容]  以開啟所選服務方案的內容。
+
+    以下設定可用於無法在精靈中設定的服務方案內容中：
+
+    - 部署設定 在 [部署設定] 索引標籤上，指定以下設定：  
+
+        -   **部署的類型**：指定軟體更新部署的部署類型。 選取 [必要]  ，建立強制軟體更新部署，此時會在設定安裝期限前自動在用戶端上安裝軟體更新。 選取 [可用]  建立選用的軟體更新部署，以便使用者經由軟體中心進行安裝。  
+
+            > [!IMPORTANT]  
+            >  建立軟體更新部署後，您之後就不能變更部署類型。  
+
+            > [!NOTE]  
+            >  作為 [必要]  部署的軟體更新群組會在背景中下載，並在設有 BITS 設定的情況下加以執行。  
+            > 不過，作為 [可用]  部署的軟體更新群組則會在幕前下載，並忽略 BITS 設定。  
+
+        -   **使用網路喚醒來喚醒用戶端進行必要的部署**：指定是否於期限啟用網路喚醒，將喚醒封包傳送到在部署中需要一或多個軟體更新的電腦。 安裝期限時處於睡眠模式的任何電腦都會喚醒，如此即可起始軟體更新安裝。 在部署中處於睡眠狀態且不需要任何軟體更新的用戶端並不會啟動。 根據預設，並未啟用此設定，且僅於 [部署的類型]  設定至 [必要] 時才可使用。  
+
+            > [!WARNING]  
+            >  您必須為電腦和網路設定 [網路喚醒] 後，才可以使用此選項。  
+
+        -   **詳細等級**：針對由用戶端電腦報告的狀態訊息，指定詳細等級。  
+
+    - 下載設定
+
+    - 警示
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

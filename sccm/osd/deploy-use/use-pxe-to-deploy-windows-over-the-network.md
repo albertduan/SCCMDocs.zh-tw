@@ -1,8 +1,8 @@
 ---
-title: "透過網路使用 PXE 部署 Windows | Configuration Manager"
+title: "使用 PXE 透過網路部署 Windows | Microsoft Docs"
 description: "使用 PXE 起始作業系統部署來重新整理電腦的作業系統，或在新電腦上安裝新的 Windows 版本。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4bb62f7479fafac6b57d42cd048fd5bcec29b0e9
+ms.sourcegitcommit: 3f44505c977b511223a083a960f871371c0ff133
+ms.openlocfilehash: b22cdbd42693078caa47f41182ce73ea881c3515
 
 
 ---
@@ -98,6 +98,8 @@ System Center Configuration Manager 中的 PXE 起始作業系統部署，可讓
 ##  <a name="how-is-the-boot-image-selected-for-clients-booting-with-pxe"></a>如何為使用 PXE 開機的用戶端選取開機映像？
 用戶端使用 PXE 開機時，Configuration Manager 會將要使用的開機映像提供給用戶端。 從 Configuration Manager 1606 版開始，Configuration Manager 使用具有確切相符架構的開機映像 (如果有的話)。 如果找不到具有確切架構的開機映像，Configuration Manager 會使用具有相容架構的開機映像。 下列清單提供如何為使用 PXE 開機的用戶端選取開機映像的詳細資料。
 1. Configuration Manager 會查看站台資料庫中是否有系統記錄符合嘗試開機的用戶端的 MAC 位址或 SMBIOS。
+    > [!NOTE]
+    > 如果指派給站台的電腦會開機至不同站台的 PXE，就不會顯示適用於該電腦的原則。 例如，如果已經將用戶端指派給站台 A，站台 B 上的管理點和發佈點將無法存取站台 A 的原則，而用戶端就不會成功進行 PXE 開機。
 2. Configuration Manager 會尋找部署至步驟 1 中所找到之系統記錄的工作順序。
 3. 在步驟 2 中找到的工作順序清單中，Configuration Manager 會尋找符合嘗試開機的用戶端架構的開機映像。 如果找到相同架構的開機映像，則會使用該開機映像。
 
@@ -105,6 +107,6 @@ System Center Configuration Manager 中的 PXE 起始作業系統部署，可讓
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

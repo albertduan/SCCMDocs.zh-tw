@@ -1,11 +1,11 @@
 ---
-title: "檢修伺服器群組 | Configuration Manager"
+title: "提供伺服器群組 | Microsoft Docs"
 description: "System Center Configuration Manager 主控台提供警示與狀態，以監視更新及相容性。"
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 304a83ea-0f72-437d-9688-2e6e0c7526dd
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: da7a5f1d075eb1fcd7c56b713401bb0f985fa487
+ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
+ms.openlocfilehash: b89cec7cebb5342da32ec8e11a049edad12f1231
 
 
 ---
@@ -47,8 +47,11 @@ ms.openlocfilehash: da7a5f1d075eb1fcd7c56b713401bb0f985fa487
 
 5.  指定是否要使用預先部署 (節點清空) 指令碼或部署後 (節點繼續) 指令碼。  
 
+    > [!WARNING]
+    > 自訂指令碼不是由 Microsoft 所簽署。 您必須負責維護這些指令碼的完整性。
+
     > [!TIP]  
-    >以下是可將目前時間寫入文字檔案之預先部署和部署後指令碼的測試範例：  
+    > 以下是可將目前時間寫入文字檔案之預先部署和部署後指令碼的測試範例：  
     >   
     >  **預先部署**  
     >   
@@ -85,6 +88,6 @@ ms.openlocfilehash: da7a5f1d075eb1fcd7c56b713401bb0f985fa487
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

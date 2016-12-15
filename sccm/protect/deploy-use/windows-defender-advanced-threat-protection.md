@@ -1,5 +1,5 @@
 ---
-title: "Windows Defender 進階威脅防護 | System Center Configuration Manager"
+title: "Windows Defender 進階威脅防護 | Microsoft Docs"
 description: "了解如何管理及監視 Windows Defender 進階威脅防護，這是幫助企業回應進階攻擊的新服務。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: a4ad2d93ecd994fff00dab33084a734252cac651
+ms.sourcegitcommit: 299fada2b6587ace44e635c4f26cc7a482d44843
+ms.openlocfilehash: 880ea4fcb0730f0e9adbc9f142262f241f5df9dc
 
 ---
 # <a name="windows-defender-advanced-threat-protection"></a>Windows Defender 進階威脅防護
@@ -38,9 +38,9 @@ Windows Defender ATP 是 [Windows 資訊安全中心](https://securitycenter.win
 
  1.  登入 [Windows Defender ATP 線上服務](https://securitycenter.windows.com/)   
 
- 2.  按一下 [Client On-boarding] (用戶端上架) 功能表項目。  
+ 2.  按一下 [端點管理] 功能表項目。  
 
- 3.  選取 [System Center Configuration Manager]，然後按一下 [下載套件]。  
+ 3.  選取 [System Center Configuration Manager (最新分支) 版本 1606]，然後按一下 [下載套件]。  
 
  4.  下載壓縮的封存檔案 (.zip)，並將內容解壓縮。
 
@@ -86,7 +86,34 @@ Windows Defender ATP 是 [Windows 資訊安全中心](https://securitycenter.win
         -   **未上架** - 已套用原則，但代理程式尚未回報原則上架  
 
 
+## <a name="how-to-create-and-deploy-an-offboarding-configuration-file"></a>如何建立及部署下架設定檔  
 
-<!--HONumber=Nov16_HO1-->
+1.  登入 [Windows Defender ATP 線上服務](https://securitycenter.windows.com/)   
+
+2.  按一下 [端點管理] 功能表項目。  
+
+3.  選取 [System Center Configuration Manager (最新分支) 版本 1606]，然後按一下 [端點下架]。  
+
+4.  下載壓縮的封存檔案 (.zip)，並將內容解壓縮。 將檔案下架的有效期限為 30 天。
+
+5.  在 Configuration Manager 主控台中，瀏覽至 [資產與相容性] > [概觀] > [Endpoint Protection] > [Windows Defender ATP 原則]，然後按一下 [建立 Windows Defender ATP 原則]。 [Windows Defender ATP 原則精靈] 隨即開啟。  
+
+6.  輸入 Windows Defender ATP 原則的 [名稱] 和 [描述]，然後選取 [下架]。 按一下 [下一步] 。  
+
+7.  **瀏覽**至您組織之 Windows Defender ATP 雲端服務租用戶所提供的設定檔。 按一下 [下一步] 。  
+
+8.  檢閱摘要並完成精靈。  
+
+9.  您現在可以按一下 [部署]，將 Windows Defender ATP 原則部署至受管理的用戶端電腦。  
+
+> [!IMPORTANT]
+> Windows Defender ATP 設定檔包含應該受到保護的機密資訊。
+
+[Windows Defender 進階威脅防護](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-advanced-threat-protection)
+[針對 Windows Defender 進階威脅防護上線問題進行疑難排解](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
+
+
+
+<!--HONumber=Dec16_HO1-->
 
 

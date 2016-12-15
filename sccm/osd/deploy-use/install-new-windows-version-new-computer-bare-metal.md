@@ -1,8 +1,8 @@
 ---
-title: "使用 System Center Configuration Manager 在新電腦 (裸機) 上安裝新版的 Windows"
+title: "使用 System Center Configuration Manager 在新電腦 (裸機) 上安裝新版的 Windows | Microsoft Docs"
 description: "請在 System Center Configuration Manager 中遵循下列步驟，以使用 PXE、OEM 或獨立媒體，在新電腦上安裝作業系統。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: c672595a06a45bec840f17743636ef6f502af49f
+ms.sourcegitcommit: 06ade037c580d64503e6b8b5c3bf31004ab0650b
+ms.openlocfilehash: 93b3d99e7391feefc3d706f15f0fe8f8df3b75ac
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: c672595a06a45bec840f17743636ef6f502af49f
 
 -   **規劃並實作基礎結構需求**  
 
-     必須要備妥數個基礎結構需求，才能部署作業系統，例如 Windows ADK、Windows 部署服務 (WDS)、支援的硬碟設定等。如需詳細資訊，請參閱[作業系統部署的基礎結構需求](../plan-design/infrastructure-requirements-for-operating-system-deployment.md)。  
+     必須要備妥數個基礎結構需求，才能部署作業系統，例如 Windows ADK、Windows 部署服務 (WDS)、支援的硬碟設定等。如需詳細資訊，請參閱[作業系統部署的基礎結構需求](../plan-design/infrastructure-requirements-for-operating-system-deployment.md)。
 
 ##  <a name="a-namebkmkconfigurea-configure"></a><a name="BKMK_Configure"></a> 設定  
 
@@ -81,6 +81,6 @@ ms.openlocfilehash: c672595a06a45bec840f17743636ef6f502af49f
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

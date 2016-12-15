@@ -1,12 +1,12 @@
 ---
 
-title: "手動部署軟體更新 | Configuration Manager"
+title: "手動部署軟體更新 | Microsoft Docs"
 description: "若要手動部署更新，請從 Configuration Manager 主控台中選取更新並手動部署，或將更新新增至更新群組並部署群組。"
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,15 +14,15 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 57184274-5fea-4d79-a2b4-22e08ed26daf
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: be845d9f6ad2f92a0235cdb7410654e229448e1b
+ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
+ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
 
 
 ---
 
 #  <a name="a-namebkmkmanualdeploya-manually-deploy-software-updates"></a><a name="BKMK_ManualDeploy"></a> 手動部署軟體更新  
 
-*適用對象：System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
  在手動部署軟體更新的程序中，您將從 Configuration Manager 主控台選取軟體更新，然後手動啟動部署程序。 或者，您可以將選取的軟體更新新增到某個更新群組，然後手動部署更新群組。 您通常會使用手動部署方式以透過必要的軟體更新將用戶端裝置保持在最新狀態，然後才會建立 ADR 以管理進行中的每月軟體更新部署。 您也會使用手動方式來部署超出訊號範圍的軟體更新。 如果需要協助來判斷哪種部署方法最適合您，請參閱 [Deploy software updates](deploy-software-updates.md) (部署軟體更新)。
 
@@ -228,29 +228,31 @@ ms.openlocfilehash: be845d9f6ad2f92a0235cdb7410654e229448e1b
         > [!NOTE]  
         >  實際安裝的期限時間是您所設定的特定時間，加上最多 2 小時的隨機總時間。 這能減少對同時在部署中安裝軟體更新之目的地集合裡所有用戶端電腦的潛在影響。  
         >   
-        >  您可以設定 [電腦代理程式]  用戶端設定的 [停用期限隨機設定]  ，針對必要的軟體更新停用安裝隨機延遲。 如需詳細資訊，請參閱 [Computer Agent](../../core/clients/deploy/about-client-settings.md#a-namebkmkcomputeragentdevicesettingsa-computer-agent)。  
+        >  您可以設定 [電腦代理程式]  用戶端設定的 [停用期限隨機設定]  ，針對必要的軟體更新停用安裝隨機延遲。 如需詳細資訊，請參閱 [Computer Agent](../../core/clients/deploy/about-client-settings.md#computer-agent)。  
 
 8.  在 [使用者經驗] 頁面，設定以下設定：  
 
     -   **使用者通知**：指定是否要在設定的 [軟體可用時間]  ，於用戶端電腦上 [軟體中心] 內顯示軟體更新的通知，以及是否要在用戶端電腦上顯示使用者通知。 [部署設定] 頁面上的 [部署的類型]  設定為 [可用]  時，您不能選取 [在軟體中心和所有通知中隱藏] 。  
 
-    -   **期限行為**：指定到達軟體更新部署期限時會發生的行為。 指定是否安裝部署中的軟體更新。 同時也指定是否於無論設定之維護期間為何的狀況下，只要軟體更新安裝完成，就執行系統重新啟動。 如需維護期間的詳細資訊，請參閱[如何在 Configuration Manager 中使用維護期間](../../core/clients/manage/collections/use-maintenance-windows.md)。  
+    -   **期限行為**：只有在 [部署設定] 頁面上的 [部署的類型] 設定為 [必要] 時才可使用。   
+    指定到達軟體更新部署期限時會出現的行為。 指定是否安裝部署中的軟體更新。 同時也指定是否於無論設定之維護期間為何的狀況下，只要軟體更新安裝完成，就執行系統重新啟動。 如需維護期間的詳細資訊，請參閱[如何在 Configuration Manager 中使用維護期間](../../core/clients/manage/collections/use-maintenance-windows.md)。  
 
-    -   **裝置重新啟動行為**：於安裝軟體更新，且需要重新啟動系統才能完成安裝的狀況下，指定是否抑制在伺服器和工作站上重新啟動系統。  
+    -   **裝置重新啟動行為**：只有在 [部署設定] 頁面上的 [部署的類型] 設定為 [必要] 時才可使用。    
+    於安裝軟體更新，且需要重新啟動系統才能完成安裝的狀況下，指定是否抑制在伺服器和工作站上重新啟動系統。  
 
         > [!IMPORTANT]  
-        >  在伺服器環境中，或者是您不想讓安裝軟體更新的電腦根據預設重新啟動時，抑制系統重新啟動是很有用的。 不過，如此一來就會讓電腦處於不安全的狀態，允許強制重新啟動則可協助確保軟體更新安裝能立即完成。 。  
+        >  在伺服器環境中，或者是您不想讓安裝軟體更新的電腦根據預設重新啟動時，抑制系統重新啟動是很有用的。 不過，如此一來就會讓電腦處於不安全的狀態，允許強制重新啟動則可協助確保軟體更新安裝能立即完成。
 
     -   **Windows Embedded 裝置的寫入篩選器處理**：將軟體更新部署至啟用寫入篩選器的 Windows Embedded 裝置時，您可以指定在暫時重疊上安裝軟體更新，並於稍後再認可變更，或是在安裝期限或維護期間認可變更。 當您在安裝期限或維護期間認可變更時，需要重新啟動裝置才能保存裝置的變更。  
 
         > [!NOTE]  
         >  當您將軟體更新部署至 Windows Enbedded 裝置時，請確認裝置是已設定維護期間之集合的成員。  
 
-     只有在 [部署設定] 頁面上的 [部署的類型]  設定為 [必要]  時，您才可以設定 [期限行為]  和 [裝置重新啟動行為]  的設定。  
+    - **重新啟動時的軟體更新部署重新評估行為**︰從 Configuration Manager 版本 1606 開始，選取此設定來設定軟體更新部署，讓用戶端能夠在用戶端安裝軟體更新和重新啟動之後立即執行軟體更新相容性掃描。 這可讓用戶端檢查是否有在用戶端重新啟動後變成適用的其他軟體更新，然後在同一個維護期間內安裝這些更新 (而變成相容)。
 
 9. 於 [警示] 頁面上設定 Configuration Manager 和 System Center Operations Manager 如何針對此部署產生警示。 只有在 [部署設定] 頁面上的 [部署的類型]  設定為 [必要]  時，您才可以設定警示。  
 
-    > [!WARNING]  
+    > [!NOTE]  
     >  您可經由 [軟體程式庫]  工作區中的 [軟體更新]  節點檢閱最新的軟體更新警示。  
 
 10. 在 [下載設定] 頁面，設定以下設定：  
@@ -316,6 +318,6 @@ ms.openlocfilehash: be845d9f6ad2f92a0235cdb7410654e229448e1b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

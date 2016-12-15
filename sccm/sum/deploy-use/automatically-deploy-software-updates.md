@@ -1,11 +1,11 @@
 ---
-title: "自動部署軟體更新 | Configuration Manager"
+title: "自動部署軟體更新 | Microsoft Docs"
 description: "經由將新的更新新增到與現用部署相關聯的更新群組，或使用 ADR，來自動部署軟體更新。"
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: b27682de-adf8-4edd-9572-54886af8f7fb
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 133f29aa3f515054b23ba70f1a1dfd3eedaa56c8
+ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
+ms.openlocfilehash: 34b0819957ffcc3711ee354a5b821d78fa7445cb
 
 ---
 
@@ -94,7 +94,7 @@ ms.openlocfilehash: 133f29aa3f515054b23ba70f1a1dfd3eedaa56c8
 
     -   **授權條款設定**：指定是否使用相關聯的授權條款自動部署軟體更新。 某些軟體更新會包含授權條款，如 Service Pack。 自動部署軟體更新時，不會顯示授權條款，也沒有接受授權條款的選項。 您可以選擇不論相關聯授權條款為何，或僅部署沒有相關聯授權條款的軟體更新，皆自動部署所有軟體更新。  
 
-        > [!WARNING]  
+        > [!NOTE]  
         >  若要檢閱軟體更新的授權條款，您可以在 [軟體程式庫]  工作區 [所有軟體更新]  節點內選取軟體更新，然後在 [首頁]  索引標籤上的 [更新]  群組中按一下 [檢閱授權] 。  
         >   
         >  若要找出具備相關聯授權條款的軟體更新，您可以在 [所有軟體更新]  節點的結果窗格中新增 [授權條款]  欄，然後按一下該欄的標頭，即可依具備授權條款的軟體更新來排序。  
@@ -103,6 +103,9 @@ ms.openlocfilehash: 133f29aa3f515054b23ba70f1a1dfd3eedaa56c8
 
     > [!IMPORTANT]  
     >  ADR 中軟體更新的限制為 1000 個軟體更新。 若要確保您在本頁指定的準則少於 1000 個軟體更新，請考慮在 [軟體程式庫]  工作區內 [所有軟體更新]  節點上設定相同準則。  
+
+    > [!NOTE]
+    > 從 Configuration Manager 版本 1610 開始，您可以在自動部署規則中依軟體更新的內容大小進行篩選。 例如，您可以將 [內容大小 (KB)] 篩選設定為 [< 2048]，僅下載小於 2MB 的軟體更新。 使用此篩選可防止自動下載大型軟體更新，以在網路頻寬有限時，提供簡化 Windows 下層服務的更佳支援。 如需詳細資訊，請參閱 [Configuration Manager and Simplified Windows Servicing on Down Level Operating Systems](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/07/configuration-manager-and-simplified-windows-servicing-on-down-level-operating-systems/)(Configuration Manager 及下層作業系統上的簡化 Windows 服務)。
 
 6.  在 [評估排程] 頁面上，指定是否要啟用 ADR 使其按照排程執行。 啟用時，按一下 [自訂]  設定週期性排程。  
 
@@ -137,7 +140,7 @@ ms.openlocfilehash: 133f29aa3f515054b23ba70f1a1dfd3eedaa56c8
         > [!NOTE]  
         >  實際安裝的期限時間是顯示的期限時間，加上最多 2 小時的隨機總時間。 這能減少對同時在部署中安裝軟體更新之目的地集合裡所有用戶端電腦的潛在影響。  
         >   
-        >  您可以設定 [電腦代理程式]  用戶端設定的 [停用期限隨機設定]  ，針對必要的軟體更新停用安裝隨機延遲。 如需詳細資訊，請參閱 [Computer Agent](../../core/clients/deploy/about-client-settings.md#a-namebkmkcomputeragentdevicesettingsa-computer-agent)。  
+        >  您可以設定 [電腦代理程式]  用戶端設定的 [停用期限隨機設定]  ，針對必要的軟體更新停用安裝隨機延遲。 如需詳細資訊，請參閱 [Computer Agent](../../core/clients/deploy/about-client-settings.md#computer-agent)。  
 
 8. 在 [使用者經驗] 頁面，設定以下設定：  
 
@@ -155,9 +158,11 @@ ms.openlocfilehash: 133f29aa3f515054b23ba70f1a1dfd3eedaa56c8
         > [!NOTE]  
         >  當您將軟體更新部署至 Windows Enbedded 裝置時，請確認裝置是已設定維護期間之集合的成員。  
 
+    - **重新啟動時的軟體更新部署重新評估行為**︰從 Configuration Manager 版本 1606 開始，選取此設定來設定軟體更新部署，讓用戶端能夠在用戶端安裝軟體更新和重新啟動之後立即執行軟體更新相容性掃描。 這可讓用戶端檢查是否有在用戶端重新啟動後變成適用的其他軟體更新，然後在同一個維護期間內安裝這些更新 (而變成相容)。
+
 9. 於 [警示] 頁面上設定 Configuration Manager 和 System Center Operations Manager 如何針對此部署產生警示。  
 
-    > [!WARNING]  
+    > [!NOTE]  
     >  您可經由 [軟體程式庫]  工作區中的 [軟體更新]  節點檢閱最新的軟體更新警示。  
 
 10. 在 [下載設定] 頁面，設定以下設定：  
@@ -209,7 +214,7 @@ ms.openlocfilehash: 133f29aa3f515054b23ba70f1a1dfd3eedaa56c8
 
 15. 在 [摘要] 頁面上檢閱設定。 若要將設定儲存至部署範本，請按一下 [儲存成範本] ，輸入名稱，並選取要納入範本的設定，然後按一下 [儲存] 。 若要變更已經設定的設定，請按一下相關聯的精靈頁面，然後變更設定。  
 
-    > [!WARNING]  
+    > [!NOTE]  
     >  範本名稱可以包含英數字 ASCII 字元以及 **\\** (反斜線) 或 **'** (單引號)。  
 
 16. 按一下 [下一步]  以建立 ADR。  
@@ -269,7 +274,7 @@ ms.openlocfilehash: 133f29aa3f515054b23ba70f1a1dfd3eedaa56c8
         > [!NOTE]  
         >  實際安裝的期限時間是顯示的期限時間，加上最多 2 小時的隨機總時間。 這能減少對同時在部署中安裝軟體更新之目的地集合裡所有用戶端電腦的潛在影響。  
         >   
-        >  您可以設定 [電腦代理程式]  用戶端設定的 [停用期限隨機設定]  ，針對必要的軟體更新停用安裝隨機延遲。 如需詳細資訊，請參閱 [Computer Agent](../../core/clients/deploy/about-client-settings.md#a-namebkmkcomputeragentdevicesettingsa-computer-agent)。  
+        >  您可以設定 [電腦代理程式]  用戶端設定的 [停用期限隨機設定]  ，針對必要的軟體更新停用安裝隨機延遲。 如需詳細資訊，請參閱 [Computer Agent](../../core/clients/deploy/about-client-settings.md#computer-agent)。  
 
 6.  在 [使用者經驗] 頁面，設定以下設定：  
 
@@ -314,6 +319,6 @@ ms.openlocfilehash: 133f29aa3f515054b23ba70f1a1dfd3eedaa56c8
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

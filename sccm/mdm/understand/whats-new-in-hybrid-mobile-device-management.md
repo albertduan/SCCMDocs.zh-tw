@@ -1,8 +1,8 @@
 ---
-title: "混合式 MDM 的新功能 | Microsoft Intune | System Center Configuration Manager"
+title: "混合式 MDM 的新功能 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 與 Intune 的混合式部署可以使用的新行動裝置管理功能。"
 ms.custom: na
-ms.date: 10/25/2016
+ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f13b38fcc4e7c55f05dbf6a7d8f516643939ba92
-ms.openlocfilehash: 3525fba1b75196bddebc89e49f40cbfd3c75d9d0
+ms.sourcegitcommit: 776c606f8e9ebfd7348d9d3a8f1e038d47bdf7a1
+ms.openlocfilehash: 891638f920a5bf807b17c7f55b9153be45fc3b93
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
@@ -30,9 +30,95 @@ ms.openlocfilehash: 3525fba1b75196bddebc89e49f40cbfd3c75d9d0
 
  本文的各節會列出 3 個不同目錄下的混合式功能。 請使用下列指導方針判斷每個類別功能與 Configuration Manager 不同版本的相容性︰  
 
-|功能類別|
-|-|  
-|**Microsoft Intune 的新功能**：通常此類別下列出的所有功能都應該能夠搭配所有的 Configuration Manager 版本，包括 System Center 2012 R2 Configuration Manager 版本，因為這些功能只需要 Intune 服務，不需要其他的 Configuration Manager 功能。<br /><br /> **Configuration Manager Technical Preview 的新功能**：此類別下列出的所有功能只能搭配 Technical Preview 版本使用。 若要試用這些功能，您必須安裝功能描述中指定的 Technical Preview 版本。 如需詳細資訊，請參閱 [Technical Preview for System Center Configuration Manager](../../core/get-started/technical-preview.md) 。<br /><br /> **Configuration Manager 的新功能 (最新分支)**：此類別下列出的所有功能僅能搭配指定的 Configuration Manager 版本 (最新分支) 使用，例如 1511 版或 1602 版。 如果您的混合式部署使用舊版的 Configuration Manager，即必須升級到功能描述中指定的 Configuration Manager 版本 (最新分支)。 如需詳細資訊，請參閱[升級至 System Center Configuration Manager](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)。|  
+|功能類別|說明|
+|-|-|
+|**Microsoft Intune 的新功能** | 通常此類別下列出的所有功能都應該能夠與所有的 Configuration Manager 版本 (包括 System Center 2012 R2 Configuration Manager 版本) 搭配使用，因為這些功能只需要 Intune 服務，不需要其他的 Configuration Manager 功能。|
+|**Configuration Manager Technical Preview 的新功能**| 此類別下列出的所有功能只能搭配指定的 Technical Preview 版本使用。 若要試用這些功能，您必須安裝功能描述中指定的 Technical Preview 版本。 如需詳細資訊，請參閱 [Technical Preview for System Center Configuration Manager](../../core/get-started/technical-preview.md) 。|
+|**Configuration Manager (最新分支) 的新功能**| 此類別下列出的所有功能只能搭配指定的 Configuration Manager 版本 (最新分支) 使用，例如 1511 版或 1602 版。 如果您的混合式部署使用舊版的 Configuration Manager，即必須升級到功能描述中指定的 Configuration Manager 版本 (最新分支)。 如需詳細資訊，請參閱[升級至 System Center Configuration Manager](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)。|
+
+## <a name="new-hybrid-features-in-december-2016"></a>2016 年 12 月的新混合式功能
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
+
+2016 年 12 月推出的下列 Intune 功能可在混合式部署中運作：
+
+- **移至 Azure 入口網站的註冊相關 Multi-Factor Authentication (MFA)**
+
+  您之前會移至 Intune 主控台或 Configuration Manager 主控台，來設定用於 Intune 註冊的 MFA。 透過這項更新的功能，您現在可以使用 Intune 認證登入 [Microsoft Azure 入口網站] (https://manage.windowsazure.com)，並透過 Azure AD 進行 MFA 設定。 若要深入了解，請參閱 [Microsoft Intune 的 Multi-Factor Authentication] (https://aka.ms/mfa_ad)。
+
+- **中國現在提供適用於 Android 的公司入口網站應用程式**
+
+  中國現在提供適用於 Android 的公司入口網站應用程式。 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文應用程式服務商場取得應用程式。 適用於 Android 的公司入口網站應用程式已於下列市集中可供下載：
+
+  - [百度](https://go.microsoft.com/fwlink/?linkid=836946)
+  - [華為](https://go.microsoft.com/fwlink/?linkid=836948)
+  - [騰訊](https://go.microsoft.com/fwlink/?linkid=836949)
+  - [豌豆莢](https://go.microsoft.com/fwlink/?linkid=836950)
+  - [小米應用商店](https://go.microsoft.com/fwlink/?linkid=836947)
+
+  適用於 Android 的公司入口網站應用程式會使用 Google Play 服務來與 Microsoft Intune 服務通訊。 由於中國尚無法使用 Google Play 服務，因此執行下列任何工作可能需要多達 8 小時才能完成。
+
+  | Configuration Manager 系統管理員主控台 | 適用於 Android 的 Intune 公司入口網站應用程式 | Intune 公司入口網站 |
+  |----|----|----|      
+  | 淘汰/抹除 (移除所有資料)   | 移除遠端裝置 | 移除裝置 (本機和遠端) |
+  | 淘汰/抹除 (移除公司資料)   | 重設裝置 | 重設裝置|
+  | 新的或更新的應用程式部署 | 安裝可用的企業營運應用程式 | 裝置密碼重設|
+  | 遠端鎖定 | | |
+  | 密碼重設 | | |        
+
+
+## <a name="new-hybrid-features-in-november-2016"></a>2016 年 11 月的新混合式功能
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
+
+2016 年 11 月推出的下列 Intune 功能可在混合式部署中運作：
+
+- **適用於 Windows 10 裝置的新 Microsoft Intune 公司入口網站**
+
+  Microsoft 已發行新的[適用於 Windows 10 裝置的公司入口網站應用程式](https://www.microsoft.com/store/apps/9wzdncrfj3pz)。 此應用程式會利用新的 Windows 10 通用格式，提供與所有 Windows 10 裝置、電腦及行動裝置之類的裝置上完全相同的更新使用者體驗，同時仍會啟用先前公司入口網站應用程式所提供的所有相同功能。
+
+  新的應用程式會利用 Windows 10 裝置上的平台功能，例如單一登入 (SSO) 和憑證式驗證。 此應用程式可用來升級到現有的 Windows 8.1 公司入口網站，而 Windows Phone 8.1 公司入口網站會從 Windows 市集進行安裝。 如需詳細資訊，請參閱 [Intune 支援小組部落格](http://aka.ms/intunecp_universalapp)。
+
+  新的公司入口網站應用程式也會在 Configuration Manager 主控台中，顯示所有標記為**可用**的商務用 Windows 市集應用程式。
+
+
+### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager 的新功能 (最新分支)
+
+Configuration Manager Technical Preview 各版本過去提供的下列功能，目前可在 Intune 和 Configuration Manager (最新分支) 1610 版的混合式部署中使用。
+
+* [設定項目的額外設定和改進體驗](/sccm/core/plan-design/changes/whats-new-in-version-1610?branch=sccm-1610-release#new-compliance-settings-for-configuration-items)
+* [DEP 設定檔的其他設定](#new-in-configuration-manager-technical-preview-1609)
+* [商務用 Windows 市集的付費 App](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+* [Windows 10 VPN 設定檔的原生連接類型](#new-in-configuration-manager-technical-preview-1609)
+* [Intune 相容性圖表](/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)
+* [從主控台要求同步處理原則](/sccm/mdm/deploy-use/sync-intune-device)
+* [Windows Defender 組態設定](/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client#windows-defender)
+
+Configuration Manager (最新分支) 1610 版也包含下列額外的混合式功能：
+
+- **增加已註冊裝置的數目**
+
+  您現在可讓使用者最多註冊 15 個裝置。 先前的限制是每位使用者 5 個裝置。
+
+
+- **其他的安全性支援**
+
+  除了系統高權限管理員，下列內建的安全性角色現在也具備「公司擁有的所有裝置」節點中項目的完整存取權，包括預先宣告的裝置、iOS 註冊設定檔，以及 Windows 註冊設定檔：
+
+    - 資產管理員
+    - 公司資源存取管理員
+
+  系統仍會為唯讀分析師角色授與 Configuration Manager 主控台中這些區域的唯讀存取權。
+
+- **從 Windows 資訊保護應用程式自動觸發 VPN 存取**
+
+  您可以將 Windows 資訊保護主要網域加入 Windows 10 VPN 設定檔，這將導致所有相關聯的應用程式在裝置上執行時會自動觸發 VPN 連線。 唯有在選擇原生連線類型時，才能使用此選項。
+
+- **Windows 10 VPN 設定檔的條件式存取**
+
+    您現在可以要求在 Azure Active Directory 中註冊的 Windows 10 裝置必須符合標準，才能透過在 Configuration Manager 主控台中建立的 Windows 10 VPN 設定檔來存取 VPN。 這能夠透過 VPN 設定檔精靈中 [驗證方法] 頁面上新的 [為此 VPN 連線啟用條件存取] 核取方塊以及 Windows 10 VPN 設定檔的 VPN 設定檔內容來進行。 唯有在選擇原生連線類型時，才能使用此選項。
+
+    如果您啟用設定檔的條件式存取，您也可以指定不同的憑證來進行單一登入驗證。
 
 ## <a name="new-hybrid-features-in-october-2016"></a>2016 年 10 月的新混合式功能
 
@@ -48,9 +134,9 @@ ms.openlocfilehash: 3525fba1b75196bddebc89e49f40cbfd3c75d9d0
 
   您可以使用 Intune 應用程式包裝工具，讓應用程式使用 Intune 行動應用程式管理 (MAM) 原則。
 
-- **Android Samsung KNOX 與 Intune 的相容性**
+- **Android Samsung KNOX Standard 與 Intune 的相容性**
 
-  Samsung Galaxy Ace 手機有些型號不能作為 Samsung KNOX 裝置由 Intune 管理。 當您向 Intune 註冊這些裝置時，它們會改作為標準的 Android 裝置來管理。
+  Samsung Galaxy Ace 手機有些型號不能當成 Samsung KNOX Standard 裝置由 Intune 管理。 當您向 Intune 註冊這些裝置時，它們會改作為標準的 Android 裝置來管理。
 
   受影響的型號為︰
 
@@ -143,14 +229,14 @@ Configuration Manager Technical Preview 1609 於 2016 年 9 月推出下列新�
 
   Google 正在移除 IT 系統管理員和使用者從遠端重設 Android 7.0 裝置密碼的能力。 過去，IT 系統管理員可以從遠端重設使用者的密碼，讓使用者從公司入口網站重設其密碼。
 
-- **Samsung KNOX 裝置的允許和封鎖應用程式原則**
+- **Samsung KNOX Standard 裝置的允許和封鎖應用程式原則**
 
-  您現在可以設定 Samsung KNOX 裝置的自訂原則，讓您建立下列其中一項︰
+  您現在可以設定 Samsung KNOX Standard 裝置的自訂原則，讓您建立下列其中一項：
 
   - 在裝置上封鎖執行的應用程式清單。 即使已安裝，封鎖清單中定義的應用程式也無法在裝置上啟動。
   - 允許裝置使用者從 Google Play 商店安裝的應用程式清單。 沒有任何其他應用程式可以從該商店安裝。
 
-  這些設定只供執行 Samsung KNOX 的裝置使用。 如需詳細資訊，請參閱[使用自訂原則來允許及封鎖 Samsung KNOX 裝置的應用程式](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps)。
+  這些設定只能供執行 Samsung KNOX Standard 的裝置使用。 如需詳細資訊，請參閱[使用自訂原則來允許及封鎖 Samsung KNOX Standard 裝置的應用程式](/intune/deploy-use/custom-policy-to-allow-and-block-samsung-knox-apps)。
 
 - **從公司入口網站的意見反應連結到 Microsoft**
 
@@ -237,6 +323,6 @@ Configuration Manager Technical Preview 各版本過去提供的下列功能，�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO2-->
 
 

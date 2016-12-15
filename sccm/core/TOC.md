@@ -1,4 +1,4 @@
-#   [了解和探索](understand/introduction.md)
+#   了解和探索
 ##  [Configuration Manager 簡介](understand/introduction.md)
 ### [尋找 Configuration Manager 的說明](understand/find-help.md)
 ### [協助工具功能](understand/accessibility-features.md)
@@ -19,13 +19,16 @@
 ##  [與診斷和使用方式資料有關的常見問題集](understand/frequently-asked-questions-about-diagnostics-and-usage-data.md)
 
 #    [規劃和設計](plan-design/get-ready.md)
-##   [產品變更](plan-design/changes/features-and-capabilities.md)
+
+##   產品變更
 ###  [特性和功能](plan-design/changes/features-and-capabilities.md)
 ###  [Configuration Manager 2012 的變更內容](plan-design/changes/what-has-changed-from-configuration-manager-2012.md)
 ###  [累加版本的新功能](plan-design/changes/whats-new-incremental-versions.md)
+###  [1610 版的新功能](plan-design/changes/whats-new-in-version-1610.md)
 ###  [1606 版的新功能](plan-design/changes/whats-new-in-version-1606.md)
 ###  [1602 版的新功能](plan-design/changes/whats-new-in-version-1602.md)
 ###  [已移除和已淘汰的功能](plan-design/changes/removed-and-deprecated-features.md)
+
 ##   [支援的設定](plan-design/configs/supported-configurations.md)
 ###  [大小和縮放比例](plan-design/configs/size-and-scale-numbers.md)
 ###  [站台和站台系統必要條件](plan-design/configs/site-and-site-system-prerequisites.md)
@@ -37,6 +40,7 @@
 ###  [Active Directory 網域支援](plan-design/configs/support-for-active-directory-domains.md)
 ###  [Windows 功能和網路支援](plan-design/configs/support-for-windows-features-and-networks.md)
 ###  [虛擬化環境支援](plan-design/configs/support-for-virtualization-environments.md)
+
 ##   [選擇裝置管理解決方案](plan-design/choose-a-device-management-solution.md)
 ##   [設計站台階層](plan-design/hierarchy/design-a-hierarchy-of-sites.md)
 ###  [規劃 SMS 提供者](plan-design/hierarchy/plan-for-the-sms-provider.md)
@@ -47,25 +51,30 @@
 #### [使用提取發佈點](plan-design/hierarchy/use-a-pull-distribution-point.md)
 #### [內容庫](plan-design/hierarchy/the-content-library.md)
 #### [管理帳戶以存取內容](plan-design/hierarchy/manage-accounts-to-access-content.md)
+#### [Configuration Manager 用戶端的對等快取](plan-design/hierarchy/client-peer-cache.md)
 #### [內容來源位置案例](plan-design/hierarchy/content-source-location-scenarios.md)
 #### [套件傳輸管理員](plan-design/hierarchy/package-transfer-manager.md)
 #### [管理內容管理的網路頻寬](plan-design/hierarchy/manage-network-bandwidth.md)
 #### [內容管理的安全性和隱私權](plan-design/hierarchy/security-and-privacy-for-content-management.md)
 ###  [用戶端如何尋找資源和服務](plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)
 ###  [站台管理的安全性和隱私權](plan-design/hierarchy/security-and-privacy-for-site-administration.md)
+
 ##   [規劃網路基礎結構](plan-design/network/configure-firewalls-ports-domains.md)
 ###  [延伸 Active Directory 架構](plan-design/network/extend-the-active-directory-schema.md)
 ###  [準備 Windows Server 以支援站台系統](plan-design/network/prepare-windows-servers.md)
 ###  [站台系統伺服器的網站](plan-design/network/websites-for-site-system-servers.md)
 ###  [PKI 憑證需求](plan-design/network/pki-certificate-requirements.md)
+
 ##   [診斷和使用方式資料](plan-design/diagnostics/diagnostics-and-usage-data.md)
 ###  [診斷和使用方式資料的運用](plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)
 ###  [1511 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511.md)
 ###  [1602 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602.md)
 ###  [1606 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
+###  [1610 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610.md)
 ###  [診斷和使用方式資料的收集方式](plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md)
 ###  [如何檢視診斷和使用方式資料](plan-design/diagnostics/view-diagnostics-and-usage-data.md)
 ###  [客戶經驗改進計畫 (CEIP)](plan-design/diagnostics/customer-experience-improvement-program-ceip.md)
+
 ##   [Configuration Manager 的安全性和隱私權](plan-design/security/security-and-privacy.md)
 ###  [規劃安全性](plan-design/security/plan-for-security.md)
 ###  [安全性最佳作法和隱私權資訊](plan-design/security/security-best-practices-and-privacy-information.md)
@@ -73,10 +82,13 @@
 ###  [其他隱私權資訊](plan-design/security/additional-privacy.md)
 ###  [設定安全性](plan-design/security/configure-security.md)
 
-#    [開始使用](get-started/evaluate-with-lab-environment.md)
+#    開始使用
+
 ##   [在實驗室中評估 Configuration Manager](get-started/evaluate-with-lab-environment.md)
 ###  [設定實驗室](get-started/set-up-your-lab.md)
+
 ##   [Technical Preview](get-started/technical-preview.md)
+###  [1611 中的功能](get-started/capabilities-in-technical-preview-1611.md)
 ###  [1610 中的功能](get-started/capabilities-in-technical-preview-1610.md)
 ###  [1609 中的功能](get-started/capabilities-in-technical-preview-1609.md)
 ###  [1608 中的功能](get-started/capabilities-in-technical-preview-1608.md)
@@ -89,6 +101,7 @@
 ###  [1601 中的功能](get-started/capabilities-in-technical-preview-1601.md)
 ###  [1512 中的功能](get-started/capabilities-in-technical-preview-1512.md)
 ###  [1511 中的功能](get-started/capabilities-in-technical-preview-1511.md)
+
 ##   [在階層間移轉資料](migration/migrate-data-between-hierarchies.md)
 ###  [規劃移轉](migration/planning-for-migration.md)
 #### [移轉必要條件](migration/prerequisites-for-migration.md)
@@ -106,7 +119,8 @@
 ###  [移轉的安全性和隱私權](migration/security-and-privacy-for-migration.md)
 
 #    [部署伺服器和角色](servers/deploy/start-using.md)
-##   [安裝基礎結構](servers/deploy/install/setup-downloader.md)
+
+##   安裝基礎結構
 ###  [執行安裝程式之前](servers/deploy/install/setup-downloader.md)
 #### [安裝程式下載程式](servers/deploy/install/setup-downloader.md)
 #### [必要條件檢查工具](servers/deploy/install/prerequisite-checker.md)
@@ -119,6 +133,7 @@
 #### [升級評估安裝](servers/deploy/install/upgrade-an-evaluation-install-to-a-full-install.md)
 #### [升級至 System Center Configuration Manager](servers/deploy/install/upgrade-to-configuration-manager.md)
 #### [安裝簡化案例](servers/deploy/install/scenarios-to-streamline-your-installation.md)
+
 ##   [設定站台和階層](servers/deploy/configure/configure-sites-and-hierarchies.md)
 ###  [新增站台系統角色](servers/deploy/configure/add-site-system-roles.md)
 #### [安裝站台系統角色](servers/deploy/configure/install-site-system-roles.md)
@@ -142,7 +157,7 @@
 ###  [資料庫檔案的自訂位置](servers/deploy/configure/custom-locations-for-site-database-files.md)
 ###  [設定以角色為基礎的系統管理](servers/deploy/configure/configure-role-based-administration.md)
 
-#    [管理基礎結構](servers/manage/maintenance-tasks.md)
+#    管理基礎結構
 ##   [維護工作](servers/manage/maintenance-tasks.md)
 ##   [修改基礎結構](servers/manage/modify-your-infrastructure.md)
 ###  [CD.Latest 資料夾](servers/manage/the-cd.latest-folder.md)
@@ -154,10 +169,12 @@
 ###  [使用服務連接工具](servers/manage/use-the-service-connection-tool.md)
 ###  [使用更新註冊工具](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [使用 Hotfix 安裝程式](servers/manage/use-the-hotfix-installer-to-install-updates.md)
+###  [安裝更新 1610 的檢查清單](servers/manage/checklist-for-installing-update-1610.md)
 ###  [安裝更新 1606 的檢查清單](servers/manage/checklist-for-installing-update-1606.md)
 ###  [安裝更新 1602 的檢查清單](servers/manage/checklist-for-installing-update-1602.md)
 ###  [最新分支版本支援](servers/manage/current-branch-versions-supported.md)
-##   [監視基礎結構](servers/manage/use-alerts-and-the-status-system.md)
+
+##   監視基礎結構
 ###  [使用警示和狀態系統](servers/manage/use-alerts-and-the-status-system.md)
 ###  [健康情況證明](servers/manage/health-attestation.md)
 ###  [監視階層和複寫基礎結構](servers/manage/monitor-hierarchy-and-replication-infrastructure.md)
@@ -179,8 +196,8 @@
 #### [建立自訂報告模型](servers/manage/creating-custom-report-models-in-sql-server-reporting-services.md)
 #### [報告的安全性和隱私權](servers/manage/security-and-privacy-for-reporting.md)
 
-#    [部署用戶端](clients/deploy/plan/client-installation-methods.md)
-##   [規劃用戶端部署](clients/deploy/plan/client-installation-methods.md)
+#    部署用戶端
+##   規劃用戶端部署
 ###  [用戶端安裝方法](clients/deploy/plan/client-installation-methods.md)
 ###  [將用戶端部署至 Windows 電腦的必要條件](clients/deploy/prerequisites-for-deploying-clients-to-windows-computers.md)
 ###  [判斷用戶端的站台系統角色](clients/deploy/plan/determine-the-site-system-roles-for-clients.md)
@@ -191,10 +208,9 @@
 ###  [規劃將用戶端部署至 Mac 電腦](clients/deploy/plan/planning-for-client-deployment-to-mac-computers.md)
 ###  [規劃將用戶端部署至 Windows Embedded 裝置](clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)
 ###  [規劃如何喚醒用戶端](clients/deploy/plan/plan-wake-up-clients.md)
-###  [規劃管理以網際網路為基礎的用戶端](clients/deploy/plan/plan-for-managing-internet-based-clients.md)
 ###  [在虛擬桌面基礎結構 (VDI) 中管理用戶端的考量](clients/deploy/plan/considerations-for-managing-clients-in-a-vdi.md)
 
-##   [用戶端部署工作](clients/deploy/configure-client-communication-ports.md)
+##   用戶端部署工作
 ###  [如何設定用戶端通訊連接埠](clients/deploy/configure-client-communication-ports.md)
 ###  [如何設定用戶端電腦使用 DNS 發行尋找管理點](clients/deploy/configure-client-computers-to-find-management-points-by-using-dns-publishing.md)
 ###  [如何設定用戶端設定](clients/deploy/configure-client-settings.md)
@@ -215,7 +231,13 @@
 ###  [如何管理 Linux 和 UNIX 用戶端](clients/manage/manage-clients-for-linux-and-unix-servers.md)
 ###  [將資料同步處理至 OMS](clients/manage/sync-data-microsoft-operations-management-suite.md)
 
-##   [集合](clients/manage/collections/introduction-to-collections.md)
+##   [管理網際網路上的用戶端](clients/manage/manage-clients-internet.md)
+###  [規劃雲端管理閘道](clients/manage/plan-cloud-management-gateway.md)
+###  [設定雲端管理閘道](clients/manage/setup-cloud-management-gateway.md)
+###  [監視雲端管理閘道上的用戶端](clients/manage/monitor-clients-cloud-management-gateway.md)
+###  [規劃以網際網路為基礎的用戶端管理](clients/manage/plan-internet-based-client-management.md)
+
+##   集合
 ###  [集合簡介](clients/manage/collections/introduction-to-collections.md)
 ### [集合的必要條件](clients/manage/collections/prerequisites-for-collections.md)
 ### [集合的最佳作法](clients/manage/collections/best-practices-for-collections.md)
@@ -225,24 +247,24 @@
 ### [如何自動將裝置分類為集合](clients/manage/collections/automatically-categorize-devices-into-collections.md)
 ###  [集合的安全性和隱私權](clients/manage/collections/security-and-privacy-for-collections.md)
 
-##   [硬體清查](clients/manage/inventory/hardware-inventory.md)
+##   硬體清查
 ###  [硬體清查簡介](clients/manage/inventory/introduction-to-hardware-inventory.md)
 ###  [如何擴充硬體清查](clients/manage/inventory/extend-hardware-inventory.md)
 ###  [如何設定硬體清查](clients/manage/inventory/configure-hardware-inventory.md)
 ###  [如何設定混合式部署中行動裝置的硬體清查](clients/manage/inventory/mobile-device-hardware-inventory-hybrid.md)
-###  [硬體清查的作業和維護](clients/manage/inventory/operations-and-maintenance-for-hardware-inventory.md)
+<!--- ###  [Operations and maintenance for hardware inventory](clients/manage/inventory/hardware-inventory.md) --->
 ###  [如何使用資源總管檢視硬體清查](clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)
 ###  [Linux 和 UNIX 的硬體清查](clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)
 ###  [硬體清查的安全性和隱私權](clients/manage/inventory/security-and-privacy-for-hardware-inventory.md)
 
-##   [軟體清查](clients/manage/inventory/software-inventory.md)
+##   軟體清查
 ###  [軟體清查簡介](clients/manage/inventory/introduction-to-software-inventory.md)
 ###  [如何排除資料夾不進行軟體清查](clients/manage/inventory/exclude-folders-from-software-inventory.md)
 ###  [如何設定軟體清查](clients/manage/inventory/configure-software-inventory.md)
 ###  [如何使用資源總管檢視軟體清查](clients/manage/inventory/use-resource-explorer-to-view-software-inventory.md)
 ###  [軟體清查的安全性和隱私權](clients/manage/inventory/security-and-privacy-for-software-inventory.md)
 
-##   [Asset Intelligence](clients/manage/asset-intelligence/introduction-to-asset-intelligence.md)
+##   Asset Intelligence
 ###  [Asset Intelligence 簡介](clients/manage/asset-intelligence/introduction-to-asset-intelligence.md)
 ###  [Asset Intelligence 的必要條件](clients/manage/asset-intelligence/prerequisites-for-asset-intelligence.md)
 ###  [設定 Asset Intelligence](clients/manage/asset-intelligence/configuring-asset-intelligence.md)
@@ -251,7 +273,7 @@
 ###  [Asset Intelligence 驗證狀態轉換範例](clients/manage/asset-intelligence/example-validation-state-transitions-for-asset-intelligence.md)
 ###  [範例 Asset Intelligence 一般授權匯入檔案](clients/manage/asset-intelligence/example-asset-intelligence-general-license-import.md)
 
-##   [遠端控制](clients/manage/remote-control/introduction-to-remote-control.md)
+##   遠端控制
 ###  [遠端控制簡介](clients/manage/remote-control/introduction-to-remote-control.md)
 ### [遠端控制的必要條件](clients/manage/remote-control/prerequisites-for-remote-control.md)
 ###  [設定遠端控制](clients/manage/remote-control/configuring-remote-control.md)
@@ -259,7 +281,7 @@
 ### [如何稽核遠端控制使用方式](clients/manage/remote-control/audit-remote-control-usage.md)
 ###  [遠端控制的安全性和隱私權](clients/manage/remote-control/security-and-privacy-for-remote-control.md)
 
-##   [電源管理](clients/manage/power/introduction-to-power-management.md)
+##   電源管理
 ###  [電源管理簡介](clients/manage/power/introduction-to-power-management.md)
 ### [電源管理的必要條件](clients/manage/power/prerequisites-for-power-management.md)
 ### [電源管理的最佳作法](clients/manage/power/best-practices-for-power-management.md)
@@ -270,12 +292,14 @@
 ###  [電源管理的安全性和隱私權](clients/manage/power/security-and-privacy-for-power-management.md)
 
 ##   [升級用戶端](clients/manage/upgrade/upgrade-clients.md)
-###  [如何測試進入生產階段前集合的用戶端升級](clients/manage/upgrade/test-client-upgrades.md)
-###  [如何升級 Windows 電腦的用戶端](clients/manage/upgrade/upgrade-clients-for-windows-computers.md)
-###  [如何升級 Linux 和 UNIX 伺服器的用戶端](clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)
-###  [如何升級 Mac 電腦上的用戶端](clients/manage/upgrade/upgrade-clients-on-mac-computers.md)
+###  [測試進入生產階段前集合的用戶端升級](clients/manage/upgrade/test-client-upgrades.md)
+###  [讓 Windows 用戶端不要升級](clients/manage/upgrade/exclude-clients-windows.md)
+###  [升級 Windows 用戶端](clients/manage/upgrade/upgrade-clients-for-windows-computers.md)
+###  [升級 Linux 及 UNIX 用戶端](clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)
+###  [升級 Mac 用戶端](clients/manage/upgrade/upgrade-clients-on-mac-computers.md)
+###  [升級分析](clients/manage/upgrade/upgrade-analytics.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO1-->
 
 
