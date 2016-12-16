@@ -65,7 +65,7 @@ ms.openlocfilehash: 0f3b68fb17920b0abacc1428c8763ec8c06e6b22
 
 此站台系統角色支援作業的線上和離線模式，可能會影響它的其它使用。 如需詳細資訊，請參閱[關於 System Center Configuration Manager 中的服務連線點](../../../core/servers/deploy/configure/about-the-service-connection-point.md)。  
 
-##  <a name="a-namebkmkusagea-usage-data-collection"></a><a name="bkmk_usage"></a> 使用方式資料集合  
+##  <a name="a-namebkmkusagea-usage-data-collection"></a><a name="bkmk_usage"></a> 使用量資料收集  
  System Center Configuration Manager 會收集您站台和基礎結構的使用方式資料。 這項資訊是透過服務連接點 (新的站台系統角色) 編譯並提交給 Microsoft 雲端服務，而且需要有這項資訊才能讓 Configuration Manager 下載套用至您所使用 Configuration Manager 版本之部署的更新。 當您設定服務連接點時，可以設定資料收集層級，以及這是自動進行提交 (線上模式) 還是手動進行提交 (離線模式)。  
 
  如需詳細資訊，請參閱 [Usage data levels and settings](../../../core/servers/deploy/install/setup-reference.md#bkmk_usage)。  
@@ -83,7 +83,7 @@ ms.openlocfilehash: 0f3b68fb17920b0abacc1428c8763ec8c06e6b22
 
 -   頻外管理點站台系統角色已不再使用，也無法再使用  
 
-##  <a name="a-namebkmkouta-deprecated-functionality"></a><a name="bkmk_out"></a> 已取代的功能  
+##  <a name="a-namebkmkouta-deprecated-functionality"></a><a name="bkmk_out"></a> 已過時功能  
  運用 System Center Configuration Manager，會從 Configuration Manager 主控台移除某些功能，如 [Intel 主動管理技術 (AMT)](#bkmk_AMT) 型電腦的原生支援，同時完整移除其他功能，如網路存取保護。 此外，不再支援一些較舊的 Microsoft 產品 (如 Windows Vista、Windows Server 2008 和 SQL Server 2008)。  
 
  如需已取代之功能的清單，請參閱 [System Center Configuration Manager 的已移除和已淘汰功能](../../../core/plan-design/changes/removed-and-deprecated-features.md)。  

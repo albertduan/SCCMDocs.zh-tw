@@ -120,11 +120,11 @@ ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
 
  Configuration Manager 支援安裝多個 SMS 提供者，每一個都位於個別的電腦上，以確保 Configuration Manager 主控台的多個存取點。 如此可確保當 SMS 提供者電腦離線時，您仍可檢視及重新設定 Configuration Manager 站台與用戶端。  
 
- 當 Configuration Manager 主控台連線至站台時，它會連線至該站台的 SMS 提供者的執行個體。 非確定性地選取 SMS 提供者執行個體。 如果選取的 SMS 提供者無法使用，下列選項可供您選擇：  
+ 當 Configuration Manager 主控台連線至站台時，它會連線至該站台的 SMS 提供者的執行個體。 非確定性地選取 SMS 提供者執行個體。 如果選取的 SMS 提供者無法使用，下列選項可供您選擇：  
 
--   將主控台重新連線至站台。 各個新連線要求皆會被非確定性地指派一個 SMS 提供者執行個體，因此有可能會指派可用的執行個體給新連線。  
+-   將主控台重新連線至站台。 各個新連線要求皆會被非確定性地指派一個 SMS 提供者執行個體，因此有可能會指派可用的執行個體給新連線。  
 
--   將主控台連線到不同的 Configuration Manager 站台，並從該連線管理設定。 如此會使設定變更稍微延遲幾分鐘不到。 在站台的 SMS 提供者上線後，您可以直接將 Configuration Manager 主控台重新連線至您要管理的站台。  
+-   將主控台連線到不同的 Configuration Manager 站台，並從該連線管理設定。 如此會使設定變更稍微延遲幾分鐘不到。 在站台的 SMS 提供者上線後，您可以直接將 Configuration Manager 主控台重新連線至您要管理的站台。  
 
  您可以在多部電腦上安裝 Configuration Manager 主控台，以供系統管理使用者使用。 每個 SMS 提供者支援來自多個 Configuration Manager 主控台的連線。  
 

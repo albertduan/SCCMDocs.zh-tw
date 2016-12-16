@@ -114,7 +114,7 @@ ms.openlocfilehash: 04ada4c90a5763a454c859eb7af9ac6ac84ceb3a
 |-----------------|-------------|  
 |**電腦詳細資料**|按一下 [按一下取得詳細資訊]  連結，查看所選電腦的電池容量、電源設定，和套用的電源計劃。|  
 
-###  <a name="a-namebkmkactivitydetailsa-computer-activity-details-report"></a><a name="BKMK_Activity_Details"></a> 電腦活動詳細資料報告  
+###  <a name="a-namebkmkactivitydetailsa-computer-activity-details-report"></a><a name="BKMK_Activity_Details"></a> Computer Activity Details report  
  [電腦活動詳細資料]  報告會顯示作用中或非作用中電腦的清單，並附上其睡眠和喚醒功能。 這份報告是由 [Computer Activity Report](#BKMK_Activity) 呼叫，而且不是直接由網站管理員執行。  
 
  請使用下列參數設定這份報告。  
@@ -208,7 +208,7 @@ ms.openlocfilehash: 04ada4c90a5763a454c859eb7af9ac6ac84ceb3a
 |-----------------|-------------|  
 |**電腦電源詳細資料**|按一下電腦名稱查看所選電腦的電池容量、電源設定，和套用的電源計劃。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Details Report](#BKMK_Computer_Details) 。|  
 
-###  <a name="a-namebkmkmultiplea-computers-with-multiple-power-plans"></a><a name="BKMK_Multiple"></a> 具有多個電源計劃的電腦  
+###  <a name="a-namebkmkmultiplea-computers-with-multiple-power-plans"></a><a name="BKMK_Multiple"></a>   
  [具有多個電源計劃的電腦]  報告會顯示身兼多個集合成員的電腦清單，每個集合都套用不同的電源計劃。 針對電源設定可能發生衝突的每一部電腦，報告會顯示電腦名稱以及電腦所屬之每個集合要套用的電源計劃。  
 
 > [!IMPORTANT]  
@@ -508,7 +508,7 @@ ms.openlocfilehash: 04ada4c90a5763a454c859eb7af9ac6ac84ceb3a
 |-----------------|-------------|  
 |**電腦詳細資料**|按一下 [按一下取得詳細資訊]  連結，查看所選電腦的電池容量、電源設定，和套用的電源計劃。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Details Report](#BKMK_Computer_Details) 。|  
 
-###  <a name="a-namebkmkinsomniaa-insomnia-report"></a><a name="BKMK_Insomnia"></a> 無法休眠報告  
+###  <a name="a-namebkmkinsomniaa-insomnia-report"></a><a name="BKMK_Insomnia"></a> Insomnia report  
  [無法休眠報告]  顯示妨礙電腦進入睡眠或休眠狀態的常見原因清單，以及在指定時段每個原因所影響的電腦數目。 妨礙電腦進入睡眠或休眠狀態的原因很多，例如某個在電腦上執行的處理序、某個開啟的遠端桌面工作階段，或是電腦不具睡眠或休眠功能。 在這份報告中，您可以開啟 [無法休眠的電腦詳細資料]  報告，它會顯示每個原因所影響的無法睡眠或休眠的電腦清單。  
 
  [電源無法休眠] 報告會在電腦無法睡眠以及在整個指定報告間隔都開啟時，將其顯示為 **無法睡眠** 。 報告會在電腦無法休眠以及在整個指定報告間隔都開啟時，將其顯示為 **無法休眠** 。  
@@ -598,7 +598,7 @@ ms.openlocfilehash: 04ada4c90a5763a454c859eb7af9ac6ac84ceb3a
 |-----------------|-------------|  
 |**Power Settings Details**|按一下 [電腦]  欄中的電腦數字 ，以查看該列中使用電源設定的所有電腦清單。<br /><br /> 如需詳細資訊，請參閱本主題的 [Power Settings Details Report](#BKMK_Settings_Details) 。|  
 
-###  <a name="a-namebkmksettingsdetailsa-power-settings-details-report"></a><a name="BKMK_Settings_Details"></a> 電源設定詳細資料報告  
+###  <a name="a-namebkmksettingsdetailsa-power-settings-details-report"></a><a name="BKMK_Settings_Details"></a> Power Settings Details report  
  [電源設定詳細資料]  報告會顯示 [電源設定]  報告中所選電腦的進一步資訊。 這份報告是由 [電源設定]  報告呼叫，而且不是直接由網站管理員執行。  
 
 #### <a name="required-report-parameters"></a>必要的報告參數  

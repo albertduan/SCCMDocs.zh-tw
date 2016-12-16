@@ -46,10 +46,10 @@ ms.openlocfilehash: 7d541d3afc86e1bb887a61d5b8cabce9aef9af57
 
  本文中的資訊可協助您規劃部署適用於 Linux 和 UNIX 的 Configuration Manager 用戶端。  
 
-##  <a name="a-namebkmkclientdeployprereqforlnua-prerequisites-for-client-deployment-to-linux-and-unix-servers"></a><a name="BKMK_ClientDeployPrereqforLnU"></a> 將用戶端部署至 Linux 和 UNIX 伺服器的必要條件  
+##  <a name="a-namebkmkclientdeployprereqforlnua-prerequisites-for-client-deployment-to-linux-and-unix-servers"></a><a name="BKMK_ClientDeployPrereqforLnU"></a> Linux 和 UNIX 伺服器的用戶端部署先決條件  
  使用下列資訊來判斷您必須以成功的必要條件安裝 Linux 和 UNIX 用戶端。  
 
-###  <a name="a-namebkmkclientdeployexternalforlnua-dependencies-external-to-configuration-manager"></a><a name="BKMK_ClientDeployExternalforLnU"></a> Configuration Manager 外部的相依性：  
+###  <a name="a-namebkmkclientdeployexternalforlnua-dependencies-external-to-configuration-manager"></a><a name="BKMK_ClientDeployExternalforLnU"></a> 相依性外部功能至 Configuration Manager:  
  下列表格說明 UNIX 和 Linux 作業系統需求以及套件相依性。  
 
  **Red Hat Enterprise Linux ES 版本 4**  
@@ -248,15 +248,15 @@ ms.openlocfilehash: 7d541d3afc86e1bb887a61d5b8cabce9aef9af57
 
  如需用戶端通訊及用戶端要求連接埠的詳細資訊，請參閱  [Configure the Client for Linux and UNIX to Locate Management Points](../../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md#BKMK_ConfigClientMP)。  
 
-##  <a name="a-namebkmkplanningforcommunicationsforlnua-planning-for-communication-across-forest-trusts-for-linux-and-unix-servers"></a><a name="BKMK_PlanningforCommunicationsforLnU"></a> 規劃 Linux 和 UNIX 伺服器跨樹系信任的通訊  
+##  <a name="a-namebkmkplanningforcommunicationsforlnua-planning-for-communication-across-forest-trusts-for-linux-and-unix-servers"></a><a name="BKMK_PlanningforCommunicationsforLnU"></a> Linux 和 UNIX 伺服器通訊的規劃跨樹系信任  
  您使用 Configuration Manager 所管理的 Linux 和 UNIX 伺服器會作為工作群組用戶端運作，且需要具有與工作群組中以 Windows 為基礎之用戶端類似的設定。 如需工作群組中電腦通訊的詳細資訊，請參閱 [System Center Configuration Manager 中端點之間的通訊](../../../../core/plan-design/hierarchy/communications-between-endpoints.md)主題中的[跨 Active Directory 樹系的通訊](../../../../core/plan-design/hierarchy/communications-between-endpoints.md#Plan_Com_X-Forest)一節。  
 
-###  <a name="a-namebkmkservicelocationforlnua-service-location-by-the-client-for-linux-and-unix"></a><a name="BKMK_ServiceLocationforLnU"></a> Linux 和 UNIX 用戶端的服務位置  
+###  <a name="a-namebkmkservicelocationforlnua-service-location-by-the-client-for-linux-and-unix"></a><a name="BKMK_ServiceLocationforLnU"></a> 適用於 Linux 和 UNIX 用戶端服務位置  
  尋找服務提供給用戶端站台系統伺服器的工作被指服務位置。 不同於 Windows 架構的用戶端、 適用於 Linux 和 UNIX 用戶端不會使用 Active Directory 服務位置。 此外，適用於 Linux 和 UNIX 的 Configuration Manager 用戶端不支援會指定管理點網域尾碼的用戶端內容。 而是用戶端會學習安裝用戶端軟體時指派已知的管理點從用戶端提供服務的其他站台系統伺服器。  
 
  如需服務位置的詳細資訊，請參閱[了解用戶端如何找到 System Center Configuration Manager 的站台資源和服務](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)主題中的[服務位置以及用戶端如何判斷其指派的管理點](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md#BKMK_Plan_Service_Location)一節。  
 
-##  <a name="a-namebkmksecurityforlnua-planning-for-security-and-certificates-for-linux-and-unix-servers"></a><a name="BKMK_SecurityforLnU"></a> 規劃 Linux 和 UNIX 伺服器的安全性與憑證  
+##  <a name="a-namebkmksecurityforlnua-planning-for-security-and-certificates-for-linux-and-unix-servers"></a><a name="BKMK_SecurityforLnU"></a> 規劃安全性和憑證 Linux 和 UNIX 伺服器  
  為了與 Configuration Manager 站台進行安全且已驗證的通訊，適用於 Linux 和 UNIX 的 Configuration Manager 用戶端會使用和 Windows 的 Configuration Manager 用戶端相同的模型來進行通訊。  
 
  當您安裝 Linux 和 UNIX 的用戶端時，可以將 PKI 憑證指派給用戶端，使其能夠使用 HTTPS 與 Configuration Manager 站台通訊。 如果未指派的 PKI 憑證，用戶端會建立自我簽署的憑證和只能透過 HTTP 進行通訊。  
@@ -269,21 +269,21 @@ ms.openlocfilehash: 7d541d3afc86e1bb887a61d5b8cabce9aef9af57
 
  如需如何在 Configuration Manager 中使用憑證的資訊，請參閱 [System Center Configuration Manager 的 PKI 憑證需求](../../../../core/plan-design/network/pki-certificate-requirements.md)。  
 
-###  <a name="a-namebkmkaboutcertsforlnua-about-certificates-for-use-by-linux-and-unix-servers"></a><a name="BKMK_AboutCertsforLnU"></a> 關於 Linux 和 UNIX 伺服器所使用的憑證  
+###  <a name="a-namebkmkaboutcertsforlnua-about-certificates-for-use-by-linux-and-unix-servers"></a><a name="BKMK_AboutCertsforLnU"></a> 關於使用 Linux 和 UNIX 伺服器的憑證  
  適用於 Linux 和 UNIX 的 Configuration Manager 用戶端會使用自我簽署憑證或 X.509 PKI 憑證，如同以 Windows 為基礎的用戶端一樣。 管理 Linux 和 UNIX 用戶端時，Configuration Manager 站台系統的 PKI 需求不會有任何變更。  
 
  您使用於 Linux 和 UNIX 用戶端以跟 Configuration Manager 站台系統通訊的憑證，必須為公開金鑰憑證標準 (PKCS#12) 格式，而且必須知道密碼，才能在指定 PKI 憑證時將此憑證指定至用戶端。  
 
  適用於 Linux 和 UNIX 的 Configuration Manager 用戶端支援單一的 PKI 憑證，且不支援多個憑證。 因此，不會套用您為 Configuration Manager 站台設定的憑證選擇準則。  
 
-###  <a name="a-namebkmkconfigcertsforlnua-configuring-certificates-for-linux-and-unix-servers"></a><a name="BKMK_ConfigCertsforLnU"></a> 設定 Linux 和 UNIX 伺服器的憑證  
+###  <a name="a-namebkmkconfigcertsforlnua-configuring-certificates-for-linux-and-unix-servers"></a><a name="BKMK_ConfigCertsforLnU"></a> 設定憑證以 Linux 和 UNIX 伺服器  
  若要將適用於 Linux 和 UNIX 伺服器的 Configuration Manager 用戶端設定為使用 HTTPS 通訊，您必須在安裝用戶端時，將用戶端設定為使用 PKI 憑證。 您無法佈建之前的用戶端軟體安裝的憑證。  
 
  當您安裝使用 PKI 憑證的用戶端時，您會使用命令列參數 **-UsePKICert** 指定位置和包含 PKI 憑證的 PKCS #12 檔案的名稱。 此外您必須使用命令列參數 **-certpw** 來指定憑證的密碼。  
 
  如果您未指定 **-UsePKICert**, ，用戶端會產生自我簽署的憑證並嘗試將站台系統伺服器只使用 HTTP 通訊。  
 
-##  <a name="a-namebkmknosha-256a-about-linux-and-unix-operating-systems-that-do-not-support-sha-256"></a><a name="BKMK_NoSHA-256"></a> 關於不支援 SHA-256 的 Linux 和 UNIX 作業系統  
+##  <a name="a-namebkmknosha-256a-about-linux-and-unix-operating-systems-that-do-not-support-sha-256"></a><a name="BKMK_NoSHA-256"></a> 關於 Linux 和 UNIX 作業系統的執行不支援 sha-256  
  下列 Linux 和 UNIX 作業系統作為 Configuration Manager 的用戶端而受到支援，其發行時包含不支援 SHA-256 的 OpenSSL 版本：  
 
 -   Red Hat Enterprise Linux 版本 4 (x86/x64)  

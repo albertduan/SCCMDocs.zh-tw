@@ -277,10 +277,10 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 
  此外，網站系統伺服器上的 SMS_DM.log 記錄檔會記錄 Mac 電腦與針對行動裝置與 Mac 電腦啟用的管理點之間的通訊。  
 
-##  <a name="a-namebkmkserverlogsa-configuration-manager-site-server-log-files"></a><a name="BKMK_ServerLogs"></a> Configuration Manager 站台伺服器記錄檔  
+##  <a name="a-namebkmkserverlogsa-configuration-manager-site-server-log-files"></a><a name="BKMK_ServerLogs"></a> Configuration Manager 網站伺服器記錄檔  
  下列章節列出在網站伺服器上找到的或是與特定網站系統角色相關的記錄檔。  
 
-###  <a name="a-namebkmksitesiteserverloga-site-server-and-site-system-server-logs"></a><a name="BKMK_SiteSiteServerLog"></a> 站台伺服器與站台系統伺服器記錄檔  
+###  <a name="a-namebkmksitesiteserverloga-site-server-and-site-system-server-logs"></a><a name="BKMK_SiteSiteServerLog"></a> 網站伺服器與網站系統伺服器記錄  
  下表列出在 Configuration Manager 站台伺服器與站台系統伺服器上找到的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -355,7 +355,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |statmgr.log|記錄傳送至資料庫的所有狀態訊息的編寫。|網站伺服器|  
 |swmproc.log|記錄測量檔案與設定的處理。|網站伺服器|  
 
-###  <a name="a-namebkmksiteinstallloga-site-server-installation-log-files"></a><a name="BKMK_SiteInstallLog"></a> 站台伺服器安裝記錄檔  
+###  <a name="a-namebkmksiteinstallloga-site-server-installation-log-files"></a><a name="BKMK_SiteInstallLog"></a> 網站伺服器安裝記錄檔  
  下表列出包含網站安裝相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -459,7 +459,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |ManagedProvider.log|記錄有關使用相關軟體識別標記探索軟體的詳細資料。 另外也會記錄有關硬體清查的活動。|網站系統伺服器|  
 |MVLSImport.log|記錄有關處理所匯入授權檔案的詳細資料。|網站系統伺服器|  
 
-###  <a name="a-namebkmkbnrloga-backup-and-recovery"></a><a name="BKMK_BnRLog"></a> 備份及復原  
+###  <a name="a-namebkmkbnrloga-backup-and-recovery"></a><a name="BKMK_BnRLog"></a> 備份和復原  
  下表列出包含備份和復原動作相關資訊的記錄檔，包括網站重設以及 SMS 提供者的變更。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  

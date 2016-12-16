@@ -28,7 +28,7 @@ ms.openlocfilehash: 1e588db325ea6c3e83614892d3bf76d86ed1b041
 
 本主題包含 System Center Configuration Manager 中軟體清查的安全性與隱私權資訊。  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-software-inventory"></a><a name="BKMK_Security_HardwareInventory"></a> 軟體清查的安全性最佳作法  
+##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-software-inventory"></a><a name="BKMK_Security_HardwareInventory"></a> 軟體清查的安全性最佳做法  
  當您收集來自用戶端的軟體清查資料時，請使用下列安全性最佳做法：  
 
 |安全性最佳作法|詳細資訊|  
