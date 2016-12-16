@@ -579,7 +579,7 @@ ms.openlocfilehash: 49dfa303453b26a64c1495a1259674e0d8a6bde2
 
 -   建立及發行 802.1X AMT 型電腦的用戶端驗證憑證  
 
-###  <a name="a-namebkmkamtprovisioning2008a-creating-issuing-and-installing-the-amt-provisioning-certificate"></a><a name="BKMK_AMTprovisioning2008"></a> 建立、發行及安裝 AMT 佈建憑證  
+###  <a name="a-namebkmkamtprovisioning2008a-creating-issuing-and-installing-the-amt-provisioning-certificate"></a><a name="BKMK_AMTprovisioning2008"></a> Creating, Issuing, and Installing the AMT Provisioning Certificate  
  當使用內部根 CA 的憑證指紋設定 AMT 型電腦時，可使用內部 CA 建立佈建憑證。 如果不是這種情況，而且您必須使用外部憑證授權單位時，請依照發行 AMT 佈建憑證的公司指示進行，這通常會需要從公司的公用網站要求憑證。 您也可以在 Intel vPro Expert Center 中找到所選外部 CA 的詳細指示：Microsoft vPro Manageability 網站 ([http://go.microsoft.com/fwlink/?LinkId=132001](http://go.microsoft.com/fwlink/?LinkId=132001))。  
 
 > [!IMPORTANT]  

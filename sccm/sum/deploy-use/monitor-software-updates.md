@@ -85,7 +85,7 @@ System Center Configuration Manager 提供多種方式幫助您監視軟體更�
 
 3.  在 [首頁]  索引標籤上，按一下 [檢視狀態] 。 發佈點群組的詳細狀態資訊隨即顯示。  
 
-###  <a name="a-namebkmkdpconfigstatusa-distribution-point-configuration-status"></a><a name="BKMK_DPConfigStatus"></a> 發佈點設定狀態  
+###  <a name="a-namebkmkdpconfigstatusa-distribution-point-configuration-status"></a><a name="BKMK_DPConfigStatus"></a> 發佈點組態狀態  
  [監視]  工作區中的 [發佈點設定狀態]  節點會提供有關發佈點的資訊。 您可以檢閱已啟用的發佈點屬性，例如 PXE、多點傳送及內容驗證。 您也可以檢視發佈點的詳細狀態資訊。 利用下列程序可檢視發佈點設定狀態。  
 
 #### <a name="to-monitor-distribution-point-configuration-status"></a>若要監視發佈點設定狀態  

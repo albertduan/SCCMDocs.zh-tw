@@ -64,7 +64,7 @@ ms.openlocfilehash: e2e13d31ccdeba155b4030a78d12b82939394f54
 
  如果您不要使用 Configuration Manager 註冊，而要在不透過 Configuration Manager 的情況下獨立安裝用戶端憑證，請參閱[將升級的用戶端設定為使用現有憑證](#BKMK_UpgradingClient_MachineEnrollment)。  
 
-##  <a name="a-namebkmkupgradingclientmachineenrollmenta-configure-the-upgraded-client-to-use-an-existing-certificate"></a><a name="BKMK_UpgradingClient_MachineEnrollment"></a> 將升級的用戶端設定為使用現有憑證  
+##  <a name="a-namebkmkupgradingclientmachineenrollmenta-configure-the-upgraded-client-to-use-an-existing-certificate"></a><a name="BKMK_UpgradingClient_MachineEnrollment"></a> Configure the upgraded client to use an existing certificate  
  執行下列程序以防止 [電腦註冊精靈] 執行，並且將升級的用戶端設定為使用現有的用戶端憑證。  
 
 -   在 Configuration Manager 主控台中，建立 **Mac OS X** 類型的設定項目。  

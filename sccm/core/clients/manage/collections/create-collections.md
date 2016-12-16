@@ -44,7 +44,7 @@ ms.openlocfilehash: f73f0e58b82d1aab1f64f3695dd5c3a61e933d2a
 
  如需為執行 Linux 和 UNIX 的電腦建立集合的相關資訊，請參閱[如何在 System Center Configuration Manager 中管理 Linux 和 UNIX 伺服器的用戶端](../../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md)。  
 
-##  <a name="a-namebkmk1a-to-create-a-device-collection"></a><a name="BKMK_1"></a> 建立裝置集合  
+##  <a name="a-namebkmk1a-to-create-a-device-collection"></a><a name="BKMK_1"></a> 若要建立裝置集合  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
@@ -137,7 +137,7 @@ ms.openlocfilehash: f73f0e58b82d1aab1f64f3695dd5c3a61e933d2a
 > [!NOTE]  
 >  若要查看集合成員，您必須重新整理或重新載入 Configuration Manager 主控台。 不過，在第一次排程更新，或手動選取集合的 [更新成員資格]  之後，集合才會顯示成員。 視集合規則的複雜度以及 Configuration Manager 資料庫中的項目數而定，集合更新可能需要幾分鐘的時間才能完成。  
 
-##  <a name="a-namebkmk2a-to-create-a-user-collection"></a><a name="BKMK_2"></a> 建立使用者集合  
+##  <a name="a-namebkmk2a-to-create-a-user-collection"></a><a name="BKMK_2"></a> 若要建立使用者集合  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
@@ -226,7 +226,7 @@ ms.openlocfilehash: f73f0e58b82d1aab1f64f3695dd5c3a61e933d2a
 > [!NOTE]  
 >  若要查看集合成員，您必須重新整理或重新載入 Configuration Manager 主控台。 不過，在第一次排程更新，或手動選取集合的 [更新成員資格]  之後，集合才會顯示成員。 視集合規則的複雜度以及 Configuration Manager 資料庫中的項目數而定，集合更新可能需要幾分鐘的時間才能完成。  
 
-##  <a name="a-namebkmk3a-to-import-a-collection"></a><a name="BKMK_3"></a> 匯入集合  
+##  <a name="a-namebkmk3a-to-import-a-collection"></a><a name="BKMK_3"></a> 若要匯入集合  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 

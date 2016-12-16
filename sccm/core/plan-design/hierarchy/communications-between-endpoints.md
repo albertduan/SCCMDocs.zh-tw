@@ -23,7 +23,7 @@ ms.openlocfilehash: bf485456b4d8f0bffe956006b2a8b3dd8c17a5db
 ---
 # <a name="communications-between-endpoints-in-system-center-configuration-manager"></a>System Center Configuration Manager 中端點之間的通訊
 
-*適用對象：System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
 
 ##  <a name="a-nameplanningintra-sitecoma-communications-between-site-systems-in-a-site"></a><a name="Planning_Intra-site_Com"></a> 站台內站台系統之間的通訊  

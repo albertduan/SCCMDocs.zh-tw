@@ -83,7 +83,7 @@ ms.openlocfilehash: 9269c9a9730409253016126a875755edc617a558
         > [!NOTE]  
         >  永久連結參照的使用者狀態資料在工作順序移除舊的作業系統後，仍會保留在電腦上。 這個資料在部署新的作業系統後，可用來還原使用者狀態。  
 
-##  <a name="a-namebkmkstatemigrationpointa-configure-a-state-migration-point"></a><a name="BKMK_StateMigrationPoint"></a> 設定狀態移轉點  
+##  <a name="a-namebkmkstatemigrationpointa-configure-a-state-migration-point"></a><a name="BKMK_StateMigrationPoint"></a> Configure a state migration point  
  狀態移轉點會儲存在某台電腦上擷取到的使用者狀態資料，再將資料還原至另一台電腦。 不過，當您擷取同一部電腦之作業系統部署的使用者設定時 (例如目的地電腦的部署，在此重新整理作業系統)，您可以使用永久連結將資料儲存在同一部電腦，或是在狀態移轉點上。 進行部分電腦部署時，若要建立狀態存放區，Configuration Manager 會自動在狀態存放區和目的地電腦之間建立關聯。 您可以使用下列方法，將狀態移轉點設定為儲存使用者狀態資料：  
 
 -   使用 [建立站台系統伺服器精靈]  ，為狀態管理點建立新的站台系統伺服器。  
@@ -104,7 +104,7 @@ ms.openlocfilehash: 9269c9a9730409253016126a875755edc617a558
 
  如需狀態移轉點和其設定步驟的詳細資訊，請參閱[狀態移轉點](prepare-site-system-roles-for-operating-system-deployments.md#BKMK_StateMigrationPoints)。  
 
-##  <a name="a-namebkmkcomputerassociationa-create-a-computer-association"></a><a name="BKMK_ComputerAssociation"></a> 建立電腦關聯  
+##  <a name="a-namebkmkcomputerassociationa-create-a-computer-association"></a><a name="BKMK_ComputerAssociation"></a> Create a computer association  
  當您在新硬體上安裝作業系統，而且想要擷取及還原使用者資料和設定時，請建立電腦關聯以定義來源電腦和目的電腦之間的關聯性。 來源電腦是 Configuration Manager 管理的現有電腦。 當您將新的作業系統部署至目的地電腦時，來源電腦會包含移轉至目的地電腦的使用者狀態。  
 
 > [!NOTE]  

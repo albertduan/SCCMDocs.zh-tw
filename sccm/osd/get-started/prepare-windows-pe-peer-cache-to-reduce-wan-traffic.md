@@ -35,7 +35,7 @@ ms.openlocfilehash: dc21868f99e17070b25c8b490e86477227a96c8e
 
 使用下列各節管理對等快取。
 
-##  <a name="a-namebkmkpeercacheobjectsa-objects-stored-on-a-peer-cache-source"></a><a name="BKMK_PeerCacheObjects"></a> 儲存在對等快取來源的物件  
+##  <a name="a-namebkmkpeercacheobjectsa-objects-stored-on-a-peer-cache-source"></a><a name="BKMK_PeerCacheObjects"></a> 存放在對等快取來源的物件  
  在 Windows PE 中執行工作順序時，其設定為會使用 Windows PE 對等快取可以取得下列內容物件：  
 
 -   作業系統映像  

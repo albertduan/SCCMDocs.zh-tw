@@ -33,10 +33,10 @@ System Center Configuration Manager 中的報告提供一組工具和資源，�
 > [!NOTE]  
 >  如需在 Configuration Manager 中規劃站台系統的詳細資訊，請參閱[新增站台系統角色](../deploy/configure/add-site-system-roles.md)。  
 
-###  <a name="a-namebkmksupportedsiteserversa-supported-site-system-servers"></a><a name="BKMK_SupportedSiteServers"></a>支援的站台系統伺服器  
+###  <a name="a-namebkmksupportedsiteserversa-supported-site-system-servers"></a><a name="BKMK_SupportedSiteServers"></a> 支援的站台系統伺服器  
  您可以將 Reporting Services 點安裝在管理中心網站和主要網站上，也可以安裝在站台中的多個站台系統，以及階層中的其他站台上。 次要站台不支援 Reporting Services 點。 站台中的第一個 Reporting Services 點會設定為預設的報告伺服器。 您可以在站台中新增多個 Reporting Services 點，但 Configuration Manager 報告會主動使用每個站台的預設 Reporting Services 點。 您可以將 Reporting Services 點安裝在站台伺服器或遠端站台系統上。 不過，最佳作法是在遠端站台系統伺服器上使用 Reporting Services。  
 
-###  <a name="a-namebkmkdatareplicationa-data-replication-considerations"></a><a name="BKMK_DataReplication"></a> 資料複寫考量  
+###  <a name="a-namebkmkdatareplicationa-data-replication-considerations"></a><a name="BKMK_DataReplication"></a> 資料複寫的考量  
  Configuration Manager 會將複寫資料分類為全域資料或站台資料。 全域資料是指系統管理員使用者所建立並複寫至階層中所有站台的物件，但次要站台只能接收全域資料子集。 全域資料的範例包括軟體部署、軟體更新、集合，以及以角色為基礎的系統管理安全性範圍。 站台資料是指 Configuration Manager 主要站台和用戶端回報至主要站台時建立的作業資訊。 網站資料會複寫到管理中心網站，但不會複寫到其他主要網站。 網站資料範例包括硬體清查資料、狀態訊息、警示，以及以查詢為基礎之集合的結果。 站台資料只會出現在管理中心站台，以及產生資料的主要站台。  
 
  考量下列因素可以協助您決定 Reporting Services 點的安裝位置：  

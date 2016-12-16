@@ -21,7 +21,7 @@ ms.openlocfilehash: e95e3fc2aafde2d947f08d32e2b2130a313e7328
 ---
 #  <a name="a-namebkmkremovesupa-remove-the-software-update-point-site-system-role"></a><a name="BKMK_RemoveSUP"></a> 移除軟體更新點站台系統角色  
 
-適用於：System Center Configuration Manager (最新分支)
+*適用於：System Center Configuration Manager (最新分支)*
 
 您可以從站台的 Configuration Manager 主控台移除軟體更新點站台系統角色。 用戶端原則會更新，並從清單中移除軟體更新點。 當您移除站台上的最後一個軟體更新點時，軟體更新點清單將不會包含任何軟體更新點，而實際上該站台的軟體更新會停用。 當主要站台上有超過一個軟體更新點，而且您移除設定為同步處理來源的軟體更新點時，就必須在站台上選擇另一個軟體更新點作為新的同步處理來源。  
 
