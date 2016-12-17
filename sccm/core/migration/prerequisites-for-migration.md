@@ -69,7 +69,7 @@ ms.openlocfilehash: 1b310aeee487087e79c2d0fd6469f8f63b932045
 
 從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 階層移轉資料時，不會限制來源站台語言。 來源站台資料庫中的語言已採用非語言相關的格式。  
 
-##  <a name="a-namebkmkrequiredconfigurationsa-required-configurations-for-migration"></a><a name="BKMK_Required_Configurations"></a> 移轉的必要設定  
+##  <a name="a-namebkmkrequiredconfigurationsa-required-configurations-for-migration"></a><a name="BKMK_Required_Configurations"></a> 移轉的必要組態  
 以下是使用使用移轉和移轉作業所需的組態︰  
 
 -   **在 Configuration Manager 主控台中設定、執行和監視移轉：**  

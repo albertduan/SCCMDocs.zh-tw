@@ -76,7 +76,7 @@ ms.openlocfilehash: c1838866241c30598346b84cb36b8bf4967bf7f6
 
 -   雲端發佈點無法設定為提取發佈點。  
 
-##  <a name="a-namebkmkprereqsclouddpa-prerequisites-for-cloud-based-distribution-points"></a><a name="BKMK_PrereqsCloudDP"></a> 雲端發佈點的必要條件  
+##  <a name="a-namebkmkprereqsclouddpa-prerequisites-for-cloud-based-distribution-points"></a><a name="BKMK_PrereqsCloudDP"></a> 雲端式發佈點的必要條件  
  雲端發佈點需符合下列使用必要條件：  
 
 -   Microsoft Azure 訂用帳戶。  (請參閱本主題中的[關於訂閱和憑證](#BKMK_CloudDPCerts))
@@ -139,7 +139,7 @@ ms.openlocfilehash: c1838866241c30598346b84cb36b8bf4967bf7f6
 
      若要停止雲端服務，請在 Configuration Manager 主控台的 [管理] 工作區，於 [雲端服務] 下選取 [雲端發佈點] 節點中的發佈點。 接下來，請按一下 [停止服務]  停止在 Windows Azure 中執行的發佈點。  
 
-##  <a name="a-namebkmkclouddpcertsa-about-subscriptions-and-certificates-for-cloud-based-distribution-points"></a><a name="BKMK_CloudDPCerts"></a> 關於雲端發佈點的訂閱和憑證  
+##  <a name="a-namebkmkclouddpcertsa-about-subscriptions-and-certificates-for-cloud-based-distribution-points"></a><a name="BKMK_CloudDPCerts"></a> 關於雲端式發佈點的訂閱和憑證  
  雲端發佈點需要憑證，以啟用 Configuration Manager 來管理裝載發佈點的雲端服務，以及供用戶端存取發佈點的內容。 下列提供這些憑證的概觀資訊。 如需詳細資訊，請參閱 [PKI certificate requirements for System Center Configuration Manager](../../../core/plan-design/network/pki-certificate-requirements.md) (System Center Configuration Manager 的 PKI 憑證需求)。  
 
  **憑證**  
@@ -163,7 +163,7 @@ ms.openlocfilehash: c1838866241c30598346b84cb36b8bf4967bf7f6
 
    如需此憑證的部署範例，請參閱 [Step-by-step example deployment of the PKI certificates for System Center Configuration Manager: Windows Server 2008 Certification Authority](/sccm/core/plan-design/network/example-deployment-of-pki-certificates) (為 System Center Configuration Manager 部署 PKI 憑證的逐步範例：Windows Server 2008 憑證授權單位) 主題中的 *Deploying the Service Certificate for Cloud-Based Distribution Points* (為雲端式發佈點部署服務憑證) 一節。  
 
-##  <a name="a-namebkmktasksa-common-management-tasks-for-cloud-based-distribution-points"></a><a name="bkmk_Tasks"></a> 雲端發佈點的常用管理工作  
+##  <a name="a-namebkmktasksa-common-management-tasks-for-cloud-based-distribution-points"></a><a name="bkmk_Tasks"></a> 雲端式發佈點的常用管理工作  
 
 -   **站台伺服器對雲端式發佈點的通訊**：當您安裝雲端式發佈點時，您必須指派一個主要站台來管理對雲端服務的內容傳輸。 這個動作等同於將發佈點網站系統角色安裝至特定網站。  
 

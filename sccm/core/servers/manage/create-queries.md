@@ -101,7 +101,7 @@ ms.openlocfilehash: 1cbba80a73fdd66d84d38e710c02cc79ab972b81
 
 4.  檢閱要匯入之查詢的相關資訊，然後完成精靈。 新的查詢會顯示在 [監視]  工作區的 [查詢]  節點中。  
 
-##  <a name="a-namebkmkexamplea-example-wql-queries"></a><a name="BKMK_Example"></a> 範例 WQL 查詢  
+##  <a name="a-namebkmkexamplea-example-wql-queries"></a><a name="BKMK_Example"></a> Example WQL queries  
  本節包含範例 WMI 查詢，您可以在階層中使用，或針對其他目的進行修改。 若要使用這些查詢，請按一下 [查詢陳述式內容]  對話方塊中的 [顯示查詢語言]  ，然後將查詢複製並貼到 [查詢陳述式]  欄位中。  
 
 > [!TIP]  
