@@ -28,7 +28,7 @@ ms.openlocfilehash: 4b3a3bf206dc273eabf88c680ca00688b6183115
 
 您可以使用 System Center Configuration Manager 工作順序來擷取和還原作業系統部署案例 (您想保留目前作業系統的使用者狀態) 中的使用者狀態資料。 視您建立的工作順序類型而定，擷取和還原步驟可能會自動新增為工作順序的一部分。 在其他情況下，您可能需要手動新增擷取和還原步驟至工作順序中。 本主題提供必須新增到現有工作順序以擷取和還原使用者狀態資料的步驟。  
 
-##  <a name="a-namebkmkcapturerestoreuserstatea-how-to-capture-and-restore-user-state-data"></a><a name="BKMK_CaptureRestoreUserState"></a> 如何擷取和還原使用者狀態資料  
+##  <a name="a-namebkmkcapturerestoreuserstatea-how-to-capture-and-restore-user-state-data"></a><a name="BKMK_CaptureRestoreUserState"></a> 如何擷取及還原使用者狀態資料  
  若要擷取及還原使用者狀態，您必須將下列步驟新增到工作順序中：  
 
 -   **要求狀態存放區**：只有在您將使用者狀態儲存在狀態移轉點上時，才需要執行此步驟。  

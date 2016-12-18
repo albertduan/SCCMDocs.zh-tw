@@ -92,7 +92,7 @@ Linux 和 UNIX 的 System Center Configuration Manager 用戶端支援硬體清�
 
  在用戶端記錄檔中，輸入硬體清查動作 [scxcm.log] 。  
 
-##  <a name="a-namebkmkcustomhinvforlinuxa-how-to-use-open-management-infrastructure-to-create-custom-hardware-inventory"></a><a name="BKMK_CustomHINVforLinux"></a> 如何使用 Open Management Infrastructure 來建立自訂硬體清查  
+##  <a name="a-namebkmkcustomhinvforlinuxa-how-to-use-open-management-infrastructure-to-create-custom-hardware-inventory"></a><a name="BKMK_CustomHINVforLinux"></a> 如何使用 Open Management Infrastructure 來建立自訂硬體清查。  
  Linux 及 UNIX 的用戶端支援您使用 Open Management Infrastructure (OMI) 所建立的自訂硬體清查。 若要執行此作業，請使用下列步驟：  
 
 1.  使用 OMI 原始檔建立自訂清查提供者  

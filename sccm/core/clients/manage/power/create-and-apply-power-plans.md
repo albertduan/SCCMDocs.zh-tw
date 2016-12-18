@@ -89,7 +89,7 @@ System Center Configuration Manager 中的電源管理可讓您將 Configuration
 
 10. 按一下 [確定] 關閉 [*<集合名稱\>* 設定] 對話方塊，並套用電源計劃。  
 
-##  <a name="a-namebkmkplansa-available-power-management-plan-settings"></a><a name="BKMK_Plans"></a> 可用的電源管理計劃設定  
+##  <a name="a-namebkmkplansa-available-power-management-plan-settings"></a><a name="BKMK_Plans"></a> Available power management plan settings  
  下表列出 Configuration Manager 中可用的電源管理設定。 您可以在電腦接上電源或使用電池電力運作時，對其進行個別設定。 根據您使用的 Windows 版本，可能無法設定某些設定。  
 
 > [!NOTE]  

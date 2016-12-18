@@ -273,7 +273,7 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
  如需建立工作順序以安裝作業系統的詳細資訊，請參閱[建立工作順序以安裝作業系統](../deploy-use/create-a-task-sequence-to-install-an-operating-system.md)。  
 
-##  <a name="a-namebkmkdriverreportsa-driver-management-reports"></a><a name="BKMK_DriverReports"></a> 驅動程式管理報告  
+##  <a name="a-namebkmkdriverreportsa-driver-management-reports"></a><a name="BKMK_DriverReports"></a> 驅動程式管理報表  
  您可以運用 [驅動程式管理]  報告類別中的數種報告判定與驅動程式類別目錄中的裝置驅動程式相關之一般資訊。 如需報告的詳細資訊，請參閱[報告](../../core/servers/manage/reporting.md)。
 
 
