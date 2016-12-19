@@ -95,6 +95,6 @@ System Center Configuration Manager 中的升級套件包含用來升級電腦�
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

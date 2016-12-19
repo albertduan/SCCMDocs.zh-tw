@@ -1,14 +1,13 @@
-# [了解和探索](understand/software-updates-introduction.md)
-
+# 了解和探索
 ## [軟體更新簡介](understand/software-updates-introduction.md)
 ## [用於軟體更新的圖示](understand/software-updates-icons.md)
 
-# [規劃和設計](plan-design/plan-for-software-updates.md)
+# 規劃和設計
 ## [規劃軟體更新](plan-design/plan-for-software-updates.md)
 ## [軟體更新的必要條件](plan-design/prerequisites-for-software-updates.md)
 ## [軟體更新的安全性和隱私權](plan-design/security-and-privacy-for-software-updates.md)
 
-# [開始使用](get-started/prepare-for-software-updates-management.md)
+# 開始使用
 ## [準備軟體更新管理](get-started/prepare-for-software-updates-management.md)
 ## [安裝軟體更新點](get-started/install-a-software-update-point.md)
 ## [同步處理軟體更新](get-started/synchronize-software-updates.md)
@@ -17,7 +16,7 @@
 ## [管理軟體更新的設定](get-started/manage-settings-for-software-updates.md)
 ## [移除軟體更新點](get-started/remove-a-software-update-point.md)
 
-# [部署和使用](deploy-use/deploy-software-updates.md)
+# 部署和使用
 ## [下載軟體更新](deploy-use/download-software-updates.md)
 
 ## [將軟體更新新增至更新群組](deploy-use/add-software-updates-to-an-update-group.md)
@@ -33,6 +32,6 @@
 ## [部署安全性更新的範例案例](deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
