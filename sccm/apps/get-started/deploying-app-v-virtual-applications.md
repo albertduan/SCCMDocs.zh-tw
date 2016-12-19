@@ -209,6 +209,6 @@ Configuration Manager 將有關虛擬應用程式部署的資訊記錄在記錄�
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

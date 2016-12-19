@@ -42,6 +42,6 @@ Configuration Manager 支援部署下列適用於 Android 的應用程式類型�
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

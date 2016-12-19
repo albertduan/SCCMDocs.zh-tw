@@ -107,6 +107,6 @@ System Center Configuration Manager 中的 PXE 起始作業系統部署，可讓
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 

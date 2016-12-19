@@ -67,6 +67,6 @@ System Center Configuration Manager (也稱為 ConfigMgr 和 SCCM) 中的集合�
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

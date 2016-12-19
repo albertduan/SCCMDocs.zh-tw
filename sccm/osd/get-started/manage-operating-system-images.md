@@ -142,6 +142,6 @@ Configuration Manager 中的作業系統映像儲存為 Windows 映像 (WIM) 檔
 
 
 
-<!--HONumber=Dec16_HO2-->
+<!--HONumber=Dec16_HO3-->
 
 
