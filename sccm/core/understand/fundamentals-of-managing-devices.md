@@ -85,6 +85,6 @@ System Center Configuration Manager 可以管理兩大類裝置：
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
