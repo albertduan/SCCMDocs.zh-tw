@@ -1,8 +1,8 @@
 ---
-title: "用戶端設定 | System Center Configuration Manager"
+title: "用戶端設定 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 的管理主控台，選取用戶端設定。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/12/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,12 +13,12 @@ ms.topic: article
 ms.assetid: f7560876-8084-4570-aeab-7fd44f4ba737
 caps.latest.revision: 15
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: cbe052891c55dd0c0d58c6e65d783314b0ec8ce9
+ms.sourcegitcommit: 809c7938968b4a6efce6ef37fe7b7baf2c9dd3e7
+ms.openlocfilehash: 1615c183c440b44084651d52bfc50be2d65c2e11
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>關於 System Center Configuration Manager 中的用戶端設計
@@ -27,82 +27,92 @@ ms.openlocfilehash: cbe052891c55dd0c0d58c6e65d783314b0ec8ce9
 
 System Center Configuration Manager 中所有的用戶端設定，都是在 Configuration Manager 主控台 [管理] 工作區的 [用戶端設定] 節點中管理。 Configuration Manager 會提供一組預設設定。 當您修改預設用戶端設定時，這些設定會套用至階層中的所有用戶端。 您也可以設定自訂用戶端設定，當您將這些設定指派給集合時，會覆寫預設用戶端設定。 如需如何設定用戶端設定的詳細資訊，請參閱 [How to configure client settings in System Center Configuration Manager](../../../core/clients/deploy/configure-client-settings.md)。  
 
- 許多用戶端設定完全一目了然。 使用以下各節取得有關用戶端設定的詳細資訊，您可能需要某些資訊才能設定這些用戶端設定。  
+ 許多用戶端設定完全一目了然，但其他設定如此處所述。  
 
-##  <a name="a-namebkmkbitsa-background-intelligent-transfer"></a><a name="BKMK_BITS"></a> 背景智慧型傳送  
+## <a name="background-intelligent-transfer"></a>背景智慧型傳送  
 
 -   **限制 BITS 背景傳送的最大網路頻寬**  
 
-     如果此選項設定為 [True] 或 [是]，則 Configuration Manager 用戶端就會使用 BITS 頻寬節流設定。  
+   當設定為 [True] 或 [是] 時，用戶端會使用 BITS 頻寬節流。  
 
 -   **節流時段開始時間**  
 
-     以本機時間指定 BITS 節流時段的開始時間。  
+   BITS 節流時段的本機開始時間。  
 
 -   **節流時段結束時間**  
 
-     以本機時間指定 BITS 節流時段的結束時間。 如果此值與 [節流時段開始時間] 相同，則會永遠啟用 BITS 節流。  
+  BITS 節流時段的本機結束時間。 如果與 [節流時段開始時間] 相同，則會永遠啟用 BITS 節流。  
 
 -   **節流時段的最大傳輸速率 (Kbps)**  
 
-     指定可由 Configuration Manager 用戶端在指定的 BITS 節流時段使用的最大傳輸速率 (Kbps)。  
+   指定用戶端於節流時段期間可使用的最大傳輸速率。  
 
 -   **允許在節流時段以外進行 BITS 下載**  
 
-     選取此選項，以允許在節流時段以外下載 BITS。 此選項允許 Configuration Manager 用戶端在指定的時段之外使用獨立的 BITS 設定。  
+   允許 Configuration Manager 用戶端在指定的時段之外使用獨立的 BITS 設定。  
 
 -   **節流時段以外的最大傳輸速率 (Kbps)**  
 
-     指定可由 Configuration Manager 用戶端在指定的 BITS 節流時段以外時使用的最大傳輸速率 (Kbps)。 此選項只能在您選取以允許在指定時段以外的 BITS 節流時設定。  
+   當您已選取在時段之外允許使用 BITS 節流時，用戶端在 BITS 節流時段之外將使用的最大傳輸速率。  
 
-##  <a name="a-namebkmkclientpolicydevicesettingsa-client-policy"></a><a name="BKMK_ClientPolicyDeviceSettings"></a> 用戶端原則  
+## <a name="client-cache-settings"></a>用戶端快取設定
+
+- **設定 BranchCache**
+
+  從版本 1606 開始，用來針對 [BranchCache](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#branchcache) 設定用戶端電腦。 若要允許 BranchCache 在用戶端上進行快取，請將 [啟用 BranchCache] 設定為 [是]。 
+
+- **設定用戶端快取大小**
+
+  Windows 電腦上的用戶端快取會儲存用於安裝應用程式和程式的暫存檔案。 選取 [是] 以指定 [最大的快取大小] (MB 或是磁碟百分比)。 如果設定為 [否]，預設大小為 5120 MB。
+
+## <a name="client-policy"></a>用戶端原則  
 
 -   **用戶端原則輪詢間隔 (分鐘)**  
 
-     指定下列 Configuration Manager 用戶端下載用戶端原則的頻率：  
+   指定下列 Configuration Manager 用戶端下載用戶端原則的頻率：  
 
-    -   Windows 電腦 (例如，桌上型電腦、伺服器、膝上型電腦)  
+  -   Windows 電腦 (例如，桌上型電腦、伺服器、膝上型電腦)  
 
-    -   Configuration Manager 註冊的行動裝置  
+  -   Configuration Manager 註冊的行動裝置  
 
-    -   Mac 電腦  
+  -   Mac 電腦  
 
-    -   執行 Linux 或 UNIX 的電腦  
+  -   執行 Linux 或 UNIX 的電腦  
 
 -   **啟用用戶端的使用者原則輪詢**  
 
-     當您將此設定設為 [True] 或 [是]，且 Configuration Manager 找到使用者時，電腦上的 Configuration Manager 用戶端會接收使用者所登入的目標應用程式和程式。 如需如何探索使用者的詳細資訊，請參閱 [Active Directory User Discovery in Configuration Manager](../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutUser) (Configuration Manager 中的 Active Directory 使用者探索)。  
+   當您將此設定設為 [True] 或 [是]，且 Configuration Manager 已[找到使用者](../../../core/servers/deploy/configure/about-discovery-methods.md#bkmk_aboutUser)時，電腦上的用戶端會收到目標為已登入使用者的應用程式和程式。  
 
-     由於應用程式類別目錄會從網站伺服器接收使用者可用的軟體清單，此設定不需要設定為 [True]  或 [是]  ，以便讓使用者查看，並從應用程式類別目錄要求應用程式。 不過，若此設定為 [False]  或 [否] 時，當使用者使用應用程式類別目錄時，下列各項將不會運作：  
+   由於應用程式類別目錄會從網站伺服器接收使用者可用的軟體清單，此設定不需要設定為 [True]  或 [是]  ，以便讓使用者查看，並從應用程式類別目錄要求應用程式。 不過，若此設定為 [False]  或 [否] 時，當使用者使用應用程式類別目錄時，下列各項將不會運作：  
 
-    -   使用者不可安裝在應用程式類別目錄中看到的應用程式。  
+  -   使用者不可安裝在應用程式類別目錄中看到的應用程式。  
 
-    -   使用者將不會看到有關其應用程式核准要求的通知。 反之，他們必須重新整理應用程式類別目錄，並檢查核准狀態。  
+  -   使用者將不會看到有關其應用程式核准要求的通知。 反之，他們必須重新整理應用程式類別目錄，並檢查核准狀態。  
 
-    -   使用者將不會針對已發佈至應用程式類別目錄，接收應用程式的修訂和更新。 不過，他們將會在應用程式類別目錄中看到應用程式的變更資訊。  
+  -   使用者將不會針對已發佈至應用程式類別目錄，接收應用程式的修訂和更新。 不過，他們將會在應用程式類別目錄中看到應用程式的變更資訊。  
 
-    -   如果您在用戶端從應用程式類別目錄安裝應用程式後移除應用程式部署，用戶端會繼續檢查應用程式是否已安裝，最多 2 天的時間。  
+  -   如果您在用戶端從應用程式類別目錄安裝應用程式後移除應用程式部署，用戶端會繼續檢查應用程式是否已安裝，最多 2 天的時間。  
 
-     此外，當此設定為 [False]  或 [否] 時，使用者將不會接收您部署至使用者的必要應用程式，或包含於使用者原則中的其他管理操作。  
+   此外，當此設定為 [False]  或 [否] 時，使用者將不會接收您部署至使用者的必要應用程式，或包含於使用者原則中的其他管理操作。  
 
-     此設定會在使用者的電腦位於內部網路和網際網路時套用到使用者；如果您也想啟用網際網路上的使用者原則，它必須設定為 [True]  或 [是]  。  
+   此設定會在使用者的電腦位於內部網路和網際網路時套用到使用者；如果您也想啟用網際網路上的使用者原則，它必須設定為 [True]  或 [是]  。  
 
 -   **從網際網路用戶端啟用使用者原則要求**  
 
-     當用戶端和網站是針對以網際網路為基礎的用戶端管理所設定，而且您將此選項設定為 [True]  或 [是]  ，同時兩者皆套用下列條件時，使用者會在他們的電腦位於網際網路上時接收使用者原則：  
+   當用戶端和網站是針對以網際網路為基礎的用戶端管理所設定，而且您將此選項設定為 [True]  或 [是]  ，同時兩者皆套用下列條件時，使用者會在他們的電腦位於網際網路上時接收使用者原則：  
 
-    -   [啟用用戶端的使用者原則輪詢]  用戶端設定為 [True]  或者 [在用戶端上啟用使用者原則]  設定為 [是] 。  
+  -   [啟用用戶端的使用者原則輪詢]  用戶端設定為 [True]  或者 [在用戶端上啟用使用者原則]  設定為 [是] 。  
 
-    -   以網際網路為基礎的管理點，可以使用 Windows 驗證 (Kerberos 或 NTLM) 成功驗證使用者。  
+  -   以網際網路為基礎的管理點，可以使用 Windows 驗證 (Kerberos 或 NTLM) 成功驗證使用者。  
 
-     如果將此選項保留為 [False]  或 [否] ，或任一個條件失敗，位於網際網路上的電腦將只會接收電腦原則。 在此案例中，使用者仍可從以網際網路為基礎的應用程式類別目錄查看、要求及安裝應用程式。 如果此設定為 [False]  或 [否]  ，但是 [啟用用戶端的使用者原則輪詢]  設定為 [True]  或者 [在用戶端上啟用使用者原則]  設定為 [是] ，除非電腦連線至內部網路，否則使用者將無法接收使用者原則。  
+   如果將此選項保留為 [False]  或 [否] ，或任一個條件失敗，位於網際網路上的電腦將只會接收電腦原則。 在此案例中，使用者仍可從以網際網路為基礎的應用程式類別目錄查看、要求及安裝應用程式。 如果此設定為 [False]  或 [否]  ，但是 [啟用用戶端的使用者原則輪詢]  設定為 [True]  或者 [在用戶端上啟用使用者原則]  設定為 [是] ，除非電腦連線至內部網路，否則使用者將無法接收使用者原則。  
 
-     如需管理網際網路用戶端的詳細資訊，請參閱 [System Center Configuration Manager 中端點之間的通訊](../../../core/plan-design/hierarchy/communications-between-endpoints.md)中的[從網際網路或未受信任之樹系進行用戶端通訊的考量](../../../core/plan-design/hierarchy/communications-between-endpoints.md#BKMK_clientspan)。  
+   如需管理網際網路用戶端的詳細資訊，請參閱 [System Center Configuration Manager 中端點之間的通訊](../../../core/plan-design/hierarchy/communications-between-endpoints.md)中的[從網際網路或未受信任之樹系進行用戶端通訊的考量](../../../core/plan-design/hierarchy/communications-between-endpoints.md#BKMK_clientspan)。  
 
-    > [!NOTE]  
-    >  使用者的應用程式核准要求並不需要使用者原則或使用者驗證。  
+  > [!NOTE]  
+  >  使用者的應用程式核准要求並不需要使用者原則或使用者驗證。  
 
-##  <a name="a-namebkmkcompliancea-compliance-settings"></a><a name="BKMK_Compliance"></a> Compliance Settings  
+##  <a name="compliance-settings"></a>相容性設定  
 
 -   **排程相容性評估**  
 
@@ -110,11 +120,9 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
 -   **啟用使用者資料和設定檔**  
 
-     如果您想要將使用者資料和設定檔組態項目部署至階層中的 Windows 8 電腦，請選取 [是]  。  
+     如果您想要將[使用者資料和設定檔](../../../compliance/deploy-use/create-user-data-and-profiles-configuration-items.md)設定項目部署至階層中的 Windows 8 電腦，請選取 [是]。  
 
-     如需使用者資料和設定檔的詳細資訊，請參閱 [How to create user data and profiles configuration items in System Center Configuration Manager](../../../compliance/deploy-use/create-user-data-and-profiles-configuration-items.md) (如何在 System Center Configuration Manager 中建立使用者資料和設定檔設定項目)。  
-
-##  <a name="a-namebkmkcomputeragentdevicesettingsa-computer-agent"></a><a name="BKMK_ComputerAgentDeviceSettings"></a> 電腦代理程式  
+## <a name="computer-agent"></a>電腦代理程式  
 
 -   **預設應用程式類別目錄網站點**  
 
@@ -247,12 +255,17 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
      如果在設定期限到達時必須在沒有延遲的情況下安裝所需的軟體更新，請針對此設定選取 [是]  。  
 
-##  <a name="a-namebkmkcomputerrestartdevicesettingsa-computer-restart"></a><a name="BKMK_ComputerRestartDeviceSettings"></a> 電腦重新啟動  
+-   **延後到部署期限後施行的寬限期 (小時)** 
+    
+     在某些情況下，您可能想要提供更多時間給使用者，以在超過您設定的任何期限之後，還能安裝必要應用程式部署或軟體更新。 當電腦已關閉一段時間，而且需要安裝大量應用程式或更新部署時，通常可能會需要此設定。 例如，如果使用者剛結束休假，他們可能必須等候很長的時間，讓逾期的應用程式部署完成安裝。 為了協助解決這個問題，您可以藉由將 Configuration Manager 用戶端設定部署至集合，來定義施行寬限期。
+    您可以設定的寬限期介於 1 和 120 小時之間。 這項設定用於搭配 [根據使用者喜好設定，延遲強制施行此部署] 部署內容使用。 如需詳細資訊，請參閱[部署應用程式](/sccm/apps/deploy-use/deploy-applications)
+
+##  <a name="computer-restart"></a>電腦重新啟動  
  當您指定這些電腦重新啟動設定時，請確定持續時間中短暫的重新啟動通知間隔值和最終倒數間隔值比套用至電腦的維護期間短。  
 
  如需維護時段的詳細資訊，請參閱[如何使用 System Center Configuration Manager 的維護期間](../../../core/clients/manage/collections/use-maintenance-windows.md)。  
 
-##  <a name="a-namebkmkendpointprotectiondevicesettingsa-endpoint-protection"></a><a name="BKMK_EndpointProtectionDeviceSettings"></a> Endpoint Protection  
+##  <a name="endpoint-protection"></a>Endpoint Protection  
 
 -   **在用戶端電腦上管理 Endpoint Protection 用戶端**  
 
@@ -290,7 +303,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
      如果您想要 Configuration Manager 在用戶端電腦上只安裝初始定義更新，請選取 [True] 或 [是]。 此設定有助於在定義更新的初始安裝期間避免不必要的網路連線，並可降低網路頻寬。  
 
-##  <a name="a-namebkmkhardwareinventorydevicesettingsa-hardware-inventory"></a><a name="BKMK_HardwareInventoryDeviceSettings"></a> 硬體清查  
+##  <a name="hardware-inventory"></a>硬體清查  
 
 -   **自訂 MIF 檔案大小上限 (KB)**  
 
@@ -316,7 +329,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
     > [!NOTE]  
     >  此設定僅適用於預設用戶端設定。  
 
-##  <a name="a-namebkmkmeteredinternetconnetionssettingsa-metered-internet-connections"></a><a name="BKMK_MeteredInternetConnetionsSettings"></a> 計量付費網際網路連線  
+##  <a name="metered-internet-connections"></a>計量付費網際網路連線  
  您可以管理 Windows 8 用戶端電腦與 Configuration Manager 站台在使用計量付費網際網路連線時的通訊方式。 在您處於計量付費網際網路連線時，網際網路提供者有時會根據您傳送和接收的資料量來收取費用。  
 
 > [!NOTE]  
@@ -348,7 +361,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
     -   **封鎖**：Configuration Manager 用戶端不會在位於計量付費網際網路連線時，嘗試與 Configuration Manager 站台通訊。 這是預設值。  
 
-##  <a name="a-namebkmkpowmgmtdevicesettingsa-power-management"></a><a name="BKMK_PowMgmtDeviceSettings"></a> 電源管理  
+##  <a name="power-management"></a>電源管理  
 
 -   **允許使用者從電源管理排除其裝置**  
 
@@ -376,7 +389,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
     > [!IMPORTANT]  
     >  此號碼必須符合 [內容] 中的號碼。 如果您在一個位置變更這個號碼，則不會在另一個位置進行自動更新。  
 
-##  <a name="a-namebkmkremotetoolsdevicesettingsa-remote-tools"></a><a name="BKMK_RemoteToolsDeviceSettings"></a> 遠端工具  
+##  <a name="remote-tools"></a>遠端工具  
 
 -   **在用戶端上啟用遠端控制** 的錯誤碼和描述，以及 [未簽署指令碼] **防火牆例外設定檔**  
 
@@ -460,7 +473,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
      如果您想要使用網路層級驗證來與執行 Windows Vista 作業系統和更新版本的用戶端電腦建立遠端桌面連線，請選取這個更安全的選項。 網路層級驗證最初所需的遠端電腦資源較少，因為它會在建立遠端桌面連線之前完成使用者驗證。 此方法更安全，因為它可協助保護電腦不受惡意使用者或軟體的影響，同時也可以降低遭到拒絕服務攻擊的風險。  
 
-##  <a name="a-namebkmksoftwaredeploymentdevicesettingsa-software-deployment"></a><a name="BKMK_SoftwareDeploymentDeviceSettings"></a> 軟體部署  
+## <a name="software-deployment"></a>軟體部署  
 
 -   **排程部署的重新評估**  
 
@@ -471,7 +484,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
      您也可以在 [控制台] 中，於 **Configuration Manager** 的 [動作] 索引標籤選取 [應用程式部署評估週期] 動作，從 Configuration Manager 用戶端電腦起始這個動作。  
 
-##  <a name="a-namebkmksoftinventorydevicesettingsa-software-inventory"></a><a name="BKMK_SoftInventoryDeviceSettings"></a> 軟體清查  
+##  <a name="software-inventory"></a>軟體清查  
 
 -   **清查報告詳細資料**  
 
@@ -524,7 +537,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
         >   
         >  [設定用戶端設定]  對話方塊中的 [所有收集到的檔案的大小上限 (KB)]  值會顯示所有已收集檔案的大小上限。 達到此大小時，將會停止檔案收集。 已收集的檔案會保留並傳送到網站伺服器。  
 
-        > [!IMPORTANT]  
+        > [!IMPORTANT]
         >  如果您將軟體清查設定為收集許多大檔案，可能會對您的網路和網站伺服器的效能造成負面影響。  
 
          如需如何檢視收集到之檔案的資訊，請參閱 [How to use Resource Explorer to view software inventory in System Center Configuration Manager](../../../core/clients/manage/inventory/use-resource-explorer-to-view-software-inventory.md) (如何在 System Center Configuration Manager 中使用資源總管檢視軟體清查)。  
@@ -543,7 +556,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
     -   **已清查的名稱** ：按一下新增圖示加入新的已清查名稱，它將會在軟體清查中以 [顯示名稱]  清單中選取的名稱來取代。 您可以新增將被取代的多個名稱。  
 
-##  <a name="a-namebkmksoftwareupdatesdevicesettinga-software-updates"></a><a name="BKMK_SoftwareUpdatesDeviceSetting"></a> 軟體更新  
+##  <a name="software-updates"></a>軟體更新  
 
 -   **啟用用戶端上的軟體更新**  
 
@@ -581,7 +594,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
      使用此設定以指定先前設定的時間範圍。 您可以輸入的值為 1 到 23 小時以及 1 到 365 天。 根據預設，這項設定設定為 7 天。  
 
-##  <a name="a-namebkmkuserdeviceaffinitydevicesettingsa-user-and-device-affinity"></a><a name="BKMK_UserDeviceAffinityDeviceSettings"></a> 使用者和裝置親和性  
+##  <a name="user-and-device-affinity"></a>使用者和裝置親和性  
 
 -   **使用者裝置親和性使用閾值 (分鐘)**  
 
@@ -598,23 +611,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
      選取 [True] 或 [是]，讓 Configuration Manager 得以根據所收集的使用量資訊，自動建立使用者裝置親和性。  
 
-## <a name="client-cache-settings"></a>用戶端快取設定
-
-- **設定用戶端快取大小**
-
-  Windows 電腦使用用戶端快取資料夾儲存用以安裝應用程式和程式的暫存檔案。 從 1606 版開始，選取 [是] 使用 [最大快取大小] 的設定來指定用戶端快取資料夾大小。 如果設為 [否]，則用戶端快取資料夾的預設值為 5120 MB。
-
-  於用戶端安裝期間可以設定其他用戶端快取內容。 如需詳細資訊，請參閱 [Configure the Client Cache for Configuration Manager Clients](../../../core/clients/manage/manage-clients.md#BKMK_ClientCache)。
-
-- **最大快取大小 (MB)**
-
-  從 1606 版開始，以 MB 為單位指定用戶端快取資料夾的大小上限。
-
-- **最大快取大小 (磁碟百分比)** (從 1606 版開始)
-
-  從 1606 版開始，以磁碟百分比指定用戶端快取資料夾的大小上限。
-
-##  <a name="a-namebkmkmobiledevicesusersettingsa-mobile-devices"></a><a name="BKMK_MobileDevicesUserSettings"></a> 行動裝置  
+##  <a name="mobile-devices"></a>行動裝置  
 
 -   **行動裝置註冊設定檔**  
 
@@ -623,7 +620,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
     > [!IMPORTANT]  
     >  設定這項選項之前，確定您已經為行動裝置註冊設定憑證範本。  
 
-##  <a name="a-namebkmkenrollmentusersettingsa-enrollment"></a><a name="BKMK_EnrollmentUserSettings"></a> 註冊  
+##  <a name="enrollment"></a>註冊  
 
 -   **行動裝置註冊設定檔**  
 
@@ -632,7 +629,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
     > [!IMPORTANT]  
     >  設定這項選項之前，確定您已經為行動裝置註冊或 Mac 用戶端憑證註冊設定憑證範本。  
 
-##  <a name="a-namebkmkuserdeviceaffinityusersettingsa-user-and-device-affinity"></a><a name="BKMK_UserDeviceAffinityUserSettings"></a> 使用者和裝置親和性  
+## <a name="user-and-device-affinity"></a>使用者和裝置親和性  
 
 -   **允許使用者定義其主要裝置**  
 
@@ -640,6 +637,6 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
