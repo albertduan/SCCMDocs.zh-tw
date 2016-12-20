@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c899b4beaa2aae4eb609291dca0e23f3c266627a
-ms.openlocfilehash: 294166af3d5c6062e3508249c767779876b23931
+ms.sourcegitcommit: ffebee1e85008611a9841dc849bea735d15a88c6
+ms.openlocfilehash: 888b6de9fd2b70e8b4f58e32cca7cf5e615d1dca
 
 
 ---
@@ -51,7 +51,8 @@ ms.openlocfilehash: 294166af3d5c6062e3508249c767779876b23931
 |-|-|-|  
 |網路存取保護 (NAP) - 自 System Center 2012 Configuration Manager 起提供|7/10/2015|版本 1511|  
 |頻外管理 - 自 System Center 2012 Configuration Manager 起提供|10/16/2015|版本 1511|
-|工作順序： <br /> - 將磁碟轉換成動態磁碟 <br /> - 安裝部署工具 |11/18/2016|對於這些工作順序的支援將結束於 2017 年 6 月 1 日後發行的第一個更新|  
+|工作順序： <br /> - 將磁碟轉換成動態磁碟 <br /> - 安裝部署工具 |11/18/2016|對於這些工作順序的支援將結束於 2017 年 6 月 1 日後發行的第一個更新|
+|新的軟體中心擁有全新的現代化外觀，其中包含的應用程式先前只出現在 Silverlight 相依應用程式類別目錄 (使用者可用的應用程式) 現在會顯示在軟體中心的 [應用程式] 索引標籤下。 應用程式類別目錄還是可以使用軟體中心之 [安裝狀態]  索引標籤下的連結進行存取。<br><br>在未來的幾個月，我們將會移除舊版的軟體中心，並且不再提供使用。<br><br>您可以啟用用戶端設定 [電腦代理程式] **電腦代理程式** > **使用新的軟體中心**。<br><br>如需關於軟體中心的詳細資訊，請參閱[在 System Center Configuration Manager 中規劃和設定應用程式管理](https://docs.microsoft.com/sccm/apps/plan-design/plan-for-and-configure-application-management)。|12/13/2016|即將宣布| 
 
  **已淘汰的伺服器作業系統：**  
 
@@ -111,6 +112,6 @@ ms.openlocfilehash: 294166af3d5c6062e3508249c767779876b23931
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

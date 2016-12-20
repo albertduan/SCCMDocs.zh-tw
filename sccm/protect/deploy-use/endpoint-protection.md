@@ -1,8 +1,8 @@
 ---
-title: Endpoint Protection | System Center Configuration Manager
+title: Endpoint Protection | Microsoft Docs
 description: "了解如何管理 Configuration Manager 階層中用戶端電腦的反惡意程式碼原則和 Windows 防火牆安全性。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/9/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: 30ac6f2ec03a4c0d50de700f9ce77f9e50eaf1e0
+ms.sourcegitcommit: 9fcbc0bb9c8ccd4265381ca4db7a363c8ae3b54a
+ms.openlocfilehash: 59313bd6f76433782a79ab3ee9d6240f767fbd76
 
 
 ---
@@ -59,7 +59,7 @@ Windows 10 電腦不需要任何其他用戶端來進行 Endpoint Protection 管
 
 
 ## <a name="managing-malware-with-endpoint-protection"></a>使用 Endpoint Protection 管理惡意程式碼  
- Configuration Manager 中的 Endpoint Protection 可讓您建立包含 Endpoint Protection 用戶端設定的反惡意程式碼原則。 您接著可以將這些反惡意程式碼原則部署至用戶端電腦，並在 [監視] 工作區的 [Endpoint Protection 狀態] 節點中加以監視，或透過使用 Configuration Manager 報告。  
+ Configuration Manager 中的 Endpoint Protection 可讓您建立包含 Endpoint Protection 用戶端設定的反惡意程式碼原則。 您接著可以將這些反惡意程式碼原則部署至用戶端電腦，並在 [監視] 工作區 [安全性] 下的 [Endpoint Protection 狀態] 節點中加以監視，或透過使用 Configuration Manager 報告來監視。  
 
  其他資訊：  
 
@@ -112,6 +112,6 @@ Windows 10 電腦不需要任何其他用戶端來進行 Endpoint Protection 管
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,8 +1,8 @@
 ---
-title: "Endpoint Protection 保護電腦免受惡意程式碼威脅的案例 | System Center Configuration Manager"
+title: "Endpoint Protection 保護電腦免受惡意程式碼威脅的案例 | Microsoft Docs"
 description: "了解如何在 Configuration Manager 中實作 Endpoint Protection，以保護電腦免受惡意程式碼的攻擊。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/9/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,8 +15,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d4506bbbe3533d6d9c2353f99658352ad1671a2f
+ms.sourcegitcommit: 9fcbc0bb9c8ccd4265381ca4db7a363c8ae3b54a
+ms.openlocfilehash: 2cdc57b766b18a6fdf21ec8748172c12b11b08db
 
 
 ---
@@ -72,12 +72,12 @@ ms.openlocfilehash: d4506bbbe3533d6d9c2353f99658352ad1671a2f
 |John 使用 [建立 Windows 防火牆原則精靈] 來建立原則，方法是為該網域設定檔設定下列設定：<br /><br /> 1) **啟用 Windows 防火牆**：**是**<br /><br /> 2)<br />                    **當 Windows 防火牆阻擋新程式時通知使用者**： **是**|請參閱[如何建立及部署 System Center Configuration Manager 中 Endpoint Protection 的 Windows 防火牆原則](../../protect/deploy-use/create-windows-firewall-policies.md)。|  
 |John 將新的防火牆原則部署到之前所建立的 [Endpoint Protection 保護的所有電腦] 集合中。|請參閱[如何建立及部署 System Center Configuration Manager 中 Endpoint Protection 的 Windows 防火牆原則](create-windows-firewall-policies.md)的＜建立 Windows 防火牆原則＞一節。|  
 |John 會使用適用於 Endpoint Protection 的管理工作，來管理反惡意程式碼與 Windows 防火牆原則、必要時對電腦執行隨選掃描、強制電腦下載最新的定義，並指定在偵測到惡意程式碼時要採取的任何進一步動作。|請參閱[如何在 System Center Configuration Manager 中管理 Endpoint Protection 的反惡意程式碼原則及防火牆設定](endpoint-antimalware-firewall.md)。|  
-|John 使用下列方法來監視 Endpoint Protection 的狀態，以及 Endpoint Protection 所採取的動作：<br /><br /> 1) 使用 [監視] 工作區中的 [System Center 2012 Endpoint Protection 狀態] 節點。<br /><br /> 2) 使用 [資產與相容性] 工作區中的 [Endpoint Protection] 節點。<br /><br /> 3) 使用 Configuration Manager 的內建報告。|請參閱[如何監視 System Center Configuration Manager 中的 Endpoint Protection](monitor-endpoint-protection.md)。|  
+|John 使用下列方法來監視 Endpoint Protection 的狀態，以及 Endpoint Protection 所採取的動作：<br /><br /> 1) 使用 [監視] 工作區中 [安全性] 下的 [Endpoint Protection 狀態] 節點。<br /><br /> 2) 使用 [資產與相容性] 工作區中的 [Endpoint Protection] 節點。<br /><br /> 3) 使用 Configuration Manager 的內建報告。|請參閱[如何監視 System Center Configuration Manager 中的 Endpoint Protection](monitor-endpoint-protection.md)。|  
 
  根據公司給 John 的業務需求，他向主管回報已成功實作 Endpoint Protection，並確認 Woodgrove Bank 的電腦現已受保護可免受反惡意程式的威脅。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

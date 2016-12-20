@@ -2,7 +2,7 @@
 title: "建立 Wi-Fi 設定檔 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中使用 Wi-Fi 設定檔，將無線網路設定部署至組織中的使用者。"
 ms.custom: na
-ms.date: 12/04/2016
+ms.date: 12/11/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: e433fc450a2d033c24bc37333dd59fdec41dcdb6
-ms.openlocfilehash: c629d1bf8d17573cdbde783b4ec3264bed3f4b1e
+ms.sourcegitcommit: 22a74f3b12fe4f4559b682a8fcb287863a7686af
+ms.openlocfilehash: 1262cb7d524fdce21f778e2179275bd177e9330f
 
 
 ---
@@ -47,7 +47,7 @@ ms.openlocfilehash: c629d1bf8d17573cdbde783b4ec3264bed3f4b1e
 
 -   執行 iOS 5、iOS 6、iOS 7 與 iOS 8 的 iPad 裝置  
 
--   執行第 4 版的 Android 裝置  
+-   執行版本 4 或更新版本的 Android 裝置
 
 > [!IMPORTANT]  
 >  若要將設定檔部署到 Android、iOS、Windows Phone 和已註冊的 Windows 8.1 或更新版本的裝置，必須在 Microsoft Intune 註冊這些裝置。 如需如何註冊裝置的相關資訊，請參閱[在 Intune 中註冊裝置以進行管理](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune)。  
@@ -136,6 +136,6 @@ ms.openlocfilehash: c629d1bf8d17573cdbde783b4ec3264bed3f4b1e
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

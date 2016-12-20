@@ -1,8 +1,8 @@
 ---
-title: "為不是使用 System Center Configuration Manager 用戶端所管理的 iOS 和 Mac OS X 裝置建立設定項目 | System Center Configuration Manager"
+title: "為不是使用 System Center Configuration Manager 用戶端所管理的 iOS 和 Mac OS X 裝置建立設定項目 | Microsoft Docs"
 description: "使用 System Center Configuration Manager iOS 和 Mac OS X 設定項目，管理 iOS 和 Mac OS X 裝置的設定。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/14/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 34fb20b0d793d4b508d4cfc3b45c76a407ff4299
+ms.sourcegitcommit: d023df79e0bcb7d5583224802976a5059c4ee753
+ms.openlocfilehash: ea4024aaa07d40781663725127d64388055c6501
 
 
 ---
@@ -80,8 +80,11 @@ ms.openlocfilehash: 34fb20b0d793d4b508d4cfc3b45c76a407ff4299
 |**最小密碼長度 (字元數)**|密碼長度下限。|  
 |**密碼到期天數**|密碼必須變更之前的天數。|  
 |**記住的密碼數目**|防止重複使用先前用過的密碼。|  
-|**抹除裝置前允許的失敗登入次數**|如果登入嘗試失敗是這個數目即抹除裝置。<br>(僅限 iOS)|  
-|**密碼複雜性**|選擇是否可以指定 PIN (如 '1234')，或是否必須提供強式密碼。|  
+|**抹除裝置前允許的失敗登入次數**|如果登入嘗試失敗是這個數目即抹除裝置。<br>(僅限 iOS)| 
+|**鎖定裝置前的閒置時間**|指定裝置在處於非使用狀態幾分鐘後自動鎖定。|
+|**密碼複雜性**|選擇是否可以指定 PIN (如 '1234')，或是否必須提供強式密碼。|
+|**允許簡單密碼**|指定是否能使用 ‘0000’ 和 ‘1234’ 等簡單密碼。|
+|**解除鎖定的指紋**|允許使用指紋將裝置解除鎖定。|
 
 ###  <a name="device"></a>裝置  
  這些設定會套用到 iOS 和 Mac OS X 裝置。  
@@ -112,7 +115,7 @@ ms.openlocfilehash: 34fb20b0d793d4b508d4cfc3b45c76a407ff4299
 
 |設定名稱|詳細資料|  
 |------------------|-------------|  
-|**預設瀏覽器**|使用者可以變更預設的網際網路瀏覽器。|  
+|**允許網頁瀏覽器**|使用者可以使用裝置預設的網頁瀏覽器。|  
 |**自動填寫**|使用者可以變更瀏覽器中的自動完成設定。|  
 |**動態指令碼處理**|瀏覽器可以執行指令碼，例如 ActiveX 指令碼。|  
 |**快顯封鎖程式**|啟用或停用瀏覽器的快顯封鎖程式。|  
@@ -168,8 +171,7 @@ ms.openlocfilehash: 34fb20b0d793d4b508d4cfc3b45c76a407ff4299
 |**允許使用啟用鎖定 (僅限受監督模式)**|使用此設定，可啟用您管理之 **受監督** iOS 裝置上的 iOS 啟用鎖定。 如需啟用鎖定的詳細資訊，請參閱[管理 iOS 啟用鎖定](../../mdm/deploy-use/manage-ios-activation-lock.md)。
 |**鎖定螢幕控制中心**|當裝置鎖定時，控制是否可以存取控制中心應用程式。|  
 |**鎖定螢幕通知檢視**|當裝置鎖定時，控制是否可以檢視通知。|  
-|**鎖定螢幕今日檢視**|當裝置鎖定時，控制是否可以看到今日檢視。|  
-|**解除鎖定的指紋**|允許使用指紋感應器解除鎖定裝置。|  
+|**鎖定螢幕今日檢視**|當裝置鎖定時，控制是否可以看到今日檢視。|   
 
 ###  <a name="data-protection"></a>資料保護  
  這些設定僅適用於 iOS 裝置。  
@@ -247,7 +249,7 @@ ms.openlocfilehash: 34fb20b0d793d4b508d4cfc3b45c76a407ff4299
 
     -   **匯入** - 匯入逗點分隔值檔案中所指定的應用程式清單。 請在檔案中使用「應用程式名稱, 發行者, 應用程式套件組合識別碼」格式。  
 
-2.  完成之後，按 [下一步] 。  
+2.  完成之後，按 [下一步] 。 包含符合與不符合規範之應用程式設定的設定項目，必須部署到使用者集合。
 
  您也可以使用下列其中一個報告監視符合規定及不符合規定的應用程式：  
 
@@ -368,6 +370,6 @@ ms.openlocfilehash: 34fb20b0d793d4b508d4cfc3b45c76a407ff4299
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

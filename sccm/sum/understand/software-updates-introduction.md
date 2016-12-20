@@ -1,6 +1,6 @@
 ---
 
-title: "軟體更新簡介 | Configuration Manager"
+title: "軟體更新簡介 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 軟體更新的基本概念。"
 keywords: 
 author: dougeby
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: e9778b13-c8a3-40eb-8655-34ac8ce9cdaa
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e41f91b9f796cb6a1a8eb2a500c7f615e07d60ac
+ms.sourcegitcommit: d8cace9edd58e8fa438dbb43e54e57cd0dc55d2b
+ms.openlocfilehash: 2904b904bbaf155f016f55fbd36af80308a42d76
 
 
 
@@ -29,10 +29,10 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 如需顯示如何在環境中部署軟體更新的範例案例，請參閱[部署安全性軟體更新的範例案例](../deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md)。  
 
 ##  <a name="a-namebkmksynchronizationa-software-updates-synchronization"></a><a name="BKMK_Synchronization"></a> 軟體更新同步處理  
- Configuration Manager 中的軟體更新同步處理使用 Microsoft Update 擷取軟體更新中繼資料。 頂層站台 (管理中心網站或獨立主要站台) 會依排程或在您從 Configuration Manager 主控台手動啟動同步處理時，與 Microsoft Update 同步處理。 當 Configuration Manager 於頂層站台完成軟體更新同步處理時，軟體更新同步處理就會在子站台開始同步處理 (如果有的話)。 當每個主要網站或次要網站的同步處理完成時，就會建立全網站原則，提供軟體更新點的位置給用戶端電腦。  
+ Configuration Manager 中的軟體更新同步處理會連線到 Microsoft Update 以擷取軟體更新中繼資料。 頂層站台 (管理中心網站或獨立主要站台) 會依排程或在您從 Configuration Manager 主控台手動啟動同步處理時，與 Microsoft Update 同步處理。 當 Configuration Manager 於頂層站台完成軟體更新同步處理時，軟體更新同步處理就會在子站台開始同步處理 (如果有的話)。 當每個主要網站或次要網站的同步處理完成時，就會建立全網站原則，提供軟體更新點的位置給用戶端電腦。  
 
 > [!NOTE]  
->  用戶端設定中的軟體更新預設為啟用。 不過，如果您將 [在用戶端上啟用軟體更新]  用戶端設定設為 [否]  ，停用集合上或預設設定中的軟體更新，則軟體更新點的位置就不會傳送至相關用戶端。 如需詳細資訊，請參閱[軟體更新用戶端設定](../../core/clients/deploy/about-client-settings.md#BKMK_SoftwareUpdatesDeviceSetting)。  
+>  用戶端設定中的軟體更新預設為啟用。 不過，如果您將 [在用戶端上啟用軟體更新]  用戶端設定設為 [否]  ，停用集合上或預設設定中的軟體更新，則軟體更新點的位置就不會傳送至相關用戶端。 如需詳細資訊，請參閱[軟體更新用戶端設定](../../core/clients/deploy/about-client-settings.md#software-updates)。  
 
  用戶端收到原則後，就會開始掃描軟體更新相容性，並且將資訊寫入 Windows Management Instrumentation (WMI)。 然後相容性資訊會傳送至管理點，接著管理點會將資訊傳送至網站伺服器。 如需相容性評估的詳細資訊，請參閱本主題中的 [Software updates compliance assessment](#BKMK_SUMCompliance) 一節。  
 
@@ -132,11 +132,11 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 
  包括掃描排程在內，軟體更新相容性的掃描可以下列方式啟動：  
 
--   **軟體更新掃描排程**：軟體更新相容性的掃描會按照 [軟體更新用戶端代理程式] 設定中所設定的掃描排程啟動。 如需如何設定軟體更新用戶端設定的詳細資訊，請參閱[軟體更新用戶端設定](../../core/clients/deploy/about-client-settings.md#BKMK_SoftwareUpdatesDeviceSetting)。  
+-   **軟體更新掃描排程**：軟體更新相容性的掃描會按照 [軟體更新用戶端代理程式] 設定中所設定的掃描排程啟動。 如需如何設定軟體更新用戶端設定的詳細資訊，請參閱[軟體更新用戶端設定](../../core/clients/deploy/about-client-settings.md#software-updates)。  
 
 -   **Configuration Manager 內容動作**：使用者可以在用戶端電腦上 [Configuration Manager 內容]  對話方塊中的 [動作]  標籤上，啟動 [軟體更新掃描週期]  或 [軟體更新部署評估週期]  動作。  
 
--   **部署重新評估排程**：軟體更新相容性的部署評估和掃描會按照 [軟體更新用戶端代理程式] 設定中所設定的部署重新評估排程啟動。 如需軟體更新用戶端設定的詳細資訊，請參閱[軟體更新用戶端設定](../../core/clients/deploy/about-client-settings.md#BKMK_SoftwareUpdatesDeviceSetting)。  
+-   **部署重新評估排程**：軟體更新相容性的部署評估和掃描會按照 [軟體更新用戶端代理程式] 設定中所設定的部署重新評估排程啟動。 如需軟體更新用戶端設定的詳細資訊，請參閱[軟體更新用戶端設定](../../core/clients/deploy/about-client-settings.md#software-updates)。  
 
 -   **在下載更新檔案之前**：當用戶端電腦接收新的必要部署的指派原則時，「軟體更新用戶端代理程式」會將軟體更新檔案下載至本機用戶端快取。 在下載軟體更新檔案之前，用戶端代理程式會啟動掃描以確認是否仍需要軟體更新。  
 
@@ -285,6 +285,6 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,8 +1,8 @@
 ---
-title: "監視 Endpoint Protection | System Center Configuration Manager"
+title: "監視 Endpoint Protection | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 階層中監視 Endpoint Protection。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/9/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fb5b247ae3fc031cd0beea21b03a45affe3add68
+ms.sourcegitcommit: 9fcbc0bb9c8ccd4265381ca4db7a363c8ae3b54a
+ms.openlocfilehash: 590d95f82a30167dcc0d5191feaa39ecab2b3136
 
 
 ---
@@ -25,13 +25,13 @@ ms.openlocfilehash: fb5b247ae3fc031cd0beea21b03a45affe3add68
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-您可以在 Microsoft System Center 2012 Configuration Manager 階層中監視 Endpoint Protection，方法是使用 [監視] 工作區中的 [Endpoint Protection 狀態] 節點、[資產與相容性] 工作區中的 [Endpoint Protection] 節點，以及使用報告。  
+您可以在 Microsoft System Center Configuration Manager 階層中監視 Endpoint Protection，方法是使用 [監視] 工作區中 [安全性] 下的 [Endpoint Protection 狀態] 節點、[資產與合規性] 工作區中的 [Endpoint Protection] 節點，以及使用報告。  
 
 ##  <a name="a-namebkmk1a-how-to-monitor-endpoint-protection-by-using-the-endpoint-protection-status-node"></a><a name="BKMK_1"></a> 如何使用 Endpoint Protection 狀態節點監視 Endpoint Protection  
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 [監視] 工作區中，按一下 [Endpoint Protection 狀態]。  
+2.  在 [監視] 工作區中，展開 [安全性] 然後按一下 [Endpoint Protection 狀態]。  
 
 3.  在 **集合** 清單中選取您要檢視狀態資訊的集合。  
 
@@ -84,6 +84,6 @@ ms.openlocfilehash: fb5b247ae3fc031cd0beea21b03a45affe3add68
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

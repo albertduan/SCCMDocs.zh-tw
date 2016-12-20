@@ -2,7 +2,7 @@
 title: "規劃和設定應用程式管理 | Microsoft Docs"
 description: "實作和設定必要的相依性以在 System Center Configuration Manager 中部署應用程式。"
 ms.custom: na
-ms.date: 12/06/2016
+ms.date: 12/13/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f1aaaf1c4fba8613b82d2c7a344a4dab572449a6
-ms.openlocfilehash: e9179a16d6fef73c7e50c3cf1dbfdc41623d1d15
+ms.sourcegitcommit: 7634d5326265d7947a01e5b83374f65911e33aeb
+ms.openlocfilehash: 3ab905192c091cb5ad013c8e0c8590597fb0422a
 
 
 ---
@@ -65,7 +65,11 @@ ms.openlocfilehash: e9179a16d6fef73c7e50c3cf1dbfdc41623d1d15
  不論您選擇使用哪個版本，當您在 Windows 電腦上安裝 Configuration Manager 用戶端時，都會自動安裝軟體中心。  
 
     > [!TIP]  
-    >  使用者看到的軟體中心版本視 Configuration Manager 用戶端設定而定。 這可讓您根據部署至集合的自訂用戶端設定，彈性地控制所使用的版本。  
+    >  使用者看到的軟體中心版本視 Configuration Manager 用戶端設定而定。 這可讓您根據部署至集合的自訂用戶端設定，彈性地控制所使用的版本。 
+
+    > [!IMPORTANT]
+    > 在未來的幾個月，我們將會移除舊版的軟體中心，並且不再提供使用。
+    > 您可以啟用用戶端設定 [電腦代理程式] **電腦代理程式** > **使用新的軟體中心**。 
 
 ## <a name="steps-to-install-and-configure-the-application-catalog-and-software-center"></a>安裝和設定應用程式類別目錄和軟體中心的步驟  
 
@@ -130,7 +134,7 @@ ms.openlocfilehash: e9179a16d6fef73c7e50c3cf1dbfdc41623d1d15
     如需詳細資訊，請搜尋 **awebsvcMSI.log** 和 **portlwebMSI.log** 記錄檔。  
 
 ###  <a name="step-4-configure-the-client-settings-for-the-application-catalog-and-software-center"></a>步驟 4：設定應用程式類別目錄和軟體中心的用戶端設定  
- 此程序會設定應用程式類別目錄和軟體中心的預設用戶端設定，這些設定將套用至階層內所有裝置。 如果您只要將這些設定套用至部分裝置，可以建立自訂用戶端設定，並將它部署至具備將擁有特定設定之裝置的集合。 如需如何建立自訂裝置設定的詳細資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端設定](../../core/clients/deploy/configure-client-settings.md)文章中的[如何建立及部署自訂用戶端設定](../../core/clients/deploy/configure-client-settings.md#BKMK_CustomClientSettings)一節。  
+ 此程序會設定應用程式類別目錄和軟體中心的預設用戶端設定，這些設定將套用至階層內所有裝置。 如果您只要將這些設定套用至部分裝置，可以建立自訂用戶端設定，並將它部署至具備將擁有特定設定之裝置的集合。 如需如何建立自訂裝置設定的詳細資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端設定](../../core/clients/deploy/configure-client-settings.md)文章中的[如何建立及部署自訂用戶端設定](../../core/clients/deploy/configure-client-settings.md#create-and-deploy-custom-client-settings)一節。  
 
 1.  在 Configuration Manager 主控台中，選擇 [系統管理] > [用戶端設定] > [預設用戶端設定]。  
 
@@ -224,6 +228,6 @@ ms.openlocfilehash: e9179a16d6fef73c7e50c3cf1dbfdc41623d1d15
 
 
 
-<!--HONumber=Dec16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
