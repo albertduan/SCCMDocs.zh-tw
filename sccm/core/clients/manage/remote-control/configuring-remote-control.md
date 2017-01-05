@@ -2,7 +2,7 @@
 title: "設定遠端控制 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中設定遠端控制。"
 ms.custom: na
-ms.date: 12/12/2016
+ms.date: 12/26/2016
 ms.prod: configuration-manager
 ms.reviewer: dudeso
 ms.suite: na
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 809c7938968b4a6efce6ef37fe7b7baf2c9dd3e7
-ms.openlocfilehash: 6741c6aa11a8a7c868bff36916afe4d066b9924d
+ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
+ms.openlocfilehash: 20c28a625adb69f239b9c0e7673e57dd39e8d561
 
 
 ---
@@ -55,6 +55,21 @@ ms.openlocfilehash: 6741c6aa11a8a7c868bff36916afe4d066b9924d
 > ~!#@$%, 等特殊按鍵不會正確轉譯。
 
 
-<!--HONumber=Dec16_HO3-->
+## <a name="keyboard-shortcuts-for-the-remote-control-viewer"></a>遠端控制檢視器的鍵盤快速鍵
+
+|鍵盤快速鍵|說明|  
+|-----------------------|-----------------|  
+|Alt+Page Up|從左到右切換各執行中程式。|  
+|Alt+Page Down|從右到左切換各執行中程式。|  
+|Alt+Insert|依執行中程式的開啟順序，來循環使用執行中程式。|  
+|Alt+Home|顯示 [開始]  功能表。|  
+|Ctrl+Alt+End|顯示 [Windows 安全性] 對話方塊 (Ctrl+Alt+Del)。|  
+|Alt+Delete|顯示 Windows 功能表。|  
+|Ctrl+Alt+減號 (位於數字鍵台)|將本機電腦的使用中視窗複製至遠端電腦剪貼簿。|  
+|Ctrl+Alt+加號 (位於數字鍵台)|將整個本機電腦的視窗區域複製至遠端電腦剪貼簿。|  
+
+
+
+<!--HONumber=Dec16_HO5-->
 
 
