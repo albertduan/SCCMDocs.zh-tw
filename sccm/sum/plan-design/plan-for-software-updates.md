@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 12/07/2016
+ms.date: 01/04/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 translationtype: Human Translation
-ms.sourcegitcommit: b1c68b233097ef3a744dd25b3fb919660f0b2244
-ms.openlocfilehash: 16415fb54a2cf91747990c94ffea0076effe525b
+ms.sourcegitcommit: 46c8004afee4b18d5c7a2fcc5dac0f7d0d1f823c
+ms.openlocfilehash: 8a5efdce88127c71547c4f5ef85660a2983aa577
 
 
 ---
@@ -82,7 +82,7 @@ ms.openlocfilehash: 16415fb54a2cf91747990c94ffea0076effe525b
 
 2.  用戶端最少會依 30 分鐘的間隔重試四次。 當第四次重試失敗，並再等待兩分鐘後，用戶端將會移至軟體更新點清單中的下一個軟體更新點。  
 
-3.  掃描成功後，用戶端將會繼續與軟體更新點連線。  
+3.  用戶端在新的軟體更新點上會經歷相同的程序。 掃描成功後，用戶端將會繼續與新的軟體更新點連線。
 
  下列清單提供您可在考量軟體更新點重試及切換案例時使用的其他資訊：  
 
@@ -91,6 +91,13 @@ ms.openlocfilehash: 16415fb54a2cf91747990c94ffea0076effe525b
 -   如果已啟用以網際網路為基礎的用戶端管理，而且有多個軟體更新點已設定為接受網際網路用戶端通訊，則會依照上一個案例所述的標準重試程序進行切換程序。  
 
 -   如果掃描程序已啟動，但用戶端在掃描完成前關機，此情況不會視為掃描失敗，也不會將此狀況計為四次重試的計數中。  
+
+當 Configuration Manager 收到下列任一 Windows Update 代理程式錯誤碼時，它會讓用戶端重試連線︰  
+
+2149842970, 2147954429, 2149859352, 2149859362, 2149859338, 2149859344, 2147954430, 2147747475, 2149842974, 2149859342, 2149859372, 2149859341, 2149904388, 2149859371, 2149859367, 2149859366, 2149859364, 2149859363, 2149859361, 2149859360, 2149859359, 2149859358, 2149859357, 2149859356, 2149859354, 2149859353, 2149859350, 2149859349, 2149859340, 2149859339, 2149859332, 2149859333, 2149859334, 2149859337, 2149859336, 2149859335
+
+若要查閱錯誤碼的意義，您必須將十進位的錯誤碼轉換成十六進位，然後在 [Windows Update Agent - Error Codes Wiki](https://social.technet.microsoft.com/wiki/contents/articles/15260.windows-update-agent-error-codes.aspx) (Windows Update 代理程式 - 錯誤碼 Wiki) 此類站台上，搜尋十六進位值。
+
 
 ###  <a name="a-namebkmkmanuallyswitchsupsamanually-switch-clients-to-a-new-software-update-point"></a><a name="BKMK_ManuallySwitchSUPs"></a>手動將用戶端切換到新軟體更新點
 從 Configuration Manager 版本 1606 開始，您可以啟用讓 Configuration Manager 用戶端在主動式軟體更新點發生問題時切換到新軟體更新點的選項。 只有在用戶端從管理點接收到多個軟體更新點時，此選項才會導致變更。  
@@ -308,6 +315,6 @@ ms.openlocfilehash: 16415fb54a2cf91747990c94ffea0076effe525b
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

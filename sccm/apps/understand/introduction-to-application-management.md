@@ -2,7 +2,7 @@
 title: "應用程式管理簡介 | Microsoft Docs"
 description: "探索管理和部署 System Center Configuration Manager 應用程式所需的基本資訊。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,8 +18,8 @@ manager: angrobe
 experimental: true
 experiment_id: rob-table-161101
 translationtype: Human Translation
-ms.sourcegitcommit: aa985dcb947803f7bc6d770f80a89a2fe6750681
-ms.openlocfilehash: 4be1fdaeeba2859389ea87b49b8e5891a28d052c
+ms.sourcegitcommit: 5aef08865b232ff2dacec6906098bebf4e42e6b1
+ms.openlocfilehash: 699adb5fac0c625c321db011af6989cc4c0778ec
 
 
 ---
@@ -56,12 +56,12 @@ ms.openlocfilehash: 4be1fdaeeba2859389ea87b49b8e5891a28d052c
  Configuration Manager 可讓您部署下列應用程式類型：  
 
 - Windows Installer (*.msi 檔案)
-- Windows 應用程式套件 (*.appx, \*.appxbundle)
+- Windows 應用程式套件 (*.appx、*.appxbundle)
 - Windows 應用程式套件 (在 Windows 市集中)
 - Microsoft Application Virtualization 4
 - Microsoft Application Virtualization  5
 - Windows Mobile 封包
-- Mac OS X  
+- macOS  
 
 
 此外，當您透過 Microsoft Intune 或 Configuration Manager 內部部署裝置管理功能來管理裝置時，可以進一步管理下列應用程式類型：
@@ -113,6 +113,6 @@ ms.openlocfilehash: 4be1fdaeeba2859389ea87b49b8e5891a28d052c
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

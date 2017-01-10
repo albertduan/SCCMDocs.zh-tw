@@ -2,7 +2,7 @@
 title: "建立 Windows Phone 應用程式 | Microsoft Docs"
 description: "查看在您建立和部署 Windows Phone 裝置的應用程式時，必須考慮的事項。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 557888d1f1f899e3198c430bbe5ccdd44178f824
-ms.openlocfilehash: 5cd1ba42afd13e98565d24d1ec8a3ee209e8532c
+ms.sourcegitcommit: 5aef08865b232ff2dacec6906098bebf4e42e6b1
+ms.openlocfilehash: c230212d72e1c00856d6869414f2db927b1b79ad
 
 
 ---
@@ -33,13 +33,14 @@ ms.openlocfilehash: 5cd1ba42afd13e98565d24d1ec8a3ee209e8532c
 |裝置類型|支援的檔案類型|  
 |-----------------|---------------------|  
 |Windows Phone 8|.xap|  
-|Windows Phone 8.1|.xap、.appx、.appxbundle|  
+|Windows Phone 8.1|.xap、.appx、.appxbundle|
+|Windows 10 Mobile|.xap、.appx、.appxbundle|
 
  支援下列部署動作：  
 
 |裝置類型|支援的動作|  
 |-----------------|-----------------------|  
-|Windows Phone 8 和 Windows Phone 8.1|可用、必要、解除安裝|  
+|Windows Phone 8、Windows Phone 8.1 及 Windows 10 Mobile|可用、必要、解除安裝|  
 
 ## <a name="steps-to-deploy-the-latest-windows-phone-company-portal-app-with-supersedence"></a>使用取代方式部署最新 Windows Phone 公司入口網站應用程式的步驟  
  下表提供用於建立及部署最新 Windows Phone 8 公司入口網站應用程式的步驟、詳細資料和更多資訊。  
@@ -56,6 +57,6 @@ ms.openlocfilehash: 5cd1ba42afd13e98565d24d1ec8a3ee209e8532c
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 
