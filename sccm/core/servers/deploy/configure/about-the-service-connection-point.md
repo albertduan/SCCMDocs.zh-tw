@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8195abd403d94a96d193289ea6e6bf8880d06078
-ms.openlocfilehash: aaa9a80a8429ab315a25862a78d6eb8733fd2e89
+ms.sourcegitcommit: 4a8d98addcd463eb82d8b7100b44254a10d21992
+ms.openlocfilehash: b5f7ad01f7a32d69d0c75b3c80a053f3c020c036
 
 
 ---
@@ -40,7 +40,9 @@ System Center Configuration Manager 服務連接點是可提供階層中幾項�
 
     -   識別適用於您所使用之 Configuration Manager 版本的 Configuration Manager 更新  
 
-     請參閱 [Usage data levels and settings](../../../../core/servers/deploy/install/setup-reference.md#bkmk_usage)。  
+  如需每個層級收集的資料，以及如何在安裝角色後變更集合層級的資訊，請參閱[診斷和使用方式資料](/sccm/core/plan-design/diagnostics/diagnostics-and-usage-data)，然後遵循您使用之 Configuration Manager 版本的連結。  
+
+    如需其他資訊，請參閱[使用方式資料層級和設定](../../../../core/servers/deploy/install/setup-reference.md#bkmk_usage)。  
 
 -   **下載適用於您 Configuration Manager 基礎結構的更新** – 系統會根據您上傳的使用方式資料，僅提供與您基礎結構相關的更新。  
 
@@ -117,6 +119,6 @@ System Center Configuration Manager 服務連接點是可提供階層中幾項�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

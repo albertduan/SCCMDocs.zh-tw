@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 099e0001c01713224988e5b49d02cb358e3015d6
-ms.openlocfilehash: f4f0a8e8b1b5aae2586cc885734f405f7e7f9ff5
+ms.sourcegitcommit: f6a6aad6859cf962f6f94fa5385a1dbfae6c7ff2
+ms.openlocfilehash: bea86f7fce6af913339ba0d1b56822ad761af48f
 
 
 ---
@@ -30,34 +30,32 @@ System Center Configuration Manager (也稱為 ConfgMgr 或 SCCM) 提供不同�
 
 
 ##  <a name="overview-of-device-management-solutions"></a>裝置管理解決方案概觀  
- 此概觀小節後面有比對管理解決方案的兩個表格，一個是[根據支援的行動裝置平台](#compare-device-management-solutions-based-on-supported-mobile-device-platforms)，而[一個是根據管理功能](#compare-mobile-device-management-solutions-based-on-management-functionality)。
-  
+ 本文涵蓋四種裝置管理解決方案︰Configuration Manager 用戶端應用程式、內部部署 Configuration Manager 基礎結構、Microsoft Intune 以及 Exchange。 本文以兩份比較管理解決方案的表格作結，一份以[支援的行動裝置平台](#compare-device-management-solutions-based-on-supported-mobile-device-platforms)為基礎，另一份以[管理功能](#compare-mobile-device-management-solutions-based-on-management-functionality)為基礎。
 
--   **使用 Configuration Manager 用戶端管理裝置**  
 
-     這個選項 (需要在裝置上安裝 Configuration Manager 用戶端應用程式) 提供最多的功能來管理您環境中的電腦、伺服器和其他裝置。   
+###  <a name="manage-devices-with-the-configuration-manager-client"></a>使用 Configuration Manager 用戶端管理裝置  
 
-     如需詳細資訊，請參閱 [System Center Configuration Manager 中的用戶端安裝方法](/sccm/core/client/deploy/plan/client-installation-methods)。  
+這個選項 (需要在裝置上安裝 Configuration Manager 用戶端應用程式) 提供最多的功能來管理您環境中的電腦、伺服器和其他裝置。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的用戶端安裝方法](/sccm/core/client/deploy/plan/client-installation-methods)。  
 
--   **使用內部部署 Configuration Manager 基礎結構管理行動裝置**  
+###  <a name="manage-devices-with-on-premises-configuration-manager-infrastructure"></a>使用內部部署 Configuration Manager 基礎結構管理裝置  
 
-     這個選項使用部分裝置平台作業系統中內建的裝置管理功能。 雖然內部部署行動裝置管理不具有用戶端管理的完整功能，但是提供更輕的觸控方式來進行使用內部部署 Configuration Manager 資源連接和管理裝置的管理。 目前只有 Windows 10 電腦和 Windows 10 行動裝置支援內部部署行動裝置管理。  
+這個選項使用部分裝置平台作業系統中內建的裝置管理功能。 雖然內部部署行動裝置管理不具有用戶端管理的完整功能，但使用內部部署 Configuration Manager 資源連接和管理裝置，能提供更輕的觸控方式來進行管理。 請注意，目前只有 Windows 10 電腦和 Windows 10 Mobile 裝置支援此選項。  
 
-     如需此解決方案的詳細資訊，請參閱[在 System Center Configuration Manager 中使用內部部署基礎結構管理行動裝置](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)。  
+如需詳細資訊，請參閱[在 System Center Configuration Manager 中使用內部部署基礎結構管理行動裝置](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)。  
 
--   **使用 Microsoft Intune (混合式) 管理行動裝置**  
+###  <a name="manage-devices-with-microsoft-intune-hybrid"></a>使用 Microsoft Intune (混合式) 管理裝置  
 
-     這個選項會使用 Microsoft Intune 註冊及管理裝置，而不是使用 Configuration Manager 內部部署資源。 雖然是由 Intune 管理裝置，但是您會在 Configuration Manager 主控台中存取管理工作。 這個選項支援所有主要行動裝置作業系統 (包括 Windows 10 行動裝置版、Windows Phone、iOS、Mac OS X 和 Android)。 它也提供您組織中 Windows 8.1 和 Windows 10 電腦的管理。  
+這個選項會使用 Microsoft Intune 來註冊及管理裝置，而不是使用 Configuration Manager 內部部署資源。 雖然是由 Intune 管理裝置，但是您會在 Configuration Manager 主控台中存取管理工作。 這個選項支援所有主要行動裝置作業系統 (包括 Windows 10 行動裝置版、Windows Phone、iOS、Mac OS X 和 Android)。 它也提供您組織中 Windows 8.1 和 Windows 10 電腦的管理。  
 
-     如需此解決方案的詳細資訊，請參閱[搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](../../mdm/understand/hybrid-mobile-device-management.md)。  
+如需詳細資訊，請參閱[搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](../../mdm/understand/hybrid-mobile-device-management.md)。  
 
--   **使用 Exchange 管理行動裝置**  
+###  <a name="manage-devices-with-microsoft-exchange"></a>使用 Microsoft Exchange 管理行動裝置  
 
-     這個選項使用 Exchange Server 連接器將多部 Exchange 伺服器連線到 Configuration Manager，並集中管理可連線到 Exchange ActiveSync 的裝置。 您可以從 Configuration Manager 主控台設定 Exchange 行動裝置管理功能，例如遠端裝置抹除，以及多部 Exchange Server 的設定控制。  
+此選項使用 Exchange Server 連接器將多部 Exchange 伺服器連接至 Configuration Manager。 如此可集中管理能夠連接到 Exchange ActiveSync 的裝置。 您可以從 Configuration Manager 主控台設定 Exchange 行動裝置管理功能，例如遠端裝置抹除，以及多部 Exchange Server 的設定控制。  
 
-     如需此解決方案的詳細資訊，請參閱 [使用 System Center Configuration Manager 和 Exchange 管理行動裝置](../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)  
+如需詳細資訊，請參閱[使用 System Center Configuration Manager 和 Exchange 管理行動裝置](../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)。  
 
- 您可以單獨使用這些裝置管理解決方案或將它們搭配使用。 例如，您可以使用用戶端管理方式來管理您組織中的電腦和伺服器，也可以使用 Intune 來管理行動裝置。 透過這種方式來合併使用方式，您就可以從 Configuration Manager 主控台涵蓋所有的裝置管理需求。  
+您可以單獨使用這些裝置管理解決方案或將它們搭配使用。 例如，您可以使用用戶端管理方式來管理您組織中的電腦和伺服器，也可以使用 Intune 來管理行動裝置。 透過這種方式來合併使用方式，您就可以從 Configuration Manager 主控台涵蓋所有的裝置管理需求。  
 
 ## <a name="compare-device-management-solutions-based-on-supported-mobile-device-platforms"></a>根據支援的行動裝置平台比較裝置管理解決方案  
 
@@ -69,7 +67,7 @@ System Center Configuration Manager (也稱為 ConfgMgr 或 SCCM) 提供不同�
 |UNIX/Linux|是|||是|  
 |Windows 10|是|[是]|[是]|是|  
 |Windows 10 Mobile||是|[是]|是|  
-|Windows (舊版本)|是|[是]||是|  
+|Windows (舊版)|是|[是]||是|  
 |Windows CE|是 (具有行動裝置舊版用戶端)|||是|  
 |Windows Embedded|是||||  
 |Windows Phone||是||是|  
@@ -81,7 +79,7 @@ System Center Configuration Manager (也稱為 ConfgMgr 或 SCCM) 提供不同�
 
 |管理功能|使用 Configuration Manager 用戶端|Configuration Manager 與 Microsoft Intune (混合式)|內部部署行動裝置管理|使用 Exchange 的 Configuration Manager|  
 |------------------------------|-------------------------------------------|-------------------------------------------------------------------|-------------------------------|-----------------------------------------|  
-|行動裝置與 Configuration Manager 之間使用互相驗證和 SSL 加密資料傳輸的公開金鑰基礎結構 (PKI) 安全性|是|[是]|是||  
+|行動裝置與 Configuration Manager 之間的公開金鑰基礎結構 (PKI) 安全性 (使用互相驗證和 SSL 加密資料傳輸)|是|[是]|是||  
 |用戶端安裝|是||||  
 |透過網際網路支援|是||||  
 |探索|是|||是|  
@@ -98,6 +96,6 @@ System Center Configuration Manager (也稱為 ConfgMgr 或 SCCM) 提供不同�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 
