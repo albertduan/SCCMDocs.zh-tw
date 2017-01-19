@@ -1,5 +1,5 @@
 ---
-title: "1511 版的診斷資料 | System Center Configuration Manager"
+title: "1511 的診斷資料 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 1511 版所收集的診斷及使用方式資料層級。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -34,8 +34,8 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 3488efcd6638b538f05fae52dfd8918423a32b58
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: fa3c2f9c9bdc1f095b450babd675db4a160992d9
 
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1511-of-system-center-configuration-manager"></a>System Center Configuration Manager 1511 版的診斷使用方式資料收集層級
@@ -48,7 +48,10 @@ System Center Configuration Manager 1511 版會收集三種層級的診斷及使
 >  Configuration Manager 在「基本」或「增強」層級中，不會收集站台碼或站台名稱、IP 位址、使用者或電腦名稱、實體位址，或電子郵件地址。 在完整層級中對這項資訊的任何收集並不具有目的 (可能包含在記錄檔或記憶體快照等進階診斷資訊中)，而且 Microsoft 不會使用這項資訊來識別或連絡您，或是用於廣告目的。  
 
 ##  <a name="a-namebkmkchangea-how-to-change-the-level"></a><a name="bkmk_change"></a> 如何變更層級  
- 系統管理員若具有以角色為基礎的系統管理範圍 (其中包含 [站台] 物件類別的 [修改] 權限)，則可以變更 Configuration Manager 主控台中 [診斷及使用方式資料] 設定所收集的資料層級。  
+ 系統管理員若具有以角色為基礎的系統管理範圍 (其中包含 [站台] 物件類別的 [修改] 權限)，則可以變更 Configuration Manager 主控台中 [診斷及使用方式資料] 設定所收集的資料層級。
+
+ 若要這麼做，請在主控台中移至 [Backstage] 索引標籤 (左上角含下拉式箭頭的索引標籤)，並選取 [使用方式資料]，然後選取您要使用的資料層級。  
+
 
 ##  <a name="a-namebkmklevel1a-level-1---basic"></a><a name="bkmk_level1"></a> 層級 1 - 基本  
  「基本」層級包含您階層的相關資料，我們必須要有這項資料才能協助改善安裝或升級體驗，以及協助判斷哪些 Configuration Manager 更新適用於您的階層。  
@@ -278,6 +281,6 @@ System Center Configuration Manager 1511 版會收集三種層級的診斷及使
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

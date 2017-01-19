@@ -1,8 +1,8 @@
 ---
-title: "SQL Server 支援 | System Center Configuration Manager"
+title: "SQL Server 的支援 | Microsoft Docs"
 description: "取得裝載 System Center Configuration Manager 站台資料庫的 SQL Server 版本和設定需求。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
+ms.sourcegitcommit: 814feb4e833230285b4092a8feb6f11a75f2e4f6
+ms.openlocfilehash: ecf790893a5604250810310cfdb09c4cff7d97b6
 
 
 ---
@@ -29,7 +29,6 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
 
 ##  <a name="a-namebkmkinstancesa-sql-server-instances-and-locations"></a><a name="bkmk_Instances"></a> SQL Server 執行個體和位置  
  **管理中心網站和主要站台：**  
-
 站台資料庫必須使用完整的 SQL Server 安裝。  
 
  SQL Server 的位置可以在︰  
@@ -49,22 +48,26 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
 
 
  **次要站台：**  
+ 站台資料庫可以使用預設的完整 SQL Server 安裝執行個體，或是使用 SQL Server Express。  
 
- 站台資料庫可以使用預設的完整 SQL Server 安裝執行個體，或是使用 SQL Server Express  
-
- SQL Server 的位置必須在站台伺服器電腦上  
+ SQL Server 的位置必須在站台伺服器電腦上。  
 
 ##  <a name="a-namebkmksqlversionsa-supported-versions-of-sql-server"></a><a name="bkmk_SQLVersions"></a> 支援的 SQL Server 版本  
  在具有多個站台的階層中，不同站台可以使用不同版本的 SQL Server 來裝載站台資料庫，只要 Configuration Manager 支援您使用的 SQL Server 版本即可。  
 
- 以下是 System Center Configuration Manager 1511 和更新版本支援的 SQL Server 版本。  
+ 除非另有指定，否則以下是 System Center Configuration Manager 1511 和更新版本支援的 SQL Server 版本。  
 
 > [!IMPORTANT]  
 >  在管理中心網站針對資料庫使用 SQL Server Standard 時，一個階層所能支援的用戶端總數會受到限制。 請參閱 [Size and scale numbers](../../../core/plan-design/configs/size-and-scale-numbers.md) (大小與縮放比例)。
 
-### <a name="sql-server-2016---standard-enterprise"></a>SQL Server 2016 - Standard、Enterprise  
+### <a name="sql-server-2016-sp1---standard-enterprise"></a>SQL Server 2016 SP1 - Standard、Enterprise  
+您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
-支援與 1606 版搭配使用。   
+-   管理中心網站  
+-   主要網站  
+-   次要網站  
+
+### <a name="sql-server-2016---standard-enterprise"></a>SQL Server 2016 - Standard、Enterprise  
 您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   管理中心網站  
@@ -73,8 +76,6 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
 
 
 ### <a name="sql-server-2014-sp2---standard-enterprise"></a>SQL Server 2014 SP2 - Standard、Enterprise  
-
-支援用於 1511 版和更新版本。  
 您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   管理中心網站  
@@ -84,8 +85,6 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
 
 
 ### <a name="sql-server-2014-sp1---standard-enterprise"></a>SQL Server 2014 SP1 - Standard、Enterprise  
-
-支援用於 1511 版和更新版本。  
  您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   管理中心網站  
@@ -94,8 +93,6 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
 
 
 ### <a name="sql-server-2012-sp3---standard-enterprise"></a>SQL Server 2012 SP3 - Standard、Enterprise  
-
-支援用於 1511 版和更新版本。  
  您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   管理中心網站  
@@ -103,9 +100,7 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
 -   次要網站  
 
 
-### <a name="sql-server-2012-sp2---standard-enterprise"></a>SQL Server 2012 SP2 - Standard、Enterprise  
-
-支援用於 1511 版和更新版本。  
+### <a name="sql-server-2012-sp2---standard-enterprise"></a>SQL Server 2012 SP2 - Standard、Enterprise   
  您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   管理中心網站  
@@ -113,41 +108,41 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
 -   次要網站  
 
 
-### <a name="sql-server-2008-r2-sp3---standard-enterprise-datacenter"></a>SQL Server 2008 R2 SP3 - Standard、Enterprise、Datacenter  
-
-支援用於 1511 版和更新版本。    
+### <a name="sql-server-2008-r2-sp3---standard-enterprise-datacenter"></a>SQL Server 2008 R2 SP3 - Standard、Enterprise、Datacenter     
 您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   管理中心網站  
 -   主要網站  
 -   次要網站  
 
-### <a name="sql-server-2016-express"></a>SQL Server 2016 Express
-支援與 1606 版搭配使用。  
+
+
+### <a name="sql-server-2016-express-sp1"></a>SQL Server 2016 Express SP1  
 您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：
 -   次要網站
 
-### <a name="sql-server-2014-express-sp2"></a>SQL Server 2014 Express SP2  
-支援與 1511 版和更新版本搭配使用。  
+### <a name="sql-server-2016-express"></a>SQL Server 2016 Express
+您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：
+-   次要網站
+
+
+### <a name="sql-server-2014-express-sp2"></a>SQL Server 2014 Express SP2   
 您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   次要網站  
 
 
-### <a name="sql-server-2014-express-sp1"></a>SQL Server 2014 Express SP1  
- 支援與 1511 版和更新版本搭配使用。   
+### <a name="sql-server-2014-express-sp1"></a>SQL Server 2014 Express SP1   
  您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   次要網站  
 
 ### <a name="sql-server-2012-express-sp3"></a>SQL Server 2012 Express SP3  
-支援與 1511 版和更新版本搭配使用。   
 您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   次要網站  
 
-### <a name="sql-server-2012-express-sp2"></a>SQL Server 2012 Express SP2  
- 支援與 1511 版和更新版本搭配使用。  
+### <a name="sql-server-2012-express-sp2"></a>SQL Server 2012 Express SP2   
  您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   次要網站  
@@ -187,13 +182,11 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
     -   主要站台：最少 8 GB  
     -   次要站台：最少 4 GB  
 
- **SQL 巢狀觸發程序：**  
-
- 必須啟用[SQL 巢狀觸發程序](http://go.microsoft.com/fwlink/?LinkId=528802) 。  
+**SQL 巢狀觸發程序：**  
+必須啟用 [SQL 巢狀觸發程序](http://go.microsoft.com/fwlink/?LinkId=528802) 。  
 
  **SQL Server CLR 整合**  
-
-  站台資料庫會要求啟用 SQL Server 通用語言執行平台 (CLR)。 當 Configuration Manager 安裝時，會自動啟用此功能。 如需 CLR 的詳細資訊，請參閱 [SQL Server CLR 整合簡介](https://msdn.microsoft.com/library/ms254498\(v=vs.110\).aspx)  
+  站台資料庫會要求啟用 SQL Server 通用語言執行平台 (CLR)。 當 Configuration Manager 安裝時，會自動啟用此功能。 如需 CLR 的詳細資訊，請參閱 [SQL Server CLR 整合簡介](https://msdn.microsoft.com/library/ms254498\(v=vs.110\).aspx)。  
 
 ##  <a name="a-namebkmkoptionala-optional-configurations-for-sql-server"></a><a name="bkmk_optional"></a> 選擇性的 SQL Server 組態  
  下列組態可選擇性用於使用完整 SQL Server 安裝的各個資料庫。  
@@ -220,6 +213,10 @@ ms.openlocfilehash: b17720021f797d404a89933939427696dfafd7dc
 **SQL Server Reporting Services：**  
 安裝可讓您執行報告的 Reporting Services 點所需。  
 
+> [!IMPORTANT]  
+> 從舊版升級 SQL Server 之後，您可能會看到下列錯誤︰「報表產生器不存在」。    
+> 若要解決這個問題，您必須重新安裝 Reporting Services 點站台系統角色。
+
 **SQL Server 連接埠：**  
 如為 SQL Server 資料庫引擎和網站間複寫通訊，可以使用預設 SQL Server 連接埠組態或指定自訂連接埠：  
 
@@ -242,6 +239,6 @@ SQL Server 裝載來自多個站台的資料庫時，每個資料庫都必須使
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "範例 Asset Intelligence 一般授權匯入檔案 | System Center Configuration Manager"
+title: "Asset Intelligence 一般授權匯入檔案範例 | Microsoft Docs"
 description: "使用範例 Asset Intelligence 一般授權檔案，協助在 System Center Configuration Manager 中匯入軟體授權。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 706828f2b954eb4ad5fc6fbaa27f0f816e701d47
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: 6ee39d311108253ece1c9d60c25ac06017867c1f
 
 
 ---
@@ -43,6 +43,6 @@ ms.openlocfilehash: 706828f2b954eb4ad5fc6fbaa27f0f816e701d47
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

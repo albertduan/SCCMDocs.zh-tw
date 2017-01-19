@@ -1,5 +1,5 @@
 ---
-title: "擴充硬體清查 | System Center Configuration Manager"
+title: "擴充硬體清查 | Microsoft Docs"
 description: "了解擴充 System Center Configuration Manager 中的硬體清查的方法。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: 4a42e266c4152145a4a1c291804ff98934671692
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: cf325aec385f570b297f753f37c2c39abe93154f
 
 
 ---
@@ -163,7 +163,7 @@ System Center Configuration Manager 硬體清查會使用 Windows Management Ins
 8.  在 [匯出]  對話方塊中，指定您要將類別匯出至其中的管理物件格式 (MOF) 檔案，然後按一下 [儲存] 。  
 
 ## <a name="how-to-use-management-information-files-mif-files-to-extend-hardware-inventory"></a>如何使用管理資訊檔案 (MIF 檔案) 來擴充硬體清查  
- 使用管理資訊格式 (MIF) 檔案，來延伸透過 Configuration Manager 從用戶端收集到的硬體清查資訊。 硬體清查期間 MIF 檔案中儲存的資訊加入至用戶端清查報告，並儲存在網站資料庫，您可以在其中使用您使用預設用戶端清查資料的相同方式中的資料。 有兩種類型的 MIF 檔案 NOIDMIF 和 IDMIF。 
+ 使用管理資訊格式 (MIF) 檔案，來延伸透過 Configuration Manager 從用戶端收集到的硬體清查資訊。 硬體清查期間 MIF 檔案中儲存的資訊加入至用戶端清查報告，並儲存在網站資料庫，您可以在其中使用您使用預設用戶端清查資料的相同方式中的資料。 有兩種類型的 MIF 檔案 NOIDMIF 和 IDMIF。
 
 > [!IMPORTANT]  
 >  將資訊從 MIF 檔案新增至 Configuration Manager 資料庫之前，您必須建立或匯入其類別資訊。 如需詳細資訊，請參閱本主題中的 [新增清查類別](#BKMK_Add) 和 [匯入硬體清查類別](#BKMK_Import) 小節。  
@@ -181,11 +181,11 @@ System Center Configuration Manager 硬體清查會使用 Windows Management Ins
 
  建立 IDMIF 檔案之後，這個資料夾中儲存這 *%windir%***\System32\CCM\Inventory\Idmifs** 用戶端電腦上的資料夾。 在下次排程的硬體清查週期，Configuration Manager 會從這個檔案收集資訊。 您必須宣告新類別，藉由新增或匯入這些檔案中包含的資訊。  
 
-> [!NOTE] 
+> [!NOTE]
 > MIF 檔案可能包含大量資料，而且收集這項資料可能會對站台效能造成負面影響。 只在需要時才啟用 MIF 收集，並在硬體清查設定中設定 [自訂 MIF 檔案大小上限 (KB)]  選項。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的硬體清查簡介](introduction-to-hardware-inventory.md)。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

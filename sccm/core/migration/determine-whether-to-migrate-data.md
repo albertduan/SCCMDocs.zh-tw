@@ -1,5 +1,5 @@
 ---
-title: "選擇移轉項目 | System Center Configuration Manager"
+title: "選擇要移轉的項目 | Microsoft Docs"
 description: "了解您可以移轉哪些資料，以及無法移轉哪些資料至 System Center Configuration Manager。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 9f18dbe2fb8e8d192a29d028673a907d6f85c07c
+ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
+ms.openlocfilehash: 66e01cbe84206cb1b29893b768c1bc831f2f6cfc
 
 
 ---
@@ -186,6 +186,6 @@ ms.openlocfilehash: 9f18dbe2fb8e8d192a29d028673a907d6f85c07c
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

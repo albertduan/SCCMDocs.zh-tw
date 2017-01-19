@@ -1,5 +1,5 @@
 ---
-title: "深入了解授權和分支 | System Center Configuration Manager"
+title: "深入了解授權和分支 | Microsoft Docs"
 description: "請使用本主題，深入了解 System Center Configuration Manager 2016 年 10 月版本提供之安裝選項的授權需求，其中包括最新分支 1606 版、長期維護分支 (LTSB) 和最新分支的評估安裝。"
 ms.custom: na
 ms.date: 10/12/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 473d4f9a39898ff5a664013f91ab95e58cd6d161
-ms.openlocfilehash: 726c10fc536f9612bdf46090ef653388a5cfc969
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: d51a602de9e0cf85d80c74c034613002682e52ea
 
 ---
 
@@ -116,6 +116,6 @@ LTSB 是以最新分支 1606 版為基礎，並具有下列限制：
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

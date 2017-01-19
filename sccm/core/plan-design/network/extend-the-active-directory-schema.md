@@ -1,5 +1,5 @@
 ---
-title: "Active Directory 架構 | System Center Configuration Manager"
+title: "發行和 Active Directory 結構描述 | Microsoft Docs"
 description: "為 System Center Configuration Manager 延伸 Active Directory 架構，簡化部署及設定用戶端的程序。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,12 +17,12 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d4cdaa646265b2d05ec93aeaefaf3a6e7a2c269f
+ms.sourcegitcommit: 2083a2ca7a199771f26981cdbe04e4e2ef6e8958
+ms.openlocfilehash: 3bd18e2de76d886b275c80d0dce3b824f2598008
 
 
 ---
-# <a name="extend-the-active-directory-schema-for-system-center-configuration-manager"></a>擴充 System Center Configuration Manager 的 Active Directory 架構
+# <a name="prepare-active-directory-for-site-publishing"></a>準備 Active Directory 以發行站台
 
 *適用於：System Center Configuration Manager (最新分支)*
 
@@ -70,7 +70,7 @@ ms.openlocfilehash: d4cdaa646265b2d05ec93aeaefaf3a6e7a2c269f
 
 3.  檢視上一步驟中使用的命令列所建立之記錄檔，可確認架構擴充成功。  
 
-## <a name="step-2-create-the-system-management-container-and-grant-sites-permissions-to-the-container"></a>步驟 2：  建立「系統管理」容器，並為容器授與站台的權限  
+## <a name="step-2--create-the-system-management-container-and-grant-sites-permissions-to-the-container"></a>步驟 2：  建立「系統管理」容器，並為容器授與站台的權限  
  延伸架構之後，您必須在 Active Directory 網域服務 (AD DS) 中建立一個名為 **System Management** 的容器︰  
 
 -   在具有會將資料發佈至 Active Directory 的主要或次要站台的每個網域中，都要建立一次此容器  
@@ -114,6 +114,6 @@ ms.openlocfilehash: d4cdaa646265b2d05ec93aeaefaf3a6e7a2c269f
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

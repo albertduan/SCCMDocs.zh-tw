@@ -1,8 +1,8 @@
 ---
-title: "1606 的診斷資料 | Microsoft Docs"
-description: "了解 System Center Configuration Manager 1606 版所收集的診斷及使用方式資料層級。"
+title: "1610 的診斷資料 | System Center Configuration Manager"
+description: "了解 System Center Configuration Manager 1610 版所收集的診斷及使用方式資料層級。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -10,7 +10,7 @@ ms.technology:
 - configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
-ms.assetid: f7350d03-f440-4744-82d4-75f8c6c25028
+ms.assetid: eb20eb90-bcc0-41de-bfea-638ea470c0dd
 caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
@@ -34,15 +34,15 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
-ms.openlocfilehash: 3128c556b82d64ea7b36bee55c44979fbf5c84ef
+ms.sourcegitcommit: 6b4af705fa148261634d38dbb2df9988c5672180
+ms.openlocfilehash: df8a4c84da8e73aae2455e5f5af26d097449cddd
 
 ---
-# <a name="levels-of-diagnostic-usage-data-collection-for-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 1606 版的診斷使用方式資料收集層級
+# <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 1610 版的診斷使用方式資料收集層級
 
-適用於：System Center Configuration Manager (最新分支)
+*適用於：System Center Configuration Manager (最新分支)*
 
-System Center Configuration Manager 1606 版會收集三種層級的診斷及使用方式資料：**基本**、**增強**和**完整**。 這項功能預設會設定為增強層級。 下列各節提供有關每個層級所收集之資料的詳細說明。
+System Center Configuration Manager 1610 版會收集三種層級的診斷及使用方式資料：**基本**、**增強**和**完整**。 這項功能預設會設定為增強層級。 下列各節提供有關每個層級所收集之資料的詳細說明。
 
 來自舊版的變更會以 ***[新增]***、***[已更新]***、***[已移除]*** 或 ***[已移動]*** 註明。
 
@@ -53,12 +53,12 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 ##  <a name="a-namebkmkchangea-how-to-change-the-level"></a><a name="bkmk_change"></a> 如何變更層級
  系統管理員若具有以角色為基礎的系統管理範圍 (其中包含 [站台] 物件類別的 [修改] 權限)，則可以變更 Configuration Manager 主控台中 [診斷及使用方式資料] 設定所收集的資料層級。
 
-   若要這麼做，請在主控台中移至 [Backstage] 索引標籤 (左上角含下拉式箭頭的索引標籤)，並選取 [使用方式資料]，然後選取您要使用的資料層級。  
+從 1610 版開始，您可以從主控台變更資料收集層級，瀏覽至 [系統管理] > [概觀] > [站台設定] > [站台]。 開啟 [階層設定]，然後選取您想要使用的資料層級。  
 
 ##  <a name="a-namebkmklevel1a-level-1---basic"></a><a name="bkmk_level1"></a> 層級 1 - 基本
  「基本」層級包含您階層的相關資料，我們必須要有這項資料才能協助改善安裝或升級體驗，以及協助判斷哪些 Configuration Manager 更新適用於您的階層。
 
- 從 System Center Configuration Manager 1606 版開始，這個層級包含下列項目：
+ 針對 System Center Configuration Manager 1610 版，這個層級包含下列項目：
 
 
  -   安裝程式資訊：
@@ -69,6 +69,11 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
       -  升級後的指令碼版本
 
       -  使用更新快速通道 (Fast Ring)
+
+    -  ***[新增]*** 發行前版本的使用、安裝媒體類型及分支類型
+
+    - ***[新增]*** SA 到期日
+
 
 -   資料庫效能標準 (複寫處理資訊、依處理器和磁碟使用量列出前幾個 SQL Server 預存程序)
 
@@ -108,7 +113,7 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
      -  主控台連線的相關統計資料 (作業系統版本、語言、SKU 和架構；系統記憶體、邏輯處理器計數、Connect 網站識別碼、所安裝的 .NET 版本和主控台語言套件)    
 
 
-- ***[新增]*** SQL 版本、Service Pack 層級、版本、定序識別碼、字元集
+- SQL 版本、Service Pack 層級、版本、定序識別碼、字元集
 
 
 ##  <a name="a-namebkmklevel2a-level-2---enhanced"></a><a name="bkmk_level2"></a> 層級 2 - 增強
@@ -116,7 +121,7 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
 建議使用這個層級，因為它會提供 Microsoft 必要的基本資料，以在未來的產品和服務版本中做出實用的改進。 這個層級不會收集物件名稱 (站台、使用者、電腦或物件)、安全性相關物件的詳細資料或漏洞 (例如需要軟體更新的系統計數)。
 
-從 System Center Configuration Manager 1606 版開始，這個層級包含下列項目：
+針對 System Center Configuration Manager 1610 版，這個層級包含下列項目：
 
 -   **應用程式管理：**  
 
@@ -142,17 +147,19 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
     -  應用程式原則大小與複雜性統計資料
 
-    - ***[新增]*** 商務用 Windows 市集 (WSfB) 應用程式計數和同步統計資料 (包括應用程式的摘要類型)  
+    - ***[已更新]*** 商務用 Windows 市集 (WSfB) 應用程式計數和同步統計資料 (包括應用程式的摘要類型、已授權應用程式狀態，以及線上和離線已授權應用程式數目)  
 
-    - ***[新增]*** 界限群組統計資料 (多快、多慢、每個群組的計數)
+    - 界限群組統計資料 (多快、多慢、每個群組的計數)
 
-    - ***[新增]*** MSI 設定選項和計數
+    - MSI 設定選項和計數
 
-    - ***[新增]*** 應用程式需求 (哪項部署技術及其所參考的內建條件計數)
+    - 應用程式需求 (哪項部署技術及其所參考的內建條件計數)
 
-    - ***[新增]*** 應用程式取代、鏈結的最大深度
+    - 應用程式取代、最大鏈結深度
 
-    - ***[新增]*** UDA 使用方式、建立方式
+    - UDA 使用方式、建立方式
+
+    - ***[新增]*** 應用程式核准統計資料及使用方式頻率
 
 
 
@@ -164,43 +171,51 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
     -   用戶端安裝失敗的計數  
 
-    -  ***[新增]*** 用戶端自動升級部署設定，包括用戶端試驗
+    -  ***[已更新]*** 用戶端自動升級：部署設定，包括用戶端試驗、排除使用方式 (擴充相互操作用戶端)
 
-    -  ***[新增]*** 用戶端健全狀況統計資料和熱門問題摘要
+    -  用戶端健全狀況統計資料和熱門問題摘要
 
-    - ***[新增]*** BIOS 存留期 (以年為單位)
+    - BIOS 存留期 (以年為單位)
 
-    - ***[新增]*** 作業系統存留期 (以月為單位)
+    - 作業系統存留期 (以月為單位)
 
-    - ***[新增]*** 軟體中心動作計數
+    - 軟體中心動作計數
 
-    - ***[新增]*** 主動管理技術 (AMT) 用戶端版本
+    - 主動管理技術 (AMT) 用戶端版本
 
-    - ***[新增]*** 用戶端部署下載錯誤
+    - 用戶端部署下載錯誤
 
-    - ***[新增]*** 用戶端通知操作動作狀態 (每項動作執行的次數、目標用戶端的最大數目、平均成功率)
+    - 用戶端通知作業動作狀態 (每項動作執行的次數、目標用戶端的最大數目、平均成功率)
 
-    - ***[新增]*** 用戶端所使用的部署方法、每個部署方法的用戶端計數
+    - 用戶端所使用的部署方法, 每個部署方法的用戶端計數
 
-    - ***[新增]*** 用戶端快取大小設定
+    - 用戶端快取大小設定
 
-
-
-- ***[新增]*** **雲端服務︰**
-
-  - ***[新增]*** 同步至 OMS 的集合計數
-
-  - ***[新增]***  已啟用 OMS 雲端連接器
+    - ***[新增]*** 硬體清查類別、軟體清查規則和檔案集合規則數目
 
 
 
-- ***[新增] 集合：***
 
-    -  ***[已移動]*** 集合評估統計資料 (查詢時間、已指派與未指派計數、依類型的計數、ID 變換和規則使用方式)
+- **雲端服務：**
 
-    - ***[新增]*** 沒有部署的集合
+  - 同步至 OMS 的集合計數
 
-    - ***[新增]*** 集合識別碼使用方式 (未用盡識別碼)
+  -  已啟用 OMS 雲端連接器
+
+  - ***[新增]*** 雲端管理閘道的設定和使用方式統計資料
+
+  - ***[新增]*** Upgrade Analytics 連接器計數
+
+
+
+
+- **集合：**
+
+    -  集合評估統計資料 (查詢時間、已指派與未指派計數、依類型的計數、識別碼變換和規則使用方式)
+
+    - 沒有部署的集合
+
+    - 集合識別碼使用方式 (識別碼未用盡)
 
 
 
@@ -210,14 +225,14 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
     -   基本設定基準資訊 (計數、部署數目和參考數目)  
 
-    -   ***[已更新]*** 參考內建設定的部署計數 (現在擷取會修復設定)  
+    -   參考內建設定的部署計數 (現在擷取會修復設定)  
 
-    -   ***[已更新]*** 針對自訂設定所建立的規則和部署計數 (現在擷取會修復設定)  
+    -   針對自訂設定所建立的規則和部署計數 (現在擷取會修復設定)  
     -   所部署之簡單憑證註冊通訊協定、VPN、WiFi、憑證 (.pfx) 和相容性原則範本的計數
 
     -  SCEP 憑證、VPN、Wifi、憑證 (.pfx) 和相容性原則部署的計數 (依平台)
 
-    - ***[新增]*** Passport for Work 原則 (已建立、已部署)
+    - Passport for Work 原則 (已建立、已部署)
 
 
 
@@ -227,11 +242,17 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
     -   界限群組資訊 (指派給每個界限群組的界限和站台系統計數)  
 
+    - ***[新增]*** 界限群組關聯性和後援設定
+
     -   發佈點群組資訊 (指派給每個發佈點群組的封裝和發佈點計數)  
 
     -   發佈點設定資訊 (分支快取的使用、發佈點監視)  
 
     -   發佈管理員設定資訊 (執行緒、重試延遲、重試次數，提取發佈點設定)  
+
+    - ***[新增]*** 對等快取用戶端計數，以及使用方式統計資料
+
+    - ***[新增]*** 用戶端內容下載統計資料
 
 
 -   **Endpoint Protection：**  
@@ -244,27 +265,18 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
     -   針對 Endpoint Protection 功能所設定的警示計數  
 
-    - ***[新增]*** ATP 原則 (原則計數、是否已部署)
+    - ATP 原則 (原則計數、是否已部署)
 
 
--   ***[已移除]*** **行動應用程式管理 (MAM)：**  
+- **移轉：**
 
-    -   ***[已移除]*** 啟用 MAM 的 Office 和企業營運系統應用程式計數，以及原則 (依作業系統)  
-
-    -   ***[已移除]*** MAM 應用程式/原則部署的計數  
-
-    -   ***[已移除]*** 每項 MAM 設定所建立的規則計數  
-
-
-- ***[新增]*** **移轉：**
-
-  -  ***[新增]***  移轉的物件計數 (使用 [移轉精靈])
+  -   已移轉物件計數 (使用移轉精靈)
 
 
 
 -   **行動裝置管理(MDM)：**  
 
-    -   所發出的行動裝置動作 (鎖定、pin rest、抹除和淘汰) 命令計數  
+    -   ***[已更新]*** 所發出的行動裝置動作 (鎖定、pin rest、抹除、淘汰和立即同步) 命令計數  
 
     -   受 Configuration Manager 和 Microsoft Intune 管理的行動裝置計數，以及其註冊方式 (大量、以使用者為基礎)  
 
@@ -295,7 +307,9 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
     -   開機映像、驅動程式、驅動程式套件、啟用多點傳送的發佈點、啟用 PXE 的發佈點和工作順序的計數  
 
-    -   ***[新增]*** 工作順序步驟使用的計數
+    -   工作順序步驟使用的計數
+
+    - ***[新增]*** 版本升級原則計數
 
 
 
@@ -348,7 +362,10 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
     -   軟體更新點同步的分類
 
-    -   ***[新增]*** 軟體更新點負載平衡統計資料
+    -   軟體更新點負載平衡統計資料
+
+    -  ***[新增]*** Windows 10 快速更新設定
+
 
 
 
@@ -356,28 +373,30 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
     -   最大資料庫資料表的計數  
 
-    -   SQL AlwaysOn 複本資訊  
+    -   ***[已更新]*** SQL AlwaysOn 複本資訊、使用方式和健全狀況狀態
 
     -  SQL Server 變更追蹤保留期間
 
-    - ***[新增]*** 已啟用和排程的探索類型 (完整、累加)
+    - 探索類型、已啟用和排程 (完整、累加)
 
-    - ***[新增]*** 探索操作統計資料 (找到的物件計數)
+    - 探索操作統計資料 (找到的物件計數)
 
-    - ***[新增]*** SQL 變更追蹤效能問題、保留期間和自動清除狀態
+    - SQL 變更追蹤效能問題、保留期間和自動清除狀態
 
 
 
-- ***[新增]*** **其他**
+- **其他**
 
-    - ***[新增]*** 具有 WOL 的站台計數
+    - 具有 WOL 的站台計數
+
+    - ***[新增]*** 報表使用方式和效能統計資料  
 
 
 
 ##  <a name="a-namebkmklevel3a-level-3---full"></a><a name="bkmk_level3"></a> 層級 3 - 完整
 完整層級包含基本和增強中的所有資料。 它也包含 Endpoint Protection、更新相容性百分比和軟體更新資訊的其他資訊。  這個層級也可以包含進階診斷資訊 (例如系統檔案和記憶體快照)，其中可能包含擷取時存在於記憶體或記錄檔中的個人資訊。
 
-從 System Center Configuration Manager 1606 版開始，這個層級包含下列項目：
+針對 System Center Configuration Manager 1610 版，這個層級包含下列項目：
 
 -   集合評估和重新整理統計資料
 
@@ -390,8 +409,6 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 -   軟體更新部署的整體相容性
 
 -   自動部署規則評估排程資訊
-
--   ***[已移除]*** 具有網路存取保護原則的用戶端數目
 
 -   軟體更新部署錯誤碼和計數
 
@@ -410,15 +427,17 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
 -    受 Intune 管理之裝置的 EAS 條件式存取原則類型 (封鎖或隔離)
 
--   ***[新增]*** 環境中的前 50 個 CPU
+-   環境中的前 50 個 CPU
 
--   ***[新增]*** 適用於 SCCM 使用量的 DCM 設定套件
+-   適用於 SCCM 使用量的 DCM 設定套件
 
--   ***[新增]*** MSI 產品代碼 (客戶所部署的一般應用程式為何)
+-   MSI 產品代碼 (客戶所部署的一般應用程式為何)
 
--   ***[新增]*** ATP 健全狀況摘要
+-   ATP 健全狀況摘要
 
--   ***[新增]*** 詳細的用戶端部署安裝錯誤
+-   詳細的用戶端部署安裝錯誤
+
+- ***[新增]*** 商務用 Windows 市集應用程式詳細資料 (已同步應用程式的非彙總清單，包括 AppID、狀態 - 線上或離線，以及已購買的授權總數)
 
 
 

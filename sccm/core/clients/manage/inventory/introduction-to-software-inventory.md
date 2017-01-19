@@ -1,5 +1,5 @@
 ---
-title: "軟體清查 | System Center Configuration Manager"
+title: "軟體清查 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 中的軟體清查簡介。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 8d664616e222119f7821a70a7c8f9cdbfca38538
+ms.sourcegitcommit: a468ce93e9536fe3f6bf0fc191ff9764dd1c3343
+ms.openlocfilehash: 401ba6e37d740310d49ab9e96112ce576d7130e4
 
 
 ---
@@ -34,7 +34,7 @@ System Center Configuration Manager 中的軟體清查功能，可用來收集�
 
 -   建立查詢，以根據您所指定並在裝置上找到的檔案，來傳回裝置。 如需詳細資訊，請參閱 [System Center Configuration Manager 的查詢技術參考](../../../../core/servers/manage/queries-technical-reference.md)。  
 
--   建立查詢式集合，該集合以您所指定並在裝置上找到的檔案為基礎。 查詢式集合成員資格會依照排程自動更新。 您可以針對許多工作 (例如軟體部署) 使用集合。 如需詳細資訊，請參閱 [System Center Configuration Manager 的集合技術參考](../../../../core/clients/manage/collections/collections-technical-reference.md)。  
+-   建立查詢式集合，該集合以您所指定並在裝置上找到的檔案為基礎。 查詢式集合成員資格會依照排程自動更新。 您可以針對許多工作 (例如軟體部署) 使用集合。 如需詳細資訊，請參閱 [System Center Configuration Manager 的集合簡介](../../../../core/clients/manage/collections/introduction-to-collections.md)。  
 
 -   執行報告，以顯示組織中裝置上之檔案的特定詳細資料。 如需詳細資訊，請參閱 [Reporting in System Center Configuration Manager](../../../../core/servers/manage/reporting.md) (System Center Configuration Manager 中的報告)。  
 
@@ -54,6 +54,7 @@ System Center Configuration Manager 中的軟體清查功能，可用來收集�
 
 |平台|屬個人擁有的裝置|屬公司擁有的裝置|  
 |--------------|---------------------------------|--------------------------------|  
+|Windows 10 (不含 Configuration Manager 用戶端)|僅限受管理的應用程式|僅限受管理的應用程式| 
 |Windows 8.1 (不含 Configuration Manager 用戶端)|僅限受管理的應用程式|僅限受管理的應用程式|  
 |Windows Phone 8|僅限受管理的應用程式|僅限受管理的應用程式|  
 |Windows RT|僅限受管理的應用程式|僅限受管理的應用程式|  
@@ -62,6 +63,6 @@ System Center Configuration Manager 中的軟體清查功能，可用來收集�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
