@@ -13,11 +13,15 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 304a83ea-0f72-437d-9688-2e6e0c7526dd
 translationtype: Human Translation
-ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
-ms.openlocfilehash: b89cec7cebb5342da32ec8e11a049edad12f1231
+ms.sourcegitcommit: af5f58dd5fe1f19d7a70cb9516af159c6682d194
+ms.openlocfilehash: ae09a02dd5d67113b9a7e2ce146c844efa4caf55
 
 
 ---
+>[!IMPORTANT]
+>這是在 Configuration Manager 版本 1606 和版本 1610 中提供的發行前版本功能。 發行前版本功能會包含在產品內，以便在生產環境中進行早期測試，但不應視為生產環境就緒。 您必須開啟這項功能才能使用。 如需詳細資訊，請參閱[使用發行前版本功能](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)。
+
+
 # <a name="service-a-server-group"></a>提供伺服器群組
 
 *適用對象：System Center Configuration Manager (最新分支)*
@@ -88,6 +92,6 @@ ms.openlocfilehash: b89cec7cebb5342da32ec8e11a049edad12f1231
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

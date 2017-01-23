@@ -2,7 +2,7 @@
 title: "用戶端對等快取 | System Center Configuration Manager"
 description: "使用 System Center Configuration Manager 部署內容時，針對用戶端內容來源位置使用對等快取。"
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 1/9/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: e2a72fd9fb9ae5e64b7eb92e1d2106162fc7ea5d
-ms.openlocfilehash: 599ba03a1934b9feb030f27c827625c2c9471d8e
+ms.sourcegitcommit: f3e8cb3a7a4c1de9b8e9866ed192a8a0a7aec106
+ms.openlocfilehash: 86129a7fd5bfac676b5f03336cf97d07747b48d1
 
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 用戶端的對等快取
@@ -48,6 +48,8 @@ ms.openlocfilehash: 599ba03a1934b9feb030f27c827625c2c9471d8e
 
 
 ## <a name="requirements-and-considerations-for-peer-cache"></a>對等快取的需求與考量
+- 在任何支援做為 Configuration Manager 用戶端的 Windows 作業系統上都支援對等快取。 非 Windows 作業系統不支援對等快取。
+
 - 您必須為您的站台設定一個**網路存取帳戶**，此帳戶要能夠**完全控制**每個用戶端上的快取資料夾。 此資料夾預設為 ***%windir%\ccmcache***。
 
 - 用戶端只能從其目前界限群組中的對等快取用戶端傳輸內容。
@@ -67,6 +69,6 @@ ms.openlocfilehash: 599ba03a1934b9feb030f27c827625c2c9471d8e
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO2-->
 
 

@@ -16,8 +16,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 776c606f8e9ebfd7348d9d3a8f1e038d47bdf7a1
-ms.openlocfilehash: 891638f920a5bf807b17c7f55b9153be45fc3b93
+ms.sourcegitcommit: 9f3088e90c3259adc3c3b9c6873978d1db4dd1d8
+ms.openlocfilehash: 05e4a9687d29c5377303afd8b08352a6a77fa58e
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
@@ -311,18 +311,32 @@ Configuration Manager Technical Preview 各版本過去提供的下列功能，�
 
 ## <a name="notices"></a>通知
 
-- **2016 年 10 月 25 日︰Windows Phone 8 公司入口網站上傳已停用**
+### <a name="system-center-2012-configuration-sp1-and-system-center-2012-r2-configuration-manager-rtm-support-for-hybrid-mobile-device-management-ending-on-april-10-2017"></a>System Center 2012 Configuration SP1 和 System Center 2012 R2 Configuration Manager (RTM)：對混合式行動裝置管理的支援將於 2017 年 4 月 10 日結束
 
-  Configuration Manager 主控台已移除上傳已簽署公司入口網站應用程式的功能，因為 Windows 8、Windows Phone 8 和 Windows RT 已停用 Intune 支援，且對 Windows Phone 8 公司入口網站的支援將於 11 月終止。  會繼續支援已註冊的 Windows 8、Windows Phone 8 和 Windows RT 裝置，但不支援使用這些平台來註冊其他裝置。
+*2017 年 1 月 11 日*
+
+對 System Center 2012 Configuration Manager SP1 和 System Center 2012 R2 Configuration Manager RTM 的支援已經於 2016 年 7 月 12 日結束。 接著，對連線到 Microsoft Intune 服務以使用混合式 MDM 的這些版本的支援將於 2017 年 4 月 10 日結束。 在這個日期之後，搭配這些版本使用的混合式 MDM 將會停止運作。 受管理的裝置基本上會變成不受管理，因為 Intune Connector 將不會再連線到 Intune 服務。 除非執行升級，否則 Configuration Manager 資料 (例如原則和應用程式) 將不會往上流動至 Intune，而受管理裝置的資料不會往下流動至 Configuration Manager。
+
+如果您正在執行使用 Configuration Manager 2012 SP1 或 R2 RTM 的混合式部署，建議您在 2017 年 4 月 10 日之前升級至 Configuration Manager (最新分支)，或是最新支援的 Configuration Manager 2012 Service Pack (R2 SP1 或 SP2)，以避免服務中斷。
+
+其他資源：
+-   [升級至 System Center Configuration Manager (最新分支)](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)
+-   [規劃升級至 System Center 2012 R2 Configuration Manager SP1](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningR2SP1Upgrade)
+-   [規劃升級至 System Center 2012 Configuration Manager SP2](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningSP2Upgrade)
+
+### <a name="windows-phone-8-company-portal-upload-deprecated"></a>Windows Phone 8 公司入口網站上傳已停用
+*2016 年 10 月 25 日*
+
+Configuration Manager 主控台已移除上傳已簽署公司入口網站應用程式的功能，因為 Windows 8、Windows Phone 8 和 Windows RT 已停用 Intune 支援，且對 Windows Phone 8 公司入口網站的支援將於 11 月終止。  會繼續支援已註冊的 Windows 8、Windows Phone 8 和 Windows RT 裝置，但不支援使用這些平台來註冊其他裝置。
 
 
-### <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>另請參閱
 
 - [過去的混合式 MDM 功能](whats-new-hybrid-archive.md)
 - [System Center 2012 Configuration Manager 中 MDM 的新功能](https://technet.microsoft.com/library/mt445560.aspx)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO2-->
 
 

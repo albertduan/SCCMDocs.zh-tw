@@ -2,7 +2,7 @@
 title: "服務連接點 | Microsoft Docs"
 description: "了解此 Configuration Manager 站台系統角色，並了解及規劃其使用範圍。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4a8d98addcd463eb82d8b7100b44254a10d21992
-ms.openlocfilehash: b5f7ad01f7a32d69d0c75b3c80a053f3c020c036
+ms.sourcegitcommit: 4409d32593e3ab22482b08335005bd2a278a7e35
+ms.openlocfilehash: 36f33e0ce898ccdd5fa25aa59b8cf032805769b9
 
 
 ---
@@ -83,7 +83,7 @@ System Center Configuration Manager 服務連接點是可提供階層中幾項�
 -   站台系統安裝帳戶可供站台伺服器上的發佈管理員使用，用於傳送來自服務連接點的更新
 
 ##  <a name="a-namebkmkurlsa-internet-access-requirements"></a><a name="bkmk_urls"></a> 網際網路存取需求  
-若要啟用作業，裝載服務連線點的電腦以及該電腦與網際網路之間的任何防火牆，皆必須透過 **連接埠 TCP 443** 傳遞通訊給下列網際網路位置。 服務連接點也支援使用 Web Proxy (不論有無驗證) 來存取這些位置。  
+若要啟用作業，裝載服務連線點的電腦以及該電腦與網際網路之間的任何防火牆，皆必須透過**連接埠 TCP 443** 和**連接埠 TCP 443** 傳遞通訊給下列網際網路位置。 服務連接點也支援使用 Web Proxy (不論有無驗證) 來存取這些位置。  
 
 **更新及服務**  
 
@@ -96,6 +96,8 @@ System Center Configuration Manager 服務連接點是可提供階層中幾項�
 -   blob.core.windows.net  
 
 -   download.microsoft.com  
+
+-   download.windowsupdate.com
 
 -   sccmconnected-a01.cloudapp.net  
 
@@ -119,6 +121,6 @@ System Center Configuration Manager 服務連接點是可提供階層中幾項�
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO1-->
 
 
