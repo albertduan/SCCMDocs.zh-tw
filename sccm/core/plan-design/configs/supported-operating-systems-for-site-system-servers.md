@@ -1,5 +1,5 @@
 ---
-title: "支援的站台系統伺服器 | System Center Configuration Manager"
+title: "支援的站台系統伺服器 | Microsoft Docs"
 description: "了解您可用來裝載 System Center Configuration Manager 站台或站台系統角色的 Windows 版本。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,12 +16,12 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
+ms.sourcegitcommit: d23b98b362fb016c53974f851c48fa7200d2b2e3
+ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 
 ---
-# <a name="supported-operating-systems-for-system-center-configuration-manager-site-system-servers"></a>支援的 System Center Configuration Manager 站台系統伺服器作業系統
+# <a name="supported-operating-systems-for-system-center-configuration-manager--site-system-servers"></a>支援的 System Center Configuration Manager 站台系統伺服器作業系統
 
 *適用於：System Center Configuration Manager (最新分支)*
 
@@ -36,7 +36,7 @@ ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
 
 
 
-## <a name="windows-server-2016---standard-datacenter"></a>Windows Server 2016 - Standard、Datacenter
+## <a name="windows-server-2016-----standard-datacenter"></a>Windows Server 2016 - Standard、Datacenter
 從具有 KB3186654 之 Hotfix 彙總套件的 Configuration Manager 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援 Windows Server 2016。
 
 **站台伺服器：**  
@@ -68,6 +68,8 @@ ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
 -   註冊 Proxy 點  
 
 -   後援狀態點  
+
+-   管理點
 
 -   Reporting Services 點  
 
@@ -114,6 +116,8 @@ ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
 
 -   後援狀態點  
 
+-   管理點
+
 -   Reporting Services 點  
 
 -   服務連接點  
@@ -159,6 +163,8 @@ ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
 
 -   後援狀態點  
 
+-   管理點
+
 -   Reporting Services 點  
 
 -   服務連接點  
@@ -173,8 +179,8 @@ ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
 
 -   狀態移轉點  
 
-## <a name="windows-server-2008-r2-with-sp1-x64---standard-enterprise-datacenter"></a>Windows Server 2008 R2 with SP1 (x64) - Standard、Enterprise、Datacenter  
- Windows Server 2008 R2 現在屬於延伸支援，而不再屬於主流支援，如  [Microsoft 支援週期](https://support.microsoft.com/lifecycle)中詳述。 如需這些作業系統作為 Configuration Manager 站台系統伺服器的未來支援詳細資訊，請參閱 [System Center Configuration Manager 的已移除和已淘汰功能](../../../core/plan-design/changes/removed-and-deprecated-features.md)。  
+## <a name="windows-server-2008-r2-with-sp1-x64-----standard-enterprise-datacenter"></a>Windows Server 2008 R2 with SP1 (x64) - Standard、Enterprise、Datacenter  
+ Windows Server 2008 R2 現在屬於延伸支援，而不再屬於主流支援，如 [Microsoft 支援週期](https://support.microsoft.com/lifecycle)中詳述。 如需這些作業系統作為 Configuration Manager 站台系統伺服器的未來支援詳細資訊，請參閱 [System Center Configuration Manager 的已移除和已淘汰功能](../../../core/plan-design/changes/removed-and-deprecated-features.md)。  
 
 **站台伺服器：**  
 
@@ -206,6 +212,8 @@ ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
 
 -   後援狀態點  
 
+-   管理點
+
 -   Reporting Services 點  
 
 -   服務連接點  
@@ -221,7 +229,7 @@ ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
 -   狀態移轉點  
 
 ## <a name="windows-server-2008-with-sp2-x86-x64---standard-enterprise-datacenter"></a>Windows Server 2008 (含 SP2) (x86、x64) - Standard、Enterprise、Datacenter  
- Windows Server 2008 現在屬於延伸支援，而不再屬於主流支援，如  [Microsoft 支援週期](https://support.microsoft.com/lifecycle)中詳述。 如需這些作業系統作為 Configuration Manager 站台系統伺服器的未來支援詳細資訊，請參閱 [System Center Configuration Manager 的已移除和已淘汰功能](../../../core/plan-design/changes/removed-and-deprecated-features.md)。  
+ Windows Server 2008 現在屬於延伸支援，而不再屬於主流支援，如 [Microsoft 支援週期](https://support.microsoft.com/lifecycle)中詳述。 如需這些作業系統作為 Configuration Manager 站台系統伺服器的未來支援詳細資訊，請參閱 [System Center Configuration Manager 的已移除和已淘汰功能](../../../core/plan-design/changes/removed-and-deprecated-features.md)。  
 
 **站台伺服器：**  
 
@@ -256,6 +264,8 @@ ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
 -   註冊 Proxy 點  
 
 -   後援狀態點  
+
+-   管理點
 
 -   Reporting Services 點  
 
@@ -331,6 +341,6 @@ ms.openlocfilehash: 00d5d8d9ce90b2da79485250d25f943ca1c4547b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

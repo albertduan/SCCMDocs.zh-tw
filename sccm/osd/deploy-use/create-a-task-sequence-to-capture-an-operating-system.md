@@ -1,5 +1,5 @@
 ---
-title: "建立工作順序以擷取作業系統 | Configuration Manager"
+title: "建立工作順序以擷取作業系統 | Microsoft Docs"
 description: "組建和擷取工作順序會建立參照電腦，包含特定的驅動程式和軟體更新與作業系統。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 12ea958e18a291a1b88e342b204e633d3bdf869f
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: e9320e40b8e5031ffa3da5e5149c7da718cc87d5
 
 
 ---
@@ -235,6 +235,6 @@ ms.openlocfilehash: 12ea958e18a291a1b88e342b204e633d3bdf869f
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

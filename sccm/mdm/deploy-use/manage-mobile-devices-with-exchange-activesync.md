@@ -1,5 +1,5 @@
 ---
-title: "管理行動裝置 | System Center Configuration Manager 和 Exchange"
+title: "管理行動裝置  | Microsoft Docs"
 description: "在 System Center Configuration Manager 中使用 Exchange Server 連接器管理行動裝置。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 18da1455796e265af2adb8852c9f2b610dc672a8
+ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
+ms.openlocfilehash: 4a2b60d893e8d430b107a5bc43ec0748177c27c3
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: 18da1455796e265af2adb8852c9f2b610dc672a8
 
 適用於：System Center Configuration Manager (最新分支)
 
-如需使用 Microsoft Exchange ActiveSync 通訊協定管理連接至 Exchange Server (內部部署或線上) 的行動裝置，但無法使用 Configuration Manager 進行註冊，請使用 System Center Configuration Manager 中的 Exchange Server 連接器。 您可以從 Configuration Manager 主控台設定 Exchange 行動裝置管理功能，例如遠端裝置抹除，以及多部 Exchange 伺服器的設定控制。  
+如需使用 Microsoft Exchange ActiveSync 通訊協定管理連接至 Exchange Server (內部部署或線上) 的行動裝置，但無法使用 Configuration Manager 進行註冊，請使用 System Center Configuration Manager 中的 Exchange Server 連接器。 您可以從 Configuration Manager 主控台設定 Exchange 行動裝置管理功能，例如遠端裝置抹除，以及多部 Exchange Server 的設定控制。  
 
  ![configmgr&#45;with&#45;exchange](../../mdm/deploy-use/media/configmgr-with-exchange.png "configmgr-with-exchange")  
 
@@ -138,6 +138,6 @@ ms.openlocfilehash: 18da1455796e265af2adb8852c9f2b610dc672a8
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

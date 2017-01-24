@@ -1,5 +1,5 @@
 ---
-title: "部署內容 | System Center Configuration Manager"
+title: "部署內容 | Microsoft Docs"
 description: "安裝 System Center Configuration Manager 發佈點之後，以下是您可如何開始將內容部署到其中的資訊。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: c6bf461a762b8aa51678a17cb7b294c803d05f37
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
 
 ---
 # <a name="deploy-and-manage-content-for-system-center-configuration-manager"></a>部署和管理 System Center Configuration Manager 的內容
@@ -307,43 +307,19 @@ ms.openlocfilehash: c6bf461a762b8aa51678a17cb7b294c803d05f37
 
 ##  <a name="a-namebkmkmanagea-manage-the-content-you-have-distributed"></a><a name="bkmk_manage"></a> 管理已發佈的內容  
  管理內容的選項如下：  
+ - [更新內容](#update-content)
+ - [重新發佈內容](#redistribute-content)
+ - [移除內容](#remove-content)
+ - [驗證內容](#validate-content)
 
-**更新內容**：當部署的來源檔案位置透過增加新檔案、或使用較新版本取代現有檔案來進行更新時，您可以使用 [更新發佈點] 或 [更新內容] 動作來更新發佈點上的內容檔案：  
-
+### <a name="update-content"></a>更新內容
+當部署的來源檔案位置透過增加新檔案、或使用較新版本取代現有檔案來進行更新時，您可以使用 [更新發佈點] 或 [更新內容] 動作來更新發佈點上的內容檔案：  
 -   系統會從來源檔案路徑，將內容檔案複製到擁有該封裝內容來源之站台上的內容庫。  
-
 -   封裝版本會遞增  
-
 -   站台伺服器與發佈點上之內容庫的每個執行個體，只會針對已變更的檔案進行更新  
 
 > [!WARNING]  
 >  應用程式的封裝版本一律為 1。 當您更新應用程式部署類型的內容時，Configuration Manager 會為部署類型建立新的內容識別碼，而套件會參照新的內容識別碼。  
-
-**重新發佈內容**：您可以重新發佈套件，以便將套件中的所有內容檔案複製到發佈點或發佈點群組，從而覆寫現有的檔案。  
-
- 使用此作業來修復封裝中的內容檔案，或在起始發佈失敗時重新傳送內容。 您可以從下列項目重新發佈封裝：  
-
--   封裝屬性  
-
--   發佈點內容  
-
--   發佈點群組內容  
-
-**移除內容**：如果您不再需要發佈點的內容，可將發佈點上的內容檔案移除。  
-
--   封裝屬性  
-
--   發佈點內容  
-
--   發佈點群組內容  
-
- 不過，當內容與發佈至同一個發佈點的另一個封裝相關聯時，就不能移除該內容。 您可以從下列項目移除內容：  
-
-**驗證內容**：內容驗證程序會驗證發佈點上內容檔案的完整性。 您可以依照排程啟用內容驗證，也可以從發佈點和套件的內容手動起始內容驗證。  
-
- 當內容驗證程序開始時，Configuration Manager 會驗證發佈點上的內容檔案，如果檔案雜湊不是發佈點上的檔案所必要，則 Configuration Manager 會建立狀態訊息，且您可以在 [監視] 工作區檢閱該訊息。  
-
- 如需設定內容驗證排程的詳細資訊，請參閱[安裝及設定 System Center Configuration Manager 的發佈點](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md)主題中的[發佈點設定](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_configs)。  
 
 #### <a name="to-update-content-on-distribution-points"></a>在發佈點上更新內容  
 
@@ -372,6 +348,16 @@ ms.openlocfilehash: c6bf461a762b8aa51678a17cb7b294c803d05f37
 
     > [!NOTE]  
     >  當您更新開機映像的內容時，會開啟 [管理發佈點精靈]。 檢閱 [摘要]  頁面上的資訊，然後完成精靈以更新內容。  
+
+### <a name="redistribute-content"></a>重新發佈內容
+您可以重新發佈套件，以便將套件中的所有內容檔案複製到發佈點或發佈點群組，從而覆寫現有的檔案。  
+
+ 使用此作業來修復封裝中的內容檔案，或在起始發佈失敗時重新傳送內容。 您可以從下列項目重新發佈封裝：  
+
+-   封裝屬性  
+-   發佈點內容  
+-   發佈點群組內容  
+
 
 #### <a name="to-redistribute-content-from-package-properties"></a>從套件內容重新發佈內容  
 
@@ -420,6 +406,23 @@ ms.openlocfilehash: c6bf461a762b8aa51678a17cb7b294c803d05f37
     > [!IMPORTANT]  
     >  套件中的內容會重新發佈至發佈點群組中的所有發佈點。  
 
+
+#### <a name="use-the-sdk-to-force-replication-of-content"></a>使用 SDK 強制複寫內容
+您可以使用 Configuration Manager SDK 的 **RetryContentReplication** Windows Management Instrumentation (WMI) 類別方法，強制發佈管理員將來源位置的內容複製到內容庫。  
+
+只有當一般複寫內容發生問題後 (通常使用主控台的 [監視] 節點確認)，必須重新發佈內容時，才使用此方法強制複寫。   
+
+如需此 SDK 選項的詳細資訊，請參閱 MSDN.Microsoft.com 的 [RetryContentReplication Method in Class SMS_CM_UpdatePackages](https://msdn.microsoft.com/library/mt762092(CMSDK.16).aspx) (SMS_CM_UpdatePackages 類別的 RetryContentReplication 方法)。
+
+### <a name="remove-content"></a>移除內容
+如果您不再需要發佈點的內容，可將發佈點上的內容檔案移除。  
+
+-   封裝屬性  
+-   發佈點內容  
+-   發佈點群組內容  
+
+不過，當內容與發佈至同一個發佈點的另一個封裝相關聯時，就不能移除該內容。  
+
 #### <a name="to-remove-package-content-files-from-distribution-points"></a>從發佈點移除套件內容檔案  
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
@@ -464,6 +467,15 @@ ms.openlocfilehash: c6bf461a762b8aa51678a17cb7b294c803d05f37
 
 4.  按一下 [內容]  索引標籤，選取要移除的內容，然後依序按一下 [移除] 及 [確定] 。  
 
+
+### <a name="validate-content"></a>驗證內容
+內容驗證程序會驗證發佈點上內容檔案的完整性。 您可以依照排程啟用內容驗證，也可以從發佈點和套件的內容手動起始內容驗證。  
+
+ 當內容驗證程序開始時，Configuration Manager 會驗證發佈點上的內容檔案，如果檔案雜湊不是發佈點上的檔案所必要，則 Configuration Manager 會建立狀態訊息，且您可以在 [監視] 工作區檢閱該訊息。  
+
+ 如需設定內容驗證排程的詳細資訊，請參閱[安裝及設定 System Center Configuration Manager 的發佈點](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md)主題中的[發佈點設定](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md#bkmk_configs)。  
+
+
 #### <a name="to-initiate-content-validation-for-all-content-on-a-distribution-point"></a>若要針對發佈點上所有內容起始內容驗證  
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理] 。  
@@ -504,6 +516,6 @@ ms.openlocfilehash: c6bf461a762b8aa51678a17cb7b294c803d05f37
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

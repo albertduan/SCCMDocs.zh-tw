@@ -1,5 +1,5 @@
 ---
-title: "備份和復原 | System Center Configuration Manager"
+title: "備份和復原 | Microsoft Docs"
 description: "了解如何在發生失敗或資料遺失時，使用 System Center Configuration Manager 備份和復原您的站台。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
+ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
+ms.openlocfilehash: ce73be3a9fa3876c587bbd7b7cb05acd36c2687e
 
 
 ---
@@ -114,9 +114,9 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
     -   **站台伺服器和 SQL Server 上的本機磁碟機**：指定將站台的備份檔案儲存在站台伺服器本機磁碟機上指定的路徑，並將站台資料庫的備份檔案儲存在站台資料庫伺服器本機磁碟機上指定的路徑。 您必須先建立本機資料夾才可以執行備份工作。 網站伺服器的電腦帳戶必須擁有您在網站伺服器上建立之資料夾的 **寫入** NTFS 權限。 SQL Server 的電腦帳戶必須擁有您在網站資料庫伺服器上建立之資料夾的 **寫入** NTFS 權限。 此選項僅在網站伺服器上未安裝網站資料庫時適用。  
 
     > [!NOTE]  
-    >    - 只有在您指定備份目的地的 UNC 路徑時才可以使用瀏覽備份目的地的選項。
+    >   - 只有在您指定備份目的地的 UNC 路徑時才可以使用瀏覽備份目的地的選項。
 
-    >- 用於不支援使用 Unicode 字元之備份目的地的資料夾名稱或共用名稱。  
+    > - 用於不支援使用 Unicode 字元之備份目的地的資料夾名稱或共用名稱。  
 
 
 6.  為站台備份工作設定排程。 基於最佳作法，請考慮將備份排程在非工作時間執行。 如果您有階層，請考慮將排程設在一週至少執行二次，以確保在發生網站失敗時可以保留較多的資料。  
@@ -190,7 +190,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
  確認您在網站伺服器的檔案系統備份中同時包含內容庫和套件來源位置。  
 
 #### <a name="back-up-custom-software-updates"></a>備份自訂的軟體更新  
-     System Center Updates Publisher 2011 is a stand-alone tool that lets you publish custom software updates to Windows Server Update Services (WSUS), synchronize the software updates to Configuration Manager, assess software updates compliance, and deploy the custom software updates to clients. Updates Publisher uses a local database for its software update repository. When you use Updates Publisher to manage custom software updates, determine whether you have to include the Updates Publisher database in your backup plan. For more information about Updates Publisher, see [System Center Updates Publisher 2011](http://go.microsoft.com/fwlink/p/?LinkId=228726) in the System Center TechCenter Library.  
+ System Center Updates Publisher 2011 是一種獨立工具，可讓您將自訂軟體更新發佈到 Windows Server Update Services (WSUS)、將軟體更新同步處理至 Configuration Manager、評估軟體更新合規性，以及將自訂軟體更新部署至用戶端。 Updates Publisher 會使用本機資料庫作為其軟體更新存放庫。 使用 Updates Publisher 管理自訂軟體更新時，需判斷您是否需要將 Updates Publisher 資料庫納入您的備份計畫中。 如需更新發行者的詳細資訊，請參閱 System Center TechCenter 文件庫中的 [System Center Updates Publisher 2011 (System Center 更新發行者 2011)](http://go.microsoft.com/fwlink/p/?LinkId=228726) 。  
 
  使用以下程序來備份 Updates Publisher 資料庫。  
 
@@ -206,7 +206,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 ### <a name="user-state-migration-data"></a>使用者狀態移轉資料  
  您可以使用 Configuration Manager 工作順序來擷取和還原作業系統部署案例 (您想保留目前作業系統的使用者狀態) 中的使用者狀態資料。 儲存使用者狀態資料的資料夾會列在狀態移轉點的內容中。 此使用者狀態移轉資料並不會備份為網站伺服器備份維護工作的一部分。 作為您備份計畫的一部分，您必須手動備份所指定用來儲存使用者狀態移轉資料的資料夾。   
 
-##### <a name="to-determine-the-folders-used-to-store-user-state-migration-data"></a>判斷用來儲存使用者狀態移轉資料的資料夾  
+#### <a name="to-determine-the-folders-used-to-store-user-state-migration-data"></a>判斷用來儲存使用者狀態移轉資料的資料夾  
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理] 。  
 
@@ -384,7 +384,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **詳細資料︰** 復原管理中心站台  
 
- **RecoveryOptions**  
+**RecoveryOptions**  
 
 -   **索引鍵名稱：** ServerRecoveryOptions  
 
@@ -454,7 +454,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **詳細資料：** 指定站台資料庫備份集的路徑。 **ServerRecoveryOptions** 索引鍵的設定值為 **1** 或 **4** ，且 **DatabaseRecoveryOptions** 索引鍵的設定值為 **10** 時，需要 **BackupLocation** 索引鍵。  
 
- **選項**  
+**選項**  
 
 -   **索引鍵名稱︰** ProductID  
 
@@ -549,7 +549,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **詳細資料：** 指定是否加入「客戶經驗改進計畫」。  
 
- **SQLConfigOptions**  
+**SQLConfigOptions**  
 
 -   **索引鍵名稱：** SQLServerName  
 
@@ -597,7 +597,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **詳細資料︰** 復原主要站台  
 
- **RecoveryOptions**  
+**RecoveryOptions**  
 
 -   **索引鍵名稱：** ServerRecoveryOptions  
 
@@ -653,7 +653,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **詳細資料：** 指定站台資料庫備份集的路徑。 **ServerRecoveryOptions** 索引鍵的設定值為 **1** 或 **4** ，且 **DatabaseRecoveryOptions** 索引鍵的設定值為 **10** 時，需要 **BackupLocation** 索引鍵。  
 
- **選項**  
+**選項**  
 
 -   **索引鍵名稱︰** ProductID  
 
@@ -748,7 +748,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **詳細資料：** 指定是否加入「客戶經驗改進計畫」。  
 
- **SQLConfigOptions**  
+**SQLConfigOptions**  
 
 -   **索引鍵名稱：** SQLServerName  
 
@@ -783,7 +783,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
     -   **詳細資料：** 指定 SQL Server 所使用的 SQL Server Service Broker (SSB) 連接埠。 通常 SSB 是設定為使用 TCP 連接埠 4022，但也支援其他連接埠。 您必須指定失敗前所使用的相同 SSB 連接埠。  
 
- **階層 ExpansionOption**  
+**階層 ExpansionOption**  
 
 -   **索引鍵名稱：** CCARSiteServer  
 
@@ -839,7 +839,7 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
  網站伺服器復原後，您必須重新輸入指定給網站的 Windows 側載金鑰，因為在網站復原期間會重設這些金鑰。 重新輸入側載金鑰之後，Configuration Manager 主控台中 Windows 側載金鑰的 [已使用的啟用數量] 欄中的計數便會重設。 例如，假設在站台失敗前，您的 [啟用總數] 計數設為 [100]，而代表裝置已用金鑰數目的 [已使用的啟用數量] 是 [90]。 在網站復原之後，[啟用總數]  欄仍會顯示 [100] ，但是 [已使用的啟用數量]  欄會不正確地顯示 [0] 。 不過，在 10 個新裝置使用側載金鑰之後，就不會有任何剩餘的側載金鑰，因此下一個裝置將無法套用側載金鑰。  
 
 #### <a name="recreate-the-microsoft-intune-subscription"></a>重新建立 Microsoft Intune 訂閱  
- 如果在站台伺服器重新製作映像後才復原 Configuration Manager 站台伺服器，就不會還原 Microsoft Intune 訂閱。 您必須在復原站台後，重新建立訂閱。 如需詳細資訊，請參閱 [Configuring the Microsoft Intune subscription](../../mdm/plan-design/hybrid-mobile-device-management.md#bkmk_witsub)。  
+ 如果在站台伺服器重新製作映像後才復原 Configuration Manager 站台伺服器，就不會還原 Microsoft Intune 訂閱。 您必須在復原站台後，重新建立訂閱。 如需詳細資訊，請參閱 [Configuring the Microsoft Intune subscription](../../mdm/deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)。  
 
 #### <a name="configure-ssl-for-site-system-roles-that-use-iis"></a>為使用 IIS 的網站系統角色設定 SSL  
  當您復原執行 IIS 且在失敗前設定為使用 HTTPS 的網站系統時，必須重新設定 IIS 使用 Web 伺服器憑證。  
@@ -913,6 +913,6 @@ ms.openlocfilehash: d02dc47b2a9010d035ceecbbc6bf3d544f4dc1f4
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

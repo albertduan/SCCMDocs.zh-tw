@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager Technical Preview 1512 中的功能"
+title: "System Center Configuration Manager Technical Preview 1512 中的功能 | Microsoft Docs"
 description: "了解 System Center Configuration Manager Technical Preview 1512 版中可用的功能。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 1d97e7646adbb02a03b33b5efc56c1658364956e
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: ea6cb27fc229854ba7c1c39bb735ed9b9a88bb61
 
 ---
 # <a name="capabilities-in-technical-preview-1512-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1512 中的功能
@@ -83,9 +83,9 @@ ms.openlocfilehash: 1d97e7646adbb02a03b33b5efc56c1658364956e
 
          例如，下圖顯示系統管理員已啟用 Windows 10 中的 Windows Defender 設定，而且不允許使用者進行修改：  
 
-         ![TechRef_WinDefender](../../core/get-started/media/TechRef_WinDefender.png "TechRef_WinDefender")  
+         ![TechRef&#95;WinDefender](../../core/get-started/media/TechRef_WinDefender.png "TechRef_WinDefender")  
 
-    此外，Endpoint Protection 反惡意程式碼原則的 [排除設定] 區段中現有 [排除檔案及資料夾] 設定，已改良為可以排除裝置。 例如：您現已可以指定排除下列項目： **\device\mvfs** (適用於多版本檔案系統)。 此原則不會驗證裝置路徑。要在用戶端上為反惡意程式碼引擎提供 Endpoint Protection 原則，使其必須能夠解譯裝置字串。  
+    此外，Endpoint Protection 反惡意程式碼原則的 [排除設定] 區段中現有的 [排除檔案及資料夾] 設定，已改良為可以排除裝置。 例如：您現已可以指定排除下列項目： **\device\mvfs** (適用於多版本檔案系統)。 此原則不會驗證裝置路徑。要在用戶端上為反惡意程式碼引擎提供 Endpoint Protection 原則，使其必須能夠解譯裝置字串。  
 
 **使用 Endpoint Protection 原則的必要條件：**  
 
@@ -93,6 +93,6 @@ ms.openlocfilehash: 1d97e7646adbb02a03b33b5efc56c1658364956e
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

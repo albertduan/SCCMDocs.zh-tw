@@ -1,5 +1,5 @@
 ---
-title: "在 Windows PE 中預先佈建 BitLocker | Configuration Manager"
+title: "在 Windows PE 中預先佈建 BitLocker | Microsoft Docs"
 description: "Configuration Manager 中的 [預先佈建 BitLocker] 工作可先從 Windows 預先安裝環境啟用 BitLocker，再進行作業系統部署。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f047e4a7c9325e0f8662b4f567529fd439c76b0c
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: baca498dbc5b8e168852aa3c18ee23a9c483e69c
 
 
 ---
@@ -63,6 +63,6 @@ System Center Configuration Manager 中的 [預先佈建 BitLocker] 工作順序
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

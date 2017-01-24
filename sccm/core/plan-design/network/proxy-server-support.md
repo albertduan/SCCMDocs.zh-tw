@@ -1,5 +1,5 @@
 ---
-title: "Proxy 伺服器支援 | System Center Configuration Manager"
+title: "Proxy 伺服器支援 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 針對站台系統伺服器和用戶端所使用之 Proxy 伺服器的支援。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d20c734ba8050037cdf4ae290f72723f34781518
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 97f9cc792d1fea20c32f38bc98cbdfb9ba90640d
 
 
 ---
@@ -89,6 +89,6 @@ System Center Configuration Manager 站台系統伺服器和用戶端都可以�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

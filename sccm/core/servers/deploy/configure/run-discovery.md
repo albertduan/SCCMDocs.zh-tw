@@ -1,5 +1,5 @@
 ---
-title: "執行探索工作 | System Center Configuration Manager"
+title: "執行探索 | Microsoft Docs"
 description: "閱讀以了解探索程序及探索資料記錄的概觀。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d73b493318b0a1938d42265ec03369015365addb
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 1d225b9f904215280feef5efd4283cbd51f84577
 
 
 ---
@@ -90,6 +90,6 @@ DDR 檔案是以 .ddr 副檔名作為識別，檔案大小通常約 1 KB。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

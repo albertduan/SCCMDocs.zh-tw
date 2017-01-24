@@ -1,5 +1,5 @@
 ---
-title: "報告清單 | System Center Configuration Manager"
+title: "報告清單 | Microsoft Docs"
 description: "檢閱 Configuration Manager 所提供的報告清單。 這些報告會出現在各種不同的類別中。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ef0e136376f4229e531880ad46fc8ce636eb0d8b
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 1480c38a6a3afef76b2e8759eaafd47d28f978f4
 
 
 ---
@@ -793,6 +793,6 @@ System Center Configuration Manager 提供許多內建報告，並涵蓋各種�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,6 +1,6 @@
 ---
 
-title: "部署和監視安全性軟體更新的範例案例 | Configuration Manager"
+title: "部署和監視安全性軟體更新的範例案例 | Microsoft Docs"
 description: "請使用本示範案例說明如何在 Configuration Manager 中使用軟體更新部署及監視 Microsoft 每月發行的安全性軟體更新。"
 keywords: 
 author: dougeby
@@ -14,8 +14,8 @@ ms.technology:
 ms.service: 
 ms.assetid: c32f757a-02da-43f2-b055-5cfd097d8c43
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: cd03ddda0a39704a5715f7ed8d620daaefb57653
+ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
+ms.openlocfilehash: 0e6e2b3a9455bb6eda437eb1325aaaadb3d83420
 
 
 
@@ -96,6 +96,6 @@ John 已順利完成每月的安全性軟體更新部署。 他會繼續監視�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

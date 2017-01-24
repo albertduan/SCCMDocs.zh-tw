@@ -1,5 +1,5 @@
 ---
-title: "版本資訊 | System Center Configuration Manager"
+title: "版本資訊 | Microsoft Docs"
 description: "請參閱這些注意事項，以了解產品中尚未修正或 Microsoft 知識庫文章未涵蓋的緊急問題。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: 0b6c49f3c5e817f1dbd40b40c78d89c4a018e0f1
+ms.sourcegitcommit: ea723a6694feb2c9584b35498aa9c3519383f08d
+ms.openlocfilehash: a9dc046a54c15d9d299664cd1f2a149383f53489
 
 
 ---
@@ -35,16 +35,31 @@ System Center Configuration Manager 的產品版本資訊僅限於產品中尚�
 
 ## <a name="setup-and-upgrade"></a>安裝與升級  
 
+### <a name="when-installing-a-long-term-service-branch-site-using-version-1606-a-current-branch-site-is-installed"></a>安裝使用 1606 版的長期維護分支站台時，會安裝最新分支站台
+當您使用 2016 年 10 月發行版的 1606 版基準媒體安裝長期維護分支 (LTSB) 站台時，安裝程式會改為安裝最新分支站台。 發生原因是未選取使用站台安裝來安裝服務連接點的選項。
+
+ - 雖然不需要服務連接點，但是您必須在安裝程式期間選擇安裝它，才能安裝 LTSB 站台。
+
+安裝程式完成之後，您可以解除安裝服務連接點。  不過，您必須擁有離線或線上模式的服務連接點才能提交遙測資料，並取得最新分支和 LTSB 站台的安全性更新。
+
+如果您的站台安裝為最新分支站台，但您想要安裝 LTSB，則可以將站台解除安裝後，再重新安裝。 或者，您可以呼叫 [Microsoft 說明及支援](http://go.microsoft.com/fwlink/?LinkId=243064)以取得協助。  
+
+若要確認安裝的分支，請在主控台的 [系統管理] > [站台設定] > [站台]，然後開啟 [階層設定]。 只有在站台執行 LTSB 時，才能使用將站台轉換為最新分支站台的選項。  
+
+**因應措施：**  無。   
 
 
-### <a name="the-sql-server-backup-model-in-use-by-configuration-manager-can-change-from-full-to-simple"></a>由 Configuration Manager 所使用的 SQL Server 備份模型可以從完整變更為簡易  
+
+
+
+### <a name="the--sql-server-backup-model-in-use-by-configuration-manager-can-change-from-full-to-simple"></a>由 Configuration Manager 所使用的 SQL Server 備份模型可以從完整變更為簡易  
  當您升級至 System Center Configuration Manager 1511 版時，Configuration Manager 正在使用的 SQL Server 備份模型可以從完整變更為簡單。  
 
 -   如果您搭配使用自訂 SQL Server 備份工作與完整備份模型 (而不是 Configuration Manager 的內建備份工作)，則升級可以將您的備份模型從完整變更為簡單。  
 
 **因應措施**：升級至 1511 版之後，請檢閱 SQL Server 組態，並在必要時將它還原為完整。  
 
-### <a name="when-you-add-a-service-window-to-a-new-site-server-service-windows-that-were-configured-for-another-site-server-are-deleted"></a>當您在新的站台伺服器中加入服務視窗時，就會刪除之前為另一部站台伺服器所設定的服務視窗  
+### <a name="when-you-add-a-service-window-to-a-new-site-server-service-windows-that-were---configured-for-another-site-server-are-deleted"></a>當您在新的站台伺服器中加入服務視窗時，就會刪除之前為另一部站台伺服器所設定的服務視窗  
  當您使用搭配 System Center Configuration Manager 版本 1511 的維護時段時，您只能為階層中的單一站台伺服器設定維護時段。 在一部伺服器上設定服務視窗之後，當您接著在第二部站台伺服器上設定服務視窗時，第一部站台伺服器上的服務視窗就會以無訊息方式刪除，且不提示任何警告或錯誤。  
 
 **因應措施**：從 [Microsoft 知識庫文章 3142341](http://support.microsoft.com/kb/3142341)安裝 Hotfix。 當您安裝 System Center Configuration Manager 的 1602 更新時，也可解決此問題。  
@@ -120,6 +135,32 @@ System Center Configuration Manager 1602 版引進了下列兩項發行前版本
 **因應措施：**請使用下列其中一種方法：
  - 在安裝期間，選擇從 Microsoft 下載最新的可轉散發檔案，而不使用 CD.Latest 資料夾隨附的可轉散發檔案。
  - 手動刪除 *cd.latest\redist\languagepack\zhh* 資料夾，然後再次執行安裝程式。
+
+### <a name="service-connection-tool-throws-an-exception-when-sql-server-is-remote-or-when-shared-memory-is-disabled"></a>服務連接工具在 SQL Server 位於遠端或停用共用記憶體時擲回例外狀況
+從 1606 版開始，服務連接工具會在下列其中一項正確時產生例外狀況：  
+ -  站台資料庫位於裝載服務連接點並使用非標準連接埠 (1433 以外的連接埠) 之電腦的遠端
+ -  站台資料庫位於與服務連接點相同的伺服器上，但已停用 SQL 通訊協定**共用記憶體**
+
+例外狀況與下列類似：
+ - 未處理的例外狀況: System.Data.SqlClient.SqlException: 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個體名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。(提供者: 具名管道提供者，錯誤: 40 - 無法開啟 SQL Server 連線) --
+
+**因應措施**︰使用工具期間，您必須修改裝載服務連接點之伺服器的登錄，以包含 SQL Server 連接埠的相關資訊︰
+
+   1.   使用工具之前，請編輯下列登錄機碼，並將使用中連接埠號碼新增至 SQL Server 名稱︰
+    - 機碼：HKLM\Microsoft\SMS\COMPONENTS\SMS_DMP_UPLOADER\
+      - 值：&lt;SQL Server 名稱>
+    - 新增：**,&lt;連接埠>**
+
+    例如，若要將連接埠 *15001* 新增至名為 *testserver.test.net* 的伺服器，則產生的機碼會是：***HKLM\Software\Microsoft\SMS\COMPONENTS\SMS_DMP_UPLOADER\testserver.test.net,15001***
+
+   2.   將連接埠新增至登錄之後，工具應該會正常運作。  
+
+   3.   完成工具的使用之後，針對 **-connect** 和 **-import** 步驟，請將登錄機碼變更回原始值。  
+
+
+
+
+
 
 ## <a name="backup-and-recovery"></a>備份與復原
 ### <a name="pre-production-client-is-not-available-after-a-site-restore"></a>還原站台後就無法使用進入生產階段前的用戶端
@@ -250,6 +291,6 @@ System Center Configuration Manager 1602 版引進了下列兩項發行前版本
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

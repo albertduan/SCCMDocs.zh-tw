@@ -1,5 +1,5 @@
 ---
-title: "規劃憑證範本權限 | System Center Configuration Manager"
+title: "規劃憑證範本權限 | Microsoft Docs"
 description: "了解規劃設定 System Center Configuration Manager 所使用憑證範本所需的權限。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 38f4176d40bffd20b9e3076213957765dfb0c7f3
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: 3c3725678561c32fce316ed1209ac8fe73a0eed1
 
 
 ---
@@ -36,7 +36,7 @@ ms.openlocfilehash: 38f4176d40bffd20b9e3076213957765dfb0c7f3
 
 -   執行 System Center Configuration Manager 主控台之帳戶的讀取權限  
 
- 如需這些安全性權限的詳細資訊，請參閱[步驟 1：安裝及設定網路裝置註冊服務和相依性](../deploy-use/certificate-infrastructure.md#BKMK_Step1)。  
+ 如需這些安全性權限的詳細資訊，請參閱[步驟 1：安裝及設定網路裝置註冊服務和相依性](../deploy-use/certificate-infrastructure.md#step-1-install-and-configure-the-network-device-enrollment-service-and-dependencies)。  
 
  若使用此預設定，使用者和裝置即無法直接向憑證範本要求憑證，而所有的要求都必須由網路裝置註冊服務起始。 這項限制非常重要，因為這些憑證範本的憑證主體必須設成 [在要求中提供]  ，意即若有惡意使用者或安全受損的裝置要求憑證，便會有身分遭冒用的風險。 若使用預設設定，則必須由網路裝置註冊服務起始這類要求。 不過，如果執行網路裝置註冊服務的服務安全受到危害，仍然會有身分遭冒用的風險。 為避開此風險，請遵循網路裝置註冊服務及執行此角色服務之電腦的所有安全性最佳作法。  
 
@@ -65,6 +65,6 @@ ms.openlocfilehash: 38f4176d40bffd20b9e3076213957765dfb0c7f3
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

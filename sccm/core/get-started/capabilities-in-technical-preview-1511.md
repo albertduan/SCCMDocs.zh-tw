@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager Technical Preview 1511 中的功能"
+title: "System Center Configuration Manager Technical Preview 1511 中的功能 | Microsoft Docs"
 description: "了解 System Center Configuration Manager Technical Preview 1511 版中可用的功能。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4616ba44485e4c528297441f1cf99e25add2dcf3
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 8ef43a2f10a7ef1cbb101f6737c606c72ccdce4f
 
 ---
 # <a name="capabilities-in-technical-preview-1511-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1511 中的功能
@@ -147,7 +147,7 @@ ms.openlocfilehash: 4616ba44485e4c528297441f1cf99e25add2dcf3
 
 3.  提供這項資訊之後，使用您的一般程序和組態來完成安裝。  
 
-##  <a name="a-namebkmkclusterserverupdatesa-service-a-server-cluster"></a><a name="BKMK_ClusterServerUpdates"></a> 提供伺服器叢集服務  
+##  <a name="a-namebkmkclusterserverupdatesa-service-a--server-cluster"></a><a name="BKMK_ClusterServerUpdates"></a> 提供伺服器叢集服務  
 您可以立即建立包含叢集中伺服器的集合，然後設定將更新部署到叢集時所要使用的叢集設定。 您可以控制任何指定時間在線上的伺服器百分比，並設定預先部署和部署後 PowerShell 指令碼來執行自訂動作。  
 
 **本版的已知問題：**  
@@ -208,6 +208,6 @@ ms.openlocfilehash: 4616ba44485e4c528297441f1cf99e25add2dcf3
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

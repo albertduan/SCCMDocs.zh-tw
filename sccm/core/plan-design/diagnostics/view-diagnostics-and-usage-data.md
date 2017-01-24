@@ -1,5 +1,5 @@
 ---
-title: "檢視診斷資料 | System Center Configuration Manager"
+title: "檢視診斷資料 | Microsoft Docs"
 description: "檢視診斷和使用方式資料，確認 System Center Configuration Manager 階層不包含任何機密資訊。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 5d1382d4912d03fb38bfc2f07edfb361c0ac6139
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 5b5d6b6c176de8acbc1161f6820aa1cc3e9fca49
 
 
 ---
@@ -69,6 +69,6 @@ ms.openlocfilehash: 5d1382d4912d03fb38bfc2f07edfb361c0ac6139
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

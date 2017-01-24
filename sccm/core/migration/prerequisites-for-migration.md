@@ -1,5 +1,5 @@
 ---
-title: "移轉必要條件 | System Center Configuration Manager"
+title: "移轉必要條件 | Microsoft Docs"
 description: "了解所支援版本的 Configuration Manager、所支援來源站台語言，以及必要設定，以進行移轉。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 1b310aeee487087e79c2d0fd6469f8f63b932045
+ms.sourcegitcommit: 6cbb790df47c9a87514b0233e2d0c12dd6f23ee9
+ms.openlocfilehash: 70e2531076abedc1381b6e3bccf15b5afe27b465
 
 
 ---
@@ -113,13 +113,6 @@ ms.openlocfilehash: 1b310aeee487087e79c2d0fd6469f8f63b932045
 
      此外，若要從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源站台共用發佈點，[來源站台帳戶] (存取來源站台伺服器的 SMS 提供者) 在來源站台上必須具備 [站台] 物件的 [修改] 權限。 您可以使用角色為基礎的系統管理將此權限授與帳戶。 如需如何使用以角色為基礎之系統管理的相關資訊，請參閱 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)。  
 
--   **共用發佈點：**  
-
-     若要成功從來源站台共用任何發佈點，目的地階層中至少要有一個主要站台或管理中心網站，使用與來源站台相同的用戶端要求連接埠號碼。 如需用戶端要求連接埠的資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端通訊連接埠](../../core/clients/deploy/configure-client-communication-ports.md)  
-
-     每一個來源站台上，只會共用安裝在以 FQDN 設定之站台系統伺服器上的發佈點。  
-
-     此外，若要從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源站台共用發佈點，[來源站台帳戶] (存取來源站台伺服器的 SMS 提供者) 在來源站台上必須具備 [站台] 物件的 [修改] 權限。 您可以使用角色為基礎的系統管理將此權限授與帳戶。 如需如何使用以角色為基礎之系統管理的相關資訊，請參閱 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)。  
 
 -   **升級或重新指派發佈點：**  
 
@@ -133,6 +126,6 @@ ms.openlocfilehash: 1b310aeee487087e79c2d0fd6469f8f63b932045
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

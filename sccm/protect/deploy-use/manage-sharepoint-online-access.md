@@ -1,5 +1,5 @@
 ---
-title: "管理 SharePoint Online 存取 | System Center Configuration Manager"
+title: "管理 SharePoint Online 存取 | Microsoft Docs"
 description: "了解如何使用 System Center Configuration Manager SharePoint Online 的條件式存取原則，以管理 OneDrive 存取權。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: article
 ms.assetid: c1b3fb75-f3ab-4886-9421-d81da7ef589d
 caps.latest.revision: 11
 caps.handback.revision: 0
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: 84fdd9c1141c7bee5e331eacb136d9dc21837c0f
+ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
+ms.openlocfilehash: 73fd4e26a16184cfb7f1535aa2e70911884ffdcc
 
 
 ---
@@ -164,7 +164,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 SharePoin
 
 4.  在 SharePoint Online 和商務用 OneDrive 的 **[瀏覽器存取]** 下方，您可以選擇只允許透過下列支援的瀏覽器存取 Exchange Online︰Safari (iOS) 和 Chrome (Android)。 來自其他瀏覽器的存取將會受到封鎖。  您針對 OneDrive [應用程式存取] 所選取的相同平台限制也適用於此處。
 
-    在 **Android** 裝置上，使用者必須啟用瀏覽器存取。  若要完成這項動作，使用者必須在已註冊的裝置啟用 [啟用瀏覽器存取] 選項，如下所示︰
+    在 **Android** 裝置上，使用者必須啟用瀏覽器存取。  若要完成這項動作，使用者必須在已註冊的裝置上啟用 [允許瀏覽器存取] 選項，如下所示︰
     1.  啟動 **公司入口網站應用程式**。
     2.  透過三個點 (â€¦) 或硬體功能表按鈕，移至 [設定] 頁面。
     3.  按下 **[啟用瀏覽器存取]** 按鈕。
@@ -204,6 +204,6 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 SharePoin
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,8 +1,8 @@
 ---
-title: "監視用戶端 | Linux UNIX |System Center Configuration Manager"
+title: "監視用戶端 |System Center Configuration Manager | Linux UNIX "
 description: "在 System Center Configuration Manager 中監視 Linux 和 UNIX 伺服器上的用戶端。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d827cf91-b18f-4ee7-b538-24ba6f003ab9
 caps.latest.revision: 6
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 707cb13bcb62848eb42ca824137a645dfd2f9d82
+ms.sourcegitcommit: 620c1caf50b4859afc8f32490ab7945df810aefd
+ms.openlocfilehash: b2b7c88784eed6fbee6ac1f6348d7d6991df1fbb
 
 
 ---
@@ -35,11 +35,10 @@ ms.openlocfilehash: 707cb13bcb62848eb42ca824137a645dfd2f9d82
 
 -   資源總管中的清查詳細資料  
 
- 下列章節提供使用資源總管和報表來檢視 Linux 和 UNIX 伺服器的詳細資訊。  
+ 下列章節說明如何透過資源總管和報告取得這些詳細資訊。  
 
-##  <a name="a-namebkmkuseresourceexpforlnua-how-to-use-resource-explorer-to-view-inventory-for-linux-and-unix-servers"></a><a name="BKMK_UseResourceExpforLnU"></a> 如何使用資源總管來檢視 Linux 和 UNIX 伺服器的清查  
- 您可以使用資源總管檢視 Linux 和 UNIX 伺服器上的硬體和已安裝軟體的詳細資料。  
-
+##  <a name="a-namebkmkuseresourceexpforlnua-use-resource-explorer-to-view-inventory-for-linux-and-unix-servers"></a><a name="BKMK_UseResourceExpforLnU"></a> 使用資源總管來檢視 Linux 和 UNIX 伺服器的清查  
+ 
  Configuration Manager 用戶端將硬體清查提交給 Configuration Manager 站台之後，您可以使用資源總管檢視這項資訊。 Linux 和 UNIX 的 Configuration Manager 用戶端不會將新的清查類別或檢視新增至資源總管。 Linux 和 UNIX 清查資料對應至現有的 WMI 類別。 您可以使用資源總管，在 Windows 架構的分類中檢視 Linux 和 UNIX 伺服器的清查詳細資料。  
 
  例如，您可以收集 Linux 和 UNIX 伺服器上找到的所有原生安裝程式清單。 原生安裝程式的範例包括在 Linux 或 **.pkgs** Solaris 中的 **.rpms** 。 Linux 或 UNIX 用戶端已提交清查之後，您可以在 Configuration Manager 主控台的資源總管中檢視所有原生安裝的 Linux 或 UNIX 程式清單。  
@@ -57,6 +56,6 @@ ms.openlocfilehash: 707cb13bcb62848eb42ca824137a645dfd2f9d82
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

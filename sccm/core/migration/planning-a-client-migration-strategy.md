@@ -1,5 +1,5 @@
 ---
-title: "規劃用戶端移轉 | System Center Configuration Manager"
+title: "規劃用戶端移轉 | Microsoft Docs"
 description: "了解將用戶端從來源階層移轉至 System Center Configuration Manager 目的地階層的工作。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 6044f9b8116687fca80deeea87abd4652f773db0
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: 11da338af9d7dd4d6f9c5fc1c6c62e277139f852
 
 
 ---
@@ -43,7 +43,7 @@ ms.openlocfilehash: 6044f9b8116687fca80deeea87abd4652f773db0
 -   **System Center 2012 Configuration Manager 或更新版本的來源階層：**當您在產品版本相同的階層之間移轉用戶端時，用戶端軟體不會變更或升級。 而是從來源階層重新指派至目的地階層中的站台。  
 
     > [!NOTE]  
-    >  若某階層產品版本無法移轉到您的目的地階層，請將來源階層中的所有站台和用戶端全升級到相容的產品版本。 在來源階層升級到受支援的產品版本後，就可以在階層之間移轉。 如需詳細資訊，請參閱[在 System Center 2012 Configuration Manager 中進行移轉的必要條件](../../core/migration/prerequisites-for-migration.md)主題中的[支援移轉的 Configuration Manager 版本](../../core/migration/prerequisites-for-migration.md#BKMK_supportedmigrationversions)一節 。  
+    >  若某階層產品版本無法移轉到您的目的地階層，請將來源階層中的所有站台和用戶端全升級到相容的產品版本。 在來源階層升級到受支援的產品版本後，就可以在階層之間移轉。 如需詳細資訊，請參閱[在 System Center 2012 Configuration Manager 中進行移轉的必要條件](../../core/migration/prerequisites-for-migration.md)主題中的[支援移轉的 Configuration Manager 版本](../../core/migration/prerequisites-for-migration.md#BKMK_SupportedMigrationVersions)一節 。  
 
 請利用下列資訊幫助您規劃用戶端移轉：  
 
@@ -98,13 +98,13 @@ ms.openlocfilehash: 6044f9b8116687fca80deeea87abd4652f773db0
 
 此外，您可能需要重新安裝部分應用程式。  
 
-##  <a name="a-nameplanningforinventorydatamigrationa-plan-for-inventory-and-compliance-data-during-migration"></a><a name="Planning_for_Inventory_data_migration"></a> 規劃移轉期間的清查和相容性資料  
+##  <a name="a-nameplanningforinventorydatamigrationa-plan-for--inventory-and-compliance-data-during-migration"></a><a name="Planning_for_Inventory_data_migration"></a> 規劃移轉期間的清查和相容性資料  
 您將用戶端移轉至目的地階層時，用戶端清查和相容性資料並不會儲存。 此資訊會在用戶端初次將其資訊傳送至其指定的站台時，於目的地階層中重新建立。 若要幫助減少產生的網路頻寬需求和伺服器處理，請考慮分階段移轉小量用戶端，而不要一次移轉大量用戶端。  
 
  此外，您無法從來源階層移轉硬體清查的自訂。 您必須在移轉之外另行將這些自訂導入目的地階層中。 如需如何擴充硬體清查的資訊，請參閱[如何擴充 System Center Configuration Manager 中的硬體清查](../../core/clients/manage/inventory/configure-hardware-inventory.md)。  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

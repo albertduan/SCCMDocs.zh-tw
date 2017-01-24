@@ -1,5 +1,5 @@
 ---
-title: "自動化工作規劃考量 | Configuration Manager"
+title: "自動化工作的規劃考量 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中自動化工作之前進行規劃。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: a439d847adb129a341b33be8e1a1674c72184e77
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
 
 ---
@@ -183,7 +183,7 @@ ms.openlocfilehash: a439d847adb129a341b33be8e1a1674c72184e77
 > [!TIP]  
 >  工作順序會將套件識別碼和啟動前置命令列 (包括任何工作順序變數的值) 寫入執行 Configuration Manager 主控台之電腦上的 CreateTSMedia.log 記錄檔中。 您可以檢閱這個記錄檔來驗證工作順序變數的值。  
 
-##  <a name="a-namebkmktscreatea-create-a-task-sequence"></a><a name="BKMK_TSCreate"></a> 建立工作順序  
+##  <a name="a-namebkmktscreatea-create-a--task-sequence"></a><a name="BKMK_TSCreate"></a> 建立工作順序  
  您會使用建立工作順序精靈建立工作順序。 該精靈會建立執行特定工作的內建工作順序，或是執行許多不同工作的自訂工作順序。  
 
  例如，您可以建立負責組建及擷取參照電腦 之作業系統映像的工作順序，可以在目的地電腦上安裝現有作業系統映像，或是建立負責執行自訂工作的自訂工作順序。 您可以使用自訂工作順序來執行特定的作業系統部署。  
@@ -326,6 +326,6 @@ ms.openlocfilehash: a439d847adb129a341b33be8e1a1674c72184e77
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

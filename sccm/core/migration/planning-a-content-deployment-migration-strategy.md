@@ -1,5 +1,5 @@
 ---
-title: "移轉內容 | System Center Configuration Manager"
+title: "移轉內容 | Microsoft Docs"
 description: "將資料移轉至 System Center Configuration Manager 目的地階層時，使用發佈點管理內容。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: aa88f18247b49995bff4a4a6f5fd1e1ed70ca214
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: c96fa0995b5de87f50e1146b338058f26daeb624
 
 
 ---
@@ -188,8 +188,23 @@ ms.openlocfilehash: aa88f18247b49995bff4a4a6f5fd1e1ed70ca214
 
  為重新指派發佈點，目的地階層會使用設定為從來源站台的 SMS 提供者收集資料的 [來源站台存取帳戶]。 如需必要權限和其他必要條件的資訊，請參閱 [Prerequisites for migration in System Center Configuration Manager](../../core/migration/prerequisites-for-migration.md) (在 System Center Configuration Manager 中進行移轉的必要條件)。  
 
+## <a name="migrate-multiple-shared-distribution-points-at-the-same-time"></a>同時移轉多個共用的發佈點
+從 1610 版開始，您可以使用 [重新指派發佈點] 選項同時平行處理 Configuration Manager 程序與最多 50 個共用發佈點的重新指派。 這包括來自執行下列程式的受支援來源站台的共用發佈點︰  
+- Configuration Manager 2007
+- System Center 2012 Configuration Manager
+- System Center 2012 R2 Configuration Manager
+- System Center Configuration Manager 最新分支站台
+
+當您重新指派發佈點時，每個發佈點都必須符合升級或重新指派的資格。 無論是升級或重新指派，與動作和程序有關的名稱，取決於來源站台執行的 Configuration Manager 版本。 不過，升級或重新指派後的結果相同︰發佈點會指派給其內容所在的最新分支站台之一。
+
+Configuration Manager 在 1610 版以前，一次只能處理一個發佈點。 現在，只要注意下列幾點，您就可以重新指派多個發佈點，不限數量：  
+- 雖然您不能複選要重新指派的發佈點，但當您有多個佇列項目時，Configuration Manager 就會平行處理，而不是等一個完成後再開始下一個。  
+- 預設一次最多可以平行處理 50 個發佈點。 第一個發佈點完成重新指派後，Configuration Manager 就會開始處理第 51 個，以此類推。  
+- 當您使用 Configuration Manager SDK 時，您可以修改屬性 **SharedDPImportThreadLimit**，調整 Configuration Manager 可以平行處理的重新指派發佈點數目。
+
+
 ##  <a name="a-nameaboutmigratingcontenta-content-ownership-when-migrating-content"></a><a name="About_Migrating_Content"></a> 移轉內容時內容的擁有權  
- 當您移轉部署的內容時，必須將內容物件指派至目的地階層中的站台。 此站台就會變成目的地階層中該內容的擁有者。 雖然目的地階層的頂層站台是實際移轉內容中繼資料的站台，但它會是跨網路存取內容之原始來源檔案的指派站台。  
+ 當您移轉部署的內容時，必須將內容物件指派至目的地階層中的站台。 此站台就會變成目的地階層中該內容的擁有者。 雖然目的地階層的頂層站台是移轉內容中繼資料的站台，但它會是跨網路存取內容之原始來源檔案的指派站台。  
 
  若要將移轉內容時佔用的網路頻寬降到最少，您可以考慮將網路上已封閉之目的地階層中站台的內容擁有權轉換至來源階層的內容位置。 因為關於目的地階層中的內容資訊是全域共用，所有每個站台都可使用。  
 
@@ -197,6 +212,6 @@ ms.openlocfilehash: aa88f18247b49995bff4a4a6f5fd1e1ed70ca214
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

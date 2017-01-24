@@ -1,5 +1,5 @@
 ---
-title: "軟體更新的必要條件 | Configuration Manager"
+title: "軟體更新的必要條件 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 中軟體更新的必要條件。"
 keywords: 
 author: dougeby
@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fe56129c09b8936ba59181add86acb239111fea7
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
 
 
 ---
@@ -78,7 +78,7 @@ ms.openlocfilehash: fe56129c09b8936ba59181add86acb239111fea7
 
 -   [軟體更新的用戶端設定](../get-started/manage-settings-for-software-updates.md#a-namebkmkclientsettingsa-client-settings-for-software-updates)。  
 
--   [軟體更新用戶端設定](../../core/clients/deploy/about-client-settings.md#a-namebkmksoftwareupdatesdevicesettinga-software-updates)主題。  
+-   [軟體更新用戶端設定](../../core/clients/deploy/about-client-settings.md#software-updates)主題。  
 
 ### <a name="reporting-services-point"></a>Reporting Services 點  
  Reporting Services 點站台系統角色可以顯示軟體更新的報告。 這個角色是選用項目，但建議使用。 如需建立 Reporting Services 點之方式的詳細資訊，請參閱[設定報告](../../core/servers/manage/configuring-reporting.md)。  
@@ -114,6 +114,6 @@ ms.openlocfilehash: fe56129c09b8936ba59181add86acb239111fea7
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

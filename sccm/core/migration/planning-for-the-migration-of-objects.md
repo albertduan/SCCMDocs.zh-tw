@@ -1,5 +1,5 @@
 ---
-title: "移轉物件 | System Center Configuration Manager"
+title: "移轉物件 | Microsoft Docs"
 description: "了解如何規劃 System Center Configuration Manager 環境中各階層之間的物件移轉。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 243b1eeac2536e3e63e9f8cbe132d36ea2aba39a
+ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
+ms.openlocfilehash: 182610aa98bf39ab809657991ec8befc4743ab19
 
 
 ---
@@ -189,6 +189,6 @@ Configuration Manager 不支援報告的移轉。 反之，它會使用 SQL Serv
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,8 +1,8 @@
 ---
-title: "虛擬化支援 | System Center Configuration Manager"
+title: "虛擬化的支援 | Microsoft Docs"
 description: "取得在虛擬化環境中安裝 System Center Configuration Manager 用戶端和站台系統角色的需求。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: be32ccee17bc4829888d42dfff3f2818f4fc2810
+ms.sourcegitcommit: 13df135828e383e666bfc11051011207245a774c
+ms.openlocfilehash: 1c00324d2e7cc9a082ba837b29879e3a778d0c54
 
 
 ---
@@ -59,11 +59,13 @@ Configuration Manager 支援在支援的作業系統上安裝用戶端和站台�
 
 適用於在您實體公司網路的內部部署中安裝 Configuration Manager 的相同網路、支援的設定和硬體 System Center Configuration Manager 需求，也適用於在 Microsoft Azure 中安裝。  
 
+如需詳細資訊，請參閱 [Azure 的 Configuration Manager - 常見問題集](/sccm/core/understand/configuration-manager-on-azure)。
+
 > [!IMPORTANT]  
 >  此外，在 Azure 虛擬機器上執行的 Configuration Manager 站台和用戶端受限於與內部部署安裝相同的授權需求。  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

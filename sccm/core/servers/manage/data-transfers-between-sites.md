@@ -1,5 +1,5 @@
 ---
-title: "資料移轉 | System Center Configuration Manager"
+title: "資料傳輸 | Microsoft Docs"
 description: "了解 Configuration Manager 如何在站台之間移動資料，以及如何管理該資料在您網路上的移轉。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 1abd28aa4ce4f946f6328f8f7924b5f5a81e640c
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: e290a5491fbd43ddf3ca8f4cf6f122ac862103d1
 
 
 ---
@@ -230,6 +230,6 @@ Configuration Manager 會將資料庫複寫複製的資料分類為全域資料�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

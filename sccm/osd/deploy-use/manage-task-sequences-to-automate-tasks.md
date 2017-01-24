@@ -1,5 +1,5 @@
 ---
-title: "管理工作順序以工作自動化 | Configuration Manager"
+title: "管理工作順序以自動化工作 | Microsoft Docs"
 description: "您可以建立、編輯、部署、匯入和匯出工作順序，以在 System Center Configuration Manager 環境中管理它們。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 04e4e8193d427289a3b84a14efe18511bf5c9731
+ms.sourcegitcommit: d04d28bbd5116a841c0872cf3f9ca18783dddc78
+ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
 
 
 ---
@@ -237,6 +237,8 @@ ms.openlocfilehash: 04e4e8193d427289a3b84a14efe18511bf5c9731
 
 -   工作順序內儲存的密碼不會匯出。 若您匯出和匯入包含密碼的工作順序，您必須編輯匯入的工作順序，並再次指定任何密碼。 請務必為 [Join Domain or Workgroup](../understand/task-sequence-steps.md#BKMK_JoinDomainorWorkgroup)、[Connect To Network Folder](../understand/task-sequence-steps.md#BKMK_ConnectToNetworkFolder) 和 [Run Command Line](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 動作指定密碼。  
 
+- 使用 [設定動態變數] 步驟匯出工作順序時，不會匯出含 [密碼值] 設定之變數的任何值。 您必須在匯入工作順序之後，重新輸入這些變數的值。
+
 -   作為最佳作法，在您有多個主要網站時，請在管理中心網站上匯入工作順序。  
 
  利用下列程序匯出和匯入工作順序。  
@@ -367,6 +369,6 @@ ms.openlocfilehash: 04e4e8193d427289a3b84a14efe18511bf5c9731
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "命令列安裝 | System Center Configuration Manager"
+title: "命令列安裝 | Microsoft Docs"
 description: "了解如何從命令提示字元執行 System Center Configuration Manager 安裝程式，以進行各種站台安裝。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ea097188351cd60a13659e2860c5e0a2bac2c069
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: a148fd1fd438efc01418c30b059874cfdfa09725
 
 ---
 # <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>使用命令提示字元來安裝 System Center Configuration Manager 站台
@@ -129,6 +129,6 @@ ms.openlocfilehash: ea097188351cd60a13659e2860c5e0a2bac2c069
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

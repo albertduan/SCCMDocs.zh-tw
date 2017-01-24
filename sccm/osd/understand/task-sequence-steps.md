@@ -1,8 +1,8 @@
 ---
-title: "工作順序步驟 | Configuration Manager"
+title: "工作順序步驟 | Microsoft Docs"
 description: "了解您可新增至 Configuration Manager 工作順序的工作順序步驟。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2a45cfb3e00d8078fbf45bdc8a2668b7dd0a62c6
-ms.openlocfilehash: 538cb9795586115ad8b52b44fb82b50a0abdbaa2
+ms.sourcegitcommit: 3f44505c977b511223a083a960f871371c0ff133
+ms.openlocfilehash: 6e324eb97c0e803d382371ace541a4b9f96e6ba3
 
 
 ---
@@ -153,7 +153,7 @@ ms.openlocfilehash: 538cb9795586115ad8b52b44fb82b50a0abdbaa2
 
  使用作業系統映像時，[套用作業系統映像]  步驟會執行下列動作。  
 
-1.  刪除目標磁碟區上的所有內容，但 _SMSTSUserStatePath 工作順序變數所指定的資料夾下的那些檔案除外。  
+1.  刪除目標磁碟區上的所有內容，但 &#95;SMSTSUserStatePath 工作順序變數所指定資料夾下的那些檔案除外。  
 
 2.  將指定 .wim 檔案的內容，擷取至指定的目的地磁碟分割。  
 
@@ -169,7 +169,7 @@ ms.openlocfilehash: 538cb9795586115ad8b52b44fb82b50a0abdbaa2
 
  使用作業系統安裝套件時，[套用作業系統映像]  步驟會執行下列動作。  
 
-1.  刪除目標磁碟區上的所有內容，但 _SMSTSUserStatePath 工作順序變數所指定的資料夾下的那些檔案除外。  
+1.  刪除目標磁碟區上的所有內容，但 &#95;SMSTSUserStatePath 工作順序變數所指定資料夾下的那些檔案除外。  
 
 2.  準備回應檔案：  
 
@@ -627,7 +627,7 @@ ms.openlocfilehash: 538cb9795586115ad8b52b44fb82b50a0abdbaa2
 
 -   若要動態下載適用的驅動程式套件，請使用兩個 **下載套件內容** 步驟，並設定條件來偵測每個驅動程式套件適用的硬體類型。 將每個 [下載封裝內容]  步驟設定成使用相同的變數，並使用這個變數來表示 [升級作業系統]  步驟之 [驅動程式] 區段中的 [分段內容]  值。  
 
- 這個步驟只會在標準作業系統中執行。 它不會在 Windows PE 中執行。  
+此步驟可以在標準作業系統或 Windows PE 中執行。 不過，WinPE 不支援在 Configuration Manager 用戶端快取中儲存套件的選項。
 
 ### <a name="details"></a>詳細資料  
  在這個步驟的 [內容]  索引標籤上，您可以設定本節所描述的設定。  
@@ -1062,8 +1062,12 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 
  *網域\帳戶*  
 
-##  <a name="a-namebkmkprepareconfigmgrclientforcapturea-prepare-configmgr-client-for-capture"></a><a name="BKMK_PrepareConfigMgrClientforCapture"></a> 準備 ConfigMgr 用戶端以進行擷取  
- 使用 [準備 ConfigMgr 用戶端以進行擷取] 步驟，以採用參照電腦上的 Configuration Manager 用戶端，並執行下列工作，將該用戶端準備好，以便在執行映像建立程序時進行擷取：  
+## <a name="a-namebkmkprepareconfigmgrclientforcapturea-prepare-configmgr-client-for-capture"></a><a name="BKMK_PrepareConfigMgrClientforCapture"></a> 準備 ConfigMgr 用戶端以進行擷取  
+使用 [準備 ConfigMgr 用戶端以進行擷取] 步驟，以移除參照電腦上的 Configuration Manager 用戶端或在參照電腦上設定用戶端，將該用戶端準備好，以便在執行映像建立程序時進行擷取。
+
+從 Configuration Manager 1610 版開始，[準備 ConfigMgr 用戶端] 步驟會完全移除 Configuration Manager 用戶端，而不是只移除金鑰資訊。 當工作順序部署擷取的作業系統映像時，每次都會安裝新的 Configuration Manager 用戶端。  
+
+在 Configuration Manager 1610 版之前，這個步驟會執行下列工作︰  
 
 -   從 Windows 目錄中的 smscfg.ini 檔案中，移除用戶端組態內容區段。 這些內容包含用戶端特定的資訊，包括 Configuration Manager GUID 和其他用戶端識別項。  
 
@@ -1458,19 +1462,19 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 
  工作順序會自動設定下列唯讀的工作順序變數：  
 
--   _SMSTSMake  
+ -   &#95;SMSTSMake  
 
--   _SMSTSModel  
+ -   &#95;SMSTSModel  
 
--   _SMSTSMacAddresses  
+ -   &#95;SMSTSMacAddresses  
 
--   _SMSTSIPAddresses  
+ -   &#95;SMSTSIPAddresses  
 
--   _SMSTSSerialNumber  
+ -   &#95;SMSTSSerialNumber  
 
--   _SMSTSAssetTag  
+ -   &#95;SMSTSAssetTag  
 
--   _SMSTSUUID  
+ -   &#95;SMSTSUUID  
 
  此步驟可以在標準作業系統或 Windows PE 中執行。 如需工作順序變數的詳細資訊，請參閱[工作順序動作變數](task-sequence-action-variables.md)。  
 
@@ -1485,32 +1489,34 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 
 -   指定執行此步驟時，所必須符合的條件。  
 
- **Name**  
+**Name**  
  針對此工作順序步驟，指定簡短的使用者定義名稱。  
 
- **說明**  
+**說明**  
  以較詳細的資訊來描述此步驟中所採取的動作。  
 
- **動態規則和變數**  
+**動態規則和變數**  
  若要設定要用在工作順序中的動態變數，您可以加入規則，然後針對您為規則指定的每個變數，各指定一個值，或加入一或多個要設定的變數，而不加入規則。 當您加入規則時，可以從下列規則類別中選擇：  
 
--   **電腦**：使用這個規則類別來評估 [資產] 標籤、UUID、序號或 MAC 位址的值。 您可以設定多個值，如果有任何值為 true，該規則將會評估為 true。 例如，不論 MAC 位址是否等於 26-78-13-5A-A4-22，如果序號是 5892087，下列規則就會評估為 true。  
+ -   **電腦**：使用這個規則類別來評估 [資產] 標籤、UUID、序號或 MAC 位址的值。 您可以設定多個值，如果有任何值為 true，該規則將會評估為 true。 例如，不論 MAC 位址是否等於 26-78-13-5A-A4-22，如果序號是 5892087，下列規則就會評估為 true。  
 
      `IF Serial Number = 5892087 OR MAC address = 26-78-13-5A-A4-22 THEN`  
 
 -   **位置**：使用這個規則類別來評估預設閘道的值。  
 
--   **製造商和型號**：使用這個規則類別來評估電腦製造商和型號的值。 製造商和型號都必須評估為 true，規則才會評估為 true。  
+-   **製造商和型號**：使用這個規則類別來評估電腦製造商和型號的值。 製造商和型號都必須評估為 true，規則才會評估為 true。   
+
+    從 Configuration Manager 1610 版開始，您可以將星號 (*****) 和問號 (**?**) 指定為萬用字元，其中 ***** 符合多個字元，且 **?** 符合單一字元。 例如，字串 "DELL*900?" 將符合 DELL-ABC-9001 和 DELL9009。
 
 -   **工作順序變數**：使用這個規則類別來新增工作順序變數、條件和要評估的值。 當為變數設定的值符合指定的條件時，規則會評估為 true。  
 
- 您可以指定要針對評估為 true 的規則設定的一或多個變數，或是設定變數，而不使用規則。 您可以從現有的變數選取，或建立自訂變數。  
+您可以指定要針對評估為 true 的規則設定的一或多個變數，或是設定變數，而不使用規則。 您可以從現有的變數選取，或建立自訂變數。  
 
--   **現有的工作順序變數**：使用這項設定，從現有的工作順序變數清單中選取一或多個變數。 無法選取陣列變數。  
+ -   **現有的工作順序變數**：使用這項設定，從現有的工作順序變數清單中選取一或多個變數。 無法選取陣列變數。  
 
--   **自訂工作順序變數**：使用這項設定來定義自訂工作順序變數。 您也可以指定現有的工作順序變數。 這很適合用來指定現有的變數陣列，例如 OSDAdapter，因為變數陣列不在現有的工作順序變數清單中。  
+ -   **自訂工作順序變數**：使用這項設定來定義自訂工作順序變數。 您也可以指定現有的工作順序變數。 這很適合用來指定現有的變數陣列，例如 OSDAdapter，因為變數陣列不在現有的工作順序變數清單中。  
 
- 在選取規則的變數之後，您必須為每個變數提供值。 當規則評估為 true 時，變數會設為所指定的值。 您可以針對每個變數，選取 [祕密值]  來隱藏變數的值。 根據預設，某些現有的變數會隱藏值，例如 OSDCaptureAccountPassword 工作順序變數。  
+在選取規則的變數之後，您必須為每個變數提供值。 當規則評估為 true 時，變數會設為所指定的值。 您可以針對每個變數，選取 [祕密值]  來隱藏變數的值。 根據預設，某些現有的變數會隱藏值，例如 OSDCaptureAccountPassword 工作順序變數。  
 
 > [!IMPORTANT]  
 >  如果使用 [設定動態變數] 步驟來匯入工作順序，並且為變數的值選取 [祕密值]  ，當您匯入工作順序時，就會移除該值。 因此，在您匯入工作順序之後，必須重新輸入動態變數的值。  
@@ -1690,6 +1696,6 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

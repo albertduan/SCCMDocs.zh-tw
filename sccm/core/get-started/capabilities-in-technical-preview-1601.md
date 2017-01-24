@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager Technical Preview 1601 中的功能"
+title: "System Center Configuration Manager Technical Preview 1601 中的功能 | Microsoft Docs"
 description: "了解 System Center Configuration Manager Technical Preview 1601 版中可用的功能。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: be158c1d893a1c1aae19c6cf2fd3a678a59d4f9e
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 7321645f17a143afe2fd848f45511a374de78c4b
 
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1601 中的功能
@@ -211,8 +211,8 @@ ms.openlocfilehash: be158c1d893a1c1aae19c6cf2fd3a678a59d4f9e
 
  如需詳細資訊，請參閱[如何為不是使用 System Center Configuration Manager 用戶端所管理的 Windows 8.1 和 Windows 10 裝置建立設定項目](../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)。  
 
-### <a name="android---kiosk-mode-for-samsung-knoxbr-hybrid"></a>Android - Samsung KNOX Hybrid 的 Kiosk<br />模式  
- Kiosk 模式可讓您限制裝置只能執行某些特定功能。 例如，您可以允許裝置只執行您指定的一個受管理應用程式，也可以停用裝置上的音量按鈕。 這些設定可能用於裝置的展示模型，或是專用來只執行一個功能的裝置 (例如銷售點裝置)。 在 [Windows 8.1 與 Windows 10] 設定項目中，這些設定不適用於 Samsung KNOX 裝置 (設定僅適用於 Windows 10 裝置)。  
+### <a name="android---kiosk-mode-for-samsung-knox-standardbr-hybrid"></a>Android - Samsung KNOX Standard 的 Kiosk 模式<br />模式  
+ Kiosk 模式可讓您限制裝置只能執行某些特定功能。 例如，您可以允許裝置只執行您指定的一個受管理應用程式，也可以停用裝置上的音量按鈕。 這些設定可能用於裝置的展示模型，或是專用來只執行一個功能的裝置 (例如銷售點裝置)。 在 [Windows 8.1 與 Windows 10] 設定項目中，這些設定不適用於 Samsung KNOX Standard 裝置 (設定僅適用於 Windows 10 裝置)。  
 
  若要查看新的設定，請從 [建立設定項目精靈] 的設定項目 [裝置設定] 頁面中選擇 [Kiosk 模式 - Samsung KNOX]。  
 
@@ -220,6 +220,6 @@ ms.openlocfilehash: be158c1d893a1c1aae19c6cf2fd3a678a59d4f9e
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

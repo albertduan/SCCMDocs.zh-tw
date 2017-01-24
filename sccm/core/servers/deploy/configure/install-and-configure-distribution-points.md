@@ -1,5 +1,5 @@
 ---
-title: "管理發佈點 | System Center Configuration Manager"
+title: "管理發佈點 | Microsoft Docs"
 description: "裝載您使用發佈點部署至裝置與使用者的內容 (檔案和軟體)。 以下是安裝和設定它們的方法。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: dedfcc77cb94ede1abfd65e22f9d3d116b9ed68e
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 8684bf1231ff9d663717b4c9874dac98d50e3647
 
 ---
 # <a name="install-and-configure-distribution-points-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 安裝及設定發佈點
@@ -26,7 +26,7 @@ ms.openlocfilehash: dedfcc77cb94ede1abfd65e22f9d3d116b9ed68e
 
 您可安裝 System Center Configuration Manager 發佈點，來裝載您使用發佈點部署至裝置與使用者的內容 (檔案和軟體)。 您也可以建立發佈點群組，以簡化發佈點的管理方式與將內容發佈至發佈點的方式。  
 
- 當您使用安裝精靈來**安裝新的發佈點**，或透過編輯發佈點內容來**管理現有的發佈點內容**時，就有可能需要進行大部分的發佈點設定。 不過，其中有些設定僅可用於安裝或編輯，而非同時適用︰  
+ 當您使用安裝精靈來**安裝新的發佈點**，或透過編輯發佈點內容來**管理現有的發佈點內容**時，可以進行大部分的發佈點設定。 不過，其中有些設定僅可用於安裝或編輯，而非同時適用︰  
 
 -   **只有在安裝發佈點時才可用的設定：**  
 
@@ -330,9 +330,11 @@ ms.openlocfilehash: dedfcc77cb94ede1abfd65e22f9d3d116b9ed68e
 >  雖然您是使用電腦的本機時間來指定內容驗證排程，但 Configuration Manager 主控台會使用 UTC 來顯示排程。  
 
 ### <a name="boundary-group"></a>界限群組  
-管理擁有此指派之發佈點的界限群組。 您可以將界限群組關聯到發佈點。 部署內容期間，用戶端必須存在於與發佈點關聯的界限群組之中，才能將界限群組當成內容的來源位置使用。 您可以選取 [允許用戶端使用此網站系統做為內容的後援來源位置]  核取方塊，讓位於這些界限群組以外的用戶端回復，並在沒有其他發佈點可用時，使用發佈點做為內容的來源位置。  
+管理擁有此指派之發佈點的界限群組。 您可以將界限群組關聯到發佈點。 部署內容期間，用戶端必須存在於與發佈點關聯的界限群組之中，才能將界限群組當成內容的來源位置使用。
+此外：
+- 在 1610 版之前，您可以選取 [Allow clients to use this site system as a fallback source location for content] (允許用戶端使用此站台系統作為內容的後援來源位置) 核取方塊，讓位於這些界限群組以外的用戶端進行後援，並在沒有其他發佈點可用時，使用發佈點作為內容的來源位置。 如需界限群組的詳細資訊，請參閱 [1511、1602 和 1606 版的界限群組](/sccm/core/servers/deploy/configur/boundary-groups-for-1511-1602-and-1606)，如需慣用發佈點的詳細資訊，請參閱 [System Center Configuration Manager 中的內容管理基本概念](../../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)。
+- 使用 1610 版或更新版本，您可以設定界限群組「關聯性」，其定義用戶端可以後援以尋找內容的時機和界限群組。 如需詳細資訊，請參閱[界限群組](/sccm/core/servers/deploy/configur/define-site-boundaries-and-boundary-groups#boundary-groups)。
 
-如需內容管理選項的詳細資訊，請參閱 [System Center Configuration Manager 中的內容管理基本概念](../../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)。  
 
 ### <a name="schedule"></a>排程  
 
@@ -377,6 +379,6 @@ ms.openlocfilehash: dedfcc77cb94ede1abfd65e22f9d3d116b9ed68e
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

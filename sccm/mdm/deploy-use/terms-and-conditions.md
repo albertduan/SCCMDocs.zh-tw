@@ -1,5 +1,5 @@
 ---
-title: Terms and Conditions in System Center Configuration Manager
+title: "System Center Configuration Manager 中的條款和條件 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中，將條款和條件部署至使用者群組。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4d3f9e6b-4d71-4fc4-9b91-47f1bfbd8c70
 caps.latest.revision: 9
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: a7b99bed3186ab8ff817ef5f420d7a55d60b1c14
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 2f8b14bef14d82584fd2bf6cdd05018bdd463ce4
 
 
 ---
@@ -89,7 +89,7 @@ ms.openlocfilehash: a7b99bed3186ab8ff817ef5f420d7a55d60b1c14
 
      在 [部署狀態] 畫面中，您可以選取狀態索引標籤來檢視具有該狀態的使用者。 您可以按一下 **[執行摘要]** 來更新整個階層的資料。 按一下 **[重新整理]** 即可更新主控台中的資料  
 
-## <a name="to-view-a-terms-and-conditions-report"></a>檢視條款和條件報告  
+## <a name="to-view--a-terms-and-conditions-report"></a>檢視條款和條件報告  
 
 1.  在 Configuration Manager 主控台中，移至 **[監視]** > **[概觀]** > **[報告]** > **[報表]**。  
 
@@ -122,6 +122,6 @@ ms.openlocfilehash: a7b99bed3186ab8ff817ef5f420d7a55d60b1c14
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

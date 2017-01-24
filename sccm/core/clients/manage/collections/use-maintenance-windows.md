@@ -1,5 +1,5 @@
 ---
-title: "使用維護期間 | System Center Configuration Manager"
+title: "使用維護期間 | Microsoft Docs"
 description: "使用集合和維護期間，在 System Center Configuration Manager 中有效率地管理用戶端。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: c29d8a1bc0d224113a1c906893308d5582894a01
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: e59953f41422ee8f79ca054b5ccaccf41bb4e7af
 
 
 ---
@@ -80,6 +80,6 @@ ms.openlocfilehash: c29d8a1bc0d224113a1c906893308d5582894a01
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "修改基礎結構 | System Center Configuration Manager"
+title: "修改基礎結構 | Microsoft Docs"
 description: "了解如何變更或採取可影響所部署 Configuration Manager 基礎結構的動作。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fc58e77841baedd45649d676e98c736fa91e5bf2
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: fa9881e06abd410438fe5985151309c45f337802
 
 
 ---
@@ -172,6 +172,8 @@ ms.openlocfilehash: fc58e77841baedd45649d676e98c736fa91e5bf2
 -   **設定存取權：** 將站台資料庫移到新電腦時，請將站台伺服器的電腦帳戶新增至執行 SQL Server 之電腦上的 [本機系統管理者]  群組。 如果您使用站台資料庫的 SQL Server 叢集，則必須將電腦帳戶新增至每個 Windows Server 叢集節點電腦的 [本機系統管理者]  群組。  
 
 -   **啟用 Common Language Runtime (CLR) 整合：**  將資料庫移到 SQL Server 上的新執行個體，或移到新的 SQL Server 電腦時，您必須啟用 Common Language Runtime (CLR) 整合。 若要啟用 CLR，請使用 **SQL Server Management Studio** 連線到裝載站台資料庫的 SQL Server 執行個體，並以查詢方式執行以下預存程序：**sp_configure 'clr enabled',1; reconfigure**。  
+-  **確認新的 SQL Server 可存取備份位置：**將資料庫移至新的伺服器 (包括移動 SQL Server AlwaysOn 可用性群組或移至 SQL Server 叢集) 之後，若要使用 UNC 儲存站台資料庫備份，請確定新的 SQL Server 電腦帳戶具有**寫入** UNC 位置的權限。  
+
 
 > [!IMPORTANT]  
 >  移動管理點有一或多個資料庫複本的資料庫時，必須先移除資料庫複本。 完成資料庫移動後，就可以重新設定資料庫複本。 如需詳細資訊，請參閱 [Database replicas for management points for System Center Configuration Manager](../../../core/servers/deploy/configure/database-replicas-for-management-points.md)。  
@@ -369,6 +371,6 @@ SQL Server 文件可協助您 [手動註冊 SPN](https://technet.microsoft.com/l
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

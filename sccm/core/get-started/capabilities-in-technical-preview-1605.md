@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager Technical Preview 1605 中的功能"
+title: "System Center Configuration Manager Technical Preview 1605 中的功能 | Microsoft Docs"
 description: "了解 System Center Configuration Manager Technical Preview 1605 版中可用的功能。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: 0137d6e2c69480d6de88fbf8fa3450d1699007e5
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 06741d03e208c6f5c8093130780dcdc8f0fcfbf7
 
 ---
 # <a name="capabilities-in-technical-preview-1605-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1605 中的功能
@@ -273,7 +273,7 @@ ms.openlocfilehash: 0137d6e2c69480d6de88fbf8fa3450d1699007e5
 
 -   [應用程式] 索引標籤已分割成三個不同的索引標籤：[更新]、[作業系統] (前兩者之前位於 [篩選] 清單中)，以及 [應用程式]。  
 
-##  <a name="a-namebkmkservergroupsa-service-a-server-group"></a><a name="BKMK_ServerGroups"></a> 提供伺服器群組  
+##  <a name="a-namebkmkservergroupsa-service-a--server-group"></a><a name="BKMK_ServerGroups"></a> 提供伺服器群組  
  System Center Configuration Manager Technical Preview 1511 版提供建立集合的功能，此集合中的所有裝置會組成伺服器群組。 之後，您可以設定將軟體更新部署至伺服器群組時所要使用的伺服器群組設定、控制在任何指定時間更新的電腦百分比，以及設定預先部署和部署後 PowerShell 指令碼來執行自訂動作。  
 
  System Center Configuration Manager Technical Preview 1605 版新增功能來依您定義的指定順序更新伺服器群組中的電腦、新增用以檢視伺服器群組中電腦狀態的增強監視，並提供清除部署鎖定的功能，這在用戶端無法安裝軟體更新時會很有用，而且可防止其他用戶端安裝其軟體更新。  
@@ -472,6 +472,6 @@ ms.openlocfilehash: 0137d6e2c69480d6de88fbf8fa3450d1699007e5
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

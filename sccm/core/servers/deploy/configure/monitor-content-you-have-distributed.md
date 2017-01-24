@@ -1,5 +1,5 @@
 ---
-title: "監視內容 | System Center Configuration Manager"
+title: "監視內容 | Microsoft Docs"
 description: "使用 Configuration Manager 主控台了解如何監視發佈的內容。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 402c06ed92bbfe509206d3e7800e41e90c5d3a38
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 9a5d2c3a3c6bdca05b5b00fa4d746c437a56ef89
 
 ---
 # <a name="monitor-content-you-have-distributed-with-system-center-configuration-manager"></a>監視您已使用 System Center Configuration Manager 所發佈的內容
@@ -27,13 +27,9 @@ ms.openlocfilehash: 402c06ed92bbfe509206d3e7800e41e90c5d3a38
 使用 System Center Configuration Manager 主控台來監視發佈的內容，包括：  
 
 -   與關聯的發佈點相關之所有封裝類型的狀態。  
-
 -   封裝中內容的內容驗證狀態  
-
 -   指派至特定發佈點群組的內容狀態  
-
 -   指派至發佈點群組的內容狀態  
-
 -   每個發佈點 (內容驗證、PXE 與多點傳送) 的選用功能狀態。  
 
 > [!NOTE]  
@@ -43,37 +39,27 @@ ms.openlocfilehash: 402c06ed92bbfe509206d3e7800e41e90c5d3a38
  [監視]  工作區中的 [內容狀態]  節點會提供有關內容套件的資訊。 在 Configuration Manager 主控台中，您可以檢閱下列這類資訊：  
 
 -   封裝名稱  
-
 -   類型  
-
 -   已傳送至套件的發佈點數量  
-
 -   相容率  
-
 -   封裝建立的時間  
-
 -   套件識別碼  
-
 -   來源版本  
 
 您也可以找到任何封裝的詳細狀態資訊，以及封裝的發佈狀態，包括：  
 
 -   失敗次數  
-
 -   擱置的發佈  
-
 -   安裝的數量  
 
 您也可以管理對發佈點持續進行的發佈，或是未能成功將內容發佈到發佈點的發佈：  
 
 -   當您在 [內容狀態]  節點之 [進行中]  索引標籤或 [錯誤]  索引標籤的 [資產詳細資料]  窗格中，檢視對發佈點之發佈工作的部署狀態訊息時，可使用取消或重新發佈內容等適用選項。  
-
 -   此外，當您檢視 [進行中] 索引標籤的工作詳細資料時，該資料會顯示已完成的工作百分比  ，而從 [錯誤]  索引標籤處檢視工作詳細資料時，則會顯示工作重試次數，以及距離下一次重試還有多久時間。  
 
 當您取消尚未完成的部署時，傳送該內容的發佈工作會停止進行：  
 
 -   部署的狀態會接著更新，指出發佈失敗，並已因使用者的動作而被取消。  
-
 -   此新狀態會出現在 [錯誤]  索引標籤處。  
 
 > [!TIP]  
@@ -124,23 +110,16 @@ ms.openlocfilehash: 402c06ed92bbfe509206d3e7800e41e90c5d3a38
 [監視]  工作區中的 [發佈點群組狀態]  節點會提供有關發佈點群組的資訊。 您可以檢閱如下列的資訊：  
 
 -   發佈點群組名稱  
-
 -   說明  
-
 -   屬於發佈點群組的發佈點數目  
-
 -   已指派至群組的封裝數目  
-
 -   發佈點群組狀態  
-
 -   相容率  
 
 您也可以檢視下列項目的詳細狀態資訊：  
 
 -   發佈點群組的錯誤  
-
 -   正在進行中的發佈數目  
-
 -   已成功發佈的數目  
 
 #### <a name="to-monitor-distribution-point-group-status"></a>若要監視發佈點群組狀態  
@@ -171,8 +150,18 @@ ms.openlocfilehash: 402c06ed92bbfe509206d3e7800e41e90c5d3a38
 
 4.  在結果窗格中，按一下 [詳細資料]  索引標籤。 發佈點的狀態資訊隨即顯示。  
 
+## <a name="client-data-sources-dashboard"></a>用戶端資料來源儀表板
+從 1610 版開始，您即可使用新的 [用戶端資料來源] 儀表板，協助了解環境中[對等快取](/sccm/core/plan-design/hierarchy/client-peer-cache)的使用情況。 當用戶端使用「對等快取」下載內容，並將該資訊回報給站台之後，主控台才會顯示這個儀表板。 依據報告間隔來看，這可能需要最多 24 小時的時間。
+
+> [!TIP]  
+> 在版本 1610，對等快取和用戶端資料來源儀表板都是發行前版本功能。 若要啟用它們，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)。
+
+在主控台中，移至 [監視] > [用戶端狀態] > [用戶端資料來源]。 您可以在這裡選取一個要套用到儀表板的時段。 然後，在顯示中，您可以選取您想要檢視資訊的界限群組或套件。 檢視資訊時，您可以將滑鼠游標暫留在介面上，以查看有關不同內容或原則來源的更多詳細資料。  
+
+您也可以使用新報告「用戶端資料來源 - 摘要」來檢視每個界限群組的用戶端資料來源摘要。
 
 
-<!--HONumber=Nov16_HO1-->
+
+<!--HONumber=Dec16_HO3-->
 
 

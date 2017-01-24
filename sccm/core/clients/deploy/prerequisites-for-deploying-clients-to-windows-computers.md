@@ -1,5 +1,5 @@
 ---
-title: "Windows 用戶端部署必要條件 | System Center Configuration Manager"
+title: "Windows 用戶端部署必要條件 | Microsoft Docs"
 description: "了解在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦的必要條件。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: 1a2a9b48-a95b-4643-b00c-b3079584ae2e
 caps.latest.revision: 16
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 03ae6de34742ed0030e42c13639ef853d6b2bedc
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: cbcffea0fe2b4c8a05d3a835ff1193b528e55762
 
 
 ---
@@ -58,7 +58,7 @@ ms.openlocfilehash: 03ae6de34742ed0030e42c13639ef853d6b2bedc
 |Microsoft Core XML Services (MSXML) 6.20.5002 版和更新版本|支援在 Windows 中處理 XML 文件所需。|  
 |Microsoft 遠端差異壓縮 (RDC)|最佳化透過網路的資料傳輸所需。|  
 |Microsoft Visual C++ 2013 可轉散發套件 12.0.21005.1 版|支援用戶端操作所需。 用戶端電腦上安裝此更新時，可能需要重新啟動以完成安裝。|  
-|Microsoft Visual C++ 2005 可轉散發套件 8.0.50727.42 版|支援 Microsoft SQL Server Compact 操作所需。|  
+|Microsoft Visual C++ 2005 可轉散發套件 8.0.50727.42 版|針對 1606 版和更早版本，支援 Microsoft SQL Server Compact 作業所需。|  
 |Windows Imaging API 6.0.6001.18000|允許 Configuration Manager 管理 Windows 映像 (.wim) 檔案所需。|  
 |Microsoft Policy Platform 1.2.3514.0|允許用戶端評估相容性設定所需。|  
 |Microsoft Silverlight 5.1.41212.0 (從 Configuration Manager 1602 版開始)|支援應用程式類別目錄網站使用者經驗所需。|  
@@ -238,6 +238,6 @@ ms.openlocfilehash: 03ae6de34742ed0030e42c13639ef853d6b2bedc
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "累加版本 | System Center Configuration Manager"
+title: "累加版本 | Microsoft Docs"
 description: "了解如何安裝與管理 System Center Configuration Manager 更新。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 2b3fe48d0c878063886618d4390e6f5f53f311af
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: afc73be528c3ac4a35b72631e4479338e127e4dc
 
 ---
 # <a name="whats-new-in-system-center-configuration-manager-incremental-versions"></a>System Center Configuration Manager 累加版本的新功能
@@ -36,6 +36,7 @@ ms.openlocfilehash: 2b3fe48d0c878063886618d4390e6f5f53f311af
  這些更新版本對於了解 System Center Configuration Manager 安裝的累加版本以及可在部署中啟用的功能十分重要。
 
  System Center Configuration Manager 最新分支的初始版本也以 1511 版表示。 自此初始版本以降還有其他更新。 請使用下列連結探索每個版本的最新功能︰
+  - [1610 版的新功能](../../../core/plan-design/changes/whats-new-in-version-1610.md)
   - [1606 版的新功能](../../../core/plan-design/changes/whats-new-in-version-1606.md)
   - [1602 版的新功能](../../../core/plan-design/changes/whats-new-in-version-1602.md)
 
@@ -44,6 +45,6 @@ ms.openlocfilehash: 2b3fe48d0c878063886618d4390e6f5f53f311af
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

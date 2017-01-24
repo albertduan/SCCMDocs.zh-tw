@@ -1,5 +1,5 @@
 ---
-title: "內容來源位置 | System Center Configuration Manager"
+title: "內容來源位置 | Microsoft Docs"
 description: "了解可讓用戶端在較慢的網路上尋找內容的 System Center Configuration Manager 設定。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,15 +16,22 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 667010fedb37770d4105fc30f098a231292969fd
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: b0f54daecfc3e958d3196f3f0b08606725d86c39
 
 ---
 # <a name="content-source-location-scenarios-in-system-center-configuration-manager"></a>System Center Configuration Manager 的內容來源位置案例
 
-*適用對象：System Center Configuration Manager (最新分支)*
+*適用於：System Center Configuration Manager (最新分支)*
 
-System Center Configuration Manager 支援數項設定，組合起來可定義用戶端在較慢的網路上如何及在何處找到內容。 可能的組合會影響用戶端使用的內容位置，以及沒有慣用的內容來源時，是否能夠順利使用後援位置。  
+在 1610 版之前，System Center Configuration Manager 支援數項設定，組合起來可定義用戶端在較慢的網路上如何及在何處找到內容。 可能的組合會影響用戶端使用的內容位置，以及沒有慣用的內容來源時，是否能夠順利使用後援位置。  
+
+> [!IMPORTANT]  
+> **如果您的站台執行 1511、1602 或 1606 版**，本主題中的資訊適用於您的基礎結構。 另請參閱 [1511、1602 和 1606 版的界限群組](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606)，以取得搭配這些版本的 Configuration Manager 之界限群組的特定資訊。
+>
+> **如果您的站台執行 1610 版或更新版本**，請使用[界限群組](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)中的資訊，以了解您的用戶端如何尋找具有可用內容的發佈點。
+
+
 
 
 
@@ -249,6 +256,6 @@ System Center Configuration Manager 支援數項設定，組合起來可定義�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

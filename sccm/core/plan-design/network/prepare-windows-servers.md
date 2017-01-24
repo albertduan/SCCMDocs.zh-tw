@@ -1,5 +1,5 @@
 ---
-title: "準備 Windows 伺服器 | System Center Configuration Manager"
+title: "準備 Windows Server | Microsoft Docs"
 description: "請確定電腦符合當成 System Center Configuration Manager 站台伺服器或站台系統伺服器使用的必要條件。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f0a1cc32285fcb792c3f4cdec616668474708404
-ms.openlocfilehash: acf8a401f1ce67a4d8c905c0126c031b97484271
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: bd89f97f4252ddea2d1bf7ab329417477c77868d
 
 
 ---
@@ -42,11 +42,8 @@ ms.openlocfilehash: acf8a401f1ce67a4d8c905c0126c031b97484271
 -   **.NET Framework**：包括  
 
     -   ASP.NET  
-
     -   HTTP 啟動  
-
     -   非 HTTP 啟動  
-
     -   WCF 服務  
 
     不同站台系統角色需要不同版本的 .NET Framework。  
@@ -68,61 +65,37 @@ ms.openlocfilehash: acf8a401f1ce67a4d8c905c0126c031b97484271
  -   **網路裝置註冊服務** (在 Active Directory 憑證服務下)：此 Windows 角色是使用 Configuration Manager 中「憑證設定檔」的必要條件。  
 
  -   **網頁伺服器 (IIS)**：包括：  
-
     -   一般 HTTP 功能 >  
-
         -   HTTP 重新導向  
-
     -   應用程式開發 >  
-
         -   .NET 擴充性  
-
         -   ASP.NET  
-
         -   ISAPI 擴充程式  
-
         -   ISAPI 篩選器  
-
     -   管理工具 >  
-
         -   IIS 6 管理相容性  
-
         -   IIS 6 Metabase 相容性  
-
         -   IIS 6 WMI 相容性  
-
     -   安全性 >  
-
         -   要求篩選  
-
         -   Windows 驗證  
 
  下列站台系統角色使用其中一或多項所列 IIS 組態：  
-
     -   應用程式類別目錄 Web 服務點  
-
     -   應用程式類別目錄網站點  
-
     -   發佈點  
-
     -   註冊點  
-
     -   註冊 Proxy 點  
-
     -   後援狀態點  
-
     -   管理點  
-
     -   軟體更新點  
-
-    -   狀態移轉點  
+    -   狀態移轉點     
 
     所需 IIS 最低版本為站台伺服器作業系統所提供的版本。  
 
     除了這些 IIS 組態外，您可能還需要設定 [用於發佈點的 IIS 要求篩選](#BKMK_IISFiltering)。  
 
 -   **Windows 部署服務**：此角色是與「作業系統部署」搭配使用。  
-
 -   **Windows Server Update Services**：此角色為您部署軟體更新時所需。  
 
 ##  <a name="a-namebkmkiisfilteringa-iis-request-filtering-for-distribution-points"></a><a name="BKMK_IISFiltering"></a> 用於發佈點的 IIS 要求篩選  
@@ -133,11 +106,8 @@ ms.openlocfilehash: acf8a401f1ce67a4d8c905c0126c031b97484271
  此外，Configuration Manager 的套件和應用程式使用下列副檔名。 請確認您的要求篩選組態未封鎖這些副檔名：  
 
 -   .PCK  
-
 -   .PKG  
-
 -   .STA  
-
 -   .TAR  
 
 例如，您的軟體部署來源檔案中可能包含名為 **bin**的資料夾，或是副檔名為 **.mdb** 的檔案。  
@@ -167,12 +137,12 @@ ms.openlocfilehash: acf8a401f1ce67a4d8c905c0126c031b97484271
 **發佈點︰**發佈點需要允許下列 HTTP 動詞：
  - GET
  - HEAD
- - PROFIND
+ - PROPFIND
 
 如需設定要求篩選的相關資訊，請參閱 TechNet 上的[在 IIS 中設定要求篩選](https://technet.microsoft.com/library/hh831621.aspx#Verbs)，或適用於裝載管理點的 Windows Server 版本的類似文件。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

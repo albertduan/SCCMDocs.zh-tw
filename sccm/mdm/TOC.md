@@ -1,14 +1,14 @@
-#  [了解和探索](understand/hybrid-mobile-device-management.md)
+#  了解和探索
 ## [混合式 MDM](understand/hybrid-mobile-device-management.md)
 ## [選擇 Intune 或混合式 MDM](understand/choose-between-standalone-intune-and-hybrid-mobile-device-management.md)
 ## [混合式 MDM 的新功能](understand/whats-new-in-hybrid-mobile-device-management.md)
 ## [內部部署 MDM](understand/manage-mobile-devices-with-on-premises-infrastructure.md)
 
-# [規劃和設計](plan-design/plan-hybrid-mobile-device-management.md)
+# 規劃和設計
 ## [規劃混合式 MDM](plan-design/plan-hybrid-mobile-device-management.md)
 ## [內部部署 MDM 的規劃](plan-design/plan-on-premises-mdm.md)
 
-# [部署和使用](deploy-use/setup-hybrid-mdm.md)
+# 部署和使用
 
 ## [設定混合式 MDM](deploy-use/setup-hybrid-mdm.md)
 ### [iOS 和 Mac](deploy-use/enroll-hybrid-ios-mac.md)
@@ -33,9 +33,10 @@
 ### [大量註冊](deploy-use/bulk-enroll-devices-on-premises-mdm.md)
 
 ## [淘汰、鎖定和重設裝置](deploy-use/wipe-lock-reset-devices.md)
+## [同步處理 Intune 註冊裝置](deploy-use/sync-intune-device.md)
 ## [使用 Exchange 管理裝置](deploy-use/manage-mobile-devices-with-exchange-activesync.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

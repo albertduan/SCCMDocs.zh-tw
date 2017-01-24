@@ -1,8 +1,8 @@
 ---
-title: "如何為使用 System Center Configuration Manager 用戶端管理的 Windows 10 裝置建立設定項目 | System Center Configuration Manager"
+title: "如何為使用 System Center Configuration Manager 用戶端管理的 Windows 10 裝置建立設定項目 | Microsoft Docs"
 description: "使用 System Center Configuration Manager Windows 10 設定項目管理 Configuration Manager 用戶端所管理之 Windows 10 電腦的設定。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: d5248e7262f758c2de2a1deaf42282d4e77e3e0c
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 2b24570aa2e9d9aa45584842011dcd49c6e5e8cc
 
 
 ---
@@ -125,7 +125,7 @@ ms.openlocfilehash: d5248e7262f758c2de2a1deaf42282d4e77e3e0c
 |**防毒保護**|必須安裝和設定防毒軟體。|  
 |**防毒特徵已是最新版本**|裝置上防毒軟體的簽章檔案必須是最新狀態。|  
 
-### <a name="windows-information-protection-formerly-enterprise-data-protection"></a>Windows 資訊保護 (原企業資料保護)
+### <a name="windows-information-protection"></a>Windows 資訊保護
 
 企業中員工擁有的裝置日漸增加，資料不慎從企業難以控管的應用程式和服務 (如電子郵件、社交媒體和公用雲端) 外洩的風險也更高。 比方說，員工透過個人電子郵件帳戶傳送最新的工程圖片、複製並將產品資訊貼進推文，或將進行中的銷售報表儲存到公用雲端存放裝置等情況。
 
@@ -137,6 +137,6 @@ Windows 資訊保護 (WIP) 有助防止這類資料外洩的可能，同時不�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

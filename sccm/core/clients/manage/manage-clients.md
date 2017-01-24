@@ -1,8 +1,8 @@
 ---
-title: "管理用戶端 | System Center Configuration Manager"
+title: "管理用戶端 | Microsoft Docs"
 description: "了解如何管理 System Center Configuration Manager 中的用戶端。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3986a992-c175-4b6f-922e-fc561e3d7cb7
 caps.latest.revision: 17
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: 67a814330123a1615a0663872bf4af64e5b81a84
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: dfdb5a95b672d3858d094750625cb5f6ef50700d
 
 
 ---
@@ -160,7 +160,7 @@ ms.openlocfilehash: 67a814330123a1615a0663872bf4af64e5b81a84
 
         若要查看裝置清單中的擁有權值，您可能需要在任意欄標題上按一下滑鼠右鍵，然後選擇 **[裝置擁有者]**以將欄位加入檢視。
 
-         如需詳細資訊，請參閱[搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](../../../mdm/plan-design/hybrid-mobile-device-management.md)。  
+         如需詳細資訊，請參閱[搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](../../../mdm/understand/hybrid-mobile-device-management.md)。  
 
 ##  <a name="a-namebkmkmanagingclientsdevicecollectionsnodea-manage-clients-from-the-device-collections-node"></a><a name="BKMK_ManagingClients_DeviceCollectionsNode"></a> 從裝置集合節點管理用戶端  
  使用下列程序和表格，從 [資產與相容性]  工作區的 [裝置集合]  節點管理集合中的裝置。  
@@ -239,7 +239,7 @@ Configuration Manager 用戶端會在收到部署後隨即下載所需軟體的�
     -   SMSCACHESIZE  
 
         > [!NOTE]
-        > 如果是 1606 版，使用 Configuration Manager 主控台中 [用戶端設定] 的快取大小設定而不是 SMSCACHESIZE。 如需詳細資訊，請參閱 [Client Cache Settings](../../../core/clients/deploy/about-client-settings.md#Client-Cache-Settings) (用戶端快取設定)。
+        > 如果是 1606 版，使用 Configuration Manager 主控台中 [用戶端設定] 的快取大小設定而不是 SMSCACHESIZE。 如需詳細資訊，請參閱 [Client Cache Settings](../../../core/clients/deploy/about-client-settings.md#client-cache-settings) (用戶端快取設定)。
 
 如需如何使用適用於 CCMSetup.exe 之命令列屬性的詳細資訊，請參閱 [About client installation properties in System Center Configuration Manager](../../../core/clients/deploy/about-client-installation-properties.md) (關於 System Center Configuration Manager 中的用戶端安裝內容)。  
 
@@ -264,7 +264,7 @@ Configuration Manager 用戶端會在收到部署後隨即下載所需軟體的�
     -   SMSCACHESIZE  
 
         > [!NOTE]
-        > 如果是 1606 版，使用 Configuration Manager 主控台中 [用戶端設定] 的快取大小設定而不是 SMSCACHESIZE。 如需詳細資訊，請參閱 [Client Cache Settings](../../../core/clients/deploy/about-client-settings.md#Client-Cache-Settings) (用戶端快取設定)。
+        > 如果是 1606 版，使用 Configuration Manager 主控台中 [用戶端設定] 的快取大小設定而不是 SMSCACHESIZE。 如需詳細資訊，請參閱 [Client Cache Settings](../../../core/clients/deploy/about-client-settings.md#client-cache-settings) (用戶端快取設定)。
 
        如需如何使用適用於 CCMSetup.exe 之命令列屬性的詳細資訊，請參閱 [About client installation properties in System Center Configuration Manager](../../../core/clients/deploy/about-client-installation-properties.md) (關於 System Center Configuration Manager 中的用戶端安裝內容)。  
 
@@ -323,6 +323,7 @@ Configuration Manager 用戶端會在收到部署後隨即下載所需軟體的�
 
  當 Configuration Manager 可以使用電腦帳戶的 Windows 驗證或來自受信任來源的 PKI 憑證解決衝突時，便會自動為您解決衝突。 不過，若 Configuration Manager 無法解決衝突，則會使用階層設定，在偵測到重複的硬體識別碼時自動合併記錄 (預設設定)，或是讓您決定何時合併、封鎖或建立新的用戶端記錄。 如果您決定手動管理重複的記錄，則必須使用 Configuration Manager 主控台手動解決衝突的記錄。  
 
+
 #### <a name="to-change-the-hierarchy-setting-for-managing-conflicting-records"></a>若要變更管理衝突記錄的階層設定  
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理]   
@@ -351,6 +352,18 @@ Configuration Manager 用戶端會在收到部署後隨即下載所需軟體的�
     -   [新增] 會為衝突的用戶端記錄建立新記錄。  
 
     -   [封鎖] 會為衝突的用戶端記錄建立新記錄，但會將它標示為已封鎖。  
+
+## <a name="manage-duplicate-hardware-identifiers"></a>管理重複的硬體識別碼
+從 Configuration Manager 1610 版開始，您可以提供一份硬體識別碼清單，讓 Configuration Manager 在 PXE 開機及用戶端註冊時略過這些識別碼。 這麼做有助於解決下列兩個常見的問題。
+
+1. 許多新的裝置 (如 Surface Pro 3) 不包括內建的乙太網路連接埠。 USB 至乙太網路介面卡通常用來建立作業系統部署的有線連線。 不過，基於成本和一般使用性的考量，這通常是共用介面卡。 而該介面卡的 MAC 位址是用來識別裝置，因此每個部署之間，如果沒有額外的系統管理員動作，重複使用介面卡就會產生問題。 現在，使用 Configuration Manager 最新分支 1610 版時，您可以排除這張介面卡的 MAC 位址，以在這種情況下輕鬆重複使用介面卡。
+2. SMBIOS 識別碼應該是唯一的硬體識別碼，但有些專用硬體裝置會建置重複的識別碼。 雖然這種情況不像上述 USB 至乙太網路介面卡的案例那麼常見，但硬體識別碼清單亦可用來解決此問題。
+
+#### <a name="to-add-hardware-identifiers-for-configuration-manager-to-ignore"></a>若要新增 Configuration Manager 要略過的硬體識別碼  
+1. 在 Configuration Manager 主控台中，移至 [管理] > [概觀] > [站台設定] > [站台]。
+2. 在 [首頁]  索引標籤的 [建立]  群組中，按一下 [階層設定] 。
+3. 移至 [用戶端核准和衝突的記錄] 索引標籤。
+4. 在 [重複硬體識別碼] 區段中，按一下 [新增] 以新增硬體識別碼。
 
 ##  <a name="a-namebkmkpolicyretrievala-initiate-policy-retrieval-for-a-configuration-manager-client"></a><a name="BKMK_PolicyRetrieval"></a> 起始 Configuration Manager 用戶端的原則抓取  
  Windows Configuration Manager 用戶端會依照您設定的排程 (用戶端設定) 下載其用戶端原則。 不過，有時候您可能想要從用戶端起始臨機操作原則抓取；例如在進行疑難排解或測試的情況下。  
@@ -440,6 +453,6 @@ Configuration Manager 用戶端會在收到部署後隨即下載所需軟體的�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

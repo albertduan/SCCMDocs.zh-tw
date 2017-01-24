@@ -1,5 +1,5 @@
 ---
-title: "作業系統部署簡介 | Configuration Manager"
+title: "作業系統部署簡介 | Microsoft Docs"
 description: "在 Configuration Manager 環境中部署作業系統之前，請先了解相關概念。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ece68bd30e31595226f154fd1148b0ee55feceaf
+ms.sourcegitcommit: 55a9f1caedcfa810e9a97e43626e4cf5fdbcfa0d
+ms.openlocfilehash: 2baa6b7dbd66ab41bc9b67e8f43c313be233153c
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: ece68bd30e31595226f154fd1148b0ee55feceaf
 
 適用於：System Center Configuration Manager (最新分支)
 
-您可以透過許多不同的方式來使用 Configuration Manager 部署作業系統。 請參閱本節的資訊，以了解如何部署作業系統，並將工作自動化。
+您可以透過許多不同的方式來使用 Configuration Manager 部署作業系統。 請參閱本節的資訊，以了解如何部署作業系統，並將工作自動化。 
 
 ##  <a name="a-namebkmkosdeploymentprocessa-the-operating-system-deployment-process"></a><a name="BKMK_OSDeploymentProcess"></a> 作業系統部署程序  
  Configuration Manager 提供數種可用於部署作業系統的方法。 無論採用哪一種部署方法，都有幾個必須執行的動作：  
@@ -81,7 +81,7 @@ ms.openlocfilehash: ece68bd30e31595226f154fd1148b0ee55feceaf
 ##  <a name="a-namebkmkbootimagesa-boot-images"></a><a name="BKMK_BootImages"></a> 開機映像  
  Configuration Manager 中的開機映像是 Windows PE (WinPE) 映像，在作業系統部署時使用。 開機映像用來以 WinPE 啟動電腦，WinPE 是最低需求的作業系統，內含有限的元件和服務可讓目的地電腦準備好進行 Windows 安裝。 Configuration Manager 提供兩種開機映像：一種支援 x86 平台，另一種支援 x64 平台。 這些皆視為預設開機映像。 您建立並新增至 Configuration Manager 的開機映像會視為自訂映像。 在您更新 Configuration Manager 時可以自動取代預設開機映像。 如需開機映像的詳細資訊，請參閱[管理開機映像](../get-started/manage-boot-images.md)。  
 
-##  <a name="a-namebkmkosimagesa-operating-system-images"></a><a name="BKMK_OSImages"></a> 作業系統映像  
+##  <a name="a-namebkmkosimagesa-operating--system-images"></a><a name="BKMK_OSImages"></a> 作業系統映像  
  Configuration Manager 中的作業系統映像儲存為 Windows 映像 (WIM) 檔案格式，代表經過壓縮的參照檔案和資料夾集合，其為成功在電腦上安裝及設定作業系統所必需。 在所有作業系統部署案例中，您都必須選取作業系統映像。 您可以使用預設的作業系統映像，或從您設定的參照電腦，建置作業系統映像。 如需詳細資訊，請參閱[管理作業系統映像](../get-started/manage-operating-system-images.md)。  
 
 ##  <a name="a-namebkmkosupgradepackagesa-operating-system-upgrade-packages"></a><a name="BKMK_OSUpgradePackages"></a> 作業系統升級套件  
@@ -135,6 +135,6 @@ ms.openlocfilehash: ece68bd30e31595226f154fd1148b0ee55feceaf
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

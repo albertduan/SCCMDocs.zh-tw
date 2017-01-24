@@ -1,5 +1,5 @@
 ---
-title: "管理不執行 System Center Configuration Manager 用戶端裝置相容性的一般工作 | System Center Configuration Manager"
+title: "管理未執行 System Center Configuration Manager 用戶端之裝置上合規性的一般工作 | Microsoft Docs"
 description: "透過處理一些常見的案例，了解 System Center Configuration Manager 相容性設定需要。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f69250fbe51ea8902a0446a613d66be390ea7434
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: e24ef149e2a2648c9a7acaedfaa8f0b5bb173ab3
 
 
 ---
@@ -101,7 +101,7 @@ ms.openlocfilehash: f69250fbe51ea8902a0446a613d66be390ea7434
 
  您現在可以使用 [Common tasks for creating and deploying configuration baselines with System Center Configuration Manager](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md) (以 System Center Configuration Manager 建立及部署設定基準的一般工作) 主題中的資訊，協助您將已建立的設定部署至裝置。  
 
-## <a name="scenarios-for-android-and-samsung-knox-devices-managed-without-the-configuration-manager-client"></a>不使用 Configuration Manager 用戶端管理的 Android 和 Samsung KNOX 裝置案例  
+## <a name="scenarios-for-android-and-samsung-knox-standard-devices-managed-without-the-configuration-manager-client"></a>不使用 Configuration Manager 用戶端管理的 Android 和 Samsung KNOX Standard 裝置案例  
 
 ### <a name="scenario-require-a-password-on-all-android-5-devices"></a>案例：所有的 Android 5 裝置都需要密碼  
  在這個案例中，您要建立 Android 5 裝置的設定項目，但是要求使用者裝置要設定至少 6 個字元的密碼。 而且，如果使用者輸入 5 次不正確的密碼，就會抹除裝置。  
@@ -126,7 +126,6 @@ ms.openlocfilehash: f69250fbe51ea8902a0446a613d66be390ea7434
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

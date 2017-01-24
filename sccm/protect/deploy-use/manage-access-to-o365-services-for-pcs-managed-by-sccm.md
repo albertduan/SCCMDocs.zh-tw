@@ -1,8 +1,8 @@
 ---
-title: "管理受管理電腦對 O365 服務的存取 | System Center Configuration Manager"
+title: "管理受管理電腦的 O365 服務存取權 | Microsoft Docs"
 description: "了解如何針對 System Center Configuration Manager 管理的電腦設定條件式存取。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ccdb424a-b603-4ccc-af36-558924248022
 caps.latest.revision: 15
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: c475c560971ab73e8be7671164a010a91bd3f229
+ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
+ms.openlocfilehash: da5fcd65d7af8d73aa23f4a7d96cd8fc6e48f9dc
 
 
 ---
@@ -30,7 +30,7 @@ ms.openlocfilehash: c475c560971ab73e8be7671164a010a91bd3f229
  從 Configuration Manager 1602 版開始，您可以針對 System Center Configuration Manager 管理的電腦設定條件式存取。  
 
 > [!IMPORTANT]  
->  這是 1602 和 1606 更新版所提供的發行前版本功能。 發行前版本功能會包含在產品內，以便在生產環境中進行早期測試，但不應視為生產環境就緒。 如需詳細資訊，請參閱[使用發行前版本功能](../../core/servers/manage/install-in-console-updates.md#bkmk_prerelease)。
+>  這是 1602、1606 和 1610 更新版所提供的發行前版本功能。 發行前版本功能會包含在產品內，以便在生產環境中進行早期測試，但不應視為生產環境就緒。 如需詳細資訊，請參閱[使用發行前版本功能](../../core/servers/manage/install-in-console-updates.md#bkmk_prerelease)。
 > - 安裝 1602 更新版之後，功能類型會顯示為已發行，不過這是發行前功能。
 > - 如果您接著從 1602 更新至 1606，功能類型會顯示為已發行，不過這仍是發行前功能。
 > - 如果您從 1511 版直接更新至 1606，功能類型會顯示為發行前版本。
@@ -96,16 +96,16 @@ ms.openlocfilehash: c475c560971ab73e8be7671164a010a91bd3f229
 
  Active Directory 安全性使用者群組。 這些使用者群組應該同步處理至 Azure Active Directory。 您也可以在 Office 365 系統管理中心或 Intune 帳戶入口網站中設定這些群組。  
 
- 您可以在每個原則中指定兩種群組類型：  
+ 您可以在每個原則中指定兩種群組類型。 :  
 
--   **目標群組** - 套用原則的使用者群組  
+-   **目標群組** - 套用原則的使用者群組。 您應針對合規性和條件式存取原則使用相同的群組。  
 
 -   **免套用的群組** - 免套用原則的使用者群組 (選擇性)  
     如果使用者隸屬於這兩個群組，他們將免套用原則。  
 
      系統只會評估條件式存取原則設定為目標的群組。  
 
-### <a name="step-3-create-a-conditional-access-policy-for-exchange-online-and-sharepoint-online"></a>步驟 3：  建立 Exchange Online 和 SharePoint Online 的條件式存取原則  
+### <a name="step-3--create-a-conditional-access-policy-for-exchange-online-and-sharepoint-online"></a>步驟 3：  建立 Exchange Online 和 SharePoint Online 的條件式存取原則  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
@@ -126,7 +126,7 @@ ms.openlocfilehash: c475c560971ab73e8be7671164a010a91bd3f229
 6.  按一下 [目標群組] 下方的 [修改]  ，選取要套用原則的 Azure Active Directory 安全性群組。  
 
     > [!NOTE]  
-    >  要套用條件式存取原則的使用者群組也應具有套用到它們的相容性原則。  
+    >  部署合規性政策和條件式存取原則的 [目標群組] 時，應使用相同的安全性使用者群組。  
 
      按一下 [豁免群組] 下方的 [修改]  ，選取豁免此原則的 Azure Active Directory 安全性群組。  
 
@@ -148,6 +148,6 @@ ms.openlocfilehash: c475c560971ab73e8be7671164a010a91bd3f229
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

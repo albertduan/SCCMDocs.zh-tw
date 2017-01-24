@@ -1,5 +1,5 @@
 ---
-title: "功能 | System Center Configuration Manager"
+title: "特色與功能 | Microsoft Docs"
 description: "深入了解 System Center Configuration Manager 的主要管理功能。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fc40912a3da034ac0e3f84c72593aa4a9df8d057
-ms.openlocfilehash: c558148104b6338e4038bf690491c88e76dfdcaf
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 851029368d97312ef2766505f933eac72d6950e5
 
 
 ---
@@ -58,7 +58,7 @@ ms.openlocfilehash: c558148104b6338e4038bf690491c88e76dfdcaf
 
 **使用 Microsoft Intune 的行動裝置管理**  
 
- 您可以透過網際網路使用 Microsoft Intune 服務，進而使用 Configuration Manager 來管理 iOS、Android (包含 Samsung KNOX)、Windows Phone 以及 Windows 裝置。
+ 您可以透過網際網路使用 Microsoft Intune 服務，進而使用 Configuration Manager 來管理 iOS、Android (包含 Samsung KNOX Standard)、Windows Phone 以及 Windows 裝置。
 
  雖然您是使用 Intune 服務，但是管理工作是利用服務站台系統角色 (可透過 Configuration Manager 主控台取得) 來完成。 請參閱[搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](../../../mdm/understand/hybrid-mobile-device-management.md)。  
 
@@ -104,6 +104,6 @@ ms.openlocfilehash: c558148104b6338e4038bf690491c88e76dfdcaf
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

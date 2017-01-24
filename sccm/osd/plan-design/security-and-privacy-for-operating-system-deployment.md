@@ -1,5 +1,5 @@
 ---
-title: "作業系統部署的安全性和隱私權 | Configuration Manager"
+title: "作業系統部署的安全性和隱私權 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 中作業系統部署的安全性和隱私權最佳做法。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7f83b9d30f933c7b8cc0a527e8a65d321b7ee786
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 5632a753fc565312a80b2ed69ce438335b3fad50
 
 
 ---
@@ -210,6 +210,6 @@ ms.openlocfilehash: 7f83b9d30f933c7b8cc0a527e8a65d321b7ee786
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

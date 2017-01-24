@@ -1,5 +1,5 @@
 ---
-title: "使用 Configuration Manager 註冊公司擁有的裝置以進行混合式部署"
+title: "使用 Configuration Manager 註冊公司擁有的裝置以進行混合式部署 | Microsoft Docs"
 description: "了解使用 Configuration Manager 註冊公司擁有的裝置以進行混合式部署的不同方法。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e2754ce6-1460-4ddd-9050-2cc87e7964f4
 caps.latest.revision: 13
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 91f1d0d775236fe4cb6675b1017161520a281df5
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 490b89f8174667d232a2ca3729d36ead8fc4d46c
 
 
 ---
@@ -47,10 +47,10 @@ ms.openlocfilehash: 91f1d0d775236fe4cb6675b1017161520a281df5
 您可以透過匯入國際站移動設備識別碼 (IMEI) 號碼或 iOS 序號，識別公司擁有的裝置。 您可以上傳一個包含裝置 IMEI 編號的逗號分隔值 (.csv) 檔案，也可以手動輸入裝置資訊。  請參閱[使用硬體識別碼與預先宣告裝置](../../mdm/deploy-use/predeclare-devices-with-hardware-id.md)。
 
 ## <a name="see-also"></a>另請參閱  
- [搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](../../mdm/plan-design/hybrid-mobile-device-management.md)
+ [搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](https://docs.microsoft.com/sccm/mdm/understand/hybrid-mobile-device-management)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "管理驅動程式 | Configuration Manager"
+title: "管理驅動程式 | Microsoft Docs"
 description: "使用 Configuration Manager 驅動程式類別目錄匯入裝置驅動程式、將驅動程式分組成不同套件，再將這些套件發佈至發佈點。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 82cddeb0f2f5210f8bf246b0c757e15815f78669
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 361a18b7da8249fc6cccc333f39313a52dd8ab88
 
 
 ---
@@ -198,7 +198,7 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
  使用下列程序，在開機映像中新增或移除裝置驅動程式。  
 
-#### <a name="to-modify-the-device-drivers-associated-with-a-boot-image"></a>修改與開機映像相關聯的裝置驅動程式  
+#### <a name="to-modify-the--device-drivers-associated-with-a-boot-image"></a>修改與開機映像相關聯的裝置驅動程式  
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
@@ -278,6 +278,6 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "我該使用哪個分支 | System Center Configuration Manager"
+title: "應該使用哪個分支 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 可用分支之間的差異。"
 ms.custom: na
 ms.date: 10/12/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bbaaf9ed876f7693ea831be7c787dba904197a62
-ms.openlocfilehash: 3957e854e980246c410f7de27caed9d66fc4829f
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 153caaead350479441d1a94ccaed1b9f3f6c5ffe
 
 
 ---
@@ -74,7 +74,12 @@ LTSB 不會收到提供新功能或更新現有功能的主控台內更新。 �
 若要將 LTSB 安裝為新的站台或從支援的 Configuration Manager 2012 站台升級，請使用 1606 版的[基準媒體](/sccm/core/servers/manage/updates#baseline-and-update-versions) DVD，隨附於 System Center 2016 或 System Center Configuration Manager (最新分支和長期維護分支 1606) 版本。 您可以使用基準媒體來安裝執行 1606 版最新分支的新站台，或執行長期維護分支的新站台。
 
 > [!TIP]  
-> 若要了解 System Center 2016，請參閱 [System Center 2016 文件](https://technet.microsoft.com/system-center-docs/System-Center-2016)。 這份文件也會告訴您如何取得 System Center 2016，但需要 microsoft 軟體授權合約或類似的權限。  您可以從 [TechNet Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-system-center-technical-preview) (TechNet 評估中心) 下載 System Center 2016 評估版。
+> 若要了解 System Center 2016，請參閱 [System Center 2016 文件](https://technet.microsoft.com/system-center-docs/system-center)。 這份文件也會告訴您如何取得 System Center 2016，但需要 microsoft 軟體授權合約或類似的權限。
+
+> 若要在大量授權服務中心 (VLSC) 中尋找 System Center Configuration Manager 1606 版，請前往 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx) 的 [Downloads and Keys] (下載和金鑰) 索引標籤，搜尋 *system center config*，然後選取 [System Center Config Mgr (current branch and LTSB 1606)] (System Center Config Mgr (最新分支與 LTSB 1606))。
+
+>
+ 您可以從 [TechNet Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-system-center-technical-preview) (TechNet 評估中心) 下載 System Center 2016 評估版。
 
 **LTSB 的功能︰**
 -   收到提供重要安全性修正程式的主控台內更新。
@@ -137,6 +142,6 @@ Technical Preview 首度推出的功能，通常會加入最新分支的新更�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

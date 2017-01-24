@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager Technical Preview 1607 中的功能"
+title: "System Center Configuration Manager Technical Preview 1607 中的功能 | Microsoft Docs"
 description: "了解 System Center Configuration Manager Technical Preview 1607 版中可用的功能。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: e3cbc1adc6dc20a9e67adf76472aef0c6cf54ae0
-ms.openlocfilehash: 4d2a9f9b32b898bfe549f2613689c8dbfd22e339
+ms.sourcegitcommit: f6e34e39d267f3bba26d6aa6a912eb4ba4aa3ab2
+ms.openlocfilehash: 1f91cda68204346913bee382a8bbf52b5a58e227
 
 ---
 # <a name="capabilities-in-technical-preview-1607-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1607 中的功能
@@ -57,7 +57,7 @@ Configuration Manager 1602 版中引進了軟體中心的自訂商標。 在 Tec
 
 1. 如果未安裝「應用程式類別目錄網站點」站台伺服器角色，則軟體中心將會顯示 [電腦代理程式] 用戶端設定之 [顯示在軟體中心的組織名稱] 中指定的組織名稱。 如需相關指示，請參閱[如何設定用戶端設定](../../core/clients/deploy/configure-client-settings.md)。
 
-2. 如果未安裝「應用程式類別目錄網站點」站台伺服器角色，則「軟體中心」將會顯示「應用程式類別目錄網站點」站台伺服器角色內容中指定的組織名稱和色彩。 如需詳細資訊，請參閱[應用程式類別目錄網站點的設定選項](../../core/servers/deploy/configure/configuration-options-for-site-system-roles.md#Application-Catalog-website-point)。
+2. 如果未安裝「應用程式類別目錄網站點」站台伺服器角色，則「軟體中心」將會顯示「應用程式類別目錄網站點」站台伺服器角色內容中指定的組織名稱和色彩。 如需詳細資訊，請參閱[應用程式類別目錄網站點的設定選項](../../core/servers/deploy/configure/configuration-options-for-site-system-roles.md#BKMK_ApplicationCatalog_Website)。
 
 3. 如果已設定 Microsoft Intune 訂閱並連線到 Configuration Manager 環境，則軟體中心將會顯示 Intune 訂閱內容中指定的組織名稱、色彩及公司標誌。 如需詳細資訊，請參閱 [Configuring the Microsoft Intune subscription](../../mdm/deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)。
 
@@ -79,6 +79,6 @@ Configuration Manager 1602 版中引進了軟體中心的自訂商標。 在 Tec
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "1606 的新功能 | System Center Configuration Manager"
+title: "1606 版的新功能 | Microsoft Docs"
 description: "下列各節提供 System Center Configuration Manager 1606 版中的變更和推出的新功能。"
 ms.custom: na
 ms.date: 10/09/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0fbce476b8a9b91a88354fb4abfadfd2526ca5e8
-ms.openlocfilehash: 8de28e112a2d7faf1d8aca9b7214498e9a65f919
+ms.sourcegitcommit: f6e34e39d267f3bba26d6aa6a912eb4ba4aa3ab2
+ms.openlocfilehash: 16d10bdf1ddd810800e776c33f3f059899b7f92b
 
 ---
 # <a name="what39s-new-in-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 1606 版的新功能
@@ -164,11 +164,11 @@ OM 連接器是發行前版本的功能。 若要啟用它，請參閱[使用更
 ## <a name="compliance-settings"></a>相容性設定
 
 ### <a name="smart-lock-setting-for-android-devices"></a>Android 裝置的 SmartLock 設定
-[允許 Smart Lock 和其他信任代理程式] 這項新設定已新增至 Android 和 Samsung KNOX 設定項目。
+Android 和 Samsung KNOX Standard 設定項目中已新增 [允許 Smart Lock 及其他信任的代理程式] 這項新設定。
 
 此設定可讓您控制相容 Android 裝置上的 Smart Lock 功能。 此電話功能 (有時也稱為信任代理程式) 可讓您在裝置位於受信任的位置 (例如連線到特定的藍牙裝置或靠近 NFC 標記) 時，停用或略過裝置鎖定畫面密碼。 您可以使用此設定來防止使用者設定 Smart Lock。
 
-如需詳細資料，請參閱[如何為不是使用 System Center Configuration Manager 用戶端所管理的 Android 和 Samsung KNOX 裝置建立設定項目](../../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)。
+如需詳細資訊，請參閱[如何為不是使用 System Center Configuration Manager 用戶端所管理的 Android 和 Samsung KNOX Standard 裝置建立設定項目](../../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)。
 
 ## <a name="device-configuration-and-protection"></a>裝置的設定與保護
 
@@ -218,13 +218,13 @@ Endpoint Protection 可協助管理及監視 Windows Defender 進階威脅防護
 
 您現在可以只使用內部部署基礎結構，啟用 Windows 10 電腦的健康情況證明服務監視，讓沒有網際網路存取的電腦也可以報告裝置健康情況證明 (DHA)。
 
-如需詳細資料，請參閱 [System Center Configuration Manager 的健康情況證明](../../../core/servers/manage/health-attestation.md#How-to-enable-Health-Attestation-service-communication-on-Configuration-Manager-client-computers)。  
+如需詳細資料，請參閱 [System Center Configuration Manager 的健康情況證明](../../../core/servers/manage/health-attestation.md#how-to-enable-health-attestation-service-communication-on-configuration-manager-client-computers)。  
 
 ## <a name="remote-control"></a>遠端控制
 讓使用者在遠端控制工作階段中，從共用剪貼簿傳輸內容之前，有機會接受或拒絕檔案傳輸。 使用者只需要每個工作階段授與權限一次，而檢視人員不能自我授權進行檔案傳輸。 這項新設定位在 [管理] 工作區的 [用戶端設定] 下 [預設設定] 的 [遠端工具] 面板中。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

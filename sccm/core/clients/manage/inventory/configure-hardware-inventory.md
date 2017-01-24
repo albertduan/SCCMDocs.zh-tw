@@ -1,5 +1,5 @@
 ---
-title: "設定硬體清查 | System Center Configuration Manager"
+title: "設定硬體清查 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中設定所有用戶端或集合的硬體清查。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 41bf42228e41785a05359c08e8dfedae48d50e30
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: f39714e53e1b38c162e2c0418356d223432fdd87
 
 
 ---
@@ -51,7 +51,7 @@ ms.openlocfilehash: 41bf42228e41785a05359c08e8dfedae48d50e30
 
     -   [硬體清查排程] - 指定用戶端收集硬體清查的時間間隔。 您可以使用預設值 **7 天** ，或按一下 [排程]  設定自訂的間隔。  
 
-7.  設定您需要的任何其他用戶端設定。 如需可供設定的硬體清查用戶端設定清單，請參閱[關於 Configuration Manager 中的用戶端設定](../../../../core/clients/deploy/about-client-settings.md)主題的[硬體清查](../../../../core/clients/deploy/about-client-settings.md#BKMK_HardwareInventoryDeviceSettings)一節。  
+7.  設定您需要的任何其他用戶端設定。 如需可供設定的硬體清查用戶端設定清單，請參閱[關於 Configuration Manager 中的用戶端設定](../../../../core/clients/deploy/about-client-settings.md)主題的[硬體清查](../../../../core/clients/deploy/about-client-settings.md#hardware-inventory)一節。  
 
 8.  按一下 [確定]  ，關閉 [預設設定]  對話方塊。  
 
@@ -59,6 +59,6 @@ ms.openlocfilehash: 41bf42228e41785a05359c08e8dfedae48d50e30
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

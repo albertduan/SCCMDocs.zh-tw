@@ -1,5 +1,5 @@
 ---
-title: "設定 Endpoint Protection | System Center Configuration Manager"
+title: "設定 Endpoint Protection | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 的用戶端電腦上管理安全性和惡意程式碼。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 5905ab3f63a9956909f3d26136a377ca2f65b71c
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 3678fd1e2ba70ad1cc03a3e0ca294901fae96255
 
 
 ---
@@ -46,6 +46,6 @@ ms.openlocfilehash: 5905ab3f63a9956909f3d26136a377ca2f65b71c
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

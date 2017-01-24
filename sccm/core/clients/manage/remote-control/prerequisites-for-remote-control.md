@@ -1,5 +1,5 @@
 ---
-title: "遠端控制必要條件 | System Center Configuration Manager"
+title: "遠端控制必要條件 | Microsoft Docs"
 description: "取得 System Center Configuration Manager 中遠端控制的必要條件。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 5e15fc7359787b40ebd138fd79dd72081dd8fb36
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: eafa0d85935c2009cc63d17b06ed83a4666d7fac
 
 
 ---
@@ -68,6 +68,6 @@ System Center Configuration Manager 中的遠端控制具有外部相依性和�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

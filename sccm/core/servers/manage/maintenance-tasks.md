@@ -1,5 +1,5 @@
 ---
-title: "維護工作 | System Center Configuration Manager"
+title: "維護工作 | Microsoft Docs"
 description: "了解要針對 Configuration Manager 站台和階層執行哪些維護工作，以及何時執行這些工作。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ac47f1b88a89a42bb51b87b36147b731e37a5824
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 46a24145d28111d7611f393f5806d0d7cc47ed71
 
 
 ---
@@ -142,6 +142,6 @@ System Center Configuration Manager 站台與階層需要定期維護與監視�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "移轉安全性和隱私權 | System Center Configuration Manager"
+title: "移轉安全性和隱私權 | Microsoft Docs"
 description: "取得移轉至 System Center Configuration Manager 環境的安全性最佳做法和隱私權資訊。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 8c47633cfe6a03d881ebd02154ca2ab2e3009b3e
+ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
+ms.openlocfilehash: 8aa6971d75924ab5bcacd70c330913097ecf8717
 
 
 ---
@@ -67,6 +67,6 @@ ms.openlocfilehash: 8c47633cfe6a03d881ebd02154ca2ab2e3009b3e
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

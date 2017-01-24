@@ -1,5 +1,5 @@
 ---
-title: "Azure 的 Configuration Manager | System Center Configuration Manager"
+title: "Azure 上的 Configuration Manager | Microsoft Docs"
 description: "在 Azure 環境上使用 Configuration Manager 的相關資訊。"
 ms.custom: na
 ms.date: 10/21/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6d304ddb87b9c9abe37b5dc9cf4252580cbcf048
-ms.openlocfilehash: d8f8ea98c4383783c95e6425af29987bdee1429a
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 5866c1d9ad88e49b69fa0c863b1ef8748a8c8111
 
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure 的 Configuration Manager - 常見問題集
@@ -80,7 +80,7 @@ ms.openlocfilehash: d8f8ea98c4383783c95e6425af29987bdee1429a
 ### <a name="how-can-i-make-my-database-highly-available-can-i-use-azure-sql-database-or-do-i-have-to-use-microsoft-sql-server-in-a-vm"></a>我該如何讓資料庫具有高可用性？ 我可以使用 Azure SQL Database 嗎？ VM 中必須使用 Microsoft SQL Server 嗎？
 VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援 Azure SQL Server。 但是 SQL server 可以使用 AlwaysOn 可用性群組這類的功能。 從 Configuration Manager 1602 版開始建議使用並正式支援 [AlwaysOn 可用性群組](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database)。
 
-### <a name="can-i-use-azure-load-balancers-with-site-system-roles-like-management-points-or-software-update-points"></a>Azure 負載平衡器可以和如管理點或軟體更新點這樣的站台系統角色一起使用嗎？
+### <a name="can-i-use-azure-load-balancers-with-site-system-roles-like-management-points--or-software-update-points"></a>Azure 負載平衡器可以和如管理點或軟體更新點這樣的站台系統角色一起使用嗎？
 雖然 Configuration Manager 未使用 Azure 負載平衡器測試，但只要是向應用程式開放的功能，應該不會對正常作業有任何負面影響。
 
 
@@ -114,6 +114,9 @@ VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援
 |**最多 25 k**       | 站台伺服器：F4S </br>資料庫伺服器：DS12_V2 | 站台伺服器：1xP30 </br>資料庫伺服器：2xP30 |
 |**25 k 到 50 k**      | 站台伺服器：F4S </br>資料庫伺服器：DS13_V2 | 站台伺服器：1xP30 </br>資料庫伺服器：2xP30 |
 |**50 k 至 100 k**     | 站台伺服器：F8S </br>資料庫伺服器：DS14_V2 | 站台伺服器：2xP30 </br>資料庫伺服器：3xP30 |
+
+下圖顯示 DS14_V2 上 50k 至 100k 之用戶端的設定範例，其在等量磁碟區中有 3xP30 個磁碟，並有不同的邏輯磁碟區以供 Configuration Manager 安裝和資料庫檔案使用： ![VM)disks](media/vm_disks.png)  
+
 
 
 ## <a name="user-experience"></a>使用者體驗
@@ -177,6 +180,6 @@ VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

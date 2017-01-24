@@ -1,5 +1,5 @@
 ---
-title: "設定 Asset Intelligence | System Center Configuration Manager"
+title: "設定 Asset Intelligence | Microsoft Docs"
 description: "在 System Center Configuration Manager 中設定 Asset Intelligence。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 43e04a447b03885286c6c7201afb4d1b7a10aa91
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: ed62dd273dfa5896c0bc0a8f6216755f44ce3513
 
 
 ---
@@ -40,7 +40,7 @@ ms.openlocfilehash: 43e04a447b03885286c6c7201afb4d1b7a10aa91
 |**步驟 5**：設定 Asset Intelligence 維護工作|下列是 Asset Intelligence 的相關維護工作。 預設會啟用這兩個維護工作並設定預設排程。<br /><br /> **使用清查資訊檢查應用程式標題**：此維護工作會檢查軟體清查中回報的軟體項目與 Asset Intelligence 類別目錄中的軟體項目是否一致。<br /><br /> **摘述已安裝的軟體資料**：此維護工作會提供在 [資產與相容性]  工作區 [Asset Intelligence]  節點下 [已清查的軟體]  節點中顯示的資訊。 執行工作時，Configuration Manager 會收集所有已清查的主要站台軟體項目計數。|如需詳細資訊，請參閱本主題的 [Configure Asset Intelligence maintenance tasks](#BKMK_ConfigureMaintenanceTasks)程序。|  
 
 > [!NOTE]  
->   **摘述已安裝的軟體資料** 只可用於主要站台維護工作。  
+>  **摘述已安裝的軟體資料** 只可用於主要站台維護工作。  
 
 ## <a name="supplemental-procedures-for-configuring-asset-intelligence"></a>設定 Asset Intelligence 的補充程序  
  請使用上表步驟的下列資訊。  
@@ -242,7 +242,7 @@ ms.openlocfilehash: 43e04a447b03885286c6c7201afb4d1b7a10aa91
 3.  選取要在其中設定 Asset Intelligence 維護工作的站台。  
 
     > [!NOTE]  
-    >   **摘述已安裝的軟體資料** 只可用於主要站台維護工作。  
+    >  **摘述已安裝的軟體資料** 只可用於主要站台維護工作。  
 
 4.  在 [首頁]  索引標籤的 [設定]  群組中，按一下 [站台維護] 。 隨即出現所有可用的站台維護工作清單。  
 
@@ -260,6 +260,6 @@ ms.openlocfilehash: 43e04a447b03885286c6c7201afb4d1b7a10aa91
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

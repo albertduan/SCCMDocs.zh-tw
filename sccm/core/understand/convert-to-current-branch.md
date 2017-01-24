@@ -1,5 +1,5 @@
 ---
-title: "將長期維護分支升級至最新分支 | System Center Configuration Manager"
+title: "將長期維護分支升級至最新分支 | Microsoft Docs"
 description: "了解如何將長期維護分支站台轉換成最新分支站台。"
 ms.custom: na
 ms.date: 10/12/2016
@@ -16,15 +16,15 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 835469e78e83bb54c43e530303d27b0918c531e6
-ms.openlocfilehash: efccff6e2a0b1708d4124648da4e173d41663bd1
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 37fa8da8b4acc3f22c9c435206eedde58d2754f0
 
 ---
 
 
 # <a name="upgrade-the-long-term-servicing-branch-to-the-current-branch"></a>將長期維護分支升級至最新分支
 
-適用於：System Center Configuration Manager (長期維護分支) 
+適用於：System Center Configuration Manager (長期維護分支)
 
 使用本主題了解如何將執行 Configuration Manager 長期維護分支 (LTSB) 的站台和階層升級 (轉換) 為最新分支。
 
@@ -56,6 +56,6 @@ ms.openlocfilehash: efccff6e2a0b1708d4124648da4e173d41663bd1
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,12 +1,12 @@
 ---
 
-title: "監視軟體更新 | Configuration Manager"
+title: "監視軟體更新 | Microsoft Docs"
 description: "System Center Configuration Manager 主控台提供警示與狀態，以監視更新及相容性。"
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 11/10/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 9afd7b0f-5c8e-48bc-9a65-1f7d74103688
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fe41807cebf87f4e6bab47e41db0ffe7cc83c5d1
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: 956ef263a1c178b5ab5926705859f4b2d0ae5bc7
 
 ---
 # <a name="monitor-software-updates-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中監視軟體更新
@@ -23,6 +23,9 @@ ms.openlocfilehash: fe41807cebf87f4e6bab47e41db0ffe7cc83c5d1
 *適用對象：System Center Configuration Manager (最新分支)*
 
 System Center Configuration Manager 提供多種方式幫助您監視軟體更新物件、程序和相容性資訊。 您可以使用下列各區段來監視軟體更新。
+
+## <a name="software-updates-dashboard"></a>軟體更新儀表板
+從 Configuration Manager 1610 版開始，您可以使用軟體更新儀表板檢視貴組織裝置目前的合規性狀態，並快速分析資料查看哪些裝置有風險。 若要檢視儀表板，請瀏覽至 [監視] > [概觀] > [安全性] > [Software Updates Dashboard] (軟體更新儀表板)。   
 
 ##  <a name="a-namebkmksualertsa-alerts-for-software-updates"></a><a name="BKMK_SUAlerts"></a> 軟體更新的警示  
  您可以設定軟體更新的警示，在軟體更新部署的相容性層級低於設定的百分比時通知系統管理使用者。 您可以在下列位置設定軟體更新部署的警示：  
@@ -98,6 +101,6 @@ System Center Configuration Manager 提供多種方式幫助您監視軟體更�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

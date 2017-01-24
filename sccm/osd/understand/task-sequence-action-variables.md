@@ -1,5 +1,5 @@
 ---
-title: "工作順序動作變數 | Configuration Manager"
+title: "工作順序動作變數 | Microsoft Docs"
 description: "使用順序動作變數 (例如網路設定變數) 指定 Configuration Manager 工作順序中單一步驟的組態設定。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 
 
 ---
@@ -349,6 +349,6 @@ ms.openlocfilehash: cd0e74bff29110f5483c7132ba989d9933e7e223
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

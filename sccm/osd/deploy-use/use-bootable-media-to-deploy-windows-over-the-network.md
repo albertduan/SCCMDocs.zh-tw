@@ -1,5 +1,5 @@
 ---
-title: "透過網路使用可開機媒體部署 Windows | Configuration Manager"
+title: "透過網路使用可開機媒體部署 Windows | Microsoft Docs"
 description: "使用 System Center Configuration Manager 中的可開機媒體部署，以在啟動目的地電腦時部署作業系統。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f5bdba0f609f51b988dbfdc0b0c8b204405f834a
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: beb730efbe4d9bae7c4c97f4e587c8919bd79049
 
 
 ---
@@ -49,11 +49,11 @@ System Center Configuration Manager 中的可開機媒體部署可讓您在啟�
 ## <a name="create-the-bootable-media"></a>建立可開機媒體  
  您可以指定可開機媒體為 USB 快閃磁碟機或 CD/DVD 組。 將啟動媒體的電腦，必須能提供選項供您選擇作為可開機磁碟機。 如需詳細資訊，請參閱[建立可開機媒體](create-bootable-media.md)。  
 
-##  <a name="a-namebkmkdeploya-install-the-operating-system-from-bootable-media"></a><a name="BKMK_Deploy"></a> 從可開機媒體安裝作業系統  
+##  <a name="a-namebkmkdeploya-install-the-operating-system-from--bootable-media"></a><a name="BKMK_Deploy"></a> 從可開機媒體安裝作業系統  
  在電腦的可開機磁碟機中插入可開機媒體，然後打開電源來安裝作業系統。  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

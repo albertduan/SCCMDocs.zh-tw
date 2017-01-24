@@ -1,5 +1,5 @@
 ---
-title: "從 Configuration Manager 2012 變更 | System Center Configuration Manager "
+title: "Configuration Manager 2012 的變更 | Microsoft Docs "
 description: "識別 System Center Configuration Manager 與 System Center 2012 Configuration Manager 中的變更與新功能。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 0f3b68fb17920b0abacc1428c8763ec8c06e6b22
+ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
+ms.openlocfilehash: 3ede76bd60372dcef2b1b3230577ee3c3f1e2dcd
 
 
 ---
@@ -140,7 +140,7 @@ ms.openlocfilehash: 0f3b68fb17920b0abacc1428c8763ec8c06e6b22
 
     -   不使用 Configuration Manager 用戶端管理的 iOS 和 Mac OS X 裝置  
 
-    -   不使用 Configuration Manager 用戶端管理的 Android 和 Samsung KNOX 裝置  
+    -   不使用 Configuration Manager 用戶端管理的 Android 和 Samsung KNOX Standard 裝置  
 
      請參閱[如何建立 System Center Configuration Manager 的組態項目](../../../compliance/deploy-use/create-configuration-items.md)。  
 
@@ -158,7 +158,7 @@ ms.openlocfilehash: 0f3b68fb17920b0abacc1428c8763ec8c06e6b22
 
 -   加入可協助管理大量裝置的裝置註冊管理員角色  
 
-如需 Configuration Manager 及 Intune 的行動裝置管理功能的詳細資訊，請參閱 [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](../../../mdm/plan-design/hybrid-mobile-device-management.md) (搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM))。  
+如需 Configuration Manager 及 Intune 的行動裝置管理功能的詳細資訊，請參閱 [Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune](../../../mdm/understand/hybrid-mobile-device-management.md) (搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM))。  
 
 ## <a name="on-premises-mobile-device-management"></a>內部部署行動裝置管理  
  使用 System Center Configuration Manager，您現在可以使用內部部署 Configuration Manager 基礎結構來管理行動裝置。 所有裝置管理和管理資料都是在內部部署進行處理，且不屬於 Microsoft Intune 或其他雲端服務。 因為 Configuration Manager 用來管理裝置的功能內建於裝置作業系統，所以這類型的裝置管理不需要用戶端軟體。  
@@ -167,6 +167,6 @@ ms.openlocfilehash: 0f3b68fb17920b0abacc1428c8763ec8c06e6b22
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

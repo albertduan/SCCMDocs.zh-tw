@@ -1,5 +1,5 @@
 ---
-title: "設定 Endpoint Protection | System Center Configuration Manager"
+title: "設定 Endpoint Protection | Microsoft Docs"
 description: "了解如何設定 Configuration Manager 來更新並發佈 Windows Defender 的惡意程式碼定義。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: c13ea976057a4267eb6ed0d5c5852b165de868cb
+ms.sourcegitcommit: 180d05d3493f8c4288ad4bf640da15bd599c2072
+ms.openlocfilehash: 783d8352e3e1f06af3a5d8534b4fa811f36fdc17
 
 
 ---
@@ -39,14 +39,14 @@ ms.openlocfilehash: c13ea976057a4267eb6ed0d5c5852b165de868cb
 
 |步驟|詳細資料|  
 |-----------|-------------|  
-|**步驟 1**：建立 Endpoint Protection 點站台系統角色。|必須先安裝 Endpoint Protection 點站台系統角色，才能使用 Endpoint Protection。 其只能安裝在一部站台系統伺服器上，而且必須安裝於管理中心網站或獨立主要站台的階層頂端。 請參閱本主題的[步驟 1：建立 Endpoint Protection 點站台系統角色](../../protect/deploy-use/configure-endpoint-protection.md#BKMK_Step1)。|  
-|**步驟 2**：設定 Endpoint Protection 的警示|當特定事件發生時 (例如惡意程式碼感染)，警示會通知系統管理員。 警示顯示於 [監視]  工作區的 [警示]  節點中，或可以選擇性地透過電子郵件傳送給指定的使用者。 請參閱本主題中的[步驟 2：設定 Endpoint Protection 的警示](../../protect/deploy-use/configure-endpoint-protection.md#BKMK_EPalerts)。|  
-|**步驟 3**：設定 Endpoint Protection 用戶端的定義更新來源。|可將 Endpoint Protection 設定為使用各種不同的來源來下載定義更新。 請參閱本主題中的[步驟 3：設定 Endpoint Protection 的定義更新](../../protect/deploy-use/configure-endpoint-protection.md#BKMK_EPdefs)。|  
+|**步驟 1**：建立 Endpoint Protection 點站台系統角色。|必須先安裝 Endpoint Protection 點站台系統角色，才能使用 Endpoint Protection。 其只能安裝在一部站台系統伺服器上，而且必須安裝於管理中心網站或獨立主要站台的階層頂端。 請參閱[步驟 1：建立 Endpoint Protection 點站台系統角色](../../protect/deploy-use/configure-endpoint-protection.md)。|  
+|**步驟 2**：設定 Endpoint Protection 的警示|當特定事件發生時 (例如惡意程式碼感染)，警示會通知系統管理員。 警示顯示於 [監視]  工作區的 [警示]  節點中，或可以選擇性地透過電子郵件傳送給指定的使用者。 請參閱本主題中的[步驟 2：設定 Endpoint Protection 的警示](../../protect/deploy-use/configure-endpoint-protection.md)。|  
+|**步驟 3**：設定 Endpoint Protection 用戶端的定義更新來源。|可將 Endpoint Protection 設定為使用各種不同的來源來下載定義更新。 請參閱本主題中的[步驟 3：設定 Endpoint Protection 的定義更新](../../protect/deploy-use/configure-endpoint-protection.md)。|  
 |**步驟 4：** 設定預設反惡意程式碼原則，並建立任何自訂反惡意程式碼原則。|安裝 Endpoint Protection 用戶端時，會套用預設反惡意程式碼原則。 根據預設，部署用戶端後 60 分鐘內即會套用任何已部署的自訂原則。 請確定您已設定反惡意程式碼原則，然後才部署 Endpoint Protection 用戶端。請參閱[如何在 System Center Configuration Manager 中建立和部署 Endpoint Protection 的反惡意程式碼原則](../../protect/deploy-use/endpoint-antimalware-policies.md)。|  
-|**步驟 5：** 設定 Endpoint Protection 的自訂用戶端設定。|使用自訂用戶端設定，針對階層中的電腦集合設定 Endpoint Protection 設定。<br /><br /> 注意：請勿設定預設 Endpoint Protection 用戶端設定 (除非您確定要將這些設定套用到階層中的所有電腦)。 請參閱本主題中的[步驟 5：設定 Endpoint Protection 的自訂用戶端設定](../../protect/deploy-use/configure-endpoint-protection.md#BKMK_EPclient)。|  
+|**步驟 5：** 設定 Endpoint Protection 的自訂用戶端設定。|使用自訂用戶端設定，針對階層中的電腦集合設定 Endpoint Protection 設定。<br /><br /> 注意：請勿設定預設 Endpoint Protection 用戶端設定 (除非您確定要將這些設定套用到階層中的所有電腦)。 請參閱[步驟 5：設定 Endpoint Protection 的自訂用戶端設定](../../protect/deploy-use/configure-endpoint-protection.md)。|  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

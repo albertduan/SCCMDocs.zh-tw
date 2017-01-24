@@ -1,5 +1,5 @@
 ---
-title: "Configuration Manager 中針對混合式受管理裝置的使用者親和性"
+title: "Configuration Manager 中針對混合式受管理裝置的使用者親和性 | Microsoft Docs"
 description: "在 Configuration Manager 中設定受管理裝置的使用者親和性。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b5d520a7-e9e5-40ee-91f9-f2684214beb6
 caps.latest.revision: 6
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 789374b48d27ffaaec5ca02a910ca6e1899b3d3c
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 74dcc0f4e680893db804956615248b7e1230d2b5
 
 ---
 # <a name="user-affinity-for-hybrid-managed-devices-in-configuration-manager"></a>Configuration Manager 中針對混合式受管理裝置的使用者親和性
@@ -52,10 +52,10 @@ ms.openlocfilehash: 789374b48d27ffaaec5ca02a910ca6e1899b3d3c
 8.  現在已經完成註冊。 您現在即可使用裝置所含的完整功能。  
 
 ##  <a name="a-namebkmknouaa-managed-devices-without-user-affinity"></a><a name="BKMK_noUA"></a> 沒有使用者親和性的受管理裝置  
- 已設定 [沒有使用者親和性] 的裝置不支援 [公司入口網站]，而且不應該安裝應用程式。 [公司入口網站] 是針對有公司認證且需要存取個人化公司資源 (如電子郵件) 的使用者而設計。 註冊為 [沒有使用者親和性] 的裝置應該不會有專用的使用者登入。 Kiosk、銷售點 (POS)，或共用的工具裝置，皆屬註冊為無使用者親和性的常見案例。 如果需要使用者親和性，請在註冊裝置之前，確認裝置的註冊設定檔已選取 [使用者親和性]。 若要變更裝置的親和性狀態，您必須將裝置停用並重新註冊該裝置。
+ 已設定 [沒有使用者親和性] 的裝置不支援 [公司入口網站]，而且不應該安裝應用程式。 [公司入口網站] 是針對有公司認證且需要存取個人化公司資源 (如電子郵件) 的使用者而設計。 註冊為 [沒有使用者親和性] 的裝置應該不會有專用的使用者登入。 Kiosk、銷售點 (POS)，或共用的工具裝置，皆屬註冊為無使用者親和性的常見案例。 如果需要使用者親和性，請在註冊裝置之前，確認裝置的註冊設定檔已選取 [使用者親和性]。 若要變更裝置的親和性狀態，您必須將裝置淘汰並重新註冊該裝置。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

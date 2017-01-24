@@ -1,5 +1,5 @@
 ---
-title: "套件傳輸管理員 | System Center Configuration Manager"
+title: "套件傳輸管理員 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 的套件傳輸管理員如何將內容從站台伺服器傳輸至遠端發佈點。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e77925ce15f20afe463860a22bf670108bbee344
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 6e61c56b9d1111287bf5a9f22832f6b1ca8146b7
 
 ---
 # <a name="package-transfer-manager-in-system-center-configuration-manager"></a>System Center Configuration Manager 的套件傳輸管理員
@@ -90,6 +90,6 @@ ms.openlocfilehash: e77925ce15f20afe463860a22bf670108bbee344
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

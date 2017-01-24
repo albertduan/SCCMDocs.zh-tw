@@ -1,5 +1,5 @@
 ---
-title: "Windows Hello 企業版設定 | System Center Configuration Manager"
+title: "Windows Hello 企業版設定 | Microsoft Docs"
 description: "了解如何整合 Windows Hello 企業版與 System Center Configuration Manager。"
 ms.custom: na
 ms.date: 10/10/2016
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2a45cfb3e00d8078fbf45bdc8a2668b7dd0a62c6
-ms.openlocfilehash: 80f586763d034891aac9b87dcb38120602aa2b85
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 1f254ee31bae1c3d7b1506e68c40baf78793bf66
 
 
 ---
@@ -109,7 +109,7 @@ Windows Hello 企業版可讓您藉由 **使用者手勢** 登入，而不使用
 
 請注意，除了此設定外，您也必須部署憑證設定檔，如[設定憑證設定檔](#configure-a-certificate-profile)中所述。
 
-### <a name="recommended-approach---configure-a-windows-hello-for-business-profile"></a>建議的方法 - 設定 Windows Hello 企業版設定檔  
+### <a name="recommended-approach----configure-a-windows-hello-for-business-profile"></a>建議的方法 - 設定 Windows Hello 企業版設定檔  
 
 在系統管理員主控台中，以滑鼠右鍵按一下 [公司資源存取] 下的 [Windows Hello 企業版設定檔]，然後選擇 [新增] 啟動設定檔精靈。 提供精靈要求的設定，檢閱及確認最後一頁的設定，然後按一下 [關閉]。 您的設定可能像以下的範例︰  
 
@@ -166,6 +166,6 @@ powershell.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -Command "& {New-ItemP
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

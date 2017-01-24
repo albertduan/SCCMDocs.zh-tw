@@ -1,5 +1,5 @@
 ---
-title: "建立自訂工作順序 | Configuration Manager"
+title: "建立自訂工作順序 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中編輯自訂工作順序，以在工作順序中新增步驟。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 9e41ba8c0f2aad3eba1cb2a8c4fdbbf6fa558f5e
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 03c844084c72fc52806123d9f4c11a410a3ec775
 
 
 ---
@@ -56,6 +56,6 @@ ms.openlocfilehash: 9e41ba8c0f2aad3eba1cb2a8c4fdbbf6fa558f5e
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "自訂作業系統映像 | Configuration Manager"
+title: "自訂作業系統映像 | Microsoft Docs"
 description: "使用擷取組建工作順序、手動設定或兩者的組合，來自訂作業系統映像。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e7e0ecf394297799c2a3d0c14e719182b403e1e8
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: c183fbde6de29ccd7c78ae066d305f0e99e37bda
 
 
 ---
@@ -28,7 +28,7 @@ ms.openlocfilehash: e7e0ecf394297799c2a3d0c14e719182b403e1e8
 
 System Center Configuration Manager 中的作業系統映像為 WIM 檔案，且代表參照檔和資料夾的已壓縮集合，而若要在電腦上順利安裝及設定作業系統，便需要使用該檔案。 自訂作業系統映像的建立及擷取會在參照電腦上完成，同時您必須使用所有必要的作業系統檔案、支援檔案、軟體更新、工具，以及其他軟體應用程式來設定此參照電腦。 手動設定參照電腦到何程度，完全由您決定。 您可以利用組建並擷取工作順序來完全自動設定參照電腦，可以手動設定參照電腦的某些設定，然後再使用工作順序自動執行其他設定，也可以手動設定參照電腦但不使用工作順序。 參閱下列章節來自訂作業系統。
 
-##  <a name="a-namebkmkpreparereferencecomputera-prepare-for-the-reference-computer"></a><a name="BKMK_PrepareReferenceComputer"></a> 為參照電腦做準備  
+##  <a name="a-namebkmkpreparereferencecomputera-prepare-for-the--reference-computer"></a><a name="BKMK_PrepareReferenceComputer"></a> 為參照電腦做準備  
  從參照電腦擷取作業系統映像之前，需要考量一些事項。  
 
 ###  <a name="a-namebkmkrefcomputerdecidea-decide-between-an-automated-or-manual-configuration"></a><a name="BKMK_RefComputerDecide"></a> 決定要進行自動或手動設定  
@@ -140,6 +140,6 @@ System Center Configuration Manager 中的作業系統映像為 WIM 檔案，且
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

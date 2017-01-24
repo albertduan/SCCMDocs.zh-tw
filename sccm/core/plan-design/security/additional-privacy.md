@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 隱私權聲明 - Configuration Manager Cmdlet 程式庫"
+title: "System Center Configuration Manager 隱私權聲明 - 其他資訊 | Microsoft Docs"
 description: "了解 Microsoft 如何收集和使用 System Center Configuration Manager 部署的資料。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -36,8 +36,8 @@ translation.priority.ht:
 - zh-cn
 - zh-tw
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: bcac4e2b6f8377a27417cb2519814ad9e74ee542
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 613b7dbf81de84129e113468d554d8430cbc3182
 
 ---
 # <a name="additional-information-about-privacy-for-system-center-configuration-manager"></a>System Center Configuration Manager 隱私權的其他資訊
@@ -97,7 +97,7 @@ Microsoft 雲端保護服務不會刻意收集個人資訊。 在 Microsoft 雲�
 
 有關所收集資料的其他詳細資訊，請參閱產品文件：[http://go.microsoft.com/fwlink/?LinkId=823547](http://go.microsoft.com/fwlink/?LinkId=823547)。
 
-## <a name="site-hierarchy-geographical-view-with-bing-maps"></a>網站階層 – 使用 Bing 地圖服務進行地理檢視
+## <a name="site-hierarchy--geographical-view-with-bing-maps"></a>網站階層 – 使用 Bing 地圖服務進行地理檢視
 站台階層 – 地理檢視可讓您使用 Microsoft Bing 地圖服務檢視您的 Configuration Manager 實體伺服器拓撲。 為了啟用此功能，您所提供的位置資訊會從您的伺服器傳送至 Bing 地圖服務的網路服務。
 
 Microsoft 使用此資訊來運作和改進 Microsoft Bing 地圖服務以及其他 Microsoft 網站和服務。 如需詳細資訊，請參閱 Microsoft 隱私權聲明：http://go.microsoft.com/fwlink/?LinkId=823548。
@@ -114,6 +114,6 @@ Microsoft Intune 的所有通訊皆使用 HTTPS。 若要設定 Microsoft Intune
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "管理電子郵件存取 | System Center Configuration Manager"
+title: "管理電子郵件存取 | Microsoft Docs"
 description: "了解如何使用 System Center Configuration Manager 條件存取，以管理 Exchange 電子郵件的存取。"
 ms.custom: na
 ms.date: 10/04/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4544088a-4752-4e3a-aa0a-049f10d8f178
 caps.latest.revision: 24
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: c1797910f2b7ceda451c2ccb23f66a4b2bd4b6ff
+ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
+ms.openlocfilehash: 0bbe25598f38f9cf3c15375748fee09c43dfb928
 
 
 ---
@@ -37,7 +37,7 @@ ms.openlocfilehash: c1797910f2b7ceda451c2ccb23f66a4b2bd4b6ff
 
 您可以從下列平台的內建電子郵件用戶端，控制對 Exchange Online 及 Exchange 內部部署的存取：  
 
--   Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本  
+-   Android 4.0 和更新版本、Samsung KNOX Standard 4.0 和更新版本  
 
 -   iOS 7.1 和更新版本  
 
@@ -91,7 +91,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
  您可以在下列平台上，從內建 Exchange ActiveSync 電子郵件用戶端的裝置上封鎖 Exchange 電子郵件的存取。  
 
--   Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本  
+-   Android 4.0 和更新版本、Samsung KNOX Standard 4.0 和更新版本  
 
 -   iOS 7.1 和更新版本  
 
@@ -363,6 +363,6 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

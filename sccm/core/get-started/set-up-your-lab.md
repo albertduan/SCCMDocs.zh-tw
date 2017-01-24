@@ -1,5 +1,5 @@
 ---
-title: "設定 System Center Configuration Manager 實驗室"
+title: "設定 System Center Configuration Manager 實驗室 | Microsoft Docs"
 description: "設定實驗室，以使用模擬實際活動來評估 Configuration Manager。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ea084f30a1a6ec731e97cec46448d0ffbfca42e0
+ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
+ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
 
 
 ---
@@ -29,7 +29,7 @@ ms.openlocfilehash: ea084f30a1a6ec731e97cec46448d0ffbfca42e0
 遵循本主題中的指引可讓您設定實驗室，以使用模擬實際活動來評估 Configuration Manager 。  
 
 ##  <a name="a-namebkmklabcorea-core-components"></a><a name="BKMK_LabCore"></a> 核心元件  
- 設定 System Center Configuration Manager 的環境需要一些核心元件，才能支援 Configuration Manager 安裝。  
+ 設定 System Center Configuration Manager 的環境需要一些核心元件，才能支援 Configuration Manager 安裝。    
 
 -   **實驗室環境會使用 Windows Server 2012 R2** (在其中安裝 System Center Configuration Manager)。  
 
@@ -401,6 +401,6 @@ Internet Information Services (IIS) 是彈性可擴充的網頁伺服器，可�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

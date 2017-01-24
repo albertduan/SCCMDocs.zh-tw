@@ -1,5 +1,5 @@
 ---
-title: "部署 Windows 用戶端 | System Center Configuration Manager"
+title: "部署 Windows 用戶端 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: 341f0d0b-f907-44cf-9e10-e1b41fc15f82
 caps.latest.revision: 13
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 5a52386c6327ded3c5a400c7a046a6a12af96bae
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: daf9ebae82eb5933e211a08d61f0c82a261d4aa7
 
 
 ---
@@ -31,7 +31,7 @@ ms.openlocfilehash: 5a52386c6327ded3c5a400c7a046a6a12af96bae
  安裝 Configuration Manager 用戶端前，請先確定所有必要條件已就緒，而且已完成所有必要的部署設定。 如需詳細資訊，請參閱[在 System Center Configuration Manager 將用戶端部署至 Windows 電腦的必要條件](../../../core/clients/deploy/prerequisites-for-deploying-clients-to-windows-computers.md)。  
 
 
-##  <a name="a-namebkmkclientpusha-how-to-install-configuration-manager-clients-by-using-client-push"></a><a name="BKMK_ClientPush"></a> 如何使用用戶端推入安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkclientpusha-how-to-install-clients-with-client-push"></a><a name="BKMK_ClientPush"></a> 如何使用用戶端推入安裝用戶端  
 
  使用用戶端推入安裝，在 Configuration Manager 探索到的電腦上安裝 Configuration Manager 用戶端軟體。 您可以為網站設定用戶端推入安裝，用戶端安裝將會在網站設定的界限 (如果這些界限已設定為界限群組) 內探索到的電腦上自動執行。 或者，您可以針對特定集合或集合中的資源執行 [用戶端推入安裝精靈]，以起始用戶端推入安裝。  
 
@@ -44,7 +44,7 @@ ms.openlocfilehash: 5a52386c6327ded3c5a400c7a046a6a12af96bae
 > [!IMPORTANT]  
 >  若要順利完成用戶端推入，請確定所有必要條件已就緒。 這些會列於[在 System Center Configuration Manager 中將用戶端部署到 Windows 電腦的先決條件](../../../core/clients/deploy/prerequisites-for-deploying-clients-to-windows-computers.md)中的＜安裝方法相依性＞一節。  
 
-#### <a name="to-configure-the-site-to-automatically-use-client-push-for-discovered-computers"></a>將網站設定為自動針對探索到的電腦使用用戶端推入  
+### <a name="to-configure-the-site-to-automatically-use-client-push-for-discovered-computers"></a>將網站設定為自動針對探索到的電腦使用用戶端推入
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理]   
 
@@ -87,7 +87,7 @@ ms.openlocfilehash: 5a52386c6327ded3c5a400c7a046a6a12af96bae
     > [!NOTE]  
     >  如果您在次要站台上啟用用戶端推入安裝，請確定已將 SMSSITECODE 內容設定為其父主要站台的 Configuration Manager 站台名稱。 如果已延伸 Configuration Manager 的 Active Directory 架構，您也可以將此內容設定為 AUTO，以自動尋找正確的站台指派。  
 
-#### <a name="to-use-the-client-push-installation-wizard"></a>使用用戶端推入安裝精靈  
+### <a name="to-use-the-client-push-installation-wizard"></a>使用用戶端推入安裝精靈
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理]   
 
@@ -132,7 +132,7 @@ ms.openlocfilehash: 5a52386c6327ded3c5a400c7a046a6a12af96bae
 > [!NOTE]  
 >  如果網站未設定為進行用戶端推入，您可以使用精靈安裝用戶端。  
 
-##  <a name="a-namebkmkclientsupa-how-to-install-configuration-manager-clients-by-using-software-update-based-installation"></a><a name="BKMK_ClientSUP"></a> 如何使用以軟體更新為基礎的安裝來安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkclientsupa-how-to-install-clients-with-software-update-based-installation"></a><a name="BKMK_ClientSUP"></a> 如何使用以軟體更新為基礎的安裝安裝用戶端  
  以軟體更新為基礎的用戶端安裝，會將 Configuration Manager 用戶端發佈到軟體更新點，以作為其他軟體更新。 此用戶端安裝方法可用來在尚未安裝用戶端的電腦上安裝 Configuration Manager 用戶端，或升級現有的 Configuration Manager 用戶端。  
 
  如果電腦已安裝 Configuration Manager 用戶端，Configuration Manager 會為用戶端提供可取得軟體更新的軟體更新點伺服器名稱。 此資訊會包含在用戶端原則中。  
@@ -151,7 +151,7 @@ ms.openlocfilehash: 5a52386c6327ded3c5a400c7a046a6a12af96bae
 > [!NOTE]  
 >  如果在軟體安裝後電腦處於暫止的重新啟動狀態，則以用戶端安裝為基礎的軟體更新可能會導致電腦重新啟動。  
 
-#### <a name="to-configure-a-group-policy-object-in-active-directory-domain-services-to-specify-the-software-update-point-for-client-installation-and-software-updates"></a>在 Active Directory 網域服務中設定群組原則物件，以指定用戶端安裝和軟體更新的軟體更新點  
+在 Active Directory 網域服務中設定群組原則物件，以指定用戶端安裝和軟體更新的軟體更新點：  
 
 1.  使用群組原則管理主控台來開啟新的或現有的群組原則物件。  
 
@@ -174,7 +174,7 @@ ms.openlocfilehash: 5a52386c6327ded3c5a400c7a046a6a12af96bae
 
 6.  將群組原則物件指派給您要安裝 Configuration Manager 用戶端及接收軟體更新的電腦。  
 
-#### <a name="to-publish-the-configuration-manager-client-to-the-software-update-point"></a>將 Configuration Manager 用戶端發佈到軟體更新點  
+### <a name="to-publish-the-configuration-manager-client-to-the-software-update-point"></a>將 Configuration Manager 用戶端發佈到軟體更新點  
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理]   
 
@@ -196,7 +196,7 @@ ms.openlocfilehash: 5a52386c6327ded3c5a400c7a046a6a12af96bae
 > [!NOTE]  
 >  Configuration Manager 用戶端的軟體更新不會在有新版本時自動更新。 如果您升級網站 (其中包含新用戶端版本)，您必須重複此程序，並在步驟 6 按一下 [是]  。  
 
-##  <a name="a-namebkmkclientgpa-how-to-install-configuration-manager-clients-by-using-group-policy"></a><a name="BKMK_ClientGP"></a> 如何使用群組原則安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkclientgpa-how-to-install-clients-with-group-policy"></a><a name="BKMK_ClientGP"></a> 如何使用群組原則安裝用戶端  
  您可以使用 Active Directory 網域服務中的群組原則，發佈或指派 Configuration Manager 用戶端以安裝在您企業中的電腦上。 當您使用群組原則將 Configuration Manager 用戶端指派到電腦，用戶端會在電腦初次啟動時安裝。 當您使用群組原則向使用者發佈 Configuration Manager 用戶端時，用戶端會顯示在電腦 [控制台] 中的 [新增或移除程式]，讓使用者進行安裝。  
 
  將 Windows Installer 套件 (CCMSetup.msi) 用於以群組原則為基礎的安裝。 此檔案可在 Configuration Manager 站台伺服器的 **&lt;ConfigMgr 安裝目錄\>\bin\i386** 資料夾中找到。 您無法將內容新增至此檔案以修改安裝行為：  
@@ -210,7 +210,7 @@ ms.openlocfilehash: 5a52386c6327ded3c5a400c7a046a6a12af96bae
 
  如需如何使用 Active Directory 網域服務中的群組原則安裝軟體的詳細資訊，請參閱您的 Windows Server 文件。  
 
-##  <a name="a-namebkmkmanuala-how-to-install-configuration-manager-clients-manually"></a><a name="BKMK_Manual"></a> 如何手動安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkmanuala-how-to-install-clients-manually"></a><a name="BKMK_Manual"></a> 如何手動安裝用戶端  
  您可以使用 CCMSetup.exe 程式，在您企業中的電腦上手動安裝 Configuration Manager 用戶端軟體。 您可以在站台伺服器以及您站台之管理點上 Configuration Manager 安裝資料夾的 [用戶端] 資料夾中，找到此程式及其支援檔案。 這個資料夾會以  
 
  \\\\*&lt;站台伺服器名稱\><bpt id="p1">*</bpt>*\SMS_*&lt;站台碼\>*\Client\  
@@ -244,7 +244,7 @@ CCMSetup.exe /mp:SMSMP01 /logon SMSSITECODE=AUTO FSP=SMSFP01
 
  如需所有 CCMSetup.exe 內容的詳細資訊，請參閱 [About client installation properties in System Center Configuration Manager](../../../core/clients/deploy/about-client-installation-properties.md) (關於 Configuration Manager 中的用戶端安裝內容)  
 
-### <a name="examples-for-installing-configuration-manager-clients-manually"></a>手動安裝 Configuration Manager 用戶端的範例  
+### <a name="examples"></a>範例
  這些範例是針對內部網路上的 Active Directory 用戶端，並且使用下列值來代表站台的不同層面︰  
 
  **MPSERVER** = 裝載管理點的伺服器   
@@ -274,14 +274,14 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 > [!NOTE]  
 >  此範例會覆寫 Active Directory 網域服務可提供的自動設定，不需要在為用戶端指派而設定的界限群組中包含用戶端的網路位置。 安裝程序會指定網站、內部網路管理點和以網際網路為基礎的管理點、接受來自網際網路連線的後援狀態點，並且使用具有最長有效期限的用戶端 PKI 憑證 (如果適用)。  
 
-##  <a name="a-namebkmkclientlogonscripta-how-to-install-configuration-manager-clients-by-using-logon-scripts"></a><a name="BKMK_ClientLogonScript"></a> 如何使用登入指令碼安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkclientlogonscripta-how-to-install-clients-with-logon-scripts"></a><a name="BKMK_ClientLogonScript"></a> 如何使用登入指令碼安裝用戶端  
  Configuration Manager 支援登入指令碼安裝 Configuration Manager 用戶端軟體。 您可以使用登入指令碼中的程式檔案 CCMSetup.exe  觸發用戶端安裝。  
 
  登入指令碼安裝所使用的方式，與手動用戶端安裝相同。 您可以指定 CCMSsetup.exe 的 /logon  安裝內容，如果電腦上已經有任何版本的用戶端，則此安裝內容會阻止用戶端安裝。 如此可預防每次執行登入指令碼時，重新安裝用戶端。  
 
  如果沒有使用 **/Source** 內容來指定安裝來源，而且沒有使用 **/MP** 內容來指定可從中取得安裝的管理點，只要已針對 Configuration Manager 延伸架構並將站台發佈到「Active Directory 網域服務」，CCMSetup.exe 便可透過搜尋「Active Directory 網域服務」來尋找管理點。 此外，用戶端可以使用 DNS 或 WINS 尋找管理點。  
 
-##  <a name="a-namebkmkclientappa-how-to-install-configuration-manager-clients-by-using-a-package-and-program"></a><a name="BKMK_ClientApp"></a> 如何使用封裝和程式安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkclientappa-how-to-install-clients-with-a-package-and-program"></a><a name="BKMK_ClientApp"></a> 如何使用套件及程式安裝用戶端  
  您可以使用 Configuration Manager 來建立和部署套件與程式，將您階層中所選電腦的用戶端軟體升級。 套件定義檔案會在套件內容填入一般常用值的 Configuration Manager 時一併提供。 您可以指定其他命令列內容，以自訂用戶端安裝行為。  
 
 > [!NOTE]  
@@ -291,7 +291,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
  依照下列程序，建立可部署至 Configuration Manager 用戶端電腦的 Configuration Manager 套件和程式，以升級用戶端軟體。  
 
-#### <a name="to-create-a-package-and-program-for-the-client-software"></a>建立用戶端軟體的套件和程式  
+建立用戶端軟體的套件和程式  
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
@@ -314,7 +314,26 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
 9. 將套件發佈至所有您想要裝載用戶端升級套件的發佈點。 然後，您可以將套件部署到包含您要升級之 Configuration Manager 用戶端的電腦集合。  
 
-##  <a name="a-namebkmkclientimagea-how-to-install-configuration-manager-clients-by-using-computer-imaging"></a><a name="BKMK_ClientImage"></a> 如何使用電腦映像安裝 Configuration Manager 用戶端  
+## <a name="how-to-install-clients-to-mdm-managed-windows-devices-with-intune"></a>如何使用 Intune 將用戶端安裝至 MDM 管理的 Windows 裝置
+
+您可以將 Configuration Manager 用戶端安裝檔案部署至使用 Microsoft Intune 註冊的電腦。 若要這樣做，您可以使用 Intune 軟體發佈者建立包含用戶端安裝檔案 **ccmsetup.msi** 的 Windows Installer (\*.msi) 應用程式。 然後，將應用程式部署到註冊的裝置上，如此即會安裝用戶端軟體。
+
+為確保裝置在安裝用戶端軟體後維持在受管理的狀態，裝置必須在公司網路中及 Configuration Manager 站台界限內。 
+
+> [!NOTE]
+> 用戶端軟體安裝之後，裝置就會從 Intune 取消註冊。
+
+### <a name="to-install-clients-with-intune"></a>使用 Intune 安裝用戶端：
+
+1. 在 Intune 中，[建立應用程式](/intune/deploy-use/add-apps-for-mobile-devices-in-microsoft-intune)包含 Configuration Manager 用戶端安裝檔案 **ccmsetup.msi**。
+
+2. 在 Intune 軟體發佈者中使用下列命令列參數︰
+
+  **CCMSETUPCMD="/MP:&lt;管理點的 FQDN> SMSMP=&lt;管理點的 FQDN> SMSSITECODE=&lt;您的站台碼> DNSSUFFIX=&lt;管理點的 DNS 尾碼>"**
+
+3. [部署應用程式](/intune/deploy-use/deploy-apps-in-microsoft-intune)到已註冊的 Windows 電腦。
+
+##  <a name="a-namebkmkclientimagea-how-to-install-clients-with-a-computer-image"></a><a name="BKMK_ClientImage"></a> 如何使用電腦映像安裝用戶端  
  您可以在用來在企業中建置電腦的主要映像電腦上，預先安裝 Configuration Manager 用戶端軟體。 若要在主要電腦上安裝用戶端，請不要為該用戶端指定網站碼。 電腦從此主要映像進行映像處理時，會包含 Configuration Manager 用戶端，且必須在安裝完成時完成站台指派。  
 
 > [!IMPORTANT]  
@@ -324,7 +343,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
  如果用戶端無法查詢 Active Directory 網域服務以找出管理點，就會使用信任的根金鑰來判斷信任的管理點。 如果將所有經過映像處理的用戶端部署在相同的階層中做為主要電腦，則請保留信任的根金鑰不要移除。 如果將用戶端部署在不同的階層中，請移除信任的根金鑰，且做為最佳作法，請以新的受信任根金鑰預先佈建這些用戶端。 如需詳細資訊，請參閱  [Planning for the Trusted Root Key](../../../core/plan-design/security/plan-for-security.md#BKMK_PlanningForRTK)。  
 
-#### <a name="to-prepare-the-client-computer-for-imaging"></a>準備進行映像處理的用戶端電腦  
+### <a name="to-prepare-the-client-computer-for-imaging"></a>準備進行映像處理的用戶端電腦  
 
 1.  在主要映像電腦上手動安裝 Configuration Manager 用戶端軟體。 如需詳細資訊，請參閱 [如何手動安裝 Configuration Manager 用戶端](#BKMK_Manual)。  
 
@@ -341,7 +360,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
 6.  將映像部署到目的地電腦。  
 
-##  <a name="a-namebkmkclientworkgroupa-how-to-install-configuration-manager-clients-on-workgroup-computers"></a><a name="BKMK_ClientWorkgroup"></a> 如何在工作群組電腦上安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkclientworkgroupa-how-to-install-clients-on-workgroup-computers"></a><a name="BKMK_ClientWorkgroup"></a> 如何在工作群組電腦上安裝用戶端  
  Configuration Manager 支援工作群組中電腦的用戶端安裝。 使用 [如何手動安裝 Configuration Manager 用戶端](#BKMK_Manual)中指定的方法，在工作群組電腦上安裝用戶端。  
 
  若要在工作群組電腦上安裝 Configuration Manager 用戶端，必須滿足下列必要條件︰  
@@ -366,7 +385,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
 -   工作群組用戶端無法設定為發佈點。 Configuration Manager 要求發佈點電腦為網域的成員。  
 
-#### <a name="to-install-the-client-on-workgroup-computers"></a>在工作群組電腦上安裝用戶端  
+### <a name="to-install-the-client-on-workgroup-computers"></a>在工作群組電腦上安裝用戶端  
 
 1.  確定您要安裝用戶端的電腦符合上述必要條件。  
 
@@ -382,7 +401,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
     > [!NOTE]  
     >  此範例是要求用戶端位於界限群組中設定的網路位置，以便成功完成自動網站指派。 此命令包含伺服器 FSPSERVER 上的後援狀態點，以協助追蹤用戶端部署，並找出任何用戶端通訊問題。  
 
-##  <a name="a-namebkmkclientinterneta-how-to-install-configuration-manager-clients-for-internet-based-client-management"></a><a name="BKMK_ClientInternet"></a> 如何針對以網際網路為基礎的用戶端管理，安裝 Configuration Manager 用戶端  
+##  <a name="a-namebkmkclientinterneta-how-to-install-clients-for-internet-based-client-management"></a><a name="BKMK_ClientInternet"></a> 如何安裝以網際網路為基礎的用戶端管理用戶端  
  對於有時位於內部網路、有時在網際網路上的用戶端，當 Configuration Manager 站台支援以網際網路為基礎的用戶端管理時，您在內部網路安裝用戶端時有兩個選項：  
 
 -   安裝用戶端時，您可以包含 CCMHOSTNAME=&lt;以網際網路為基礎之管理點的網際網路 FQDN\> 的 Client.msi 內容，例如使用手動安裝或用戶端推入。 使用這種方法時，必須也直接將用戶端指派至網站，且無法使用自動網站指派。 此主題的 [如何手動安裝 Configuration Manager 用戶端](#BKMK_Manual) 一節提供此設定方法的範例。  
@@ -400,7 +419,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
  因為透過網際網路管理的用戶端必須與以網際網路為基礎的網站系統進行通訊，請確保在安裝這些用戶端前，這些用戶端上也安裝了公開金鑰基礎結構 (PKI) 憑證。 您必須獨立於 Configuration Manager 來安裝這些憑證。 如需憑證需求的詳細資訊，請參閱 [System Center Configuration Manager 的 PKI 憑證需求](../../../core/plan-design/network/pki-certificate-requirements.md)。  
 
-#### <a name="to-install-clients-on-the-internet-by-specifying-ccmsetup-command-line-properties"></a>藉由指定 CCMSetup 命令行內容，在網際網路上安裝用戶端  
+### <a name="to-install-clients-on-the-internet-by-specifying-ccmsetup-command-line-properties"></a>藉由指定 CCMSetup 命令行內容，在網際網路上安裝用戶端  
 
 1.  請遵循 [如何手動安裝 Configuration Manager 用戶端](#BKMK_Manual) 一節中的指示，並且必須包含下列：  
 
@@ -430,10 +449,10 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
     > [!NOTE]  
     >  此範例會從 D 磁碟上的資料夾安裝用戶端來源檔案，設定為使用用戶端 PKI 憑證，針對僅在網際網路上執行的用戶端管理選取有效期間最長的憑證，然後將用戶端指派為使用以網際網路為基礎的管理點 (稱為 SERVER1) 以及在 contoso.com 網域中以網際網路為基礎的後援狀態點，並將用戶端指派至 ABC 網站。  
 
-###  <a name="a-namebkmkconfigureibcmmpa-how-to-configure-clients-for-internet-based-client-management-after-client-installation"></a><a name="BKMK_ConfigureIBCM_MP"></a> 如何在安裝用戶端後，針對以網際網路為基礎的用戶端管理設定用戶端  
+###  <a name="a-namebkmkconfigureibcmmpato-configure-clients-for-internet-based-client-management-after-client-installation"></a><a name="BKMK_ConfigureIBCM_MP"></a> 安裝用戶端後，設定以網際網路為基礎的用戶端管理用戶端  
  若要在安裝用戶端後指派以網際網路為基礎的管理點，請使用以下其中一種程序。 第一個程序要求進行手動安裝，因此這適合新的用戶端；若您有許多用戶端需要設定，則第二個程序更適合。  
 
-##### <a name="to-configure-clients-for-internet-based-client-management-after-client-installation-by-assigning-the-internet-based-management-point-in-configuration-manager-properties"></a>指派 Configuration Manager 內容中以網際網路為基礎的管理點，在安裝用戶端後，針對以網際網路為基礎的用戶端管理設定用戶端  
+#### <a name="to-configure-clients-for-internet-based-client-management-after-client-installation-by-assigning-the-internet-based-management-point-in-configuration-manager-properties"></a>指派 Configuration Manager 內容中以網際網路為基礎的管理點，在安裝用戶端後，針對以網際網路為基礎的用戶端管理設定用戶端  
 
 1.  瀏覽至用戶端電腦控制台中的 [Configuration Manager]  ，然後連按兩下，開啟其內容。  
 
@@ -446,7 +465,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
 4.  按一下 [ **確定**]。  
 
-##### <a name="to-configure-clients-for-internet-based-client-management-after-client-installation-by-using-a-script"></a>使用指令碼安裝用戶端後，針對以網際網路為基礎的用戶端管理設定用戶端  
+#### <a name="to-configure-clients-for-internet-based-client-management-after-client-installation-by-using-a-script"></a>使用指令碼安裝用戶端後，針對以網際網路為基礎的用戶端管理設定用戶端  
 
 1.  開啟文字編輯器，例如 [記事本]。  
 
@@ -500,7 +519,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
  Configuration Manager 安裝媒體上提供了名為 ConfigMgrInstallation.adm 的群組原則系統管理範本，可透過安裝內容來佈建用戶端電腦。 利用下列程序，設定此範本並將其指派至組織內的電腦。  
 
-#### <a name="to-configure-and-assign-client-installation-properties-by-using-a-group-policy-object"></a>使用群組原則物件設定與指派用戶端安裝內容  
+### <a name="to-configure-and-assign-client-installation-properties-by-using-a-group-policy-object"></a>使用群組原則物件設定與指派用戶端安裝內容  
 
 1.  使用 Windows 群組原則物件編輯器將系統管理範本 ConfigMgrInstallation.adm 匯入至新增或現有的群組原則物件。  
 
@@ -519,6 +538,6 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

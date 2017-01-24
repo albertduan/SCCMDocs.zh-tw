@@ -1,5 +1,5 @@
 ---
-title: "站台必要條件 | System Center Configuration Manager"
+title: "站台必要條件 | Microsoft Docs"
 description: "了解如何將 Windows 電腦設定為 System Center Configuration Manager 站台系統伺服器。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 0f24fd912b3e65dc0c0074ef1c8f76cc128a716c
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: c3dd761a739b7b55dafefce7fbcd24439b7b292b
 
 ---
 # <a name="site-and-site-system-prerequisites-for-system-center-configuration-manager"></a>System Center Configuration Manager 的站台和站台系統必要條件
@@ -778,6 +778,6 @@ Windows Server 2008 和 Windows Server 2008 R2 現在屬於延伸支援，而不
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

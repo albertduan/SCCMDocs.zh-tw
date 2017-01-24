@@ -1,5 +1,5 @@
 ---
-title: "安裝程式下載程式 | System Center Configuration Manager"
+title: "安裝程式下載程式 | Microsoft Docs"
 description: "請閱讀這個獨立應用程式，設計成確保您的站台安裝使用最新版本的金鑰安裝檔案。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 574e4d450126d2c4411292b6dd52e18049d296f6
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: cbe6ebfa80ff8253ec7ed5ad71852fb5cd7e7d91
 
 ---
 # <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager 的安裝程式下載程式
@@ -98,6 +98,6 @@ ms.openlocfilehash: 574e4d450126d2c4411292b6dd52e18049d296f6
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

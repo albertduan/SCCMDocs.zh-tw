@@ -1,5 +1,5 @@
 ---
-title: "電子郵件設定檔安全性與隱私權 | System Center Configuration Manager"
+title: "電子郵件設定檔安全性和隱私權 | Microsoft Docs"
 description: "了解管理 System Center Configuration Manager 裝置電子郵件設定檔的安全性最佳作法。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 0f6a383681b8b63eec2a6e218911d7c418219ff4
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: d4977a592d9d49a93b974c129d2729d626ed9280
 
 
 ---
@@ -42,6 +42,6 @@ ms.openlocfilehash: 0f6a383681b8b63eec2a6e218911d7c418219ff4
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

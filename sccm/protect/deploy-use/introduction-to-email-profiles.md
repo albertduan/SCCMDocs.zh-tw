@@ -1,5 +1,5 @@
 ---
-title: "電子郵件設定檔簡介 | System Center Configuration Manager"
+title: "電子郵件設定檔簡介 | Microsoft Docs"
 description: "了解如何讓您的使用者以最少的安裝步驟，存取其裝置上的公司電子郵件。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 83066e1f0e3c6536649e9b74ca13562c9d817619
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: b936a0914f8811f755cbb6983fefc063fbc4f97c
 
 
 ---
@@ -38,10 +38,10 @@ ms.openlocfilehash: 83066e1f0e3c6536649e9b74ca13562c9d817619
 
 -   執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 iPhone 裝置  
 
--   執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 IPad 裝置  
+-   執行 iOS 5、iOS 6、iOS 7 與 iOS 8 的 iPad 裝置  
 
 > [!IMPORTANT]  
->  若要將設定檔部署到 iOS、Android Samsung KNOX、Windows Phone 和 Windows 8.1 或 Windows 10 裝置，這些裝置必須註冊 Intune。 如需如何取得已註冊裝置的相關資訊，請參閱 [使用 Microsoft Intune 管理行動裝置](https://technet.microsoft.com/en-us/library/dn646962.aspx)。  
+>  若要將設定檔部署到 iOS、Android Samsung KNOX Standard、Windows Phone 和 Windows 8.1 或 Windows 10 裝置，這些裝置必須在 Intune 註冊。 如需如何取得已註冊裝置的相關資訊，請參閱 [使用 Microsoft Intune 管理行動裝置](https://technet.microsoft.com/en-us/library/dn646962.aspx)。  
 
  除了在裝置上設定電子郵件帳戶外，您也可以設定連絡人、行事曆和工作的同步處理設定。  
 
@@ -49,6 +49,6 @@ ms.openlocfilehash: 83066e1f0e3c6536649e9b74ca13562c9d817619
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

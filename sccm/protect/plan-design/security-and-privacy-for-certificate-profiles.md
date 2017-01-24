@@ -1,5 +1,5 @@
 ---
-title: "憑證設定檔安全性與隱私權 | System Center Configuration Manager"
+title: "憑證設定檔安全性和隱私權 | Microsoft Docs"
 description: "了解管理 System Center Configuration Manager 使用者和裝置憑證設定檔的安全性最佳作法。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 06ab159203e3ee2d3b6da726bc7264445dd41488
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 8673ca3f556feda31aa29653461cd4fbed01409a
 
 
 ---
@@ -52,6 +52,6 @@ ms.openlocfilehash: 06ab159203e3ee2d3b6da726bc7264445dd41488
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

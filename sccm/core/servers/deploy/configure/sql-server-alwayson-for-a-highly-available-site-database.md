@@ -1,5 +1,5 @@
 ---
-title: SQL Server AlwaysOn | System Center Configuration Manager
+title: SQL Server AlwaysOn | Microsoft Docs
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
@@ -15,8 +15,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 9d4d0c741418af29edc586a5d629fc61f86da426
 
 
 ---
@@ -152,15 +152,7 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 
      請參閱 SQL Server 文件中的 [檢視或變更資料庫的復原模式](https://msdn.microsoft.com/library/ms189272\(v=sql.120\).aspx) 。 (可用性群組僅支援 [完整] 模式)。  
 
-3.  使用 SQL Server 來建立您站台資料庫的完整備份，然後︰  
-
-    -   如果您目前的站台資料庫伺服器將不會成為可用性群組的成員，或將不會做為可用性群組的初始主要複本，請將站台資料庫的複本還原到將裝載該群組之主要複本的伺服器。  
-
-    -   如果目前的站台資料庫伺服器將成為可用性群組的成員，請規劃使用此伺服器做為可用性群組的主要複本成員。 當您這樣做時，就不需要將站台資料庫複本還原到此伺服器或另一部伺服器。  
-
-    如需如何完成此步驟的資訊，請參閱 SQL Server 文件中的 [建立完整資料庫備份](https://msdn.microsoft.com/library/ms187510\(v=sql.120\).aspx) 和 [還原資料庫備份 (SQL Server Management Studio)](https://msdn.microsoft.com/library/ms177429\(v=sql.120\).aspx)。  
-
-4.  在將裝載群組之主要複本的伺服器上，使用 **[新增可用性群組精靈]** 來建立可用性群組。 在精靈中：  
+3.  在將裝載群組之主要複本的伺服器上，使用 **[新增可用性群組精靈]** 來建立可用性群組。 在精靈中：  
 
     -   在 [選取資料庫] 頁面上，為您的 Configuration Manager 站台選取資料庫  
 
@@ -174,15 +166,15 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 
     如需詳細資訊，請參閱 SQL Server 文件中的 [使用可用性群組精靈](https://msdn.microsoft.com/library/hh403415\(v=sql.120\).aspx) 。  
 
-5.  設定可用性群組之後，請為主要複本上的站台資料庫設定 **TRUSTWORTHY** 屬性，然後 **[啟用 CLR 整合]**。 如需如何進行這些設定的資訊，請參閱 SQL Server 文件中的 [TRUSTWORTHY 資料庫屬性](https://msdn.microsoft.com/library/ms187861\(v=sql.120\).aspx) 和  [啟用 CLR 整合](https://msdn.microsoft.com/library/ms131048\(v=sql.120\).aspx) 。  
+4.  設定可用性群組之後，請為主要複本上的站台資料庫設定 **TRUSTWORTHY** 屬性，然後 **[啟用 CLR 整合]**。 如需如何進行這些設定的資訊，請參閱 SQL Server 文件中的 [TRUSTWORTHY 資料庫屬性](https://msdn.microsoft.com/library/ms187861\(v=sql.120\).aspx) 和  [啟用 CLR 整合](https://msdn.microsoft.com/library/ms131048\(v=sql.120\).aspx) 。  
 
-6.  採取下列動作來設定可用性群組中的每個次要複本︰  
+5.  採取下列動作來設定可用性群組中的每個次要複本︰  
 
     1.  將目前的主要複本手動容錯移轉至次要複本。 請參閱 SQL Server 文件中的 [執行可用性群組的已規劃手動容錯移轉](https://msdn.microsoft.com/library/hh231018\(v=sql.120\).aspx) 。  
 
     2.  為新主要複本上的資料庫設定 **TRUSTWORTHY** 屬性，然後 **[啟用 CLR 整合]**。  
 
-7.  在所有複本都升級為主要複本且設定好資料庫之後，可用性群組即可與 Configuration Manager 搭配使用。  
+6.  在所有複本都升級為主要複本且設定好資料庫之後，可用性群組即可與 Configuration Manager 搭配使用。  
 
 
 
@@ -220,15 +212,13 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 
 2.  藉由執行 **Preinst.exe /stopsite** 以停止 Configuration Manager 站台。請參閱 [System Center Configuration Manager 的階層維護工具 (Preinst.exe)](../../../../core/servers/manage/hierarchy-maintenance-tool-preinst.exe.md)。  
 
-3.  使用 SQL Server 從主要複本建立站台資料庫的備份，然後將該備份還原到新的次要複本伺服器。 請參閱 SQL Server 文件庫中的 [建立完整資料庫備份](https://msdn.microsoft.com/library/ms187510\(v=sql.120\).aspx) 和 [還原資料庫備份 (SQL Server Management Studio)](https://msdn.microsoft.com/library/ms177429\(v=sql.120\).aspx) 。  
-
-4.  設定每個次要複本。 針對可用性群組中的每個次要複本執行下列動作︰  
+3.  設定每個次要複本。 針對可用性群組中的每個次要複本執行下列動作︰  
 
     1.  將主要複本手動容錯移轉至新的次要複本。 請參閱 SQL Server 文件中的 [執行可用性群組的已規劃手動容錯移轉](https://msdn.microsoft.com/library/hh231018\(v=sql.120\).aspx) 。  
 
     2.  將新伺服器上的資料庫設定成 Trustworthy，然後啟用 CLR 整合。 請參閱 SQL Server 文件中的 [TRUSTWORTHY 資料庫屬性](https://msdn.microsoft.com/library/ms187861\(v=sql.120\).aspx) 和  [啟用 CLR 整合](https://msdn.microsoft.com/library/ms131048\(v=sql.120\).aspx)。  
 
-5.  啟動「站台元件管理員」(**sitecomp**) 和 **SMS_Executive** 服務來重新啟動站台。  
+4.  啟動「站台元件管理員」(**sitecomp**) 和 **SMS_Executive** 服務來重新啟動站台。  
 
 #### <a name="to-remove-a-replica-member-from-the-availability-group"></a>從可用性群組移除複本成員  
 
@@ -270,6 +260,6 @@ ms.openlocfilehash: 570e651d486a6120eb062ef845930445596054da
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

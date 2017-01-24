@@ -1,5 +1,5 @@
 ---
-title: "在 System Center Configuration Manager 中規劃安全性"
+title: "在 System Center Configuration Manager 中規劃安全性 | Microsoft Docs"
 description: "取得 System Center Configuration Manager 的安全性最佳做法與相關資訊。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f38d7275a39d16f9e6cf90334a46668fcc860bc1
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: dc78ecb308d385c04d821f51fc14650b306b5108
 
 
 ---
@@ -315,6 +315,6 @@ Configuration Manager 中受信任根金鑰的功能類似公開金鑰基礎結�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

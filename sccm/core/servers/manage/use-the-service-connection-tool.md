@@ -1,5 +1,5 @@
 ---
-title: "服務連接工具 | System Center Configuration Manager"
+title: "服務連接工具 | Microsoft Docs"
 description: "了解這個工具可讓您連線到 Configuration Manager 雲端服務手動上傳使用資訊。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 5fab3a4834f30d48c5c000a7c95c7006eb8e4785
+ms.sourcegitcommit: b4642186e42745640f088b7046e70019616935ea
+ms.openlocfilehash: 9a5cd5ce3ce6868b44768d3cbe7b7c594f44d42c
 
 
 ---
@@ -29,7 +29,10 @@ ms.openlocfilehash: 5fab3a4834f30d48c5c000a7c95c7006eb8e4785
 
  這個工具可讓您連線到 Configuration Manager 雲端服務來手動上傳您階層的使用資訊，以及下載更新。 必須先上傳使用資料，才能啟用雲端服務來提供您部署的正確更新。  
 
- **使用服務連接工具的必要條件：**  
+## <a name="prerequisites-for-using-the-service-connection-tool"></a>使用服務連接工具的必要條件
+必要條件和已知問題如下。
+
+**必要條件：**
 
 -   您已安裝服務連接點，並且將它設為 **[離線，需要時連線]**。  
 
@@ -50,26 +53,6 @@ ms.openlocfilehash: 5fab3a4834f30d48c5c000a7c95c7006eb8e4785
 
 
 -   您將需要一個擁有足夠可用空間的 USB 磁碟機來儲存檔案和更新 (或其他可在服務連接點電腦之間傳輸檔案的方法)，以及一部能夠存取網際網路的電腦。 (此案例假設您的站台和受管理電腦未直接連線到網際網路)。  
-
-**使用服務連接工具有三個主要步驟：**  
-
-1.  **準備**：這個步驟會將使用方式資料放入 .cab 檔，並將它儲存在 USB 磁碟機 (或指定的其他傳輸位置)。  
-
-2.  **連線**：在這個步驟中，您將於連線到網際網路的遠端電腦上執行工具，以上傳資料與下載更新。  
-
-3.  **匯入**：這個步驟會將 Configuration Manager 的更新匯入站台，供您之後從 Configuration Manager 主控台檢視和安裝更新。  
-
-從版本 1606 開始，當您連接到 Microsoft 時，可以一次上傳多個 .cab 檔案 (每一個從不同階層)，並指定 Proxy 伺服器和 Proxy 伺服器的使用者。   
-
-**若要上傳多個 .cab 檔案：**
- -  將從不同階層匯出的每個 .cab 檔案，放入相同的資料夾。 每個檔案名稱必須是唯一的，您可以視需要手動重新命名。
- -  接著，當您執行要將資料上傳至 Microsoft 的命令時，即可指定包含 .cab 檔案的資料夾 (在 1606 版之前的更新，您一次只能上傳來自單一階層的資料，且此工具會要求您指定資料夾中的 .cab 檔案名稱)。
- -  之後，當您在某階層的服務連接點上執行匯入工作時，工具只會自動匯入該階層的資料。  
-
-**若要指定 Proxy 伺服器：**  
-若要指定 Proxy 伺服器，您可以使用下列選用參數 (如需使用這些參數的詳細資訊，請參閱本主題的＜命令列參數＞一節)：
-  - **-proxyserveruri [FQDN_of_proxy_sever]**  ：使用這個參數可指定要用於此連線的 Proxy 伺服器。
-  -  **-proxyusername [username]**  ：若您必須指定 Proxy 伺服器的使用者，請使用這個參數。
 
 
 
@@ -98,7 +81,30 @@ ms.openlocfilehash: 5fab3a4834f30d48c5c000a7c95c7006eb8e4785
 
 您也必須將 ServiceConnectionTool 資料夾及其所有內容複製到 USB 磁碟機，或在您將用於步驟 3 和 4 的電腦上提供此資料。  
 
-#### <a name="to-use-the-service-connection-tool"></a>使用服務連接工具  
+### <a name="overview"></a>概觀
+**使用服務連接工具有三個主要步驟：**  
+
+1.  **準備**：這個步驟會將使用方式資料放入 .cab 檔，並將它儲存在 USB 磁碟機 (或指定的其他傳輸位置)。  
+
+2.  **連線**：在這個步驟中，您將於連線到網際網路的遠端電腦上執行工具，以上傳資料與下載更新。  
+
+3.  **匯入**：這個步驟會將 Configuration Manager 的更新匯入站台，供您之後從 Configuration Manager 主控台檢視和安裝更新。  
+
+從版本 1606 開始，當您連接到 Microsoft 時，可以一次上傳多個 .cab 檔案 (每一個從不同階層)，並指定 Proxy 伺服器和 Proxy 伺服器的使用者。   
+
+**若要上傳多個 .cab 檔案：**
+ -  將從不同階層匯出的每個 .cab 檔案，放入相同的資料夾。 每個檔案名稱必須是唯一的，您可以視需要手動重新命名。
+ -  接著，當您執行要將資料上傳至 Microsoft 的命令時，即可指定包含 .cab 檔案的資料夾 (在 1606 版之前的更新，您一次只能上傳來自單一階層的資料，且此工具會要求您指定資料夾中的 .cab 檔案名稱)。
+ -  之後，當您在某階層的服務連接點上執行匯入工作時，工具只會自動匯入該階層的資料。  
+
+**若要指定 Proxy 伺服器：**  
+若要指定 Proxy 伺服器，您可以使用下列選用參數 (如需使用這些參數的詳細資訊，請參閱本主題的＜命令列參數＞一節)：
+  - **-proxyserveruri [FQDN_of_proxy_sever]**  ：使用這個參數可指定要用於此連線的 Proxy 伺服器。
+  -  **-proxyusername [username]**  ：若您必須指定 Proxy 伺服器的使用者，請使用這個參數。
+
+
+
+### <a name="to-use-the-service-connection-tool"></a>使用服務連接工具  
 
 1.  在裝載服務連接點的電腦上：  
 
@@ -156,6 +162,6 @@ ms.openlocfilehash: 5fab3a4834f30d48c5c000a7c95c7006eb8e4785
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

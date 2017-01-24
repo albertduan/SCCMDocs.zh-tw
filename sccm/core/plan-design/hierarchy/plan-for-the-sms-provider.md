@@ -1,5 +1,5 @@
 ---
-title: "規劃 SMS 提供者 | System Center Configuration Manager"
+title: "規劃 SMS 提供者 | Microsoft Docs"
 description: "深入了解 SMS 提供者如何協助您管理 System Center Configuration Manager。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: bdf7b9b4ab9e9da25bf32891381f61c94ef28285
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 9b766575739246e05d5affbfeade3c31de95ef98
 
 
 ---
@@ -201,6 +201,6 @@ Windows ADK 安裝可能在每台安裝 SMS 提供者的電腦上，最多會需
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

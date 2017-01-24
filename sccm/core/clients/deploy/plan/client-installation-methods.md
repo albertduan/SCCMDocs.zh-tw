@@ -1,8 +1,8 @@
 ---
-title: "用戶端安裝方法 | System Center Configuration Manager"
+title: "用戶端安裝方法 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 的用戶端安裝方法。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,22 +13,20 @@ ms.topic: get-started-article
 ms.assetid: 51b5964b-374d-4abc-8619-414a9fffad2d
 caps.latest.revision: 9
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 169e7871bc1fbc83964ecb17e277d64ce4fd472c
+ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
+ms.openlocfilehash: a7d5a04cf34c49246f768f9a4757c5da3b4db31a
 
 
 ---
 # <a name="client-installation-methods-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的用戶端安裝方法
 
-*適用對象：System Center Configuration Manager (最新分支)*
+*適用於：System Center Configuration Manager (最新分支)*
 
-您可以使用不同的方法，在企業的 Windows 裝置、UNIX/Linux 伺服器以及 Mac 電腦上安裝 System Center Configuration Manager 用戶端軟體。 您可以根據需求使用其中一種方法或任何方法組合。  
-
- 下列各節簡述每一種用戶端安裝方法的優缺點，可協助您判斷最適合您組織的方法。  
+您可以使用不同的方法來安裝 Configuration Manager (也稱為 ConfigMgr 或 SCCM) 用戶端軟體。 您可以使用其中一種方法或多種方法的組合。 在本主題中，您可以閱讀每種方法的相關資訊，以了解哪種方法最適合您的組織。  
 
 ## <a name="client-push-installation"></a>用戶端推入安裝  
 
@@ -150,6 +148,6 @@ ms.openlocfilehash: 169e7871bc1fbc83964ecb17e277d64ce4fd472c
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "條件式存取 | System Center Configuration Manager"
+title: "條件式存取 | Microsoft Docs"
 description: "了解如何使用 System Center Configuration Manager 中的條件式存取，以協助保護電子郵件及其他服務。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 76d86613-b87f-4fe5-9236-a573e00b613a
 caps.latest.revision: 26
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: 2dad04cb429ac854b5455c2af051f6f7caaadd66
+ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
+ms.openlocfilehash: d33a515ad2bf0a7fb8680447f2bf83544f2eb30f
 
 
 ---
@@ -81,7 +81,7 @@ Exchange Online 條件式存取支援執行下列各項的裝置：
 -   Windows 7.0 或 Windows 8.1 (已加入網域時)
 -   Windows Phone 8.1 和更新版本
 -   iOS 7.1 和更新版本
--   Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本
+-   Android 4.0 和更新版本、Samsung KNOX Standard 4.0 和更新版本
 
  **此外**：
 -   裝置必須加入工作地點，以向 Azure Active Directory 裝置註冊服務 (AAD DRS) 註冊。<br />     
@@ -133,7 +133,7 @@ Exchange 內部部署的條件式存取支援：
 SharePoint Online 條件式存取支援執行下列各項的裝置：
  -   iOS 7.1 和更新版本
  -   Android 4.0 及更新版本
- -   Samsung Knox Standard 4.0 或更新版本
+ -   Samsung KNOX Standard 4.0 或更新版本
 
 **此外**，您也必須為商務用 Skype Online 啟用新式驗證。 請填寫這份 [Connect 表單](https://connect.microsoft.com/office/Survey/NominationSurvey.aspx?SurveyID=17299&ProgramID=8715) ，以註冊加入新式驗證計畫。
 
@@ -145,7 +145,7 @@ SharePoint Online 條件式存取支援執行下列各項的裝置：
  -   Windows 7.0 或 Windows 8.1 (已加入網域時)
  -   Windows Phone 8.1 和更新版本
  -   iOS 7.1 和更新版本
- -   Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本
+ -   Android 4.0 和更新版本、Samsung KNOX Standard 4.0 和更新版本
 
  **此外**：
  -   裝置必須加入工作地點，以向 Azure Active Directory 裝置註冊服務 (AAD DRS) 註冊。
@@ -184,6 +184,6 @@ SharePoint Online 條件式存取支援執行下列各項的裝置：
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

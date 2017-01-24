@@ -1,5 +1,5 @@
 ---
-title: "監視用戶端部署狀態 | System Center Configuration Manager"
+title: "監視用戶端部署狀態 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中監視用戶端部署狀態。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: 20a573b3-53cb-4ed5-bae1-7542f533ed20
 caps.latest.revision: 11
 caps.handback.revision: 0
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 495c95b6add90619881291a551f394511d9eb36d
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 3bc82535955d937e5620ef2963ccc29bfd0124e3
 
 
 ---
@@ -32,8 +32,6 @@ ms.openlocfilehash: 495c95b6add90619881291a551f394511d9eb36d
 >  監視用戶端部署最佳且最可靠的方法是使用 Configuration Manager 主控台 (如本文中所述)。 主控台中 **[監視]** 工作區的 **[用戶端狀態]** 區段，提供正確且即時的用戶端部署狀態。 您可以使用其他工具監視用戶端部署，如 Windows Server 中的伺服器管理員，或是 System Center Operations Manager，但您可能會收到來自一般用戶端安裝活動的警示。 因為用戶端安裝程式 (CCMSetup.exe) 在各種環境執行的方式，所以其他工具可能會產生未正確反應用戶端部署狀態的錯誤警示和警告。  
 
  在主控台的 **[監視]** 工作區中，您可以監視指定集合內用戶端部署的下列狀態︰  
-
--   未開始   
 
 -   相容  
 
@@ -60,7 +58,7 @@ ms.openlocfilehash: 495c95b6add90619881291a551f394511d9eb36d
  若要深入了解進入生產階段前的用戶端部署，請參閱[如何測試 System Center Configuration Manager 的進入生產階段前集合用戶端升級](../../../core/clients/manage/upgrade/test-client-upgrades.md)。
 
  > [!NOTE]
- > 在進入生產階段前集合中，裝載站台系統角色之電腦上的部署狀態可能會報告為 **[未啟動]** ，即使用戶端成功部署也一樣。 當您將用戶端升階為生產階段時，就會正確報告部署狀態。   
+ > 在進入生產階段前集合中，裝載站台系統角色之電腦上的部署狀態可能會報告為 [不符合標準]，即使用戶端已成功部署也一樣。 當您將用戶端升階為生產階段時，就會正確報告部署狀態。   
 
  若要監視部署的用戶端狀態，請參閱[如何在 System Center Configuration Manager 中監視用戶端](../../../core/clients/manage/monitor-clients.md)。  
 
@@ -68,6 +66,6 @@ ms.openlocfilehash: 495c95b6add90619881291a551f394511d9eb36d
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "完成移轉 | System Center Configuration Manager"
+title: "完成移轉 | Microsoft Docs"
 description: "了解在來源階層不再包含資料之後，如何完成移轉至 System Center Configuration Manager 目的地階層。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 862a039ada302c9432fc86d68f5ba9aad360f69b
+ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
+ms.openlocfilehash: 0595ab87222aca543ae67a33c2b9fab780c6160f
 
 
 ---
@@ -62,6 +62,6 @@ ms.openlocfilehash: 862a039ada302c9432fc86d68f5ba9aad360f69b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

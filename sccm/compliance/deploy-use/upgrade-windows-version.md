@@ -1,8 +1,8 @@
 ---
-title: "將 Windows 裝置升級至新版本 | System Center Configuration Manager"
+title: "將 Windows 裝置升級至新版本 | Microsoft Docs"
 description: "自動將執行 Windows 10 桌面版、Windows 10 行動裝置版或 Windows 10 全像攝影版的裝置升級至較新版本。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7ee088f6da266742e7836499a7f0e072bf446a62
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: f14dfb77be7b53e74d53e0c1fc7e7f1731952d40
 
 
 ---
@@ -35,12 +35,13 @@ System Center Configuration Manager **版本升級原則**可讓您自動將執�
 - Windows 10 Holographic
 
 下列是支援的升級路徑：
+
 - 從 Windows 10 專業版到 Windows 10 企業版
 - 從 Windows 10 家用版到 Windows 10 教育版
 - 從 Windows 10 行動裝置版到 Windows 10 行動裝置企業版
 - 從 Windows 10 全像攝影專業版到 Windows 10 全像攝影企業版
 
-裝置必須註冊於 Microsoft Intune。 這項功能目前與執行 Configuration Manager 用戶端軟體的電腦或內部部署 MDM 所管理的電腦不相容。
+裝置必須註冊於 Microsoft Intune 或執行 Configuration Manager 用戶端軟體。 此原則目前與內部部署 MDM 所管理的電腦不相容。
 
 ## <a name="before-you-start"></a>開始之前  
  在開始將裝置升級至最新版本之前，您需要下列其中一項：  
@@ -78,7 +79,7 @@ System Center Configuration Manager **版本升級原則**可讓您自動將執�
 
 6.  完成精靈。  
 
- 新原則會顯示在 [資產與相容性]  工作區的 [Windows 10 版本升級]  節點中。  
+新原則會顯示在 [資產與相容性]  工作區的 [Windows 10 版本升級]  節點中。  
 
 ## <a name="deploy-the-edition-upgrade-policy"></a>部署版本升級原則  
 
@@ -86,14 +87,14 @@ System Center Configuration Manager **版本升級原則**可讓您自動將執�
 
 3.  選取您想要部署的 Windows 10 版本升級原則，然後在 [首頁]  索引標籤的 [部署]  群組中，按一下 [部署] 。  
 
-4.  在 [部署 Windows 10 版本升級]  對話方塊中，選擇您要部署原則的目標使用者或裝置集合，以及原則的評估排程，然後按一下 [確定] 。  
+4.  在 [部署 Windows 10 版本升級] 對話方塊中，選擇您要部署原則的目標集合，以及原則的評估排程，然後按一下 [確定]。 針對使用 Configuration Manager 用戶端所管理的電腦，您必須將原則部署到裝置集合。 針對已向 Intune 註冊的電腦，您可以將原則部署到使用者或裝置集合。 
 
- 您可以從 [監視]  工作區的 [部署]  節點監視您剛剛建立的部署。  
+您可以從 [監視]  工作區的 [部署]  節點監視您剛剛建立的部署。  
 
- 原則達到目標的 Windows 電腦之後，電腦便會在兩個小時內重新啟動，套用升級。 確定通知任何您要部署原則的使用者，或排程在非使用者工作時間執行原則。
+ 原則到達目標的 Windows 電腦並進行評估之後，電腦便會在兩個小時內重新啟動以套用升級。 確定通知任何您要部署原則的使用者，或排程在非使用者工作時間執行原則。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

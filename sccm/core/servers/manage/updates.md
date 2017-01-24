@@ -1,5 +1,5 @@
 ---
-title: "更新 | System Center Configuration Manager"
+title: "更新 | Microsoft Docs"
 description: "了解稱為「更新和服務」的主控台內服務方式，可讓您輕鬆尋找並安裝建議的更新。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: cfb523c6198e4ac2782de6fa8a8654050a283ca7
-ms.openlocfilehash: 7684c4b9a2a12ed7b9ddcddffe1125b3d47daa36
+ms.sourcegitcommit: 6e964f015d5f007311f46f51126b31e181abd0ec
+ms.openlocfilehash: e7b19b6e1f4720c0bdc69ef7f78366fd5d3414d0
 
 
 ---
@@ -38,6 +38,8 @@ System Center Configuration Manager 使用稱為**更新和服務**的主控台�
 
 -   [使用 Hotfix 安裝程式來安裝 System Center Configuration Manager 更新](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)  
 
+> [!TIP]  
+> 如果您使用 Technical Preview 分支，請參閱 [System Center Configuration Manager 的 Technical Preview](/sccm/core/get-started/technical-preview) 以了解該分支特有的其他資訊。
 
 ##  <a name="a-namebkmkbaselinesa-baseline-and-update-versions"></a><a name="bkmk_Baselines"></a> 基準和更新版本  
  初始版本的 System Center Configuration Manager 最新分支是 1511 版本。 這是基準版本︰  
@@ -72,12 +74,13 @@ System Center Configuration Manager 使用稱為**更新和服務**的主控台�
 |**1602**<br /><br /> 5.00.8355.1000|3/11/2016|否|是|
 |**1606**<br /><br /> 5.00.8412.1000|7/22/2016|否|是|
 |**1606** 與 1606 Hotfix 彙總套件 (KB3186654) </br></br>5.00.8412.1307 *(注意 1)* |10/12/2016|是|否|
+|**1610**<br /><br /> 5.00.8458.1000|11/18/2016|否|是|
 *(注意 1)* 這個 1606 基準媒體是 Microsoft System Center 2016 或 System Center Configuration Manager (最新分支和長期維護分支 1606) 版本的一部分。
 
 要檢查您 Configuration Manager 站台的版本，請移至主控台左上角的 **關於 System Center Configuration Manager** (會顯示新站台和主控台版本)。  
 
 ##  <a name="a-namebkmkinconsolea-in-console-updates-and-servicing"></a><a name="bkmk_inconsole"></a> 主控台內更新及服務  
- 當您使用 System Center Configuration Manager 的生產環境就緒安裝時，也請參考最新分支，您安裝的大部分更新在更新及服務通道中均有提供。 這個方法會識別、下載和提供適用於您目前基礎結構版本和組態的更新，且僅會包括 Microsoft 建議所有客戶進行的更新。   
+ 當您使用 System Center Configuration Manager 的生產環境就緒安裝 (也稱為最新分支) 時，您安裝的大部分更新在更新及服務通道中均有提供。 這個方法會識別、下載和提供適用於您目前基礎結構版本和組態的更新，且僅會包括 Microsoft 建議所有客戶進行的更新。   
  它們包括：  
 
 -   新版本，例如版本 1602  
@@ -130,16 +133,16 @@ Configuration Manager 會在您同步服務連接點站台系統角色與 Micros
 
 您可使用下列方式之一，手動安裝這些修正程式：  
 
--   **更新註冊工具：** 此工具可手動將 Hotfix 匯入您的 Configuration Manager 主控台並在此處安裝，如同自動探索的主控台內更新。 使用下列檔案名稱結構的更新會使用此方式： **.update.exe**。  此類型的 Hotfix 完整名稱為：**&lt;產品\>-&lt;產品版本\>-&lt;知識庫文章識別碼\>-ConfigMgr.Update.exe**  
+-   **更新註冊工具：** 此工具可手動將 Hotfix 匯入您的 Configuration Manager 主控台並在此處安裝，如同自動探索的主控台內更新。 使用下列檔案名稱結構的更新會使用此方式： **.update.exe**。  此類型的 Hotfix 完整名稱為：**&lt;產品\>-&lt;產品版本\>-&lt;知識庫文章識別碼\>-ConfigMgr.Update.exe**。  
 
      如需詳細資訊，請參閱[使用更新註冊工具將 Hotfix 匯入 System Center Configuration Manager](../../../core/servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)。  
 
--   **Hotfix 安裝程式：** 此工具用來手動安裝無法使用主控台內方式安裝的 Hotfix。 使用下列檔案名稱結構的修正程式可使用此方式： **&lt;產品\>-&lt;產品版本\>-&lt;知識庫文章識別碼\>-&lt;平台\>-&lt;語言\>.exe**  
+-   **Hotfix 安裝程式：** 此工具用來手動安裝無法使用主控台內方式安裝的 Hotfix。 使用下列檔案名稱結構的修正程式可使用此方式： **&lt;產品\>-&lt;產品版本\>-&lt;知識庫文章識別碼\>-&lt;平台\>-&lt;語言\>.exe**。
 
-     如需詳細資訊，請參閱[使用 Hotfix 安裝程式來安裝 System Center Configuration Manager 更新](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)  
+     如需詳細資訊，請參閱[使用 Hotfix 安裝程式來安裝 System Center Configuration Manager 更新](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)。
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

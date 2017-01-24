@@ -1,5 +1,5 @@
 ---
-title: "來源階層策略 | System Center Configuration Manager"
+title: "來源階層策略 | Microsoft Docs"
 description: "在您的 System Center Configuration Manager 環境中設定移轉作業之前，必須先設定來源階層，並且至少從該階層中的一個來源站台收集資料。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 11ab1dc90c3e26b159346693b8e85a182219daf4
+ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
+ms.openlocfilehash: 39f258ac271bec53b9a2cb2c8bb376ef5ba23e11
 
 
 ---
@@ -116,6 +116,6 @@ ms.openlocfilehash: 11ab1dc90c3e26b159346693b8e85a182219daf4
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

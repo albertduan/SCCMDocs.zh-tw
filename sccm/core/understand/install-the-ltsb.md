@@ -1,5 +1,5 @@
 ---
-title: "使用 1606 基準媒體來安裝站台  | System Center Configuration Manager"
+title: "使用 1606 基準媒體來安裝站台 | Microsoft Docs"
 description: "了解如何使用 1606 基準媒體來為 System Center Configuration Manager 安裝或升級站台。"
 ms.custom: na
 ms.date: 10/12/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5e97fbcdc21022e98b4cbdb198273dfe544a561f
-ms.openlocfilehash: 3df46a00f2208ffa687c8c99ce610266e206eef0
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: a80095fb3b227653126a028ab4ab8f4e2dbd612b
 
 
 ---
@@ -83,7 +83,7 @@ ms.openlocfilehash: 3df46a00f2208ffa687c8c99ce610266e206eef0
   **索引鍵名稱：SABranchOptions**
    -    **SSActive = 1**
    - **CurrentBranch = 1**
- 
+
 
 > [!IMPORTANT]  
 > **SABranchOptions** 只能搭配基準媒體的安裝程式。 如果您是從先前使用 1606 基準媒體安裝之站台的 CD.Latest 資料夾執行安裝程式，即不適用此方法。
@@ -148,6 +148,6 @@ CD.Latest 資料夾中的媒體不支援下列作業︰
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

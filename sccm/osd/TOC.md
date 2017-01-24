@@ -1,17 +1,17 @@
-# [了解](understand/introduction-to-operating-system-deployment.md)
+# 了解和探索
 ## [作業系統部署簡介](understand/introduction-to-operating-system-deployment.md)
 ## [工作順序步驟](understand/task-sequence-steps.md)
 ## [工作順序動作變數](understand/task-sequence-action-variables.md)
 ## [工作順序內建變數](understand/task-sequence-built-in-variables.md)
 ## [工作順序媒體的啟動前置命令](understand/prestart-commands-for-task-sequence-media.md)
 
-# [規劃和設計](plan-design/infrastructure-requirements-for-operating-system-deployment.md)
+# 規劃和設計
 ## [作業系統部署的基礎結構需求](plan-design/infrastructure-requirements-for-operating-system-deployment.md)
 ## [自動化工作的規劃考量](plan-design/planning-considerations-for-automating-tasks.md)
 ## [作業系統部署的安全性和隱私權](plan-design/security-and-privacy-for-operating-system-deployment.md)
 ## [規劃作業系統部署互通性](plan-design/planning-for-operating-system-deployment-interoperability.md)
 
-# [開始使用](get-started/prepare-site-system-roles-for-operating-system-deployments.md)
+# 開始使用
 ## [準備作業系統部署的站台系統角色](get-started/prepare-site-system-roles-for-operating-system-deployments.md)
 ## [準備作業系統部署](get-started/prepare-for-operating-system-deployment.md)
 ### [管理開機映像](get-started/manage-boot-images.md)
@@ -28,7 +28,7 @@
 
 ## [準備 Windows PE 對等快取以減少 WAN 流量](get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic.md)
 
-# [部署和使用](deploy-use/scenarios-to-deploy-enterprise-operating-systems.md)
+# 部署和使用
 ## [部署企業作業系統的案例](deploy-use/scenarios-to-deploy-enterprise-operating-systems.md)
 ### [將 Windows 升級至最新版本](deploy-use/upgrade-windows-to-the-latest-version.md)
 ### [使用新的 Windows 版本重新整理現有的電腦](deploy-use/refresh-an-existing-computer-with-a-new-version-of-windows.md)
@@ -54,8 +54,10 @@
 ### [建立工作順序以擷取和還原使用者狀態](deploy-use/create-a-task-sequence-to-capture-and-restore-user-state.md)
 ### [使用工作順序以管理虛擬硬碟](deploy-use/use-a-task-sequence-to-manage-virtual-hard-disks.md)
 
-## [建立自訂工作順序](deploy-use/create-a-custom-task-sequence.md)
+## [自訂工作順序案例](deploy-use/custom-task-sequence-scenarios.md)
+### [建立自訂工作順序](deploy-use/create-a-custom-task-sequence.md)
 ### [建立非作業系統部署的工作順序](deploy-use/create-a-task-sequence-for-non-operating-system-deployments.md)
+### [管理 BIOS 到 UEFI 轉換的工作順序步驟](deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion.md)
 
 ## [建立工作順序媒體](deploy-use/create-task-sequence-media.md)
 ### [建立獨立媒體](deploy-use/create-stand-alone-media.md)
@@ -64,6 +66,6 @@
 ### [建立擷取媒體](deploy-use/create-capture-media.md)
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

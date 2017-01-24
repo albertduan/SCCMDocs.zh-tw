@@ -1,8 +1,8 @@
 ---
-title: "保護資料和站台的基礎結構 | System Center Configuration Manager"
+title: "保護資料和站台基礎結構 | Microsoft Docs"
 description: "了解如何使用 System Center Configuration Manager 保護您組織的資源，避免暴露或遭受惡意攻擊。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/27/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 366a3626e2ab4894bbb515176890d508761b6561
+ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
+ms.openlocfilehash: c80750358d64cf87f8a3ce3a4c4f4030a9dfd742
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: 366a3626e2ab4894bbb515176890d508761b6561
 適用於：System Center Configuration Manager (最新分支)
 
 
-您希望使用者能夠安全存取貴組織的資源，所以基礎結構和資料都要受到保護，以免遭受揭露或惡意攻擊的傷害。 這些主題中的資訊會說明如何啟用該存取權，以及如何協助保護貴組織的資源。  
+您希望使用者能夠安全存取貴組織的資源，所以基礎結構和資料都要受到保護，以免遭受揭露或惡意攻擊的傷害。 這些主題中的資訊會說明如何使用 System Center Configuration Manager (也稱為 ConfigMgr 或 SCCM) 來啟用該存取權，以及如何協助保護組織的資源。  
 
 -   您可以使用 VPN 設定檔啟用 VPN 連線，降低使用者連線到公司資源的困難度。 深入了解 [System Center Configuration Manager 中的 VPN 設定檔](../deploy-use/vpn-profiles.md)。  
 
@@ -44,6 +44,6 @@ ms.openlocfilehash: 366a3626e2ab4894bbb515176890d508761b6561
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

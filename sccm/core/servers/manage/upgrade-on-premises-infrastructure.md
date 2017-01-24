@@ -1,5 +1,5 @@
 ---
-title: "升級內部部署基礎結構 | System Center Configuration Manager"
+title: "升級內部部署基礎結構 | Microsoft Docs"
 description: "了解如何升級基礎結構 (例如 SQL Server 和站台系統的站台作業系統)。"
 ms.custom: na
 ms.date: 10/28/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c8115fba0722fc902e60ce201d8a9914036c1245
-ms.openlocfilehash: 1239bf81991bb233a9640606bb47f598a70d5e50
+ms.sourcegitcommit: 8b4c80aa092369ec251757d82a1b4bb2863aa96a
+ms.openlocfilehash: f3742dcb930444bab7eb02374fd77ebd0e455734
 
 
 ---
@@ -78,7 +78,7 @@ ms.openlocfilehash: 1239bf81991bb233a9640606bb47f598a70d5e50
 3. 展開 [根目錄] 下方的樹狀結構，並選取 [SMS] 節點，然後按一下 [安全性]。  確定 **SMS Admins** 群組具有下列權限︰
   -     啟用帳戶
   -     遠端啟用
-4. 接下來，在 [安全性] 索引標籤上，於 SMS 節點下選取 **site_<sitecode>** 節點，然後按一下 [安全性]。 確定 **SMS Admins** 群組具有下列權限︰
+4. 接下來，在 [安全性] 索引標籤上，於 SMS 節點下選取 **site_&lt;站台碼>** 節點，然後按一下 [安全性]。 確定 **SMS Admins** 群組具有下列權限︰
   -   執行方法
   -   提供者寫入
   -   啟用帳戶
@@ -176,6 +176,19 @@ ms.openlocfilehash: 1239bf81991bb233a9640606bb47f598a70d5e50
  2. 先升級次要站台，再升級次要站台的父主要站台。
  3. 最後升級父主要站台。 這包括向管理中心網站以及為階層之頂層站台的獨立主要站台報告的二個子主要站台。
 
+**SQL Server 基數估計層級和站台資料庫：**   
+從舊版 SQL Server 升級站台資料庫時，資料庫會保留其現有 SQL 基數估計 (CE) 層級 (如果它處於該 SQL Server 執行個體允許的最小層級)。 升級資料庫相容性層級低於允許層級的 SQL Server 時，會自動將資料庫設定成 SQL 所允許的最低相容性層級。
+
+下表識別 Configuration Manager 站台資料庫的建議相容性層級︰
+
+|SQL Server 版本 | 支援的相容性層級 |建議層級|
+|----------------|--------------------|--------|
+| SQL Server 2016| 130, 120, 110, 100 | 130|
+| SQL Server 2014| 120, 110, 100      | 110|
+
+若要識別站台資料庫中所使用的 SQL Server CE 相容性層級，請在站台資料庫伺服器上執行下列 SQL 查詢：**SELECT name, compatibility_level FROM sys.databases**
+
+ 如需 SQL CE 相容性層級和其設定方式的詳細資訊，請參閱 [ALTER DATABASE 相容性層級 (Transact-SQL)](https://msdn.microsoft.com/library/bb510680.aspx)。
 
 
 **如需 SQL Server 的詳細資訊，請參閱 TechNet 上的 SQL Server 文件：**  
@@ -196,6 +209,6 @@ ms.openlocfilehash: 1239bf81991bb233a9640606bb47f598a70d5e50
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

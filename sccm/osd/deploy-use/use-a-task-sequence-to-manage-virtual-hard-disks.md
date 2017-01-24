@@ -1,5 +1,5 @@
 ---
-title: "使用工作順序管理虛擬硬碟 | Configuration Manager"
+title: "使用工作順序以管理虛擬硬碟 | Microsoft Docs"
 description: "建立和修改 VHD、新增應用程式和軟體更新，並將 VHD 從 Configuration Manager 發行至 System Center Virtual Machine Manager (VMM)。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e0ba309d8efc34cccce6acc4c59f0c4d218a617a
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
 
 
 ---
@@ -331,6 +331,6 @@ ms.openlocfilehash: e0ba309d8efc34cccce6acc4c59f0c4d218a617a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

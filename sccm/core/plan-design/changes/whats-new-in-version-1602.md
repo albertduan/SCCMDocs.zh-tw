@@ -1,5 +1,5 @@
 ---
-title: "1602 的新功能 | System Center Configuration Manager"
+title: "1602 版的新功能 | Microsoft Docs"
 description: "下列各節提供 System Center Configuration Manager 1602 版中的變更和推出的新功能。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: 0803a13bb58f0d02803c34e6a3cb20f5e6ba60b7
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 4d7b93c95730edde3af254e813c72df279c7285d
 
 ---
 # <a name="what39s-new-in-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 1602 版的新功能
@@ -114,10 +114,10 @@ System Center Configuration Manager 1602 更新，是只能從執行版本為 15
 
  如需詳細資料，請參閱[如何為不是使用 System Center Configuration Manager 用戶端所管理的 Windows 8.1 和 Windows 10 裝置建立組態項目](../../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)。  
 
-### <a name="kiosk-mode-settings-for-android-samsung-knox-devices"></a>Android Samsung KNOX 裝置的 Kiosk 模式設定  
- Kiosk 模式允許您限制裝置只能執行某些特定功能。 例如，您可以允許裝置只執行您指定的一個受管理應用程式，也可以停用裝置上的音量按鈕。 這些設定可能用於裝置的展示模型，或是專用來只執行一個功能的裝置 (例如銷售點裝置)。 在 Configuration Manager 中，您現在可以為 Samsung KNOX 裝置指定 Kiosk 模式。  
+### <a name="kiosk-mode-settings-for-android-samsung-knox-standard-devices"></a>Android Samsung KNOX Standard 裝置的 Kiosk 模式設定  
+ Kiosk 模式允許您限制裝置只能執行某些特定功能。 例如，您可以允許裝置只執行您指定的一個受管理應用程式，也可以停用裝置上的音量按鈕。 這些設定可能用於裝置的展示模型，或是專用來只執行一個功能的裝置 (例如銷售點裝置)。 您現在可以在 Configuration Manager 中，為 Samsung KNOX Standard 裝置指定 Kiosk 模式。  
 
- 如需詳細資料，請參閱[如何為不是使用 System Center Configuration Manager 用戶端所管理的 Android 和 Samsung KNOX 裝置建立設定項目](../../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)。  
+ 如需詳細資訊，請參閱[如何為不是使用 System Center Configuration Manager 用戶端所管理的 Android 和 Samsung KNOX Standard 裝置建立設定項目](../../../compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)。  
 
 ## <a name="conditional-access"></a>條件式存取  
 
@@ -225,6 +225,6 @@ Configuration Manager 可以要求執行 iOS 7.1 和更新版本之受監督和�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

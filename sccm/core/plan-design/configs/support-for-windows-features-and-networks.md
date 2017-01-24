@@ -1,5 +1,5 @@
 ---
-title: "Windows 功能支援 | System Center Configuration Manager"
+title: "Windows 功能的支援 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 所支援的 Windows 和網路功能。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: e20ad43d9e1e16ef11df0d48d9982db5c53226e1
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 29e4f8a70b56b772a54ee858a392533780ccbaf9
 
 
 ---
@@ -134,6 +134,6 @@ Configuration Manager 不支援透過 DirectAccess 進行下列作業：
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

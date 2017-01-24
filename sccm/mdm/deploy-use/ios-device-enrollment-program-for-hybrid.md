@@ -1,5 +1,5 @@
 ---
-title: "適用於 Configuration Manager 混合式部署的 iOS 裝置註冊計畫 (DEP) 註冊"
+title: "適用於 Configuration Manager 混合式部署的 iOS 裝置註冊計畫 (DEP) 註冊 | Microsoft Docs"
 description: "啟用 iOS 裝置註冊計畫 (DEP) 註冊，以使用 Intune 進行 Configuration Manager 混合式部署。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 78d44adc-9b1c-4bc6-b72d-e93873916ea6
 caps.latest.revision: 9
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 730b0e6b0ad9eb0ee3bf58c9419920c3a28a27d1
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 0421589d928a88eee6f4629726fbd0171aba7436
 
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>適用於 Configuration Manager 混合式部署的 iOS 裝置註冊計畫 (DEP) 註冊
@@ -91,22 +91,18 @@ ms.openlocfilehash: 730b0e6b0ad9eb0ee3bf58c9419920c3a28a27d1
 
             -   **停用** - 允許從 [設定] 功能表中移除管理設定檔。  
 
-            -   啟用 - (需要**準備模式** = 受監督) 停用允許移除管理設定檔的 iOS 設定。  
+            -   **啟用** - (需要**準備模式** = **受監督**) 停用允許移除管理設定檔的 iOS 設定  
 
     3.  在 [設定助理] 頁面，設定為可自訂 [iOS 設定助理] 在一開啟裝置電源時就啟動，然後按 [下一步]。 這些設定包括：  
-
         -   **密碼** - 在啟用期間提示輸入密碼。 除非裝置會受到保護，或以其他方式控制存取 (例如，將裝置限制為單一應用程式的 Kiosk 模式)，否則一律需要密碼。  
-
         -   **定位服務** - 啟用時，設定輔助程式會在啟用期間提示服務。  
-
         -   **還原** - 啟用時，設定輔助程式會在啟用期間提示 iCloud 備份。  
-
         -   **Apple ID** - 若要下載 iOS App Store 應用程式 (包含 Intune 所安裝的應用程式)，您必須提供 Apple ID。 啟用時，如果 Intune 嘗試不使用 Apple ID 來安裝應用程式，iOS 會提示使用者輸入 Apple ID。  
-
         -   **條款及條件** - 啟用時，設定輔助程式會在啟用期間提示使用者接受 Apple 的條款及條件。  
-
+        -   **Touch ID** - 啟用時，設定助理會在啟用期間提示此服務
+        -   **Apple Pay** - 啟用時，設定助理會在啟用期間提示此服務
+        -   **縮放** - 啟用時，設定助理會在啟用期間提示此服務
         -   **Siri** - 啟用時，設定輔助程式會在啟用期間提示此服務。  
-
         -   **傳送診斷資料給 Apple** - 啟用時，設定輔助程式會在啟用期間提示此服務。  
 
     4.  在 [其他管理] 頁面上，指定其他管理設定是否可以使用 USB 連線。 當您選取 [需要憑證] ，您就必須匯入為了此設定檔而使用的 Apple Configurator 管理憑證。  設為 [不允許] 時，可防止使用 iTunes 同步處理檔案或透過 Apple Configurator 進行管理。 Microsoft 建議您選擇 [不允許]，並從 Apple Configurator 匯出任何進一步設定，然後將其部署為自訂 iOS 組態設定檔，而不是使用此設定來允許進行手動部署 (不論是否使用憑證)。  
@@ -128,6 +124,6 @@ ms.openlocfilehash: 730b0e6b0ad9eb0ee3bf58c9419920c3a28a27d1
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

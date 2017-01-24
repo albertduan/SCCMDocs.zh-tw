@@ -1,5 +1,5 @@
 ---
-title: "建立設定基準 | System Center Configuration Manager"
+title: "建立設定基準 | Microsoft Docs"
 description: "在可部署至集合的 System Center Configuration Manager 中建立設定基準。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 9494524b68586d34b93b323a16829949b416c035
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: 649942d3d468ec35c7246e08f741cdebd22fb3ac
 
 
 ---
@@ -73,6 +73,6 @@ System Center Configuration Manager 中的設定基準包含預先定義的設�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

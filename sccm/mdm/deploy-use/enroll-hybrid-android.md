@@ -1,5 +1,5 @@
 ---
-title: "以 System Center Configuration Manager 和 Microsoft Intune 設定 Android 混合式裝置管理"
+title: "設定 System Center Configuration Manager 和 Microsoft Intune 的 Android 混合式裝置管理 | Microsoft Docs"
 description: "準備使用 Configuration Manager 和 Intune 管理 Android 行動裝置。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: c517fe34-0130-465b-a020-bdb555878778
 caps.latest.revision: 9
 caps.handback.revision: 0
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fa189e812a2e3104cb337ccf40c693621745ee53
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: ab892174643e7565ad9a74abc4f83f2f152669bd
 
 
 ---
@@ -26,7 +26,7 @@ ms.openlocfilehash: fa189e812a2e3104cb337ccf40c693621745ee53
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-若為 System Center Configuration Manager，使用者可以從 Google Play 下載 Android 公司入口網站應用程式，以註冊包含 Samsung KNOX 的 Android 裝置。 透過 Android 公司入口網站應用程式，您可以管理相容性設定、抹除或刪除 Android 裝置、部署應用程式，以及收集軟體和硬體清查。 如果 Android 裝置上未安裝 Android 公司入口網站應用程式，您將不會擁有所有管理功能 (例如清查和相容性設定)，但是仍然可以將應用程式部署到 Android 裝置。  
+若為 System Center Configuration Manager，使用者可以從 Google Play 下載 Android 公司入口網站應用程式，以註冊包含 Samsung KNOX Standard 的 Android 裝置。 透過 Android 公司入口網站應用程式，您可以管理相容性設定、抹除或刪除 Android 裝置、部署應用程式，以及收集軟體和硬體清查。 如果 Android 裝置上未安裝 Android 公司入口網站應用程式，您將不會擁有所有管理功能 (例如清查和相容性設定)，但是仍然可以將應用程式部署到 Android 裝置。  
 
 ## <a name="prepare-to-manage-android-mobile-devices-with-configuration-manager-and-intune"></a>準備使用 Configuration Manager 和 Intune 管理 Android 行動裝置  
  下列步驟可讓 Configuration Manager 管理 Android 裝置。  
@@ -45,6 +45,6 @@ ms.openlocfilehash: fa189e812a2e3104cb337ccf40c693621745ee53
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

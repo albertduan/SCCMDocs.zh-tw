@@ -1,5 +1,5 @@
 ---
-title: "監視相容性設定 | System Center Configuration Manager"
+title: "監視合規性設定 | Microsoft Docs"
 description: "使用本主題中的一或多個程序，顯示設定基準的相容性狀態。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7dcaafa95f97d33c53399321f5d1efb2b5021952
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: 75cd7e811262633d81d978265f21ec7ed3b61a58
 
 
 ---
@@ -113,6 +113,6 @@ ms.openlocfilehash: 7dcaafa95f97d33c53399321f5d1efb2b5021952
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

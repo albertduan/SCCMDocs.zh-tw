@@ -1,5 +1,5 @@
 ---
-title: "尋找個別應用程式 VPN 的套件系列名稱 (PFN) | System Center Configuration Manager"
+title: "尋找個別應用程式 VPN 的套件系列名稱 (PFN) | Microsoft Docs"
 description: "深入了解兩種方式，以尋找套件系列名稱，以便您可以設定個別應用程式 VPN。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: bad09d52a962ea5dccf55e4e2e485a17d934055a
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: ce50645155ecb14a82d8b982aa69c0f87dd15fbf
 
 ---
 # <a name="find-a-package-family-name-pfn-for-per-app-vpn"></a>尋找個別應用程式 VPN 的套件系列名稱 (PFN)
@@ -89,6 +89,6 @@ Get-AppxPackage 的語法是︰
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

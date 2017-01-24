@@ -1,5 +1,5 @@
 ---
-title: "設定裝置註冊 | 內部部署 MDM | System Center Configuration Manager"
+title: "設定裝置註冊 | Microsoft Docs | 內部部署 MDM"
 description: "將在 System Center Configuration Manager 中註冊裝置以進行內部部署行動裝置管理的權限授與使用者。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: ddbb5648002adb8cf9249febb23797ee71d8a026
+ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
+ms.openlocfilehash: ee2bfd1b0bdd51322819cfef9fb6185642bd8796
 
 
 ---
@@ -91,6 +91,6 @@ ms.openlocfilehash: ddbb5648002adb8cf9249febb23797ee71d8a026
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

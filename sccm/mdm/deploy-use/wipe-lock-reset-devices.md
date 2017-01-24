@@ -1,5 +1,5 @@
 ---
-title: "使用 System Center Configuration Manager 透過遠端抹除、鎖定或密碼重設來協助保護資料"
+title: "使用 System Center Configuration Manager 透過遠端抹除、鎖定或密碼重設來協助保護資料 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 透過完整抹除、選擇性抹除、遠端鎖定或密碼重設來協助保護裝置資料。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: article
 ms.assetid: 770da7bd-02dd-474a-9604-93ff1ea0c1e4
 caps.latest.revision: 18
 caps.handback.revision: 0
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 49a2220616bb6c6734643885bf969245e4c67c77
+ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
+ms.openlocfilehash: d3dd55b496a124c478f1cf2880a096e2fbdd9145
 
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-using-system-center-configuration-manager"></a>使用 System Center Configuration Manager 透過遠端抹除、鎖定或密碼重設來協助保護資料
@@ -65,9 +65,9 @@ Configuration Manager 提供選擇性抹除、完整抹除、遠端鎖定和密�
 |管理代理程式|移除管理設定檔。|  
 |電子郵件設定檔|若為由 Intune 所佈建的電子郵件設定檔，電子郵件帳戶和電子郵件將被移除。|  
 
- **Android 和 Android Samsung KNOX**  
+ **Android 和 Android Samsung KNOX Standard**  
 
-|淘汰裝置時移除的內容|Android|Samsung KNOX|  
+|淘汰裝置時移除的內容|Android|Samsung KNOX Standard|  
 |--------------------------------------------|-------------|------------------|  
 |使用 Configuration Manager 和 Intune 安裝公司應用程式及相關資料。|應用程式和資料仍會保持安裝。|已解除安裝應用程式。|  
 |VPN 和 Wi-Fi 設定檔|已移除。|已移除。|  
@@ -243,10 +243,10 @@ Configuration Manager 提供選擇性抹除、完整抹除、遠端鎖定和密�
 
 ## <a name="see-also"></a>另請參閱  
  [Windows 選擇性清除裝置資料管理](http://technet.microsoft.com/library/dn486874.aspx)   
- [System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](../../mdm/plan-design/hybrid-mobile-device-management.md)
+ [System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](../../mdm/understand/hybrid-mobile-device-management.md)
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

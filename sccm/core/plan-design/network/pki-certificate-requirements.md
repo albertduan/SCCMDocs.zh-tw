@@ -1,8 +1,8 @@
 ---
-title: "PKI 憑證需求 | System Center Configuration Manager"
+title: "PKI 憑證需求 | Microsoft Docs"
 description: "尋找 System Center Configuration Manager 可能需要的 PKI 憑證需求。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/07/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fbc85f65e4ad952d40161e6f6282bb6c0796662b
+ms.sourcegitcommit: db0642e95bbd7e704d2052aa1e0f5c27cd7bf568
+ms.openlocfilehash: 00c3c355fc43eff18b86112b0b9272cbcdf38e85
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: fbc85f65e4ad952d40161e6f6282bb6c0796662b
 -   Windows Server 2008： [Windows Server 2008 中的 Active Directory 憑證服務](http://go.microsoft.com/fwlink/p/?LinkId=115018)  
 
 > [!IMPORTANT]  
->  自 2017 年 1 月 1 日起生效，Windows 將不再信任以 SHA-1 簽署的憑證。  建議您發行以 SHA-2 簽署的新伺服器及用戶端驗證憑證。  
+>  自 2017 年 1 月 1 日起生效，Windows 將不再信任以 SHA-1 簽署的憑證。  建議您發行以 SHA-2 (包含 SHA-256) 簽署的新伺服器及用戶端驗證憑證。  
 >   
 >  如需此變更的詳細資料以及可能的期限更新，請關注此部落格文章： [Windows 強制的 Authenticode 碼簽署及時間戳記](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx)  
 
@@ -86,6 +86,6 @@ ms.openlocfilehash: fbc85f65e4ad952d40161e6f6282bb6c0796662b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

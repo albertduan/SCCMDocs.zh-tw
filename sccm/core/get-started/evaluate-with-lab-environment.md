@@ -1,5 +1,5 @@
 ---
-title: "建置專屬實驗室環境來評估 System Center Configuration Manager"
+title: "建置專屬實驗室環境來評估 System Center Configuration Manager | Microsoft Docs"
 description: "建立實驗室環境，以評估貴組織使用 System Center Configuration Manager 的效能。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 363e6a929b72e027d5fff7584905fb552dc695b0
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: e72acbe0a2f5592b5bdf9a3612db62bfb066fadf
 
 
 ---
@@ -64,12 +64,12 @@ ms.openlocfilehash: 363e6a929b72e027d5fff7584905fb552dc695b0
 
 -   如需了解安全性角色的重要性，請參閱 [System Center Configuration Manager 以角色為基礎的系統管理基本概念](../../core/understand/fundamentals-of-role-based-administration.md)  
 
--   了解這些[內容管理的概念](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#bkmk_Concepts)，可以提供您與內容管理有關的的特定概念  
+-   了解這些[內容管理的概念](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)，可以提供您與內容管理有關的的特定概念  
 
 -   [了解用戶端如何找到 System Center Configuration Manager 的站台資源和服務](../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)，以成功支援整個部署的每日作業  
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

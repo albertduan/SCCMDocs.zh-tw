@@ -1,5 +1,5 @@
 ---
-title: "安裝站台 | System Center Configuration Manager"
+title: "安裝站台 | Microsoft Docs"
 description: "檢閱可協助您進行 System Center Configuration Manager 的第一次安裝，或將站台新增至階層的主題清單。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 669ae0c869478aab587beeb2896a224ce49cb4f9
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 973daaa168aea64944563c69d13ef44a6e319809
 
 
 ---
@@ -52,6 +52,6 @@ ms.openlocfilehash: 669ae0c869478aab587beeb2896a224ce49cb4f9
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

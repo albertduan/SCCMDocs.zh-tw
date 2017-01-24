@@ -1,8 +1,8 @@
 ---
-title: "建立和部署裝置相容性原則 | System Center Configuration Manager"
+title: "建立和部署裝置合規性政策 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中建立和部署裝置相容性原則。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/15/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,13 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0cba232e-319f-4ae6-9ffa-4cd76c8bcb29
 caps.latest.revision: 
-author: karthikaraman
-ms.author: karaman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 robots: noindex
 translationtype: Human Translation
-ms.sourcegitcommit: 5c6cf3c1697b49708aa5192b67b08b700da7dc72
-ms.openlocfilehash: bb91f4a711699790bb01f48d32183cf1215b1952
+ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
+ms.openlocfilehash: 4cc7148be602367b579d63535a4938919bacf829
 
 ---
 
@@ -79,7 +79,7 @@ ms.openlocfilehash: bb91f4a711699790bb01f48d32183cf1215b1952
 
 ## <a name="monitor-the-compliance-policy"></a>監視相容性原則
 
-#### <a name="to-view-compliance-results-in-the-configuration-manager-console"></a>在 Configuration Manager 主控台中檢視相容性結果
+### <a name="to-view-compliance-results-in-the-configuration-manager-console"></a>在 Configuration Manager 主控台中檢視相容性結果
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。
 
@@ -98,6 +98,14 @@ ms.openlocfilehash: bb91f4a711699790bb01f48d32183cf1215b1952
     -   **不相容**：根據受影響的資產數目，顯示一份原則中所有不相容規則的清單。 您可以按一下規則，在 [資產與相容性]  工作區的 [使用者]  或 [裝置]  節點下方建立臨時節點，其中包含與這項規則不相容的所有使用者或裝置。 當您選取使用者或裝置時，[資產詳細資料]  窗格會顯示受到所選問題影響的使用者或裝置。 按兩下清單中的使用者或裝置以顯示這個問題的進一步資訊。
 
     -   **未知**：顯示未針對所選原則部署回報相容性的所有使用者和裝置清單，以及裝置目前的用戶端狀態。
+
+### <a name="to-view-intune-compliance-policies-charts"></a>檢視 Intune 合規性政策圖表
+1. 從 Configuration Manager 1610 版開始，在 Configuration Manager 主控台中，按一下 [監視]。
+2. 在 [監視] 工作區中，移至 [概觀] > [合規性設定] >  [合規性政策]。
+3. 下列圖表隨即會顯示：
+    - **整體裝置合規性**︰顯示所有合規性政策的整體裝置合規性。
+    - **最常見的不符合規範原因**︰顯示裝置不符合規範的前幾項原則。
+4. 按一下任一圖表中的區段可向下切入至該類別內的裝置清單。
 
 ### <a name="to-view-a-health-attestation-report"></a>檢視健康情況證明報告
 
@@ -214,10 +222,8 @@ ms.openlocfilehash: bb91f4a711699790bb01f48d32183cf1215b1952
   **支援於：**
   * Windows 10 和 Windows 10 行動裝置版
 
-  
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

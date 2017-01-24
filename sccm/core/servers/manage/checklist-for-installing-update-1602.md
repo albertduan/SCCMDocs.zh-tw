@@ -1,5 +1,5 @@
 ---
-title: "1602 版的檢查清單 | System Center Configuration Manager"
+title: "1602 版的檢查清單 | Microsoft Docs"
 description: "了解從 System Center Configuration Manager 1511 版更新至 1602 版之前所採取的動作。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 75f5ddfdc84185ee27bf60416e54d37295928156
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 78f8e9474afe208c5d91d27e8d2a202f4ed6154e
 
 
 ---
@@ -135,6 +135,6 @@ Configuration Manager 不支援次要站台的備份或次要站台資料庫的�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

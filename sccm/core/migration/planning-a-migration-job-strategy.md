@@ -1,5 +1,5 @@
 ---
-title: "移轉作業規劃 | System Center Configuration Manager"
+title: "移轉作業規劃 | Microsoft Docs"
 description: "使用移轉作業設定您要移轉至 System Center Configuration Manager 環境中的資料。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -18,8 +18,8 @@ ms.author: brenduns
 manager: angrobe
 robots: noindex
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 21e00064a8ecad3dd1c24b7f02bd0a8a8c36924f
+ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
+ms.openlocfilehash: 4e1ad4e8a043d1a6ede5dc88ca6b6c703f46e9da
 
 
 ---
@@ -226,7 +226,7 @@ ms.openlocfilehash: 21e00064a8ecad3dd1c24b7f02bd0a8a8c36924f
 ### <a name="data-selection"></a>選取資料  
  當您建立集合移轉作業時，必須選取一個或多個集合。 選取集合後，[建立移轉作業精靈] 就會顯示與集合相關聯的物件。 根據預設，與所選取集合相關聯的所有物件都會移轉，但是您可以清除不想要隨該作業移轉的物件。 如果您清除的物件有相依物件，這些相依物件也會一併清除。 所有清除的物件都會新增至排除清單中。 排除清單上的物件會從未來移轉作業的自動選取範圍內移除。 您必須手動編輯排除清單，才能將您要在未來建立的移轉作業中自動選取進行移轉的物件移除。  
 
-### <a name="site-ownership-for-migrated-content"></a>已移轉內容的站台擁有權  
+### <a name="site-ownership-for--migrated-content"></a>已移轉內容的站台擁有權  
  當您移轉部署的內容時，必須將內容物件指派至目的地階層中的站台。 此站台就會變成目的地階層中該內容的擁有者。 雖然目的地階層的頂層站台是實際移轉內容中繼資料的站台，但它會是跨網路存取內容之原始來源檔案的指派站台。  
 
  若要盡可能減少移轉期間使用的網路頻寬，請考慮將內容的擁有權傳送至最近的可用站台。 由於與內容相關的資訊會在 System Center Configuration Manager 中全域共用，因此每個站台都可以使用。  
@@ -322,6 +322,6 @@ ms.openlocfilehash: 21e00064a8ecad3dd1c24b7f02bd0a8a8c36924f
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

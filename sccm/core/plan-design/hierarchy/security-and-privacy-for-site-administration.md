@@ -1,5 +1,5 @@
 ---
-title: "網站管理安全性與隱私權 | System Center Configuration Manager"
+title: "站台管理安全性和隱私權 | Microsoft Docs"
 description: "最佳化 System Center Configuration Manager 中網站管理的安全性和隱私權。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: be8002edb48506286e18b1fb8c09f92f46ff0e10
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: aca2169c8f5f855e84ca924ca56f6b64bba80fd6
 
 
 ---
@@ -365,6 +365,6 @@ Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 時
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

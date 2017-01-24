@@ -1,6 +1,6 @@
 ---
 
-title: "管理軟體更新設定 | Configuration Manager"
+title: "管理軟體更新的設定 | Microsoft Docs"
 description: "深入了解安裝軟體更新點後，適合網站更新軟體的用戶端設定。"
 keywords: 
 author: dougeby
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 0d484c1a-e903-4bff-9e9b-e452c62e38a8
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4d7ffc12a3626f35a4481a3dcaed40abc0bbdac0
+ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
+ms.openlocfilehash: 7d37f3c5e398c914482c45ab837fe41d00fce8ea
 
 
 ---
@@ -142,6 +142,6 @@ Configuration Manager 也使用此設定來判斷是否要在設定的維護期�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

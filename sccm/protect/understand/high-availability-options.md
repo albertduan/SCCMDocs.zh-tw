@@ -1,5 +1,5 @@
 ---
-title: "高可用性 | System Center Configuration Manager"
+title: "高可用性 | Microsoft Docs"
 description: "了解如何使用維持高可用度服務的選項部署 System Center Configuration Manager。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: d3e9afb90cdc85bc7299626b642c52be659e3bdf
 
 ---
 # <a name="high-availability-options-for-system-center-configuration-manager"></a>System Center Configuration Manager 的高可用性選項
@@ -153,7 +153,7 @@ ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
 
  不論此站台伺服器角色在階層中的位置為何，每個應用程式類別目錄站台系統角色提供的資訊會與該站台系統角色的其他執行個體相同。 因此，當用戶端要求應用程式類別目錄，而您已經將 [預設應用程式類別目錄網站點] 裝置用戶端設定設定為 [自動偵測] 時，可將用戶端導向至可用執行個體。 根據用戶端的目前網路位置，會慣用本機應用程式類別目錄站台系統伺服器。  
 
- 如需此用戶端設定與自動偵測運作方法的詳細資訊，請參閱[關於 System Center Configuration Manager 中的用戶端設定](../../core/clients/deploy/about-client-settings.md)主題中的[電腦代理程式](../../core/clients/deploy/about-client-settings.md#BKMK_ComputerAgentDeviceSettings)一節。  
+ 如需此用戶端設定與自動偵測運作方法的詳細資訊，請參閱[關於 System Center Configuration Manager 中的用戶端設定](../../core/clients/deploy/about-client-settings.md)主題中的[電腦代理程式](../../core/clients/deploy/about-client-settings.md#computer-agent)一節。  
 
 ##  <a name="a-namebkmkclienta-high-availability-for-clients"></a><a name="bkmk_client"></a> 用戶端的高可用性  
  **用戶端作業是自主性的：**  
@@ -264,6 +264,6 @@ ms.openlocfilehash: 7d8dff8779fbf146a57f753dee9f98488fa5fa61
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

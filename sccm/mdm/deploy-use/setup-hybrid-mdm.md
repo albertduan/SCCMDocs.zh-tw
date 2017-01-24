@@ -1,5 +1,5 @@
 ---
-title: "設定混合式 MDM | System Center Configuration Manager 和 Microsoft Intune"
+title: "安裝混合式 MDM | Microsoft Docs"
 description: "使用 Configuration Manager 和 Intune 設定混合式裝置註冊。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -13,12 +13,12 @@ ms.topic: get-started-article
 ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
 caps.latest.revision: 34
 caps.handback.revision: 0
-author: NathBarn
-ms.author: nathbarn
+author: mtillman
+ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 44c0947fcb7abdc4369fe0b4f47409b49d068861
+ms.sourcegitcommit: 48b91e88f78752cf7c05162b701ea2ca2f401de3
+ms.openlocfilehash: 85df3df19f01f8ed6f5240851c47afce01a92880
 
 ---
 
@@ -173,6 +173,7 @@ ms.openlocfilehash: 44c0947fcb7abdc4369fe0b4f47409b49d068861
   - [Windows 註冊設定](#windows-enrollment-setup)︰設定 DNS，並啟用 Windows 電腦、Windows 10 行動裝置版和 Windows Phone 裝置的註冊
   - Android：Android 裝置不需要任何額外的步驟即可啟用註冊
 
+啟用 MDM 管理之後，即可指定每位使用者可以註冊的裝置數目，每位使用者最多 15 個裝置。
 
 ### <a name="ios-and-mac-enrollment-setup"></a>iOS 和 Mac 註冊設定
   下列步驟將 Apple MDM Push 憑證上傳至 Intune 服務，以啟用 Apple 裝置的管理。
@@ -245,7 +246,7 @@ DNS 別名 (CNAME 記錄類型) 會在裝置註冊期間自動填入伺服器名
 - [Windows 10 和 Windows 8.1 裝置](/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)
 - [Windows Phone 裝置](/sccm/compliance/deploy-use/create-configuration-items-for-windows-phone-devices-managed-without-the-client)
 - [iOS 和 Mac 裝置](/sccm/compliance/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client)
-- [Android 和 Samsung KNOX 裝置](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client)
+- [Android 和 Samsung KNOX Standard 裝置](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client)
 
 **應用程式**可以部署至受管理裝置：
 - [iOS 應用程式](/sccm/apps/get-started/creating-ios-applications)
@@ -273,30 +274,38 @@ DNS 別名 (CNAME 記錄類型) 會在裝置註冊期間自動填入伺服器名
 - 自備裝置 (BYOD)：[通知使用者如何註冊其裝置](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune) - Intune 和 Hybrid 所管理之裝置的註冊指導方針相同
 - 公司擁有的裝置 (COD)：[註冊公司擁有的裝置](enroll-company-owned-devices.md)提供註冊公司所擁有裝置之不同平台特有方式的指引。
 
-### <a name="managing-intune-subscriptions-associated-with-configuration-manager"></a>管理與 Configuration Manager 相關聯的 Intune 訂閱
- 如果您將 Microsoft Intune (試用訂閱或付費訂閱) 新增至 Configuration Manager，但之後需要切換至不同的 Intune 訂閱，則必須先從 Configuration Manager 主控台刪除 **Microsoft Intune 訂閱**和**服務連接點**，才能新增訂閱。
+## <a name="managing-intune-subscriptions-associated-with-configuration-manager"></a>管理與 Configuration Manager 相關聯的 Intune 訂閱
 
-#### <a name="how-to-delete-an-intune-subscription-from-configuration-manager"></a>如何從 Configuration Manager 刪除 Intune 訂閱
+如果您將 Microsoft Intune (試用訂閱或付費訂閱) 新增至 Configuration Manager，但之後需要切換至不同的 Intune 訂閱，則必須先從 Configuration Manager 主控台刪除 **Microsoft Intune 訂閱**和**服務連接點**，才能新增訂閱。
 
-1.  在 Configuration Manager 主控台中，按一下 [系統管理] 。
+### <a name="how-to-delete-an-intune-subscription-from-configuration-manager"></a>如何從 Configuration Manager 刪除 Intune 訂閱
 
-2.  在 **[系統管理]** 工作區中，展開 **[概觀]**，移至 **[雲端服務]**，然後按一下 **[Microsoft Intune 訂閱]**。
+> [!IMPORTANT]
+>  當您刪除 Intune 訂閱時，會移除包括針對訂閱所管理之裝置所設定的使用者註冊、原則和應用程式部署的所有內容。
 
-3.  以滑鼠右鍵按一下 **[Microsoft Intune 訂閱]** ，然後按一下 **[刪除]**。 **Microsoft Intune 訂閱**。
+1.  在 Configuration Manager 主控台中，移至 [系統管理] > [概觀] > [雲端服務] > [Microsoft Intune 訂閱]。
 
-    > [!IMPORTANT]
-    >  包括使用者註冊、原則，以及針對 Intune 評估訂閱所設定的應用程式部署在內的所有內容都將遺失。
+2.  以滑鼠右鍵按一下列出的 [Microsoft Intune 訂閱]，然後按一下 [刪除]。
 
-4.  在 **[系統管理]** 工作區中，展開 **[概觀]**，移至 **[站台設定]**，然後選取 **[伺服器和站台系統角色]**。
-
-5.  選取裝載 **服務連接點** 角色的伺服器。
-
-6.  在 **[站台系統角色]** 清單中，選取 **[服務連接點]** ，然後按一下功能區中的 **[移除角色]** 。 確認您想要移除該角色。 隨即會刪除該服務連接點。
-
-7.  您現在可以建立新的服務連接點、將新的 Intune 訂閱加入至 Configuration Manager，然後將 Configuration Manager 設定為 MDM 授權單位。
+3.   在精靈中，按一下 [Remove Microsoft Intune Subscription from Configuration Manager] (從 Configuration Manager 移除 Microsoft Intune 訂閱)，並按一下 [下一步]，然後按一下 [下一步] 移除訂閱。
 
 
+### <a name="how-to-remove-the-service-connection-point-role"></a>如何移除服務連接點角色
 
-<!--HONumber=Nov16_HO1-->
+1.  移至 [系統管理] > [概觀] > [站台設定] > [伺服器和站台系統角色]。
+
+2.  選取裝載 **服務連接點** 角色的伺服器。
+
+3.  在 **[站台系統角色]** 清單中，選取 **[服務連接點]** ，然後按一下功能區中的 **[移除角色]** 。 確認您想要移除該角色。 隨即會刪除該服務連接點。
+
+您現在可以建立新的服務連接點、將新的 Intune 訂閱加入至 Configuration Manager，然後將 Configuration Manager 設定為 MDM 授權單位。
+
+### <a name="how-to-change-mdm-authority-to-intune"></a>如何將 MDM 授權單位變更為 Intune
+
+從 1610 版開始，您可以將 MDM 授權從 Configuration Manager 切換至 Intune。 即將提供這項功能的資訊。
+
+
+
+<!--HONumber=Dec16_HO3-->
 
 

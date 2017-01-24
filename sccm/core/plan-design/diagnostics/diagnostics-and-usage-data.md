@@ -1,5 +1,5 @@
 ---
-title: "診斷和使用方式資料 | System Center Configuration Manager"
+title: "診斷和使用方式資料 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 所收集關於本身的診斷及使用方式資料。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 996efaeb89926b04d2f071cf600dcf45bd2edc89
+ms.sourcegitcommit: 3d113c55726efe674b79ef5ecb26aac8c893cba2
+ms.openlocfilehash: ac3395c82cb570960bf2c3b98cd06e282e64b1a5
 
 
 ---
@@ -43,7 +43,7 @@ System Center Configuration Manager 會收集與其本身相關的診斷和使�
     - [1511 的診斷資料](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511)
     - [1602 的診斷資料](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602)
     - [1606 的診斷資料](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606)  
-    
+    - [1610 的診斷資料](/sccm/core/plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610)  
 
 -   [System Center Configuration Manager 如何收集診斷和使用方式資料](../../../core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md)  
 
@@ -58,6 +58,6 @@ System Center Configuration Manager 會收集與其本身相關的診斷和使�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

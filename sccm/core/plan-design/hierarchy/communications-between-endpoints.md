@@ -1,5 +1,5 @@
 ---
-title: "端點間的通訊 | System Center Configuration Manager"
+title: "端點之間的通訊 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 站台系統與元件如何透過網路通訊。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: bf485456b4d8f0bffe956006b2a8b3dd8c17a5db
+ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
+ms.openlocfilehash: 7ab79fb69188fa5fe6b89b070829ec0f918137b9
 
 
 ---
@@ -148,7 +148,7 @@ Configuration Manager 也支援不在相同 Active Directory 樹系作為站台�
 
     -   [管理 Configuration Manager 用戶端的衝突記錄](../../../core/clients/manage/manage-clients.md#BKMK_ConflictingRecords)  
 
-    -   [網路存取帳戶](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#bkmk_NAA)  
+    -   [網路存取帳戶](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#accounts-used-for-content-management)  
 
     -   [如何在工作群組電腦上安裝 Configuration Manager 用戶端](../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientWorkgroup)  
 
@@ -261,6 +261,6 @@ Configuration Manager 中的站台間通訊使用資料庫複寫和以檔案為�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

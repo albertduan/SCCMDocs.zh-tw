@@ -1,5 +1,5 @@
 ---
-title: "使用 System Center Configuration Manager 建立預先設置的媒體"
+title: "使用 System Center Configuration Manager 建立預先設置的媒體 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中建立預先設置的媒體，以簡化數個案例中的 Windows 部署。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fe02e36e7650858bcaac801a0a6d7d3c820b23b8
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 56cfc5837adf986e5d2bf4a73ef9de3b1f60b4f9
 
 
 ---
@@ -146,6 +146,6 @@ System Center Configuration Manager 中預先設置的媒體是 Windows 映像�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

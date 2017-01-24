@@ -1,5 +1,5 @@
 ---
-title: "用戶端管理基本概念 | System Center Configuration Manager"
+title: "用戶端管理基礎 | Microsoft Docs"
 description: "深入了解您可以執行以管理 System Center Configuration Manager 用戶端的工作。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: b746c051eee42bcea5c01ced359f568c5aae5fd8
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 9648fc831e21f8a5ee6e12cfe7754933ba9f6239
 
 
 ---
@@ -66,6 +66,6 @@ ms.openlocfilehash: b746c051eee42bcea5c01ced359f568c5aae5fd8
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "密碼編譯控制項技術參考 | System Center Configuration Manager"
+title: "密碼編譯控制項技術參考 | Microsoft Docs"
 description: "了解簽署和加密在 System Center Configuration Manager 中如何協助防止攻擊讀取資料。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 354289f980836f10ebfc770b2408ba02dcb0eecb
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 0f76ed3dd74a80d9e22cfa743e5aa484f6cd7d97
 
 
 ---
@@ -284,7 +284,6 @@ System Center Configuration Manager 使用簽署和加密來協助保護 Configu
 
 
 
-
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

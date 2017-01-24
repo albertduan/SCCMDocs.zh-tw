@@ -1,5 +1,5 @@
 ---
-title: "如何建立設定項目 | System Center Configuration Manager"
+title: "如何建立設定項目 | Microsoft Docs"
 description: "建立設定，並將設定部署至 System Center Configuration Manager 所管理的裝置以及使用 Microsoft Intune 所註冊的裝置。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7c81d13abb9fc152804b09fb3e2c51870ae45250
+ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
+ms.openlocfilehash: bfe0e8e68f51e60508f91c806a94a505577cb50a
 
 
 ---
@@ -36,6 +36,6 @@ System Center Configuration Manager 中的相容性設定可讓您建立設定�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

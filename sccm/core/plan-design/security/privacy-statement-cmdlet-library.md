@@ -1,5 +1,5 @@
 ---
-title: "System Center Configuration Manager 隱私權聲明 - Configuration Manager Cmdlet 程式庫"
+title: "System Center Configuration Manager 隱私權聲明 - Configuration Manager Cmdlet 程式庫 | Microsoft Docs"
 description: "了解 Microsoft 如何收集和使用 System Center Configuration Manager Cmdlet 程式庫的相關資料。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 88d11aaed4a0e6575cb859f5dfc3ac425bd2bf38
+ms.sourcegitcommit: 767d0594eb871462df038997ea3b7e29615e05f7
+ms.openlocfilehash: 10d8e8948d66a6b9b74e16a02cfbfc4ced66596c
 
 
 ---
@@ -49,31 +49,10 @@ ms.openlocfilehash: 88d11aaed4a0e6575cb859f5dfc3ac425bd2bf38
 
  使用方式資料設定的變更，只對進行變更的電腦有效。  
 
- 如需如何設定使用方式資料 (集合) 的詳細資訊，請參閱 [System Center Configuration Manager Cmdlet 程式庫文件](https://technet.microsoft.com/en-us/library/dn958404.aspx)。  
-
-## <a name="update-check"></a>更新檢查  
- **此功能的作用：**   
-System Center Configuration Manager Cmdlet 程式庫會每天自動檢查是否有程式庫更新，並會通知您下載更新的程式庫。  
-
- **收集、處理或傳輸的資訊：**   
-Cmdlet 程式庫更新檢查會從 Microsoft 下載中心下載小型的文字檔，以進行版本檢查。   這個檔案不會儲存在本機。  Cmdlet 程式庫不會自動升級軟體。  
-
- **資訊的用途：**   
-我們可使用這項資訊，改善所提供的產品與服務之品質、安全性與完整性。  
-
- **選擇/控制：**   
-預設會啟用 [更新檢查]。  System Center Configuration Manager Cmdlet 程式庫包含這些 Cmdlet 以控制更新通知功能：  
-
--   `Get-CMCmdletUpdateCheck` 可取得更新功能組態，並會指出使用者原則是否已遭到系統原則的覆寫。  
-
--   `Send-CMCmdletUpdateCheck` 可供您執行非排程的更新檢查。 非排程的檢查不會考慮原則設定。  
-
--   `Set-CMCmdletUpdateCheck` 會以使用者為單位或以系統為單位，來設定更新檢查設定。 您必須以系統管理員的身分執行，才可進行系統設定。  
-
- 您可以在 [System Center Configuration Manager Cmdlet 程式庫文件](https://technet.microsoft.com/en-us/library/dn958404.aspx)中找到如何設定更新檢查的詳細資訊。  
+ 如需如何設定使用方式資料 (集合) 的詳細資訊，請參閱 [System Center Configuration Manager Cmdlet 程式庫文件](https://technet.microsoft.com/en-us/library/dn958404.aspx)。   
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

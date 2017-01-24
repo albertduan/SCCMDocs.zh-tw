@@ -1,5 +1,5 @@
 ---
-title: "新增站台系統角色 | System Center Configuration Manager"
+title: "新增站台系統角色 | Microsoft Docs"
 description: "了解 Configuration Manager 站台系統角色，以及如何加入它們以擴充站台的功能和容量。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f9437760936cdc4f9daad67205e635ab916207bd
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: e0cc69baa2fdc5bb9c1327c89840e28d0f885608
 
 
 ---
@@ -53,6 +53,6 @@ Configuration Manager 不支援單一站台系統伺服器上多個站台的站�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

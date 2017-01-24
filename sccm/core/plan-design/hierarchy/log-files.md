@@ -1,8 +1,8 @@
 ---
-title: "記錄檔 | System Center Configuration Manager"
+title: "Configuration Manager 的記錄檔 | Microsoft Docs"
 description: "使用記錄檔對 System Center Configuration Manager 階層中的問題進行疑難排解。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 11/01/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: cb27f2f2a6e0b0e3d6fca2d616d8ab806b74f9df
+ms.sourcegitcommit: f36cdecd96d50bd62892b262024e43d64f7c8205
+ms.openlocfilehash: 5b7afc3e00bc8ee317b8d8c3660808c465758f91
 
 
 ---
@@ -70,6 +70,8 @@ ms.openlocfilehash: cb27f2f2a6e0b0e3d6fca2d616d8ab806b74f9df
 
     -   [憑證註冊](#BKMK_CertificateEnrollment)  
 
+    - [雲端管理閘道](#cloud-management-gateway)
+
     -   [相容性設定和公司資源存取](#BKMK_CompSettingsLog)  
 
     -   [Configuration Manager 主控台](#BKMK_ConsoleLog)  
@@ -105,6 +107,8 @@ ms.openlocfilehash: cb27f2f2a6e0b0e3d6fca2d616d8ab806b74f9df
     -   [軟體更新](#BKMK_SU_NAPLog)  
 
     -   [網路喚醒](#BKMK_WOLLog)  
+
+    -   [Windows 10 服務](#BKMK_WindowsServicingLog)
 
     -   [Windows Update 代理程式](#BKMK_WULog)  
 
@@ -503,6 +507,15 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |BgbHttpProxy.log|記錄通知 HTTP Proxy 使用 HTTP 在通知伺服器上來回轉送用戶端訊息時的活動。|用戶端|  
 |CCMNotificationAgent.log|記錄通知代理程式的活動，例如用戶端-伺服器通訊，以及接收到和發送至其他用戶端代理程式之工作的相關資訊。|用戶端|  
 
+### <a name="cloud-management-gateway"></a>雲端管理閘道
+
+下表列出包含雲端管理閘道相關資訊的記錄檔。
+
+|記錄檔名稱|說明|含有記錄檔的電腦|  
+|--------------|-----------------|----------------------------|  
+|CloudMgr.log|記錄了雲端管理閘道服務的部署、進行中的服務狀態，以及服務相關使用方式資料的詳細資料。|網站系統伺服器|
+|SMS_Cloud_ProxyConnector.log|記錄了雲端管理閘道服務和雲端管理閘道連接點之間的連線設定詳細資料。|網站系統伺服器|
+
 ###  <a name="a-namebkmkcompsettingsloga-compliance-settings-and-company-resource-access"></a><a name="BKMK_CompSettingsLog"></a> 相容性設定和公司資源存取  
  下表列出包含相容性設定和公司資源存取相關資訊的記錄檔。  
 
@@ -535,6 +548,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |PrestageContent.log|記錄有關遠端預先設置的發佈點上 ExtractContent.exe 工具使用情形的詳細資料。 此工具會擷取已匯出至檔案的內容。|網站系統角色|  
 |SMSdpmon.log|記錄發佈點上所設定之發佈點健全狀況監視排程工作的詳細資料。|網站系統角色|  
 |smsdpprov.log|記錄有關從主要網站收到之壓縮檔解壓縮的詳細資料。 此記錄檔為遠端發佈點的 WMI 提供者所產生。|未與網站伺服器共置的發佈點電腦。|  
+
 
 ###  <a name="a-namebkmkdiscoveryloga-discovery"></a><a name="BKMK_DiscoveryLog"></a> 探索  
 下表列出包含探索相關資訊的記錄檔。  
@@ -731,11 +745,10 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |statesys.log|記錄行動裝置管理訊息的處理。|主要網站和管理中心網站|  
 
 ###  <a name="a-namebkmksunaploga-software-updates"></a><a name="BKMK_SU_NAPLog"></a> 軟體更新  
- 下表列出包含軟體更新相關資訊的記錄檔。  此外，某些詳細資料仍與網路存取保護相關，此為 System Center Configuration Manager 上已不再使用的功能。  
+ 下表列出包含軟體更新相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
 |--------------|-----------------|----------------------------|  
-|ccmcca.log|記錄有關處理以 Configuration Manager NAP 原則處理為基礎之相容性評估的詳細資料，並且包含處理相容性所需的每項軟體更新補救的詳細資料。|用戶端|  
 |Ccmperf.log|記錄維護相關活動以及擷取用戶端效能計數器相關資料的活動。|用戶端|  
 |PatchDownloader.log|記錄有關從更新來源將軟體更新下載至網站伺服器上目的地之程序的詳細資料。|裝載 Configuration Manager 主控台的電腦，下載會從該處起始|  
 |PolicyEvaluator.log|記錄有關用戶端電腦上原則評估的詳細資料，包括來自軟體更新的原則。|用戶端|  
@@ -743,13 +756,6 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |ScanAgent.log|記錄有關軟體更新、WSUS 位置及相關動作之掃描要求的詳細資料。|用戶端|  
 |SdmAgent.log|記錄有關追蹤補救和相容性的詳細資料。 不過，軟體更新記錄檔 Updateshandler.log 提供有關安裝相容性所需軟體更新之更具參考價值的詳細資料。<br /><br /> 此記錄檔會與相容性設定共用。|用戶端|  
 |ServiceWindowManager.log|記錄有關評估維護期間的詳細資料。|用戶端|  
-|smssha.log|Configuration Manager 網路存取保護用戶端的主要記錄檔，且其包含來自兩個 Configuration Manager 元件的健全狀況資訊合併聲明：定位服務 (LS) 及設定相容性代理程式 (CCA)。 此記錄檔也會包含 Configuration Manager 系統健康情況代理程式與作業系統 NAP 代理程式之間，以及 Configuration Manager 系統健康情況代理程式與設定相容性代理程式和定位服務這兩者之間互動的相關資訊。 它提供有關 NAP 代理程式是否成功初始化、健全狀況資料聲明及健全狀況回應聲明的資訊。|用戶端|  
-|Smsshv.log|這是系統健全狀況驗證程式點的主要記錄檔，其中會記錄系統健全狀況驗證程式服務的基本操作，包括初始化進度。|網站系統伺服器|  
-|Smsshvadcacheclient.log|記錄有關從 Active Directory 網域服務擷取 Configuration Manager 健全狀況狀態參照的詳細資料。|網站系統伺服器|  
-|SmsSHVCacheStore.log|記錄有關用來保存從 Active Directory 網域服務擷取的 Configuration Manager NAP 健全狀況狀態參照之快取存放區的詳細資料，例如從存放區讀取，以及清除本機快取存放區檔案中的項目。 快取存放區無法設定。|網站系統伺服器|  
-|smsSHVQuarValidator.log|記錄用戶端的健全狀況資訊聲明和處理操作。 若要取得完整資訊，請將下列位置中的登錄機碼 **LogLevel** 從 1 變更為 0：**HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMSSHV\Logging\\@GLOBAL**|網站系統伺服器|  
-|smsshvregistrysettings.log|記錄服務正在執行時，對系統健全狀況驗證程式元件設定的任何動態變更。|網站系統伺服器|  
-|SMSSHVSetup.log|記錄安裝系統健全狀況驗證程式點的成功或失敗 (包含失敗原因) 資訊。|網站系統伺服器|  
 |SmsWusHandler.log|記錄有關 Inventory Tool for Microsoft Updates 之掃描程序的詳細資料。|用戶端|  
 |StateMessage.log|記錄有關所建立並傳送至管理點之軟體更新狀態訊息的詳細資料。|用戶端|  
 |SUPSetup.log|記錄有關軟體更新點安裝的詳細資料。 當軟體更新點安裝完成時， **Installation was successful** 會寫入此記錄檔中。|網站系統伺服器|  
@@ -772,6 +778,31 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |wolcmgr.log|記錄有關需要傳送喚醒封包給那一個用戶端，喚醒封包的數量以及重試喚醒封包的數量等詳細資料。|網站伺服器|  
 |wolmgr.log|記錄有關喚醒程序的詳細資料，例如何時喚醒已設定為進行網路喚醒的部署。|網站伺服器|  
 
+###  <a name="a-namebkmkwindowsservicinglogawindows-10-servicing"></a><a name="BKMK_WindowsServicingLog"></a>Windows 10 服務  
+ 下表列出包含 Windows 10 服務相關資訊的記錄檔。  
+
+|記錄檔名稱|說明|含有記錄檔的電腦|  
+|--------------|-----------------|----------------------------|  
+|Ccmperf.log|記錄維護相關活動以及擷取用戶端效能計數器相關資料的活動。|用戶端|  
+|CcmRepair.log|記錄用戶端代理程式的修復活動。|用戶端|
+|PatchDownloader.log|記錄有關從更新來源將軟體更新下載至網站伺服器上目的地之程序的詳細資料。|裝載 Configuration Manager 主控台的電腦，下載會從該處起始|  
+|PolicyEvaluator.log|記錄有關用戶端電腦上原則評估的詳細資料，包括來自軟體更新的原則。|用戶端|  
+|RebootCoordinator.log|記錄有關協調軟體更新安裝後，用戶端電腦上系統重新啟動的詳細資料。|用戶端|  
+|ScanAgent.log|記錄有關軟體更新、WSUS 位置及相關動作之掃描要求的詳細資料。|用戶端|  
+|SdmAgent.log|記錄有關追蹤補救和相容性的詳細資料。 不過，軟體更新記錄檔 Updateshandler.log 提供有關安裝相容性所需軟體更新之更具參考價值的詳細資料。<br /><br /> 此記錄檔會與相容性設定共用。|用戶端|  
+|ServiceWindowManager.log|記錄有關評估維護期間的詳細資料。|用戶端|  
+|Setupact.log|Windows 安裝程序中發生之大多數錯誤的主要記錄檔。 記錄檔位於 *%windir%\$Windows.~BT\sources\panther* 資料夾。|用戶端|
+|SmsWusHandler.log|記錄有關 Inventory Tool for Microsoft Updates 之掃描程序的詳細資料。|用戶端|  
+|StateMessage.log|記錄有關所建立並傳送至管理點之軟體更新狀態訊息的詳細資料。|用戶端|  
+|SUPSetup.log|記錄有關軟體更新點安裝的詳細資料。 當軟體更新點安裝完成時， **Installation was successful** 會寫入此記錄檔中。|網站系統伺服器|  
+|UpdatesDeployment.log|記錄有關用戶端上部署的詳細資料，包括啟動、評估和強制執行軟體更新。 詳細資訊記錄會顯示與用戶端使用者介面互動的其他相關資訊。|用戶端|  
+|UpdatesHandler.log|記錄有關軟體更新相容性掃描，以及在用戶端上下載和安裝軟體更新的詳細資料。|用戶端|  
+|UpdatesStore.log|記錄有關相容性掃描週期期間所評估的軟體更新相容性狀態的詳細資料。|用戶端|  
+|WCM.log|記錄有關軟體更新點設定與連線至 Windows Server Update Services (WSUS) 伺服器取得更新目錄、分類以及語言的詳細資料。|網站伺服器|  
+|WSUSCtrl.log|記錄有關網站的設定、資料庫連線和 WSUS 伺服器健全狀況的詳細資料。|網站系統伺服器|  
+|wsyncmgr.log|記錄有關軟體更新同步處理程序的詳細資料。|網站伺服器|  
+|WUAHandler.log|記錄有關用戶端上 Windows Update 代理程式搜尋軟體更新時的詳細資料。|用戶端|  
+
 ###  <a name="a-namebkmkwuloga-windows-update-agent"></a><a name="BKMK_WULog"></a> Windows Update 代理程式  
  下表列出包含與 Windows Update 代理程式相關資訊的記錄檔。  
 
@@ -789,6 +820,6 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

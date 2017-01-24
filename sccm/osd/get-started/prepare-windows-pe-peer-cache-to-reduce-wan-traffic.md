@@ -1,5 +1,5 @@
 ---
-title: "準備 Windows PE 對等快取以降低 WAN 流量 | Configuration Manager"
+title: "準備 Windows PE 對等快取以減少 WAN 流量 | Microsoft Docs"
 description: "Windows PE 對等快取作用於 Windows PE，以從本機對等取得內容，並在沒有本機發佈點時，將 WAN 流量降至最低。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: dc21868f99e17070b25c8b490e86477227a96c8e
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
 
 
 ---
@@ -52,17 +52,17 @@ ms.openlocfilehash: dc21868f99e17070b25c8b490e86477227a96c8e
 
 -   軟體更新  
 
-##  <a name="a-namebkmkpeercacheworka-how-does-windows-pe-peer-cache-work"></a><a name="BKMK_PeerCacheWork"></a> Windows PE 對等快取運作方式為何？  
+##  <a name="a-namebkmkpeercacheworka-how-does--windows-pe-peer-cache-work"></a><a name="BKMK_PeerCacheWork"></a> Windows PE 對等快取運作方式為何？  
  假設分公司沒有發佈點，但允許幾個用戶端使用 Windows PE 對等快取的情況。 您部署的工作順序，設定為對設定成是對等快取來源一部分的數個用戶端，使用對等快取。 第一個執行工作順序的用戶端，會為具備該內容的對等，廣播一則要求。 因為找不到任何項目，所以會從 WAN 中的發佈點取得內容。 用戶端會安裝新映像，然後將內容儲存在其 Configuration Manager 用戶端快取中，以作為其他用戶端的對等快取來源。 當下一個用戶端執行工作順序時，它會在對等快取來源的子網路上廣播要求，而第一個用戶端會回應並提供其快取內容。  
 
-##  <a name="a-namebkmkpeercachedeterminea-determine-what-clients-will-be-part-of-the-windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheDetermine"></a> 決定哪些用戶端將隸屬於 Windows PE 對等快取來源  
+##  <a name="a-namebkmkpeercachedeterminea-determine-what--clients-will-be-part-of-the-windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheDetermine"></a> 決定哪些用戶端將隸屬於 Windows PE 對等快取來源  
  為協助您判斷哪些電腦要選取為 Windows PE 對等快取來源，您應該考量一些情況：  
 
 -   Windows PE 對等快取來源應為一直開機且對等快取用戶端可以使用的桌上型電腦。  
 
 -   Windows PE 對等快取的用戶端快取大小，足以儲存映像。  
 
-##  <a name="a-namebkmkpeercacherequirementsa-requirements-for-a-client-to-use-a-windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheRequirements"></a> 使用 Windows PE 對等快取來源的用戶端需求  
+##  <a name="a-namebkmkpeercacherequirementsa-requirements-for-a-client-to-use-a--windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheRequirements"></a> 使用 Windows PE 對等快取來源的用戶端需求  
  若是使用 Windows PE 對等快取來源的用戶端，必須符合下列需求：  
 
 -   Configuration Manager 用戶端必須能夠跨網路上的下列連接埠進行通訊：  
@@ -144,6 +144,6 @@ ms.openlocfilehash: dc21868f99e17070b25c8b490e86477227a96c8e
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

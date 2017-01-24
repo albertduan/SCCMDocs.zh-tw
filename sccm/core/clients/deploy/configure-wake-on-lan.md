@@ -1,5 +1,5 @@
 ---
-title: "設定網路喚醒 | System Center Configuration Manager"
+title: "設定網路喚醒 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中選取 [網路喚醒]。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -12,12 +12,12 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b475a0c8-85d6-4cc4-b11f-32c0cc98239e
 caps.latest.revision: 7
-author: Mtillman
-ms.author: mtillman
+author: nbigman
+ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: b8274f9da1ec82aebf43115236f2409995a0052b
+ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
+ms.openlocfilehash: 09f8bc7ee04ff64934030f825a791bc043341963
 
 ---
 # <a name="how-to-configure-wake-on-lan-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中設定網路喚醒
@@ -47,7 +47,7 @@ ms.openlocfilehash: b8274f9da1ec82aebf43115236f2409995a0052b
 1. 在 Configuration Manager 主控台中，瀏覽至 [管理] > [用戶端設定]。
 2. 按一下 [預設用戶端設定]，然後按一下 [內容]。
 3. 選取 [電源管理]，然後針對 [啟用喚醒 Proxy] 選擇 [是]。
-4. 檢閱並設定其他喚醒 Proxy 設定 (如有需要)。 如需這些設定的詳細資訊，請參閱[電源管理設定](../../../core/clients/deploy/about-client-settings.md#BKMK_PowMgmtDeviceSettings)。
+4. 檢閱並設定其他喚醒 Proxy 設定 (如有需要)。 如需這些設定的詳細資訊，請參閱[電源管理設定](../../../core/clients/deploy/about-client-settings.md#power-management)。
 5. 按一下 [確定] 以關閉對話方塊，然後按一下 [確定] 以關閉 [預設用戶端設定] 對話方塊。
 
 您可以使用下列 [網路喚醒] 報告監控喚醒 Proxy 的安裝及設定：
@@ -60,6 +60,6 @@ ms.openlocfilehash: b8274f9da1ec82aebf43115236f2409995a0052b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

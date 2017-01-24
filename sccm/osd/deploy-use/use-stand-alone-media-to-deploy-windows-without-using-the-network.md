@@ -1,5 +1,5 @@
 ---
-title: "使用獨立媒體，而不使用網路來部署 Windows | Configuration Manager"
+title: "使用獨立媒體，而不使用網路來部署 Windows | Microsoft Docs"
 description: "在 Configuration Manager 中使用獨立媒體來部署頻寬有限或作為重新整理、安裝或升級電腦之選項的作業系統。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: f09359b2c565f259ddd0dab01812bafcaecff60a
+ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
+ms.openlocfilehash: 30ae794381c6894e11b21a8167d0af60463c5279
 
 
 ---
@@ -82,6 +82,6 @@ System Center Configuration Manager 中的獨立媒體包含在電腦上部署�
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

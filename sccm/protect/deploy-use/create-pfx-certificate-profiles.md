@@ -1,5 +1,5 @@
 ---
-title: "建立 PFX 憑證設定檔 | System Center Configuration Manager"
+title: "建立 PFX 憑證設定檔 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中使用 PFX 檔案，產生支援加密資料交換的使用者特定憑證。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4a4025325e635061cb99caed9cdb07390e90ea90
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 36c20af00e5a83be7038c3a0c01a33c546011427
 
 
 ---
@@ -117,6 +117,6 @@ System Center Configuration Manager 可讓您將個人資訊交換 (.pfx) 檔案
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

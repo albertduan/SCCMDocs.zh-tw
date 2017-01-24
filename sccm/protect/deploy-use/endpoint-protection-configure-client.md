@@ -1,5 +1,5 @@
 ---
-title: "設定 Endpoint Protection 用戶端 | System Center Configuration Manager"
+title: "設定 Endpoint Protection 用戶端 | Microsoft Docs"
 description: "了解如何設定可部署至階層中之電腦集合的 Endpoint Protection 自訂用戶端設定。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fe342b76569f171855c6c422c7173317381e0103
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 2d7ec9cc626f3ccfded990cf8ba392c4979adfee
 
 
 ---
@@ -176,6 +176,6 @@ ms.openlocfilehash: fe342b76569f171855c6c422c7173317381e0103
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "設定探索 | System Center Configuration Manager"
+title: "設定探索 | Microsoft Docs"
 description: "設定在 Configuration Manager 站台上執行的探索方法，以尋找您可以從網路基礎結構與 Active Directory 管理的資源。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 668da9706bb46e6338e81ed75be5d78ab32561c3
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 2fcc392ba700f871349200166fac715b73788c16
 
 ---
 # <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>設定 System Center Configuration Manager 的探索方法
@@ -448,6 +448,6 @@ ms.openlocfilehash: 668da9706bb46e6338e81ed75be5d78ab32561c3
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

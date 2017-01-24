@@ -1,5 +1,5 @@
 ---
-title: "Asset Intelligence 必要條件 | System Center Configuration Manager"
+title: "Asset Intelligence 必要條件 | Microsoft Docs"
 description: "取得 System Center Configuration Manager 中的 Asset Intelligence 必要條件。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 12f7ea7223237f57fb2d90f0f7b66381e8f09a1f
+ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
+ms.openlocfilehash: 156d6679817b81ca27fbd2b8836431396e1e6b23
 
 
 ---
@@ -51,6 +51,6 @@ System Center Configuration Manager 中的 Asset Intelligence 具有外部相依
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "建立 Mac 電腦應用程式 | System Center Configuration Manager"
+title: "建立 Mac 電腦應用程式 | Microsoft Docs"
 description: "查看在您建立和部署 Mac 電腦的應用程式時，必須考慮的事項。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 98b36c58506bcb82fe82f842b8c3ed9dbd2a75d1
+ms.sourcegitcommit: 8dcf9f310a4ea8e2f43f2fe79e5e3cfa2c8aeb61
+ms.openlocfilehash: c2feffad39a20519fd86ca9348b0855a51e05aa9
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 98b36c58506bcb82fe82f842b8c3ed9dbd2a75d1
 
 ## <a name="general-considerations"></a>一般考量  
  您可以使用 System Center Configuration Manager 將應用程式部署到執行 Configuration Manager Mac 用戶端的 Mac 電腦。 將軟體部署到 Mac 電腦的步驟，和用來將軟體部署到 Windows 電腦的步驟類似。 不過，在建立及部署由 Configuration Manager 管理之 Mac 電腦的應用程式之前，請考量以下事項：  
-  
+
 -   在將 Mac 應用程式套件部署到 Mac 電腦之前，您必須使用 Mac 電腦上的 **CMAppUtil** 工具，將這些應用程式轉換為 Configuration Manager 可讀取的格式。  
 
 -   Configuration Manager 不支援對使用者部署 Mac 應用程式，因為這些部署只能運用在裝置上。 同樣地，針對 Mac 應用程式部署，Configuration Manager 不支援 [部署軟體精靈] 之 [部署設定] 頁面的 [將軟體預先部署至使用者的主要裝置] 選項。  
@@ -71,9 +71,9 @@ ms.openlocfilehash: 98b36c58506bcb82fe82f842b8c3ed9dbd2a75d1
 -   Mac OS X 安裝程式套件 (.pkg)  
 
 -   Mac OS X 應用程式 (.app)  
-  
+
 收集到應用程式資訊後， **CMAppUtil** 接著會建立一支副檔名為 **.cmmac**的檔案。 這支檔案包含 Mac 軟體的安裝檔案，以及有關可用於評估是否已安裝應用程式之偵測方法的資訊。 **CMAppUtil** 也可處理 **.dmg** 檔案，其包含多項 Mac 應用程式，並且為每一個應用程式建立不同部署類型。  
-  
+
 1.  將 Mac 軟體安裝套件複製到 Mac 電腦的資料夾，該資料夾是您擷取從 Microsoft 下載中心下載之 **macclient.dmg** 檔案的內容。  
 
 2.  在相同的 Mac 電腦上，開啟終端機視窗，並瀏覽至您擷取 **macclient.dmg** 檔案之內容所在的資料夾。  
@@ -106,9 +106,9 @@ ms.openlocfilehash: 98b36c58506bcb82fe82f842b8c3ed9dbd2a75d1
 ###  <a name="create-a-configuration-manager-application-that-contains-the-mac-software"></a>建立包含 Mac 軟體的 Configuration Manager 應用程式  
 
 使用下列程序，協助您建立由 Configuration Manager 管理之 Mac 電腦的應用程式。  
-  
+
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] > [應用程式管理] > [應用程式]。  
-  
+
 3.  在 **[首頁]** 索引標籤的 **[建立]** 群組中，按一下 **[建立應用程式]**。  
 
 4.  在 [建立應用程式精靈] 的 [一般]  頁面上，選取 [從安裝檔案自動偵測此應用程式的相關資訊] 。  
@@ -141,9 +141,9 @@ ms.openlocfilehash: 98b36c58506bcb82fe82f842b8c3ed9dbd2a75d1
 
 > [!NOTE]  
 >  如果您已在 [建立應用程式精靈] 中自動匯入應用程式的相關資訊，則可能已經建立了應用程式的部署類型。  
-  
+
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] > [應用程式管理] > [應用程式]。  
-  
+
 3.  選取應用程式，然後在 [首頁]  索引標籤的 [應用程式]  群組中，按一下 [建立部署類型]  為此應用程式建立新部署類型。  
 
     > [!NOTE]  
@@ -207,9 +207,9 @@ ms.openlocfilehash: 98b36c58506bcb82fe82f842b8c3ed9dbd2a75d1
 
 > [!NOTE]  
 >  您可以建立僅包含 Mac 電腦的集合。 若要這麼做，您可建立一個使用查詢規則的集合，然後使用[如何建立查詢](../../core/servers/manage/create-queries.md)主題中的範例 WQL 查詢。  
-  
+
  如需詳細資訊，請參閱[部署應用程式](../../apps/deploy-use/deploy-applications.md)。  
-  
+
 ###  <a name="step-5-monitor-the-deployment-of-the-mac-application"></a>步驟 5：監視 Mac 應用程式的部署  
  您可以使用相同程序來監視對 Mac 電腦的應用程式部署，如同您用於對 Windows 電腦的應用程式部署。  
 
@@ -217,6 +217,6 @@ ms.openlocfilehash: 98b36c58506bcb82fe82f842b8c3ed9dbd2a75d1
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "工作順序內建變數 | Configuration Manager"
+title: "工作順序內建變數 | Microsoft Docs"
 description: "工作順序內建變數提供工作順序執行環境的相關資訊，並且可用於整個工作順序期間。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4b1014bc9a5c17dd571e69e7f5bfdae060a3eb55
+ms.sourcegitcommit: c9fb0fa46058c773eec6ac23999357d35d9f970f
+ms.openlocfilehash: a75adebfe2bbec8f6fe5206561530a720c0bfbf1
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 4b1014bc9a5c17dd571e69e7f5bfdae060a3eb55
 *適用於：System Center Configuration Manager (最新分支)*
 
 
- 工作順序內建變數是由 System Center Configuration Manager 所提供。 內建變數提供工作順序執行環境的相關資訊，而其值可用於整個工作順序中。 一般而言，內建變數會在執行工作順序步驟之前進行初始化。 例如，內建變數 **_SMSTSLogPath** 是環境變數，可指定 Configuration Manager 元件在工作順序執行時用來寫入記錄檔的路徑；任何工作順序步驟都可以存取這個環境變數。 不過，在每個步驟之前會評估一些變數，例如 _SMSTSCurrentActionName。 內建變數的值是通常是唯讀的。 名稱開頭為底線之內建變數的值是唯讀的。  
+ 工作順序內建變數是由 System Center Configuration Manager 所提供。 內建變數提供工作順序執行環境的相關資訊，而其值可用於整個工作順序中。 一般而言，內建變數會在執行工作順序步驟之前進行初始化。 例如，內建變數 **_SMSTSLogPath** 是環境變數，可指定 Configuration Manager 元件在工作順序執行時用來寫入記錄檔的路徑；任何工作順序步驟都可以存取這個環境變數。 不過，在每個步驟之前會評估一些變數，例如 &#95;SMSTSCurrentActionName。 內建變數的值是通常是唯讀的。 名稱開頭為底線之內建變數的值是唯讀的。  
 
 ## <a name="task-sequence-built-in-variable-list"></a>工作順序內建變數清單  
  下列清單描述 Configuration Manager 中可用的內建變數：  
@@ -67,9 +67,11 @@ ms.openlocfilehash: 4b1014bc9a5c17dd571e69e7f5bfdae060a3eb55
 |_SMSTSUseSSL|指定工作順序是否使用 SSL 來與 Configuration Manager 管理點通訊。 如果您的網站以原生模式執行，這個值會設為 **true**。|  
 |_SMSTSWTG|指定電腦是否以 Windows To Go 裝置執行。|  
 |OSDPreserveDriveLetter|從 Configuration Manager 1606 版開始，已取代這個工作順序變數。 在作業系統部署期間，Windows 安裝程式預設會決定使用最佳的磁碟機代號 (通常是 C:)。 <br /><br />在舊版中，OSDPreverveDriveLetter 變數決定工作順序將作業系統映像套用至目的地電腦時，是否要使用該映像 WIM 檔中所擷取的磁碟機代號。 您可以將此變數的值設為 **False** ，如此就可使用您在 **「套用作業系統」** 工作順序步驟中為 **目的地** 設定所指定的位置。 如需詳細資訊，請參閱 [Apply Operating System Image](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage)。|  
+|OSDSetupAdditionalUpgradeOptions|從 Configuration Manager 1602 版開始，您可以使用這個變數來指定其他 Windows 安裝程式升級選項。
 |SMSTSAssignmentsDownloadInterval|使用這個變數，指定用戶端在上次嘗試 (未傳回原則) 之後，再次嘗試下載原則所需等待的秒數。 用戶端預設會等待 **0** 秒後再重試。<br /><br /> 您可以從媒體或 PXE 使用啟動前置命令來設定此變數。|  
 |SMSTSAssignmentsDownloadRetry|使用這個變數，指定用戶端在第一次嘗試找不到原則之後，可以再次嘗試下載原則的次數。 用戶端預設會重試 **0** 次。<br /><br /> 您可以從媒體或 PXE 使用啟動前置命令來設定此變數。|  
 |SMSTSAssignUsersMode|指定工作順序如何將使用者和目的地電腦產生關聯。 請將變數設為下列其中一個值。<br /><br /> -   自動：工作順序在將作業系統部署至目的地電腦時，會建立指定使用者和目的地電腦之間的關聯性。<br />-   擱置中：工作順序會建立指定使用者和目的地電腦之間的關聯性，但是會等候系統管理使用者核准，才設定關聯性。<br />-   已停用：工作順序在部署作業系統時，不會將使用者和目的地電腦產生關聯。|  
+|SMSTSDownloadAbortCode|這個變數包含外部程式下載程式的中止程式碼值 (指定於 SMSTSDownloadProgram 變數)。 如果程式傳回等於 SMSTSDownloadAbortCode 變數值的錯誤碼，則內容下載會失敗，並且不再嘗試其他下載方法。
 |SMSTSDownloadProgram|使用此變數指定工作順序的替代內容提供者，這是取代預設 Configuration Manager 下載程式用來下載內容的下載程式。 工作順序會檢查指定下載程式的變數，這是內容下載程序的一部分。 在指定之後，工作順序會執行程式以執行下載。|  
 |SMSTSDownloadRetryCount|使用此變數指定 Configuration Manager 嘗試從發佈點下載內容的次數。 用戶端預設會重試 **2** 次。|  
 |SMSTSDownloadRetryDelay|使用此變數指定 Configuration Manager 在重新嘗試從發佈點下載內容之前等待的秒數。 用戶端預設會等待 **15** 秒後再重試。|  
@@ -80,7 +82,7 @@ ms.openlocfilehash: 4b1014bc9a5c17dd571e69e7f5bfdae060a3eb55
 |SMSTSMPListRequestTimeout|使用這個變數，指定工作順序從位置服務擷取管理點清單失敗後，到重新嘗試安裝應用程式或軟體更新之前等待的毫秒數。 根據預設，工作順序會等待 60,000 毫秒 (60 秒) 後再重試該步驟，且最多重試三次。 此變數只適用於 [安裝應用程式] 和 [安裝軟體更新] 工作順序步驟。|  
 |SMSTSMPListRequestTimeoutEnabled|如果用戶端不在內部網路上，使用此變數可啟用重複的 MPList 要求以重新整理用戶端。 <br />根據預設，此變數設定為 True。 當用戶端在網際網路上時，您可以將此變數設定為 False，以避免不必要的延遲。 此變數只適用於「安裝應用程式」和「安裝軟體更新」工作順序步驟。|  
 |SMSTSPeerDownload|使用此變數可讓用戶端使用 Windows PE 對等快取。<br /><br /> 範例：<br /><br /> SMSTSPeerDownload  = **TRUE** 可啟用這項功能。|  
-|SMSTSPeerRequestPort|若您未使用在 [用戶端設定] 中設定的預設連接埠 (8003 和 8004)，則必須將這個 Windows PE 對等快取變數設定為初始廣播所使用的自訂網路連接埠。|  
+|SMSTSPeerRequestPort|若您未使用在 [用戶端設定] 中設定的預設連接埠 (8004)，則必須將這個 Windows PE 對等快取變數設定為初始廣播所使用的自訂網路連接埠。|  
 |SMSTSPersistContent|使用此變數暫時將內容保留在工作順序快取中。|  
 |SMSTSPostAction|指定在完成工作順序後執行的命令。 例如，您可以使用這個變數，指定工作順序將作業系統部署至裝置之後，可在內嵌裝置上寫入篩選器的指令碼。|  
 |SMSTSPreferredAdvertID|強制在目的地電腦上執行特定目標部署。 您可以從媒體或 PXE 使用啟動前置命令來設定這個變數。 如果設定這個變數，工作順序會覆寫任何所需的部署。|  
@@ -95,6 +97,6 @@ ms.openlocfilehash: 4b1014bc9a5c17dd571e69e7f5bfdae060a3eb55
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "必要條件檢查工具 | System Center Configuration Manager"
+title: "必要條件檢查程式 | Microsoft Docs"
 description: "了解如何使用必要條件檢查程式，識別並修正會封鎖實際站台或站台系統角色安裝的問題。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4c2322ed0805b5f087409ec487ebec9d7c4f10d5
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: f30d7a451f47a3ab1efe6f7ac9c3e0151b8cda96
 
 ---
 # <a name="prerequisite-checker-for-system-center-configuration-manager"></a>System Center Configuration Manager 的必要條件檢查工具
@@ -91,7 +91,7 @@ ms.openlocfilehash: 4c2322ed0805b5f087409ec487ebec9d7c4f10d5
 
 2.  輸入  **prereqchk.exe /LOCAL** 以啟動必要條件檢查程式，並在伺服器上執行所有必要條件檢查。  
 
-## <a name="run-prerequisite-checker-from-a-command-prompt-for-specified-options"></a>針對特定選項，從命令提示字元執行必要條件檢查程式  
+## <a name="run-prerequisite-checker-from-a-command-prompt--for-specified-options"></a>針對特定選項，從命令提示字元執行必要條件檢查程式  
 
 1.  開啟 [命令提示字元] 視窗，並將目錄變更為下列其中一個位置：  
 
@@ -216,6 +216,6 @@ ms.openlocfilehash: 4c2322ed0805b5f087409ec487ebec9d7c4f10d5
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

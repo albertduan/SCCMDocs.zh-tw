@@ -1,5 +1,5 @@
 ---
-title: "使用 System Center Configuration Manager 部署 Windows To Go"
+title: "使用 System Center Configuration Manager 部署 Windows To Go | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中佈建 Windows To Go，建立從外部磁碟機開機的 Windows To Go 工作區。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: a8b1a42c43438553cfbb62328bed933378bb344c
 
 
 ---
@@ -450,7 +450,9 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
 
     -   **當沒有本機發佈點可用時，使用遠端發佈點**：指定用戶端是否可在速度慢且不可靠的網路上使用發佈點來下載工作順序所需要的內容。  
 
-    -   **允許用戶端使用內容的後援來源位置**：指定是否允許用戶端進行後援，並且在內容於慣用好發佈點上不可用時，使用非慣用發佈點作為內容的來源位置。  
+    -   **允許用戶端使用內容的後援來源位置**：
+        - *在 1610 版之前*，您可以選取 [允許內容的後援來源位置] 核取方塊，讓位於這些界限群組以外的用戶端回復，並在沒有其他發佈點可用時，將發佈點當成內容的來源位置使用。
+        - *從 1610 版開始*，您無法再設定 [允許內容的後援來源位置]。  相反地，您可以設定界限群組之間的關聯性，以決定用戶端何時可以開始搜尋其他界限群組中的有效內容來源位置。 
 
 11. 完成精靈。  
 
@@ -468,6 +470,6 @@ ms.openlocfilehash: 104355185c5bbb4c15f3b9cc80cf8fa0e529cf6d
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

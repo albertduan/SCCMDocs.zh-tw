@@ -1,5 +1,5 @@
 ---
-title: "監視複本 | System Center Configuration Manager"
+title: "監視複寫 | Microsoft Docs"
 description: "了解如何使用主控台中的 [監視] 工作區，監視 Configuration Manager 的基礎結構和操作。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f777295958e9cbc729e3759d354521c96ae3e8ac
-ms.openlocfilehash: 92ded1197d1dcdd6e5f3a8917718e6232b18bce4
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 132803a1aa9aad5c5462686bd656688418e47d07
 
 
 ---
@@ -55,7 +55,7 @@ ms.openlocfilehash: 92ded1197d1dcdd6e5f3a8917718e6232b18bce4
 
 
 
-##  <a name="a-namebkmkmonintormgmttasksa-monitor-common-management-tasks-for-configuration-manager"></a><a name="BKMK_MonintorMgmtTasks"></a> 監視 Configuration Manager 的一般管理工作  
+##  <a name="a-namebkmkmonintormgmttasksa-monitor--common-management-tasks-for-configuration-manager"></a><a name="BKMK_MonintorMgmtTasks"></a> 監視 Configuration Manager 的一般管理工作  
  Configuration Manager 從 Configuration Manager 主控台內提供內建的監視。 您可以監視許多工作，包括與軟體更新、電源管理，以及整個階層中的內容部署相關的工作。  
 
  請參考下列資訊來協助您監視常見的 Configuration Manager 工作：  
@@ -245,6 +245,6 @@ Configuration Manager 提供數種可監視階層狀態和操作的方法。 您
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

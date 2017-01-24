@@ -1,5 +1,5 @@
 ---
-title: "建立 Exchange ActiveSync 電子郵件設定檔 | System Center Configuration Manager"
+title: "建立 Exchange ActiveSync 電子郵件設定檔 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中建立和設定與 Microsoft Intune 搭配運作的電子郵件設定檔。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 613ed15742322e2eb90eec3c9f493e3b1755d93a
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: 3ff5d53464c61e0dc1836d032bcb3815bae05d1f
 
 
 ---
@@ -39,10 +39,10 @@ ms.openlocfilehash: 613ed15742322e2eb90eec3c9f493e3b1755d93a
 
 -   執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 iPhone 裝置  
 
--   執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 IPad 裝置  
+-   執行 iOS 5、iOS 6、iOS 7 與 iOS 8 的 iPad 裝置  
 
 > [!IMPORTANT]  
->  若要將設定檔部署到 iOS、Android Samsung KNOX、Windows Phone 和 Windows 8.1 或 Windows 10 裝置，這些裝置必須註冊 Intune。 如需如何取得已註冊裝置的相關資訊，請參閱 [使用 Microsoft Intune 管理行動裝置](https://technet.microsoft.com/en-us/library/dn646962.aspx)。  
+>  若要將設定檔部署到 iOS、Android Samsung KNOX Standard、Windows Phone 和 Windows 8.1 或 Windows 10 裝置，這些裝置必須註冊 Intune。 如需如何取得已註冊裝置的相關資訊，請參閱 [使用 Microsoft Intune 管理行動裝置](https://technet.microsoft.com/en-us/library/dn646962.aspx)。  
 
  除了在裝置上設定電子郵件帳戶外，您也可以設定連絡人、行事曆和工作的同步處理設定。  
 
@@ -57,7 +57,7 @@ ms.openlocfilehash: 613ed15742322e2eb90eec3c9f493e3b1755d93a
 
 2.  在 [資產與相容性]  工作區中，依序展開 [相容性設定] 和 [公司資源存取] ，然後按一下 [電子郵件設定檔] 。  
 
-3.  在 [常用]  索引標籤上，按一下 [建立]  群組中的 [建立 Exchange ActiveSync 設定檔] 。 
+3.  在 [常用]  索引標籤上，按一下 [建立]  群組中的 [建立 Exchange ActiveSync 設定檔] 。
 
 4.  遵循精靈指示   
 
@@ -173,7 +173,7 @@ ms.openlocfilehash: 613ed15742322e2eb90eec3c9f493e3b1755d93a
         -   **工作**  
 
 ###  <a name="specify-supported-platforms-for-the-exchange-activesync-email-profile"></a>指定 Exchange ActiveSync 電子郵件設定檔的支援平台。  
- 
+
 1.  在 [建立 Exchange ActiveSync 電子郵件設定檔精靈] 的 [支援的平台]  頁面上，選取將安裝電子郵件設定檔的作業系統，或按一下 [全選]  在所有可用的作業系統上安裝電子郵件設定檔。  
 
 2.  完成精靈。
@@ -182,6 +182,6 @@ ms.openlocfilehash: 613ed15742322e2eb90eec3c9f493e3b1755d93a
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

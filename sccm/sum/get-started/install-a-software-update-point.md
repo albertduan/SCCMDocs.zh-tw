@@ -1,6 +1,6 @@
 ---
 
-title: "安裝及設定軟體更新點 | Configuration Manager"
+title: "安裝和設定軟體更新點 | Microsoft Docs"
 description: "主要站台需要管理中心網站上的軟體更新點才能進行軟體更新相容性評估，以及將軟體更新部署至用戶端。"
 keywords: 
 author: dougeby
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: b099a645-6434-498f-a408-1d438e394396
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 62a3b720abbc93460a782928e6cbdcb5d6f215aa
+ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
+ms.openlocfilehash: 1d9911274fd76942131054231cdcc2bcebbd3fcb
 
 
 
@@ -154,6 +154,6 @@ ms.openlocfilehash: 62a3b720abbc93460a782928e6cbdcb5d6f215aa
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

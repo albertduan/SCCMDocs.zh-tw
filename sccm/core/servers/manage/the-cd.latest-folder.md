@@ -1,5 +1,5 @@
 ---
-title: "CD.Latest 資料夾 | System Center Configuration Manager"
+title: "CD.Latest 資料夾 | Microsoft Docs"
 description: "了解從 Configuration Manager 主控台內進行產品更新的新更新程序。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: fc63227aa4345fb58e7efc15abd55071fb33e5d5
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: dcf56f6b82f89e81d636ea920f36133e245cbb1e
 
 
 ---
@@ -28,6 +28,8 @@ ms.openlocfilehash: fc63227aa4345fb58e7efc15abd55071fb33e5d5
 System Center Configuration Manager 引進新的更新程序，可從 Configuration Manager 主控台內進行產品更新。 為了支援這個 Configuration Manager 的全新更新方法，系統會建立一個名稱為 **CD.Latest** 的新資料夾，此資料夾包含一份適用於您的站台更新版本的 Configuration Manager 安裝檔案。  
 
 從 1606 更新開始，CD.Latest 資料夾包含名為 **Redist** 的資料夾，其中含有安裝程式下載並使用的可轉散發檔案。 這些檔案會與該 CD.Latest 資料夾中找到的 Configuration Manager 檔案版本相符。 當您從 CD.Latest 資料夾執行安裝程式時，必須使用與該版本安裝程式相符的檔案。 若要執行這項操作，您可以指示安裝程式從 Microsoft 下載最新的檔案，或指示安裝程式使用來自 CD.Latest 資料夾隨附之 Redist 資料夾中的檔案。
+
+不過，基準媒體 (例如在 2016 年 10 月發行的基準 1606 版) 不包括 Redist 資料夾。 除非您安裝主控台內更新，否則不會建立 Redist 資料夾。 同時，使用您從基準媒體安裝站台時所使用的 Redist 資料夾。  
 
 > [!TIP]
 > 如果您尚未安裝版本 1606，則必須確定所使用的可轉散發套件檔案是最新的。 如果您最近沒有下載可轉散發套件檔案，則可讓安裝程式從 Microsoft 下載。   
@@ -61,6 +63,6 @@ System Center Configuration Manager 引進新的更新程序，可從 Configurat
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "準備安裝站台 | System Center Configuration Manager"
+title: "準備安裝站台 | Microsoft Docs"
 description: "閱讀這些詳細資料，以節省安裝多個站台期間的時間，並避免錯誤。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 6f240f1da4561c05bee974b78f43bfcdba591df6
+ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
+ms.openlocfilehash: 0534d1eb587cb01f35d811d72ddfe6ceb07e5b7c
 
 ---
 # <a name="prepare-to-install-system-center-configuration-manager-sites"></a>準備安裝 System Center Configuration Manager 站台
@@ -73,7 +73,7 @@ ms.openlocfilehash: 6f240f1da4561c05bee974b78f43bfcdba591df6
 
 
 
-## <a name="a-namebkmktasksa-common-tasks-to-complete-before-starting-an-install"></a><a name="bkmk_tasks"></a> 要在開始安裝之前完成的一般工作
+## <a name="a-namebkmktasksa--common-tasks-to-complete-before-starting-an-install"></a><a name="bkmk_tasks"></a> 要在開始安裝之前完成的一般工作
 -   了解將要用於部署的階層拓撲    
      (請參閱[為 System Center Configuration Manager 設計站台階層](../../../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md))  
 
@@ -90,7 +90,7 @@ ms.openlocfilehash: 6f240f1da4561c05bee974b78f43bfcdba591df6
 
 
 
-## <a name="a-namebkmksitecodesa-about-site-names-and-site-codes"></a><a name="bkmk_sitecodes"></a>  關於站台名稱及站台碼
+## <a name="a-namebkmksitecodesa--about-site-names-and-site-codes"></a><a name="bkmk_sitecodes"></a>  關於站台名稱及站台碼
 站台碼和站台名稱是用來識別和管理 Configuration Manager 階層中的站台。 在 Configuration Manager 主控台中，站台碼和站台名稱的顯示格式為 &lt;站台碼\> - &lt;站台名稱\>。 階層中所使用的每個站台碼都必須是唯一的。 如果針對 Configuration Manager 擴充 Active Directory 架構，而且站台正在發行資料，即使站台碼用於不同的 Configuration Manager 階層中，或者，如果站台碼已經用於先前的 Configuration Manager 安裝中，則 Active Directory 樹系中所使用的站台碼必須為唯一代碼。 請務必仔細規劃您的站台碼和站台名稱以部署階層。
 
 ### <a name="specify-a-site-code-and-site-name"></a>指定站台碼和站台名稱
@@ -126,7 +126,7 @@ ms.openlocfilehash: 6f240f1da4561c05bee974b78f43bfcdba591df6
     -   Configuration Manager 不支援將子主要站台移出階層來建立獨立主要站台，或將它附加至不同的階層。 相反地，請先解除安裝子主要站台，然後將其重新安裝為新的獨立主要站台，或不同階層之管理中心網站的子系。  
 
 
-## <a name="a-namebkmkoptionalstepsa-optional-steps-to-run-before-starting-setup"></a><a name="bkmk_optionalsteps"></a>  要在啟動安裝程式之前執行的選擇性步驟
+## <a name="a-namebkmkoptionalstepsa--optional-steps-to-run-before-starting-setup"></a><a name="bkmk_optionalsteps"></a>  要在啟動安裝程式之前執行的選擇性步驟
 **您可以手動執行[安裝程式下載程式](../../../../core/servers/deploy/install/setup-downloader.md)**，以下載 Configuration Manager 的更新版安裝檔案。
 
 當執行安裝程式的電腦未連線到網際網路時，或您預計要安裝多部站台伺服器時，請考慮使用「安裝程式下載程式」來為安裝程式檔下載必要的更新：
@@ -148,6 +148,6 @@ ms.openlocfilehash: 6f240f1da4561c05bee974b78f43bfcdba591df6
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

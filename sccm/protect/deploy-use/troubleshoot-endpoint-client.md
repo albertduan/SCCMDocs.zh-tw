@@ -1,5 +1,5 @@
 ---
-title: "為 Windows Defender 或 Endpoint Protection 用戶端進行疑難排解 | System Center Configuration Manager"
+title: "Windows Defender 或 Endpoint Protection 用戶端疑難排解 | Microsoft Docs"
 description: "了解如何為 Windows Defender 和 Endpoint Protection 問題進行疑難排解。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 4d30cd85cb59f8f27704979074470bb06310054b
+ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
+ms.openlocfilehash: eda5eb85aada88b77166582bb116cc680b2c0631
 
 
 ---
@@ -236,7 +236,7 @@ ms.openlocfilehash: 4d30cd85cb59f8f27704979074470bb06310054b
  **徵兆**  
 
  您收到訊息，通知您「**Windows Defender 或 **  
- **Endpoint Protection 並未監視電腦，因為程式的服務已停止。您應該立即重新啟動該服務。**  
+ **Endpoint Protection 並未監視電腦，因為程式的服務已停止。您應該立即重新啟動該服務。**」  
 
  **解決方案**  
 
@@ -244,7 +244,7 @@ ms.openlocfilehash: 4d30cd85cb59f8f27704979074470bb06310054b
 
 -   關閉所有應用程式，然後重新啟動電腦。  
 
-### <a name="step-2-make-sure-the-windows-defender-orbr-endpoint-protection-service-is-set-to-automatic-and-is-started"></a>步驟 2：確定 "Windows Defender" 或<br />      "Endpoint Protection" 服務設定為自動並已啟動  
+### <a name="step-2-make-sure-the-windows-defender-orbr-------endpoint-protection-service-is-set-to-automatic-and-is-started"></a>步驟 2：確定 "Windows Defender" 或<br />      "Endpoint Protection" 服務設定為自動並已啟動  
 
 1.  按一下 [開始]  ，並搜尋 **services.msc**，然後按 **Enter**。  
 
@@ -325,6 +325,6 @@ ms.openlocfilehash: 4d30cd85cb59f8f27704979074470bb06310054b
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

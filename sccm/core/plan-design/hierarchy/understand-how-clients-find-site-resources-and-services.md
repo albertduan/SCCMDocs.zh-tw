@@ -1,5 +1,5 @@
 ---
-title: "尋找站台資源 | System Center Configuration Manager"
+title: "尋找站台資源 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 用戶端如何和何時使用服務位置來尋找站台資源。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5d718d0f9b8c6121f3124a8ade7507c61b7313f2
-ms.openlocfilehash: cad4ebd3f8fa275d7d2cad9b2b87c32b971c580d
+ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
+ms.openlocfilehash: b006896091901fab7b141f99f4c95eb22ea61b82
 
 
 ---
@@ -176,7 +176,6 @@ System Center Configuration Manager 用戶端使用稱為**服務位置**的處�
 **當您的 DNS 伺服器支援自動更新時**，可以將 Configuration Manager 設定為自動在內部網路將管理點發行到 DNS，或者手動將這些記錄發行到 DNS。 將管理點發佈到 DNS 時，會在服務位置 (SRV) 記錄中發佈其內部網路 FQDN 和連接埠號碼。 您可在 [管理點元件內容] 中設定網站的 DNS 發佈功能。 如需詳細資訊，請參閱 [System Center Configuration Manager 的站台元件](../../../core/servers/deploy/configure/site-components.md)。  
 
 **當您的 DNS 區域針對動態更新設為「 限安全 」時**，只有第一個要發佈到 DNS 的管理點可使用預設權限順利完成。
-- 您可以將裝載管理點的每部伺服器加入 DnsAdmins 群組，以確保這些管理點有權修改其記錄。  
 - 如果只有一個管理點可以順利地發佈和修改其 DNS 記錄，只要該管理點伺服器狀況良好，用戶端就能從該管理點取得完整的管理組件清單，並找出其慣用的管理點。
 
 
@@ -251,6 +250,6 @@ Configuration Manager 支援服務位置記錄的 RFC 2782，其格式如下：*
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

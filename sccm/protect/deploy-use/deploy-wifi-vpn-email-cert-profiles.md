@@ -1,5 +1,5 @@
 ---
-title: "部署 Wi-Fi、VPN、電子郵件和憑證設定檔 | System Center Configuration Manager"
+title: "部署 Wi-Fi、VPN、電子郵件及憑證設定檔 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中部署 Wi-Fi、VPN、電子郵件和憑證設定檔。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: 7e13c52c135850b1f449cf91bc81425208d16551
+ms.sourcegitcommit: c2e3aef41e9a890d136039f85777ab07284e5c27
+ms.openlocfilehash: 70372d5df13034b48f3e43b766776442f1be5823
 
 ---
 # <a name="deploy-profiles-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中部署設定檔
@@ -40,10 +40,10 @@ ms.openlocfilehash: 7e13c52c135850b1f449cf91bc81425208d16551
 > -   [如何在 System Center Configuration Manager 中建立憑證設定檔](create-certificate-profiles.md)    
 
 > [!IMPORTANT]  
->  移除 Wi-Fi 設定檔部署時，不會從用戶端裝置移除 Wi-Fi 設定檔。 如果您要從裝置移除設定檔，必須以手動方式移除。
+>  移除 VPN 設定檔部署時，不會將它從用戶端裝置移除。 如果您要從裝置移除設定檔，必須以手動方式移除。
 >   
 
-## <a name="deploying-profiles"></a>部署設定檔  
+## <a name="deploying--profiles"></a>部署設定檔  
 
 
 1.  在 System Center Configuration Manager 主控台中，選擇 [資產與相容性]。  
@@ -75,6 +75,6 @@ ms.openlocfilehash: 7e13c52c135850b1f449cf91bc81425208d16551
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

@@ -1,5 +1,5 @@
 ---
-title: "提取發佈點 | System Center Configuration Manager"
+title: "提取發佈點 | Microsoft Docs"
 description: "了解搭配使用提取發佈點與 System Center Configuration Manager 的設定和限制。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6cd640085e90b2945326e3fa942ae9bd7b8f7e24
-ms.openlocfilehash: c1c476b69e955058d315af9853e18bd3b71de723
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: f94d928244699c1c926dca05823f0029c588c7f1
 
 
 ---
@@ -111,10 +111,9 @@ System Center Configuration Manager 的提取發佈點是標準發佈點，其�
 
 ## <a name="see-also"></a>另請參閱  
  [System Center Configuration Manager 中的內容管理基本概念](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management)   
- 
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 

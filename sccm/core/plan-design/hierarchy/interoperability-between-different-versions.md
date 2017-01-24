@@ -1,5 +1,5 @@
 ---
-title: "不同版本之間的互通性 | System Center Configuration Manager"
+title: "Configuration Manager 版本之間的互通性 | Microsoft Docs"
 description: "了解如何避免相同網路中多個 System Center Configuration Manager 階層之間產生衝突。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1134bb2f04152288e72d40b1b1083f415cb4e900
-ms.openlocfilehash: db0bf04b73050cb42f8230227c8db6ebfb3c6987
+ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
+ms.openlocfilehash: 32182f06a90d768c40e29ed8a8e89cb45114bd15
 
 
 ---
@@ -61,12 +61,12 @@ ms.openlocfilehash: db0bf04b73050cb42f8230227c8db6ebfb3c6987
 
  為避免在兩個階層的界限重疊時不小心將用戶端指派給錯誤的站台，請將 Configuration Manager 用戶端安裝參數設為將用戶端指派給特定站台。  
 
-##  <a name="a-namebkmkmixeda-configuration-manager-limitations-in-a-mixed-version-hierarchy"></a><a name="bkmk_mixed"></a> 混合版本階層中的 Configuration Manager 限制  
+##  <a name="a-namebkmkmixeda-configuration-manager-limitations--in-a-mixed-version-hierarchy"></a><a name="bkmk_mixed"></a> 混合版本階層中的 Configuration Manager 限制  
  有時，升級 System Center Configuration Manager 站台時，不同的站台會是不同的版本。  例如，您可能將管理中心網站升級至新的版本，但因站台維護期間，可能之後才會升級一個或多個主要站台。  
 
  單一階層中不同的站台執行不同的版本時，部分功能無法使用。 這可能會影響您在 Configuration Manager 主控台中管理 Configuration Manager 物件的方式，以及對用戶端提供的功能。 通常，如果站台或用戶端是執行較舊 Service Pack 版本，可能就無法存取較新版 Configuration Manager 的功能。  
 
-### <a name="limitations-when-upgrading-configuration-manager"></a>升級 Configuration Manager 時的限制  
+### <a name="limitations-when-upgrading--configuration-manager"></a>升級 Configuration Manager 時的限制  
 
 |物件|詳細資料|  
 |------------|-------------|  
@@ -85,6 +85,6 @@ ms.openlocfilehash: db0bf04b73050cb42f8230227c8db6ebfb3c6987
 
 
 
-<!--HONumber=Nov16_HO1-->
+<!--HONumber=Dec16_HO3-->
 
 
