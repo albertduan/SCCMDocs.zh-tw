@@ -2,7 +2,7 @@
 title: "規劃和設定應用程式管理 | Microsoft Docs"
 description: "實作和設定必要的相依性以在 System Center Configuration Manager 中部署應用程式。"
 ms.custom: na
-ms.date: 12/13/2016
+ms.date: 01/17/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 7634d5326265d7947a01e5b83374f65911e33aeb
-ms.openlocfilehash: 3ab905192c091cb5ad013c8e0c8590597fb0422a
+ms.sourcegitcommit: d2a12edcc6bc7413558e25b694b69133c2496019
+ms.openlocfilehash: 0a38ea116e589425048f6c46378df46ecc0d375b
 
 
 ---
@@ -33,7 +33,7 @@ ms.openlocfilehash: 3ab905192c091cb5ad013c8e0c8590597fb0422a
 |------------------|----------------------|  
 |執行應用程式類別目錄網站點的站台系統伺服器、應用程式類別目錄 Web 服務點、管理點及發佈點均需要 Internet Information Services (IIS)。|如需這項需求的詳細資訊，請參閱[支援的設定](../../core/plan-design/configs/supported-configurations.md)。|  
 |Configuration Manager 註冊的行動裝置|進行應用程式程式碼簽署以將其部署至行動裝置時，請勿使用以第 3 版範本 (**Windows Server 2008 Enterprise Edition**) 所產生的憑證。 此憑證範本所建立的憑證與行動裝置適用的 Configuration Manager 應用程式不相容。<br /><br /> 如果您的行動裝置應用程式使用 Active Directory 憑證服務進行應用程式程式碼簽署，請勿使用第 3 版的憑證範本。|  
-|如果要自動建立使用者裝置親和性，就必須將用戶端設為稽核登入事件。|Configuration Manager 會從用戶端電腦上的本機安全性原則讀取下列兩種設定，以判定自動使用者裝置親和性：<br /><br /><ul><li> **稽核帳戶登入事件**</li><li>**稽核登入事件**</li></ul> 要自動建立使用者和裝置之間的關聯性，請務必在用戶端電腦上啟用這兩種設定。 您可以使用 Windows 群組原則設定這些設定。|  
+|如果要自動建立使用者裝置親和性，就必須將用戶端設為稽核登入事件。|Configuration Manager 用戶端會從電腦安全性事件記錄檔讀取 [成功] 類型的登入事件，以判定自動使用者裝置親和性。  這些事件是透過下列兩項稽核原則啟用：<br>**稽核帳戶登入事件**<br>**稽核登入事件**<br>要自動建立使用者和裝置之間的關聯性，請務必在用戶端電腦上啟用這兩種設定。 您可以使用 Windows 群組原則設定這些設定。|  
 
 ## <a name="configuration-manager-dependencies"></a>Configuration Manager 相依性   
 
@@ -79,7 +79,7 @@ ms.openlocfilehash: 3ab905192c091cb5ad013c8e0c8590597fb0422a
 |步驟|詳細資料|詳細資訊|  
 |-----------|-------------|----------------------|  
 |**步驟 1：** 如果您將使用 HTTPS 連線，請確定您已將 Web 伺服器憑證部署至站台系統伺服器。|將 Web 伺服器憑證部署至將執行應用程式類別目錄網站點，和應用程式類別目錄 Web 服務點的站台系統伺服器。<br /><br /> 此外，如果您要讓用戶端從網際網路存取應用程式類別目錄，請將 Web 伺服器憑證部署到至少一個管理點站台系統伺服器，並且設定該憑證用於來自網際網路的用戶端連線。|如需憑證需求的詳細資訊，請參閱 [PKI 憑證需求](../../core/plan-design/network/pki-certificate-requirements.md)。|  
-|**步驟 2：** 如要使用用戶端 PKI 憑證與管理點連線，請將用戶端驗證憑證部署至用戶端電腦。|雖然用戶端不一定要使用用戶端 PKI 憑證連線至應用程式類別目錄，但是必須先連線到管理點，才能使用應用程式類別目錄。 在下列案例中，您必須將用戶端驗證憑證部署至用戶端電腦：<br /><br /><ul><li>內部網路上的所有管理點只接受 HTTPS 用戶端連線。</li><li>用戶端將從網際網路連線到應用程式類別目錄。</li></ul>|如需憑證需求的詳細資訊，請參閱 [PKI 憑證需求](../../core/plan-design/network/pki-certificate-requirements.md)。|  
+|**步驟 2：** 如要使用用戶端 PKI 憑證與管理點連線，請將用戶端驗證憑證部署至用戶端電腦。|雖然用戶端不會使用用戶端 PKI 憑證連線至應用程式類別目錄，但是必須先連線到管理點，才能使用應用程式類別目錄。 在下列案例中，您必須將用戶端驗證憑證部署至用戶端電腦：<br /><br /><ul><li>內部網路上的所有管理點只接受 HTTPS 用戶端連線。</li><li>用戶端將從網際網路連線到應用程式類別目錄。</li></ul>|如需憑證需求的詳細資訊，請參閱 [PKI 憑證需求](../../core/plan-design/network/pki-certificate-requirements.md)。|  
 |**步驟 3：** 安裝及設定應用程式類別目錄 Web 服務點和應用程式類別目錄網站。|您必須將這兩個站台系統角色安裝到相同站台上。 您不一定要將它們安裝到同一部站台系統伺服器上，或相同的 Active Directory 樹系中。 不過，應用程式類別目錄 Web 服務點必須與站台資料庫位於相同的樹系中。|如需站台系統角色放置的詳細資訊，請參閱[規劃站台系統伺服器和站台系統角色](../../core/plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md)。<br /><br /> 若要設定應用程式類別目錄 Web 服務點和應用程式類別目錄網站點，請參閱**步驟 3：安裝及設定應用程式類別目錄站台系統角色**。|  
 |**步驟 4：** 設定應用程式類別目錄和軟體中心的用戶端設定。|如果您希望所有使用者擁有相同的設定，請設定預設用戶端設定。 否則，請針對特定集合設定自訂用戶端設定。|如需用戶端設定的詳細資訊，請參閱[關於用戶端設定](../../core/clients/deploy/about-client-settings.md)。<br /><br /> 如需如何設定這些用戶端設定的詳細資訊，請參閱**步驟 4：設定應用程式類別目錄和軟體中心的用戶端設定**。|  
 |**步驟 5：** 確認應用程式類別目錄可運作。|您可以直接從瀏覽器或軟體中心使用應用程式類別目錄。|請參閱**步驟 5：確認應用程式類別目錄可運作**。|  
@@ -228,6 +228,6 @@ ms.openlocfilehash: 3ab905192c091cb5ad013c8e0c8590597fb0422a
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 
