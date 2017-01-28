@@ -284,6 +284,6 @@ System Center Configuration Manager 1511 版會收集三種層級的診斷及使
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 
