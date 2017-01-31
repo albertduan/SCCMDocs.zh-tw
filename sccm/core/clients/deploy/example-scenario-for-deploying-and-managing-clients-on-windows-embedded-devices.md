@@ -2,7 +2,7 @@
 title: "範例案例 - 部署 Windows Embedded 用戶端 | Microsoft Docs"
 description: "請參閱在 Windows Embedded 裝置上部署及管理 System Center Configuration Manager 用戶端的示範案例。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/12/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,20 +16,20 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 7b5cd35b22b610902628142d9cc52b8f3d54069d
+ms.sourcegitcommit: a650ad8e7b1f9468dd04165a3e43a89387b5d696
+ms.openlocfilehash: b07af49e2fecf6cc41258c87794ca7952206bb8a
 
 
 ---
 # <a name="example-scenario-for-deploying-and-managing-system-center-configuration-manager-clients-on-windows-embedded-devices"></a>在 Windows Embedded 裝置上部署及管理 System Center Configuration Manager 用戶端的示範案例
 
-*適用於：System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
-此案例藉由使用 System Center Configuration Manager 執行規則示範了如何管理寫入篩選器已啟用的 Windows Embedded 裝置。如果您的內嵌裝置不支援寫入篩選器，它們會以標準的 Configuration Manager 用戶端運作，您不需要執行此案例中管理寫入篩選器所需的步驟。  
+此案例示範如何使用 Configuration Manager 管理啟用寫入篩選器的 Windows Embedded 裝置。如果您的內嵌裝置不支援寫入篩選器，則會以標準 Configuration Manager 用戶端運作，而且這些程序不適用。  
 
- Coho Vineyard & Winery 開闢了一個遊客中心，並有意在執行 Windows Embedded 的 kiosk 中執行互動式簡報。 新遊客中心大樓與 IT 部門有點距離，所以必須要可以從遠端管理 kiosk。 除了安裝執行互動式簡報的軟體之外，這些裝置必須執行最新的反惡意程式碼防護軟體，以符合公司的安全性原則。 若要確保隨時可為遊客提供互動式簡報，kiosk 必須於每週 7 天執行，而且在遊客中心開放時完全不停機。  
+Coho Vineyard & Winery 開闢了一個遊客中心，需要在執行 Windows Embedded 的 kiosk 中執行互動式簡報。 新遊客中心大樓與 IT 部門有點距離，所以必須從遠端管理 kiosk。 除了執行簡報的軟體之外，這些裝置必須執行最新的反惡意程式碼保護軟體，以符合公司的安全性原則。 kiosk 必須於每週 7 天執行，而且在遊客中心開放時完全不停機。  
 
- Coho Vineyard & Winery 已執行 Configuration Manager 管理網路上的裝置。 Configuration Manager 已設定為執行 Endpoint Protection，並安裝軟體更新及應用程式。 不過，因為 IT 團隊先前不曾管理過 Windows Embedded 裝置，所以 Configuration Manager 系統管理員 Jane 做一項試驗，就是管理公司接待大廳中的兩部 kiosk。 如果這個從遠端管理這些裝置的試驗成功，就會核准遊客中心 kiosk 的訂單。  
+ Coho 已執行 Configuration Manager 管理網路上的裝置。 Configuration Manager 已設定為執行 Endpoint Protection，並安裝軟體更新及應用程式。 不過，因為 IT 團隊先前不曾管理過 Windows Embedded 裝置，所以 Configuration Manager 系統管理員 Jane 做一項試驗，就是管理接待大廳中的兩部 kiosk。   
 
  為了管理這些啟用寫入篩選器的 Windows Embedded 裝置，Jane 執行下列步驟來安裝 Configuration Manager 用戶端，使用 Endpoint Protection 保護用戶端，以及安裝互動式簡報軟體。  
 
@@ -70,7 +70,7 @@ ms.openlocfilehash: 7b5cd35b22b610902628142d9cc52b8f3d54069d
 
      Jane 知道需要一些時間來安裝用戶端，並將其狀態傳送回站台。 因此，她等待用戶端順利安裝，指派給站台，並在她為 Windows Embedded 裝置所建立的集合中顯示為用戶端後才進行確認。  
 
-     為了再次確認，她在 Windows Embedded 裝置上的 [控制台] 中檢查 Configuration Manager 的內容，並將這些內容與站台所管理的標準 Windows 電腦進行比對。 例如，在 [元件]  索引標籤上，[硬體清查代理程式]  顯示為 [已啟用] ，而在 [動作]  索引標籤上有 11 個可用的動作，其中包括 [應用程式部署評估週期]  和 [探索資料收集週期] 。  
+     為了再次確認，她在裝置上的 [控制台] 中檢查 Configuration Manager 的內容，並將這些內容與站台所管理的標準 Windows 電腦進行比對。 例如，在 [元件]  索引標籤上，[硬體清查代理程式]  顯示為 [已啟用] ，而在 [動作]  索引標籤上有 11 個可用的動作，其中包括 [應用程式部署評估週期]  和 [探索資料收集週期] 。  
 
      確認用戶端已順利安裝、指派，以及從管理點接收用戶端原則後，Jane 接著便依照 OEM 的指示，手動啟用寫入篩選器。  
 
@@ -182,6 +182,6 @@ ms.openlocfilehash: 7b5cd35b22b610902628142d9cc52b8f3d54069d
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 
