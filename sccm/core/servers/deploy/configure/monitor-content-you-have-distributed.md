@@ -2,7 +2,7 @@
 title: "監視內容 | Microsoft Docs"
 description: "使用 Configuration Manager 主控台了解如何監視發佈的內容。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/4/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
-ms.openlocfilehash: 9a5d2c3a3c6bdca05b5b00fa4d746c437a56ef89
+ms.sourcegitcommit: 4d34a272a93100426cccd2308c5b3b0b0ae94a60
+ms.openlocfilehash: 60f30fd6477f1ee8755e50ceb9cc17d43ef8ea68
 
 ---
 # <a name="monitor-content-you-have-distributed-with-system-center-configuration-manager"></a>監視您已使用 System Center Configuration Manager 所發佈的內容
@@ -156,12 +156,21 @@ ms.openlocfilehash: 9a5d2c3a3c6bdca05b5b00fa4d746c437a56ef89
 > [!TIP]  
 > 在版本 1610，對等快取和用戶端資料來源儀表板都是發行前版本功能。 若要啟用它們，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)。
 
-在主控台中，移至 [監視] > [用戶端狀態] > [用戶端資料來源]。 您可以在這裡選取一個要套用到儀表板的時段。 然後，在顯示中，您可以選取您想要檢視資訊的界限群組或套件。 檢視資訊時，您可以將滑鼠游標暫留在介面上，以查看有關不同內容或原則來源的更多詳細資料。  
+在主控台中，移至 [監視] > [用戶端狀態] > [用戶端資料來源]。 您可以在這裡選取一個要套用到儀表板的時段。 然後，在顯示中，您可以選取您想要檢視資訊的界限群組或套件。 檢視資訊時，您可以將滑鼠游標暫留在介面上，以查看有關不同內容或原則來源的更多詳細資料。
+
+詳細資料:  
+- **用戶端內容來源**：顯示用戶端從中取得內容的來源。
+- **發佈點**︰顯示屬於所選取界限群組的發佈點數目。
+- **使用發佈點的用戶端**：這會顯示所選取的界限群組中有多少用戶端使用發佈點來取得內容。
+- **對等快取來源**︰針對選取的界限群組，這會顯示有多少對等快取來源回報下載歷程記錄。
+- **使用對等的用戶端**：這會顯示所選取的界限群組中有多少用戶端使用對等快取來源來取得內容。
+
+
 
 您也可以使用新報告「用戶端資料來源 - 摘要」來檢視每個界限群組的用戶端資料來源摘要。
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

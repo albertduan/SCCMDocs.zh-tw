@@ -2,7 +2,7 @@
 title: "支援的站台系統伺服器 | Microsoft Docs"
 description: "了解您可用來裝載 System Center Configuration Manager 站台或站台系統角色的 Windows 版本。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,14 +16,14 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d23b98b362fb016c53974f851c48fa7200d2b2e3
-ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
+ms.sourcegitcommit: bebbeebba76ab5cf0c517fcb00b7b6a516a08e3e
+ms.openlocfilehash: 12fe730d924979eec2ef55ea80a1fa90b7b47464
 
 
 ---
-# <a name="supported-operating-systems-for-system-center-configuration-manager--site-system-servers"></a>支援的 System Center Configuration Manager 站台系統伺服器作業系統
+# <a name="supported-operating-systems-for-system-center-configuration-manager-site-system-servers"></a>System Center Configuration Manager 站台系統伺服器支援的作業系統
 
-*適用於：System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
 
 本文詳述您可用來裝載 System Center Configuration Manager 站台或站台系統角色的 Windows 版本。
@@ -36,7 +36,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 
 
-## <a name="windows-server-2016-----standard-datacenter"></a>Windows Server 2016 - Standard、Datacenter
+## <a name="windows-server-2016-standard-and-datacenter"></a>Windows Server 2016：Standard 和 Datacenter
 從具有 KB3186654 之 Hotfix 彙總套件的 Configuration Manager 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援 Windows Server 2016。
 
 **站台伺服器：**  
@@ -59,7 +59,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 -   發佈點  
 
-     發佈點支援數個不同的組態，各有不同需求，且在某些情況下不只支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
+     發佈點支援數個不同的設定，各有不同需求。 在某些情況下，這些設定不僅支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
 -   Endpoint Protection 點  
 
@@ -85,7 +85,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 -   狀態移轉點
 
-## <a name="windows-server-2012-r2-x64---standard-datacenter"></a>Windows Server 2012 R2 (x64) - Standard、Datacenter  
+## <a name="windows-server-2012-r2-x64-standard-and-datacenter"></a>Windows Server 2012 R2 (x64)：Standard 和 Datacenter  
 **站台伺服器：**  
 
 -   管理中心網站  
@@ -106,7 +106,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 -   發佈點  
 
-     發佈點支援數個不同的組態，各有不同需求，且在某些情況下不只支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
+     發佈點支援數個不同的設定，各有不同需求。 在某些情況下，這些設定不僅支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
 -   Endpoint Protection 點  
 
@@ -132,7 +132,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 -   狀態移轉點  
 
-## <a name="windows-server-2012-x64---standard-datacenter"></a>Windows Server 2012 (x64) - Standard、Datacenter  
+## <a name="windows-server-2012-x64-standard-and-datacenter"></a>Windows Server 2012 (x64)：Standard 和 Datacenter  
 **站台伺服器：**  
 
 -   管理中心網站  
@@ -153,7 +153,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 -   發佈點  
 
-     發佈點支援數個不同的組態，各有不同需求，且在某些情況下不只支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
+     發佈點支援數個不同的設定，各有不同需求。 在某些情況下，這些設定不僅支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
 -   Endpoint Protection 點  
 
@@ -179,7 +179,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 -   狀態移轉點  
 
-## <a name="windows-server-2008-r2-with-sp1-x64-----standard-enterprise-datacenter"></a>Windows Server 2008 R2 with SP1 (x64) - Standard、Enterprise、Datacenter  
+## <a name="windows-server-2008-r2-with-sp1-x64-standard-enterprise-and-datacenter"></a>Windows Server 2008 R2 with SP1 (x64)：Standard、Enterprise 和 Datacenter  
  Windows Server 2008 R2 現在屬於延伸支援，而不再屬於主流支援，如 [Microsoft 支援週期](https://support.microsoft.com/lifecycle)中詳述。 如需這些作業系統作為 Configuration Manager 站台系統伺服器的未來支援詳細資訊，請參閱 [System Center Configuration Manager 的已移除和已淘汰功能](../../../core/plan-design/changes/removed-and-deprecated-features.md)。  
 
 **站台伺服器：**  
@@ -202,7 +202,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 -   發佈點  
 
-     發佈點支援數個不同的組態，各有不同需求，且在某些情況下不只支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
+     發佈點支援數個不同的設定，各有不同需求。 在某些情況下，這些設定不僅支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
 -   Endpoint Protection 點  
 
@@ -228,7 +228,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 -   狀態移轉點  
 
-## <a name="windows-server-2008-with-sp2-x86-x64---standard-enterprise-datacenter"></a>Windows Server 2008 (含 SP2) (x86、x64) - Standard、Enterprise、Datacenter  
+## <a name="windows-server-2008-with-sp2-x86-x64-standard-enterprise-and-datacenter"></a>Windows Server 2008 (含 SP2) (x86、x64)：Standard、Enterprise 和 Datacenter  
  Windows Server 2008 現在屬於延伸支援，而不再屬於主流支援，如 [Microsoft 支援週期](https://support.microsoft.com/lifecycle)中詳述。 如需這些作業系統作為 Configuration Manager 站台系統伺服器的未來支援詳細資訊，請參閱 [System Center Configuration Manager 的已移除和已淘汰功能](../../../core/plan-design/changes/removed-and-deprecated-features.md)。  
 
 **站台伺服器：**  
@@ -255,7 +255,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
     -   此作業系統上的發佈點支援 PXE，但不支援 EFI 模式的用戶端電腦透過網路開機。 支援具有 BIOS 或舊版模式 EFI 開機的用戶端電腦。  
 
-    -   發佈點支援數個不同的組態，各有不同需求，且在某些情況下不只支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
+    -   發佈點支援數個不同的設定，各有不同需求。 在某些情況下，這些設定不僅支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
 -   Endpoint Protection 點  
 
@@ -281,7 +281,7 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
 -   狀態移轉點  
 
-## <a name="windows-10-x86-x64---pro-enterprise"></a>Windows 10 (x86、x64) - 專業版、企業版  
+## <a name="windows-10-x86-x64-pro-and-enterprise"></a>Windows 10 (x86、x64)：專業版和企業版  
 **站台系統伺服器：**  
 
 -   發佈點  
@@ -290,9 +290,9 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
     -   此作業系統版本上的發佈點不支援多點傳送。  
 
-    -   發佈點支援數個不同的組態，各有不同需求，且在某些情況下不只支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
+    -   發佈點支援數個不同的設定，各有不同需求。 在某些情況下，這些設定不僅支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
-## <a name="windows-81-x86-x64---professional-enterprise"></a>Windows 8.1 (x86、x64) - 專業版、企業版  
+## <a name="windows-81-x86-x64-professional-and-enterprise"></a>Windows 8.1 (x86、x64)：專業版和企業版  
 **站台系統伺服器：**  
 
 -   發佈點  
@@ -301,9 +301,9 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
     -   此作業系統版本上的發佈點不支援多點傳送。  
 
-    -   發佈點支援數個不同的組態，各有不同需求，且在某些情況下不只支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
+    -   發佈點支援數個不同的設定，各有不同需求。 在某些情況下，這些設定不僅支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
-## <a name="windows-8-x86-x64---professional-enterprise-distribution-point"></a>Windows 8 (x86、x64) - 專業版、企業版發佈點  
+## <a name="windows-8-x86-x64-professional-and-enterprise"></a>Windows 8 (x86、x64)：專業版和企業版
 **站台系統伺服器：**  
 
 -   發佈點  
@@ -312,9 +312,9 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
     -   此作業系統版本上的發佈點不支援多點傳送。  
 
-    -   發佈點支援數個不同的組態，各有不同需求，且在某些情況下不只支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
+    -   發佈點支援數個不同的設定，各有不同需求。 在某些情況下，這些設定不僅支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
-## <a name="windows-7-with-sp1-x86-x64---professional-enterprise-ultimate"></a>Windows 7 (含 SP1) (x86、x64) - 專業版、企業版、旗艦版  
+## <a name="windows-7-with-sp1-x86-x64-professional-enterprise-and-ultimate"></a>Windows 7 (含 SP1) (x86、x64)：專業版、企業版和旗艦版  
 **站台系統伺服器：**  
 
 -   發佈點  
@@ -323,24 +323,24 @@ ms.openlocfilehash: b7c24dee94bca4ce69e0ba8f33129a0b21819d13
 
     -   此作業系統版本上的發佈點不支援多點傳送。  
 
-    -   發佈點支援數個不同的組態，各有不同需求，且在某些情況下不只支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
+    -   發佈點支援數個不同的設定，各有不同需求。 在某些情況下，這些設定不僅支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
 ## <a name="the-server-core-installation-of-windows-server-2012"></a>Windows Server 2012 的 Server Core 安裝  
- 除了上述的作業系統，支援 Windows Server 2012 的 Server Core 安裝以做為發佈點使用，具有下列限制：  
+ 除了上述的作業系統，也支援 Windows Server 2012 的 Server Core 安裝作為發佈點使用，具有下列限制：  
 
--   僅支援 x64  
+-   只支援 64 位元版本。  
 
--   此作業系統上的發佈點不支援 PXE 或多點傳送  
+-   此作業系統上的發佈點不支援 PXE 或多點傳送。
 
 ## <a name="the-server-core-installation-of-windows-server-2012-r2"></a>Windows Server 2012 R2 的 Server Core 安裝  
- 除了上述的作業系統，支援 Windows Server 2012 R2 的 Server Core 安裝做為發佈點使用，具有下列限制：  
+ 除了上述的作業系統，支援 Windows Server 2012 R2 的 Server Core 安裝作為發佈點使用，具有下列限制：  
 
--   僅支援 x64  
+-   只支援 x64 位元版本。
 
--   此作業系統上的發佈點不支援 PXE 或多點傳送  
+-   此作業系統上的發佈點不支援 PXE 或多點傳送。  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

@@ -2,7 +2,7 @@
 title: "特色與功能 | Microsoft Docs"
 description: "深入了解 System Center Configuration Manager 的主要管理功能。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: 851029368d97312ef2766505f933eac72d6950e5
+ms.sourcegitcommit: 53b27dcb5c8bb670556fe4cee9e990619a9a63e9
+ms.openlocfilehash: 4691f43dccdf73936107f4635321897b9779bead
 
 
 ---
@@ -32,15 +32,15 @@ ms.openlocfilehash: 851029368d97312ef2766505f933eac72d6950e5
 
  **應用程式管理**  
 
- 提供一組工具和資源，可幫助您建立、管理、部署及監視您所管理一系列不同裝置中的應用程式。 此外，Configuration Manager 提供您工具來協助保護使用者應用程式中的公司資料。 請參閱[應用程式管理簡介](/sccm/apps/understand/introduction-to-application-management)。
+ 提供一組工具和資源，可幫助您建立、管理、部署及監視您所管理一系列不同裝置中的應用程式。 此外，Configuration Manager 提供您工具來協助保護您在使用者應用程式中的公司資料。 請參閱[應用程式管理簡介](/sccm/apps/understand/introduction-to-application-management)。
 
  **公司資源存取**  
 
- 提供一組工具和資源，方便組織中的使用者從遠端位置存取資料和應用程式。 這些工具包括 Wi-Fi 設定檔、VPN 設定檔、憑證設定檔，以及對 Exchange 和 SharePoint Online 的條件式存取。 請參閱[使用 System Center Configuration Manager 保護資料和站台基礎結構](../../../protect/understand/protect-data-and-site-infrastructure.md)和[管理 System Center Configuration Manager 中的服務存取權](../../../protect/deploy-use/manage-access-to-services.md)。  
+ 提供一組工具和資源，方便組織中的使用者從遠端位置存取資料和應用程式。 這些工具包括 Wi-Fi 設定檔、VPN 設定檔、憑證設定檔，以及對 Exchange 和 SharePoint Online 的條件存取。 請參閱[使用 System Center Configuration Manager 保護資料和站台基礎結構](../../../protect/understand/protect-data-and-site-infrastructure.md)和[管理 System Center Configuration Manager 中的服務存取權](../../../protect/deploy-use/manage-access-to-services.md)。  
 
  **相容性設定**  
 
- 提供一組工具和資源，可幫助您評估、追蹤及補救企業中用戶端裝置的設定相容性。  此外，您可以使用相容性設定來設定一系列您所管理裝置上的功能和安全性設定。 請參閱[使用 System Center Configuration Manager 確裝置合規性](../../../compliance/understand/ensure-device-compliance.md)。  
+ 提供一組工具和資源，可幫助您評估、追蹤及補救企業中用戶端裝置的設定相容性。 此外，您可以使用相容性設定來設定一系列您所管理裝置上的功能和安全性設定。 請參閱[使用 System Center Configuration Manager 確裝置合規性](../../../compliance/understand/ensure-device-compliance.md)。  
 
  **Endpoint Protection**  
 
@@ -64,11 +64,11 @@ ms.openlocfilehash: 851029368d97312ef2766505f933eac72d6950e5
 
  **內部部署行動裝置管理**  
 
- 使用內部部署的 Configuration Manager 基礎結構和裝置平台內建的管理功能，來註冊及管理電腦與行動裝置 (而不是依賴個別安裝的 Configuration Manager 用戶端)。 目前支援管理 Windows 10 企業版和 Windows 10 行動裝置版裝置。  請參閱[在 System Center Configuration Manager 中使用內部部署基礎結構管理行動裝置](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)。  
+ 使用內部部署 Configuration Manager 基礎結構和裝置平台內建的管理功能，來註冊及管理電腦與行動裝置 (而不是依賴個別安裝的 Configuration Manager 用戶端)。 目前支援管理 Windows 10 企業版和 Windows 10 行動裝置版裝置。 請參閱[在 System Center Configuration Manager 中使用內部部署基礎結構管理行動裝置](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)。  
 
  **作業系統部署**  
 
- 提供建立作業系統映像的工具。 接著您可以使用 PXE 開機或可開機媒體 (像是 CD 組、DVD 或 USB 快閃磁碟機)，利用這些映像將作業系統部署至 Configuration Manager 所管理的電腦以及未受管理的電腦。 請參閱 [System Center Configuration Manager 的作業系統部署簡介](../../../osd/understand/introduction-to-operating-system-deployment.md)。  
+ 提供建立作業系統映像的工具。 接著您可以使用 PXE 開機或可開機媒體 (像是 CD 組、DVD 或 USB 快閃磁碟機)，利用這些映像將作業系統部署至電腦。 請注意，這適用於 Configuration Manager 所管理的電腦，以及未受管理的電腦。 請參閱 [System Center Configuration Manager 的作業系統部署簡介](../../../osd/understand/introduction-to-operating-system-deployment.md)。  
 
  **電源管理**  
 
@@ -76,15 +76,15 @@ ms.openlocfilehash: 851029368d97312ef2766505f933eac72d6950e5
 
  **查詢**  
 
- 提供一項工具，可擷取階層中資源的相關資訊，以及有關清查資料和狀態訊息的資訊。 您可以利用這項資訊報告或定義裝置或使用者集合，以進行軟體部署和組態設定。 請參閱 [System Center Configuration Manager 的查詢簡介](../../../core/servers/manage/introduction-to-queries.md)。  
+ 提供一項工具，可擷取階層中資源的相關資訊，以及有關清查資料和狀態訊息的資訊。 您接著可以使用這項資訊來報告或定義裝置或使用者集合，以進行軟體部署和組態設定。 請參閱 [System Center Configuration Manager 的查詢簡介](../../../core/servers/manage/introduction-to-queries.md)。  
 
  **遠端連線設定檔**  
 
- 提供一組工具和資源，協助您建立、部署和監視組織中各裝置的遠端連線設定。 藉由部署這些設定，可將使用者連線到其在公司網路中的電腦所需的時間，縮到最短。 請參閱[在 System Center Configuration Manager 中使用遠端連線設定檔](/sccm/compliance/deploy-use/create-remote-connection-profiles)。  
+ 提供一組工具和資源，協助您建立、部署和監視組織中各裝置的遠端連線設定。 藉由部署這些設定，可將使用者連線到其公司網路中電腦所需的時間縮到最短。 請參閱[在 System Center Configuration Manager 中使用遠端連線設定檔](/sccm/compliance/deploy-use/create-remote-connection-profiles)。  
 
  **使用者資料和設定檔組態項目**  
 
- Configuration Manager 中的使用者資料和設定檔設定項目包含一些設定，這些設定可為階層中的使用者管理執行 Windows 8 (含) 以後版本電腦上的資料夾重新導向、離線檔案和漫遊設定檔。 請參閱[在 System Center Configuration Manager 中使用使用者資料和設定檔設定項目](/sccm/compliance/deploy-use/create-user-data-and-profiles-configuration-items)。  
+ Configuration Manager 中的使用者資料和設定檔設定項目包含一些設定，這些設定可為階層中的使用者管理執行 Windows 8 及更新版本電腦上的資料夾重新導向、離線檔案和漫遊設定檔。 請參閱[在 System Center Configuration Manager 中使用使用者資料和設定檔設定項目](/sccm/compliance/deploy-use/create-user-data-and-profiles-configuration-items)。  
 
  **遠端控制**  
 
@@ -104,6 +104,6 @@ ms.openlocfilehash: 851029368d97312ef2766505f933eac72d6950e5
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

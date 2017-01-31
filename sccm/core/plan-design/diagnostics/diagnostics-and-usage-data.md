@@ -2,7 +2,7 @@
 title: "診斷和使用方式資料 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 所收集關於本身的診斷及使用方式資料。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3d113c55726efe674b79ef5ecb26aac8c893cba2
-ms.openlocfilehash: ac3395c82cb570960bf2c3b98cd06e282e64b1a5
+ms.sourcegitcommit: 24a233516058e645df2a43623855665b97b041b0
+ms.openlocfilehash: 54ec4886eaad6999cdf3ffff7411942859f1a5b2
 
 
 ---
@@ -35,7 +35,7 @@ System Center Configuration Manager 會收集與其本身相關的診斷和使�
 
  如需詳細資訊，請參閱 [System Center Configuration Manager 隱私權聲明](http://go.microsoft.com/fwlink/?LinkID=626527)。  
 
- 請透過下列主題深入了解 System Center Configuration Manager 的診斷和使用方式資料：  
+ 請透過下列文章深入了解 System Center Configuration Manager 的診斷和使用方式資料：  
 
 -   [診斷和使用方式資料如何用於 System Center Configuration Manager](../../../core/plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)  
 
@@ -58,6 +58,6 @@ System Center Configuration Manager 會收集與其本身相關的診斷和使�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

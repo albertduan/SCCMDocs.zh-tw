@@ -1,8 +1,8 @@
 ---
-title: "設計階層 | Microsoft Docs"
+title: "為 System Center Configuration Manager 設計站台階層 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 可用的拓撲和管理選項，以便您可以規劃站台階層。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
-ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
+ms.sourcegitcommit: f1e6213c5d28a3219f976b2c92f193b05fed15ce
+ms.openlocfilehash: 805184a3e3913d93fa57c0742adf48955175df7f
 
 
 ---
@@ -26,35 +26,34 @@ ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-在安裝第一個新的 System Center Configuration Manager 階層站台前，您應該了解可用的 Configuration Manager 拓撲、可用的站台類型及彼此的關聯性，以及每個站台類型提供的管理範圍。 然後，在考量可減少需要安裝之站台數目的內容管理選項之後，您可以有效率地提供您目前業務需求的拓撲規劃，稍後再擴充以管理未來的成長。  
+在安裝第一個新的 System Center Configuration Manager 階層站台前，最好了解可用的 Configuration Manager 拓撲、可用的站台類型及彼此的關聯性，以及每個站台類型提供的管理範圍。
+然後，在考量可減少需要安裝之站台數目的內容管理選項之後，您可以有效率地提供您目前業務需求的拓撲規劃，稍後再擴充以管理未來的成長。  
 
 > [!NOTE]
-> 在規劃 Configuration Manager 的新安裝時，請注意[版本資訊]( /sccm/core/servers/deploy/install/release-notes)，其中詳細說明使用中版本目前的問題。 此版本資訊適用於 Configuration Manager 的所有分支。  不過，當您使用 [Technical Preview 分支]( /sccm/core/get-started/technical-preview)時，您會在每一版的 Technical Preview 文件中發現只有該分支才會出現的問題。  
+> 在規劃新的 Configuration Manager 安裝時，請注意[版本資訊]( /sccm/core/servers/deploy/install/release-notes)，其中詳細說明使用中版本的目前問題。 此版本資訊適用於 Configuration Manager 的所有分支。  不過，當您使用 [Technical Preview 分支]( /sccm/core/get-started/technical-preview)時，會在每一版的 Technical Preview 文件中發現只有該分支才會出現的問題。  
 
 ##  <a name="a-namebkmktopologya-hierarchy-topology"></a><a name="bkmk_topology"></a> 階層拓樸  
- 階層拓撲從單一獨立主要站台與管理中心網站之階層的頂層 (頂層) 站台連線的主要和次要站台的群組。    
-類型的主要驅動程式，且計數為階層中使用的站台通常是必須支援的裝置數目及類型：  
+ 階層拓撲從單一獨立主要站台與管理中心網站之階層的頂層 (頂層) 站台連線的主要和次要站台的群組。   類型的主要驅動程式，而且階層中所使用站台的計數通常是必須支援的裝置數目及類型，如下所示：   
 
- **獨立的主要站台**︰當單一主要站台可以支援所有裝置和使用者的管理時，請使用獨立的主要站台 (請參閱[調整大小和縮放數字](/sccm/core/plan-design/configs/size-and-scale-numbers))。 當貴公司的不同地理位置可順利由單一主要站台服務時，此拓撲也會成功。  您可以使用慣用的管理點和仔細規劃的內容基礎結構，以利管理網路流量 ([請參閱 System Center Configuration Manager 的內容管理基本概念](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md))。  
+ **獨立的主要站台**︰當單一主要站台可以支援所有裝置和使用者的管理時，請使用獨立的主要站台 (請參閱[調整大小和縮放數字](/sccm/core/plan-design/configs/size-and-scale-numbers))。 當公司的不同地理位置可順利由單一主要站台服務時，此拓撲也會成功。  您可以使用慣用的管理點和仔細規劃的內容基礎結構，以利管理網路流量 (請參閱 [System Center Configuration Manager 的內容管理基本概念](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md))。  
 
  這種拓撲的優點包括︰  
 
--   簡化管理負荷  
+-   簡化管理負荷。  
 
--   簡化用戶端站台指派及探索可用資源及服務  
+-   簡化用戶端站台指派及探索可用資源及服務。  
 
--   消除站台間資料庫複寫所導入的可能延遲。  
+-   消除站台間資料庫複寫所引起的可能延遲。
 
--   這項選擇不是永久性的，而且可以透過管理中心網站將獨立主要階層展開為較大的階層。 這可讓您稍後安裝新的主要站台，以擴展您的部署規模。  
+-   透過管理中心網站將獨立主要階層展開為較大階層的選項。 這可讓您稍後安裝新的主要站台，以擴展您的部署規模。  
 
 
-**有一或多個子主要站台的管理中心網站︰** 需要多個主要站台支援管理所有的裝置和使用者時，請使用此拓撲。  這種拓撲的優點包括︰  
+**有一或多個子主要站台的管理中心網站︰** 需要多個主要站台支援管理所有的裝置和使用者時，請使用此拓撲。  當您需要使用多個單一主要站台時所需。 這種拓撲的優點包括︰  
 
--   當您需要使用多於單一主要站台時所需。  
 
 -   支援最多 25 個主要站台，讓您擴展階層的規模。  
 
--   這項選擇是永久性的。 您無法中斷連結子主要站台以作為獨立主要站台。 因此，除非您重新安裝您的站台，您將一直使用管理中心網站。  
+-   除非您重新安裝您的站台，否則將一律使用管理中心網站。 這是永久選項。 您無法中斷連結子主要站台以作為獨立主要站台。
 
  下列各節可協助您了解何時使用特定站台或內容管理選項，來取代其他站台。  
 
@@ -81,7 +80,7 @@ ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
 
 -   若要管理整個階層的安全性，您可以指派不同的安全性角色、安全性範圍與集合給不同的系統管理使用者。 這些設定可套用到階層中的各個站台。  
 
--   您可以設定檔案複寫和資料庫複寫，以控制階層中各站台間的通訊。 這包括排程站台資料的資料庫複寫，以及管理站台間檔案資料傳輸的頻寬。  
+-   您可以設定檔案複寫和資料庫複寫，以控制階層中各站台間的通訊。 這包括排定站台資料的資料庫複寫，以及管理站台間檔案資料傳輸的頻寬。  
 
 ##  <a name="a-namebkmkchoosepriimarya-determine-when-to-use-a-primary-site"></a><a name="BKMK_ChoosePriimary"></a> 判斷何時使用主要站台。  
  使用主要站台管理用戶端。 您可以安裝主要站台，作為管理中心網站底下的子主要站台，或是作為新階層的第一個站台。 安裝成階層中第一個站台的主要站台會建立獨立主要站台。 子主要站台和獨立主要站台都支援以次要站台作為主要站台的子站台。  
@@ -90,20 +89,20 @@ ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
 
 -   管理裝置和使用者。  
 
--   增加使用單一階層可以管理的裝置數目。  
+-   增加可以使用單一階層來管理的裝置數目。  
 
 -   提供其他的連線點，以進行部署的系統管理。  
 
--   符合組織的管理需求。 例如，您可能會在遠端位置安裝主要站台，以管理透過低頻寬網路傳送的部署內容。 不過，透過 System Center Configuration Manager，您可以在傳輸資料到發佈點時使用網路頻寬節流的選項；該項內容管理功能可以取代安裝其他站台的需求。  
+-   符合組織的管理需求。 例如，您可能會在遠端位置安裝主要站台，以管理透過低頻寬網路傳送的部署內容。 不過，透過 System Center Configuration Manager，您可以在將資料傳輸到發佈點時使用網路頻寬節流的選項。 該項內容管理功能可以取代安裝其他站台的需求。  
 
 
 **使用下列資訊，協助您決定何時要安裝主要站台：**  
 
--   主要站台可以是獨立主要站台或是較大階層中的子主要站台。 當主要站台是含管理中心網站之階層的成員時，站台會使用資料庫複寫在站台之間複寫資料。 除非您需要支援的用戶端和裝置數目超過單一主要站台可支援的數目，否則請考慮安裝獨立主要站台。  獨立主要站台安裝完成後，您可以展開它，以回報至新的管理中心網站來擴展部署的規模。  
+-   主要站台可以是獨立主要站台或是較大階層中的子主要站台。 當主要站台是含管理中心網站之階層的成員時，站台會使用資料庫複寫在站台之間複寫資料。 除非您需要支援的用戶端和裝置數目超過單一主要站台可支援的數目，否則請考慮安裝獨立主要站台。  安裝獨立主要站台之後，您可以展開它，以回報至新的管理中心網站來擴展部署的規模。  
 
 -   主要站台僅支援使用管理中心網站作為父站台。  
 
--   主要站台僅支援使用次要站台作為子站台，而且可支援多個次要子站台。  
+-   主要站台不僅支援使用次要站台作為子站台，也支援多個次要子站台。  
 
 -   主要站台負責處理所指派用戶端的所有用戶端資料。  
 
@@ -112,15 +111,17 @@ ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
 ##  <a name="a-namebkmkchoosesecondarya-determine-when-to-use-a-secondary-site"></a><a name="BKMK_ChooseSecondary"></a> 判斷何時使用次要站台。  
  使用次要站台管理在低頻寬網路上部署內容與用戶端資料的傳輸。  
 
- 您可經由管理中心網站或次要站台的直接父主要站台來管理次要站台。 次要站台必須連結到主要站台，並且您無法在還未解除安裝的狀況下，將其移至不同的父站台，然後重新安裝為新主要站台下的子站台。 不過，您可以在兩個對等次要站台間路由內容，協助管理以檔案為基礎的部署內容複寫。 為將用戶端資料移轉到主要站台上，次要站台會使用以檔案為基礎的複寫。 次要站台也會使用資料庫複寫，以與其父主要站台進行通訊。  
+ 您可經由管理中心網站或次要站台的直接父主要站台來管理次要站台。 次要站台必須連結到主要站台，並且您無法在還未解除安裝的狀況下，將其移至不同的父站台，然後重新安裝為新主要站台下的子站台。
+
+不過，您可以在兩個對等次要站台間路由內容，協助管理以檔案為基礎的部署內容複寫。 為將用戶端資料移轉到主要站台上，次要站台會使用以檔案為基礎的複寫。 次要站台也會使用資料庫複寫，以與其父主要站台進行通訊。  
 
  若套用以下任何一種狀況，請考量安裝次要站台：  
 
--   您不需要有針對系統管理使用者的連線區域點。  
+-   您不需要有針對系統管理使用者的本機連線點。  
 
--   您必須管理將部署內容移轉到階層中較低的站台  
+-   您必須管理將部署內容移轉到階層中較低的站台。  
 
--   您必須管理傳送到階層中較高站台的用戶端資訊  
+-   您必須管理傳送到階層中較高站台的用戶端資訊。  
 
  如果您不想安裝次要站台，又有用戶端位於遠端位置，請考慮使用 Windows BranchCache，或安裝用來進行頻寬控制與排程的發佈點。 您可以搭配或不搭配次要站台，使用這些內容管理選項，不過它們可以幫助您減少必須安裝的站台和伺服器數量。 如需 Configuration Manager 中內容管理選項的資訊，請參閱[判斷何時要使用內容管理選項](#BKMK_ChooseSecondaryorDP)。  
 
@@ -129,9 +130,9 @@ ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
 
 -   若沒有本機 SQL Server 執行個體可用，次要站台會在站台安裝期間自動安裝 SQL Server Express。  
 
--   安裝次要站台是從 Configuration Manager 主控台中起始的，而不是直接在電腦上執行 Configuration Manager 安裝。  
+-   安裝次要站台是從 Configuration Manager 主控台中起始，而不是直接在電腦上執行安裝程式。  
 
--   次要站台使用站台間資料庫中資訊的子集，以減少的父主要站台和次要站台間資料庫複製所複寫的資料數量。  
+-   次要站台使用站台資料庫中資訊的子集，以減少父主要站台與次要站台間資料庫複寫所複寫的資料量。  
 
 -   次要站台支援將以檔案為基礎的內容路由至有一般父主要站台的其他次要站台。  
 
@@ -150,17 +151,17 @@ ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
  如需 Configuration Manager 內容管理選項的詳細資訊，請參閱 [System Center Configuration Manager 中的內容管理基本概念](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)。  
 
 ##  <a name="a-namebkmkbeyonda-beyond-hierarchy-topology"></a><a name="bkmk_beyond"></a> 階層拓撲之外  
- 除了初始階層拓撲外，請考慮階層中不同的站台 (站台系統角色) 提供哪些服務或功能，以及您的基礎結構如何管理階層範圍設定和功能。 下列是分散在不同主題中的較常見考量事項。 這些應該視為因為它們可能會影響或受到階層設計影響：  
+ 除了初始階層拓撲外，請考慮階層中不同站台 (站台系統角色) 提供哪些服務或功能，以及您的基礎結構如何管理階層範圍設定和功能。 下列常見考量事項涵蓋在不同的主題中。 這些可能會影響階層設計或受到階層設計所影響，因此十分重要：  
 
--   當準備[使用 System Center Configuration Manager 管理電腦和裝置](/sccm/core/clients/manage/manage-clients)時，請考量您管理的裝置是位在內部部署、雲端中或包含自備裝置 (BYOD)。  亦請考量您要如何管理受多種管理選項支援的裝置，例如可以直接由 Configuration Manager 管理或透過與 Microsoft Intune 整合的 Windows 10 電腦。  
+-   當準備[使用 System Center Configuration Manager 管理電腦和裝置](/sccm/core/clients/manage/manage-clients)時，請考量您管理的裝置是位於內部部署、雲端中還是包含使用者擁有的裝置 (BYOD)。  亦請考量您要如何管理受多種管理選項支援的裝置，例如可以直接由 Configuration Manager 管理或透過與 Microsoft Intune 整合的 Windows 10 電腦。  
 
--   了解可用的網路基礎結構可能會如何影響遠端位置間的資料流程 (請參閱[準備 System Center Configuration Manager 的網路環境](/sccm/core/plan-design/network/configure-firewalls-ports-domains))。 也要考量您管理的使用者和裝置所在位置，以及他們可否透過您公司的網域或從網際網路存取您的基礎結構。  
+-   了解可用的網路基礎結構可能會如何影響遠端位置間的資料流程 (請參閱[準備 System Center Configuration Manager 的網路環境](/sccm/core/plan-design/network/configure-firewalls-ports-domains))。 也要考量您管理的使用者和裝置的所在位置，以及他們透過您公司的網域還是網際網路存取您的基礎結構。  
 
 -   規劃內容基礎結構，有效率地將所部署的資訊 (檔案和應用程式) 發佈到您管理的裝置上 (請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md))。  
 
 -   決定打算使用哪些 [System Center Configuration Manager 的特色與功能](../../../core/plan-design/changes/features-and-capabilities.md)、需要的站台系統角色或 Windows 基礎結構，以及要部署在多個站台階層中的哪些站台才能最有效率地使用網路和伺服器資源。  
 
--   考量資料和裝置的安全性，包括 PKI 的使用。 請參閱 [System Center Configuration Manager 的 PKI 憑證需求](../../../core/plan-design/network/pki-certificate-requirements.md)  
+-   考量資料和裝置的安全性，包括 PKI 的使用。 請參閱 [System Center Configuration Manager 的 PKI 憑證需求](../../../core/plan-design/network/pki-certificate-requirements.md)。  
 
 
 **檢閱下列站台特定設定的資源︰**  
@@ -178,16 +179,16 @@ ms.openlocfilehash: 000acfec2cd61cc2d69e1bbd555b10fc22a40318
 
 **請考量下列跨越站台和階層的設定：**  
 
--   適用於站台和階層的 [System Center Configuration Manager 高可用性選項](/sccm/protect/understand/high-availability-options)  
+-   適用於站台和階層的 [System Center Configuration Manager 高可用性選項](/sccm/protect/understand/high-availability-options)
 
--   您會 [Extend the Active Directory schema for System Center Configuration Manager](../../../core/plan-design/network/extend-the-active-directory-schema.md) (擴充 System Center Configuration Manager 的 Active Directory 架構) 並設定站台來[發佈 System Center Configuration Manager 的站台資料](../../../core/servers/deploy/configure/publish-site-data.md)嗎？  
+-   [擴充 System Center Configuration Manager 的 Active Directory 架構](../../../core/plan-design/network/extend-the-active-directory-schema.md)，並設定站台來[發佈 System Center Configuration Manager 的站台資料](../../../core/servers/deploy/configure/publish-site-data.md)  
 
--   若要管理階層中的站台間網路頻寬，請參閱 [System Center Configuration Manager 中的站台間資料傳輸](../../../core/servers/manage/data-transfers-between-sites.md)。  
+-   [System Center Configuration Manager 中站台間的資料傳輸](../../../core/servers/manage/data-transfers-between-sites.md)  
 
--   [System Center Configuration Manager 以角色為基礎之系統管理的基礎](../../../core/understand/fundamentals-of-role-based-administration.md)  
+-   [System Center Configuration Manager 以角色為基礎之系統管理的基礎](../../../core/understand/fundamentals-of-role-based-administration.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

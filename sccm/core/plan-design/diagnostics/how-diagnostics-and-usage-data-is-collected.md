@@ -2,7 +2,7 @@
 title: "診斷資料集合 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 如何收集本身的診斷及使用方式資料。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: f0a992139ad1bc516df2f6ea947509e3e4a77c54
+ms.sourcegitcommit: 24a233516058e645df2a43623855665b97b041b0
+ms.openlocfilehash: 9c0165212fe34f460be2ce870d0542b616f3bc4d
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: f0a992139ad1bc516df2f6ea947509e3e4a77c54
 
 為了收集 System Center Configuration Manager 的診斷和使用方式資料，每個主要站台每週都會執行 SQL Server 查詢。 在多站台階層中，會將資料複寫至管理中心網站。  
 
-在頂層站台中，服務連接點站台系統角色會在檢查是否有更新時送出這項資訊。 資料傳輸的方式取決於服務連接點的模式︰  
+在頂層站台中，服務連接點站台系統角色會在檢查是否有更新時送出這項資訊。 服務連接點的模式決定資料傳輸方式︰  
 
 -   **在線上模式中** ：會自動從服務連接點每週傳送一次診斷和使用方式資料給雲端服務。  
 
@@ -37,6 +37,6 @@ ms.openlocfilehash: f0a992139ad1bc516df2f6ea947509e3e4a77c54
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

@@ -2,7 +2,7 @@
 title: "設定硬體清查 | Microsoft Docs | 行動裝置"
 description: "為 Microsoft Intune 和 System Center Configuration Manager 註冊的行動裝置設定硬體清查。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/26/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: 6db22a2ddce1afb471cf8b603c6d98f7f0acbc15
+ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
+ms.openlocfilehash: be954724587e68e92e5d8f5cecd712dfd5df278e
 
 
 ---
@@ -25,9 +25,9 @@ ms.openlocfilehash: 6db22a2ddce1afb471cf8b603c6d98f7f0acbc15
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-在 System Center Configuration Manager 中，您可以使用 Microsoft Intune 連接器在 iOS、Android 和 Windows 裝置上收集硬體清查。 如需如何設定硬體清查的相關資訊，請參閱[如何在 System Center Configuration Manager 中擴充硬體清查](../../../../core/clients/manage/inventory/extend-hardware-inventory.md)。  
+在 Configuration Manager 中，您可以使用 Microsoft Intune 連接器在 iOS、Android 和 Windows 裝置上收集硬體清查。 如需如何設定硬體清查的相關資訊，請參閱[如何在 System Center Configuration Manager 中擴充硬體清查](../../../../core/clients/manage/inventory/extend-hardware-inventory.md)。  
 
- 如需如何使用 Microsoft Intune 註冊裝置的相關資訊，請參閱[使用 Microsoft Intune 管理行動裝置](https://technet.microsoft.com/en-us/library/dn646962.aspx)。  
+ 如需如何在 Microsoft Intune 中註冊裝置的相關資訊，請參閱[使用 Microsoft Intune 管理行動裝置](https://technet.microsoft.com/en-us/library/dn646962.aspx)。  
 
 ## <a name="hardware-inventory-for-mobile-devices"></a>行動裝置的硬體清查  
  下列各表列出常用行動平台的硬體清查可用清查類別。  
@@ -141,6 +141,6 @@ ms.openlocfilehash: 6db22a2ddce1afb471cf8b603c6d98f7f0acbc15
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

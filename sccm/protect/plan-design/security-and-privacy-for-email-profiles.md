@@ -2,7 +2,7 @@
 title: "電子郵件設定檔安全性和隱私權 | Microsoft Docs"
 description: "了解管理 System Center Configuration Manager 裝置電子郵件設定檔的安全性最佳作法。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/28/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,23 +17,21 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: d4977a592d9d49a93b974c129d2729d626ed9280
+ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
+ms.openlocfilehash: 17707f931a4fa58b225ce14f04c2a19648585bc4
 
 
 ---
 # <a name="security-and-privacy-for-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager 的電子郵件設定檔安全性和隱私權
 
-*適用對象：System Center Configuration Manager (最新分支)*
-
-本主題包含 System Center Configuration Manager 的電子郵件設定檔安全性和隱私權資訊。  
+適用於：System Center Configuration Manager (最新分支)
 
 ## <a name="security-best-practices-for-email-profiles"></a>電子郵件設定檔的安全性最佳作法  
  當您管理裝置的電子郵件設定檔時，可使用下列安全性最佳作法。  
 
 |安全性最佳作法|詳細資訊|  
 |----------------------------|----------------------|  
-|盡可能選擇您的電子郵件基礎結構及用戶端作業系統可支援的最安全選項。|電子郵件設定檔提供便利的方法，集中散發及管理裝置已支援的電子郵件設定。 System Center Configuration Manager 不會新增電子郵件功能。<br /><br /> 識別、實作及遵循針對您裝置和電子郵件基礎結構建議之任何安全性最佳作法。|  
+|盡可能選擇您的電子郵件基礎結構及用戶端作業系統可支援的最安全選項。|電子郵件設定檔提供便利的方法，集中散發及管理裝置已支援的電子郵件設定。 Configuration Manager 不會新增電子郵件功能。<br /><br /> 識別、實作及遵循針對您裝置和電子郵件基礎結構建議之任何安全性最佳作法。|  
 
 ## <a name="privacy-information-for-email-profiles"></a>電子郵件設定檔的隱私權資訊  
  根據預設，裝置不會評估電子郵件設定檔。 此外，您必須設定電子郵件設定檔，然後將其部署至使用者。  
@@ -42,6 +40,6 @@ ms.openlocfilehash: d4977a592d9d49a93b974c129d2729d626ed9280
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

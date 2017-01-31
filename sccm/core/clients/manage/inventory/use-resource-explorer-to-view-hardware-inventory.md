@@ -2,7 +2,7 @@
 title: "檢視硬體清查 | Microsoft Docs | 資源總管"
 description: "在 System Center Configuration Manager 中，使用資源總管檢視硬體清查。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: 2cd138b3bbb437d84f0ff7c2aeef869518bd817d
+ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
+ms.openlocfilehash: 6265ee70b70a715862b1651d2f3760bef096ee8a
 
 
 ---
@@ -30,11 +30,11 @@ ms.openlocfilehash: 2cd138b3bbb437d84f0ff7c2aeef869518bd817d
 > [!NOTE]  
 >  資源總管不會顯示資料直到硬體清查週期已在用戶端執行您要連接到任何清查。  
 
- Configuration Manager 中的資源總管包含下列與硬體清查相關的區段：  
+ 資源總管包含與硬體清查相關的下列區段：  
 
--   **硬體** - 包含從指定的 Configuration Manager 用戶端裝置收集來的最新硬體清查。 您可以檢閱庫存項目 **工作站狀態** 來探索裝置上次執行硬體清查的日期和時間。  
+-   **硬體** - 包含從指定的用戶端裝置收集來的最新硬體清查。  **工作站狀態** - 包含裝置上次執行硬體清查的日期和時間。  
 
--   **硬體歷程記錄** - 包含上次執行硬體清查後所變更的清查項目之歷程記錄。 清單中的每個項目都包含**目前**節點以及一或多個 < 日期\> 節點。 您可以比較目前節點的其中一個來探索用戶端電腦的硬體清查中已變更的項目歷程記錄的節點中的資訊。  
+-   **硬體歷程記錄** - 包含上次發生硬體清查後所變更的清查項目之歷程記錄。 每個項目都包含**目前**節點以及一或多個 <日期\> 節點。 您可以比較目前節點與其中一個歷程記錄節點中的資訊，以探索已變更的項目。  
 
     > [!NOTE]  
     >  Configuration Manager 會將硬體清查歷程記錄，保留 [刪除過時清查歷程記錄] 站台維護工作中所指定的天數  
@@ -44,18 +44,15 @@ ms.openlocfilehash: 2cd138b3bbb437d84f0ff7c2aeef869518bd817d
 
 ### <a name="how-to-run-resource-explorer-from-the-configuration-manager-console"></a>如何從 Configuration Manager 主控台執行資源總管  
 
-1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
+1.  在 Configuration Manager 主控台中，選擇 [資產與合規性] > [裝置]，或開啟顯示裝置的任何集合。  
 
-2.  在 [資產與相容性]  工作區中，按一下 [裝置]  或開啟顯示裝置的任何集合。  
+3.  選擇您想要檢視、包含清查的電腦，然後在 [首頁] 索引標籤 > [裝置] 群組中，選擇 [開始] >  資源總管。   
 
-3.  按一下您想要檢視、包含清查的電腦，然後在 [首頁]  索引標籤的 [裝置]  群組中，依序按一下 [開始]  和 **資源總管**。 **資源總管** ] 視窗隨即開啟。  
-
-4.  您可以在 **[資源總管]** 視窗的右窗格中，於任一項目上按一下滑鼠右鍵，然後按一下 **[內容]** 開啟 [<項目名稱\>**內容]** 對話方塊，其可協助您以更容易閱讀的格式來檢視收集到的清查資訊。  
-
-5.  完成後請關閉 **資源總管** 視窗。  
+4.  在資源總管視窗的右窗格中，以滑鼠右鍵按一下任何項目，然後選擇 [內容] 開啟 [<項目名稱\> 內容] 對話方塊，以更容易閱讀的格式檢視收集到的清查資訊。  
 
 
 
-<!--HONumber=Dec16_HO3-->
+
+<!--HONumber=Jan17_HO1-->
 
 

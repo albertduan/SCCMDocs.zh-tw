@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager Technical Preview 1612 中的功能 | Microsoft Docs"
 description: "了解 System Center Configuration Manager Technical Preview 1612 版中可用的功能。"
 ms.custom: na
-ms.date: 12/16/2016
+ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 15d442ba52b991ea7888d0113610fe4800424f8d
-ms.openlocfilehash: f0421efbc01443288d3591fa9748a8f71fef8a0d
+ms.sourcegitcommit: e7075eb675353be130fdcc867d9e4dd1009dab35
+ms.openlocfilehash: 2de36316b20b2a7b2937d767e618f4fec1affb69
 
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1612 中的功能
@@ -67,6 +67,7 @@ ms.openlocfilehash: f0421efbc01443288d3591fa9748a8f71fef8a0d
   - 在預設或具名執行個體上
   - 在「SQL Server 叢集」上。 雖然這項設定應該可行，但尚未經過測試，因此最好提供支援。
   - 與站台資料庫或 Reporting Services 點資料庫共置時。 不過，建議將它安裝在不同的伺服器上。  
+- 作為「Reporting Services 點帳戶」的帳戶必須具有資料倉儲資料庫的 **db_datareader** 權限。  
 - 「SQL Server AlwaysOn 可用性群組」不支援此資料庫。
 
 ### <a name="install-the-data-warehouse"></a>安裝資料倉儲
@@ -100,6 +101,8 @@ ms.openlocfilehash: f0421efbc01443288d3591fa9748a8f71fef8a0d
   - **同步處理間隔 (分鐘)** - 指定以分鐘為單位的值。 到達間隔之後，便會開始新的同步處理。 這項設定支援的時間範圍為 60 到 1440 分鐘 (24 小時)。
   - **排程** - 指定您要執行同步處理的日期。
 
+**報告點存取**：   
+安裝資料倉儲角色之後，作為「Reporting Services 點帳戶」的帳戶會具有資料倉儲資料庫的 **db_datareader** 權限。
 
 #### <a name="troubleshoot-installation-and-data-synchronization"></a>針對安裝和資料同步處理進行疑難排解
 您可以使用下列記錄來調查安裝資料倉儲服務點或同步處理資料的問題：
@@ -313,6 +316,6 @@ Azure Active Directory (AD) 上架會建立 Configuration Manager 與 Azure Acti
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

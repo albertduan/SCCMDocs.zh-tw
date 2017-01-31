@@ -2,7 +2,7 @@
 title: "規劃用戶端移轉 | Microsoft Docs"
 description: "了解將用戶端從來源階層移轉至 System Center Configuration Manager 目的地階層的工作。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,14 +16,14 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
-ms.openlocfilehash: 11da338af9d7dd4d6f9c5fc1c6c62e277139f852
+ms.sourcegitcommit: ac4576035fda943e38d960dd425d44b7a6ef6a01
+ms.openlocfilehash: b52ca4059dfeed08cabf1f75319da40d6499622f
 
 
 ---
-# <a name="planning-a-client-migration-strategy-in-system-center-configuration-manager"></a>規劃 System Center Configuration Manager 中的用戶端移轉策略
+# <a name="plan-a-client-migration-strategy-in-system-center-configuration-manager"></a>規劃 System Center Configuration Manager 中的用戶端移轉策略
 
-*適用對象：System Center Configuration Manager (最新分支)*
+*適用於：System Center Configuration Manager (最新分支)*
 
 若要將用戶端從來源階層移轉至 System Center Configuration Manager 目的地階層，您必須執行兩項工作。 您必須移轉與用戶端相關聯的物件，而且必須將用戶端從來源階層重新安裝或重新指派至目的地階層。 先移轉物件，如此在移轉用戶端時，就可以使用物件。 與用戶端相關聯的物件是使用移轉作業進行移轉。 如需移轉與用戶端相關聯之物件方式的詳細資訊，請參閱 [Planning a migration job strategy in System Center Configuration Manager](../../core/migration/planning-a-migration-job-strategy.md) (規劃 System Center Configuration Manager 中的移轉作業策略)。  
 
@@ -36,14 +36,14 @@ ms.openlocfilehash: 11da338af9d7dd4d6f9c5fc1c6c62e277139f852
 -   [規劃移轉期間的清查和相容性資料](#Planning_for_Inventory_data_migration)  
 
 ##  <a name="a-nameplanningforclientagentmigrationa-plan-to-migrate-clients-to-the-destination-hierarchy"></a><a name="Planning_for_Client_Agent_Migration"></a> 規劃將用戶端移轉至目的地階層  
- 從來源階層移轉用戶端時，用戶端電腦上的用戶端軟體會更新，以符合來源階層的產品版本：  
+ 從來源階層移轉用戶端時，用戶端電腦上的用戶端軟體會升級，以符合來源階層的產品版本。  
 
 -   **Configuration Manager 2007 來源階層：**當您從執行 Configuration Manager 受支援版本的來源階層移轉用戶端時，用戶端軟體會升級為目的地階層的用戶端版本。  
 
 -   **System Center 2012 Configuration Manager 或更新版本的來源階層：**當您在產品版本相同的階層之間移轉用戶端時，用戶端軟體不會變更或升級。 而是從來源階層重新指派至目的地階層中的站台。  
 
     > [!NOTE]  
-    >  若某階層產品版本無法移轉到您的目的地階層，請將來源階層中的所有站台和用戶端全升級到相容的產品版本。 在來源階層升級到受支援的產品版本後，就可以在階層之間移轉。 如需詳細資訊，請參閱[在 System Center 2012 Configuration Manager 中進行移轉的必要條件](../../core/migration/prerequisites-for-migration.md)主題中的[支援移轉的 Configuration Manager 版本](../../core/migration/prerequisites-for-migration.md#BKMK_SupportedMigrationVersions)一節 。  
+    >  若某階層產品版本無法移轉到您的目的地階層，請將來源階層中的所有站台和用戶端全升級到相容的產品版本。 在來源階層升級到受支援的產品版本後，就可以在階層之間移轉。 如需詳細資訊，請參閱[在 System Center Configuration Manager 中進行移轉的必要條件](../../core/migration/prerequisites-for-migration.md)的[支援移轉的 Configuration Manager 版本](../../core/migration/prerequisites-for-migration.md#BKMK_SupportedMigrationVersions)。  
 
 請利用下列資訊幫助您規劃用戶端移轉：  
 
@@ -53,13 +53,13 @@ ms.openlocfilehash: 11da338af9d7dd4d6f9c5fc1c6c62e277139f852
 
 -   在移轉用戶端之前，請先執行移轉作業來移轉用戶端將在目的地階層中使用的資訊。  
 
--   升級的用戶端會保留其部署的執行歷程記錄，以避免在目的地階層中不必要地重複執行部署：  
+-   升級後保留部署執行歷程記錄的用戶端。 這可以避免部署在目的地階層中不必要地重複執行。  
 
     -   若是 Configuration Manager 2007 用戶端，會保留公告執行歷程記錄。  
 
-    -   使用 System Center 2012 Configuration Manager 或 System Center Configuration Manager 的用戶端，會保留部署執行記錄。  
+    -   針對 System Center 2012 Configuration Manager 或 System Center Configuration Manager 的用戶端，保留部署執行歷程記錄。  
 
--   您可以依照您選擇的任何順序，從來源階層中的站台移轉用戶端。 不過，請考慮分階段移轉有限的用戶端數目，而不要一次移轉大量用戶端。 分段移轉可在每個新升級的用戶端將其初始完整清查和相容性資料提交至其指派的站台時，減少網路頻寬需求和伺服器處理。  
+-   您可以依照您選擇的任何順序，從來源階層中的站台移轉用戶端。 不過，請考慮分階段移轉有限的用戶端數目，不要一次移轉大量的用戶端。 分段移轉可在每個新升級的用戶端將其初始完整清查和相容性資料提交至其指派的站台時，減少網路頻寬需求和伺服器處理。  
 
 -   當您移轉 Configuration Manager 2007 用戶端時，現有的用戶端軟體會從用戶端電腦上解除安裝，然後安裝新的用戶端軟體。  
 
@@ -105,6 +105,6 @@ ms.openlocfilehash: 11da338af9d7dd4d6f9c5fc1c6c62e277139f852
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

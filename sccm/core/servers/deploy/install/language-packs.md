@@ -1,8 +1,8 @@
 ---
 title: "語言套件 | Microsoft Docs"
-description: "了解您可在 System Center Configuration Manager 中使用的語言支援。"
+description: "了解 System Center Configuration Manager 中可用的語言支援。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,21 +16,23 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 35d1008752a3275febef46b8817e97afdb91d580
+ms.sourcegitcommit: e7075eb675353be130fdcc867d9e4dd1009dab35
+ms.openlocfilehash: 47da3c531289ddf13d357bde8bbda85d79ed2803
 
 
 ---
 # <a name="language-packs-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的語言套件
 
-適用於：System Center Configuration Manager (最新分支)
+*適用於：System Center Configuration Manager (最新分支)*
 
 本主題提供 System Center Configuration Manager 的語言支援技術詳細資料。  
 
-##  <a name="a-namebkmksuplanguagepacksa-supported-operating-system-languages"></a><a name="BKMK_SupLanguagePacks"></a> 支援的作業系統語言  
- 在管理中心網站和主要站台安裝 **伺服器語言套件** 或 **用戶端語言套件** ，即可安裝下列顯示語言的支援功能。 當您執行安裝程式時，語言套件檔案會作為必要條件和可轉散發檔案下載的一部分下載。 您也可以先使用[安裝程式下載程式](setup-downloader.md)下載這些檔案，然後再執行安裝程式。 在站台的安裝期間，您可以從可用的語言組件檔案，選取要在該站台支援的伺服器和用戶端語言。  
+## <a name="a-namebkmksuplanguagepacksa-supported-operating-system-languages"></a><a name="BKMK_SupLanguagePacks"></a> 支援的作業系統語言  
+ 在管理中心網站和主要站台安裝**伺服器語言套件**或**用戶端語言套件**，即可安裝下列各表中顯示語言的支援。 在站台安裝程序期間，您可以從可用的語言套件檔案中選取要在該站台支援的伺服器和用戶端語言。
 
- 請使用下表對應地區設定識別碼與要在伺服器或用戶端上支援的語言。 如需地區設定識別碼的詳細資訊，請參閱 MSDN 線上程式庫中的 [Locale IDs Assigned by Microsoft (Microsoft 指派的地區設定識別碼)](http://go.microsoft.com/fwlink/p/?LinkId=252609) 。  
+ 當您執行安裝程式時，語言套件檔案會作為必要條件和可轉散發檔案下載的一部分下載。 您也可以先使用[安裝程式下載程式](setup-downloader.md)下載這些檔案，然後再執行安裝程式。   
+
+ 請使用下表對應地區設定識別碼與要在伺服器或用戶端電腦上支援的語言。 如需地區設定識別碼的詳細資訊，請參閱 [Microsoft 指派的地區設定識別碼](http://go.microsoft.com/fwlink/p/?LinkId=252609)。  
 
 ### <a name="server-languages"></a>伺服器語言  
 
@@ -85,17 +87,17 @@ ms.openlocfilehash: 35d1008752a3275febef46b8817e97afdb91d580
 |土耳其文|041f|TRK|  
 
 ### <a name="mobile-device-client-languages"></a>行動裝置用戶端語言  
- 新增行動裝置語言支援時，所有行動裝置用戶端語言皆包含在內。 您不能選取行動裝置支援的個別語言套件。  
+ 新增行動裝置語言支援時，所有支援的行動裝置用戶端語言皆包含在內。 您不能選取行動裝置支援的個別語言套件。  
 
-### <a name="how-to-identify-installed-language-packs"></a>如何識別已安裝的語言套件  
-如需識別 Configuration Manager 用戶端執行電腦所安裝的語言套件，只要在電腦登錄中檢視已安裝語言套件的地區設定識別碼 (LCID) 即可。 此項資訊的位置如下：  
+### <a name="identify-installed-language-packs"></a>識別已安裝的語言套件  
+若要識別 Configuration Manager 用戶端執行電腦所安裝的語言套件，請在電腦登錄中尋找已安裝語言套件的地區設定識別碼 (LCID)。 在下列位置可取得這項詳細資訊：
 
--   **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCMSetup\InstalledLangs**  
+ **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCMSetup\InstalledLangs**  
 
-您可以使用硬體清查收集這項資訊，然後再建立用於檢視語言詳細資料的自訂報告。 如需收集自訂硬體清查的資訊，請參閱[如何在 System Center Configuration Manager 中設定硬體清查](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)。 如需建立報告的資訊，請參閱 [System Center Configuration Manager 中的報告作業和維護](../../../../core/servers/manage/operations-and-maintenance-for-reporting.md)主題中的[管理 Configuration Manager 報告](../../../../core/servers/manage/operations-and-maintenance-for-reporting.md#BKMK_ManageReports)一節。  
+您可以使用硬體清查收集這項資訊，然後再建立用於檢視語言詳細資料的自訂報告。 如需收集自訂硬體清查的資訊，請參閱[如何在 System Center Configuration Manager 中設定硬體清查](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)。 如需建立報告的相關資訊，請參閱 [System Center Configuration Manager 中的報告作業和維護](../../../../core/servers/manage/operations-and-maintenance-for-reporting.md)主題中的[管理 Configuration Manager 報告](../../../../core/servers/manage/operations-and-maintenance-for-reporting.md#BKMK_ManageReports)一節。  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

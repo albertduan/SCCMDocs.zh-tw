@@ -2,7 +2,7 @@
 title: "如何為使用 System Center Configuration Manager 用戶端管理的 Mac OS X 裝置建立設定項目 | Microsoft Docs"
 description: "使用 System Center Configuration Manager Mac OS X 設定項目，管理 Mac OS X 裝置的設定。"
 ms.custom: na
-ms.date: 11/18/2016
+ms.date: 12/27/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
-ms.openlocfilehash: f3d08d7f8efb592383e1099850665a2e9f3b2b5f
+ms.sourcegitcommit: 8bbc0d0132fa4276ade8914d5ac3945ef1d12a4b
+ms.openlocfilehash: be7a9464ef4ac6042a46652a325583a355f23846
 
 
 ---
@@ -54,7 +54,11 @@ ms.openlocfilehash: f3d08d7f8efb592383e1099850665a2e9f3b2b5f
 
              例如，如果您想要編輯的 Safari 網頁瀏覽器設定，您可能會使用 **com.apple.Safari.plist**。  
 
-        -   **金鑰** – 指定您想要評估 Mac 電腦上的符合性的索引鍵的名稱。 請使用下列語法：/<字典\>/<索引鍵名稱\>。  
+        -   **金鑰** – 指定您想要評估 Mac 電腦上的符合性的索引鍵的名稱。 使用下列語法： 
+        
+            ```
+            */<dictionary\>/<keyname\>*.  
+            ```     
 
             > [!IMPORTANT]  
             >  索引鍵名稱區分大小寫，且當其名稱與 Mac 電腦上的索引鍵名稱不同時將不會進行評估。 此外，索引鍵名稱在指定之後就無法再進行編輯。 如果您需要編輯索引鍵的名稱，刪除並重新建立此設定。  
@@ -88,7 +92,7 @@ ms.openlocfilehash: f3d08d7f8efb592383e1099850665a2e9f3b2b5f
 
     -   **描述:** 輸入符合性規則的描述。  
 
-    -   **選取的設定︰** 按一下 **瀏覽** 開啟 **選取設定** 對話方塊。 選取您想要定義的規則或按一下 [設定 **新設定**。 當您完成時，請按一下 **選取**。  
+    -   **選取的設定︰** 按一下 **瀏覽** 開啟 **選取設定** 對話方塊。 選取您想要定義的規則或按一下 設定 **新設定**。 當您完成時，請按一下 **選取**。  
 
         > [!TIP]  
         >  您也可以按一下 **屬性** 若要檢視目前所選設定的相關資訊。  
@@ -173,6 +177,6 @@ ms.openlocfilehash: f3d08d7f8efb592383e1099850665a2e9f3b2b5f
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

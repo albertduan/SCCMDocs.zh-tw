@@ -2,7 +2,7 @@
 title: "使用診斷資料 | Microsoft Docs"
 description: "了解 Microsoft 如何使用 System Center Configuration Manager 收集的診斷及使用方式資料。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: aa0ee7544e348025a80d32b4a816de6dbec31d7f
+ms.sourcegitcommit: 24a233516058e645df2a43623855665b97b041b0
+ms.openlocfilehash: 9864f6ba7b9a2211c99b1a5d9ebd582e01ccfeb6
 
 
 ---
@@ -25,7 +25,7 @@ ms.openlocfilehash: aa0ee7544e348025a80d32b4a816de6dbec31d7f
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-針對 System Center Configuration Manager 收集的診斷和使用方式資料會以近即時的方式，將產品的運作 (或無法運作) 狀況回饋給 Microsoft，以用來調整後續的更新。 我們也可以查看設定資料，以協助我們設計及測試生產環境中的設定。 例如：  
+System Center Configuration Manager 所收集的診斷和使用方式資料會以近即時的方式將產品的運作狀況提供給 Microsoft，並用來調整後續的更新。 我們也可以查看設定資料，以協助我們設計及測試生產環境中的設定。 例如：  
 
 -   站台伺服器所使用的 Windows Server 版本  
 
@@ -43,12 +43,12 @@ ms.openlocfilehash: aa0ee7544e348025a80d32b4a816de6dbec31d7f
 
 -   根據可用資料 (例如功能使用習慣或地理位置 (時區)) 推銷廣告  
 
-##  <a name="a-namebkmkimprovea-examples-of-how-diagnostics-and-usage-data-is-improving-the-product"></a><a name="bkmk_improve"></a> 診斷和使用方式資料如何改進產品的範例  
-Microsoft 會利用可用的資料來改進產品。 以下是幾個作法的範例：  
+##  <a name="a-namebkmkimprovea-examples-of-how-diagnostics-and-usage-data-improves-the-product"></a><a name="bkmk_improve"></a> 診斷和使用方式資料如何改進產品的範例  
+Microsoft 會利用可用的資料來改進產品。 以下是一些範例：  
 
 -   **修改較舊的伺服器作業系統的支援：**  
 
-     System Center Configuration Manager 最新分支所提供的初始支援，在 Windows Server 2008 R2 的支援時間表上有所限制。 在檢查已升級至 Configuration Manager 最新分支的客戶使用方式資料後，我們意識到修改並延長此時間表的必要性，這樣才能支援仍使用此伺服器作業系統來裝載站台伺服器及站台系統角色的大量客戶。  
+     System Center Configuration Manager 最新分支所提供的初始支援，會限制 Windows Server 2008 R2 的支援時間表。 在檢查已升級至 Configuration Manager 最新分支的客戶使用方式資料後，我們意識到修改並延長此時間表的必要性，這樣才能支援仍使用此伺服器作業系統來裝載站台伺服器及站台系統角色的客戶。  
 
 -   **改善必要條件檢查：**  
 
@@ -56,6 +56,6 @@ Microsoft 會利用可用的資料來改進產品。 以下是幾個作法的範
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

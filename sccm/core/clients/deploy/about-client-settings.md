@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 21eeba4d35f19930f26ed820295d6f142adae1ac
-ms.openlocfilehash: 6c63d63c5b5a7fc1406027dd9380ea799c1aa318
+ms.sourcegitcommit: d7265aec46474ba7fc317ddb5e20b91b7b134585
+ms.openlocfilehash: 36f6eb3fe48e904adf4d04450906fada9b477246
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>關於 System Center Configuration Manager 中的用戶端設計
@@ -328,7 +328,11 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
     -   IDMIF 檔案應位於 Windows\System32\CCM\Inventory\Noidmif 資料夾中。  
 
     > [!NOTE]  
-    >  僅預設用戶端設定提供此設定。  
+    >  僅預設用戶端設定提供此設定。 
+
+-   **隨機延遲時間上限**
+
+    硬體資訊的收集會隨機進行，最高達到兩個小時，如此作業不會同時在所有用戶端上發生。 您可以設定延遲時間上限，限制作業發生的時間。      
 
 ##  <a name="metered-internet-connections"></a>計量付費網際網路連線  
  您可以管理 Windows 8 用戶端電腦與 Configuration Manager 站台在使用計量付費網際網路連線時的通訊方式。 在您處於計量付費網際網路連線時，網際網路提供者有時會根據您傳送和接收的資料量來收取費用。  
@@ -640,6 +644,6 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

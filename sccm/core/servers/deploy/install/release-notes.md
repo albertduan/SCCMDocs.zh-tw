@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: ea723a6694feb2c9584b35498aa9c3519383f08d
-ms.openlocfilehash: a9dc046a54c15d9d299664cd1f2a149383f53489
+ms.sourcegitcommit: c6358d65609605bfef3ac533f4caa0df1cfce0c5
+ms.openlocfilehash: 73208c8e9ec15e96a6caaf20b74c1f94d92a8975
 
 
 ---
@@ -247,6 +247,12 @@ System Center Configuration Manager 1602 版引進了下列兩項發行前版本
 **因應措施**：    
 在您建立服務計劃後，開啟服務計劃的屬性，移至 **[評估排程]** 索引標籤，選取 **[依排程執行規則]**，按一下 **[自訂]**並建立自訂排程。 例如，您可以每隔 60 天執行服務計劃。  
 
+### <a name="when-a-high-risk-deployment-dialog-is-visible-to-a-user-subsequent-high-risk-dialogs-with-a-sooner-deadline-are-not-displayed"></a>向使用者顯示高風險部署對話方塊時，就不會顯示期限較早的後續高風險對話方塊。
+建立高風險工作部署並將其部署給使用者之後，會向使用者顯示高風險對話方塊。 如果使用者未關閉對話方塊，您可以建立和部署期限比第一個高風險部署還要早的另一個高風險部署，除非使用者關閉原始對話方塊，否則他們接收不到更新的對話方塊。 在設定的期限，仍會執行部署。
+
+**因應措施**：  
+使用者必須關閉第一個高風險部署的對話方塊，才能查看下一個高風險部署的對話方塊。
+
 ## <a name="mobile-device-management"></a>行動裝置管理  
 
 ### <a name="cannot-create-an-enrollment-profile-on-a-primary-site"></a>主要站台無法建立註冊設定檔  
@@ -291,6 +297,6 @@ System Center Configuration Manager 1602 版引進了下列兩項發行前版本
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

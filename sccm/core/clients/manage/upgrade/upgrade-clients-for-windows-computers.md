@@ -2,7 +2,7 @@
 title: "升級用戶端 | Microsoft Docs | Windows "
 description: "在 System Center Configuration Manager 中升級 Windows 電腦上的用戶端。"
 ms.custom: na
-ms.date: 11/18/2016
+ms.date: 01/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
-ms.openlocfilehash: 8a3028a562aa657ea39a0f5ff763311db6def00a
+ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
+ms.openlocfilehash: a35724a5b839b47904c46361709f248e432eff1e
 
 
 ---
@@ -80,7 +80,7 @@ ms.openlocfilehash: 8a3028a562aa657ea39a0f5ff763311db6def00a
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [階層設定] 。  
 
-4.  在 [階層設定內容]  對話方塊的 [用戶端升級]  索引標籤中，檢閱實際執行用戶端的版本與日期，並確定其為您想要用來升級 Windows 電腦的版本。  如果其不是您預期見到的用戶端版本，您可能需要將實際執行前用戶端升階為實際執行用戶端。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中測試進入生產階段前集合的用戶端升級](../../../../core/clients/manage/upgrade/test-client-upgrades.md)。  
+4.  在 [階層設定內容]  對話方塊的 [用戶端升級]  索引標籤中，檢閱實際執行用戶端的版本與日期，並確定其為您想要用來升級 Windows 電腦的版本。  如果其不是您預期見到的用戶端版本，您可能需要將實際執行前用戶端升階為實際執行用戶端。 如需詳細資訊，請參閱[如何測試 System Center Configuration Manager 的進入生產階段前集合用戶端升級](../../../../core/clients/manage/upgrade/test-client-upgrades.md)。  
 
 5.  按一下 [使用實際執行用戶端升級階層中的所有用戶端]  ，然後在確認對話方塊中按一下 [確定]  。  
 
@@ -101,6 +101,6 @@ ms.openlocfilehash: 8a3028a562aa657ea39a0f5ff763311db6def00a
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

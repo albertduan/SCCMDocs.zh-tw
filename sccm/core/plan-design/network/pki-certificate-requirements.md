@@ -16,8 +16,8 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: db0642e95bbd7e704d2052aa1e0f5c27cd7bf568
-ms.openlocfilehash: 00c3c355fc43eff18b86112b0b9272cbcdf38e85
+ms.sourcegitcommit: eff38aafbbbbb077ca63474cde738ee8ec57307a
+ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: 00c3c355fc43eff18b86112b0b9272cbcdf38e85
 -   Windows Server 2008： [Windows Server 2008 中的 Active Directory 憑證服務](http://go.microsoft.com/fwlink/p/?LinkId=115018)  
 
 > [!IMPORTANT]  
->  自 2017 年 1 月 1 日起生效，Windows 將不再信任以 SHA-1 簽署的憑證。  建議您發行以 SHA-2 (包含 SHA-256) 簽署的新伺服器及用戶端驗證憑證。  
+>  自 2017 年 1 月 1 日起生效，Windows 將不再信任以 SHA-1 簽署的特定憑證。  建議您發行以 SHA-2 (包含 SHA-256) 簽署的新伺服器及用戶端驗證憑證。  
 >   
 >  如需此變更的詳細資料以及可能的期限更新，請關注此部落格文章： [Windows 強制的 Authenticode 碼簽署及時間戳記](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx)  
 
@@ -82,7 +82,7 @@ ms.openlocfilehash: 00c3c355fc43eff18b86112b0b9272cbcdf38e85
 |- 下列情況適用的根憑證授權單位 (CA) 憑證：<br /><br /> - 作業系統部署<br /><br /> - 行動裝置註冊<br /><br /> - Intel AMT 型電腦 RADIUS 伺服器驗證<br /><br /> - 用戶端憑證驗證|信任來源的憑證鏈結|不適用。|標準的根 CA 憑證。|當用戶端需要將通訊伺服器的憑證鏈結到信任的來源時，必須提供根 CA 憑證。 下列情況皆適用：<br /><br /> - 部署作業系統時，以及將用戶端電腦連線至設定使用 HTTPS 之管理點的工作順序執行時。<br /><br /> - 當您註冊受 System Center Configuration Manager 管理的行動裝置時。<br /><br /> - 使用 802.1X 驗證 AMT 型電腦，且想指定 RADIUS 伺服器根憑證的檔案時。<br /><br /> 此外，如果用戶端憑證的 CA 與核發管理點憑證的 CA 屬於不同階層，必須提供用戶端的根 CA 憑證。|  
 |Intel AMt 型電腦|伺服器驗證。|**Web 伺服器** (已修改)<br /><br /> 您必須設定 [用這項 Active Directory 資訊來建立] 的 [主體名稱]，然後針對 [主體名稱格式]  選取 [一般名稱] 。<br /><br /> 您必須將 [讀取]  和 [註冊]  權限授與在超出訊號範圍管理元件內容中指定的萬用安全性群組。|**[增強金鑰使用方法]** 值必須包含 **[伺服器驗證 (1。3。6。1。5。5。7。3。1)]**。<br /><br /> [主體名稱] 必須包含 AMT 型電腦的 FQDN (Active Directory 網域服務會自動提供)。|此憑證位於電腦管理控制器的非動態隨機存取記憶體中，在 Windows 使用者介面中無法看見。<br /><br /> 每部 Intel AMT 型電腦都會在 AMT 佈建及後續更新期間要求此憑證。 如果從這些電腦中移除 AMT 佈建資訊，就會撤銷此憑證。<br /><br /> 此憑證安裝在 Intel AMT 型電腦上時，會一併安裝根 CA 的憑證鏈結。 AMT 型電腦無法支援金鑰長度超過 2048 位元的 CA 憑證。<br /><br /> 將憑證安裝在 Intel AMT 型電腦上後，此憑證會對超出訊號範圍的服務點系統伺服器及執行超出訊號範圍管理主控台的電腦驗證 AMT 型電腦，並且使用傳輸層安全性 (TLS) 加密在電腦之間傳送的所有資料。|  
 |Intel AMT 802.1X 用戶端憑證|用戶端驗證|**工作站驗證**<br /><br /> 您必須將 [主體名稱] 設為 [用這項 Active Directory 資訊來建立] ，然後在 [主體名稱格式]  中選取 [一般名稱] 、清除 DNS 名稱，然後選取 [使用者主要名稱 (UPN)] 為替代主體名稱。<br /><br /> 您必須將此憑證範本的權限授與在超出訊號範圍管理元件內容 [讀取]  和 [註冊]  中指定的萬用安全性群組。|**[增強金鑰使用方法]** 值必須包含 **[用戶端驗證 (1。3。6。1。5。5。7。3。2)]**。<br /><br /> 主體名稱欄位必須包含 AMT 型電腦的 FQDN，主體別名則必須包含 UPN。<br /><br /> 支援的金鑰長度上限：2048 位元。|此憑證位於電腦管理控制器的非動態隨機存取記憶體中，在 Windows 使用者介面中無法看見。<br /><br /> 每部 Intel AMT 型電腦皆可在 AMT 佈建期間要求此憑證，但即使移除 AMT 佈建資訊，也不會撤銷此憑證。<br /><br /> 將憑證安裝在 AMT 型電腦上後，此憑證會對 RADIUS 伺服器驗證 AMT 型電腦，以便獲得網路存取權限。|  
-|由 Microsoft Intune 註冊的行動裝置|用戶端驗證|不適用：Intune 會自動建立此憑證。|[增強金鑰使用方法] 值包含用戶端驗證 (1.3.6.1.5.5.7.3.2)。<br /><br /> 作為客戶 Intune 訂閱唯一識別的 3 個自訂延伸模組。<br /><br /> 使用者可以在註冊期間提供憑證主體的值。 不過，Intune 不會使用此值識別裝置。<br /><br /> 金鑰大小是 2048 位元，並且使用 SHA-1 雜湊演算法。<br /><br /> **注意：** 您無法變更這些設定：此資訊僅供參考。|驗證使用者使用 Microsoft Intune 註冊行動裝置時，會自動要求並安裝此憑證。 裝置上產生的憑證位於電腦存放區中，並且會對 Intune 驗證註冊的行動裝置，以便管理該裝置。<br /><br /> 由於憑證中有自訂延伸模組，因此只能驗證針對組織建立的 Intune 訂閱。|
+|由 Microsoft Intune 註冊的行動裝置|用戶端驗證|不適用：Intune 會自動建立此憑證。|[增強金鑰使用方法] 值包含用戶端驗證 (1.3.6.1.5.5.7.3.2)。<br /><br /> 作為客戶 Intune 訂閱唯一識別的&3; 個自訂延伸模組。<br /><br /> 使用者可以在註冊期間提供憑證主體的值。 不過，Intune 不會使用此值識別裝置。<br /><br /> 金鑰大小是 2048 位元，並且使用 SHA-1 雜湊演算法。<br /><br /> **注意：** 您無法變更這些設定：此資訊僅供參考。|驗證使用者使用 Microsoft Intune 註冊行動裝置時，會自動要求並安裝此憑證。 裝置上產生的憑證位於電腦存放區中，並且會對 Intune 驗證註冊的行動裝置，以便管理該裝置。<br /><br /> 由於憑證中有自訂延伸模組，因此只能驗證針對組織建立的 Intune 訂閱。|
 
 
 

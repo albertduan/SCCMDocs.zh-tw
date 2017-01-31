@@ -2,7 +2,7 @@
 title: "存取內容的帳戶 | Microsoft Docs"
 description: "了解用戶端用來存取 System Center Configuration Manager 內容的帳戶。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/4/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: 4bf8dbd007f2ff122d1447ffcb2a963579034033
+ms.sourcegitcommit: 4d34a272a93100426cccd2308c5b3b0b0ae94a60
+ms.openlocfilehash: ee83aa6fdbd1a82384a4684055ed72620a3f474e
 
 ---
 # <a name="manage-accounts-to-access-content-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中管理用來存取內容的帳戶
@@ -30,7 +30,7 @@ ms.openlocfilehash: 4bf8dbd007f2ff122d1447ffcb2a963579034033
 
      提取發佈點也會使用此帳戶從遠端樹系中的來源發佈點獲取內容  
 
--   **套件存取帳戶** - Configuration Manager 預設會將發佈點上的內容存取權授與一般存取帳戶使用者和系統管理員。 不過，您可以設定其他權限以限制存取。  
+-   **套件存取帳戶** - Configuration Manager 預設會將發佈點上內容的存取權授與名為**使用者**和**系統管理員**的內建帳戶。 您可以設定其他權限以限制存取。  
 
 -   **多點傳送連接帳戶** – 用於作業系統部署。  
 
@@ -120,6 +120,6 @@ ms.openlocfilehash: 4bf8dbd007f2ff122d1447ffcb2a963579034033
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

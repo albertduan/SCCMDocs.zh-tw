@@ -17,8 +17,8 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 48b91e88f78752cf7c05162b701ea2ca2f401de3
-ms.openlocfilehash: 85df3df19f01f8ed6f5240851c47afce01a92880
+ms.sourcegitcommit: 0a6cb36aad455b38db628f26b97e1b4c00adc741
+ms.openlocfilehash: 12ef5c1faf5fe5780ddb7c12cfe6d533e9785f6d
 
 ---
 
@@ -46,7 +46,12 @@ ms.openlocfilehash: 85df3df19f01f8ed6f5240851c47afce01a92880
 [檢視 Intune 文件 >](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune)
 
 ## <a name="step-1-create-an-mdm-collection"></a>步驟 1：建立 MDM 集合
-您需要有 Configuration Manager 使用者集合，以指定可將裝置註冊至管理的使用者。 因為 Intune 授權是指派給使用者，所以目標只能是使用者集合。 基於測試，您可以設定**直接規則**，並新增可註冊裝置的特定使用者。 在 Configuration Manager 主控台中，選擇 [資產與相容性] > [使用者集合]，並按一下 [首頁] 索引標籤 > [建立] 群組，然後按一下 [建立使用者集合]。 針對更廣泛的發佈，您應該使用 [查詢規則] 來定義使用者。 如需集合的詳細資訊，請參閱[如何建立集合](https://technet.microsoft.com/library/mt629371.aspx)。
+需要有 Configuration Manager 使用者集合，才能指定可將裝置註冊至管理的使用者。 因為 Intune 授權是由使用者所指派，所以您只能使用使用者集合 (而不是裝置集合)。
+
+> [!NOTE]
+> 若要使用 Intune 來註冊裝置，您不需要將授權指派給 Office 365 入口網站或 Azure Active Directory 入口網站中的使用者。 只需要包括集合中與 Intune 訂閱相關聯的使用者 (在[稍後步驟](#step-3-configure-intune-subscription)中)。
+
+基於測試，您可以設定**直接規則**，並新增可註冊裝置的特定使用者。 在 Configuration Manager 主控台中，選擇 [資產與相容性] > [使用者集合]，並按一下 [首頁] 索引標籤 > [建立] 群組，然後按一下 [建立使用者集合]。 針對更廣泛的發佈，您應該使用 [查詢規則] 來定義使用者。 如需集合的詳細資訊，請參閱[如何建立集合](https://technet.microsoft.com/library/mt629371.aspx)。
 
 ![建立 MDM 的使用者集合](../media/mdm-create-user-collection.png)
 

@@ -2,7 +2,7 @@
 title: "檢視診斷資料 | Microsoft Docs"
 description: "檢視診斷和使用方式資料，確認 System Center Configuration Manager 階層不包含任何機密資訊。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: 5b5d6b6c176de8acbc1161f6820aa1cc3e9fca49
+ms.sourcegitcommit: 688e05aae0e0b15b54835f8d64a98487f4d7b64d
+ms.openlocfilehash: fcd7ac43f7b2d2c92d6aadd7c490f198ac99e5e6
 
 
 ---
@@ -27,17 +27,17 @@ ms.openlocfilehash: 5b5d6b6c176de8acbc1161f6820aa1cc3e9fca49
 
 您可以檢視 System Center Configuration Manager 階層的診斷和使用方式資料，以確認未包含任何機密或可識別資訊。 遙測資料會彙總並儲存在站台資料庫的 **TEL_TelemetryResults** 資料表中，而且會格式化為可以程式設計方式使用且更有效率。 雖然下列選項可讓您檢視傳送至 Microsoft 的精確資料，但並不適用於其他用途，例如資料分析。  
 
-下列 SQL 命令可用來檢視這個資料表的內容，並顯示已傳送的精確資料 (您也可以將這份資料匯出成文字檔)：  
+下列 SQL 命令可用來檢視這個資料表的內容，並顯示已傳送的精確資料。 (您也可以將這份資料匯出成文字檔)：  
 
 -   **SELECT \* FROM TEL_TelemetryResults**  
 
 > [!NOTE]  
->  在安裝版本 1602 之前，儲存遙測資料的資料表是 **TelemetryResults**。  
+>  在安裝 1602 版之前，儲存遙測資料的資料表是 **TelemetryResults**。  
 
 當服務連接點處於離線模式時，您可以使用服務連接工具，將目前的診斷和使用方式資料匯出成逗點分隔值 (CSV) 檔案。 請使用 **-Export** 參數在服務連接點上執行服務連接工具。  
 
 ##  <a name="a-namebkmkhashesa-one-way-hashes"></a><a name="bkmk_hashes"></a> 單程雜湊  
-其中一些資料是由隨機英數字元字串所組成。 Configuration Manager 使用採用 SHA-256 演算法的單程雜湊，以確保不會收集可能具機密性的資料，同時又讓它維持在可用於進行相互關聯和比較的狀態。 例如，單程雜湊會針對每個資料表名稱擷取，而不是收集站台資料庫中的資料表名稱。 如此可確保不會顯示您或協力廠商產品附加元件所建立的任何自訂資料表名稱。 然後，我們可以對產品預設隨附的 SQL 資料表名稱進行相同的單程雜湊，再比較以判斷您的資料庫結構描述與產品預設值的差異。 此資訊可接著用來改進需要變更 SQL 結構描述的更新。  
+一些資料是由隨機英數字元字串所組成。 Configuration Manager 使用採用單程雜湊的 SHA-256 演算法，以確保不會收集可能的敏感性資料。 此演算法會將資料維持在仍可用於進行相互關聯和比較的狀態。 例如，單程雜湊會針對每個資料表名稱擷取，而不是收集站台資料庫中的資料表名稱。 如此可確保不會顯示您所建立的自訂資料表名稱或其他人的產品附加元件。 然後，我們可以對產品預設隨附的 SQL 資料表名稱進行相同的單程雜湊，再比較兩個查詢結果，以判斷您的資料庫結構描述與產品預設值的差異。 此資訊可接著用來改進需要變更 SQL 結構描述的更新。  
 
 檢視未經處理的資料時，每個資料列都會出現一個通用的雜湊值。 這是階層識別碼。 此雜湊值是用來確保資料與相同的階層相互關聯，但不識別客戶或來源。  
 
@@ -45,7 +45,7 @@ ms.openlocfilehash: 5b5d6b6c176de8acbc1161f6820aa1cc3e9fca49
 
 1.  在 SQL Management Studio 中針對 Configuration Manager 資料庫執行下列 SQL 陳述式來取得階層識別碼︰**select [dbo].[fnGetHierarchyID](\)**  
 
-2.  接著，使用下列 Windows PowerShell 指令碼來執行從資料庫取得之 GUID 的單程雜湊。 然後，您可以將此識別碼與未經處理資料中的階層識別碼做比較，以了解我們如何遮蔽此資料。  
+2.  使用下列 Windows PowerShell 指令碼來執行從資料庫取得之 GUID 的單程雜湊。 然後，您可以將此識別碼與未經處理資料中的階層識別碼做比較，以了解我們如何遮蔽此資料。  
 
     ```  
     Param( [Parameter(Mandatory=$True)] [string]$value )  
@@ -69,6 +69,6 @@ ms.openlocfilehash: 5b5d6b6c176de8acbc1161f6820aa1cc3e9fca49
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

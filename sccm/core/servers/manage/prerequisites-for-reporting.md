@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: ae750188b0258122d8561b163a5ecd85c4179f18
+ms.sourcegitcommit: 59e63cf223424f9930524e3ed3833c30dc9ca9a7
+ms.openlocfilehash: f43764acd13b0257481614fc79aebecac75542d7
 
 
 ---
@@ -50,21 +50,22 @@ System Center Configuration Manager 中的報告具有外部相依性和產品�
 
 |SQL Server 版本|Reporting Services 點|  
 |------------------------|------------------------------|  
-|SQL Server 2008 SP2 並至少加裝累計更新 9<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|?|  
-|SQL Server 2008 SP3 並至少加裝累計更新 4<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|?|  
-|SQL Server 2008 R2 SP1 並至少加裝累計更新 6<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|?|  
-|SQL Server 2008 R2 SP2<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|?|  
+|SQL Server 2008 SP2 並至少加裝累計更新 9<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|是|  
+|SQL Server 2008 SP3 並至少加裝累計更新 4<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|是|  
+|SQL Server 2008 R2 SP1 並至少加裝累計更新 6<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|是|  
+|SQL Server 2008 R2 SP2<br /><br /> -   Standard<br />-   Enterprise<br />-   Datacenter|是|  
 |SQL Server Express 2008 R2 SP1 並至少加裝累計更新 4|不支援|  
 |SQL Server Express 2008 R2 SP2|不支援|  
-|SQL Server 2012 並至少加裝累計更新 2<br /><br /> -   Standard<br />-   Enterprise|?|  
-|SQL Server 2012 SP1 並且沒有累計更新最低要求<br /><br /> -   Standard<br />-   Enterprise|?|  
-|SQL Server 2014<br /><br /> -   Standard<br />-   Enterprise|?|  
-
+|SQL Server 2012 並至少加裝累計更新 2<br /><br /> -   Standard<br />-   Enterprise|是|  
+|SQL Server 2012 SP1 並且沒有累計更新最低要求<br /><br /> -   Standard<br />-   Enterprise|是|  
+|SQL Server 2016<br /><br /> -   Standard<br />-   Enterprise|是|
+|SQL Server 2016<br /><br /> -   Standard<br />-   Enterprise|是|
+|SQL Server 2016 SP1<br /><br /> -   Standard<br />-   Enterprise|是|
 ## <a name="next-steps"></a>後續步驟
 [報告作業和維護](operations-and-maintenance-for-reporting.md)
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

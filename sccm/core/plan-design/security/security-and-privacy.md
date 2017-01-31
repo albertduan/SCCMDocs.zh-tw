@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager 的安全性和隱私權 | Microsoft Docs"
 description: "尋找 System Center Configuration Manager 的安全性與隱私權資源。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,20 +16,20 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: a0cc96d1bde1ab895a4560d89dbc162f34a8443b
+ms.sourcegitcommit: b470aee50669bcded176d55d8b1496768d1f3cde
+ms.openlocfilehash: de9df79c7adc24b415fd1be6e45a42aec7e16f9a
 
 
 ---
 # <a name="security-and-privacy-for-system-center-configuration-manager"></a>Security and privacy for System Center Configuration Manager (System Center Configuration Manager 的安全性和隱私權)
 
-*適用對象：System Center Configuration Manager (最新分支)*
+*適用於：System Center Configuration Manager (最新分支)*
 
-本主題包含 System Center Configuration Manager 的安全性與隱私權資源。  
+本文包含 System Center Configuration Manager 的安全性與隱私權資源。  
 
- 在繼續之前，請確定您了解 [System Center Configuration Manager 的基礎](../../../core/understand/fundamentals.md)。 如已安裝 System Center Configuration Manager，請找出適合的執行設計決策。 Configuration Manager 規劃和部署內容可能會有所助益。  
+ 繼續之前，請確定您了解 [System Center Configuration Manager 的基礎](../../../core/understand/fundamentals.md)。 如果已安裝 System Center Configuration Manager，請找出實作的設計決策。 Configuration Manager 規劃和部署內容可能會有所助益。  
 
- 請參閱以下主題，了解產品中與安全性相關的功能：  
+ 請參閱下列各文章，了解產品中的安全性相關功能：  
 
 -   [System Center Configuration Manager 中作業系統部署的安全性和隱私權](../../../osd/plan-design/security-and-privacy-for-operating-system-deployment.md)  
 
@@ -59,7 +59,7 @@ ms.openlocfilehash: a0cc96d1bde1ab895a4560d89dbc162f34a8443b
 
 
 
- **安全性和隱私權主題：**  
+ **安全性和隱私權文章：**  
 
 -   [在 System Center Configuration Manager 中規劃安全性](../../../core/plan-design/security/plan-for-security.md)  
 
@@ -76,6 +76,6 @@ ms.openlocfilehash: a0cc96d1bde1ab895a4560d89dbc162f34a8443b
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

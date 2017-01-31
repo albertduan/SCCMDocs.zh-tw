@@ -2,7 +2,7 @@
 title: "工作順序步驟 | Microsoft Docs"
 description: "了解您可新增至 Configuration Manager 工作順序的工作順序步驟。"
 ms.custom: na
-ms.date: 12/07/2016
+ms.date: 01/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3f44505c977b511223a083a960f871371c0ff133
-ms.openlocfilehash: 6e324eb97c0e803d382371ace541a4b9f96e6ba3
+ms.sourcegitcommit: 46c8004afee4b18d5c7a2fcc5dac0f7d0d1f823c
+ms.openlocfilehash: 2898afdea131f4114bc645cb11a2c6ffacb42417
 
 
 ---
@@ -1377,7 +1377,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  當您在命令列上指定目的地電腦中不存在的檔案或程式時，請選取此選項來指定含有適當檔案的 Configuration Manager 套件。 此套件不需要程式。 如果指定的檔案存在於目的地電腦上，則不需要這個選項。  
 
  **逾時**  
- 指定一個值，用來表示 Configuration Manager 將允許命令列執行多久。 這個值可以從 10 分鐘到 999 分鐘。 預設值為 15 分鐘。  
+ 指定一個值，用來表示 Configuration Manager 將允許命令列執行多久。 這個值可以從 1 分鐘到 999 分鐘。 預設值為 15 分鐘。  
 
  預設會停用這個選項。  
 
@@ -1696,6 +1696,6 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

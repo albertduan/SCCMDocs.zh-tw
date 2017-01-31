@@ -2,7 +2,7 @@
 title: "檢視軟體清查 | Microsoft Docs | 資源總管"
 description: "在 System Center Configuration Manager 中，使用資源總管檢視軟體清查。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 12/26/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: a15c593bed4fe7ecce22990bbdcecc8dc2ed2962
+ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
+ms.openlocfilehash: 6189726bbcade8229e0b2e929ebedeefdbf266a4
 
 
 ---
@@ -29,37 +29,33 @@ ms.openlocfilehash: a15c593bed4fe7ecce22990bbdcecc8dc2ed2962
 在 System Center Configuration Manager 中使用資源總管，檢視從階層中電腦所收集的軟體清查相關資訊。  
 
 > [!NOTE]  
->  資源總管要到軟體清查週期在您連線的用戶端上執行過後，才會顯示所有的清查資料。  
+>  資源總管會等待軟體清查週期在用戶端上執行之後，才會顯示所有的清查資料。  
 
- Configuration Manager 中的資源總管包含下列與軟體清查相關的區段：  
+ 資源總管提供下列軟體清查資訊：  
 
--   **軟體** - 資源總管的軟體區段包含四個部分：  
+-   **軟體**：  
 
-    -   **收集到的檔案** - 顯示在軟體清查期間收集到的檔案相關資訊。  
+    -   **收集到的檔案** - 在軟體清查期間收集到的檔案。  
 
-    -   **檔案詳細資料** - 顯示在軟體清查期間清查到與特定產品或製造商無關聯的檔案相關資訊。  
+    -   **檔案詳細資料** - 在軟體清查期間清查到與特定產品或製造商無關聯的檔案。  
 
-    -   **上次軟體掃描** - 顯示用戶端電腦上次執行軟體清查和檔案收集的日期和時間。  
+    -   **上次軟體掃描** - 用戶端電腦上次執行軟體清查和檔案收集的日期和時間。  
 
-    -   **產品詳細資料** - 顯示軟體清查清查到且依製造商分組的軟體產品相關資訊。  
+    -   **產品詳細資料** - 軟體清查所清查且依製造商分組的軟體產品。  
 
 ## <a name="to-run-resource-explorer-from-the-configuration-manager-console"></a>從 Configuration Manager 主控台執行資源總管  
- 請使用下列程序在 Configuration Manager 中執行資源總管。  
 
-#### <a name="to-run-resource-explorer-from-the-configuration-manager-console"></a>從 Configuration Manager 主控台執行資源總管  
+1.  在 Configuration Manager 主控台中，選擇 [資產與合規性]
 
-1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
+2.  在 [資產與合規性] 工作區中，選擇 [裝置] 或開啟顯示裝置的任何集合。  
 
-2.  在 [資產與相容性]  工作區中，按一下 [裝置]  或開啟顯示裝置的任何集合。  
+3.  選擇您想要檢視、包含清查的電腦，然後在 [首頁] 索引標籤 > [裝置] 群組中，選擇 [開始] > 資源總管。
 
-3.  按一下您想要檢視、包含清查的電腦，然後在 [首頁]  索引標籤的 [裝置]  群組中，依序按一下 [開始]  和 **資源總管**。 **資源總管** 視窗隨即開啟。  
-
-4.  您可以在 [資源總管] 視窗的右窗格中以滑鼠右鍵按一下任何項目，然後按一下 [內容] 開啟 [*<項目名稱\>* 內容] 對話方塊，其可協助您以更容易閱讀的格式來檢視收集到的清查資訊。  
-
-5.  完成後請關閉 **資源總管** 視窗。  
+4.  您可以在資源總管視窗的右窗格中，以滑鼠右鍵按一下任何項目，然後選擇 [內容] 以更容易閱讀的格式檢視收集到的清查資訊。  
+ 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO5-->
 
 

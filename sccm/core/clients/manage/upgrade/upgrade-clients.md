@@ -2,7 +2,7 @@
 title: "升級用戶端 | Microsoft Docs"
 description: "取得如何在 System Center Configuration Manager 中升級用戶端的相關資訊。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: c9794b9770e6fa5665af547d6b36559f85ade691
+ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
+ms.openlocfilehash: f369bccb1da6d428fb321455272190e1a0439ec3
 
 
 ---
@@ -25,10 +25,10 @@ ms.openlocfilehash: c9794b9770e6fa5665af547d6b36559f85ade691
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-您可以使用不同的方法，升級企業中 Windows 電腦、UNIX 和 Linux 伺服器以及 Mac 電腦上的 System Center Configuration Manager 用戶端軟體。 下列各節概列每種用戶端升級方法的優缺點，協助您判斷最適合貴組織的方法。  
+您可以使用不同的方法，升級 Windows 電腦、UNIX 和 Linux 伺服器以及 Mac 電腦上的 System Center Configuration Manager 用戶端軟體。 以下是各種方法的優缺點。  
 
 > [!TIP]  
->  如果您從舊版的 Configuration Manager \(例如 Configuration Manager 2007 或 System Center 2012 Configuration Manager\) 升級伺服器基礎結構，建議您先完成伺服器升級 (包含安裝所有的最新分支更新)，然後再升級 Configuration Manager 用戶端。   最新的最新分支更新包含最新版本的用戶端，因此最好在您安裝所有要使用的 Configuration Manager 更新之後，執行用戶端升級。  
+>  如果您從舊版的 Configuration Manager \(例如 Configuration Manager 2007 或 System Center 2012 Configuration Manager\) 升級伺服器基礎結構，建議您先完成伺服器升級 (包含安裝所有的最新分支更新)，然後再升級 Configuration Manager 用戶端。 如此一來，您也會有用戶端軟體的最新版本。  
 
 ## <a name="group-policy-installation"></a>群組原則安裝  
  **支援的用戶端平台：** Windows  
@@ -47,9 +47,8 @@ ms.openlocfilehash: c9794b9770e6fa5665af547d6b36559f85ade691
 
 -   如果升級大量用戶端，可能會使網路流量增高。  
 
--   如果未延伸 Configuration Manager 的 Active Directory 架構，您必須使用 [群組原則] 設定，將用戶端安裝內容新增至站台中的電腦。  
+-   如果未延伸 Configuration Manager 的 Active Directory 架構，您必須使用 [[群組原則] 設定](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientGP)，將用戶端安裝內容新增至站台中的電腦。  
 
- 如需詳細資訊，請參閱 [How to Install Configuration Manager Clients by Using Group Policy](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientGP) (如何使用群組原則安裝 Configuration Manager 用戶端)。  
 
 ## <a name="logon-script-installation"></a>登入指令碼安裝  
  **支援的用戶端平台：** Windows  
@@ -66,7 +65,7 @@ ms.openlocfilehash: c9794b9770e6fa5665af547d6b36559f85ade691
 
 -   如果在短時間內升級大量用戶端，可能會使網路流量增高。  
 
--   如果使用者不常登入網路，可能需花很長的時間才能在所有用戶端電腦上升級。  
+-   如果使用者不常登入網路，可能需要花很長的時間才能升級所有用戶端電腦。  
 
  如需詳細資訊，請參閱 [How to Install Configuration Manager Clients by Using Logon Scripts](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientLogonScript) (如何使用登入指令碼安裝 Configuration Manager 用戶端)。  
 
@@ -105,7 +104,7 @@ ms.openlocfilehash: c9794b9770e6fa5665af547d6b36559f85ade691
 
  **缺點**  
 
--   將用戶端發佈至大量集合時，可能會使網路流量增高。  
+-   如果您將用戶端發佈至大量集合，可能會使網路流量增高。  
 
 -   必須先探索電腦並將電腦指派至站台，才能升級這些電腦上的用戶端軟體。  
 
@@ -122,7 +121,7 @@ ms.openlocfilehash: c9794b9770e6fa5665af547d6b36559f85ade691
 
 -   可用於自動將站台中的用戶端保持在最新版本。  
 
--   系統管理使用者只需要進行最基本的管理。  
+-   需要進行最基本的管理。  
 
  **缺點**  
 
@@ -141,18 +140,18 @@ ms.openlocfilehash: c9794b9770e6fa5665af547d6b36559f85ade691
 
  **優點**  
 
--   可用來在較小的生產前集合中測試新的用戶端版本。  
+-   可用來在較小的進入生產階段前集合中測試新的用戶端版本。  
 
--   測試完成時，生產階段前中的用戶端會升級至生產，並跨 Configuration Manager 站台自動進行升級。  
+-   測試完成時，進入生產階段前的用戶端會升級至生產，並跨 Configuration Manager 站台自動進行升級。  
 
  **缺點**  
 
 -   只能用於升級用戶端軟體，不可用於安裝新用戶端。  
 
- [如何在 System Center Configuration Manager 中測試進入生產階段前集合的用戶端升級](../../../../core/clients/manage/upgrade/test-client-upgrades.md)  
+ [如何測試 System Center Configuration Manager 的進入生產階段前集合用戶端升級](../../../../core/clients/manage/upgrade/test-client-upgrades.md)  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

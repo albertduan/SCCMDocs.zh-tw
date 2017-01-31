@@ -2,7 +2,7 @@
 title: "建立可開機媒體 | Microsoft Docs"
 description: "Configuration Manager 中的可開機媒體讓您更容易安裝新版的 Windows 或取代電腦和傳輸設定。"
 ms.custom: na
-ms.date: 12/06/2016
+ms.date: 12/21/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 03722ff4f480cd26842e395fe1f7ec8359e2b33e
-ms.openlocfilehash: a7bdad82dc55b4c0fe7d892ef34cc6aa0dfbf476
+ms.sourcegitcommit: 66cd6d099acdd9db2bc913a69993aaf5e17237fe
+ms.openlocfilehash: 0a4c2b41f899f6e243e7eb825082514114226a8f
 
 
 ---
@@ -47,7 +47,7 @@ Configuration Manager 中的可開機媒體包含開機映像、選擇性的啟�
 
  利用下列程序建立可開機媒體。  
 
-#### <a name="to-create-bootable-media"></a>若要建立可開機媒體  
+### <a name="to-create-bootable-media"></a>若要建立可開機媒體  
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
@@ -146,11 +146,18 @@ Configuration Manager 中的可開機媒體包含開機映像、選擇性的啟�
 
 10. 完成精靈。  
 
+## <a name="create-bootable-media-on-a-usb-drive-from-a-network-share"></a>從網路共用在 USB 磁碟機上建立可開機媒體
+本節的資訊可協助您在 USB 快閃磁碟機未連線到執行 Configuration Manager 主控台的電腦時，在 USB 快閃磁碟機上建立可開機媒體。 若要在 USB 磁碟機上建立可開機媒體，您可以建立工作順序開機媒體、掛接 ISO，並從 ISO 傳輸檔案到 USB 磁碟機。
+
+1. [建立工作順序開機媒體](#to-create-task-boobable-media)。 在 [媒體類型] 頁面上，選取 [CD/DVD 組]。 精靈會將輸出檔案寫入您指定的位置。 例如︰**\\\伺服器名稱\資料夾\outputfile.iso**。  
+2. 準備卸除式 USB 磁碟機。 磁碟機必須格式化、清空且可開機。
+3. 從共用位置掛接 ISO，並將檔案從 ISO 傳送到 USB 磁碟機。
+
 ## <a name="next-steps"></a>後續步驟  
 [透過網路使用可開機媒體部署 Windows](use-bootable-media-to-deploy-windows-over-the-network.md)  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Dec16_HO4-->
 
 

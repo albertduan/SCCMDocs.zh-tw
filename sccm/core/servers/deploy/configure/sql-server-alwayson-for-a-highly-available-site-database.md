@@ -1,7 +1,7 @@
 ---
 title: SQL Server AlwaysOn | Microsoft Docs
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 1/4/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,8 +15,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 9d4d0c741418af29edc586a5d629fc61f86da426
+ms.sourcegitcommit: 4d34a272a93100426cccd2308c5b3b0b0ae94a60
+ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 
 
 ---
@@ -98,9 +98,12 @@ ms.openlocfilehash: 9d4d0c741418af29edc586a5d629fc61f86da426
 
  **與 System Center Configuration Manager 搭配使用的 AlwaysOn 可用性群組需求：**  
 
--   可用性群組中的每個節點 (或複本) 都必須執行 System Center Configuration Manager 所支援的 SQL Server 版本  
+-  版本：可用性群組中的每個節點 (或複本) 都必須執行 System Center Configuration Manager 所支援的 SQL Server 版本。 如果 SQL Server 支援，可用性群組的不同節點可以執行不同版本的 SQL Server。   
 
--   可用性群組必須有一個主要複本，而且最多可以有兩個同步次要複本  
+- 版次︰您必須使用 SQL Server Enterprise Edition。  SQL Server 2016 Standard Edition 推出了 Configuration Manager 不支援的基本可用性群組。
+
+
+-   可用性群組必須有一個主要複本，而且最多可以有兩個同步次要複本。  
 
 -  在將資料庫加入可用性群組之後，您必須將主要複本容錯移轉到次要複本 (讓它成為新的主要複本)，並接著使用下列項目來設定資料庫︰
     - 啟用 Trustworthy︰等於 True
@@ -131,7 +134,9 @@ ms.openlocfilehash: 9d4d0c741418af29edc586a5d629fc61f86da426
         >  設定為 [自動容錯移轉] 時，System Center Configuration Manager 支援使用可用性群組複本。 不過，當您執行安裝程式以指定使用可用性群組中的站台資料庫，以及當您安裝任何 Configuration Manager 更新 (不只是適用於站台資料庫的更新) 時，都必須設定「手動容錯移轉」。  
 
   **可用性群組的限制**
-   - 可用性群組只支援站台資料庫，而不適用於軟體更新資料庫或報表資料庫   
+   - 不支援基本可用性群組 (由 SQL Server 2016 Standard Edition 所推出)。 這是因為基本可用性群組不支援次要複本的讀取存取，但這是搭配使用 Configuration manager 的需求。 如需詳細資訊，請參閱[基本可用性群組 (AlwaysOn 可用性群組)](https://msdn.microsoft.com/en-us/library/mt614935.aspx)。
+
+   - 可用性群組只支援站台資料庫，而不適用於軟體更新資料庫或報表資料庫。   
    - 當您使用可用性群組時，您必須手動設定報告點以使用目前的主要複本，而不是可用性群組接聽程式。 如果主要複本容錯移轉至另一個複本，則必須將報告點重新設定為使用新的主要複本。  
    - 安裝更新之前 (像是 1606 版本)，請確定可用性群組設定為手動容錯移轉。 站台更新之後，您可以還原為自動容錯移轉。
 
@@ -260,6 +265,6 @@ ms.openlocfilehash: 9d4d0c741418af29edc586a5d629fc61f86da426
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 

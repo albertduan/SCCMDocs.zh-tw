@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
-ms.openlocfilehash: 7ab79fb69188fa5fe6b89b070829ec0f918137b9
+ms.sourcegitcommit: 2ac9f98dc7b455d3b72d794d4311863186ed53ef
+ms.openlocfilehash: cd94f9ccc7e196b30e5dc7ae9368d073b7cff5d2
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 7ab79fb69188fa5fe6b89b070829ec0f918137b9
 
 
 ##  <a name="a-nameplanningintra-sitecoma-communications-between-site-systems-in-a-site"></a><a name="Planning_Intra-site_Com"></a> 站台內站台系統之間的通訊  
- 當 Configuration Manager 站台系統或元件透過網路與其他站台系統或站台中的 Configuration Manager 元件通訊時，會根據站台設定方式來使用下列其中一項：  
+ 當 Configuration Manager 站台系統或元件透過網路與其他站台系統或站台中的 Configuration Manager 元件通訊時，會根據站台設定方式來使用下列其中一項通訊協定：  
 
 -   伺服器訊息區 (SMB)  
 
@@ -35,37 +35,37 @@ ms.openlocfilehash: 7ab79fb69188fa5fe6b89b070829ec0f918137b9
 
 -   HTTPS  
 
-除了從站台伺服器到發佈點的通訊以外，站台中伺服器對伺服器的通訊可能會在任何時間發生，並且不會使用任何機制控制網路頻寬。 由於您無法控制網站系統之間的通訊，請確保將網站系統伺服器安裝在網路連線良好而且快速的位置。  
+除了從站台伺服器到發佈點的通訊以外，站台中伺服器對伺服器的通訊可能會在任何時間發生，並且不會使用任何機制控制網路頻寬。 由於您無法控制站台系統之間的通訊，請確保將站台系統伺服器安裝在快速且網路連線良好的位置。  
 
 協助您管理從站台伺服器到發佈點的內容傳送：  
 
--   設定網路頻寬控制與排程的發佈點。 這些控制項與網站內位址所使用的設定相似，當傳送內容至遠端網路位置是您主要的頻寬考量時，便可常使用此設定，而不需安裝另一個 Configuration Manager 站台。  
+-   設定網路頻寬控制與排程的發佈點。 這些控制項與站台間位址所使用的設定相似，當傳送內容至遠端網路位置是您主要的頻寬考量時，通常可使用此設定，而不需安裝另一個 Configuration Manager 站台。  
 
 -   您可以將發佈點安裝為預先設置的發佈點。 預先設置的發佈點可讓您使用以手動方式放置於發佈點伺服器的內容，並可免除透過網路傳送內容檔案的需求。  
 
-如需詳細資訊，請參閱 [Manage network bandwidth for content management](manage-network-bandwidth.md) (管理網路頻寬以進行內容管理)。
+如需詳細資訊，請參閱[管理內容管理的網路頻寬](manage-network-bandwidth.md)。
 
 
 ##  <a name="a-nameplanningclienttositesystema-communications-from-clients-to-site-systems-and-services"></a><a name="Planning_Client_to_Site_System"></a> 從用戶端到站台系統和服務的通訊  
-用戶端會起始與網站系統角色、Active Directory 網域服務及線上服務的通訊。 若要啟用這些通訊，防火牆必須允許用戶端和其通訊端點之間的網路流量。 端點包括：  
+用戶端會起始與站台系統角色、Active Directory 網域服務及線上服務的通訊。 若要啟用這些通訊，防火牆必須允許用戶端和其通訊端點之間的網路流量。 端點包括：  
 
--   **應用程式類別目錄網站點** - (支援 HTTP 和 HTTPS 通訊)  
+-   **應用程式類別目錄網站點**：支援 HTTP 和 HTTPS 通訊
 
--   **雲端資源** (例如 Microsoft Azure 和 Microsoft Intune)  
+-   **雲端資源**：包括 Microsoft Azure 和 Microsoft Intune  
 
--   **Configuration Manager 原則模組 (NDES)** - (支援 HTTP 和 HTTPS 通訊)  
+-   **Configuration Manager 原則模組 (NDES)**：支援 HTTP 和 HTTPS 通訊
 
--   **發佈點** - (支援 HTTP 和 HTTPS 通訊，而雲端發佈點需要 HTTPS)  
+-   **發佈點**：支援 HTTP 和 HTTPS 通訊，而雲端發佈點需要 HTTPS  
 
--   **後援狀態點** - (支援 HTTP 通訊)  
+-   **後援狀態點**：支援 HTTP 通訊  
 
--   **管理點** - (支援 HTTP 和 HTTPS 通訊)  
+-   **管理點**：支援 HTTP 和 HTTPS 通訊  
 
 -   **Microsoft Update**  
 
--   **軟體更新點** - (支援 HTTP 和 HTTPS 通訊)  
+-   **軟體更新點**：支援 HTTP 和 HTTPS 通訊  
 
--   **狀態移轉點** - (支援 HTTP 和 HTTPS 通訊)  
+-   **狀態移轉點**：支援 HTTP 和 HTTPS 通訊  
 
 -   **各種網域服務**  
 
@@ -73,14 +73,14 @@ ms.openlocfilehash: 7ab79fb69188fa5fe6b89b070829ec0f918137b9
 
 -   若要使用 HTTPS，您必須具有公開金鑰基礎結構 (PKI)，並且必須在用戶端與伺服器上安裝 PKI 憑證。 如需如何使用憑證的資訊，請參閱 [System Center Configuration Manager 的 PKI 憑證需求](../../../core/plan-design/network/pki-certificate-requirements.md)。  
 
--   在部署使用網際網路資訊服務 (IIS) 並支援從用戶端進行通訊的網站系統角色時，您必須指定用戶端要使用 HTTP 或 HTTPS 連線至網站系統。 如果您使用 HTTP，您也必須考慮簽署和加密選擇。 如需詳細資訊，請參閱 [Plan for Security 中的 System Center Configuration Manager](../../../core/plan-design/security/plan-for-security.md#BKMK_PlanningForSigningEncryption) 中的 [Plan for security 中的 System Center Configuration Manager](../../../core/plan-design/security/plan-for-security.md)。  
+-   在部署使用網際網路資訊服務 (IIS) 並支援從用戶端進行通訊的網站系統角色時，您必須指定用戶端要使用 HTTP 或 HTTPS 連線至網站系統。 如果您使用 HTTP，您也必須考慮簽署和加密選擇。 如需詳細資訊，請參閱[在 System Center Configuration Manager 中規劃安全性](../../../core/plan-design/security/plan-for-security.md#BKMK_PlanningForSigningEncryption)中的[規劃簽署與加密](../../../core/plan-design/security/plan-for-security.md)。  
 
 如需用戶端服務位置的資訊，請參閱[了解用戶端如何找到 System Center Configuration Manager 的站台資源和服務](../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)。  
 
-如需用戶端與這些端點進行通訊時所用的連接埠和通訊協定的詳細資訊，請參閱 [Ports used in System Center Configuration Manager](../../../core/plan-design/hierarchy/ports.md) (System Center Configuration Manager 中使用的連接埠)。  
+如需用戶端與這些端點進行通訊時所用的連接埠和通訊協定的詳細資訊，請參閱 [System Center Configuration Manager 中使用的連接埠](../../../core/plan-design/hierarchy/ports.md)。  
 
 ###  <a name="a-namebkmkclientspana-considerations-for-client-communications-from-the-internet-or-an-untrusted-forest"></a><a name="BKMK_clientspan"></a> 從網際網路或未受信任之樹系的用戶端通訊考量  
-安裝在主要網站的下列網站系統角色支援來自不受信任位置 (例如網際網路或不受信任樹系) 的用戶端連線 (次要網站不支援來自不受信任位置的用戶端連線)：  
+安裝在主要站台的下列站台系統角色支援來自不受信任位置 (例如網際網路或不受信任樹系) 的用戶端連線。 (次要站台不支援來自不受信任位置的用戶端連線)  
 
 -   應用程式類別目錄網站點  
 
@@ -96,8 +96,8 @@ ms.openlocfilehash: 7ab79fb69188fa5fe6b89b070829ec0f918137b9
 
 -   軟體更新點  
 
-**關於網際網路對向的網站系統：**   
-雖然用戶端的樹系與站台系統伺服器之間不需要具有信任關係，但當包含網際網路對向站台系統的樹系信任包含使用者帳戶的樹系時，此設定仍支援針對網際網路上的裝置使用以使用者為基礎的原則 (在啟用 [用戶端原則] 用戶端設定之 [從網際網路用戶端啟用使用者原則要求] 的情況下)。  
+**關於網際網路對向的站台系統：**   
+用戶端樹系與站台系統伺服器之間不需要有信任。 不過，當包含網際網路對向站台系統的樹系信任包含使用者帳戶的樹系時，此設定仍支援針對網際網路上的裝置使用以使用者為基礎的原則 (在啟用 [用戶端原則] 用戶端設定之 [從網際網路用戶端啟用使用者原則要求] 的情況下)。  
 
 例如，以下設定會說明何時以網際網路為基礎的用戶端管理會針對網際網路上的裝置，支援使用者原則。  
 
@@ -110,14 +110,14 @@ ms.openlocfilehash: 7ab79fb69188fa5fe6b89b070829ec0f918137b9
 > [!NOTE]  
 >  若 Kerberos 驗證失敗，就會自動嘗試 NTLM 驗證。  
 
-如前一個範例所顯示的，當使用 Web Proxy 伺服器 (如 ISA 伺服器與 Forefront Treat Management Gateway) 將以網際網路為基礎的網站系統發佈到網際網路上時，您可以將這些網站置於內部網路內。 這些網站系統只能針對來自網際網路的用戶端連線，或來自網際網路與內部網路的用戶端連線，進行設定， 使用 Web Proxy 伺服器時，您可以設定其讓安全通訊端層 (SSL) 橋接至 SSL (較安全) 或 SSL 通道：  
+如前一個範例所顯示的，當使用 Web Proxy 伺服器 (如 ISA 伺服器與 Forefront Treat Management Gateway) 將以網際網路為基礎的網站系統發佈到網際網路上時，您可以將這些網站置於內部網路內。 這些站台系統只能針對來自網際網路的用戶端連線，或來自網際網路與內部網路的用戶端連線，進行設定。 使用 Web Proxy 伺服器時，您可以設定其讓安全通訊端層 (SSL) 橋接至 SSL (較安全) 或 SSL 通道，如下所示：  
 
 -   **SSL 橋接至 SSL：**   
     針對以網際網路為基礎的用戶端管理使用 Proxy 網頁伺服器時的建議設定是 SSL 橋接至 SSL，這會透過驗證以啟用 SSL 終止。 必須使用電腦驗證來驗證用戶端電腦，並使用使用者驗證來驗證行動裝置舊版用戶端。 由 Configuration Manager 註冊的行動裝置並不支援 SSL 橋接。  
 
      在 Proxy 網頁伺服器進行 SSL 終止的優點是將來自網際網路的封包轉寄到內部網路前，都必須經過檢查。 Proxy 網頁伺服器會驗證來自用戶端的連線，將其終止，然後開啟一個連線到以網際網路為基礎之網站系統的全新已驗證連線。 Configuration Manager 用戶端使用 Proxy 網頁伺服器時，用戶端識別 (用戶端 GUID) 會安全地保存在封包裝載中，管理點就不用考慮讓 Proxy 網頁伺服器成為用戶端。 使用 HTTP 至 HTTPS 或從 HTTPS 至 HTTP 的 Configuration Manager 不支援橋接。  
 
--   **通道：**   
+-   **通道**：   
     若您的 Proxy 網頁伺服器無法支援 SSL 橋接的需求，或您想設定網際網路支援由 Configuration Manager 註冊的行動裝置，則也支援 SSL 通道。 這是比較危險的選項，因為來自網際網路的 SSL 封包會轉寄到沒有 SSL 終止的網站系統，因此無法檢查封包內是否存在惡意內容。 使用 SSL 通道時，Proxy 網頁伺服器不需要憑證。  
 
 ##  <a name="a-nameplancomx-foresta-communications-across-active-directory-forests"></a><a name="Plan_Com_X-Forest"></a> 跨 Active Directory 樹系的通訊  
@@ -131,7 +131,7 @@ Configuration Manager 也支援不在相同 Active Directory 樹系作為站台�
 
     -   管理這些電腦，如同它們是工作群組電腦一樣。  
 
-  在不受信任的 Active Directory 樹系中安裝站台系統伺服器時，會將樹系中來自用戶端的用戶端到伺服器通訊保留在該樹系內，而且 Configuration Manager 可以使用 Kerberos 驗證電腦。 將網站資訊發佈至用戶端樹系時，用戶端可以從其 Active Directory 樹系擷取網站資訊 (如可用管理點清單)，而不用從其指派的管理點下載此資訊。  
+  在不受信任的 Active Directory 樹系中安裝站台系統伺服器時，會將樹系中來自用戶端的用戶端到伺服器通訊保留在該樹系內，而且 Configuration Manager 可以使用 Kerberos 驗證電腦。 將站台資訊發佈至用戶端樹系時，用戶端可以從其 Active Directory 樹系擷取網站資訊 (如可用管理點清單)，而不用從其指派的管理點下載此資訊。  
 
   > [!NOTE]  
   >  若想管理網際網路上的裝置，您可以在網站系統伺服器位於 Active Directory 樹系時，在您的周邊網路中安裝網際網路型網站系統角色。 此狀況並不需要在周邊網路與站台伺服器的樹系間建立雙向信任。  
@@ -162,9 +162,9 @@ Configuration Manager 也支援不在相同 Active Directory 樹系作為站台�
 -   例如，只要存在所需的信任，您可以在與主要父站台不同的樹系中放置次要站台。  
 
 > [!NOTE]  
->  子網站可以是主要網站 (其中管理中心網站是父網站) 或次要網站。  
+>  子站台可以是主要站台 (其中管理中心網站是父站台) 或次要站台。  
 
-Configuration Manager 中的站台間通訊使用資料庫複寫和以檔案為基礎的傳輸。 安裝網站時，必須指定帳戶，以便在指定伺服器上安裝網站。 此帳戶也會建立與維護網站間的通訊。  
+Configuration Manager 中的站台間通訊使用資料庫複寫和以檔案為基礎的傳輸。 安裝站台時，必須指定帳戶，以便在指定伺服器上安裝站台。 此帳戶也會建立與維護網站間的通訊。  
 
 網站成功安裝並起始以檔案為基礎的傳輸與資料庫複寫後，就不需要為了與網站通訊設定其他項目。  
 
@@ -191,17 +191,17 @@ Configuration Manager 中的站台間通訊使用資料庫複寫和以檔案為�
 
 -   應用程式類別目錄 Web 服務點是唯一的例外。  只有與站台伺服器相同的樹系中才予以支援。  
 
-網站系統角色接受來自網際網路的連線時，做為安全性最佳作法，請將這些網站系統角色安裝在樹系界限會為網站伺服器提供保護的位置 (例如周邊網路中)。  
+-   網站系統角色接受來自網際網路的連線時，做為安全性最佳作法，請將這些網站系統角色安裝在樹系界限會為網站伺服器提供保護的位置 (例如周邊網路中)。  
 
 **在不受信任之樹系中的電腦上安裝站台系統角色：**  
 
--   您必須指定 **網站系統安裝帳戶** ，以用來安裝網站系統角色。 這個帳戶必須具備可用來連線的本機系管理認證，然後才能將網站系統角色安裝到指定電腦上。  
+-   您必須指定**站台系統安裝帳戶**，以用來安裝站台系統角色。 (帳戶必須具有本機系統管理認證才能連接。)然後在指定電腦上安裝站台系統角色。  
 
--   您必須選取 [要求網站伺服器起始與此網站系統的連線] 網站系統選項。 若要這麼做，網站伺服器必須建立和網站系統伺服器間的連線，以傳輸資料。 這可防止位於不受信任位置的電腦起始與受信任網路內之網站伺服器的聯繫。 這些連線會使用 **網站系統安裝帳戶**。  
+-   您必須選取 [要求網站伺服器起始與此網站系統的連線] 網站系統選項。 若要這麼做，網站伺服器必須建立和網站系統伺服器間的連線，以傳輸資料。 這可防止位於不受信任位置的電腦起始與受信任網路內之站台伺服器的聯繫。 這些連線會使用 **網站系統安裝帳戶**。  
 
 **若要使用安裝在不受信任之樹系中的站台系統角色，** 防火牆必須允許網路流量，即使站台伺服器會起始資料傳輸亦同。  
 
-此外，下列網站系統角色需要直接存取網站資料庫。 因此，防火牆必須允許來自不受信任的樹系到網站 SQL Server 的適用流量：  
+此外，下列網站系統角色需要直接存取網站資料庫。 因此，防火牆必須允許來自不受信任的樹系到站台 SQL Server 的適用流量：  
 
 -   Asset Intelligence 同步處理點  
 
@@ -215,7 +215,7 @@ Configuration Manager 中的站台間通訊使用資料庫複寫和以檔案為�
 
 -   狀態移轉點  
 
-如需詳細資訊，請參閱 [Ports used in System Center Configuration Manager](../../../core/plan-design/hierarchy/ports.md) (System Center Configuration Manager 中使用的連接埠)。  
+如需詳細資訊，請參閱 [System Center Configuration Manager 中使用的連接埠](../../../core/plan-design/hierarchy/ports.md)。  
 
 **您可能需要設定站台系統角色對站台資料庫的存取權：**  
 
@@ -233,20 +233,20 @@ Configuration Manager 中的站台間通訊使用資料庫複寫和以檔案為�
 
 在您規劃其他樹系中的網站系統角色時，請考量以下其他資訊：  
 
--   如果您執行 Windows 防火牆，請設定適用的防火牆設定檔，以便在網站資料庫伺服器和安裝有遠端網站系統角色的電腦間傳遞通訊。 如需防火牆設定檔的資訊，請參閱 [了解防火牆設定檔](http://go.microsoft.com/fwlink/p/?LinkId=233629)。  
+-   如果您執行 Windows 防火牆，請設定適用的防火牆設定檔，以便在站台資料庫伺服器和安裝有遠端站台系統角色的電腦間傳遞通訊。 如需防火牆設定檔的資訊，請參閱[了解防火牆設定檔](http://go.microsoft.com/fwlink/p/?LinkId=233629)。  
 
 -   以網際網路為基礎的管理點信任包含使用者帳戶的樹系時，就支援使用者原則。 不存在信任時，就僅支援電腦原則。  
 
 #### <a name="communication-between-clients-and-site-system-roles-when-the-clients-are-not-in-the-same-active-directory-forest-as-their-site-server"></a>用戶端並未與站台伺服器處於相同 Active Directory 樹系時，用戶端與站台系統角色間的通訊  
 當用戶端與其站台的站台伺服器不在相同的樹系中時，Configuration Manager 支援以下情況：  
 
--   在用戶端樹系與網站伺服器樹系間存在雙向樹系信任  
+-   在用戶端樹系與站台伺服器樹系間存在雙向樹系信任。  
 
--   網站系統角色伺服器位於與用戶端相同的樹系中。  
+-   站台系統角色伺服器位於與用戶端相同的樹系中。  
 
--   用戶端位於網域電腦上，該電腦和網站伺服器間不存在雙向樹系信任，而在用戶端樹系中未安裝網站系統角色  
+-   用戶端位於網域電腦上，該電腦和站台伺服器間不存在雙向樹系信任，而在用戶端樹系中未安裝站台系統角色。  
 
--   用戶端位於工作群組電腦上  
+-   用戶端位於工作群組電腦上。  
 
 加入網域之電腦上用戶端的站台發佈到其 Active Directory 樹系時，這些用戶端就可以使用服務位置的 Active Directory 網域服務。  
 
@@ -261,6 +261,6 @@ Configuration Manager 中的站台間通訊使用資料庫複寫和以檔案為�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO1-->
 
 
