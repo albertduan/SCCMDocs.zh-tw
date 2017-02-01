@@ -2,7 +2,7 @@
 title: "設定 Endpoint Protection 用戶端 | Microsoft Docs"
 description: "了解如何設定可部署至階層中之電腦集合的 Endpoint Protection 自訂用戶端設定。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
