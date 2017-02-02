@@ -1,5 +1,5 @@
 ---
-title: "管理電子郵件存取 | Microsoft Docs"
+title: "使用 Configuration Manager 管理 Exchange 電子郵件存取權 | Microsoft Docs"
 description: "了解如何使用 System Center Configuration Manager 條件存取，以管理 Exchange 電子郵件的存取。"
 ms.custom: na
 ms.date: 10/04/2016
@@ -16,14 +16,14 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
-ms.openlocfilehash: 0bbe25598f38f9cf3c15375748fee09c43dfb928
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: 26179c0c92773dc0b69be500c165a52e15afc6fd
 
 
 ---
-# <a name="manage-email-access-in-system-center-configuration-manager"></a>管理 System Center Configuration Manager 中的電子郵件存取
+# <a name="manage-email-access"></a>管理電子郵件存取 
 
-適用於：System Center Configuration Manager (最新分支)
+*適用於：System Center Configuration Manager (最新分支)*
 
 使用 System Center Configuration Manager 條件存取，根據您指定的條件來管理 Exchange 電子郵件的存取。  
 
@@ -175,7 +175,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
  適用於 Exchange Online 的條件式存取原則會使用下列流程，來評估要允許還是封鎖裝置。  
 
- ![ConditionalAccess8 - 1](../media/ConditionalAccess8-1.png)  
+ ![ConditionalAccess8 -&1;](../media/ConditionalAccess8-1.png)  
 
  若要存取電子郵件，裝置必須：  
 
@@ -297,7 +297,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 ### <a name="for-exchange-on-premises-and-tenants-in-the-legacy-exchange-online-dedicated-environment"></a>適用於 Exchange 內部部署 (以及舊版 Exchange Online Dedicated 環境中的租用戶)  
  適用於 Exchange 內部部署以及舊版 Exchange Online Dedicated 環境中租用戶的條件式存取原則會使用下列流程，來評估要允許還是封鎖裝置。  
 
- ![ConditionalAccess8 - 2](../media/ConditionalAccess8-2.png)  
+ ![ConditionalAccess8 -&2;](../media/ConditionalAccess8-2.png)  
 
 ##### <a name="to-enable-the-exchange-on-premises-policy"></a>啟用 Exchange 內部部署原則  
 
@@ -307,12 +307,12 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
 3.  在 [常用]  索引標籤的 [內部部署 Exchange]  群組中，按一下 [設定條件存取原則] 。  
 
-4.  **從 Configuration Manager 1602 版開始**，在**設定條件存取原則精靈]** 的 **[一般]** 頁面上，指定是否要覆寫 Exchange Active Sync 預設規則。 如果您想要讓已註冊且相容的裝置即使在預設規則設定為隔離或封鎖存取的情況下，仍一律可以存取電子郵件，請按一下此選項。  
+4.  **從 Configuration Manager 1602 版開始**，在**設定條件存取原則精靈** 的 **一般** 頁面上，指定是否要覆寫 Exchange Active Sync 預設規則。 如果您想要讓已註冊且相容的裝置即使在預設規則設定為隔離或封鎖存取的情況下，仍一律可以存取電子郵件，請按一下此選項。  
 
     > [!NOTE]  
     >  這是 Android 裝置的預設覆寫問題。 如果 Exchange 伺服器的預設存取規則是設定為 **[封鎖]** ，並且搭配使用預設規則覆寫選項來啟用 Exchange 條件式存取原則，則目標使用者的 Android 裝置即使是在 Intune 中註冊且相容之後，也可能不會獲得解除封鎖。  若要解決這個問題，請將 Exchange 預設存取規則設為 **[隔離]**。 裝置預設無法存取 Exchange，系統管理員可以從 Exchange 伺服器取得已隔離之裝置清單的相關報告。  
 
-     如果您在設定 Exchange Connector 時沒有設定通知電子郵件帳戶，就會在此頁面上看到警告，且 **[下一步]** 按鈕會停用。  您必須先在 Exchange Connector 中設定通知電子郵件設定，然後回到 **設定條件存取原則精靈]** 來完成程序，才能繼續進行操作。  
+     如果您在設定 Exchange Connector 時沒有設定通知電子郵件帳戶，就會在此頁面上看到警告，且 **[下一步]** 按鈕會停用。  您必須先在 Exchange Connector 中設定通知電子郵件設定，然後回到 **設定條件存取原則精靈** 來完成程序，才能繼續進行操作。  
 
      ![HybridCondAccessWiz1](../media/HybridCondAccessWiz1.PNG)  
 
@@ -363,6 +363,6 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

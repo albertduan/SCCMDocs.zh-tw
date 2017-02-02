@@ -1,5 +1,5 @@
 ---
-title: "為不是使用 System Center Configuration Manager 用戶端管理的 Windows 8.1 和 Windows 10 裝置建立設定項目 | Microsoft Docs"
+title: "為 Windows 10 建立設定項目 - 沒有用戶端 - Configuration Manager | Microsoft Docs"
 description: "使用 System Center Configuration Manager Windows 10 設定項目管理 Windows 10 電腦的設定。"
 ms.custom: na
 ms.date: 12/08/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8f6e6fd1d2a9a6352c9191ea7e2a1f9c6f6e2199
-ms.openlocfilehash: 7efde8dda724d71775313290b13a6aad2f9a7d6c
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 4c34ace72905b286c3582f09993bd897a87cce45
 
 
 ---
@@ -74,7 +74,7 @@ ms.openlocfilehash: 7efde8dda724d71775313290b13a6aad2f9a7d6c
 ##  <a name="windows-81-and-windows-10-configuration-item-settings-reference"></a>Windows 8.1 和 Windows 10 組態項目設定參考  
 
 ### <a name="password"></a>密碼  
- 
+
 |設定|詳細資料|  
 |-------------|-------------|  
 |**需要裝置上的密碼設定**|支援的裝置上需要的密碼。|  
@@ -100,8 +100,8 @@ ms.openlocfilehash: 7efde8dda724d71775313290b13a6aad2f9a7d6c
 |**Bluetooth**|允許使用裝置藍牙功能。|  
 |**可透過藍牙搜尋的模式**|允許要透過其他藍牙裝置探索的裝置。<br>(僅限 Windows 10)|  
 |**藍牙通知**|允許使用藍芽通知。<br> (僅限 Windows 10)|  
-|**錄音**|允許使用裝置的錄音功能。<br>(僅限 Windows 10)| 
-|**Cortana**|啟用或停用 Cortana 語音助理。| 
+|**錄音**|允許使用裝置的錄音功能。<br>(僅限 Windows 10)|
+|**Cortana**|啟用或停用 Cortana 語音助理。|
 
 ### <a name="email-management"></a>電子郵件管理  
 
@@ -153,7 +153,7 @@ ms.openlocfilehash: 7efde8dda724d71775313290b13a6aad2f9a7d6c
 |**只輸入一個單字即可存取內部網路網站**|如果輸入無前置 HTTP 的有效站台名稱，啟用或停用允許 Internet Explorer 自動移至內部網路站台的設定：|  
 |**企業模式功能表選項**|允許使用者從 Internet Explorer 的 **[工具]** 功能表啟用和停用企業模式。|  
 |**記錄報告位置 (URL)**|指定啟用企業模式時要記錄的已瀏覽網站的 URL。|  
-|**企業模式站台清單位置 (URL)**|當啟用企業模式時，指定要使用企業模式的網站清單位置。| 
+|**企業模式站台清單位置 (URL)**|當啟用企業模式時，指定要使用企業模式的網站清單位置。|
 
 ### <a name="microsoft-edge"></a>Microsoft Edge  
  這些設定適用於執行 Windows 10 和更新版本的裝置。  
@@ -175,7 +175,7 @@ ms.openlocfilehash: 7efde8dda724d71775313290b13a6aad2f9a7d6c
  這些設定適用於執行 Windows 10 November Update (1511) 和更新版本的裝置。  
 
 |設定名稱|詳細資料|  
-|------------------|-------------| 
+|------------------|-------------|
 |**允許即時監視**|啟用即時掃描來掃描是否有惡意程式碼、間諜軟體，和其他垃圾軟體。|
 |**允許行為監視**|讓 Defender 在裝置上檢查某些已知的可疑活動模式。|
 |**啟用網路檢查系統**|網路檢查系統 (NIS) 使用來自 Microsoft Endpoint Protection 中心的已知弱點特徵碼來協助偵測及封鎖惡意流量，以保護裝置免於網路型入侵。|
@@ -201,7 +201,7 @@ ms.openlocfilehash: 7efde8dda724d71775313290b13a6aad2f9a7d6c
 |**副檔名排除項目**|將一或多個像 jpg 或 txt 這樣的副檔名新增到排除清單。 使用這些副檔名的任何檔案將不會包含在任何即時或排程的掃描中。|
 |**處理序排除項目**|將一或多個 .exe、.com 或 .scr 類型的處理序新增到排除清單。 這些處理序將不會包含在任何即時或排程的掃描中。|
 
- 
+
 
 ###  <a name="cloud"></a>雲端  
 
@@ -244,9 +244,9 @@ ms.openlocfilehash: 7efde8dda724d71775313290b13a6aad2f9a7d6c
 |**漫遊時管理裝置**|允許 Configuration Manager 漫遊時管理裝置。<br>(僅限 Windows 10)|  
 |**漫遊時下載軟體**|漫遊時允許下載應用程式和軟體。<br>(僅限 Windows 10)|  
 |**漫遊時下載電子郵件**|漫遊時允許下載電子郵件。<br>(僅限 Windows 10)|  
-|**數據漫遊**|存取資料時允許網路之間的漫遊。| 
+|**數據漫遊**|存取資料時允許網路之間的漫遊。|
 |**透過行動數據使用 VPN**|控制當裝置連線到行動電話通訊網路時，是否能存取 VPN 連線。<br>(僅限 Windows 10)|
-|**透過行動數據使用 VPN 漫遊**|控制當裝置在行動電話通訊網路漫遊時，是否能存取 VPN 連線。<br>(僅限 Windows 10)| 
+|**透過行動數據使用 VPN 漫遊**|控制當裝置在行動電話通訊網路漫遊時，是否能存取 VPN 連線。<br>(僅限 Windows 10)|
 
 ###  <a name="encryption"></a>加密  
 
@@ -287,7 +287,7 @@ ms.openlocfilehash: 7efde8dda724d71775313290b13a6aad2f9a7d6c
 |**Proxy 伺服器設定**|視需要指定 **HTTP** 、 **WAP** 和 **[通訊端]**的 **[伺服器]** 和 **[連接埠]**設定。|  
 |**啟用 802.1X 網路存取**|如果您想要藉由指定 EAP 類型保障連線安全，請選取這個選項。|  
 |**EAP 類型**|從下列位置選擇要使用的 EAP 類型：<br>- **PEAP**<br>- **智慧卡或憑證**|  
- 
+
 
 ### <a name="certificates"></a>憑證  
  讓您匯入憑證以安裝在行動裝置上。  
@@ -356,11 +356,11 @@ ms.openlocfilehash: 7efde8dda724d71775313290b13a6aad2f9a7d6c
 |------------------|-------------|  
 |**允許在偵測器偵測到室內有人時自動喚醒螢幕**|可在裝置感應器偵測到室內有人時自動喚醒裝置。|  
 |**需要 PIN 碼以進行無線投影**|您必須先指定是否輸入 PIN 碼，才可以使用裝置的無線投影功能。|  
-|**維護期間**|設定可以進行裝置更新的間隔。 您可以設定間隔的開始時間和持續時間 (從 1 到 5 小時) 。| 
+|**維護期間**|設定可以進行裝置更新的間隔。 您可以設定間隔的開始時間和持續時間 (從 1 到 5 小時) 。|
 |**Azure Operational Insights**|Azure Operational Insights，Microsoft Operations Manager 套件組合會收集、儲存及分析來自 Windows 10 團隊版的記錄檔資料。<br>若要連線到 Azure Operational Insights，您必須指定 [工作區識別碼] 和 [工作區金鑰]。|
 |**Miracast 無線投影**|如果您想要讓 Windows 10 團隊版裝置使用支援 Miracast 的裝置來投影，請啟用此選項。<br>如果啟用此選項，請從 [選擇 Miracast 頻道] 選取用來投影的 Miracast 頻道。|
 |**歡迎畫面上顯示的會議資訊**|如果啟用此選項，您可以選擇要顯示在歡迎畫面的 [會議] 磚上的訊息。 您可以：<br>- **僅顯示召集人和時間**<br>- **顯示召集人、時間和主旨 (不會顯示私人會議的主旨)**|
-|**鎖定畫面背景圖片 URL**|啟用此設定以在 Windows 10 團隊版裝置的 [歡迎] 畫面顯示來自指定 URL 的自訂背景。<br>影像必須是 PNG 格式且 URL 的開頭必須是 **https://**。| 
+|**鎖定畫面背景圖片 URL**|啟用此設定以在 Windows 10 團隊版裝置的 [歡迎] 畫面顯示來自指定 URL 的自訂背景。<br>影像必須是 PNG 格式且 URL 的開頭必須是 **https://**。|
 
 ### <a name="windows-information-protection"></a>Windows 資訊保護
  這些設定僅適用於執行 Windows 10 的裝置。
@@ -393,7 +393,6 @@ Windows 資訊保護 (WIP) 有助防止這類資料外洩的可能，同時不�
 
 
 
-
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

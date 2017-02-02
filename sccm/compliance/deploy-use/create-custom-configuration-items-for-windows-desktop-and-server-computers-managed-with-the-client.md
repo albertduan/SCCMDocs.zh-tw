@@ -1,5 +1,5 @@
 ---
-title: "為使用 System Center Configuration Manager 用戶端管理的 Windows 桌上型電腦和伺服器電腦建立自訂的設定項目 | Microsoft Docs"
+title: "為用戶端管理的 Windows 電腦建立設定項目 - Configuration Manager | Microsoft Docs"
 description: "使用自訂 Windows 桌上型電腦和伺服器設定項目，管理 Windows 電腦和伺服器的設定。"
 ms.custom: na
 ms.date: 11/18/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
-ms.openlocfilehash: f5509d1ffb88bc128f7be6c74e6b65dc33605c9e
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: e55883471fde63036c91b315ed6db6dceb315207
 
 
 ---
@@ -56,9 +56,9 @@ ms.openlocfilehash: f5509d1ffb88bc128f7be6c74e6b65dc33605c9e
 
 ### <a name="to-detect-an-application-installation-by-using-the-windows-installer-file"></a>若要使用 Windows Installer 檔案來偵測應用程式安裝  
 
-1.  在 **偵測方法** 頁面 **建立的組態項目] 精靈**, 、 選取 **使用 Windows 安裝程式偵測** 核取方塊。  
+1.  在 **偵測方法** 頁面 **建立的組態項目 精靈**, 、 選取 **使用 Windows 安裝程式偵測** 核取方塊。  
 
-2.  按一下 **開啟**, ，瀏覽至您想要偵測，然後按一下 [Windows Installer (.msi) 檔案 **開啟**。  
+2.  按一下 **開啟**, ，瀏覽至您想要偵測，然後按一下 Windows Installer (.msi) 檔案 **開啟**。  
 
 3.  **版本** 方塊會自動填入您所選取的 Windows Installer 檔案的版本號碼。 您可以在此方塊中輸入新的版本號碼如果顯示的值不正確。  
 
@@ -72,7 +72,7 @@ ms.openlocfilehash: f5509d1ffb88bc128f7be6c74e6b65dc33605c9e
 
 ### <a name="to-detect-an-application-installation-by-using-a-custom-script"></a>使用自訂指令碼偵測應用程式安裝  
 
-1.  在 **偵測方法** 頁面 **建立的組態項目] 精靈**, 、 選取 **使用自訂的指令碼來偵測此應用程式** 核取方塊。  
+1.  在 **偵測方法** 頁面 **建立的組態項目 精靈**, 、 選取 **使用自訂的指令碼來偵測此應用程式** 核取方塊。  
 
 2.  在清單中選取您想要開啟的指令碼語言。 選擇下列指令碼：  
 
@@ -89,9 +89,9 @@ ms.openlocfilehash: f5509d1ffb88bc128f7be6c74e6b65dc33605c9e
 
  設定代表商務或技術可用來評估用戶端裝置上的符合性的條件。 您可以進行新的設定，或瀏覽至參照電腦上現有的設定。  
 
-1.  在 **設定** 頁面 **建立的組態項目] 精靈**, ，按一下 **新增**。  
+1.  在 **設定** 頁面 **建立的組態項目 精靈**, ，按一下 **新增**。  
 
-2.  在 **一般** ] 索引標籤 **建立設定** ] 對話方塊中，提供下列資訊:  
+2.  在 **一般**  索引標籤 **建立設定**  對話方塊中，提供下列資訊:  
 
     -   **名稱：** 輸入設定的唯一名稱。 您最多可以使用 256 個字元。  
 
@@ -264,15 +264,15 @@ ms.openlocfilehash: f5509d1ffb88bc128f7be6c74e6b65dc33605c9e
 
 ### <a name="to-create-a-compliance-rule"></a>若要建立符合性規則  
 
-1.  在 **相關之法規規則** 頁面 **建立的組態項目] 精靈**, ，按一下 **新增**。  
+1.  在 **相關之法規規則** 頁面 **建立的組態項目 精靈**, ，按一下 **新增**。  
 
-2.  在 **Create Rule** ] 對話方塊中，提供下列資訊：  
+2.  在 **Create Rule**  對話方塊中，提供下列資訊：  
 
     -   **名稱：** 輸入符合性規則的名稱。  
 
     -   **描述:** 輸入符合性規則的描述。  
 
-    -   **選取的設定︰** 按一下 **瀏覽** 開啟 **選取設定** 對話方塊。 選取您想要定義的規則或按一下 [設定 **新設定**。 當您完成時，請按一下 **選取**。  
+    -   **選取的設定︰** 按一下 **瀏覽** 開啟 **選取設定** 對話方塊。 選取您想要定義的規則或按一下 設定 **新設定**。 當您完成時，請按一下 **選取**。  
 
         > [!NOTE]  
         >  您也可以按一下 **屬性** 若要檢視目前所選設定的相關資訊。  
@@ -359,6 +359,6 @@ ms.openlocfilehash: f5509d1ffb88bc128f7be6c74e6b65dc33605c9e
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

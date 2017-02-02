@@ -1,5 +1,5 @@
 ---
-title: "為不是使用 System Center Configuration Manager 用戶端所管理的 Android 和 Samsung KNOX Standard 裝置建立設定項目 | Microsoft Docs"
+title: "為 Android 和 Samsung KNOX Standard 建立設定項目 - Configuration Manager | Microsoft Docs"
 description: "使用 System Center Configuration Manager Android 和 Samsung KNOX Standard 設定項目，管理裝置的設定。"
 ms.custom: na
 ms.date: 12/14/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d023df79e0bcb7d5583224802976a5059c4ee753
-ms.openlocfilehash: c699c9c807f864fe161255522a8d694ab71d1a4e
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 12f5db5839fe66fb07d7055af45f8020abd43e24
 
 
 ---
@@ -109,7 +109,7 @@ ms.openlocfilehash: c699c9c807f864fe161255522a8d694ab71d1a4e
 
 ### <a name="browser"></a>瀏覽器
 |設定|詳細資料|  
-|-------------|-------------| 
+|-------------|-------------|
 |**允許網頁瀏覽器**|指定是否能夠使用裝置的預設網頁瀏覽器。|
 |**自動填寫**|允許使用網頁瀏覽器的自動填寫功能。|
 |**動態指令碼處理**|允許裝置網頁瀏覽器使用動態指令碼處理。|
@@ -135,9 +135,9 @@ ms.openlocfilehash: c699c9c807f864fe161255522a8d694ab71d1a4e
 |**相機**|允許使用裝置相機。<br /><br /> 適用於 Android 和 Samsung KNOX Standard 裝置。|  
 |**近距離無線通訊 (NFC)**|若裝置支援，則允許使用近距離無線通訊的操作。|
 |**YouTube**|允許在裝置上使用 YouTube 應用程式。<br /><br /> 僅適用於 Samsung KNOX Standard 裝置。|  
-|**關閉電源**|允許關閉裝置電源。<br /><br /> 僅適用於 Samsung KNOX Standard 裝置。| 
+|**關閉電源**|允許關閉裝置電源。<br /><br /> 僅適用於 Samsung KNOX Standard 裝置。|
 
-### <a name="roaming"></a>漫遊 
+### <a name="roaming"></a>漫遊
 |設定|詳細資料|  
 |-------------|-------------|
 |**語音漫遊**|當裝置使用行動電話通訊網路時允許語音漫遊。|
@@ -199,6 +199,6 @@ ms.openlocfilehash: c699c9c807f864fe161255522a8d694ab71d1a4e
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

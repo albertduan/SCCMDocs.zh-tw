@@ -1,5 +1,5 @@
 ---
-title: "以 System Center Configuration Manager 建立及部署設定基準的一般工作 | Microsoft Docs"
+title: "設定基準的一般工作 - Configuration Manager | Microsoft Docs"
 description: "了解如何建立與部署 System Center Configuration Manager 設定基準。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
-ms.openlocfilehash: 8e1736d6a523ae864be9e8dbfcfdbc2ac93dfdf9
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: 5682cacb43af5bf9248446f1c35b08f137bdae9d
 
 
 ---
@@ -93,6 +93,6 @@ ms.openlocfilehash: 8e1736d6a523ae864be9e8dbfcfdbc2ac93dfdf9
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

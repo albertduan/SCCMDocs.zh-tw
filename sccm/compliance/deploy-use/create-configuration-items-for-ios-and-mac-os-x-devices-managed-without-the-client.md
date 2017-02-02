@@ -1,5 +1,5 @@
 ---
-title: "為不是使用 System Center Configuration Manager 用戶端所管理的 iOS 和 Mac OS X 裝置建立設定項目 | Microsoft Docs"
+title: "為沒有用戶端的 iOS 和 Mac 建立設定項目 - Configuration Manager | Microsoft Docs"
 description: "使用 System Center Configuration Manager iOS 和 Mac OS X 設定項目，管理 iOS 和 Mac OS X 裝置的設定。"
 ms.custom: na
 ms.date: 12/14/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d023df79e0bcb7d5583224802976a5059c4ee753
-ms.openlocfilehash: ea4024aaa07d40781663725127d64388055c6501
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 0614753a68e98675ccae99b792b03481f4ca7ab1
 
 
 ---
@@ -80,7 +80,7 @@ ms.openlocfilehash: ea4024aaa07d40781663725127d64388055c6501
 |**最小密碼長度 (字元數)**|密碼長度下限。|  
 |**密碼到期天數**|密碼必須變更之前的天數。|  
 |**記住的密碼數目**|防止重複使用先前用過的密碼。|  
-|**抹除裝置前允許的失敗登入次數**|如果登入嘗試失敗是這個數目即抹除裝置。<br>(僅限 iOS)| 
+|**抹除裝置前允許的失敗登入次數**|如果登入嘗試失敗是這個數目即抹除裝置。<br>(僅限 iOS)|
 |**鎖定裝置前的閒置時間**|指定裝置在處於非使用狀態幾分鐘後自動鎖定。|
 |**密碼複雜性**|選擇是否可以指定 PIN (如 '1234')，或是否必須提供強式密碼。|
 |**允許簡單密碼**|指定是否能使用 ‘0000’ 和 ‘1234’ 等簡單密碼。|
@@ -370,6 +370,6 @@ ms.openlocfilehash: ea4024aaa07d40781663725127d64388055c6501
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

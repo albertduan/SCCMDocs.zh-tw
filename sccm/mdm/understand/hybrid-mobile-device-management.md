@@ -1,5 +1,5 @@
 ---
-title: "搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM) | Microsoft Docs"
+title: "混合式行動裝置管理 (MDM) - Configuration Manager & Microsoft Intune | Microsoft Docs"
 description: "了解搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
-ms.openlocfilehash: caedfa2f89daf9ebad72602161dd618f0d18b4ab
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: ceeccab158cd23267ccd05cfbff82ef772f97fbc
 
 ---
 # <a name="hybrid-mobile-device-management-mdm-with-system-center-configuration-manager-and-microsoft-intune"></a>Hybrid mobile device management (MDM) with System Center Configuration Manager and Microsoft Intune
@@ -117,6 +117,6 @@ Configuration Manager 混合式 MDM 可以管理下列裝置平台：
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

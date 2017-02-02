@@ -1,8 +1,8 @@
 ---
-title: "使用 System Center Configuration Manager 在新電腦 (裸機) 上安裝新版的 Windows | Microsoft Docs"
-description: "請在 System Center Configuration Manager 中遵循下列步驟，以使用 PXE、OEM 或獨立媒體，在新電腦上安裝作業系統。"
+title: "在新電腦上安裝 Windows - Configuration Manager | Microsoft Docs"
+description: "使用 Configuration Manager，以透過 PXE、OEM 或獨立媒體，在新電腦 (裸機) 上安裝作業系統。"
 ms.custom: na
-ms.date: 12/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 06ade037c580d64503e6b8b5c3bf31004ab0650b
-ms.openlocfilehash: 93b3d99e7391feefc3d706f15f0fe8f8df3b75ac
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: 584dad7d8b05a2da9f7a66b73028ae99ff1a594f
 
 
 ---
@@ -27,7 +27,7 @@ ms.openlocfilehash: 93b3d99e7391feefc3d706f15f0fe8f8df3b75ac
 
 本主題提供在 System Center Configuration Manager 中安裝新電腦作業系統的一般步驟。 這個案例中有多種不同的部署方法可供選擇，例如 PXE、OEM 或獨立媒體。 如果您不確定此作業系統部署案例是否適合您，請參閱[使用 System Center Configuration Manager 部署企業作業系統的案例](scenarios-to-deploy-enterprise-operating-systems.md)。  
 
- 請使用下列章節的內容，以新版的 Windows 重新整理現有的電腦。  
+請使用下列章節的內容，以新版的 Windows 重新整理現有的電腦。  
 
 ##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 方案  
 
@@ -81,6 +81,6 @@ ms.openlocfilehash: 93b3d99e7391feefc3d706f15f0fe8f8df3b75ac
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

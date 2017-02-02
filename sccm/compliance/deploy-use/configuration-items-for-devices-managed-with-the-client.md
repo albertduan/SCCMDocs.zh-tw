@@ -1,5 +1,5 @@
 ---
-title: "使用 System Center Configuration Manager 用戶端所管理之裝置的設定項目 | Microsoft Docs"
+title: "用戶端管理之裝置的設定項目 - Configuration Manager | Microsoft Docs"
 description: "了解如何設定以 System Center Configuration Manager 用戶端管理的 Windows 和 Mac 裝置。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
-ms.openlocfilehash: 683f1103bae7dcd3c7450f2b42ac7b3969c376e3
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: c0648c8c6ca3b36e2c2cf311bc4ae9edc7e8f906
 
 
 ---
@@ -36,6 +36,6 @@ ms.openlocfilehash: 683f1103bae7dcd3c7450f2b42ac7b3969c376e3
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

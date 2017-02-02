@@ -1,5 +1,5 @@
 ---
-title: "設定 Endpoint Protection | Microsoft Docs"
+title: "建立 Endpoint Protection 點站台系統角色 | Microsoft Docs"
 description: "了解如何設定 Endpoint Protection 以在 Configuration Manager 用戶端電腦上管理安全性和惡意程式碼。"
 defintion: 
 definition: 
@@ -18,8 +18,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: 4639203bf5e90486ce4b97abc2fc4f54eae3afe9
+ms.sourcegitcommit: 9db108fb2d4d16013f416b8ee87a57ff1c91e21f
+ms.openlocfilehash: 25ce24d16bd55366d23a176b21b38ed53aa40644
 
 
 ---
@@ -98,6 +98,6 @@ ms.openlocfilehash: 4639203bf5e90486ce4b97abc2fc4f54eae3afe9
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager Technical Preview 1610 中的功能 | Microsoft Docs"
+title: "Technical Preview 1610 Configuration Manager 中的功能"
 description: "了解 System Center Configuration Manager Technical Preview 1610 版中可用的功能。"
 ms.custom: na
-ms.date: 10/21/2016
+ms.date: 01/23/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
-ms.openlocfilehash: 6ffcb33e94f942fc9400457d3f16b65e12332956
+ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
+ms.openlocfilehash: 59633ce68e2bb2d722900215751f345d6d098721
 
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1610 中的功能
@@ -165,6 +165,6 @@ Technical Preview 1610 引進新的設定，可讓您用來防止用戶端集合
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

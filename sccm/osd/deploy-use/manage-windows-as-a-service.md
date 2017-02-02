@@ -1,8 +1,8 @@
 ---
-title: "管理 Windows 即服務 | Microsoft Docs"
-description: "System Center Configuration Manager 的功能可協助您檢視環境中的 Windows 即服務狀態，以隨時更新。"
+title: "管理 Windows 即服務 - Configuration Manager | Microsoft Docs"
+description: "使用 Configuration Manager 檢視 Windows 即服務的狀態、建立服務方案以形成部署環節，以及檢視在 Windows 10 用戶端支援即將結束時所發出的警示。"
 ms.custom: na
-ms.date: 12/21/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,17 +16,17 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 66cd6d099acdd9db2bc913a69993aaf5e17237fe
-ms.openlocfilehash: 79e13074db18a617c7e3fceedaa143dbece90a3d
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
 
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理 Windows 即服務
 
-*適用對象：System Center Configuration Manager (最新分支)*
+*適用於：System Center Configuration Manager (最新分支)*
 
 
- 在 System Center Configuration Manager 中，您可以檢視環境中 Windows 即服務的狀態；建立服務方案以形成部署環節，並確保發行新組建時，Windows 10 最新分支系統為最新狀態；以及檢視當 Windows 10 用戶端即將結束 Current Branch (CB) 或 Current Branch for Business (CBB) 的建置支援時所發出的警示。  
+ 在 System Center Configuration Manager 中，您可以檢視環境中 Windows 即服務的狀態；建立服務方案以形成部署環節，並確保發行新組建時，Windows 10 最新分支系統為最新狀態；以及檢視當 Windows 10 用戶端即將結束最新分支 (CB) 或最新商務分支 (CBB) 的建置支援時所發出的警示。  
 
  如需 Windows 10 服務選項的詳細資訊，請參閱  [Windows 10 更新與升級維護選項](https://technet.microsoft.com/library/mt598226\(v=vs.85\).aspx)。  
 
@@ -277,6 +277,6 @@ ms.openlocfilehash: 79e13074db18a617c7e3fceedaa143dbece90a3d
 
 
 
-<!--HONumber=Dec16_HO4-->
+<!--HONumber=Jan17_HO4-->
 
 

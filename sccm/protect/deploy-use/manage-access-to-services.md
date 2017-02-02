@@ -1,5 +1,5 @@
 ---
-title: "條件式存取 | Microsoft Docs"
+title: "管理 Configuration Manager 中的服務存取權 | Microsoft Docs"
 description: "了解如何使用 System Center Configuration Manager 中的條件式存取，以協助保護電子郵件及其他服務。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,15 +16,15 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
-ms.openlocfilehash: d33a515ad2bf0a7fb8680447f2bf83544f2eb30f
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: 011d9345f6f2ec05b23fb574d9ab71d43ede7f69
 
 
 ---
 
-# <a name="manage-access-to-services-in-system-center-configuration-manager"></a>管理 System Center Configuration Manager 中的服務存取權
+# <a name="manage-access-to-services"></a>管理服務的存取權
 
-適用於：System Center Configuration Manager (最新分支)
+*適用於：System Center Configuration Manager (最新分支)*
 
 
 ## <a name="conditional-access-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的條件式存取
@@ -184,6 +184,6 @@ SharePoint Online 條件式存取支援執行下列各項的裝置：
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

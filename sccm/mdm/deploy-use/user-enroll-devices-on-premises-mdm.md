@@ -1,5 +1,5 @@
 ---
-title: "使用者如何在 System Center Configuration Manager 中使用內部部署行動裝置管理註冊裝置 | Microsoft Docs"
+title: "使用者如何使用內部部署 MDM 來註冊裝置 - Configuration Manager | Microsoft Docs"
 description: "了解使用者如何在 System Center Configuration Manager 中使用內部部署行動裝置管理註冊裝置。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -17,8 +17,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: 6fdf9d0b01805b341838b3dc7f0368a4f70e1d08
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: 43a30709473939829d82d822503537d448159a1c
 
 
 ---
@@ -83,6 +83,6 @@ ms.openlocfilehash: 6fdf9d0b01805b341838b3dc7f0368a4f70e1d08
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,6 +1,6 @@
 ---
-title: "管理用戶端 | 網際網路 | 雲端管理閘道 | Microsoft Docs"
-description: 
+title: "管理網際網路上的用戶端 - Configuration Manager | Microsoft Docs"
+description: "了解如何在 Configuration Manager 中使用雲端管理閘道和以網際網路為基礎的用戶端管理來管理用戶端。"
 ms.date: 11/18/2016
 ms.prod: configuration-manager
 ms.technology:
@@ -10,8 +10,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: e71ae1f654fcf3dd8c57a299c727588eed26ccac
+ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
+ms.openlocfilehash: 6104107429184f31df12db84089f41df1ef81539
 
 ---
 
@@ -73,6 +73,6 @@ Configuration Manager 提供下列兩種方式來管理連接網際網路的用�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

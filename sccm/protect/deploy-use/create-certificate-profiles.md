@@ -1,5 +1,5 @@
 ---
-title: "建立憑證設定檔 | Microsoft Docs"
+title: "如何建立 SCEP 憑證設定檔 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中使用憑證設定檔，透過受管理裝置所需的憑證來佈建受管理裝置。"
 ms.custom: na
 ms.date: 11/22/2016
@@ -17,12 +17,12 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fdf0915d937e9555ef4f84797f70391dbf2543d3
-ms.openlocfilehash: 4293cb586046791c0a75c913794cb223b6823a8f
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: cb9351fc63e49af611c494ec82a6c8651afae30f
 
 
 ---
-# <a name="how-to-create-scep-certificate-profiles-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中建立 SCEP 憑證設定檔
+# <a name="create-certificate-profiles"></a>建立憑證設定檔
 
 *適用於：System Center Configuration Manager (最新分支)*
 
@@ -187,6 +187,6 @@ ms.openlocfilehash: 4293cb586046791c0a75c913794cb223b6823a8f
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

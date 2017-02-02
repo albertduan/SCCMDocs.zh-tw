@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager 的 Technical Preview | Microsoft Docs"
 description: "了解可讓您試用 System Center Configuration Manager 新功能的 Technical Preview 版本。"
 ms.custom: na
-ms.date: 12/16/2016
+ms.date: 1/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4b1b925a50d08d90e4e1250967e19c0bc5aac4d3
-ms.openlocfilehash: faef3537eed740a6177f00991615c978659e06c7
+ms.sourcegitcommit: 8e4ccaf26b83896d12efcbd7ebd4bda4d4bf6675
+ms.openlocfilehash: d7d03c4494338a1d4583b6c82d3d5009b7785cfe
 
 
 ---
@@ -134,6 +134,12 @@ ms.openlocfilehash: faef3537eed740a6177f00991615c978659e06c7
 
  |功能|Technical Preview 版本|最新分支版本|  
  |----------------|---------------------|--------------------|
+ |軟體更新點的界限群組增強功能 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#boundary-groups-improvements-for-software-update-points)    |![未新增](media/Red_X.gif)  |
+ |硬體清查會收集 UEFI 資訊 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#hardware-inventory-collects-uefi-information)|![未新增](media/Red_X.gif)  |
+ |作業系統部署增強功能| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#improvements-to-operating-system-deployment)|![未新增](media/Red_X.gif)  |
+ |在雲端式發佈點上裝載軟體更新| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#host-software-updates-on-cloud-based-distribution-points)|![未新增](media/Red_X.gif) |
+ |透過管理點來驗證裝置健全狀況證明資料| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#validate-device-health-attestation-data-via-management-points)|![未新增](media/Red_X.gif) |
+ |針對 Microsoft Azure Government 雲端的 OMS 連接器 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#use-the-oms-connector-for-microsoft-azure-government-cloud) |![未新增](media/Red_X.gif) |
  |OData 端點資料存取 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#odata-endpoint-data-access)|![未新增](media/Red_X.gif)|
  |資料倉儲服務點 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#the-data-warehouse-service-point)|![未新增](media/Red_X.gif)|
  |內容庫清理工具 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#content-library-cleanup-tool)|![未新增](media/Red_X.gif)|
@@ -225,6 +231,6 @@ ms.openlocfilehash: faef3537eed740a6177f00991615c978659e06c7
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

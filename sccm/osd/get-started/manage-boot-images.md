@@ -1,8 +1,8 @@
 ---
-title: "管理開機映像 | Microsoft Docs"
+title: "管理開機映像 - Configuration Manager | Microsoft Docs"
 description: "在 Configuration Manager 中，了解如何管理在作業系統部署期間所使用的 Windows PE 開機映像。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 8c41c39a7f984be2612ae882d3bc08d92278dba6
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: 3b7125e782b60853e750aeb7ba923490e46a76b0
 
 
 ---
@@ -93,7 +93,7 @@ Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.mi
  此時，開機映像會列在 Configuration Manager 主控台的 [開機映像] 節點中。 不過，您必須先將開機映像發佈到發佈點、發佈點群組或與發佈點群組相關聯的集合，才可以使用開機映像部署作業系統。  
 
 > [!NOTE]  
->  當您在 Configuration Manager 主控台中選取 [開機映像] 節點時，[大小 (KB)  欄會顯示每個開機映像解壓縮後的大小。 不過，當 Configuration Manager 透過網路傳送開機映像時，它會傳送映像的壓縮複本，而這個複本的大小通常遠低於 [大小 (KB)] 欄中列出的大小。  
+>  當您在 Configuration Manager 主控台中選取 開機映像 節點時，大小 (KB)  欄會顯示每個開機映像解壓縮後的大小。 不過，當 Configuration Manager 透過網路傳送開機映像時，它會傳送映像的壓縮複本，而這個複本的大小通常遠低於 [大小 (KB)] 欄中列出的大小。  
 
 ##  <a name="a-namebkmkdistributebootimagesa-distribute-boot-images-to-a-distribution-point"></a><a name="BKMK_DistributeBootImages"></a> 將開機映像發佈至發佈點  
  開機映像發佈至發佈點的方式，與您發佈其他內容的方式相同。 在大部分情況下，您必須在部署作業系統之前，以及建立媒體之前，將開機映像發佈至至少一個發佈點。  
@@ -251,6 +251,6 @@ Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.mi
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

@@ -1,12 +1,12 @@
 ---
 
-title: "從已中斷連線的軟體更新點同步處理軟體更新 | Microsoft Docs"
-description: "請遵循這些程序，確認匯出伺服器上的軟體更新同步處理成功、匯出更新，以及匯入更新中繼資料。"
+title: "在沒有網際網路連線的情況下同步處理更新 - Configuration Manager | Microsoft Docs"
+description: "在與網際網路中斷連線的頂層軟體更新點上，執行軟體更新同步處理。"
 keywords: 
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,8 +14,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 1a997c30-8e71-4be5-89ee-41efb2c8d199
 translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
-ms.openlocfilehash: 73a54ddb896bfa7fb770e02d188a262230762c7f
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: fd9c1e9418ff1956c6ef98753e23a293440179be
 
 
 
@@ -111,6 +111,6 @@ ms.openlocfilehash: 73a54ddb896bfa7fb770e02d188a262230762c7f
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

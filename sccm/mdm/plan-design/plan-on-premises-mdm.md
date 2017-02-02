@@ -17,8 +17,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: cc5b04dc41b13993fca35f202437b71e96bc9cdd
+ms.sourcegitcommit: cec595d473ca2459e43a7fa1c70b7668a8a48986
+ms.openlocfilehash: d529a058968cf99dce77997844b33ff5dc7c0004
 
 
 ---
@@ -43,8 +43,8 @@ ms.openlocfilehash: cc5b04dc41b13993fca35f202437b71e96bc9cdd
 ##  <a name="a-namebkmkintunea-use-of-the--microsoft-intune-subscription"></a><a name="bkmk_intune"></a> 使用 Microsoft Intune 訂閱  
  若要開始使用內部部署行動裝置管理，您需要 Microsoft Intune 訂閱。 訂閱只有在追蹤裝置授權時才需要，不會用來管理或儲存裝置的管理資訊。 所有的管理都是貴組織企業使用內部部署的 Configuration Manager 基礎結構來處理。  
 
-> [!IMPORTANT]  
->  Configuration Manager 不支援同時使用 Microsoft Intune 和內部部署 Configuration Manager 基礎結構作為管理授權單位。 因此，當您設定 Intune 訂閱以進行內部部署管理時，可以有效地停用 Intune 管理。  
+ > [!NOTE]  
+ > 從 1610 版開始，Configuration Manager 支援同時使用 Microsoft Intune 和內部部署 Configuration Manager 基礎結構來管理行動裝置。   
 
  如果站台有使用網際網路連線的裝置，即可使用 Intune 服務通知裝置來檢查原則更新的裝置管理點。 Intune 嚴格限用於對網際網路對向裝置的通知。 不使用網際網路連線且無法透過 Intune 連絡的裝置，依賴設定輪詢間隔以站台系統角色簽入取得管理功能。  
 
@@ -122,6 +122,6 @@ ms.openlocfilehash: cc5b04dc41b13993fca35f202437b71e96bc9cdd
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

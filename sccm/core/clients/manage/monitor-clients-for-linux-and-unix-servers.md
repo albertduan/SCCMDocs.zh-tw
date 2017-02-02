@@ -1,5 +1,5 @@
 ---
-title: "監視用戶端 |System Center Configuration Manager | Linux UNIX "
+title: "監視 Linux/UNIX 用戶端 - Configuration Manager | Microsoft Docs"
 description: "在 System Center Configuration Manager 中監視 Linux 和 UNIX 伺服器上的用戶端。"
 ms.custom: na
 ms.date: 11/23/2016
@@ -16,8 +16,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 620c1caf50b4859afc8f32490ab7945df810aefd
-ms.openlocfilehash: b2b7c88784eed6fbee6ac1f6348d7d6991df1fbb
+ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
+ms.openlocfilehash: e9965373db17a752c8ae7fddb5f91fa1df912d49
 
 
 ---
@@ -38,7 +38,7 @@ ms.openlocfilehash: b2b7c88784eed6fbee6ac1f6348d7d6991df1fbb
  下列章節說明如何透過資源總管和報告取得這些詳細資訊。  
 
 ##  <a name="a-namebkmkuseresourceexpforlnua-use-resource-explorer-to-view-inventory-for-linux-and-unix-servers"></a><a name="BKMK_UseResourceExpforLnU"></a> 使用資源總管來檢視 Linux 和 UNIX 伺服器的清查  
- 
+
  Configuration Manager 用戶端將硬體清查提交給 Configuration Manager 站台之後，您可以使用資源總管檢視這項資訊。 Linux 和 UNIX 的 Configuration Manager 用戶端不會將新的清查類別或檢視新增至資源總管。 Linux 和 UNIX 清查資料對應至現有的 WMI 類別。 您可以使用資源總管，在 Windows 架構的分類中檢視 Linux 和 UNIX 伺服器的清查詳細資料。  
 
  例如，您可以收集 Linux 和 UNIX 伺服器上找到的所有原生安裝程式清單。 原生安裝程式的範例包括在 Linux 或 **.pkgs** Solaris 中的 **.rpms** 。 Linux 或 UNIX 用戶端已提交清查之後，您可以在 Configuration Manager 主控台的資源總管中檢視所有原生安裝的 Linux 或 UNIX 程式清單。  
@@ -56,6 +56,6 @@ ms.openlocfilehash: b2b7c88784eed6fbee6ac1f6348d7d6991df1fbb
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

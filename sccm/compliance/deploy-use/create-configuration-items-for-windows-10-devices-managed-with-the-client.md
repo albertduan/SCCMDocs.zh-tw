@@ -1,5 +1,5 @@
 ---
-title: "如何為使用 System Center Configuration Manager 用戶端管理的 Windows 10 裝置建立設定項目 | Microsoft Docs"
+title: "為用戶端管理的 Windows 10 建立設定項目 - Configuration Manager | Microsoft Docs"
 description: "使用 System Center Configuration Manager Windows 10 設定項目管理 Configuration Manager 用戶端所管理之 Windows 10 電腦的設定。"
 ms.custom: na
 ms.date: 11/18/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
-ms.openlocfilehash: 2b24570aa2e9d9aa45584842011dcd49c6e5e8cc
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 030cc33d98c81f3a6d5dff2d4c011e03fff12dc2
 
 
 ---
@@ -137,6 +137,6 @@ Windows 資訊保護 (WIP) 有助防止這類資料外洩的可能，同時不�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

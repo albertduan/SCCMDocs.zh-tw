@@ -1,5 +1,5 @@
 ---
-title: "監視 Endpoint Protection | Microsoft Docs"
+title: "監視 Endpoint Protection 狀態 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 階層中監視 Endpoint Protection。"
 ms.custom: na
 ms.date: 12/9/2016
@@ -16,12 +16,12 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9fcbc0bb9c8ccd4265381ca4db7a363c8ae3b54a
-ms.openlocfilehash: 590d95f82a30167dcc0d5191feaa39ecab2b3136
+ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
+ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
 
 
 ---
-# <a name="how-to-monitor-endpoint-protection-in-system-center-configuration-manager"></a>如何監視 System Center Configuration Manager 中的 Endpoint Protection
+# <a name="how-to-monitor-endpoint-protection-status"></a>如何監視 Endpoint Protection 狀態
 
 *適用於：System Center Configuration Manager (最新分支)*
 
@@ -53,7 +53,7 @@ ms.openlocfilehash: 590d95f82a30167dcc0d5191feaa39ecab2b3136
 
 2.  在 **資產與相容性** 工作區中，執行下列動作:  
 
-    -   按一下 **裝置**。 在 **裝置** 清單，選取 [電腦]，然後按一下 **惡意程式碼的詳細資料** ] 索引標籤。  
+    -   按一下 **裝置**。 在 **裝置** 清單，選取 電腦，然後按一下 **惡意程式碼的詳細資料**  索引標籤。  
 
     -   按一下 **裝置集合**。 在 **[裝置集合]** 清單中，選取包含您想要監視之電腦的集合，然後在 **[首頁]** 索引標籤的 **[集合]** 群組中，按一下 **[顯示成員]**。  
 
@@ -84,6 +84,6 @@ ms.openlocfilehash: 590d95f82a30167dcc0d5191feaa39ecab2b3136
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

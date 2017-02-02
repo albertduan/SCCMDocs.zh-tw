@@ -1,5 +1,5 @@
 ---
-title: "選擇 System Center Configuration Manager 的裝置管理解決方案 | Microsoft Docs"
+title: "選擇裝置管理解決方案 - Configuration Manager | Microsoft Docs"
 description: "了解 System Center Configuration Manager 為管理電腦、伺服器和裝置所提供的解決方案。"
 ms.custom: na
 ms.date: 12/08/2016
@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d56b2a8090dd798bceda63e29df6c6ff4a4afe4e
-ms.openlocfilehash: 792d9b03904193c1c302c2f8373448a44887ed9c
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 854373b56052cee7e63dd71c1b9e7e980af30744
 
 
 ---
@@ -96,6 +96,6 @@ System Center Configuration Manager (也稱為 ConfgMgr 或 SCCM) 提供不同�
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

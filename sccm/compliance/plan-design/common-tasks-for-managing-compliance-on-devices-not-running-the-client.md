@@ -1,5 +1,5 @@
 ---
-title: "管理未執行 System Center Configuration Manager 用戶端之裝置上合規性的一般工作 | Microsoft Docs"
+title: "沒有用戶端之裝置的一般相容性管理工作 - Configuration Manager | Microsoft Docs"
 description: "透過處理一些常見的案例，了解 System Center Configuration Manager 相容性設定需要。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
-ms.openlocfilehash: e24ef149e2a2648c9a7acaedfaa8f0b5bb173ab3
+ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
+ms.openlocfilehash: c206c1ff2258e0e7f0c42fe5f6a6327e850261c4
 
 
 ---
@@ -126,6 +126,6 @@ ms.openlocfilehash: e24ef149e2a2648c9a7acaedfaa8f0b5bb173ab3
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
