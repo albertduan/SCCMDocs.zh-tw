@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: 1452362c280fed871da81fa8f711a975493b98a0
+ms.sourcegitcommit: 34dded3a8caf8c2be0313bc012cbd8ad2a909fad
+ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
 
 ---
 # <a name="capabilities-in-technical-preview-1701-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1701 中的功能
@@ -135,6 +135,28 @@ ms.openlocfilehash: 1452362c280fed871da81fa8f711a975493b98a0
 2.  儲存具有這兩項變更的檔案之後，請重新啟動相同電腦上的 Configuration Manager 主控台，然後使用該主控台來安裝 OMS 連接器。 若要安裝連接器，請使用[將資料從 Configuration Manager 同步處理至 Microsoft Operations Management Suite](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) 中的資訊，然後選取 Microsoft Azure Government 雲端上的 [Operations Management Suite 工作區]。
 
 3.  安裝 OMS 連接器之後，即可在使用任何連線至該站台的主控台時連線 Government 雲端。
+
+## <a name="android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm"></a>混合式 MDM 的建立精靈無法再將目標設為 Android 與 iOS 版本
+
+從混合式行動裝置管理 (MDM) 的這個技術預覽版開始，您在為受 Intune 管理的裝置建立新原則及設定檔時，不再需要以 Android 或 iOS 的特定版本為目標。 取而代之的是選擇下列其中一種裝置類型：
+
+- Android
+- Samsung KNOX 標準 4.0 及更新版本
+- iPhone
+- iPad
+
+這項變更會影響精靈建立下列項目︰
+
+- 設定項目
+- 相容性原則
+- 憑證設定檔
+- 電子郵件設定檔
+- VPN 設定檔
+- Wi-Fi 設定檔
+
+透過這項變更，混合式部署可更快為 Android 及 iOS 版本提供支援，而不需要新的 Configuration Manager 版本或延伸模組。 一旦 Intune 獨立版支援新版本，使用者就能將其行動裝置更新為該版本。
+
+為了防止升級舊版 Configuration Manager 時發生問題，這些項目的屬性頁面中還是會有行動作業系統版本。 如果您仍有需要將特定版本設為目標，可以建立新項目，然後在新建項目的屬性頁面上指定設為目標的版本。
 
 
 

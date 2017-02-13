@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8e4ccaf26b83896d12efcbd7ebd4bda4d4bf6675
-ms.openlocfilehash: d7d03c4494338a1d4583b6c82d3d5009b7785cfe
+ms.sourcegitcommit: 916c39133ec3796b9cff97c3c3bdb49dcbb6d7e7
+ms.openlocfilehash: defff3d720363cfb066b120e2b8f58d643a87699
 
 
 ---
@@ -140,6 +140,7 @@ ms.openlocfilehash: d7d03c4494338a1d4583b6c82d3d5009b7785cfe
  |在雲端式發佈點上裝載軟體更新| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#host-software-updates-on-cloud-based-distribution-points)|![未新增](media/Red_X.gif) |
  |透過管理點來驗證裝置健全狀況證明資料| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#validate-device-health-attestation-data-via-management-points)|![未新增](media/Red_X.gif) |
  |針對 Microsoft Azure Government 雲端的 OMS 連接器 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#use-the-oms-connector-for-microsoft-azure-government-cloud) |![未新增](media/Red_X.gif) |
+ |建立精靈無法再將目標設為 Android 與 iOS 版本 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm) |![未新增](media/Red_X.gif) |
  |OData 端點資料存取 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#odata-endpoint-data-access)|![未新增](media/Red_X.gif)|
  |資料倉儲服務點 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#the-data-warehouse-service-point)|![未新增](media/Red_X.gif)|
  |內容庫清理工具 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#content-library-cleanup-tool)|![未新增](media/Red_X.gif)|
@@ -231,6 +232,6 @@ ms.openlocfilehash: d7d03c4494338a1d4583b6c82d3d5009b7785cfe
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 
