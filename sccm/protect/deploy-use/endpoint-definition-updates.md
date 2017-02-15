@@ -3,7 +3,7 @@
 title: "設定 Endpoint Protection | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 選取及設定 Endpoint Protection 方法，讓用戶端電腦上的反惡意程式碼定義保持最新狀態。"
 ms.custom: na
-ms.date: 01/31/2017
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na

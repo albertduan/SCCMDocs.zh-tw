@@ -2,7 +2,7 @@
 title: "Endpoint Protection 惡意程式碼定義 | Microsoft Docs"
 description: "了解如何將 Configuration Manager 軟體更新設定為傳遞定義更新至用戶端電腦。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na

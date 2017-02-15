@@ -2,7 +2,7 @@
 title: "來自網路共用的 Endpoint Protection 惡意程式碼定義 | Microsoft Docs"
 description: "了解如何手動從 Microsoft 下載最新的定義更新，然後將用戶端設定為下載這些定義。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na

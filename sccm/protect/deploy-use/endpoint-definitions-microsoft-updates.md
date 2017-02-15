@@ -2,7 +2,7 @@
 title: "來自網路共用的 Endpoint Protection 惡意程式碼定義 | Microsoft Docs"
 description: "了解如何啟用從 Microsoft Updates 針對 Configuration Manager 下載 Endpoint Protection 惡意程式碼定義。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
