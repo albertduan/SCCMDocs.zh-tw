@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager Technical Preview 1606 中的功能 | Microsoft Docs"
+title: "Technical Preview 1606 Configuration Manager 中的功能"
 description: "了解 System Center Configuration Manager Technical Preview 1606 版中可用的功能。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
-ms.openlocfilehash: 6bc3087768d8455a6ca6beb77a3afc8f313eb831
+ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
+ms.openlocfilehash: a84d3ab55066d26c3199ea374d8beb472d66f43f
 
 ---
 # <a name="capabilities-in-technical-preview-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1606 中的功能
@@ -181,7 +181,7 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 
 1. 在 Configuration Manager 主控台中，移至 [管理] > [雲端服務] > [雲端 Proxy 服務]。
 2. 按一下 [建立雲端 Proxy 服務]。
-3. 在 [建立雲端 Proxy 服務精靈] 中，輸入您的 Azure 訂用帳戶 ID (複製自 Azure 管理入口網站)，按一下 [瀏覽]，然後選取您用來上傳作為 Azure 管理憑證的憑證檔案。 按一下 [  請稍候片刻，主控台將會連線到 Azure。
+3. 在 [建立雲端 Proxy 服務精靈] 中，輸入您的 Azure 訂用帳戶 ID (複製自 Azure 管理入口網站)，按一下 [瀏覽]，然後選取您用來上傳作為 Azure 管理憑證的憑證檔案。 按一下   請稍候片刻，主控台將會連線到 Azure。
 4. 在精靈中填寫其他詳細資料：
     - 指定您要從自訂 SSL 憑證匯出的私密金鑰 (.pfx 檔案)。
     - 指定從用戶端憑證匯出的根憑證。
@@ -225,10 +225,16 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 
 ### <a name="set-the-configuration-manager-client-setting-to-manage-the-office-365-client-agent"></a>設定 Configuration Manager 用戶端設定來管理 Office 365 用戶端代理程式
 1.  在 Configuration Manager 主控台中，按一下 [管理] > [概觀] > [用戶端設定]。
-1. 開啟適當的裝置設定，以啟用用戶端代理程式。 如需預設和自訂用戶端設定的詳細資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端設定](../../core/clients/deploy/configure-client-settings.md)。
-2. 按一下 [軟體更新]，然後針對 [啟用管理 Office 365 用戶端代理程式] 設定選取 [是]。
+2. 開啟適當的裝置設定，以啟用用戶端代理程式。 如需預設和自訂用戶端設定的詳細資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端設定](../../core/clients/deploy/configure-client-settings.md)。
+3. 按一下 [軟體更新]，然後針對 [啟用管理 Office 365 用戶端代理程式] 設定選取 [是]。  
+
+
 ## <a name="a-nameosdpreservedriveletterathe-osdpreservedriveletter-task-sequence-variable-has-been-deprecated"></a><a name="osdpreservedriveletter"></a>OSDPreserveDriveLetter 工作順序變數已被取代
-OSDPreserveDriveLetter 工作順序變數決定工作順序將作業系統映像套用至目的地電腦時，是否要使用該映像 WIM 檔中所擷取的磁碟機代號。 此工作順序變數在 Technical Preview 1606 中已被取代。 在作業系統部署期間，Windows 安裝程式現在預設會決定要使用的最佳磁碟機代號 (通常是 C:)。 如果您想要指定使用不同的磁碟機，您可以在「套用作業系統」工作順序步驟中變更位置。 移至 [請選取要套用此作業系統的位置] 設定，選取 [特定邏輯磁碟機代號]，然後選擇您想要使用的磁碟機。 目的地電腦上必須有指派您所選擇之代號的磁碟機。
+OSDPreserveDriveLetter 工作順序變數決定工作順序將作業系統映像套用至目的地電腦時，是否要使用該映像 WIM 檔中所擷取的磁碟機代號。
+- 此工作順序變數在 Technical Preview 1606 中已被取代。
+
+在作業系統部署期間，Windows 安裝程式現在預設會決定要使用的最佳磁碟機代號 (通常是 C:)。 如果您想要指定使用不同的磁碟機，您可以在「套用作業系統」工作順序步驟中變更位置。 移至 [請選取要套用此作業系統的位置] 設定，選取 [特定邏輯磁碟機代號]，然後選擇您想要使用的磁碟機。 目的地電腦上必須有指派您所選擇之代號的磁碟機。 
+
 ## <a name="a-nameupdatesandservicingachanges-for-the-updates-and-servicing-node"></a><a name="updatesandservicing"></a>更新和服務節點有所變更
 在 Technical Preview 1606 中，引進了適用於 Configuration Manager 主控台之 [更新與服務] 的數項變更：
 - **節點名稱變更：**
@@ -261,6 +267,6 @@ OSDPreserveDriveLetter 工作順序變數決定工作順序將作業系統映像
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

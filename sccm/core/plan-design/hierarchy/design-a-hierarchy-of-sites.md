@@ -1,5 +1,5 @@
 ---
-title: "為 System Center Configuration Manager 設計站台階層 | Microsoft Docs"
+title: "設計站台階層 - Configuration Manager | Microsoft Docs"
 description: "了解 System Center Configuration Manager 可用的拓撲和管理選項，以便您可以規劃站台階層。"
 ms.custom: na
 ms.date: 1/3/2017
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f1e6213c5d28a3219f976b2c92f193b05fed15ce
-ms.openlocfilehash: 805184a3e3913d93fa57c0742adf48955175df7f
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
 
 
 ---
@@ -189,6 +189,6 @@ ms.openlocfilehash: 805184a3e3913d93fa57c0742adf48955175df7f
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

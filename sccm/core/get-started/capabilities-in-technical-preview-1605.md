@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager Technical Preview 1605 中的功能 | Microsoft Docs"
+title: "Technical Preview 1605 Configuration Manager 中的功能"
 description: "了解 System Center Configuration Manager Technical Preview 1605 版中可用的功能。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -17,8 +17,8 @@ ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
-ms.openlocfilehash: 06741d03e208c6f5c8093130780dcdc8f0fcfbf7
+ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
+ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
 ---
 # <a name="capabilities-in-technical-preview-1605-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1605 中的功能
@@ -383,7 +383,7 @@ ms.openlocfilehash: 06741d03e208c6f5c8093130780dcdc8f0fcfbf7
 
     -   **可攜式執行檔** - 收集網路攻擊中可能遭到惡意探索的檔案進行分析，例如程式檔 (.exe)、動態程式庫連結 (.dll) 檔案、字型檔案和類似檔案  
 
-     按一下 [   
+     按一下    
 
 5.  檢閱摘要並完成精靈。  
 
@@ -466,12 +466,12 @@ ms.openlocfilehash: 06741d03e208c6f5c8093130780dcdc8f0fcfbf7
 
     -   欄 4：詳細資料 - Configuration Manager 主控台中所顯示的其他裝置資訊  
 
-     按一下 [   
+     按一下    
 
 4.  檢閱檔案匯入的結果。 先前已匯入的 IMEI 或序號會以新的詳細資料更新其詳細資料。  按一下 [下一步] 繼續，或按一下 [上一步] 保留已更新的詳細資料，然後完成精靈。  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO4-->
 
 

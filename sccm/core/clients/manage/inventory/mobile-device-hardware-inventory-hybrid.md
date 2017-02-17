@@ -1,5 +1,5 @@
 ---
-title: "設定硬體清查 | Microsoft Docs | 行動裝置"
+title: "設定行動裝置清查 - Configuration Manager | Microsoft Docs"
 description: "為 Microsoft Intune 和 System Center Configuration Manager 註冊的行動裝置設定硬體清查。"
 ms.custom: na
 ms.date: 12/26/2016
@@ -16,8 +16,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
-ms.openlocfilehash: be954724587e68e92e5d8f5cecd712dfd5df278e
+ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
+ms.openlocfilehash: 13fd8d5e2ee6c2381129282aefa5e7b1aaf361eb
 
 
 ---
@@ -141,6 +141,6 @@ ms.openlocfilehash: be954724587e68e92e5d8f5cecd712dfd5df278e
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

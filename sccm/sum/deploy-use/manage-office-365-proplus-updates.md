@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 translationtype: Human Translation
-ms.sourcegitcommit: 46c8004afee4b18d5c7a2fcc5dac0f7d0d1f823c
-ms.openlocfilehash: fb2fc409c2f734816e4f3bf93d61a748d957ebf0
+ms.sourcegitcommit: 6bb2bf0a029bc21e9420ac0ba782e8ea21291896
+ms.openlocfilehash: df9ad09c4ce0c2a18ee012cd3ace7b1a850df7b4
 
 ---
 
@@ -43,6 +43,18 @@ ms.openlocfilehash: fb2fc409c2f734816e4f3bf93d61a748d957ebf0
 - --->
 
 使用儀表板頂端的 [集合] 下拉式清單設定，依特定集合成員篩選儀表板資料。
+
+### <a name="display-data-in-the-office-365-client-management-dashboard"></a>在 Office 365 用戶端管理儀表板中顯示資料
+[Office 365 用戶端管理] 儀表板中所顯示的資料來自硬體清查。 硬體清查必須予以啟用，而且您必須先選取 [Office 365 ProPlus Configurations] (Office 365 ProPlus 設定) 硬體清查類別，資料才會顯示在儀表板中。
+#### <a name="to-display-data-in-the-office-365-client-management-dashboard"></a>在 Office 365 用戶端管理儀表板中顯示資料
+1. 啟用硬體清查 (若尚未啟用)。 如需詳細資料，請參閱[設定硬體清查](\sccm\core\clients\manage\configure-hardware-inventory)。
+2. 在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [用戶端設定] > [預設用戶端設定]。  
+3. 在 [首頁]  索引標籤的 [內容]  群組中，按一下 [內容] 。  
+4. 在 **預設用戶端設定**  對話方塊中按一下 **硬體清查**。  
+5. 在 **裝置設定** 清單中，按一下 **設定類別**。  
+6. 在 [硬體清查類別] 對話方塊中，選取 [Office 365 ProPlus Configurations] (Office 365 ProPlus 設定)。  
+7.  按一下 **確定** 以儲存您的變更並關閉 **硬體清查類別** 對話方塊。  
+[Office 365 用戶端管理] 儀表板將在報告硬體清查時開始顯示資料。
 
 <!---
  On the upper-right side of the dashboard, click **Office 365 Installer** to start the Office 365 Client Installation Wizard to deploy Office 365 apps to clients. For details, see [Deploy Office 365 apps to clients](#deploy-office-365-apps-to-clients).
@@ -108,6 +120,6 @@ Use the Office 365 Client Management dashboard in Configuration Manager to revie
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO3-->
 
 

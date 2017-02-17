@@ -1,8 +1,8 @@
 ---
-title: "System Center Configuration Manager Technical Preview 1612 中的功能 | Microsoft Docs"
+title: "Technical Preview 1612 Configuration Manager 中的功能"
 description: "了解 System Center Configuration Manager Technical Preview 1612 版中可用的功能。"
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: e7075eb675353be130fdcc867d9e4dd1009dab35
-ms.openlocfilehash: 2de36316b20b2a7b2937d767e618f4fec1affb69
+ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
+ms.openlocfilehash: cd970dacd29916c2de2db3dd5498b1949f5174e6
 
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1612 中的功能
@@ -243,7 +243,8 @@ ms.openlocfilehash: 2de36316b20b2a7b2937d767e618f4fec1affb69
 我們在 Configuration Manager 中新增了 Windows 10 更新的快速安裝檔案支援。 當您使用支援的 Windows 10 版本時，您現在可以使用 Configuration Manager 設定，只下載目前月份的 Windows 10 累積更新與上個月更新之間的差異。 目前在 Configuration Manager 最新分支中，每個月會下載完整 Windows 10 累積更新 (包括過去幾個月的所有更新)。 使用快速安裝檔案可在用戶端提供較小的下載項目及更快速的安裝時間。
 
 > [!IMPORTANT]
-> 雖然 Configuration Manager 提供使用快速安裝檔案的支援設定，但只有套用 2017 年初發行之更新的 Windows 10 1607 版及更新版 Windows 才支援這項功能。 不含更新的 Windows 10 1607 版和舊版不支援快速安裝檔案。
+> 雖然 Configuration Manager 提供支援使用快速安裝檔案的設定，但是只有套用 2017 年 1 月 10 日所發行更新 (Patch Tuesday) 隨附之 Windows Update 代理程式更新的 Windows 10 1607 版才支援這項功能。 如需這些更新的詳細資訊，請參閱[支援文章 3213986](https://support.microsoft.com/help/4009938/january-10-2017-kb3213986-os-build-14393-693)。 在 2017 年 2 月 14 日發行下一組更新時，您可以利用快速安裝檔案。 不含更新的 Windows 10 1607 版和舊版不支援快速安裝檔案。
+
 
 ### <a name="to-enable-the-download-of-express-installation-files-for-windows-10-updates-on-the-server"></a>在伺服器上下載 Windows 10 更新的快速安裝檔案
 若要啟動 Windows 10 快速安裝檔案的中繼資料同步處理，您必須在 [軟體更新點內容] 中將它啟用。
@@ -316,6 +317,6 @@ Azure Active Directory (AD) 上架會建立 Configuration Manager 與 Azure Acti
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

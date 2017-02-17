@@ -1,5 +1,5 @@
 ---
-title: "如何為使用 System Center Configuration Manager 用戶端管理的 Mac OS X 裝置建立設定項目 | Microsoft Docs"
+title: "為用戶端管理的 Mac 建立設定項目 - Configuration Manager | Microsoft Docs"
 description: "使用 System Center Configuration Manager Mac OS X 設定項目，管理 Mac OS X 裝置的設定。"
 ms.custom: na
 ms.date: 12/27/2016
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8bbc0d0132fa4276ade8914d5ac3945ef1d12a4b
-ms.openlocfilehash: be7a9464ef4ac6042a46652a325583a355f23846
+ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
+ms.openlocfilehash: 60d147986425e7a3048d57b5b7412feab12efafd
 
 
 ---
@@ -54,8 +54,8 @@ ms.openlocfilehash: be7a9464ef4ac6042a46652a325583a355f23846
 
              例如，如果您想要編輯的 Safari 網頁瀏覽器設定，您可能會使用 **com.apple.Safari.plist**。  
 
-        -   **金鑰** – 指定您想要評估 Mac 電腦上的符合性的索引鍵的名稱。 使用下列語法： 
-        
+        -   **金鑰** – 指定您想要評估 Mac 電腦上的符合性的索引鍵的名稱。 使用下列語法：
+
             ```
             */<dictionary\>/<keyname\>*.  
             ```     
@@ -177,6 +177,6 @@ ms.openlocfilehash: be7a9464ef4ac6042a46652a325583a355f23846
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Jan17_HO4-->
 
 

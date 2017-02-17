@@ -4,6 +4,7 @@
 ### [協助工具功能](understand/accessibility-features.md)
 ##  [Configuration Manager 的基礎](understand/fundamentals.md)
 ### [站台和階層的基本概念](understand/fundamentals-of-sites-and-hierarchies.md)
+#### [關於站台及階層基礎結構的升級、更新及安裝](understand/upgrade-update-install.md)
 ### [管理裝置的基本概念](understand/fundamentals-of-managing-devices.md)
 ### [用戶端管理的基本概念](understand/fundamentals-of-client-management-tasks.md)
 ### [安全性的基本概念](understand/fundamentals-of-security.md)
@@ -60,7 +61,7 @@
 ###  [站台管理的安全性和隱私權](plan-design/hierarchy/security-and-privacy-for-site-administration.md)
 
 ##   [規劃網路基礎結構](plan-design/network/configure-firewalls-ports-domains.md)
-###  [延伸 Active Directory 架構](plan-design/network/extend-the-active-directory-schema.md)
+###  [準備 Active Directory 架構](plan-design/network/extend-the-active-directory-schema.md)
 ###  [準備 Windows Server 以支援站台系統](plan-design/network/prepare-windows-servers.md)
 ###  [站台系統伺服器的網站](plan-design/network/websites-for-site-system-servers.md)
 ###  [PKI 憑證需求](plan-design/network/pki-certificate-requirements.md)
@@ -87,7 +88,8 @@
 ##   [在實驗室中評估 Configuration Manager](get-started/evaluate-with-lab-environment.md)
 ###  [設定實驗室](get-started/set-up-your-lab.md)
 
-##   [Technical Preview](get-started/technical-preview.md) 
+##   [Technical Preview](get-started/technical-preview.md)
+###  [1701 中的功能](get-started/capabilities-in-technical-preview-1701.md)
 ###  [1612 中的功能](get-started/capabilities-in-technical-preview-1612.md)
 ###  [1611 中的功能](get-started/capabilities-in-technical-preview-1611.md)
 ###  [1610 中的功能](get-started/capabilities-in-technical-preview-1610.md)
@@ -122,7 +124,8 @@
 #    [部署伺服器和角色](servers/deploy/start-using.md)
 
 ##   安裝基礎結構
-###  [執行安裝程式之前](servers/deploy/install/setup-downloader.md)
+###  [取得安裝媒體](servers/deploy/install/get-install-media.md)
+###  執行安裝程式之前
 #### [安裝程式下載程式](servers/deploy/install/setup-downloader.md)
 #### [必要條件檢查工具](servers/deploy/install/prerequisite-checker.md)
 ###  [安裝站台](servers/deploy/install/installing-sites.md)
@@ -167,6 +170,7 @@
 ###  [安裝主控台內更新](servers/manage/install-in-console-updates.md)
 #### [流程圖 - 下載更新](servers/manage/download-updates-flowchart.md)
 #### [流程圖 - 更新複寫](servers/manage/update-replication-flowchart.md)
+###  [站台伺服器的服務保留時間](servers/manage/service-windows.md)
 ###  [使用服務連接工具](servers/manage/use-the-service-connection-tool.md)
 ###  [使用更新註冊工具](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [使用 Hotfix 安裝程式](servers/manage/use-the-hotfix-installer-to-install-updates.md)
@@ -218,6 +222,7 @@
 ###  [如何設定網路喚醒](clients/deploy/configure-wake-on-lan.md)
 ###  [如何將用戶端部署至 Windows 電腦](clients/deploy/deploy-clients-to-windows-computers.md)
 ###  [如何將用戶端部署至 UNIX 和 Linux 伺服器](clients/deploy/deploy-clients-to-unix-and-linux-servers.md)
+###  [準備將用戶端部署到 Mac](clients/deploy/prepare-to-deploy-mac-clients.md)
 ###  [如何將用戶端部署至 Mac](clients/deploy/deploy-clients-to-macs.md)
 ###  [如何將用戶端指派至站台](clients/deploy/assign-clients-to-a-site.md)
 ###  [如何設定用戶端狀態](clients/deploy/configure-client-status.md)
@@ -231,6 +236,7 @@
 ###  [如何管理用戶端](clients/manage/manage-clients.md)
 ###  [如何管理 Linux 和 UNIX 用戶端](clients/manage/manage-clients-for-linux-and-unix-servers.md)
 ###  [將資料同步處理至 OMS](clients/manage/sync-data-microsoft-operations-management-suite.md)
+###  [維護 Mac 用戶端](clients/manage/maintain-mac-clients.md)
 
 ##   [管理網際網路上的用戶端](clients/manage/manage-clients-internet.md)
 ###  [規劃雲端管理閘道](clients/manage/plan-cloud-management-gateway.md)
@@ -253,14 +259,12 @@
 ###  [如何擴充硬體清查](clients/manage/inventory/extend-hardware-inventory.md)
 ###  [如何設定硬體清查](clients/manage/inventory/configure-hardware-inventory.md)
 ###  [如何設定混合式部署中行動裝置的硬體清查](clients/manage/inventory/mobile-device-hardware-inventory-hybrid.md)
-<!--- ###  [Operations and maintenance for hardware inventory](clients/manage/inventory/hardware-inventory.md) --->
 ###  [如何使用資源總管檢視硬體清查](clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)
 ###  [Linux 和 UNIX 的硬體清查](clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)
 ###  [硬體清查的安全性和隱私權](clients/manage/inventory/security-and-privacy-for-hardware-inventory.md)
 
 ##   軟體清查
 ###  [軟體清查簡介](clients/manage/inventory/introduction-to-software-inventory.md)
-###  [如何排除資料夾不進行軟體清查](clients/manage/inventory/exclude-folders-from-software-inventory.md)
 ###  [如何設定軟體清查](clients/manage/inventory/configure-software-inventory.md)
 ###  [如何使用資源總管檢視軟體清查](clients/manage/inventory/use-resource-explorer-to-view-software-inventory.md)
 ###  [軟體清查的安全性和隱私權](clients/manage/inventory/security-and-privacy-for-software-inventory.md)
@@ -301,6 +305,6 @@
 ###  [升級分析](clients/manage/upgrade/upgrade-analytics.md)
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO3-->
 
 

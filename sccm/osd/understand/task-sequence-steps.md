@@ -1,8 +1,8 @@
 ---
-title: "工作順序步驟 | Microsoft Docs"
+title: "工作順序步驟 - Configuration Manager | Microsoft Docs"
 description: "了解您可新增至 Configuration Manager 工作順序的工作順序步驟。"
 ms.custom: na
-ms.date: 01/04/2017
+ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 46c8004afee4b18d5c7a2fcc5dac0f7d0d1f823c
-ms.openlocfilehash: 2898afdea131f4114bc645cb11a2c6ffacb42417
+ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
+ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
 
 
 ---
@@ -1696,6 +1696,6 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 

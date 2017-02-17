@@ -1,5 +1,5 @@
 ---
-title: "升級用戶端 | Microsoft Docs"
+title: "升級用戶端 - Configuration Manager | Microsoft Docs"
 description: "取得如何在 System Center Configuration Manager 中升級用戶端的相關資訊。"
 ms.custom: na
 ms.date: 01/01/2017
@@ -16,8 +16,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
-ms.openlocfilehash: f369bccb1da6d428fb321455272190e1a0439ec3
+ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
+ms.openlocfilehash: 56a3ec8ddfaaa233b41347da0ff853fdf92c275c
 
 
 ---
@@ -152,6 +152,6 @@ ms.openlocfilehash: f369bccb1da6d428fb321455272190e1a0439ec3
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO4-->
 
 
