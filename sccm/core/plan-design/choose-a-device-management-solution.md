@@ -17,8 +17,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
-ms.openlocfilehash: 854373b56052cee7e63dd71c1b9e7e980af30744
+ms.sourcegitcommit: 06cafc8f7934cde738a87ac1a1da585a9d4e2a99
+ms.openlocfilehash: 534a15279bff96d93ffb6564eeac2835f57f5645
 
 
 ---
@@ -89,13 +89,13 @@ System Center Configuration Manager (也稱為 ConfgMgr 或 SCCM) 提供不同�
 |軟體部署|是|[是]|是||  
 |透過後援狀態點進行監視|是||||  
 |管理點的連線|是||是||  
-|發佈點的連線|是|[是]|是||  
+|發佈點的連線|是||是||  
 |封鎖 Configuration Manager|是|[是]|是||  
 |隔離和封鎖 Exchange Server (及 Configuration Manager)||||[是]|  
 |遠端抹除| |是|[是]|是|  
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 
