@@ -46,17 +46,17 @@ ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
 
 以下說明這個 Technical Preview 的軟體更新點行為︰  
 
--   **新的用戶端會使用界限群組來選取軟體更新點，**在安裝 1701 版之後安裝的用戶端，會從與用戶端界限群組建立關聯的軟體更新點中選取軟體更新點。
+-    **新的用戶端會使用界限群組來選取軟體更新點，**在安裝 1701 版之後安裝的用戶端，會從與用戶端界限群組建立關聯的軟體更新點中選取軟體更新點。
 
   這會取代先前行為，即用戶端從共用用戶端樹系的軟體更新點清單中隨機選取軟體更新點。   
 
--   **先前安裝的用戶端會繼續使用其目前軟體更新點，直到它們後援以找到新的軟體更新點。**
+-    **先前安裝的用戶端會繼續使用其目前軟體更新點，直到它們後援以找到新的軟體更新點。**
 先前安裝的用戶端以及已有軟體更新點的用戶端將繼續使用該軟體更新點，直到它們後援。 這包括未與用戶端目前界限群組建立關聯的軟體更新點。 它們不會立即從其目前界限群組嘗試尋找並使用軟體更新點。
 
   只有在用戶端無法連線其目前軟體更新點之後，已有軟體更新點的用戶端才會開始使用這個新的界限群組行為，並啟動後援。
 這項延遲在切換至新行為時是刻意設計的。 原因是用戶端與新的軟體更新點同步處理資料時，軟體更新點的變更可能會導致使用大量網路頻寬。 轉換延遲有助於避免讓網路飽和，讓所有用戶端同時切換至新的軟體會更新點。
 
--   **後援時間的設定：**此 Technical Preview 不支援用戶端在啟動後援來搜尋新軟體更新點時的設定。 這包括 [Fallback times (in minutes)] (後援時間 (分鐘)) 和 [Never fallback] (永不後援) 的設定，而您可以針對不同的界限群組關聯性設定這些項目。
+-    **後援時間的設定：**此 Technical Preview 不支援用戶端在啟動後援來搜尋新軟體更新點時的設定。 這包括 [Fallback times (in minutes)] (後援時間 (分鐘)) 和 [Never fallback] (永不後援) 的設定，而您可以針對不同的界限群組關聯性設定這些項目。
 
   相反地，用戶端會保留其目前行為，即用戶端會先嘗試連線至其目前軟體更新點兩個小時，再啟動後援，來尋找它可使用的新軟體更新點。
 
@@ -132,9 +132,9 @@ ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
     &lt;設定名稱="FairFaxAuthorityResource" serializeAs="String">   
     &lt;值>https://login.microsoftonline.com/&lt;/值>
 
-2.  儲存具有這兩項變更的檔案之後，請重新啟動相同電腦上的 Configuration Manager 主控台，然後使用該主控台來安裝 OMS 連接器。 若要安裝連接器，請使用[將資料從 Configuration Manager 同步處理至 Microsoft Operations Management Suite](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) 中的資訊，然後選取 Microsoft Azure Government 雲端上的 [Operations Management Suite 工作區]。
+2.    儲存具有這兩項變更的檔案之後，請重新啟動相同電腦上的 Configuration Manager 主控台，然後使用該主控台來安裝 OMS 連接器。 若要安裝連接器，請使用[將資料從 Configuration Manager 同步處理至 Microsoft Operations Management Suite](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) 中的資訊，然後選取 Microsoft Azure Government 雲端上的 [Operations Management Suite 工作區]。
 
-3.  安裝 OMS 連接器之後，即可在使用任何連線至該站台的主控台時連線 Government 雲端。
+3.    安裝 OMS 連接器之後，即可在使用任何連線至該站台的主控台時連線 Government 雲端。
 
 ## <a name="android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm"></a>混合式 MDM 的建立精靈無法再將目標設為 Android 與 iOS 版本
 
@@ -160,6 +160,6 @@ ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO3-->
 
 
