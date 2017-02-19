@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8e0090bd671e2c566447579974a38474c2f898ea
-ms.openlocfilehash: 1ca51e256ea2f406f393e4b0d3634ea0f6f637bc
+ms.sourcegitcommit: a8cb3c9850b183eec156c37a181c04088b71805e
+ms.openlocfilehash: 40837306816639ff8cea8930fec75b05edc5164a
 
 
 ---
@@ -72,9 +72,9 @@ ms.openlocfilehash: 1ca51e256ea2f406f393e4b0d3634ea0f6f637bc
 
 -   「系統高權限管理員」可授與 Configuration Manager 的所有權限。  
 
--   「資產分析師」可將檢視透過 Asset Intelligence、軟體清查、硬體清查和軟體計量所收集資料的權限授與系統管理使用者。 系統管理使用者可以建立計量規則與 Asset Intelligence 類別、系列以及標籤。  
+-   「資產管理員」授與管理 Asset Intelligence 同步處理點、Asset Intelligence 報告類別、軟體清查、硬體清查和計量規則的權限。  
 
--   「軟體更新管理員」可授與用以定義並部署軟體更新的權限。 與此角色相關聯的系統管理使用者可以建立集合、軟體更新群組、部署和範本，並設定網路存取保護 (NAP) 的軟體更新。  
+-   「軟體更新管理員」可授與用以定義並部署軟體更新的權限。 與此角色相關聯的系統管理使用者可以建立集合、軟體更新群組、部署和範本。  
 
 > [!TIP]  
 >  您可以檢視內建安全性角色清單與您在 Configuration Manager 主控台建立的自訂安全性角色，包括角色的說明。 若要檢視這些角色，請在 [系統管理] 工作區中展開 [安全性]，然後選取 [安全性角色]。  
@@ -215,6 +215,6 @@ ms.openlocfilehash: 1ca51e256ea2f406f393e4b0d3634ea0f6f637bc
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Jan17_HO5-->
 
 

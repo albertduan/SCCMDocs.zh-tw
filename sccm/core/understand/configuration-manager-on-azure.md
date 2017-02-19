@@ -2,7 +2,7 @@
 title: "Azure 上的 Configuration Manager | Microsoft Docs"
 description: "在 Azure 環境上使用 Configuration Manager 的相關資訊。"
 ms.custom: na
-ms.date: 10/21/2016
+ms.date: 01/30/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 5866c1d9ad88e49b69fa0c863b1ef8748a8c8111
+ms.sourcegitcommit: 264e009952db34a6f4929ecb70dc6857117ce4fe
+ms.openlocfilehash: e8798adc0e479417c682450d181611284c148e6d
 
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure 的 Configuration Manager - 常見問題集
@@ -92,7 +92,7 @@ VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援
 一般情況下，計算能力 (CPU 和記憶體) 必須符合 [recommended hardware for System Center Configuration Manager](/sccm/core/plan-design/configs/recommended-hardware) (System Center Configuration Manager 的建議硬體)。 但是一般電腦硬體和 Azure VM 之間有一些差異，特別是關係到這些 VM 使用的磁碟時。  您使用的 VM 大小取決於環境的大小，以下提供您一些建議︰
 - 凡是大小相當大的生產環境部署，建議使用 “**S**” 類別的 Azure VM。 這是因為它們可以使用進階儲存體磁碟。  非 "S" 類別的 VM 使用 Blob 儲存體，而且一般不會符合可接受生產體驗的必要效能需求。
 - 多個進階儲存體磁碟應該用於較高的級別，且與 Windows 磁碟管理主控台中最大的 IOPS 等量。  
-- 建議您在初始站台部署期間最好使用更好或多個進階磁碟 (例如用 P30 不用 P20，用 2xP30 不用 1xP30)。 接著，若站台後來因為額外負載需要增加 VM 大小，您就可以利用較大的 VM 大小來提供的額外 CPU 和記憶體。 您也會有預先準備好的磁碟，可以利用較大的 VM 大小所允許的額外 IOPS 輸送量。
+- 建議您在初始站台部署期間使用較佳或多個進階磁碟 (例如用 P30 而非 P20，在等量磁碟區用 2xP30 而非 1xP30)。 接著，若站台後來因為額外負載需要增加 VM 大小，您就可以利用較大的 VM 大小來提供的額外 CPU 和記憶體。 您也會有預先準備好的磁碟，可以利用較大的 VM 大小所允許的額外 IOPS 輸送量。
 
 
 
@@ -102,18 +102,18 @@ VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援
 
 | 桌面用戶端    |建議的 VM 大小|建議的磁碟|
 |--------------------|-------------------|-----------------|
-|**最多 25 k**       |   DS4_V2          |2xP30            |
-|**25 k 到 50 k**      |   DS13_V2         |2xP30            |
-|**50 k 至 100 k**     |   DS14_V2         |3xP30            |
+|**最多 25 k**       |   DS4_V2          |2xP30 (等量)  |
+|**25 k 到 50 k**      |   DS13_V2         |2xP30 (等量)  |
+|**50 k 至 100 k**     |   DS14_V2         |3xP30 (等量)  |
 
 
 **遠端站台資料庫**：遠端伺服器上具有站台資料庫的主要或管理中心網站︰
 
 | 桌面用戶端    |建議的 VM 大小|建議的磁碟 |
 |--------------------|-------------------|------------------|
-|**最多 25 k**       | 站台伺服器：F4S </br>資料庫伺服器：DS12_V2 | 站台伺服器：1xP30 </br>資料庫伺服器：2xP30 |
-|**25 k 到 50 k**      | 站台伺服器：F4S </br>資料庫伺服器：DS13_V2 | 站台伺服器：1xP30 </br>資料庫伺服器：2xP30 |
-|**50 k 至 100 k**     | 站台伺服器：F8S </br>資料庫伺服器：DS14_V2 | 站台伺服器：2xP30 </br>資料庫伺服器：3xP30 |
+|**最多 25 k**       | 站台伺服器：F4S </br>資料庫伺服器：DS12_V2 | 站台伺服器：1xP30 </br>資料庫伺服器：2xP30 (等量)  |
+|**25 k 到 50 k**      | 站台伺服器：F4S </br>資料庫伺服器：DS13_V2 | 站台伺服器：1xP30 </br>資料庫伺服器：2xP30 (等量)   |
+|**50 k 至 100 k**     | 站台伺服器：F8S </br>資料庫伺服器：DS14_V2 | 站台伺服器：2xP30 (等量)   </br>資料庫伺服器：3xP30 (等量)   |
 
 下圖顯示 DS14_V2 上 50k 至 100k 之用戶端的設定範例，其在等量磁碟區中有 3xP30 個磁碟，並有不同的邏輯磁碟區以供 Configuration Manager 安裝和資料庫檔案使用： ![VM)disks](media/vm_disks.png)  
 
@@ -139,9 +139,11 @@ VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援
 
 
 ### <a name="while-i-am-ok-with-the-limitations-of-cloud-based-distribution-points-i-dont-want-to-put-my-management-point-into-a-dmz-even-though-that-is-needed-to-support-my-internet-based-clients-do-i-have-any-other-options"></a>雖然我可以接受雲端架構發佈點的限制，但我不想將管理點放入 DMZ，即使必須這樣才能支援以網際網路為基礎的用戶端。 我有任何其他選項嗎？
-很快就會有！ 我們在 Configuration Manager Technical Preview 1606 版推出了[雲端 Proxy 服務](/sccm/core/get-started/capabilities-in-technical-preview-1606#a-namecloudproxyacloud-proxy-service-for-managing-clients-on-the-internet)。 雲端 Proxy 服務提供簡單的方法，管理網際網路上的 Configuration Manager 用戶端。 部署至 Microsoft Azure 且需要 Azure 訂用帳戶的服務，使用稱為雲端 Proxy 連接器端點的新角色，連接到內部部署的 Configuration Manager 基礎結構。 在它部署及設定好後，用戶端就可以存取內部部署的 Configuration Manager 站台系統角色，不論它們是連接到內部的私人網路還是網際網路。
+是！ 我們在 Configuration Manager 1610 版推出了[雲端管理閘道器](/sccm/core/clients/manage/manage-clients-internet#cloud-management-gateway)作為發行前版本功能 (這項功能最先是以[雲端 Proxy 服務](/sccm/core/get-started/capabilities-in-technical-preview-1606#a-namecloudproxyacloud-proxy-service-for-managing-clients-on-the-internet)出現在 Technical Preview 1606 版中)。
 
-您可以開始在測試環境中測試雲端服務 Proxy，並提供意見反應，幫助我們改進服務。
+**雲端管理閘道**可讓您輕鬆管理網際網路上的 Configuration Manager 用戶端。 部署至 Microsoft Azure 且需要 Azure 訂用帳戶的服務，使用稱為雲端管理閘道連接器端點的新角色，連線到內部部署的 Configuration Manager 基礎結構。 在它部署及設定好後，用戶端就可以存取內部部署的 Configuration Manager 站台系統角色，不論它們是連接到內部的私人網路還是網際網路。
+
+您可以在環境中開始使用雲端管理閘道，並提供意見反應，幫助我們改進服務。 如需發行前版本功能的資訊，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkprereleasea-use-pre-release-features-from-updates)。
 
 ### <a name="i-also-heard-that-you-have-another-new-feature-called-peer-cache-in-the-technical-preview-version-1604-is-that-different-than-branchcache-which-one-should-i-choose"></a>我還聽說你們在 Technical Preview 1604 版中有另一個新功能，稱為對等快取。 它和 BranchCache 不一樣嗎？ 我該選哪一種？
 是的，它們完全不一樣。 [對等快取](/sccm/core/get-started/capabilities-in-technical-preview-1604#bkmk_peercache)是 100% 的原生 Configuration Manager 技術，而 BranchCache 則是 Windows 功能。 兩者對您都很有用，BranchCache 使用廣播尋找所需的內容，而對等快取則使用 Configuration Managers 一般發佈流程和界限群組設定。
@@ -180,6 +182,6 @@ VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Jan17_HO5-->
 
 
