@@ -2,7 +2,7 @@
 title: "內容基礎結構 | Microsoft Docs"
 description: "了解如何部署與管理 System Center Configuration Manager 的內容管理基礎結構。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,25 +17,25 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 35247425252cb3724de2871d713f08469e72555a
+ms.sourcegitcommit: e30538ed925af66e8b7459eb4add9dd992c1ae19
+ms.openlocfilehash: b0f297fddca4252f106dee9d3d5d8911a347825b
 
 
 ---
 # <a name="manage-content-and-content-infrastructure-for-system-center-configuration-manager"></a>Manage content and content infrastructure for System Center Configuration Manager
 
-適用於：System Center Configuration Manager (最新分支)
+*適用對象：System Center Configuration Manager (最新分支)*
 
-當您準備好部署與管理 System Center Configuration Manager 的內容管理基礎結構時，請使用下列主題的下列資訊：  
+當您準備好設定與管理 System Center Configuration Manager 的內容管理基礎結構時，請使用下列主題中資訊：  
 
--   [安裝和設定 System Center Configuration Manager 的發佈點](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md) - 在部署內容前，您必須安裝並設定發佈點。 然後您可以設定發佈點群組，以協助簡化整個基礎結構的內容管理。 本主題中的資訊可協助您完成這些工作，並詳細說明個別發佈點支援之深入又多樣化的設定。  
+-   [為 System Center Configuration Manager 安裝及設定發佈點](../../../../core/servers/deploy/configure/install-and-configure-distribution-points.md)。 在部署內容前，您必須先安裝並設定發佈點。 然後即可設定發佈點群組，以協助簡化整個基礎結構的內容管理。 本主題中的資訊可協助您完成這些工作，並詳細說明個別發佈點支援之深入又多樣化的設定。  
 
--   [部署和管理 System Center Configuration Manager 的內容](../../../../core/servers/deploy/configure/deploy-and-manage-content.md) - 內容部署透過您的網路將檔案和軟體傳輸到發佈點伺服器。 除了簡單的傳輸外，您可以預先設置內容，這是可協助您避免過度使用網路頻寬的一種方法。 本主題中的資訊可協助您進行傳送該內容的基本工作，或有效地使用預先設置的內容  
+-   [Deploy and manage content for System Center Configuration Manager](../../../../core/servers/deploy/configure/deploy-and-manage-content.md) (部署及管理 System Center Configuration Manager 的內容)。 內容部署可透過您的網路傳輸檔案和軟體到發佈點伺服器。 除了簡單的傳輸外，還可以預先設置內容，這是可協助您避免過度使用網路頻寬的一種方法。 本主題中的資訊可協助您進行傳送該內容的基本工作，或有效地使用預先設置的內容。  
 
--   [監視您使用 System Center Configuration Manager 所發佈的內容](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md) - 部署內容時，您可以橫跨整個基礎結構來監視其狀態。 您也可以重新發佈無法連線到發佈點的內容，或取消仍在進行中的發佈。 本主題中的資訊將協助您了解監視內容的項目及方式，包含如何在內容傳輸失敗時修正某些問題。  
+-   [監視您已使用 System Center Configuration Manager 所發佈的內容](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)。 部署內容時，可以橫跨整個基礎結構監視其狀態。 您也可以重新發佈無法連線到發佈點的內容，或取消仍在進行中的發佈。 本主題中的資訊將協助您了解如何監視您的內容，包含如何在內容傳輸失敗時修正某些問題。  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

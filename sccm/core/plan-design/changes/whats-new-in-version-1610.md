@@ -1,8 +1,8 @@
 ---
-title: "1610 版的新功能 | Microsoft Docs"
+title: "1610 新版 |Microsoft Docs"
 description: "下列各節提供 System Center Configuration Manager 1610 版中的變更和推出的新功能。"
 ms.custom: na
-ms.date: 
+ms.date: 11/23/2016
 ms.reviewer: na
 ms.suite: na
 ms.technology:
@@ -16,15 +16,15 @@ ms.author: brenduns
 manager: angrobe
 ROBOTS: NOINDEX, NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
-ms.openlocfilehash: 5121073a335f6722ea1e6cf7669edbf13ba3f9db
+ms.sourcegitcommit: 831d8a66c827d246069c7415cdce7a7c4bb95b33
+ms.openlocfilehash: 19e3099773f887129374413482702de3f4b0a36f
 
 ---
 # <a name="what39s-new-in-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 1610 版的新功能
 
 *適用對象：System Center Configuration Manager (最新分支)*
 
-System Center Configuration Manager 1610 更新最新分支，是執行版本為 1511、1602 或 1606 的原安裝站台提供的主控台內更新。
+System Center Configuration Manager 1610 更新最新分支，是先前安裝為執行版本 1511、1602 或 1606 之站台的主控台內更新。
 
 
 > [!TIP]  
@@ -42,12 +42,12 @@ System Center Configuration Manager 1610 更新最新分支，是執行版本為
 
 
 ## <a name="exclude-clients-from-automatic-upgrade"></a>排除自動升級用戶端
-升級新版本的用戶端軟體時，您可以讓 Windows 用戶端不要升級。 若要這樣做，請在指定要排除升級的集合中納入該用戶端電腦。 針對排除集合中的用戶端，系統會忽略更新用戶端軟體的要求。  如需詳細資訊，請參閱[讓 Windows 用戶端不要升級](../../clients/manage/upgrade/exclude-clients-windows.md)。
+升級新版本的用戶端軟體時，您可以讓 Windows 用戶端不要升級。 若要這樣做，請在指定要排除升級的集合中納入該用戶端電腦。 排除集合中的用戶端，會忽略更新用戶端軟體的要求。  如需詳細資訊，請參閱[讓 Windows 用戶端不要升級](../../clients/manage/upgrade/exclude-clients-windows.md)。
 
 
 ## <a name="improvements-for-boundary-groups"></a>界限群組的改進
 針對界限群組以及界限群組使用發佈點的方式，1610 版導入了一些重要變更。 這些變更可簡化內容基礎結構的設計，同時讓您更充分掌控用戶端如何及何時進行後援，以搜尋其他發佈點作為內容來源位置。 這包括內部部署和雲端架構的發佈點。
-這些改進將您可能很熟悉的現今概念和行為 (例如將發佈點設定為快速或低速)，取代成更容易設定和維護的新模型。 這些變更也是未來變更的基礎，未來變更將會改進要與界限群組關聯的其他站台系統角色。
+這些增強功能取代了您可能已經熟悉的概念與行為 (像是設定發佈點為較快或較慢)。 新模型的設定及維護較為容易。 這些變更也是未來變更的基礎，未來變更將會改進與界限群組相關聯的其他站台系統角色。
 
 更新至 1610 版時，更新會將您目前的界限群組設定轉換為符合新的模型，讓這些變更不會干擾您現有的內容發佈設定。
 
@@ -77,14 +77,14 @@ System Center Configuration Manager 1610 更新最新分支，是執行版本為
 ## <a name="improvements-to-the-windows-10-edition-upgrade-policy"></a>改進 Windows 10 版本升級原則
 在此版本中，已對此原則類型做了下列改進：
 
-- 除了向 Microsoft Intune 註冊的 Windows 10 電腦之外，您現在還可以對執行 Configuration Manager 用戶端的 Windows 10 電腦使用版本升級原則。
+- 除了對 Microsoft Intune 註冊的 Windows 10 電腦之外，您現在還可以對執行 Configuration Manager 用戶端的 Windows 10 電腦，使用版本升級原則。
 - 您可以在精靈中，從 Windows 10 專業版升級到與您的硬體相容的任何平台。
 
 ## <a name="manage-hardware-identifiers"></a>管理硬體識別碼
-現在，您可以提供一份硬體識別碼清單，讓 Configuration Manager 在 PXE 開機及用戶端註冊時略過這些識別碼。 這麼做有助於解決下列兩個常見的問題。
+現在，您可以提供一份硬體識別碼清單，讓 Configuration Manager 在 PXE 開機及用戶端註冊時，應過這些識別碼。 如此有助於解決下列兩個常見的問題：
 
-1. 許多新的裝置 (如 Surface Pro 3) 不包括內建的乙太網路連接埠。 USB 至乙太網路介面卡通常用來建立作業系統部署的有線連線。 不過，基於成本和一般使用性的考量，這通常是共用介面卡。 而該介面卡的 MAC 位址是用來識別裝置，因此每個部署之間，如果沒有額外的系統管理員動作，重複使用介面卡就會產生問題。 現在，使用 Configuration Manager 最新分支 1610 版時，您可以排除這張介面卡的 MAC 位址，以在這種情況下輕鬆重複使用介面卡。
-2. SMBIOS 識別碼應該是唯一的硬體識別碼，但有些專用硬體裝置會建置重複的識別碼。 雖然這種情況不像上述 USB 至乙太網路介面卡的案例那麼常見，但硬體識別碼清單亦可用來解決此問題。
+1. 許多裝置 (如 Surface Pro 3) 不配備有內建的乙太網路連接埠。 USB 至乙太網路介面卡通常用於建立有線連線，供部署作業系統之用。 但因為成本和一般使用性的考量，這些通常是共用的介面卡。 而該介面卡的 MAC 位址是用來識別裝置，因此每個部署之間，如果沒有額外的系統管理員動作，重複使用介面卡就會產生問題。 現在於 Configuration Manager 1610 版中，您可以排除這張介面卡的 MAC 位址，以於此情況下能輕鬆重複使用介面卡。
+2. SMBIOS 識別碼應該是不會重複的硬體識別碼，但有些專用硬體裝置內建有重複的識別碼。 此問題不像一般所述的 USB 至乙太網路介面卡情況，但可利用排除的硬體識別碼的清單加以解決。
 
 如需詳細資訊，請參閱[管理重複的硬體識別碼](/sccm/core/clients/manage/manage-clients#manage-duplicate-hardware-identifiers)。
 
@@ -92,14 +92,14 @@ System Center Configuration Manager 1610 更新最新分支，是執行版本為
 此版本的變更：
 - 之前，您只能從商務用 Windows 市集部署免費應用程式。 Configuration Manager 現在會另外支援部署付費線上授權應用程式 (僅適用已在 Intune 註冊的裝置)。
 - 您現在可以起始商務用 Windows 市集與 Configuration Manager 之間的立即同步處理。
-- 您現在可以修改從 Azure Active Directory 取得的用戶端秘密金鑰
-- 您可以刪除市集的訂閱
+- 現已可修改從 Azure Active Directory 取得的用戶端秘密金鑰。
+- 您可以刪除訂閱市集。
 
 如需詳細資訊，請參閱[使用 System Center Configuration Manager 管理從商務用 Windows 市集購買的應用程式](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)。
 
 
 ## <a name="policy-sync-for-intune-enrolled-devices"></a>適用於 Intune 註冊裝置的原則同步
-現在，您可以透過 Configuration Manager 主控台要求進行 Intune 註冊裝置的原則同步處理，而不需從裝置本身的公司入口網站應用程式要求進行同步處理。 若要檢視同步要求狀態資訊，您可以參閱裝置檢視的 [Remote Sync State] (遠端同步處理狀態) 新資料行，以及每個裝置的 [內容] 對話方塊的探索資料區段。
+現在，可以透過 Configuration Manager 主控台要求來進行 Intune 註冊裝置的原則同步處理，而不需要從裝置本身的公司入口網站應用程式要求進行同步處理。 同步要求狀態資訊會以裝置檢視中的新欄位來提供，稱為 [Remote Sync State] (遠端同步處理狀態)。 每部行動裝置的狀態也會出現在 [內容] 對話方塊的 [探索資料] 區段中。
 如需詳細資訊，請參閱[從 Configuration Manager 主控台遠端同步處理 Intune 註冊裝置上的原則](/sccm/mdm/deploy-use/sync-intune-device)。
 
 
@@ -122,32 +122,32 @@ Configuration Manager 1602 版中引進了軟體中心的自訂商標。 該商�
 
 軟體中心的自訂商標會根據下列規則套用：
 
-1. 如果未安裝「應用程式類別目錄網站點」站台伺服器角色，則軟體中心將會顯示 [電腦代理程式] 用戶端設定之 [顯示在軟體中心的組織名稱] 中指定的組織名稱。 如需相關指示，請參閱[如何設定用戶端設定](../../clients/deploy/configure-client-settings.md)。
+- 如果未安裝「應用程式類別目錄網站點」站台伺服器角色，則軟體中心顯示的組織名稱為 [顯示在軟體中心的組織名稱] 所指定的名稱 (該設定位於 [電腦代理程式] 用戶端設定中)。 如需相關指示，請參閱[如何設定用戶端設定](../../clients/deploy/configure-client-settings.md)。
 
-2. 如果未安裝「應用程式類別目錄網站點」站台伺服器角色，則「軟體中心」將會顯示「應用程式類別目錄網站點」站台伺服器角色內容中指定的組織名稱和色彩。 如需詳細資訊，請參閱[應用程式類別目錄網站點的設定選項](/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#Application-Catalog-website-point)。
+- 如果未安裝「應用程式類別目錄網站點」站台伺服器角色，則軟體中心會顯示「應用程式類別目錄網站點」站台伺服器角色內容中指定的組織名稱和色彩。 如需詳細資訊，請參閱[應用程式類別目錄網站點的設定選項](/sccm/core/servers/deploy/configure/configuration-options-for-site-system-roles#Application-Catalog-website-point)。
 
-3. 如果已設定 Microsoft Intune 訂閱並連線到 Configuration Manager 環境，則軟體中心將會顯示 Intune 訂閱內容中指定的組織名稱、色彩及公司標誌。 如需詳細資訊，請參閱 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/setup-hybrid-mdm#step-3-configure-intune-subscription)。
+- 如果已設定 Microsoft Intune 訂閱並連線到 Configuration Manager 環境，則軟體中心會顯示 Intune 訂閱內容中指定的組織名稱、色彩及公司標誌。 如需詳細資訊，請參閱 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/setup-hybrid-mdm#step-3-configure-intune-subscription)。
 
 
 ## <a name="enforcement-grace-period-for-required-application-and-software-update-deployments"></a>針對必要應用程式和軟體更新部署的強制執行寬限期
-在某些情況下，您可能想要提供更多時間給使用者，以在超過您設定的任何期限之後，還能安裝必要應用程式部署或軟體更新。 當電腦已關閉一段時間，而且需要安裝大量應用程式或更新部署時，通常可能會需要此設定。 例如，如果使用者剛結束休假，他們可能必須等候很長的時間，讓逾期的應用程式部署完成安裝。 為了協助解決這個問題，您現在可以藉由將 Configuration Manager 用戶端設定部署至集合，來定義施行寬限期。
+在某些情況下，您可能想要提供更多時間給使用者，以在超過您設定的任何期限之後，還能安裝必要應用程式部署或軟體更新。 例如，當電腦已關閉一段時間，而且需要安裝大量應用程式或更新部署時，可能會需要此設定。 例如，如果使用者剛結束休假，他們可能必須等候很長的時間，讓逾期的應用程式部署完成安裝。 為了協助解決這個問題，您現在可以藉由將 Configuration Manager 用戶端設定部署至集合，來定義施行寬限期。 
 
 若要設定寬限期，請採取下列動作：
 1.      在用戶端設定的 [電腦代理程式] 頁面上，將新內容 [延後到部署期限後施行的寬限期 (小時)] 設定為 **1** 到 **120** 小時之間的值。
-2.      在新的必要應用程式部署中，或在現有部署的內容中，選取 [排程] 頁面上的 [Delay enforcement of this deployment according to user preferences, up to the grace period defined in client settings] (根據使用者喜好設定，延遲強制施行此部署，最多可延後用戶端設定中所定義的寬限期) 核取方塊。 如果部署有選取此核取方塊，且其部署目標為您已部署用戶端設定的裝置，則所有部署都會使用此強制寬限期。
+2.      在新的必要應用程式部署中，或在現有部署的內容中，選取 [排程] 頁面上的 [根據使用者喜好設定，延遲強制施行此部署，最多可延後用戶端設定中所定義的寬限期] 核取方塊。 如果部署有選取此核取方塊，且其部署目標為您已部署用戶端設定的裝置，則所有部署都會使用此強制寬限期。
 
 如果您設定施行寬限期並選取此核取方塊，一旦應用程式安裝到期，就會在使用者所設定寬限期內的第一個非營業時間進行安裝。 不過如果需要，使用者仍可隨時開啟 [軟體中心] 並安裝應用程式。 過了寬限期後，就會強制還原為逾時部署的標準行為。 [軟體更新部署精靈]、[自動部署規則精靈] 和 [內容] 頁面都已新增類似的選項。
 
 
 
-## <a name="improved-functionality-for-required-software-dialogs"></a>所需軟體對話方塊的功能改善
-當使用者收到所需軟體時，可從 [延遲並於此之後再提醒我一次:] 設定的值下拉式清單中進行選取：
-- 稍後︰指定通知根據用戶端代理程式設定中所設定的通知設定進行排程。
-- 固定時間︰指定通知將排程在選取的時間後再次顯示。 例如，如果使用者選取 30 分鐘，就會在 30 分鐘後再次顯示通知。
+## <a name="improved-functionality-in-dialog-boxes-about-required-software"></a>改善了對話方塊中有關所需軟體的功能
+當使用者收到所需軟體時，可從 [延遲並於此之後再提醒我一次:] 設定的值下拉式清單中進行選取： 
+- **稍後**。 指定通知根據用戶端代理程式設定中所設定的通知設定進行排程。
+- **固定時間**。 指定通知將排程在選取的時間之後，再次顯示 (例如，30 分鐘內)。
 
 ![用戶端代理程式設定中的 [電腦代理程式] 頁面](media/client-notification-settings.png)
 
-最大延遲時間一律會以用戶端代理程式設定中每次設定部署時間表時一起設定的通知值會依據。 例如，如果將 [電腦代理程式] 頁面上的設定 [部署期限超過 24 小時，每隔下列時間通知使用者 (小時)] 設定為 10 小時，而且啟動對話方塊時還有 24 小時以上才會超過期限，則最多會有 10 小時 (但永不超過) 對使用者顯示一組延遲選項。 隨著期限將近，對話方塊會顯示愈來愈少的選項，並與部署時間表之每個元件的相關用戶端代理程式設定一致。
+延期時間上限取決於用戶端代理程式設定中設定的通知值。 例如，如果將 [電腦代理程式] 頁面上的設定 [部署期限超過 24 小時，每隔下列時間通知使用者 (小時)] 設定為 10 小時，而且還有 24 小時以上才會截止，則使用者會看到一組不超過 10 小時的延遲選項。 隨著期限將近，會顯示愈來愈少的選項，並會與部署時間表之每項元件的相關用戶端代理程式設定一致。
 
 此外，針對高風險部署 (例如部署作業系統的工作順序)，現在會採用更入侵式的使用者通知體驗。 每次通知使用者需要重要的軟體維護時，都會在使用者的電腦上顯示類似如下的對話方塊，而不是顯示暫時性工作列通知：
 
@@ -159,22 +159,24 @@ Configuration Manager 1602 版中引進了軟體中心的自訂商標。 該商�
 - [如何設定用戶端設定](../../clients/deploy/configure-client-settings.md)
 
 ## <a name="software-updates-dashboard"></a>軟體更新儀表板
-您可以使用新的軟體更新儀表板，來檢視組織裝置目前的合規性狀態，並快速分析資料查看哪些裝置有風險。 若要檢視儀表板，請瀏覽至 [監視] > [概觀] > [安全性] > [Software Updates Dashboard] (軟體更新儀表板)。
+使用新的軟體更新儀表板可檢視組織裝置目前的合規性狀態，並快速分析資料查看哪些裝置有風險。 若要檢視儀表板，請瀏覽至 [監視] > [概觀] > [安全性] > [Software Updates Dashboard] (軟體更新儀表板)。
 
 如需詳細資訊，請參閱[監視軟體更新](/sccm/sum/deploy-use/monitor-software-updates)。
 
 
 ## <a name="improvements-to-the-application-request-process"></a>應用程式要求程序的改進
-核准安裝應用程式之後，您仍可以在 Configuration Manager 主控台中按一下 [拒絕]，選擇拒絕要求 (過去此按鈕在核准之後就無法使用)。
+核准安裝應用程式之後，仍可在 Configuration Manager 主控台中按一下 [拒絕]，選擇拒絕該要求。 在此之前，此按鈕於核准之後會無法使用。
+
 這個動作並不會解除安裝任何裝置上的應用程式。 不過，它會防止使用者從軟體中心安裝新的應用程式複本。
 
 ## <a name="filter-by-content-size-in-automatic-deployment-rules"></a>自動部署規則中依內容大小進行篩選
-您現在可以在自動部署規則中依軟體更新的內容大小進行篩選。 例如，您可以將 [內容大小 (KB)] 篩選設定為 [< 2048]，僅下載小於 2MB 的軟體更新。 使用此篩選可防止自動下載大型軟體更新，以在網路頻寬有限時，提供簡化 Windows 下層服務的更佳支援。 如需詳細資訊，請參閱：
-- [Configuration Manager and Simplified Windows Servicing on Down Level Operating Systems](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/07/configuration-manager-and-simplified-windows-servicing-on-down-level-operating-systems/) (Configuration Manager 及下層作業系統上簡化的 Windows 服務)。
+您現在可以在自動部署規則中依軟體更新的內容大小進行篩選。 例如，您可以僅下載小於 2MB 的軟體更新，可以將 [內容大小 (KB)] 篩選設定為 [< 2048]。 使用此篩選可避免自動下載大型軟體更新，以在網路頻寬有限時，能提供較簡單而略為低階的 Windows 服務支援。 如需詳細資訊，請參閱：
+- [Configuration Manager and Simplified Windows Servicing on Down Level Operating Systems](https://blogs.technet.microsoft.com/enterprisemobility/2016/10/07/configuration-manager-and-simplified-windows-servicing-on-down-level-operating-systems/) (略為低階之作業系統上 Configuration Manager 及簡化的 Windows 服務)
 - [自動部署軟體更新](/sccm/sum/deploy-use/automatically-deploy-software-updates)
 
-#### <a name="to-configure-the-content-size-field"></a>設定內容大小欄位
-若要設定 [內容大小 (KB)] 欄位，請在建立 ADR 時移至 [建立自動部署規則精靈] 中的 [軟體更新] 頁面，或移至現有 ADR 內容中的 [軟體更新] 索引標籤。
+若要設定 [內容大小 (KB)] 欄位，請執行下列其中一項作業：
+- 當您建立自動部署規則時，請在 [建立自動部署規則精靈] 中前往 [軟體更新] 頁面。
+- 在現有的自動部署規則內容中，前往 [軟體更新] 索引標籤。
 
 ## <a name="office-365-client-management-dashboard"></a>Office 365 用戶端管理儀表板
 您現在可在 Configuration Manager 主控台中使用 Office 365 用戶端管理儀表板。 若要檢視此儀表板，請移至 [軟體程式庫] > [概觀] > [Office 365 用戶端管理]。
@@ -186,12 +188,12 @@ Configuration Manager 1602 版中引進了軟體中心的自訂商標。 該商�
 - Office 365 用戶端語言
 - Office 365 用戶端通道     
 
-如需詳細資訊，請參閱[管理 Office 365 ProPlus 更新](/sccm/sum/deploy-use/manage-office-365-proplus-updates)
+如需詳細資料，請參閱[管理 Office 365 ProPlus 更新](/sccm/sum/deploy-use/manage-office-365-proplus-updates)。
 
 ## <a name="task-sequence-steps-to-manage-bios-to-uefi-conversion"></a>用於管理 BIOS 轉換到 UEFI 的工作順序步驟
-您現在可以使用新變數 TSUEFIDrive 來自訂作業系統部署工作順序，如此一來，「重新啟動電腦」步驟就會在硬碟上準備 FAT32 磁碟分割，以便轉換成 UEFI。 下列程序提供範例，說明如何建立工作順序步驟，以準備用於將 BIO 轉換成 UEFI 的硬碟。 如需詳細資訊，請參閱[管理 BIOS 到 UEFI 轉換的工作順序步驟](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion)。
+您現在可以使用新變數 TSUEFIDrive 來自訂作業系統部署工作順序，如此一來，「重新啟動電腦」步驟就會在硬碟上準備 FAT32 磁碟分割，以便轉換成 UEFI。 下列程序提供範例，說明如何建立工作順序步驟，以準備用於將 BIO 轉換成 UEFI 的硬碟。 如需詳細資料，請參閱 [Task sequence steps to manage BIOS to UEFI conversion](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion) (管理 BIOS 到 UEFI 轉換的工作順序步驟)。
 
-##  <a name="improvements-to-the-prepare-configmgr-client-for-capture-task-sequence-step"></a>準備 ConfigMgr 用戶端以進行擷取之工作順序步驟的改進  
+##  <a name="improvements-to-the-task-sequence-step-prepare-configmgr-client-for-capture"></a>改進工作順序步驟︰準備 ConfigMgr 用戶端進行擷取  
 「準備 ConfigMgr 用戶端」步驟現在會完全移除 Configuration Manager 用戶端，而不是只移除金鑰資訊。 當工作順序部署擷取的作業系統映像時，每次都會安裝新的 Configuration Manager 用戶端。 如需詳細資訊，請參閱[工作順序步驟](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareConfigMgrClientforCapture)。
 
 
@@ -200,15 +202,15 @@ Configuration Manager 1602 版中引進了軟體中心的自訂商標。 該商�
 您現在可以在 Configuration Manager 主控台中，使用 [監視] 工作區底下的新圖表，快速檢視裝置的整體合規性及不符合規範的主要原因。 您可以按一下圖表中的區段，向下切入至該類別內的裝置清單。 如需詳細資訊，請參閱[監視合規性政策](/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)。
 
 
-## <a name="lookout-integration-for-hybrid-implementations-to-protect-ios-and-android-devices"></a>針對混合式實作整合 Lookout 以保護 iOS 和 Android 裝置
+## <a name="lookout-integration-for-hybrid-implementations-to-protect-ios-and-android-devices"></a>保護 iOS 和 Android 裝置的混合式實作 Lookout 整合
 Microsoft 整合 Lookout 的行動威脅防護解決方案，以透過偵測裝置上的惡意程式碼、高風險應用程式等功能，來保護 iOS 和 Android 行動裝置。 Lookout 的解決方案有助您判斷威脅等級，並可讓您進行相關設定。 您可以在 Configuration Manager 中建立合規性政策規則，依據 Lookout 的風險評估來判斷裝置的合規性。 您可以使用條件式存取原則，依據裝置合規性狀態，來允許或封鎖公司資源的存取。 若要深入了解這項整合以及它的運作方式，請參閱[根據裝置、網路和應用程式風險管理存取](/sccm/protect/deploy-use/manage-access-based-on-device-network-app-risk)。
 
-如果使用者的 iOS 裝置不符合規範，系統會提示他們進行註冊，並要求在裝置上安裝 Lookout for Work 應用程式、加以啟用，並修補 Lookout for Work 應用程式回報的威脅之後，才能存取公司資料。 了解如何[設定和部署 Lookout for Work 應用程式](/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps)。
+將會對不符合規範的 iOS 裝置之使用者，提示進行註冊。 會要求使用者在其裝置上安裝 Lookout for Work 應用程式並加以啟用，然後修補 Lookout for Work 應用程式回報的威脅之後，才可存取公司資料。 了解如何[設定和部署 Lookout for Work 應用程式](/sccm/protect/deploy-use/configure-and-deploy-lookout-for-work-apps)。
 
 
 
 ## <a name="new-compliance-settings-for-configuration-items"></a>設定項目的新相容性設定
-我們新增了許多新設定，可供您針對各種裝置平台在設定項目中使用。 這些是先前存在於 Microsoft Intune 獨立設定中的設定，現在當您搭配使用 Intune 和 Configuration Manager 時可以使用這些設定。
+您可在多種裝置平台的設定項目中，使用許多新的設定。 這些是先前存在於 Microsoft Intune 獨立設定中的設定，現在當您搭配使用 Intune 和 Configuration Manager 時可以使用這些設定。
 如需詳細資訊，請參閱[不使用 System Center Configuration Manager 用戶端管理的裝置設定項目](/sccm/compliance/deploy-use/configuration-items-for-devices-managed-without-the-client)。
 
 ### <a name="new-settings-for-android-devices"></a>Android 裝置的新設定
@@ -315,6 +317,6 @@ Microsoft 整合 Lookout 的行動威脅防護解決方案，以透過偵測裝�
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

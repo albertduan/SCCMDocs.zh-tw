@@ -2,7 +2,7 @@
 title: Endpoint Protection | Microsoft Docs
 description: "了解如何管理 Configuration Manager 階層中用戶端電腦的反惡意程式碼原則和 Windows 防火牆安全性。"
 ms.custom: na
-ms.date: 01/17/2017
+ms.date: 02/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
-ms.openlocfilehash: dd08e9ae6827e5f59eaf3414adbcc8667bc75140
+ms.sourcegitcommit: 4688b4b12a7afa5fcfdc0e42f984271d98f10316
+ms.openlocfilehash: 90e6d82e7fd1ff0ad4f1d616cc23201769fe26e2
 
 
 ---
@@ -38,7 +38,7 @@ System Center Configuration Manager 中的 Endpoint Protection 可讓您管理 C
 
 -   傳送電子郵件通知、使用主控台內監視，以及檢視報告，以在用戶端電腦上偵測到惡意程式碼時通知系統管理使用者。  
 
-Windows 10 電腦不需要任何其他用戶端來進行 Endpoint Protection 管理。 在 Windows 8.1 和舊版的電腦上，Endpoint Protection 除了 Configuration Manager 用戶端之外還會安裝自己的用戶端。 Endpoint Protection 可以管理。 Endpoint Protection 用戶端具有下列功能：  
+從 Windows 10 以及 Windows Server 2016 開始，電腦不需要任何其他用戶端來進行 Endpoint Protection 管理。 在 Windows 8.1 和舊版的電腦上，Endpoint Protection 除了 Configuration Manager 用戶端之外還會安裝自己的用戶端。 Endpoint Protection 用戶端具有下列功能：  
 
 -   惡意程式碼和間諜軟體的偵測與補救  
 

@@ -2,7 +2,7 @@
 title: "管理大量採購的 iOS 應用程式 | Microsoft Docs"
 description: "部署、管理和追蹤透過 iOS 應用程式市集購買的應用程式授權。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/08/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
-ms.openlocfilehash: cd9edf61d151ac8334ace0bf668fa4c919d8c75b
+ms.sourcegitcommit: 191e01f6b8a1ef2b9e193abd62d7981e6c977c1d
+ms.openlocfilehash: fb771bc94f49f25cfe01ff67c88572c8f2b18909
 
 
 ---
@@ -91,7 +91,7 @@ ms.openlocfilehash: cd9edf61d151ac8334ace0bf668fa4c919d8c75b
 1.  在 Configuration Manager 主控台中，選擇 [軟體程式庫] > [應用程式管理] > [License Information for Store Apps] (市集應用程式的授權資訊)。  
 
 3.  選擇要部署的應用程式，然後在 [常用] 索引標籤的 [建立] 群組中，選擇 [建立應用程式]。
-隨即建立包含商務用 Windows 市集應用程式的 Configuration Manager 應用程式。 然後可以如處理任何其他 Configuration Manager 應用程式一樣，部署及監視此應用程式。
+建立的 Configuration Manager 應用程式包含您所購買的 iOS 應用程式。 然後可以如處理任何其他 Configuration Manager 應用程式一樣，部署及監視此應用程式。
 
     > [!IMPORTANT]  
     > 部署目的必須選擇 [必要]。 目前不支援可用的安裝。
@@ -111,6 +111,6 @@ ms.openlocfilehash: cd9edf61d151ac8334ace0bf668fa4c919d8c75b
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

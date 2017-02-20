@@ -2,10 +2,10 @@
 title: "升級 Analytics | System Center Configuration Manager"
 description: "整合 Upgrade Analytics 與 Configuration Manager。 在管理主控台中存取升級相容性資料。 設定要升級或修復的目標裝置。"
 keywords: 
-author: nbigman
-ms.author: nbigman
+author: brenduns
+ms.author: brenduns
 manager: angerobe
-ms.date: 11/23/2016
+ms.date: 12/3/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
 translationtype: Human Translation
-ms.sourcegitcommit: bf28164fc2594d2557db5626a6f52c32ad99a1fe
-ms.openlocfilehash: fa90fa0da348e7cca186ff8066c7a9fa98c57cf5
+ms.sourcegitcommit: 831d8a66c827d246069c7415cdce7a7c4bb95b33
+ms.openlocfilehash: 07747b86bad0d1ce6302521093fc3c4433c59325
 
 
 ---
@@ -73,13 +73,13 @@ Upgrade Analytics 部署指令碼執行下列動作︰
 - 設定商業識別碼 + CommercialDataOptIn + RequestAllAppraiserVersions 索引鍵。  
 - 確認使用者電腦可以將資料傳送給 Microsoft。  
 - 檢查電腦是否有擱置重新啟動。   
-- 確認已安裝最新版知識庫套件 10.0.x (需要 10.0.14348 或後續版本)。  
+- 確認已安裝最新版的知識庫套件 10.0.x (需要 10.0.14913 或後續版本)。  
 - 啟用時，會開啟詳細資訊模式來進行疑難排解。  
 - 起始收集 Microsoft 評估組織升級整備所需的遙測資料。  
 - 啟用時，會在 cmd 視窗中顯示指令碼進度，讓您可以看到問題 (每個步驟的成功或失敗) 以及 (或) 寫入記錄檔。  
-  
+
 ### <a name="to-run-the-upgrade-analytics-deployment-script"></a>執行 Upgrade Analytics 部署指令碼：  
-  
+
 1. 下載 [Upgrade Analytics 部署指令碼](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409)，並解壓縮 UpgradeAnalytics.zip。 只有在您想要以疑難排解模式執行指令碼時，才需要 [診斷] 資料夾中的檔案。  
 2. 在 RunConfig.bat 中編輯這些參數︰  
 - 記錄資訊的存放位置。 範例：%SystemDrive%\UADiagnostics。 您可以在遠端檔案共用或本機目錄上儲存記錄資訊。 如果封鎖指令碼無法建立所指定路徑的記錄檔，則會建立具有 Windows 目錄之磁碟機中的記錄檔。  
@@ -90,12 +90,12 @@ Upgrade Analytics 部署指令碼執行下列動作︰
     - logMode = 2 僅記錄到檔案  
     - 如需疑難排解，請將 **isVerboseLogging** 設定為 **$true** 以產生可協助診斷問題的記錄資訊。 根據預設，**isVerboseLogging** 設定為 **$false**。 請確定 [診斷] 資料夾安裝在與使用此模式之指令碼相同的目錄。  
     - 如果使用者需要重新啟動電腦，請通知使用者。 根據預設，這會設定為 off。  
-  
+
 3. 完成編輯 RunConfig.bat 中的參數之後，請以系統管理員身分執行指令碼。  
-  
-  
+
+
 ## <a name="view-microsoft-upgrade-analytics-properties-in-configuration-manager"></a>在 Configuration Manager 中檢視 Microsoft Upgrade Analytics 內容  
-  
+
 1.  在 Configuration Manager 主控台中，瀏覽至 [雲端服務]，然後選擇 [OMS 連接器] 開啟 [OMS Connection Properties] (OMS 連線內容) 頁面。  
 
 2.  此頁面有兩個索引標籤︰
@@ -113,6 +113,6 @@ Upgrade Analytics 部署指令碼執行下列動作︰
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

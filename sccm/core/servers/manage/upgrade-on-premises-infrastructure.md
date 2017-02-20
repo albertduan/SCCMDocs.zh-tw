@@ -2,7 +2,7 @@
 title: "升級內部部署基礎結構 | Microsoft Docs"
 description: "了解如何升級基礎結構 (例如 SQL Server 和站台系統的站台作業系統)。"
 ms.custom: na
-ms.date: 10/28/2016
+ms.date: 2/2/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4a8d98addcd463eb82d8b7100b44254a10d21992
-ms.openlocfilehash: b79346968edf88443f8e30691aa4baec7b81699f
+ms.sourcegitcommit: 83c8492191f40fc4d582562268db0d58a0f9cdde
+ms.openlocfilehash: a5d8496d98bd7f202ffbe8859981e94457ffa5c4
 
 
 ---
@@ -32,7 +32,7 @@ ms.openlocfilehash: b79346968edf88443f8e30691aa4baec7b81699f
 
 - 如果您想要將 System Center Configuration Manager 基礎結構更新至新版本，請參閱 [System Center Configuration Manager 的更新](/sccm/core/servers/manage/updates)。
 
-##  <a name="a-namebkmksupconfigupgradesitesrva-upgrade-site-operating-system-of-site-systems"></a><a name="BKMK_SupConfigUpgradeSiteSrv"></a> 升級站台系統的站台作業系統  
+##  <a name="a-namebkmksupconfigupgradesitesrva-upgrade-the-operating-system-of-site-systems"></a><a name="BKMK_SupConfigUpgradeSiteSrv"></a>升級站台系統的作業系統  
  Configuration Manager 在下列案例中支援就地升級裝載站台伺服器的伺服器的作業系統，以及裝載任何站台系統角色的遠端伺服器的作業系統︰  
 
 -   如果 Configuration Manager 仍然支援產生的 Windows Service Pack 層級，則會就地升級至更高版本的 Windows Server Service Pack。  
@@ -213,6 +213,6 @@ ms.openlocfilehash: b79346968edf88443f8e30691aa4baec7b81699f
 
 
 
-<!--HONumber=Dec16_HO5-->
+<!--HONumber=Feb17_HO1-->
 
 

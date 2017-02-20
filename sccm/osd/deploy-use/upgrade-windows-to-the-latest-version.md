@@ -1,8 +1,8 @@
 ---
 title: "將 Windows 升級至最新版本 | Microsoft Docs"
-description: "了解如何在 Configuration Manager 中使用獨立媒體或軟體中心，以將作業系統從 Windows 7 或更新版本升級至 Windows 10。"
+description: "了解如何使用 Configuration Manager，將作業系統從 Windows 7 或更新版本升級到 Windows 10。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/06/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 147841212dbb85dd9d4ee7c8a79ca7869584fd99
+ms.sourcegitcommit: 288a4c649f371d9701fe7249449356aa222bf372
+ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
 
 
 ---
@@ -69,6 +69,9 @@ ms.openlocfilehash: 147841212dbb85dd9d4ee7c8a79ca7869584fd99
 
      使用[建立工作順序以升級作業系統](create-a-task-sequence-to-upgrade-an-operating-system.md)中的步驟，自動化升級作業系統。  
 
+    > [重要] 當您使用獨立媒體時，工作順序必須內含開機映像，在 [工作順序媒體精靈] 中才可使用該媒體。
+
+
     > [!NOTE]  
     >  您通常會使用[建立工作順序以升級作業系統](create-a-task-sequence-to-upgrade-an-operating-system.md)中的步驟建立工作順序，將作業系統升級為 Windows 10。 該工作順序包含 [升級作業系統] 步驟，以及其他建議的步驟和群組，以處理端對端升級程序。 不過，您可以建立自訂工作順序，並新增[升級作業系統](../understand/task-sequence-steps.md#BKMK_UpgradeOS)工作順序步驟，將作業系統升級。 這是將作業系統升級為 Windows 10 的唯一必要步驟。 如果您選擇這個方法，請在 [升級作業系統] 步驟之後也同時新增[重新啟動電腦](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer)步驟，完成升級。 請務必使用 [目前安裝的預設作業系統] 設定，將電腦重新啟動為已安裝的作業系統，而不是 Windows PE。  
 
@@ -88,6 +91,6 @@ ms.openlocfilehash: 147841212dbb85dd9d4ee7c8a79ca7869584fd99
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

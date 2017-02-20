@@ -1,8 +1,8 @@
 ---
-title: "累加版本 | Microsoft Docs"
+title: "System Center Configuration Manager 累加版本 | Microsoft Docs"
 description: "了解如何安裝與管理 System Center Configuration Manager 更新。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/6/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
-ms.openlocfilehash: afc73be528c3ac4a35b72631e4479338e127e4dc
+ms.sourcegitcommit: 25627c625f09084e5ff2ca6d25f66396052b74b0
+ms.openlocfilehash: b296a5471fbd9d743c7877f0161b818a06c9d349
 
 ---
 # <a name="whats-new-in-system-center-configuration-manager-incremental-versions"></a>System Center Configuration Manager 累加版本的新功能
@@ -27,24 +27,24 @@ ms.openlocfilehash: afc73be528c3ac4a35b72631e4479338e127e4dc
 
 
 
- System Center Configuration Manager 會使用主控台內的[更新與服務](/sccm/core/servers/manage/updates)程序，輕鬆探索及安裝 Configuration Manager 更新。 這表示沒有更多的 Service Pack 或累積更新版本要追蹤，或搜尋最新版本或更新的下載。
+ System Center Configuration Manager 會使用主控台內的[更新與服務](/sccm/core/servers/manage/updates)程序，輕鬆探索及安裝 Configuration Manager 更新。 這表示沒有要追蹤的其他 Service Pack 或累積更新版本。 您不再需要搜尋是否有最新版本或更新可供下載。
 
- 而若要將產品更新至新版的最新分支，您要改用 Configuration Manager 主控台來尋找，然後[安裝 System Center Configuration Manager 的主控台內更新](../../../core/servers/manage/install-in-console-updates.md)。 每年發行幾次包含產品更新的新版本。 每個版本也會推出新功能。  
+ 要將產品更新至目前分支的最新版時，改用 Configuration Manager 主控台來尋找，然後[安裝主控台內更新](../../../core/servers/manage/install-in-console-updates.md)。 每年會發行幾次包含產品更新的新版本。 每個版本也會推出新功能。  
 
- 當您安裝有新功能的更新時，您可以選擇在部署中使用 (或不使用) 這些功能。 不同的更新版本是以年月的數字予以識別，如 1511 表示 2015 年 11 月 (System Center Configuration Manager 首次發行製造的月份)。 自 2016 年開始，後面的更新版本名稱，如 1602 則表示於 2016 年 2 月建立的更新。
+ 當您安裝有新功能的更新時，可以選擇在部署中使用 (或不使用) 這些功能。 不同的更新版本會以年度及月份表示。 例如，1511 版表示 2015 年 11 月 ( System Center Configuration Manager 目前分支首次發行製造的月份)。 從 2016 年開始，後續更新的版本名稱 (像是 1602，則代表 2016 年 2 月所建立的更新。
 
- 這些更新版本對於了解 System Center Configuration Manager 安裝的累加版本以及可在部署中啟用的功能十分重要。
+ 這些更新版本對於了解 System Center Configuration Manager 安裝的累加版本，以及可在部署中啟用的功能來說十分重要。
 
- System Center Configuration Manager 最新分支的初始版本也以 1511 版表示。 自此初始版本以降還有其他更新。 請使用下列連結探索每個版本的最新功能︰
+ 初始版本的 System Center Configuration Manager 最新分支是 1511 版本。 自此版本初次發行以來，有提供其他更新。 請使用下列連結探索每個版本的最新功能︰
   - [1610 版的新功能](../../../core/plan-design/changes/whats-new-in-version-1610.md)
   - [1606 版的新功能](../../../core/plan-design/changes/whats-new-in-version-1606.md)
   - [1602 版的新功能](../../../core/plan-design/changes/whats-new-in-version-1602.md)
 
 
- 每個更新版本在發行後都有一年支援。 建議您儘可能保持最新的更新版本。 如需詳細資訊，請參閱 [System Center Configuration Manager 最新分支版本的支援](../../../core/servers/manage/current-branch-versions-supported.md)。  
+ 每個更新版本在發行後都有一年支援。 最好是盡可能地維持在最新的更新版本。 如需詳細資訊，請參閱 [System Center Configuration Manager 最新分支版本的支援](../../../core/servers/manage/current-branch-versions-supported.md)。  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

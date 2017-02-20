@@ -5,7 +5,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 01/04/2017
+ms.date: 02/03/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,8 +13,8 @@ ms.technology:
 - configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 translationtype: Human Translation
-ms.sourcegitcommit: 6bb2bf0a029bc21e9420ac0ba782e8ea21291896
-ms.openlocfilehash: df9ad09c4ce0c2a18ee012cd3ace7b1a850df7b4
+ms.sourcegitcommit: 5ab49481a78eda044350addab86ee6f8ef1c0946
+ms.openlocfilehash: fe8bf45970e34af0795a5a9a4c3aa985e446784d
 
 ---
 
@@ -67,8 +67,7 @@ ms.openlocfilehash: df9ad09c4ce0c2a18ee012cd3ace7b1a850df7b4
 
 1.  [確認需求](https://technet.microsoft.com/library/mt628083.aspx)：請見主題的＜使用 Configuration Manager 管理 Office 365 用戶端更新的需求＞一節中有關使用 Configuration Manager 管理 Office 365 用戶端更新的需求。  
 
-2.  [設定軟體更新點](../get-started/configure-classifications-and-products.md)，以同步處理 Office 365 用戶端更新。 設定分類的 [更新]，然後針對產品選取 [Office 365 用戶端]。 您可能必須至少同步處理一次軟體更新，才有 Office 365 用戶端產品可供選擇。 設定軟體更新點使用 [更新] 分類之後，必須同步處理軟體更新。  
-
+2.  [設定軟體更新點](../get-started/configure-classifications-and-products.md)，以同步處理 Office 365 用戶端更新。 設定分類的 [更新]，然後針對產品選取 [Office 365 用戶端]。 您可能必須至少同步處理一次軟體更新，才有 Office 365 用戶端產品可供選擇。 設定軟體更新點使用 [更新] 分類之後，必須同步處理軟體更新。
 3.  啟用 Office 365 用戶端從 Configuration Manager 接收更新。 您可以使用 Configuration Manager 用戶端設定來執行這項操作，或使用群組原則。 使用下列方法之一啟用用戶端：  
     - 方法 1︰從 Configuration Manager 1606 版開始，您可以使用 Configuration Manager 用戶端設定來管理 Office 365 用戶端代理程式。 在設定這項設定並部署 Office 365 更新之後，Configuration Manager 用戶端代理程式會與 Office 365 用戶端代理程式進行通訊，從發佈點下載 Office 365 更新並安裝它們。 Configuration Manager 採用 Office 365 ProPlus 用戶端的清查設定。
       1.  在 Configuration Manager 主控台中，按一下 [管理] > [概觀] > [用戶端設定]。  
@@ -79,47 +78,54 @@ ms.openlocfilehash: df9ad09c4ce0c2a18ee012cd3ace7b1a850df7b4
 
     - 方法 2：使用 Office 部署工具或使用群組原則，[啟用 Office 365 用戶端以從 Configuration Manager 接收更新](https://technet.microsoft.com/library/mt628083.aspx#BKMK_EnableClient)。  
 
-4. [部署 Office 365 更新](deploy-software-updates.md)至用戶端。  
+4. [部署 Office 365 更新](deploy-software-updates.md)至用戶端。   
 
-<!--  ## Add other languages for Office 365 update downloads
-Beginning in Configuration Manager version 1610, you can add support for Configuration Manager to download updates for any languages supported by Office 365 regardless of whether they are supported in Configuration Manager.
+## <a name="add-other-languages-for-office-365-update-downloads"></a>為 Office 365 更新下載新增其他語言
+從 Configuration Manager 1610 版開始，您可為 Configuration Manager 新增支援，下載 Office 365 支援的任一語言之更新，而不論在 Configuration Manager 中是否支援這些語言。
+> [!IMPORTANT]  
+> 設定其他 Office 365 更新語言是全站台設定。 使用下列程序新增語言之後，將會下載這些語言的所有 Office 365 更新，以及您在 [下載軟體更新] 或 [軟體更新精靈] 中 [語言選擇] 頁面內所選取的語言之所有 Office 365 更新。
 
-### To add support to download updates for additional languages
-Use the following procedure on the central administration site, or stand-alone primary site, where the software update point site system role is installed.
-1. From a command prompt, type *wbemtest* as an administrative user to open the Windows Management Instrumentation Tester.
-2. Click **Connect**, and then type *root\sms\site_<siteCode>*.
-3. Click **Query**, and then run the following query:
-   *select &#42; from SMS_SCI_Component where componentname ="SMS_WSUS_CONFIGURATION_MANAGER"*
-4. Double-click the object with the site code for the central administration site or stand-alone primary site.
+### <a name="to-add-support-to-download-updates-for-additional-languages"></a>新增支援以下載其他語言的更新
+請在安裝有軟體更新點站台系統角色的管理中心網站或獨立主要站台中，使用下列程序。
+1. 從命令提示字元處，以系統管理使用者身分輸入 *wbemtest*，開啟 Windows Management Instrumentation 測試器。
+2. 按一下 [連線]，然後輸入 *root\sms\site_<&lt;siteCode&gt;*。
+3. 按一下 [查詢]，然後執行下列查詢︰*select &#42; from SMS_SCI_Component where componentname ="SMS_WSUS_CONFIGURATION_MANAGER"*  
+   ![WMI 查詢](..\media\1-wmiquery.png)
+4. 在 [結果] 窗格中，於具有管理中心網站或獨立主要站台的站台碼之物件上按兩下。
+5. 選取 [內容] 屬性，按一下 [編輯內容]，然後按一下 [檢視內嵌項]。
+![內容編輯器](..\media\2-propeditor.png)
+6. 從第一個查詢結果開始，開啟每個物件，直到找到 **PropertyName**屬性為 **AdditionalUpdateLanguagesForO365** 為止。
+7. 選取 [Value2]，然後按一下 [編輯內容]。  
+![編輯 Value2 內容](..\media\3-queryresult.png)
+8. 新增其他語言至 [Value2] 內容，然後按一下 [儲存內容]。  
+例如，-pt-pt (葡萄牙文 - 葡萄牙)、af-za (南非荷蘭文 - 南非)、nn-no (挪威文 (耐諾斯克) - 挪威) 等等。  
+![在 [內容編輯器] 中新增語言](..\media\4-props.png)  
+9. 依序按一下 [關閉]、[關閉]、[儲存內容]、[儲存物件] (如果按一下 [關閉]，以下的值都會捨棄)，按一下 [關閉]，然後按一下 [結束]，結束 Windows Management Intstrumentation 測試器。
+10. 在 Configuration Manager 主控台中，前往 [軟體程式庫] > [概觀] > [Office 365 用戶端管理] > [Office 365 更新]。
+11. 現在，當您下載 Office 365 更新時，將會下載您在精靈中選取的語言，以及您在此程序中設定的語言。 為確認下載的這些語言更新，請前往更新的套件來源，並尋找具備該檔案名稱語言代碼的檔案。  
+![其他語言的檔名](..\media\5-verification.png)
 
-5. Browse the properties for View Embedded.
-3). Find the SMS_EmbeddedProperty instance with the PropertyName of "AdditionalUpdateLanguagesForO365"
-4). Set Value2 to be additional languages, e.g.:  pt-pt,af-za,nn-no, and save
-5). Right click to download an O365 update, choose languages from UI
-6). Verify that the language packs got downloaded including the UI specified ones plus the SDK specified ones. Admin can check the content package share specified to verify this.
--->
 
-<!-- ## Change the update channel after you enable Office 365 clients to receive updates from Configuration Manager
-To change the update channel after you enable Office 365 clients to receive updates from Configuration Manager, you must distribute a registry key value change to Office 365 clients using group policy. Change the **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl** registry key to use one of the following values:
+## <a name="change-the-update-channel-after-you-enable-office-365-clients-to-receive-updates-from-configuration-manager"></a>啟用 Office 365 用戶端之後變更更新頻道，可接收來自 Configuration Manager 的更新
+若要在啟用 Office 365 用戶端之後變更更新頻道，即可接收來自 Configuration Manager 的更新，您可使用群組原則將登錄機碼值變更，發佈至 Office 365 用戶端。 將 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Office\ClickToRun\Configuration\CDNBaseUrl** 登錄機碼變更為下列值之一︰
 
-- Current Channel:  
-  **CDNBaseUrl** = http://officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60
+- 目前頻道︰  
+  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/492350f6-3a01-4f97-b9c0-c7c6ddf67d60
 
-- Deferred Channel:  
-  **CDNBaseUrl** = http://officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114
+- 延後的頻道︰  
+  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/7ffbc6bf-bc32-4f92-8982-f9dd17fd3114
 
-- First Release for Current Channel:  
-  **CDNBaseUrl** = http://officecdn.microsoft.com/pr/64256afe-f5d9-4f86-8936-8840a6a4f5be
+- 第一次發行目前的頻道︰  
+  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/64256afe-f5d9-4f86-8936-8840a6a4f5be
 
-- First Release for Deferred Channel:  
-  **CDNBaseUrl** = http://officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf
--->
+- 第一次發行延後的頻道︰  
+  **CDNBaseUrl** = http&#58;//officecdn.microsoft.com/pr/b8f9b850-328d-4355-9145-c59439a0c4cf
 
 <!--- ## Next steps
 Use the Office 365 Client Management dashboard in Configuration Manager to review Office 365 client information and deploy Office 365 apps. For details, see [Manage Office 365 apps](manage-office-365-apps.md). --->
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

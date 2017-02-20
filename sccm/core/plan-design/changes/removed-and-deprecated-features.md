@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f912bb82b8d753f01b15f96eec5099c3f92abe75
-ms.openlocfilehash: 18b411b05dd6fc9b572e1d3d201876172bb40d07
+ms.sourcegitcommit: 1948e2914fff91f156dd8956c018ff0fabcda2f9
+ms.openlocfilehash: 3a1edd1b59676e59d4bfcd4c01a23f7a04f91f4f
 
 
 ---
@@ -50,6 +50,7 @@ ms.openlocfilehash: 18b411b05dd6fc9b572e1d3d201876172bb40d07
 |-|-|-|  
 |網路存取保護 (NAP) - 自 System Center 2012 Configuration Manager 起提供|2015 年 7 月 10 日|版本 1511|  
 |頻外管理 - 自 System Center 2012 Configuration Manager 起提供|2015 年 10 月 16 日|版本 1511|
+|工作順序： <br /> - OSDPreserveDriveLetter  <br /><br /> 在作業系統部署期間，Windows 安裝程式現在預設會決定要使用的最佳磁碟機代號 (通常是 C:)。 如果您想要指定使用不同的磁碟機，您可以在「套用作業系統」工作順序步驟中變更位置。 移至 [請選取要套用此作業系統的位置] 設定，選取 [特定邏輯磁碟機代號]，然後選擇您想要使用的磁碟機。 |2016 年 6 月 20日 |1606 版 |
 |工作順序： <br /> - 將磁碟轉換成動態磁碟 <br /> - 安裝部署工具 |2016 年 11 月 18 日|對於這些工作順序的支援將結束於 2017 年 6 月 1 日後發行的第一個更新。|
 |軟體中心有新的新式外貌。 先前只出現在 Silverlight 相依應用程式類別目錄 (使用者可用的應用程式) 中的應用程式，現在會出現在軟體中心的 [應用程式] 索引標籤中。 應用程式類別目錄還是可以使用軟體中心 [安裝狀態] 索引標籤的連結進行存取。<br><br>幾個月後即不再提供舊版的軟體中心。<br><br>您可以啟用用戶端設定的 [電腦代理程式] > **[使用新的軟體中心]**，設定用戶端使用新的軟體中心。<br><br>如需關於軟體中心的詳細資訊，請參閱[在 System Center Configuration Manager 中規劃和設定應用程式管理](https://docs.microsoft.com/sccm/apps/plan-design/plan-for-and-configure-application-management)。|2016 年 12 月 13 日|即將宣布|
 |使用 Configuration Manager 管理虛擬硬碟 (VHD)。 </br></br>這包括移除建立新 VHD 或是使用工作序列管理 VHD 的選項，以及從 Configuration Manager 主控台移除虛擬硬碟節點。 </br></br>移除這項支援之後，不會刪除現有的 VHD，但也無法再從 Configuration Manager 主控台中存取它。  |2017 年 1 月 6 日 |VHD 的支援將結束於 2017 年 6 月 1 日後發行的第一個更新。|
@@ -112,6 +113,6 @@ System Center Configuration Manager 1511 版中已移除功能的其他詳細資
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

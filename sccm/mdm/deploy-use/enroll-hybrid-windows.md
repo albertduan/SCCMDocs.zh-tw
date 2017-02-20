@@ -16,8 +16,8 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 808327495c66f4e6ad86ab144455014171a453b2
+ms.sourcegitcommit: 76cb0c41865859fd410a187435d73c6a23b0c57e
+ms.openlocfilehash: 7b53b094eeb1d59d052c63831eeab0e10edb5913
 
 
 ---
@@ -57,7 +57,7 @@ Windows 註冊選項包括︰
 
 5. 指定 Intune 的 URL：
 
-  - **MDM 註冊 URL** – 使用 `https://enterpriseenrollment-s.manage.microsoft.com/EnrollmentServer/Discovery.svc` 作為 MDM 註冊 URL。
+  - **MDM 註冊 URL** – 使用預設值。
   - **MDM 條款 URL** – 使用預設值。 註冊裝置時，此 URL 會顯示使用者的使用條款。
   - **MDM 合規性 URL** – 使用預設值。 如果發現裝置不符合要求，會顯示「拒絕存取」的訊息與此 URL。 URL 指向的頁面可以協助使用者了解為何他們的裝置不符合原則，以及如何讓裝置能夠重新恢復合規性。
 
@@ -74,6 +74,8 @@ Windows 註冊選項包括︰
 
 ### <a name="create-dns-alias-for-device-enrollment"></a>建立裝置註冊的 DNS 別名  
  DNS 別名 (CNAME 記錄類型) 會在裝置註冊期間自動填入伺服器名稱，以便使用者能夠更輕鬆地註冊其裝置。 若要建立 DNS 別名 (CNAME 記錄類型)，您必須在您公司的 DNS 記錄中設定 CNAME，使傳送到您公司網域中之 URL 的要求會重新導向至 Microsoft 的雲端服務伺服器。  例如，假設您公司的網域為 contoso.com，您應該在 DNS 中建立 CNAME，其會將 EnterpriseEnrollment.contoso.com 重新導向到 EnterpriseEnrollment-s.manage.microsoft.com。  
+
+ 雖然建立 CNAME DNS 項目並非必要，但 CNAME 記錄可以方便使用者進行註冊。 若找不到任何 CNAME 記錄，將會提示使用者手動輸入 MDM 伺服器名稱 enrollment.manage.microsoft.com。
 
 |類型|主機名稱|指向|  
 |----------|---------------|---------------|  
@@ -118,6 +120,6 @@ Windows 註冊選項包括︰
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

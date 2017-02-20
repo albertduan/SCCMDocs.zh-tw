@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 3de4d4138c377c1a231947ece956ed6748dacd1f
+ms.sourcegitcommit: 5e5155aa8c03b7e0c200d083024c8fa386f97aa7
+ms.openlocfilehash: cfac2c03c1b71b40c68d8acd5fbd96c5e98caaa9
 
 ---
 # <a name="custom-locations-for-system-center-configuration-manager-site-database-files"></a>System Center Configuration Manager 站台資料庫檔案的自訂位置
@@ -29,22 +29,22 @@ ms.openlocfilehash: 3de4d4138c377c1a231947ece956ed6748dacd1f
 > [!NOTE]  
 >  當您使用 SQL Server 叢集時，無法使用指定非預設檔案位置的選項。  
 
- 在新主要站台或管理中心網站的**安裝期間** ，您可以：  
+ 在新的主要站台或管理中心網站之**安裝期間**，您可以：  
 
--   為站台資料庫指定非預設的檔案位置：Configuration Manager 安裝程式會使用這些位置建立站台資料庫。  
+-   **為站台資料庫指定非預設的檔案位置**：Configuration Manager 安裝程式之後會使用這些位置，建立站台資料庫。  
 
--   指定採用使用自訂檔案位置之預先建立的 SQL Server 資料庫：Configuration Manager 安裝程式會使用預先建立的資料庫及其預先設定的檔案位置。  
+-   **指定採用使用自訂檔案位置之預先建立的 SQL Server 資料庫**：Configuration Manager 安裝程式之後會使用預先建立的資料庫及其預先設定的檔案位置。  
 
-**安裝之後** ，您可以變更站台資料庫檔案的位置。 這必須停止站台及編輯 SQL Server 中的檔案位置：  
+**安裝之後**，您可變更站台資料庫檔案的位置。 這必須停止站台及編輯 SQL Server 中的檔案位置：  
 
 -   在 Configuration Manager 站台伺服器上，停止 **SMS_Executive** 服務。  
 
--   請遵循您所使用之 SQL Server 版本相關文件的指引來移動使用者資料庫。 例如，您若是使用 SQL Server 2014，請參閱 TechNet 上的 [移動使用者資料庫](https://technet.microsoft.com/library/ms345483\(v=sql.120\).aspx) 。  
+-   請使用您 SQL Server 版本的相關文件，指引您如何移動使用者資料庫。 例如，您若是使用 SQL Server 2014，請參閱 TechNet 上的 [移動使用者資料庫](https://technet.microsoft.com/library/ms345483\(v=sql.120\).aspx) 。  
 
--   完成資料庫檔案移動後，請重新啟動 Configuration Manager 站台伺服器上的 SMS_Executive 服務。  
+-   移動好資料庫檔案之後，請重新啟動 Configuration Manager 站台伺服器上的 **SMS_Executive** 服務。  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -2,7 +2,7 @@
 title: "規劃和設定應用程式管理 | Microsoft Docs"
 description: "實作和設定必要的相依性以在 System Center Configuration Manager 中部署應用程式。"
 ms.custom: na
-ms.date: 01/17/2017
+ms.date: 02/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d2a12edcc6bc7413558e25b694b69133c2496019
-ms.openlocfilehash: 0a38ea116e589425048f6c46378df46ecc0d375b
+ms.sourcegitcommit: 50c08d63e7220a47d21dcbdcd7abafba7c7f5f75
+ms.openlocfilehash: 4eca69f54ec0bca5f1f972d3814ceb87d4a30d67
 
 
 ---
@@ -112,7 +112,7 @@ ms.openlocfilehash: 0a38ea116e589425048f6c46378df46ecc0d375b
 
 1.  在 Configuration Manager 主控台中，選擇 [系統管理] > [站台設定] > [伺服器和站台系統角色]，然後選取要用於應用程式類別目錄的伺服器。  
 
-3.  在 [首頁] 索引標籤的 [建立] 群組中，選擇 [新增站台系統角色]。  
+3.  在 [首頁] 索引標籤的 [伺服器] 群組中，選取 [新增網站系統角色]。  
 
 4.  在 [一般] 頁面上，指定站台系統的一般設定，然後選擇 [下一步] 。  
 
@@ -228,6 +228,6 @@ ms.openlocfilehash: 0a38ea116e589425048f6c46378df46ecc0d375b
 
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

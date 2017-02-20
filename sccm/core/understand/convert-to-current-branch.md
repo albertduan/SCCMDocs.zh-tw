@@ -2,7 +2,7 @@
 title: "將長期維護分支升級至最新分支 | Microsoft Docs"
 description: "了解如何將長期維護分支站台轉換成最新分支站台。"
 ms.custom: na
-ms.date: 10/12/2016
+ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,15 +16,15 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 37fa8da8b4acc3f22c9c435206eedde58d2754f0
+ms.sourcegitcommit: 60631bc0346bd78d704e7129bb755af504c59b1b
+ms.openlocfilehash: 6e7edc85630d22c5bbba1ff66bd1199903db76db
 
 ---
 
 
 # <a name="upgrade-the-long-term-servicing-branch-to-the-current-branch"></a>將長期維護分支升級至最新分支
 
-適用於：System Center Configuration Manager (長期維護分支)
+*適用於：System Center Configuration Manager (長期維護分支)*
 
 使用本主題了解如何將執行 Configuration Manager 長期維護分支 (LTSB) 的站台和階層升級 (轉換) 為最新分支。
 
@@ -32,30 +32,31 @@ ms.openlocfilehash: 37fa8da8b4acc3f22c9c435206eedde58d2754f0
 
 如有多個站台，您只需要轉換階層的頂層站台。 轉換頂層站台之後︰
 - 子主要站台會自動轉換。
--   您必須從 Configuration Manager 主控台內手動更新次要站台。
+-    您必須從 Configuration Manager 主控台內手動更新次要站台。
 
-## <a name="run-setup-to-convert"></a>執行安裝程式來轉換
-在階層的頂層站台，您可以從合格的基準媒體執行 Configuration Manager 安裝程式，並選取 [站台維護]。  然後，當您看到授權頁面時，請選取最新分支的選項，完成精靈。
+## <a name="run-setup-to-convert-the-long-term-servicing-branch"></a>執行安裝程式，將長期服務分支轉換為維護分支
+在階層的頂層站台，您可以從合格的基準媒體執行 Configuration Manager 安裝程式，並選取 [站台維護]。  然後，當您看到授權頁面時，請選取最新分支的選項來完成精靈。
 
-完成時，您的站台就會轉換為最新分支，原來無法使用的功能都可以使用。
+當站台轉換到最新分支時，原先無法使用的功能即可使用。
 
 > [!NOTE]  
 > 合格的基準媒體是和您的 LTSB 安裝版本一樣或更新的媒體。
 
-例如，因為 LTSB 是以 1606 版為基礎，所以您無法使用 1511 版基準媒體轉換成最新分支。 反而要從安裝 LTSB 站台所用的相同 1606 版基準媒體執行安裝程式，並選擇最新分支的授權選項。  或者，如果已發行最新分支的新版基準，您也可以從該基準媒體執行安裝程式。
+例如，因為 LTSB 是以 1606 版為基礎，所以您無法使用 1511 版基準媒體轉換成最新分支。 而是要從用於安裝 LTSB 站台所用的相同 1606 版基準媒體來執行安裝程式，並選擇最新分支的授權選項。  或者，如果已發行最新分支的新版基準，也可以從該基準媒體執行安裝程式。
 
 如需基準版本清單，請參閱 [Updates for Configuration Manager](/sccm/core/servers/manage/updates) (System Center Configuration Manager 的更新) 中的 **Baseline and update versions** (基準和更新版本)。
 
-## <a name="use-the-configuration-manager-console-to-convert"></a>使用 Configuration Manager 主控台來轉換
+## <a name="use-the-configuration-manager-console-to-convert-the-long-term-servicing-branch"></a>使用 Configuration Manager 主控台轉換長期維護分支
 如果您的站台執行 LTSB，您可以使用 Configuration Manager 主控台中的下列選項轉換成最新分支︰
 
- 1. 在主控台中，瀏覽至 [管理] > [站台設定] > [站台]，然後開啟 [階層設定]。  
- 2. 選取要轉換成最新分支的選項，然後按一下 [套用]。  
+ 1. 在主控台中，前往 [管理] > **[站台設定]** > [站台]，然後開啟 [階層設定]。  
 
-完成時，您的站台就會轉換為最新分支，原來無法使用的功能都可以使用。
+ 2. 選取要轉換成最新分支的選項，然後選擇 [套用]。  
+
+當站台轉換到最新分支時，原先無法使用的功能即可使用。
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -2,7 +2,7 @@
 title: "支援的用戶端和裝置 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 支援用於用戶端和裝置的作業系統。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: a8d3f1a3fb945b9af21dd65387cd507c06337c6c
+ms.sourcegitcommit: 4688b4b12a7afa5fcfdc0e42f984271d98f10316
+ms.openlocfilehash: d2d888edf51d46a2dd13ef6b7ed39c066179a088
 
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager 用戶端和裝置支援的作業系統
@@ -25,48 +25,50 @@ ms.openlocfilehash: a8d3f1a3fb945b9af21dd65387cd507c06337c6c
 *適用於：System Center Configuration Manager (最新分支)*
 
 
-
-
  System Center Configuration Manager 支援在各種 Windows、Mac、Linux 與 UNIX 電腦上安裝用戶端軟體。  
 
  **所有用戶端的需求和限制：**  
 
--   不支援變更任何 Configuration Manager 服務的 [啟動類型] 或 [登入身分] 設定。 這麼做可能會導致重要服務無法正確執行。    
+-   不支援變更任何 Configuration Manager 服務的啟動類型或 [登入身分] 設定，這麼做可能會導致重要服務無法正確執行。    
 
--   不支援在使用非 root 帳戶的電腦上，安裝或執行 Linux 或 UNIX 的 Configuration Manager 用戶端或 Mac 用戶端。 這麼做可能會導致重要服務無法正確執行。  
+-   不支援在使用非根帳號的電腦上，安裝或執行 Linux 或 UNIX 的 Configuration Manager 用戶端或 Mac 用戶端。 這麼做可能會導致重要服務無法正確執行。  
 
-##  <a name="a-namebkmkwinclientosa-windows-computers"></a><a name="bkmk_WinClientos"></a> Windows 電腦  
+##  <a name="windows-computers"></a>Windows 電腦  
  您可以使用 Configuration Manager 包含的 Configuration Manager 用戶端來管理 Windows 電腦。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦](../../../core/clients/deploy/deploy-clients-to-windows-computers.md)。  
 
 **支援的作業系統：**  
 
--  **Windows Server 2016**  – Standard、Datacenter <sup>1</sup>
-  - 從具有 KB3186654 之 Hotfix 彙總套件的 Configuration Manager 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援 Windows Server 2016。  
+-  **Windows Server 2016**：Standard、Datacenter <sup>1</sup>
+  - 從具有 KB3186654 之 Hotfix 彙總套件的 Configuration Manager 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援此作業系統。  
 
 
--   **Windows Server 2012 R2** (x64) – Standard、Datacenter <sup>1</sup>    
+-   **Windows Server 2012 R2** (x64)：Standard、Datacenter <sup>1</sup>    
 
 -   **Windows Storage Server 2012 R2** (x64)    
 
--   **Windows Server 2012** (x64) – Standard、Datacenter <sup>1</sup>    
+-   **Windows Server 2012** (x64)：Standard、Datacenter <sup>1</sup>    
 
 -   **Windows Storage Server 2012** (x64)    
 
--   **Windows Server 2008 R2 (含 SP1)** (x64) – Standard、Enterprise、Datacenter <sup>1</sup>    
+-   **Windows Server 2008 R2 (含 SP1)** (x64)：Standard、Enterprise、Datacenter <sup>1</sup>    
 
--   **Windows Storage Server 2008 R2** (x86、x64) - Workgroup、Standard、Enterprise    
+-   **Windows Storage Server 2008 R2** (x86、x64)：Workgroup、Standard、Enterprise    
 
--   **Windows  Server 2008 (含 SP2)** (x86、x64) - Standard、Enterprise、Datacenter <sup>1</sup>    
+-   **Windows Server 2008 (含 SP2)** (x86、x64)：Standard、Enterprise、Datacenter <sup>1</sup>    
 
 -   **Windows 10 企業版長期維護** (x86、x64) <sup>3</sup>    
 
--   **Windows 10** (x86、x64) - 專業版、企業版    
+-   **Windows 10** (x86、x64)：專業版、企業版    
 
--   **Windows 8.1** (x86、x64) - 專業版、企業版    
+-   **Windows 8.1** (x86、x64)：專業版、企業版    
 
--   **Windows 8** (x86、x64) - 專業版、企業版    
+-   **Windows 8.1** (x86、x64)：專業版、企業版    
 
--   **Windows 7 (含 SP1)** (x86、x64) – 專業版、企業版、旗艦版    
+-   **Windows 7 (含 SP1)** (x86、x64)：專業版、企業版和旗艦版    
+
+-   **Windows Server 2016 的伺服器核心安裝** (x64) <sup>2</sup>
+  - 從具有 KB3186654 之 Hotfix 彙總套件的 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援此作業系統。 但此作業系統不支援使用 Endpoint Protection。
+
 
 -   **Windows Server 2012 R2 的 Server Core 安裝** (x64) <sup>2</sup>    
 
@@ -81,16 +83,16 @@ ms.openlocfilehash: a8d3f1a3fb945b9af21dd65387cd507c06337c6c
 
  <sup>2</sup> 為了支援用戶端推入安裝，執行此作業系統版本的電腦必須執行檔案和存放服務伺服器角色的檔案伺服器角色服務。 如需在 Server Core 電腦上安裝 Windows 功能的相關資訊，請參閱 Windows Server 2012 TechNet 文件庫中的[在 Server Core 伺服器上安裝伺服器角色和功能](http://go.microsoft.com/fwlink/p/?LinkId=299359)。  
 
- <sup>3</sup> 使用這個作業系統需要 1602 版或更新版本。  
+ <sup>3</sup> 使用這個作業系統需要 Configuration Manager 1602 或更新版本。  
 
-##  <a name="a-namebkmkembeddedosa-windows-embedded"></a><a name="bkmk_EmbeddedOS"></a> Windows Embedded  
+##  <a name="windows-embedded-computers"></a>Windows Embedded 電腦  
  您可以藉由在裝置上安裝 Configuration Manager 用戶端軟體來管理 Windows Embedded 裝置。  如需詳細資訊，請參閱[規劃將用戶端部署至 System Center Configuration Manager 中的 Windows Embedded 裝置](../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)。  
 
 **需求和限制：**  
 
--   在未啟用寫入篩選器的支援 Windows Embedded 系統上，會支援用戶端的所有功能。  
+-   在未啟用寫入篩選器的 Windows Embedded 系統上，會支援用戶端的所有功能。  
 
--   針對所有功能 (除了電源管理以外)，支援使用下列其中一項的用戶端：  
+-   針對所有功能 (電源管理除外)，支援使用下列其中一項的用戶端：  
 
     -   增強式寫入篩選器 (EWF)    
 
@@ -100,7 +102,8 @@ ms.openlocfilehash: a8d3f1a3fb945b9af21dd65387cd507c06337c6c
 
 -   所有 Windows Embedded 裝置都不支援應用程式類別目錄。  
 
--   您必須先在內嵌裝置上安裝 Microsoft Windows WMI 指令碼封裝，才能在以 Windows XP 為基礎的 Windows Embedded 裝置上監視偵測到的惡意程式碼。 使用 Windows Embedded Target Designer 安裝這個封裝。 **WBEMDISP.DLL** 和 **WBEMDISP.TLB** 檔案必須存在，且在內嵌裝置的 **%windir%\System32\WBEM** 資料夾中註冊，以確保會報告偵測到的惡意程式碼。  
+-   您必須先在裝置上安裝 Microsoft Windows WMI 指令碼套件，才能在以 Windows XP 為基礎的 Windows Embedded 裝置上監視偵測到的惡意程式碼。 使用 Windows Embedded Target Designer 安裝這個封裝。
+**WBEMDISP.DLL** 和 **WBEMDISP.TLB** 檔案必須存在，且在內嵌裝置的 **%windir%\System32\WBEM** 資料夾中註冊，以確保會報告偵測到的惡意程式碼。  
 
 **支援的作業系統：**  
 
@@ -132,14 +135,14 @@ ms.openlocfilehash: a8d3f1a3fb945b9af21dd65387cd507c06337c6c
 
 -   **Windows Embedded Standard 2009** (x86)  
 
-## <a name="windows-ce"></a>Windows CE  
+## <a name="windows-ce-computers"></a>Windows CE 電腦
  您可以使用 Configuration Manager 包含的舊版 Configuration Manager 行動裝置用戶端來管理 Windows CE 裝置。  
 
 **需求和限制**  
 
--   行動裝置用戶端需要 0.78 MB 或儲存空間來安裝用戶端。 行動裝置上的記錄可能需要最多 256 KB 的額外儲存空間。    
+-   行動裝置用戶端需要 0.78 MB 的儲存空間來安裝。 登入可能需要最多 256 KB 的額外儲存空間。    
 
--   這些行動裝置的功能因平台和用戶端類型而異。 如需 Configuration Manager 針對行動裝置舊版用戶端所支援之管理功能的相關資訊，請參閱[選擇 System Center Configuration Manager 的裝置管理解決方案](../../../core/plan-design/choose-a-device-management-solution.md)。  
+-   這些行動裝置的功能因平台和用戶端類型而異。 如需支援之管理功能的資訊，請參閱[選擇 System Center Configuration Manager 的裝置管理解決方案](../../../core/plan-design/choose-a-device-management-solution.md)。  
 
 **支援的作業系統：**  
 
@@ -170,34 +173,38 @@ ms.openlocfilehash: a8d3f1a3fb945b9af21dd65387cd507c06337c6c
 ## <a name="mac-computers"></a>Mac 電腦  
  您可以使用適用於 Mac 的 Configuration Manager 用戶端管理 Mac OS X 電腦。  
 
- Configuration Manager 媒體不提供 Mac 用戶端安裝套件。 您可以從 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=525184)作為「其他作業系統的用戶端」下載的一部分來下載。  
-
-**需求和限制：**  
-
- 您必須使用適用於 Mac 的 Configuration Manager 用戶端 (5.0.8333.1 版或更新版本)，這必須另外下載。 不同於 Windows 用戶端，當您安裝時，Mac 用戶端不會包含在 Configuration Manager 軟體中。 若要下載 Mac 用戶端，請移至 [Microsoft System Center Configuration Manager - 其他作業系統的用戶端](http://go.microsoft.com/fwlink/?LinkID=525184)。  
+ Configuration Manager 媒體不提供 Mac 用戶端安裝套件。 從 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=525184)下載**其他作業系統的用戶端**。  
 
  如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中將用戶端部署至 Mac](../../../core/clients/deploy/deploy-clients-to-macs.md)。  
 
 **支援的版本：**  
 
--   **Mac OS X 10.9** (Mavericks)  
+-   **Mac OS X 10.6** (Snow Leopard)
+
+-   **Mac OS X 10.7** (Lion)
+
+-   **Mac OS X 10.8** (Mountain Lion)
+
+-   **Mac OS X 10.9** (Mavericks)
 
 -   **Mac OS X 10.10** (Yosemite)  
 
 -   **Mac OS X 10.11** (El Capitan)  
 
-##  <a name="a-namebkmklinuxosa-linux-and-unix-servers"></a><a name="bkmk_LinuxOS"></a> Linux 和 UNIX 伺服器  
+-   **Mac OS X 10.12** (macOS Sierra )
+
+##  <a name="linux-and-unix-servers"></a>Linux 和 UNIX 伺服器  
  您可以使用適用於 Linux 和 UNIX 的 Configuration Manager 用戶端管理 Linux 和 UNIX 電腦。  
 
- Configuration Manager 媒體不提供 Linux 和 UNIX 用戶端安裝套件。 您可以從 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=525184)作為「其他作業系統的用戶端」下載的一部分來下載。 除了用戶端安裝套件外，所下載的用戶端也包括特定的安裝指令碼，可用來管理各電腦上用戶端的安裝程序。  
+ Configuration Manager 媒體不提供 Linux 和 UNIX 用戶端安裝套件。 從 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=525184)下載**其他作業系統的用戶端**。 除了用戶端安裝套件之外，用戶端下載還會包括管理每部電腦上用戶端安裝的指令碼。  
 
 **需求和限制：**  
 
 -   若要檢閱 Linux 和 UNIX 用戶端的作業系統檔案相依性，請參閱[將用戶端部署至 Linux 和 UNIX 伺服器的必要條件](../../../core/clients/deploy/plan/planning-for-client-deployment-to-linux-and-unix-computers.md#BKMK_ClientDeployPrereqforLnU)。  
 
--   如需執行 Linux 或 UNIX 之電腦的支援管理功能概觀，請參閱[如何在 System Center Configuration Manager 中將用戶端部署至 UNIX 和 Linux 伺服器](../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md)。  
+-   如需 Linux 或 UNIX 支援的管理功能概觀，請參閱[如何在 System Center Configuration Manager 中將用戶端部署至 UNIX 和 Linux 伺服器](../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md)。  
 
--   如需支援的 Linux 和 UNIX 版本，列出的版本會包含所有後續的次要版本。 例如，其中指定支援 CentOS 第 6 版，這也包括 CentOS 6 的任何後續次要版本，例如 CentOS 6.3。 同樣地，當列出支援使用 Service Pack 的作業系統時，例如 SUSE Linux Enterprise Server 11 SP1，則支援會包含該作業系統版本的後續 Service Pack。  
+-   如需支援的 Linux 和 UNIX 版本，列出的版本會包含所有後續的次要版本。 例如，CentOS 第 6 版包括 CentOS 6.3。 同樣地，使用 Service Pack (例如 SUSE Linux Enterprise Server 11 SP1) 的作業系統支援會包含該作業系統版本的後續 Service Pack。  
 
 -   如需用戶端安裝套件和 Universal Agent 的相關資訊，請參閱[如何在 System Center Configuration Manager 中將用戶端部署至 UNIX 和 Linux 伺服器](../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md)。  
 
@@ -297,8 +304,8 @@ ms.openlocfilehash: a8d3f1a3fb945b9af21dd65387cd507c06337c6c
 |14.04 版 LTS x86|ccm-Universalx86.&lt;組建\>.tar|  
 |14.04 版 LTS x64|ccm-Universalx64.&lt;版本\>.tar|  
 
-##  <a name="a-namebkmkintuneosa-mobile-devices-enrolled-by-microsoft-intune"></a><a name="bkmk_IntuneOS"></a> 由 Microsoft Intune 註冊的行動裝置  
- 如需您整合 Microsoft Intune 與 Configuration Manager 時可以管理之電腦與裝置的相關詳細資訊，請參閱 Microsoft Intune 文件庫中的下列兩個主題：  
+##  <a name="mobile-devices-enrolled-by-microsoft-intune"></a>由 Microsoft Intune 註冊的行動裝置  
+ 如需您整合 Microsoft Intune 與 Configuration Manager 時可以管理之電腦與裝置的詳細資訊，請參閱 Microsoft Intune 文件庫中的下列兩個主題：  
 
 -   [Microsoft Intune 的行動裝置管理功能](https://docs.microsoft.com/intune/get-started/choose-how-to-manage-devices)  
 -   [Microsoft Intune 的 Windows 電腦管理功能](https://docs.microsoft.com/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune)  
@@ -310,7 +317,7 @@ ms.openlocfilehash: a8d3f1a3fb945b9af21dd65387cd507c06337c6c
 
 -   您必須在階層的頂層站台設定**服務連接點**  
 
- **支援的作業系統：**  
+**支援的作業系統：**  
 
 -   **Windows 10 專業版** (x86、x64)  
 
@@ -325,11 +332,11 @@ ms.openlocfilehash: a8d3f1a3fb945b9af21dd65387cd507c06337c6c
 -  **Windows 10 IoT 行動裝置企業版**
 
 ##  <a name="a-namebkmkexsrvconosa-exchange-server-connector"></a><a name="bkmk_ExSrvConOS"></a> Exchange Server 連接器  
- Configuration Manager 支援有限制地管理連線至您 Exchange Server 的裝置，而不需要安裝用戶端軟體。  如需詳細資訊，請參閱[使用 System Center Configuration Manager 和 Exchange 管理行動裝置](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)。  
+Configuration Manager 支援有限制地管理連線至您 Exchange Server 的裝置，而不需要安裝 Configuration Manager 用戶端。 如需詳細資訊，請參閱[使用 System Center Configuration Manager 和 Exchange 管理行動裝置](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)。  
 
  **需求和限制：**  
 
--   當您使用具備適用於 Exchange Active Sync (EAS) 之 Exchange Server 連接器功能的裝置，且該裝置連線到執行 Exchange Server 或 Exchange Online 的伺服器時，Configuration Manager 提供有限的行動裝置管理。  
+-   當您使用具備適用於 Exchange Active Sync 之 Exchange Server 連接器的裝置，且該裝置連線到執行 Exchange Server 或 Exchange Online 的伺服器時，Configuration Manager 提供有限的行動裝置管理。  
 
 -   如需 Configuration Manager 針對 Exchange Server 連接器所管理之行動裝置支援的管理功能詳細資訊，請參閱＜判斷如何在 Configuration Manager 中管理行動裝置＞。  
 
@@ -341,10 +348,10 @@ ms.openlocfilehash: a8d3f1a3fb945b9af21dd65387cd507c06337c6c
 
 -   **Exchange Server 2013**  
 
--   **Exchange Online (Office 365)** - 這包括 Business Productivity Online Standard Suite  
+-   **Exchange Online (Office 365)**：這包括 Business Productivity Online Standard Suite  
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO1-->
 
 

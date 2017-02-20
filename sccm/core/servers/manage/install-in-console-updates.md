@@ -2,7 +2,7 @@
 title: "主控台內更新 | Microsoft Docs"
 description: "System Center Configuration Manager 會與 Microsoft 雲端進行同步處理以取得更新，讓您可在主控台內安裝這類更新。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
-ms.openlocfilehash: 1b7063d45c6dc9b42e5002f684043a8e846416a2
+ms.sourcegitcommit: 2f90f3204b3c31caaed1359e11451285b21eef50
+ms.openlocfilehash: b3a58503ea4d49825e93ea3a2e9bfedf975145e6
 
 
 ---
@@ -69,7 +69,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務進行同步處
     - 如果使用者具有此安全性角色和 **預設** 安全性範圍的存取權限，即可檢視更新、安裝更新、在安裝期間啟用功能，並在安裝好更新之後，檢視已安裝更新的功能，但不能在安裝好先前的更新之後啟用相關功能。
 
 - 具有**讀取** 權限的 **唯讀分析師** ：
-  -  如果使用者具有此安全性角色、**預設**範圍的存取權或從 1511 更新到 1606，即可檢視更新，但不能安裝更新；可以在安裝更新之後檢視功能，但不能加以啟用。
+  -  如果使用者具有此安全性角色和 **預設** 範圍的存取權，即可檢視更新，但不能安裝更新；可以在安裝好更新之後檢視功能，但不能加以啟用。
 
 **更新和服務的必要權限摘要︰**   
   - 請使用已指派安全性角色的帳戶，並具有 **[更新套件]** 類別的 **修改** 和 **讀取** 權限。
@@ -162,7 +162,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務進行同步處
 
  建議您規劃在正常營業時間以外針對各個站台安裝更新，在這些時間內安裝更新的程序與其重新安裝站台元件和站台系統角色的動作，對您的商務營運所產生的影響最小。  
 
--   當管理中心網站完成安裝更新之後，子主要站台就會自動啟動更新。 這是預設的建議程序。 不過，當主要站台安裝更新時，您可以使用[站台伺服器的維護時段](#bkmk_ServiceWindow)來進行控制。  
+-   當管理中心網站完成安裝更新之後，子主要站台就會自動啟動更新。 這是預設的建議程序。 不過，當主要站台安裝更新時，您可以使用[站台伺服器的服務保留時間](/sccm/core/servers/manage/service-windows)來進行控制。  
 
 -   當主要父站台更新完成之後，您必須從 Configuration Manager 主控台內手動更新次要站台。 不支援次要站台伺服器的自動更新。  
 
@@ -354,18 +354,9 @@ System Center Configuration Manager 會與 Microsoft 雲端服務進行同步處
 |System Center Configuration Manager 所管理電腦的條件式存取 | [版本 1602](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)     |![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)                        |
 
 
+## <a name="known-issues"></a>已知問題
 
-
-##  <a name="a-namebkmkservicewindowa-service-windows-for-site-servers"></a><a name="bkmk_ServiceWindow"></a> 站台伺服器的維護時段  
-您可在站台伺服器上設定維護時段，以控制何時將 Configuration Manager 的基礎結構更新套用至該站台伺服器。  每個站台伺服器支援多個視窗，包含可用於安裝由此站台伺服器所有設定的視窗組合所決定之基礎結構更新的視窗。  
-
-**若要設定服務視窗︰**  
-
-1.  在 Configuration Manager 主控台中，依序開啟 [系統管理] > [站台設定] > [站台]，然後選取要設定維護時段的站台伺服器。  
-
-2.  接著，編輯站台伺服器的 **[內容]** ，然後選取 **[維護時段]** 索引標籤，您可在此為該站台伺服器設定一或多個維護時段。  
-
-##  <a name="a-namebkmkfaqa-why-dont-i-see-certain-updates-in-my-console"></a><a name="bkmk_faq"></a> 為什麼我在主控台中看不到特定的更新？  
+###  <a name="a-namebkmkfaqa-why-dont-i-see-certain-updates-in-my-console"></a><a name="bkmk_faq"></a> 為什麼我在主控台中看不到特定的更新？  
  如果您找不到特定的更新，或者與 Microsoft 雲端服務成功同步處理之後在主控台中找不到任何更新，這可能是因為︰  
 
 -   更新需要您的基礎結構未使用的設定，或者目前的產品版本未滿足接收更新的必要條件。  
@@ -376,8 +367,21 @@ System Center Configuration Manager 會與 Microsoft 雲端服務進行同步處
 
     請參閱本主題中的[管理更新的權限](../../../core/servers/manage/install-in-console-updates.md#permissions-to-view-and-manage-updates-and-features)，以了解如何從主控台內檢視更新並啟用功能的必要權限。
 
+### <a name="why-do-i-see-two-updates-for-version-1610"></a>為何看到兩個 1610 版更新
+檢視主控台中的更新時，可能會看到兩個更新都會安裝 1610 版。 這些更新有不同的日期。 發生下列其中一種情況時即會出現：   
+-   在提供 1610 版之後，您安裝了較早的版本 (例如 1606)
+
+-   您的階層執行 1511 或 1602，但您還不能下載 1606 版
+
+1610 版有兩個更新版本是因為在某些檔案的二進位檔進行一些微幅的變更之後，重新發行了此更新。 這些變更不會影響 Configuration Manager 或更新的功能。
+
+主控台中提供兩個更新時，建議您安裝日期較近的更新。 但因為如果您已安裝其中一個更新，則這兩個更新都會提供相同的功能，您不需要採取進一步的動作。
+-   如果您先前已安裝較舊的更新，則不需要安裝的日期較新的更新。 但如果在安裝的第一個更新之後，安裝了較新的更新，則會更新有問題的二進位檔，但不會有其他變更，您也不需要採取任何其他動作。
+
+-   如果先前安裝過最新的更新，然後再安裝日期較舊的更新，則不需要採取其他動作。 這是因為您已安裝過較新的二進位檔，而不會再從原始的更新覆寫這些相同的二進位檔。
 
 
-<!--HONumber=Dec16_HO3-->
+
+<!--HONumber=Feb17_HO1-->
 
 

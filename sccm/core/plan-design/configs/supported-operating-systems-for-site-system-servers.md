@@ -2,7 +2,7 @@
 title: "支援的站台系統伺服器 | Microsoft Docs"
 description: "了解您可用來裝載 System Center Configuration Manager 站台或站台系統角色的 Windows 版本。"
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 2/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bebbeebba76ab5cf0c517fcb00b7b6a516a08e3e
-ms.openlocfilehash: 12fe730d924979eec2ef55ea80a1fa90b7b47464
+ms.sourcegitcommit: 4688b4b12a7afa5fcfdc0e42f984271d98f10316
+ms.openlocfilehash: bb017e575e0318b73cc5ea4e27fd33b1e9c2a02a
 
 
 ---
@@ -37,7 +37,7 @@ ms.openlocfilehash: 12fe730d924979eec2ef55ea80a1fa90b7b47464
 
 
 ## <a name="windows-server-2016-standard-and-datacenter"></a>Windows Server 2016：Standard 和 Datacenter
-從具有 KB3186654 之 Hotfix 彙總套件的 Configuration Manager 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援 Windows Server 2016。
+從具有 KB3186654 之 Hotfix 彙總套件的 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援此作業系統進行下列作業：
 
 **站台伺服器：**  
 
@@ -325,12 +325,12 @@ ms.openlocfilehash: 12fe730d924979eec2ef55ea80a1fa90b7b47464
 
     -   發佈點支援數個不同的設定，各有不同需求。 在某些情況下，這些設定不僅支援安裝在伺服器上，也支援安裝在用戶端作業系統上。 如需發佈點可用選項的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
-## <a name="the-server-core-installation-of-windows-server-2012"></a>Windows Server 2012 的 Server Core 安裝  
- 除了上述的作業系統，也支援 Windows Server 2012 的 Server Core 安裝作為發佈點使用，具有下列限制：  
 
--   只支援 64 位元版本。  
+## <a name="the-server-core-installation-of-windows-server-2016"></a>Windows Server 2016 的伺服器核心安裝
+從具有 KB3186654 之 Hotfix 彙總套件的 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援此作業系統用作為發佈點，但有下列限制：  
+  -   只支援 x64 位元版本。
+  -   此作業系統上的發佈點不支援 PXE 或多點傳送。  
 
--   此作業系統上的發佈點不支援 PXE 或多點傳送。
 
 ## <a name="the-server-core-installation-of-windows-server-2012-r2"></a>Windows Server 2012 R2 的 Server Core 安裝  
  除了上述的作業系統，支援 Windows Server 2012 R2 的 Server Core 安裝作為發佈點使用，具有下列限制：  
@@ -339,8 +339,15 @@ ms.openlocfilehash: 12fe730d924979eec2ef55ea80a1fa90b7b47464
 
 -   此作業系統上的發佈點不支援 PXE 或多點傳送。  
 
+## <a name="the-server-core-installation-of-windows-server-2012"></a>Windows Server 2012 的 Server Core 安裝  
+ 除了上述的作業系統，也支援 Windows Server 2012 的 Server Core 安裝作為發佈點使用，具有下列限制：  
+
+-   只支援 64 位元版本。  
+
+-   此作業系統上的發佈點不支援 PXE 或多點傳送。
 
 
-<!--HONumber=Jan17_HO1-->
+
+<!--HONumber=Feb17_HO1-->
 
 
