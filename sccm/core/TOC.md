@@ -17,10 +17,10 @@
 ### [將長期維護分支升級至最新分支](understand/convert-to-current-branch.md)
 ##  [使用雲端服務](understand/use-cloud-services.md)
 ### [Azure 上的 Configuration Manager](understand/configuration-manager-on-azure.md)
-##  [與診斷和使用方式資料有關的常見問題集](understand/frequently-asked-questions-about-diagnostics-and-usage-data.md)
+##  [產品與授權的常見問題集](understand/product-and-licensing-faq.md)
+##  [診斷與使用方式資料的常見問題集](understand/frequently-asked-questions-about-diagnostics-and-usage-data.md)
 
 #    [規劃和設計](plan-design/get-ready.md)
-
 ##   產品變更
 ###  [特性和功能](plan-design/changes/features-and-capabilities.md)
 ###  [Configuration Manager 2012 的變更內容](plan-design/changes/what-has-changed-from-configuration-manager-2012.md)
@@ -305,6 +305,6 @@
 ###  [升級分析](clients/manage/upgrade/upgrade-analytics.md)
 
 
-<!--HONumber=Jan17_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 
