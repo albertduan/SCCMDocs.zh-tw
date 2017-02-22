@@ -37,7 +37,7 @@ System Center Configuration Manager 可以管理兩大類裝置：
 
 有兩種方式可以使用 Configuration Manager 用戶端軟體來管理裝置。 第一種方式是探索網路上的裝置，然後將用戶端軟體部署到該裝置。 另一種方式是在新的電腦上手動安裝用戶端軟體，然後在電腦加入網路時，讓它加入您的站台。 若要探索尚未安裝用戶端軟體的裝置，請執行一或多個內建的探索方法。 探索到裝置之後，使用數種方法之一來安裝用戶端軟體。 如需使用探索的資訊，請參閱[為 System Center Configuration Manager 執行探索](../../core/servers/deploy/configure/run-discovery.md)。  
 
- 探索受支援而可執行 Configuration Manager 用戶端軟體的裝置之後，您可以使用數種方法之一來安裝軟體。 安裝軟體並將用戶端指派給主要站台之後，您便可以開始管理裝置。  常見的安裝方法包括︰
+ 探索受支援而可執行 Configuration Manager 用戶端軟體的裝置之後，您可以使用數種方法中的其中一種方式來安裝軟體。 安裝軟體並將用戶端指派給主要站台之後，您便可以開始管理裝置。  常見的安裝方法包括︰
 
  - 用戶端推入安裝。
 
@@ -66,7 +66,7 @@ System Center Configuration Manager 可以管理兩大類裝置：
 
  -  用戶端是否已設定軟體更新和其他管理作業。
 
- -  使用者是否可以註冊其行動裝置，讓 Configuration Manager 管理它們。  
+ -  使用者是否可以註冊其行動裝置，以便由 Configuration Manager 管理。  
 
 您可以建立自訂用戶端設定，然後將它們指派給集合。  集合的成員是設定為採用自訂設定，而您可以建立多個依您指定順序 (依數字順序) 套用的自訂用戶端設定。  如果有設定發生衝突，則順序編號最小的設定會覆寫其他設定。  
 
@@ -81,7 +81,7 @@ System Center Configuration Manager 可以管理兩大類裝置：
  Configuration Manager 支援管理某些尚未安裝用戶端軟體，且非 Intune 管理的裝置。 如需詳細資訊，請參閱[在 System Center Configuration Manager 中使用內部部署基礎結構管理行動裝置](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)和[使用 System Center Configuration Manager 和 Exchange 管理行動裝置](../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)。  
 
 ## <a name="user-based-management"></a>以使用者為基礎的管理  
- Configuration Manager 支援 Active Directory 網域服務使用者集合。 當您使用使用者集合時，您可以在集合成員使用的所有電腦上安裝軟體。 為確保您部署的軟體僅安裝在指定為使用者主要裝置的裝置上，請設定使用者裝置親和性。 使用者可以擁有一個或多個主要裝置。  
+ Configuration Manager 支援 Active Directory Domain Services 使用者集合。 當您使用使用者集合時，您可以在集合成員使用的所有電腦上安裝軟體。 為確保您部署的軟體僅安裝在指定為使用者主要裝置的裝置上，請設定使用者裝置親和性。 使用者可以擁有一個或多個主要裝置。  
 
  使用者控制其軟體部署體驗的方式之一，就是使用**軟體中心**用戶端介面。 **軟體中心**會自動安裝到用戶端電腦上，從 [開始] 功能表執行。 **軟體中心**讓使用者管理自己的軟體並執行下列工作：  
 
