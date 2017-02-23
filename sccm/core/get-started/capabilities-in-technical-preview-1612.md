@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: cd970dacd29916c2de2db3dd5498b1949f5174e6
+ms.sourcegitcommit: 3c8f968276cb6d412a4a06cb70f1c8e45e91c605
+ms.openlocfilehash: cd53f093056fbaa2ef6fd88d5451b7698f296569
 
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1612 中的功能
@@ -50,11 +50,11 @@ ms.openlocfilehash: cd970dacd29916c2de2db3dd5498b1949f5174e6
 
 | 步驟         | 詳細資料  |
 |:------:|-----------|  
-| **1**  |  站台伺服器將資料傳送並儲存在站台資料庫。  |  
-| **2** |   資料倉儲服務點根據其排程和設定，從站台資料庫取得資料。  |  
+| **1**  |     站台伺服器將資料傳送並儲存在站台資料庫。  |  
+| **2** |      資料倉儲服務點根據其排程和設定，從站台資料庫取得資料。  |  
 | **3** |  資料倉儲服務點將同步處理的資料複本傳送並儲存在資料倉儲資料庫。 |  
 | **A** |  使用內建報告，將提出的資料要求傳遞到使用 SQL Server Reporting Services 的 Reporting Services 點。 |  
-| **B** |   大部分報告是針對目前的資訊，並會對站台資料庫執行這些要求。 |  
+| **B** |      大部分報告是針對目前的資訊，並會對站台資料庫執行這些要求。 |  
 | **C** | 當報告要求歷程記錄資料時，使用其中一個 [類別] 為 [資料倉儲] 的報告，對資料倉儲資料庫執行要求。   |  
 
 ### <a name="prerequisites-for-the-data-warehouse-service-point-and-database"></a>資料倉儲服務點和資料庫的必要條件
@@ -85,12 +85,12 @@ ms.openlocfilehash: cd970dacd29916c2de2db3dd5498b1949f5174e6
 - **Configuration Manager 資料庫設定：**   
   - **伺服器名稱** - 指定裝載站台資料庫之伺服器的 FQDN。 如果您未使用 SQL Server 的預設執行個體，則必須以下列格式在 FQDN 之後指定執行個體︰&lt;SQL Server FQDN>\&lt;執行個體名稱>
   - **資料庫名稱** - 指定站台資料庫的名稱。
-  - **確認** - 按一下 [確認] 確定成功連線到站台資料庫。
+  -    **確認** - 按一下 [確認] 確定成功連線到站台資料庫。
 </br></br>
 - **資料倉儲資料庫設定：**
-  - **伺服器名稱** - 指定裝載資料倉儲服務點和資料庫之伺服器的 FQDN。 如果您未使用 SQL Server 的預設執行個體，則必須以下列格式在 FQDN 之後指定執行個體︰&lt;SQL Server FQDN>\&lt;執行個體名稱>
-  - **資料庫名稱** - 指定資料倉儲資料庫的 FQDN。  Configuration Manager 會使用此名稱來建立資料庫。 如果您指定的資料庫名稱已存在於 SQL Server 執行個體上，Configuration Manager 會使用該資料庫。
-  - **確認** - 按一下 [確認] 確定成功連線到站台資料庫。
+  -    **伺服器名稱** - 指定裝載資料倉儲服務點和資料庫之伺服器的 FQDN。 如果您未使用 SQL Server 的預設執行個體，則必須以下列格式在 FQDN 之後指定執行個體︰&lt;SQL Server FQDN>\&lt;執行個體名稱>
+  -    **資料庫名稱** - 指定資料倉儲資料庫的 FQDN。  Configuration Manager 會使用此名稱來建立資料庫。 如果您指定的資料庫名稱已存在於 SQL Server 執行個體上，Configuration Manager 會使用該資料庫。
+  -    **確認** - 按一下 [確認] 確定成功連線到站台資料庫。
 
 [同步處理設定] 頁面：   
 - **資料設定︰**
@@ -107,7 +107,7 @@ ms.openlocfilehash: cd970dacd29916c2de2db3dd5498b1949f5174e6
 #### <a name="troubleshoot-installation-and-data-synchronization"></a>針對安裝和資料同步處理進行疑難排解
 您可以使用下列記錄來調查安裝資料倉儲服務點或同步處理資料的問題：
 - **DWSSMSI.log** 和 **DWSSSetup.log** - 使用這些記錄可調查安裝資料倉儲服務點時所發生的錯誤。
--   **Microsoft.ConfigMgrDataWarehouse.log** - 使用此記錄可調查站台資料庫與資料倉儲資料庫之間的資料同步處理。
+-     **Microsoft.ConfigMgrDataWarehouse.log** - 使用此記錄可調查站台資料庫與資料倉儲資料庫之間的資料同步處理。
 
 ### <a name="reporting"></a>報告
 安裝資料倉儲站台系統角色之後，Reporting Services 點會提供下列 [類別] 為 [資料倉儲] 的報告：
@@ -143,7 +143,7 @@ ms.openlocfilehash: cd970dacd29916c2de2db3dd5498b1949f5174e6
 
 您可以檢閱下列 Configuration Manager 記錄，確認已成功重新安裝站台系統角色：  
 - **DWSSMSI.log** 和 **DWSSSetup.log** - 使用這些記錄可調查安裝資料倉儲服務點時所發生的錯誤。
--   **Microsoft.ConfigMgrDataWarehouse.log** - 使用此記錄可調查站台資料庫與資料倉儲資料庫之間的資料同步處理。
+-     **Microsoft.ConfigMgrDataWarehouse.log** - 使用此記錄可調查站台資料庫與資料倉儲資料庫之間的資料同步處理。
 
 
 ## <a name="content-library-cleanup-tool"></a>內容庫清理工具
@@ -173,7 +173,7 @@ ms.openlocfilehash: cd970dacd29916c2de2db3dd5498b1949f5174e6
   2. **刪除模式**︰當您搭配 **/delete** 參數執行此工具時，此工具會在刪除模式中執行。
 
      - 當工具在此模式中執行時，您可以從發佈點的內容庫刪除指定發佈點上所發現的孤立內容。
-     -  在刪除每個檔案之前，系統會提示使用者確認應刪除檔案。  您可以選取 **Y** 表示是、選取 **N** 表示否，或選取 [全部皆是] 略過接下來的提示並刪除所有孤立的內容。  
+     -     在刪除每個檔案之前，系統會提示使用者確認應刪除檔案。  您可以選取 **Y** 表示是、選取 **N** 表示否，或選取 [全部皆是] 略過接下來的提示並刪除所有孤立的內容。  
      </br>
 
      建議您在假設狀況模式中執行工具並檢閱產生的記錄檔，再搭配 /delete 參數執行此工具。  
@@ -206,7 +206,7 @@ ms.openlocfilehash: cd970dacd29916c2de2db3dd5498b1949f5174e6
   許多物件現在支援名為 [物件路徑] 的新欄位。  當您搜尋並將此欄位包含在顯示結果時，您可以檢視每個物件的路徑。 例如，如果您對 [應用程式] 節點中的應用程式執行搜尋，而且也要搜尋子節點，結果窗格中的 [物件路徑] 欄會顯示所傳回之每個物件的路徑。   
 
 - **保留搜尋文字︰**  
-  當您在搜尋文字方塊中輸入文字，然後變更您要搜尋的節點時，您輸入的文字現在會保存並保持可供使用，而不必重新輸入。  
+  當您在搜尋文字方塊中輸入文字，並切換搜尋子節點和目前的節點時，所輸入的文字現在會保存並可供新搜尋使用，而不必重新輸入。
 
 - **保留搜尋子節點的決定︰**  
  當您變更所使用的節點時，現在會保存您選取用來搜尋「目前節點」或「所有子節點」的選項。   此新行為表示當您在主控台中四處移動時，不需要不斷地重設決定。  根據預設，當您開啟主控台時，會選擇只搜尋目前的節點。
@@ -216,9 +216,9 @@ ms.openlocfilehash: cd970dacd29916c2de2db3dd5498b1949f5174e6
 
 ### <a name="try-it-out"></a>試試看
 設定可執行檔清單
-1.  在任何部署類型的內容頁面上，選擇 [Installer Handling] (安裝程式處理) 索引標籤。
-2.  按一下 [新增] 將其中一個可執行檔新增至清單 (例如 **Edge.exe**)
-3.  按一下 [確定] 關閉部署類型內容對話方塊。
+1.    在任何部署類型的內容頁面上，選擇 [Installer Handling] (安裝程式處理) 索引標籤。
+2.    按一下 [新增] 將其中一個可執行檔新增至清單 (例如 **Edge.exe**)
+3.    按一下 [確定] 關閉部署類型內容對話方塊。
 
 現在，當您將此應用程式部署給使用者或裝置，而且您新增的其中一個可執行檔正在執行時，使用者會看到 [軟體中心] 對話方塊，告訴他們因為應用程式正在執行，所以安裝失敗。
 
@@ -248,16 +248,16 @@ ms.openlocfilehash: cd970dacd29916c2de2db3dd5498b1949f5174e6
 
 ### <a name="to-enable-the-download-of-express-installation-files-for-windows-10-updates-on-the-server"></a>在伺服器上下載 Windows 10 更新的快速安裝檔案
 若要啟動 Windows 10 快速安裝檔案的中繼資料同步處理，您必須在 [軟體更新點內容] 中將它啟用。
-1.  在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [站台設定] > [站台]。
-2.  選取管理中心網站或獨立主要站台。
-3.  在 [首頁]  索引標籤的 [設定]  群組中，按一下 [設定站台元件] ，然後按一下 [軟體更新點] 。 在 [更新檔案] 索引標籤上，選取 [Download full files for all approved updates and express installation files for Windows 10] (下載所有核准更新的完整檔案和 Windows 10 的快速安裝檔案)。
+1.    在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [站台設定] > [站台]。
+2.    選取管理中心網站或獨立主要站台。
+3.    在 [首頁]  索引標籤的 [設定]  群組中，按一下 [設定站台元件] ，然後按一下 [軟體更新點] 。 在 [更新檔案] 索引標籤上，選取 [Download full files for all approved updates and express installation files for Windows 10] (下載所有核准更新的完整檔案和 Windows 10 的快速安裝檔案)。
 
 ### <a name="to-enable-support-for-clients-to-download-and-install-express-installation-files"></a>啟用用戶端支援以下載並安裝快速安裝檔案
 若要啟用用戶端的快速安裝檔案支援，您必須在用戶端設定的 [軟體更新] 區段中，啟用用戶端的快速安裝檔案。 這會建立新的 HTTP 接聽程式，以在您指定的連接埠上接聽下載快速安裝檔案的要求。 在您部署用戶端設定以在用戶端上啟用這項功能之後，該功能會嘗試下載目前月份的 Windows 10 累積更新與上個月更新之間的差異 (用戶端必須執行支援快速安裝檔案的 Windows 10 版本)。
-1.  在 [軟體更新點元件內容] (上一個程序) 中啟用快速安裝檔案的支援。
-2.  在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [用戶端設定]。
-3.  選取適當的用戶端設定，然後在 [首頁]索引標籤上，按一下 [內容]。
-4.  選取 [軟體更新] 頁面，在 [啟用安裝用戶端上的 Express Updates] 設定中設定 [是]，然後在 [Port used to download content for Express Updates] (連接埠, 用來下載 Express Updates 的內容) 設定中設定用戶端上的 HTTP 接聽程式所使用的連接埠。
+1.    在 [軟體更新點元件內容] (上一個程序) 中啟用快速安裝檔案的支援。
+2.    在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [用戶端設定]。
+3.    選取適當的用戶端設定，然後在 [首頁]索引標籤上，按一下 [內容]。
+4.    選取 [軟體更新] 頁面，在 [啟用安裝用戶端上的 Express Updates] 設定中設定 [是]，然後在 [Port used to download content for Express Updates] (連接埠, 用來下載 Express Updates 的內容) 設定中設定用戶端上的 HTTP 接聽程式所使用的連接埠。
 
 
 ## <a name="odata-endpoint-data-access"></a>OData 端點資料存取
@@ -317,6 +317,6 @@ Azure Active Directory (AD) 上架會建立 Configuration Manager 與 Azure Acti
 
 
 
-<!--HONumber=Jan17_HO4-->
+<!--HONumber=Feb17_HO2-->
 
 

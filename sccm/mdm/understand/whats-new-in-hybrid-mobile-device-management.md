@@ -2,7 +2,7 @@
 title: "混合式 MDM 的新功能 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 與 Intune 的混合式部署可以使用的新行動裝置管理功能。"
 ms.custom: na
-ms.date: 01/12/2017
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 7327c969402b9b467cfb50d1dd3255797a9d4c4e
-ms.openlocfilehash: 27b75831f28860ca435b4a53aad31abd15b9e451
+ms.sourcegitcommit: 7972aa2c39f5b86e69087b1ed5a1c3b50ba69940
+ms.openlocfilehash: f74bd019b5403f3f5702795279759270261ce4db
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
@@ -36,6 +36,20 @@ ms.openlocfilehash: 27b75831f28860ca435b4a53aad31abd15b9e451
 |**Configuration Manager Technical Preview 的新功能**| 此類別下列出的所有功能只能搭配指定的 Technical Preview 版本使用。 若要試用這些功能，您必須安裝功能描述中指定的 Technical Preview 版本。 如需詳細資訊，請參閱 [Technical Preview for System Center Configuration Manager](../../core/get-started/technical-preview.md) 。|
 |**Configuration Manager (最新分支) 的新功能**| 此類別下列出的所有功能只能搭配指定的 Configuration Manager 版本 (最新分支) 使用，例如 1511 版或 1602 版。 如果您的混合式部署使用舊版的 Configuration Manager，即必須升級到功能描述中指定的 Configuration Manager 版本 (最新分支)。 如需詳細資訊，請參閱[升級至 System Center Configuration Manager](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)。|
 
+## <a name="new-hybrid-features-in-february-2017"></a>2017 年 2 月的新混合式功能
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
+
+2017 年 2 月推出的下列 Intune 功能可在混合式部署中運作：
+
+- **現代化公司入口網站**
+
+  公司入口網站支援以沒有受管理裝置的使用者為目標的應用程式。 網站會與其他 Microsoft 產品和服務一致，方法是使用新的對比色彩配置、動態圖例和「漢堡功能表」，其包含技術服務連絡人詳細資料以及現有受管理裝置的相關資訊。 登陸頁面已重新排列，其透過 [精選和最近更新] 應用程式的浮動切換來強調使用者可用的應用程式。 您可以在 [UI 更新](/intune/whats-new/whats-new-in-intune-app-ui)頁面中找到之前和之後的影像。
+
+- **適用於 Windows 裝置的新 MDM 伺服器位址**
+
+  註冊 Windows 和 Windows Phone 裝置的 MDM 伺服器位址，已從 manage.microsoft.com 變更為 enrollment.manage.microsoft.com。 在註冊 Windows 和 Windows Phone 時，如果出現提示，請通知使用者使用 enrollment.manage.microsoft.com 的 MDM 伺服器位址。 這項更新另要求您將 DNS 中任何把 EnterpriseEnrollment.contoso.com 重新導向 manage.microsoft.com 的 CNAME，取代為把 EnterpriseEnrollment.contoso.com 重新導向 EnterpriseEnrollment-s.manage.microsoft.com 的 DNS CNAME。 如需這項變更的詳細資訊，請造訪 http://aka.ms/intuneenrollsvrchange。 
+
 ## <a name="new-hybrid-features-in-january-2017"></a>2017 年 1 月的新混合式功能
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
@@ -49,6 +63,12 @@ ms.openlocfilehash: 27b75831f28860ca435b4a53aad31abd15b9e451
 - **解決 iOS 裝置處於非使用中狀態或管理主控台無法與其通訊的問題**
 
   當使用者的裝置失去與 Intune 的連線時，您可以為使用者提供新的疑難排解步驟，以協助他們重新取得公司資源的存取權。 請參閱[裝置處於非使用中狀態或管理主控台無法與其通訊](/intune/troubleshoot/troubleshoot-device-enrollment-in-intune#devices-are-inactive-or-the-admin-console-cannot-communicate-with-them)。
+
+### <a name="new-in-configuration-manager-technical-preview-1701"></a>Configuration Manager Technical Preview 1701 的新功能
+
+- **混合式 MDM 的建立精靈無法再將目標設為 Android 與 iOS 版本**
+
+  從混合式行動裝置管理 (MDM) 的 Technical Preview 1701 開始，您在為受 Intune 管理的裝置建立新原則及設定檔時，不再需要以 Android 或 iOS 的特定版本為目標。 透過這項變更，混合式部署可更快為 Android 及 iOS 版本提供支援，而不需要新的 Configuration Manager 版本或延伸模組。 若要深入了解，請參閱[建立精靈無法再將目標設為 Android 與 iOS 版本](/sccm/core/get-started/capabilities-in-technical-preview-1701#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm)。
 
 
 ## <a name="new-hybrid-features-in-december-2016"></a>2016 年 12 月的新混合式功能
@@ -65,20 +85,20 @@ ms.openlocfilehash: 27b75831f28860ca435b4a53aad31abd15b9e451
 
   中國現在提供適用於 Android 的公司入口網站應用程式。 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文應用程式服務商場取得應用程式。 適用於 Android 的公司入口網站應用程式已於下列市集中可供下載：
 
-  - [百度](https://go.microsoft.com/fwlink/?linkid=836946)
-  - [華為](https://go.microsoft.com/fwlink/?linkid=836948)
-  - [騰訊](https://go.microsoft.com/fwlink/?linkid=836949)
-  - [豌豆莢](https://go.microsoft.com/fwlink/?linkid=836950)
-  - [小米應用商店](https://go.microsoft.com/fwlink/?linkid=836947)
+  -    [百度](https://go.microsoft.com/fwlink/?linkid=836946)
+  -    [華為](https://go.microsoft.com/fwlink/?linkid=836948)
+  -    [騰訊](https://go.microsoft.com/fwlink/?linkid=836949)
+  -    [豌豆莢](https://go.microsoft.com/fwlink/?linkid=836950)
+  -    [小米應用商店](https://go.microsoft.com/fwlink/?linkid=836947)
 
   適用於 Android 的公司入口網站應用程式會使用 Google Play 服務來與 Microsoft Intune 服務通訊。 由於中國尚無法使用 Google Play 服務，因此執行下列任何工作可能需要多達 8 小時才能完成。
 
   | Configuration Manager 系統管理員主控台 | 適用於 Android 的 Intune 公司入口網站應用程式 | Intune 公司入口網站 |
-  |----|----|----|      
-  | 淘汰/抹除 (移除所有資料)   | 移除遠端裝置 | 移除裝置 (本機和遠端) |
-  | 淘汰/抹除 (移除公司資料)   | 重設裝置 | 重設裝置|
+  |----|----|----|        
+  | 淘汰/抹除 (移除所有資料)    | 移除遠端裝置 | 移除裝置 (本機和遠端) |
+  | 淘汰/抹除 (移除公司資料)    | 重設裝置 | 重設裝置|
   | 新的或更新的應用程式部署 | 安裝可用的企業營運應用程式 | 裝置密碼重設|
-  | 遠端鎖定 | | |
+  | 遠端鎖定    | | |
   | 密碼重設 | | |        
 
 
@@ -147,9 +167,9 @@ Configuration Manager (最新分支) 1610 版也包含下列額外的混合式�
 如果您正在執行使用 Configuration Manager 2012 SP1 或 R2 RTM 的混合式部署，建議您在 2017 年 4 月 10 日之前升級至 Configuration Manager (最新分支)，或是最新支援的 Configuration Manager 2012 Service Pack (R2 SP1 或 SP2)，以避免服務中斷。
 
 其他資源：
--   [升級至 System Center Configuration Manager (最新分支)](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)
--   [規劃升級至 System Center 2012 R2 Configuration Manager SP1](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningR2SP1Upgrade)
--   [規劃升級至 System Center 2012 Configuration Manager SP2](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningSP2Upgrade)
+-    [升級至 System Center Configuration Manager (最新分支)](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager)
+-    [規劃升級至 System Center 2012 R2 Configuration Manager SP1](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningR2SP1Upgrade)
+-    [規劃升級至 System Center 2012 Configuration Manager SP2](https://technet.microsoft.com/library/jj822981.aspx#BKMK_PlanningSP2Upgrade)
 
 ### <a name="windows-phone-8-company-portal-upload-deprecated"></a>Windows Phone 8 公司入口網站上傳已停用
 *2016 年 10 月 25 日*
@@ -164,6 +184,6 @@ Configuration Manager 主控台已移除上傳已簽署公司入口網站應用�
 
 
 
-<!--HONumber=Jan17_HO2-->
+<!--HONumber=Feb17_HO2-->
 
 

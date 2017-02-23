@@ -2,7 +2,7 @@
 title: "提取發佈點 | Microsoft Docs"
 description: "了解搭配使用提取發佈點與 System Center Configuration Manager 的設定和限制。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,15 +16,15 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: f94d928244699c1c926dca05823f0029c588c7f1
+ms.sourcegitcommit: 9b366262ae59a8cb57c0f1760b961194d17bcf52
+ms.openlocfilehash: db5039ff6cb93e3099b096196d49a1f06c315a6b
 
 
 ---
 
 # <a name="use-a-pull-distribution-point-with-system-center-configuration-manager"></a>使用提取發佈點搭配 System Center Configuration Manager
 
-*適用於：System Center Configuration Manager (最新分支)*
+*適用對象：System Center Configuration Manager (最新分支)*
 
 
 System Center Configuration Manager 的提取發佈點是標準發佈點，其透過從來源位置 (如用戶端) 下載來取得發佈的內容，而不是讓內容從站台伺服器進行推送。  
@@ -67,9 +67,9 @@ System Center Configuration Manager 的提取發佈點是標準發佈點，其�
     > [!NOTE]  
     >  當發佈點設定為提取發佈點時，發佈點的內容中不會顯示 [速率限制]  索引標籤。  
 
--   提取發佈點不會使用 [重試設定]  進行內容發佈。 [重試設定] 可以設定為每個網站上 [軟體發佈元件內容]  的一部分。 若要檢視或設定這些內容，請在 Configuration Manager 主控台的 [系統管理] 工作區中，並展開 [站台設定]，然後選取 [站台]。 接下來，在結果窗格中選取網站，然後在 [首頁]  索引標籤中選取 [設定網站元件] ，然後選取 [軟體發佈] 。  
+-   提取發佈點不會使用 [重試設定]  進行內容發佈。 [重試設定] 可以設定為每個網站上 [軟體發佈元件內容]  的一部分。 若要檢視或設定這些內容，請在 Configuration Manager 主控台的 [系統管理] 工作區中，並展開 [站台設定]，然後選取 [站台]。 接下來，在結果窗格中選取網站，然後在 [首頁] 索引標籤中選取[設定網站元件]。 最後再選取 [軟體發佈]。  
 
--   若要從遠端樹系中的來源發佈點傳送內容，裝載提取發佈點的電腦必須安裝 Configuration Manager 用戶端，且必須設定可存取來源發佈點的「網路存取帳戶」，以便加以使用。  
+-   若要從遠端樹系中的來源發佈點傳送內容，裝載提取發佈點的電腦必須安裝 Configuration Manager 用戶端。 此外還必須設定使用可存取來源發佈點的網路存取帳戶。  
 
 -   在設定為提取發佈點並執行 Configuration Manager 用戶端的電腦上，用戶端的版本必須與安裝提取發佈點的 Configuration Manager 站台相同。 這是提取發佈點使用提取發佈點與 Configuration Manager 用戶端共用的 CCMFramework 時的必要條件。  
 
@@ -98,22 +98,22 @@ System Center Configuration Manager 的提取發佈點是標準發佈點，其�
 
 當提取發佈點從來源發佈點下載內容時，該提取發佈點會在 [發佈點使用摘要]  報告的 [存取的用戶端 (唯一)]  欄內計為用戶端。  
 
- 根據預設，提取發佈點會使用其 **電腦帳戶** 從來源發佈點傳輸內容。 不過，當提取發佈點從遠端樹系的來源發佈點傳輸內容時，提取發佈點一律使用「網路存取帳戶」。 若要進行此程序，電腦必須安裝 Configuration Manager 用戶端，並設定要加以使用、且可以存取來源發佈點的「網路存取帳戶」。  
+ 根據預設，提取發佈點會使用其 **電腦帳戶** 從來源發佈點傳輸內容。 不過，當提取發佈點從遠端樹系的來源發佈點傳輸內容時，提取發佈點一律使用網路存取帳戶。 若要進行此程序，電腦必須安裝 Configuration Manager 用戶端，並設定要加以使用、且可以存取來源發佈點的網路存取帳戶。  
 
 ## <a name="about-content-transfers"></a>關於傳送內容  
  為管理內容的傳輸作業，提取發佈點會使用 Configuration Manager 用戶端軟體的 **CCMFramework** 元件。  
 
--   此架構是您將發佈點設定為提取發佈點時，由 **Pulldp.msi** 所安裝，且不需要安裝 Configuration Manager 用戶端。  
+-   此架構是您將發佈點設定為提取發佈點時由 **Pulldp.msi** 所安裝。 該架構不需要 Configuration Manager 用戶端。  
 
 -   在安裝提取發佈點之後，提取發佈點電腦上的 CCMExec 服務必須可操作，以供提取發佈點運作之用。  
 
 -   當提取發佈點傳送內容時，其會使用 **背景智慧型傳送服務** (BITS) 來傳送內容，並將作業記錄在發佈點電腦上的 **datatransferservice.log** 和 **pulldp.log** 中。  
 
-## <a name="see-also"></a>另請參閱  
+## <a name="see-also"></a>請參閱  
  [System Center Configuration Manager 中的內容管理基本概念](/sccm/core/plan-design/hierarchy/fundamental-concepts-for-content-management)   
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

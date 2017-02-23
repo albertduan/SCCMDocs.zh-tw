@@ -2,7 +2,7 @@
 title: "Endpoint Protection 用戶端常見問題集 | Microsoft Docs"
 description: "取得 Windows Defender 和 Endpoint Protection 常見問題的解答。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: f0352e59390ade7212a64cf0de883bbb1ca28bab
+ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
+ms.openlocfilehash: b88bc5f734b85527b81e5848deb0617db4c8dfbc
 
 
 ---
@@ -29,39 +29,23 @@ ms.openlocfilehash: f0352e59390ade7212a64cf0de883bbb1ca28bab
 這個 FAQ 適用於 IT 系統管理員已將 Windows Defender 或 Endpoint Protection 部署至其受管理電腦的電腦使用者。 這裡的內容可能不適用於其他反惡意程式碼軟體。 Microsoft System Center Endpoint Protection 管理 Windows 10 上的 Windows Defender。 它也可以部署和管理 Windows 10 之前電腦的 Endpoint Protection 用戶端。 雖然本文描述 Windows Defender，但是它的資訊也適用於 Endpoint Protection。  
 
 -   [為什麼需要防毒和反間諜功能軟體？](#why-do-i-need-antivirus-and-antispyware-software)  
-
--   [如何判斷我的電腦是否遭到惡意軟體感染？](#how-can-i-tell-if-my-computer-is-infected-with-malicious-software)  
-
+-   [如何判斷我的電腦是否遭到惡意軟體感染？](#how-can-i-tell-if-my-computer-is-infected-with-malicious-software)
+-   [如何尋找 Windows Defender 的版本？](#how-can-i-find-the-version-of-windows-defender)
 -   [如果 Windows Defender 或 Endpoint Protection 在電腦上偵測到惡意軟體，該怎麼辦？](#what-should-i-do-if-windows-defender-or-endpoint-protection-detects-software-on-my-computer)  
-
 -   [何謂病毒？](#what-is-a-virus)  
-
 -   [何謂間諜軟體？](#what-is-spyware)  
-
 -   [病毒、間諜軟體與其他潛在有害軟體的差異為何？](#hat-s-the-difference-between-viruses-spyware-and-other-potentially-harmful-software)  
-
 -   [病毒、間諜軟體與其他潛在垃圾軟體來自何處？](#where-do-viruses-spyware-and-other-potentially-unwanted-software-come-from)  
-
 -   [我可能會收到惡意軟體，而不知情嗎？](#can-i-get-malicious-software-without-knowing-it)  
-
 -   [先檢閱授權合約，再安裝軟體，為何如此重要？](#why-is-it-important-to-review-license-agreements-before-installing-software)  
-
 -   [Endpoint Protection 與 Windows Defender 的差異為何？](#what-s-the-difference-between-endpoint-protection-and-windows-defender)  
-
 -   [Windows Defender 為什麼偵測不到 Cookie?](#why-doesn-t-windows-defender-detect-cookies)  
-
 -   [如何防止惡意程式碼？](#how-can-i-prevent-malware)  
-
 -   [什麼是病毒和間諜軟體定義？](#what-are-virus-and-spyware-definitions)  
-
 -   [如何讓病毒和間諜軟體定義保持最新狀態？](#how-do-i-keep-virus-and-spyware-definitions-up-to-date)  
-
 -   [如何移除或還原 Windows Defender 或 Endpoint Protection 已隔離的項目？](#how-do-i-remove-or-restore-items-quarantined-by-windows-defender-or-endpoint-protection)  
-
 -   [何謂即時保護？](#what-is-real-time-protection)  
-
 -   [如何得知 Windows Defender 或 Endpoint Protection 正在電腦上執行？](#how-do-i-know-that-windows-defender-or-endpoint-protection-is-running-on-my-computer)
-
 -   [如何設定 Windows Defender 或 Endpoint Protection 警示？](#how-to-set-up-windows-defender-or-endpoint-protection-alerts)  
 
 ##  <a name="why-do-i-need-antivirus-and-antispyware-software"></a>為什麼需要防毒和反間諜功能軟體？  
@@ -104,6 +88,9 @@ ms.openlocfilehash: f0352e59390ade7212a64cf0de883bbb1ca28bab
 -   您電腦的執行速度突然變得比平常慢。 並非所有電腦效能問題都是惡意軟體所造成，但是惡意軟體 (特別是間諜軟體) 可能會導致明顯地變化。  
 
 即使看不到任何徵兆，您的電腦上可能還是有惡意軟體。 這類型的軟體可以在您不知道或未同意的情況下收集有關您和您電腦的資訊。 為了協助保護您的隱私權和電腦，您應該隨時都執行 Windows Defender 或 Endpoint Protection。  
+
+## <a name="how-can-i-find-the-version-of-windows-defender"></a>如何尋找 Windows Defender 的版本？
+ 若要檢視在電腦上執行之 Windows Defender 的版本，請開啟 Windows Defender (按一下 [啟動]，然後搜尋 **Windows Defender**)，按一下 [設定]，再捲動到 Windows Defender 設定的底部以尋找 [版本資訊]。
 
 ##  <a name="what-should-i-do-if-windows-defender-or-endpoint-protection-detects-malicious-software-on-my-computer"></a>如果 Windows Defender 或 Endpoint Protection 在電腦上偵測到惡意軟體，該怎麼辦？  
 
@@ -279,6 +266,6 @@ ms.openlocfilehash: f0352e59390ade7212a64cf0de883bbb1ca28bab
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

@@ -2,7 +2,7 @@
 title: "管理來自商務用 Windows 市集的應用程式 | Microsoft Docs"
 description: "使用 System Center Configuration Manager，從商務用 Windows 市集管理和部署應用程式。"
 ms.custom: na
-ms.date: 11/19/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3847a85c11d7b72b84095ba9add563bdf5c49a75
-ms.openlocfilehash: 605cdd01d767dda3467198f5e6539448f9b559f6
+ms.sourcegitcommit: f955b5aadfc617e08d5d933dee8e42de838f83c0
+ms.openlocfilehash: bf2937f5ba86db19d9cb40e2c98cbb8ba365f7eb
 
 ---
 # <a name="manage-apps-from-the-windows-store-for-business-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理從商務用 Windows 市集購買的應用程式
@@ -74,9 +74,9 @@ Because this is a pre-release feature, before you can connect Configuration Mana
 > [!IMPORTANT]
 > 設定 Configuration Manager 和商務用 Windows 市集之間的連線時，您必須提供一個資料夾來存放從市集同步處理的應用程式內容。
 若要保障此資料夾的安全且其內容可順利部署到裝置，請確定下列權限都已就緒：
--   使用 **Computer$** 帳戶時，安裝服務連接點站台系統角色 (階層中的頂層站台) 的電腦，必須具有指定資料夾的讀取和寫入權限。
--   應用程式作者必須具有指定資料夾的讀取權限。
--   裝載 SMS 提供者執行個體的每部電腦，其 **Computer$** 帳戶必須能夠使用您指定的資料夾。
+-    使用 **Computer$** 帳戶時，安裝服務連接點站台系統角色 (階層中的頂層站台) 的電腦，必須具有指定資料夾的讀取和寫入權限。
+-    應用程式作者必須具有指定資料夾的讀取權限。
+-    裝載 SMS 提供者執行個體的每部電腦，其 **Computer$** 帳戶必須能夠使用您指定的資料夾。
 
 
 在 Azure Active Directory 中，將 Configuration Manager 註冊為 [Web 應用程式] 或 [Web API] 管理工具。 這會提供您一個稍後將會需要的用戶端識別碼。
@@ -98,6 +98,9 @@ Because this is a pre-release feature, before you can connect Configuration Mana
 5.  選擇您剛才匯入之應用程式旁邊的 [啟用]。
 6.  如果您想要允許購買離線授權的應用程式，請在 [管理] > [帳戶資訊] 頁面中，選取 [Show Offline-Licensed Apps] (顯示離線授權的應用程式)。
 
+> [!Note]
+> 如果您使用一個以上的管理工具來部署商務用 Windows 市集應用程式，之前只有一個工具能與商務用 Windows 市集應用程式建立關聯。 現在，您可以建立多個管理工具 (如 Intune 和 Configuration Manager) 與市集之間的關聯。
+
 將市集帳戶新增至 Configuration Manager。
 
 1. 請確認已從商務用 Windows 市集至少購買一個應用程式。 在 Configuration Manager 主控台的 [管理] 工作區中，展開 [雲端服務]，然後選擇 [商務用 Windows 市集]。
@@ -107,10 +110,10 @@ Because this is a pre-release feature, before you can connect Configuration Mana
 
 變更要在應用程式類別目錄中顯示的應用程式語言，以供使用者下載。
 
-1.  在 Configuration Manager 主控台的 [管理] 工作區中，選擇 [雲端服務] > [更新與服務] > [商務用 Windows 市集]。
-2.  選取您的商務用 Windows 市集帳戶，然後選擇 [內容]。
-3.  選取 [語言]。
-4.  新增或移除應用程式類別目錄中會顯示的語言。 選取將會提供給使用者的預設應用程式類別目錄語言。
+1.    在 Configuration Manager 主控台的 [管理] 工作區中，選擇 [雲端服務] > [更新與服務] > [商務用 Windows 市集]。
+2.    選取您的商務用 Windows 市集帳戶，然後選擇 [內容]。
+3.    選取 [語言]。
+4.    新增或移除應用程式類別目錄中會顯示的語言。 選取將會提供給使用者的預設應用程式類別目錄語言。
 
 >[!IMPORTANT]
 >在此版本中，如果您變更的語言需要同步處理，則必須重新啟動站台伺服器上的 SMS Executive 服務，語言設定才會生效。
@@ -118,17 +121,17 @@ Because this is a pre-release feature, before you can connect Configuration Mana
 
 從 Azure Active Directory 修改用戶端祕密金鑰。
 
-1.  在 Configuration Manager 主控台的 [管理] 工作區中，選擇 [雲端服務] > [更新與服務] > [商務用 Windows 市集]。
-2.  選取您的商務用 Windows 市集帳戶，然後選擇 [內容]。
-3.  在 [商務用 Windows 市集帳戶內容] 對話方塊的 [用戶端祕密金鑰] 欄位中，輸入新的金鑰，然後選擇 [驗證]。 驗證後，選擇 [套用]，然後關閉對話方塊。
+1.    在 Configuration Manager 主控台的 [管理] 工作區中，選擇 [雲端服務] > [更新與服務] > [商務用 Windows 市集]。
+2.    選取您的商務用 Windows 市集帳戶，然後選擇 [內容]。
+3.    在 [商務用 Windows 市集帳戶內容] 對話方塊的 [用戶端祕密金鑰] 欄位中，輸入新的金鑰，然後選擇 [驗證]。 驗證後，選擇 [套用]，然後關閉對話方塊。
 
-## <a name="synch-apps-from-the-store-with-configuration-manager"></a>將來自市集的應用程式與 Configuration Manager 同步處理
+## <a name="sync-apps-from-the-store-with-configuration-manager"></a>將來自市集的應用程式與 Configuration Manager 同步處理
 
 每隔 24 小時會同步處理一次，或者，您可以透過下列程序起始立即同步處理：
 
 1. 在 Configuration Manager 主控台的 [管理] 工作區中，選擇 [雲端服務] > [更新與服務] > [商務用 Windows 市集]。
-3.  在 [常用] 索引標籤的 [同步] 群組中，選擇 [立即同步]。
-4.  您所購買的應用程式就會出現在 [應用程式管理] 工作區的 [市集應用程式的授權資訊] 節點中。
+3.    在 [常用] 索引標籤的 [同步] 群組中，選擇 [立即同步]。
+4.    您所購買的應用程式就會出現在 [應用程式管理] 工作區的 [市集應用程式的授權資訊] 節點中。
 
 
 ## <a name="create-and-deploy-a-configuration-manager-application-from-a-windows-store-for-business-app"></a>從商務用 Windows 市集應用程式建立和部署 Configuration Manager 應用程式
@@ -150,6 +153,6 @@ Because this is a pre-release feature, before you can connect Configuration Mana
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

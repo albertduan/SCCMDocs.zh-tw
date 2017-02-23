@@ -1,15 +1,33 @@
+---
+title: "備份和復原 | Microsoft Docs"
+description: "了解如何在發生失敗或資料遺失時，使用 System Center Configuration Manager 備份和復原您的站台。"
+ms.custom: na
+ms.date: 1/3/2017
+ms.prod: configuration-manager
+ms.reviewer: na
+ms.suite: na
+ms.technology:
+- configmgr-other
+ms.tgt_pltfrm: na
+ms.topic: article
+ms.assetid: f7832d83-9ae2-4530-8a77-790e0845e12f
+caps.latest.revision: 22
+author: Brenduns
+ms.author: brenduns
+manager: angrobe
+translationtype: Human Translation
+ms.sourcegitcommit: 3aa9f2e4d3f7210981b5b84942485de11fe15cb2
+ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
 ---
-標題：「備份和復原 | Microsoft Docs」描述：「了解如何在發生失敗或資料遺失時，使用 System Center Configuration Manager 備份和復原您的站台。」
-ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na ms.suite: na ms.technology:
-  - configmgr-other ms.tgt_pltfrm: na ms.topic: article ms.assetid: f7832d83-9ae2-4530-8a77-790e0845e12f -caps.latest.revision: 22 -author: Brenduns ms.author: brendunsmanager: angrobe
 
-----
+# <a name="backup-and-recovery"></a>備份與復原
+
+*適用對象：System Center Configuration Manager (最新分支)*
+
+準備備份和復原方法，以避免資料遺失。 對於 Configuration Manager 站台，備份和復原方法有助於在遺失最少資料的情況下更快復原站台和階層。 本主題中的章節可協助您備份站台，並在發生失敗或資料遺失時復原站台。  
 
 
--# System Center Configuration Manager 備份和復原*適用於︰System Center Configuration Manager (最新分支)*
-
--準備備份和復原方法，以避免資料遺失。 對於 Configuration Manager 站台，備份和復原方法有助於在遺失最少資料的情況下更快復原站台和階層。 本主題中的章節可協助您備份站台，並在發生失敗或資料遺失時復原站台。   
 
 - [備份 Configuration Manager 站台](#BKMK_SiteBackup)   
 
@@ -18,10 +36,6 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
   - [使用 Data Protection Manager 備份網站資料庫](#BKMK_DPMBackup)   
 
   -  [封存備份快照](#BKMK_ArchivingBackupSnapshot)   
-
-  -  [封存備份快照](#BKMK_ArchivingBackupSnapshot)   
-
-  -  [使用 AfterBackup.bat 檔案](#BKMK_UsingAfterBackup)   
 
   -  [使用 AfterBackup.bat 檔案](#BKMK_UsingAfterBackup)   
 
@@ -33,35 +47,20 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
          -   [站台伺服器復原選項](#BKMK_SiteServerRecoveryOptions)   
 
-         -   [站台伺服器復原選項](#BKMK_SiteServerRecoveryOptions)   
-
          -   [網站資料庫復原選項](#BKMK_SiteDatabaseRecoveryOption)   
 
-         -  [網站資料庫復原選項](#BKMK_SiteDatabaseRecoveryOption)   
-
          -   [SQL Server 變更追蹤保留期間](#bkmk_SQLretention)   
-
-         -   [SQL Server 變更追蹤保留期間](#bkmk_SQLretention)   
-
-         -   [重新初始化站台或全域資料的程序](#bkmk_reinit)   
 
          -   [重新初始化站台或全域資料的程序](#bkmk_reinit)   
 
          -   [網站資料庫復原案例](#BKMK_SiteDBRecoveryScenarios)  
 
-         -   [網站資料庫復原案例](#BKMK_SiteDBRecoveryScenarios)  
-
   -   [自動站台復原指令碼檔案索引鍵](#BKMK_UnattendedSiteRecoveryKeys)  
-
-  -   [自動站台復原指令碼檔案索引鍵](#BKMK_UnattendedSiteRecoveryKeys)  
-
-  -   [復原後的工作](#BKMK_PostRecovery)  
 
   -   [復原後的工作](#BKMK_PostRecovery)  
 
   -   [復原次要站台](#BKMK_RecoverSecondarySite)  
 
-  -   [復原次要站台](#BKMK_RecoverSecondarySite)  
 -   [SMS 寫入器服務](#BKMK_SMSWriterService)  
 
 > [!NOTE]  
@@ -90,7 +89,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 >  Configuration Manager 可以從 Configuration Manager 備份維護工作，或從您使用其他程序建立的站台資料庫備份，來復原站台資料庫。 例如，您可以使用 Microsoft SQL Server 維護計畫建立的備份還原站台資料庫。 您可以從使用 System Center 2012 Data Protection Manager (DPM) 建立的備份還原站台資料庫。 如需詳細資訊，請參閱 [使用 Data Protection Manager 備份網站資料庫](#BKMK_DPMBackup)。  
 
 ###  <a name="a-namebkmkbackupmaintenancetaska-backup-maintenance-task"></a><a name="BKMK_BackupMaintenanceTask"></a> 備份維護工作  
- 您可以藉由排程預先定義的「備份站台伺服器」維護工作，自動備份 Configuration Manager 站台。 您可以備份管理中心網站和主要網站，但不支援次要網站或網站系統伺服器的備份。 當 Configuration Manager 備份服務執行時，會依照備份控制檔案 (**<ConfigMgr 安裝資料夾\>\Inboxes\Smsbkup.box\Smsbkup.ctl**) 中定義的指示進行。 您可以修改備份控制檔案，以變更備份服務的行為。 站台備份狀態資訊會寫入至 **Smsbkup.log** 檔案。 此檔案會在您於「備份網站伺服器」維護工作內容中指定的目的地資料夾中建立。  
+ 您可以藉由排程預先定義的「備份站台伺服器」維護工作，自動備份 Configuration Manager 站台。 您可以備份管理中心網站和主要網站，但不支援次要網站或網站系統伺服器的備份。 當 Configuration Manager 備份服務執行時，會依照備份控制檔案 (**&lt;ConfigMgrInstallationFolder\>\Inboxes\Smsbkup.box\Smsbkup.ctl**) 中定義的指示進行。 您可以修改備份控制檔案，以變更備份服務的行為。 站台備份狀態資訊會寫入至 **Smsbkup.log** 檔案。 此檔案會在您於「備份網站伺服器」維護工作內容中指定的目的地資料夾中建立。  
 
 
 ##### <a name="to-enable-the-site-backup-maintenance-task"></a>啟用網站備份維護工作  
@@ -117,7 +116,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
     -   **站台伺服器和 SQL Server 上的本機磁碟機**：指定將站台的備份檔案儲存在站台伺服器本機磁碟機上指定的路徑，並將站台資料庫的備份檔案儲存在站台資料庫伺服器本機磁碟機上指定的路徑。 您必須先建立本機資料夾才可以執行備份工作。 網站伺服器的電腦帳戶必須擁有您在網站伺服器上建立之資料夾的 **寫入** NTFS 權限。 SQL Server 的電腦帳戶必須擁有您在網站資料庫伺服器上建立之資料夾的 **寫入** NTFS 權限。 此選項僅在網站伺服器上未安裝網站資料庫時適用。  
 
     > [!NOTE]  
-    >   - 只有在您指定備份目的地的 UNC 路徑時才可以使用瀏覽備份目的地的選項。
+    >    - 只有在您指定備份目的地的 UNC 路徑時才可以使用瀏覽備份目的地的選項。
 
     > - 用於不支援使用 Unicode 字元之備份目的地的資料夾名稱或共用名稱。  
 
@@ -140,7 +139,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   當「備份網站伺服器」維護工作設定為在備份失敗時建立警示時，您可以在 [監視]  工作區的 [警示]  節點中檢查備份失敗的內容。  
 
-    -   在 <*ConfigMgr 安裝資料夾*>\Logs 中，查看 Smsbkup.log 中的警示及錯誤。 當網站備份順利完成時，您會看到含有時戳的 `Backup completed` ，以及訊息識別碼 `STATMSG: ID=5035`。  
+    -   在 &lt;*ConfigMgrInstallationFolder*>\Logs 中，查看 Smsbkup.log 中的警示及錯誤。 當網站備份順利完成時，您會看到含有時戳的 `Backup completed` ，以及訊息識別碼 `STATMSG: ID=5035`。  
 
     > [!TIP]  
     >  當備份維護工作失敗時，您可以藉由停止再重新啟動 SMS_SITE_BACKUP 服務，重新啟動備份工作。  
@@ -165,7 +164,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 -   例如，如果備份網站伺服器維護工作失敗，網站就可能完全沒有備份快照。 由於備份工作會在開始備份現有資料前將過去的備份快照全部移除，如此就會沒有有效的備份快照。  
 
 ###  <a name="a-namebkmkusingafterbackupa-using-the-afterbackupbat-file"></a><a name="BKMK_UsingAfterBackup"></a> 使用 AfterBackup.bat 檔案  
- 順利備份站台之後，備份站台伺服器工作會自動嘗試執行名為 AfterBackup.bat 的檔案。 您必須在 <*ConfigMgr 安裝資料夾*>\Inboxes\Smsbkup 中手動建立 AfterBackup.bat 檔案。 如果 AfterBackup.bat 檔案存在，且儲存在正確的資料夾中，則會在備份工作完成後自動執行。 AfterBackup.bat 檔案可讓您在每次備份操作結束時封存備份快照，並自動執行其他非備份網站伺服器維護工作的備份後工作。 AfterBackup.bat 檔案會整合封存與備份操作，如此即可確保封存每個新的備份快照。 若 AfterBackup.bat 檔案不存在，則備份工作就會將其略過，而對於備份操作沒有任何影響。 若要確認網站備份工作是否已成功執行 AfterBackup.bat 檔，請參閱 [監視]  工作區內的 [元件狀態]  節點，並檢閱 SMS_SITE_BACKUP 的狀態訊息。 工作成功啟動 Afterbackup.bat 命令檔時，您會看見訊息 ID 5040。  
+ 順利備份站台之後，備份站台伺服器工作會自動嘗試執行名為 AfterBackup.bat 的檔案。 您必須在 &lt;*ConfigMgrInstallationFolder*>\Inboxes\Smsbkup 中手動建立 AfterBackup.bat 檔案。 如果 AfterBackup.bat 檔案存在，且儲存在正確的資料夾中，則會在備份工作完成後自動執行。 AfterBackup.bat 檔案可讓您在每次備份操作結束時封存備份快照，並自動執行其他非備份網站伺服器維護工作的備份後工作。 AfterBackup.bat 檔案會整合封存與備份操作，如此即可確保封存每個新的備份快照。 若 AfterBackup.bat 檔案不存在，則備份工作就會將其略過，而對於備份操作沒有任何影響。 若要確認網站備份工作是否已成功執行 AfterBackup.bat 檔，請參閱 [監視]  工作區內的 [元件狀態]  節點，並檢閱 SMS_SITE_BACKUP 的狀態訊息。 工作成功啟動 Afterbackup.bat 命令檔時，您會看見訊息 ID 5040。  
 
 > [!TIP]  
 >  若要建立 AfterBackup.bat 檔案以封存您的站台伺服器備份檔案，您必須使用批次檔中的複製命令工具，例如 Robocopy。 例如，您可以建立 AfterBackup.bat 檔，然後在第一行加入一些內容，如： `Robocopy E:\ConfigMgr_Backup \\ServerName\ShareName\ConfigMgr_Backup /MIR`。 如需 Robocopy 的詳細資訊，請參閱 [Robocopy](http://go.microsoft.com/fwlink/p/?LinkId=228408) 命令列參照網頁。  
@@ -221,7 +220,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 4.  在 [網站角色]  索引標籤的 [內容]  群組中，按一下 [內容] 。  
 5.  儲存使用者狀態移轉資料的資料夾會列在 [一般]  索引標籤上的 [資料夾詳細資料]  區段中。  
 
-
+## <a name="recover-a-configuration-manager-site"></a>復原 Configuration Manager 站台
  只要站台資料庫發生 Configuration Manager 站台失敗或資料遺失的狀況，就需要進行 Configuration Manager 站台復原。 修復和重新同步處理資料是網站復原的核心工作，也是避免操作中斷的必要手段。  
 
 > [!IMPORTANT]  
@@ -434,7 +433,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要：** 可能  
 
-    -   **值︰**<參照站台 FQDN\>  
+    -   **值：**&lt;ReferenceSiteFQDN\>  
 
     -   **詳細資料︰** 若資料庫備份比變更追蹤保留期間還舊，或未使用備份復原站台，請指定管理中心所使用的參照主要站台來復原全域資料。  
 
@@ -448,7 +447,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要：** 否  
 
-    -   **值︰**<站台伺服器備份組的路徑\>  
+    -   **值：**&lt;PathToSiteServerBackupSet\>  
 
     -   **詳細資料︰** 指定站台伺服器備份集的路徑。 **ServerRecoveryOptions** 設定值為 **1** 或 **2**時，可選擇是否要使用此索引鍵。 指定 **SiteServerBackupLocation** 索引鍵值，藉此使用網站備份來復原網站。 若沒有指定值，重新安裝網站時就不會從備份集還原網站。  
 
@@ -456,7 +455,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要：** 可能  
 
-    -   **值︰**<站台資料庫備份組的路徑\>  
+    -   **值：**&lt;PathToSiteDatabaseBackupSet\>  
 
     -   **詳細資料：** 指定站台資料庫備份集的路徑。 **ServerRecoveryOptions** 索引鍵的設定值為 **1** 或 **4** ，且 **DatabaseRecoveryOptions** 索引鍵的設定值為 **10** 時，需要 **BackupLocation** 索引鍵。  
 
@@ -478,7 +477,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要︰** 是  
 
-    -   **值︰**<站台碼\>  
+    -   **值︰**&lt;站台碼\>  
 
     -   **詳細資料：** 三個英數字元，專門用於識別您階階層中的該站台。 您必須指定失敗前網站所使用的網站碼。  
 
@@ -494,7 +493,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要︰** 是  
 
-    -   **值︰** <*ConfigMgrInstallationPath*>  
+    -   **值︰**&lt;onfiguraton Manager 安裝路徑*C*>  
 
     -   **詳細資料：**指定 Configuration Manager 程式檔案的安裝資料夾。  
 
@@ -505,7 +504,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要︰** 是  
 
-    -   **值：** <*SMS 提供者的 /SDK FQDN*>  
+    -   **值：**&lt;SMS 提供者的FQDN>  
 
     -   **詳細資料：** 指定將裝載 SMS 提供者的伺服器 FQDN。 您必須指定失敗前裝載 SMS 提供者的伺服器。  
 
@@ -527,7 +526,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要︰** 是  
 
-    -   **值︰** <*PathToSetupPrerequisiteFiles*>  
+    -   **值：** &lt;安裝路必要條件檔案>  
 
     -   **詳細資料：** 指定安裝程式必要條件檔案的路徑。 根據 **PrerequisiteComp** 值而定，安裝程式會使用此路徑儲存下載的檔案或尋找之前下載的檔案。  
 
@@ -559,9 +558,9 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
 -   **索引鍵名稱：** SQLServerName  
 
-    -   **必要︰**是  
+    -   **必要︰** 是  
 
-    -   **值︰***< SQLServerName\>*  
+    -   **值︰***&lt;SQLServerName\>*  
 
     -   **詳細資料：**執行要用於裝載站台資料庫之 SQL Server 的伺服器名稱或叢集執行個體名稱。 您必須指定失敗前裝載網站資料庫的相同伺服器。  
 
@@ -575,7 +574,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
          對話方塊中的 [動作]  
 
-         *<執行個體名稱\>*\\*<站台資料庫名稱\>*  
+         *&lt;InstanceName\>*\\*&lt;SiteDatabaseName\>*  
 
     -   **詳細資料：**指定要建立或用於安裝管理中心網站資料庫之 SQL Server 資料庫的名稱。 您必須指定失敗前所使用的相同資料庫名稱。  
 
@@ -586,7 +585,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要：** 否  
 
-    -   **值︰** <*SSBPortNumber*>  
+    -   **值：** &lt;SSB 埠號>  
 
     -   **詳細資料：** 指定 SQL Server 所使用的 SQL Server Service Broker (SSB) 連接埠。 通常 SSB 是設定為使用 TCP 連接埠 4022，但也支援其他連接埠。 您必須指定失敗前所使用的相同 SSB 連接埠。  
 
@@ -647,7 +646,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要：** 否  
 
-    -   **值︰**<站台伺服器備份組的路徑\>  
+    -   **值：**&lt;PathToSiteServerBackupSet\>  
 
     -   **詳細資料︰** 指定站台伺服器備份集的路徑。 **ServerRecoveryOptions** 設定值為 **1** 或 **2**時，可選擇是否要使用此索引鍵。 指定 **SiteServerBackupLocation** 索引鍵值，藉此使用網站備份來復原網站。 若沒有指定值，重新安裝網站時就不會從備份集還原網站。  
 
@@ -655,7 +654,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要：** 可能  
 
-    -   **值︰**<站台資料庫備份組的路徑\>  
+    -   **值：**&lt;PathToSiteDatabaseBackupSet\>  
 
     -   **詳細資料：** 指定站台資料庫備份集的路徑。 **ServerRecoveryOptions** 索引鍵的設定值為 **1** 或 **4** ，且 **DatabaseRecoveryOptions** 索引鍵的設定值為 **10** 時，需要 **BackupLocation** 索引鍵。  
 
@@ -677,7 +676,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要︰** 是  
 
-    -   **值︰**<站台碼\>  
+    -   **值︰**&lt;站台碼\>  
 
     -   **詳細資料：** 三個英數字元，專門用於識別您階階層中的該站台。 您必須指定失敗前網站所使用的網站碼。  
 
@@ -693,7 +692,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要︰** 是  
 
-    -   **值︰** <*ConfigMgrInstallationPath*>  
+    -   **值︰**&lt;onfiguraton Manager 安裝路徑*C*>  
 
     -   **詳細資料：**指定 Configuration Manager 程式檔案的安裝資料夾。  
 
@@ -704,7 +703,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要︰** 是  
 
-    -   **值：** <*SMS 提供者的 /SDK FQDN*>  
+    -   **值：**&lt;SMS 提供者的FQDN>  
 
     -   **詳細資料：** 指定將裝載 SMS 提供者的伺服器 FQDN。 您必須指定失敗前裝載 SMS 提供者的伺服器。  
 
@@ -726,7 +725,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要︰** 是  
 
-    -   **值︰** <*PathToSetupPrerequisiteFiles*>  
+    -   **值：** &lt;安裝路必要條件檔案>  
 
     -   **詳細資料：** 指定安裝程式必要條件檔案的路徑。 根據 **PrerequisiteComp** 值而定，安裝程式會使用此路徑儲存下載的檔案或尋找之前下載的檔案。  
 
@@ -758,9 +757,9 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
 -   **索引鍵名稱：** SQLServerName  
 
-    -   **必要︰**是  
+    -   **必要︰** 是  
 
-    -   **值︰***< SQLServerName\>*  
+    -   **值︰***&lt;SQLServerName\>*  
 
     -   **詳細資料：**執行要用於裝載站台資料庫之 SQL Server 的伺服器名稱或叢集執行個體名稱。 您必須指定失敗前裝載網站資料庫的相同伺服器。  
 
@@ -774,7 +773,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
          對話方塊中的 [動作]  
 
-         *<執行個體名稱\>*\\*<站台資料庫名稱\>*  
+         *&lt;InstanceName\>*\\*&lt;SiteDatabaseName\>*  
 
     -   **詳細資料：**指定要建立或用於安裝管理中心網站資料庫之 SQL Server 資料庫的名稱。 您必須指定失敗前所使用的相同資料庫名稱。  
 
@@ -785,7 +784,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要：** 否  
 
-    -   **值︰** <*SSBPortNumber*>  
+    -   **值：** &lt;SSB 埠號>  
 
     -   **詳細資料：** 指定 SQL Server 所使用的 SQL Server Service Broker (SSB) 連接埠。 通常 SSB 是設定為使用 TCP 連接埠 4022，但也支援其他連接埠。 您必須指定失敗前所使用的相同 SSB 連接埠。  
 
@@ -795,7 +794,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要：** 可能  
 
-    -   **值︰** <*SiteCodeForCentralAdministrationSite*>  
+    -   **值：**&lt;管理中心網站的站台碼>  
 
     -   **詳細資料︰**指定主要站台加入 Configuration Manager 階層時要連接的管理中心網站。 如果主要網站在失敗前連接至管理中心網站，則此設定為必要。 您必須指定失敗前用於管理中心網站的網站碼。  
 
@@ -803,7 +802,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要：** 否  
 
-    -   **值︰** <*Interval*>  
+    -   **值︰**&lt;間隔>  
 
     -   **詳細資料：** 指定連線失敗後，嘗試連線至管理中心站台的重試間隔 (分鐘)。 例如，如果與管理中心網站的連線失敗，主要網站會等待您針對 CASRetryInterval 指定的分鐘數，然後重試連線。  
 
@@ -811,7 +810,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
 
     -   **必要：** 否  
 
-    -   **值︰** <*Timeout*>  
+    -   **值︰**&lt;逾時>  
 
     -   **詳細資料：** 指定主要站台連線至管理中心站台的逾時上限值 (分鐘)。 例如，如果主要網站連線至管理中心網站失敗，則主要網站會依據 CASRetryInterval 重試與管理中心網站的連線，直到達到 WaitForCASTimeout 期間。 您可以指定 0 到 100 的值。  
 
@@ -904,7 +903,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
  SMS 寫入器是一個服務，會在備份程序進行期間與磁碟區陰影複製服務 (VSS) 互動。 Configuration Manager 站台備份必須執行 SMS 寫入器服務才可以順利完成。  
 
 ### <a name="purpose"></a>目的  
- SMS 寫入器會登錄至 VSS 服務，並繫結至其介面和事件。 當 VSS 廣播事件或傳送特定通知到 SMS 寫入器時，SMS 寫入器會回應通知，並採取適當的動作。 SMS 寫入器會讀取位於 <*ConfigMgr 安裝路徑*>\inboxes\smsbkup.box 的備份控制檔案 (smsbkup.ctl)，並決定所備份的檔案及資料。 SMS 寫入器會根據此資訊與來自 SMS 登錄機碼及子機碼的特定資料建立由各種元件組成的中繼資料。 它會在收到要求時將中繼資料傳送至 VSS。 VSS 接著會傳送中繼資料給提出要求的應用程式，即 Configuration Manager 備份管理員。 備份管理員會選取已備份的資料，並經由 VSS 將此資料傳送給 SMS 寫入器。 SMS 寫入器會採取適當的步驟來進行備份的準備。 稍後當 VSS 準備好建立快照時會傳送一個事件，此時 SMS 寫入器會停止所有 Configuration Manager 服務，並確定 Configuration Manager 活動在建立快照時已遭到凍結。 在快照建立完成後，SMS 寫入器會重新啟動服務和活動。  
+ SMS 寫入器會登錄至 VSS 服務，並繫結至其介面和事件。 當 VSS 廣播事件或傳送特定通知到 SMS 寫入器時，SMS 寫入器會回應通知，並採取適當的動作。 SMS 寫入器會讀取位於 &lt;ConfigMgr 安裝路徑>\inboxes\smsbkup.box 的備份控制檔案 (smsbkup.ctl)，並決定所備份的檔案及資料。 SMS 寫入器會根據此資訊與來自 SMS 登錄機碼及子機碼的特定資料建立由各種元件組成的中繼資料。 它會在收到要求時將中繼資料傳送至 VSS。 VSS 接著會傳送中繼資料給提出要求的應用程式，即 Configuration Manager 備份管理員。 備份管理員會選取已備份的資料，並經由 VSS 將此資料傳送給 SMS 寫入器。 SMS 寫入器會採取適當的步驟來進行備份的準備。 稍後當 VSS 準備好建立快照時會傳送一個事件，此時 SMS 寫入器會停止所有 Configuration Manager 服務，並確定 Configuration Manager 活動在建立快照時已遭到凍結。 在快照建立完成後，SMS 寫入器會重新啟動服務和活動。  
 
  SMS 寫入器服務會自動進行安裝。 當 VSS 應用程式要求備份或還原時，SMS 寫入器必須處於執行中狀態。  
 
@@ -918,6 +917,7 @@ ms.custom: na ms.date: 1/3/2017 ms.prod: configuration-manager ms.reviewer: na m
  VSS 是一組 COM API，其中實作了一個架構以允許進行磁碟區備份時系統上的應用程式仍能繼續寫入磁碟區。 VSS 提供一致的介面，可在磁碟上更新資料的使用者應用程式 (SMS 寫入器服務) 與備份應用程式 (備份管理員服務) 之間進行協調。 如需 VSS 的詳細資訊，請參閱 Windows Server TechCenter 中的 [Volume Shadow Copy Service (磁碟區陰影複製服務)](http://go.microsoft.com/fwlink/p/?LinkId=241968) 主題。  
 
 
-<!--HONumber=Jan17_HO3-->
+
+<!--HONumber=Feb17_HO2-->
 
 

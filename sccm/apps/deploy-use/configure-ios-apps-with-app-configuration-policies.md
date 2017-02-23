@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: cabd1083a6d7c49ef1bc46c6ec35cffd6d858344
-ms.openlocfilehash: fccf655110c2ed7689c128a0a619838d18b3355a
+ms.sourcegitcommit: 72157aa0e94b99eb947fdd9891b7e91c1001ea22
+ms.openlocfilehash: 64964834b63167e1f78c44410396b8e18735875e
 
 
 ---
@@ -55,11 +55,12 @@ ms.openlocfilehash: fccf655110c2ed7689c128a0a619838d18b3355a
 4. 在 [iOS 原則] 頁面上，選擇設定原則資訊的設定方式：
   - **指定名稱及值配對**。 您可以對不使用巢狀結構的內容清單檔案使用此選項。
 
-      指定名稱及值配對**
+      *指定名稱及值配對*
         1. 若要加入新的配對，請選擇 [新增]。
-        2. 在 [加入成對的名稱/值] 對話方塊中，指定下列各項︰        - **類型**： 從清單中，選取您要指定的值類型。
-            - **名稱**： 輸入您要指定值之內容清單索引鍵的名稱。
-            - **值**： 輸入的值會套用到您輸入的索引鍵。
+        2. 在 [加入成對的名稱/值] 對話方塊方塊中，指定下列各項︰
+            - **類型**。 從清單中，選取您要指定的值類型。
+            - **名稱**。 輸入您要指定值之內容清單索引鍵的名稱。
+            - **值**。 輸入的值會套用到您輸入的索引鍵。
 
   - **瀏覽至內容清單檔案**。 如果已經有應用程式設定 XML 檔案，或針對使用巢狀結構的較複雜檔案，請使用此選項。
 
@@ -69,8 +70,9 @@ ms.openlocfilehash: fccf655110c2ed7689c128a0a619838d18b3355a
 
       若要深入了解 XML 屬性清單，請參閱 iOS Developer Library 中的[了解 XML 屬性清單](https://developer.apple.com/library/ios/documentation/Cocoa/Conceptual/PropertyLists/UnderstandXMLPlist/UnderstandXMLPlist.html)。
 
-            The format of the XML property list varies depending on the app you are configuring. Contact the app supplier for details about the format to use.
-            Intune supports the following data types in a property list:
+        The format of the XML property list varies depending on the app you are configuring. Contact the app supplier for details about the format to use.
+        Intune supports the following data types in a property list:
+
             ```
             <integer>
             <real>
@@ -79,8 +81,9 @@ ms.openlocfilehash: fccf655110c2ed7689c128a0a619838d18b3355a
             <dict>
             <true /> or <false />
             ```
-            For more information about data types, see [About Property Lists](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html) in the iOS Developer Library.
-            Intune also supports the following token types in the property list:
+    如需資料類型的詳細資訊，請參閱 iOS Developer Library 中的[關於屬性清單](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/PropertyLists/AboutPropertyLists/AboutPropertyLists.html)。
+    Intune 也支援下列內容清單的權杖類型︰
+    
             ```
             {{userprincipalname}} - (Example: John@contoso.com)
             {{mail}} - (Example: John@contoso.com)
@@ -139,6 +142,6 @@ ms.openlocfilehash: fccf655110c2ed7689c128a0a619838d18b3355a
 
 
 
-<!--HONumber=Dec16_HO3-->
+<!--HONumber=Feb17_HO3-->
 
 

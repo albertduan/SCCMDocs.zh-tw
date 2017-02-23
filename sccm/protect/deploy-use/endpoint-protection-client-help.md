@@ -2,7 +2,7 @@
 title: "Endpoint Protection 用戶端說明 | Microsoft Docs"
 description: "深入了解 Endpoint protection 功能和增強功能，協助您保護電腦免受威脅。"
 ms.custom: na
-ms.date: 01/03/2017
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1432568286605d29683416885d7aa522c649016e
-ms.openlocfilehash: ef2d8b540856b395575b99de79fa463de5d133ac
+ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
+ms.openlocfilehash: 212c73fcb947c3b56da6055bf47fe078301ad90d
 
 
 ---
@@ -29,14 +29,12 @@ ms.openlocfilehash: ef2d8b540856b395575b99de79fa463de5d133ac
 此版本的 Windows Defender 或 Endpoint Protection 包含下列功能，可協助保護電腦免受威脅：  
 
 -   **Windows 防火牆整合。** Endpoint Protection 設定可讓您開啟或關閉 Windows 防火牆。  
-
 -   **網路檢查系統：** 這項功能透過檢查網路流量，協助您主動封鎖已知網路弱點的惡意探索，藉此增強即時防護。  
-
 -   **防護引擎。** 即時保護會尋找並停止在您的電腦上安裝或執行惡意程式碼。 更新的引擎提供增強的偵測和清理功能，效能更佳。  
 
 Windows Defender 是 Windows 10 作業系統的一部分。  在舊版 Windows 中，您的系統管理員可以使用管理軟體來提供 Windows Defender 或 Endpoint Protection。
 
-如需協助進行疑難排解，請參閱[針對 Windows Defender 或 Endpoint Protection 用戶端進行疑難排解](troubleshoot-endpoint-client.md)。 如需新功能的清單，請參閱 [Windows Defender 用戶端的新功能](https://support.microsoft.com/help/29276/windows-10-whats-new-in-windows-defender)。
+您也可以找到 [Windows Defender 和 Endpoint Protection 常見問題集](endpoint-protection-client-faq.md)的清單。 如需協助進行疑難排解，請參閱[針對 Windows Defender 或 Endpoint Protection 用戶端進行疑難排解](troubleshoot-endpoint-client.md)。 如需新功能的清單，請參閱 [Windows Defender 用戶端的新功能](https://support.microsoft.com/help/29276/windows-10-whats-new-in-windows-defender)。
 
 ## <a name="windows-firewall-integration"></a>Windows 防火牆整合  
  Windows 防火牆有助於防止攻擊者或惡意軟體透過網際網路或網路存取電腦。 現在當您安裝 Endpoint Protection 時，安裝精靈會驗證 Windows 防火牆是否已開啟。 如果您刻意關閉 Windows 防火牆，可以取消選取核取方塊，避免將它開啟。 可以透過 [控制台] 的 [系統及安全性] 設定，隨時變更 Windows 防火牆設定。  
@@ -60,11 +58,10 @@ Windows Defender 設定可啟用設定來協助保護電腦免受惡意軟體攻
 
 ### <a name="see-also"></a>請參閱  
  [Endpoint Protection 用戶端常見問題集](endpoint-protection-client-faq.md)   
-
  [Windows Defender 或 Endpoint Protection 用戶端疑難排解](troubleshoot-endpoint-client.md)
 
 
 
-<!--HONumber=Jan17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
