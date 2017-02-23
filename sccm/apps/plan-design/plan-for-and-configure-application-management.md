@@ -2,7 +2,7 @@
 title: "規劃和設定應用程式管理 | Microsoft Docs"
 description: "實作和設定必要的相依性以在 System Center Configuration Manager 中部署應用程式。"
 ms.custom: na
-ms.date: 02/03/2017
+ms.date: 02/09/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 50c08d63e7220a47d21dcbdcd7abafba7c7f5f75
-ms.openlocfilehash: 4eca69f54ec0bca5f1f972d3814ceb87d4a30d67
+ms.sourcegitcommit: 1c43c4968f93985515249ddb117269f8ed61302a
+ms.openlocfilehash: 46cc3fcfd9516cf1c124e24b50d0aac0cb0025dc
 
 
 ---
@@ -127,7 +127,7 @@ ms.openlocfilehash: 4eca69f54ec0bca5f1f972d3814ceb87d4a30d67
 
     狀態訊息：使用元件 **SMS_PORTALWEB_CONTROL_MANAGER** 和 **SMS_AWEBSVC_CONTROL_MANAGER**。  
 
-    例如， **SMS_PORTALWEB_CONTROL_MANAGER** 的狀態識別碼 **1015** ，確認站台元件管理員已成功安裝在應用程式類別目錄網站點。  
+    例如 **SMS_PORTALWEB_CONTROL_MANAGER** 的狀態識別碼 **1015** 可確認站台元件管理員已成功安裝在應用程式類別目錄網站點上。  
 
     記錄檔：搜尋 **SMSAWEBSVCSetup.log** 和 **SMSPORTALWEBSetup.log**。  
 
@@ -228,6 +228,6 @@ ms.openlocfilehash: 4eca69f54ec0bca5f1f972d3814ceb87d4a30d67
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO2-->
 
 

@@ -17,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d3e6f011527f05b35e411af52d723f459aad66ca
-ms.openlocfilehash: 99b218f23ff8ad0fbac9dbdc28c46829e6800f85
+ms.sourcegitcommit: 3a24fe53cc243294694b779fad4c3ab83ca2ecb7
+ms.openlocfilehash: ae2cc7030c1fc404dcc7392b8c3067fc0f8cafc0
 
 
 ---
@@ -83,7 +83,7 @@ System Center Configuration Manager 服務連接點是可提供階層中幾項�
 -   站台伺服器上的發佈管理員會使用站台系統安裝帳戶，來傳送來自服務連接點的更新。
 
 ##  <a name="a-namebkmkurlsa-internet-access-requirements"></a><a name="bkmk_urls"></a> 網際網路存取需求  
-若要啟用作業，裝載服務連線點的電腦以及該電腦與網際網路之間的任何防火牆，皆必須透過**連接埠 TCP 443** 和**連接埠 TCP 443** 傳遞通訊給下列網際網路位置。 服務連接點也支援使用 Web Proxy (不論有無驗證) 來使用這些位置。  
+若要啟用作業，裝載服務連線點的電腦以及該電腦與網際網路之間的任何防火牆，皆必須透過**連接埠 TCP 443** 和**連接埠 TCP 443** 傳遞通訊給下列網際網路位置。 服務連接點也支援使用 Web Proxy (不論有無驗證) 來使用這些位置。  如需設定 Web Proxy 帳戶，請參閱 [System Center Configuration Manager 的 Proxy 伺服器支援](/sccm/core/plan-design/network/proxy-server-support)。
 
 **更新及服務**  
 
@@ -121,6 +121,6 @@ System Center Configuration Manager 服務連接點是可提供階層中幾項�
 
 
 
-<!--HONumber=Feb17_HO1-->
+<!--HONumber=Feb17_HO3-->
 
 
