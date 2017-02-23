@@ -1,3 +1,4 @@
+
 ---
 title: "用戶端對等快取 | System Center Configuration Manager"
 description: "使用 System Center Configuration Manager 部署內容時，針對用戶端內容來源位置使用對等快取。"
@@ -16,8 +17,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6aaa833c1301cf82f7d8df3bc13f0a6936fc6e9d
-ms.openlocfilehash: 96b3a72a7beb31396813ae468ae3eeacc845b582
+ms.sourcegitcommit: 2dd898c9b022c6f0bc243623835af0eece94128f
+ms.openlocfilehash: 95d1671501f672e1d5abe3f0fbbd7d2dfb21e0a3
 
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 用戶端的對等快取
@@ -51,8 +52,6 @@ ms.openlocfilehash: 96b3a72a7beb31396813ae468ae3eeacc845b582
 ## <a name="requirements-and-considerations-for-peer-cache"></a>對等快取的需求與考量
 - 在任何支援做為 Configuration Manager 用戶端的 Windows 作業系統上都支援對等快取。 非 Windows 作業系統不支援對等快取。
 
-- 您必須為您的站台設定一個**網路存取帳戶**，此帳戶要能夠**完全控制**每個用戶端上的快取資料夾。 此資料夾預設為 ***%windir%\ccmcache***。
-
 - 用戶端只能從其目前界限群組中的對等快取用戶端傳輸內容。
 
 -     因為目前的對等快取內容來源界限是根據該用戶端的上次硬體清查提交所決定，所以，若用戶端漫遊至位於不同界限群組的網路位置，基於對等快取的目的，仍然可能被視為是其先前界限群組的成員。 這會導致提供給用戶端的對等快取內容來源不在其中繼網路位置上。 我們建議您排除有此設定傾向的用戶端，不要讓它以對等快取來源的身分參與。
@@ -70,6 +69,6 @@ ms.openlocfilehash: 96b3a72a7beb31396813ae468ae3eeacc845b582
 
 
 
-<!--HONumber=Feb17_HO2-->
+<!--HONumber=Feb17_HO4-->
 
 

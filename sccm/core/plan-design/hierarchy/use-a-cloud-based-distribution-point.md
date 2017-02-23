@@ -2,7 +2,7 @@
 title: "雲端架構發佈點 | Microsoft Docs"
 description: "了解搭配使用雲端發佈點與 System Center Configuration Manager 的設定和限制。"
 ms.custom: na
-ms.date: 2/14/2017
+ms.date: 2/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8800a497a8c1e26b89ad3817ee2c15258bd1d5c5
-ms.openlocfilehash: f9164eeb19027366525ebc41640c82de3a606e4d
+ms.sourcegitcommit: 97051d9c65ef5ea28c94468b24863120624e8de0
+ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
 
 ---
@@ -185,9 +185,7 @@ ms.openlocfilehash: f9164eeb19027366525ebc41640c82de3a606e4d
 
 3.  當慣用發佈點或遠端發佈點無法使用時，用戶端可能會改為從雲端發佈點取得內容。  
 
-    > [!NOTE]  
-        >  網際網路上的用戶端若是同時接收以網際網路為基礎的發佈點和雲端發佈點做為部署的內容位置，則只會嘗試從以網際網路為基礎的發佈點擷取內容。 若網際網路上的用戶端無法從以網際網路為基礎的發佈點擷取內容，此時用戶端不會嘗試存取雲端發佈點。  
-
+    
 
   當用戶端使用雲端發佈點作為內容位置時，用戶端會使用 Configuration Manager 存取權杖將自己驗證為雲端發佈點。 如果用戶端信任 Configuration Manager 雲端發佈點憑證，則用戶端可以下載所要求的內容。  
 
@@ -217,6 +215,6 @@ ms.openlocfilehash: f9164eeb19027366525ebc41640c82de3a606e4d
 
 
 
-<!--HONumber=Feb17_HO3-->
+<!--HONumber=Feb17_HO4-->
 
 
