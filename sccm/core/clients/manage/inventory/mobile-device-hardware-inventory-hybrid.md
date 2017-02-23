@@ -2,7 +2,7 @@
 title: "設定行動裝置清查 - Configuration Manager | Microsoft Docs"
 description: "為 Microsoft Intune 和 System Center Configuration Manager 註冊的行動裝置設定硬體清查。"
 ms.custom: na
-ms.date: 12/26/2016
+ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 78a0aecc-f775-451e-aa05-56377ec91b1f
 caps.latest.revision: 7
-author: nbigman
-ms.author: nbigman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b

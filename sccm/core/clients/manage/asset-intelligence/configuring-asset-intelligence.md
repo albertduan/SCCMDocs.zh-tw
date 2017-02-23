@@ -2,7 +2,7 @@
 title: "設定 Asset Intelligence | Microsoft Docs"
 description: "在 System Center Configuration Manager 中設定 Asset Intelligence。"
 ms.custom: na
-ms.date: 12/28/2016
+ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: 08e0382d-de05-4a76-ba5c-7223173f7066
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
@@ -224,7 +224,7 @@ Asset Intelligence 會使用產品名稱和產品版本來比對您在一般授�
 
 4.  在 [首頁] 索引標籤的 [設定] 群組中，選擇 [站台維護]。 選取一項工作，然後選擇 [編輯] 修改設定。 
 
-    我們建議，您將時段設為站台的離峰時間。 該時段即為可執行工作的時間間隔。 您可在 [工作內容]  對話方塊中以 [由此開始]  和 [最晚的開始時間]  來指定時段。  
+      我們建議，您將時段設為站台的離峰時間。 該時段即為可執行工作的時間間隔。 您可在 [工作內容]  對話方塊中以 [由此開始]  和 [最晚的開始時間]  來指定時段。  
 
     您可以選取目前的日期，並將 [由此開始]  時間設為目前時間過後幾分鐘，以立即啟動工作。  
 

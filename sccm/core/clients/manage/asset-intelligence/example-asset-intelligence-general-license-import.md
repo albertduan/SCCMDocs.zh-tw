@@ -2,7 +2,7 @@
 title: "Asset Intelligence 一般授權匯入檔案範例 | Microsoft Docs"
 description: "使用範例 Asset Intelligence 一般授權檔案，協助在 System Center Configuration Manager 中匯入軟體授權。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: article
 ms.assetid: e6258333-a783-440b-b1af-f8023b782fbc
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: andredm7
+ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
