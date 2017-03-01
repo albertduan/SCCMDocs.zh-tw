@@ -16,8 +16,9 @@ author: nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4688b4b12a7afa5fcfdc0e42f984271d98f10316
-ms.openlocfilehash: d2d888edf51d46a2dd13ef6b7ed39c066179a088
+ms.sourcegitcommit: bdd7961d9126dc6f3c1ae1fec1842c862e8a7c6d
+ms.openlocfilehash: 12633a7b9f799ffc74e0ee657e091595ed7eaf67
+ms.lasthandoff: 02/22/2017
 
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager 用戶端和裝置支援的作業系統
@@ -34,13 +35,13 @@ ms.openlocfilehash: d2d888edf51d46a2dd13ef6b7ed39c066179a088
 -   不支援在使用非根帳號的電腦上，安裝或執行 Linux 或 UNIX 的 Configuration Manager 用戶端或 Mac 用戶端。 這麼做可能會導致重要服務無法正確執行。  
 
 ##  <a name="windows-computers"></a>Windows 電腦  
- 您可以使用 Configuration Manager 包含的 Configuration Manager 用戶端來管理 Windows 電腦。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦](../../../core/clients/deploy/deploy-clients-to-windows-computers.md)。  
+ 您可以使用 Configuration Manager 所含的 Configuration Manager 用戶端來管理下列 Windows 作業系統。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦](../../../core/clients/deploy/deploy-clients-to-windows-computers.md)。  
 
 **支援的作業系統：**  
 
+
 -  **Windows Server 2016**：Standard、Datacenter <sup>1</sup>
   - 從具有 KB3186654 之 Hotfix 彙總套件的 Configuration Manager 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援此作業系統。  
-
 
 -   **Windows Server 2012 R2** (x64)：Standard、Datacenter <sup>1</sup>    
 
@@ -56,9 +57,8 @@ ms.openlocfilehash: d2d888edf51d46a2dd13ef6b7ed39c066179a088
 
 -   **Windows Server 2008 (含 SP2)** (x86、x64)：Standard、Enterprise、Datacenter <sup>1</sup>    
 
--   **Windows 10 企業版長期維護** (x86、x64) <sup>3</sup>    
-
--   **Windows 10** (x86、x64)：專業版、企業版    
+-   **Windows 10**：Pro、Enterprise  
+   如需不同 Configuration Manager 版本所支援之不同 Windows 10 發行版本的詳細資料，請參閱 [Windows 10 版本支援](/sccm/core/plan-design/configs/support-for-windows-10)。
 
 -   **Windows 8.1** (x86、x64)：專業版、企業版    
 
@@ -83,7 +83,6 @@ ms.openlocfilehash: d2d888edf51d46a2dd13ef6b7ed39c066179a088
 
  <sup>2</sup> 為了支援用戶端推入安裝，執行此作業系統版本的電腦必須執行檔案和存放服務伺服器角色的檔案伺服器角色服務。 如需在 Server Core 電腦上安裝 Windows 功能的相關資訊，請參閱 Windows Server 2012 TechNet 文件庫中的[在 Server Core 伺服器上安裝伺服器角色和功能](http://go.microsoft.com/fwlink/p/?LinkId=299359)。  
 
- <sup>3</sup> 使用這個作業系統需要 Configuration Manager 1602 或更新版本。  
 
 ##  <a name="windows-embedded-computers"></a>Windows Embedded 電腦  
  您可以藉由在裝置上安裝 Configuration Manager 用戶端軟體來管理 Windows Embedded 裝置。  如需詳細資訊，請參閱[規劃將用戶端部署至 System Center Configuration Manager 中的 Windows Embedded 裝置](../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)。  
@@ -349,9 +348,4 @@ Configuration Manager 支援有限制地管理連線至您 Exchange Server 的�
 -   **Exchange Server 2013**  
 
 -   **Exchange Online (Office 365)**：這包括 Business Productivity Online Standard Suite  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

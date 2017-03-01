@@ -2,7 +2,7 @@
 title: "部署 App-V 虛擬應用程式 | Microsoft Docs"
 description: "查看在您建立及部署虛擬應用程式時，必須考慮什麼事項。"
 ms.custom: na
-ms.date: 11/07/2016
+ms.date: 02/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0469aad1482c0619794c91bc530d8ec981e8f136
-ms.openlocfilehash: bc79cd157003cc7dcb63f925293c79fe477dd809
+ms.sourcegitcommit: c73373e6f2f28f8ddc197695e4b4e3488c9c1f5b
+ms.openlocfilehash: 0808edbb9a0433dd658d37e8d005c89a4778735c
+ms.lasthandoff: 02/17/2017
 
 
 ---
@@ -66,7 +67,13 @@ ms.openlocfilehash: bc79cd157003cc7dcb63f925293c79fe477dd809
      您也必須先使用知識庫文章 [2645225](http://go.microsoft.com/fwlink/p/?LinkId=237322) 中所述的 Hotfix 來更新 App-V 4.6 SP1 用戶端，才能成功部署虛擬應用程式。  
 
 -   **App-V 5、App-V 5.0 SP1、App-V 5.0 SP2、App-V 5.0 SP3 和 App-V 5.1**：對於 App-V 5.0 SP2，您必須安裝 [Hotfix 套件 5](https://support.microsoft.com/en-us/kb/2963211) 或使用 App-V 5.0 SP3。  
--   **APP-V 5.2**︰這內建於 Windows 10 (年度更新版和更新版本)。
+-   **App-V 5.2**︰這內建於 Windows 10 Enterprise (年度更新版和更新版本)。
+
+如需 Windows 10 中 App-V 的詳細資訊，請參閱下列主題：
+
+- [App-V 的新功能](https://technet.microsoft.com/itpro/windows/manage/appv-about-appv)
+- [開始使用 App-V for Windows 10](https://technet.microsoft.com/itpro/windows/manage/appv-getting-started)
+- [Upgrading to App-V for Windows 10 from an existing installation](https://technet.microsoft.com/itpro/windows/manage/appv-upgrading-to-app-v-for-windows-10-from-an-existing-installation) (從現有安裝升級至 App-V for Windows 10)
 
 ##  <a name="steps-to-manage-app-v-virtual-applications"></a>管理 App-V 虛擬應用程式的步驟  
  若要管理 App-V 虛擬應用程式，請遵循下列步驟：  
@@ -206,9 +213,4 @@ Configuration Manager 支援 App-V 5 共用內容存放區功能。 如需詳細
 Configuration Manager 將有關虛擬應用程式部署的資訊記錄在記錄檔內。 如需虛擬應用程式和 Configuration Manager 應用程式管理所使用的記錄檔相關資訊，請參閱 [System Center Configuration Manager 中的記錄檔](../../core/plan-design/hierarchy/log-files.md)。  
 
 如果是 Windows Vista、Windows 7 及 Windows 8，您可以在 C:\ProgramData\Microsoft\Application Virtualization Client 中找到 App-V 用戶端的記錄檔。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

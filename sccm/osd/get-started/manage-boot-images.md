@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
-ms.openlocfilehash: 3b7125e782b60853e750aeb7ba923490e46a76b0
+ms.sourcegitcommit: 4edf7d09d39fa22fb5812aecc88febd763001eba
+ms.openlocfilehash: 369aa062d0f38eedebc0a7c351a7ce67b53d199b
+ms.lasthandoff: 02/21/2017
 
 
 ---
@@ -29,11 +30,11 @@ ms.openlocfilehash: 3b7125e782b60853e750aeb7ba923490e46a76b0
 Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.microsoft.com/library/windows/hardware/dn938389%28v=vs.85%29.aspx) 映像，在作業系統部署時使用。 開機映像用來以 WinPE 啟動電腦，WinPE 是最低需求的作業系統，內含有限的元件和服務可讓目的地電腦準備好進行 Windows 安裝。  使用以下各節管理開機映像。
 
 ##  <a name="a-namebkmkbootimagedefaulta-default-boot-images"></a><a name="BKMK_BootImageDefault"></a> 預設開機映像  
- Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台，另一種支援 x64 平台。 這些映像儲存於：\\\\*伺服器名稱*>\SMS_<*站台碼*>\osd\boot\\<*x64 或 i386*。  
+ Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台，另一種支援 x64 平台。 這些映像儲存於：\\\\<伺服器名稱>\SMS_<站台碼>\osd\boot\\<*x64*> 或 <*i386*>。  
 
- 當您將 Configuration Manager 升級到新版本時，Configuration Manager 可能會將此位置中的預設開機映像，取代為更新過的檔案，包括以預設開機映像為依據的自訂開機映像。 更新開機映像時，您在站台的預設開機映像上設定的選項 (例如選擇性元件) 會一併移轉過去 (包括驅動程式)。 來源驅動程式物件 (包括驅動程式來源檔案) 必須有效，否則驅動程式將不會新增到站台上已更新的開機映像中。 其他不是以預設開機映像為基礎的開機映像，即使是依據相同的 Windows ADK 版本，也不會進行更新。 更新開機映像之後，您將必須把它們重新發佈到發佈點。 所有使用開機映像的媒體都必須重新建立。 如果您不想自動更新自訂的預設開機映像，則應該將它們存放在不同的位置。  
+ 當您將 Configuration Manager 升級到新版本時，Configuration Manager 可能會將此位置中的預設開機映像，取代為更新過的檔案，包括以預設開機映像為依據的自訂開機映像。 更新開機映像時，您在站台的預設開機映像上設定的選項 (例如選擇性元件) 會一併移轉過去 (包括驅動程式)。 來源驅動程式物件 (包括驅動程式來源檔案) 必須有效，否則驅動程式將不會新增到站台上已更新的開機映像中。 其他不是以預設開機映像為基礎的開機映像，即使是依據相同的 Windows ADK 版本，也不會進行更新。 更新開機映像之後，您將必須把它們重新發佈到發佈點。 所有使用開機映像的媒體都必須重新建立。 如果您不想要自動更新您的自訂/預設開機映像，則應該將它們存放在不同的位置。  
 
- 系統會將 Configuration Manager 追蹤記錄檔工具加入您新增至**軟體程式庫**的所有開機映像中。 當您在 WinPE 中時，可以從命令提示字元輸入 ** CMTrace**來啟動 Configuration Manager 追蹤記錄檔工具。  
+ 系統會將 Configuration Manager 追蹤記錄檔工具加入您新增至**軟體程式庫**的所有開機映像中。 當您在 WinPE 中時，可以從命令提示字元輸入 **CMTrace** 來啟動 Configuration Manager 追蹤記錄檔工具。  
 
 ##  <a name="a-namebkmkbootimagecustoma-customize-a-boot-image"></a><a name="BKMK_BootImageCustom"></a> 自訂開機映像  
  如果開機映像是以支援的 Windows ADK 版本中的 Windows PE 版本為基礎，您可以在 Configuration Manager 主控台自訂開機映像或[修改開機映像](#BKMK_ModifyBootImages)。 當站台升級為新版本並安裝新版 Windows ADK 時，自訂開機映像 (不位於預設的開機映像位置) 並不會更新成使用新版 Windows ADK。 發生這種情況時，您將無法再於 Configuration Manager 主控台中自訂開機映像。 不過，它們將如升級之前一樣繼續運作。  
@@ -248,9 +249,4 @@ Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.mi
 1.  更新開機映像之前，確認站台伺服器上的正確工作順序資源檔 (tsres.dll) 置於相對應的語言資料夾內。 例如，英文資源檔位於下列位置： <Configuration Manager 安裝資料夾>\OSD\bin\x64\00000409\tsres.dll。  
 
 2.  在啟動前置命令中，將 SMSTSLanguageFolder 環境變數設為適當的語言識別碼。 語言識別碼必須使用十進位而不是十六進位來指定。 例如，若要將語言識別碼設為英文，您應指定 1033 的十進位值，而不是用於資料夾名稱的 00000409 十六進位值。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

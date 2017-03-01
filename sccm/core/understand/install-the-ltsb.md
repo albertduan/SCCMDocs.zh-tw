@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0c084e9f630a96c7b22c3dbdd72e18ad4a86926d
-ms.openlocfilehash: 9631b5622fec19e0248eb919bc8bd876152f66d7
+ms.sourcegitcommit: 1a3460143628ef297c99c364ded7ebea86d270dd
+ms.openlocfilehash: c266bb753ea69785b674508647c3857b2218cb77
+ms.lasthandoff: 02/18/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.openlocfilehash: 9631b5622fec19e0248eb919bc8bd876152f66d7
 
 使用 1606 版基準媒體時，下列是您要安裝或升級的站台︰
 - 最新分支站台：此站台相當於一開始使用 1511 基準媒體安裝，之後再更新為 1606 版以及 1606 Hotfix 彙總套件 - KB3186654 的站台。
--   LTSB 站台：它就相當於執行 1606 版以及 1606 Hotfix 彙總套件 - KB3186654 的最新分支站台。 基準媒體已經包括 Hotfix 彙總套件。  但是，LTSB 並不支援最新分支提供的所有功能，如 [System Center Configuration Manager 的長期維護分支簡介](introduction-to-the-ltsb.md)所述。
+-    LTSB 站台：它就相當於執行 1606 版以及 1606 Hotfix 彙總套件 - KB3186654 的最新分支站台。 基準媒體已經包括 Hotfix 彙總套件。  但是，LTSB 並不支援最新分支提供的所有功能，如 [System Center Configuration Manager 的長期維護分支簡介](introduction-to-the-ltsb.md)所述。
 
 如果您不熟悉 System Center Configuration Manager 的不同分支，請參閱 [Which branch of Configuration Manager should I use](which-branch-should-i-use.md) (應該使用哪個分支的 Configuration Manager)。
 
@@ -70,7 +71,7 @@ ms.openlocfilehash: 9631b5622fec19e0248eb919bc8bd876152f66d7
 使用自動安裝指令碼安裝授權的分支時，您必須將下列區段、索引鍵名稱和值新增至指令碼的 Options 區段。 您不需要使用這些值，就可以編寫最新分支評估版安裝的指令碼：  
 
  **SABranchOptions**
--   **索引鍵名稱：SSActive**
+-     **索引鍵名稱：SAActive**
   - 值︰0 或 1。  
   - 詳細資料︰0 會安裝未經授權的最新分支評估版，而 1 會安裝授權的版本。   
 
@@ -81,7 +82,7 @@ ms.openlocfilehash: 9631b5622fec19e0248eb919bc8bd876152f66d7
 例如，若要安裝授權的最新分支版本，您會使用︰
 
   **索引鍵名稱：SABranchOptions**
-   -    **SSActive = 1**
+   -    **SAActive = 1**
    - **CurrentBranch = 1**
 
 
@@ -97,7 +98,7 @@ ms.openlocfilehash: 9631b5622fec19e0248eb919bc8bd876152f66d7
 當您使用 1606 基準媒體安裝其中一個分支的新站台時，請參閱[安裝 System Center Configuration Manager 站台](/sccm/core/servers/deploy/install/installing-sites)主題中記載的站台規劃、準備和安裝程序，以及下列安裝程式的相關考量︰
 
 - 在安裝期間，您必須選擇要安裝的 Configuration Manager 分支，並可指定軟體保證合約的詳細資料。
--   新的指令碼執行的安裝。 如需詳細資訊，請參閱本文稍早的＜新的指令碼執行的安裝選項＞。
+-    新的指令碼執行的安裝。 如需詳細資訊，請參閱本文稍早的＜新的指令碼執行的安裝選項＞。
 
 ## <a name="expand-a-stand-alone-primary-site"></a>擴充獨立主要站台
 您可以擴充執行 LTSB 的獨立主要站台。  此程序與最新分支站台所用的相同，除了以下一點應特別注意：
@@ -111,7 +112,7 @@ ms.openlocfilehash: 9631b5622fec19e0248eb919bc8bd876152f66d7
 
 **升級至最新分支：**
 - 在安裝期間，您必須選擇最新分支，並可指定軟體保證合約的詳細資料。
--   新的指令碼執行的安裝。 如需詳細資訊，請參閱本文稍早的＜新的指令碼執行的安裝選項＞。
+-     新的指令碼執行的安裝。 如需詳細資訊，請參閱本文稍早的＜新的指令碼執行的安裝選項＞。
 
 **升級至 LTSB：**  
 - 升級前檢查清單完成後要遵循的額外步驟。
@@ -147,9 +148,4 @@ CD.Latest 資料夾中的媒體不支援下列作業︰
 若要針對執行 LTSB 的站台進行備份、復原或維護作業，請使用 [System Center Configuration Manager 備份和復原](/sccm/protect/understand/backup-and-recovery)中的指引及程序。  
 
 從 LTSB 站台備份的 CD.Latest 資料夾，使用 Configuration Manager 安裝程式。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
