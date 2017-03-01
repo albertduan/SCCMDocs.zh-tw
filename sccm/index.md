@@ -15,8 +15,9 @@ ms.suite: ems
 ms.assetid: a89ecd55-fe24-4f40-86c4-8a91dd683a1c
 toc_rel: /sccm/toc.json
 translationtype: Human Translation
-ms.sourcegitcommit: a10fb140adfc1109a49760d601b5fca3d93d4b39
-ms.openlocfilehash: 690b516b6be4380b566649adacfafcc8f920373c
+ms.sourcegitcommit: fd507d0e034eb8ba97181b8e0491d0b1108a7dbe
+ms.openlocfilehash: 8987d5b00eb3c7fccfb0f9186169871d02da6a04
+ms.lasthandoff: 02/28/2017
 
 ---
 # <a name="system-center-configuration-manager-documentation"></a>System Center Configuration Manager 文件
@@ -33,13 +34,13 @@ ms.openlocfilehash: 690b516b6be4380b566649adacfafcc8f920373c
       <h2 class="section-heading"><span class="icon icon-warning"></span> 主要內容</h2>
       <div class="features row">
         <ul class="column column-half">
-          <li><a href="/sccm/core/understand/introduction">介紹 Configuration Manager</a></li>
+          <li><a href="/sccm/core/understand/introduction">Configuration Manager 簡介</a></li>
           <li><a href="/sccm/core/get-started/evaluate-with-lab-environment">建置專屬實驗室環境來評估 System Center Configuration Manager</a></li>
           <li><a href="/sccm/core/plan-design/changes/whats-new-in-version-1610">System Center Configuration Manager 1610 版的新功能</a></li>
         </ul>
         <ul class="column column-half">
           <li><a href="/sccm/core/plan-design/changes/features-and-capabilities">System Center Configuration Manager 的功能</a></li>
-          <li><a href="/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management">在搭配 System Center Configuration Manager 使用 Microsoft Intune 獨立或混合式行動裝置管理之間進行選擇</a></li>
+          <li><a href="/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management">在 Microsoft Intune 獨立部署與使用 System Center Configuration Manager 的混合式行動裝置管理之間進行選擇</a></li>
           <li><a href="/sccm/core/plan-design/configs/supported-configurations">System Center Configuration Manager 的支援設定</a></li>
         </ul>
       </div>
@@ -332,12 +333,12 @@ ms.openlocfilehash: 690b516b6be4380b566649adacfafcc8f920373c
       <h2 class="section-heading"><span class="icon icon-note"></span>Configuration Manager 的其他資源</h2>
       <div class="resource-list row">
           <ul class="column-half">
-          <li><a href="https://configurationmanager.uservoice.com/" target="_blank">提供關於 Configuration Manager 的意見反應</a></li>
-          <li><a href="https://configurationmanager.uservoice.com/forums/300492-ideas/category/112371-documentation" target="_blank">提供關於文件的意見反應</a></li>
+          <li><a href="https://configurationmanager.uservoice.com/" target="_blank">提供關於 Configuration Manager 的意見反應 (英文)</a></li>
+          <li><a href="https://configurationmanager.uservoice.com/forums/300492-ideas/category/112371-documentation" target="_blank">提供關於文件的意見反應 (英文)</a></li>
           </ul>
           <ul class="column-half">
           <li><a href="https://technet.microsoft.com/library/gg682129.aspx" target="_blank">System Center 2012 Configuration Manager 文件</a></li>
-          <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?forum=ConfigMgrCBGeneral%2CConfigMgrDeployment%2CConfigMgrMDM%2CConfigMgrMigration%2CConfigMgrCompliance%2CConfigMgrAppManagement%2CConfigMgrPowerShell%2CConfigMgrCBOSD&filter=alltypes&sort=lastpostdesc" target="_blank">Configuration Manager TechNet 論壇</a></li>
+          <li><a href="https://social.technet.microsoft.com/Forums/en-US/home?forum=ConfigMgrCBGeneral%2CConfigMgrDeployment%2CConfigMgrMDM%2CConfigMgrMigration%2CConfigMgrCompliance%2CConfigMgrAppManagement%2CConfigMgrPowerShell%2CConfigMgrCBOSD&filter=alltypes&sort=lastpostdesc" target="_blank">Configuration Manager TechNet 論壇 (英文)</a></li>
           <li><a href="https://www.microsoft.com/en-us/cloud-platform/system-center-configuration-manager" target="_blank">Configuration Manager 產品頁面</a></li>
           </ul>
       </div>
@@ -346,14 +347,9 @@ ms.openlocfilehash: 690b516b6be4380b566649adacfafcc8f920373c
     <aside class="alert alert-social">
       <p>掌握 Configuration Manager 的最新資訊</p>
       <ol class="action-list">
-        <li><a href="https://blogs.technet.microsoft.com/enterprisemobility/" target="_blank" class="button-bordered button-translucent">Enterprise Mobility + Security 小組部落格</a></li>
+        <li><a href="https://blogs.technet.microsoft.com/enterprisemobility/" target="_blank" class="button-bordered button-translucent">Enterprise Mobility 及 Security 小組部落格 (英文)</a></li>
         <li><a href="https://twitter.com/hashtag/configmgr" target="_blank" class="button-bordered button-translucent">#ConfigMgr 的 Twitter</a></li>
       </ol>
     </aside>
 </article>
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
