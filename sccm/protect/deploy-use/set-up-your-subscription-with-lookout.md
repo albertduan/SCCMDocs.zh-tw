@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
 ms.openlocfilehash: f29d5834b82dd8888cff56fb0ad8024629f829ab
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -129,9 +130,4 @@ Lookout 裝置威脅保護會分類各種類型的行動威脅。 [Lookout 威�
 安裝完成之後，Lookout 裝置威脅保護會開始輪詢 Azure AD 是否有對應至所指定註冊群組的裝置。  您可以找到 [裝置] 模組上所註冊之裝置的相關資訊。  裝置的初始狀態會顯示為擱置。  在裝置上安裝、開啟和啟動 Lookout for Work 應用程式之後，裝置狀態會變更。  如需如何將 Lookout for Work 應用程式發送到裝置的詳細資訊，請參閱[設定和部署 Lookout for Work 應用程式](configure-and-deploy-lookout-for-work-apps.md)主題。
 ## <a name="next-steps"></a>後續步驟
 [在 Intune 中啟用 Lookout MTP 連線](enable-lookout-connection-in-intune.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
