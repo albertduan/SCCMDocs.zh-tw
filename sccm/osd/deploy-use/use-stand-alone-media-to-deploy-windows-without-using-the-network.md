@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 30ae794381c6894e11b21a8167d0af60463c5279
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -79,9 +80,4 @@ System Center Configuration Manager 中的獨立媒體包含在電腦上部署�
 
 ## <a name="install-the-operating-system-from-stand-alone-media"></a>從獨立媒體安裝作業系統  
  在電腦的可開機磁碟機中插入獨立媒體，然後打開電源來安裝作業系統。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
