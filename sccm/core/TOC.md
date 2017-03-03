@@ -304,4 +304,4 @@
 ###  [升級 Windows 用戶端](clients/manage/upgrade/upgrade-clients-for-windows-computers.md)
 ###  [升級 Linux 及 UNIX 用戶端](clients/manage/upgrade/upgrade-clients-for-linux-and-unix-servers.md)
 ###  [升級 Mac 用戶端](clients/manage/upgrade/upgrade-clients-on-mac-computers.md)
-###  [升級分析](clients/manage/upgrade/upgrade-analytics.md)
+###  [升級整備](clients/manage/upgrade/upgrade-analytics.md)
