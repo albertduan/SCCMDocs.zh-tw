@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: e6a7a0b853be930b558cdd739b90285ebb8538e7
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -39,7 +40,7 @@ ms.openlocfilehash: e6a7a0b853be930b558cdd739b90285ebb8538e7
 |請檢閱 Configuration Manager 文件庫中的電源管理概念。|請參閱[電源管理簡介](introduction-to-power-management.md)。|  
 |請檢閱 Configuration Manager 文件庫中的電源管理必要條件。|請參閱[電源管理的必要條件](prerequisites-for-power-management.md)。|  
 |請檢閱電源管理的最佳做法資訊。|請參閱[電源管理的最佳做法](best-practices-for-power-management.md)。|  
-|設定集合以從環境中的電腦管理電源消耗。|使用 [Collection for reporting of baseline data] (基準資料報告集合)、[Collection for reporting of baseline data] (基準資料報告集合)、[Collection of computers incapable of power management] (無法管理電源的電腦集合)、[Collections of computers to which power plans will be applied] (要套用電源計劃的電腦集合)、[Collections of computers to which power plans will be applied] (要套用電源計劃的電腦集合) 和 [Collections of computers that are running Windows Server] (執行 Windows Server 的電腦集合) 幫助您管理階層中的電腦電源設定。 您可以建立多個集合，並將不同的電源計劃套用至每個集合。|  
+|設定集合以從環境中的電腦管理電源消耗。|使用 [Collection for reporting of baseline data] \(基準資料報告集合)、[Collection for reporting of baseline data] \(基準資料報告集合)、[Collection of computers incapable of power management] \(無法管理電源的電腦集合)、[Collections of computers to which power plans will be applied] \(要套用電源計劃的電腦集合)、[Collections of computers to which power plans will be applied] \(要套用電源計劃的電腦集合) 和 [Collections of computers that are running Windows Server] \(執行 Windows Server 的電腦集合) 幫助您管理階層中的電腦電源設定。 您可以建立多個集合，並將不同的電源計劃套用至每個集合。|  
 |啟用電源管理。|您必須先啟用電源管理，並設定必要的用戶端設定，才能開始使用電源管理。 如需詳細資訊，請參閱[設定電源管理](configuring-power-management.md)。|  
 |收集來自用戶端電腦的電源管理資訊。|用戶端會透過 Configuration Manager 硬體清查來報告電源管理資訊。 根據您已設定的硬體清查排程，可能需要一些時間來擷取所有用戶端電腦中的清查。|  
 
@@ -80,9 +81,4 @@ ms.openlocfilehash: e6a7a0b853be930b558cdd739b90285ebb8538e7
 |----------|-------------|  
 |如果階層中的電腦尚未進入睡眠或休眠，請執行報告 [無法休眠報告]  來顯示可能的原因。|[無法休眠報告]  顯示妨礙電腦進入睡眠或休眠狀態的常見原因清單，以及在指定時段每個原因所影響的電腦數目。 如需詳細資訊，請參閱 [How to monitor and plan for power management](monitor-and-plan-for-power-management.md) (如何監視及規劃 Configuration Manager 的電源管理)。|  
 |如果將多個電源計劃套用至一部電腦，則會套用最不嚴格的電源計劃。 執行報告 [具有多個電源計劃的電腦]  ，查看已套用多個電源計劃的電腦。|請參閱 [How to monitor and plan for power management](monitor-and-plan-for-power-management.md) (如何監視及規劃 Configuration Manager 的電源管理 ) 中的 **Computers with Multiple Power Plans** (具有多個電源計劃的電腦)。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
