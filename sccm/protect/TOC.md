@@ -31,7 +31,6 @@
 
 ## [憑證設定檔](deploy-use/introduction-to-certificate-profiles.md)
 ### [建立憑證設定檔](deploy-use/create-certificate-profiles.md)
-### [建立 PFX 憑證設定檔](deploy-use/create-pfx-certificate-profiles.md)
 ### [設定憑證基礎結構](deploy-use/certificate-infrastructure.md)
 ### [密碼編譯控制項技術參考](deploy-use/cryptographic-controls-technical-reference.md)
 
@@ -56,25 +55,7 @@
 ### [Endpoint Protection 用戶端說明](deploy-use/endpoint-protection-client-help.md)
 ### [為用戶端進行疑難排解](deploy-use/troubleshoot-endpoint-client.md)
 
-## [電子郵件設定檔](deploy-use/introduction-to-email-profiles.md)
-### [建立電子郵件設定檔](deploy-use/create-exchange-activesync-profiles.md)
-### [部署 Wi-Fi、VPN、電子郵件和憑證設定檔](deploy-use/deploy-wifi-vpn-email-cert-profiles.md)
-
-## [管理對服務的存取](deploy-use/manage-access-to-services.md)
-### [裝置相容性原則](deploy-use/device-compliance-policies.md)
-### [建立裝置相容性原則](deploy-use/create-compliance-policy.md)
-### [管理電子郵件存取](deploy-use/manage-email-access.md)
-### [管理 SharePoint Online 存取](deploy-use/manage-sharepoint-online-access.md)
-### [管理商務用 Skype Online 存取](deploy-use/manage-skype-for-business-online-access.md)
-### [管理 Dynamics CRM Online 存取](deploy-use/manage-dynamics-crm-online-access.md)
-### [管理對 O365 服務的電腦存取](deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)
-## [根據裝置、網路和應用程式風險管理存取](deploy-use/configuration-manager-mobile-threat-defense.md)
-### [Configuration Manager 中的 Lookout](deploy-use/lookout-mobile-threat-defense-in-configuration-manager.md)
-#### [設定 Lookout 裝置威脅保護](deploy-use/set-up-your-subscription-with-lookout.md)
-#### [在 Intune 中啟用 Lookout](deploy-use/enable-lookout-connection-in-intune.md)
-#### [工作應用程式部署 Lookout](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
-#### [啟用裝置威脅保護原則](deploy-use/enable-device-threat-protection-rule-compliance-policy.md)
-#### [對 Lookout 整合進行疑難排解](deploy-use/troubleshoot-lookout-integration.md)
+## [部署 Wi-Fi、VPN、電子郵件和憑證設定檔](deploy-use/deploy-wifi-vpn-email-cert-profiles.md)
 
 ## [商務用 Windows Hello 設定](deploy-use/windows-hello-for-business-settings.md)
 
