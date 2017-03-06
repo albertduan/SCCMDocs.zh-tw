@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 1a2a9b48-a95b-4643-b00c-b3079584ae2e
 caps.latest.revision: 16
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: cbcffea0fe2b4c8a05d3a835ff1193b528e55762
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -235,9 +236,4 @@ ms.openlocfilehash: cbcffea0fe2b4c8a05d3a835ff1193b528e55762
 -   註冊 Proxy 點與註冊點之間：HTTPS (預設為 TCP 443)  
 
  如果您使用 Proxy 網路伺服器，必須設定伺服器允許 SSL 通道作業；行動裝置不支援 SSL 橋接作業。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

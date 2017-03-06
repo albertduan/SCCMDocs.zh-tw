@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 29ae59b7-2695-4a0f-a9ff-4f29222f28b3
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
 ms.openlocfilehash: 56e0a1923305c5134386623b1e306b8ebd013d53
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="certificate-infrastructure"></a>憑證基礎結構
@@ -191,9 +192,4 @@ ms.openlocfilehash: 56e0a1923305c5134386623b1e306b8ebd013d53
  現在，您已完成設定步驟以安裝網路裝置註冊服務和相依性、憑證登錄點以及 System Center Configuration Manager 原則模組，您可以建立及部署憑證設定檔以準備將憑證部署至使用者和裝置。 如需如何建立憑證設定檔的詳細資訊，請參閱 [How to create certificate profiles in System Center Configuration Manager](../../protect/deploy-use/create-certificate-profiles.md) (如何在 System Center Configuration Manager 中建立憑證設定檔)。  
 
  如果您要解除安裝 System Center Configuration Manager 原則模組，請使用控制台中的 [程式和功能]。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

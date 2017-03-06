@@ -2,7 +2,7 @@
 title: "管理行動裝置  | Microsoft Docs"
 description: "在 System Center Configuration Manager 中使用 Exchange Server 連接器管理行動裝置。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
 ms.openlocfilehash: 4a2b60d893e8d430b107a5bc43ec0748177c27c3
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -135,9 +136,4 @@ ms.openlocfilehash: 4a2b60d893e8d430b107a5bc43ec0748177c27c3
     -   若要確認站台元件管理員已成功安裝 Exchange Server 連接器，請搜尋 [SMS_EXCHANGE_CONNECTOR]  元件的狀態識別碼 [1015]  。 如果 Configuration Manager 無法成功安裝連接器 (例如因為指定的 Client Access Server 電腦離線)，Configuration Manager 會每 60 分鐘重試安裝，直到安裝成功或者您將 Exchange Server 連接器移除為止。  
 
     -   在站台伺服器電腦上搜尋 SiteComp.log 檔案，然後在記錄檔中搜尋 `Component SMS_EXCHANGE_CONNECTOR flagged for installation`。 成功的安裝會以下列文字記錄： `STATMSG: ID=1015`。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

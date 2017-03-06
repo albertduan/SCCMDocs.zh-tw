@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 948664f2-239d-47a8-92fc-f8efeebd5796
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
 ms.openlocfilehash: 7a5ff0e75b8cdac68e3854c4f5aba01a7d423e9b
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -79,9 +80,4 @@ ms.openlocfilehash: 7a5ff0e75b8cdac68e3854c4f5aba01a7d423e9b
 |importPFX|使用這個選項指定憑證，以取代用戶端目前所使用的憑證。<br /><br /> 當您使用 **-importPFX** 時，也必須使用 **-password** 命令列參數來提供與 PKCS#12 檔案相關聯的密碼。<br /><br /> 使用 **-rootcerts** 指定任何其他根憑證需求。<br /><br /> 範例︰**certutil -importPFX &lt;PKCS#12 憑證的路徑> -password &lt;憑證密碼\> [-rootcerts &lt;以逗號分隔的憑證清單>]**|  
 |-importsitecert|使用這個選項更新管理伺服器上的站台伺服器簽署憑證。<br /><br /> 範例：**certutil -importsitecert &lt;DER 憑證的路徑\>**|  
 |-importcrl|使用這個選項，利用一個或多個 CRL 檔案路徑來更新用戶端上的 CRL。<br /><br /> 範例︰**certutil importcrl &lt;以逗號分隔的 CRL 檔案路徑\>**|  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

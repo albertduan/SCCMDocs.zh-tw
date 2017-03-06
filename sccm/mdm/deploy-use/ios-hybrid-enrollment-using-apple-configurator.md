@@ -2,7 +2,7 @@
 title: "註冊 iOS 裝置 Apple Configurator - Configuration Manager | Microsoft Docs"
 descriptions: Pre-enroll iOS devices by using Apple Configurator with Configuration Manager.
 ms.custom: na
-ms.date: 12/16/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
 ms.openlocfilehash: 6c6e9edbc7b2fca3d1be4feabb238efab80465fa
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -136,9 +137,4 @@ ms.openlocfilehash: 6c6e9edbc7b2fca3d1be4feabb238efab80465fa
 ## <a name="step-5-distribute-devices"></a>步驟 5：散發裝置
 
 裝置現在已準備好進行公司註冊。 關閉裝置電源，並將它們散發給使用者。 開啟裝置時，設定助理將會啟動並提示使用者輸入其工作或學校帳戶，來開始註冊。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

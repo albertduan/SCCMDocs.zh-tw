@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2c8f57cf-1968-48de-87fb-4897432ed6e0
 caps.latest.revision: 23
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
 ms.openlocfilehash: 85afe010e734d20ae1f1479b3edd166c54cc8fd2
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -109,9 +110,4 @@ ms.openlocfilehash: 85afe010e734d20ae1f1479b3edd166c54cc8fd2
 |確認用戶端 WMI 提供者狀況良好|重新啟動 Windows Management Instrumentation 服務|此用戶端檢查的補救措施僅適用於執行 Windows Server 2003、Windows XP (64 位元) 或更早版本的電腦。|  
 |確認喚醒 Proxy 服務 (ConfigMgr Wake-up Proxy) 正在執行|啟動 ConfigMgr Wakeup Proxy 服務|此用戶端檢查只有在支援的作業系統上的 [電源管理] ：[啟用喚醒 Proxy]  用戶端設定已設為 [是]  時才能進行。|  
 |確認喚醒 Proxy 服務 (ConfigMgr Wake-up Proxy) 啟動類型為自動|將 ConfigMgr Wakeup Proxy 服務啟動類型重設為自動|此用戶端檢查只有在支援的作業系統上的 [電源管理] ：[啟用喚醒 Proxy]  用戶端設定已設為 [是]  時才能進行。|  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

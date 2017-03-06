@@ -2,7 +2,7 @@
 title: "新混合式 MDM 的封存 | Microsoft Docs"
 description: "System Center Configuration Manager 與 Intune 的混合式部署可以使用過去之行動裝置管理功能的封存。"
 ms.custom: na
-ms.date: 10/25/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 translationtype: Human Translation
 ms.sourcegitcommit: bd870d66bb1a482cb5985f1fc0fe66a7dee206eb
 ms.openlocfilehash: d286b038c900873154d3a0761aa1eaface47e186
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 過去的混合式功能
@@ -44,7 +45,7 @@ ms.openlocfilehash: d286b038c900873154d3a0761aa1eaface47e186
 
   您可以限制存取 Exchange Online，只讓支援 Intune 行動應用程式管理原則的應用程式存取，例如 Outlook。 [這項新功能](/intune/deploy-use/allow-policy-managed-apps-access-to-o365)可以完美配合 Intune 行動應用程式管理 (MAM) 原則，因為您可以封鎖內建郵件用戶端或其他尚未使用 Intune MAM 原則設定之應用程式的存取權。 這可確保您的使用者以使用 Intune MAM 保護的應用程式存取組織資料。 您可以透過 Azure 入口網站在 Intune 行動裝置應用程式管理中開始。 在 [設定] 刀鋒視窗中尋找新的 [條件式存取] 區段。
 
--   **適用於 Android 的 Intune 應用程式包裝工具**
+-    **適用於 Android 的 Intune 應用程式包裝工具**
 
   您可以使用 Intune 應用程式包裝工具，讓應用程式使用 Intune 行動應用程式管理 (MAM) 原則。
 
@@ -55,10 +56,10 @@ ms.openlocfilehash: d286b038c900873154d3a0761aa1eaface47e186
   受影響的型號為︰
 
   - SM-G313HU
-  - SM-G313HY
-  - SM-G313M
-  - SM-G313MY
-  - SM-G313U
+  -    SM-G313HY
+  -    SM-G313M
+  -    SM-G313MY
+  -    SM-G313U
 
   您和您的使用者不需要採取任何進一步的動作。 如需詳細資訊，請瀏覽 Samsung KNOX 網站。
 
@@ -212,14 +213,14 @@ Configuration Manager Technical Preview 2016 年 7 月未推出任何新的混�
 Configuration Manager Technical Preview 各版本過去提供的下列功能，目前可在 Intune 和 Configuration Manager 1606 版 (最新分支) 的混合式部署中使用。
 
 * 從 Configuration Manager 主控台尋找、管理及散發 Windows 10 裝置的商務用 Windows 市集應用程式 ([1604](#new-in-1604-technical-preview))
-*   適用於 Android 裝置的 SmartLock 設定 ([1604](#new-in-1604-technical-preview))
-*   適用於 Windows 10 裝置的應用程式觸發的 VPN ([1605](#new-in-1605-technical-preview))
-*   遠端裝置動作的全新體驗 ([1605](#new-in-1605-technical-preview))
-*   商務用 Windows 市集應用程式 ([1605](#new-in-1605-technical-preview))
-*   針對大量購買之應用程式的一般改進 ([1605](#new-in-1605-technical-preview))
-*   Windows 資訊保護 (WIP) ([1605](#new-in-1605-technical-preview))
-*   使用 IMEI 或 iOS 序號預先宣告公司擁有的裝置 ([1605](#new-in-1605-technical-preview))
-*   自動將裝置分類為集合 ([1606](#new-in-1606-technical-preview))
+*     適用於 Android 裝置的 SmartLock 設定 ([1604](#new-in-1604-technical-preview))
+*    適用於 Windows 10 裝置的應用程式觸發的 VPN ([1605](#new-in-1605-technical-preview))
+*    遠端裝置動作的全新體驗 ([1605](#new-in-1605-technical-preview))
+*    商務用 Windows 市集應用程式 ([1605](#new-in-1605-technical-preview))
+*    針對大量購買之應用程式的一般改進 ([1605](#new-in-1605-technical-preview))
+*    Windows 資訊保護 (WIP) ([1605](#new-in-1605-technical-preview))
+*    使用 IMEI 或 iOS 序號預先宣告公司擁有的裝置 ([1605](#new-in-1605-technical-preview))
+*    自動將裝置分類為集合 ([1606](#new-in-1606-technical-preview))
 
 如需新功能的資訊，請參閱指定的 Technical Preview 版本文件。
 
@@ -479,9 +480,4 @@ Configuration Manager 2016 年 6 月 (最新分支) 未推出任何新的混合�
 - **iOS 啟用鎖定**
 
   從 Configuration Manager 1602 版 (最新分支) 開始，您可以管理 iOS 啟用鎖定，這是 iOS 7.1 和更新版本裝置之「尋找我的 iPhone」應用程式中的功能。 當裝置上使用「尋找我的 iPhone」應用程式時，啟用鎖定會自動啟用。  如需詳細資訊，請參閱[使用 System Center Configuration Manager 管理 iOS 啟用鎖定](/sccm/mdm/deploy-use/manage-ios-activation-lock#bypass-activation-lock)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

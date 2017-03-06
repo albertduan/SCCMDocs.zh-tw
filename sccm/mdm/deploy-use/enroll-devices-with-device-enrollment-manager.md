@@ -2,7 +2,7 @@
 title: "使用裝置註冊管理員註冊裝置 - Configuration Manager | Microsoft Docs"
 description: "使用裝置註冊管理員帳戶來向 System Center Configuration Manager 註冊公司擁有的裝置。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
 ms.openlocfilehash: b356d2351b8a28bdca78176fdf0ff3c913a36bd3
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -89,9 +90,4 @@ ms.openlocfilehash: b356d2351b8a28bdca78176fdf0ff3c913a36bd3
 -   刪除的裝置註冊管理員帳戶認證仍然無法抹除或淘汰裝置  
 
 -   刪除之裝置註冊管理員帳戶與註冊裝置之間的關聯性仍然存在，但不能再註冊其他裝置
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

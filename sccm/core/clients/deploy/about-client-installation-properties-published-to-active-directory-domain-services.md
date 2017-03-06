@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 101d7d4d-92db-419d-b2ae-3c1c1dea68e9
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: bc610b495047c49853c0a8f478cbf2773c0d3603
 ms.openlocfilehash: e50095ef618ec40a51c29ef2c8116f8e07401bd1
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>關於發佈至 Active Directory 網域服務的用戶端安裝內容
@@ -125,9 +126,4 @@ ms.openlocfilehash: e50095ef618ec40a51c29ef2c8116f8e07401bd1
 -   指派至未發佈到 Active Directory 網域服務之 Configuration Manager 站台的用戶端。  
 
 -   在用戶端連上網際網路時安裝的用戶端。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 49ef2ed2-2e15-4637-8b63-1d5b7f9c17e1
 caps.latest.revision: 10
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
 ms.openlocfilehash: 250c9312b932670c408554f3968ae43ae4f3dbaa
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -79,9 +80,4 @@ ms.openlocfilehash: 250c9312b932670c408554f3968ae43ae4f3dbaa
 2.  檢閱在生產階段和生產階段前的用戶端版本，請確定指定了正確的生產階段前集合，然後依序按一下 [升階] 及 [是]。  
 
 3.  對話方塊關閉後，更新的用戶端版本將會取代階層中使用的用戶端版本。 接著可以升級整個站台的用戶端。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中升級 Windows 電腦的用戶端](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

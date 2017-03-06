@@ -2,7 +2,7 @@
 title: "安裝內部部署 MDM 的角色 - Configuration Manager | Microsoft Docs"
 description: "在 System Center Configuration Manager 中，安裝內部部署行動裝置管理功能所需的站台系統角色。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
 ms.openlocfilehash: 916b971f851f968f6534ac834bd3182cc61614aa
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -71,9 +72,4 @@ System Center Configuration Manager 中的內部部署行動裝置管理功能�
      這會有效地將管理點轉換成裝置管理點。  
 
  一旦加入並設定用以以管理新式裝置的站台系統角色，您將需要設定作為註冊的受信任端點，以及與管理的裝置通訊之角色的伺服器。 如需詳細資訊，請參閱[為 System Center Configuration Manager 中的內部部署行動裝置管理安裝站台系統角色](../../mdm/get-started/set-up-certificates-on-premises-mdm.md)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

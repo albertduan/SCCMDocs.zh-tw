@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 33bcf8b3-a6b6-4fc9-bb59-70a9621b2b0d
 caps.latest.revision: 9
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 0d8944bef9578a41b529a2d53b5a4d0094eaa21c
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="sync-data-from-configuration-manager-to-the-microsoft-operations-management-suite"></a>將資料從 Configuration Manager 同步處理至 Microsoft Operations Management Suite
@@ -51,9 +52,4 @@ ms.openlocfilehash: 0d8944bef9578a41b529a2d53b5a4d0094eaa21c
 2.  此頁面有兩個索引標籤︰
   * [Azure Active Directory] 索引標籤會顯示您的 [租用戶]、[用戶端識別碼]、[用戶端祕密金鑰到期]，並可讓您在用戶端祕密金鑰到期時「確認」[用戶端祕密金鑰]。
   * [OMS Connection Properties] (OMS 連線內容) 索引標籤會顯示 [Azure subscription] (Azure 訂閱)、[Azure 資源群組]、[Operations Management Suite 工作區]，以及 [Device collections that Operations Management Suite can get data for (Operations Management Suite 可取得其資料的裝置集合)] 清單。 使用 [新增] 和 [移除] 按鈕修改允許的集合。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

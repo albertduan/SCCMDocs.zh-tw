@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 51b5964b-374d-4abc-8619-414a9fffad2d
 caps.latest.revision: 9
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
 ms.openlocfilehash: a7d5a04cf34c49246f768f9a4757c5da3b4db31a
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -145,9 +146,4 @@ ms.openlocfilehash: a7d5a04cf34c49246f768f9a4757c5da3b4db31a
 -   [如何在 System Center Configuration Manager 中將用戶端部署至 UNIX 和 Linux 伺服器](../../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md)  
 
 -   [How to deploy clients to Macs in System Center Configuration Manager](../../../../core/clients/deploy/deploy-clients-to-macs.md) (如何在 System Center Configuration Manager 中將用戶端部署至 Mac 電腦)  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

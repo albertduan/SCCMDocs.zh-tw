@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2bca3db9-115a-451d-8c93-f073ceefe0c7
 caps.latest.revision: 6
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a71e37060937f40bcb1bdb1c6165b7799fc72675
 ms.openlocfilehash: a9847e67ab1935fb66824945637ff683c006bdbe
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -99,9 +100,4 @@ System Center Configuration Manager 可以管理兩大類裝置：
  **軟體中心**中的連結可讓使用者連線至**應用程式類別目錄**，並且在此瀏覽、安裝和要求軟體。 **應用程式類別目錄**也用來設定喜好設定、抹除行動裝置，以及 (已設定時) 指定使用者裝置親和性的主要裝置。   
 
  使用者也可以透過瀏覽器內部網路或網際網路工作階段存取**應用程式類別目錄**。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: dce4b640-c92f-401a-9873-ce9aa9262014
 caps.latest.revision: 8
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: 140bbc676fe0e3df1037c6bead2211b84486494b
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -173,9 +174,4 @@ System Center Configuration Manager 中執行 Windows 防火牆的用戶端，�
  如果 HTTP 連接埠是80，HTTPS 連接埠必須是 443。  
 
  如果 HTTP 連接埠使用其他任何號碼，則 HTTPS 連接埠必須是該連接埠號碼加 1。 例如，8530 和 8531。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

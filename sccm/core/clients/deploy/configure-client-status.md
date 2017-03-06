@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: a2275ba2-c83d-43e7-90ed-418963a707fe
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: 22cc286baa72d3e356a07b91ee0a1be646fa8a9e
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -112,9 +113,4 @@ ms.openlocfilehash: 22cc286baa72d3e356a07b91ee0a1be646fa8a9e
 4.  關閉登錄編輯程式。  
 
  您也可以使用 CCMSetup **NotifyOnly** 安裝內容安裝用戶端，停止用戶端執行自動補救。 如需用戶端安裝內容的詳細資訊，請參閱[關於 System Center Configuration Manager 中的用戶端安裝內容](../../../core/clients/deploy/about-client-installation-properties.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

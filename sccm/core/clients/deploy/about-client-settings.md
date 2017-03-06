@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: f7560876-8084-4570-aeab-7fd44f4ba737
 caps.latest.revision: 15
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: d7265aec46474ba7fc317ddb5e20b91b7b134585
 ms.openlocfilehash: 36f6eb3fe48e904adf4d04450906fada9b477246
+ms.lasthandoff: 12/30/2016
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>關於 System Center Configuration Manager 中的用戶端設計
@@ -641,9 +642,4 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 -   **允許使用者定義其主要裝置**  
 
      指定是否允許使用者在應用程式類別目錄的 [我的裝置] 索引標籤中識別其主要裝置。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 45affc27-aa11-4249-9493-082ac23a3a3d
 caps.latest.revision: 4
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
 ms.openlocfilehash: 20c28a625adb69f239b9c0e7673e57dd39e8d561
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -67,9 +68,4 @@ ms.openlocfilehash: 20c28a625adb69f239b9c0e7673e57dd39e8d561
 |Alt+Delete|顯示 Windows 功能表。|  
 |Ctrl+Alt+減號 (位於數字鍵台)|將本機電腦的使用中視窗複製至遠端電腦剪貼簿。|  
 |Ctrl+Alt+加號 (位於數字鍵台)|將整個本機電腦的視窗區域複製至遠端電腦剪貼簿。|  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

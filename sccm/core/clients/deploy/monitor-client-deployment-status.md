@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: 20a573b3-53cb-4ed5-bae1-7542f533ed20
 caps.latest.revision: 11
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
 ms.openlocfilehash: 0ca218e4276699dd9029308e1d8ac524563da7c5
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -63,9 +64,4 @@ ms.openlocfilehash: 0ca218e4276699dd9029308e1d8ac524563da7c5
  若要監視部署的用戶端狀態，請參閱[如何在 System Center Configuration Manager 中監視用戶端](../../../core/clients/manage/monitor-clients.md)。  
 
  您可以使用 Configuration Manager 報告深入了解站台內用戶端的狀態。 如需如何執行報告的詳細資訊，請參閱 [Reporting in System Center Configuration Manager](../../../core/servers/manage/reporting.md) (System Center Configuration Manager 中的報告)。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

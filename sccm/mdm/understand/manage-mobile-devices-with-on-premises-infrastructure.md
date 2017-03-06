@@ -2,7 +2,7 @@
 title: "內部部署行動裝置管理 (MDM) | Microsoft Docs"
 description: "了解內部部署行動裝置管理，System Center Configuration Manager 的裝置管理解決方案。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
 ms.openlocfilehash: cbd33bf3cf7d623d9ba7a657d4ca7d746d7e79da
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -50,9 +51,4 @@ System Center Configuration Manager 內部部署行動裝置管理是一種裝�
 -   [在 System Center Configuration Manager 中註冊裝置以進行內部部署行動裝置管理](../deploy-use/enroll-devices-on-premises-mdm.md)  
 
      了解如何進行註冊、使用者如何註冊自己的裝置，以及如何使用註冊套件來大量註冊裝置。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

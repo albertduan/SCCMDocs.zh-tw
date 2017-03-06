@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: eab0e09d-b09e-4c14-ab14-c5f87472522e
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
 ms.openlocfilehash: 3c3725678561c32fce316ed1209ac8fe73a0eed1
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -62,9 +63,4 @@ ms.openlocfilehash: 3c3725678561c32fce316ed1209ac8fe73a0eed1
     -   在裝載憑證登錄點的站台系統伺服器上，建立下列具有值 1 的 DWORD 登錄機碼：HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SCCM\CRP\SkipTemplateCheckOnlyIfAccountAccessDenied  
 
 3.  在發行 CA 上，在憑證範本內容的 [安全性]  索引標籤上，新增一個或多個安全性群組，以為使用者或裝置帳戶授與讀取和註冊權限。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

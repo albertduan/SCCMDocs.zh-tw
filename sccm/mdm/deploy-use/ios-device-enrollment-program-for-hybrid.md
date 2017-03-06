@@ -2,7 +2,7 @@
 title: "使用裝置註冊計劃 (DEP) 註冊 iOS 裝置 - Configuration Manager | Microsoft Docs"
 description: "啟用 iOS 裝置註冊計畫 (DEP) 註冊，以使用 Intune 進行 Configuration Manager 混合式部署。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
 ms.openlocfilehash: 4222ca27e19ade46d53f8cd4598643ddd4fd5c8f
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>適用於 Configuration Manager 混合式部署的 iOS 裝置註冊計畫 (DEP) 註冊
@@ -121,9 +122,4 @@ ms.openlocfilehash: 4222ca27e19ade46d53f8cd4598643ddd4fd5c8f
 
 4.  **將裝置散發給使用者**   
     現在您可以將公司所擁有的裝置提供給使用者。 當 iOS 裝置開機時，就會加以註冊交由 Intune 管理。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

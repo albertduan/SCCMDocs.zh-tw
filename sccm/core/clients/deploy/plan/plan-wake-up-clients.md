@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 52ee82b2-0b91-4829-89df-80a6abc0e63a
 caps.latest.revision: 6
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: 12ee719a6a8b072fab27d083aeb2b8439484058d
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="plan-how-to-wake-up-clients-in-system-center-configuration-manager"></a>規劃如何在 System Center Configuration Manager 中喚醒用戶端
@@ -96,9 +97,4 @@ ms.openlocfilehash: 12ee719a6a8b072fab27d083aeb2b8439484058d
 
 > [!WARNING]  
 >  具有與子網路導向廣播相關的安全性風險：攻擊者可以從偽造的來源位址不斷將網際網路控制訊息通訊協定 (ICMP) 回應請求的串流傳送到導向的廣播位址，這會導致所有主機回覆該來源位址。 這種阻斷服務的攻擊類型通常稱為 Smurf 攻擊，一般只要不啟用子網路導向的廣播，就可以避免遭到此種攻擊。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 29350919-6a25-446b-a0da-05e8914fbb26
 caps.latest.revision: 4
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
 ms.openlocfilehash: 47bfeec5bd5d9b843e9064560d0cd0b14bd7d6a1
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -37,9 +38,4 @@ Configuration Manager 也可讓您設定用戶端設定，以從 Configuration M
 > -   Configuration Manager 主控台的執行電腦是執行 Windows XP Service Pack 3，但是主機電腦並非執行 Windows XP Service Pack 3。 如需詳細資訊，請參閱 Windows 遠端協助文件。  
 
  您可以透過 Configuration Manager 主控台的任何裝置集合、Windows 命令提示字元視窗，或 Windows [開始] 功能表，啟動遠端控制工作階段。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 0317fd02-3721-4634-b18b-7c976a4e92bf
 caps.latest.revision: 9
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
 ms.openlocfilehash: 08fb30da2060728142648f13846be737f98f2276
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -46,9 +47,4 @@ System Center Configuration Manager (也稱為 ConfigMgr 或 SCCM) 中的憑證�
 |安裝在執行 Active Directory 憑證服務之網路裝置註冊服務角色服務的伺服器上的 System Center Configuration Manager 原則模組|若要部署憑證設定檔，您必須安裝 System Center Configuration Manager 原則模組。 您可以在 System Center Configuration Manager 安裝媒體上找到此原則模組。|  
 |探索資料|憑證主體以及主體別名的值都是由 System Center Configuration Manager 提供，並且是從探索收集的資訊擷取而來：<br /><br /> 使用者憑證：Active Directory 使用者探索。<br /><br /> 電腦憑證：Active Directory 系統探索和網路探索。|  
 |管理憑證設定檔的特定安全性權限|您必須具有下列安全性權限才能管理公司資源存取設定，例如憑證設定檔、Wi-Fi 設定檔和 VPN 設定檔：<br /><br /> 檢視與管理憑證設定檔的警示和報告：[警示] 物件的 [建立] 、[刪除] 、[修改] 、[修改報告] 、[讀取]  及 [執行報告]  。<br /><br /> 建立和管理憑證設定檔：[憑證設定檔] 物件的 [撰寫原則] 、[修改報告]  、[讀取]  及 [執行報告]  。<br /><br /> 管理 Wi-Fi、憑證和 VPN 設定檔部署：[集合] 物件的 [部署組態原則] 、[修改用戶端狀態警示] 、[讀取]  及 [讀取資源]  。<br /><br /> 管理所有組態原則：[組態原則] 物件的 [建立] 、[刪除] 、[修改]  、[讀取]  及 [設定安全性範圍]  。<br /><br /> 執行憑證設定檔相關的查詢：[查詢]  物件的 [讀取]  權限。<br /><br /> 在 System Center Configuration Manager 主控台中檢視憑證設定檔資訊：[站台] 物件的 [讀取] 權限。<br /><br /> 檢視憑證設定檔的狀態訊息：[狀態訊息]  物件的 [讀取]  權限。<br /><br /> 建立和修改信任的 CA 憑證設定檔：[信任的 CA 憑證設定檔] 物件的 [撰寫原則] 、[修改報告]  、[讀取]  及 [執行報告]  。<br /><br /> 建立和管理 VPN 設定檔：[VPN 設定檔] 物件的 [撰寫原則] 、[修改報告]  、[讀取]  及 [執行報告]  。<br /><br /> 建立和管理 Wi-Fi 設定檔：[Wi-Fi 設定檔] 物件的 [撰寫原則] 、[修改報告]  、[讀取]  及 [執行報告]  。<br /><br /> [公司資源存取管理員] 安全性角色包括在 System Center Configuration Manager 中管理憑證設定檔所需的上列權限。 如需詳細資訊，請參閱 **Configure role-based administration** 主題中的 [Configure security in System Center Configuration Manager](../../core/plan-design/security/configure-security.md) 一節。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

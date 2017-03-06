@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: ba9b623f-6e86-4006-93f2-83d563de0cd0
 caps.latest.revision: 10
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 08afca8b422474639cbdb860e555fe0da27361a4
 ms.openlocfilehash: d8f25e849a8456f1658c4c7da32be733282bbde8
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="how-to-assign-clients-to-a-site-in-system-center-configuration-manager"></a>如何將用戶端指派給 System Center Configuration Manager 中的站台
@@ -162,9 +163,4 @@ Configuration Manager 所註冊的行動裝置用戶端只會連線至其指派�
  這些漫遊至其他站台 (所有主要站台與所有次要站台) 的用戶端電腦可隨時使用其他站台中的管理點進行內容位置要求。 目前站台中的管理點可提供用戶端一個發佈點清單，其中包含用戶端要求的內容。  
 
  針對已設為僅限網際網路用戶端管理的用戶端電腦，以及由 Configuration Manager 註冊的行動裝置與 Mac 電腦，這些用戶端只會與指派站台中的管理點通訊。 這些用戶端不會與次要站台內的管理點或是其他主要站台內的管理點進行通訊。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 15a4e323-9f42-4fea-bb14-f2b905d1f77c
 caps.latest.revision: 9
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: 0e5f65552045e9cef06f5286b0087153751c79b0
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -237,9 +238,4 @@ ms.openlocfilehash: 0e5f65552045e9cef06f5286b0087153751c79b0
  Linux 和 UNIX Configuration Manager 用戶端會在用戶端安裝時連絡這個管理點。 如果用戶端無法連絡管理點，則用戶端軟體會繼續重試，直到成功為止。  
 
  如需用戶端如何找到管理點的詳細資訊，請參閱 [Locating Management Points](../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_LocatingMPs)。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

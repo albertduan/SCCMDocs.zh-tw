@@ -2,7 +2,7 @@
 title: "管理 iOS 啟用鎖定 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 管理 iOS 啟用鎖定。"
 ms.custom: na
-ms.date: 12/15/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a25c6b409ea6501ead762fabb8cc11c62c84885d
 ms.openlocfilehash: cf98bbb9dee6142e8b085dbffcadb3ed712adcb9
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -104,9 +105,4 @@ Configuration Manager 可以透過兩種方式協助您管理啟用鎖定：
     - 裝置內容對話方塊中裝置的探索資料。
     - **[裝置]** 檢視中的 **[啟用鎖定略過狀態]** 資料行 (預設會隱藏此資料行)。
     - 詳細資料窗格的 **[摘要]** 索引標籤中的 **[遠端裝置動作資訊]** 區段 (選取裝置時)。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

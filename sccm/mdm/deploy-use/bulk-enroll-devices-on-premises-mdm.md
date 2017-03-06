@@ -3,7 +3,7 @@
 title: "大量註冊裝置 | Microsoft Docs | 內部部署 MDM"
 description: "在 System Center Configuration Manager 中使用內部部署行動裝置管理，以自動方式大量註冊裝置。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -20,6 +20,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
 ms.openlocfilehash: ef68a9f998ea6ff9628e01f6ac622711de68375d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -165,9 +166,4 @@ System Center Configuration Manager 內部部署行動裝置管理中的大量�
 -   啟動 Configuration Manager 主控台。  
 
 -   按一下 [關閉]  >  > 的站台系統角色之間進行信任通訊時，需要這個根憑證。 註冊的裝置會出現在清單中。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
