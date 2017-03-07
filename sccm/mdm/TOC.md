@@ -1,42 +1,97 @@
-#  了解和探索
-## [混合式 MDM](understand/hybrid-mobile-device-management.md)
-## [選擇 Intune 或混合式 MDM](understand/choose-between-standalone-intune-and-hybrid-mobile-device-management.md)
+# 概觀
+## [什麼是混合式 MDM](understand/hybrid-mobile-device-management.md)
+## [選擇 Intune 獨立版或混合式 MDM](understand/choose-between-standalone-intune-and-hybrid-mobile-device-management.md)
 ## [混合式 MDM 的新功能](understand/whats-new-in-hybrid-mobile-device-management.md)
-## [內部部署 MDM](understand/manage-mobile-devices-with-on-premises-infrastructure.md)
 
-# 規劃和設計
-## [規劃混合式 MDM](plan-design/plan-hybrid-mobile-device-management.md)
-## [內部部署 MDM 的規劃](plan-design/plan-on-premises-mdm.md)
+# [規劃和設計](plan-design/plan-hybrid-mobile-device-management.md)
+## [支援的裝置平台](plan-design/supported-device-platforms-for-hybrid.md)
+## [裝置註冊方法](plan-design/device-enrollment-methods.md)
 
-# 部署和使用
-
-## [設定混合式 MDM](deploy-use/setup-hybrid-mdm.md)
-### [iOS 和 Mac](deploy-use/enroll-hybrid-ios-mac.md)
+# [開始使用](deploy-use/setup-hybrid-mdm.md)
+## [建立 MDM 集合](deploy-use/create-mdm-collection.md)
+## [確認網域名稱需求](deploy-use/confirm-dns.md)
+## [設定 Intune 訂閱](deploy-use/configure-intune-subscription.md)
+## [新增條款及條件](deploy-use/terms-and-conditions.md)
+## [建立服務連接點](deploy-use/create-service-connection-point.md)
+## [啟用平台註冊](deploy-use/enable-platform-enrollment.md)
+### [iOS 和 MAC](deploy-use/enroll-hybrid-ios-mac.md)
 ### [Windows](deploy-use/enroll-hybrid-windows.md)
 ### [Android](deploy-use/enroll-hybrid-android.md)
-### [條款和條件](deploy-use/terms-and-conditions.md)
-## [在混合式 MDM 中註冊公司擁有的裝置](deploy-use/enroll-company-owned-devices.md)
+## [設定額外的管理](deploy-use/set-up-additional-management.md)
+## [確認 MDM 設定](deploy-use/verify-mdm-configuration.md)
+
+# 如何
+## [註冊使用者所擁有的裝置 (BYOD)](deploy-use/enroll-user-owned-devices.md)
+## [註冊公司擁有的裝置](deploy-use/enroll-company-owned-devices.md)
 ### [iOS DEP 註冊](deploy-use/ios-device-enrollment-program-for-hybrid.md)
 ### [Apple Configurator 註冊](deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)
 ### [裝置註冊管理員](deploy-use/enroll-devices-with-device-enrollment-manager.md)
 ### [預先宣告硬體識別碼](deploy-use/predeclare-devices-with-hardware-id.md)
 ### [管理 iOS 啟用鎖定](deploy-use/manage-ios-activation-lock.md)
-### [使用者親和性](deploy-use/user-affinity-for-hybrid-managed-devices.md)
+### [使用者裝置親和性](deploy-use/user-affinity-for-hybrid-managed-devices.md)
 
-## [設定內部部署 MDM](get-started/preparation-steps-for-on-premises-mdm.md)
-### [設定 Intune](get-started/set-up-intune-subscription-on-premises-mdm.md)
+## [淘汰/抹除、鎖定、重設裝置](deploy-use/wipe-lock-reset-devices.md)
+## [設定硬體清查](deploy-use/mobile-device-hardware-inventory-hybrid.md)
+## [設定軟體清查](deploy-use/software-inventory-mobile-devices.md)
+
+## [管理合規性設定](deploy-use/manage-compliance-settings.md)
+### [Windows 8.1 和 Windows 10](deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)
+### [Windows Phone](deploy-use/create-configuration-items-for-windows-phone-devices-managed-without-the-client.md)
+### [iOS 和 Mac OS X](deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)
+### [Android 和 Samsung KNOX Standard](deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)
+
+## [同步處理 Intune 註冊裝置](deploy-use/sync-intune-device.md)
+
+## [管理應用程式](deploy-use/management-tasks-applications.md)
+### [建立 iOS 應用程式](deploy-use/creating-ios-applications.md)
+### [iOS 應用程式設定原則](deploy-use/configure-ios-apps-with-app-configuration-policies.md)
+### [iOS 大量採購應用程式](deploy-use/manage-volume-purchased-ios-apps.md)
+### [建立 Windows Phone 應用程式](deploy-use/creating-windows-phone-applications.md)
+### [建立 Android 應用程式](deploy-use/creating-android-applications.md)
+### [行動應用程式管理原則](deploy-use/protect-apps-using-mam-policies.md)
+### [受管理的瀏覽器原則](deploy-use/manage-internet-access-using-managed-browser-policies.md)
+### [商務用 Windows 市集應用程式](deploy-use/windows-store-for-business.md)
+
+## [管理 Intune 訂閱](deploy-use/manage-intune-subscriptions.md)
+
+## 管理資源存取
+### [建立 Wi-Fi 設定檔](deploy-use/create-wifi-profiles.md)
+### [建立 PFX 憑證設定檔](deploy-use/create-pfx-certificate-profiles.md)
+### [VPN 設定檔](deploy-use/create-vpn-profiles.md)
+### [建立電子郵件設定檔](deploy-use/create-exchange-activesync-profiles.md)
+### [Windows Hello 企業版](deploy-use/windows-hello-for-business-settings.md)
+
+## [管理條件式存取](deploy-use/manage-access-to-services.md)
+### [裝置相容性原則](deploy-use/device-compliance-policies.md)
+### [建立裝置相容性原則](deploy-use/create-compliance-policy.md)
+### [管理電子郵件存取](deploy-use/manage-email-access.md)
+### [管理 SharePoint Online 存取](deploy-use/manage-sharepoint-online-access.md)
+### [管理商務用 Skype Online 存取](deploy-use/manage-skype-for-business-online-access.md)
+### [管理 Dynamics CRM Online 存取](deploy-use/manage-dynamics-crm-online-access.md)
+### [管理對 O365 服務的電腦存取](deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)
+
+## [依據風險管理存取](deploy-use/manage-access-based-on-device-network-app-risk.md)
+### [設定 Lookout 裝置威脅保護](deploy-use/set-up-your-subscription-with-lookout.md)
+### [在 Intune 中啟用 Lookout](deploy-use/enable-lookout-connection-in-intune.md)
+### [工作應用程式部署 Lookout](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
+### [啟用裝置威脅保護原則](deploy-use/enable-device-threat-protection-rule-compliance-policy.md)
+### [對 Lookout 整合進行疑難排解](deploy-use/troubleshoot-lookout-integration.md)
+
+# 內部部署行動裝置管理 (MDM)
+## [什麼是內部部署 MDM](understand/manage-mobile-devices-with-on-premises-infrastructure.md)
+## [內部部署 MDM 的規劃](plan-design/plan-on-premises-mdm.md)
+
+## [設定步驟](get-started/preparation-steps-for-on-premises-mdm.md)
+### [設定 Intune 訂閱](get-started/set-up-intune-subscription-on-premises-mdm.md)
 ### [安裝內部部署角色](get-started/install-site-system-roles-for-on-premises-mdm.md)
 ### [設定憑證](get-started/set-up-certificates-on-premises-mdm.md)
-### [設定裝置註冊](get-started/set-up-device-enrollment-on-premises-mdm.md)
+### [設定註冊](get-started/set-up-device-enrollment-on-premises-mdm.md)
+
 ## [註冊內部部署 MDM 的裝置](deploy-use/enroll-devices-on-premises-mdm.md)
 ### [使用者註冊](deploy-use/user-enroll-devices-on-premises-mdm.md)
 ### [大量註冊](deploy-use/bulk-enroll-devices-on-premises-mdm.md)
+## [管理裝置](deploy-use/onprem-manage-devices.md)
+## [管理應用程式](deploy-use/onprem-manage-applications.md)
+## [保護資料及裝置](deploy-use/onprem-protect-data-devices.md)
 
-## [淘汰、鎖定和重設裝置](deploy-use/wipe-lock-reset-devices.md)
-## [同步處理 Intune 註冊裝置](deploy-use/sync-intune-device.md)
-## [使用 Exchange 管理裝置](deploy-use/manage-mobile-devices-with-exchange-activesync.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-
+# [使用 Exchange 管理裝置](deploy-use/manage-mobile-devices-with-exchange-activesync.md)

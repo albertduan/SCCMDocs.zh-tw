@@ -120,8 +120,7 @@
 #### [規劃監視移轉](migration/planning-to-monitor-migration-activity.md)
 #### [規劃完成移轉](migration/planning-to-complete-migration.md)
 ###  [設定來源階層和來源站台](migration/configuring-source-hierarchies-and-source-sites-for-migration.md)
-###  [移轉的作業](migration/operations-for-migration.md)
-###  [移轉的安全性和隱私權](migration/security-and-privacy-for-migration.md)
+###  [移轉作業](migration/operations-for-migration.md)###  [移轉的安全性及隱私權](migration/security-and-privacy-for-migration.md)
 
 #    [部署伺服器和角色](servers/deploy/start-using.md)
 
@@ -172,14 +171,20 @@
 ###  [安裝主控台內更新](servers/manage/install-in-console-updates.md)
 #### [流程圖 - 下載更新](servers/manage/download-updates-flowchart.md)
 #### [流程圖 - 更新複寫](servers/manage/update-replication-flowchart.md)
+###  [發行前版本功能](servers/manage/pre-release-features.md)
 ###  [站台伺服器的服務保留時間](servers/manage/service-windows.md)
 ###  [使用服務連接工具](servers/manage/use-the-service-connection-tool.md)
 ###  [使用更新註冊工具](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [使用 Hotfix 安裝程式](servers/manage/use-the-hotfix-installer-to-install-updates.md)
+<!-- 
+###  [Checklist for installing update 1702](servers/manage/checklist-for-installing-update-1702.md)
+-->
 ###  [安裝更新 1610 的檢查清單](servers/manage/checklist-for-installing-update-1610.md)
 ###  [安裝更新 1606 的檢查清單](servers/manage/checklist-for-installing-update-1606.md)
-###  [安裝更新 1602 的檢查清單](servers/manage/checklist-for-installing-update-1602.md)
-###  [最新分支版本支援](servers/manage/current-branch-versions-supported.md)
+<!-- Deprecated from Content:
+###  [Checklist for installing update 1602](servers/manage/checklist-for-installing-update-1602.md)
+###  [Support for current branch versions](servers/manage/current-branch-versions-supported.md)  
+-->
 
 ##   監視基礎結構
 ###  [使用警示和狀態系統](servers/manage/use-alerts-and-the-status-system.md)
@@ -202,6 +207,7 @@
 #### [報告的作業和維護](servers/manage/operations-and-maintenance-for-reporting.md)
 #### [建立自訂報告模型](servers/manage/creating-custom-report-models-in-sql-server-reporting-services.md)
 #### [報告的安全性和隱私權](servers/manage/security-and-privacy-for-reporting.md)
+###  [資料倉儲](servers/manage/data-warehouse.md)
 
 #    部署用戶端
 ##   規劃用戶端部署
@@ -260,7 +266,6 @@
 ###  [硬體清查簡介](clients/manage/inventory/introduction-to-hardware-inventory.md)
 ###  [如何擴充硬體清查](clients/manage/inventory/extend-hardware-inventory.md)
 ###  [如何設定硬體清查](clients/manage/inventory/configure-hardware-inventory.md)
-###  [如何設定混合式部署中行動裝置的硬體清查](clients/manage/inventory/mobile-device-hardware-inventory-hybrid.md)
 ###  [如何使用資源總管檢視硬體清查](clients/manage/inventory/use-resource-explorer-to-view-hardware-inventory.md)
 ###  [Linux 和 UNIX 的硬體清查](clients/manage/inventory/hardware-inventory-for-linux-and-unix.md)
 ###  [硬體清查的安全性和隱私權](clients/manage/inventory/security-and-privacy-for-hardware-inventory.md)
