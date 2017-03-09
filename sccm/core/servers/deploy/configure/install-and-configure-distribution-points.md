@@ -16,14 +16,15 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f83dc12aab96ad76a62582fc2f2fe3e0b99b3b67
-ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
+ms.sourcegitcommit: 8728d9f2ae63282a8f58b20105e488fb1a5ef55b
+ms.openlocfilehash: 4c94e4de5bbfe621492e8682c9424a48eb38196d
+ms.lasthandoff: 03/03/2017
 
 ---
 # <a name="install-and-configure-distribution-points-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 安裝及設定發佈點
 
 *適用對象：System Center Configuration Manager (最新分支)*
-
+ 
 您可安裝 System Center Configuration Manager 發佈點，來裝載部署至裝置與使用者的內容 (檔案和軟體)。 您也可以建立發佈點群組，以簡化發佈點的管理方式與將內容發佈至發佈點的方式。  
 
  當您使用安裝精靈來安裝新的發佈點，或透過編輯發佈點內容來管理現有的發佈點內容時，可以進行大部分的發佈點設定。 有一些設定唯有當您在安裝或編輯時才能使用，無法同時適用於這兩種情況：  
@@ -44,7 +45,7 @@ ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
 
     -   **替傳輸到發佈點的資料設定排程**  
 
-##  <a name="a-namebkmkinstalla-install-a-distribution-point"></a><a name="bkmk_install"></a> 安裝發佈點  
+##  <a name="bkmk_install"></a> 安裝發佈點  
  您必須將網站伺服器指定為發佈點，才能讓用戶端電腦使用內容。 您可以將發佈點網站角色新增至新的網站系統伺服器，或將網站角色新增至現有的網站系統伺服器。  
 
  當您安裝新的發佈點時，可以使用安裝精靈，逐步引導您完成可用的設定。 開始之前，請考量下列事項：  
@@ -95,7 +96,7 @@ ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
 
 4.  完成想要的變更後，請儲存您的設定並關閉發佈點內容。  
 
-##  <a name="a-namebkmkmanagea-manage-distribution-point-groups"></a><a name="bkmk_manage"></a> 管理發佈點群組  
+##  <a name="bkmk_manage"></a> 管理發佈點群組  
  發佈點群組提供內容發佈的發佈點邏輯群組。 您可使用這些群組，從跨越多個站台的發佈點中心位置來管理與監視內容。 請注意以下事項：
 
 -   您可以從階層內的任何站台新增一個或多個發佈點到發佈點群組。  
@@ -159,7 +160,7 @@ ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
 
 3.  在 [可用的發佈點群組] 中，選取要新增選取的發佈點做為其成員的發佈點群組，然後選擇 [確定]。  
 
-##  <a name="a-namebkmkconfigsa-configure-a-distribution-point"></a><a name="bkmk_configs"></a> 設定發佈點  
+##  <a name="bkmk_configs"></a> 設定發佈點  
  個別發佈點會支援各種不同的設定。 不過，並非所有的發佈點類型都支援所有的組態。 例如，雲端式發佈點不支援針對 PXE 或多點傳送所啟用的內容部署。 您可以在下列主題中找到特定限制的相關資訊：  
 
 -   [使用雲端架構發佈點搭配 System Center Configuration Manager](../../../../core/plan-design/hierarchy/use-a-cloud-based-distribution-point.md)  
@@ -343,9 +344,9 @@ ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
 
 此外：
 
-- 在 1610 版之前，您可以勾選 [允許用戶端使用此網站系統做為內容的後援來源位置] 方塊，讓位於這些界限群組以外的用戶端進行後援，並在沒有其他發佈點可用時，使用發佈點作為內容的來源位置。 如需界限群組的詳細資訊，請參閱 [1511、1602 及 1606 版的界限群組](/sccm/core/servers/deploy/configur/boundary-groups-for-1511-1602-and-1606)。 如需慣用發佈點，請參閱 [System Center Configuration Manager 中的內容管理基本概念](../../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)。
+- 在 1610 版之前，您可以勾選 [允許用戶端使用此網站系統做為內容的後援來源位置] 方塊，讓位於這些界限群組以外的用戶端進行後援，並在沒有其他發佈點可用時，使用發佈點作為內容的來源位置。 如需界限群組的詳細資訊，請參閱 [1511、1602 及 1606 版的界限群組](/sccm/core/servers/deploy/configure/boundary-groups-for-1511-1602-and-1606)。 如需慣用發佈點，請參閱 [System Center Configuration Manager 中的內容管理基本概念](../../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)。
 
-- 使用 1610 版或更新版本，您可以設定界限群組「關聯性」，其定義用戶端可以後援以尋找內容的時機和界限群組。 如需詳細資訊，請參閱[界限群組](/sccm/core/servers/deploy/configur/define-site-boundaries-and-boundary-groups#boundary-groups)。
+- 使用 1610 版或更新版本，您可以設定界限群組「關聯性」，其定義用戶端可以後援以尋找內容的時機和界限群組。 如需詳細資訊，請參閱[界限群組](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#boundary-groups)。
 
 
 ### <a name="schedule"></a>排程  
@@ -388,9 +389,4 @@ ms.openlocfilehash: efda1a8f010bb0125ef726d0b960317a4fdc4f28
 -   **脈衝模式**：該選項指定傳送至發佈點的資料區塊大小。 您也可以指定傳送每個資料區塊之間的時間延遲。 如果您必須經由非常低頻寬的網路連線傳送資料至發佈點，請使用此選項。 例如，您可能限制每五秒傳送 1 KB 的資料，無論於特定時間的連結速度或其使用情形為何。  
 
 -   **限制為指定的每小時最大傳送速率**：指定此設定會讓網站僅使用您設定的時間百分比傳送資料至發佈點。 使用此選項時，Configuration Manager 不會識別網路的可用頻寬，而是會細分可傳送資料的時間。 然後資料會傳送一小段時間，下一個時間片段則不傳送資料。 例如，如果最大速率設為 **50%**，則 Configuration Manager 會在傳輸某個時段的資料之後，於一段相等時段內停止傳送資料。 不會管理實際資料量大小 (或資料區塊大小)。 只會管理傳送資料的時間長度。  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

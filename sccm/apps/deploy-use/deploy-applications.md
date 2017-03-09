@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 7be9abadeb51d4f9e862f69c332756b19ce3e110
-ms.openlocfilehash: a52bef3c8d12ffe2d9b13dc79cbc8950d3f36aea
+ms.sourcegitcommit: cb42b6f324dc0019c2109be4d91e0eab4dca4d70
+ms.openlocfilehash: 8c54bc455828712c7f9ea297f26c98c41848cf9c
+ms.lasthandoff: 03/08/2017
 
 
 ---
@@ -84,8 +85,8 @@ ms.openlocfilehash: a52bef3c8d12ffe2d9b13dc79cbc8950d3f36aea
 
     > [!NOTE]
     >  應用程式核准要求會顯示在 [軟體程式庫]  工作區中 [應用程式管理]  下方的 [核准要求]  節點中。 如果要求未在 45 天內獲得核准，就會移除。 此外，重新安裝 Configuration Manager 用戶端可能會取消所有擱置中的核准要求。
-    > 核准安裝應用程式之後，您可以接著在 Configuration Manager 主控台中按一下 [拒絕] (過去此按鈕在核准之後就無法使用)，選擇拒絕要求。
-    > 這個動作不會從任何裝置解除安裝應用程式，但它會讓使用者不能從軟體中心安裝新的應用程式複本。
+    >  核准安裝應用程式之後，您可以接著在 Configuration Manager 主控台中按一下 [拒絕] (過去此按鈕在核准之後就無法使用)，選擇拒絕要求。
+    >  這個動作不會從任何裝置解除安裝應用程式，但它會讓使用者不能從軟體中心安裝新的應用程式複本。
 
 
 
@@ -116,8 +117,7 @@ ms.openlocfilehash: a52bef3c8d12ffe2d9b13dc79cbc8950d3f36aea
 
 >[!NOTE]
     >  當您將應用程式部署至 Windows Enbedded 裝置時，請確定裝置是已設定維護期間之集合的成員。 如需在將應用程式部署至 Windows Embedded 裝置時如何利用維護期間的詳細資訊，請參閱[建立 Windows Embedded 應用程式](../../apps/get-started/creating-windows-embedded-applications.md)。
-
-    >  The options **Software Installation** and **System restart (if required to complete the installation)** are not used if the deployment purpose is set to **Available**. You can also configure the level of notification a user sees when the application is installed.
+    > 如果部署目的設為 [可用]  ，則不使用 [軟體安裝]  和 [系統重新啟動 (如果是完成安裝所需)] 選項。 您也可以設定使用者在安裝應用程式時看到的通知層級。
 
 ### <a name="specify-alert-options-for-the-deployment"></a>指定部署的警示選項
 
@@ -159,9 +159,4 @@ ms.openlocfilehash: a52bef3c8d12ffe2d9b13dc79cbc8950d3f36aea
 ## <a name="for-more-information"></a>詳細資訊：
 - [管理高風險部署的設定](../../protect/understand/settings-to-manage-high-risk-deployments.md)
 - [如何設定用戶端設定](../../core/clients/deploy/configure-client-settings.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

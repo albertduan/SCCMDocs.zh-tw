@@ -2,7 +2,7 @@
 title: "使用者如何使用內部部署 MDM 來註冊裝置 - Configuration Manager | Microsoft Docs"
 description: "了解使用者如何在 System Center Configuration Manager 中使用內部部署行動裝置管理註冊裝置。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
-ms.openlocfilehash: 43a30709473939829d82d822503537d448159a1c
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 7d852843d0d3fe7c9ab0947c4b396cee0a92c754
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -45,7 +46,7 @@ ms.openlocfilehash: 43a30709473939829d82d822503537d448159a1c
 
 -   [確認裝置註冊與否](#bkmk_verify)  
 
-##  <a name="a-namebkmkenrolldeska-enroll-a-windows-10-computer"></a><a name="bkmk_enrollDesk"></a> 註冊 Windows 10 電腦  
+##  <a name="bkmk_enrollDesk"></a> 註冊 Windows 10 電腦  
 
 1.  在 Windows 10 電腦上，移至 [設定] 。  
 
@@ -59,7 +60,7 @@ ms.openlocfilehash: 43a30709473939829d82d822503537d448159a1c
 
 6.  按一下 [略過]  以記憶登入資訊，接著經過一小段時間後，裝置即完成連線。  
 
-##  <a name="a-namebkmkenrollmoba-enroll-a-windows-10-mobile-device"></a><a name="bkmk_enrollMob"></a> 註冊 Windows 10 行動裝置  
+##  <a name="bkmk_enrollMob"></a> 註冊 Windows 10 行動裝置  
 
 1.  在 Windows 10 行動裝置上，請移至 [設定] 。  
 
@@ -71,18 +72,10 @@ ms.openlocfilehash: 43a30709473939829d82d822503537d448159a1c
 
 5.  在下一個畫面中，輸入您的公司電子郵件地址和密碼，然後按一下 [登入] 。 經過一小段時間之後，裝置即完成註冊。 按一下 [完成] 。  
 
-##  <a name="a-namebkmkverifya-verify-device-enrollment"></a><a name="bkmk_verify"></a> 確認裝置註冊與否  
+##  <a name="bkmk_verify"></a> 確認裝置註冊與否  
  您可以在 Configuration Manager 主控台確認裝置已成功註冊。  
 
 1.  啟動 Configuration Manager 主控台。  
 
 2.  按一下 [關閉]  >  > 的站台系統角色之間進行信任通訊時，需要這個根憑證。 註冊的裝置會出現在清單中。  
-
-## <a name="see-also"></a>另請參閱  
- [Enroll devices for On-premises Mobile Device Management in System Center Configuration Manager](../../mdm/deploy-use/enroll-devices-on-premises-mdm.md) (在 System Center Configuration Manager 中註冊裝置以進行內部部署行動裝置管理)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
