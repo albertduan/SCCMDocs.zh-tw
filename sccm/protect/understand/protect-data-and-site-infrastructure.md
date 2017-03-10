@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2117f786-d521-4790-9e8d-ec096c63c9d7
 caps.latest.revision: 8
-author: Nbigman
-ms.author: nbigman
+author: Robstack
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
-ms.openlocfilehash: c80750358d64cf87f8a3ce3a4c4f4030a9dfd742
+ms.sourcegitcommit: 8679df3f8a3b692391537bacd6144a4f2fae357b
+ms.openlocfilehash: d527cb4bfb55ca50c8d2a0fed7c427af5747fe99
+ms.lasthandoff: 02/09/2017
 
 
 ---
@@ -30,7 +31,7 @@ ms.openlocfilehash: c80750358d64cf87f8a3ce3a4c4f4030a9dfd742
 
 -   您可以使用 VPN 設定檔啟用 VPN 連線，降低使用者連線到公司資源的困難度。 深入了解 [System Center Configuration Manager 中的 VPN 設定檔](../deploy-use/vpn-profiles.md)。  
 
--   Wi-Fi 設定檔提供一組工具和資源，可協助您建立、部署和監視您組織中各裝置的無線網路設定。 藉由部署這些設定，可將使用者連線到公司無線網路所需耗費的功夫降到最低。 深入了解 [System Center Configuration Manager 中的 Wi-Fi 設定檔](../deploy-use/introduction-to-wifi-profiles.md)。  
+-   Wi-Fi 設定檔提供一組工具和資源，可協助您建立、部署和監視您組織中各裝置的無線網路設定。 藉由部署這些設定，可將使用者連線到公司無線網路所需耗費的功夫降到最低。 深入了解 [System Center Configuration Manager 中的 Wi-Fi 設定檔](/sccm/protect/deploy-use/create-wifi-profiles)。  
 
 -   [System Center Configuration Manager 中的憑證設定檔](../deploy-use/introduction-to-certificate-profiles.md)會說明如何使用所需的憑證佈建使用者裝置，以連接公司資源。  
 
@@ -41,9 +42,4 @@ ms.openlocfilehash: c80750358d64cf87f8a3ce3a4c4f4030a9dfd742
 -   電子郵件設定檔是一組有助於您建立、部署及監視裝置上電子郵件設定的工具與資源。 這可讓使用者在個人裝置上不需任何設定，就能存取公司的電子郵件。 深入了解 [System Center Configuration Manager 中的電子郵件設定檔](../deploy-use/introduction-to-email-profiles.md)。  
 
 -   Configuration Manager 可讓您與 Windows Hello 企業版 (舊稱 Microsoft Passport for Work) 整合，這是使用 Active Directory 或 Azure Active Directory 帳戶取代密碼、智慧卡或虛擬智慧卡的替代登入方法。 深入了解 [System Center Configuration Manager 的 Windows Hello 企業版設定](../deploy-use/windows-hello-for-business-settings.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

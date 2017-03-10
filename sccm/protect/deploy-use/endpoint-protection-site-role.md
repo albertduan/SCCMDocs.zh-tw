@@ -4,7 +4,7 @@ description: "了解如何設定 Endpoint Protection 以在 Configuration Manage
 defintion: 
 definition: 
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 02/14/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,8 +18,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9db108fb2d4d16013f416b8ee87a57ff1c91e21f
-ms.openlocfilehash: 25ce24d16bd55366d23a176b21b38ed53aa40644
+ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
+ms.openlocfilehash: 884b5f2ec3f1aa273128dfeaaf88d969c9d8669d
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -60,11 +61,6 @@ ms.openlocfilehash: 25ce24d16bd55366d23a176b21b38ed53aa40644
 
 8.  完成精靈。
 
-> [!div class="button"]
-[下一步 >](endpoint-configure-alerts.md)
-
-> [!div class="button"]
-[上一步 >](endpoint-protection-configure.md)
 
 ## <a name="existing-site-system-server"></a>現有的網站系統伺服器
 
@@ -89,15 +85,4 @@ ms.openlocfilehash: 25ce24d16bd55366d23a176b21b38ed53aa40644
     >  這個選項會設定預設使用的雲端保護服務 (先前稱為 MAPS) 設定。 您可以為每個您設定的反惡意程式碼原則設定自訂設定。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中建立和部署 Endpoint Protection 的反惡意程式碼原則](endpoint-antimalware-policies.md)。
 
 8.  完成精靈。
-
-> [!div class="button"]
-[下一步 >](endpoint-configure-alerts.md)
-
-> [!div class="button"]
-[上一步 >](endpoint-protection-configure.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
