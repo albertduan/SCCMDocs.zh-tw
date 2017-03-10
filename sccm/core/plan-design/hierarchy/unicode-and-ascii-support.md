@@ -2,7 +2,7 @@
 title: "Unicode 和 ASCII 支援 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 物件中的 Unicode 和 ASCII 字元支援。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,14 +17,15 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: 1888ce257232b63e4671aa619da190ea570b8a57
+ms.sourcegitcommit: b35e747c8c297d61bb549b9767c4318f51e5fdb4
+ms.openlocfilehash: 18f1c64c1f27001a0fdfbab4236d09a5bc279272
+ms.lasthandoff: 03/01/2017
 
 
 ---
 # <a name="unicode-and-ascii-support-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的 Unicode 和 ASCII 支援
 
-*適用於：System Center Configuration Manager (最新分支)*
+*適用對象：System Center Configuration Manager (最新分支)*
 
 System Center Configuration Manager 會使用 Unicode 字元建立大部分的物件。 不過，有幾個物件僅支援 ASCII 字元，或者有其他限制。  
 
@@ -36,7 +37,7 @@ System Center Configuration Manager 會使用 Unicode 字元建立大部分的�
 
 -   [未當地語系化的 Configuration Manager 物件](#BKMK_LangNonLocalize)  
 
-##  <a name="a-namebkmkasciichara-objects-that-use-ascii-characters"></a><a name="BKMK_ASCIIchar"></a> 使用 ASCII 字元的物件  
+##  <a name="BKMK_ASCIIchar"></a> 使用 ASCII 字元的物件  
  只有在建立下列物件時，Configuration Manager 才支援 ASCII 字元集：  
 
 -   站台碼  
@@ -60,9 +61,9 @@ System Center Configuration Manager 會使用 Unicode 字元建立大部分的�
 
     -   套件存取帳戶  
 
-    -   標準寄件者帳戶  
+    -   標準傳送者帳戶  
 
-    -   網站系統安裝帳戶  
+    -   站台系統安裝帳戶  
 
     -   軟體更新點連線帳戶  
 
@@ -73,7 +74,7 @@ System Center Configuration Manager 會使用 Unicode 字元建立大部分的�
     >   
     >  Reporting Services 點帳戶支援 Unicode，但不支援 RUS 字元。  
 
--   站台伺服器及站台系統的 FQDN  
+-   站台伺服器及站台系統的完整網域名稱 (FQDN)  
 
 -   Configuration Manager 的安裝路徑  
 
@@ -101,7 +102,7 @@ System Center Configuration Manager 會使用 Unicode 字元建立大部分的�
 
     -   用於儲存 Configuration Manager 備份的資料夾  
 
-    -   用於儲存站台安裝程式安裝來源檔案的資料夾。  
+    -   用於儲存站台安裝程式安裝來源檔案的資料夾  
 
     -   用於儲存安裝程式必須使用之下載內容的資料夾  
 
@@ -113,7 +114,7 @@ System Center Configuration Manager 會使用 Unicode 字元建立大部分的�
 
     -   虛擬應用程式名稱  
 
--   AMT 及超出訊號範圍管理的下列物件：  
+-   AMT 及頻外管理的下列物件：  
 
     -   AMT-based 型電腦的 FQDN  
 
@@ -131,22 +132,17 @@ System Center Configuration Manager 會使用 Unicode 字元建立大部分的�
 
     -   AMT 資料儲存區的內容  
 
--   開機媒體 .ISO 檔案名稱  
+-   開機媒體 ISO 檔案名稱  
 
-##  <a name="a-namebkmkothercharlimitationsa-additional-limitations"></a><a name="BKMK_OtherCharLimitations"></a> 其他限制  
+##  <a name="BKMK_OtherCharLimitations"></a> 其他限制  
  以下是可支援字元集和語言版本的其他限制：  
 
 -   Configuration Manager 不支援變更站台伺服器電腦的地區設定。  
 
 -   企業憑證授權單位 (CA) 不支援使用雙位元組字元集 (DBCS) 的用戶端電腦名稱。 可使用的用戶端電腦名稱受限於 IA5 字元集的 PKI 限制。 此外，Configuration Manager 不支援使用 DBCS 的 CA 名稱或主體名稱值。  
 
-##  <a name="a-namebkmklangnonlocalizea-configuration-manager-objects-that-are-not-localized"></a><a name="BKMK_LangNonLocalize"></a> 未當地語系化的 Configuration Manager 物件  
+##  <a name="BKMK_LangNonLocalize"></a> 未當地語系化的 Configuration Manager 物件  
  Configuration Manager 資料庫支援多數已儲存物件使用的 Unicode，如果可以，會以符合電腦地區設定的作業系統語言顯示此項資訊。 電腦的地區設定必須與安裝在站台之用戶端或伺服器語言一致，用戶端介面或 Configuration Manager 主控台才能以該電腦的作業系統語言顯示資訊。  
 
  不過，有幾個 Configuration Manager 物件並不支援 Unicode，而是使用 ASCII 儲存在資料庫中，或者有其他語言限制。 這項資訊一律會使用 ASCII 字元集或建立該物件時所使用的語言顯示。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

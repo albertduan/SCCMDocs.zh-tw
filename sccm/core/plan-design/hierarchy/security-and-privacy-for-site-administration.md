@@ -2,7 +2,7 @@
 title: "站台管理安全性和隱私權 | Microsoft Docs"
 description: "最佳化 System Center Configuration Manager 中網站管理的安全性和隱私權。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,25 +16,26 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: aca2169c8f5f855e84ca924ca56f6b64bba80fd6
+ms.sourcegitcommit: 168650cca28fe1331e48ea5e8e025e110dda835f
+ms.openlocfilehash: 4ca43db385ea97d5d026c50a799b783096c05d36
+ms.lasthandoff: 03/01/2017
 
 
 ---
 # <a name="security-and-privacy-for-site-administration-in-system-center-configuration-manager"></a>System Center Configuration Manager 中網站管理的安全性和隱私權
 
-*適用對象：System Center Configuration Manager (最新分支)*
+*適用於︰System Center Configuration Manager (最新分支)*
 
 本主題包含 System Center Configuration Manager 站台及階層的安全性與隱私權資訊。
 
-##  <a name="a-namebkmksecuritysitesa-security-best-practices-for-site-administration"></a><a name="BKMK_Security_Sites"></a> 網站管理的安全性最佳作法  
+##  <a name="BKMK_Security_Sites"></a> 站台管理的安全性最佳做法  
  使用下列安全性最佳作法，協助您保護 System Center Configuration Manager 站台和階層。  
 
- **只從受信任來源執行安裝程式，並保護安裝程式媒體和站台伺服器之間的通訊通道。**  
+ **只從受信任來源執行安裝程式，並保護安裝程式媒體與站台伺服器之間的通訊通道。**  
 
- 若要協助預防來源檔案遭到竄改，請從受信任來源執行安裝程式。 如果在網路上儲存檔案，請保護網路位置。  
+ 若要協助防止有人竄改來源檔案，請從受信任來源執行安裝程式。 如果在網路上儲存檔案，請保護網路位置。  
 
- 如果是從網路位置執行安裝程式，若要防止攻擊者竄改透過網路傳送的檔案，可在安裝程式檔案的來源位置和站台伺服器之間使用 IPsec 或 SMB 簽署。  
+ 如果是從網路位置執行安裝程式，若要防止攻擊者竄改透過網路傳送的檔案，可在安裝程式檔案的來源位置與站台伺服器之間使用 IPsec 或伺服器訊息區 (SMB) 簽署。  
 
  此外，若您使用安裝程式下載程式下載安裝程式所需的檔案，請確定儲存這些檔案的位置也有受到保護，並在執行安裝程式時保護此位置的通訊通道。  
 
@@ -51,11 +52,11 @@ ms.openlocfilehash: aca2169c8f5f855e84ca924ca56f6b64bba80fd6
 -   應用程式類別目錄網站點  
 
 > [!NOTE]  
->  Configuration Manager 的受信任網域需要進行 Kerberos 驗證，因此若用戶端位於另一個樹系，且該樹系與站台伺服器的樹系間未採用雙向樹系信任，這些用戶端將被視為位於不受信任的網域。 外部信任無法滿足此用途。  
+>  Configuration Manager 的受信任網域需要進行 Kerberos 驗證。 這表示，如果用戶端位於另一個樹系，且該樹系與站台伺服器的樹系間未採用雙向樹系信任，這些用戶端將被視為位於不受信任的網域。 外部信任無法滿足此用途。  
 
  **使用 IPsec 在站台系統伺服器及站台間進行安全通訊。**  
 
- 雖然 Configuration Manager 可以在站台伺服器和執行 SQL Server 的電腦間進行安全通訊，但 Configuration Manager 無法在站台系統角色和 SQL Server 之間進行安全通訊。 只有某些站台系統 (註冊點和應用程式類別目錄 Web 服務點) 可以針對 HTTPS 進行站台內通訊的設定。  
+ 雖然 Configuration Manager 可以在站台伺服器與執行 SQL Server 的電腦之間進行安全通訊，但 Configuration Manager 無法在站台系統角色與 SQL Server 之間進行安全通訊。 只有某些站台系統 (註冊點和應用程式類別目錄 Web 服務點) 可以針對 HTTPS 進行站台內通訊的設定。  
 
  如果您沒有使用其他控制項來保護這些伺服器對伺服器的通道，攻擊者便可以針對站台系統進行各種詐騙和攔截式攻擊。 當您無法使用 IPsec 時可使用 SMB 簽署。  
 
@@ -80,11 +81,11 @@ Configuration Manager 會自動建立及管理這些安全性群組。 這包括
 
 如果用戶端無法查詢通用類別目錄以取得 Configuration Manager 資訊，這些用戶端必須仰賴受信任根金鑰來驗證有效的管理點。 受信任根金鑰會儲存在用戶端登錄中，並可使用群組原則或手動設定進行設定。  
 
-如果用戶端未在第一次與管理點連絡時提供受信任根金鑰的複本，該用戶端會信任第一個與其通訊的管理點。 若要降低攻擊者將用戶端誤導至未經授權管理點的風險，您可以使用受信任的根金鑰預先佈建用戶端。 如需詳細資訊，請參閱 [Planning for the Trusted Root Key](../../../core/plan-design/security/plan-for-security.md#BKMK_PlanningForRTK)。  
+如果用戶端未在第一次與管理點連絡時提供受信任根金鑰的複本，該用戶端會信任第一個與其通訊的管理點。 若要降低攻擊者將用戶端誤導至未經授權管理點的風險，您可以使用受信任的根金鑰預先佈建用戶端。 如需詳細資訊，請參閱[規劃受信任的根金鑰](../../../core/plan-design/security/plan-for-security.md#BKMK_PlanningForRTK)。  
 
 **使用非預設的連接埠號碼。**  
 
-當您使用非預設的連接埠號碼時，這可以提供額外的安全性，因為攻擊者較難在準備攻擊時探索環境。 如果您決定使用非預設的連接埠，請在安裝 Configuration Manager 前先進行規劃，然後在階層的所有站台一致地使用。 用戶端要求連接埠和網路喚醒，都是您可以使用非預設連接埠的範例。  
+因為非預設連接埠號碼可讓攻擊者較難在準備攻擊時探索環境，所以使用非預設連接埠號碼可以提供額外的安全性。 如果您決定使用非預設的連接埠，請在安裝 Configuration Manager 前先進行規劃，然後在階層的所有站台一致地使用。 用戶端要求連接埠和網路喚醒，都是您可以使用非預設連接埠的範例。  
 
 **在站台系統上使用角色隔離。**  
 
@@ -92,23 +93,23 @@ Configuration Manager 會自動建立及管理這些安全性群組。 這包括
 
 **減少受攻擊面。**  
 
-當您在不同伺服器上隔離各個站台系統角色時，這麼做可減少針對一個站台系統弱點進行攻擊，並轉用於攻擊不同站台系統的機會。 許多站台系統角色需要在站台系統上安裝 Internet Information Services (IIS)，如此做會增加受攻擊面。 如果您必須合併站台系統角色以減少硬體支出，請只合併 IIS 站台系統角色與其他站台需要 IIS 的系統角色。  
+在不同伺服器上隔離各個站台系統角色，可減少針對一個站台系統漏洞進行攻擊，並轉用於攻擊不同站台系統的機會。 許多站台系統角色需要在站台系統上安裝 Internet Information Services (IIS)，如此做會增加受攻擊面。 如果您必須合併站台系統角色以減少硬體支出，請只合併 IIS 站台系統角色與其他站台需要 IIS 的系統角色。  
 
 > [!IMPORTANT]  
->  後援狀態點角色是一項例外狀況：由於此站台系統角色接受來自用戶端未經驗證的資料，因此永遠不應將後援狀態點角色指派給其他 Configuration Manager 站台系統角色。  
+>  後援狀態點角色是一項例外。 由於此站台系統角色接受來自用戶端的未經驗證資料，因此建議您永遠不要將後援狀態點角色指派給任何其他 Configuration Manager 站台系統角色。  
 
 
 **依照 Windows Server 的安全性最佳作法，並在所有站台系統上執行安全性設定精靈。**  
 
 安全性設定精靈 (SCW) 可協助您建立可套用在網路上任何伺服器的安全性原則。 安裝 System Center Configuration Manager 範本之後，SCW 就會辨識 Configuration Manager 站台系統角色、服務、連接埠和應用程式。 接著，它會准許 Configuration Manager 所需的通訊，並封鎖不需要的通訊。  
 
-資訊安全設定精靈隨附於 System Center 2012 Configuration Manager 的工具組，您可以從 Microsoft 下載中心下載此工具組：[System Center 2012 - Configuration Manager Component Add-ons and Extensions](http://go.microsoft.com/fwlink/p/?LinkId=251931) (System Center 2012 - Configuration Manager 元件的附加元件和延伸模組)。  
+[資訊安全設定精靈] 隨附於 System Center 2012 Configuration Manager 的工具組，您可以從 Microsoft 下載中心下載此工具組：[System Center 2012 - Configuration Manager Component Add-ons and Extensions](http://go.microsoft.com/fwlink/p/?LinkId=251931) (System Center 2012 - Configuration Manager 元件的附加元件和延伸模組)。  
 
 **為站台系統設定靜態 IP 位址。**  
 
 靜態 IP 位址較容易保護名稱解析攻擊。  
 
-靜態 IP 位址也會使 IPsec 的設定較為簡單，這是在 Configuration Manager 的站台系統間進行安全通訊的安全性最佳作法。  
+靜態 IP 位址也會使 IPsec 的設定較為簡單。 使用 IPsec 是在 Configuration Manager 的站台系統間進行安全通訊的安全性最佳做法。  
 
 **請勿在站台系統伺服器上安裝其他應用程式。**  
 
@@ -116,7 +117,7 @@ Configuration Manager 會自動建立及管理這些安全性群組。 這包括
 
 **設定要求簽署及啟用加密為站台選項。**  
 
-為站台啟用簽署和加密選項。 確定所有用戶端皆可以支援 SHA-256 雜湊演算法，然後再啟用 [需要 SHA-256] 選項。  
+為站台啟用簽署和加密選項。 確定所有用戶端皆可以支援 SHA-256 雜湊演算法，然後啟用 [需要 SHA-256] 選項。  
 
 **限制和監視 Configuration Manager 系統管理使用者，以及使用以角色為基礎的系統管理，授與這些使用者所需的最小權限。**  
 
@@ -136,9 +137,9 @@ Configuration Manager 會自動建立及管理這些安全性群組。 這包括
 
 限制誰可以存取網路資料夾。  
 
-在網路位置和站台伺服器之間，以及執行 Configuration Manager 主控台的電腦和站台伺服器之間，使用 SMB 簽署或 IPsec，以防止攻擊者竄改匯出的資料。 在網路上使用 IPsec 為資料加密，以防止洩露資訊。  
+在網路位置與站台伺服器之間，以及執行 Configuration Manager 主控台的電腦與站台伺服器之間，使用 SMB 簽署或 IPsec，以防止攻擊者竄改匯出的資料。 在網路上使用 IPsec 為資料加密，以防止洩露資訊。  
 
-**如果站台系統無法解除安裝或停止運作，並且無法還原，請手動從其他 Configuration Manager 伺服器移除此伺服器的 Configuration Manager 憑證。**  
+**如果站台系統未適當地進行解除安裝或停止運作，並且無法還原，請手動從其他 Configuration Manager 伺服器移除此伺服器的 Configuration Manager 憑證。**  
 
 若要移除原本使用站台系統和站台系統角色所建立的 PeerTrust，請手動在其他站台系統伺服器的**受信任的人**憑證存放區中，移除失敗伺服器的 Configuration Manager 憑證。 如果您重新調整伺服器而未對其進行重新格式化，這是非常重要的程序。  
 
@@ -165,17 +166,17 @@ Configuration Manager 會自動建立及管理這些安全性群組。 這包括
 
 **將站台設定為喚醒電腦以安裝軟體時應使用的組態。**  
 
--   如果您使用傳統的喚醒封包，請使用單點傳播而非子網路導向的廣播  
+-   如果您使用傳統的喚醒封包，請使用單點傳播而非子網路導向的廣播。  
 
--   如果您必須使用子網路導向的廣播，請將路由器設定為只允許來自站台伺服器的 IP 導向的廣播，且只能在非預設的連接埠號碼使用  
+-   如果您必須使用子網路導向的廣播，請將路由器設定為只允許來自站台伺服器的 IP 導向的廣播，且只能在非預設連接埠號碼使用。  
 
-如需不同網路喚醒技術的詳細資訊，請參閱 [Plan How to Wake Up Clients in System Center Configuration Manager](../../../core/clients/deploy/plan/plan-wake-up-clients.md) (規劃如何喚醒 System Center Configuration Manager 中的用戶端)。
+如需不同網路喚醒技術的詳細資訊，請參閱[規劃如何在 System Center Configuration Manager 中喚醒用戶端](../../../core/clients/deploy/plan/plan-wake-up-clients.md)。
 
 **如果使用電子郵件通知，請設定對 SMTP 郵件伺服器的已驗證存取權限。**  
 
 只要可行，就請使用支援已驗證存取的郵件伺服器，並使用站台伺服器的電腦帳戶進行驗證。 如果必須指定使用者帳戶進行驗證，請使用具備最低權限的帳戶。  
 
-##  <a name="a-namebkmksecuritysiteservera-security-best-practices-for-the-site-server"></a><a name="BKMK_Security_SiteServer"></a> 站台伺服器的安全性最佳作法  
+##  <a name="BKMK_Security_SiteServer"></a> 站台伺服器的安全性最佳做法  
  使用以下安全性最佳作法，協助您保護 Configuration Manager 站台伺服器。  
 
  **將 Configuration Manager 安裝在成員伺服器，而非網域控制站上。**  
@@ -186,20 +187,20 @@ Configuration Manager 會自動建立及管理這些安全性群組。 這包括
 
  **安裝次要站台時，避免將檔案透過網路複製到次要站台伺服器。**  
 
- 執行安裝程式並建立次要站台時，請不要選取從父站台複製檔案到次要站台的選項，或使用網路來源位置。 透過網路複製檔案時，僅管進行攻擊的時機很難掌握，有經驗的攻擊者仍可以劫持次要站台安裝套件，並在安裝檔案前竄改檔案。 只要在傳輸檔案時使用 IPsec 或 SMB，就可以緩解這種攻擊。  
+ 執行安裝程式並建立次要站台時，請不要選取從父站台複製檔案到次要站台的選項，也不要使用網路來源位置。 透過網路複製檔案時，僅管進行攻擊的時機很難掌握，有經驗的攻擊者仍可以劫持次要站台安裝套件，並在安裝檔案前竄改檔案。 只要在傳輸檔案時使用 IPsec 或 SMB，就可以緩解這種攻擊。  
 
- 不要在次要站台伺服器上透過網路複製檔案，而是將來源檔案從媒體複製到本機資料夾。 接著，執行安裝程式以建立次要站台時，在 [安裝來源檔]  頁面上選取 [使用位於次要站台電腦上下列位置的來源檔案 (最安全)] ，然後指定此資料夾。  
+ 不要在次要站台伺服器上透過網路複製檔案，而是將來源檔案從媒體資料夾複製到本機資料夾。 接著，執行安裝程式以建立次要站台時，在 [安裝來源檔] 頁面上選取 [使用位於次要站台電腦上下列位置的來源檔案 (最安全)]，然後指定此資料夾。  
 
  如需詳細資訊，請參閱 [Use the Setup Wizard to install sites](../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md) (使用安裝精靈安裝站台) 主題中的[Install a secondary site](../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md#bkmk_secondary) (安裝次要站台)。  
 
-##  <a name="a-namebkmksecuritysqlservera-security-best-practices-for-sql-server"></a><a name="BKMK_Security_SQLServer"></a> SQL Server 的安全性最佳作法  
- Configuration Manager 使用 SQL Server 作為後端資料庫。 如果資料庫遭到入侵，攻擊者可以略過 Configuration Manager，並直接存取 SQL Server 以經由 Configuration Manager 發動攻擊。 考量攻擊 SQL Server 會造成很高的風險，必須適時消滅。  
+##  <a name="BKMK_Security_SQLServer"></a> SQL Server 的安全性最佳做法  
+ Configuration Manager 使用 SQL Server 作為後端資料庫。 如果資料庫遭到入侵，攻擊者可以略過 Configuration Manager，並直接存取 SQL Server 以經由 Configuration Manager 發動攻擊。 考量攻擊 SQL Server 會造成很高的風險，並且適當地進行消減。  
 
  使用以下安全性最佳作法，協助您保護 SQL Server for Configuration Manager。  
 
  **請不要使用 Configuration Manager 站台資料庫伺服器來執行其他 SQL Server 應用程式。**  
 
- 增加存取 Configuration Manager 站台資料庫伺服器時，這會對您的 Configuration Manager 資料增加更多風險。 如果 Configuration Manager 站台資料庫遭到入侵，相同 SQL Server 電腦上的其他應用程式也會有危險。  
+ 增加存取 Configuration Manager 站台資料庫伺服器時，這會對您的 Configuration Manager 資料增加更多風險。 如果 Configuration Manager 站台資料庫遭到入侵，相同 SQL Server 電腦上的其他應用程式接著也會有危險。  
 
  **設定 SQL Server 使用 Windows 驗證。**  
 
@@ -207,9 +208,9 @@ Configuration Manager 會自動建立及管理這些安全性群組。 這包括
 
  **請採取額外步驟來確保使用 SQL Server Express 的次要站台有最新的軟體更新。**  
 
- 安裝主要站台時，Configuration Manager 會從 Microsoft 下載中心下載 SQL Server Express，並將檔案複製到主要站台伺服器。 安裝次要站台，並選取安裝 SQL Server Express 的選項時，Configuration Manager 會安裝先前下載的版本，不會檢查是否有可用的新版本。 若要確保次要站台有最新版本，請執行以下其中一項：  
+ 安裝主要站台時，Configuration Manager 會從 Microsoft 下載中心下載 SQL Server Express，並將檔案複製到主要站台伺服器。 安裝次要站台，並選取安裝 SQL Server Express 的選項時，Configuration Manager 會安裝先前下載的版本，不會檢查是否有可用的新版本。 若要確保次要站台有最新版本，請執行下列其中一項工作：  
 
--   安裝次要站台後，在次要站台伺服器上執行 Windows Update。  
+-   安裝次要站台後，請在次要站台伺服器上執行 Windows Update。  
 
 -   在您安裝次要站台前，請在將執行次要站台伺服器的電腦上安裝 SQL Server Express，並確保安裝最新版本以及所有軟體更新。 接著，安裝次要站台，並選取使用現有 SQL Server 執行個體的選項。  
 
@@ -219,12 +220,12 @@ Configuration Manager 會自動建立及管理這些安全性群組。 這包括
 
 找出並遵循您的 SQL Server 版本適用的最佳作法。 不過，請將下列 Configuration Manager 需求納入考量：  
 
--   站台伺服器的電腦帳戶必須是執行 SQL Server 之電腦上的系統管理群組成員。 若您遵循 SQL Server 建議「明確佈建系統管理主體」，您用來在站台伺服器上執行安裝程式的帳戶就必須是 SQL 使用者群組的成員。  
+-   站台伺服器的電腦帳戶必須是執行 SQL Server 之電腦上的系統管理群組成員。 如果您遵循 SQL Server 建議「明確佈建系統管理員主體」，則用來在站台伺服器上執行安裝程式的帳戶就必須是 SQL 使用者群組的成員。  
 
 -   如果您使用網域使用者帳戶來安裝 SQL Server，請確定已針對發佈至 Active Directory 網域服務的服務主體名稱 (SPN) 設定站台伺服器電腦帳戶。 若無 SPN，Kerberos 驗證會失敗，Configuration Manager 安裝程式也會失敗。  
 
-##  <a name="a-namebkmksecurityiisa-security-best-practices-for-site-systems-that-run-iis"></a><a name="BKMK_Security_IIS"></a> 執行 IIS 之站台系統的安全性最佳作法  
-Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 時，這可讓 Configuration Manager 正常運作，並降低受到安全性攻擊的風險。 在實務上，請將需要 IIS 的伺服器數量降至最低。 例如，執行的管理點數目僅為需要支援用戶端的基礎，同時將高可用性以及針對網際網路型用戶端管理的網路隔離都納入考量。  
+##  <a name="BKMK_Security_IIS"></a> 執行 IIS 之站台系統的安全性最佳做法  
+Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 的程序可讓 Configuration Manager 正常運作，並降低受到安全性攻擊的風險。 在實務上，請將需要 IIS 的伺服器數量降至最低。 例如，執行的管理點數目僅為需要支援用戶端的基礎，同時將高可用性以及針對網際網路型用戶端管理的網路隔離都納入考量。  
 
  使用以下安全性最佳作法，協助您保護執行 IIS 的站台伺服器。  
 
@@ -236,22 +237,24 @@ Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 時
 
  用戶端使用 HTTP 而非 HTTPS 連線至站台伺服器時，會使用 Windows 驗證，但可能會回復為使用 NTLM 驗證，而非 Kerberos 驗證。 使用 NTLM 驗證時，用戶端可能會連線至 Rogue 伺服器 (惡意伺服器)。  
 
- 這種安全性最佳作法的例外可能是發佈點，因為設定發佈點要求 HTTPS 時，套件存取帳戶會無法運作。 套件存取帳戶會為內容提供授權，如此您就能限制哪些使用者可以存取內容。 如需詳細資訊，請參閱 [Security Best Practices for Content Management](../../../core/plan-design/hierarchy/security-and-privacy-for-content-management.md#BKMK_Security_ContentManagement)。  
+ 這種安全性最佳作法的例外可能是發佈點，因為設定發佈點要求 HTTPS 時，套件存取帳戶會無法運作。 套件存取帳戶會為內容提供授權，如此您就能限制哪些使用者可以存取內容。 如需詳細資訊，請參閱[內容管理的安全性最佳做法](../../../core/plan-design/hierarchy/security-and-privacy-for-content-management.md#BKMK_Security_ContentManagement)。  
 
 **針對站台系統角色，設定 IIS 中的憑證信任清單 (CTL)。**  
 
 站台系統角色  
 
--   設定為要求 HTTPS 的發佈點。  
+-   設定為要求 HTTPS 的發佈點  
 
--   設定為要求 HTTPS 且啟用為支援行動裝置的管理。  
+-   設定為要求 HTTPS 且啟用為支援行動裝置的管理點
 
-憑證信任清單 (CTL) 是受信任根憑證授權單位的定義清單。 搭配群組原則與 PKI 部署使用 CTL 時，CTL 可讓您增補網路上所設定的現有受信任根憑證授權單位，例如自動隨 Microsoft Windows 一起安裝，或經由 Windows 企業根憑證授權單位新增的單位。 不過，在 IIS 中設定 CTL 時，CTL 會定義這些受信任根憑證授權單位的子集。  
+憑證信任清單 (CTL) 是受信任根憑證授權單位的定義清單。 搭配群組原則與公開金鑰基礎結構 (PKI) 部署使用 CTL 時，CTL 可讓您增補網路上所設定的現有受信任根憑證授權單位，例如自動隨 Microsoft Windows 一起安裝，或經由 Windows 企業根憑證授權單位新增的單位。 不過，在 IIS 中設定 CTL 時，它會定義這些受信任根憑證授權單位的子集。  
 
-此子集提供您更多的安全性控制，因為 CTL 會限制僅接受由 CTL 中憑證授權單位所發出的用戶端憑證。 例如，Windows 出貨時隨附數個著名的協力廠商憑證授權單位憑證，如 VeriSign 與 Thawte。 根據預設，執行 IIS 的電腦會信任鏈結至這些著名憑證授權單位的憑證。 在您並未針對列出的站台系統角色使用 CTL 設定 IIS 時，擁有從這些憑證授權單位發出之用戶端憑證的裝置都會獲得接受，成為有效的 Configuration Manager 用戶端。 如果您使用未包含這些憑證授權單位的 CTL 來設定 IIS，若憑證鏈結至這些憑證授權單位，就會拒絕用戶端連線。 不過，為了針對列出的站台系統角色讓 Configuration Manager 用戶端獲得接受，您必須使用指定 Configuration Manager 用戶端所使用之憑證授權單位的 CTL 來設定 IIS。  
+此子集提供您更多的安全性控制，因為 CTL 會限制僅接受由 CTL 中憑證授權單位所發出的用戶端憑證。 例如，Windows 隨附數個著名的協力廠商憑證授權單位憑證，如 VeriSign 與 Thawte。
+
+根據預設，執行 IIS 的電腦會信任鏈結至這些著名憑證授權單位的憑證。 在您並未針對列出的站台系統角色使用 CTL 設定 IIS 時，擁有從這些憑證授權單位發出之用戶端憑證的裝置都會獲得接受，成為有效的 Configuration Manager 用戶端。 如果您使用未包含這些憑證授權單位的 CTL 來設定 IIS，若憑證鏈結至這些憑證授權單位，就會拒絕用戶端連線。 不過，為了針對列出的站台系統角色讓 Configuration Manager 用戶端獲得接受，您必須使用指定 Configuration Manager 用戶端所使用之憑證授權單位的 CTL 來設定 IIS。  
 
 > [!NOTE]  
->  只有列出的站台系統角色會要求您在 IIS 中設定 CTL，Configuration Manager 用於管理點的憑證簽發者清單會在用戶端電腦連線至 HTTPS 管理點時，提供該電腦相同的功能。  
+>  只有列出的站台系統角色才會要求您在 IIS 中設定 CTL。 Configuration Manager 用於管理點的憑證簽發者清單會在用戶端電腦連線至 HTTPS 管理點時提供該電腦相同的功能。  
 
 如需有關如何在 IIS 中設定受信任憑證授權單位清單的詳細資訊，請參閱您的 IIS 說明文件。  
 
@@ -267,7 +270,7 @@ Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 時
 
 **使用自訂網站。**  
 
-針對執行 IIS 的站台系統，您可以設定 Configuration Manager 為使用自訂網站，而非 IIS 的預設網站。 如果您必須在站台系統上執行其他 Web 式應用程式，必須使用自訂網站。 這種設定是一種全站台設定，而非針對特定站台系統的設定。  
+針對執行 IIS 的站台系統，您可以設定 Configuration Manager 為使用自訂網站，而非 IIS 的預設網站。 如果您必須在站台系統上執行其他 Web 應用程式，必須使用自訂網站。 這種設定是一種全站台設定，而非針對特定站台系統的設定。  
 
 除了提供額外安全性外，如果您在站台系統上執行其他 Web 式應用程式，還必須使用自訂網站。  
 
@@ -289,8 +292,8 @@ Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 時
 
 找出並遵循您的 IIS 伺服器版本適用的最佳作法。 不過，請將 Configuration Manager 對於特定站台系統角色的所有需求納入考量。 如需詳細資訊，請參閱 [Site and site system prerequisites](../../../core/plan-design/configs/site-and-site-system-prerequisites.md) (站台和站台系統必要條件)。  
 
-##  <a name="a-namebkmksecuritymanagementpointa-security-best-practices-for-the-management-point"></a><a name="BKMK_Security_ManagementPoint"></a> 管理點的安全性最佳作法  
- 管理點是裝置與 Configuration Manager 間的主要介面。 考量管理點與管理點執行的伺服器可能受到的攻擊，這方面的風險極高，必須予以適當消減。 採用所有適合的安全性最佳作法，並監控所有異常的活動。  
+##  <a name="BKMK_Security_ManagementPoint"></a> 管理點的安全性最佳做法  
+ 管理點是裝置與 Configuration Manager 間的主要介面。 考量管理點與管理點執行的伺服器可能受到的攻擊，這方面的風險極高，並且適當地進行消減。 採用所有適合的安全性最佳作法，並監控所有異常的活動。  
 
  使用以下安全性最佳作法，協助您保護 Configuration Manager 中的管理點。  
 
@@ -300,31 +303,31 @@ Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 時
 
  如果您是從舊版移轉至 System Center Configuration Manager，請儘速將管理點上的用戶端軟體移轉至 System Center Configuration Manager。  
 
-##  <a name="a-namebkmksecurityfspa-security-best-practices-for-the-fallback-status-point"></a><a name="BKMK_Security_FSP"></a> 後援狀態點的安全性最佳作法  
+##  <a name="BKMK_Security_FSP"></a> 後援狀態點的安全性最佳做法  
  如果您在 Configuration Manager 安裝後援狀態點，請使用以下安全性最佳作法。  
 
- 如需有關安裝後援狀態點時的安全性考量的詳細資訊，請參閱 [Determine Whether You Require a Fallback Status Point](../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md#BKMK_Determine_FSP)。  
+ 如需安裝後援狀態點時的安全性考量的詳細資訊，請參閱[判定您是否需要後援狀態點](../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md#BKMK_Determine_FSP)。  
 
-**請不要在站台系統上執行其他站台系統角色，也不要將其安裝在網域控制站上。**  
+**請不要在站台系統上執行其他站台系統角色，也不要將後援狀態點安裝在網域控制站上。**  
 
  由於後援狀態點設計為會接受來自其他電腦未經驗證的通訊，以其他站台系統角色或在網域控制站上執行此站台系統角色，會對該伺服器造成極大的風險。  
 
 **針對在 Configuration Manager 中的用戶端通訊使用 PKI 憑證時，請在安裝用戶端前安裝後援狀態點。**  
 
- 如果 Configuration Manager 站台系統不接受 HTTP 用戶端通訊，您可能會因為與 PKI 相關的憑證問題，導致您不知道用戶端不受管理。 但是，如果將用戶端指派至後援狀態點，後援狀態點就會回報這些憑證問題。  
+ 如果 Configuration Manager 站台系統不接受 HTTP 用戶端通訊，您可能會因為與 PKI 相關的憑證問題，導致您不知道用戶端不受管理。 不過，如果將用戶端指派至後援狀態點，後援狀態點就會回報這些憑證問題。  
 
- 基於安全原因，您無法在安裝用戶端後指派後援狀態點；您只可以在用戶端安裝時指派此角色。  
+ 基於安全原因，您無法在安裝用戶端後指派其後援狀態點。 而是只能在用戶端安裝期間指派此角色。  
 
 **避免在周邊網路使用後援狀態點。**  
 
  根據設計，後援狀態點會接受來自任何用戶端的資料。 雖然周邊網路的後援狀態點可協助您疑難排解網際網路用戶端的問題，您仍必須衡量疑難排解的好處與站台系統於公開存取網路內接受未認證資料的風險。  
 
- 如果您確定要在周邊網路或任何不受信任網路中安裝後援狀態點，請設定站台伺服器起始資料傳輸，而不要依照預設設定允許後援狀態點起始與站台的連線。  
+ 如果您確定要在周邊網路或任何不受信任網路中安裝後援狀態點，請設定站台伺服器起始資料傳輸，而不是使用允許後援狀態點起始與站台的連線的預設設定。  
 
-##  <a name="a-namebkmksecurityissuesclientsa-security-issues-for-site-administration"></a><a name="BKMK_SecurityIssues_Clients"></a> 網站管理的安全性問題  
+##  <a name="BKMK_SecurityIssues_Clients"></a> 站台管理的安全性問題  
  檢閱下列 Configuration Manager 安全性問題：  
 
--   Configuration Manager 無法防禦使用 Configuration Manager 攻擊網路的授權系統管理使用者。 未授權系統管理使用者有較高的安全性風險，可能會發動下列各種攻擊：  
+-   Configuration Manager 無法防禦使用 Configuration Manager 攻擊網路的授權系統管理使用者。 未授權系統管理使用者有較高的安全性風險，可能會發動各種攻擊，包括下列策略：  
 
     -   在企業內每個 Configuration Manager 用戶端電腦上使用軟體部署以自動安裝並執行惡意軟體。  
 
@@ -334,13 +337,13 @@ Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 時
 
     -   使用階層中的一個站台以將資料寫入另一個站台的 Active Directory 資料。  
 
-    站台階層為安全性界限；請僅將站台視為管理界限。  
+    站台階層為安全性界限。 請僅將站台視為管理界限。  
 
     稽核所有系統管理使用者活動並定期檢閱稽核記錄。 要求所有 Configuration Manager 系統管理使用者執行背景檢查後再進行僱用，並要求定期重新檢查作為僱用條件。  
 
 -   如果註冊點受到破壞，攻擊者可以取得憑證進行驗證，並且盜取註冊行動裝置的使用者認證。  
 
-    註冊點與憑證授權單位通訊，並且可以建立、修改以及刪除 Active Directory 物件。 切勿在周邊網路中安裝註冊點，並且監視不尋常活動。  
+    註冊點與憑證授權單位通訊，並且可以建立、修改以及刪除 Active Directory 物件。 絕不要在周邊網路中安裝註冊點，並且一律會監視不尋常活動。  
 
 -   如果您允許網際網路用戶端管理的使用者原則，或是在使用者登入網際網路時設定應用程式類別目錄網站點，則會提高受攻擊的風險。  
 
@@ -354,17 +357,12 @@ Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 時
 
     辨識與留意您用以進行名稱解析的 DNS 與 WINS 版本的所有安全最佳實作。  
 
-##  <a name="a-namebkmkprivacycliientsa-privacy-information-for-discovery"></a><a name="BKMK_Privacy_Cliients"></a> 探索的隱私權資訊  
- 探索會建立網路資源的記錄並且將其儲存在 System Center Configuration Manager 資料庫中。 探索資料記錄包含電腦資訊，例如 IP 位址、作業系統以及電腦名稱。 您也可以設定 Active Directory 探索方法以探索儲存在 Active Directory 網域服務中的所有資訊。  
+##  <a name="BKMK_Privacy_Cliients"></a> 探索的隱私權資訊  
+ 探索會建立網路資源的記錄並且將其儲存在 System Center Configuration Manager 資料庫中。 探索資料記錄包含電腦資訊，例如 IP 位址、作業系統和電腦名稱。 您也可以設定 Active Directory 探索方法以探索儲存在 Active Directory 網域服務中的所有資訊。  
 
  預設啟用的唯一探索方法為活動訊號探索，但是這個方法只會探索已經安裝 System Center Configuration Manager 用戶端軟體的電腦。  
 
- 探索資訊不會傳送給 Microsoft。 探索資訊會儲存在 Configuration Manager 資料庫中。 資訊會保留在資料庫裡，直到每 90 天由站台維護工作 [刪除過時探索資料]  刪除為止。 您可以設定刪除間隔。  
+ 探索資訊不會傳送給 Microsoft。 相反地，它是儲存在 Configuration Manager 資料庫中。 資訊會保留在資料庫裡，直到每 90 天由站台維護工作 [刪除過時探索資料] 刪除為止。  
 
  設定額外探索方法或延伸 Active Directory 探索之前，請考量您的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

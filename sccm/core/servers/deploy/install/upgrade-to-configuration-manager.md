@@ -2,7 +2,7 @@
 title: "升級至 System Center Configuration Manager | Microsoft Docs"
 description: "了解從執行 System Center 2012 Configuration Manager 的站台和階層中執行成功就地升級的步驟。"
 ms.custom: na
-ms.date: 12/16/2016
+ms.date: 2/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6cf3ac76ea3fb9c9b093ed4927255102930bbe26
-ms.openlocfilehash: d4e6a4c128ae077d2a3cb2883d80b6bf71b7f458
+ms.sourcegitcommit: 30af3326578d39c6d995672071705bcaeb877e4d
+ms.openlocfilehash: 8af2a797ad4e87d870bb27873a7428e96f63b76d
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -29,8 +30,10 @@ ms.openlocfilehash: d4e6a4c128ae077d2a3cb2883d80b6bf71b7f458
 
  從 System Center 2012 Configuration Manager 升級之前，您必須準備站台，這需要您移除可能會讓升級無法成功的特定設定，然後在涉及多個站台時依照升級的順序。  
 
+ > [!TIP]
+ > 管理 System Center Configuration Manager 站台及階層基礎結構時，「升級」、「更新」及「安裝」等詞彙是用來描述三種不同的概念。 若要了解如何使用每個詞彙，請參閱[關於升級、更新和安裝](/sccm/core/understand/upgrade-update-install)。
 
-##  <a name="a-namebkmkpatha-in-place-upgrade-paths"></a><a name="bkmk_path"></a> 就地升級路徑  
+##  <a name="bkmk_path"></a> 就地升級路徑  
 **升級至 1606 版**  
 在 2016 年 12 月 15 日，發行 1606 版的基準媒體，以新增額外升級案例的支援。 這個新版本支援將下列產品升級至 System Center Configuration Manager 1606 版的完整授權版本：  
 -   System Center Configuration Manager 1606 版的評估版安裝
@@ -67,7 +70,7 @@ ms.openlocfilehash: d4e6a4c128ae077d2a3cb2883d80b6bf71b7f458
 
 -   不支援從 Technical Preview 移轉至完整授權版本。  
 
-##  <a name="a-namebkmkchecklista-upgrade-checklists"></a><a name="bkmk_checklist"></a> 升級檢查清單  
+##  <a name="bkmk_checklist"></a> 升級檢查清單  
  下列檢查清單可協助您規劃順利升級至 System Center Configuration Manager。  
 
 ### <a name="before-you-upgrade"></a>升級之前  
@@ -225,7 +228,7 @@ Configuration Manager 不支援次要站台的備份或次要站台資料庫的�
 
 如需如何升級現有用戶端以及如何安裝新用戶端的資訊，請參閱[如何在 System Center Configuration Manager 中升級 Windows 電腦的用戶端](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)。  
 
-##  <a name="a-namebkmkconsiderationsa-considerations-for-upgrading"></a><a name="bkmk_considerations"></a> 升級時的考量  
+##  <a name="bkmk_considerations"></a> 升級時的考量  
 **自動動作**：  
 當您升級至 System Center Configuration Manager 時，會自動執行下列動作：  
 
@@ -247,13 +250,15 @@ Configuration Manager 不支援次要站台的備份或次要站台資料庫的�
 
 -   **軟體中心：**  
     下列軟體中心項目會重設為預設值：  
-    -   [工作資訊] 的工作時間會從星期一到星期五 [上午 5.00]  重設為 [下午 10.00]  Monday 重設為 [下午 10.00] Friday.  
+    -   [工作資訊] 的工作時間會從星期一到星期五 [上午&5;.00]  重設為 [下午&10;.00]  Monday 重設為 [下午&10;.00] Friday.  
     -   [電腦維護]  的值會設為 [當電腦在簡報模式時暫停軟體中心活動] 。  
     -   [遠端控制]  的值會設為指派至電腦之用戶端設定中的值。  
 -   **軟體更新摘要排程：**  
      軟體更新或軟體更新群組的自訂摘要排程會重設為預設值 (1 小時)。 升級結束後，請將自訂摘要值重設為所需的頻率。  
 
-##  <a name="a-namebkmktesta-test-the-site-database-upgrade"></a><a name="bkmk_test"></a> 測試站台資料庫升級  
+##  <a name="bkmk_test"></a> 測試站台資料庫升級  
+只有在將 System Center 2012 Configuration Manager 這類舊版本升級到 System Center Configuration Manager 時，下列資訊才會適用。 如果您的站台已執行 System Center Configuration Manager 並安裝新的更新，請參閱＜安裝主控台內更新之前＞中的[步驟 2︰安裝更新之前，先測試資料庫升級](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2)。
+
 請先測試要進行升級的站台資料庫複本，再升級該站台。  
 
 若要測試要進行升級的資料庫，可先將站台資料庫的複本還原至未裝載 Configuration Manager 站台的 SQL Server 執行個體。 您用來裝載資料庫複本的 SQL Server 版本，必須與來源資料庫複本的 Configuration Manager 版本所支援的 SQL Server 版本相同。  
@@ -296,7 +301,7 @@ Configuration Manager 不支援次要站台的備份或次要站台資料庫的�
 
 在您順利升級站台資料庫複本後，請繼續進行 Configuration Manager 站台及其站台資料庫的升級。  
 
-##  <a name="a-namebkmkupgradea-upgrade-sites"></a><a name="bkmk_upgrade"></a> 升級站台  
+##  <a name="bkmk_upgrade"></a> 升級站台  
 在完成站台升級前的設定、在資料庫複本測試站台資料庫的升級，以及下載您想要安裝之 Service Pack 版本的必要條件檔案及語言套件後，就可以準備升級您的 Configuration Manager 站台。  
 
 當您升級階層中的某個站台時，會先升級階層的頂層站台。 這個頂層站台可能是管理中心網站或獨立主要站台。 完成管理中心網站的升級後，您可以依所需的任何順序，升級子主要站台。 升級主要站台後，您可以升級該站台的子次要站台，或先升級其他主要站台再升級次要站台。  
@@ -376,16 +381,11 @@ Configuration Manager 不支援次要站台的備份或次要站台資料庫的�
 
 次要站台升級的程序會在背景執行。 完成升級後，您可以在 Configuration Manager 主控台中確認狀態。 若要確認狀態，請選取次要站台伺服器，然後在 [首頁]  索引標籤的 [站台]  群組中，按一下 [顯示安裝狀態] 。  
 
-##  <a name="a-namebkmkpostupgradea-perform-post-upgrade-tasks"></a><a name="BKMK_PostUpgrade"></a> 執行升級後工作  
+##  <a name="BKMK_PostUpgrade"></a> 執行升級後工作  
 將站台升級至新的 Servcie Pack 後，可能必須完成其他工作，才能完成升級或重新設定站台。 這些工作可能包括 Configuration Manager 用戶端或 Configuration Manager 主控台的升級、重新啟用管理點的資料庫複寫，或還原您所使用且在升級 Service Pack 後已不存在之 Configuration Manager 功能的設定。  
 
 **次要站台的已知問題：**  
 - **當您升級至 1511 版時：**若要確保次要站台上的用戶端可以從次要站台尋找管理點 (Proxy 管理點)，請手動將管理點新增至也包含次要站台上發佈點的界限群組。  
 
 - **當您升級至 1606 版或更新版本時：**Proxy 管理點會自動新增至包含次要站台上發佈點的界限群組。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

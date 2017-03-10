@@ -1,11 +1,11 @@
 ---
-title: "升級 Analytics | System Center Configuration Manager"
-description: "整合 Upgrade Analytics 與 Configuration Manager。 在管理主控台中存取升級相容性資料。 設定要升級或修復的目標裝置。"
+title: Upgrade Readiness | System Center Configuration Manager
+description: "整合 Upgrade Readiness 與 Configuration Manager。 在管理主控台中存取升級相容性資料。 設定要升級或修復的目標裝置。"
 keywords: 
 author: brenduns
 ms.author: brenduns
 manager: angerobe
-ms.date: 12/3/2017
+ms.date: 3/1/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,29 +13,29 @@ ms.technology:
 - configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
 translationtype: Human Translation
-ms.sourcegitcommit: 831d8a66c827d246069c7415cdce7a7c4bb95b33
-ms.openlocfilehash: 07747b86bad0d1ce6302521093fc3c4433c59325
+ms.sourcegitcommit: 460089ce58910b68eb0a613bce0166754850844b
+ms.openlocfilehash: 9361c66228cf54eb1daf8138cd03fc8f6139f48d
+ms.lasthandoff: 03/01/2017
 
 
 ---
 
-# <a name="integrate-upgrade-analytics-with-system-center-configuration-manager"></a>整合 Upgrade Analytics 與 System Center Configuration Manager
+# <a name="integrate-upgrade-readiness-with-system-center-configuration-manager"></a>整合 Upgrade Readiness 與 System Center Configuration Manager
+Upgrade Readiness (之前稱為 Upgrade Analytics) 可讓您評估及分析裝置整備與 Windows 10 的相容性，以更輕鬆順暢地進行升級。 整合 Upgrade Readiness 與 Configuration Manager，以在 Configuration Manager 管理主控台中存取用戶端升級相容性資料。 您接著可以從裝置清單中設定要升級或修復的目標裝置。
 
-Upgrade Analytics 可讓您評估及分析裝置整備及與 Windows 10 的相容性，以更輕鬆順暢地進行升級。 整合 Upgrade Analytics 與 Configuration Manager，以在 Configuration Manager 管理主控台中存取用戶端升級相容性資料。 您接著可以從裝置清單中設定要升級或修復的目標裝置。
-
-Upgrade Analytics 是 Microsoft Operations Management Suite (OMS) 中的方案。 您可以在 [Get started with Upgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-get-started) (開始使用 Upgrade Analytics) 中閱讀更多有關 Upgrade Analytics 的資訊。
+Upgrade Readiness 是 Microsoft Operations Management Suite (OMS) 中的解決方案。 您可以在 [Get started with Upgrade Readiness](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness) (開始使用 Upgrade Readiness) 中閱讀更多有關 Upgrade Readiness 的資訊。
 
 ## <a name="configure-clients"></a>設定用戶端
 
-您必須採取數個設定步驟，確保您的用戶端可以將資料提供給 Upgrade Analytics︰
+您必須採取數個設定步驟，確保您的用戶端可以將資料提供給 Upgrade Readiness︰
 
 -  如[在您的組織中設定 Windows 遙測](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)中所述，進行用戶端遙測設定。
--  安裝 [Get started with Upgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-get-started) (開始使用 Upgrade Analytics) 的 *Deploy the compatibility update and related KBs* (部署相容性更新和相關知識庫) 一節中所述的知識庫。
+-  安裝 [Get started with Upgrade Readiness](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness) (開始使用 Upgrade Readiness) 的 *Deploy the compatibility update and related KBs * (部署相容性更新和相關知識庫) 一節中所述的知識庫。
 
     > [!NOTE]
-    > 您可以下載自動化許多用戶端設定工作的指令碼。 如需指令碼的資訊，請參閱 [Get started with Upgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-get-started)(開始使用 Upgrade Analytics) 中的 *Run the Upgrade Analytics deployment script* (執行 Upgrade Analytics 部署指令碼) 一節。
+    > 您可以下載自動化許多用戶端設定工作的指令碼。 如需指令碼的資訊，請參閱 [Get started with Upgrade Readiness](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness) (開始使用 Upgrade Readiness) 中的 *Run the Upgrade Readiness deployment script* (執行 Upgrade Readiness 部署指令碼) 一節。
 
-## <a name="create-a-connection-to-upgrade-analytics"></a>建立 Upgrade Analytics 的連線
+## <a name="create-a-connection-to-upgrade-readiness"></a>建立 Upgrade Readiness 的連線
 
 ### <a name="prerequisites"></a>先決條件
 
@@ -49,26 +49,26 @@ Upgrade Analytics 是 Microsoft Operations Management Suite (OMS) 中的方案�
 
 ### <a name="create-the-connection"></a>建立連線
 
-1.  在 Configuration Manager 主控台中，選擇 [系統管理] > [雲端服務] > [Upgrade Analytics Connector] (Upgrade Analytics 連接器) > [Create Connection to Upgrade Analytics] (建立 Upgrade Analytics 的連線) 來啟動 [Add Upgrade Analytics Connection wizard] (新增 Upgrade Analytics 連線精靈)。
+1.  在 Configuration Manager 主控台中，選擇 [系統管理] > [雲端服務] > [Upgrade Readiness Connector] (Upgrade Readiness 連接器) > [Create Connection to Upgrade Readiness] (建立 Upgrade Readiness 的連線) 來啟動 [Add Upgrade Readiness Connection wizard] (新增 Upgrade Readiness 連線精靈)。
 3.  在 [Azure Active Directory] 畫面上，提供 [租用戶]、[用戶端識別碼] 和 [用戶端祕密金鑰]，然後選取 [下一步]。
-4.  在 [Upgrade Analytics] 畫面上，填入 [Azure subscription] (Azure 訂閱)、[Azure 資源群組] 和 [Operations Management Suite 工作區] 以提供連線設定。
+4.  在 [Upgrade Readiness] 畫面上，填入 [Azure 訂用帳戶]、[Azure 資源群組] 和 [Operations Management Suite 工作區] 以提供連線設定。
 5.  確認 [摘要] 畫面上的連線設定，然後選取 [下一步]。
 
     > [!NOTE]
-    > 您必須將 Upgrade Analytics 連線至階層中的頂層站台。 如果您將 Upgrade Analytics 連線至獨立主要站台，然後將管理中心網站新增至環境，則必須在新的階層內刪除並重新建立 OMS 連線。
+    > 您必須將 Upgrade Readiness 連線至階層中的頂層站台。 如果您將 Upgrade Readiness 連線至獨立主要站台，然後將管理中心網站新增至環境，則必須在新的階層內刪除並重新建立 OMS 連線。
 
-### <a name="complete-upgrade-analytics-tasks"></a>完成 Upgrade Analytics 工作  
+### <a name="complete-upgrade-readiness-tasks"></a>完成 Upgrade Readiness 工作  
 
-在您於 Configuration Manager 中建立連線之後，請如 [Get started with Upgrade Analytics](https://technet.microsoft.com/itpro/windows/deploy/upgrade-analytics-get-started) (開始使用 Upgrade Analytics) 中所述執行這些工作。  
+在您於 Configuration Manager 中建立連線之後，請如 [Get started with Upgrade Readiness](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness) (開始使用 Upgrade Readiness) 中所述執行這些工作。  
 
-1. 將 UpgradeAnalytics 服務新增至 OMS 工作區。  
+1. 將 UpgradeReadiness 服務新增至 OMS 工作區。  
 2. 產生商業識別碼。  
-3. 訂閱 Upgrade Analytics。   
+3. 訂閱 Upgrade Readiness。   
 
-## <a name="use-the-upgrade-analytics-deployment-script"></a>使用 Upgrade Analytics 部署指令碼  
+## <a name="use-the-upgrade-readiness-deployment-script"></a>使用 Upgrade Readiness 部署指令碼  
 
-您可以自動化許多 Upgrade Analytics 工作，並為 Microsoft **Upgrade Analytics 部署指令碼**的資料共用問題進行疑難排解。  
-Upgrade Analytics 部署指令碼執行下列動作︰  
+您可以自動化許多 Upgrade Readiness 工作，並針對 Microsoft **Upgrade Readiness 部署指令碼**的資料共用問題進行疑難排解。  
+Upgrade Readiness 部署指令碼執行下列動作︰  
 
 - 設定商業識別碼 + CommercialDataOptIn + RequestAllAppraiserVersions 索引鍵。  
 - 確認使用者電腦可以將資料傳送給 Microsoft。  
@@ -78,11 +78,11 @@ Upgrade Analytics 部署指令碼執行下列動作︰
 - 起始收集 Microsoft 評估組織升級整備所需的遙測資料。  
 - 啟用時，會在 cmd 視窗中顯示指令碼進度，讓您可以看到問題 (每個步驟的成功或失敗) 以及 (或) 寫入記錄檔。  
 
-### <a name="to-run-the-upgrade-analytics-deployment-script"></a>執行 Upgrade Analytics 部署指令碼：  
+### <a name="to-run-the-upgrade-readiness-deployment-script"></a>執行 Upgrade Readiness 部署指令碼：  
 
-1. 下載 [Upgrade Analytics 部署指令碼](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409)，並解壓縮 UpgradeAnalytics.zip。 只有在您想要以疑難排解模式執行指令碼時，才需要 [診斷] 資料夾中的檔案。  
+1. 下載 [Upgrade Readiness deployment script](https://go.microsoft.com/fwlink/?LinkID=822966&clcid=0x409) (Upgrade Readiness 部署指令碼)，並解壓縮 UpgradeReadiness.zip。 只有在您想要以疑難排解模式執行指令碼時，才需要 [診斷] 資料夾中的檔案。  
 2. 在 RunConfig.bat 中編輯這些參數︰  
-- 記錄資訊的存放位置。 範例：%SystemDrive%\UADiagnostics。 您可以在遠端檔案共用或本機目錄上儲存記錄資訊。 如果封鎖指令碼無法建立所指定路徑的記錄檔，則會建立具有 Windows 目錄之磁碟機中的記錄檔。  
+- 記錄資訊的存放位置。 範例：%SystemDrive%\URDiagnostics。 您可以在遠端檔案共用或本機目錄上儲存記錄資訊。 如果封鎖指令碼無法建立所指定路徑的記錄檔，則會建立具有 Windows 目錄之磁碟機中的記錄檔。  
 - 商業識別碼。  
 - 根據預設，指令碼會將記錄資訊同時傳送到主控台和記錄檔。 若要變更預設行為，請使用下列其中一個選項︰  
     - logMode = 0 僅記錄到主控台  
@@ -94,25 +94,20 @@ Upgrade Analytics 部署指令碼執行下列動作︰
 3. 完成編輯 RunConfig.bat 中的參數之後，請以系統管理員身分執行指令碼。  
 
 
-## <a name="view-microsoft-upgrade-analytics-properties-in-configuration-manager"></a>在 Configuration Manager 中檢視 Microsoft Upgrade Analytics 內容  
+## <a name="view-microsoft-upgrade-readiness-properties-in-configuration-manager"></a>在 Configuration Manager 中檢視 Microsoft Upgrade Readiness 內容  
 
 1.  在 Configuration Manager 主控台中，瀏覽至 [雲端服務]，然後選擇 [OMS 連接器] 開啟 [OMS Connection Properties] (OMS 連線內容) 頁面。  
 
 2.  此頁面有兩個索引標籤︰
   * [Azure Active Directory] 索引標籤會顯示您的 [租用戶]、[用戶端識別碼]、[用戶端祕密金鑰到期]，並可讓您在用戶端祕密金鑰到期時「確認」[用戶端祕密金鑰]。
-  * [Upgrade Analytics] 索引標籤會顯示 [Azure subscription] (Azure 訂閱)、[Azure 資源群組] 和 [Operations Management Suite 工作區]。
+  * [Upgrade Readiness] 索引標籤會顯示 [Azure 訂用帳戶]、[Azure 資源群組] 和 [Operations Management Suite 工作區]。
 
 ## <a name="view-and-use-the-upgrade-information"></a>檢視和使用升級資訊
 
-在您整合 Upgrade Analytics 與 Configuration Manager 之後，即可檢視用戶端升級整備的分析，然後採取動作。
+在您整合 Upgrade Readiness 與 Configuration Manager 之後，即可檢視用戶端升級整備的分析，然後採取動作。
 
-1. 在 Configuration Manager 主控台中，選擇 [監視] > [概觀] > [Upgrade Analytics]。
+1. 在 Configuration Manager 主控台中，選擇 [監視] > [概觀] > [Upgrade Readiness]。
 2. 檢閱資料，其中包括升級整備狀態以及回報遙測之 Windows 裝置的百分比。
 3. 您可以篩選儀表板來檢視特定集合中裝置的資料。
 4. 您可以檢視處於特定整備狀態的裝置，以及建立那些裝置的動態集合，以升級這些就緒的裝置，或採取動作，使其進入整備狀態。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

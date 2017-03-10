@@ -2,7 +2,7 @@
 title: "PKI 憑證需求 | Microsoft Docs"
 description: "尋找 System Center Configuration Manager 可能需要的 PKI 憑證需求。"
 ms.custom: na
-ms.date: 12/07/2016
+ms.date: 02/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d6a73e68-57d8-4786-842b-36669541d8ff
 caps.latest.revision: 17
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: eff38aafbbbbb077ca63474cde738ee8ec57307a
-ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
+ms.sourcegitcommit: b90519f6f6e3599cd34f5cf93b476739ec17847b
+ms.openlocfilehash: 64ed5982cfd1de6ec135f02c84b9396266001b42
+ms.lasthandoff: 02/24/2017
 
 
 ---
@@ -32,9 +33,8 @@ ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 -   Windows Server 2008： [Windows Server 2008 中的 Active Directory 憑證服務](http://go.microsoft.com/fwlink/p/?LinkId=115018)  
 
 > [!IMPORTANT]  
->  自 2017 年 1 月 1 日起生效，Windows 將不再信任以 SHA-1 簽署的特定憑證。  建議您發行以 SHA-2 (包含 SHA-256) 簽署的新伺服器及用戶端驗證憑證。  
->   
->  如需此變更的詳細資料以及可能的期限更新，請關注此部落格文章： [Windows 強制的 Authenticode 碼簽署及時間戳記](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-authenticode-code-signing-and-timestamping.aspx)  
+>  自 2017 年 2 月 14 日起生效，Windows 將不再信任以 SHA-1 簽署的特定憑證。 您可以在 [Windows Enforcement of SHA1 certificates](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx) (Windows 強制 SHA1 憑證) 中閱讀說明。 我們通常會建議您發行以 SHA-2 (包含 SHA-256 及 SHA-512 及更多) 簽署的新伺服器及用戶端驗證憑證。
+> 此外，我們也建議所有網際網路服務都使用 SHA-2 憑證。 例如，如果購買雲端管理閘道所用的公開憑證，請確定也購買 SHA-2 憑證。
 
  除了 System Center Configuration Manager 在行動裝置及 Mac 電腦上註冊的用戶端憑證、Microsoft Intune 自動建立用於管理行動裝置的憑證，以及 System Center Configuration Manager 安裝在 AMT 電腦上的憑證之外，您可以使用任何 PKI 建立、部署及管理下列憑證。 不過，當您使用 Active Directory 憑證服務及憑證範本時，此 Microsoft PKI 解決方案可簡化憑證管理工作。 使用下表中的 [要使用的 Microsoft 憑證範本]  欄，可找出最符合憑證需求的憑證範本。 範本憑證只能由執行 Enterprise Edition 或 Datacenter Edition 伺服器作業系統 (例如 Windows Server 2008 Enterprise 和 Windows Server 2008 Datacenter) 的企業憑證授權單位發出。  
 
@@ -46,7 +46,7 @@ ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 
  利用下面各節檢視憑證需求。  
 
-##  <a name="a-namebkmkpkicertificatesforserversa-pki-certificates-for-servers"></a><a name="BKMK_PKIcertificates_for_servers"></a> 伺服器的 PKI 憑證  
+##  <a name="BKMK_PKIcertificates_for_servers"></a> 伺服器的 PKI 憑證  
 
 |System Center Configuration Manager 元件|憑證用途|[要使用的 Microsoft 憑證範本]|憑證中的特定資訊|System Center Configuration Manager 如何使用憑證|  
 |-------------------------------------|-------------------------|-------------------------------------------|---------------------------------------------|----------------------------------------------------------|  
@@ -60,7 +60,7 @@ ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 |超出訊號範圍服務點|AMT 佈建|**Web 伺服器** (已修改)|[增強金鑰使用方法] 值必須包含 [伺服器驗證 (1.3.6.1.5.5.7.3.1)]  及下列物件識別碼： **2.16.840.1.113741.1.2.3**。<br /><br /> [主體名稱] 欄位必須包含裝載超出訊號範圍服務點的伺服器 FQDN。<br /><br /> **注意：** 如果您向外部 CA 而不是向自己的內部 CA 要求 AMT 佈建憑證，而它不支援 AMT 佈建物件識別碼 2.16.840.1.113741.1.2.3，您可以改為指定下列文字字串作為憑證主體名稱中的組織單位 (OU) 屬性： **Intel(R) Client Setup Certificate**。 除了裝載超出訊號範圍服務點的伺服器 FQDN 之外，還必須使用與上述完全相同的英文字串，大小寫須相符，而且後面沒有句號。<br /><br /> 支援的金鑰長度：1024 及 2048。 AMT 6.0 和更新版本也支援 4096 位元的金鑰長度。|此憑證位於超出訊號範圍服務點網站系統伺服器的 [電腦] 憑證存放區中的 [個人] 存放區。<br /><br /> 此 AMT 佈建憑證用來準備電腦進行超出訊號範圍的管理。<br /><br /> 您必須向提供 AMT 佈建憑證的 CA 要求此憑證，而且 Intel AMT 電腦的 BIOS 擴充功能必須設定為針對此佈建憑證使用根憑證指紋 (也稱為憑證雜湊)。<br /><br /> VeriSign 是提供 AMT 佈建憑證的外部 CA 典型範例，但您也可以使用自己的內部 CA。<br /><br /> 將憑證安裝到裝載超出訊號範圍服務點的伺服器上，該服務點必須能夠成功鏈結至憑證的根 CA (根據預設，VeriSign 的根 CA 憑證及中繼 CA 憑證惠在 Windows 安裝時一併安裝)。|  
 |執行 Microsoft Intune 連接器的網站系統伺服器|用戶端驗證|不適用：Intune 會自動建立此憑證。|[增強金鑰使用方法] 值包含用戶端驗證 (1.3.6.1.5.5.7.3.2)。<br /><br /> 3 個自訂延伸模組可作為客戶 Intune 訂閱的唯一識別。<br /><br /> 金鑰大小是 2048 位元，並且使用 SHA-1 雜湊演算法。<br /><br /> **注意：** 您無法變更這些設定：此資訊僅供參考。|此憑證會在您訂閱 Microsoft Intune 時，自動要求並安裝到 Configuration Manager 資料庫。 當您安裝 Microsoft Intune 連接器時，此憑證就會安裝到執行 Microsoft Intune 連接器的網站系統伺服器上。 憑證會安裝到 [電腦] 憑證存放區中。<br /><br /> 此憑證用於使用 Microsoft Intune 連接器對 Microsoft Intune 驗證 Configuration Manager 階層。 兩者之間一律使用安全通訊端層 (SSL) 傳送資料。|  
 
-###  <a name="a-namebkmkpkicertificatesforproxyserversa-proxy-web-servers-for-internet-based-client-management"></a><a name="BKMK_PKIcertificates_for_proxyservers"></a> 以網際網路為基礎的用戶端管理的 Proxy 網頁伺服器  
+###  <a name="BKMK_PKIcertificates_for_proxyservers"></a> 以網際網路為基礎的用戶端管理的 Proxy 網頁伺服器  
  如果網站支援以網際網路為基礎的用戶端管理，且您透過使用 SSL 終止 (橋接) 功能進行傳入網際網路連線的方式使用 Proxy Web 伺服器，則該 Proxy Web 伺服器具備下表所列的憑證需求。  
 
 > [!NOTE]  
@@ -70,7 +70,7 @@ ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 |--------------------------------------|-------------------------|-------------------------------------------|---------------------------------------------|----------------------------------------------------------|  
 |透過網際網路接受用戶端連線的 Proxy Web 伺服器|伺服器驗證與用戶端驗證|1. <br />                        **Web 伺服器**<br /><br /> 2. <br />                        **工作站驗證**|[主體名稱] 欄位或 [主體別名] 欄位中的網際網路 FQDN (如果您使用 Microsoft 憑證範本，則 [主體別名] 僅適用於工作站範本)。<br /><br /> 支援 SHA-2 雜湊演算法。|此憑證用於對網際網路用戶端驗證下列伺服器，以及加密用戶端及此伺服器之間使用 SSL 傳送的所有資料：<br /><br /> - 以網際網路為基礎的管理點<br /><br /> - 以網際網路為基礎的發佈點<br /><br /> - 以網際網路為基礎的軟體更新點<br /><br /> 用戶端驗證用於橋接 System Center Configuration Manager 用戶端及以網際網路為基礎之網站系統之間的用戶端連線。|  
 
-##  <a name="a-namebkmkpkicertificatesforclientsa-pki-certificates-for-clients"></a><a name="BKMK_PKIcertificates_for_clients"></a> 用戶端的 PKI 憑證  
+##  <a name="BKMK_PKIcertificates_for_clients"></a> 用戶端的 PKI 憑證  
 
 |System Center Configuration Manager 元件|憑證用途|[要使用的 Microsoft 憑證範本]|憑證中的特定資訊|System Center Configuration Manager 如何使用憑證|  
 |-------------------------------------|-------------------------|-------------------------------------------|---------------------------------------------|----------------------------------------------------------|  
@@ -83,9 +83,4 @@ ms.openlocfilehash: 186a9f1a58c2c4d123c14a8774999dbc19e77dac
 |Intel AMt 型電腦|伺服器驗證。|**Web 伺服器** (已修改)<br /><br /> 您必須設定 [用這項 Active Directory 資訊來建立] 的 [主體名稱]，然後針對 [主體名稱格式]  選取 [一般名稱] 。<br /><br /> 您必須將 [讀取]  和 [註冊]  權限授與在超出訊號範圍管理元件內容中指定的萬用安全性群組。|**[增強金鑰使用方法]** 值必須包含 **[伺服器驗證 (1。3。6。1。5。5。7。3。1)]**。<br /><br /> [主體名稱] 必須包含 AMT 型電腦的 FQDN (Active Directory 網域服務會自動提供)。|此憑證位於電腦管理控制器的非動態隨機存取記憶體中，在 Windows 使用者介面中無法看見。<br /><br /> 每部 Intel AMT 型電腦都會在 AMT 佈建及後續更新期間要求此憑證。 如果從這些電腦中移除 AMT 佈建資訊，就會撤銷此憑證。<br /><br /> 此憑證安裝在 Intel AMT 型電腦上時，會一併安裝根 CA 的憑證鏈結。 AMT 型電腦無法支援金鑰長度超過 2048 位元的 CA 憑證。<br /><br /> 將憑證安裝在 Intel AMT 型電腦上後，此憑證會對超出訊號範圍的服務點系統伺服器及執行超出訊號範圍管理主控台的電腦驗證 AMT 型電腦，並且使用傳輸層安全性 (TLS) 加密在電腦之間傳送的所有資料。|  
 |Intel AMT 802.1X 用戶端憑證|用戶端驗證|**工作站驗證**<br /><br /> 您必須將 [主體名稱] 設為 [用這項 Active Directory 資訊來建立] ，然後在 [主體名稱格式]  中選取 [一般名稱] 、清除 DNS 名稱，然後選取 [使用者主要名稱 (UPN)] 為替代主體名稱。<br /><br /> 您必須將此憑證範本的權限授與在超出訊號範圍管理元件內容 [讀取]  和 [註冊]  中指定的萬用安全性群組。|**[增強金鑰使用方法]** 值必須包含 **[用戶端驗證 (1。3。6。1。5。5。7。3。2)]**。<br /><br /> 主體名稱欄位必須包含 AMT 型電腦的 FQDN，主體別名則必須包含 UPN。<br /><br /> 支援的金鑰長度上限：2048 位元。|此憑證位於電腦管理控制器的非動態隨機存取記憶體中，在 Windows 使用者介面中無法看見。<br /><br /> 每部 Intel AMT 型電腦皆可在 AMT 佈建期間要求此憑證，但即使移除 AMT 佈建資訊，也不會撤銷此憑證。<br /><br /> 將憑證安裝在 AMT 型電腦上後，此憑證會對 RADIUS 伺服器驗證 AMT 型電腦，以便獲得網路存取權限。|  
 |由 Microsoft Intune 註冊的行動裝置|用戶端驗證|不適用：Intune 會自動建立此憑證。|[增強金鑰使用方法] 值包含用戶端驗證 (1.3.6.1.5.5.7.3.2)。<br /><br /> 作為客戶 Intune 訂閱唯一識別的&3; 個自訂延伸模組。<br /><br /> 使用者可以在註冊期間提供憑證主體的值。 不過，Intune 不會使用此值識別裝置。<br /><br /> 金鑰大小是 2048 位元，並且使用 SHA-1 雜湊演算法。<br /><br /> **注意：** 您無法變更這些設定：此資訊僅供參考。|驗證使用者使用 Microsoft Intune 註冊行動裝置時，會自動要求並安裝此憑證。 裝置上產生的憑證位於電腦存放區中，並且會對 Intune 驗證註冊的行動裝置，以便管理該裝置。<br /><br /> 由於憑證中有自訂延伸模組，因此只能驗證針對組織建立的 Intune 訂閱。|
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

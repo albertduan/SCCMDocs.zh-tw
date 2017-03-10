@@ -17,16 +17,17 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6ed317d45d90758832d4157985dd95d5e253c6fc
-ms.openlocfilehash: 37e45e604e89d3ce280bb2bff47d4a55b6cdfaf8
+ms.sourcegitcommit: 40e018084dd2703327ff653f962f488432b1ec98
+ms.openlocfilehash: 3bab51be96445f766e8f5bbf54eee854e5d09cee
+ms.lasthandoff: 02/28/2017
 
 
 ---
 # <a name="international-support-in-system-center-configuration-manager"></a>System Center Configuration Manager 的多語系支援
 
-適用於：System Center Configuration Manager (最新分支)
+*適用對象：System Center Configuration Manager (最新分支)*
 
-下節提供的技術詳細資料可協助您設定 System Center Configuration Manager，使其符合特定的國際需求。  
+下列各節提供的技術詳細資料可協助您設定 System Center Configuration Manager，使其符合特定國際的需求。  
 
 ## <a name="gb18030-requirements"></a>GB18030 需求  
  Configuration Manager 符合 GB18030 中定義的標準，因此您可以在中國使用 Configuration Manager。 符合 GB18030 需求的 Configuration Manager 部署必須使用下列設定：  
@@ -43,9 +44,4 @@ ms.openlocfilehash: 37e45e604e89d3ce280bb2bff47d4a55b6cdfaf8
     >  這些資料庫定序是 [System Center Configuration Manager 的 SQL Server 版本支援](../../../core/plan-design/configs/support-for-sql-server-versions.md)中所述需求的例外狀況。  
 
 -   您必須將名為 **GB18030.SMS** 的檔案置於階層中每台站台伺服器電腦系統磁碟區的根資料夾中。 此檔案不含任何資料，而且可以是根據此需求命名的空白文字檔。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

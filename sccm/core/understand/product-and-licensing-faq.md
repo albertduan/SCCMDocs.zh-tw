@@ -2,7 +2,7 @@
 title: "產品和授權常見問題集 | Microsoft Docs"
 description: "尋找 System Center Configuration Manager 常見產品和授權問題答案。"
 ms.custom: na
-ms.date: 2/17/2017
+ms.date: 2/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 81689631899b626bd33df8853cf82646d7e57afc
-ms.openlocfilehash: 47e35018902c424dc492025bb08bd4df4d81fcbe
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: d8f1a1a5757bbc3e2b0c17b1a89fbd56bbae6019
+ms.openlocfilehash: c1a276ad1ed6d10d286ab389ab3f05ec780c4e58
+ms.lasthandoff: 03/01/2017
 
 
 ---
@@ -32,16 +32,15 @@ ms.lasthandoff: 02/18/2017
 如需 System Center Configuration Manager 功能的詳細資訊，請參閱 Microsoft [System Center Configuration Manager](https://www.microsoft.com/cloud-platform/system-center-configuration-manager) 產品頁面。
 
 
-## <a name="details"></a>詳細資料
-System Center Configuration Manager 為….
 
-## <a name="faq"></a>常見問題 (FAQ)
+
+## <a name="system-center-configuration-manager-licensing-faq"></a>System Center Configuration Manager 授權常見問題集
 
 1.    **什麼是最新分支 (CB)？**   
 最新分支是 System Center Configuration Manager 的生產環境就緒組建，可提供使用中服務模型。 此服務模型就像使用 Windows 10 或 Windows Server 2016 Nano 伺服器安裝選項的體驗。 這個方法支援正在「雲端節奏」移動而且想要更快速創新的客戶。 運用最新分支服務模型，System Center Configuration Manager 客戶可繼續接收新的功能。 基於此原因，只有具有 System Center Configuration Manager 授權之使用中軟體保證或對等訂閱權限的客戶，才能安裝和使用 System Center Configuration Manager 最新分支。
 
 2.    **什麼是長期維護分支 (LTSB)？**  
-長期維護分支是 System Center Configuration Manager 的生產環境就緒組建，適用於允許軟體保證或對等訂閱權限失敗的客戶。 相較於最新分支，LTSB 的[功能有限](/sccm/core/understand/introduction-to-the-ltsb#features-that-are-not-available-in-the-ltsb-of-configuration-manager)。 允許軟體保證或對等訂閱權限失敗的客戶必須解除安裝 System Center Configuration Manager 最新分支。 擁有 System Center Configuration Manager 永久授權權限的客戶接著會安裝和使用在失效當下時最新之 System Center Configuration Manager 的 LTSB 組建。
+長期維護分支是 System Center Configuration Manager 的生產環境就緒組建，適用於允許軟體保證或對等訂閱權限過期的客戶。 相較於最新分支，LTSB 的[功能有限](/sccm/core/understand/introduction-to-the-ltsb#features-that-are-not-available-in-the-ltsb-of-configuration-manager)。 允許軟體保證或對等訂閱權限過期的客戶必須解除安裝 System Center Configuration Manager 最新分支。 擁有 System Center Configuration Manager 永久授權權限的客戶接著會安裝和使用在過期當下時最新之 System Center Configuration Manager 的 LTSB 組建。
 
 3.    **我已看到授權內容中所使用的 SA 和 L&SA。對於 System Center Configuration Manager，這些的意義為何？**    
 SA (軟體保證) 和 L&SA (授權和軟體保證) 是授與 System Center Configuration Manager 使用權限的授權選項。 SA 是從先前協議更新 SA 涵蓋範圍之客戶的選項。 L&SA 是購買新授權和 SA 涵蓋範圍之客戶的選項。

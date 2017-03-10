@@ -17,8 +17,9 @@ ms.author: andredm
 manager: angrobe
 robots: noindex
 translationtype: Human Translation
-ms.sourcegitcommit: c13c6268fa76ade7feb0981f9c4a6e325e393aca
-ms.openlocfilehash: 4cc7148be602367b579d63535a4938919bacf829
+ms.sourcegitcommit: b1295fff41d99b0bd6fc00ccab7a4b8bbdb60866
+ms.openlocfilehash: dda0916fac15cf768ecc2a44fda3b8939bcd048e
+ms.lasthandoff: 02/27/2017
 
 ---
 
@@ -218,12 +219,14 @@ ms.openlocfilehash: 4cc7148be602367b579d63535a4938919bacf829
   - **已啟用安全開機**：已啟用「安全開機」時，會強迫系統在開機時進入原廠信任的狀態。 此外，已啟用「安全開機」時，用來讓電腦開機的核心元件必須具有該裝置製造商信任的正確密碼編譯簽章。 UEFI 韌體會在讓電腦啟動之前先驗證此簽章。 如果有任何檔案已遭竄改、破壞其簽章，系統將無法開機。
   - **已啟用開機初期啟動的反惡意程式碼 (此設定僅適用於電腦)**：開機初期啟動的反惡意程式碼 (ELAM) 可在您網路中的電腦啟動時且在協力廠商驅動程式初始化之前，為電腦提供保護。<br />此規則預設為關閉。
 
+- **無法安裝在裝置上的應用程式：**如果使用者安裝來自系統管理員不符合規範的應用程式清單的應用程式，則會在嘗試存取公司電子郵件時封鎖它們。 將應用程式新增至系統管理員所定義的不符合規範清單時，此規則需要應用程式名稱和應用程式識別碼。 也可以新增應用程式發行者，但它不是必要項目。
+
+  **支援於：**
+  * iOS 6 或更新版本
+  * Android 4.0+
+  * Samsung KNOX Standard 4.0 或更新版本
+
   如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)(健康情況證明 CSP)。
   **支援於：**
   * Windows 10 和 Windows 10 行動裝置版
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

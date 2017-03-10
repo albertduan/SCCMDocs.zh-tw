@@ -16,8 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 7972aa2c39f5b86e69087b1ed5a1c3b50ba69940
-ms.openlocfilehash: f74bd019b5403f3f5702795279759270261ce4db
+ms.sourcegitcommit: 69d3e7d51911d6195c2f62a5e81c0faca38ed306
+ms.openlocfilehash: a8fd3c24f3267ea451f4c94854e8577046efaeca
+ms.lasthandoff: 02/27/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
@@ -48,7 +49,21 @@ ms.openlocfilehash: f74bd019b5403f3f5702795279759270261ce4db
 
 - **適用於 Windows 裝置的新 MDM 伺服器位址**
 
-  註冊 Windows 和 Windows Phone 裝置的 MDM 伺服器位址，已從 manage.microsoft.com 變更為 enrollment.manage.microsoft.com。 在註冊 Windows 和 Windows Phone 時，如果出現提示，請通知使用者使用 enrollment.manage.microsoft.com 的 MDM 伺服器位址。 這項更新另要求您將 DNS 中任何把 EnterpriseEnrollment.contoso.com 重新導向 manage.microsoft.com 的 CNAME，取代為把 EnterpriseEnrollment.contoso.com 重新導向 EnterpriseEnrollment-s.manage.microsoft.com 的 DNS CNAME。 如需這項變更的詳細資訊，請造訪 http://aka.ms/intuneenrollsvrchange。 
+  註冊 Windows 和 Windows Phone 裝置的 MDM 伺服器位址，已從 manage.microsoft.com 變更為 enrollment.manage.microsoft.com。 在註冊 Windows 和 Windows Phone 時，如果出現提示，請通知使用者使用 enrollment.manage.microsoft.com 的 MDM 伺服器位址。 這項更新另要求您將 DNS 中任何把 EnterpriseEnrollment.contoso.com 重新導向 manage.microsoft.com 的 CNAME，取代為把 EnterpriseEnrollment.contoso.com 重新導向 EnterpriseEnrollment-s.manage.microsoft.com 的 DNS CNAME。 如需這項變更的詳細資訊，請造訪 http://aka.ms/intuneenrollsvrchange。
+
+### <a name="new-in-configuration-manager-technical-preview-1702"></a>Configuration Manager Technical Preview 1702 的新功能
+
+- **Android for Work 支援**
+
+  您現在可以使用 Configuration Manager Technical Preview 1702，在混合式 MDM 環境中管理使用 Android for Work 的 Android 裝置。 現在可將支援的 Android 裝置註冊為 Android for Work 裝置，這會在裝置上建立工作設定檔，以便部署 Play for Work 中核准的應用程式。 您也可以為這些裝置設定及部署設定項目、合規性政策和資源存取設定檔。
+
+- **不符合規範的應用程式相容性設定**
+
+  您現在可以在合規性政策中，為 Android 和 iOS 應用程式建立不符合規範的應用程式規則。 如果裝置已安裝指定的應用程式，則會標示為「不符合規範」，而且根據適當的條件式存取原則將無法存取公司資源。
+
+- **PFX 憑證建立和發佈以及 S/MIME 支援**
+
+  您現在可以建立 PFX 憑證，並將該憑證部署給混合式環境中的使用者。 這些憑證接著可供使用者已註冊的裝置用來加密及解密 S/MIME 電子郵件。
 
 ## <a name="new-hybrid-features-in-january-2017"></a>2017 年 1 月的新混合式功能
 
@@ -177,13 +192,8 @@ Configuration Manager (最新分支) 1610 版也包含下列額外的混合式�
 Configuration Manager 主控台已移除上傳已簽署公司入口網站應用程式的功能，因為 Windows 8、Windows Phone 8 和 Windows RT 已停用 Intune 支援，且對 Windows Phone 8 公司入口網站的支援將於 11 月終止。  會繼續支援已註冊的 Windows 8、Windows Phone 8 和 Windows RT 裝置，但不支援使用這些平台來註冊其他裝置。
 
 
-## <a name="see-also"></a>另請參閱
+### <a name="see-also"></a>另請參閱
 
 - [過去的混合式 MDM 功能](whats-new-hybrid-archive.md)
 - [System Center 2012 Configuration Manager 中 MDM 的新功能](https://technet.microsoft.com/library/mt445560.aspx)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

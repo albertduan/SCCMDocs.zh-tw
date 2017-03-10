@@ -2,7 +2,7 @@
 title: "選擇 Intune 獨立部署或混合式 MDM | Microsoft Docs"
 description: "選擇要部署使用 Intune 和 Configuration Manager 的混合式行動裝置管理，還是要執行 Intune 獨立部署。"
 ms.custom: na
-ms.date: 11/07/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: a5c9e312641d91ff297fbcfa6066a93c2a0e1ee0
-ms.openlocfilehash: 3480484a96e96a191b4f02208fcf838db5cb6ba7
+ms.sourcegitcommit: 84e3896dd05a8c157f4e94625b0eca60aacc11d3
+ms.openlocfilehash: 8f2625aadfd0aed92d9922c7e3c0d3d166a78cdd
+ms.lasthandoff: 02/25/2017
 
 ---
 # <a name="choose-between-microsoft-intune-standalone-and-hybrid-mobile-device-management-with-system-center-configuration-manager"></a>在 Microsoft Intune 獨立部署與使用 System Center Configuration Manager 的混合式行動裝置管理之間進行選擇
@@ -44,16 +45,11 @@ Intune 獨立部署是僅限雲端的 MDM 解決方案，不需要任何內部�
 
 -   角色型存取控制 - 根據指派的角色來限制管理功能的存取。
 
--   規模 - 部署和管理超過 50,000 部行動裝置。
+-   規模 - 部署和管理超過 100,000 部行動裝置。
 
 -   單一整合 - 使用同一個主控台來管理傳統電腦用戶端及 Intune 管理的裝置。
 
 如果您想立即開始規劃 Intune 部署，並有幾個月的時間可進行試驗、驗收測試和部署，您現在可以考慮選擇 Intune 獨立部署，並知道未來雲端服務更新將包含更多功能。 在 2017 年上半年，Intune 獨立部署將會收到更新，這些更新提供搭配 Configuration Manager 之混合式部署的許多進階功能。 Intune 獨立部署即將移至 Microsoft Azure 雲端平台，該平台提供增強的延展性，並可讓您透過 Azure 入口網站進行角色型存取、進行自訂報告，以及透過 Azure Graph API 以程式設計方式存取。
 
 您可以在混合式部署與 Intune 獨立部署之間進行切換，但需要來自 Microsoft 支援人員的協助與操作。 變更管理授權單位之後，您也必須取消註冊再重新註冊所有裝置。  Microsoft 正在努力改善未來服務更新中切換設定的體驗。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 73feb75f6727134f977ea2baabf36a832812ccc1
-ms.openlocfilehash: 715dadc10fe86acd7e324ff8f80be057d0e01f11
+ms.sourcegitcommit: 30af3326578d39c6d995672071705bcaeb877e4d
+ms.openlocfilehash: 640fc5ddb4e0a6828901b7f406ca72fc210b2970
+ms.lasthandoff: 02/23/2017
 
 ---
 # <a name="checklist-for-installing-update-1610-for-system-center-configuration-manager"></a>安裝 System Center Configuration Manager 1610 更新的檢查清單
@@ -137,7 +138,7 @@ Configuration Manager 無法更新使用網路負載平衡 (NLB) 叢集來裝載
 
 Configuration Manager 不支援次要站台的備份，也不支援次要站台資料庫的測試升級。
 
-請勿在生產網站資料庫上執行測試資料庫升級。 在站台資料庫上進行這類更新可能會造成站台無法運作。 如需詳細資訊，請參閱[升級至 System Center Configuration Manager](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager) 主題中的[測試站台資料庫升級](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager#bkmk_test)一節。
+請勿在生產網站資料庫上執行測試資料庫升級。 在站台資料庫上進行這類更新可能會造成站台無法運作。 如需詳細資訊，請參閱＜安裝主控台內更新之前＞中的[步驟 2︰安裝更新之前，先測試資料庫升級](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2)。
 
 **規劃用戶端試驗：**   
 當您安裝更新用戶端的更新時，可以在進入生產階段前先測試新的用戶端更新，再部署並升級所有使用中的用戶端。
@@ -167,9 +168,4 @@ Configuration Manager 不支援次要站台的備份，也不支援次要站台�
 建議您規劃在正常上班以外的時間對各個站台安裝更新，在這些時間內安裝更新的程序及其重新安裝站台元件和站台系統角色的動作，對您的商務營運所產生的影響最小。
 
 如需詳細資訊，請參閱 [System Center Configuration Manager 的更新](/sccm/core/servers/manage/updates)。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

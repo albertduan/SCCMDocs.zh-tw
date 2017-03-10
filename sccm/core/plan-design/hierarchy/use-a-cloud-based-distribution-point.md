@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 97051d9c65ef5ea28c94468b24863120624e8de0
-ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
+ms.sourcegitcommit: 3eab8e62ace29c0fcb24d47ec7e398d807347a38
+ms.openlocfilehash: a1d701c77afb4d6317d8a137fdf46422063df085
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -62,7 +63,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
 雲端發佈點有下列限制：  
 
--   您不能使用雲端發佈點來裝載軟體更新套件。  
+-  在搭配使用 1610 版與 Hotfix KB4010155 之前，您不能使用雲端式發佈點來裝載軟體更新套件。 1610 版之後的下一個最新分支版本將支援這個選項，而不需要安裝這個修正程式。  
 
 -   您無法將雲端發佈點用於 PXE 或啟用多點傳送的部署。  
 
@@ -76,7 +77,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
 -   雲端發佈點無法設定為提取發佈點。  
 
-##  <a name="a-namebkmkprereqsclouddpa-prerequisites-for-cloud-based-distribution-points"></a><a name="BKMK_PrereqsCloudDP"></a> 雲端式發佈點的必要條件  
+##  <a name="BKMK_PrereqsCloudDP"></a> 雲端式發佈點的必要條件  
  雲端發佈點需符合下列使用必要條件：  
 
 -   Azure 訂閱 (請參閱本主題中的[關於訂閱和憑證](#BKMK_CloudDPCerts))。
@@ -91,7 +92,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
 -   用戶端必須能夠存取網際網路以使用雲端發佈點。  
 
-##  <a name="a-namebkmkclouddpcosta-cost-of-using-cloud-based-distribution"></a><a name="BKMK_CloudDPCost"></a> 使用雲端式發佈的成本  
+##  <a name="BKMK_CloudDPCost"></a> 使用雲端式發佈的成本  
  當您使用雲端發佈點時，請規劃 Configuration Manager 用戶端所執行資料儲存與下載傳輸的成本。  
 
  Configuration Manager 包含可協助控制成本及監視資料存取的選項：  
@@ -139,7 +140,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
      若要停止雲端服務，請在 Configuration Manager 主控台的 [管理] 工作區，於 [雲端服務] 下選取 [雲端發佈點] 節點中的發佈點。 接下來，請選擇 [停止服務] 停止在 Azure 中執行的雲端服務。  
 
-##  <a name="a-namebkmkclouddpcertsa-about-subscriptions-and-certificates-for-cloud-based-distribution-points"></a><a name="BKMK_CloudDPCerts"></a> 關於雲端式發佈點的訂閱和憑證  
+##  <a name="BKMK_CloudDPCerts"></a> 關於雲端式發佈點的訂閱和憑證  
  雲端發佈點需要憑證，以啟用 Configuration Manager 來管理裝載發佈點的雲端服務，以及供用戶端存取發佈點的內容。 以下資訊提供這些憑證的概觀。 如需詳細資訊，請參閱 [PKI certificate requirements for System Center Configuration Manager](../../../core/plan-design/network/pki-certificate-requirements.md) (System Center Configuration Manager 的 PKI 憑證需求)。  
 
  **憑證**  
@@ -163,7 +164,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
    如需此憑證的部署範例，請參閱[為 System Center Configuration Manager 部署 PKI 憑證的逐步範例：Windows Server 2008 憑證授權單位](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)主題中的**為雲端架構的發佈點部署服務憑證**一節。  
 
-##  <a name="a-namebkmktasksa-common-management-tasks-for-cloud-based-distribution-points"></a><a name="bkmk_Tasks"></a> 雲端式發佈點的常用管理工作  
+##  <a name="bkmk_Tasks"></a> 雲端式發佈點的常用管理工作  
 
 -   **站台伺服器對雲端式發佈點的通訊**：當您安裝雲端式發佈點時，您必須指派一個主要站台來管理對雲端服務的內容傳輸。 這個動作等同於將發佈點網站系統角色安裝至特定網站。  
 
@@ -185,7 +186,7 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 
 3.  當慣用發佈點或遠端發佈點無法使用時，用戶端可能會改為從雲端發佈點取得內容。  
 
-    
+
 
   當用戶端使用雲端發佈點作為內容位置時，用戶端會使用 Configuration Manager 存取權杖將自己驗證為雲端發佈點。 如果用戶端信任 Configuration Manager 雲端發佈點憑證，則用戶端可以下載所要求的內容。  
 
@@ -212,9 +213,4 @@ ms.openlocfilehash: b78b3b20a8b317a242cd06f9fda6326f41673915
 -   **解除安裝雲端發佈點**：若要解除安裝雲端發佈點，請在 Configuration Manager 主控台中選取發佈點，然後選取 [刪除]。  
 
     當您從階層中刪除雲端發佈點時，Configuration Manager 會從 Azure 中的雲端服務移除內容。  
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

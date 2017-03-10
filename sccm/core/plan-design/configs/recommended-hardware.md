@@ -2,7 +2,7 @@
 title: "建議的硬體 | Microsoft Docs"
 description: "了解硬體建議，以協助您在基本部署之外調整 System Center Configuration Manager 環境的規模。"
 ms.custom: na
-ms.date: 12/30/2016
+ms.date: 2/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d61c726d9690a1ec512b8dbab74b0f760012c880
-ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
+ms.sourcegitcommit: 63ee782a718cf4a66ffe25b022aa317f3e45784c
+ms.openlocfilehash: 6701d5f21e8511ec9cf4fe7bc5804b3e2fdc4c71
+ms.lasthandoff: 02/28/2017
 
 
 ---
@@ -31,7 +32,7 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
  請在下列章節中使用這項資訊作為方針，以協助您規劃可滿足用戶端和站台 (使用可用的 Configuration Manager 功能與預設設定) 處理負載的硬體。  
 
 
-##  <a name="a-namebkmkscalesiesystemsa-site-systems"></a><a name="bkmk_ScaleSieSystems"></a> 站台系統  
+##  <a name="bkmk_ScaleSieSystems"></a> 站台系統  
  本節提供針對 Configuration Manager 站台系統建議的硬體設定，以用於支援最多用戶端數並使用大多數或所有 Configuration Manager 功能的部署。 支援少於最多用戶端數的部署，和不會使用所有可用功能的部署，可能需要較少的電腦資源。 一般來說，限制整體系統效能的主要因素依序如下所示：  
 
 1.  磁碟 I/O 效能  
@@ -42,24 +43,24 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 
 為發揮最佳效能，所有資料磁碟和 1-Gbps 乙太網路都請使用 RAID 10 設定。  
 
-###  <a name="a-namebkmkscalesiteservera-site-servers"></a><a name="bkmk_ScaleSiteServer"></a> 站台伺服器  
+###  <a name="bkmk_ScaleSiteServer"></a> 站台伺服器  
 
 |獨立主要站台|CPU (核心)|記憶體 (GB)|SQL Server 的記憶體配置 (%)|  
 |-------------------------------|---------------|---------------|----------------------------------------|  
 |獨立主要站台伺服器，並在相同伺服器上具有資料庫站台角色<sup>1</sup>|16|96|80|  
 |獨立主要站台伺服器，並具有遠端站台資料庫|8|16|-|  
 |獨立主要站台的遠端資料庫伺服器|16|64|90|  
-|管理中心網站伺服器，並在相同伺服器上具有資料庫站台角色<sup>1</sup>|16|96|80|  
+|管理中心網站伺服器，並在相同伺服器上具有資料庫站台角色<sup>1</sup>|20|128|80|  
 |管理中心網站伺服器，並具有遠端站台資料庫|8|16|-|  
 |管理中心網站的遠端資料庫伺服器|16|96|90|  
 |子主要站台，並在相同伺服器上具有資料庫站台角色|16|96|80|  
 |子主要站台伺服器，並具有遠端站台資料庫|8|16|-|  
-|子主要站台的遠端資料庫伺服器|16|64|90|  
+|子主要站台的遠端資料庫伺服器|16|72|90|  
 |次要網站伺服器|8|16|-|  
 
  <sup>1</sup> 站台伺服器和 SQL Server 安裝在相同電腦上時，此部署可支援最大[調整大小與級別數目](/sccm/core/plan-design/configs/size-and-scale-numbers)的站台和用戶端。 但是，這項設定可以限制 [System Center Configuration Manager 的高可用性選項](/sccm/protect/understand/high-availability-options)，例如使用 SQL Server 叢集。 此外，因為 SQL Server 和 Configuration Manager 站台伺服器在同一部電腦上執行時，支援這兩者需要較高的 I/O 需求，所以如果您有較大的部署時，最好考慮使用具有遠端 SQL Server 電腦的設定。  
 
-###  <a name="a-namebkmkremotesitesystema-remote-site-system-servers"></a><a name="bkmk_RemoteSiteSystem"></a> 遠端站台系統伺服器  
+###  <a name="bkmk_RemoteSiteSystem"></a> 遠端站台系統伺服器  
  下列方針適用於保有單一站台系統角色的電腦。 規劃當您在同一部電腦上安裝多個站台系統角色時進行調整。  
 
 |網站系統角色|CPU (核心)|記憶體 (GB)|磁碟空間 (GB)|  
@@ -76,7 +77,7 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 
 -   將 **WsusPool 專用記憶體限制**增加為 4 倍，或設為 **0** (無限制)。  
 
-###  <a name="a-namebkmkdiskspacea-disk-space-for-site-systems"></a><a name="bkmk_DiskSpace"></a> 站台系統的磁碟空間  
+###  <a name="bkmk_DiskSpace"></a> 站台系統的磁碟空間  
  磁碟配置和設定可決定 Configuration Manager 的效能。 由於每個 Configuration Manager 環境各有不同，因此您實作的值可能與下列方針不盡相同。  
 
  為發揮最佳效能，請將每個物件分別置於獨立的專用 RAID 磁碟區中。 針對所有資料磁碟區 (Configuration Manager 及其資料庫檔案)，使用 RAID 10 可以發揮最佳效能。  
@@ -109,7 +110,7 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 
     -   SQL Server 2014 Express：10 GB  
 
-##  <a name="a-namebkmkscaleclienta-clients"></a><a name="bkmk_ScaleClient"></a> 用戶端  
+##  <a name="bkmk_ScaleClient"></a> 用戶端  
  本節說明使用 Configuration Manager 用戶端軟體所管理之電腦的建議硬體設定。  
 
 ### <a name="client-for-windows-computers"></a>Windows 電腦的用戶端  
@@ -147,7 +148,7 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 |磁碟空間|500 MB 可用磁碟空間，建議使用 5GB 作為 Configuration Manager 用戶端快取。|  
 |網路連線|Configuration Manager 用戶端電腦必須具有 Configuration Manager 站台系統的網路連線能力，才能啟用管理功能。|  
 
-##  <a name="a-namebkmkscaleconsolea-configuration-manager-console"></a><a name="bkmk_ScaleConsole"></a> Configuration Manager 主控台  
+##  <a name="bkmk_ScaleConsole"></a> Configuration Manager 主控台  
  下表中的需求適用於執行 Configuration Manager 主控台的每一部電腦。  
 
  **最低硬體設定：**  
@@ -176,7 +177,7 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 除了 PowerShell 之外，也支援 Windows Management Framework (WMF) 3.0 和 4.0。   
 您可以在安裝 Configuration Manager 主控台之前或之後，安裝 PowerShell。  
 
-##  <a name="a-namebkmkscalelaba-lab-deployments"></a><a name="bkmk_ScaleLab"></a> 實驗室部署  
+##  <a name="bkmk_ScaleLab"></a> 實驗室部署  
  針對 Configuration Manager 實驗室和測試部署，請使用下列最低硬體建議。 這些建議適用於所有站台類型，最多 100 個用戶端：  
 
 |角色|CPU (核心)|記憶體 (GB)|磁碟空間 (GB)|  
@@ -184,9 +185,4 @@ ms.openlocfilehash: 7caee70c327d84f1e016c689f824d843ccdb3b42
 |站台和資料庫伺服器|2 - 4|7 - 12|100|  
 |網站系統伺服器|1 - 4|2 - 4|50|  
 |用戶端|1 - 2|1 - 3|30|  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
