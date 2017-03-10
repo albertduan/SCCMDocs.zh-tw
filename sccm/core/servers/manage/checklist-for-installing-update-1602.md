@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: a2e2bc5e873c48283d18ea6eaa5d1bb351f2a033
-ms.openlocfilehash: 1c3149b4c0247377ad556b6fe594047a6f14b989
+ms.sourcegitcommit: 30af3326578d39c6d995672071705bcaeb877e4d
+ms.openlocfilehash: e73055707454bc052b753c5e74be9674d6aa5b8c
+ms.lasthandoff: 02/23/2017
 
 
 ---
@@ -112,7 +113,7 @@ ms.openlocfilehash: 1c3149b4c0247377ad556b6fe594047a6f14b989
 -   如果您在主要網站上使用管理點的資料庫複本，請在建立網站資料庫的備份之前停用複寫。  
 
 Configuration Manager 不支援次要站台的備份，也不支援次要站台資料庫的測試升級。   
-請勿在生產網站資料庫上執行測試資料庫升級。 在站台資料庫上進行這類更新可能會造成站台無法運作。 如需詳細資訊，請參閱[升級至 System Center Configuration Manager](../../../core/servers/deploy/install/upgrade-to-configuration-manager.md) 主題中的[測試站台資料庫升級](../../../core/servers/deploy/install/upgrade-to-configuration-manager.md#bkmk_test)一節。  
+請勿在生產網站資料庫上執行測試資料庫升級。 在站台資料庫上進行這類更新可能會造成站台無法運作。 如需詳細資訊，請參閱＜安裝主控台內更新之前＞中的[步驟 2︰安裝更新之前，先測試資料庫升級](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2)。  
 
  **規劃試驗的用戶端︰**當您安裝更新用戶端的更新時，可以在進入生產階段前先測試新的用戶端更新，再部署並升級所有使用中的用戶端。   
 
@@ -136,9 +137,4 @@ Configuration Manager 不支援次要站台的備份，也不支援次要站台�
 
 ## <a name="see-also"></a>請參閱  
  [System Center Configuration Manager 的更新](../../../core/servers/manage/updates.md)
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
