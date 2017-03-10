@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 168650cca28fe1331e48ea5e8e025e110dda835f
-ms.openlocfilehash: 4ca43db385ea97d5d026c50a799b783096c05d36
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: a60b8c103a303dcae0bd66f3060d5a8f17d1cef9
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -306,7 +306,8 @@ Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 的
 ##  <a name="BKMK_Security_FSP"></a> 後援狀態點的安全性最佳做法  
  如果您在 Configuration Manager 安裝後援狀態點，請使用以下安全性最佳作法。  
 
- 如需安裝後援狀態點時的安全性考量的詳細資訊，請參閱[判定您是否需要後援狀態點](../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md#BKMK_Determine_FSP)。  
+ 如需有關安裝後援狀態點時的安全性考量的詳細資訊，請參閱 [Determine Whether You Require a Fallback Status Point](../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md#determine-if-you-need-a-fallback-status-point)。  
+
 
 **請不要在站台系統上執行其他站台系統角色，也不要將後援狀態點安裝在網域控制站上。**  
 
