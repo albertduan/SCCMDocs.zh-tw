@@ -29,9 +29,9 @@ ms.lasthandoff: 12/17/2016
 
 ## <a name="how-to-predeclare-corporate-owned-devices"></a>如何預先宣告公司擁有的裝置
 
-1.    在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [公司擁有的所有裝置] > [Predeclared devices] (預先宣告的裝置)。
+1.    在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [公司擁有的所有裝置] > 「Predeclared devices」 (預先宣告的裝置)。
 
-2.  按一下 [Create Predeclared Devices] (建立預先宣告的裝置)。 隨即開啟 [Create Predeclared Devices Wizard] (建立預先宣告的裝置精靈)。
+2.  按一下 「Create Predeclared Devices」 (建立預先宣告的裝置)。 隨即開啟 「Create Predeclared Devices Wizard」 (建立預先宣告的裝置精靈)。
 
 3.    選擇您要如何新增裝置資訊：
 
@@ -51,7 +51,7 @@ ms.lasthandoff: 12/17/2016
 
   按 [下一步]  以繼續。
 
-4. 如果您的清單包含 iOS 序號，請從可用設定檔清單中選取 [Enrollment Profile to Assign] (要指派的註冊設定檔)，然後按一下 [下一步]。
+4. 如果您的清單包含 iOS 序號，請從可用設定檔清單中選取 「Enrollment Profile to Assign」 (要指派的註冊設定檔)，然後按一下 [下一步]。
 
 5. 按一下 [下一步] 檢閱詳細資料，然後再按一下 [下一步] 上傳資料。
 

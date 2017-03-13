@@ -2,7 +2,7 @@
 title: "Endpoint Protection 的 Windows 防火牆原則 | Microsoft Docs"
 description: "了解如何在 System Center 2012 Configuration Manager 中建立和部署 Endpoint Protection 的防火牆原則。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/07/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
 ms.openlocfilehash: 7a02ae3fb102ab85f98d3b7453fc0736e5a11200
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -62,7 +63,7 @@ System Center 2012 Configuration Manager 中 Endpoint Protection 的防火牆原
 
 7.  確認新的 Windows 防火牆原則顯示在 [Windows 防火牆原則]  清單中。  
 
-##  <a name="a-namebkmkassigna-to-deploy-a-windows-firewall-policy"></a><a name="BKMK_Assign"></a> 部署 Windows 防火牆原則  
+##  <a name="BKMK_Assign"></a> 部署 Windows 防火牆原則  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
@@ -78,9 +79,4 @@ System Center 2012 Configuration Manager 中 Endpoint Protection 的防火牆原
 
     > [!IMPORTANT]  
     >  將 Windows 防火牆原則部署至集合時，會在 2 小時期間內隨機將這個原則套用至電腦，避免網路流量過大。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
