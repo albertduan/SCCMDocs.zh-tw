@@ -33,7 +33,7 @@ ms.lasthandoff: 12/16/2016
 
 2. 按一下 [用戶端升級] 索引標籤。
 
-3. 按一下 [Exclude specified clients from upgrade] (排除升級指定的用戶端) 核取方塊，然後針對 [Exclusion collection] (排除集合) 選取您要排除的集合。 您只能選取單一集合進行排除。
+3. 按一下 「Exclude specified clients from upgrade」 (排除升級指定的用戶端) 核取方塊，然後針對 「Exclusion collection」 (排除集合) 選取您要排除的集合。 您只能選取單一集合進行排除。
 
 4.  按一下 [確定] 以關閉並儲存設定。 然後，在用戶端更新原則之後，排除集合中的用戶端就不會再自動安裝用戶端軟體的更新。 如需詳細資訊，請參閱[如何升級 Windows 電腦的用戶端](upgrade-clients-for-windows-computers.md)。
 
