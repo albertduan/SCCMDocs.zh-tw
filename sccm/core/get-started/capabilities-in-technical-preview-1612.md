@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3c8f968276cb6d412a4a06cb70f1c8e45e91c605
 ms.openlocfilehash: cd53f093056fbaa2ef6fd88d5451b7698f296569
+ms.lasthandoff: 02/11/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1612 中的功能
@@ -216,7 +217,7 @@ ms.openlocfilehash: cd53f093056fbaa2ef6fd88d5451b7698f296569
 
 ### <a name="try-it-out"></a>試試看
 設定可執行檔清單
-1.    在任何部署類型的內容頁面上，選擇 [Installer Handling] (安裝程式處理) 索引標籤。
+1.    在任何部署類型的內容頁面上，選擇 「Installer Handling」 (安裝程式處理) 索引標籤。
 2.    按一下 [新增] 將其中一個可執行檔新增至清單 (例如 **Edge.exe**)
 3.    按一下 [確定] 關閉部署類型內容對話方塊。
 
@@ -314,9 +315,4 @@ Azure Active Directory (AD) 上架會建立 Configuration Manager 與 Azure Acti
 ## <a name="change-to-configuring-multi-factor-authentication-for-device-enrollment"></a>設定裝置註冊之 Multi-Factor Authentication 的變更
 
 現在，您可以在 Azure 入口網站中設定裝置註冊的 Multi-Factor Authentication (MFA)，Configuration Manager 主控台中已移除 MFA 選項。 您可以在[此 Microsoft Intune 主題](https://docs.microsoft.com/en-us/intune/deploy-use/multi-factor-authentication-azure-active-directory)中，找到有關設定註冊之 MFA 的詳細資訊。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
