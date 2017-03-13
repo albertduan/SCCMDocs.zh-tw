@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 7f2fd3e550c7dc1b27996dc309b53f74e8c865e9
 ms.openlocfilehash: a823458dc3b891b1c32d1cb44a96e8cafd376ed5
+ms.lasthandoff: 01/04/2017
 
 ---
 # <a name="content-source-location-scenarios-in-system-center-configuration-manager"></a>System Center Configuration Manager 的內容來源位置案例
@@ -150,7 +151,7 @@ ms.openlocfilehash: a823458dc3b891b1c32d1cb44a96e8cafd376ed5
 
 2.  內容位置清單從擁有包含內容之慣用發佈點和後援發佈點的管理點傳回至用戶端。 沒有任何慣用發佈點擁有內容，但是至少有一個後援發佈點擁有內容。  
 
-3.  內容未下載，因為使用者使用後援發佈點時的部署內容設定為 [不要下載內容] (這是在用戶端使用後援以取得內容時使用)。 用戶端失敗並顯示 [內容無法使用]  訊息，然後進入重試模式。 用戶端每小時會發出一個新的內容要求。  
+3.  內容未下載，因為使用者使用後援發佈點時的部署內容設定為 「不要下載內容」 (這是在用戶端使用後援以取得內容時使用)。 用戶端失敗並顯示 [內容無法使用]  訊息，然後進入重試模式。 用戶端每小時會發出一個新的內容要求。  
 
 ## <a name="scenario-6"></a>案例 6  
  有下列設定存在：  
@@ -253,9 +254,4 @@ ms.openlocfilehash: a823458dc3b891b1c32d1cb44a96e8cafd376ed5
 4.  管理點會為發佈管理員建立觸發程序，以便將內容發佈到所有建立內容要求的用戶端使用的慣用發佈點。  
 
 5.  發佈管理員會將內容發佈到所有的慣用發佈點，讓其他用戶端不需使用後援發佈點，即可取得內容。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
