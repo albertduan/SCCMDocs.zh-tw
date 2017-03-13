@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 1d3adcf3310d88b1266388aa03ae5ea03e23f2a5
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1603-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1603 中的功能
@@ -34,7 +35,7 @@ ms.openlocfilehash: 1d3adcf3310d88b1266388aa03ae5ea03e23f2a5
 
  **以下是您可以使用此版本試用的新功能。**  
 
-##  <a name="a-namebkmksc1603a-improvements-to-software-center"></a><a name="BKMK_SC1603"></a> 軟體中心的增強功能  
+##  <a name="BKMK_SC1603"></a> 軟體中心的增強功能  
 
 ### <a name="new-tiled-view-for-apps"></a>新的應用程式並排顯示檢視  
  使用者現在可以在「軟體中心」的 [應用程式] 索引標籤中，於應用程式清單或應用程式並排顯示檢視之間做選擇。  
@@ -42,16 +43,16 @@ ms.openlocfilehash: 1d3adcf3310d88b1266388aa03ae5ea03e23f2a5
 ### <a name="select-multiple-updates-in-software-center"></a>在軟體中心中選取多個更新  
  在「軟體中心」的 [更新] 索引標籤中，您現在可以選取多個更新或選取 [全部更新]，以開始同時安裝多個更新。  
 
-##  <a name="a-namebkmkrc1603a-improvements-to-remote-control"></a><a name="BKMK_RC1603"></a> 對遠端控制的改進  
+##  <a name="BKMK_RC1603"></a> 對遠端控制的改進  
 
 ### <a name="limit-shared-clipboard-access-in-a-remote-control-session"></a>限制遠端控制工作階段中的共用剪貼簿存取  
- 您現在可以啟用新的遠端工具用戶端設定 [Prompt user for shared clipboard file transfer permission] (提示使用者提供共用剪貼簿檔案傳輸權限)，以限制對遠端控制工作階段中共用剪貼簿的存取。  
+ 您現在可以啟用新的遠端工具用戶端設定 「Prompt user for shared clipboard file transfer permission」 (提示使用者提供共用剪貼簿檔案傳輸權限)，以限制對遠端控制工作階段中共用剪貼簿的存取。  
 
  啟用時，共用遠端工作階段的使用者必須先將權限授與該工作階段的檢視者，該檢視者才能透過共用剪貼簿將檔案從該工作階段傳輸到其本機電腦。  
 
  這會如同先前一樣為使用者增加一層保護，如果檢視者獲授與使用者電腦的完整控制權，他們將能以該使用者完全無法察覺的方式，使用共用剪貼簿將檔案從工作階段傳輸到其本機電腦。  
 
-##  <a name="a-namebkmkramdisktftpa-customize-the-ramdisk-tftp-block-size-and-window-size-on-pxe-enabled-distribution-points"></a><a name="BKMK_RamDiskTFTP"></a> 自訂支援 PXE 之發佈點的相關 RamDisk TFTP 區塊大小和視窗大小  
+##  <a name="BKMK_RamDiskTFTP"></a> 自訂支援 PXE 之發佈點的相關 RamDisk TFTP 區塊大小和視窗大小  
  在 1603 Technical Preview 中，您可以為支援 PXE 的發佈點自訂 RamDisk TFTP 區塊大小和視窗大小。 如果您已自訂網路，可能會導致開機映像下載因發生逾時錯誤而失敗，因為區塊或視窗大小太大。 自訂 RamDisk TFTP 區塊大小和視窗大小可讓您在使用 PXE 來滿足特定的網路需求時，將 TFTP 流量最佳化。   
 您將需要在您的環境中測試自訂的設定，以確定最有效率的設定是哪一個。  
 
@@ -91,9 +92,4 @@ ms.openlocfilehash: 1d3adcf3310d88b1266388aa03ae5ea03e23f2a5
      **值**：&lt;自訂區塊大小\>  
 
  預設值為 4096 (4k)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
