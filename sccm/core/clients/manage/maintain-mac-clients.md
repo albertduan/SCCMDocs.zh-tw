@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: c74b553ab76a2b77b0d893151351132da05a640d
 ms.openlocfilehash: 5b75f3296dc20a6766a894f463e958455ca1d65f
+ms.lasthandoff: 01/04/2017
 
 
 ---
@@ -153,17 +154,12 @@ ms.openlocfilehash: 5b75f3296dc20a6766a894f463e958455ca1d65f
 
     c.  展開金鑰以檢視用戶端憑證。 若找到您剛安裝的憑證及其私密金鑰，請按兩下該金鑰。  
 
-    d.  在 [存取控制] 索引標籤上，選擇 [Confirm before allowing access] (允許存取前先確認)。  
+    d.  在 [存取控制] 索引標籤上，選擇 「Confirm before allowing access」 (允許存取前先確認)。  
 
     e.  瀏覽至 **/Library/Application Support/Microsoft/CCM**，選取 [CCMClient]，然後選擇 [新增]。  
 
     f.  選擇 [儲存變更] 並關閉 [金鑰鏈存取] 對話方塊。  
 
 17. 重新啟動 Mac 電腦。  
-
-
-
-
-<!--HONumber=Jan17_HO1-->
 
 
