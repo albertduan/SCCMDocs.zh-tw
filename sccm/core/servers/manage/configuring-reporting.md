@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -33,7 +34,7 @@ ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
 
 -   [System Center Configuration Manager 中的報告規劃](../../../core/servers/manage/planning-for-reporting.md)  
 
-##  <a name="a-namebkmksqlreportingservicesa-sql-server-reporting-services"></a><a name="BKMK_SQLReportingServices"></a> SQL Server Reporting Services  
+##  <a name="BKMK_SQLReportingServices"></a> SQL Server Reporting Services  
  SQL Server Reporting Services 是一個以伺服器為基礎的報告平台，可針對各種資料來源提供完整的報告功能。 在 Configuration Manager 與 SQL Server Reporting Services 通訊的 Reporting Services 點中，將 Configuration Manager 報告複製到指定的報告資料夾、進行 Reporting Services 設定，以及進行 Reporting Services 安全性設定。 Reporting Services 會連線至 Configuration Manager 站台資料庫，以擷取當您執行報告時傳回的資料。  
 
  您必須先在裝載 Reporting Service 點站台系統角色的站台系統上安裝及設定 SQL Server Reporting Services，才能在 Configuration Manager 站台中安裝 Reporting Services 點。 如需有關安裝 Reporting Services 的資訊，請參閱 [SQL Server TechNet 技術文件庫](http://go.microsoft.com/fwlink/p/?LinkId=266389)。  
@@ -59,7 +60,7 @@ ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
 
 7.  按一下 [結束] 關閉 Reporting Services Configuration Manager。  
 
-##  <a name="a-namebkmkreportbuilder3a-configure-reporting-to-use-report-builder-30"></a><a name="BKMK_ReportBuilder3"></a> 設定報表以使用 Report Builder 3.0  
+##  <a name="BKMK_ReportBuilder3"></a> 設定報表以使用 Report Builder 3.0  
 
 #### <a name="to-change-the-report-builder-manifest-name-to-report-builder-30"></a>將報告產生器資訊清單名稱變更為 Report Builder 3.0  
 
@@ -73,7 +74,7 @@ ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
 
 5.  關閉 Windows 登錄編輯程式。  
 
-##  <a name="a-namebkmkinstallreportingservicespointa-install-a-reporting-services-point"></a><a name="BKMK_InstallReportingServicesPoint"></a> 安裝 Reporting Services 點  
+##  <a name="BKMK_InstallReportingServicesPoint"></a> 安裝 Reporting Services 點  
  必須在站台上安裝 Reporting Services 點，才能在站台管理報告。 Reporting Services 點會將報告資料夾和報告複製到 SQL Server Reporting Services、為報告和資料夾套用安全性原則，以及在 Reporting Services 中設定組態設定。 您必須先設定 Reporting Services 點，才能讓報告顯示在 Configuration Manager 主控台中，以及在 Configuration Manager 中管理報告。 Reporting Services 點是必須伺服器上以安裝並執行之 Microsoft SQL Server Reporting Services 進行設定的站台系統角色。 如需必要條件的詳細資訊，請參閱 [Configuration Manager 中的報表必要條件](prerequisites-for-reporting.md)。  
 
 > [!IMPORTANT]  
@@ -142,7 +143,7 @@ ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
     > [!NOTE]  
     >  當建立報告資料夾，並將報告複製到報表伺服器時，Configuration Manager 會判斷物件的適用語言。 如果站台上已安裝關聯的語言套件，Configuration Manager 會以和站台上報表伺服器所執行作業系統相同的語言來建立物件。 如果沒有可用的語言，則會以英文建立和顯示報告。 當您在不含語言套件的站台上安裝 Reporting Services 點時，會安裝英文版的報告。 如果在安裝 Reporting Services 點後安裝語言套件，您必須先解除安裝再重新安裝 Reporting Serivces 點，才能使用具適當語言套件的報告。 如需語言套件的詳細資訊，請參閱 [Language Packs in System Center Configuration Manager](../deploy/install/language-packs.md) (System Center Configuration Manager 的語言套件)。  
 
-###  <a name="a-namebkmkfileinstallationandsecuritya-file-installation-and-report-folder-security-rights"></a><a name="BKMK_FileInstallationAndSecurity"></a> 檔案安裝與報表資料夾安全性權限  
+###  <a name="BKMK_FileInstallationAndSecurity"></a> 檔案安裝與報表資料夾安全性權限  
  Configuration Manager 會執行下列動作，安裝 Reporting Services 點和設定 Reporting Services：  
 
 > [!IMPORTANT]  
@@ -172,14 +173,14 @@ ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
 
      Configuration Manager 會連接至 Reporting Services，並設定使用者對 Configuration Manager 及 Reporting Services 根資料夾與特定報告資料夾的權限。 Reporting Services 點初始安裝完成後，Configuration Manager 會以 10 分鐘間隔連接至 Reporting Services，確認報告資料夾上設定的使用者權限與針對 Configuration Manager 使用者設定的權限相關聯。 使用 Reporting Services 報表管理員在報告資料夾上新增使用者或修改使用者權限時，Configuration Manager 會使用儲存在站台資料庫中以角色為基礎的指派來覆寫這些變更。 Configuration Manager 也會移除沒有 Configuration Manager 報告權限的使用者。  
 
-##  <a name="a-namebkmksecurityrolesa-reporting-services-security-roles-for-configuration-manager"></a><a name="BKMK_SecurityRoles"></a> Configuration Manager 的 Reporting Services 安全性角色  
+##  <a name="BKMK_SecurityRoles"></a> Configuration Manager 的 Reporting Services 安全性角色  
  當 Configuration Manager 安裝 Reporting Services 點時，會在 Reporting Services 中新增下列安全性角色：  
 
 -   **Configuration Manager 報告使用者**：獲派此安全性角色的使用者，只可執行 Configuration Manager 報表。  
 
 -   **Configuration Manager 報告管理員**：獲派此安全性角色的使用者，可執行與 Configuration Manager 報告相關的所有工作。  
 
-##  <a name="a-namebkmkverifyreportingservicespointinstallationa-verify-the-reporting-services-point-installation"></a><a name="BKMK_VerifyReportingServicesPointInstallation"></a> 確認 Reporting Services 點安裝  
+##  <a name="BKMK_VerifyReportingServicesPointInstallation"></a> 確認 Reporting Services 點安裝  
  新增 Reporting Services 點站台角色後，您可以查看特定狀態訊息及記錄檔項目確認安裝。 利用下列程序確認 Reporting Services 點安裝成功。  
 
 > [!WARNING]  
@@ -201,9 +202,9 @@ ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
 
      在 Windows 檔案總管中，瀏覽至 &lt;Configuration Manager 安裝路徑>\Logs。  
 
-7.  開啟 Srsrp.log，並從 Reporting Services 點成功安裝的時間開始逐步查看記錄檔。 確認報告資料夾已建立，報告已部署，且每個資料夾上的安全性原則已確認。 尋找安全原則確認最後一行後面的 [Successfully checked that the SRS web service is healthy on server]  (成功確認伺服器上的 SRS Web 服務狀況良好)。  
+7.  開啟 Srsrp.log，並從 Reporting Services 點成功安裝的時間開始逐步查看記錄檔。 確認報告資料夾已建立，報告已部署，且每個資料夾上的安全性原則已確認。 尋找安全原則確認最後一行後面的 「Successfully checked that the SRS web service is healthy on server」  (成功確認伺服器上的 SRS Web 服務狀況良好)。  
 
-##  <a name="a-namebkmkcertificatea-configure-a-self-signed-certificate-for-configuration-manager-console-computers"></a><a name="BKMK_Certificate"></a> 設定 Configuration Manager 主控台電腦的自我簽署憑證  
+##  <a name="BKMK_Certificate"></a> 設定 Configuration Manager 主控台電腦的自我簽署憑證  
  您有許多選項可用來撰寫 SQL Server Reporting Services 報告。 當您在 Configuration Manager 主控台中建立或編輯報告時，Configuration Manager 會開啟報表產生器作為撰寫環境使用。 無論您撰寫 Configuration Manager 報告的方式為何，都需要自我簽署憑證才能對站台資料庫伺服器進行伺服器驗證。 Configuration Manager 會在站台伺服器以及已安裝 SMS 提供者的電腦上自動安裝憑證。 因此，從其中一部電腦執行 Configuration Manager 主控台時，您就可以建立或編輯報告。 不過，當您從安裝在不同電腦的 Configuration Manager 主控台建立或修改報告時，必須從站台伺服器匯出憑證，再將它新增至執行 Configuration Manager 主控台電腦的**受信任的人**憑證存放區。  
 
 > [!NOTE]  
@@ -243,7 +244,7 @@ ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
 
     5.  按一下 [完成]  關閉精靈，並完成電腦上的憑證設定。  
 
-##  <a name="a-namebkmkmodifyreportingservicespointa-modify-reporting-services-point-settings"></a><a name="BKMK_ModifyReportingServicesPoint"></a> 修改 Reporting Services 點設定  
+##  <a name="BKMK_ModifyReportingServicesPoint"></a> 修改 Reporting Services 點設定  
  安裝 Reporting Services 點之後，您可以在 Reporting Services 點內容中修改站台資料庫連接及驗證設定。 利用下列程序修改 Reporting Services 點設定。  
 
 #### <a name="to-modify-reporting-services-point-settings"></a>若要修改 Reporting Services 點設定  
@@ -280,7 +281,7 @@ ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
 ## <a name="upgrading-sql-server"></a>升級 SQL Server  
  您升級 SQL Server 及作為 Reporting Services 點資料來源的 SQL Server Reporting Services 後，可能會在從 Configuration Manager 主控台執行或編輯報告時發生錯誤。 為了可從 Configuration Manager 主控台正常執行報告，您必須移除站台的 Reporting Services 點站台系統角色，然後重新安裝。 不過升級後，您可以繼續從網際網路瀏覽器成功執行及編輯報告。  
 
-##  <a name="a-namebkmkconfigurereportoptionsa-configure-report-options"></a><a name="BKMK_ConfigureReportOptions"></a> 設定報表選項  
+##  <a name="BKMK_ConfigureReportOptions"></a> 設定報表選項  
  使用 Configuration Manager 站台的報告選項選取預設 Reporting Services 點，用來管理您的報告。 雖然一個站台可以有多個 Reporting Services 點，但是只有報告選項中選取的預設報告伺服器會用來管理報告。 利用下列程序設定站台的報告選項。  
 
 #### <a name="to-configure-report-options"></a>若要設定報告選項  
@@ -295,9 +296,4 @@ ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
 
 ## <a name="next-steps"></a>後續步驟
 [報告作業和維護](operations-and-maintenance-for-reporting.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
