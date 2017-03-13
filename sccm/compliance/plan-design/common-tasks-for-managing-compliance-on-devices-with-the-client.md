@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
 ms.openlocfilehash: 2012ab5e55da8d707fd668e0163b42fe7d56c72f
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -77,7 +78,7 @@ ms.openlocfilehash: 2012ab5e55da8d707fd668e0163b42fe7d56c72f
 
 1.  在 [建立設定項目精靈] 的 [一般]  頁面上，選取 [Windows 桌面或伺服器 (自訂)]  設定項目類型，然後按一下 [下一步] 。  
 
-2.  在精靈的 [支援的平台]  頁面上，選取 [Windows 8.1]  (確保設定項目僅套用至受影響的電腦)。  
+2.  在精靈的 [支援的平台]  頁面上，選取 「Windows 8.1」  (確保設定項目僅套用至受影響的電腦)。  
 
 3.  在 [設定]  頁面上，按一下 [新增]  建立新的設定。  
 
@@ -110,9 +111,4 @@ ms.openlocfilehash: 2012ab5e55da8d707fd668e0163b42fe7d56c72f
 6.  完成精靈以建立設定項目。  
 
  您現在可以使用[建立及部署設定基準的一般工作](../../compliance/plan-design/common-tasks-for-creating-and-deploying-configuration-baselines.md)主題中的資訊，協助您將已建立的設定部署至裝置。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
