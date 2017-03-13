@@ -2,7 +2,7 @@
 title: "監視 Endpoint Protection 狀態 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 階層中監視 Endpoint Protection。"
 ms.custom: na
-ms.date: 12/9/2016
+ms.date: 03/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
 ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
 
 您可以在 Microsoft System Center Configuration Manager 階層中監視 Endpoint Protection，方法是使用 [監視] 工作區中 [安全性] 下的 [Endpoint Protection 狀態] 節點、[資產與合規性] 工作區中的 [Endpoint Protection] 節點，以及使用報告。  
 
-##  <a name="a-namebkmk1a-how-to-monitor-endpoint-protection-by-using-the-endpoint-protection-status-node"></a><a name="BKMK_1"></a> 如何使用 Endpoint Protection 狀態節點監視 Endpoint Protection  
+##  <a name="BKMK_1"></a> 如何使用 Endpoint Protection 狀態節點監視 Endpoint Protection  
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
@@ -47,7 +48,7 @@ ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
     > [!IMPORTANT]  
     >  [Endpoint Protection 狀態] 節點中顯示的資訊取決於從 Configuration Manager 資料庫摘要的最後一筆資料，因此可能不是最新資訊。 如果您想要擷取最新的資料，請在 **[首頁]** 索引標籤上按一下 **[執行摘要]**，或按一下 **[排程摘要]** ，以調整摘要間隔。  
 
-##  <a name="a-namebkmk2a-how-to-monitor-endpoint-protection-in-the-assets-and-compliance-workspace"></a><a name="BKMK_2"></a> 如何在資產與相容性工作區中監視 Endpoint Protection  
+##  <a name="BKMK_2"></a> 如何在資產與相容性工作區中監視 Endpoint Protection  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
@@ -59,7 +60,7 @@ ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
 
 3.  在 [*<集合名稱\>*] 清單中選取電腦，然後按一下 [惡意程式碼詳細資料] 索引標籤。  
 
-##  <a name="a-namebkmk3a-how-to-monitor-endpoint-protection-by-using-reports"></a><a name="BKMK_3"></a> 如何使用報告監視 Endpoint Protection  
+##  <a name="BKMK_3"></a> 如何使用報告監視 Endpoint Protection  
  使用下列報告，協助您檢視有關的資訊 Endpoint Protection 階層中。 您也可以使用這些報告來協助疑難排解任何 Endpoint Protection 問題。 如需如何在 Configuration Manager 設定報告的詳細資訊，請參閱 [System Center Configuration Manager 中的報告](../../core/servers/manage/reporting.md)和 [System Center Configuration Manager 中的記錄檔](../../core/plan-design/hierarchy/log-files.md)。 Endpoint Protection 報告位於 Endpoint Protection 資料夾中。  
 
 |報表名稱|說明|  
@@ -81,9 +82,4 @@ ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
 |**允許**|選取要包含惡意程式碼執行的軟體可讓系統管理使用者。|  
 |**沒有動作**|Endpoint Protection 對惡意程式碼不採取任何動作。 這可能發生在偵測到惡意程式碼並不會再偵測到惡意程式碼; 之後重新啟動電腦比方說，如果對應的網路磁碟機上偵測到的惡意程式碼是不重新連線時重新啟動電腦。|  
 |**封鎖**|Endpoint Protection 封鎖惡意程式碼，使其無法執行。 這可能會發生在處理序已在電腦上的找到包含惡意程式碼。|
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

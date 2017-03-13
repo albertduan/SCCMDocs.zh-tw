@@ -4,7 +4,7 @@ description: "了解如何設定 Endpoint Protection 以在 Configuration Manage
 defintion: 
 definition: 
 ms.custom: na
-ms.date: 02/14/2016
+ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
