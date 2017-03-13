@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
 下列工作順序步驟可以新增至 Configuration Manager 工作順序。 如需編輯工作順序的相關資訊，請參閱 [Edit a task sequence](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_ModifyTaskSequence)。  
 
 
-##  <a name="a-namebkmkapplydataimagea-apply-data-image-task-sequence-step"></a><a name="BKMK_ApplyDataImage"></a> 套用資料映像工作順序步驟  
+##  <a name="BKMK_ApplyDataImage"></a> 套用資料映像工作順序步驟  
  使用 [套用資料映像]  工作順序步驟，以將資料映像複製到指定的目的地磁碟分割。  
 
  此步驟只會在 Windows PE 中執行。 它不會在標準作業系統中執行。 如需這項動作之工作順序變數的詳細資訊，請參閱[工作順序動作變數](task-sequence-action-variables.md)。  
@@ -71,7 +72,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **套用映像之前，先刪除磁碟分割上的所有內容**  
  指定在安裝映像之前，會先刪除目標磁碟分割上的所有檔案。 若不刪除磁碟分割的內容，這個步驟可用來將其他內容套用至先前設為目標的磁碟分割。  
 
-##  <a name="a-namebkmkapplydriverpackagea-apply-driver-package"></a><a name="BKMK_ApplyDriverPackage"></a> 套用驅動程式套件  
+##  <a name="BKMK_ApplyDriverPackage"></a> 套用驅動程式套件  
  使用 [套用驅動程式套件]  工作順序步驟，下載驅動程式套件中的所有驅動程式，並將其安裝在 Windows 作業系統上。
 
  [套用驅動程式套件]  工作順序步驟讓驅動程式套件中的所有裝置驅動程式皆可供 Windows 使用。 這個步驟可以新增至 [套用作業系統]   與 [設定 Windows 和 ConfigMgr]  步驟之間的工作順序中，讓驅動程式封裝中的裝置驅動程式可以供 Windows 使用。 一般而言，[套用驅動程式套件]  步驟會放在 [自動套用驅動程式]  工作順序步驟之後。 [套用驅動程式套件]  工作順序步驟也適合用於獨立媒體部署案例。  
@@ -114,7 +115,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **在允許的 Windows 版本上執行自動安裝未簽署的驅動程式**  
  選取此選項，可讓 Windows 在參照電腦上安裝未簽署的驅動程式。  
 
-##  <a name="a-namebkmkapplynetworksettingsa-apply-network-settings-step"></a><a name="BKMK_ApplyNetworkSettings"></a> 套用網路設定步驟  
+##  <a name="BKMK_ApplyNetworkSettings"></a> 套用網路設定步驟  
  使用 [套用網路設定]  工作順序步驟，指定目的地電腦的網路或工作群組組態資訊。 指定的值會以適當的回應檔案格式存放，以在執行 [設定 Windows 和 ConfigMgr]  工作順序步驟時，供 Windows 安裝程式使用。  
 
  此工作順序步驟可以在標準作業系統或 Windows PE 中執行。 如需這項動作之工作順序變數的詳細資訊，請參閱 [Apply Network Settings Task Sequence Action Variables](task-sequence-action-variables.md#BKMK_ApplyNetworkSettings)。  
@@ -148,7 +149,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **介面卡設定**  
  為電腦中的每個網路介面卡指定網路組態。 按一下 [新增]  ，以開啟 [網路設定]  對話方塊，然後指定網路設定。 如果在先前的 [擷取網路設定]  工作順序步驟中已擷取網路設定，則會將先前的設定套用至網路介面卡，而不會套用在此步驟中指定的設定。 如果先前沒有擷取網路設定，則會依 Windows 裝置列舉順序，將 [套用網路設定]  步驟中指定的設定套用至網路介面卡。  
 
-##  <a name="a-namebkmkapplyoperatingsystemimagea-apply-operating-system-image"></a><a name="BKMK_ApplyOperatingSystemImage"></a> 套用作業系統映像  
+##  <a name="BKMK_ApplyOperatingSystemImage"></a> 套用作業系統映像  
  使用 [套用作業系統映像]  工作順序步驟，將作業系統安裝在目的地電腦上。 此工作順序步驟會執行一組動作，取決於它是使用作業系統映像或作業系統安裝套件來安裝作業系統。  
 
  使用作業系統映像時，[套用作業系統映像]  步驟會執行下列動作。  
@@ -231,7 +232,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
 
 -   **儲存在變數中的邏輯磁碟機代號** - 指定工作順序變數，其中包含 Windows PE 指派給磁碟分割的磁碟機代號。 這個變數通常會設定在 [格式化與分割磁碟]  工作順序動作的 [磁碟分割內容]  對話方塊的 [進階] 區段中。  
 
-##  <a name="a-namebkmkapplywindowssettingsa-apply-windows-settings"></a><a name="BKMK_ApplyWindowsSettings"></a> 套用 Windows 設定  
+##  <a name="BKMK_ApplyWindowsSettings"></a> 套用 Windows 設定  
  使用 [套用 Windows 設定]  工作順序步驟來設定目的地電腦的 Windows 設定。 指定的值會以適當的回應檔案格式存放，以在執行 [設定 Windows 和 ConfigMgr]  工作順序步驟時，供 Windows 安裝程式使用。  
 
  此工作順序步驟只會在 Windows PE 中執行。 它不會在標準作業系統中執行。 如需這項動作之工作順序變數的詳細資訊，請參閱 [Apply Windows Settings Task Sequence Action Variables](task-sequence-action-variables.md#BKMK_ApplyWindowsSettings)。  
@@ -277,7 +278,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **時區**  
  指定要在目的地電腦上設定的時區。 [擷取 Windows 設定]  工作順序步驟所擷取的值會覆寫此值。  
 
-##  <a name="a-namebkmkautoapplydriversa-auto-apply-drivers"></a><a name="BKMK_AutoApplyDrivers"></a> 自動套用驅動程式  
+##  <a name="BKMK_AutoApplyDrivers"></a> 自動套用驅動程式  
  使用 [自動套用驅動程式]  工作順序步驟來比對及安裝驅動程式，以做為作業系統部署的一部分。  
 
  [自動套用驅動程式]  工作順序步驟會執行下列動作：  
@@ -336,7 +337,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
 > [!IMPORTANT]  
 >  此選項不會套用至無法設定驅動程式簽署原則的作業系統。  
 
-##  <a name="a-namebkmkcapturenetworksettingsa-capture-network-settings"></a><a name="BKMK_CaptureNetworkSettings"></a> 擷取網路設定  
+##  <a name="BKMK_CaptureNetworkSettings"></a> 擷取網路設定  
  使用 [擷取網路設定]  工作順序步驟，以從執行工作順序的電腦擷取 Microsoft 網路設定。 這些設定會儲存在工作順序變數中，將會覆寫您在 [套用網路設定]  工作順序步驟中進行的預設設定。  
 
  此工作順序步驟只會在標準作業系統中執行。 它不會在 Windows PE 中執行。 如需這項動作之工作順序變數的詳細資訊，請參閱 [Capture Network Settings Task Sequence Action Variables](task-sequence-action-variables.md#BKMK_CaptureNetworkSettings)。  
@@ -364,7 +365,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **移轉網路介面卡組態**  
  擷取目的地電腦的網路介面卡組態。 擷取到的資訊包括全域網路設定、介面卡的數目，以及與每個介面卡相關聯的網路設定。 這些設定包括與 DNS、WINS、IP 和連接埠篩選相關聯的設定。  
 
-##  <a name="a-namebkmkcaptureoperatingsystemimagea-capture-operating-system-image"></a><a name="BKMK_CaptureOperatingSystemImage"></a> 擷取作業系統映像  
+##  <a name="BKMK_CaptureOperatingSystemImage"></a> 擷取作業系統映像  
  使用 [擷取作業系統映像]  工作順序步驟，從參照電腦擷取一或多個映像，並將其存放在指定網路共用上的 WIM 檔案中。 然後就可以使用 [新增作業系統映像套件精靈]，將這個 .WIM 檔案匯入 Configuration Manager 中，使其可以用於以映像為基礎的作業系統部署。  
 
  參照電腦上的每個磁碟區 (磁碟機) 都會被擷取成 .wim 檔案內的個別映像。 如果參照的電腦中有多個磁碟區，所產生的 WIM 檔案將會包含每個磁碟區的個別映像。 只會擷取格式化為 NTFS 或 FAT32 的磁碟區。 會略過其他格式的磁碟區和 USB 磁碟區。  
@@ -407,7 +408,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **擷取作業系統映像帳戶**  
  您必須輸入具有您指定之網路共用權限的 Windows 帳戶。 按一下 [設定]  ，以指定該 Windows 帳戶的名稱。  
 
-##  <a name="a-namebkmkcaptureuserstatea-capture-user-state"></a><a name="BKMK_CaptureUserState"></a> 擷取使用者狀態  
+##  <a name="BKMK_CaptureUserState"></a> 擷取使用者狀態  
  使用 [擷取使用者狀態]  工作順序步驟，以利用使用者狀態移轉工具 (USMT)，從執行工作順序的電腦擷取使用者狀態和設定。 這個工作順序步驟會與 [還原使用者狀態]  工作順序步驟搭配使用。 若使用 USMT 3.0.1 和更新版本，此選項一律會使用由 Configuration Manager 產生和管理的加密金鑰來加密 USMT 狀態存放區。  
 
  如需在部署作業系統時管理使用者狀態的詳細資訊，請參閱[管理使用者狀態](../get-started/manage-user-state.md)。  
@@ -441,7 +442,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **以標準選項擷取所有使用者設定檔**  
  選取此選項可移轉所有使用者設定檔資訊。 預設會選取這個選項。  
 
- 如果您選取這個選項，但是未在 [還原使用者狀態] 工作順序步驟中選取 [還原本機使用者設定檔] 選項，工作順序將會失敗，因為在未指派密碼的情況下，Configuration Manager 無法移轉新帳戶。 此外，如果您使用 [新增工作順序精靈]  ，並建立工作順序來 [安裝現有的映像套件] ，所產生的工作順序預設為 [以標準選項擷取所有使用者設定檔]，但不會選取 [還原本機電腦使用者設定檔] (亦即非網域帳戶) 選項。  
+ 如果您選取這個選項，但是未在 [還原使用者狀態] 工作順序步驟中選取 [還原本機使用者設定檔] 選項，工作順序將會失敗，因為在未指派密碼的情況下，Configuration Manager 無法移轉新帳戶。 此外，如果您使用 [新增工作順序精靈]  ，並建立工作順序來 [安裝現有的映像套件] ，所產生的工作順序預設為 [以標準選項擷取所有使用者設定檔]，但不會選取 「還原本機電腦使用者設定檔」 (亦即非網域帳戶) 選項。  
 
  選取 [還原本機電腦使用者設定檔]  ，並提供要移轉之帳戶的密碼。 在手動建立的工作順序中，可以在 [還原使用者狀態] 步驟底下找到這項設定。 在由 [新增工作順序精靈]  建立的工作順序中，可以在 [還原使用者檔案和設定精靈]  步驟頁面底下找到這項設定。  
 
@@ -473,7 +474,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **使用磁碟區陰影複製服務 (VSS) 來擷取**  
  這項選項可讓您在檔案被鎖定，無法由其他應用程式進行編輯的情況下，仍可擷取檔案。  
 
-##  <a name="a-namebkmkcapturewindowssettingsa-capture-windows-settings"></a><a name="BKMK_CaptureWindowsSettings"></a> 擷取 Windows 設定  
+##  <a name="BKMK_CaptureWindowsSettings"></a> 擷取 Windows 設定  
  使用 [擷取 Windows 設定]  工作順序步驟，以從執行工作順序的電腦擷取 Windows 設定。 這些設定會儲存在工作順序變數中，將會覆寫您在 [套用 Windows 設定]  工作順序步驟中進行的預設設定。  
 
  此工作順序步驟可以在 Windows PE 或標準作業系統中執行。 如需這項動作之工作順序變數的詳細資訊，請參閱 [Capture Windows Settings Task Sequence Action Variables](task-sequence-action-variables.md#BKMK_CaptureWindowsSettings)。  
@@ -504,7 +505,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **移轉時區**  
  選取此選項可擷取電腦上的時區設定。  
 
-##  <a name="a-namebkmkcheckreadinessa-check-readiness"></a><a name="BKMK_CheckReadiness"></a> 檢查整備程度  
+##  <a name="BKMK_CheckReadiness"></a> 檢查整備程度  
  使用 [檢查整備]  工作順序步驟，確認目標電腦符合指定的部署必要條件。  
 
 ### <a name="details"></a>詳細資料  
@@ -536,7 +537,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **確定要重新整理的目前作業系統為**  
  選取此設定，可確認安裝在目標電腦上的作業系統符合您指定的需求。 根據預設，會以 [用戶端] 值來選取這個設定。  
 
-##  <a name="a-namebkmkconnecttonetworkfoldera-connect-to-network-folder"></a><a name="BKMK_ConnectToNetworkFolder"></a> 連線到網路資料夾  
+##  <a name="BKMK_ConnectToNetworkFolder"></a> 連線到網路資料夾  
  使用 [連線到網路資料夾]  工作順序動作，以建立連接到共用網路資料夾的連線。  
 
  此工作順序步驟可以在標準作業系統或 Windows PE 中執行。 如需這項動作之工作順序變數的詳細資訊，請參閱 [Connect to Network Folder Task Sequence Action Variables](task-sequence-action-variables.md#BKMK_ConnecttoNetworkFolder)。  
@@ -552,7 +553,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
 
 -   指定執行此步驟時，所必須符合的條件。  
 
-##  <a name="a-namebkmkconvertdisktodynamica-convert-disk-to-dynamic"></a><a name="BKMK_ConvertDisktoDynamic"></a> 將磁碟轉換成動態磁碟  
+##  <a name="BKMK_ConvertDisktoDynamic"></a> 將磁碟轉換成動態磁碟  
  使用 [將磁碟轉換為動態]  工作順序步驟，將實體磁碟從基本磁碟類型轉換成動態磁碟類型。  
 
  此步驟可以在標準作業系統或 Windows PE 中執行。 如需這項動作之工作順序變數的詳細資訊，請參閱 [Convert Disk to Dynamic Task Sequence Action Variables](task-sequence-action-variables.md#BKMK_ConvertDisk)。  
@@ -577,7 +578,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **磁碟編號**  
  將要轉換之磁碟的實體磁碟編號。  
 
-##  <a name="a-namebkmkdisablebitlockera-disable-bitlocker"></a><a name="BKMK_DisableBitLocker"></a> 停用 BitLocker  
+##  <a name="BKMK_DisableBitLocker"></a> 停用 BitLocker  
  使用 [停用 BitLocker]  工作順序步驟，以停用目前作業系統磁碟或特定磁碟上的 BitLocker 加密。 這個動作會讓金鑰保護裝置以純文字繼續顯示在硬碟上，但是不會將磁碟機的內容解密。 因此，這個動作幾乎是立即完成。  
 
 > [!NOTE]  
@@ -610,7 +611,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **特定磁碟機**  
  在特定磁碟機上停用 BitLocker。 使用下拉式清單來指定要停用 BitLocker 的磁碟機。  
 
-##  <a name="a-namebkmkdownloadpackagecontenta-download-package-content"></a><a name="BKMK_DownloadPackageContent"></a> 下載封裝內容  
+##  <a name="BKMK_DownloadPackageContent"></a> 下載封裝內容  
  使用 [下載封裝內容]  工作順序步驟，以下載下列任何封裝類型：  
 
 -   作業系統映像  
@@ -664,7 +665,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **如有封裝下載失敗，繼續下載清單中的其他封裝**  
  指定如有封裝下載失敗，則會移至清單中的下一個封裝並開始下載。  
 
-##  <a name="a-namebkmkenablebitlockera-enable-bitlocker"></a><a name="BKMK_EnableBitLocker"></a> 啟用 BitLocker  
+##  <a name="BKMK_EnableBitLocker"></a> 啟用 BitLocker  
  使用 [啟用 BitLocker]  工作順序步驟，可以在硬碟機上的至少兩個磁碟分割中啟用 BitLocker 加密。 第一個作用中磁碟分割包含 Windows 開機程式碼。 另一個磁碟分割包含作業系統。 開機磁碟分割必須保持未加密狀態。  
 
  使用 [預先佈建 BitLocker]  工作順序步驟，以在 Windows PE 中時，在磁碟機上啟用 BitLocker。 如需詳細資訊，請參閱此主題中的＜ [預先佈建 BitLocker](#BKMK_PreProvisionBitLocker) ＞一節。  
@@ -738,7 +739,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
 
  在加密型硬碟機時，加密程序可能需要數小時才能完成。 若未選取此選項，則會讓工作順序立即繼續進行。  
 
-##  <a name="a-namebkmkformatandpartitiondiska-format-and-partition-disk"></a><a name="BKMK_FormatandPartitionDisk"></a> 格式化和分割磁碟  
+##  <a name="BKMK_FormatandPartitionDisk"></a> 格式化和分割磁碟  
  使用 [格式化和分割磁碟]  工作順序步驟，可將目的地電腦上的指定磁碟格式化和分割。  
 
 > [!IMPORTANT]  
@@ -791,7 +792,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
 
  若要刪除磁碟分割，請選取所要刪除的磁碟分割，然後按一下 [刪除] 。  
 
-##  <a name="a-namebkmkinstallapplicationa-install-application"></a><a name="BKMK_InstallApplication"></a> 安裝應用程式  
+##  <a name="BKMK_InstallApplication"></a> 安裝應用程式  
  使用 [安裝應用程式]  工作順序步驟，以在工作順序中安裝應用程式。 這個步驟可以安裝工作順序步驟所指定的一組應用程式，或是工作順序變數動態清單所指定的一組應用程式。 執行這個步驟時，應用程式安裝會立即開始，而不會等待原則輪詢間隔。  
 
  所安裝的應用程式必須符合下列準則：  
@@ -872,7 +873,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **如果某個應用程式失敗，繼續安裝清單中的其他應用程式**  
  此設定指定如果個別應用程式安裝失敗，步驟將繼續進行。 如果指定此設定，無論傳回任何安裝錯誤，工作順序都會繼續進行。 如果未指定此設定，當安裝失敗時，工作順序步驟會立即結束。  
 
-##  <a name="a-namebkmkinstalldeploymenttoolsa-install-deployment-tools"></a><a name="BKMK_InstallDeploymentTools"></a> 安裝部署工具  
+##  <a name="BKMK_InstallDeploymentTools"></a> 安裝部署工具  
  使用 [安裝部署工具] 工作順序步驟，安裝包含 Sysprep 部署工具的 Configuration Manager 套件。  
 
 ### <a name="details"></a>詳細資料  
@@ -901,7 +902,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
 
 -   Windows Server 2003 SP2  
 
-##  <a name="a-namebkmkinstallpackagea-install-package"></a><a name="BKMK_InstallPackage"></a> 安裝套件
+##  <a name="BKMK_InstallPackage"></a> 安裝套件
 
  使用 [安裝套件]  工作順序步驟，以在工作順序中安裝軟體。 執行這個步驟時，安裝會立即開始，而不會等待原則輪詢間隔  
 
@@ -981,7 +982,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
  **如果某個軟體套件安裝失敗，繼續安裝清單中其他套件**  
  此設定指定如果個別軟體套件安裝失敗，步驟將繼續進行。 如果指定此設定，無論傳回任何安裝錯誤，工作順序都會繼續進行。 如果未指定此設定，當安裝失敗時，工作順序步驟會立即結束。  
 
-##  <a name="a-namebkmkinstallsoftwareupdatesa-install-software-updates"></a><a name="BKMK_InstallSoftwareUpdates"></a> 安裝軟體更新  
+##  <a name="BKMK_InstallSoftwareUpdates"></a> 安裝軟體更新  
  使用 [安裝軟體更新]  工作順序步驟，在目的地電腦上安裝軟體更新。 在執行此工作順序步驟之前，不會評估目的地電腦適用的軟體更新。 執行之後，才會評估目的地電腦適用的軟體更新，就像任何其他 Configuration Manager 管理的用戶端一樣。 特別是，這個步驟只會安裝以電腦目前所屬集合為目標的軟體更新。  
 >  [!IMPORTANT]
 >強烈建議您在使用「安裝軟體更新」工作順序步驟時，安裝最新版本的 Windows 更新代理程式以獲得較佳的效能。
@@ -1027,7 +1028,7 @@ ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
 Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新工作順序變數，可讓您在「安裝軟體更新」工作順序步驟期間，控制軟體更新掃描的逾時。 預設值為 30 分鐘。 如需詳細資訊，請參閱[工作順序內建變數](task-sequence-built-in-variables.md)。
 
 
-##  <a name="a-namebkmkjoindomainorworkgroupa-join-domain-or-workgroup"></a><a name="BKMK_JoinDomainorWorkgroup"></a> 加入網域或工作群組  
+##  <a name="BKMK_JoinDomainorWorkgroup"></a> 加入網域或工作群組  
  使用 [加入網域或工作群組]  工作順序步驟，將目的地電腦新增至工作群組或網域。  
 
  此工作順序步驟只會在標準作業系統中執行。 它不會在 Windows PE 中執行。 如需這項工作順序動作之工作順序變數的相關資訊，請參閱 [Join Domain or Workgroup Task Sequence Action Variables](task-sequence-action-variables.md#BKMK_JoinDomainWorkgroup)。  
@@ -1062,7 +1063,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 
  *網域\帳戶*  
 
-## <a name="a-namebkmkprepareconfigmgrclientforcapturea-prepare-configmgr-client-for-capture"></a><a name="BKMK_PrepareConfigMgrClientforCapture"></a> 準備 ConfigMgr 用戶端以進行擷取  
+## <a name="BKMK_PrepareConfigMgrClientforCapture"></a> 準備 ConfigMgr 用戶端以進行擷取  
 使用 [準備 ConfigMgr 用戶端以進行擷取] 步驟，以移除參照電腦上的 Configuration Manager 用戶端或在參照電腦上設定用戶端，將該用戶端準備好，以便在執行映像建立程序時進行擷取。
 
 從 Configuration Manager 1610 版開始，[準備 ConfigMgr 用戶端] 步驟會完全移除 Configuration Manager 用戶端，而不是只移除金鑰資訊。 當工作順序部署擷取的作業系統映像時，每次都會安裝新的 Configuration Manager 用戶端。  
@@ -1100,7 +1101,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **說明**  
  以較詳細的資訊來描述此步驟中所採取的動作。  
 
-##  <a name="a-namebkmkpreparewindowsforcapturea-prepare-windows-for-capture"></a><a name="BKMK_PrepareWindowsforCapture"></a> 準備 Windows 以進行擷取  
+##  <a name="BKMK_PrepareWindowsforCapture"></a> 準備 Windows 以進行擷取  
  使用 [準備 Windows 以進行擷取]  工作順序步驟，以指定在參照電腦上擷取作業系統映像時，所要使用的 Sysprep 選項。 此工作順序動作會執行 Sysprep，然後使電腦重新開機至為工作順序指定的 Windows PE 開機映像。 參照電腦絕不能加入網域中，才能順利完成這個動作。  
 
  此工作順序步驟只會在標準作業系統中執行。 它不會在 Windows PE 中執行。 如需這項工作順序動作之工作順序變數的相關資訊，請參閱 [Prepare Windows for Capture Task Sequence Action Variables](task-sequence-action-variables.md#BKMK_PrepareWindowsCapture)。  
@@ -1128,7 +1129,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **不要重設啟動旗標**  
  選取此選項可防止 Sysprep 重設產品啟動旗標。  
 
-##  <a name="a-namebkmkpreprovisionbitlockera-pre-provision-bitlocker"></a><a name="BKMK_PreProvisionBitLocker"></a> 預先佈建 BitLocker  
+##  <a name="BKMK_PreProvisionBitLocker"></a> 預先佈建 BitLocker  
  使用 [預先佈建 BitLocker]  工作順序步驟，以在 Windows PE 中時，在磁碟機上啟用 BitLocker。 由於只加密已使用的磁碟空間，因此加密速度較快。 您可以在安裝作業系統之後，使用 [啟用 BitLocker](#BKMK_EnableBitLocker) 工作順序步驟來套用金鑰管理選項。 此步驟只會在 Windows PE 中執行。 它不會在標準作業系統中執行。  
 
 > [!IMPORTANT]  
@@ -1157,7 +1158,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **針對沒有 TPM 的電腦，或是未啟用 TPM 時，略過此步驟**  
  選取此選項，可在電腦硬體不支援 TPM，或是未啟用 TPM 時，略過磁碟機加密。 例如，當您將作業系統部署至虛擬機器時，就可以使用此選項。  
 
-##  <a name="a-namebkmkreleasestatestorea-release-state-store"></a><a name="BKMK_ReleaseStateStore"></a> 和 [釋放狀態存放區]  
+##  <a name="BKMK_ReleaseStateStore"></a> 和 [釋放狀態存放區]  
  使用 [釋放狀態存放區]  工作順序步驟，以通知狀態移轉點，已完成擷取或還原動作。 此步驟可搭配使用 [要求狀態存放區] 、[擷取使用者狀態] 和 [還原使用者狀態]  工作順序步驟，以使用狀態移轉點和使用者狀態移轉工具 (USMT) 來移轉使用者狀態資料。  
 
  如需在部署作業系統時管理使用者狀態的詳細資訊，請參閱[管理使用者狀態](../get-started/manage-user-state.md)。  
@@ -1188,7 +1189,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **說明**  
  以較詳細的資訊來描述此步驟中所採取的動作。  
 
-##  <a name="a-namebkmkrequeststatestorea-request-state-store"></a><a name="BKMK_RequestStateStore"></a> 工作順序步驟來搭配 [要求狀態存放區]  
+##  <a name="BKMK_RequestStateStore"></a> 工作順序步驟來搭配 [要求狀態存放區]  
  使用 [要求狀態存放區]  工作順序步驟，以要求在從電腦擷取狀態，或是將狀態還原至電腦時，能夠存取狀態移轉點。  
 
  如需在部署作業系統時管理使用者狀態的詳細資訊，請參閱[管理使用者狀態](../get-started/manage-user-state.md)。  
@@ -1236,7 +1237,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **如果電腦帳戶無法連接到狀態存放區，則使用網路存取帳戶。**  
  指定如果 Configuration Manager 用戶端無法使用電腦帳戶來存取 SMP 狀態存放區，將會使用 Configuration Manager 網路存取帳戶認證來連線至狀態移轉點。 這個選項比較不安全，因為其他電腦可以使用網路存取帳戶來存取您存放的狀態，但是如果目的地電腦未加入網域，可能就會需要這個選項。  
 
-##  <a name="a-namebkmkrestartcomputera-restart-computer"></a><a name="BKMK_RestartComputer"></a> 重新啟動電腦  
+##  <a name="BKMK_RestartComputer"></a> 重新啟動電腦  
  使用 [重新啟動電腦]  工作順序步驟，可重新啟動執行工作順序的電腦。 重新啟動之後，電腦將會自動繼續執行工作順序中的下一個步驟。  
 
  此步驟可以在標準作業系統或 Windows PE 中執行。 如需這項工作順序動作之工作順序變數的詳細資訊，請參閱[重新啟動電腦工作順序動作變數](task-sequence-action-variables.md#BKMK_RestartComputer)。  
@@ -1273,7 +1274,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **訊息顯示逾時**  
  指定在重新啟動目的地電腦之前，要給使用者多少時間 (以秒為單位)。 預設時間量為六十 (60) 秒。  
 
-##  <a name="a-namebkmkrestoreuserstatea-restore-user-state"></a><a name="BKMK_RestoreUserState"></a> 還原使用者狀態  
+##  <a name="BKMK_RestoreUserState"></a> 還原使用者狀態  
  使用 [還原使用者狀態]  工作順序步驟，以初始化使用者狀態移轉工具 (USMT)，將使用者狀態和設定還原至目的地電腦。 這個工作順序步驟會與 [擷取使用者狀態]  工作順序步驟搭配使用。  
 
  如需在部署作業系統時管理使用者狀態的詳細資訊，請參閱[管理使用者狀態](../get-started/manage-user-state.md)。  
@@ -1322,7 +1323,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **啟用詳細資訊記錄**  
  啟用此選項可產生較詳細的記錄檔資訊。 還原狀態時會產生 Loadstate.log 記錄檔，且根據預設會儲存在 \windows\system32\ccm\logs 資料夾的工作順序記錄檔資料夾中。  
 
-##  <a name="a-namebkmkruncommandlinea-run-command-line"></a><a name="BKMK_RunCommandLine"></a> 執行命令列  
+##  <a name="BKMK_RunCommandLine"></a> 執行命令列  
  使用 [執行命令列]  工作順序步驟，以執行所指定的命令列。  
 
  此步驟可以在標準作業系統或 Windows PE 中執行。 如需這項工作順序動作之工作順序變數的相關資訊，請參閱 [Run Command Line Task Sequence Action Variables](task-sequence-action-variables.md#BKMK_RunCommand)。  
@@ -1396,7 +1397,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 > [!IMPORTANT]  
 >  如果在 Windows PE 時，執行指定使用者帳戶的 [執行命令列]  工作順序動作，該動作將會失敗，因為 Windows PE 無法加入網域。 該失敗會記錄在 smsts.log 檔案中。  
 
-##  <a name="a-namebkmkrunpowershellscripta-run-powershell-script"></a><a name="BKMK_RunPowerShellScript"></a> 執行 PowerShell 指令碼  
+##  <a name="BKMK_RunPowerShellScript"></a> 執行 PowerShell 指令碼  
  使用 [執行 PowerShell 指令碼]  工作順序步驟來執行指定的 PowerShell 指令碼。  
 
  此步驟可以在標準作業系統或 Windows PE 中執行。 若要在 Windows PE 中執行此步驟，必須在開機映像中啟用 PowerShell。 您可以從開機映像內容中的 [選用元件]  索引標籤來啟用 Windows PowerShell (WinPE PowerShell)。 如需如何修改開機映像的詳細資訊，請參閱[管理開機映像](../get-started/manage-boot-images.md)。  
@@ -1453,7 +1454,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 > [!IMPORTANT]  
 >  PowerShell 1.0 不支援 [未定義] 和 [略過] 執行原則。  
 
-##  <a name="a-namebkmksetdynamicvariablesa-set-dynamic-variables"></a><a name="BKMK_SetDynamicVariables"></a> 設定動態變數  
+##  <a name="BKMK_SetDynamicVariables"></a> 設定動態變數  
  使用 [設定動態變數]  工作順序步驟來執行下列作業：  
 
 1.  從其所在的電腦和環境收集資訊，然後以該資訊來設定所指定的工作順序變數。  
@@ -1521,7 +1522,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 > [!IMPORTANT]  
 >  如果使用 [設定動態變數] 步驟來匯入工作順序，並且為變數的值選取 [祕密值]  ，當您匯入工作順序時，就會移除該值。 因此，在您匯入工作順序之後，必須重新輸入動態變數的值。  
 
-##  <a name="a-namebkmksettasksequencevariablea-set-task-sequence-variable"></a><a name="BKMK_SetTaskSequenceVariable"></a> 設定工作順序變數  
+##  <a name="BKMK_SetTaskSequenceVariable"></a> 設定工作順序變數  
  使用 [設定工作順序變數]  工作順序步驟來設定要與工作順序搭配使用的變數值。  
 
  此步驟可以在標準作業系統或 Windows PE 中執行。 工作順序變數會被工作順序動作讀取，並指定那些動作的行為。 如需特定工作順序變數的詳細資訊，請參閱[工作順序動作變數](task-sequence-action-variables.md)。  
@@ -1549,7 +1550,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  **值**  
  與工作順序變數相關聯的值。 該值可以是 %<變數名稱\>% 語法中的另一個工作順序變數。  
 
-##  <a name="a-namebkmksetupwindowsandconfigmgra-setup-windows-and-configmgr"></a><a name="BKMK_SetupWindowsandConfigMgr"></a> varname  
+##  <a name="BKMK_SetupWindowsandConfigMgr"></a> varname  
  使用 [設定 Windows 和 ConfigMgr]  工作順序步驟來執行從 Windows PE 到新作業系統的轉換。 此工作順序步驟是部署任何作業系統的必要部分。 它會將 Configuration Manager 用戶端安裝到新的作業系統中，並準備好讓工作順序繼續在新的作業系統中執行。  
 
  此步驟只會在 Windows PE 中執行。 它不會在標準作業系統中執行。 如需此工作順序動作的工作順序變數詳細資訊，請參閱[設定 Windows 和 ConfigMgr 工作順序動作變數](task-sequence-action-variables.md#BKMK_SetupWindows)。  
@@ -1629,7 +1630,7 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 
  您可以指定要在用戶端安裝期間使用的命令列選項。 例如，您可以輸入 **/skipprereq: silverlight.exe** ，以通知 CCMSetup.exe 不要安裝 Microsoft Silverlight 必要條件。 如需 CCMSetup.exe 可用命令列選項的詳細資訊，請參閱[關於用戶端安裝內容](../../core/clients/deploy/about-client-installation-properties.md)。  
 
-##  <a name="a-namebkmkupgradeosa-upgrade-operating-system"></a><a name="BKMK_UpgradeOS"></a> 升級作業系統  
+##  <a name="BKMK_UpgradeOS"></a> 升級作業系統  
  使用 [升級作業系統]  工作順序步驟，將現有的 Windows 7、Windows 8、Windows 8.1 或 Windows 10 作業系統升級為 Windows 10。  
 
  此工作順序步驟只會在標準作業系統中執行。 它不會在 Windows PE 中執行。  
@@ -1693,9 +1694,4 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  指定安裝程式是否將執行動態更新作業，例如搜尋、下載及安裝更新 (對應至 /DynamicUpdate 命令列選項)。 這項設定與 Configuration Manager 軟體更新不相容，但可在使用 WSUS (獨立) 或 Windows Update 處理更新時加以啟用。  
 
  **覆寫原則並使用預設的 Microsoft Update**：選取這項設定可即時暫時覆寫本機原則，以執行動態更新作業，並讓電腦從 Windows Update 取得更新。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
