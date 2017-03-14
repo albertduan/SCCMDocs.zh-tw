@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: aa9e87830a3a51b01fae29b564c9267ec930a60d
 ms.openlocfilehash: 377ed9732fb16b062f53e78504aea394acdb7462
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -47,7 +48,7 @@ ms.openlocfilehash: 377ed9732fb16b062f53e78504aea394acdb7462
 
 5.  若要將新的部署類型新增至該虛擬環境，請選擇 [新增]。 您至少必須新增一種部署類型。  
 
-6.  在 [新增應用程式] 對話方塊中，指定 [群組名稱] (長度上限為 128 個字元)。 您將使用此名稱來表示新增至虛擬環境的應用程式群組。  
+6.  在 [新增應用程式] 對話方塊中，指定 「群組名稱」 (長度上限為 128 個字元)。 您將使用此名稱來表示新增至虛擬環境的應用程式群組。  
 
 7.  選擇 [新增]，選取要新增至該群組的 App-V 5 應用程式及部署類型，然後選擇 [確定]。  
 
@@ -59,9 +60,4 @@ ms.openlocfilehash: 377ed9732fb16b062f53e78504aea394acdb7462
 
     > [!NOTE]  
     >  當已安裝應用程式或是在用戶端下次評估已安裝的應用程式時，便會在用戶端電腦上新增或修改該虛擬環境。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
