@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1511-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1511 中的功能
@@ -28,7 +29,7 @@ ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
 
 以下是您可以使用此版本試用的新功能。  
 
-##  <a name="a-namebkmkwufba-integration-with-windows-update-for-business-in-windows-10"></a><a name="BKMK_WUfB"></a> 與 Windows 10 中的 Windows Update for Business 整合  
+##  <a name="BKMK_WUfB"></a> 與 Windows 10 中的 Windows Update for Business 整合  
  Configuration Manager 現在能夠區分透過 Windows Update for Business (WUfB) 直接連線的 Windows 10 電腦，以及連線至 WSUS 以取得 Windows 10 更新與升級的電腦。  如果電腦是透過 WUfB 連線，則可以依照系統管理使用者透過群組原則或 MDM 原則設定的頻率來管理更新和升級，並可以直接從 WUfB 安裝這些更新/升級。    
 如果電腦是透過 WUfB 連線，Configuration Manager 將無法報告相容性狀態 (包括 Windows Update 或定義更新)。 此外，Configuration Manager 無法將 Microsoft Update 或協力廠商更新部署到這些電腦。  
 
@@ -52,7 +53,7 @@ ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
 
 5.  透過 WUfB 管理的電腦會在相容性狀態中顯示 [不明]  ，而且不會計入整體相容性百分比的一部分。  
 
-##  <a name="a-namebkmkoffice365proplusa-managing-office-365-proplus-client-update-through-system-center-configuration-manager"></a><a name="BKMK_Office365ProPlus"></a> 透過 System Center Configuration Manager 管理 Office 365 ProPlus 用戶端更新  
+##  <a name="BKMK_Office365ProPlus"></a> 透過 System Center Configuration Manager 管理 Office 365 ProPlus 用戶端更新  
  Configuration Manager 現在能夠使用 Configuration Manager 軟體更新管理工作流程，來管理 Office 365 桌面用戶端更新。    
 當 Microsoft 發佈 Windows Server Updates Services (WSUS) 的新 Office 365 桌面用戶端更新時，如果 Office 365 更新已設定為類別目錄同步作業的一部分，Configuration Manager 便能將更新同步處理至其類別目錄。  Configuration Manager 站台伺服器會下載 Office 365 用戶端更新，並將套件發佈至 Configuration Manager 發佈點。  Configuration Manager 用戶端接著會通知 Office 365 桌面用戶端於何處取得更新，以及何時開始更新安裝程序。  
 
@@ -71,7 +72,7 @@ ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
 
  如需詳細步驟，請參閱 [透過 System Center Configuration Manager Technical Preview 管理 Office 365 用戶端更新](https://technet.microsoft.com/library/mt628083.aspx)。  
 
-##  <a name="a-namebkmkalwasyona-support-for-sql-server-alwayson-for-highly-available-databases"></a><a name="BKMK_AlwasyOn"></a> 支援適用於高可用性資料庫的 SQL Server AlwaysOn  
+##  <a name="BKMK_AlwasyOn"></a> 支援適用於高可用性資料庫的 SQL Server AlwaysOn  
  Configuration Manager 現在支援使用 SQL Server AlwaysOn 可用性群組來裝載站台資料庫。  當您安裝新的站台時，您可以指示安裝程式使用可用性群組，而不是一般 SQL Server 執行個體。  
 
 > [!NOTE]  
@@ -147,7 +148,7 @@ ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
 
 3.  提供這項資訊之後，使用您的一般程序和組態來完成安裝。  
 
-##  <a name="a-namebkmkclusterserverupdatesa-service-a--server-cluster"></a><a name="BKMK_ClusterServerUpdates"></a> 提供伺服器叢集服務  
+##  <a name="BKMK_ClusterServerUpdates"></a> 提供伺服器叢集服務  
 您可以立即建立包含叢集中伺服器的集合，然後設定將更新部署到叢集時所要使用的叢集設定。 您可以控制任何指定時間在線上的伺服器百分比，並設定預先部署和部署後 PowerShell 指令碼來執行自訂動作。  
 
 **本版的已知問題：**  
@@ -171,7 +172,7 @@ ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
 
 2.  在 [資產與相容性] 工作區中，按一下 [裝置集合]，再以滑鼠右鍵按一下包含叢集伺服器的集合，然後按一下 [內容]。  
 
-3.  在 [一般] 索引標籤上，選取 [All devices are part of the same server cluster] (所有裝置都屬於相同的伺服器叢集)，然後按一下 [設定]。  
+3.  在 [一般] 索引標籤上，選取 「All devices are part of the same server cluster」 (所有裝置都屬於相同的伺服器叢集)，然後按一下 [設定]。  
 
 4.  在 [叢集設定] 頁面上，選取在安裝軟體更新時可以同時設為離線的伺服器百分比。 不論您提供的百分比為何，有可能一次只有一部叢集伺服器離線。 選取一次要服務幾部伺服器時，Configuration Manager 會無條件捨去成整數。 例如，如果您選擇 51%，且叢集中有 4 部伺服器，則相同時間內會將 2 部伺服器設為離線。  
 
@@ -205,9 +206,4 @@ ms.openlocfilehash: 2e0338267ea9fdc639d57f93adda1e46aea80eec
 1.  [部署軟體更新](https://technet.microsoft.com/library/gg712304.aspx)至伺服器叢集集合。  
 
 2.  [監視軟體更新部署](https://technet.microsoft.com/library/gg712304.aspx)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
