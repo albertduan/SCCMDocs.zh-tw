@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 468673581e0464fab21397c472b76708b8a5438b
 ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
+ms.lasthandoff: 12/31/2016
 
 
 ---
@@ -52,7 +53,7 @@ ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
 
 -   [移轉內容時內容的擁有權](#About_Migrating_Content)  
 
-##  <a name="a-nameaboutshareddpsinmigrationa-share-distribution-points-between-source-and-destination-hierarchies"></a><a name="About_Shared_DPs_in_Migration"></a> 在來源和目的地階層之間共用發佈點  
+##  <a name="About_Shared_DPs_in_Migration"></a> 在來源和目的地階層之間共用發佈點  
 在移轉期間，您可以將來源階層的發佈點與目的地階層共用。 您可以使用共用發佈點將移轉自來源階層的內容立即提供給目的地階層中的用戶端，而不需重新建立該內容，然後將它發佈至目的地階層中的新發佈點。 當目的地階層中的用戶端要求部署至您共用之發佈點的內容時，共用發佈點就可做為有效的內容位置提供給用戶端。  
 
  當來自來源階層的移轉保持作用中，除了目的地階層中用戶端的有效內容位置外，您還可以將發佈點升級或重新指派至目的地階層。 您可以升級 Configuration Manager 2007 共用的發佈點，並重新指派 System Center 2012 Configuration Manager 共用的發佈點。 當您升級或重新指派共用發佈點時，發佈點便會從來源階層移除，並且成為目的地階層中的發佈點。 升級或重新指派共用發佈點之後，您可以在來源階層的移轉完成後繼續使用目的地階層中的發佈點。 如需如何升級共用發佈點的詳細資訊，請參閱[規劃升級 Configuration Manager 2007 共用發佈點](#Planning_to_Upgrade_DPs)。 如需如何重新指派共用發佈點的詳細資訊，請參閱[規劃重新指派 System Center Configuration Manager 發佈點](#BKMK_ReassignDistPoint)。  
@@ -91,7 +92,7 @@ ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
 
 已共用發佈點之後，您就可以變更來源階層中任何共用發佈點的設定。 您對發佈點設定所做的變更會在下一次資料收集週期後反映於目的地階層中。 更新後符合共用資格的發佈點會自動共用，而資格不符的發佈點則會停止共用。 例如，您的發佈點可能未設定為使用內部網路 FQDN 且一開始未與目的地階層共用。 您為該發佈點設定 FQDN 之後，下一次資料收集週期就會識別此設定，而發佈點就會與目的地階層共用。  
 
-##  <a name="a-nameplanningtoupgradedpsa-plan-to-upgrade-configuration-manager-2007-shared-distribution-points"></a><a name="Planning_to_Upgrade_DPs"></a> 規劃升級 Configuration Manager 2007 共用發佈點  
+##  <a name="Planning_to_Upgrade_DPs"></a> 規劃升級 Configuration Manager 2007 共用發佈點  
 從 Configuration Manager 2007 來源階層移轉時，您可以升級共用發佈點使其成為 System Center Configuration Manager 發佈點。 您可以升級主要站台和次要站台的發佈點。 升級程序會從 Configuration Manager 2007 階層移除發佈點，並使其成為目的地階層中的站台系統伺服器。 此程序也會將發佈點上的現有內容複製到發佈點電腦上的新位置。 接著升級程序會修改內容的副本，以建立儲存單一版本搭配目的地階層中的內容部署使用。 因此，當您升級發佈點時，不需要重新發佈 Configuration Manager 2007 發佈點上裝載的移轉內容。  
 
 在 Configuration Manager 將內容轉換成單一執行個體存放區後，Configuration Manager 會刪除發佈點電腦上的原始來源內容以釋出磁碟空間。 Configuration Manager 不使用原始來源內容位置。  
@@ -118,7 +119,7 @@ ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
 
 升級安裝在 Configuration Manager 2007 次要站台伺服器上的發佈點時，會將次要站台從來源階層解除安裝。 雖然此案例稱為次要站台升級，卻只適用於發佈點站台系統角色。 結果是次要站台無法升級，而且會解除安裝。 這會在過去作為次要站台伺服器的電腦上留下目的地階層的發佈點。 如果您打算升級次要站台的發佈點，請參閱本主題的[規劃升級 Configuration Manager 2007 次要站台](#BKMK_UpgradeSS)。  
 
-###  <a name="a-namebkimkupgradeprocessa-distribution-point-upgrade-process"></a><a name="BKIMK_UpgradeProcess"></a> 發佈點升級程序  
+###  <a name="BKIMK_UpgradeProcess"></a> 發佈點升級程序  
 您可以使用 Configuration Manager 主控台，升級您已經與目的地階層共用的 Configuration Manager 2007 發佈點。 當您升級共用的發佈點時，會解除安裝 Configuration Manager 2007 站台的發佈點。 然後，它就會安裝為附加至您在目的地階層中指定的主要或次要站台的發佈點。 升級程序會為儲存在該發佈點上的移轉內容建立副本，然後將此副本轉換成單一執行個體內容存放區。 當 Configuration Manager 將套件轉換成單一執行個體內容存放區時，若該套件的 [從發佈點執行程式] 未設定一或多個公告，就會從發佈點電腦上的 SMSPKG 共用刪除該套件。  
 
 若要升級發佈點，Configuration Manager 會使用設定為從來源站台的 SMS 提供者收集資料的 [來源站台存取帳戶]。 雖然此帳戶只需要站台物件的 [讀取] 權限，即可收集來源站台的資料，它仍必須擁有 [站台] 類別的 [刪除] 和 [修改] 權限，才能在升級期間成功從 Configuration Manager 2007 站台移除發佈點。  
@@ -152,7 +153,7 @@ ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
 
 若您決定不要升級共用發佈點，還是可以在先前的 Configuration Manager 2007 發佈點上安裝來自目的地階層的發佈點。 您必須先從發佈點電腦解除安裝所有 Configuration Manager 2007 站台系統角色，才能安裝新發佈點。 若這是站台伺服器電腦，則包括 Configuration Manager 2007 站台。 解除安裝 Configuration Manager 2007 發佈點時，部署至發佈點的內容並不會從電腦刪除。  
 
-###  <a name="a-namebkmkupgradessa-plan-to-upgrade-configuration-manager-2007-secondary-sites"></a><a name="BKMK_UpgradeSS"></a> 規劃升級 Configuration Manager 2007 次要站台  
+###  <a name="BKMK_UpgradeSS"></a> 規劃升級 Configuration Manager 2007 次要站台  
  使用移轉來升級 Configuration Manager 2007 次要站台伺服器上裝載的共用發佈點時，Configuration Manager 會將發佈點站台系統角色升級為目的地階層的發佈點。 它也會從來源階層解除安裝次要站台。 結果是 System Center Configuration Manager 發佈點，而不是任何次要站台。  
 
  若要讓站台伺服器電腦上的發佈點符合升級條件，Configuration Manager 必須能夠解除安裝次要站台和該電腦上的每個站台系統角色。 一般而言，Configuration Manager 2007 伺服器共用上的共用發佈點都符合升級條件。 不過，次要站台伺服器上存在伺服器共用時，該電腦上的次要站台與任何共用發佈點則都不符合升級資格。 這是因為當升級程序嘗試解除安裝次要站台時，會將伺服器共用視為額外的站台系統物件，此程序就無法解除安裝此物件。 在此案例中，您可以在次要站台伺服器上啟用標準發佈點，然後將內容重新發佈到該標準發佈點。 此程序不會佔用網路頻寬，且當此動作完成時，您就可以解除安裝伺服器共用上的發佈點，移除伺服器共用，然後升級發佈點與次要站台。  
@@ -170,7 +171,7 @@ ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
 
  如需如何升級共用發佈點的詳細資訊，請參閱[規劃升級 Configuration Manager 2007 共用發佈點](#Planning_to_Upgrade_DPs)。  
 
-##  <a name="a-namebkmkreassigndistpointa-plan-to-reassign-system-center-configuration-manager-distribution-points"></a><a name="BKMK_ReassignDistPoint"></a> 規劃重新指派 System Center Configuration Manager 發佈點  
+##  <a name="BKMK_ReassignDistPoint"></a> 規劃重新指派 System Center Configuration Manager 發佈點  
  從 System Center 2012 Configuration Manager 的受支援版本移轉至相同版本的階層時，您可以將共用發佈點從來源階層重新指派到目的地階層中的站台。 這與將 Configuration Manager 2007 發佈點升級成目的地階層中發佈點的概念類似。 您可以重新指派主要站台和次要站台的發佈點。 重新指派發佈點的動作會移除來源階層的發佈點，並且使電腦及其發佈點成為您在目的地階層中所選站台的站台系統伺服器。  
 
  在重新指派發佈點時，您不需要重新發佈裝載在來源站台發佈點上的已移轉內容。 此外，與升級 Configuration Manager 2007 發佈點不同的是，重新指派發佈點的發佈點電腦並不需要有額外的磁碟空間。 這是因為自 System Center 2012 Configuration Manager 開始，發佈點內容會使用單一執行個體存放區格式。 在階層間重新指派發佈點時，不需要轉換發佈點電腦上的內容。  
@@ -181,9 +182,9 @@ ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
 
 -   共用發佈點無法與任何額外站台系統角色共置。  
 
-若要在 Configuration Manager 主控台中識別有資格重新指派的發佈點，請在 [來源階層] 節點中選取來源站台，然後選取 [共用發佈點] 索引標籤。 合格發佈點的 [符合重新指派資格] 欄位中會顯示 [是] (此欄位在 System Center 2012 R2 Configuration Manager 之前的版本中名為 [符合升級資格])。  
+若要在 Configuration Manager 主控台中識別有資格重新指派的發佈點，請在 [來源階層] 節點中選取來源站台，然後選取 [共用發佈點] 索引標籤。 合格發佈點的 [符合重新指派資格] 欄位中會顯示 「是」 (此欄位在 System Center 2012 R2 Configuration Manager 之前的版本中名為 [符合升級資格])。  
 
-###  <a name="a-namebkmkreassignprocessa-distribution-point-reassignment-process"></a><a name="BKMK_ReassignProcess"></a> 發佈點重新指派程序  
+###  <a name="BKMK_ReassignProcess"></a> 發佈點重新指派程序  
  您可以使用 Configuration Manager 主控台，從作用中來源階層重新指派您已經共用的發佈點。 重新指派共用發佈點時，會從其來源站台解除安裝發佈點，然後安裝為附加至您在目的地階層中指定之主要或次要站台的發佈點。  
 
  為重新指派發佈點，目的地階層會使用設定為從來源站台的 SMS 提供者收集資料的 [來源站台存取帳戶]。 如需必要權限和其他必要條件的資訊，請參閱 [Prerequisites for migration in System Center Configuration Manager](../../core/migration/prerequisites-for-migration.md) (在 System Center Configuration Manager 中進行移轉的必要條件)。  
@@ -203,15 +204,10 @@ Configuration Manager 在 1610 版以前，一次只能處理一個發佈點。 
 - 當您使用 Configuration Manager SDK 時，您可以變更 **SharedDPImportThreadLimit**，調整 Configuration Manager 可以平行處理的重新指派發佈點數目。
 
 
-##  <a name="a-nameaboutmigratingcontenta-assign-content-ownership-when-migrating-content"></a><a name="About_Migrating_Content"></a> 移轉內容時指派內容的擁有權  
+##  <a name="About_Migrating_Content"></a> 移轉內容時指派內容的擁有權  
  當您移轉部署的內容時，必須將內容物件指派至目的地階層中的站台。 此站台就會變成目的地階層中該內容的擁有者。 雖然目的地階層的頂層站台是移轉內容中繼資料的站台，但它會是跨網路使用內容原始來源檔案的指派站台。  
 
  若要將移轉內容時佔用的網路頻寬降到最少，您可以考慮將網路上已封閉之目的地階層中站台的內容擁有權轉換至來源階層的內容位置。 因為關於目的地階層中的內容資訊是全域共用，所有每個站台都可使用。  
 
  雖然藉由使用資料庫複寫，就能在所有站台上共用內容相關資訊，您指派至主要站台，然後部署到其他主要站台發佈點的內容仍會依照以檔案為基礎的複寫來傳輸。 這項傳輸是透過管理中心網站路由傳送至其他主要站台。 在您將站台指派為內容擁有者時，藉由在移轉前或移轉期間，將您規劃發佈至多個主要站台的套件集中化，就能跨低頻寬網路來降低資料傳輸量。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

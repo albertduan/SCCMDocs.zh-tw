@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 5e77ebbfd3f3d573d903fe58024a22feb9884e4a
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1611-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1611 中的功能
@@ -61,7 +62,7 @@ ms.openlocfilehash: 5e77ebbfd3f3d573d903fe58024a22feb9884e4a
     ![預先快取選項](media/precacheoptions2.png)  
 
 3. 部署工作順序。 針對預先快取功能，進行下列設定：
-    - 在 [一般] 索引標籤上，選取 [Pre-download content for this task sequence] (此工作順序的下載前內容)。
+    - 在 [一般] 索引標籤上，選取 「Pre-download content for this task sequence」 (此工作順序的下載前內容)。
     - 在 [部署設定] 索引標籤上，將工作順序的 [目的] 設定為 [可用]。 如果您建立 [必要] 部署，預先快取功能將無法運作。
     - 在 [排程] 索引標籤上，針對 [排程此部署的可用時間] 設定選擇一個未來時間，讓用戶端有足夠的時間預先快取內容，再提供部署給使用者。 例如，您可以將可用時間設定為 3 小時後，以允許有足夠的時間可預先快取內容。  
     - 在 [發佈點] 索引標籤上，設定 [部署選項] 設定。 如果在使用者開始安裝之前未在用戶端預先快取內容，則會使用這些設定。
@@ -75,9 +76,4 @@ ms.openlocfilehash: 5e77ebbfd3f3d573d903fe58024a22feb9884e4a
 
 ## <a name="see-also"></a>另請參閱
 [System Center Configuration Manager 的 Technical Preview](../../core/get-started/technical-preview.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

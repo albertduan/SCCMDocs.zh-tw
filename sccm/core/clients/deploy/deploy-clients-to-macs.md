@@ -177,7 +177,7 @@ ms.lasthandoff: 01/04/2017
 
     c.  展開金鑰以檢視用戶端憑證。 若找到您剛安裝的憑證及其私密金鑰，請按兩下該金鑰。  
 
-    d.  在 [存取控制] 索引標籤上，選擇 [Confirm before allowing access] (允許存取前先確認)。  
+    d.  在 [存取控制] 索引標籤上，選擇 「Confirm before allowing access」 (允許存取前先確認)。  
 
     e.  瀏覽至 **/Library/Application Support/Microsoft/CCM**，選取 [CCMClient]，然後選擇 [新增]。  
 
@@ -231,7 +231,7 @@ ms.lasthandoff: 01/04/2017
 
     c.  展開金鑰以檢視用戶端憑證。 若找到您剛安裝的憑證及其私密金鑰，請按兩下該金鑰。  
 
-    d.  在 [存取控制] 索引標籤上，選擇 [Confirm before allowing access] (允許存取前先確認)。  
+    d.  在 [存取控制] 索引標籤上，選擇 「Confirm before allowing access」 (允許存取前先確認)。  
 
     e.  瀏覽至 **/Library/Application Support/Microsoft/CCM**，選取 [CCMClient]，然後選擇 [新增]。  
 
