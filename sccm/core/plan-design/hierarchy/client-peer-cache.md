@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2dd898c9b022c6f0bc243623835af0eece94128f
-ms.openlocfilehash: 95d1671501f672e1d5abe3f0fbbd7d2dfb21e0a3
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: 895b8ae58a9fda3fd22f58d77129053df09c4ccb
+ms.lasthandoff: 03/04/2017
 
 ---
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 用戶端的對等快取
@@ -28,7 +29,7 @@ ms.openlocfilehash: 95d1671501f672e1d5abe3f0fbbd7d2dfb21e0a3
 從 System Center Configuration Manager 版本 1610 開始，您可以使用**對等快取**，以協助管理將內容部署至遠端位置的用戶端。 對等快取是一個內建的 Configuration Manager 解決方案，可讓用戶端直接將其本機快取的內容與其他用戶端共用。   
 
 > [!TIP]  
-> 在版本 1610，對等快取和用戶端資料來源儀表板都是發行前版本功能。 若要啟用它們，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)。
+> 對等快取和用戶端資料來源儀表板，都是在版本 1610 引進的發行前版本功能。 若要啟用它們，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/pre-release-features)。
 
  -     您可以使用用戶端設定，讓使用端能夠使用對等快取。
  -     若要共用內容，這兩個對等快取用戶端都必須是搜尋內容的用戶端目前界限群組的成員。 當用戶端使用後援來搜尋鄰近界限群組的內容時，鄰近界限群組中的對等快取用戶端不會包含於可用內容來源位置的集區中。 如需目前和鄰近界限群組的詳細資訊，請參閱[界限群組](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups##a-namebkmkboundarygroupsa-boundary-groups)。
@@ -66,9 +67,4 @@ ms.openlocfilehash: 95d1671501f672e1d5abe3f0fbbd7d2dfb21e0a3
   -  **用於從對等節點下載內容的連接埠 (HTTP/HTTPS)**
 
 在為對等快取啟用的每一部電腦上，如果 Windows 防火牆正在使用中，Configuration Manager 就會設定它，以便使用您設定的連接埠。
-
-
-
-<!--HONumber=Feb17_HO4-->
-
 

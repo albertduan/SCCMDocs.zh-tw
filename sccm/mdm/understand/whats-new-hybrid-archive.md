@@ -16,9 +16,9 @@ ms.author: mtillman
 manager: angrobe
 ROBOTS: NOINDEX, NOFOLLOW
 translationtype: Human Translation
-ms.sourcegitcommit: bd870d66bb1a482cb5985f1fc0fe66a7dee206eb
-ms.openlocfilehash: d286b038c900873154d3a0761aa1eaface47e186
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 623a30eddebcae196ff345ef5debc8183ecd6ae6
+ms.lasthandoff: 03/16/2017
 
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 過去的混合式功能
@@ -440,7 +440,7 @@ Configuration Manager 2016 年 6 月 (最新分支) 未推出任何新的混合�
 
 - **Android 和 iOS 公司入口網站應用程式的增強功能**
 
-  -   當使用者啟動受行動應用程式管理 (MAM) 管理的應用程式時，會看到應用程式受公司管理的通知訊息。 使用者現在可以點選 [Learn More] (深入了解) 連結，了解「受管理應用程式」意義的詳細資訊。 他們也可以點選 [Don’t Show Again] (不要再顯示)，在啟動應用程式時不再顯示訊息。  
+  -   當使用者啟動受行動應用程式管理 (MAM) 管理的應用程式時，會看到應用程式受公司管理的通知訊息。 使用者現在可以點選「Learn More」(深入了解) 連結，了解「受管理應用程式」意義的詳細資訊。 他們也可以點選「Don’t Show Again」(不要再顯示)，在啟動應用程式時不再顯示訊息。  
 
   -   已加入新畫面來引導使用者進行註冊程序，並提供使用者應該註冊的原因，以及 IT 系統管理員可在已註冊裝置上看見與否之內容的詳細資訊。  
 
