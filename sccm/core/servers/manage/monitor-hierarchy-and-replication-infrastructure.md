@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 132803a1aa9aad5c5462686bd656688418e47d07
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -29,7 +30,7 @@ ms.openlocfilehash: 132803a1aa9aad5c5462686bd656688418e47d07
 若要監視 System Center Configuration Manager 的基礎結構和作業，請使用 Configuration Manager 主控台的 [監視] 工作區。  
 
 > [!NOTE]  
->  此位置的例外狀況為移轉，移轉可以直接在 [系統管理]  工作區的 [移轉]  節點中進行監視。 如需詳細資訊，請參閱 [Operations for migrating to System Center Configuration Manager](../../../core/migration/operations-for-migration.md)。  
+>  此位置的例外狀況為移轉，移轉可以直接在 [系統管理]  工作區的 [移轉]  節點中進行監視。 如需詳細資訊，請參閱 [移轉到 System Center Configuration Manager 的作業](../../../core/migration/operations-for-migration.md)。  
 
  除了使用 Configuration Manager 主控台進行監視，您還可以使用 Configuration Manager 報告，或檢視 Configuration Manager 元件的 Configuration Manager 記錄檔。 如需報告的資訊，請參閱 [System Center Configuration Manager 中的報告](../../../core/servers/manage/reporting.md)。 如需記錄檔的資訊，請參閱 [System Center Configuration Manager 中的記錄檔](../../../core/plan-design/hierarchy/log-files.md)。  
 
@@ -55,7 +56,7 @@ ms.openlocfilehash: 132803a1aa9aad5c5462686bd656688418e47d07
 
 
 
-##  <a name="a-namebkmkmonintormgmttasksa-monitor--common-management-tasks-for-configuration-manager"></a><a name="BKMK_MonintorMgmtTasks"></a> 監視 Configuration Manager 的一般管理工作  
+##  <a name="BKMK_MonintorMgmtTasks"></a> 監視 Configuration Manager 的一般管理工作  
  Configuration Manager 從 Configuration Manager 主控台內提供內建的監視。 您可以監視許多工作，包括與軟體更新、電源管理，以及整個階層中的內容部署相關的工作。  
 
  請參考下列資訊來協助您監視常見的 Configuration Manager 工作：  
@@ -87,10 +88,10 @@ ms.openlocfilehash: 132803a1aa9aad5c5462686bd656688418e47d07
  請參閱[在 System Center Configuration Manager 中監視軟體更新](../../../sum/deploy-use/monitor-software-updates.md)。  
 
 
-##  <a name="a-namebkmkmonitorinfrastructurea-monitor-hierarchy-infrastructure-for-configuration-manager"></a><a name="BKMK_MonitorInfrastructure"></a> 監視 Configuration Manager 的階層基礎結構  
+##  <a name="BKMK_MonitorInfrastructure"></a> 監視 Configuration Manager 的階層基礎結構  
 Configuration Manager 提供數種可監視階層狀態和操作的方法。 您可以檢查整個階層上站台的系統狀態、監視來自站台階層或地理檢視的站台內複寫、監視站台間資料庫複寫的複寫連結，以及使用複寫連結分析師工具補救複寫問題。  
 
-###  <a name="a-namebkmkshnodea-about-the-site-hierarchy-node"></a><a name="BKMK_SH_Node"></a> 關於站台階層節點  
+###  <a name="BKMK_SH_Node"></a> 關於站台階層節點  
 [監視] 工作區的 [站台階層] 節點提供您 Configuration Manager 階層和站台間連結的概觀。 您可以使用兩種檢視：  
 
 -   **階層圖**：此檢視會以拓撲圖顯示您的階層，該圖已簡化為只顯示重要資訊。  
@@ -126,13 +127,13 @@ Configuration Manager 提供數種可監視階層狀態和操作的方法。 您
 
      當您指定某個位置時，可使用 [位置]  方塊來搜尋階層中的特定站台。 選取站台之後，請在 [位置]  資料行輸入位置的縣 (市) 名稱或街道地址。 Configuration Manager 使用 Bing 地圖服務以解析此位置。  
 
-###  <a name="a-namebkmkmonitorreplinksandstatussa-how-to-monitor-database-replication-links-and-replication-status"></a><a name="BKMK_MonitorRepLinksAndStatuss"></a> 如何監視資料庫複寫連結和複寫狀態  
+###  <a name="BKMK_MonitorRepLinksAndStatuss"></a> 如何監視資料庫複寫連結和複寫狀態  
  除了從 [監視]  工作區的 [站台階層]  節點存取高階詳細資料， 您也可以在使用 [監視]  工作區的 [資料庫複寫]  節點時，監視資料庫複寫的詳細資料。 您可以從 [資料庫複寫] 監視站台間複寫連結的狀態，以及您的 Configuration Manager 主控台所連線之站台上複寫群組的初始化詳細資料和複寫詳細資料。  
 
 > [!TIP]  
 >  雖然 [資料庫複寫]  節點也會顯示在 [系統管理]  工作區的 [階層設定]  節點中，但您無法從該位置檢視資料庫複寫連結的複寫狀態。  
 
-####  <a name="a-namebkmkmonitorreplicationlinksa-replication-link-status"></a><a name="BKMK_MonitorReplicationLinks"></a> 複寫連結狀態  
+####  <a name="BKMK_MonitorReplicationLinks"></a> 複寫連結狀態  
 站台間的資料庫複寫包含多組資訊的複寫，稱為複寫群組。 每個複寫群組會以不同複寫優先順序進行複寫。 根據預設，複寫群組中包含的資料和複寫的頻率都無法修改。  
 
  當複寫連結在使用中時，而且沒有失敗或降級的狀態時，會及時複寫所有的複寫群組。 當一個或多個複寫群組無法在預訂的時間內完成複寫時，該連結會顯示為降級狀態。 降級的連結仍然可以運作，但您應該監視這些連結，確定它們是否返回使用中狀態，或調查它們以確定未發生其他降級或複寫失敗情形。  
@@ -149,7 +150,7 @@ Configuration Manager 提供數種可監視階層狀態和操作的方法。 您
 
  當父站台正在升級到新的 Service Pack，而且您正在從子站台檢視連結狀態時，連結狀態會顯示為使用中。 升級後，要等到子站台與父站台使用相同的 Service Pack 時，從父站台檢視時連結狀態會顯示為使用中，而從子站台檢視時會顯示為已設定。  
 
-####  <a name="a-namebkmkmonitorreplicationstatusa-replication-status"></a><a name="BKMK_MonitorReplicationStatus"></a> 複寫狀態  
+####  <a name="BKMK_MonitorReplicationStatus"></a> 複寫狀態  
  您可以使用 [監視]  工作區的 [資料庫複寫]  節點來檢視複寫連結的複寫狀態，以及檢視與複寫連結上各個站台的站台資料庫相關詳細資料。 您也可以檢視與複寫群組相關的詳細資料。 若要檢視詳細資料，請選取複寫連結，然後針對您要檢視的複寫狀態選取適當的索引標籤。 以下是複寫狀態之各種不同索引標籤的相關詳細資料。  
 
  **摘要**  
@@ -190,7 +191,7 @@ Configuration Manager 提供數種可監視階層狀態和操作的方法。 您
 > [!TIP]  
 >  站台資料的複寫群組只會從子站台傳送至父站台。 全域資料的複寫群組則會雙向複寫。  
 
-###  <a name="a-namebkmkrlaa-about-the-replication-link-analyzer"></a><a name="BKMK_RLA"></a> 關於複寫連結分析師  
+###  <a name="BKMK_RLA"></a> 關於複寫連結分析師  
  Configuration Manager 包含**複寫連結分析師**，可用來分析及修復複寫問題。 您可以使用複寫連結分析師在複寫失敗時，以及在複寫停止運作但尚未回報失敗時，補救複寫連結錯誤。 複寫連結分析師可用來補救 Configuration Manager 階層中下列電腦之間的複寫問題 (複寫失敗的方向沒有影響)：  
 
 -   站台伺服器和站台資料庫伺服器之間。  
@@ -229,7 +230,7 @@ Configuration Manager 提供數種可監視階層狀態和操作的方法。 您
 
 -   隨著 System Center Configuration Manager 1511 版的發行，複寫連結分析師在從 System Center 2012 Configuration Manager 升級的主要站台中會產生 SQL Server Service Broker 憑證錯誤。 這是因為 1511 版本導入了憑證名稱變更，但複寫連結分析師尚未更新。 忽略這些錯誤並無大礙。  
 
-###  <a name="a-namebkmkprocsformonitoringreplicationa-procedures-for-monitoring-database-replication"></a><a name="BKMK_ProcsforMonitoringReplication"></a> 監視資料庫複寫的程序  
+###  <a name="BKMK_ProcsforMonitoringReplication"></a> 監視資料庫複寫的程序  
 
 ##### <a name="to-monitor-high-level-site-to-site-database-replication-status"></a>若要監視高階站台對站台資料庫複寫狀態    
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
@@ -242,9 +243,4 @@ Configuration Manager 提供數種可監視階層狀態和操作的方法。 您
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
 2.  在 [監視]  工作區中，按一下 [資料庫複寫] ，然後選取您要監視之連結的複寫連結。 然後在工作區中，選取適當的索引標籤檢視有關該連結之複寫狀態的各種不同詳細資料。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
