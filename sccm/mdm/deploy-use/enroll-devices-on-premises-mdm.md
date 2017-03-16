@@ -1,9 +1,9 @@
 ---
 
-title: "註冊裝置 | Microsoft Docs | MDM System Center"
+title: "註冊裝置 | Microsoft Docs"
 description: "了解在 System Center Configuration Manager 中註冊裝置以進行內部行動裝置管理的方法。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: 9ecfef871b9082aad4c8f0cf933f963efd57c292
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 8f9667388c3557a84fc84c742e25f0c3bd2e2a5f
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -44,9 +45,4 @@ ms.openlocfilehash: 9ecfef871b9082aad4c8f0cf933f963efd57c292
 > -   Windows 10 團隊版 \(從 Configuration Manager 1602 版開始\)  
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise   
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 321b19b2-a093-4b8f-995f-41f74b886eb5
 caps.latest.revision: 13
 caps.handback.revision: 0
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
-ms.openlocfilehash: 7d42ec89300d4eb6b02bafb3f83d341f8e3ca0c0
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: f1ae976899de1fd3efcbde0c7268f071a5d0218b
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -39,15 +40,9 @@ ms.openlocfilehash: 7d42ec89300d4eb6b02bafb3f83d341f8e3ca0c0
 
 -   執行 Windows RT 8.1 的裝置  
 
--   執行 Windows Phone 8.1 的裝置  
-
 -   執行 Windows 10 Desktop 或 Windows 10 行動裝置版的裝置  
 
--   執行 iOS 5、iOS 6、iOS 7 與 iOS 8 的 iPhone 裝置  
-
--   執行 iOS 5、iOS 6、iOS 7 與 iOS 8 的 iPad 裝置  
-
--   執行版本 4 或更新版本的 Android 裝置
+[建立行動裝置的 Wi-Fi 設定檔](../../mdm/deploy-use/create-wifi-profiles.md)提供有關如何使用 Configuration Manager 中的 Wi-Fi 設定檔，將無線網路設定部署至行動裝置使用者的詳細資訊。
 
 > [!IMPORTANT]  
 >  若要將設定檔部署到 Android、iOS、Windows Phone 和已註冊的 Windows 8.1 或更新版本的裝置，必須在 Microsoft Intune 註冊這些裝置。 如需如何註冊裝置的相關資訊，請參閱[在 Intune 中註冊裝置以進行管理](https://docs.microsoft.com/intune/deploy-use/enroll-devices-in-microsoft-intune)。  
@@ -56,9 +51,9 @@ ms.openlocfilehash: 7d42ec89300d4eb6b02bafb3f83d341f8e3ca0c0
 
 ## <a name="create-a-wi-fi-profile"></a>建立 Wi-Fi 設定檔  
 
-1.  在 Configuration Manager 主控台中，選擇 [資產與相容性] > [相容性設定] >  [公司資源存取] > [Wi-Fi 設定檔]。  
+1.  在 Configuration Manager 主控台中，選擇 [資產與合規性] > [合規性設定] >  [公司資源存取] > [Wi-Fi 設定檔]。  
 
-3.  在 [首頁] 索引標籤的 [建立] 群組中，選擇 [建立 Wi-Fi 設定檔]。  
+3.  在 [常用] 索引標籤的 [建立] 群組中，選擇 [建立 Wi-Fi 設定檔]。  
 
 1.  在 [一般] 頁面上，輸入此 Wi-Fi 設定檔的唯一名稱和描述。  如果您想要使用另一個 Wi-Fi 設定檔的設定，請選取 **[從檔案匯入現有的 Wi-Fi 設定檔項目]**。  
 
@@ -92,7 +87,7 @@ ms.openlocfilehash: 7d42ec89300d4eb6b02bafb3f83d341f8e3ca0c0
     >  安全性類型： **WPA2 Enterprise** 或 **WPA2 Personal**  
     > 加密類型： **AES** 或 **TKIP**  
     > EAP 類型： **智慧卡或其他憑證** 或 **PEAP**  
-  
+
     > 針對 Android 裝置，不支援 [WPA Personal]、[WPA2 Personal] 和 [WEP] 安全性類型。  
 
 2.  選取無線網路使用的加密方法。  
@@ -133,9 +128,4 @@ ms.openlocfilehash: 7d42ec89300d4eb6b02bafb3f83d341f8e3ca0c0
 
 ### <a name="next-steps"></a>後續步驟
  如需如何部署 Wi-Fi 設定檔的資訊，請參閱 [How to deploy Wi-Fi profiles in System Center Configuration Manager](deploy-wifi-vpn-email-cert-profiles.md) (如何在 System Center Configuration Manager 中部署 Wi-Fi 設定檔)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

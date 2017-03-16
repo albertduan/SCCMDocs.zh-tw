@@ -2,7 +2,7 @@
 title: "維護工作的參考 | Microsoft Docs"
 description: "請詳讀每個 System Center Configuration Manager 站台維護工作的詳細資料，並了解預設是否會啟用這些工作。"
 ms.custom: na
-ms.date: 2/7/2017
+ms.date: 3/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6e19d1239cb61b570203fdd13563d5f8c5afc6ad
-ms.openlocfilehash: d2e53e7c0cd0dd1a97d3620a14a15369e1d7e0ec
+ms.sourcegitcommit: dcbcd57b95f304f007e92ebe2b9aeefb4b579662
+ms.openlocfilehash: 92d3c215569916a5557309d7f488aa88f387da92
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -52,6 +53,11 @@ ms.openlocfilehash: d2e53e7c0cd0dd1a97d3620a14a15369e1d7e0ec
 -   **主要站台**：已啟用    
 -   次要站台：無法使用  
 
+**刪除過時用戶端下載歷程記錄**：使用此工作可刪除有關用戶端所使用下載來源的歷史資料。 下載來源資訊會用來填入[用戶端資料來源儀表板](/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard)。  
+-  管理中心網站 - 無法使用
+-     **主要站台** - 已啟用
+-  次要站台 - 無法使用
+
 **刪除過時用戶端操作**：使用此工作可從站台資料庫中，刪除過時的用戶端操作資料。 比方說，這包括過時或過期的用戶端通知資料 (例如電腦或使用者原則的下載要求)，以及 Endpoint Protection 資料 (例如系統管理使用者要讓用戶端執行掃描或下載更新定義的要求)。
 
 -   **管理中心網站** - 已啟用    
@@ -63,6 +69,12 @@ ms.openlocfilehash: d2e53e7c0cd0dd1a97d3620a14a15369e1d7e0ec
 -   **管理中心網站** - 已啟用   
 -   **主要站台**：已啟用    
 -   次要站台：無法使用  
+
+**刪除過時的雲端管理閘道流量資料**：使用此工作可從站台資料庫中，刪除所有通過[雲端管理閘道](/sccm/core/clients/manage/plan-cloud-management-gateway)，且與過時資料相關的流量。 例如，其中包含有關要求數量、總要求位元組、總回應位元組、失敗的要求數量，以及目前要求的最大數量。  
+- **管理中心網站** - 已啟用
+- **主要站台** - 已啟用
+- 次要站台 - 無法使用
+
 
 **刪除過時收集檔案**：使用此工作可從資料庫中，刪除已收集檔案的相關過時資訊。 此工作也會從選定網站的網站伺服器資料夾結構中刪除收集檔案。 根據預設，會將&5; 個收集檔案的最新複本儲存在 **Inboxes\sinv.box\FileCol** 目錄的網站伺服器上。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的軟體清查簡介](/sccm/core/clients/manage/inventory/introduction-to-software-inventory)。  
 
@@ -227,6 +239,11 @@ ms.openlocfilehash: d2e53e7c0cd0dd1a97d3620a14a15369e1d7e0ec
 -   **主要站台**：已啟用    
 -   次要站台：無法使用  
 
+**刪除孤立的用戶端部署狀態記錄**：使用此工作可定期清除包含用戶端部署狀態資訊的資料表。 此工作可清理有關已淘汰或已退役裝置的記錄。  
+-   **管理中心網站** - 已啟用    
+-   **主要站台**：已啟用    
+-   次要站台：無法使用 
+
 **刪除未使用的應用程式修訂**：使用此工作可刪除已不再參考的應用程式修訂。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中修改和取代應用程式](../../../apps/deploy-use/revise-and-supersede-applications.md)。  
 
 -   管理中心網站：無法使用    
@@ -288,9 +305,4 @@ ms.openlocfilehash: d2e53e7c0cd0dd1a97d3620a14a15369e1d7e0ec
 -   管理中心網站：無法使用    
 -   **主要站台**：已啟用    
 -   次要站台：無法使用  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

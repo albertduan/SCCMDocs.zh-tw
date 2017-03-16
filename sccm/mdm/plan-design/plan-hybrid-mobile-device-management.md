@@ -2,7 +2,7 @@
 title: "混合式 MDM 規劃 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理方案。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,26 +17,24 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 11e24eb24fdb563dd0be4f413b11622ceecab67b
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 814fb545dae35c582146450c316446c21191002f
+ms.lasthandoff: 03/06/2017
 
 ---
 # <a name="plan-for-hybrid-mobile-device-management-mdm-with-system-center-configuration-manager-and-microsoft-intune"></a>使用 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM) 方案
 
-*適用對象：System Center Configuration Manager (最新分支)*
-
-使用 Microsoft Intune 且配有 Configuration Manager 的行動裝置管理，支援下列行動裝置平台︰
-
-
-[!INCLUDE[../includes/mdm-supported-devices](../includes/mdm-supported-devices.md)]
+*適用於：System Center Configuration Manager (最新分支)*
 
 您只能使用一種管理解決方案，即行動裝置管理授權單位，來管理您的行動裝置。 設定此設定之前，您應該[選擇單獨使用 Microsoft Intune 或搭配 Configuration Manager 的混合式行動裝置管理](../understand/choose-between-standalone-intune-and-hybrid-mobile-device-management.md)。
 
-## <a name="next-steps"></a>後續步驟
+此外，[Intune 部署規劃、設計與實作指南](https://docs.microsoft.com/en-us/intune/plan-design/introduction)提供有關開發部署計畫、建立設計、讓 Intune 上線，以及執行生產首展之程序的大量資訊。
+
+- [支援的裝置平台](supported-device-platforms-for-hybrid.md)顯示 Configuration Manager 使用 Microsoft Intune 支援的行動裝置平台。
+
+- [裝置註冊方法](device-enrollment-methods.md)提供有關如何註冊公司擁有與使用者擁有的裝置與其支援功能的相關資訊。
+
+
+### <a name="next-steps"></a>後續步驟
  [安裝混合式 MDM](../deploy-use/setup-hybrid-mdm.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

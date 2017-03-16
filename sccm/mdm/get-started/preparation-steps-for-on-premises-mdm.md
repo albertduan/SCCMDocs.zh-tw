@@ -1,8 +1,8 @@
 ---
-title: "準備步驟 | Microsoft Docs | 內部部署 MDM"
+title: "準備步驟 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中準備使用內部部署行動裝置管理來管理裝置。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: a5c9fa5994f9b7bd13fe53edb6998609852b98ca
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 2ba11c8e2d8214ce9aca7c887fcb539b38da4e84
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -25,28 +26,23 @@ ms.openlocfilehash: a5c9fa5994f9b7bd13fe53edb6998609852b98ca
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-使用 System Center Configuration Manager 內部部署行動來裝置管理需要設定 Configuration Manager 基礎結構，以便必要的站台系統角色 (註冊 Proxy 點、註冊點、裝置管理點和發佈點) 可透過受信任的通道，與要管理的行動裝置通訊。  
+使用 System Center Configuration Manager 內部部署行動來裝置管理需要設定 Configuration Manager 基礎結構，以便必要的站台系統角色 (註冊 Proxy 點、註冊點、裝置管理點和發佈點) 可透過受信任的通道與要管理的行動裝置通訊。  
 
  下列高階工作為準備 Configuration Manager 系統用於內部部署行動裝置管理所需：  
 
 -   [在 System Center Configuration Manager 中為內部部署行動裝置管理設定 Microsoft Intune 訂閱](../../mdm/get-started/set-up-intune-subscription-on-premises-mdm.md)  
 
-     在這項工作中，您會註冊 Microsoft Intune，然後透過 Configuration Manager 主控台新增對 Configuration Manager 的訂閱。 此步驟僅供授權之用。 不會使用 Intune 來管理裝置或儲存管理資訊。 組織企業的所有裝置協調和管理都是使用內部部署 Configuration Manager 基礎結構進行。  
+     在此工作中，您會註冊 Microsoft Intune，然後透過 Configuration Manager 主控台新增對 Configuration Manager 的訂閱。 此步驟僅供授權之用。 不會使用 Intune 來管理裝置或儲存管理資訊。 組織企業的所有裝置協調和管理都是使用內部部署 Configuration Manager 基礎結構進行。  
 
 -   [在 System Center Configuration Manager 中為內部部署行動裝置管理安裝站台系統角色](../../mdm/get-started/install-site-system-roles-for-on-premises-mdm.md)  
 
-     在這項工作中，您會安裝和設定管理具有內部部署 Configuration Manager 基礎結構的裝置時所需的站台系統角色。 內部部署行動裝置管理至少需要註冊 Proxy 點、註冊點、裝置管理點和發佈點站台系統角色。  
+     在此工作中，您會安裝和設定使用內部部署 Configuration Manager 基礎結構來管理裝置時所需的站台系統角色。 內部部署行動裝置管理至少需要註冊 Proxy 點、註冊點、裝置管理點和發佈點站台系統角色。  
 
 -   [在 System Center Configuration Manager 中為內部部署行動裝置管理設定受信任通訊的憑證](../../mdm/get-started/set-up-certificates-on-premises-mdm.md)  
 
-     在這項工作中，您會設定內部部署 Configuration Manager 基礎結構，允許受管理裝置與裝載所需站台系統角色的伺服器之間進行信任的通訊 (HTTPS)。  
+     在此工作中，您會設定內部部署 Configuration Manager 基礎結構，允許受管理裝置與裝載所需站台系統角色的伺服器之間進行信任的通訊 (HTTPS)。  
 
 -   [在 System Center Configuration Manager 中為內部部署行動裝置管理設定裝置註冊](../../mdm/get-started/set-up-device-enrollment-on-premises-mdm.md)  
 
-     在這項工作中，您會授與權限給使用者來註冊電腦和裝置，而且您會在裝置 (通常是未加入網域的裝置) 上安裝受信任的根憑證，來允許對站台系統伺服器的 HTTPS 連線。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+     在此工作中，您會授與權限給使用者來註冊電腦和裝置，而且您會在裝置 (通常是未加入網域的裝置) 上安裝受信任的根憑證，來允許對站台系統伺服器的 HTTPS 連線。  
 

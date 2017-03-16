@@ -2,7 +2,7 @@
 title: "移轉必要條件 | Microsoft Docs"
 description: "了解所支援版本的 Configuration Manager、所支援來源站台語言，以及必要設定，以進行移轉。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 3/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6cbb790df47c9a87514b0233e2d0c12dd6f23ee9
-ms.openlocfilehash: 70e2531076abedc1381b6e3bccf15b5afe27b465
+ms.sourcegitcommit: ee7f69bd65152deffb2456d9807e1e8fee8802ec
+ms.openlocfilehash: cd90f5462ac4bb4c0a2021e6d5dde65161b9c5f6
+ms.lasthandoff: 03/07/2017
 
 
 ---
@@ -36,19 +37,22 @@ ms.openlocfilehash: 70e2531076abedc1381b6e3bccf15b5afe27b465
 
 -   [移轉的必要組態](#BKMK_Required_Configurations)  
 
-##  <a name="a-namebkmksupportedmigrationversionsa-versions-of-configuration-manager-that-are-supported-for-migration"></a><a name="BKMK_SupportedMigrationVersions"></a> 支援移轉的 Configuration Manager 版本  
+##  <a name="BKMK_SupportedMigrationVersions"></a> 支援移轉的 Configuration Manager 版本  
  您可以從執行下列任一版本之 Configuration Manager 的來源階層移轉資料：  
 
--   Configuration Manager 2007 SP2 (就移轉而言，來源站台上的 Configuration Manager 2007 R2 或 R3 不是考量的重點。 只要來源站台執行 SP2，無論是 R2 或 R3，都支援將安裝的附加元件移轉到 System Center Configuration Manager)  
+-   Configuration Manager 2007 SP2 (就移轉而言，來源站台上的 Configuration Manager 2007 R2 或 R3 不是考量的重點。 只要來源站台執行 SP2，無論安裝的是 R2 或 R3 附加元件，都支援移轉到 System Center Configuration Manager)。  
 
--   System Center 2012 Configuration Manager SP2 或 System Center 2012 R2 Configuration Manager SP1  
+-   System Center 2012 Configuration Manager SP2 或 System Center 2012 R2 Configuration Manager SP1。  
 
     > [!TIP]  
     >  除了移轉之外，您還可以將執行 System Center 2012 Configuration Manager 的站台就地升級至 System Center Configuration Manager。  
 
--   相同或較低版本的 System Center Configuration Manager 的 System Center Configuration Manager 階層  
+-   相同或較低版本的 System Center Configuration Manager 的 System Center Configuration Manager 階層。  
 
-##  <a name="a-namebkmksorcesitelanguagea-source-site-languages-that-are-supported-for-migration"></a><a name="BKMK_SorceSiteLanguage"></a> 支援移轉的來源站台語言  
+  例如，如果您有執行 System Center Configuration Manager 1606 的目的地階層，您可以使用移轉，從執行 1606 版或 1602 版的來源階層複製資料。 不過，您無法從執行 1610 的來源階層移轉資料。  
+
+
+##  <a name="BKMK_SorceSiteLanguage"></a> 支援移轉的來源站台語言  
  您在 Configuration Manager 階層之間移轉資料時，資料會以非語言相關格式儲存在 System Center Configuration Manager 的目的地階層中。 因為 Configuration Manager 2007 不會以非語言相關格式儲存資料，所以移轉程序必須在移轉期間從 Configuration Manager 2007 將物件轉換成此格式。 因此，只有以下列語言安裝的 Configuration Manager 2007 來源站台支援移轉：  
 
 -   英文  
@@ -69,7 +73,7 @@ ms.openlocfilehash: 70e2531076abedc1381b6e3bccf15b5afe27b465
 
 從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 階層移轉資料時，不會限制來源站台語言。 來源站台資料庫中的語言已採用非語言相關的格式。  
 
-##  <a name="a-namebkmkrequiredconfigurationsa-required-configurations-for-migration"></a><a name="BKMK_Required_Configurations"></a> 移轉的必要組態  
+##  <a name="BKMK_Required_Configurations"></a> 移轉的必要組態  
 以下是使用使用移轉和移轉作業所需的組態︰  
 
 -   **在 Configuration Manager 主控台中設定、執行和監視移轉：**  
@@ -82,7 +86,7 @@ ms.openlocfilehash: 70e2531076abedc1381b6e3bccf15b5afe27b465
 
     -   **來源站台帳戶：** 此帳戶可用於存取來源站台的 SMS 提供者。  
 
-        -   若是 Configuration Manager 2007 SP2 來源站台，此帳戶需要所有來源站台物件的 [讀取] 權限。  
+        -   若是 Configuration Manager&2007; SP2 來源站台，此帳戶需要所有來源站台物件的 [讀取] 權限。  
 
         -   若是 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源站台，此帳戶需要所有來源站台物件的 [讀取] 權限。您可以使用角色為基礎的系統管理將此權限授與帳戶。 如需如何使用以角色為基礎之系統管理的相關資訊，請參閱 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)。  
 
@@ -118,14 +122,9 @@ ms.openlocfilehash: 70e2531076abedc1381b6e3bccf15b5afe27b465
 
      設定用來從來源站台的 SMS Provider 收集資料的 [來源站台存取帳戶]  必須具備下列權限：  
 
-    -   若要升級 Configuration Manager 2007 發佈點，帳戶需要 Configuration Manager 2007 站台伺服器上 [站台] 類別的 [讀取]、[執行] 和 [刪除] 權限，才能成功從 Configuration Manager 2007 來源站台移除發佈點。  
+    -   若要升級 Configuration Manager&2007; 發佈點，帳戶需要 Configuration Manager&2007; 站台伺服器上 [站台] 類別的 [讀取]、[執行] 和 [刪除] 權限，才能成功從 Configuration Manager&2007; 來源站台移除發佈點。  
 
     -   若要重新指派 System Center 2012 Configuration Manager 或 System Center Configuration Manager 發佈點，帳戶在來源站台上必須具備 [站台] 物件的 [修改] 權限。 您可以使用角色為基礎的系統管理將此權限授與帳戶。 如需如何使用以角色為基礎之系統管理的相關資訊，請參閱 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)。  
 
      若要成功升級或重新指派發佈點至新階層，針對管理來源階層中發佈點之站台的用戶端要求所設定的連接埠，必須與針對將管理發佈點之目的地站台的用戶端要求所設定的連接埠相符。 如需用戶端要求連接埠的資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端通訊連接埠](../../core/clients/deploy/configure-client-communication-ports.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
