@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 24a233516058e645df2a43623855665b97b041b0
 ms.openlocfilehash: 9c0165212fe34f460be2ce870d0542b616f3bc4d
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -31,12 +32,7 @@ ms.openlocfilehash: 9c0165212fe34f460be2ce870d0542b616f3bc4d
 
 -   **在線上模式中** ：會自動從服務連接點每週傳送一次診斷和使用方式資料給雲端服務。  
 
--   **在離線模式中︰** 需使用服務連線工具，以手動方式，傳送診斷和使用方式資料。 如需詳細資訊，請參閱 [Use the Service Connection Tool for System Center Configuration Manager](../../../core/servers/manage/use-the-service-connection-tool.md)。  
+-   **在離線模式中︰** 需使用服務連線工具，以手動方式，傳送診斷和使用方式資料。 如需詳細資訊，請參閱 [使用 System Center Configuration Manager 的服務連接工具](../../../core/servers/manage/use-the-service-connection-tool.md)。  
 
-如需詳細資訊，請參閱 [About the service connection point in System Center Configuration Manager](../../../core/servers/deploy/configure/about-the-service-connection-point.md)。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
+如需詳細資訊，請參閱 [關於 System Center Configuration Manager 中的服務連線點](../../../core/servers/deploy/configure/about-the-service-connection-point.md)。  
 
