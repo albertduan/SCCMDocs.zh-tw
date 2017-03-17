@@ -29,7 +29,7 @@ ms.lasthandoff: 01/21/2017
 
 在準備 Configuration Manager 基礎結構來處理內部部署行動裝置管理之前，請先考量下列需求。
 
-##  <a name="a-namebkmkdevicesa-supported-devices"></a><a name="bkmk_devices"></a> 支援的裝置  
+##  <a name="bkmk_devices"></a> 支援的裝置  
  內部部署行動裝置管理可讓您使用裝置作業系統內建的管理功能來管理行動裝置。  管理功能是以 Open Mobile Alliance (OMA) 裝置管理 (DM) 標準為基礎，且許多裝置平台都使用這項標準管理裝置。  我們稱之為**現代化裝置** (在文件和 Configuration Manager 主控台使用者介面中)，以和需要使用 Configuration Manager 用戶端加以管理的其他裝置加以區別。  
 
  > [!NOTE]  
@@ -41,7 +41,7 @@ ms.lasthandoff: 01/21/2017
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise   
 
-##  <a name="a-namebkmkintunea-use-of-the--microsoft-intune-subscription"></a><a name="bkmk_intune"></a> 使用 Microsoft Intune 訂閱  
+##  <a name="bkmk_intune"></a> 使用 Microsoft Intune 訂閱  
  若要開始使用內部部署行動裝置管理，您需要 Microsoft Intune 訂閱。 訂閱只有在追蹤裝置授權時才需要，不會用來管理或儲存裝置的管理資訊。 所有的管理都是貴組織企業使用內部部署的 Configuration Manager 基礎結構來處理。  
 
  > [!NOTE]  
@@ -54,7 +54,7 @@ ms.lasthandoff: 01/21/2017
 
  如需如何設定 Intune 訂閱的資訊，請參閱 [為 System Center Configuration Manager 中的內部部署行動裝置管理設定 Microsoft Intune 訂閱](../../mdm/get-started/set-up-intune-subscription-on-premises-mdm.md)。  
 
-##  <a name="a-namebkmkrolesa-required-site-system-roles"></a><a name="bkmk_roles"></a> 必要的站台系統角色  
+##  <a name="bkmk_roles"></a> 必要的站台系統角色  
  內部部署行動裝置管理需要下列的站台系統角色，每種至少一個：  
 
 -   **註冊 Proxy 點** ，以支援註冊要求。  
@@ -69,11 +69,11 @@ ms.lasthandoff: 01/21/2017
 
  這些站台系統角色可以安裝在單一站台系統伺服器，或分別在不同的伺服器上執行，視貴組織需求而定。 每個用於內部部署行動裝置管理的站台系統伺服器都必須設定為 HTTPS 端點來與受信任的裝置通訊。 如需詳細資訊，請參閱 [必要的信任通訊](#bkmk_trustedComs)。  
 
- 如需規劃站台系統角色的詳細資訊，請參閱 [Plan for site system servers and site system roles for System Center Configuration Manager](../../core/plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md)。  
+ 如需規劃站台系統角色的詳細資訊，請參閱 [規劃 System Center Configuration Manager 的站台系統伺服器和站台系統角色](../../core/plan-design/hierarchy/plan-for-site-system-servers-and-site-system-roles.md)。  
 
- 如需如何加入必要站台系統角色的詳細資訊，請參閱 [Install site system roles for On-premises Mobile Device Management in System Center Configuration Manager](../../mdm/get-started/install-site-system-roles-for-on-premises-mdm.md)。  
+ 如需如何加入必要站台系統角色的詳細資訊，請參閱 [在 System Center Configuration Manager 中為內部部署行動裝置管理安裝站台系統角色](../../mdm/get-started/install-site-system-roles-for-on-premises-mdm.md)。  
 
-##  <a name="a-namebkmktrustedcomsa-required-trusted-communications"></a><a name="bkmk_trustedComs"></a> 必要的信任通訊  
+##  <a name="bkmk_trustedComs"></a> 必要的信任通訊  
  內部部署行動裝置管理需有站台系統角色才能取得 HTTPS 通訊。 您可以根據本身的需求，使用貴企業的憑證授權單位 (CA) 建立伺服器和裝置間的受信任連接，或者使用公眾可取得的 CA 作為受信任的授權單位。  不管哪種方式，您都需要使用 IIS 設定的 Web 伺服器憑證，此憑證位在裝載了必要站台系統角色的站台系統伺服器上；而且您還需要此 CA 的根憑證，此 CA 是安裝在必須連接這些伺服器的裝置上。  
 
  如果使用貴企業的 CA 建立信任的通訊，您必須執行下列工作：  
@@ -106,7 +106,7 @@ ms.lasthandoff: 01/21/2017
 
  如需詳細資訊，請參閱 [Set up certificates for trusted communications for On-premises Mobile Device Management in System Center Configuration Manager](../../mdm/get-started/set-up-certificates-on-premises-mdm.md)  
 
-##  <a name="a-namebkmkenrollmenta-enrollment-considerations"></a><a name="bkmk_enrollment"></a> 註冊考量  
+##  <a name="bkmk_enrollment"></a> 註冊考量  
  若要啟用內部部署行動裝置管理裝置註冊，使用者必須授與註冊權限，他們的裝置也必須和裝載必要站台系統角色的站台系統伺服器有信任的通訊。  
 
  在 Configuration Manager 用戶端設定中設定註冊設定檔，即可完成授與使用者註冊權限。 您可以使用預設的用戶端設定，將註冊設定檔推送至所有探索到的使用者，或在自訂用戶端設定中設定註冊設定檔，將此設定推送到一個或多個使用者集合。  
