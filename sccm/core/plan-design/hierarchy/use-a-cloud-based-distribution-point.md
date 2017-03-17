@@ -2,7 +2,7 @@
 title: "雲端架構發佈點 | Microsoft Docs"
 description: "了解搭配使用雲端發佈點與 System Center Configuration Manager 的設定和限制。"
 ms.custom: na
-ms.date: 2/24/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3eab8e62ace29c0fcb24d47ec7e398d807347a38
-ms.openlocfilehash: a1d701c77afb4d6317d8a137fdf46422063df085
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: 489f38d3f88391e42b5271c03151203d22b26d9e
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -63,7 +63,7 @@ ms.lasthandoff: 02/28/2017
 
 雲端發佈點有下列限制：  
 
--  在搭配使用 1610 版與 Hotfix KB4010155 之前，您不能使用雲端式發佈點來裝載軟體更新套件。 1610 版之後的下一個最新分支版本將支援這個選項，而不需要安裝這個修正程式。  
+-  在搭配使用 1610 版與 Hotfix KB4010155 之前，您不能使用雲端式發佈點來裝載軟體更新套件。 版本 1702 及更新版本已經修正此問題。  
 
 -   您無法將雲端發佈點用於 PXE 或啟用多點傳送的部署。  
 
