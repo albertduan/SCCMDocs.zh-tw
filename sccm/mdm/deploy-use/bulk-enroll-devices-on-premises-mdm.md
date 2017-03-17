@@ -8,7 +8,7 @@ ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-- configmgr-client
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: b36f5e4a-2b57-4d18-83f6-197081ac2a0a
@@ -54,14 +54,14 @@ System Center Configuration Manager 內部部署行動裝置管理中的大量�
 
 -   [確認裝置的註冊](#bkmk_verifyEnroll)  
 
-##  <a name="a-namebkmkcreatecerta-create-a-certificate-profile"></a><a name="bkmk_createCert"></a> 建立憑證設定檔  
+##  <a name="bkmk_createCert"></a> 建立憑證設定檔  
  註冊套件的主要元件是憑證設定檔，它用來自動提供信任的根憑證給正在註冊的裝置。  裝置與內部部署行動裝置管理所需的站台系統角色之間進行信任通訊時，需要這個根憑證。 若沒有根憑證，裝置在它與裝載註冊點、註冊 Proxy 點、發佈點和裝置管理點站台系統角色的伺服器之間的 HTTPS 連線中便不會受到信任。  
 
  在針對內部部署行動裝置管理準備系統時，您匯出了一個根憑證，您可以在註冊套件的憑證設定檔中使用它。 如需如何取得受信任根憑證的指示，請參閱[將具有相同的根的憑證匯出為網頁伺服器憑證](../../mdm/get-started/set-up-certificates-on-premises-mdm.md#bkmk_exportCert)。  
 
  使用匯出的根憑證建立憑證設定檔。 如需相關指示，請參閱[如何在 System Center Configuration Manager 中建立憑證設定檔](../../protect/deploy-use/create-certificate-profiles.md)。  
 
-##  <a name="a-namecreatewifia-create-a-wi-fi-profile"></a><a name="CreateWifi"></a> 建立 Wi-Fi 設定檔  
+##  <a name="CreateWifi"></a> 建立 Wi-Fi 設定檔  
  用於大量註冊之套件的另一個元件是 Wi-Fi 設定檔。 有些裝置在佈建網路設定之前，可能沒有支援註冊所需的網路連線。 在註冊套件中包含 Wi-Fi 設定檔提供了一種方法來建立裝置的網路連線。  
 
  若要在 Configuration Manager 中建立 Wi-Fi 設定檔，請依照[如何在 System Center Configuration Manager 中建立 Wi-Fi 設定檔](../../protect/deploy-use/create-wifi-profiles.md)中的指示進行。  
@@ -78,7 +78,7 @@ System Center Configuration Manager 內部部署行動裝置管理中的大量�
 >
 > - 雖然 Configuration Manager 在 Wi-Fi 設定檔中有 Proxy 伺服器資訊的設定，但不會在註冊裝置之後設定 Proxy。 如果您需要使用註冊的裝置來設定 Proxy 伺服器，您可以在註冊裝置之後使用設定項目來部署設定，或使用 Windows 映像處理與設定設計工具 (ICD) 建立第二個套件，以便與大量註冊套件一起部署。
 
-##  <a name="a-namebkmkcreateenrolla-create-an-enrollment-profile"></a><a name="bkmk_createEnroll"></a> 建立註冊設定檔  
+##  <a name="bkmk_createEnroll"></a> 建立註冊設定檔  
  註冊設定檔可讓您指定裝置註冊所需的設定，包括會動態佈建信任根憑證給裝置的憑證設定檔，以及視需要佈建網路設定的 Wi-Fi 設定檔。  
 
  建立註冊設定檔之前，請確定您已建立憑證設定檔和 Wi-Fi 設定檔 (如果需要)。 如需詳細資訊，請參閱 [建立憑證設定檔](#bkmk_createCert) 和 [建立 Wi-Fi 設定檔](#CreateWifi)。  
@@ -104,7 +104,7 @@ System Center Configuration Manager 內部部署行動裝置管理中的大量�
 
 8.  確認註冊設定檔的設定，然後按一下 [下一步]。 按一下 [關閉]  以結束精靈。  
 
-##  <a name="a-namebkmkcreateppkga-create-an-enrollment-package-ppkg-file"></a><a name="bkmk_createPpkg"></a> 建立註冊套件 (ppkg) 檔案  
+##  <a name="bkmk_createPpkg"></a> 建立註冊套件 (ppkg) 檔案  
  註冊套件是您用來為內部部署行動裝置管理大量註冊裝置的檔案。  此檔案必須使用 Configuration Manager 建立。 您可以使用 Windows 映像處理與設定設計工具 (ICD) 建立類似類型的套件，但只有您在 Configuration Manager 建立的套件可用來全程為內部部署行動裝置管理註冊裝置。 使用 Windows ICD 建立的套件只能提供註冊所需的使用者主要名稱 (UPN)，而不能執行實際的註冊程序。  
 
  在 Windows 10 建立註冊套件的程序需要 Windows 評定及部署工具套件 (ADK)。  在執行 Configuration Manager 主控台的伺服器上，請確定您已安裝 1511 版的 Windows ADK。 如需詳細資訊，請參閱 [下載 Windows 10 的套件與工具](https://msdn.microsoft.com/windows/hardware/dn913721.aspx)的＜ADK＞一節  
@@ -125,7 +125,7 @@ System Center Configuration Manager 內部部署行動裝置管理中的大量�
 
 4.  按一下 [ **確定**]。  
 
-##  <a name="a-namebkmkgetppkga-use-the-package-to-bulk-enroll-a-device"></a><a name="bkmk_getPpkg"></a> 使用套件來大量註冊裝置  
+##  <a name="bkmk_getPpkg"></a> 使用套件來大量註冊裝置  
  您可以在透過全新體驗 (OOBE) 程序佈建裝置之前或之後，使用套件註冊裝置。   註冊套件也可以包含為原始設備製造商 (OEM) 佈建套件的一部分。  
 
  套件必須實體傳遞給要用它來大量註冊的裝置。 您可以根據需求以各種方式傳遞註冊套件到裝置，包括：  
@@ -160,7 +160,7 @@ System Center Configuration Manager 內部部署行動裝置管理中的大量�
 
 6.  按一下該帳戶，然後按一下 [同步]，這會以 Configuration Manager 開始管理。  
 
-##  <a name="a-namebkmkverifyenrolla-verify-enrollment-of-device"></a><a name="bkmk_verifyEnroll"></a> 確認裝置的註冊  
+##  <a name="bkmk_verifyEnroll"></a> 確認裝置的註冊  
  您可以在 Configuration Manager 主控台確認裝置已成功註冊。  
 
 -   啟動 Configuration Manager 主控台。  
