@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: 09f8bc7ee04ff64934030f825a791bc043341963
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="how-to-configure-wake-on-lan-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中設定網路喚醒
@@ -28,7 +29,7 @@ ms.openlocfilehash: 09f8bc7ee04ff64934030f825a791bc043341963
 
 您可以使用喚醒 Proxy 用戶端設定補充 [網路喚醒]。 不過，若要使用喚醒 Proxy，您必須先啟用站台的 [喚醒網路]，並指定 [僅使用喚醒封包]  及 [單點傳播]  選項做為 [網路喚醒] 傳輸方法。 此喚醒解決方案也支援臨機操作連線，例如遠端桌面連線。
 
-請先利用程序設定 [網路喚醒] 的主要站台。 然後，使用第二項程序設定喚醒 Proxy 用戶端設定。 第二項程序會設定了喚醒 Proxy 設定的預設用戶端設定，以便套用至階層中的所有電腦。 如果您只想要將這些設定套用至選取的電腦，請建立自訂裝置設定，並將它指派至包含您要設定喚醒 Proxy 之電腦的集合。 如需有關如何建立自訂用戶端設定的詳細資訊，請參閱 [How to configure client settings in System Center Configuration Manager](../../../core/clients/deploy/configure-client-settings.md)。
+請先利用程序設定 [網路喚醒] 的主要站台。 然後，使用第二項程序設定喚醒 Proxy 用戶端設定。 第二項程序會設定了喚醒 Proxy 設定的預設用戶端設定，以便套用至階層中的所有電腦。 如果您只想要將這些設定套用至選取的電腦，請建立自訂裝置設定，並將它指派至包含您要設定喚醒 Proxy 之電腦的集合。 如需有關如何建立自訂用戶端設定的詳細資訊，請參閱 [如何在 System Center Configuration Manager 中設定用戶端設定](../../../core/clients/deploy/configure-client-settings.md)。
 
 接收喚醒 proxy 用戶端設定的電腦，可能會暫停其網路連線 1-3 秒。 這是因為用戶端必須重設網路介面卡，以啟用它的喚醒 Proxy 驅動程式。
 
@@ -57,9 +58,4 @@ ms.openlocfilehash: 09f8bc7ee04ff64934030f825a791bc043341963
 
 > [!TIP]
 > 若要測試喚醒 Proxy 是否可運作，請測試與睡眠中電腦的連線。 例如，連線至該電腦上的共用資料夾，或嘗試使用遠端桌面連線至電腦。 如果您使用 Direct Access，可嘗試對目前位於網際網路上的睡眠中電腦進行相同的測試，以檢查 IPv6 首碼是否正常運作。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
