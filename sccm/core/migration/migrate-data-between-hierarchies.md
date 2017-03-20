@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a8959c72608a1531fb323176c33a848a4a669b1c
 ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -42,7 +43,7 @@ ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
 
 -   您可以將資料從多個來源站台移至目的地階層中的單一站台。  
 
-##  <a name="a-namebkmkmigrationconceptsa-concepts-for-migration"></a><a name="BKMK_MigrationConcepts"></a> 移轉的概念  
+##  <a name="BKMK_MigrationConcepts"></a> 移轉的概念  
  使用移轉時，可能會遇到下列概念和詞彙。  
 
 |概念或詞彙|詳細資訊|  
@@ -52,11 +53,11 @@ ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
 |目的地階層|System Center Configuration Manager 階層，是為了從來源階層匯入資料而執行移轉的位置。|  
 |資料收集|正在進行對來源階層的識別程序，此來源階層可以移轉到目的地階層。 Configuration Manager 會定期檢查來源階層，識別來源階層中您之前移轉過的資訊有無任何變化，同時也會識別在目的地階層中您可能想要更新的資訊。<br /><br /> 如需詳細資訊，請參閱[在 System Center Configuration Manager 中規劃來源階層策略](../../core/migration/planning-a-source-hierarchy-strategy.md)中的[資料收集](../../core/migration/planning-a-source-hierarchy-strategy.md#BKMK_Data_Gathering)。|  
 |移轉作業|設定移轉特定物件，然後管理將這些物件移轉至目的地階層的程序。<br /><br /> 如需詳細資訊，請參閱[在 System Center Configuration Manager 中規劃移轉作業策略](../../core/migration/planning-a-migration-job-strategy.md)|  
-|用戶端移轉|從來源站台的資料庫將用戶端使用的資訊傳送到目的地階層資料庫的程序。 此資料移轉後隨即會將裝置上用戶端軟體升級為目的地階層的用戶端軟體版本。<br /><br /> 如需詳細資訊，請參閱 [Planning a client migration strategy in System Center Configuration Manager](../../core/migration/planning-a-client-migration-strategy.md)。|  
+|用戶端移轉|從來源站台的資料庫將用戶端使用的資訊傳送到目的地階層資料庫的程序。 此資料移轉後隨即會將裝置上用戶端軟體升級為目的地階層的用戶端軟體版本。<br /><br /> 如需詳細資訊，請參閱 [在 System Center Configuration Manager 中規劃移轉作業策略](../../core/migration/planning-a-client-migration-strategy.md)。|  
 |共用發佈點|在移轉期間，來源階層中與目的地階層共用的發佈點。<br /><br /> 在移轉期間，指派至目的地階層之站台的用戶端可以透過共用發佈點取得資訊。<br /><br /> 如需詳細資訊，請參閱[在 System Center Configuration Manager 中規劃內容部署移轉策略](../../core/migration/planning-a-content-deployment-migration-strategy.md)中的[在來源與目的地階層間共用發佈點](../../core/migration/planning-a-content-deployment-migration-strategy.md#About_Shared_DPs_in_Migration)。|  
 |監視移轉|監視移轉活動的程序。 您可以在 [系統管理] 工作區的 [移轉] 節點監視移轉進度和成功與否。<br /><br /> 如需詳細資訊，請參閱[規劃在 System Center Configuration Manager 中監視移轉活動](../../core/migration/planning-to-monitor-migration-activity.md)。|  
 |停止收集資料|停止從來源站台收集資料的程序。 當您不再需要從來源階層移轉資料，或者想要暫停進行移轉相關活動時，可以將目的地階層設定為停止從來源階層收集資料。<br /><br /> 如需詳細資訊，請參閱[在 System Center Configuration Manager 中規劃來源階層策略](../../core/migration/planning-a-source-hierarchy-strategy.md)中的[資料收集](../../core/migration/planning-a-source-hierarchy-strategy.md#BKMK_Data_Gathering)。|  
-|清除移轉資料|移除從目的地階層資料庫移轉的相關資訊，以完成從來源階層進行移轉的程序。<br /><br /> 如需詳細資訊，請參閱 [Planning to complete migration in System Center Configuration Manager](../../core/migration/planning-to-complete-migration.md)。|  
+|清除移轉資料|移除從目的地階層資料庫移轉的相關資訊，以完成從來源階層進行移轉的程序。<br /><br /> 如需詳細資訊，請參閱 [規劃在 System Center Configuration Manager 中完成移轉](../../core/migration/planning-to-complete-migration.md)。|  
 
 ## <a name="typical-workflow-for-migration"></a>移轉的一般工作流程  
 設定移轉的工作流程：
@@ -75,7 +76,7 @@ ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
 
 從不再用於管理環境的 Configuration Manager 來源階層移轉資料後，您可以解除委任該來源階層和基礎結構。  
 
-##  <a name="a-namebkmkmigrationscenariosa-migration-scenarios"></a><a name="BKMK_MigrationScenarios"></a> 移轉案例  
+##  <a name="BKMK_MigrationScenarios"></a> 移轉案例  
  Configuration Manager 支援下列移轉案例。  
 
 > [!NOTE]  
@@ -110,9 +111,4 @@ ms.openlocfilehash: dface33392c2a2a662522656eabf0936b52b28fc
 
 ## <a name="see-also"></a>另請參閱  
  [開始使用 System Center Configuration Manager](../../core/servers/deploy/start-using.md)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 
