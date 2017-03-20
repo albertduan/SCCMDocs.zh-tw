@@ -2,7 +2,7 @@
 title: "Windows Defender 進階威脅防護 | Microsoft Docs"
 description: "了解如何管理及監視 Windows Defender 進階威脅防護，這是幫助企業回應進階攻擊的新服務。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/07/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -16,8 +16,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 299fada2b6587ace44e635c4f26cc7a482d44843
-ms.openlocfilehash: 880ea4fcb0730f0e9adbc9f142262f241f5df9dc
+ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
+ms.openlocfilehash: 237dc9cbccb973720a633490f096aed4bc16d183
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="windows-defender-advanced-threat-protection"></a>Windows Defender 進階威脅防護
@@ -51,7 +52,7 @@ Windows Defender ATP 是 [Windows 資訊安全中心](https://securitycenter.win
 
 1.  在 Configuration Manager 主控台中，瀏覽至 [資產與相容性] > [概觀] > [Endpoint Protection] > [Windows Defender ATP 原則]，然後按一下 [建立 Windows Defender ATP 原則]。 [Windows Defender ATP 原則精靈] 隨即開啟。  
 
-2.  輸入 Windows Defender ATP 原則的 [名稱] 和 [描述]，然後選取 [上架]。 按一下 [   
+2.  輸入 Windows Defender ATP 原則的 [名稱] 和 [描述]，然後選取 [上架]。 按一下    
 
 3.  **瀏覽**至您組織之 Windows Defender ATP 雲端服務租用戶所提供的設定檔。 按一下 [下一步] 。  
 
@@ -61,7 +62,7 @@ Windows Defender ATP 是 [Windows 資訊安全中心](https://securitycenter.win
 
     -   **所有檔案類型**  
 
-     按一下 [   
+     按一下    
 
 5.  檢閱摘要並完成精靈。  
 
@@ -110,10 +111,6 @@ Windows Defender ATP 是 [Windows 資訊安全中心](https://securitycenter.win
 > Windows Defender ATP 設定檔包含應該受到保護的機密資訊。
 
 [Windows Defender 進階威脅防護](https://technet.microsoft.com/itpro/windows/keep-secure/windows-defender-advanced-threat-protection)
+
 [針對 Windows Defender 進階威脅防護上線問題進行疑難排解](https://technet.microsoft.com/itpro/windows/keep-secure/troubleshoot-onboarding-windows-defender-advanced-threat-protection)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
