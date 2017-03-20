@@ -16,6 +16,7 @@ ms.assetid: b099a645-6434-498f-a408-1d438e394396
 translationtype: Human Translation
 ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 1d9911274fd76942131054231cdcc2bcebbd3fcb
+ms.lasthandoff: 12/16/2016
 
 
 
@@ -58,7 +59,7 @@ ms.openlocfilehash: 1d9911274fd76942131054231cdcc2bcebbd3fcb
 ## <a name="wsus-settings"></a>WSUS 設定  
  您必須根據所使用的 Configuration Manager 版本，在 [建立站台系統伺服器精靈] 或 [新增站台系統角色精靈] 的不同頁面上設定 WSUS 設定，而在某些情況下，只需在軟體更新點的內容 (也稱為「軟體更新點元件內容」) 中進行設定。 使用以下各節中的資訊，設定 WSUS 設定。  
 
-### <a name="a-namebkmkwsusportawsus-port-settings"></a><a name="BKMK_wsusport"></a>WSUS 連接埠設定  
+### <a name="BKMK_wsusport"></a>WSUS 連接埠設定  
  您必須在精靈的 [軟體更新點] 頁面，或在軟體更新點的內容中，設定 WSUS 連接埠設定。 請使用下列程序判斷 WSUS 使用的連接埠設定。  
 
 #### <a name="to-determine-the-port-settings-used-in-iis"></a>判斷 IIS 中的連接埠設定  
@@ -95,7 +96,7 @@ ms.openlocfilehash: 1d9911274fd76942131054231cdcc2bcebbd3fcb
     > [!NOTE]  
     >  當軟體更新點與網際網路之間有防火牆時，可能需要將防火牆設定為接受用於 WSUS 網站的 HTTP 與 HTTPS 連接埠。 您也可以選擇將防火牆上的存取權限制在有限的網域。 如需如何規劃支援軟體更新之防火牆的詳細資訊，請參閱 [Configure firewalls](../plan-design/plan-for-software-updates.md#BKMK_ConfigureFirewalls)。  
 
--   **從上游資料來源位置同步處理**：使用此設定可從上游同步處理來源同步處理軟體更新中繼資料。 子主要站台與次要站台會自動設定為對此設定使用父站台 URL。 您可以選擇從現有的 WSUS 伺服器同步處理軟體更新。 指定 URL，例如 https://WSUSServer:8531，其中 8531 是用於連線至 WSUS 伺服器的連接埠。  
+-   **從上游資料來源位置同步處理**：使用此設定可從上游同步處理來源同步處理軟體更新中繼資料。 子主要站台與次要站台會自動設定為對此設定使用父站台 URL。 您可以選擇從現有的 WSUS 伺服器同步處理軟體更新。 指定 URL，例如 https://WSUSServer:8531 ，其中 8531 是用於連線至 WSUS 伺服器的連接埠。  
 
 -   **不要從 Microsoft Update 或上游資料來源同步處理**：使用此設定可在頂層站台的軟體更新點從網際網路中斷連線時，手動同步處理軟體更新。 如需詳細資訊，請參閱[從已中斷連線的軟體更新點同步處理軟體更新](synchronize-software-updates-disconnected.md)。  
 
@@ -151,9 +152,4 @@ ms.openlocfilehash: 1d9911274fd76942131054231cdcc2bcebbd3fcb
 您已從 Configuration Manager 階層的最上層站台開始安裝軟體更新點。 請重複本主題中的程序，在子站台上安裝軟體更新點。
 
 安裝好軟體更新點之後，請移至[同步處理軟體更新](synchronize-software-updates.md)。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
