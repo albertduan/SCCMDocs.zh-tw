@@ -1,8 +1,8 @@
 ---
-title: "設定 Intune 訂閱 | Microsoft Docs | 內部部署"
+title: "設定 Intune 訂閱 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中為內部部署行動裝置管理設定 Intune 訂閱來追蹤授權。"
 ms.custom: na
-ms.date: 11/18/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
-ms.openlocfilehash: 2cc9f59d9d32d149aa477ba61afba0094f302fc4
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: f86eac30ed0eada92ddbd25891d1693ae55b4851
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -38,7 +39,7 @@ System Center Configuration Manager 內部部署行動裝置管理需要 Microso
  需要有 Intune，才能進行內部部署行動裝置管理功能。 只要[註冊](http://www.microsoft.com/en-us/server-cloud/products/microsoft-intune/)試用版或付費訂閱，並前往下一個步驟，就能將訂閱新增至 Configuration Manager。  
 
 ##  <a name="add-the-intune-subscription-to-configuration-manager"></a>將訂用帳戶新增至 Configuration Manager  
- 若要將訂閱新增至 Configuration Manager，請遵循與使用 Intune 新增行動裝置管理的訂閱時相同的基本步驟。 請閱讀下列針對特定差異的附註，然後使用[建立 Microsoft Intune 訂閱](../deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)中的指示。  
+ 若要將訂閱新增至 Configuration Manager，請遵循與使用 Intune 新增行動裝置管理的訂閱時相同的基本步驟。 請閱讀下列針對特定差異的附註，然後使用[建立 Microsoft Intune 訂閱](../deploy-use/setup-hybrid-mdm.md#configure-intune-subscription)中的指示。  
 
 > [!NOTE]  
 >  當新增 Intune 訂閱時，請記住：  
@@ -51,9 +52,9 @@ System Center Configuration Manager 內部部署行動裝置管理需要 Microso
 
 1.  在 Configuration Manager 主控台中，以滑鼠右鍵按一下 [Microsoft Intune 訂閱]，然後按一下 [內容]。  
 
-2.  在 [On Premises Mobile Device Management] (內部部署行動裝置管理) 方塊中，選擇下列其中一項︰
+2.  在 [內部部署行動裝置管理] 方塊中，選擇下列其中一項︰
 
-  - 如果您只想要透過內部部署方式管理裝置，請按一下 [Only manage devices on-premises] (僅管理內部部署裝置) 旁的核取方塊，然後按一下 [確定]。  
+  - 如果您只想要透過內部部署方式管理裝置，請按一下 [Only manage devices on-premises (僅管理內部部署裝置)] 旁的核取方塊，然後按一下 [確定]。  
 
       > [!NOTE]  
       >  按一下此核取方塊後，即表示您將 Intune 訂閱設為讓所有管理資訊皆維持在內部部署，且不會將資料複寫至雲端。  
@@ -67,9 +68,4 @@ System Center Configuration Manager 內部部署行動裝置管理需要 Microso
 5.  如果您打算管理 Windows 10 桌上型電腦，請以滑鼠右鍵依序按一下 [Microsoft Intune 訂閱] 、[設定平台] 及 [啟用 Windows 註冊] 。  
 
 6.  按一下 [啟用 Windows 註冊] 旁的核取方塊，然後按一下 [確定] 。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
