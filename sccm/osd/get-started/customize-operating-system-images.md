@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 485cb3ca4988f983c1ec71b6c8daf136571bf0ea
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -28,10 +29,10 @@ ms.openlocfilehash: 485cb3ca4988f983c1ec71b6c8daf136571bf0ea
 
 System Center Configuration Manager 中的作業系統映像為 WIM 檔案，且代表參照檔和資料夾的已壓縮集合，而若要在電腦上順利安裝及設定作業系統，便需要使用該檔案。 自訂作業系統映像的建立及擷取會在參照電腦上完成，同時您必須使用所有必要的作業系統檔案、支援檔案、軟體更新、工具，以及其他軟體應用程式來設定此參照電腦。 手動設定參照電腦到何程度，完全由您決定。 您可以利用組建並擷取工作順序來完全自動設定參照電腦，可以手動設定參照電腦的某些設定，然後再使用工作順序自動執行其他設定，也可以手動設定參照電腦但不使用工作順序。 參閱下列章節來自訂作業系統。
 
-##  <a name="a-namebkmkpreparereferencecomputera-prepare-for-the--reference-computer"></a><a name="BKMK_PrepareReferenceComputer"></a> 為參照電腦做準備  
+##  <a name="BKMK_PrepareReferenceComputer"></a> 為參照電腦做準備  
  從參照電腦擷取作業系統映像之前，需要考量一些事項。  
 
-###  <a name="a-namebkmkrefcomputerdecidea-decide-between-an-automated-or-manual-configuration"></a><a name="BKMK_RefComputerDecide"></a> 決定要進行自動或手動設定  
+###  <a name="BKMK_RefComputerDecide"></a> 決定要進行自動或手動設定  
  以下內容概述自動和手動設定參照電腦的優缺點。  
 
 #### <a name="automated-configuration"></a>自動設定  
@@ -66,7 +67,7 @@ System Center Configuration Manager 中的作業系統映像為 WIM 檔案，且
 
 -   整個過程中，需要有人積極參與。  
 
-###  <a name="a-namebkmkrefcomputerconsiderationsa-considerations-for-the-reference-computer"></a><a name="BKMK_RefComputerConsiderations"></a> 關於參照電腦的考量  
+###  <a name="BKMK_RefComputerConsiderations"></a> 關於參照電腦的考量  
  以下列出當您設定參照電腦時要考量的基本項目。  
 
 -   **要部署的作業系統**  
@@ -110,7 +111,7 @@ System Center Configuration Manager 中的作業系統映像為 WIM 檔案，且
 
      您可以利用當您從參照電腦擷取作業系統映像時想要納入的桌面自訂內容，設定參照電腦。 桌面內容包含桌布、組織商標和標準的預設使用者設定檔。  
 
-##  <a name="a-namebkmkmanuallybuildreferencea-manually-build-a-reference-computer"></a><a name="BKMK_ManuallyBuildReference"></a> 手動建立參照電腦  
+##  <a name="BKMK_ManuallyBuildReference"></a> 手動建立參照電腦  
  請使用下列程序，手動建立參照電腦。  
 
 > [!NOTE]  
@@ -133,13 +134,8 @@ System Center Configuration Manager 中的作業系統映像為 WIM 檔案，且
 
  參照電腦就緒後，請使用工作順序從參照電腦擷取作業系統映像。  如需詳細步驟，請參閱 [從現有的參照電腦擷取作業系統映像](../deploy-use/create-a-task-sequence-to-capture-an-operating-system.md#BKMK_CaptureExistingRefComputer)。  
 
-##  <a name="a-namebkmkusetstobuildreferencea-use-a-task-sequence-to-build-a-reference-computer"></a><a name="BKMK_UseTSToBuildReference"></a> 使用工作順序來建立參照電腦  
+##  <a name="BKMK_UseTSToBuildReference"></a> 使用工作順序來建立參照電腦  
  您可以使用工作順序將建立參照電腦的程序自動化，以部署作業系統、驅動程式、應用程式等等。  使用下列步驟來建置參照電腦，然後從參照電腦擷取作業系統映像。  
 
--   使用工作順序從參照電腦建置和擷取作業系統映像。  如需詳細步驟，請參閱 [Use a task sequence to build and capture a reference computer](../deploy-use/create-a-task-sequence-to-capture-an-operating-system.md#BKMK_BuildCaptureTS)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
+-   使用工作順序從參照電腦建置和擷取作業系統映像。  如需詳細步驟，請參閱 [使用工作順序來建立和擷取參照電腦](../deploy-use/create-a-task-sequence-to-capture-an-operating-system.md#BKMK_BuildCaptureTS)。  
 
