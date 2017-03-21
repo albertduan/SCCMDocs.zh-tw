@@ -20,6 +20,7 @@ robots: noindex
 translationtype: Human Translation
 ms.sourcegitcommit: cc0c1075af370b6190cbb269665d4a09e756ab4e
 ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
+ms.lasthandoff: 01/04/2017
 
 
 ---
@@ -47,7 +48,7 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
 
 -   [規劃先前移轉的物件移轉作業](#About_Object_Migrations)  
 
-##  <a name="a-nametypesofmigrationa-types-of-migration-jobs"></a><a name="Types_of_Migration"></a> 移轉作業類型  
+##  <a name="Types_of_Migration"></a> 移轉作業類型  
  Configuration Manager 支援下列移轉作業類型。 每一種作業類型的設計都是幫助您定義可包含在該作業內的物件。  
 
  **集合移轉** (只支援從 Configuration Manager 2007 SP2 移轉時)：移轉與您選取之集合相關的物件。 根據預設，集合移轉包括與集合成員相關聯的所有物件。 當您使用集合移轉作業時，可以排除特定物件執行個體。  
@@ -56,7 +57,7 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
 
  **移轉之前已移轉的物件**：移轉您之前已移轉的物件 (當這些物件自上一次移轉後，在來源階層中有所更新時移轉)。  
 
-###  <a name="a-nameobjectsthatcanmigratea-objects-that-you-can-migrate"></a><a name="Objects_that_can_migrate"></a> 可移轉的物件  
+###  <a name="Objects_that_can_migrate"></a> 可移轉的物件  
  特定移轉作業類型不一定能夠移轉每一個物件。 下列清單識別每一種移轉作業類型可移轉的物件類型。  
 
 > [!NOTE]  
@@ -212,7 +213,7 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
     > [!IMPORTANT]  
     >  雖然您可以使用物件移轉來移轉虛擬應用程式套件，但是無法使用 [移轉之前已移轉物件] 移轉作業類型進行移轉。 您必須從目的地站台刪除已移轉的虛擬應用程式套件，然後建立新的移轉作業來移轉虛擬應用程式。  
 
-##  <a name="a-nameaboutmigrationjobsa-general-planning-for-all-migration-jobs"></a><a name="About_Migration_Jobs"></a> 所有移轉作業的一般規劃  
+##  <a name="About_Migration_Jobs"></a> 所有移轉作業的一般規劃  
  使用 [建立移轉作業精靈] 建立移轉作業將物件移轉至您的目的地階層。 您建立的移轉作業類型會決定可移轉的物件。 您可以建立並使用多項移轉作業從相同的來源站台或多個來源站台移轉資料。 使用某一種類型的移轉作業並不會阻止您使用另一種類型的移轉作業。  
 
  成功執行移轉作業後，其狀態會列出為 [已完成]  且無法再次執行。 不過，您可以建立新的移轉作業來移轉原始作業所移轉的任何物件，而且新的移轉作業也可包含其他物件。 當您建立其他移轉作業時，之前已移轉物件的狀態會顯示為 [已移轉]。 您可以選取這些物件並再次移轉，但除非物件已在來源階層中更新，否則不需要再次移轉這些物件。 如果物件最初移轉後已在來源階層中更新，當您使用移轉作業類型 [移轉後修改的物件] 時可以識別該物件。  
@@ -258,7 +259,7 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
 ### <a name="specify-conflict-resolution-for-migrated-data"></a>指定移轉之資料的衝突解決方式  
  根據預設，除非您設定移轉作業略過或覆寫之前已移轉至目的地資料庫資料，否則移轉作業不會覆寫目的地資料庫中的資料。  
 
-##  <a name="a-nameaboutcollectionmigration-a-plan-for-collection-migration-jobs"></a><a name="About_Collection_Migration "></a> 規劃集合移轉作業  
+##  <a name="About_Collection_Migration "></a> 規劃集合移轉作業  
  集合移轉作業僅適用於從來源階層 (執行支援的 Configuration Manager 2007 版本) 移轉資料。 依集合進行移轉時，請指定一個或多個要進行移轉的集合。 對於您指定的每個集合，移轉作業會自動選取所有相關的物件以進行移轉。 例如，若您選取特定的使用者集合，將識別其集合成員以供您移轉與該集合相關聯的部署。 或者，您也可以選取其他與該成員相關聯的部署物件來進行移轉。 此處選取的所有項目都會新增到可移轉的物件清單中。  
 
  當您移轉集合時，System Center Configuration Manager 會同時移轉集合設定，包括維護期間和集合變數，但無法移轉用於 AMT 用戶端佈建的集合設定。  
@@ -266,7 +267,7 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
  使用以下各節的資訊來瞭解其他設定，以套用至以集合為基礎的移轉作業。  
 
 ### <a name="exclude-objects-from-collection-migration-jobs"></a>從集合移轉作業排除物件  
- 您可以從集合移轉作業中排除特定物件。 當您從集合移轉作業中排除特定物件時，該物件會新增至全域排除清單，清單包含從目前來源階層內任何來源站台所建立移轉作業中排除的所有物件。 排除清單中的物件仍可在未來作業中進行移轉，不過當您建立以集合為基礎的新移轉作業時，這些物件不會自動包含在其中。。  
+ 您可以從集合移轉作業中排除特定物件。 當您從集合移轉作業中排除特定物件時，該物件會新增至全域排除清單，清單包含從目前來源階層內任何來源站台所建立移轉作業中排除的所有物件。 排除清單中的物件仍可在未來作業中進行移轉，不過當您建立以集合為基礎的新移轉作業時，這些物件不會自動包含在其中。  
 
  您可以編輯排除清單以移除之前排除的物件。 由排除清單移除物件之後，若您在新移轉作業建立期間選取與該物件相關聯的集合，該物件也會自動選取。  
 
@@ -308,12 +309,12 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
 
  若要在移轉後啟用程式，請在程式內容的 [進階] 索引標籤上清除 [Disable this program on computers where it is advertised] (在程式公告所在電腦上停用該程式)。  
 
-##  <a name="a-nameaboutobjectmigrationa-plan-for-object-migration-jobs"></a><a name="About_Object_Migration"></a> 規劃物件移轉作業  
+##  <a name="About_Object_Migration"></a> 規劃物件移轉作業  
  有別於集合移轉，您必須選取要移轉的每個物件和物件執行個體。 您可以選取個別物件 (例如從 Configuration Manager 2007 階層選取公告，或從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 階層選取發行)，以新增至特定移轉作業的移轉物件清單。 物件移轉作業不會將任何未新增到移轉清單的物件移轉到目的地站台。  
 
  除了適用於所有移轉作業的設定之外，以物件為基礎的移轉作業沒有其他任何要規劃的設定。  
 
-##  <a name="a-nameaboutobjectmigrationsa-plan-for-previously-migrated-object-migration-jobs"></a><a name="About_Object_Migrations"></a> 規劃先前移轉的物件移轉作業  
+##  <a name="About_Object_Migrations"></a> 規劃先前移轉的物件移轉作業  
  若已移轉至目的地階層的物件在來源階層中有更新，您可使用 [移轉後已修改的物件]  作業類型再次移轉該物件。 例如，若您在來源階層針對套件來源檔案進行重新命名或更新，該套件在來源階層中的版本會遞增。 套件版本遞增後，該套件便可依此作業類型識別以進行移轉。  
 
  此作業類型與物件移轉類型相似，除了前者在選取要移轉的物件時，可選取的物件僅限於在先前移轉作業移轉後有更新的物件。   
@@ -322,9 +323,4 @@ ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
 
 > [!NOTE]  
 >  此移轉作業可識別由來源階層自動更新的物件以及由系統管理使用者更新的物件。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 
