@@ -1,13 +1,13 @@
 ---
-title: "設定憑證 | Microsoft Docs| 內部部署 MDM"
+title: "設定憑證 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中為內部部署行動裝置管理設定受信任通訊的憑證。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-- configmgr-client
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 2a7d7170-1933-40e9-96d6-74a6eb7278e2
@@ -17,8 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: d7aaad9298308b588f1bc13027082bf07066a3c2
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: ef35e98ccae0c708cd12767eef9f923f211849fb
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -49,7 +50,7 @@ System Center Configuration Manager 內部部署行動裝置管理需要設定�
 
 -   [將具有相同的根的憑證匯出為網頁伺服器憑證](#bkmk_exportCert)  
 
-##  <a name="a-namebkmkconfigcaa-configure-the-certification-authority-ca-for-crl-publishing"></a><a name="bkmk_configCa"></a> 設定用來發佈 CRL 的憑證授權單位 (CA)  
+##  <a name="bkmk_configCa"></a> 設定用來發佈 CRL 的憑證授權單位 (CA)  
  憑證授權單位 (CA) 預設會使用以 LDAP 為基礎的憑證撤銷清單 (CRL) 來允許已加入網域之裝置的連線。 您必須將以 HTTP 為基礎的 CRL 新增到 CA，才能讓未加入網域的裝置藉由該 CA 發行的憑證受到信任。 必須要有這些憑證，才能在裝載 Configuration Manager 站台系統角色的伺服器與已註冊內部部署行動裝置管理的裝置之間進行 SSL 通訊。  
 
  請依照下列步驟來設定 CA，使其自動發佈 CRL 資訊來發行憑證，以允許已加入網域和未加入網域之裝置的受信任連線：  
@@ -76,7 +77,7 @@ System Center Configuration Manager 內部部署行動裝置管理需要設定�
 
 8.  在 [發佈 CRL] 對話方塊中，選取 **[只有 Delta CRL]**，然後按一下 **[確定]**。  
 
-##  <a name="a-namebkmkcerttempla-create-the-web-server-certificate-template-on-the-ca"></a><a name="bkmk_certTempl"></a> 在 CA 上建立網頁伺服器憑證範本  
+##  <a name="bkmk_certTempl"></a> 在 CA 上建立網頁伺服器憑證範本  
  在 CA 上發佈新 CRL 之後，下一步就是建立網頁伺服器憑證範本。 必須要有此範本，才能為裝載註冊點、註冊 Proxy 點、發佈點及裝置管理點站台系統角色的伺服器發行憑證。 這些伺服器將會是站台系統角色與已註冊裝置之間受信任通訊的 SSL 端點。    請依照下列步驟來建立憑證範本︰  
 
 1.  建立一個名為 **ConfigMgr MDM Servers** 的安全性群組，此群組包含執行需要與已註冊裝置進行受信任通訊之站台系統的伺服器。  
@@ -113,7 +114,7 @@ System Center Configuration Manager 內部部署行動裝置管理需要設定�
 
 12. 在 **[啟用憑證範本]** 對話方塊中，選取您剛才建立的新範本 **ConfigMgr MDM Web Server**，然後按一下 **[確定]**。  
 
-##  <a name="a-namebkmkrequestcerta-request-the-web-server-certificate-for-each-site-system-role"></a><a name="bkmk_requestCert"></a> 要求每個站台系統角色的網頁伺服器憑證  
+##  <a name="bkmk_requestCert"></a> 要求每個站台系統角色的網頁伺服器憑證  
  已註冊進行內部部署行動裝置管理的裝置必須信任裝載註冊點、註冊 Proxy 點、發佈點和裝置管理點的 SSL 端點。  下列步驟描述如何要求 IIS 的網頁伺服器憑證。 針對每部裝載進行內部部署行動裝置管理之其中一個必要站台系統角色的伺服器 (SSL 端點)，您都必須執行此程序。  
 
 1.  在主要站台伺服器上，以系統管理員權限開啟命令提示字元，輸入 **MMC** ，然後按 **[Enter]**。  
@@ -132,7 +133,7 @@ System Center Configuration Manager 內部部署行動裝置管理需要設定�
 
  由於每部伺服器都需要唯一的網頁伺服器憑證，因此針對每部裝載進行內部部署行動裝置管理之其中一個必要站台系統角色的伺服器，您必須重複執行此程序。  如果一部伺服器裝載了所有站台系統角色，您就只需要要求一個網頁伺服器憑證。  
 
-##  <a name="a-namebkmkbindcerta-bind-the-certificate-to-the-web-server"></a><a name="bkmk_bindCert"></a> 將憑證繫結到網頁伺服器  
+##  <a name="bkmk_bindCert"></a> 將憑證繫結到網頁伺服器  
  新憑證現在必須繫結到每部裝載內部部署行動裝置管理必要站台系統角色之站台系統伺服器的網頁伺服器。 請為每部裝載註冊點和註冊 Proxy 點站台系統角色的伺服器，依照下列步驟執行操作。 如果一部伺服器裝載了所有站台系統角色，您就只需要依照這些步驟執行一次。 您不需要為發佈點和裝置管理點站台系統角色執行此工作，因為它們在註冊時會自動收到必要的憑證。  
 
 1.  在裝載註冊點、註冊 Proxy 點、發佈點或裝置管理點的伺服器上，按一下 **[開始]** > **[系統管理工具]** > **[IIS 管理員]**。  
@@ -145,7 +146,7 @@ System Center Configuration Manager 內部部署行動裝置管理需要設定�
 
 5.  在 [IIS 管理員] 主控台的 [連線] 底下，選取網頁伺服器，然後在右邊的 [動作] 窗格中，按一下 **[重新啟動]**。  
 
-##  <a name="a-namebkmkexportcerta-export-the-certificate-with-the-same-root-as-the-web-server-certificate"></a><a name="bkmk_exportCert"></a> 將具有相同的根的憑證匯出為網頁伺服器憑證  
+##  <a name="bkmk_exportCert"></a> 將具有相同的根的憑證匯出為網頁伺服器憑證  
  「Active Directory 憑證服務」通常會在所有已加入網域的裝置上安裝來自 CA 的必要憑證。 但未加入網域的裝置如果沒有來自根 CA 的憑證，則無法與站台系統角色進行通訊。 若要取得裝置與站台系統角色通訊所需的憑證，您可以從繫結到網頁伺服器的憑證進行匯出。  
 
  請依照下列步驟來匯出網頁伺服器憑證的根憑證。  
@@ -171,9 +172,4 @@ System Center Configuration Manager 內部部署行動裝置管理需要設定�
      收到「Active Directory 憑證服務」必須重新啟動的通知時，按一下 **[下一步]**之裝置與站台系統伺服器之間受信任通訊的憑證。  
 
 9. 檢閱設定，然後按一下 **[完成]** 。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -17,8 +17,9 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 593fbd0587d54490246f48ae54f666bac6b7830d
-ms.openlocfilehash: 0ff83aed4d5e19806a8c69f4b45e39a6156dee7e
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: c11440556abc11d2c19ee0ff3c2bc9e518951e49
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -29,11 +30,13 @@ ms.openlocfilehash: 0ff83aed4d5e19806a8c69f4b45e39a6156dee7e
 
 在 System Center Configuration Manager (也稱為 ConfigMgr 或 SCCM) 中使用 VPN 設定檔，將 VPN 設定部署至組織中的使用者。 透過部署這些設定，即可最小化連線到公司網路上資源所需的使用者工作。  
 
- 例如，您想要以連線至企業網路上檔案共用所需的設定佈建所有執行 iOS 作業系統的裝置。 您可以建立含有連線至企業網路所需設定的 VPN 設定檔，然後將此設定檔部署至階層中所有擁有執行 iOS 之裝置的使用者。 iOS 裝置的使用者會看見可用網路清單中的 VPN 連線，並且可以輕鬆連線至此網路。  
+ 例如，您想要以連線至企業網路上檔案共用所需的設定佈建所有執行 Windows RT 作業系統的裝置。 您可以建立VPN 設定檔，其中含有連線至企業網路所需的設定，然後將此設定檔部署至階層中所有擁有執行 Windows RT 之裝置的使用者。 Windows RT 裝置的使用者會看見可用網路清單中的 VPN 連線，並且可以輕鬆連線至此網路。  
 
  當您建立 VPN 設定檔時，您可以在其中加入各種安全性設定，包括藉由使用 System Center Configuration Manager 憑證設定檔佈建的伺服器驗證憑證和用戶端驗證憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](introduction-to-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
 
- 下列各節會說明如果使用 Configuration Manager 或 Configuration Manager 搭配 Microsoft Intune，可用 VPN 設定檔設定哪些裝置。  
+ 下列各節會說明如果使用 Configuration Manager，可用 VPN 設定檔設定哪些裝置。
+
+ 若要檢視您可以使用 Configuration Manager 搭配 Microsoft Intune 來設定的裝置，請參閱[行動裝置上的 VPN 設定檔](/sccm/mdm/deploy-use/create-vpn-profiles)。  
 
 ## <a name="vpn-profiles-when-using-configuration-manager"></a>使用 Configuration Manager 時的 VPN 設定檔  
  下表說明針對不同裝置平台可以設定的 VPN 設定檔。  
@@ -51,31 +54,10 @@ ms.openlocfilehash: 0ff83aed4d5e19806a8c69f4b45e39a6156dee7e
 |**PPTP**|是|[是]|是|否|  
 |**L2TP**|是|[是]|是|否|  
 
-## <a name="vpn-profiles-when-using-configuration-manager-together-with-intune"></a>使用 Configuration Manager 和 Intune 時的 VPN 設定檔  
- 若要將設定檔部署到 iOS、Android、Windows Phone 和 Windows 8.1 裝置，這些裝置必須在 Microsoft Intune 註冊。 其他平台上的裝置也可以註冊至 Intune。 如需如何註冊的資訊，請參閱[註冊裝置以在 Intune 中管理](https://technet.microsoft.com/en-us/library/dn646962.aspx)。 本表顯示各裝置平台支援的連線類型︰  
-
-|連線類型|iOS 與 Mac OS X|Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 與行動裝置版|  
-|---------------------|----------------------|-------------|-----------------|----------------|--------------------|-----------------------|-----------------------------------|  
-|Cisco AnyConnect|是|是|否|否|否|否|是 (OMA-URI)|  
-|Pulse Secure|是|[是]|是|否|是|[是]|是|  
-|F5 Edge Client|是|[是]|是|否|是|[是]|是|  
-|Dell SonicWALL Mobile Connect|是|[是]|是|否|是|[是]|是|  
-|檢查點行動 VPN|是|[是]|是|否|是|[是]|是|  
-|Microsoft SSL (SSTP)|否|否|是|[是]|是|否|否|  
-|Microsoft Automatic|否|否|是|[是]|是|否|是 (OMA-URI)|  
-|IKEv2|是 (自訂原則)|否|是|[是]|[是]|是|是 (OMA-URI)|  
-|PPTP|是|否|是|[是]|是|否|是 (OMA-URI)|  
-|L2TP|是|否|是|[是]|是|否|是 (OMA-URI)|  
-
 ### <a name="next-steps"></a>後續步驟  
  使用下列主題可協助您規劃、設定、操作及維護 Configuration Manager 中的 VPN 設定檔。  
 
 -   [System Center Configuration Manager 中的 VPN 設定檔必要條件](../plan-design/prerequisites-for-wifi-vpn-profiles.md)  
 
 -   [System Center Configuration Manager 中的 VPN 設定檔安全性及隱私權](../plan-design/security-and-privacy-for-wifi-vpn-profiles.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

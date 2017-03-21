@@ -13,9 +13,9 @@ ms.technology:
 - configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
 translationtype: Human Translation
-ms.sourcegitcommit: 460089ce58910b68eb0a613bce0166754850844b
-ms.openlocfilehash: 9361c66228cf54eb1daf8138cd03fc8f6139f48d
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: dcbcd57b95f304f007e92ebe2b9aeefb4b579662
+ms.openlocfilehash: 986d0446209f6e7eac1b681066d1b2e2305e1975
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -49,7 +49,7 @@ Upgrade Readiness 是 Microsoft Operations Management Suite (OMS) 中的解決�
 
 ### <a name="create-the-connection"></a>建立連線
 
-1.  在 Configuration Manager 主控台中，選擇 [系統管理] > [雲端服務] > [Upgrade Readiness Connector] (Upgrade Readiness 連接器) > [Create Connection to Upgrade Readiness] (建立 Upgrade Readiness 的連線) 來啟動 [Add Upgrade Readiness Connection wizard] (新增 Upgrade Readiness 連線精靈)。
+1.  在 Configuration Manager 主控台中，選擇 [系統管理] > [雲端服務] > [Upgrade Readiness Connector] (升級整備連接器) > [建立 Upgrade Analytics 的連線] 來啟動 [新增 Upgrade Analytics 連線精靈]。
 3.  在 [Azure Active Directory] 畫面上，提供 [租用戶]、[用戶端識別碼] 和 [用戶端祕密金鑰]，然後選取 [下一步]。
 4.  在 [Upgrade Readiness] 畫面上，填入 [Azure 訂用帳戶]、[Azure 資源群組] 和 [Operations Management Suite 工作區] 以提供連線設定。
 5.  確認 [摘要] 畫面上的連線設定，然後選取 [下一步]。

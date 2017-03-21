@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager 中的條款和條件 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中，將條款和條件部署至使用者群組。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,14 +16,15 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 2f8b14bef14d82584fd2bf6cdd05018bdd463ce4
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: d8235db376fc62a7ac00d6e5a27823710630eca6
+ms.lasthandoff: 03/06/2017
 
 
 ---
-# <a name="terms-and-conditions-in-system-center-configuration-manager"></a>Terms and Conditions in System Center Configuration Manager
+# <a name="add-terms-and-conditions-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 新增條款及條件
 
-*適用於：System Center Configuration Manager (最新分支)*
+*適用對象：System Center Configuration Manager (最新分支)*
 
 您可以將 System Center Configuration Manager 條款和條件部署至使用者群組，以說明裝置註冊、存取工作資源以及使用公司入口網站，會如何影響裝置與使用者。 使用者必須先接受這些條款和條件，才可使用公司入口網站來註冊及存取其工作。  
 
@@ -120,8 +121,6 @@ ms.openlocfilehash: 2f8b14bef14d82584fd2bf6cdd05018bdd463ce4
 
      建議您在大幅變更條款和條件時，加大版本號碼並要求接受條款和條件。 如果您想要修正錯字或變更格式，請保留目前的版本號碼。
 
-
-
-<!--HONumber=Dec16_HO3-->
-
+> [!div class="button"]
+ [< 上一個步驟](configure-intune-subscription.md)  [下一個步驟 >](create-service-connection-point.md)
 

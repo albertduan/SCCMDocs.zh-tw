@@ -2,7 +2,7 @@
 title: "使用 System Center Configuration Manager 透過遠端抹除、鎖定或密碼重設來協助保護資料 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 透過完整抹除、選擇性抹除、遠端鎖定或密碼重設來協助保護裝置資料。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
-ms.openlocfilehash: d3dd55b496a124c478f1cf2880a096e2fbdd9145
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 3aa4c2ad3568cc6ced70a65141a2c103af8b740f
+ms.lasthandoff: 03/06/2017
 
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-using-system-center-configuration-manager"></a>使用 System Center Configuration Manager 透過遠端抹除、鎖定或密碼重設來協助保護資料
@@ -144,7 +145,7 @@ Configuration Manager 提供選擇性抹除、完整抹除、遠端鎖定和密�
 
 -   允許原廠重設  
 
--   允許藍芽  
+-   允許藍牙  
 
 -   允許 NFC  
 
@@ -241,12 +242,6 @@ Configuration Manager 提供選擇性抹除、完整抹除、遠端鎖定和密�
 
 3.  在 [裝置群組]  中按一下 [遠端裝置動作] ，然後選取 [顯示遠端鎖定狀態] 。  
 
-## <a name="see-also"></a>另請參閱  
- [Windows 選擇性清除裝置資料管理](http://technet.microsoft.com/library/dn486874.aspx)   
- [System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](../../mdm/understand/hybrid-mobile-device-management.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+### <a name="see-also"></a>另請參閱  
+ [Windows 選擇性清除裝置資料管理 (英文)](http://technet.microsoft.com/library/dn486874.aspx)   
 

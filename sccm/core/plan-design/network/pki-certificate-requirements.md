@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: b90519f6f6e3599cd34f5cf93b476739ec17847b
-ms.openlocfilehash: 64ed5982cfd1de6ec135f02c84b9396266001b42
-ms.lasthandoff: 02/24/2017
+ms.sourcegitcommit: dcbcd57b95f304f007e92ebe2b9aeefb4b579662
+ms.openlocfilehash: 991bf551899d810a55a30f1a833de28db6295cf4
+ms.lasthandoff: 03/09/2017
 
 
 ---
@@ -33,8 +33,11 @@ ms.lasthandoff: 02/24/2017
 -   Windows Server 2008： [Windows Server 2008 中的 Active Directory 憑證服務](http://go.microsoft.com/fwlink/p/?LinkId=115018)  
 
 > [!IMPORTANT]  
->  自 2017 年 2 月 14 日起生效，Windows 將不再信任以 SHA-1 簽署的特定憑證。 您可以在 [Windows Enforcement of SHA1 certificates](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx) (Windows 強制 SHA1 憑證) 中閱讀說明。 我們通常會建議您發行以 SHA-2 (包含 SHA-256 及 SHA-512 及更多) 簽署的新伺服器及用戶端驗證憑證。
-> 此外，我們也建議所有網際網路服務都使用 SHA-2 憑證。 例如，如果購買雲端管理閘道所用的公開憑證，請確定也購買 SHA-2 憑證。
+> 自 2017 年 2 月 14 日起生效，Windows 將不再信任以 SHA-1 簽署的特定憑證。 System Center Configuration Manager 支援 SHA-2 憑證，並使用 SHA-2 憑證帶來重要的安全性優勢。 因此，我們建議︰
+> - 請發行以 SHA-2 (包含 SHA-256 及 SHA-512 及更多) 簽署的新伺服器及用戶端驗證憑證。
+> - 所有網際網路服務都使用 SHA-2 憑證。 例如，如果購買雲端管理閘道所用的公開憑證，請確定也購買 SHA-2 憑證。  
+>
+> 在大部分的情況下，變更 SHA-2 憑證對作業沒有任何影響。 如需詳細資訊，請參閱 [Windows Enforcement of SHA1 certificates](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx) (Windows 強制 SHA1 憑證)。
 
  除了 System Center Configuration Manager 在行動裝置及 Mac 電腦上註冊的用戶端憑證、Microsoft Intune 自動建立用於管理行動裝置的憑證，以及 System Center Configuration Manager 安裝在 AMT 電腦上的憑證之外，您可以使用任何 PKI 建立、部署及管理下列憑證。 不過，當您使用 Active Directory 憑證服務及憑證範本時，此 Microsoft PKI 解決方案可簡化憑證管理工作。 使用下表中的 [要使用的 Microsoft 憑證範本]  欄，可找出最符合憑證需求的憑證範本。 範本憑證只能由執行 Enterprise Edition 或 Datacenter Edition 伺服器作業系統 (例如 Windows Server 2008 Enterprise 和 Windows Server 2008 Datacenter) 的企業憑證授權單位發出。  
 

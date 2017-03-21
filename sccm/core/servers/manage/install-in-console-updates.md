@@ -2,7 +2,7 @@
 title: "主控台內更新 | Microsoft Docs"
 description: "System Center Configuration Manager 會與 Microsoft 雲端進行同步處理以取得更新，讓您可在主控台內安裝這類更新。"
 ms.custom: na
-ms.date: 2/23/2017
+ms.date: 3/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: a0d4eb601948aa3abb12409f3475d69cacf4a6aa
-ms.openlocfilehash: a2bf28c724f8e07f32a30ab5e0b832b46cf362bb
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
+ms.openlocfilehash: eafa95922485066632a5da522e6c3de69b45050f
+ms.lasthandoff: 03/04/2017
 
 
 ---
@@ -33,7 +33,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 -   在 **線上模式**中，服務連接點會自動連線到 Microsoft 雲端服務，並下載適用的更新。  
 
-     根據預設，Configuration Manager 每隔 24 小時就會檢查新的更新。 從 1602 版開始，您也可以在 Configuration Manager 主控台的 [系統管理] > [雲端服務] > [更新與服務] 節點中選擇 [檢查更新]，立即檢查更新。  
+     根據預設，Configuration Manager 每隔 24 小時就會檢查新的更新。 您也可以在 Configuration Manager 主控台的 [系統管理] > [雲端服務] > [更新與服務] 節點中選擇 [檢查更新]，立即檢查更新。  
 
 -   在**離線模式**中，服務連接點不會連線到 Microsoft 雲端服務。 您必須手動[使用 System Center Configuration Manager 的服務連接工具](../../../core/servers/manage/use-the-service-connection-tool.md)，以下載後匯入可用的更新。  
 
@@ -44,7 +44,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 -   您尚未安裝的更新會顯示為 **[可用]**。
 
--   您已安裝的更新會顯示為 **[已安裝]**。  從 1606 版開始，只會顯示最近安裝的更新。 您可以選擇功能區上的 [歷程記錄] 按鈕以檢視先前安裝的更新。
+-   您已安裝的更新會顯示為 **[已安裝]**。  只顯示最近安裝的更新。 您可以選擇功能區上的 [歷程記錄] 按鈕以檢視先前安裝的更新。
 
 
 
@@ -61,7 +61,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 -   [流程圖 - System Center Configuration Manager 的更新複寫](../../../core/servers/manage/update-replication-flowchart.md)  
 
 ## <a name="assign-permissions-to-view-and-manage-updates-and-features"></a>指派檢視及管理更新和功能的權限
-在安裝版本 1606 之前，若要在主控台中檢視更新，您必須為使用者指派安全性角色，其中包括 **站台** 權限群組中的 **讀取**權限，以及 **全部**安全性範圍。 從更新 1606 開始，以角色為基礎的系統管理安全性類別命名為 [更新套件]，可授與在 Configuration Manager 主控台中檢視及管理更新的存取權限。    
+若要在主控台中檢視更新，使用者必須被指派包含名為**更新套件**之安全性類別的以角色為基礎的系統管理安全性角色。 此類別會授與您存取權，在 Configuration Manager 主控台中檢視和管理更新。    
 
 **關於更新套件類別：**  
 依預設， **[更新套件]** (SMS_CM_Updatepackages) 屬於下列內建安全性角色的一部分，並具有所列的權限︰
@@ -95,13 +95,10 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 ###  <a name="bkmk_step1"></a> 步驟 1︰檢閱更新檢查清單  
 請檢閱適用的更新檢查清單，以了解開始更新之前應採取的動作︰
 
--   依據[升級至 System Center Configuration Manager](../../../core/servers/deploy/install/upgrade-to-configuration-manager.md) 的內容，升級至 1511。    
+- 更新為 1606：請參閱[安裝更新 1606 的檢查清單](../../../core/servers/manage/checklist-for-installing-update-1606.md)。  
 
--   從 1511 更新為 1602：請參閱[安裝更新 1602 的檢查清單](../../../core/servers/manage/checklist-for-installing-update-1602.md)。
-
-- 從 1511 或 1602 更新為 1606：請參閱[安裝更新 1606 的檢查清單](../../../core/servers/manage/checklist-for-installing-update-1606.md)。  
-
-- 從 1511、1602 或 1606 更新為 1610：請參閱[安裝更新 1610 的檢查清單](../../../core/servers/manage/checklist-for-installing-update-1610.md)。  
+- 從 1606 更新為 1610：請參閱[安裝更新 1610 的檢查清單](../../../core/servers/manage/checklist-for-installing-update-1610.md)。  
+<!--- Update to 1702 from either 1606 or 1610: See [Checklist for installing update 1702](../../../core/servers/manage/checklist-for-installing-update-1702.md). -->  
 
 ###  <a name="bkmk_step2"></a> 步驟 2︰安裝更新之前，先測試資料庫升級  
 只有安裝 System Center Configuration Manager 站台的「更新」時，才能使用此步驟中的資訊。 如果您是將 System Center 2012 Configuration Manager 站台「升級」至 System Center Configuration Manager，請參閱[測試站台資料庫升級](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager#a-namebkmktesta-test-the-site-database-upgrade)。
@@ -172,7 +169,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 -   當您在站台更新之後使用 Configuration Manager 主控台時，系統會提示您更新主控台。  
 
--  站台伺服器已成功完成更新安裝之後，便會自動更新所有適用的站台系統角色。  唯一要注意的一點是有關發佈點。 在已執行 1606 版或更新版本的站台上安裝更新時，不會再將所有發佈點同時設為離線以進行更新。 反之，站台伺服器會使用站台的內容發佈設定，逐一將更新發佈至發佈點子集。 這樣一來，只有部分發佈點會設為離線以安裝更新。 如此可讓還沒有開始更新或已完成更新的發佈點保持線上狀態，以提供內容給用戶端。
+-  站台伺服器已成功完成更新安裝之後，便會自動更新所有適用的站台系統角色。  唯一要注意的一點是有關發佈點。 安裝更新時，所有的發佈點不會同時重新安裝和離線更新。 反之，站台伺服器會使用站台的內容發佈設定，逐一將更新發佈至發佈點子集。 這樣一來，只有部分發佈點會設為離線以安裝更新。 如此可讓還沒有開始更新或已完成更新的發佈點保持線上狀態，以提供內容給用戶端。
 
 
 ###  <a name="bkmk_overview"></a> 主控台內更新安裝概觀  
@@ -185,7 +182,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
     -   必要條件警告也會停止安裝更新。 您應該先修正警告，再重試安裝更新。 如需詳細資訊，請參閱 [重試失敗更新的安裝](#bkmk_retry) 。  
     -   選取 [忽略任何先決條件檢查警告並安裝此更新 (不管遺漏的必要項)] 選項，會設定更新安裝的條件以忽略先決條件警告。 這允許繼續安裝更新。 如果您未選取此選項，更新安裝將會在遇到警告時停止。 除非您先前已針對某個站台執行先決條件檢查並修正先決條件警告，否則不建議使用此選項。  
 
-      從 1606 版開始，在 [系統管理] 和 [監視] 工作區中，[更新與服務] 節點的功能區上皆包含名為 [忽略先決條件警告] 的按鈕。 當更新套件無法完成安裝時，會產生先決條件檢查警告，此按鈕即變成可用。 例如，如果您從 [更新精靈] 安裝更新時未使用忽略先決條件警告的選項，但該更新安裝停止並處於先決條件警告 (但不含錯誤) 的狀態中，您可以稍後選擇功能區中的 **[忽略先決條件警告]**，觸發自動接續安裝要忽略先決條件警告的這項更新。 使用此選項時，會在幾分鐘後自動繼續安裝更新。
+      [管理] 和 [監視] 兩工作區的 [更新與服務] 節點，其功能區中皆包含名為 [忽略先決條件警告] 的按鈕。 當更新套件無法完成安裝時，會產生先決條件檢查警告，此按鈕即變成可用。 例如，如果您從 [更新精靈] 安裝更新時未使用忽略先決條件警告的選項，但該更新安裝停止並處於先決條件警告 (但不含錯誤) 的狀態中，您可以稍後選擇功能區中的 **[忽略先決條件警告]**，觸發自動接續安裝要忽略先決條件警告的這項更新。 使用此選項時，會在幾分鐘後自動繼續安裝更新。
 
 
 
@@ -211,7 +208,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 -   在 Configuration Manager 主控台中：[監視] > [概觀] > [更新與服務狀態] 節點。 此節點只會顯示目前正在安裝之更新套件的安裝狀態。  
 
-    從 1606 版開始，更新套件安裝細分成下列階段，以簡化監視。 每個階段都提供額外的詳細資料，包括檢視哪個記錄檔案以取得詳細資訊。  
+  更新套件安裝細分成下列階段，以簡化監視。 每個階段都提供額外的詳細資料，包括檢視哪個記錄檔案以取得詳細資訊。  
     -   **下載** (這個階段僅適用於服務連接點站台系統角色安裝所在的頂層站台)。
     -   **複寫**
     -   **必要條件檢查**
@@ -323,36 +320,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 若功能非為選擇性，就會自動安裝，且不會出現在 [功能] 節點中。  
 
 ##  <a name="bkmk_prerelease"></a> 使用更新的發行前版本功能
-發行前版本功能會包含在產品內，以便在生產環境中進行早期測試，但不應視為生產環境就緒。 從 1606 開始，您必須同意使用 System Center Configuration Manager 中的發行前版本功能，才可以選取功能並啟用其用法。  
-
-每個階層的同意都是一次性且無法取消的動作。 只有在您同意之後，才能啟用更新 1606 或以上更新版本所隨附的新發行前版本功能。
-
-若要表示同意，可在主控台中移至 [系統管理] > [站台設定] > [站台]，然後選擇 [階層設定]。 在 [一般] 索引標籤上，選擇 [同意使用發行前功能]。
-
- > [!NOTE]
- > 如果您在安裝更新 1606 之前已啟用更新 1602 的發行前版本功能，則在安裝 1606 之後，這些功能仍然可供使用 (即使您未同意使用發行前版本功能亦同)。
-
-若階層執行 1606 版或更新版本，之後您再安裝包含發行前版本功能的更新，則 [更新與服務精靈] 中會顯示這些功能與一般功能：
-  - **如果您已同意：** 安裝更新時，您即可透過 [更新與服務精靈] 啟用發行前版本功能。 若要這樣做，請選取發行前版本功能 (方法和選取任何其他功能相同)。     
-
-    您可以稍後透過主控台的 [系統管理] > [雲端服務] > [更新與服務] > [功能] 節點，啟用發行前版本功能。 在 [功能] 節點中，選擇功能，然後選擇 [開啟] (如果您同意，這個選項會呈現灰色)。  
-  -   **如果您尚未同意︰**安裝更新時，[更新與服務精靈] 中會顯示發行前版本功能，但為灰色且無法啟用。 安裝更新之後，您可以在 [功能] 節點中檢視這些功能，但無法在 [階層設定] 中表示同意之後予以啟用。
-
- > [!TIP]
- > 若您正在安裝更新 1606，[更新與服務精靈] 中不會顯示隨附於更新 1606 的發行前版本功能，此時亦無法啟用。 安裝更新 1606 之後，您可以在 [功能] 節點中檢視隨附的發行前版本功能。
-
-如果您已授權獨立主要站台，然後藉由安裝新的管理中心網站來擴充階層，則必須於管理中心網站再授權一次。
-
-**下列為可用的發行前版本功能：**
-
- |功能                    |已新增為發行前版本 |已新增為完整功能 |  
-|----------------------------|---------------------|------------------------|
-| 可將內容發佈至用戶端的對等快取 |  [1610 版](/sccm/core/plan-design/hierarchy/client-peer-cache) |![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| 雲端管理閘道 |  [1610 版](/sccm/core/clients/manage/plan-cloud-management-gateway) |![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| 用戶端資料來源儀表板 |  [1610 版](/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard) |![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| Microsoft Operations Management Suite 連接器  | [1606 版](../../../core/clients/manage/sync-data-microsoft-operations-management-suite.md) |![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-| 服務叢集感知集合 (用於服務伺服器群組)| [版本 1602](../../../core/get-started/capabilities-in-technical-preview-1605.md#BKMK_ServerGroups)|![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
-|System Center Configuration Manager 所管理電腦的條件式存取 | [版本 1602](../../../protect/deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)     |![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)                        |
+發行前版本功能是「最新分支」中所包含，用來在生產環境中進行早期測試的功能。 這些功能不應視為準備好用於生產環境，但是可以在您的生產環境中使用。 若要深入了解發行前版本功能，包括如何在您的環境中啟用它們，請參閱[發行前版本功能](/sccm/core/servers/manage/pre-release-features)。                |
 
 
 ## <a name="known-issues"></a>已知問題

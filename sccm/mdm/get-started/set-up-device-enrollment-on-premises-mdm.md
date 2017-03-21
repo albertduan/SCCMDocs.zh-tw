@@ -1,13 +1,13 @@
 ---
-title: "設定裝置註冊 | Microsoft Docs | 內部部署 MDM"
+title: "設定裝置註冊 | Microsoft Docs"
 description: "將在 System Center Configuration Manager 中註冊裝置以進行內部部署行動裝置管理的權限授與使用者。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
 ms.technology:
-- configmgr-client
+- configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 9ffaea91-1379-4b86-9953-b25e152f56a9
@@ -16,8 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: ee2bfd1b0bdd51322819cfef9fb6185642bd8796
+ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
+ms.openlocfilehash: 1b32d755e23e1b1db2162bb117f45791a95b139b
+ms.lasthandoff: 03/06/2017
 
 
 ---
@@ -35,7 +36,7 @@ ms.openlocfilehash: ee2bfd1b0bdd51322819cfef9fb6185642bd8796
 
 -   [將根憑證儲存在會註冊的裝置上](#bkmk_storeCert)  
 
-##  <a name="a-namebkmkcreateprofa-create-an-enrollment-profile-that-allows-users-to-enroll-modern-devices"></a><a name="bkmk_createProf"></a> 建立使用者能註冊新式裝置註冊設定檔  
+##  <a name="bkmk_createProf"></a> 建立使用者能註冊新式裝置註冊設定檔  
  若要推送允許使用者註冊現代化行動裝置所需的設定，您可以將新的註冊設定檔新增至預設用戶端設定，以套用到 Configuration Manager 站台中所有探索到的使用者。  
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理] > [概觀] > [用戶端設定]，並開啟 [預設用戶端設定]，然後選取 [註冊]。  
@@ -51,7 +52,7 @@ ms.openlocfilehash: ee2bfd1b0bdd51322819cfef9fb6185642bd8796
 > [!NOTE]  
 >  如果想要將註冊設定檔部署到探索到的一部分使用者，可以利用使用者集合，並建立自訂用戶端設定，部署至該集合。 如需建立自訂用戶端設定的詳細資訊，請參閱 [How to configure client settings in System Center Configuration Manager](../../core/clients/deploy/configure-client-settings.md)  
 
-##  <a name="a-namebkmkaddclienta-set-up-additional-client-settings-for-enrolled-devices"></a><a name="bkmk_addClient"></a> 針對已註冊裝置設定額外的用戶端設定  
+##  <a name="bkmk_addClient"></a> 針對已註冊裝置設定額外的用戶端設定  
  除了針對現代化裝置設定註冊設定檔之外，您還可以在裝置註冊後，設定額外的用戶端設定來設定裝置。  如需設定用戶端設定的資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端設定](../../core/clients/deploy/configure-client-settings.md)。  
 
  並非所有的用戶端設定都適用於進行內部部署行動裝置管理。 Configuration Manager 的最新分支支援進行內部部署行動裝置管理的下列用戶端設定：  
@@ -65,10 +66,10 @@ ms.openlocfilehash: ee2bfd1b0bdd51322819cfef9fb6185642bd8796
     > [!NOTE]  
     >  對於內部部署行動裝置管理，軟體部署設定僅能作為預設用戶端設定使用。 Configuration Manager 的最新分支中的自訂用戶端設定無法搭配軟體部署設定。  
 
-##  <a name="a-namebkmkenableusersa-enable-users-to-receive-the-modern-device-enrollment-profile"></a><a name="bkmk_enableUsers"></a> 讓使用者能收到新式裝置註冊設定檔  
+##  <a name="bkmk_enableUsers"></a> 讓使用者能收到新式裝置註冊設定檔  
  若要讓使用者接收已修改的用戶端設定與進行內部部署行動裝置管理的註冊設定檔，必須先透過 Active Directory 探索方法探索到使用者。 為確保每個需要註冊設定檔的使用者皆可取得它，請執行 Active Directory 使用者探索。 如需如何探索使用者的指示，請參閱 [Run discovery for System Center Configuration Manager](../../core/servers/deploy/configure/run-discovery.md)。  
 
-##  <a name="a-namebkmkstorecerta-store-the-root-certificate-on-devices-to-be-enrolled"></a><a name="bkmk_storeCert"></a> 將根憑證儲存在會註冊的裝置上  
+##  <a name="bkmk_storeCert"></a> 將根憑證儲存在會註冊的裝置上  
  其裝置已加入網域的使用者，應該已有必要的根憑證，可與裝載站台系統角色的伺服器進行受信任的通訊，因為利用 Active Directory 加入網域的過程中，會核發根。 未加入網域的電腦與行動裝置，需要在裝置上手動安裝根憑證，才可進行註冊。 這些裝置會自動具備必要的根憑證。  
 
  必須為裝置提供匯出的憑證檔案，進行手動安裝。 可利用電子郵件、OneDrive、SD 記憶卡、USB 磁碟，或任何適合您需求的方法，提供憑證檔案。  
@@ -88,9 +89,4 @@ ms.openlocfilehash: ee2bfd1b0bdd51322819cfef9fb6185642bd8796
 6.  依序按一下 [受信任的根憑證授權單位] 、[確定] 和 [下一步] 。  
 
 7.  按一下 [完成] 。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
