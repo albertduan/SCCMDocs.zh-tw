@@ -16,16 +16,14 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 619899aaf8bde36e2bd62b5ba8a037b8580df198
-ms.openlocfilehash: 58b343aed6ea1d846801aca5e0a95200df1acc94
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
+ms.openlocfilehash: 3bdbcd1a3c64a1d50f2f6219b2a5e17d60979864
+ms.lasthandoff: 03/13/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1702 中的功能
 
 *適用於︰System Center Configuration Manager (Technical Preview)*
-
-
 
 本文介紹 System Center Configuration Manager Technical Preview 1702 版中可用的功能。 您可以安裝此版本，以更新並新增功能至 Configuration Manager Technical Preview 站台。 安裝此版本的 Technical Preview 之前，請檢閱 [System Center Configuration Manager 的 Technical Preview](../../core/get-started/technical-preview.md) 簡介主題，以熟悉使用 Technical Preview 的一般需求和限制、如何在版本之間進行更新，以及如何針對 Technical Preview 中的功能提供意見反應。    
 
@@ -315,6 +313,10 @@ Android for Work 是與 Android 不同的平台，而且您需要決定哪種形
   - **將所有裝置作為 Android 管理** - (已停用) 所有 Android 裝置 (包括支援 Android for Work 的裝置) 將會註冊為傳統 Android 裝置。
   - **將受支援的裝置作為 Android for Work 管理** - (已啟用) 所有支援 Android for Work 的裝置都會註冊為 Android for Work 裝置。 不支援 Android for Work 的任何 Android 裝置都會註冊為傳統 Android 裝置。
   - **將這些群組中僅限使用者的受支援裝置作為 Android for Work 管理** - (測試中) 可讓您將 Android for Work 管理的目標設為有限的一組使用者。 只有註冊支援 Android for Work 之裝置的所選群組成員，才能註冊為 Android for Work 裝置。 所有其他成員則會註冊為 Android 裝置。
+  
+> [!NOTE]
+> 一項已知的問題會造成 [將這些群組中僅限使用者的受支援裝置作為 Android for Work 管理]** Android** 選項無法正常運作。 指定的 Azure AD 群組中的使用者裝置將註冊為 Android，而不是 Android for Work。 若要測試 Android for Work，您必須使用 [Manage all supported devices as Android for Work] (將所有支援的裝置作為 Android for Work 管理)。
+
 
   若要啟用 Android for Work 註冊，您必須選擇下面兩個選項中的其中一個。 [將這些群組中僅限使用者的受支援裝置作為 Android for Work 管理] 選項需要您先設定 Azure Active Directory 安全性群組。
 
@@ -323,7 +325,7 @@ Android for Work 是與 Android 不同的平台，而且您需要決定哪種形
 #### <a name="approve-and-deploy-android-for-work-apps"></a>核准和部署 Android for Work 應用程式
 遵循下列步驟來核准 Play for Work 市集中的應用程式，並將它們與 Configuration Manager 主控台同步，然後將它們部署至受管理 Android for Work 裝置。 若要將應用程式部署至使用者的工作設定檔，您需要核准 Play for Work 市集中的應用程式，然後將應用程式與 Configuration Manager 主控台同步。
 
-1. 開啟瀏覽器，並前往︰http://www.play.com/work
+1. 開啟瀏覽器並前往︰https://play.google.com/work。
 2. 使用您已繫結至 Intune 租用戶的 Google 系統管理員帳戶登入。
 3. 瀏覽您要在環境中部署的應用程式，然後針對它們都按一下 [核准]。
 4. 在 Configuration Manager 主控台中，移至 [系統管理員] > [概觀] > [雲端服務] > [Android for Work]，然後按一下 [同步]。
@@ -352,4 +354,7 @@ Android for Work 有兩個設定項目設定群組︰
 因為您只可管理工作設定檔，所以只能選擇性地抹除註冊為 Android for Work 的裝置。 這可防止抹除個人設定檔。 在 Android for Work 裝置上執行選擇性抹除會移除工作設定檔 (包括所有應用程式和資料)，並解除註冊裝置。
 
 若要選擇性地抹除 Android for Work 裝置，請使用 Configuration Manager 主控台中的一般[選擇性抹除](https://docs.microsoft.com/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)程序。
+
+#### <a name="known-issues-for-android-for-work"></a>Android for Work 的已知問題
+[Configuring sync schedule in Android for Work email profiles causes them to fail to deploy] (在 Android for Work 電子郵件設定檔中設定同步處理排程，會導致它們無法部署) Android for Work 電子郵件設定檔之 ConfigMgr UI 中的其中一個選項為「排程」。 在其他平台上，這可讓系統管理員設定排程，以將電子郵件和其他電子郵件帳戶資料同步處理到部署的目標行動裝置上。 不過，它不適用於 Android for Work 電子郵件設定檔，而且選擇「未設定」以外的任何選項，則會導致該設定檔無法部署至任何裝置。
 

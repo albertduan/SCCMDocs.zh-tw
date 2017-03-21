@@ -2,7 +2,7 @@
 title: "支援的 LTSB 設定 | Microsoft Docs"
 description: "了解哪些作業系統和相依產品與 System Center Configuration Manager 的長期維護分支搭配運作。"
 ms.custom: na
-ms.date: 1/12/2017
+ms.date: 3/9/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 12aa9f0a1ad4ce8acf0b914e9911bb50ba887919
-ms.openlocfilehash: 5b2ab25d7f645ea9eada81d241ef14168b017304
+ms.sourcegitcommit: 477ffa5d61d2dfaedf8a3a1f5687e2d72698ad28
+ms.openlocfilehash: 78dcbf76f21a286506b9c605e2c176714736935b
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -38,7 +39,7 @@ Configuration Manager 支援下列各節詳述的產品和技術。 不過，本
 **Windows：**
 - 只會支援 Windows 的品質和安全性更新。
 - 不支援最新分支 (CB)、最新商務分支 (CBB) 或 Windows 10 的 LTSB。
--   不支援 Windows Server 的新主要版本。
+-    不支援 Windows Server 的新主要版本。
 
 **SQL Server：**
 - SQL Server 僅支援品質和安全性更新或次要升級 (例如 Service Pack)。
@@ -51,13 +52,15 @@ LTSB 支援使用下列 Windows 電腦作業系統作為站台系統。  每個�
 - Windows Server 2016
 - Windows Server 2012 (x64)：Standard、Datacenter
 - Windows Server 2008 R2 (含 SP1) (x64)：Standard、Enterprise、Datacenter
-- Windows Server 2008 (含 SP2) (x86、x64)：Standard、Enterprise、Datacenter
+- Windows Server 2008 (含 SP2) (x86、x64)：Standard、Enterprise、Datacenter *(請參閱註 1)*
 - Windows 10 Enterprise 2015 LTSB (x86、x64)
 - Windows 10 Enterprise 2016 LTSB (x86、x64)
 - Windows 8.1 (x86、x64)：專業版、企業版
 - Windows 7 (含 SP1) (x86、x64)：專業版、企業版、旗艦版
 - Windows Server 2012 的 Server Core 安裝
-- Windows Server 2012 R2 的 Server Core 安裝  
+- Windows Server 2012 R2 的 Server Core 安裝    
+
+*註 1*︰此作業系統不支援站台伺服器或站台系統角色，但發佈點和提取發佈點為例外。 您能持續將此作業系統作為發佈點使用，直到宣告此項支援已遭取代，或此作業系統的延伸支援期限過期。 如需詳細資訊，請參閱 [Installation of System Center Configuration Manager CB and LTSB fails on Windows Server 2008](https://support.microsoft.com/help/4015095) (在 Windows Server 2008 上安裝 System Center Configuration Manager CB 和 LTSB 失敗)。
 
 ## <a name="client-management"></a>用戶端管理
 下列各節識別您可以使用 LTSB 管理的用戶端作業系統。 LTSB 不支援將新的作業系統新增為支援的用戶端。
@@ -332,9 +335,4 @@ LTSB 支援下列 SQL Server 版本來裝載站台資料庫和報告點。 針�
 - [建議的硬體](/sccm/core/plan-design/configs/recommended-hardware)
 - [Windows 功能和網路支援](/sccm/core/plan-design/configs/support-for-windows-features-and-networks)
 - [虛擬化環境支援](/sccm/core/plan-design/configs/support-for-virtualization-environments)
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

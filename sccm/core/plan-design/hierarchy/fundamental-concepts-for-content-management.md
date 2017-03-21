@@ -2,7 +2,7 @@
 title: "內容管理基礎 | Microsoft Docs"
 description: "請使用 System Center Configuration Manager 中的工具和選項來管理您部署的內容。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 3/15/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 83020f532edd7a640f0087aad40789e026f75913
-ms.openlocfilehash: 00751cd03a3dd49718994e31bc396e4e7d29ed2b
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 766120f5ca79f279a513b62c35a2374c859b253a
+ms.openlocfilehash: 079be3c97e4239f8c5293bed5a2ce13abfbe7798
+ms.lasthandoff: 03/15/2017
 
 
 ---
@@ -63,7 +63,7 @@ System Center Configuration Manager 支援強固的工具和選項系統，以�
 -   Configuration Manager 最多可支援五個累加版本的內容集。 在第五次更新之後，下一次的內容集變動會使 Configuration Manager 建立一個新版本的內容集。 Configuration Manager 便會發佈新的內容集以取代舊的內容集以及任何累加版本。 在發佈新的內容集之後，二進位差異複寫會再次複寫來源檔案的後續累加變更。  
 
 
-系統支援階層中每個父子站台之間的 BDR。 在站台中，系統支援站台伺服器與其發佈點之間的 BDR。 此支援包含提取發佈點，但不包含雲端式發佈點。 雲端發佈點不支援二進位差異複寫以傳送內容。  
+系統支援階層中每個父子站台之間的 BDR。 在站台中，系統支援站台伺服器與其標準發佈點之間的 BDR。 不過，提取發佈點和雲端發佈點不支援以二進位差異複寫來傳送內容。 提取發佈點支援檔案層級的差異、傳送新的檔案，但不支援檔案內的區塊。
 
 應用程式會一律使用二進位差異複寫。 在使用套件時，二進位差異複寫是選擇性的方式，且依預設不會啟用。 若要使用套件的二進位差異複寫，您必須為每個套件啟用此功能。 若要執行這項操作，當您建立新套件或編輯套件內容的 [資料來源]  時，請選取 [啟用二進位差異複寫]  選項。  
 

@@ -2,7 +2,7 @@
 title: "已淘汰的功能 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 不再支援的功能、產品和作業系統。"
 ms.custom: na
-ms.date: 1/5/2017
+ms.date: 3/9/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1948e2914fff91f156dd8956c018ff0fabcda2f9
-ms.openlocfilehash: 3a1edd1b59676e59d4bfcd4c01a23f7a04f91f4f
+ms.sourcegitcommit: 477ffa5d61d2dfaedf8a3a1f5687e2d72698ad28
+ms.openlocfilehash: cb57a8699081415af7e2e9dc29b0a321f100823d
+ms.lasthandoff: 03/10/2017
 
 
 ---
@@ -58,14 +59,14 @@ ms.openlocfilehash: 3a1edd1b59676e59d4bfcd4c01a23f7a04f91f4f
 
 System Center Configuration Manager 1511 版中已移除功能的其他詳細資訊︰
 
-###  <a name="a-namebkmkamta-out-of-band-management"></a><a name="bkmk_amt"></a> 超出訊號範圍管理  
+###  <a name="bkmk_amt"></a> 超出訊號範圍管理  
  Configuration Manager 已從 Configuration Manager 主控台內移除 AMT 型電腦的原生支援。  
 
 -   當您使用 [Microsoft System Center Configuration Manager 的 Intel SCS 附加元件](http://www.intel.com/content/www/us/en/software/setup-configuration-software.html)時，仍會完全管理 AMT 電腦。 附加元件可讓您存取管理 AMT 的最新功能，同時移除 Configuration Manager 併入那些變更之前所引入的限制。  
 
 -   這項變更不會影響 System Center 2012 Configuration Manager 中的頻外管理。  
 
-###  <a name="a-namebkmknapa-network-access-protection"></a><a name="bkmk_nap"></a> 網路存取保護  
+###  <a name="bkmk_nap"></a> 網路存取保護  
  System Center Configuration Manager 已移除網路存取保護的支援。 此功能在 Windows Server 2012 R2 中已淘汰，且已從 Windows 10 移除。  
 
  如需了解網路存取保護的替代方案，請參閱 *網路原則與存取服務概觀* 中的 [淘汰的功能](https://technet.microsoft.com/library/hh831683.aspx)一節。  
@@ -76,10 +77,10 @@ System Center Configuration Manager 1511 版中已移除功能的其他詳細資
 
 |**作業系統**|**首次宣布的淘汰項目**|**移除的支援** |  
 |-|-|-|  
-|Windows Server 2008|2015 年 7 月 10 日|支援將結束於 2016 年 12 月 31 日後發行的第一個更新 (請參閱附註 1)。|  
+|Windows Server 2008|2015 年 7 月 10 日|1511 </br></br>已移除作為站台系統的支援。 (請參閱註 1)。|  
 |Windows Server 2008 R2|2015 年 7 月 10 日|支援將結束於 2016 年 12 月 31 日後發行的第一個更新 (請參閱附註 2)。|  
 
--   附註 1：支援結束之後，此作業系統將不再支援站台伺服器或大部分的站台系統角色。 不過，它仍會持續支援發佈點站台系統角色 (包括提取發佈點)，直到宣佈此項支援已遭取代，或此作業系統的延伸支援期限過期。  
+-   註 1︰此作業系統不支援站台伺服器或站台系統角色，但發佈點和提取發佈點為例外。 您能持續將此作業系統作為發佈點使用，直到宣告此項支援已遭取代，或此作業系統的延伸支援期限過期。 如需詳細資訊，請參閱 [Installation of System Center Configuration Manager CB and LTSB fails on Windows Server 2008](https://support.microsoft.com/help/4015095) (在 Windows Server 2008 上安裝 System Center Configuration Manager CB 和 LTSB 失敗)。 
 
 -   附註 2：支援結束之後，此作業系統將不再支援站台伺服器或大部分的站台系統角色。 不過，它仍會持續支援狀態移轉點和發佈點站台系統角色 (包括提取發佈點，並且適用於 PXE 和多點傳送)，直到宣佈此項支援已遭取代，或此作業系統的延伸支援期限過期。 從 1602 版開始，您可以將站台伺服器的作業系統從 Windows Server 2008 R2 就地升級到 Windows Server 2012 R2。  
 
@@ -110,9 +111,4 @@ System Center Configuration Manager 1511 版中已移除功能的其他詳細資
 |-|-|-|  
 |SQL Server 2008|2015 年 7 月 10 日|版本 1511|  
 |SQL Server 2008 R2|2015 年 7 月 10 日|支援將結束於 2016 年 12 月 31 日後發行的第一個更新。|  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d7265aec46474ba7fc317ddb5e20b91b7b134585
-ms.openlocfilehash: 36f6eb3fe48e904adf4d04450906fada9b477246
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: 289db441899359f3bf3abe5d38896c7acd2045b6
+ms.openlocfilehash: 5eaca19f2b21b1c62b956d2a44d492d3ddd6d10a
+ms.lasthandoff: 03/10/2017
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>關於 System Center Configuration Manager 中的用戶端設計
@@ -333,7 +333,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
 -   **隨機延遲時間上限**
 
-    硬體資訊的收集會隨機進行，最高達到兩個小時，如此作業不會同時在所有用戶端上發生。 您可以設定延遲時間上限，限制作業發生的時間。      
+    硬體資訊的收集會隨機進行，最高達到四個小時，如此作業便不會同時在所有用戶端上發生。 您可以設定延遲時間上限，限制作業發生的時間。      
 
 ##  <a name="metered-internet-connections"></a>計量付費網際網路連線  
  您可以管理 Windows 8 用戶端電腦與 Configuration Manager 站台在使用計量付費網際網路連線時的通訊方式。 在您處於計量付費網際網路連線時，網際網路提供者有時會根據您傳送和接收的資料量來收取費用。  
