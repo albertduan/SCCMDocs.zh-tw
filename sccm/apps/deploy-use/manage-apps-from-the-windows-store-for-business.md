@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: f955b5aadfc617e08d5d933dee8e42de838f83c0
 ms.openlocfilehash: bf2937f5ba86db19d9cb40e2c98cbb8ba365f7eb
+ms.lasthandoff: 02/15/2017
 
 ---
 # <a name="manage-apps-from-the-windows-store-for-business-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理從商務用 Windows 市集購買的應用程式
@@ -93,10 +94,10 @@ Because this is a pre-release feature, before you can connect Configuration Mana
 在商務用 Windows 市集中，將 Configuration Manager 設為市集管理工具。
 1.  開啟 [https://businessstore.microsoft.com/en-us/managementtools](https://businessstore.microsoft.com/en-us/managementtools)，並在出現提示時登入。
 2.  視需要接受使用條款。
-3.  在 [管理工具] 底下，選擇 [Add a management tool] (新增管理工具)。
-4.  在 [Search for the tool by name] (依名稱搜尋工具) 中，輸入您先前在 Azure Active Directory 中所建立應用程式的名稱，然後選擇 [新增]。
+3.  在 [管理工具] 底下，選擇 [Add a management tool]\(新增管理工具)。
+4.  在 [Search for the tool by name]\(依名稱搜尋工具) 中，輸入您先前在 Azure Active Directory 中所建立應用程式的名稱，然後選擇 [新增]。
 5.  選擇您剛才匯入之應用程式旁邊的 [啟用]。
-6.  如果您想要允許購買離線授權的應用程式，請在 [管理] > [帳戶資訊] 頁面中，選取 [Show Offline-Licensed Apps] (顯示離線授權的應用程式)。
+6.  如果您想要允許購買離線授權的應用程式，請在 [管理] > [帳戶資訊] 頁面中，選取 [Show Offline-Licensed Apps]\(顯示離線授權的應用程式)。
 
 > [!Note]
 > 如果您使用一個以上的管理工具來部署商務用 Windows 市集應用程式，之前只有一個工具能與商務用 Windows 市集應用程式建立關聯。 現在，您可以建立多個管理工具 (如 Intune 和 Configuration Manager) 與市集之間的關聯。
@@ -150,9 +151,4 @@ Because this is a pre-release feature, before you can connect Configuration Mana
 在 [軟體程式庫] 工作區中，展開 [應用程式管理]，然後選擇 [市集應用程式的授權資訊]。
 
 針對您管理的每個市集應用程式，您可以檢視應用程式的相關資訊，包括其名稱、平台、您擁有之應用程式的授權數目，以及您可以使用的授權數目。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a93ea730c39cce9dc46036f5aa6ece4a62679d0f
 ms.openlocfilehash: 0d16d362b798c194645f987088ba8a95a7be3f19
+ms.lasthandoff: 02/15/2017
 
 
 ---
@@ -28,14 +29,14 @@ ms.openlocfilehash: 0d16d362b798c194645f987088ba8a95a7be3f19
 您安裝的每個 System Center Configuration Manager 站台都包含站台伺服器，即**站台系統伺服器**。 站台亦可包含從站台伺服器遠端到電腦上的其他站台系統伺服器。 站台系統伺服器 (站台伺服器或遠端站台系統伺服器) 支援 **站台系統角色**。
 
 
-##  <a name="a-namebkmksiteserversa-site-system-servers"></a><a name="bkmk_siteservers"></a> 站台系統伺服器  
+##  <a name="bkmk_siteservers"></a> 站台系統伺服器  
  當您在電腦上安裝站台系統角色時，該電腦會變成站台系統伺服器。 您可以在每個站台安裝一或多個額外的站台系統伺服器。 您也可以選擇不要安裝額外的站台系統伺服器，而是在站台伺服器電腦上直接執行所有的站台系統角色。 每部站台系統伺服器都會支援一或多個站台系統角色。 藉由共用伺服器上站台系統角色的 CPU 處理負載，額外的伺服器能協助擴充站台的功能和容量。  
 
  在考慮加入站台系統伺服器時，請確認伺服器符合預期用途的先決條件。 將站台伺服器加入頻寬足夠與預期端點通訊的網路位置也是個不錯的主意，端點包括站台伺服器、網域資源、雲端位置、站台系統伺服器和用戶端。  
 
  如果您要設定具有 Proxy 的站台系統伺服器以供站台系統角色使用，請參閱[可使用 Proxy 伺服器的站台系統角色](#bkmk_proxy)。  
 
-##  <a name="a-namebkmkplanrolesa-site-system-roles"></a><a name="bkmk_planroles"></a> Site system roles  
+##  <a name="bkmk_planroles"></a> Site system roles  
  站台系統角色會安裝在電腦上，以提供站台額外的功能。 範例包括：  
 
 -   額外的管理點，讓站台可以支援更多裝置，直至站台支援的容量。  
@@ -102,7 +103,7 @@ ms.openlocfilehash: 0d16d362b798c194645f987088ba8a95a7be3f19
 
 -   **Reporting Services 點。** 此網站系統角色可與 SQL Server Reporting Services 整合，以建立及管理 Configuration Manager 的報告。 主要站台和管理中心網站支援這個角色，且您可以在支援的站台上安裝此角色的多個執行個體。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的報表規劃](../../../core/servers/manage/planning-for-reporting.md)。  
 
--   **服務連接點。** 一種站台系統角色，您可用來透過 Microsoft Intune 及內部部署 MDM 來管理行動裝置。 這個角色也會從您的站台上傳使用資料，並且需要此角色才能讓 Configuration Manager 更新可在 Configuration Manager 主控台中使用。 階層只支援此角色的單一執行個體，且必須位於階層的最上層站台 (管理中心網站或獨立主要站台)。 如果您擴充獨立主要站台到較大的階層時，必須從主要站台解除安裝此角色，然後在管理中心網站安裝此角色。 如需詳細資訊，請參閱 [About the service connection point in System Center Configuration Manager](../../../core/servers/deploy/configure/about-the-service-connection-point.md)。  
+-   **服務連接點。** 一種站台系統角色，您可用來透過 Microsoft Intune 及內部部署 MDM 來管理行動裝置。 這個角色也會從您的站台上傳使用資料，並且需要此角色才能讓 Configuration Manager 更新可在 Configuration Manager 主控台中使用。 階層只支援此角色的單一執行個體，且必須位於階層的最上層站台 (管理中心網站或獨立主要站台)。 如果您擴充獨立主要站台到較大的階層時，必須從主要站台解除安裝此角色，然後在管理中心網站安裝此角色。 如需詳細資訊，請參閱 [關於 System Center Configuration Manager 中的服務連線點](../../../core/servers/deploy/configure/about-the-service-connection-point.md)。  
 
 -   **軟體更新點。** 此網站系統角色可與 Windows Server Update Services (WSUS) 整合，以提供軟體更新給 Configuration Manager 用戶端。 所有站台都支援此角色︰  
 
@@ -118,7 +119,7 @@ ms.openlocfilehash: 0d16d362b798c194645f987088ba8a95a7be3f19
 
 -   **系統健全狀況驗證程式點。** 雖然此站台系統角色仍會出現在 Configuration Manager 主控台中，不過已不再使用。  
 
-###  <a name="a-namebkmkproxya-site-system-roles-that-can-use-a-proxy-server"></a><a name="bkmk_proxy"></a> 可使用 Proxy 伺服器的站台系統角色  
+###  <a name="bkmk_proxy"></a> 可使用 Proxy 伺服器的站台系統角色  
  某些 Configuration Manager 站台系統角色需要連線到網際網路，且當裝載角色的站台系統伺服器已設定使用 Proxy 伺服器時就會使用 Proxy 伺服器。 通常，會在電腦 (即安裝站台系統角色之電腦) 的**系統**內容中建立此連線。 該連線無法使用一般使用者帳戶的 Proxy 設定。 當需要使用 Proxy 伺服器完成與網際網路的連線時，您必須設定電腦才能使用 Proxy 伺服器：  
 
 -   安裝站台系統角色時，您可以設定 Proxy 伺服器。  
@@ -152,9 +153,4 @@ ms.openlocfilehash: 0d16d362b798c194645f987088ba8a95a7be3f19
  如需軟體更新點之 Proxy 伺服器的詳細資訊，請參閱[安裝軟體更新點](../../../sum/get-started/install-a-software-update-point.md)主題中的「Proxy 伺服器設定」一節。  
 
 -   **服務連接點。** 當設定為在線上 (而非離線) 時，此站台系統角色會連線至 Microsoft Intune 和 Microsoft 雲端服務。  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
