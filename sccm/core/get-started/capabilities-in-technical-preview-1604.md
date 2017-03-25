@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: d36de897e6407ec7431d4dbe24ad04423aee2ca1
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1604-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1604 中的功能
@@ -28,7 +29,7 @@ ms.openlocfilehash: d36de897e6407ec7431d4dbe24ad04423aee2ca1
 
  以下是您可以使用此版本試用的新功能。  
 
-##  <a name="a-namebkmkwindowsvppa-manage-volume-purchased-apps-from-the-windows-store-for-business"></a><a name="BKMK_WindowsVPP"></a> 從商務用 Windows 市集管理大量購買的應用程式  
+##  <a name="BKMK_WindowsVPP"></a> 從商務用 Windows 市集管理大量購買的應用程式  
  [商務用 Windows 市集](https://www.microsoft.com/en-us/business-store)是您可以在其中為您的組織尋找並個別或大量採購應用程式的地方。 藉由將市集連線到 Configuration Manager，您便可以從 Configuration Manager 主控台管理大量採購應用程式，例如：  
 
 -   您可以將已購買的應用程式清單與 Configuration Manager 進行同步處理  
@@ -65,13 +66,13 @@ ms.openlocfilehash: d36de897e6407ec7431d4dbe24ad04423aee2ca1
 
     2.  視需要接受使用條款  
 
-    3.  在 [管理工具] 底下，按一下 [Add a management tool] (新增管理工具)。  
+    3.  在 [管理工具] 底下，按一下 [Add a management tool]\ (新增管理工具)。  
 
-    4.  在 [Search for the tool by name] (依名稱搜尋工具) 中，輸入您先前在 AAD 中所建立應用程式的名稱，然後按一下 [新增]。  
+    4.  在 [Search for the tool by name]\(依名稱搜尋工具) 中，輸入您先前在 AAD 中所建立應用程式的名稱，然後按一下 [新增]。  
 
     5.  按一下您剛才匯入之應用程式旁邊的 [啟用]。  
 
-    6.  如果您想要允許購買離線授權的應用程式，請在 [Show Offline-Licensed Apps Wizard] (顯示離線授權的應用程式精靈) 中，按一下 [是]。  
+    6.  如果您想要允許購買離線授權的應用程式，請在 [Show Offline-Licensed Apps Wizard]\(顯示離線授權的應用程式精靈) 中，按一下 [是]。  
 
 4.  從「商務用 Windows 市集」至少購買一個應用程式。  
 
@@ -91,10 +92,10 @@ ms.openlocfilehash: d36de897e6407ec7431d4dbe24ad04423aee2ca1
 
 3.  建立 Configuration Manager 應用程式以包含商務用 Windows 市集應用程式。 然後可以如處理任何其他 Configuration Manager 應用程式一樣，部署及監視此應用程式。  
 
-##  <a name="a-namebkmkpfwa-improvements-to-microsoft-passport-for-work-management"></a><a name="BKMK_PFW"></a> 對 Microsoft Passport for Work 管理的改進  
+##  <a name="BKMK_PFW"></a> 對 Microsoft Passport for Work 管理的改進  
  您現在可以將 Passport for Work 原則部署到已加入網域且受 Configuration Manager 用戶端管理的 Windows 10 裝置。  
 
-##  <a name="a-namebkmkswitchsupa-option-for-clients-to-switch-to-a-new-software-update-point"></a><a name="bkmk_switchsup"></a> 可供用戶端切換到新軟體更新點的選項  
+##  <a name="bkmk_switchsup"></a> 可供用戶端切換到新軟體更新點的選項  
  在 1604 Technical Preview 中，您可以啟用可供 Configuration Manager 用戶端在主動式軟體更新點發生問題時切換到新軟體更新點的選項。 針對此選項，主要站台上必須要有多個軟體更新點。 您可以在裝置集合中啟用此選項，而且一旦啟用，集合中的用戶端就會在無法順利連線到主動式軟體更新點時，於下次掃描尋找另一個軟體更新點。 根據 WSUS 組態設定 (更新分類、產品等)，切換到新軟體更新點將會產生額外的網路流量。 因此，您應該只在必要時才使用此選項。  
 
 #### <a name="to-enable-the-option-to-switch-software-update-points"></a>啟用切換軟體更新點的選項  
@@ -106,7 +107,7 @@ ms.openlocfilehash: d36de897e6407ec7431d4dbe24ad04423aee2ca1
 > [!NOTE]  
 >  只有在具有多個軟體更新點的站台上才會提供此選項。  
 
-##  <a name="a-namebkmkpeercachea-client-settings-to-manage-client-cache-settings-and-client-peer-cache"></a><a name="bkmk_peercache"></a> 可管理用戶端快取設定和用戶端對等快取的用戶端設定  
+##  <a name="bkmk_peercache"></a> 可管理用戶端快取設定和用戶端對等快取的用戶端設定  
  Technical Preview 版本 1604 導入了兩個影響用戶端快取使用的新裝置用戶端設定。 兩者可個別使用，但是是在相同的用戶端設定屬性工作表上設定，並且可相結合來協助您管理對遠端位置中用戶端的內容部署。  
 
 -   首先是**用戶端對等快取**，這是一個內建的 Configuration Manager 解決方案，可讓用戶端直接從其本機快取將內容與其他用戶端共用。 若要讓「對等快取」用戶端共用內容，它們必須是相同界限群組的成員。 對等快取不會取代其他解決方案 (例如 BranchCache) 的使用，而是可並行運作來提供您更多選項以擴充傳統內容部署解決方案 (例如發佈點)。  
@@ -146,7 +147,7 @@ ms.openlocfilehash: d36de897e6407ec7431d4dbe24ad04423aee2ca1
     > [!NOTE]  
     >  若要使用 Technical Preview 和單一發佈點來完成這項工作，請針對您所有用戶端的網路連線，將發佈點設定成慢一點。 然後，將內容發佈到單一用戶端。  在該用戶端取得內容之後，您可以將內容發佈到額外的用戶端，這些用戶端應該會先找到本機對等電腦來做為內容來源，然後才使用從用戶端位置被視為太慢的發佈點。  
 
-##  <a name="a-namebkmkpassporta-support-for-passport-for-work-as-a-ksp"></a><a name="bkmk_passport"></a> 對以 Passport for Work 做為 KSP 的支援  
+##  <a name="bkmk_passport"></a> 對以 Passport for Work 做為 KSP 的支援  
  System Center Configuration Manager 可讓您與 Microsoft Passport for Work 整合，這是一個使用 Active Directory 或 Azure Active Directory 帳戶來取代密碼、智慧卡或虛擬智慧卡的替代登入方法。  
 Passport 可讓您使用使用者筆勢登入，而不使用密碼。 使用者筆勢可能是簡單的 PIN、生物識別驗證 (例如 Windows Hello) 或外部裝置 (例如指紋辨識器)。  
 
@@ -156,7 +157,7 @@ Passport 可讓您使用使用者筆勢登入，而不使用密碼。 使用者�
 
 當使用者建立 Passport PIN 時，Windows 會傳送 Configuration Manager 會接聽的通知。  這可讓 Configuration Manager 快速察覺哪些使用者已建立 Passport PIN。 如果 Passport 被用來當作憑證設定檔中的「金鑰儲存提供者」，Configuration Manager 便可接著一併發行新的憑證給這些使用者。  
 
-##  <a name="a-namebkmkonpremdhaa-on-premises-device-health-attestation"></a><a name="bkmk_onpremdha"></a> 內部部署裝置健康情況證明  
+##  <a name="bkmk_onpremdha"></a> 內部部署裝置健康情況證明  
  Windows 10 裝置的健康情況證明現在可以設定為使用內部部署基礎結構來進行通訊。  系統管理員可以指定是要透過雲端還是內部部署資源來執行報告。  如果選取 [內部部署] 來執行健康情況證明報告，便可接著指定服務的 URI。 這可讓無法存取網際網路的用戶端電腦使用健康情況證明來啟用和管理裝置。  
 
 #### <a name="enable-health-attestation-for-on-premises-devices"></a>為內部部署裝置啟用健康情況證明  
@@ -167,11 +168,6 @@ Passport 可讓您使用使用者筆勢登入，而不使用密碼。 使用者�
 
 若要試試看，請使用用戶端代理程式設定來設定內部部署「健康情況證明服務」。  
 
-##  <a name="a-namebkmksmarta-smartlock-setting-for-android-devices"></a><a name="BKMK_Smart"></a> 適用於 Android 裝置的 SmartLock 設定  
+##  <a name="BKMK_Smart"></a> 適用於 Android 裝置的 SmartLock 設定  
  新的設定 [允許 SmartLock 和其他信任代理程式] 已新增至 [Android 和 Samsung KNOX] 設定項目，可讓您控制相容 Android 裝置上的 SmartLock 功能。 此電話功能 (有時也稱為信任代理程式) 可讓您在裝置位於受信任的位置 (例如連線到特定的藍牙裝置或靠近 NFC 標記) 時，停用或略過裝置鎖定畫面密碼。 您可以使用此設定來防止使用者設定 SmartLock。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

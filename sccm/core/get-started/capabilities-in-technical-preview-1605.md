@@ -19,6 +19,7 @@ robots: noindex,nofollow
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1605-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1605 中的功能
@@ -35,7 +36,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
  **以下是您可以使用此版本試用的新功能。**  
 
-##  <a name="a-namebkmkperappvpna-per-app-vpn-for-windows-10-devices"></a><a name="BKMK_PerAppVPN"></a> 適用於 Windows 10 裝置的個別應用程式 VPN  
+##  <a name="BKMK_PerAppVPN"></a> 適用於 Windows 10 裝置的個別應用程式 VPN  
  針對使用 Configuration Manager 與 Intune 管理的 Windows 10 裝置，您可以加入會自動開啟 VPN 連線的應用程式清單，這個 VPN 連線是透過 Configuration Manager 管理主控台所設定。 您可以選擇僅限這些應用程式的 VPN 流量，或繼續允許透過 VPN 連線的所有流量。  
 
  **需求**：  
@@ -44,17 +45,17 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
 -   至少一部裝置已部署 Windows 10 VPN 設定檔  
 
-##  <a name="a-namebkmkinstallsua-improvements-to-the-install-software-updates-task-sequence"></a><a name="BKMK_InstallSU"></a> 安裝軟體更新工作順序的改進  
+##  <a name="BKMK_InstallSU"></a> 安裝軟體更新工作順序的改進  
  已對「安裝軟體更新」工作順序做了下列改進：  
 
 -   您可以使用新的工作順序變數 SMSTSSoftwareUpdateScanTimeout，在「安裝軟體更新」工作順序步驟期間，控制軟體更新掃描的逾時。 預設值為 30 分鐘。  
 
 -   已改進記錄功能。 smsts.log 記錄檔將包含參考其他記錄檔的新記錄檔項目，以協助您在軟體更新安裝程序期間疑難排解問題。  
 
-##  <a name="a-namebkmkprepareconfigmgrclienta-improvements-to-the-prepare-configmgr-client-for-capture-task-sequence-step"></a><a name="BKMK_PrepareConfigMgrClient"></a> 準備 ConfigMgr 用戶端以進行擷取之工作順序步驟的改進  
+##  <a name="BKMK_PrepareConfigMgrClient"></a> 準備 ConfigMgr 用戶端以進行擷取之工作順序步驟的改進  
  「準備 ConfigMgr 用戶端」步驟現在會完全移除 Configuration Manager 用戶端，而不是只移除金鑰資訊。 當工作順序部署擷取的作業系統映像時，每次都會安裝新的 Configuration Manager 用戶端。  
 
-##  <a name="a-namebkmkgracea-grace-period-for-required-application-deployments"></a><a name="BKMK_Grace"></a> 必要應用程式部署的寬限期  
+##  <a name="BKMK_Grace"></a> 必要應用程式部署的寬限期  
  在某些情況下，您可能想要提供更多時間給使用者，以在超過您設定的任何期限之後，還能安裝必要應用程式部署。 例如，如果使用者剛結束休假，他們可能必須等候很長的時間，讓逾期的應用程式部署完成安裝。 不過如果需要，他們仍可隨時立即安裝應用程式。  
 
  為了協助解決這個問題，您現在可以藉由將 Configuration Manager 用戶端設定部署至集合，來定義**寬限期**。  
@@ -71,7 +72,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
  [軟體更新部署精靈]、[自動部署規則精靈] 和 [內容] 頁面都已新增類似的選項。 不過，此 Technical Preview 目前尚未實作這些選項。  
 
-##  <a name="a-namebkmkremotea-new-experience-for-remote-device-actions"></a><a name="BKMK_Remote"></a> 遠端裝置動作的全新體驗  
+##  <a name="BKMK_Remote"></a> 遠端裝置動作的全新體驗  
  從 Configuration Manager 主控台執行遠端裝置動作的體驗已改善。  
 現在從 [資產與相容性] 工作區存取 [遠端裝置動作] 功能表即可找到 [淘汰/抹除]、[重設密碼]、[遠端鎖定] 和 [略過啟用鎖定] 等常見動作。  
 
@@ -87,7 +88,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
  如需 iOS 啟用鎖定略過的詳細資訊，請參閱[使用 Configuration Manager 的啟用鎖定略過協助保護 iOS 裝置](/sccm/mdm/deploy-use/manage-ios-activation-lock)，特別是 **Configuration Manager Technical Preview 之啟用鎖定略過的目前已知問題**一節。  
 
-##  <a name="a-namebkmkwsfba-windows-store-for-business-apps"></a><a name="BKMK_WSFB"></a> 商務用 Windows 市集應用程式  
+##  <a name="BKMK_WSFB"></a> 商務用 Windows 市集應用程式  
  [商務用 Windows 市集](https://www.microsoft.com/business-store)是您可以在其中為您的組織尋找並個別或大量採購應用程式的地方。 藉由將市集連線到 Configuration Manager，您便可以從 Configuration Manager 主控台管理大量採購應用程式，例如：  
 
 -   您可以將已購買的應用程式清單與 Configuration Manager 進行同步處理  
@@ -124,13 +125,13 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
     2.  視需要接受使用條款  
 
-    3.  在 [管理工具] 底下，按一下 [Add a management tool] (新增管理工具)。  
+    3.  在 [管理工具] 底下，按一下 [Add a management tool]\ (新增管理工具)。  
 
-    4.  在 [Search for the tool by name] (依名稱搜尋工具) 中，輸入您先前在 AAD 中所建立應用程式的名稱，然後按一下 [新增]。  
+    4.  在 [Search for the tool by name]\(依名稱搜尋工具) 中，輸入您先前在 AAD 中所建立應用程式的名稱，然後按一下 [新增]。  
 
     5.  按一下您剛才匯入之應用程式旁邊的 [啟用]。  
 
-    6.  如果您想要允許購買離線授權的應用程式，請在 [Show Offline-Licensed Apps Wizard] (顯示離線授權的應用程式精靈) 中，按一下 [是]。  
+    6.  如果您想要允許購買離線授權的應用程式，請在 [Show Offline-Licensed Apps Wizard]\(顯示離線授權的應用程式精靈) 中，按一下 [是]。  
 
 4.  從「商務用 Windows 市集」至少購買一個應用程式。  
 
@@ -158,7 +159,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 >   
 >  您目前無法使用 Configuration Manager 部署線上授權的應用程式。  
 
-##  <a name="a-namebkmkvpp2a-general-improvements-for-volume-purchased-apps"></a><a name="BKMK_VPP2"></a> 大量採購應用程式的一般改進  
+##  <a name="BKMK_VPP2"></a> 大量採購應用程式的一般改進  
 
 -   在此版本中，商務用 Windows 市集和 iOS 應用程式市集的大量採購應用程式已合併到 [市集應用程式的授權資訊] 檢視。  
 
@@ -170,14 +171,14 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
 -   您在 Configuration Manager 主控台中用來取得和上傳大量採購應用程式之 Apple VPP 權杖的位置已變更。 您現在可以在 [雲端服務] > [Apple 大量採購方案權杖] 節點底下的 [管理] 工作區中執行這項作業。  
 
-##  <a name="a-namebkmkvppa-enterprise-data-protection-edp"></a><a name="BKMK_VPP"></a> 企業資料保護 (EDP)  
+##  <a name="BKMK_VPP"></a> 企業資料保護 (EDP)  
  您可以建立讓您部署企業資料保護 (EDP) 原則的設定項目，包括讓您選擇受保護的應用程式、EDP 保護層級，以及如何在網路上尋找企業資料。 如需 EDP 的詳細資訊，請參閱下列主題：  
 
 -   [使用企業資料保護 (EDP) 來保護您的企業資料](https://technet.microsoft.com/itpro/windows/keep-secure/protect-enterprise-data-using-edp)  
 
 -   [使用 System Center Configuration Manager 建立和部署企業資料保護 (EDP) 原則](https://technet.microsoft.com/itpro/windows/keep-secure/create-edp-policy-using-sccm)  
 
-##  <a name="a-namebkmkenda-end-users-can-install-apps-from-the-company-portal"></a><a name="BKMK_End"></a> 使用者可從公司入口網站安裝應用程式  
+##  <a name="BKMK_End"></a> 使用者可從公司入口網站安裝應用程式  
  System Center Configuration Manager 1511 版中引進了內部部署 MDM。 在舊版中，您可以將應用程式部署至受 MDM 管理的 Windows 10 裝置，其部署目的為受內部部署 MDM 管理之裝置的**必要**安裝。  
 
  在此版本中，您現在可以部署應用程式，其部署目的為可供受內部部署 MDM 管理的 Windows 10 電腦使用者**使用**，而且使用者現在可以自行從公司入口網站安裝這些應用程式。
@@ -268,12 +269,12 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
      開啟公司入口網站之後，您會看到 **System Center Configuration Manager** 的 [驗證] 對話方塊。請指定使用者的 Active Directory 認證 (格式為 user@domain 或「網域\使用者」) 進行登入。  
 
-##  <a name="a-namebkmksw1a-new-tabs-for-updates-and-operating-systems-in-software-center"></a><a name="BKMK_SW1"></a> 提供全新的軟體中心更新和作業系統索引標籤  
+##  <a name="BKMK_SW1"></a> 提供全新的軟體中心更新和作業系統索引標籤  
  在此版本中，已進行下列變更來改進軟體中心應用程式的配置：  
 
 -   [應用程式] 索引標籤已分割成三個不同的索引標籤：[更新]、[作業系統] (前兩者之前位於 [篩選] 清單中)，以及 [應用程式]。  
 
-##  <a name="a-namebkmkservergroupsa-service-a--server-group"></a><a name="BKMK_ServerGroups"></a> 提供伺服器群組  
+##  <a name="BKMK_ServerGroups"></a> 提供伺服器群組  
  System Center Configuration Manager Technical Preview 1511 版提供建立集合的功能，此集合中的所有裝置會組成伺服器群組。 之後，您可以設定將軟體更新部署至伺服器群組時所要使用的伺服器群組設定、控制在任何指定時間更新的電腦百分比，以及設定預先部署和部署後 PowerShell 指令碼來執行自訂動作。  
 
  System Center Configuration Manager Technical Preview 1605 版新增功能來依您定義的指定順序更新伺服器群組中的電腦、新增用以檢視伺服器群組中電腦狀態的增強監視，並提供清除部署鎖定的功能，這在用戶端無法安裝軟體更新時會很有用，而且可防止其他用戶端安裝其軟體更新。  
@@ -340,7 +341,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
 2.  在 [常用] 索引標籤的 [部署] 群組中，按一下 [清除伺服器群組部署鎖定]。 當用戶端無法安裝軟體更新，並阻止其他用戶端安裝軟體更新時，您可以手動清除部署鎖定。  
 
-##  <a name="a-namebkmkatpa-support-for-windows-defender-advanced-threat-protection-service"></a><a name="BKMK_ATP"></a> 支援 Windows Defender 進階威脅防護服務  
+##  <a name="BKMK_ATP"></a> 支援 Windows Defender 進階威脅防護服務  
  Windows Defender 進階威脅防護 (ATP) 是新的服務，可協助企業偵測、調查和回應其網路的進階攻擊。 深入了解 [Windows Defender ATP](https://blogs.windows.com/windowsexperience/2016/03/01/announcing-windows-defender-advanced-threat-protection)。 Configuration Manager 可協助您連線到受管理的 Windows 10 Anniversary Edition 用戶端裝置並進行監視。  
 
 ### <a name="try-it-now"></a>立即試試看！  
@@ -407,7 +408,7 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
         -   **未上線** - 已套用原則，但代理程式尚未回報原則上線  
 
-##  <a name="a-namebkmkdhaa-on-premises-device-health-attestation"></a><a name="BKMK_DHA"></a> 內部部署裝置健康情況證明  
+##  <a name="BKMK_DHA"></a> 內部部署裝置健康情況證明  
  Windows 10 裝置的健康情況證明現在可以設定為使用內部部署基礎結構來進行通訊。 系統管理員可以指定是要透過雲端還是內部部署資源來執行報告。 如果選取內部部署來執行健康情況證明報告，便可接著指定服務的 URL。 這可讓無法存取網際網路的用戶端電腦使用健康情況證明來啟用和管理裝置。  
 
 ### <a name="enable-health-attestation-for-on-premises-devices"></a>為內部部署裝置啟用健康情況證明  
@@ -417,10 +418,10 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
 
 2.  指定 **[內部部署健康情況證明服務 URL]**，然後按一下 **[確定]**。  
 
-##  <a name="a-namebkmkrestartoptionsa-new-restart-options-for-windows-10-clients-after-software-update-installation"></a><a name="BKMK_RestartOptions"></a> 提供在安裝軟體更新後重新啟動 Windows 10 用戶端的新選項  
+##  <a name="BKMK_RestartOptions"></a> 提供在安裝軟體更新後重新啟動 Windows 10 用戶端的新選項  
  如果需要重新啟動的軟體更新使用 Configuration Manager 來進行部署並安裝於電腦上，則會排定擱置重新啟動，並顯示重新啟動對話方塊。 目前針對 Windows 8 和更舊版本，如果您使用 Windows 電源選項 (而不是透過重新啟動對話方塊) 關閉或重新啟動電腦，則在重新啟動電腦之後會保留重新啟動對話方塊，而且在設定的期限時需要重新啟動電腦。 在此 Technical Preview 中，只要 Configuration Manager 軟體更新擱置重新啟動，處於 Windows 電源選項的 Windows 10 電腦上就會有 [更新並重新啟動] 和 [更新並關機] 選項。 使用其中一個選項之後，在重新開機之後不會顯示重新啟動對話方塊。  
 
-##  <a name="a-namebkmkimeia-pre-declare-corporate-owned-devices-with-imei-or-ios-serial-number"></a><a name="BKMK_IMEI"></a> 使用 IMEI 或 iOS 序號預先宣告公司擁有的裝置  
+##  <a name="BKMK_IMEI"></a> 使用 IMEI 或 iOS 序號預先宣告公司擁有的裝置  
  您現在可以透過匯入國際行動設備識別碼 (IMEI)，識別公司擁有的裝置。 您可以上傳一個包含裝置 IMEI 編號的逗號分隔值 (.csv) 檔案，也可以手動輸入裝置資訊。  您也可以匯入 iOS 裝置的序號。  匯入的資訊將會設定註冊為「公司」之裝置的擁有權。  每一位存取服務的使用者還是需要 Intune 授權。  
 
 ### <a name="try-it-out"></a>試試看！  
@@ -469,9 +470,4 @@ ms.openlocfilehash: 3af395b84dd6878af9b846b438049e55baf9472e
      按一下    
 
 4.  檢閱檔案匯入的結果。 先前已匯入的 IMEI 或序號會以新的詳細資料更新其詳細資料。  按一下 [下一步] 繼續，或按一下 [上一步] 保留已更新的詳細資料，然後完成精靈。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

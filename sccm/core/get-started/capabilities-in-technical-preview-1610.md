@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 59633ce68e2bb2d722900215751f345d6d098721
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1610 中的功能
@@ -74,7 +75,7 @@ Technical Preview 1610 引進新的設定，可讓您用來防止用戶端集合
 ### <a name="configure-exclusion-from-automatic-upgrade"></a>設定自動升級的排除範圍
 若要設定自動升級的排除範圍：
 1.  在 Configuration Manager 主控台中，開啟 [系統管理] > [站台設定] > [站台] 下的 [階層設定]，然後選取 [用戶端升級] 索引標籤。
-2.  選取 [Exclude specified clients from upgrade] (排除升級指定的用戶端) 核取方塊，然後針對 [Exclusion collection] (排除集合)，選取您要排除的集合。 您只能選取單一集合進行排除。
+2.  選取 [Exclude specified clients from upgrade]\(排除升級指定的用戶端) 核取方塊，然後針對 [Exclusion collection]\(排除集合)，選取您要排除的集合。 您只能選取單一集合進行排除。
 3.  按一下 [確定] 以關閉並儲存設定。 然後，在用戶端更新原則之後，排除集合中的用戶端就不會再自動安裝用戶端軟體的更新。
 
   ![自動升級的排除範圍設定](media/automatic_upgrade_exclusion.png)
@@ -162,9 +163,4 @@ Technical Preview 1610 引進新的設定，可讓您用來防止用戶端集合
 
 ## <a name="see-also"></a>另請參閱
 [System Center Configuration Manager 的 Technical Preview](../../core/get-started/technical-preview.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
