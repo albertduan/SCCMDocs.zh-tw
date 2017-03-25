@@ -15,6 +15,7 @@ ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 translationtype: Human Translation
 ms.sourcegitcommit: 5ab49481a78eda044350addab86ee6f8ef1c0946
 ms.openlocfilehash: fe8bf45970e34af0795a5a9a4c3aa985e446784d
+ms.lasthandoff: 02/07/2017
 
 ---
 
@@ -45,14 +46,14 @@ ms.openlocfilehash: fe8bf45970e34af0795a5a9a4c3aa985e446784d
 使用儀表板頂端的 [集合] 下拉式清單設定，依特定集合成員篩選儀表板資料。
 
 ### <a name="display-data-in-the-office-365-client-management-dashboard"></a>在 Office 365 用戶端管理儀表板中顯示資料
-[Office 365 用戶端管理] 儀表板中所顯示的資料來自硬體清查。 硬體清查必須予以啟用，而且您必須先選取 [Office 365 ProPlus Configurations] (Office 365 ProPlus 設定) 硬體清查類別，資料才會顯示在儀表板中。
+[Office 365 用戶端管理] 儀表板中所顯示的資料來自硬體清查。 硬體清查必須予以啟用，而且您必須先選取 [Office 365 ProPlus Configurations]\(Office 365 ProPlus 設定) 硬體清查類別，資料才會顯示在儀表板中。
 #### <a name="to-display-data-in-the-office-365-client-management-dashboard"></a>在 Office 365 用戶端管理儀表板中顯示資料
 1. 啟用硬體清查 (若尚未啟用)。 如需詳細資料，請參閱[設定硬體清查](\sccm\core\clients\manage\configure-hardware-inventory)。
 2. 在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [用戶端設定] > [預設用戶端設定]。  
 3. 在 [首頁]  索引標籤的 [內容]  群組中，按一下 [內容] 。  
 4. 在 **預設用戶端設定**  對話方塊中按一下 **硬體清查**。  
 5. 在 **裝置設定** 清單中，按一下 **設定類別**。  
-6. 在 [硬體清查類別] 對話方塊中，選取 [Office 365 ProPlus Configurations] (Office 365 ProPlus 設定)。  
+6. 在 [硬體清查類別] 對話方塊中，選取 [Office 365 ProPlus Configurations]\(Office 365 ProPlus 設定)。  
 7.  按一下 **確定** 以儲存您的變更並關閉 **硬體清查類別** 對話方塊。  
 [Office 365 用戶端管理] 儀表板將在報告硬體清查時開始顯示資料。
 
@@ -100,7 +101,7 @@ ms.openlocfilehash: fe8bf45970e34af0795a5a9a4c3aa985e446784d
 8. 新增其他語言至 [Value2] 內容，然後按一下 [儲存內容]。  
 例如，-pt-pt (葡萄牙文 - 葡萄牙)、af-za (南非荷蘭文 - 南非)、nn-no (挪威文 (耐諾斯克) - 挪威) 等等。  
 ![在 [內容編輯器] 中新增語言](..\media\4-props.png)  
-9. 依序按一下 [關閉]、[關閉]、[儲存內容]、[儲存物件] (如果按一下 [關閉]，以下的值都會捨棄)，按一下 [關閉]，然後按一下 [結束]，結束 Windows Management Intstrumentation 測試器。
+9. 依序按一下 [關閉]、[關閉]、[儲存內容]、[儲存物件] \(如果按一下 [關閉]，以下的值都會捨棄)，按一下 [關閉]，然後按一下 [結束]，結束 Windows Management Intstrumentation 測試器。
 10. 在 Configuration Manager 主控台中，前往 [軟體程式庫] > [概觀] > [Office 365 用戶端管理] > [Office 365 更新]。
 11. 現在，當您下載 Office 365 更新時，將會下載您在精靈中選取的語言，以及您在此程序中設定的語言。 為確認下載的這些語言更新，請前往更新的套件來源，並尋找具備該檔案名稱語言代碼的檔案。  
 ![其他語言的檔名](..\media\5-verification.png)
@@ -123,9 +124,4 @@ ms.openlocfilehash: fe8bf45970e34af0795a5a9a4c3aa985e446784d
 
 <!--- ## Next steps
 Use the Office 365 Client Management dashboard in Configuration Manager to review Office 365 client information and deploy Office 365 apps. For details, see [Manage Office 365 apps](manage-office-365-apps.md). --->
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

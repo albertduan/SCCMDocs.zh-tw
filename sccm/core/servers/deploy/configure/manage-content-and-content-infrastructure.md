@@ -19,10 +19,11 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: e30538ed925af66e8b7459eb4add9dd992c1ae19
 ms.openlocfilehash: b0f297fddca4252f106dee9d3d5d8911a347825b
+ms.lasthandoff: 02/08/2017
 
 
 ---
-# <a name="manage-content-and-content-infrastructure-for-system-center-configuration-manager"></a>Manage content and content infrastructure for System Center Configuration Manager
+# <a name="manage-content-and-content-infrastructure-for-system-center-configuration-manager"></a>管理 System Center Configuration Manager 的內容與內容基礎結構
 
 *適用對象：System Center Configuration Manager (最新分支)*
 
@@ -33,9 +34,4 @@ ms.openlocfilehash: b0f297fddca4252f106dee9d3d5d8911a347825b
 -   [Deploy and manage content for System Center Configuration Manager](../../../../core/servers/deploy/configure/deploy-and-manage-content.md) (部署及管理 System Center Configuration Manager 的內容)。 內容部署可透過您的網路傳輸檔案和軟體到發佈點伺服器。 除了簡單的傳輸外，還可以預先設置內容，這是可協助您避免過度使用網路頻寬的一種方法。 本主題中的資訊可協助您進行傳送該內容的基本工作，或有效地使用預先設置的內容。  
 
 -   [監視您已使用 System Center Configuration Manager 所發佈的內容](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)。 部署內容時，可以橫跨整個基礎結構監視其狀態。 您也可以重新發佈無法連線到發佈點的內容，或取消仍在進行中的發佈。 本主題中的資訊將協助您了解如何監視您的內容，包含如何在內容傳輸失敗時修正某些問題。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -17,6 +17,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 81d7516b814d2db74d4d857871071c8911755754
 ms.openlocfilehash: 6e53f501281e31f2b7df54b9740eac970f108257
+ms.lasthandoff: 02/04/2017
 
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>關於 System Center Configuration Manager 的探索方法
@@ -25,7 +26,7 @@ ms.openlocfilehash: 6e53f501281e31f2b7df54b9740eac970f108257
 
 System Center Configuration Manager 探索方法可以找到網路上的不同裝置，或從 Active Directory 找到找到裝置和使用者。 若要有效利用探索方法，您應該了解其可用的設定和限制。  
 
-##  <a name="a-namebkmkaboutforesta-active-directory-forest-discovery"></a><a name="bkmk_aboutForest"></a> Active Directory 樹系探索  
+##  <a name="bkmk_aboutForest"></a> Active Directory 樹系探索  
  **可設定︰**是  
 
  **預設為啟用：**否  
@@ -78,7 +79,7 @@ Active Directory 樹系探索動作會記錄在下列記錄中：
 
 如需如何設定此探索方法的詳細資訊，請參閱 [Configure discovery methods for System Center Configuration Manager](../../../../core/servers/deploy/configure/configure-discovery-methods.md) (設定 System Center Configuration Manager 的探索方法)。  
 
-##  <a name="a-namebkmkaboutgroupa-active-directory-group-discovery"></a><a name="bkmk_aboutGroup"></a> Active Directory 群組探索  
+##  <a name="bkmk_aboutGroup"></a> Active Directory 群組探索  
 **可設定︰**是  
 
 **預設為啟用：**否  
@@ -120,7 +121,7 @@ Active Directory 群組探索動作會記錄在站台伺服器 **&lt;裝路徑\>
 
 如需如何設定此探索方法的詳細資訊，請參閱 [Configure discovery methods for System Center Configuration Manager](../../../../core/servers/deploy/configure/configure-discovery-methods.md) (設定 System Center Configuration Manager 的探索方法)。  
 
-##  <a name="a-namebkmkaboutsystema-active-directory-system-discovery"></a><a name="bkmk_aboutSystem"></a> Active Directory 系統探索  
+##  <a name="bkmk_aboutSystem"></a> Active Directory 系統探索  
 **可設定︰**是  
 
 **預設為啟用：**否  
@@ -158,7 +159,7 @@ Active Directory 系統探索動作會記錄在站台伺服器 **&lt;裝路徑\>
 
 如需如何設定此探索方法的詳細資訊，請參閱 [Configure discovery methods for System Center Configuration Manager](../../../../core/servers/deploy/configure/configure-discovery-methods.md) (設定 System Center Configuration Manager 的探索方法)。  
 
-##  <a name="a-namebkmkaboutusera-active-directory-user-discovery"></a><a name="bkmk_aboutUser"></a> Active Directory 使用者探索  
+##  <a name="bkmk_aboutUser"></a> Active Directory 使用者探索  
 **可設定︰**是  
 
 **預設為啟用：**否  
@@ -188,7 +189,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 
 如需如何設定此探索方法的詳細資訊，請參閱 [Configure discovery methods for System Center Configuration Manager](../../../../core/servers/deploy/configure/configure-discovery-methods.md) (設定 System Center Configuration Manager 的探索方法)。  
 
-##  <a name="a-namebkmkaboutheartbeata-heartbeat-discovery"></a><a name="bkmk_aboutHeartbeat"></a> 活動訊號探索  
+##  <a name="bkmk_aboutHeartbeat"></a> 活動訊號探索  
 **可設定︰**是  
 
 **預設已啟用：**是  
@@ -199,7 +200,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 
 活動訊號探索與其他 Configuration Manager 探索方法不同。 依預設會啟用此項，並在每個電腦用戶端 (而不是站台伺服器) 上執行，以建立 DDR。 若為行動裝置用戶端，則會由行動裝置用戶端正在使用的管理點來建立此 DDR。 為協助維護 Configuration Manager 用戶端的資料庫記錄，請勿停用活動訊號探索。 除維護資料庫記錄外，此方法可強制將電腦探索為新的資源記錄，或重新匯入已從資料庫刪除的電腦資料庫記錄。  
 
-活動訊號探索會依據對此階層中所有用戶端設定的排程執行，或如果手動叫用，則依據在用戶端 Configuration Manager 程式之 [動作] 索引標籤的 [探索資料收集週期] 在特定用戶端執行。 活動訊號探索的預設排程設定為每 7 天一次。 如果變更了活動訊號探索間隔，請確定執行的頻率比站台維護工作 [刪除過時探索資料] (會從站台資料庫刪除非使用中用戶端的記錄 ) 來得更頻繁。 您只能針對主要站台設定 [刪除過時探索資料]  工作。  
+活動訊號探索會依據對此階層中所有用戶端設定的排程執行，或如果手動叫用，則依據在用戶端 Configuration Manager 程式之 [動作] 索引標籤的 [探索資料收集週期] 在特定用戶端執行。 活動訊號探索的預設排程設定為每 7 天一次。 如果變更了活動訊號探索間隔，請確定執行的頻率比站台維護工作 [刪除過時探索資料] \(會從站台資料庫刪除非使用中用戶端的記錄 ) 來得更頻繁。 您只能針對主要站台設定 [刪除過時探索資料]  工作。  
 
 當活動訊號探索執行時，會建立具有用戶端目前資訊的 DDR。 然後用戶端會將這個小檔案 (大小約 1 KB) 複製到管理點，以便主要站台加以處理。 此檔案具有下列資訊：  
 
@@ -224,7 +225,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 
 如需如何設定此探索方法的詳細資訊，請參閱 [Configure discovery methods for System Center Configuration Manager](../../../../core/servers/deploy/configure/configure-discovery-methods.md) (設定 System Center Configuration Manager 的探索方法)。  
 
-##  <a name="a-namebkmkaboutnetworka-network-discovery"></a><a name="bkmk_aboutNetwork"></a> 網路探索  
+##  <a name="bkmk_aboutNetwork"></a> 網路探索  
 **可設定︰**是  
 
 **預設為啟用：**否  
@@ -268,7 +269,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 > [!NOTE]  
 >  複雜網路和低頻寬的連線會導致網路探索執行速度緩慢，並產生明顯的網路流量。 最佳作法是只在其他探索方法無法找出您必須探索的資源時，才執行網路探索。 例如，若您必須探索工作群組電腦，就請使用網路探索。 其他探索方法不會探索工作群組電腦。  
 
-###  <a name="a-namebkmknetdisclevelsa-levels-of-network-discovery"></a><a name="BKMK_NetDiscLevels"></a> 網路探索的層級  
+###  <a name="BKMK_NetDiscLevels"></a> 網路探索的層級  
 設定網路探索時，要從三個探索層級中指定一個：  
 
 |探索的層級|詳細資料|  
@@ -281,7 +282,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 
  例如，第一次使用網路探索時，您可能只會以拓撲層級來開始，以識別您的網路基礎結構。 接著，您可以重新設定網路探索，以探索出物件及其裝置作業系統。 您也可以進行設定，將網路探索限制在特定網路區段範圍內。 這樣一來，您就可以在需要的網路位置內探索物件，並避免不必要的網路流量，還可以從邊緣路由器或網路外部探索物件。  
 
-###  <a name="a-namebkmknetdiscoptionsa-network-discovery-options"></a><a name="BKMK_NetDiscOptions"></a> 網路探索選項  
+###  <a name="BKMK_NetDiscOptions"></a> 網路探索選項  
 若要啟用網路探索來搜尋 IP 可定址的裝置，您必須設定一或多個可指定如何查詢裝置的下列選項。  
 
 > [!NOTE]  
@@ -329,7 +330,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 
 -   您必須設定網路探索為使用裝置的社群名稱，否則裝置會拒絕以 SNMP 為基礎的查詢。  
 
-###  <a name="a-namebkmklimitnetdisca-limiting-network-discovery"></a><a name="BKMK_LimitNetDisc"></a> 限制網路探索  
+###  <a name="BKMK_LimitNetDisc"></a> 限制網路探索  
 網路探索查詢網路邊際的 SNMP 裝置時，可以找出有關在您的網路外的子網路和 SNMP 裝置的資訊。 您可經由設定可與探索通訊的 SNMP 裝置，以及指定要查詢的網路區段，使用下列資訊來限制網路探索。  
 
 **子網路：**  
@@ -374,12 +375,12 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 > [!WARNING]  
 >  每次增加路由器躍點數目，都會大幅提高可探索的資源數目，以及增加網路探索所使用的網路頻寬。  
 
-##  <a name="a-namebkmkaboutservera-server-discovery"></a><a name="bkmk_aboutServer"></a> 伺服器探索  
+##  <a name="bkmk_aboutServer"></a> 伺服器探索  
 **可設定：**否  
 
 除了使用者可設定的探索方法外，Configuration Manager 會使用一種名為**伺服器探索** (SMS_WINNT_SERVER_DISCOVERY_AGENT) 的處理序。 這個探索方法會為站台系統的電腦 (例如設定為管理點的電腦) 建立資源記錄。  
 
-##  <a name="a-namebkmkshareda-common-features-of-active-directory-group-discovery-system-discovery-and-user-discovery"></a><a name="bkmk_shared"></a> Active Directory 群組探索、系統探索及使用者探索的通用功能  
+##  <a name="bkmk_shared"></a> Active Directory 群組探索、系統探索及使用者探索的通用功能  
 本節提供下列探索方法之通用功能的資訊︰  
 
 -   Active Directory 群組探索  
@@ -421,7 +422,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 
 -   [搜尋自訂的 Active Directory 屬性](#bkmk_customAD)  
 
-###  <a name="a-namebkmkdeltaa-delta-discovery"></a><a name="bkmk_delta"></a> 差異探索  
+###  <a name="bkmk_delta"></a> 差異探索  
 可用於：  
 
 -   Active Directory 群組探索  
@@ -450,7 +451,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 
 您可以在每種探索方法的內容中的 [輪詢排程]  索引標籤上設定差異探索。  
 
-###  <a name="a-namebkmkstalelogona-filter-stale-computer-records-by-domain-logon"></a><a name="bkmk_stalelogon"></a> 依網域登入來篩選過時的電腦記錄  
+###  <a name="bkmk_stalelogon"></a> 依網域登入來篩選過時的電腦記錄  
 可用於：  
 
 -   Active Directory 群組探索  
@@ -472,7 +473,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 > [!WARNING]  
 >  當您設定此篩選及 [Filter stale records by computer password] (依電腦密碼篩選過時的記錄) 時，符合其中一項篩選準則的電腦就會從探索中排除。  
 
-###  <a name="a-namebkmkstalepassworda-filter-stale-records-by-computer-password"></a><a name="bkmk_stalepassword"></a> 依電腦密碼篩選過時的記錄  
+###  <a name="bkmk_stalepassword"></a> 依電腦密碼篩選過時的記錄  
 可用於：  
 
 -   Active Directory 群組探索  
@@ -492,7 +493,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 > [!WARNING]  
 >  當您設定此篩選及 [Filter stale records by domain logon] (依網域登入篩選過時的記錄) 時，符合其中一項篩選準則的電腦就會從探索中排除。  
 
-###  <a name="a-namebkmkcustomada-search-customized-active-directory-attributes"></a><a name="bkmk_customAD"></a> 搜尋自訂的 Active Directory 屬性  
+###  <a name="bkmk_customAD"></a> 搜尋自訂的 Active Directory 屬性  
  可用於：  
 
 -   Active Directory 系統探索  
@@ -502,9 +503,4 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 每種探索方法都支援可探索的唯一 Active Directory 屬性清單。  
 
 您可以在 [Active Directory 系統探索內容] 和 [Active Directory 使用者探索內容] 對話方塊中的 [Active Directory 屬性] 索引標籤上，檢視及設定自訂屬性的清單。  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 
