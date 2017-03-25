@@ -305,9 +305,9 @@ ms.lasthandoff: 01/04/2017
  根據預設，依集合進行的移轉作業會停用移轉至目的地階層的公告。 其包含與公告相關聯的任何程式。 若您建立以集合為基礎且其中包含公告的移轉作業，則可在 [建立移轉作業精靈] 的 [設定] 頁面上，看到 [Enable programs for deployment in Configuration Manager after an advertisement is migrated (在公告移轉後啟用 Configuration Manager 部署程式)] 選項。 若您選取此選項，將在移轉後啟用與公告相關聯的程式。 最佳作法是不要選取此選項。 而是在完成移轉後驗證要接收這些程式的用戶端，再啟用這些程式。  
 
 > [!NOTE]  
->  只有在您建立以集合為基礎的移轉作業且其中包含公告時，才會看到 [Enable programs for deployment in Configuration Manager after an advertisement is migrated] (在公告移轉後啟用 Configuration Manager 部署程式) 選項。  
+>  只有在您建立以集合為基礎的移轉作業且其中包含公告時，才會看到 [Enable programs for deployment in Configuration Manager after an advertisement is migrated]\(在公告移轉後啟用 Configuration Manager 部署程式) 選項。  
 
- 若要在移轉後啟用程式，請在程式內容的 [進階] 索引標籤上清除 [Disable this program on computers where it is advertised] (在程式公告所在電腦上停用該程式)。  
+ 若要在移轉後啟用程式，請在程式內容的 [進階] 索引標籤上清除 [Disable this program on computers where it is advertised]\(在程式公告所在電腦上停用該程式)。  
 
 ##  <a name="About_Object_Migration"></a> 規劃物件移轉作業  
  有別於集合移轉，您必須選取要移轉的每個物件和物件執行個體。 您可以選取個別物件 (例如從 Configuration Manager 2007 階層選取公告，或從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 階層選取發行)，以新增至特定移轉作業的移轉物件清單。 物件移轉作業不會將任何未新增到移轉清單的物件移轉到目的地站台。  
