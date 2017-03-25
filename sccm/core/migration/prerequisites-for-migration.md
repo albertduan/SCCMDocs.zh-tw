@@ -115,7 +115,7 @@ ms.lasthandoff: 03/07/2017
 
      每一個來源站台上，只會共用安裝在以 FQDN 設定之站台系統伺服器上的發佈點。  
 
-     此外，若要從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源站台共用發佈點，[來源站台帳戶] (存取來源站台伺服器的 SMS 提供者) 在來源站台上必須具備 [站台] 物件的 [修改] 權限。 您可以使用角色為基礎的系統管理將此權限授與帳戶。 如需如何使用以角色為基礎之系統管理的相關資訊，請參閱 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)。  
+     此外，若要從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源站台共用發佈點，[來源站台帳戶]\(存取來源站台伺服器的 SMS 提供者) 在來源站台上必須具備 [站台] 物件的 [修改] 權限。 您可以使用角色為基礎的系統管理將此權限授與帳戶。 如需如何使用以角色為基礎之系統管理的相關資訊，請參閱 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)。  
 
 
 -   **升級或重新指派發佈點：**  

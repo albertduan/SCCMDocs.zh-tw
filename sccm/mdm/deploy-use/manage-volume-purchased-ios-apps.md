@@ -66,7 +66,7 @@ ms.lasthandoff: 03/06/2017
 
 1.  在 Configuration Manager 主控台中，選擇 [管理] > [雲端服務] > [Apple 大量採購方案權杖]。   
 
-3.  在 [首頁] 索引標籤的 [Apple 大量採購方案權杖] 群組中，選擇 [Add Apple Volume Purchase Program Token] (新增 Apple 大量採購方案權杖)。  
+3.  在 [首頁] 索引標籤的 [Apple 大量採購方案權杖] 群組中，選擇 [Add Apple Volume Purchase Program Token]\(新增 Apple 大量採購方案權杖)。  
 
 4.  在 [新增 Apple 大量採購方案權杖精靈] 的 [一般] 頁面中，設定下列各項︰   
 
@@ -88,7 +88,7 @@ ms.lasthandoff: 03/06/2017
 
 ## <a name="step-2---deploy-a-volume-purchased-app"></a>步驟 2 - 部署大量採購應用程式  
 
-1.  在 Configuration Manager 主控台中，選擇 [軟體程式庫] > [應用程式管理] > [License Information for Store Apps] (市集應用程式的授權資訊)。  
+1.  在 Configuration Manager 主控台中，選擇 [軟體程式庫] > [應用程式管理] > [License Information for Store Apps]\(市集應用程式的授權資訊)。  
 
 3.  選擇要部署的應用程式，然後在 [常用] 索引標籤的 [建立] 群組中，選擇 [建立應用程式]。
 隨即建立包含商務用 Windows 市集應用程式的 Configuration Manager 應用程式。 然後可以如處理任何其他 Configuration Manager 應用程式一樣，部署及監視此應用程式。
@@ -101,9 +101,9 @@ ms.lasthandoff: 03/06/2017
  若要回收授權，您必須變更部署動作為 [解除安裝] 。 解除安裝應用程式之後，即會回收授權。  
 
 ## <a name="step-3---monitor-ios-vpp-apps"></a>步驟 3 - 監視 iOS VPP 應用程式  
- [軟體程式庫] 工作區的 [License Information for Store Apps] (市集應用程式的授權資訊) 節點中，會顯示您大量購買的 iOS 應用程式相關資訊。 這些資訊包括您所擁有之每個應用程式的授權總數及已部署的數量。
+ [軟體程式庫] 工作區的 [License Information for Store Apps]\(市集應用程式的授權資訊) 節點中，會顯示您大量購買的 iOS 應用程式相關資訊。 這些資訊包括您所擁有之每個應用程式的授權總數及已部署的數量。
 
- 您也可以使用 [Apple Volume Purchase Program apps for iOS with license counts] (Apple 大量採購方案 iOS 應用程式與授權計數) 報告，監視已購買的所有 VPP 應用程式授權使用量。  
+ 您也可以使用 [Apple Volume Purchase Program apps for iOS with license counts]\(Apple 大量採購方案 iOS 應用程式與授權計數) 報告，監視已購買的所有 VPP 應用程式授權使用量。  
 
  這份報告會顯示每個應用程式名稱以及您所購買的授權總數、可用授權數量等等。  
 
