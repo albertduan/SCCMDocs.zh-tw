@@ -18,6 +18,7 @@ ROBOTS: NOINDEX, NOFOLLOW
 translationtype: Human Translation
 ms.sourcegitcommit: 831d8a66c827d246069c7415cdce7a7c4bb95b33
 ms.openlocfilehash: 19e3099773f887129374413482702de3f4b0a36f
+ms.lasthandoff: 02/08/2017
 
 ---
 # <a name="what39s-new-in-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 1610 版的新功能
@@ -99,7 +100,7 @@ System Center Configuration Manager 1610 更新最新分支，是先前安裝為
 
 
 ## <a name="policy-sync-for-intune-enrolled-devices"></a>適用於 Intune 註冊裝置的原則同步
-現在，可以透過 Configuration Manager 主控台要求來進行 Intune 註冊裝置的原則同步處理，而不需要從裝置本身的公司入口網站應用程式要求進行同步處理。 同步要求狀態資訊會以裝置檢視中的新欄位來提供，稱為 [Remote Sync State] (遠端同步處理狀態)。 每部行動裝置的狀態也會出現在 [內容] 對話方塊的 [探索資料] 區段中。
+現在，可以透過 Configuration Manager 主控台要求來進行 Intune 註冊裝置的原則同步處理，而不需要從裝置本身的公司入口網站應用程式要求進行同步處理。 同步要求狀態資訊會以裝置檢視中的新欄位來提供，稱為 [Remote Sync State]\(遠端同步處理狀態)。 每部行動裝置的狀態也會出現在 [內容] 對話方塊的 [探索資料] 區段中。
 如需詳細資訊，請參閱[從 Configuration Manager 主控台遠端同步處理 Intune 註冊裝置上的原則](/sccm/mdm/deploy-use/sync-intune-device)。
 
 
@@ -114,7 +115,7 @@ System Center Configuration Manager 1610 更新最新分支，是先前安裝為
 - 有助使用者了解有哪些新軟體及相關軟體的改進。
 
 ## <a name="new-columns-in-device-collection-views"></a>裝置集合檢視中的新資料行
-現在，您可以在裝置集合檢視中，顯示 [IMEI] 和 [序號] (適用於 iOS 裝置) 資料行。
+現在，您可以在裝置集合檢視中，顯示 [IMEI] 和 [序號]\(適用於 iOS 裝置) 資料行。
 如需詳細資訊，請參閱[使用 IMEI 或 iOS 序號預先宣告裝置](https://docs.microsoft.com/sccm/mdm/deploy-use/predeclare-devices-with-hardware-id)。
 
 ## <a name="customizable-branding-for-software-center-dialogs"></a>可自訂軟體中心對話方塊的商標
@@ -159,7 +160,7 @@ Configuration Manager 1602 版中引進了軟體中心的自訂商標。 該商�
 - [如何設定用戶端設定](../../clients/deploy/configure-client-settings.md)
 
 ## <a name="software-updates-dashboard"></a>軟體更新儀表板
-使用新的軟體更新儀表板可檢視組織裝置目前的合規性狀態，並快速分析資料查看哪些裝置有風險。 若要檢視儀表板，請瀏覽至 [監視] > [概觀] > [安全性] > [Software Updates Dashboard] (軟體更新儀表板)。
+使用新的軟體更新儀表板可檢視組織裝置目前的合規性狀態，並快速分析資料查看哪些裝置有風險。 若要檢視儀表板，請瀏覽至 [監視] > [概觀] > [安全性] > [Software Updates Dashboard]\(軟體更新儀表板)。
 
 如需詳細資訊，請參閱[監視軟體更新](/sccm/sum/deploy-use/monitor-software-updates)。
 
@@ -314,9 +315,4 @@ Microsoft 整合 Lookout 的行動威脅防護解決方案，以透過偵測裝�
 
 #### <a name="device-capability-settings"></a>裝置功能設定
 - **允許自動連線到免費的 Wi-Fi 熱點**
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
