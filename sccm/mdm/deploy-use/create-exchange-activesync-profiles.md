@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 1cbe1d8f34b0a7482232488e907190a7a9cadf30
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: 8c7bf901caa49c8585a9ed3913d4a5a2aac57013
+ms.openlocfilehash: 74083f65d906fde967081229b244df24e9e08e0a
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -47,7 +47,7 @@ ms.lasthandoff: 03/06/2017
 
  除了在裝置上設定電子郵件帳戶外，您也可以設定連絡人、行事曆和工作的同步處理設定。  
 
- 當您建立電子郵件設定檔時，可以在其中加入各種安全性設定，包括使用 System Center Configuration Manager 憑證設定檔所佈建的識別憑證、加密憑證和簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](introduction-to-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。    
+ 當您建立電子郵件設定檔時，可以在其中加入各種安全性設定，包括使用 System Center Configuration Manager 憑證設定檔所佈建的識別憑證、加密憑證和簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](create-pfx-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。    
 
 
 ## <a name="create-a-new-exchange-activesync-email-profile"></a>建立新的 Exchange ActiveSync 電子郵件設定檔  
@@ -101,7 +101,7 @@ ms.lasthandoff: 03/06/2017
     -   **身分識別憑證** ：按一下 [選取]  ，然後選取要用於身分識別的憑證。  
 
         > [!NOTE]  
-        >  您必須先將身分識別憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取身分識別憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](introduction-to-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
+        >  您必須先將身分識別憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取身分識別憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](create-pfx-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
 
          只有當選取 [驗證方法]  下方的 [憑證] 時，才能使用這個選項。  
 
@@ -110,14 +110,14 @@ ms.lasthandoff: 03/06/2017
     -   **加密憑證** ：按一下 [選取]  ，然後選取要用於加密的憑證。 這個選項僅適用於 iOS 裝置。  
 
         > [!NOTE]  
-        >  您必須先將加密憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取加密憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](introduction-to-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
+        >  您必須先將加密憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取加密憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](create-pfx-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
 
          只有當選取 [使用 S/MIME] 時，才能使用這個選項。  
 
     -   **簽署憑證** ：按一下 [選取]  ，然後選取要用於簽署的憑證。 這個選項僅適用於 iOS 裝置。  
 
         > [!NOTE]  
-        >  您必須先將簽署憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](introduction-to-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
+        >  您必須先將簽署憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](create-pfx-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
 
          只有當選取 [使用 S/MIME] 時，才能使用這個選項。  
 

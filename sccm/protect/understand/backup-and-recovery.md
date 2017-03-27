@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3aa9f2e4d3f7210981b5b84942485de11fe15cb2
-ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 67441d0c19114f628e8b4308f58165ba67c738df
+ms.lasthandoff: 03/21/2017
 
 ---
 
@@ -66,7 +67,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 > [!NOTE]  
 >  若是使用 SQL Server AlwaysOn 可用性群組裝載站台資料庫，請依照[適用於 System Center Configuration Manager 之高可用性站台資料庫的 SQL Server AlwaysOn](../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)主題之[使用 SQL Server AlwaysOn 可用性群組時的備份和復原變更](../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md#bkmk_BnR)一節所述，修改您的備份和復原計劃。  
 
-##  <a name="a-namebkmksitebackupa-back-up-a-configuration-manager-site"></a><a name="BKMK_SiteBackup"></a> 備份 Configuration Manager 站台  
+##  <a name="BKMK_SiteBackup"></a> 備份 Configuration Manager 站台  
  Configuration Manager 提供的備份維護工作可以：  
 
 -   依排程執行  
@@ -88,7 +89,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 > [!NOTE]  
 >  Configuration Manager 可以從 Configuration Manager 備份維護工作，或從您使用其他程序建立的站台資料庫備份，來復原站台資料庫。 例如，您可以使用 Microsoft SQL Server 維護計畫建立的備份還原站台資料庫。 您可以從使用 System Center 2012 Data Protection Manager (DPM) 建立的備份還原站台資料庫。 如需詳細資訊，請參閱 [使用 Data Protection Manager 備份網站資料庫](#BKMK_DPMBackup)。  
 
-###  <a name="a-namebkmkbackupmaintenancetaska-backup-maintenance-task"></a><a name="BKMK_BackupMaintenanceTask"></a> 備份維護工作  
+###  <a name="BKMK_BackupMaintenanceTask"></a> 備份維護工作  
  您可以藉由排程預先定義的「備份站台伺服器」維護工作，自動備份 Configuration Manager 站台。 您可以備份管理中心網站和主要網站，但不支援次要網站或網站系統伺服器的備份。 當 Configuration Manager 備份服務執行時，會依照備份控制檔案 (**&lt;ConfigMgrInstallationFolder\>\Inboxes\Smsbkup.box\Smsbkup.ctl**) 中定義的指示進行。 您可以修改備份控制檔案，以變更備份服務的行為。 站台備份狀態資訊會寫入至 **Smsbkup.log** 檔案。 此檔案會在您於「備份網站伺服器」維護工作內容中指定的目的地資料夾中建立。  
 
 
@@ -144,7 +145,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
     > [!TIP]  
     >  當備份維護工作失敗時，您可以藉由停止再重新啟動 SMS_SITE_BACKUP 服務，重新啟動備份工作。  
 
-###  <a name="a-namebkmkdpmbackupa-using-data-protection-manager-to-back-up-your-site-database"></a><a name="BKMK_DPMBackup"></a> 使用 Data Protection Manager 備份網站資料庫  
+###  <a name="BKMK_DPMBackup"></a> 使用 Data Protection Manager 備份網站資料庫  
  您可以使用 System Center 2012 Data Protection Manager (DPM) 來備份站台資料庫。 您必須在網站資料庫電腦的 DPM 中建立新的保護群組。 在 [建立新保護群組精靈] 的 [選擇群組成員]  頁面上，您可以從資料來源清單選取 SMS 寫入器服務，然後選取網站資料庫作為適當的成員。 如需使用 DPM 備份網站資料庫的詳細資訊，請參閱 TechNet 上的 [Data Protection Manager Documentation Library (Data Protection Manager 文件庫)](http://go.microsoft.com/fwlink/?LinkId=272772) 。  
 
 > [!IMPORTANT]  
@@ -152,7 +153,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
  在您還原網站資料庫後，請依照安裝程式中的步驟還原網站。 選取 [使用手動復原的站台資料庫] 復原選項，以使用您透過 Data Protection Manager 復原的站台資料庫。  
 
-###  <a name="a-namebkmkarchivingbackupsnapshota-archiving-the-backup-snapshot"></a><a name="BKMK_ArchivingBackupSnapshot"></a> 封存備份快照  
+###  <a name="BKMK_ArchivingBackupSnapshot"></a> 封存備份快照  
  第一次執行「備份網站伺服器」維護工作時，它會建立一個備份快照，您可以在發生失敗時使用這個備份快照復原您的網站。 當備份工作在後續的週期中再次執行時，它會建立新的備份快照，並使用該備份快照覆寫先前的快照。 因此網站只有一個備份快照，您無法擷取舊版的備份快照。  
 
  作為最佳作法，請針對以下原因保留多個備份快照封存：  
@@ -163,7 +164,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
 -   例如，如果備份網站伺服器維護工作失敗，網站就可能完全沒有備份快照。 由於備份工作會在開始備份現有資料前將過去的備份快照全部移除，如此就會沒有有效的備份快照。  
 
-###  <a name="a-namebkmkusingafterbackupa-using-the-afterbackupbat-file"></a><a name="BKMK_UsingAfterBackup"></a> 使用 AfterBackup.bat 檔案  
+###  <a name="BKMK_UsingAfterBackup"></a> 使用 AfterBackup.bat 檔案  
  順利備份站台之後，備份站台伺服器工作會自動嘗試執行名為 AfterBackup.bat 的檔案。 您必須在 &lt;*ConfigMgrInstallationFolder*>\Inboxes\Smsbkup 中手動建立 AfterBackup.bat 檔案。 如果 AfterBackup.bat 檔案存在，且儲存在正確的資料夾中，則會在備份工作完成後自動執行。 AfterBackup.bat 檔案可讓您在每次備份操作結束時封存備份快照，並自動執行其他非備份網站伺服器維護工作的備份後工作。 AfterBackup.bat 檔案會整合封存與備份操作，如此即可確保封存每個新的備份快照。 若 AfterBackup.bat 檔案不存在，則備份工作就會將其略過，而對於備份操作沒有任何影響。 若要確認網站備份工作是否已成功執行 AfterBackup.bat 檔，請參閱 [監視]  工作區內的 [元件狀態]  節點，並檢閱 SMS_SITE_BACKUP 的狀態訊息。 工作成功啟動 Afterbackup.bat 命令檔時，您會看見訊息 ID 5040。  
 
 > [!TIP]  
@@ -171,7 +172,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
  雖然 AfterBackup.bat 的用途是封存備份快照，您也可以建立 AfterBackup.bat 檔，在每次備份操作結束時執行額外工作。  
 
-###  <a name="a-namebkmksupplementalbackupa-supplemental-backup-tasks"></a><a name="BKMK_SupplementalBackup"></a> 增補的備份工作  
+###  <a name="BKMK_SupplementalBackup"></a> 增補的備份工作  
  備份網站伺服器維護工作為網站伺服器檔案和網站資料庫提供備份快照，但在您建立備份策略時，還有其他項目並未備份，這是必須納入考慮的。 使用下列各節可協助您完成 Configuration Manager 備份策略。  
 
 #### <a name="back-up-custom-reporting-services-reports"></a>支持自訂 Reporting Services 報告  
@@ -241,12 +242,12 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 > [!NOTE]  
 >  在您還原為資料庫複本設定的網站資料庫之後，必須先重新設定每個資料庫複本並重建發佈及訂閱，才能使用資料庫複本。  
 
-###  <a name="a-namebkmkdeterminerecoveryoptionsa-determine-your-recovery-options"></a><a name="BKMK_DetermineRecoveryOptions"></a> 決定您的復原選項  
+###  <a name="BKMK_DetermineRecoveryOptions"></a> 決定您的復原選項  
  針對 Configuration Manager 主要站台伺服器和管理中心網站復原，您需要考慮兩個主要區域：站台伺服器與站台資料庫。 使用以下區段，協助您決定必須為復原案例選取的選項。  
 
 > [!NOTE]  
 
-####  <a name="a-namebkmksiteserverrecoveryoptionsa-site-server-recovery-options"></a><a name="BKMK_SiteServerRecoveryOptions"></a> 站台伺服器復原選項  
+####  <a name="BKMK_SiteServerRecoveryOptions"></a> 站台伺服器復原選項  
  您必須從您在 Configuration Manager 安裝資料夾外部所建立的 CD.Latest 資料夾複本中啟動安裝程式。 然後選取 [復原站台]  選項。 執行安裝程式時，針對失敗的網站伺服器，您有以下復原選項：  
 
 -   **使用現有備份復原站台伺服器**：如果您在站台失敗前，已於**備份站台伺服器**維護工作期間，在站台伺服器上建立了Configuration Manager 站台伺服器的備份，請使用此選項。 此時會重新安裝網站，並根據備份的網站來設定網站設定。  
@@ -256,7 +257,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 > [!NOTE]  
 >  安裝程式在伺服器上偵測到現有的 Configuration Manager 站台時，您就可以啟動站台復原，不過站台伺服器的復原選項有限。 例如，若您在現有網站伺服器上執行安裝程式，當您選擇復原時，就可以復原網站資料庫伺服器，但會停用復原網站伺服器的選項。  
 
-####  <a name="a-namebkmksitedatabaserecoveryoptiona-site-database-recovery-options"></a><a name="BKMK_SiteDatabaseRecoveryOption"></a> 網站資料庫復原選項  
+####  <a name="BKMK_SiteDatabaseRecoveryOption"></a> 網站資料庫復原選項  
  執行安裝程式時，針對網站資料庫，您有以下復原選項：  
 
 -   **使用備份組復原站台資料庫**：如果您在站台資料庫失敗前，已於站台上執行**備份站台伺服器**維護工作期間，建立了 Configuration Manager 站台資料庫的備份，請使用此選項。 若您有階層，則會從主要網站的管理中心網站，或管理中心網站的參照主要網站，擷取最後一次進行網站資料庫備份後，對網站資料庫所做的變更。 當您復原獨立主要網站的網站資料庫時，您會遺失最後一次備份後的網站變更。  
@@ -275,14 +276,14 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
 -   **略過資料庫復原**：若 Configuration Manager 站台資料庫伺服器上並沒出現資料遺失的狀況，請使用此選項。 只有在網站資料庫位於不同電腦而不是在您正在復原的網站伺服器上時，這個選項才有效。  
 
-####  <a name="a-namebkmksqlretentiona-sql-server-change-tracking-retention-period"></a><a name="bkmk_SQLretention"></a> SQL Server 變更追蹤保留期間  
+####  <a name="bkmk_SQLretention"></a> SQL Server 變更追蹤保留期間  
  變更追蹤會在 SQL Server 的網站資料庫中啟用。 變更追蹤可讓 Configuration Manager 查詢有關上次時間點後，資料庫資料表中已經出現之變更的資訊。 保留期間會指定保留變更追蹤資訊的時間長度。 根據預設，會將網站資料庫設定為 5 天的保留期間。 復原網站資料庫時，您的備份是在保留期間內或保留期間外，復原程序的進行方式也隨之不同。 例如，若網站資料庫伺服器失敗，而上次備份是 7 天以前，表示備份是在保留期間外。
 
  如需 SQL Server 變更追蹤本質的詳細資訊，請參閱來自 SQL Server 團隊的下列部落格︰[Change Tracking Cleanup - part 1](https://blogs.msdn.microsoft.com/sql_server_team/change-tracking-cleanup-part-1) (變更追蹤清除 - 第 1 部分) 和 [Change Tracking Cleanup - part 2](https://blogs.msdn.microsoft.com/sql_server_team/change-tracking-cleanup-part-2) (變更追蹤清除 - 第 2 部分)。
 
 
 
-####  <a name="a-namebkmkreinita-process-to-reinitialize-site-or-global-data"></a><a name="bkmk_reinit"></a> 重新初始化站台或全域資料的程序  
+####  <a name="bkmk_reinit"></a> 重新初始化站台或全域資料的程序  
  重新初始化網站或全域資料的程序，會以來自另一個網站資料庫的資料取代網站資料庫中的現有資料。 例如，若網站 ABC 重新初始化來自網站 XYZ 的資料，會發生以下步驟：  
 
 -   資料從網站 XYZ 複製到 ABC。  
@@ -297,7 +298,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 ##### <a name="example-scenario-2"></a>範例案例 2  
  **管理中心網站重新初始化來自主要站台的站台資料**：復原程序會從管理中心網站資料庫中移除該主要站台的現有站台資料，並以從主要站台複製的站台資料加以取代。 其他主要網站的網站資料則不受影響。  
 
-####  <a name="a-namebkmksitedbrecoveryscenariosa-site-database-recovery-scenarios"></a><a name="BKMK_SiteDBRecoveryScenarios"></a> 網站資料庫復原案例  
+####  <a name="BKMK_SiteDBRecoveryScenarios"></a> 網站資料庫復原案例  
  從備份還原站台資料庫後，Configuration Manager 會嘗試還原站台內上次資料庫備份後的變更以及全域資料。 下文說明從備份還原站台資料庫之後，Configuration Manager 會啟動的動作。  
 
  **復原的站台是管理中心網站：**  
@@ -362,7 +363,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 >   
 >  **ALTER QUEUE [dbo].[ConfigMgrDRSSiteQueue] WITH STATUS = ON**  
 
-###  <a name="a-namebkmkunattendedsiterecoverykeysa-unattended-site-recovery-script-file-keys"></a><a name="BKMK_UnattendedSiteRecoveryKeys"></a> 自動站台復原指令碼檔案索引鍵  
+###  <a name="BKMK_UnattendedSiteRecoveryKeys"></a> 自動站台復原指令碼檔案索引鍵  
  若要執行 Configuration Manager 管理中心網站或主要站台的自動復原，您可以建立自動安裝指令碼，並使用安裝程式搭配 /script 命令選項。 指令碼提供與安裝精靈提示相同的資訊類型，不過沒有預設設定。 所有值必須針對適用於您所使用之復原類型的安裝識別碼進行指定。  
 
  您可以藉由使用含有 /script 安裝命令列選項的初始設定檔案，自動執行 Configuration Manager 安裝程式。 Configuration Manager 管理中心網站與主要站台的復原支援自動安裝。 若要使用 /script 安裝命令列選項，您必須建立初始設定檔案，並在 /script 安裝命令列選項後指定初始設定檔案名稱。 檔案名稱並不重要，只要檔案名稱的副檔名為 .ini 即可。 當您參照來自命令列的安裝初始設定檔案時，您必須提供檔案的完整路徑。 例如，若您將安裝初始設定檔案命名為 setup.ini，並儲存於 C:\setup 資料夾，則命令列為：  
@@ -814,7 +815,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
     -   **詳細資料：** 指定主要站台連線至管理中心站台的逾時上限值 (分鐘)。 例如，如果主要網站連線至管理中心網站失敗，則主要網站會依據 CASRetryInterval 重試與管理中心網站的連線，直到達到 WaitForCASTimeout 期間。 您可以指定 0 到 100 的值。  
 
-###  <a name="a-namebkmkpostrecoverya-post-recovery-tasks"></a><a name="BKMK_PostRecovery"></a> 復原後的工作  
+###  <a name="BKMK_PostRecovery"></a> 復原後的工作  
  復原網站後，有幾項後續復原工作必須納入考量，網站復原才算完成。 利用下面各節可幫助您完成網站復原程序。  
 
 #### <a name="re-enter-user-account-passwords"></a>重新輸入使用者帳戶密碼  
@@ -844,7 +845,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
  網站伺服器復原後，您必須重新輸入指定給網站的 Windows 側載金鑰，因為在網站復原期間會重設這些金鑰。 重新輸入側載金鑰之後，Configuration Manager 主控台中 Windows 側載金鑰的 [已使用的啟用數量] 欄中的計數便會重設。 例如，假設在站台失敗前，您的 [啟用總數] 計數設為 [100]，而代表裝置已用金鑰數目的 [已使用的啟用數量] 是 [90]。 在網站復原之後，[啟用總數]  欄仍會顯示 [100] ，但是 [已使用的啟用數量]  欄會不正確地顯示 [0] 。 不過，在 10 個新裝置使用側載金鑰之後，就不會有任何剩餘的側載金鑰，因此下一個裝置將無法套用側載金鑰。  
 
 #### <a name="recreate-the-microsoft-intune-subscription"></a>重新建立 Microsoft Intune 訂閱  
- 如果在站台伺服器重新製作映像後才復原 Configuration Manager 站台伺服器，就不會還原 Microsoft Intune 訂閱。 您必須在復原站台後，重新連線到訂閱。  請不要建立新的 APN 要求，而改為上傳目前有效的 .pem，也就是上次設定或更新 iOS 管理所上傳的檔案。 如需詳細資訊，請參閱 [Configuring the Microsoft Intune subscription](../../mdm/deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)。  
+ 如果在站台伺服器重新製作映像後才復原 Configuration Manager 站台伺服器，就不會還原 Microsoft Intune 訂閱。 您必須在復原站台後，重新連線到訂閱。  請不要建立新的 APN 要求，而改為上傳目前有效的 .pem，也就是上次設定或更新 iOS 管理所上傳的檔案。 如需詳細資訊，請參閱 [Configuring the Microsoft Intune subscription](/sccm/mdm/deploy-use/configure-intune-subscription)。  
 
 #### <a name="configure-ssl-for-site-system-roles-that-use-iis"></a>為使用 IIS 的網站系統角色設定 SSL  
  當您復原執行 IIS 且在失敗前設定為使用 HTTPS 的網站系統時，必須重新設定 IIS 使用 Web 伺服器憑證。  
@@ -888,7 +889,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 #### <a name="update-certificates-used-for-cloud-based-distribution-points"></a>更新用於雲端發佈點的憑證  
  Configuration Manager 需要使用管理憑證讓站台伺服器與雲端發佈點通訊。 復原網站後，必須更新用於雲端發佈點的憑證。  
 
-####  <a name="a-namebkmkrecoversecondarysitea-recover-a-secondary-site"></a><a name="BKMK_RecoverSecondarySite"></a> 復原次要站台  
+####  <a name="BKMK_RecoverSecondarySite"></a> 復原次要站台  
  Configuration Manager 不支援次要站台的資料庫備份，但可透過重新安裝次要站台支援復原。 Configuration Manager 次要站台故障時，必須復原次要站台。 您可以從 Configuration Manager主控台的 [站台] 節點，使用 [復原次要站台] 動作來復原次要站台。 不同於管理中心網站或主要網站的復原，復原次要網站不會使用備份檔案，而是改為在已失敗的次要網站電腦上重新安裝次要網站檔案。 然後從父主要網站資料上重新初始化次要網站資料。 復原過程中，Configuration Manager 會驗證次要站台電腦上是否有內容庫，以及是否有適當的內容。 如果有適當的內容，次要網站會使用現有內容庫。 否則，若要復原已復原的次要網站內容庫，您需要重新發佈或預先設置該已復原網站的內容。 如果發佈點不在次要網站上，復原次要網站時可以不重新安裝發佈點。 復原次要網站後，網站會自動與發佈點同步。  
 
  您可以從 Configuration Manager 主控台的 [站台] 節點，使用 [顯示安裝狀態] 動作來確認次要站台復原的狀態。  
@@ -899,7 +900,7 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 > [!IMPORTANT]  
 >  復原次要站台時，如果電腦中尚未安裝 SQL Server Express，Configuration Manager 不會進行安裝。 因此，復原次要網站前，您必須手動安裝 SQL Server Express 或 SQL Server。 您必須使用次要網站資料庫故障前所使用的 SQL Server 版本及相同的 SQL Server 執行個體。  
 
-##  <a name="a-namebkmksmswriterservicea-sms-writer-service"></a><a name="BKMK_SMSWriterService"></a> SMS 寫入器服務  
+##  <a name="BKMK_SMSWriterService"></a> SMS 寫入器服務  
  SMS 寫入器是一個服務，會在備份程序進行期間與磁碟區陰影複製服務 (VSS) 互動。 Configuration Manager 站台備份必須執行 SMS 寫入器服務才可以順利完成。  
 
 ### <a name="purpose"></a>目的  
@@ -915,9 +916,4 @@ ms.openlocfilehash: a7e052bc0e1c354b75a7f95afdd266ed742ce689
 
 ### <a name="volume-shadow-copy-service"></a>磁碟區陰影複製服務  
  VSS 是一組 COM API，其中實作了一個架構以允許進行磁碟區備份時系統上的應用程式仍能繼續寫入磁碟區。 VSS 提供一致的介面，可在磁碟上更新資料的使用者應用程式 (SMS 寫入器服務) 與備份應用程式 (備份管理員服務) 之間進行協調。 如需 VSS 的詳細資訊，請參閱 Windows Server TechCenter 中的 [Volume Shadow Copy Service (磁碟區陰影複製服務)](http://go.microsoft.com/fwlink/p/?LinkId=241968) 主題。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 
