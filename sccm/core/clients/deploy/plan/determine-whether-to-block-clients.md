@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 54ef5fbb-521d-4ca5-a1c5-61e6f538d71e
 caps.latest.revision: 8
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: c1b3b3e7fe756ce3e0c82ffc15693999d8e817d2
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -36,7 +37,7 @@ ms.openlocfilehash: c1b3b3e7fe756ce3e0c82ffc15693999d8e817d2
 
  如果網站系統接受 HTTPS 用戶端連線，且您的公開金鑰基礎結構 (PKI) 支援憑證撤銷清單 (CRL)，請務必考慮使用憑證撤銷作為主要防禦機制以防止可能遭竄改的憑證。 在 Configuration Manager 中封鎖用戶端是保護階層的第二條防線。  
 
-##  <a name="a-namebkmkblockvscrla-considerations-for-blocking-clients"></a><a name="BKMK_Block_vs_CRL"></a> 封鎖用戶端的考量  
+##  <a name="BKMK_Block_vs_CRL"></a> 封鎖用戶端的考量  
 
 -   此選項適用於 HTTP 和 HTTPS 用戶端連線，但如果用戶端使用 HTTP 來連線到站台系統，則安全性有限。  
 
@@ -71,9 +72,4 @@ ms.openlocfilehash: c1b3b3e7fe756ce3e0c82ffc15693999d8e817d2
 
     > [!NOTE]  
     >  您可以在 IIS 中設定憑證信任清單 (CTL)，進一步防範未知用戶端破壞執行 IIS 的網站系統。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

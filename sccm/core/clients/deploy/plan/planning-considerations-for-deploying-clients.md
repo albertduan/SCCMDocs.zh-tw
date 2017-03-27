@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 518f9882-ce71-48c3-9f47-cd968cfb658d
 caps.latest.revision: 3
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: 6fce443843fcf542a852937217e3a73c7ee0a98b
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -42,9 +43,4 @@ ms.openlocfilehash: 6fce443843fcf542a852937217e3a73c7ee0a98b
 -   [規劃在 System Center Configuration Manager 中將用戶端部署至 Mac 電腦](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-mac-computers.md)  
 
 -   [規劃將用戶端部署至 System Center Configuration Manager 中的 Windows Embedded 裝置](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

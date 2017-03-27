@@ -12,13 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 600086d5-bd9e-4ac1-8ace-c7a62de80dc2
 caps.latest.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 Robots: NOINDEX,NOFOLLOW
 translationtype: Human Translation
 ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 30d0177dc7fcc7f39d00c48067130d587435bf2d
+ms.lasthandoff: 12/16/2016
 
 ---
 # <a name="use-the-client-software-from-the-version-1606-baseline-media-for-extended-interoperability-with-future-versions-of-a-current-branch-site"></a>使用來自 1606 版基準媒體的用戶端軟體，以保障與未來版本的最新分支站台的延伸互通性
@@ -42,23 +43,18 @@ ms.openlocfilehash: 30d0177dc7fcc7f39d00c48067130d587435bf2d
 在用戶端的支援到期之前，請針對您使用最新分支管理的裝置，規劃其上的延伸互通性用戶端更新。 若要執行此作業，請從 Microsoft 下載新版本的用戶端，然後將該更新的用戶端軟體部署到使用目前延伸互通性用戶端的裝置。
 
 **延伸互通性用戶端的限制：**
--   您無法藉由使用主控台內更新，取得延伸互通性用戶端軟體的更新。 當更新的用戶端發行時，即會提供部署更新之用戶端軟體的其他詳細資料。
+-     您無法藉由使用主控台內更新，取得延伸互通性用戶端軟體的更新。 當更新的用戶端發行時，即會提供部署更新之用戶端軟體的其他詳細資料。
 
 ## <a name="identify-the-client-version-you-use"></a>識別您所使用的用戶端版本
 以下是適用於最新分支和 LTSB 的主要用戶端版本：
 
 |用戶端版本|分支和版本 |  
 |----------------|---------------------|
-|5.00.8325.xxxx |   - 最新分支 1511|
-|5.00.8355.xxxx |- 最新分支 1602|
-|5.00.8412.1307 |- 最新分支 1606 </br> - 最新分支 1606 與 1606 Hotfix 彙總套件 (KB3186654)</br>- 來自 1606 版基準媒體的延伸互通性用戶端|  
+|5.00.8325.xxxx |    - 最新分支 1511|
+|5.00.8355.xxxx    |- 最新分支 1602|
+|5.00.8412.1307    |- 最新分支 1606 </br> - 最新分支 1606 與 1606 Hotfix 彙總套件 (KB3186654)</br>- 來自 1606 版基準媒體的延伸互通性用戶端|  
 
 在用戶端上，您可以透過 Configuration Manager 控制台小程式的 [一般] 索引標籤來檢視用戶端版本。
 
 在小程式的 [元件] 索引標籤上，某些元件會顯示不同的值。 例如，針對用戶端版本 8412.1307，某些元件可能會列為 5.00.8412.**1000** 或 5.00.8412.**1006**。  對某些元件來說，末四碼數不同是正常現象，並不表示元件更新至目前用戶端版本失敗。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

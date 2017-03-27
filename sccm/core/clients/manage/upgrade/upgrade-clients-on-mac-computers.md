@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 74c60941-5eae-4905-9e58-252bdb39df96
 caps.latest.revision: 10
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
 ms.openlocfilehash: 6bdc5cca01bf5a79a6177d7cf1de96b8ff2c2305
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -64,7 +65,7 @@ ms.openlocfilehash: 6bdc5cca01bf5a79a6177d7cf1de96b8ff2c2305
 
  如果您不要使用 Configuration Manager 註冊，而要在不透過 Configuration Manager 的情況下獨立安裝用戶端憑證，請參閱[將升級的用戶端設定為使用現有憑證](#BKMK_UpgradingClient_MachineEnrollment)。  
 
-##  <a name="a-namebkmkupgradingclientmachineenrollmenta-configure-the-upgraded-client-to-use-an-existing-certificate"></a><a name="BKMK_UpgradingClient_MachineEnrollment"></a> Configure the upgraded client to use an existing certificate  
+##  <a name="BKMK_UpgradingClient_MachineEnrollment"></a> Configure the upgraded client to use an existing certificate  
  執行下列程序以防止 [電腦註冊精靈] 執行，並且將升級的用戶端設定為使用現有的用戶端憑證。  
 
 -   在 Configuration Manager 主控台中，建立 **Mac OS X** 類型的設定項目。  
@@ -102,9 +103,4 @@ ms.openlocfilehash: 6bdc5cca01bf5a79a6177d7cf1de96b8ff2c2305
 -   將設定項目新增至設定基準，然後將設定基準部署至所有安裝獨立於 Configuration Manager 之憑證的 Mac 電腦。  
 
  如需如何建立和部署 Mac 電腦設定項目的詳細資訊，請參閱[如何為 System Center Configuration Manager 用戶端所管理的 Mac OS X 裝置建立設定項目](../../../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md)和[如何在 System Center Configuration Manager 中部署設定基準](../../../../compliance/deploy-use/deploy-configuration-baselines.md)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

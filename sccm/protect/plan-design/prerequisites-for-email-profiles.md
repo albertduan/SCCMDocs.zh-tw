@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: dccf0b73-43bd-4545-8914-114168ebad36
 caps.latest.revision: 5
 caps.handback.revision: 0
-author: Nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
 ms.openlocfilehash: bdb7f78480f73bc4559c4ff49ecb7b047581780a
+ms.lasthandoff: 01/24/2017
 
 
 ---
@@ -40,9 +41,4 @@ System Center Configuration Manager 中的電子郵件設定檔在產品內外�
 |相依性|詳細資訊|  
 |----------------|----------------------|  
 |Active Directory 中的郵件屬性|如果您要利用使用者的主要 SMTP 位址，在電子郵件設定檔中產生使用者的電子郵件地址，此位址必須存在於 Active Directory 的 [郵件] 屬性中。<br /><br /> 如需詳細資訊，請參閱 Windows Server 文件。|
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

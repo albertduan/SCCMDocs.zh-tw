@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: c1b2057e-b74f-43fa-a293-763a8f866d3d
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: eafa0d85935c2009cc63d17b06ed83a4666d7fac
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -65,9 +66,4 @@ System Center Configuration Manager 中的遠端控制具有外部相依性和�
 |必須啟用用戶端的遠端控制|根據預設，安裝 Configuration Manager 時，不會啟用遠端控制。 如需如何啟用和設定遠端控制的相關資訊，請參閱[在 System Center Configuration Manager 中設定遠端控制](../../../../core/clients/manage/remote-control/configuring-remote-control.md)。|  
 |Reporting Services 點|必須先安裝 Reporting Services 點站台系統角色，才能執行遠端控制的報告。 如需詳細資訊，請參閱 [Reporting in System Center Configuration Manager](../../../../core/servers/manage/reporting.md) (System Center Configuration Manager 中的報告)。|  
 |管理遠端控制的安全性權限|存取集合資源，以及從 Configuration Manager 主控台初始化遠端控制工作階段：[控制 AMT]、[讀取]、[讀取資源]，以及 **Collection** 物件的 [遠端控制] 權限。<br /><br /> [遠端工具操作員] 安全性角色包括在 Configuration Manager 中管理遠端控制所需的上述權限。<br /><br /> 如需詳細資訊，請參閱[為 System Center Configuration Manager 設定以角色為基礎的系統管理](../../../../core/servers/deploy/configure/configure-role-based-administration.md)。<br /><br /> 此外，您還必須將要提供遠端控制和遠端協助使用權限的使用者新增至遠端控制獲准檢視清單，方法是使用 [遠端工具]  用戶端設定中的 [遠端控制和遠端桌面的獲准檢視器]  選項。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -13,12 +13,13 @@ ms.topic: article
 ms.assetid: 272ee86b-d3d9-4fd9-b5c4-73e490e1a1e4
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 342a58d2b7439f721381beb43188594b5278043d
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 342a58d2b7439f721381beb43188594b5278043d
 
 本主題包含 System Center 2012 Configuration Manager 中遠端控制的安全性和隱私權資訊。  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-remote-control"></a><a name="BKMK_Security_HardwareInventory"></a> 遠端控制的安全性最佳做法  
+##  <a name="BKMK_Security_HardwareInventory"></a> 遠端控制的安全性最佳做法  
  當您使用遠端控制管理用戶端電腦時，可使用下列安全性最佳做法。  
 
 |安全性最佳作法|詳細資訊|  
@@ -54,7 +55,7 @@ ms.openlocfilehash: 342a58d2b7439f721381beb43188594b5278043d
 
      如果您複製遠端控制的二進位檔案，而不是安裝 Configuration Manager 主控台，就不會傳送稽核訊息，接著會在命令提示字元中執行遠端控制。  
 
-##  <a name="a-namebkmkprivacyhardwareinventorya-privacy-information-for-remote-control"></a><a name="BKMK_Privacy_HardwareInventory"></a> 遠端控制的隱私權資訊  
+##  <a name="BKMK_Privacy_HardwareInventory"></a> 遠端控制的隱私權資訊  
  遠端控制可讓您在 Configuration Manager 用戶端電腦上檢視作用中的工作階段，而且可能可以檢視儲存在這些電腦上的任何資訊。 預設不啟用遠端控制。  
 
  雖然您可以設定遠端控制提供顯著的通知，並在遠端控制工作階段開始之前取得使用者同意，但仍然可以在不經使用者同意或覺察下監視使用者。 您可以設定 [只檢視] 或 [完全控制] 存取層級，使遠端控制不能變更任何內容。 遠端控制工作階段中會顯示連線系統管理員的帳戶，幫助使用者識別誰正在連線到他們的電腦。  
@@ -62,9 +63,4 @@ ms.openlocfilehash: 342a58d2b7439f721381beb43188594b5278043d
  Configuration Manager 預設會將遠端控制權限授與本機系統管理員群組。  
 
  設定遠端控制之前，請考慮您的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

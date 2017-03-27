@@ -1,9 +1,9 @@
 ---
 title: "設定雲端管理閘道 | Microsoft Docs"
 description: 
-author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.author: nbigman
 ms.date: 12/14/2016
 ms.topic: article
 ms.prod: configuration-manager
@@ -14,6 +14,7 @@ ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
 translationtype: Human Translation
 ms.sourcegitcommit: 2bcc5d9dde1f1a2d9c33575d6c463e281ac818e8
 ms.openlocfilehash: 61b8cd8458718b9a54edb129739c619f947ac380
+ms.lasthandoff: 12/16/2016
 
 ---
 
@@ -221,9 +222,4 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 ## <a name="next-steps"></a>後續步驟
 
 [監視雲端管理閘道的用戶端](monitor-clients-cloud-management-gateway.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

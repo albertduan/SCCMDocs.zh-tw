@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2285a953-6a86-4ed5-97dd-cd57b02bc1ee
 caps.latest.revision: 12
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 0900e45115f02861c33fe2abdb046d11fdef3474
 ms.openlocfilehash: 9f51c15adaa850eb8343601ddcd13046480fc9c0
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -190,8 +191,3 @@ Web 伺服器憑證必須包含網站系統內容中指定的網際網路 FQDN�
 ### <a name="next-steps"></a>後續步驟
 
 [將 Configuration Manager 用戶端部署至 Mac 電腦](/sccm/core/clients/deploy/deploy-clients-to-macs)。  
-
-
-<!--HONumber=Jan17_HO1-->
-
-

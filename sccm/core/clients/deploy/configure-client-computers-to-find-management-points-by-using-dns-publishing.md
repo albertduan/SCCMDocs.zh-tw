@@ -12,12 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 03cec407-0f9f-454f-a360-b005af738d29
 caps.latest.revision: 6
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: 9eadb91a575323b4c36af14962f370046ea513ce
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -57,9 +58,4 @@ System Center Configuration Manager 中的用戶端必須找到管理點以完�
 2.  在 [站台]  索引標籤中指定管理點的 DNS 尾碼，然後按一下 [確定] 。  
 
      如果站台有一個以上的管理點，且管理點位於一個以上的網域中，必須指定一個網域。 用戶端連線至此網域中的管理點時，會下載可用管理點清單，其中包含其他網域的管理點。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
