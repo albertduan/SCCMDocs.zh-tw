@@ -1308,6 +1308,7 @@
 ## [SMS_AzureServicesTask 伺服器 WMI 類別](core/servers/configure/sms_azureservicestask-server-wmi-class.md)
 
 # [Windows 10 服務伺服器 WMI 類別](misc/windows-10-servicing-server-wmi-classes.md)
+## [SMS_AdminUIContent 伺服器 WMI 類別](misc/sms-adminuicontent-server-wmi-class.md)
 ## [SMS_Windows10Dashboard 伺服器 WMI 類別](misc/sms_windows10dashboard-server-wmi-class.md)
 ## [SMS_WindowsServicingBusinessReadyUpdates 伺服器 WMI 類別](misc/sms_windowsservicingbusinessreadyupdates-server-wmi-class.md)
 ## [SMS_WindowsServicingLocalizedNames 伺服器 WMI 類別](misc/sms_windowsservicinglocalizednames-server-wmi-class.md)

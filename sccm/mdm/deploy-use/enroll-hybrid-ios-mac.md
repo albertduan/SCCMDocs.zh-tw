@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: 5eae4400-58ca-4c71-804c-6a585cd3df5d
 caps.latest.revision: 10
 caps.handback.revision: 0
-author: mtillman
-ms.author: mtillman
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
@@ -69,6 +69,6 @@ ms.lasthandoff: 03/06/2017
 
  設定好之後，您需要讓使用者了解如何註冊其裝置。 請參閱[要告訴使用者關於註冊其裝置的事項](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。 這項資訊適用於透過 Microsoft Intune 與 Configuration Manager 管理的行動裝置。
 
- > [!div class="button"]
- [< 上一個步驟](create-service-connection-point.md)  [下一個步驟 >](set-up-additional-management.md)
+> [!div class="button"]
+[< 上一個步驟](create-service-connection-point.md)  [下一個步驟 >](set-up-additional-management.md)
 
