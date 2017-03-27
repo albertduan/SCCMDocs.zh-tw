@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 34dded3a8caf8c2be0313bc012cbd8ad2a909fad
 ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
+ms.lasthandoff: 02/18/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1701-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1701 中的功能
@@ -56,7 +57,7 @@ ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
   只有在用戶端無法連線其目前軟體更新點之後，已有軟體更新點的用戶端才會開始使用這個新的界限群組行為，並啟動後援。
 這項延遲在切換至新行為時是刻意設計的。 原因是用戶端與新的軟體更新點同步處理資料時，軟體更新點的變更可能會導致使用大量網路頻寬。 轉換延遲有助於避免讓網路飽和，讓所有用戶端同時切換至新的軟體會更新點。
 
--    **後援時間的設定：**此 Technical Preview 不支援用戶端在啟動後援來搜尋新軟體更新點時的設定。 這包括 [Fallback times (in minutes)] (後援時間 (分鐘)) 和 [Never fallback] (永不後援) 的設定，而您可以針對不同的界限群組關聯性設定這些項目。
+-    **後援時間的設定：**此 Technical Preview 不支援用戶端在啟動後援來搜尋新軟體更新點時的設定。 這包括 [Fallback times (in minutes)]\(後援時間 (分鐘)) 和 [Never fallback]\(永不後援) 的設定，而您可以針對不同的界限群組關聯性設定這些項目。
 
   相反地，用戶端會保留其目前行為，即用戶端會先嘗試連線至其目前軟體更新點兩個小時，再啟動後援，來尋找它可使用的新軟體更新點。
 
@@ -94,12 +95,12 @@ ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
 
 ## <a name="validate-device-health-attestation-data-via-management-points"></a>透過管理點來驗證裝置健全狀況證明資料
 
-從此 Preview 版本開始，您可以設定管理點來驗證雲端或內部部署健全狀況證明服務的健全狀況證明報告資料。 [管理點元件內容] 對話方塊中的新 [進階選項] 索引標籤可讓您 [新增]、[編輯] 或 [移除] [On-premises device health attestation service URL] (內部部署裝置健全狀況證明服務 URL)。 您也可以將用戶端代理程式的 [自訂裝置設定] 指定為 [Use on-premises Health Attestation Service] (使用內部部署健全狀況證明服務)。  此設定設為 [是] 時，將會啟用報告到內部部署管理點，而非雲端式服務。
+從此 Preview 版本開始，您可以設定管理點來驗證雲端或內部部署健全狀況證明服務的健全狀況證明報告資料。 [管理點元件內容] 對話方塊中的新 [進階選項] 索引標籤可讓您 [新增]、[編輯] 或 [移除] [On-premises device health attestation service URL]\(內部部署裝置健全狀況證明服務 URL)。 您也可以將用戶端代理程式的 [自訂裝置設定] 指定為 [Use on-premises Health Attestation Service]\(使用內部部署健全狀況證明服務)。  此設定設為 [是] 時，將會啟用報告到內部部署管理點，而非雲端式服務。
 
 ### <a name="try-it-out"></a>試試看
 
-- **在管理點上啟用內部部署裝置健全狀況證明**<br>  在 Configuration Manager 主控台中，瀏覽至管理點，並開啟 [管理點元件內容]，然後按一下 [進階選項] 索引標籤。 按一下 [新增]，然後指定內部部署 URL (例如，https://10.10.10.10) 作為 [On-premises device health attestation service URL] (內部部署裝置健全狀況證明服務 URL)。
-- **啟用用戶端代理程式的內部部署管理點健全狀況證明報告**<br>在 Configuration Manager 主控台中，選擇 [系統管理] > [用戶端設定]，然後按兩下或建立新的 [自訂裝置設定]。 選取 [電腦代理程式]，並將 [Use on-premises Health Attestation Service] (使用內部部署健全狀況證明服務) 設為 [是]。 如果將 [Enable communication with Device Health Attestation Service] (啟用與裝置健全狀況證明服務之間的通訊)  設為 [是]，並將 [Use on-premises Health Attestation] (使用內部部署健全狀況證明) 設為 [否]，則管理點將會使用雲端式裝置健全狀況證明服務。
+- **在管理點上啟用內部部署裝置健全狀況證明**<br>  在 Configuration Manager 主控台中，瀏覽至管理點，並開啟 [管理點元件內容]，然後按一下 [進階選項] 索引標籤。 按一下 [新增]，然後指定內部部署 URL (例如，https://10.10.10.10) 作為 [On-premises device health attestation service URL]\(內部部署裝置健全狀況證明服務 URL)。
+- **啟用用戶端代理程式的內部部署管理點健全狀況證明報告**<br>在 Configuration Manager 主控台中，選擇 [系統管理] > [用戶端設定]，然後按兩下或建立新的 [自訂裝置設定]。 選取 [電腦代理程式]，並將 [Use on-premises Health Attestation Service]\(使用內部部署健全狀況證明服務) 設為 [是]。 如果將 [Enable communication with Device Health Attestation Service]\(啟用與裝置健全狀況證明服務之間的通訊)  設為 [是]，並將 [Use on-premises Health Attestation]\(使用內部部署健全狀況證明) 設為 [否]，則管理點將會使用雲端式裝置健全狀況證明服務。
 
 ## <a name="use-the-oms-connector-for-microsoft-azure-government-cloud"></a>針對 Microsoft Azure Government 雲端使用 OMS 連接器
 使用此 Technical Preview，您現在可以使用 Microsoft Operations Management Suite (OMS) 連接器連線至 Microsoft Azure Government 雲端上的 OMS 工作區。  
@@ -157,9 +158,4 @@ ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
 透過這項變更，混合式部署可更快為 Android 及 iOS 版本提供支援，而不需要新的 Configuration Manager 版本或延伸模組。 一旦 Intune 獨立版支援新版本，使用者就能將其行動裝置更新為該版本。
 
 為了防止升級舊版 Configuration Manager 時發生問題，這些項目的屬性頁面中還是會有行動作業系統版本。 如果您仍有需要將特定版本設為目標，可以建立新項目，然後在新建項目的屬性頁面上指定設為目標的版本。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 
