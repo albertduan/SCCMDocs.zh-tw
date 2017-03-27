@@ -36,6 +36,7 @@ translation.priority.ht:
 translationtype: Human Translation
 ms.sourcegitcommit: 688e05aae0e0b15b54835f8d64a98487f4d7b64d
 ms.openlocfilehash: 82bcd1a9fe22bf7ecc2dc5765f64f5198494152e
+ms.lasthandoff: 12/30/2016
 
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 1610 版的診斷使用方式資料收集層級
@@ -50,73 +51,71 @@ System Center Configuration Manager 1610 版會收集三種層級的診斷及使
 > [!IMPORTANT]
 >  Configuration Manager 不會收集「基本」層級或「增強」層級中的站台碼、站台名稱、IP 位址、使用者名稱、電腦名稱、實體位址或電子郵件地址。 而在「完整」層級中收集到的任何上述資訊並不具有目的性；因為這些資訊可能包含在記錄檔或記憶體快照等進階診斷資訊中。 Microsoft 不會將這項資訊用於廣告目的，亦不會用來辨識您的身分或與您連絡。
 
-##  <a name="a-namebkmkchangea-how-to-change-the-level"></a><a name="bkmk_change"></a> 如何變更層級
+##  <a name="bkmk_change"></a> 如何變更層級
  如果系統管理員具有以角色為基礎的系統管理範圍 (包含 [站台] 物件類別的 [修改] 權限)，則可以變更 Configuration Manager 主控台中 [診斷及使用方式資料] 設定所收集的資料層級。
 
 從 1610 版開始，您可以從主控台變更資料收集層級，方法是瀏覽至 [系統管理] > [概觀] > [站台設定] > [站台]。 開啟 [階層設定]，然後選取您想要使用的資料層級。  
 
-##  <a name="a-namebkmklevel1a-level-1---basic"></a><a name="bkmk_level1"></a> 層級 1 - 基本
+##  <a name="bkmk_level1"></a> 層級 1 - 基本
  「基本」層級包含您階層的相關資料，我們必須要有這些資料才能協助改善安裝或升級體驗，以及協助判斷哪些 Configuration Manager 更新適用於您的階層。
 
  針對 System Center Configuration Manager 1610 版，這個層級包含下列項目：
 
 
- -   安裝程式資訊：
-      - 組建、安裝類型、語言套件以及您啟用的功能  
+-   安裝程式資訊：
+       - 組建、安裝類型、語言套件以及您啟用的功能  
 
-      -   更新套件部署狀態和錯誤、下載進度和必要條件錯誤  
+       - 更新套件部署狀態和錯誤、下載進度和必要條件錯誤     
 
-      -  升級後的指令碼版本
+       - 升級後的指令碼版本
 
-      -  使用更新快速通道 (Fast Ring)
+       - 使用更新快速通道 (Fast Ring)
 
-    -  ***[新增]*** 發行前版本的使用、安裝媒體類型及分支類型
+    - ***[新增]*** 發行前版本的使用、安裝媒體類型及分支類型
 
     - ***[新增]*** 軟體保證到期日
 
+- 資料庫效能標準 (複寫處理資訊、依處理器和磁碟使用量列出前幾個 SQL Server 預存程序)
 
--   資料庫效能標準 (複寫處理資訊、依處理器和磁碟使用量列出前幾個 SQL Server 預存程序)
+- 基本資料庫設定 (處理器、叢集設定和分散式檢視的設定)
 
--   基本資料庫設定 (處理器、叢集設定和分散式檢視的設定)
+- Configuration Manager 資料庫結構描述 (所有物件定義的雜湊)
 
--   Configuration Manager 資料庫結構描述 (所有物件定義的雜湊)
+- Configuration Manager 用戶端版本和作業系統版本的計數
 
--   Configuration Manager 用戶端版本和作業系統版本的計數
+- 受管理裝置作業系統和 Exchange Connector 所設定原則的計數
 
--   受管理裝置作業系統和 Exchange Connector 所設定原則的計數
+- 用戶端語言和地區設定的計數
 
--   用戶端語言和地區設定的計數
+- Windows 10 裝置的計數 (依分支和組建)
 
--   Windows 10 裝置的計數 (依分支和組建)
+- 基本 Configuration Manager 站台階層資料 (站台清單、類型、版本、狀態、用戶端計數和時區)
 
--   基本 Configuration Manager 站台階層資料 (站台清單、類型、版本、狀態、用戶端計數和時區)
+- 基本站台系統伺服器資訊 (所使用的站台系統角色、網際網路和 SSL 狀態、作業系統、處理器，以及實體機器或虛擬機器)
 
--   基本站台系統伺服器資訊 (所使用的站台系統角色、網際網路和 SSL 狀態、作業系統、處理器，以及實體機器或虛擬機器)
+- 基本使用者探索統計資料 (使用者探索計數以及最小/最大/平均群組大小)
 
--   基本使用者探索統計資料 (使用者探索計數以及最小/最大/平均群組大小)
+- 基本 Endpoint Protection 資訊 (反惡意程式碼用戶端版本)
 
--   基本 Endpoint Protection 資訊 (反惡意程式碼用戶端版本)
+- 基本應用程式和部署類型計數 (應用程式總數、具有多個部署類型的應用程式總數、具有相依性的應用程式總數、已取代的應用程式總數，以及使用中部署技術的計數)
 
--   基本應用程式和部署類型計數 (應用程式總數、具有多個部署類型的應用程式總數、具有相依性的應用程式總數、已取代的應用程式總數，以及使用中部署技術的計數)
+- 基本作業系統部署 (OSD) 計數 (映像)
 
--   基本作業系統部署 (OSD) 計數 (映像)
+- 發佈點和管理點類型和基本設定資訊 (受保護、前置階段、PXE、多點傳送、SSL 狀態、提取/對等發佈點、啟用 MDM、啟用 SSL 等)
 
--   發佈點和管理點類型和基本設定資訊 (受保護、前置階段、PXE、多點傳送、SSL 狀態、提取/對等發佈點、啟用 MDM、啟用 SSL 等)
+- 遙測統計資料 (執行時、執行階段、錯誤)
 
--   遙測統計資料 (執行時、執行階段、錯誤)
+- 所設定的遙測層級、模式 (線上或離線)，以及快速更新設定
 
--  所設定的遙測層級、模式 (線上或離線)，以及快速更新設定
+- 使用網路探索 (啟用或停用)
+- 管理主控台：
 
--  使用網路探索 (啟用或停用)
--  管理主控台：
-
-     -  主控台連線的相關統計資料 (作業系統版本、語言、SKU 和架構、系統記憶體、邏輯處理器計數、Connect 站台識別碼、所安裝的 .NET 版本和主控台語言套件)    
-
+     - 主控台連線的相關統計資料 (作業系統版本、語言、SKU 和架構、系統記憶體、邏輯處理器計數、Connect 站台識別碼、所安裝的 .NET 版本和主控台語言套件)    
 
 - SQL 版本、Service Pack 層級、版本、定序識別碼和字元集
 
 
-##  <a name="a-namebkmklevel2a-level-2---enhanced"></a><a name="bkmk_level2"></a> 層級 2 - 增強
+##  <a name="bkmk_level2"></a> 層級 2 - 增強
 「增強」層級是安裝完成後的預設值。 這個層級包含在「基本」層級中收集的資料以及功能的特定資料 (使用的頻率和持續時間)、Configuration Manager 用戶端設定 (元件名稱、狀態以及輪詢間隔這類特定設定) 和軟體更新的基本資訊。
 
 建議使用這個層級，因為它會提供 Microsoft 必要的基本資料，以在未來的產品和服務版本中做出實用的改進。 這個層級不會收集物件名稱 (站台、使用者、電腦或物件)、安全性相關物件的詳細資料或漏洞 (例如需要軟體更新的系統計數)。
@@ -265,7 +264,7 @@ System Center Configuration Manager 1610 版會收集三種層級的診斷及使
 
     -   針對 Endpoint Protection 功能所設定的警示計數  
 
-    -   進階威脅防護 (ATP) 原則 (原則的計數以及是否部署原則)
+    -     進階威脅防護 (ATP) 原則 (原則的計數以及是否部署原則)
 
 
 - **移轉：**
@@ -393,7 +392,7 @@ System Center Configuration Manager 1610 版會收集三種層級的診斷及使
 
 
 
-##  <a name="a-namebkmklevel3a-level-3---full"></a><a name="bkmk_level3"></a> 層級 3 - 完整
+##  <a name="bkmk_level3"></a> 層級 3 - 完整
 「完整」層級包含「基本」和「增強」層級中的所有資料。 它也包含 Endpoint Protection、更新相容性百分比和軟體更新資訊的其他資訊。  這個層級也會包含進階診斷資訊 (例如系統檔案和記憶體快照)，其中可能含有擷取時存在於記憶體或記錄檔中的個人資訊。
 
 針對 System Center Configuration Manager 1610 版，這個層級包含下列項目：
@@ -438,9 +437,4 @@ System Center Configuration Manager 1610 版會收集三種層級的診斷及使
 -   詳細的用戶端部署安裝錯誤
 
 - ***[新增]*** 商務用 Windows 市集應用程式詳細資料 (已同步應用程式的非彙總清單，包括 AppID、線上狀態或離線狀態，以及已購買的授權總數)
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

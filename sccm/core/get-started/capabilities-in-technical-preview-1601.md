@@ -15,9 +15,11 @@ caps.latest.revision: 7
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+robots: noindex,nofollow
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 4da12425382c5d64602b2728e0e661c8cb89a5e4
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1601-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1601 中的功能
@@ -59,7 +61,7 @@ ms.openlocfilehash: 4da12425382c5d64602b2728e0e661c8cb89a5e4
 
 **以下是您可以使用此版本試用的新功能。**  
 
-##  <a name="a-namebkmkhybrid1a-improvements-to-microsoft-intune-integration"></a><a name="bkmk_hybrid1"></a> Microsoft Intune 整合的增強功能  
+##  <a name="bkmk_hybrid1"></a> Microsoft Intune 整合的增強功能  
 在 1601 Technical Preview 中，我們已新增下列功能的支援：  
 
 ### <a name="improvements-to-conditional-access"></a>條件式存取的增強功能  
@@ -125,7 +127,7 @@ ms.openlocfilehash: 4da12425382c5d64602b2728e0e661c8cb89a5e4
 
      若要使用這個選項，請移至 Exchange 內部部署之 [設定條件存取原則精靈] 的 [一般] 頁面。  
 
-##  <a name="a-namebkmkclientstatusa-client-online-status"></a><a name="bkmk_clientStatus"></a> 用戶端線上狀態  
+##  <a name="bkmk_clientStatus"></a> 用戶端線上狀態  
 從 Technical Preview 1601 開始，您在 Configuration Manager 主控台中可以一眼就看出用戶端在線上還是離線。 運用主控台裝置清單中已更新的圖示和資料行，您可以評估環境中用戶端的狀態，找出問題區域以及其他可能需要注意的問題。  
 
 如果用戶端目前連線到 Configuration Manager 管理點站台系統角色，則用戶端在線上。 只要管理點接收來自用戶端的 ping 類似訊息，其狀態會是線上。 如果管理未接收訊息 5 分鐘左右，用戶端的狀態就會變更為離線。  
@@ -158,7 +160,7 @@ ms.openlocfilehash: 4da12425382c5d64602b2728e0e661c8cb89a5e4
 
  若要顯示用戶端狀態最近的變更，請重新整理主控台。  
 
-##  <a name="a-namebkmkappmgmt1601a-improvements-to-application-management"></a><a name="bkmk_appmgmt1601"></a> 應用程式管理的增強功能  
+##  <a name="bkmk_appmgmt1601"></a> 應用程式管理的增強功能  
  在 1601 Technical Preview 中，我們已新增下列功能的支援：  
 
 ### <a name="manage-volume-purchased-apps-for-ios-devices"></a>管理大量採購的 iOS 裝置應用程式  
@@ -194,7 +196,7 @@ ms.openlocfilehash: 4da12425382c5d64602b2728e0e661c8cb89a5e4
 
 -   在 [部署軟體精靈] 的 [應用程式設定原則] 頁面中，請將您建立的應用程式設定原則與應用程式中的相容部署類型建立關聯。  
 
-##  <a name="a-namebkmkcompliance1601a-improvements-to-compliance-settings"></a><a name="bkmk_compliance1601"></a> 合規性設定的增強功能  
+##  <a name="bkmk_compliance1601"></a> 合規性設定的增強功能  
  在 1601 Technical Preview 中，我們已新增下列功能的支援：  
 
 ### <a name="microsoft-edge-browser-settings"></a>Microsoft Edge 瀏覽器設定  
@@ -217,9 +219,4 @@ ms.openlocfilehash: 4da12425382c5d64602b2728e0e661c8cb89a5e4
  若要查看新的設定，請從 [建立設定項目精靈] 的設定項目 [裝置設定] 頁面中選擇 [Kiosk 模式 - Samsung KNOX]。  
 
  如需詳細資訊，請參閱[如何為不是使用 System Center Configuration Manager 用戶端所管理的 Windows 8.1 和 Windows 10 裝置建立設定項目](../../compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client.md)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

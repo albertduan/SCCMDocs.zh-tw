@@ -15,9 +15,11 @@ caps.latest.revision: 6
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+robots: noindex,nofollow
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 7fff6f2807a679b621b736b8ad0b6561fb37affe
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1512-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1512 中的功能
@@ -28,7 +30,7 @@ ms.openlocfilehash: 7fff6f2807a679b621b736b8ad0b6561fb37affe
 
  以下是您可以使用此版本試用的新功能。  
 
-##  <a name="a-namebkmkdevicehealtha-device-health-attestation"></a><a name="bkmk_devicehealth"></a> 裝置健全狀況證明  
+##  <a name="bkmk_devicehealth"></a> 裝置健全狀況證明  
  從 Technical Preview 1512 開始，系統管理員可以在 Configuration Manager 中檢視 Windows 10 裝置健康情況證明的狀態。  這項功能適用於 Configuration Manager 以及搭配 Microsoft Intune 使用的 Configuration Manager。 系統管理員可透過裝置健全狀況證明，確認該用戶端電腦具有可信任的 BIOS、TPM 以及開機軟體設定。 若要支援裝置健全狀況證明，用戶端裝置必須執行 Win10，同時啟用 TPM 2。 裝置健全狀況證明會顯示為下列各項啟用的裝置數目：  
 
 -   早期啟動反惡意程式碼  
@@ -43,7 +45,7 @@ ms.openlocfilehash: 7fff6f2807a679b621b736b8ad0b6561fb37affe
 
 若要預覽裝置健康情況證明檢視，請在 Configuration Manager 主控台中，移至 [監視] 工作區，按一下 [安全性] 節點，然後按一下 [健康情況證明]。  
 
-##  <a name="a-namebkmkviewtermsa-in-console-monitoring-for-terms-and-conditions"></a><a name="bkmk_viewterms"></a> 在主控台中監視條款及條件  
+##  <a name="bkmk_viewterms"></a> 在主控台中監視條款及條件  
 從 Technical  Preview 1512 開始，當您將 Configuration Manager 與 Microsoft Intune 整合時，可以使用 Configuration Manager 主控台檢視哪些使用者已接受 IT 部門所設定的條款及條件，哪些使用者則未接受。  
 
 **若要檢視摘要資訊：**  
@@ -56,7 +58,7 @@ ms.openlocfilehash: 7fff6f2807a679b621b736b8ad0b6561fb37affe
 
 2.  在主控台的底部，依序選取 [部署] 索引標籤和部署，然後按一下 [檢視狀態]。  
 
-##  <a name="a-namebkmkeppolicya-improvements-to-endpoint-protection-policy-settings"></a><a name="bkmk_EPpolicy"></a> Endpoint Protection 原則設定的改善  
+##  <a name="bkmk_EPpolicy"></a> Endpoint Protection 原則設定的改善  
 在 1512 Technical Preview 中，我們已在 Endpoint Protection 反惡意程式碼原則中新增下列新的設定：  
 
 -   即時保護：**在下載時及安裝前封鎖潛在的垃圾應用程式**  
@@ -90,9 +92,4 @@ ms.openlocfilehash: 7fff6f2807a679b621b736b8ad0b6561fb37affe
 **使用 Endpoint Protection 原則的必要條件：**  
 
 必須先使用 Endpoint Protection 用戶端設定，安裝及管理 Endpoint Protection 用戶端，才可使用 Endpoint Protection 原則。 若是使用 Windows 7、Windows 8、Windows 8.1 之 System Center Endpoint Protection 用戶端，或是 Windows 10 受管理的 Windows Defender，則此作業已完成。 請參閱 [System Center Configuration Manager 中的 Endpoint Protection](../../protect/deploy-use/endpoint-protection.md)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -2,7 +2,7 @@
 title: "檢視診斷資料 | Microsoft Docs"
 description: "檢視診斷和使用方式資料，確認 System Center Configuration Manager 階層不包含任何機密資訊。"
 ms.custom: na
-ms.date: 12/29/2016
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 688e05aae0e0b15b54835f8d64a98487f4d7b64d
 ms.openlocfilehash: fcd7ac43f7b2d2c92d6aadd7c490f198ac99e5e6
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -36,7 +37,7 @@ ms.openlocfilehash: fcd7ac43f7b2d2c92d6aadd7c490f198ac99e5e6
 
 當服務連接點處於離線模式時，您可以使用服務連接工具，將目前的診斷和使用方式資料匯出成逗點分隔值 (CSV) 檔案。 請使用 **-Export** 參數在服務連接點上執行服務連接工具。  
 
-##  <a name="a-namebkmkhashesa-one-way-hashes"></a><a name="bkmk_hashes"></a> 單程雜湊  
+##  <a name="bkmk_hashes"></a> 單程雜湊  
 一些資料是由隨機英數字元字串所組成。 Configuration Manager 使用採用單程雜湊的 SHA-256 演算法，以確保不會收集可能的敏感性資料。 此演算法會將資料維持在仍可用於進行相互關聯和比較的狀態。 例如，單程雜湊會針對每個資料表名稱擷取，而不是收集站台資料庫中的資料表名稱。 如此可確保不會顯示您所建立的自訂資料表名稱或其他人的產品附加元件。 然後，我們可以對產品預設隨附的 SQL 資料表名稱進行相同的單程雜湊，再比較兩個查詢結果，以判斷您的資料庫結構描述與產品預設值的差異。 此資訊可接著用來改進需要變更 SQL 結構描述的更新。  
 
 檢視未經處理的資料時，每個資料列都會出現一個通用的雜湊值。 這是階層識別碼。 此雜湊值是用來確保資料與相同的階層相互關聯，但不識別客戶或來源。  
@@ -66,9 +67,4 @@ ms.openlocfilehash: fcd7ac43f7b2d2c92d6aadd7c490f198ac99e5e6
     $result = [Convert]::ToBase64String($hashedBytes)    
     return $result   
     ```  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

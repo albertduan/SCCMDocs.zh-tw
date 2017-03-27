@@ -15,9 +15,11 @@ caps.latest.revision: 6
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+robots: noindex,nofollow
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 6e737d06563b256010f302af4e805eb6812524e2
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1602-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1602 中的功能
@@ -28,7 +30,7 @@ ms.openlocfilehash: 6e737d06563b256010f302af4e805eb6812524e2
 
  以下是您可以使用此版本試用的新功能。  
 
-##  <a name="a-namebkmkmdma-improvements-to-mobile-device-management"></a><a name="BKMK_MDM"></a> 行動裝置管理的增強功能  
+##  <a name="BKMK_MDM"></a> 行動裝置管理的增強功能  
 
 ### <a name="ios-activation-lock"></a>iOS 啟用鎖定  
  System Center Configuration Manager 可以協助您管理 iOS 啟用鎖定，這是 iOS 7.1 和更新版本裝置之「尋找我的 iPhone」應用程式中的功能。 當裝置上使用「尋找我的 iPhone」應用程式時，啟用鎖定會自動啟用。 啟用之後，就必須輸入使用者的 Apple ID 和密碼，才能夠讓所有人：  
@@ -43,12 +45,12 @@ ms.openlocfilehash: 6e737d06563b256010f302af4e805eb6812524e2
 
  如需詳細資訊，請參閱[使用 Configuration Manager 的啟用鎖定略過協助保護 iOS 裝置](/sccm/mdm/deploy-use/manage-ios-activation-lock)  
 
-##  <a name="a-namebkmksc1601a-improvements-to-software-center-in-version-1602"></a><a name="BKMK_SC1601"></a> 1602 版本中對軟體中心的改進  
+##  <a name="BKMK_SC1601"></a> 1602 版本中對軟體中心的改進  
 
 ### <a name="refresh-pc-machine-and-user-policy-from-software-center"></a>從軟體中心重新整理 PC 電腦和使用者原則  
  新的 [同步原則] 選項已新增至軟體中心的 [選項] > [電腦維護] 頁面，讓電腦重新整理它的 Configuration Manager 電腦和使用者原則。  
 
-##  <a name="a-namebkmkwin10servicinga-improvements-to-windows-10-servicing"></a><a name="BKMK_Win10Servicing"></a> Windows 10 服務的增強功能  
+##  <a name="BKMK_Win10Servicing"></a> Windows 10 服務的增強功能  
  在 1602 Technical Preview 中，我們新增了下列 Windows 10 服務增強功能：  
 
 -   新的服務方案篩選選項。  您現在可以篩選 [語言]、[必要] 和 [標題]。 只有符合指定準則的升級會新增至相關聯的部署。  
@@ -58,9 +60,4 @@ ms.openlocfilehash: 6e737d06563b256010f302af4e805eb6812524e2
 -   可用的 Windows 10 升級現在只顯示於 Configuration Manager 主控台的 [Windows 10 服務] \ [所有 Windows 10 更新] 節點。 這些更新不會再顯示於 [軟體更新] \ [所有軟體更新] 節點。  
 
 -   系統將以對話方塊提示啟動 Windows 10 升級套件的使用者，讓他們知道其將升級作業系統。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
