@@ -17,9 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 7d852843d0d3fe7c9ab0947c4b396cee0a92c754
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
+ms.openlocfilehash: 8c7438c2cc0bc66654eb3e74de10553df53181d9
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -29,14 +29,15 @@ ms.lasthandoff: 03/06/2017
 
 使用 System Center Configuration Manager 內部部署行動裝置管理時，如果使用者已獲得註冊權限 (透過更新用戶端設定)，而且其裝置已安裝必要的根憑證，可與裝載所需站台系統角色的伺服器進行信任通訊，則使用者就可以註冊裝置。 如需如何設定註冊的詳細資訊，請參閱 [Set up device enrollment for On-premises Mobile Device Management in System Center Configuration Manager](../../mdm/get-started/set-up-device-enrollment-on-premises-mdm.md) (設定 System Center Configuration Manager 中內部部署行動裝置管理的裝置註冊)。  
 
- > [!NOTE]  
+> [!NOTE]  
 >  Configuration Manager 的最新分支，支援執行下列作業系統的裝置在內部部署行動裝置管理中註冊︰  
 >   
->  -  Windows 10 Enterprise  
+> -  Windows 10 Enterprise  
 > -   Windows 10 Pro  
 > -   Windows 10 團隊版 \(從 Configuration Manager 1602 版開始\)  
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise
+> -   Windows 10 企業版   
 
 下列工作說明如何為內部部署行動裝置管理註冊及驗證電腦和裝置的註冊：  
 

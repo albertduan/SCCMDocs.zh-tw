@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 77ac69cecab7aa460001a8d2800e61f20a8565ed
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 562e81df12e46a2332aa5e4de8b7c9e5819bde80
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 77ac69cecab7aa460001a8d2800e61f20a8565ed
 
 System Center 2012 Configuration Manager 中的作業系統部署具有外部相依性和產品中的相依性。 使用下列章節可協助您做好作業系統部署的準備。  
 
-##  <a name="a-namebkmkexternaldependenciesa-dependencies-external-to-configuration-manager"></a><a name="BKMK_ExternalDependencies"></a> Configuration Manager 外部的相依性  
+##  <a name="BKMK_ExternalDependencies"></a> Configuration Manager 外部的相依性  
  以下為在 Configuration Manager 中部署作業系統所需之外部工具、安裝套件及作業系統的資訊。  
 
 ### <a name="windows-adk-for-windows-10"></a>Windows ADK for Windows 10  
@@ -104,7 +105,7 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
 ### <a name="windows-device-drivers"></a>Windows 裝置驅動程式  
  您在目的地電腦上安裝作業系統以及使用開機映像執行 Windows PE 時，可以使用 Windows 裝置驅動程式。 如需裝置驅動程式的詳細資訊，請參閱[管理驅動程式](../get-started/manage-drivers.md)。  
 
-##  <a name="a-namebkmkinternaldependenciesa-configuration-manager-dependencies"></a><a name="BKMK_InternalDependencies"></a> Configuration Manager 相依性  
+##  <a name="BKMK_InternalDependencies"></a> Configuration Manager 相依性  
  以下為 Configuration Manager 作業系統部署必要條件的資訊。  
 
 ### <a name="operating-system-image"></a>作業系統映像  
@@ -124,10 +125,10 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
  如需安裝發佈點及管理內容之方式的詳細資訊，請參閱[管理內容與內容基礎結構](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
 ### <a name="pxe-enabled-distribution-point"></a>啟用 PXE 的發佈點  
- 若要部署起始 PXE 的部署，您必須設定發佈點以接收來自用戶端的 PXE 要求。 如需如何設定發佈點的詳細資訊，請參閱 [發佈點設定](../../core/servers/deploy/configure/install-and-configure-distribution-points.md#a-namebkmkconfigsa-distribution-point-configurations) 及在資料表中尋找 PXE 設定類別目錄。  
+ 若要部署起始 PXE 的部署，您必須設定發佈點以接收來自用戶端的 PXE 要求。 如需如何為發佈點的詳細資訊，請參閱[設定發佈點](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#pxe)。  
 
 ### <a name="multicast-enabled-distribution-point"></a>啟用多點傳送的發佈點  
- 若要使用多點傳送最佳化作業系統部署，您必須設定發佈點支援多點傳送。 如需如何設定發佈點的詳細資訊，請參閱 [發佈點設定](../../core/servers/deploy/configure/install-and-configure-distribution-points.md#a-namebkmkconfigsa-distribution-point-configurations) 及在資料表中尋找多點傳送設定類別目錄。  
+ 若要使用多點傳送最佳化作業系統部署，您必須設定發佈點支援多點傳送。 如需如何為發佈點的詳細資訊，請參閱[設定發佈點](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#multicast)。   
 
 ### <a name="state-migration-point"></a>狀態移轉點  
  當您擷取及還原並存與重新整理部署所需的使用者狀態資料時，必須設定狀態移轉點，才能在另一部電腦上還原使用者狀態資料。  
@@ -162,7 +163,7 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
 ### <a name="security-scopes-for-operating-system-deployments"></a>作業系統部署的安全性範圍  
  使用安全性範圍可提供管理使用者存取作業系統部署中所使用可保護物件的權限，例如作業系統及開機映像、驅動程式套件及工作順序套件。 如需詳細資訊，請參閱 [安全性範圍](../../core/understand/fundamentals-of-role-based-administration.md#bkmk_PlanScope)。  
 
-##  <a name="a-namebkmkwdsa-windows-deployment-services"></a><a name="BKMK_WDS"></a> Windows 部署服務  
+##  <a name="BKMK_WDS"></a> Windows 部署服務  
  Windows 部署服務 (WDS) 必須與您設定支援 PXE 或多點傳送的部署點安裝在同一部伺服器上。 WDS 已包含在伺服器的作業系統中。 對於 PXE 部署而言，WDS 是執行 PXE 開機的服務。 安裝並啟用 PXE 的發佈點時，Configuration Manager 會將提供者安裝到使用 WDS PXE 開機功能的 WDS 中。  
 
 > [!NOTE]  
@@ -176,7 +177,7 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
 
 -   若遠端伺服器上安裝提供者，則您必須在站台伺服器和遠端提供者上安裝 WDS。  
 
-###  <a name="a-namebkmkwdsanddhcpa-considerations-when-you-have-wds-and-dhcp-on-the-same-server"></a><a name="BKMK_WDSandDHCP"></a> 當您在同一部伺服器上有 WDS 和 DHCP 時的考量  
+###  <a name="BKMK_WDSandDHCP"></a> 當您在同一部伺服器上有 WDS 和 DHCP 時的考量  
  如果您規劃在執行 DHCP 的伺服器上共同裝載發佈點，請考慮以下設定問題。  
 
 -   您必須擁有一部具作用中範圍之正在運作的 DHCP 伺服器 Windows 部署服務使用 PXE，其需要 DHCP 伺服器。  
@@ -208,10 +209,10 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
     > [!NOTE]  
     >  此外，如果在伺服器上需要 DHCP 授權，您需要在伺服器上開啟 DHCP 用戶端連接埠 68。  
 
-##  <a name="a-namebkmksupportedosa-supported-operating-systems"></a><a name="BKMK_SupportedOS"></a> 支援的作業系統  
+##  <a name="BKMK_SupportedOS"></a> 支援的作業系統  
  在[支援的用戶端和裝置作業系統](../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)中，列為支援之用戶端作業系統的所有 Windows 作業系統，皆可支援作業系統部署。  
 
-##  <a name="a-namebkmksupporteddiskconfiga-supported-disk-configurations"></a><a name="BKMK_SupportedDiskConfig"></a> 支援的磁碟設定  
+##  <a name="BKMK_SupportedDiskConfig"></a> 支援的磁碟設定  
  下表顯示支援 Configuration Manager 作業系統部署之參照電腦和目的地電腦的硬碟設定組合。  
 
 |參照電腦硬碟設定|目的地電腦硬碟設定|  
@@ -237,9 +238,4 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
 
 ## <a name="next-steps"></a>後續步驟
 [準備作業系統部署](../get-started/prepare-for-operating-system-deployment.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

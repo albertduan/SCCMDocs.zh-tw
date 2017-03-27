@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c74b553ab76a2b77b0d893151351132da05a640d
-ms.openlocfilehash: 76ce5f413f406088862fb310bbea24140317ca06
-ms.lasthandoff: 01/04/2017
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 9cab5b91a94e8bf2ad96a8a706f46c58e2a3d712
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -28,7 +28,7 @@ ms.lasthandoff: 01/04/2017
 
 本主題描述如何在 Mac 電腦上部署和維護 Configuration Manager 用戶端。 若要了解您必須先進行何種設定，再將用戶端部署到 Mac 電腦，請參閱[準備將用戶端軟體部署到 Mac](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients)。
 
-為 Mac 電腦安裝新的用戶端時，您可能必須同時安裝 Configuration Manager 更新，以反映 Configuration Manager 主控台中的新用戶端資訊。 
+為 Mac 電腦安裝新的用戶端時，您可能必須同時安裝 Configuration Manager 更新，以反映 Configuration Manager 主控台中的新用戶端資訊。
 
 在這些程序中，您有兩個選項可以安裝用戶端憑證。 在[準備將用戶端軟體部署到 Mac](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients#certificate-requirements) 中，深入了解 Mac 的用戶端憑證。  
 
@@ -84,7 +84,7 @@ ms.lasthandoff: 01/04/2017
 >  如需 Configuration Manager 用戶端設定的詳細資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端設定](../../../core/clients/deploy/configure-client-settings.md)。  
 
 ## <a name="download-the-client-source-files-for-macs"></a>下載 Mac 的用戶端來源檔案  
-  
+
 1.  下載 Mac OS X 用戶端檔案套件 **ConfigmgrMacClient.msi**，並將它儲存到執行 Windows 的電腦中。  
 
      Configuration Manager 安裝媒體並未提供這個檔案。 您可以從 [Microsoft Download Center (Microsoft 下載中心)](http://go.microsoft.com/fwlink/?LinkID=525184)下載此檔案。  
@@ -95,7 +95,7 @@ ms.lasthandoff: 01/04/2017
 
 4.  在 Mac 電腦上執行 Macclient.dmg 檔案，將檔案解壓縮至本機磁碟機的資料夾。  
 
-5.  於該資料夾中，確保檔案 Ccmsetup 和 CMClient.pkg 已解壓縮，並且已建立命名為 Tools 的資料夾，其中包含 CMDiagnostics、CMUninstall、CMAppUtil 和 CMEnroll 工具。 
+5.  於該資料夾中，確保檔案 Ccmsetup 和 CMClient.pkg 已解壓縮，並且已建立命名為 Tools 的資料夾，其中包含 CMDiagnostics、CMUninstall、CMAppUtil 和 CMEnroll 工具。
 
     -  **Ccmsetup**：在您的 Mac 電腦上安裝 Configuration Manager 用戶端。  
 
@@ -108,7 +108,7 @@ ms.lasthandoff: 01/04/2017
     -   **CMEnroll**：要求並安裝 Mac 電腦的用戶端憑證，才能安裝 Configuration Manager 用戶端。   
 
 ## <a name="install-the-client-and-then-enroll-the-client-certificate-on-the-mac"></a>在 Mac 上安裝用戶端，然後註冊用戶端憑證  
-  
+
 您可以使用 [Mac 電腦註冊精靈](#enroll-the-client-with-the-mac-computer-enrollment-wizard)註冊個別用戶端。
 
 如需啟用多個用戶端註冊的自動化，請使用 [CMEnroll 工具](#client-and-certificate-automation-with-cmenroll)。   
@@ -124,7 +124,7 @@ ms.lasthandoff: 01/04/2017
 
         -   '網域\名稱'。 例如：'contoso\mnorth'  
 
-        -   'user@domain'。 例如： 'mnorth@contoso.com'  
+        -   'user@domain'。 例如：'mnorth@contoso.com'  
 
             > [!IMPORTANT]  
             >  當您使用電子郵件地址填入 [使用者名稱] 欄位時， Configuration Manager 會自動使用電子郵件地址的網域名稱和註冊 Proxy 點伺服器的預設名稱來填入 [伺服器名稱] 欄位。 如果此網域名稱和伺服器名稱不符合註冊 Proxy 點伺服器名稱，請將正確名稱告知使用者，使用者才能在註冊其 Mac 電腦時使用此名稱。  
@@ -156,7 +156,7 @@ ms.lasthandoff: 01/04/2017
 
     -   '網域\名稱'。 例如：'contoso\mnorth'  
 
-    -   'user@domain'。 例如： 'mnorth@contoso.com'  
+    -   'user@domain'。 例如：'mnorth@contoso.com'  
 
      使用者名稱和對應密碼必須符合 Active Directory 使用者帳戶，並具有 Mac 用戶端憑證範本的讀取和註冊權限。  
 
@@ -196,12 +196,12 @@ ms.lasthandoff: 01/04/2017
 > -   由 Configuration Manager 用戶端安裝所建立的用料表 (BOM) 檔案和內容清單 (.plist) 檔案。  
 > -   資料夾 /Library/Application Support/Microsoft/CCM/Logs 的內容。  
 >   
->  CmDiagnostics 收集的資訊會新增至 ZIP 檔案，該檔案儲存於電腦桌面上且命名為 cmdiag-<主機名稱\>**-**<日期和時間\>.zip。  
+>  CmDiagnostics 收集的資訊會新增至 ZIP 檔案，該檔案儲存於電腦桌面上，名稱為 cmdiag-*<主機名稱\>***-***&gt;日期與時間\>*.zip。***
 
 
 ##  <a name="use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager"></a>使用與 Configuration Manager 獨立的憑證要求和安裝方法  
 
-首先，從[準備將用戶端軟體部署到 Mac](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients) 執行這些特定工作： 
+首先，從[準備將用戶端軟體部署到 Mac](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients) 執行這些特定工作：
 
 1. [將 Web 伺服器憑證部署至站台系統伺服器](/sccm/core/clients/deploy/prepare-to-deploy-mac-clients#deploy-a-web-server-certificate-to-site-system-servers)
 

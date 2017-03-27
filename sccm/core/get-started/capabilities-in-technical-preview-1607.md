@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: 54fc16c104ab25f3650ad1c38a2044abaee96a31
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 4717e0f8eef01501fb5b5790e855c476c1ca4590
+ms.lasthandoff: 03/21/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1607-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1607 中的功能
@@ -29,7 +30,7 @@ ms.openlocfilehash: 54fc16c104ab25f3650ad1c38a2044abaee96a31
 
 **以下是您可以使用此版本試用的新功能。**  
 
-## <a name="a-namedmpeditionaimprovements-to-the-windows-10-edition-upgrade-policy"></a><a name="dmp_edition"></a>改進 Windows 10 版本升級原則
+## <a name="dmp_edition"></a>改進 Windows 10 版本升級原則
 
 在此版本中，已對此原則做了下列改進：
 
@@ -59,7 +60,7 @@ Configuration Manager 1602 版中引進了軟體中心的自訂商標。 在 Tec
 
 2. 如果未安裝「應用程式類別目錄網站點」站台伺服器角色，則「軟體中心」將會顯示「應用程式類別目錄網站點」站台伺服器角色內容中指定的組織名稱和色彩。 如需詳細資訊，請參閱[應用程式類別目錄網站點的設定選項](../../core/servers/deploy/configure/configuration-options-for-site-system-roles.md#BKMK_ApplicationCatalog_Website)。
 
-3. 如果已設定 Microsoft Intune 訂閱並連線到 Configuration Manager 環境，則軟體中心將會顯示 Intune 訂閱內容中指定的組織名稱、色彩及公司標誌。 如需詳細資訊，請參閱 [Configuring the Microsoft Intune subscription](../../mdm/deploy-use/setup-hybrid-mdm.md#step-3-configure-intune-subscription)。
+3. 如果已設定 Microsoft Intune 訂閱並連線到 Configuration Manager 環境，則軟體中心將會顯示 Intune 訂閱內容中指定的組織名稱、色彩及公司標誌。 如需詳細資訊，請參閱[設定 Microsoft Intune 訂閱](/mdm/deploy-use/configure-intune-subscription)。
 
 ## <a name="use-the-same-network-adapter-for-multiple-pxe-initiated-deployments"></a>針對多個 PXE 起始的部署使用相同的網路介面卡
 在 Technical Preview 1607 版中，當您使用乙太網路介面卡製作多部裝置的映像時 (例如您在多部裝置上使用的 USB 乙太網路介面卡)，您可以啟用新的設定，以便輸入乙太網路介面卡的硬體識別碼。 執行 PXE 安裝和註冊用戶端時，Configuration Manager 會略過清單中的硬體識別碼。
@@ -76,9 +77,4 @@ Configuration Manager 1602 版中引進了軟體中心的自訂商標。 在 Tec
 2. 在 [首頁]  索引標籤的 [建立]  群組中，按一下 [階層設定] 。
 3. 移至 [用戶端核准和衝突的記錄] 索引標籤。
 4. 在 [重複硬體識別碼] 區段中，按一下 [新增] 以新增硬體識別碼。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

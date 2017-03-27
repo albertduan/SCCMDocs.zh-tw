@@ -2,7 +2,7 @@
 title: "升級至 System Center Configuration Manager | Microsoft Docs"
 description: "了解從執行 System Center 2012 Configuration Manager 的站台和階層中執行成功就地升級的步驟。"
 ms.custom: na
-ms.date: 2/23/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 30af3326578d39c6d995672071705bcaeb877e4d
-ms.openlocfilehash: 8af2a797ad4e87d870bb27873a7428e96f63b76d
-ms.lasthandoff: 02/23/2017
+ms.sourcegitcommit: 6424fb07802b62820b4dc78a58ab30d3b956abef
+ms.openlocfilehash: ca07b46db0967ca03cc5e858b835d2c2108f1210
+ms.lasthandoff: 03/17/2017
 
 
 ---
@@ -34,6 +34,7 @@ ms.lasthandoff: 02/23/2017
  > 管理 System Center Configuration Manager 站台及階層基礎結構時，「升級」、「更新」及「安裝」等詞彙是用來描述三種不同的概念。 若要了解如何使用每個詞彙，請參閱[關於升級、更新和安裝](/sccm/core/understand/upgrade-update-install)。
 
 ##  <a name="bkmk_path"></a> 就地升級路徑  
+
 **升級至 1606 版**  
 在 2016 年 12 月 15 日，發行 1606 版的基準媒體，以新增額外升級案例的支援。 這個新版本支援將下列產品升級至 System Center Configuration Manager 1606 版的完整授權版本：  
 -   System Center Configuration Manager 1606 版的評估版安裝
@@ -60,7 +61,7 @@ ms.lasthandoff: 02/23/2017
 
 
 > [!TIP]  
->  當您從 System Center 2012 Configuration Manager 版本升級時，可能可以簡化升級程序。 如需詳細資訊，請參閱下列各項：  
+>  當您從 System Center 2012 Configuration Manager 版本升級至最新分支時，可能可以簡化升級程序。 如需詳細資訊，請參閱下列各項：  
 >   
 >  -   [System Center Configuration Manager 的更新](../../../../core/servers/manage/updates.md)中的[基準和更新版本](../../../../core/servers/manage/updates.md#bkmk_Baselines)一節  
 >  -   [System Center Configuration Manager 的 CD.Latest 資料夾](../../../../core/servers/manage/the-cd.latest-folder.md)  
@@ -78,8 +79,8 @@ ms.lasthandoff: 02/23/2017
 
 檢閱用來裝載站台系統角色的伺服器作業系統：  
 
--   System Center Configuration Manager 不支援 System Center 2012 Configuration Manager 支援的某些舊版作業系統，而且必須先重新放置或移除這些作業系統上的站台系統角色才能升級  
--   Configuration Manager 的必要條件檢查工具不會驗證站台伺服器或遠端電腦上的站台系統角色必要條件  
+-   System Center Configuration Manager 不支援 System Center 2012 Configuration Manager 支援的某些舊版作業系統，而且必須先重新放置或移除這些作業系統上的站台系統角色才能升級。 請檢閱[站台系統伺服器支援的作業系統](../../../../core/plan-design/configs/supported-operating-systems-for-site-system-servers.md)文件。   
+-   Configuration Manager 的必要條件檢查程式不會驗證站台伺服器或遠端站台系統上的站台系統角色必要條件  
 
 請檢閱裝載站台系統角色之每部電腦的必要條件：  
 

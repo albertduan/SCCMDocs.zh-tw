@@ -15,8 +15,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4d34a272a93100426cccd2308c5b3b0b0ae94a60
-ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
+ms.sourcegitcommit: 4c2906c2a963e0ae92e3c0d223afb7a47377526a
+ms.openlocfilehash: 9c614a842fc9e3a01b0128db94fc12bc0be5b52f
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -25,12 +26,18 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 *適用於：System Center Configuration Manager (最新分支)*
 
 
-
  從 System Center Configuration Manager 1602 版開始，您可以使用 SQL Server [AlwaysOn 可用性群組](https://msdn.microsoft.com/library/hh510230\(v=sql.120\).aspx)於主要站台和管理中心網站裝載站台資料庫，以作為高可用性和災害復原方案。 可用性群組可以裝載在內部部署環境或 Microsoft Azure 中。  
 
  當您使用 Microsoft Azure 來裝載可用性群組時，您可以將「SQL Server AlwaysOn 可用性群組」與「Azure 可用性設定組」搭配使用，以進一步提升站台資料庫的可用性。 如需 Azure 可用性集合的詳細資訊，請參閱 [管理虛擬機器的可用性](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-manage-availability/)。  
 
- 支援可用性群組的案例如下︰  
+ Configuration Manager 支援在位於內部或外部負載平衡器後方的 SQL 可用性群組上裝載站台資料庫。 除了在各複本上設定防火牆例外，您也必須為下列連接埠新增負載平衡規則：
+  - 透過 TCP 的 SQL：TCP 1433
+  - SQL Server Service Broker：TCP 4022
+  - 伺服器訊息區 (SMB)：TCP 445
+  - RPC 端點對應程式：TCP 135
+
+
+支援可用性群組的案例如下︰  
 
 -   您可以將站台資料庫移至可用性群組的預設執行個體  
 
@@ -78,7 +85,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
     - **[允許任何唯讀連線]**
 
 
-##  <a name="a-namebkmkbnra-changes-for-backup-and-recovery-when-you-use-a-sql-server-alwayson-availability-group"></a><a name="bkmk_BnR"></a> 使用 SQL Server AlwaysOn 可用性群組時的備份和復原變更  
+##  <a name="bkmk_BnR"></a> 使用 SQL Server AlwaysOn 可用性群組時的備份和復原變更  
  **備份：**  
 
  當站台資料庫在可用性群組中執行時，您應該繼續執行內建的「備份站台」伺服器維護工作以備份一般 Configuration Manager 設定和檔案，但計劃不使用該備份所建立的 .MDF 或 .LDF 檔案。 取而代之的是，改為使用 SQL Server 來直接備份站台資料庫。  
@@ -93,7 +100,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 
  如需備份與復原的詳細資訊，請參閱 [Backup and recovery for System Center Configuration Manager](../../../../protect/understand/backup-and-recovery.md) (System Center Configuration Manager 中的備份和復原)。  
 
-##  <a name="a-namebkmkcreatea-configure-an-availability-group-for-use-with-configuration-manager"></a><a name="bkmk_create"></a> 設定要與 Configuration Manager 搭配使用的可用性群組  
+##  <a name="bkmk_create"></a> 設定要與 Configuration Manager 搭配使用的可用性群組  
  在您開始下列程序前，請先熟悉完成這項設定所需的 SQL Server 程序，以及下列適用於您所設定要與 Configuration Manager 搭配使用之可用性群組的詳細資訊。  
 
  **與 System Center Configuration Manager 搭配使用的 AlwaysOn 可用性群組需求：**  
@@ -118,8 +125,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
     >     ALTER DATABASE cm_ABC SET TRUSTWORTHY ON;  
     >     USE cm_ABC  
     >     EXEC sp_changedbowner 'sa'  
-    >     Exec sp_configure 'max text repl size (B)', 2147483647
-    >     reconfigure
+    >     Exec sp_configure 'max text repl size (B)', 2147483647 reconfigure
 
 
 
@@ -185,7 +191,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 
 
 
-##  <a name="a-namebkmkdirecta-move-a-site-database-to-an-availability-group"></a><a name="bkmk_direct"></a> 將站台資料庫移至可用性群組  
+##  <a name="bkmk_direct"></a> 將站台資料庫移至可用性群組  
  您可以將先前安裝之站台的站台資料庫移至可用性群組。 您必須先建立可用性群組，然後設定可用性群組中作業的資料庫。  
 
  若要完成此程序，執行 Configuration Manager 安裝程式的使用者帳戶必須是具備可用性群組成員身分之每部電腦上的**本機系統管理員**群組成員。  
@@ -208,7 +214,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 
 5.  提供新資料庫位置的資訊之後，請使用您的一般程序和設定來完成安裝。  
 
-##  <a name="a-namebkmkchangea-add-or-remove-members-of-an-active-availability-group"></a><a name="bkmk_change"></a> 新增或移除作用中可用性群組的成員  
+##  <a name="bkmk_change"></a> 新增或移除作用中可用性群組的成員  
  在 Configuration Manager 使用裝載在可用性群組中的站台資料庫之後，您可以移除複本成員或新增其他複本成員 (不要超過一個主要和兩個次要節點)。  
 
 #### <a name="to-add-a-new-replica-member"></a>新增新的複本成員  
@@ -229,7 +235,7 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 
 -   請參閱 SQL Server 文件庫中 [將次要複本從可用性群組移除](https://msdn.microsoft.com/library/hh213149\(v=sql.120\).aspx) 中的資訊。  
 
-##  <a name="a-namebkmkremovea-move-the-site-database-from-an-availability-group-back-to-a-single-instance-sql-server"></a><a name="bkmk_remove"></a> 將站台資料庫從可用性群組移回到單一執行個體 SQL Server  
+##  <a name="bkmk_remove"></a> 將站台資料庫從可用性群組移回到單一執行個體 SQL Server  
  當您不想再將站台資料庫裝載在可用性群組中時，請使用下列程序。  
 
 #### <a name="to-move-the-site-database-from-an-availability-group-back-to-a-single-instance-sql-server"></a>將站台資料庫從可用性群組移回到單一執行個體 SQL Server  
@@ -262,9 +268,4 @@ ms.openlocfilehash: 5fb6bc0bca5ee590000fd30bd46c765871cf5220
 9. 提供新資料庫位置的資訊之後，請使用您的一般程序和設定來完成安裝。 當安裝完成時，站台會重新啟動並開始使用新的資料庫位置。  
 
 10. 若要清除具備可用性群組成員身分的伺服器，請遵循 SQL Server 文件中 [移除可用性群組](https://msdn.microsoft.com/library/ff878113\(v=sql.120\).aspx) 中的指引進行。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

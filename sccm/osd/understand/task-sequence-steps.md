@@ -17,9 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
-ms.openlocfilehash: 94eeddd161448aff6e1c7afa542b0cbef1ad4d77
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 79135bcea4b0ed21fe8017045226f393a1e09dac
+ms.openlocfilehash: dd1ccc6ac0e9f4add38f2431c13c6b5a5c8e1357
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -985,7 +985,7 @@ ms.lasthandoff: 01/24/2017
 ##  <a name="BKMK_InstallSoftwareUpdates"></a> 安裝軟體更新  
  使用 [安裝軟體更新]  工作順序步驟，在目的地電腦上安裝軟體更新。 在執行此工作順序步驟之前，不會評估目的地電腦適用的軟體更新。 執行之後，才會評估目的地電腦適用的軟體更新，就像任何其他 Configuration Manager 管理的用戶端一樣。 特別是，這個步驟只會安裝以電腦目前所屬集合為目標的軟體更新。  
 >  [!IMPORTANT]
->強烈建議您在使用「安裝軟體更新」工作順序步驟時，安裝最新版本的 Windows 更新代理程式以獲得較佳的效能。
+>強烈建議您在使用「安裝軟體更新」工作順序步驟時，安裝最新版本的 Windows 更新代理程式以獲得更佳效能。
 >* 若是 Windows 7，請參閱 [知識庫文章 3161647](https://support.microsoft.com/kb/3161647)。
 >* 若是 Windows 8，請參閱 [知識庫文章 3163023](https://support.microsoft.com/kb/3163023)。
 
@@ -1023,7 +1023,7 @@ ms.lasthandoff: 01/24/2017
  選取此選項，可針對將要接收工作順序的 Configuration Manager 集合，安裝所有可用的軟體更新。 所有可用的軟體更新都會安裝在目的地電腦上。  
 
  **從快取掃描結果評估軟體更新**  
-從 Configuration Manager 版本 1606 開始，您可以執行軟體更新的完整掃描，而不是使用快取的掃描結果。 工作順序預設會使用快取的結果。 您可以清除核取方塊，讓用戶端連線至軟體更新點，以處理並下載最新的軟體更新類別目錄。 若涉及大量軟體更新且當中有許多相依性 (例如需要先安裝 X，Y 才會顯示為適用) 的情況下，您可在使用工作順序以[擷取並建立作業系統映像](../deploy-use/create-a-task-sequence-to-capture-an-operating-system.md)時，選擇此選項。 當您清除此設定，並將工作順序部署到大量的用戶端時，所有用戶端都會同時連線至軟體更新點。 這可能會導致處理和下載類別目錄期間的效能問題。 在大部分情況下，我們建議您使用預設設定。
+從 Configuration Manager 版本 1606 開始，您可以執行軟體更新的完整掃描，而不是使用快取的掃描結果。 工作順序預設會使用快取的結果。 您可以清除核取方塊，讓用戶端連線至軟體更新點，以處理並下載最新的軟體更新類別目錄。 若涉及大量軟體更新且當中有許多相依性 (例如需要先安裝 X，Y 才會顯示為適用) 的情況下，您可在使用工作順序以[擷取並建立作業系統映像](../deploy-use/create-a-task-sequence-to-capture-an-operating-system.md)時，選擇此選項。 當您清除此設定，並將工作順序部署到大量用戶端時，所有用戶端都會同時連線至軟體更新點。 這可能會導致處理和下載類別目錄期間的效能問題。 在大部分情況下，我們建議您使用預設設定。
 
 Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新工作順序變數，可讓您在「安裝軟體更新」工作順序步驟期間，控制軟體更新掃描的逾時。 預設值為 30 分鐘。 如需詳細資訊，請參閱[工作順序內建變數](task-sequence-built-in-variables.md)。
 

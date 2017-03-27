@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: a8cb3c9850b183eec156c37a181c04088b71805e
-ms.openlocfilehash: 40837306816639ff8cea8930fec75b05edc5164a
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: ddf2ad1cae51c1e36df5a6d86822e2b9abe604e2
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -65,7 +66,7 @@ ms.openlocfilehash: 40837306816639ff8cea8930fec75b05edc5164a
 > [!IMPORTANT]  
 >  網站間複寫延遲可避免網站接收以角色為基礎的系統管理變更。 如需如何監視站台間資料庫複寫的詳細資訊，請參閱 [System Center Configuration Manager 中的站台間資料傳輸](../../core/servers/manage/data-transfers-between-sites.md)主題。  
 
-##  <a name="a-namebkmkplanrolesa-security-roles"></a><a name="bkmk_Planroles"></a> 安全性角色  
+##  <a name="bkmk_Planroles"></a> 安全性角色  
  使用安全性角色以授與安全權限給系統管理使用者。 安全性角色實際上是指派給系統管理使用者以執行其系統管理工作的一組安全性權限。 這些安全權限定義系統管理使用者可執行的系統管理動作，以及針對特定物件類型所授與的權限。 最佳作法是指派可提供最低權限的安全性角色。  
 
  Configuration Manager 有數個內建安全性角色以支援典型的系統管理工作分組，您可以建立專屬的自訂安全性角色以支援您特定的業務需求。 內建的安全性角色的範例：  
@@ -79,7 +80,7 @@ ms.openlocfilehash: 40837306816639ff8cea8930fec75b05edc5164a
 > [!TIP]  
 >  您可以檢視內建安全性角色清單與您在 Configuration Manager 主控台建立的自訂安全性角色，包括角色的說明。 若要檢視這些角色，請在 [系統管理] 工作區中展開 [安全性]，然後選取 [安全性角色]。  
 
- 每個安全性角色針對不同的物件類型有特定的權限。 例如，「應用程式 MMM」安全性角色具有下列應用程式權限：[核准]、[建立]、[刪除]、[修改]、[修改資料夾]、[移動物件]、[讀取/部署] 和 [設定安全性範圍]。
+ 每個安全性角色針對不同的物件類型有特定的權限。 例如，「應用程式作者」安全性角色具有下列應用程式權限：核准、建立、刪除、修改、修改資料夾、移動物件、讀取、執行報表及設定安全性範圍。
 
  您無法變更內建安全性角色的權限，但您可以複製角色、進行變更，然後將這些變更另存為新的自訂安全性角色。 您也可以匯入從另一個階層 (例如，從測試網路) 匯出的安全性角色。 檢閱安全性角色與其權限以判定您是否要使用內建安全性角色，或您是否必須建立您自己的自訂安全性角色。  
 
@@ -95,7 +96,7 @@ ms.openlocfilehash: 40837306816639ff8cea8930fec75b05edc5164a
 
 如需如何建立與設定以角色為基礎的系統管理安全性角色之詳細資訊，請參閱[為 System Center Configuration Manager 設定以角色為基礎的系統管理](../../core/servers/deploy/configure/configure-role-based-administration.md)主題中的[建立自訂安全性角色](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_CreateSecRole)與[設定安全性角色](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecRole)。  
 
-##  <a name="a-namebkmkplancola-collections"></a><a name="bkmk_planCol"></a> 集合  
+##  <a name="bkmk_planCol"></a> 集合  
  集合可用來指定系統管理使用者可檢視或管理的使用者與電腦資源。 例如，如果系統管理使用者要部署應用程式或是執行遠端控制，則必須指派使用者安全性角色，以取得授與包含這些資源的集合的存取權限。 您可以選取使用者或裝置集合。  
 
  如需有關集合的詳細資訊，請參閱 [System Center Configuration Manager 的集合簡介](../../core/clients/manage/collections/introduction-to-collections.md)。  
@@ -112,7 +113,7 @@ ms.openlocfilehash: 40837306816639ff8cea8930fec75b05edc5164a
 
 如需如何針對以角色為基礎的系統管理來設定集合的詳細資訊，請參閱[為 System Center Configuration Manager 設定以角色為基礎的系統管理](../../core/servers/deploy/configure/configure-role-based-administration.md)主題中的[設定集合以管理安全性](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigColl)。  
 
-##  <a name="a-namebkmkplanscopea-security-scopes"></a><a name="bkmk_PlanScope"></a> 安全性範圍  
+##  <a name="bkmk_PlanScope"></a> 安全性範圍  
  使用安全性範圍以提供系統管理使用者存取安全性物件。 安全性範圍是以群組身分指派給系統管理使用者的已命名安全物件集。 所有安全物件都必須指派給一個或多個安全性範圍。 Configuration Manager 具有兩個內建安全性範圍︰  
 
 -   「全部」內建安全性範圍可授與所有範圍的存取權。 您無法指派物件至此安全性範圍。  
@@ -212,9 +213,4 @@ ms.openlocfilehash: 40837306816639ff8cea8930fec75b05edc5164a
 -   不同的系統管理使用者針對某些物件類型的執行個體需要不同的存取權限。 例如，某個系統管理使用者群組需要特定軟體更新群組的 [讀取] 權限，另一個系統管理使用者群組則需要其他軟體更新群組的 [修改] 和 [刪除] 權限。 針對這些軟體更新群組建立不同的安全性範圍。  
 
 如需如何針對以角色為基礎的系統管理來設定安全性範圍的詳細資訊，請參閱[為 System Center Configuration Manager 設定以角色為基礎的系統管理](../../core/servers/deploy/configure/configure-role-based-administration.md)主題中的[設定物件的安全性範圍](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecScope)。  
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

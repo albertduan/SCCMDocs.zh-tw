@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 0e5f65552045e9cef06f5286b0087153751c79b0
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 0988899047a0e3464e15055fceb5924ee20b0b88
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -34,14 +34,14 @@ ms.lasthandoff: 12/16/2016
 
  安裝用戶端之後，即可在 Configuration Manager 主控台中指定 [用戶端設定] 來設定用戶端代理程式，而設定方式與 Windows 用戶端相同。 如需詳細資訊，請參閱  [Client settings for Linux and UNIX servers](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ClientSettingsforLnU)。  
 
-##  <a name="a-namebkmkaboutinstallpackagesa-about-client-installation-packages-and-the-universal-agent"></a><a name="BKMK_AboutInstallPackages"></a> 有關用戶端安裝封裝和通用的代理程式  
+##  <a name="BKMK_AboutInstallPackages"></a> 有關用戶端安裝封裝和通用的代理程式  
  若要在特定平台上安裝 Linux 和 UNIX 的用戶端，您必須使用安裝用戶端之電腦的適用用戶端安裝封裝。 從 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkID=525184)下載的每個用戶端都包含適用的用戶端安裝套件。 除了用戶端安裝封裝之外，用戶端下載還會包括管理每部電腦上用戶端安裝的 **install** 指令碼。  
 
  當您安裝用戶端時，您可以使用相同的程序和命令列屬性不論您使用用戶端安裝套件。  
 
- 如需每個 Linux 和 UNIX Configuration Manager 用戶端版本所支援之作業系統、平台和用戶端安裝套件的詳細資訊，請參閱 [Linux 和 UNIX 伺服器](../../plan-design/configs/supported-operating-systems-for-clients-and-devices.md#bkmk_LinuxOS)。  
+ 如需每個 Linux 和 UNIX Configuration Manager 用戶端版本所支援之作業系統、平台和用戶端安裝套件的詳細資訊，請參閱 [Linux 和 UNIX 伺服器](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices#linux-and-unix-servers)。  
 
-##  <a name="a-namebkmkinstalllnuclienta-install-the-client-on-linux-and-unix-servers"></a><a name="BKMK_InstallLnUClient"></a> 在 Linux 和 UNIX 伺服器上安裝用戶端  
+##  <a name="BKMK_InstallLnUClient"></a> 在 Linux 和 UNIX 伺服器上安裝用戶端  
  若要安裝用戶端的 Linux 和 UNIX，您可以執行指令碼在每個 Linux 或 UNIX 電腦上。 指令碼名為 **安裝** 和支援修改的安裝行為並參照用戶端安裝封裝的命令列屬性。 安裝指令碼和用戶端安裝套件必須位於用戶端。 用戶端安裝套件包含特定 Linux 或 UNIX 作業系統和平台的 Configuration Manager 用戶端檔案。
 每個用戶端安裝套件包含所有必要的檔案以完成用戶端安裝並不像 Windows 電腦將不會下載其他檔案從管理點或其他來源位置。  
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 12/16/2016
 
      範例：ccm-Universal-x64.&lt;組建\>.tar  
 
-###  <a name="a-namebkmktoinstalllnuclinenta-to-install-the-configuration-manager-client-on-linux-and-unix-servers"></a><a name="BKMK_ToInstallLnUClinent"></a> 在 Linux 和 UNIX 伺服器上安裝 Configuration Manager 用戶端  
+###  <a name="BKMK_ToInstallLnUClinent"></a> 在 Linux 和 UNIX 伺服器上安裝 Configuration Manager 用戶端  
 
 1.  在 Windows 電腦上，為您想要管理的電腦 [下載適用於 Linux 或 UNIX 伺服器的用戶端檔案](http://go.microsoft.com/fwlink/?LinkID=525184) 。  
 
@@ -91,7 +91,7 @@ ms.lasthandoff: 12/16/2016
 
 6.  指令碼執行之後，請檢閱 **/var/opt/microsoft/scxcm.log** 檔案來驗證安裝。 此外，您還可以在 Configuration Manager 主控台之 [資產與相容性] 工作區的 [裝置] 節點中檢視用戶端詳細資料，確認已安裝用戶端，而且用戶端正在與站台通訊。  
 
-###  <a name="a-namebkmkcmdlineinstalllnuclienta-command-line-properties-for-installing-the-client-on-linux-and-unix-servers"></a><a name="BKMK_CmdLineInstallLnUClient"></a> 在 Linux 和 UNIX 伺服器上安裝用戶端的命令列屬性  
+###  <a name="BKMK_CmdLineInstallLnUClient"></a> 在 Linux 和 UNIX 伺服器上安裝用戶端的命令列屬性  
  下列屬性可用於修改安裝指令碼的行為︰  
 
 > [!NOTE]  
@@ -117,7 +117,7 @@ ms.lasthandoff: 12/16/2016
 
      選擇性。 指定由用戶端用來將狀態訊息提交回溯狀態點伺服器的 FQDN。  
 
-     如需後援狀態點的詳細資訊，請參閱 [Determine Whether You Require a Fallback Status Point](../../../core/clients/deploy/plan/determine-the-site-system-roles-for-clients.md#BKMK_Determine_FSP) 。  
+     如需後援狀態點的詳細資訊，請參閱[判斷您是否需要後援狀態點](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#determine-if-you-need-a-fallback-status-point)。  
 
 -   **-dir &lt;目錄\>**  
 
@@ -143,7 +143,7 @@ ms.lasthandoff: 12/16/2016
 
 -   **-UsePKICert &lt;參數\>**  
 
-     選擇性。 指定 X.509 PKI 憑證的完整路徑和檔案名稱中的公用金鑰憑證標準 (PKCS #12) 格式。 此憑證用於用戶端驗證。 如果未在安裝期間指定憑證，而且需要新增或變更憑證，請使用 **certutil** 公用程式。 如需 certutil 的相關資訊，請參閱 [How to manage certificates on the client for Linux and UNIX](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ManageLinuxCerts) 。  
+     選擇性。 指定 X.509 PKI 憑證的完整路徑和檔案名稱中的公用金鑰憑證標準 (PKCS&#12;) 格式。 此憑證用於用戶端驗證。 如果未在安裝期間指定憑證，而且需要新增或變更憑證，請使用 **certutil** 公用程式。 如需 certutil 的相關資訊，請參閱 [How to manage certificates on the client for Linux and UNIX](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ManageLinuxCerts) 。  
 
      當您使用 **-UsePKICert**時，也必須使用 **-certpw** 命令列參數來提供與 PKCS#12 檔案相關聯的密碼。  
 
@@ -158,7 +158,7 @@ ms.lasthandoff: 12/16/2016
 
 -   **-certpw &lt;參數\>**  
 
-     選擇性。 指定使用與您所指定的 PKCS #12 檔案相關聯的密碼 **-UsePKICert** 屬性。  
+     選擇性。 指定使用與您所指定的 PKCS&#12; 檔案相關聯的密碼 **-UsePKICert** 屬性。  
 
      範例：-UsePKICert &lt;完整路徑和檔名\> -certpw &lt;密碼\>  
 
@@ -216,14 +216,14 @@ ms.lasthandoff: 12/16/2016
 
      範例︰-rootcerts &lt;完整路徑和檔名\>,&lt;完整路徑和檔名\>  
 
-###  <a name="a-namebkmkuninstalllnuclienta-uninstalling-the-client-from-linux-and-unix-servers"></a><a name="BKMK_UninstallLnUClient"></a> 從 Linux 和 UNIX 伺服器解除安裝用戶端  
+###  <a name="BKMK_UninstallLnUClient"></a> 從 Linux 和 UNIX 伺服器解除安裝用戶端  
  若要解除安裝 Linux 和 UNIX Configuration Manager 用戶端，請使用解除安裝公用程式 **uninstall**。 根據預設，這個檔案位於 **/選擇/microsoft/configmgr/bin/** 用戶端電腦上的資料夾。 這在解除安裝命令不支援任何命令列參數，而且將會移除從伺服器到用戶端軟體相關的所有檔案。  
 
  若要解除安裝用戶端，請使用下列命令列: **/opt/microsoft/configmgr/bin/uninstall**  
 
  在您解除安裝 Linux 和 UNIX Configuration Manager 用戶端之後，不需要重新啟動電腦。  
 
-##  <a name="a-namebkmkconfiglnuclientcommuincationsa-configure-request-ports-for-the-client-for-linux-and-unix"></a><a name="BKMK_ConfigLnUClientCommuincations"></a> 設定 Linux 和 UNIX 用戶端要求連接埠  
+##  <a name="BKMK_ConfigLnUClientCommuincations"></a> 設定 Linux 和 UNIX 用戶端要求連接埠  
  與 Windows 用戶端類似，Linux 和 UNIX Configuration Manager 用戶端會使用 HTTP 和 HTTPS 來與 Configuration Manager 站台系統通訊。 Configuration Manager 用戶端用來通訊的連接埠稱為要求連接埠。  
 
  當您安裝 Linux 和 UNIX Configuration Manager 用戶端時，可以指定 **-httpport** 和 **-httpsport** 安裝內容來變更用戶端預設要求連接埠。 當您未指定安裝在屬性和自訂的值時，用戶端會使用預設值。 預設值為 **80** HTTP 流量和 **443** 的 HTTPS 流量。  
@@ -232,10 +232,10 @@ ms.lasthandoff: 12/16/2016
 
  如需用戶端通訊連接埠號碼的詳細資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端通訊連接埠](../../../core/clients/deploy/configure-client-communication-ports.md)。  
 
-##  <a name="a-namebkmkconfigclientmpa-configure-the-client-for-linux-and-unix-to-locate-management-points"></a><a name="BKMK_ConfigClientMP"></a> 設定用於 Linux 和 UNIX 找出管理點的用戶端  
+##  <a name="BKMK_ConfigClientMP"></a> 設定用於 Linux 和 UNIX 找出管理點的用戶端  
  安裝 Linux 和 UNIX Configuration Manager 用戶端時，必須指定作為初始連絡點使用的管理點。  
 
  Linux 和 UNIX Configuration Manager 用戶端會在用戶端安裝時連絡這個管理點。 如果用戶端無法連絡管理點，則用戶端軟體會繼續重試，直到成功為止。  
 
- 如需用戶端如何找到管理點的詳細資訊，請參閱 [Locating Management Points](../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_LocatingMPs)。
+ 如需用戶端如何找到管理點的詳細資訊，請參閱 [Locating Management Points](/sccm/core/clients/deploy/assign-clients-to-a-site#locating-management-points)。
 

@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bdd7961d9126dc6f3c1ae1fec1842c862e8a7c6d
-ms.openlocfilehash: 12633a7b9f799ffc74e0ee657e091595ed7eaf67
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
+ms.openlocfilehash: 4afba7b7702aa12b1cfcaf454e23b0dfb3274e7f
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager 用戶端和裝置支援的作業系統
@@ -309,28 +309,30 @@ ms.lasthandoff: 02/22/2017
 -   [Microsoft Intune 的行動裝置管理功能](https://docs.microsoft.com/intune/get-started/choose-how-to-manage-devices)  
 -   [Microsoft Intune 的 Windows 電腦管理功能](https://docs.microsoft.com/intune/get-started/windows-pc-management-capabilities-in-microsoft-intune)  
 
-##  <a name="a-namebkmkonpremosa-on-premises-mobile-device-management"></a><a name="bkmk_OnpremOS"></a> 內部部署行動裝置管理  
+##  <a name="bkmk_OnpremOS"></a> 內部部署行動裝置管理  
  Configuration Manager 具有內建功能，以管理內部部署的裝置，而不需要安裝用戶端軟體。  如需詳細資訊，請參閱[在 System Center Configuration Manager 中使用內部部署基礎結構管理行動裝置](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)。  
 
  **需求和限制：**  
 
--   您必須在階層的頂層站台設定**服務連接點**  
+-   您必須在階層的頂層站台設定**服務連接點**。  
 
 **支援的作業系統：**  
 
--   **Windows 10 專業版** (x86、x64)  
+- **Windows 10 專業版** (x86、x64)  
 
--   **Windows 10 專業企業版** (x86、x64)  
+- **Windows 10 專業企業版** (x86、x64)  
 
--   **Windows 10 IoT 企業版** (x86、x64)
+- **Windows 10 IoT 企業版** (x86、x64)
 
--   **Windows 10 行動裝置版**  
+- **Windows 10 行動裝置版**  
 
--   **Windows 10 行動裝置企業版**  
+- **Windows 10 行動裝置企業版**  
 
--  **Windows 10 IoT 行動裝置企業版**
+- **Windows 10 IoT 行動裝置企業版**
 
-##  <a name="a-namebkmkexsrvconosa-exchange-server-connector"></a><a name="bkmk_ExSrvConOS"></a> Exchange Server 連接器  
+- **適用於 Surface Hub 的 Windows 10 團隊版**
+
+##  <a name="bkmk_ExSrvConOS"></a> Exchange Server 連接器  
 Configuration Manager 支援有限制地管理連線至您 Exchange Server 的裝置，而不需要安裝 Configuration Manager 用戶端。 如需詳細資訊，請參閱[使用 System Center Configuration Manager 和 Exchange 管理行動裝置](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)。  
 
  **需求和限制：**  

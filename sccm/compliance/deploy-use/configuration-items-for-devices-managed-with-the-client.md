@@ -17,25 +17,21 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
-ms.openlocfilehash: c0648c8c6ca3b36e2c2cf311bc4ae9edc7e8f906
+ms.sourcegitcommit: 9e850bdbdf91d3b40a2044e5d5c04f468ed4809f
+ms.openlocfilehash: 093d24951e8d741bfcf2cedb7618ecf75300e035
+ms.lasthandoff: 03/20/2017
 
 
 ---
 # <a name="configuration-items-for-devices-managed-with-the-system-center-configuration-manager-client"></a>由 System Center Configuration Manager 用戶端管理之裝置的組態項目
 
-*適用對象：System Center Configuration Manager (最新分支)*
+*適用於：System Center Configuration Manager (最新分支)*
 
-本主題列出 Configuration Manager 用戶端管理裝置的可用 System Center Configuration Manager 設定項目類型，例如 Windows 電腦和 Mac 電腦。  
+本主題列出受 Configuration Manager 用戶端管理的裝置可用的 System Center Configuration Manager 設定項目類型，例如 Windows 電腦和 Mac 電腦。  
 
 -   [如何為 System Center Configuration Manager 用戶端所管理的 Windows 10 裝置建立設定項目](../../compliance/deploy-use/create-configuration-items-for-windows-10-devices-managed-with-the-client.md)  
 
 -   [如何為 System Center Configuration Manager 用戶端所管理的 Mac OS X 裝置建立設定項目](../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md)  
 
 -   [如何為 System Center Configuration Manager 用戶端所管理的 Windows 桌上型電腦和伺服器電腦建立自訂設定項目](../../compliance/deploy-use/create-custom-configuration-items-for-windows-desktop-and-server-computers-managed-with-the-client.md)  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

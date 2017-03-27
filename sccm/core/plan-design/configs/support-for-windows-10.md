@@ -16,9 +16,9 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3702993d6cf9644d5aebaadd168749668fbcb62c
-ms.openlocfilehash: 4b90384621dd20475ab9ea33ea062c24f5ecf5fa
-ms.lasthandoff: 02/22/2017
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: eb2092640f7bd68a25e4826cd7f88cda6822a33a
+ms.lasthandoff: 03/21/2017
 
 ---
 # <a name="support-for-windows-10-as-a-client-of-system-center-configuration-manager"></a>將 Windows 10 作為 System Center Configuration Manager 用戶端的支援
@@ -38,11 +38,11 @@ Configuration Manager 嘗試在該 Windows 版本發行之後盡快支援每個�
 |Windows 10 版本 |Configuration Manager 1602|Configuration Manager 1606|Configuration Manager 1610|
 |---------------------|-----|-----|-----|
 |Enterprise 2015 LTSB |![支援](media/green_check.png) |![支援](media/green_check.png) |![支援](media/green_check.png) |
-|1507 <br />Enterprise、Pro | ![支援](media/green_check.png)| ![支援](media/green_check.png)|![支援](media/green_check.png) |
-|1511 <br />Enterprise、Pro <br />(CB)、(CBB) |![支援](media/green_check.png) |![支援](media/green_check.png) |![支援](media/green_check.png) |
+|1507 <br />企業版、教育版、專業版 | ![支援](media/green_check.png)| ![支援](media/green_check.png)|![支援](media/green_check.png) |
+|1511 <br />企業版、教育版、專業版 <br />(CB)、(CBB) |![支援](media/green_check.png) |![支援](media/green_check.png) |![支援](media/green_check.png) |
 |Enterprise 2016 LTSB    |![不支援](media/Red_X.png) |![支援](media/green_check.png) | ![支援](media/green_check.png)|
-|1607 <br />Enterprise、Pro<br /> (CB)    |![不支援](media/Red_X.png) |![回溯相容](media/blue_compat.png) |![支援](media/green_check.png) |
-|1607 <br />Enterprise、Pro <br />(CBB)    |![不支援](media/Red_X.png) |![回溯相容](media/Red_X.png) |![支援](media/green_check.png) |
+|1607 <br />企業版、教育版、專業版<br /> (CB)    |![不支援](media/Red_X.png) |![回溯相容](media/blue_compat.png) |![支援](media/green_check.png) |
+|1607 <br />企業版、教育版、專業版 <br />(CBB)    |![不支援](media/Red_X.png) |![回溯相容](media/Red_X.png) |![支援](media/green_check.png) |
 
 
 |機碼|

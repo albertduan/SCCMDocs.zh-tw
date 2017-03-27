@@ -1,8 +1,8 @@
 ---
-title: "混合式 MDM 的新功能 | Microsoft Docs"
-description: "了解 System Center Configuration Manager 與 Intune 的混合式部署可以使用的新行動裝置管理功能。"
+title: "使用 Configuration Manager 的混合式 MDM 新功能 | Microsoft Docs"
+description: "了解 Configuration Manager 與 Intune 的混合式部署可以使用的新行動裝置管理功能。"
 ms.custom: na
-ms.date: 02/14/2017
+ms.date: 03/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 69d3e7d51911d6195c2f62a5e81c0faca38ed306
-ms.openlocfilehash: a8fd3c24f3267ea451f4c94854e8577046efaeca
-ms.lasthandoff: 02/27/2017
+ms.sourcegitcommit: 79135bcea4b0ed21fe8017045226f393a1e09dac
+ms.openlocfilehash: fcaead7cbe637fa76d16976f5052cdcd9975b6e8
+ms.lasthandoff: 03/22/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
@@ -36,6 +36,52 @@ ms.lasthandoff: 02/27/2017
 |**Microsoft Intune 的新功能** | 通常此類別下列出的所有功能都應該能夠與所有的 Configuration Manager 版本 (包括 System Center 2012 R2 Configuration Manager 版本) 搭配使用，因為這些功能只需要 Intune 服務，不需要其他的 Configuration Manager 功能。|
 |**Configuration Manager Technical Preview 的新功能**| 此類別下列出的所有功能只能搭配指定的 Technical Preview 版本使用。 若要試用這些功能，您必須安裝功能描述中指定的 Technical Preview 版本。 如需詳細資訊，請參閱 [Technical Preview for System Center Configuration Manager](../../core/get-started/technical-preview.md) 。|
 |**Configuration Manager (最新分支) 的新功能**| 此類別下列出的所有功能只能搭配指定的 Configuration Manager 版本 (最新分支) 使用，例如 1511 版或 1602 版。 如果您的混合式部署使用舊版的 Configuration Manager，即必須升級到功能描述中指定的 Configuration Manager 版本 (最新分支)。 如需詳細資訊，請參閱[升級至 System Center Configuration Manager](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)。|
+
+## <a name="new-hybrid-features-in-march-2017"></a>2017 年 3 月的新混合式功能
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
+
+2017 年 3 月推出的下列 Intune 功能可在混合式部署中運作：
+
+- **Android 版公司入口網站應用程式的新使用者體驗**
+
+  Android 版公司入口網站應用程式的使用者介面，有了更現代的外觀及操作。 值得注意的更新如下︰
+
+  - 色彩：公司入口網站索引標籤標題以 IT 定義的商標上色。
+  - 應用程式：[應用程式] 索引標籤中，已更新 [精選應用程式] 和 [所有應用程式] 按鈕。
+  - 搜尋：[應用程式] 索引標籤中，[搜尋] 按鈕是浮動的動作按鈕。
+  - 瀏覽應用程式：[所有應用程式] 檢視會以索引標籤式的檢視顯示 [精選]、[所有] 與 [類別] 以方便瀏覽。
+  - 支援：已更新 [我的裝置] 和 [連絡 IT] 索引標籤，以改善可讀性。
+
+  如需這些變更的詳細資料，請參閱 [Intune 終端使用者應用程式的 UI 更新](/intune/enduser/whats-new-in-intune-app-ui)。
+
+- **簽署 Windows 10 公司入口網站的指令碼**
+
+  如果您必須下載及側載 Windows 10 公司入口網站，現在可以使用指令碼為組織簡化應用程式的簽署程序。  若要下載指令碼及其使用指示，請參閱 TechNet 組件庫上的 [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) (Microsoft Intune 簽署 Windows 10 公司入口網站的指令碼)。 如需此公告的詳細資料，請參閱 Intune Support Team Blog 上的 [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) (更新您的 Windows 10 公司入口網站應用程式)。
+
+- **為中國的 Andriud 使用者改進支援**
+
+  由於中國沒有 Google Play 商店，因此 Android 裝置必須從中國的市集取得應用程式。 公司入口網站會將中國的 Android 使用者重新導向，以從當地應用程式市集下載公司入口網站及 Outlook 應用程式，從而支援此工作流程。 這會在條件式存取原則已啟用的狀態下，改進行動裝置管理及行動應用程式管理的使用者體驗。 Android 版的公司入口網站及 Outlook 應用程式於下列中國應用程式市集提供：
+
+  - [百度](https://go.microsoft.com/fwlink/?linkid=836946)
+  - [小米應用商店](https://go.microsoft.com/fwlink/?linkid=836947)
+  - [騰訊](https://go.microsoft.com/fwlink/?linkid=836949)
+  - [華為](https://go.microsoft.com/fwlink/?linkid=836948)
+  - [豌豆莢](https://go.microsoft.com/fwlink/?linkid=836950)
+
+- **確認您的公司入口網站為最新狀態**
+
+  我們在 2016 年 12 月發行的更新，能讓您在一群使用者註冊 iOS, Android、Windows 8.1+ 或 Windows Phone 8.1+ 裝置時強制執行多重要素驗證 (MFA)。 這項功能必須要有 Android (v5.0.3419.0+) 及 iOS (v2.1.17+) 的公司入口網站應用程式特定基準版本才能運作。
+
+  Intune 的管理功能會持續改進，而多項功能改進已協同公司入口網站應用程式的更新，在所有支援的平台上推出。 因此，建議您讓公司入口網站應用程式在安裝的裝置上保持最新狀態，以利用 Intune 的功能改進，並獲得最佳使用者體驗。
+
+  >[!Tip]
+  > 請要求您的使用者設定其裝置，以自動從適當的應用程式市集更新應用程式。 如果您已允許 Android 公司入口網站應用程式在網路共用上使用，則可以從 [Microsoft 下載中心](https://www.microsoft.com/download/details.aspx?id=49140)下載最新版本。
+
+- **Microsoft Teams 現在可於 iOS 及 Android 執行 MAM**
+
+  iOS 及 Android 版的 Microsoft Teams 應用程式現在可執行 Intune 行動應用程式管理 (MAM) 功能，因此您可以讓團隊在不同裝置間自由工作，同時確保對話和公司資料在每個環節都受到保護。 如需詳細資料，請參閱 Enterprise Mobility + Security 部落格上的 [Microsoft Teams 公告](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/)。
+
 
 ## <a name="new-hybrid-features-in-february-2017"></a>2017 年 2 月的新混合式功能
 

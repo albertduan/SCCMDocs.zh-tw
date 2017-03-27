@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
-ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 57478d9a9ee5f933000018b47e8a11a80e281252
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -32,7 +33,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
  使用下列章節來管理 Windos 即服務。
 
-##  <a name="a-namebkmkprerequisitesa-prerequisites"></a><a name="BKMK_Prerequisites"></a> 先決條件  
+##  <a name="BKMK_Prerequisites"></a> 先決條件  
  若要查看 Windows 10 服務儀表板中的資料，您必須執行下列作業：  
 
 -   Windows 10 電腦都必須使用 Configuration Manager 軟體更新，並以 Windows Server Update Services (WSUS) 進行軟體更新管理。 當電腦使用 Windows Update for Business (或 Windows Insiders) 來進行軟體更新管理時，電腦將不會在 Windows 10 服務方案中評估。 如需詳細資訊，請參閱 [Integration with Windows Update for Business in Windows 10](../../sum/deploy-use/integrate-windows-update-for-business-windows-10.md)。  
@@ -58,7 +59,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
 -   必須設定並同步處理軟體更新。 您必須先選取 [升級] 分類並同步軟體更新，Configuration Manager 主控台中才會顯示可用的 Windows 10 功能升級。 如需詳細資訊，請參閱 [Prepare for software updates management](../../sum/get-started/prepare-for-software-updates-management.md) (準備軟體更新管理)。  
 
-##  <a name="a-namebkmkservicingdashboarda-windows-10-servicing-dashboard"></a><a name="BKMK_ServicingDashboard"></a> Windows 10 服務儀表板  
+##  <a name="BKMK_ServicingDashboard"></a> Windows 10 服務儀表板  
  Windows 10 服務儀表板可提供您環境中 Windows 10 電腦的相關資訊、使用中的服務方案、相容性資訊等等。 Windows 10 服務儀表板中的資料取決於已安裝的服務連線點。 儀表板具有以下磚：  
 
 -   **Windows 10 使用量磚**：提供 Windows 10 公開組建的細分。 Windows Insiders 組建以及您的站台尚不知道的任何組建會列為 [其他]  。 服務連線點會下載通知它關於 Windows 組建的中繼資料，然後這項資料會和探索資料比較。  
@@ -91,7 +92,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
  當升級符合準則時，服務方案會將升級新增到部署套件、將套件發佈到發佈點，並根據您在服務方案中進行的設定將升級部署至集合。  您可以在 Windows 10 服務儀表板上的 [服務方案監視] 磚監視部署。 如需詳細資訊，請參閱 [Monitor software updates](../../sum/deploy-use/monitor-software-updates.md) (監視軟體更新)。  
 
-##  <a name="a-namebkmkservicingplana-windows-10-servicing-plan"></a><a name="BKMK_ServicingPlan"></a> Windows 10 服務方案  
+##  <a name="BKMK_ServicingPlan"></a> Windows 10 服務方案  
  部署 Windows 10 CB 時，您可以建立一個或多個服務方案，以定義環境中想要的部署環，然後在 Windows 10 服務儀表板中監視。   
 服務方案只會使用 **升級** 軟體更新分類，而不會使用 Windows 10 的累積更新。 如需這些更新，您仍需要使用軟體更新工作流程進行部署。  服務方案的使用者經驗和軟體更新相同，包括您在服務方案中進行的設定。  
 
@@ -136,7 +137,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
         -   **發行就緒 (最新分支)**：在 CB 服務模型中，當 Microsoft 發行功能更新之後即可供使用。
 
-        -   **商務就緒 (最新商務分支)**：CBB 服務分支通常用於廣泛部署。 CBB 服務分支中的 Windows 10 用戶端只是稍後才會接收到 CB 服務分支中 Windows 10 的相同組建。
+        -   **商務就緒 (最新商務分支)**：CBB 維護分支通常用於廣泛部署。 CBB 服務分支中的 Windows 10 用戶端只是稍後才會接收到 CB 服務分支中 Windows 10 的相同組建。
 
     -   **Microsoft 發行新的升級之後，您想要在您的環境中部署之前等待的天數**：如果目前的日期是在發行日期加上您設定此設定的天數之後，Configuration Manager 會評估是否要在部署中包含升級。
 
@@ -203,7 +204,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
     4.  **傳送優先順序**：指定部署封裝的傳送優先順序。 Configuration Manager 將套件傳送到發佈點時，會針對部署套件使用傳送優先順序。 部署套件會依優先順序傳送：高、中或低。 優先順序相同的套件，會依照建立的順序傳送。 若沒有積存，則無論其優先順序為何，都會立即處理該套件。  
 
-11. 在 [發佈點] 頁面上，指定將裝載更新檔案的發佈點或發佈點群組。 如需發佈點的詳細資訊，請參閱 [Distribution point configurations](../../core/servers/deploy/configure/install-and-configure-distribution-points.md#a-namebkmkconfigsa-distribution-point-configurations)。  
+11. 在 [發佈點] 頁面上，指定將裝載更新檔案的發佈點或發佈點群組。 如需發佈點的詳細資訊，請參閱[設定發佈點](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points#bkmk_configs)。
 
     > [!NOTE]  
     >  此頁面只有在您建立新的軟體更新部署套件時才可使用。  
@@ -220,7 +221,7 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
  在您完成精靈後，服務方案就會執行。 它會將符合指定準則的更新新增至軟體更新群組、將更新下載至站台伺服器上的內容庫、將更新發佈至設定的發佈點，然後將軟體更新群組部署至目標集合中的用戶端。  
 
-##  <a name="a-namebkmkmodifyservicingplana-modify-a-servicing-plan"></a><a name="BKMK_ModifyServicingPlan"></a> 修改服務方案  
+##  <a name="BKMK_ModifyServicingPlan"></a> 修改服務方案  
 您從 Windows 10 服務儀表板建立基本服務方案之後，或是需要變更現有服務方案的設定時，可以移至服務方案的內容。
 
 > [!NOTE]
@@ -274,9 +275,4 @@ ms.openlocfilehash: b3859bc01c37dab04275028585e892f927606025
 
     > [!NOTE]  
     >  您可經由 [軟體程式庫]  工作區中的 [軟體更新]  節點檢閱最新的軟體更新警示。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

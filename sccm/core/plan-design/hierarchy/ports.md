@@ -2,7 +2,7 @@
 title: "Configuration Manager 使用的連接埠 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 用於連線的必要和可自訂連接埠。"
 ms.custom: na
-ms.date: 3/1/2017
+ms.date: 3/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6bfc5c0e3c0bdc8408ad2dd2a7807ef3e018ef60
-ms.openlocfilehash: 8cd1c5363ba05dbb35ca5a0daf32979dd8b51b19
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: 4c2906c2a963e0ae92e3c0d223afb7a47377526a
+ms.openlocfilehash: ffc2adb34427aa62f4a377e887c2ff54d47abeff
+ms.lasthandoff: 03/20/2017
 
 
 ---
@@ -603,6 +603,14 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
     -   SQL Server 服務，預設為連接埠 TCP 1433。  
 
 -   SQL Server 資料庫引擎與不同 Configuration Manager 站台系統角色之間的站台內通訊預設為連接埠 TCP 1433。  
+
+- Configuration Manager 使用相同的連接埠及通訊協定，與裝載站台資料庫的各個 SQL 可用性群組複本通訊，如同複本是獨立的 SQL Server 執行個體。
+
+當您使用 Azure，而站台資料庫位於內部或外部負載平衡器後方時，請在各複本上設定下列防火牆例外，並為下列連接埠新增負載平衡規則：
+ - 透過 TCP 的 SQL：TCP 1433
+ - SQL Server Service Broker：TCP 4022
+ - 伺服器訊息區 (SMB)：TCP 445
+ - RPC 端點對應程式：TCP 135
 
 > [!WARNING]  
 >  Configuration Manager 不支援動態連接埠。 由於 SQL Server 具名執行個體預設使用動態連接埠連線至資料庫引擎，因此，當您使用具名執行個體時，必須手動設定要用於網站間通訊的靜態連接埠。  

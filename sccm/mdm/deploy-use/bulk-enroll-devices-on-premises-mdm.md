@@ -18,9 +18,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: ef68a9f998ea6ff9628e01f6ac622711de68375d
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
+ms.openlocfilehash: 8e93f6f7b65534d9e3f6b5e46909b076653659a9
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -31,14 +31,15 @@ ms.lasthandoff: 12/16/2016
 
 System Center Configuration Manager 內部部署行動裝置管理中的大量註冊是一種比起使用者註冊更自動化的裝置註冊方式，使用者註冊需要使用者輸入認證來註冊裝置。  大量註冊使用註冊套件在註冊期間驗證裝置。 套件 (.ppkg 檔案) 包含憑證設定檔，以及選擇性地包含 Wi-Fi 設定檔，如果裝置需要內部網路連線才能支援註冊的話。  
 
- > [!NOTE]  
+> [!NOTE]  
 >  Configuration Manager 的最新分支，支援執行下列作業系統的裝置在內部部署行動裝置管理中註冊：  
 >   
->  -   Windows 10 Enterprise  
+> -  Windows 10 Enterprise  
 > -   Windows 10 Pro  
 > -   Windows 10 團隊版 \(從 Configuration Manager 1602 版開始\)  
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise
+> -   Windows 10 企業版   
 
 下列工作說明如何為內部部署行動裝置管理大量註冊電腦和裝置：  
 

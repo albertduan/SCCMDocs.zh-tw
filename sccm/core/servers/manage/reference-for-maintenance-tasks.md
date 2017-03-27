@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dcbcd57b95f304f007e92ebe2b9aeefb4b579662
-ms.openlocfilehash: 92d3c215569916a5557309d7f488aa88f387da92
-ms.lasthandoff: 03/09/2017
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: c3ca3b895d54b6dc886068b92b39d0d95c466de2
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -207,6 +207,11 @@ ms.lasthandoff: 03/09/2017
 -   **主要站台**：已啟用    
 -   次要站台：無法使用  
 
+**刪除過期的 MDM 大量註冊套件記錄**：使用此工作，在註冊憑證過期後刪除舊的大量註冊憑證及對應的設定檔。 如需詳細資訊，請參閱[建立憑證設定檔](/sccm/protect/deploy-use/create-certificate-profiles)。
+-   **管理中心網站**：已啟用
+-   **主要站台**：已啟用
+-   次要站台：無法使用
+
 **刪除非使用中用戶端探索資料**：使用此工作可從資料庫中，刪除非使用中用戶端的探索資料。 用戶端標記為已過時，且針對用戶端進行此設定時，就會將用戶端標記為非使用中。
 
 此工作僅會在 Configuration Manager 用戶端資源上運作。 這與刪除任何過時探索資料記錄的**刪除過時探索資料**工作不同。 在某個網站上執行此工作時，會從階層內所有網站的資料庫內移除資料。 如需詳細資訊，請參閱 [How to configure client status in System Center Configuration Manager](../../../core/clients/deploy/configure-client-status.md)。  
@@ -242,7 +247,7 @@ ms.lasthandoff: 03/09/2017
 **刪除孤立的用戶端部署狀態記錄**：使用此工作可定期清除包含用戶端部署狀態資訊的資料表。 此工作可清理有關已淘汰或已退役裝置的記錄。  
 -   **管理中心網站** - 已啟用    
 -   **主要站台**：已啟用    
--   次要站台：無法使用 
+-   次要站台：無法使用
 
 **刪除未使用的應用程式修訂**：使用此工作可刪除已不再參考的應用程式修訂。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中修改和取代應用程式](../../../apps/deploy-use/revise-and-supersede-applications.md)。  
 

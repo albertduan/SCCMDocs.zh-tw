@@ -17,9 +17,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: cec595d473ca2459e43a7fa1c70b7668a8a48986
-ms.openlocfilehash: d529a058968cf99dce77997844b33ff5dc7c0004
-ms.lasthandoff: 01/21/2017
+ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
+ms.openlocfilehash: 544c3bea0c7df96887ee1717f061c39c64b82d01
+ms.lasthandoff: 03/22/2017
 
 
 ---
@@ -35,11 +35,12 @@ ms.lasthandoff: 01/21/2017
  > [!NOTE]  
 >  Configuration Manager 最新分支，支援執行下列作業系統的裝置在內部部署行動裝置管理中註冊︰  
 >   
->  -   Windows 10 Enterprise  
+> -  Windows 10 Enterprise  
 > -   Windows 10 Pro  
 > -   Windows 10 團隊版 \(從 Configuration Manager 1602 版開始\)  
 > -   Windows 10 Mobile  
-> -   Windows 10 Mobile Enterprise   
+> -   Windows 10 Mobile Enterprise
+> -   Windows 10 企業版   
 
 ##  <a name="bkmk_intune"></a> 使用 Microsoft Intune 訂閱  
  若要開始使用內部部署行動裝置管理，您需要 Microsoft Intune 訂閱。 訂閱只有在追蹤裝置授權時才需要，不會用來管理或儲存裝置的管理資訊。 所有的管理都是貴組織企業使用內部部署的 Configuration Manager 基礎結構來處理。  
