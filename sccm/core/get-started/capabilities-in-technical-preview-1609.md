@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 89a41c8a3137d0e54011ddf9a1d9b4894ecb7df8
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1609-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1609 中的功能
@@ -319,7 +320,7 @@ Upgrade Analytics 可讓您評估及分析裝置整備及與 Windows 10 的相�
 藉由設定在不同的時間使用不同的芳鄰群組，您就可以控制何時將特定發佈點新增為內容來源位置，以及用戶端何時或是否會使用後援當做防護機制，以在任何其他位置都沒有內容時切換回預設站台界限群組。
 
 
-### <a name="a-namebkmkupdateaupdate-existing-boundary-groups-to-the-new-model"></a><a name="bkmk_update"></a>將現有的界限群組更新為新的模型
+### <a name="bkmk_update"></a>將現有的界限群組更新為新的模型
 當您安裝 1609 版並更新站台時，會自動進行下列設定。 這些設定是為了確保您目前的後援行為在您設定新的界限群組和關聯性之前維持可用。  
 -   站台上未受保護的發佈點會新增至該站台的 *Default-Site-Boundary-Group\<站台碼>* 界限群組。
 -   系統會為每個現有的界限群組建立一個複本，其中包含設定為低速連線的站台伺服器。 新群組的名稱是 ***\<原始界限群組名稱>-Slow-Tmp***：  
@@ -358,7 +359,7 @@ Configuration Manager 1609 Technical Preview 引進了新的儀表板。 若要�
 - 使用儀表板頂端的 [集合] 下拉式清單設定，依特定集合成員篩選儀表板資料。
 - 在儀表板右上方，按一下 [Office 365 Installer] 啟動 [Office 365 用戶端安裝精靈]，將 Office 365 應用程式部署至用戶端。 如需詳細資訊，請參閱[將 Office 365 應用程式部署至用戶端](#deploy-office-365-apps-to-clients)。
 - 在儀表板中間右邊，按一下 [建立 ADR] 開啟 [自動部署規則精靈]，以建立新的自動部署規則 (ADR)。 若要建立適用於 Office 365 應用程式的 ADR，請在選擇產品時選取 [Office 365 用戶端]。 如需詳細資訊，請參閱[自動部署軟體更新](/sccm/sum/deploy-use/automatically-deploy-software-updates)。
-- 在儀表板右下方，按一下 [Create Client Agent Settings] (建立用戶端代理程式設定) 開啟用戶端代理程式設定。 如需詳細資訊，請參閱[關於用戶端設定](/sccm/core/clients/deploy/about-client-settings)。
+- 在儀表板右下方，按一下 [Create Client Agent Settings]\(建立用戶端代理程式設定) 開啟用戶端代理程式設定。 如需詳細資訊，請參閱[關於用戶端設定](/sccm/core/clients/deploy/about-client-settings)。
 
 
 
@@ -380,7 +381,7 @@ Configuration Manager 1609 Technical Preview 引進了新的儀表板。 若要�
     > [!IMPORTANT]
     >當您嘗試在此 Technical Preview 中匯入現有的用戶端設定 (XML) 時，可能會發生問題。
 
-5. 在 [Client Products] (用戶端產品) 頁面上，依序選取您使用的 Office 365 套件、要包含的應用程式、應包含的任何其他 Office 產品，然後按一下 [下一步]。
+5. 在 [Client Products]\(用戶端產品) 頁面上，依序選取您使用的 Office 365 套件、要包含的應用程式、應包含的任何其他 Office 產品，然後按一下 [下一步]。
 6. 在 [用戶端設定] 頁面上，選擇要包含的設定，然後按一下 [下一步]。
 7. 在 [部署] 頁面上，選擇是否要部署應用程式，然後按一下 [下一步]。
 如果您選擇不要在精靈中部署套件，請跳至步驟 9。
@@ -389,9 +390,9 @@ Configuration Manager 1609 Technical Preview 引進了新的儀表板。 若要�
 10. 您可以在 Configuration Manager 中，從 [軟體程式庫] > [概觀] > [應用程式管理] > [應用程式] 部署或編輯應用程式，就像是任何其他應用程式一樣。
 
 >[!NOTE]
->部署 Office 365 應用程式之後，您可以建立自動部署規則，以維護應用程式。 若要建立適用於 Office 365 應用程式的 ADR，請按一下 [Create an ADR] (建立 ADR)，然後在選擇產品時選取 [Office 365 用戶端]。 如需詳細資訊，請參閱[自動部署軟體更新](/sccm/sum/deploy-use/automatically-deploy-software-updates)。
+>部署 Office 365 應用程式之後，您可以建立自動部署規則，以維護應用程式。 若要建立適用於 Office 365 應用程式的 ADR，請按一下 [Create an ADR]\(建立 ADR)，然後在選擇產品時選取 [Office 365 用戶端]。 如需詳細資訊，請參閱[自動部署軟體更新](/sccm/sum/deploy-use/automatically-deploy-software-updates)。
 
-## <a name="a-namebkmkueficonversionaimprovements-for-bios-to-uefi-conversion"></a><a name="BKMK_UEFIConversion"></a>BIOS 轉換成 UEFI 的改進
+## <a name="BKMK_UEFIConversion"></a>BIOS 轉換成 UEFI 的改進
 您現在可以使用新變數 TSUEFIDrive 來自訂作業系統部署工作順序，如此一來，「重新啟動電腦」步驟就會在硬碟上準備用於轉換成 UEFI 的 FAT32 磁碟分割。 下列程序提供範例，說明如何建立工作順序步驟，以準備用於將 BIO 轉換成 UEFI 的硬碟。
 
 #### <a name="to-prepare-the-fat32-partition-for-the-conversion-to-uefi"></a>若要準備用於轉換成 UEFI 的 FAT32 磁碟分割：
@@ -421,12 +422,12 @@ Configuration Manager 1609 Technical Preview 引進了新的儀表板。 若要�
 
 #### <a name="to-view-the-intune-compliance-charts"></a>檢視 Intune 相容性圖表
 1. 在 Configuration Manager 主控台中，移至 [監視] > [概觀] > [相容性設定]。
-2. [Overall Device Compliance] (整體裝置相容性) 圖表隨即顯示。
-3. 按一下 [相容性原則] 節點，以檢視 [Overall Device Compliance] (整體裝置相容性) 和 [Top Non-Compliance Reasons] (不相容的主要原因) 圖表。
+2. [Overall Device Compliance]\(整體裝置相容性) 圖表隨即顯示。
+3. 按一下 [相容性原則] 節點，以檢視 [Overall Device Compliance]\(整體裝置相容性) 和 [Top Non-Compliance Reasons]\(不相容的主要原因) 圖表。
 
 ### <a name="limitations-of-intune-compliance-charts-in-tp-1609"></a>TP 1609 中的 Intune 相容性圖表限制
-- 向下切入 [Overall Device Compliance] (整體裝置相容性) 圖表目前會產生錯誤。
-- [Top Non-Compliance Reasons] (不相容的主要原因) 圖表會列出原則名稱，而不是個別不相容原因。 您可以按一下原則，向下切入並查看不符合該原則的裝置。
+- 向下切入 [Overall Device Compliance]\(整體裝置相容性) 圖表目前會產生錯誤。
+- [Top Non-Compliance Reasons]\(不相容的主要原因) 圖表會列出原則名稱，而不是個別不相容原因。 您可以按一下原則，向下切入並查看不符合該原則的裝置。
 
 ### <a name="try-it-out"></a>試試看
 依序完成下列各節：
@@ -435,17 +436,17 @@ Configuration Manager 1609 Technical Preview 引進了新的儀表板。 若要�
 1. 在 Configuration Manager 中新增兩個 iOS 相容性原則。 一個原則應該包含裝置的一組設定 (例如將 PIN 長度設定為 6)。 另一個原則應該包含另一組設定 (例如 PIN 複雜性)。 原則設定不應該重疊或互相衝突。
 2. 將兩個原則部署給一組使用者。
 3. 使用相同的使用者帳戶以及在上一個步驟中收到原則的帳戶，在 Intune 註冊兩部 iOS 裝置。 裝置不應符合相容性原則的準則。
-4. 在 Configuration Manager 中，查看 [Overall Device Compliance] (整體裝置相容性) 圖表。 這兩部裝置應報告為不相容。
+4. 在 Configuration Manager 中，查看 [Overall Device Compliance]\(整體裝置相容性) 圖表。 這兩部裝置應報告為不相容。
 <!-- 5. Click the **Non-compliant** section of the chart. Both devices should appear in the filtered view under **Assets and Compliance** > **Overview** > **Device**. -->
 
 #### <a name="check-the-top-non-compliance-reasons-chart"></a>查看 Top Non-compliance Reasons (不相容的主要原因) 圖表
-5. 查看 [不相容的主要原因] (Top Non-compliance Reasons) 圖表。 此圖表列出不相容的主要 5 個原因，但如果在不同的原則之間只設定兩個相容性設定，則只會顯示不相容的主要 2 個原因。
+5. 查看 [不相容的主要原因]\(Top Non-compliance Reasons) 圖表。 此圖表列出不相容的主要 5 個原因，但如果在不同的原則之間只設定兩個相容性設定，則只會顯示不相容的主要 2 個原因。
 6. 按一下圖表中的其中一個區段。 這兩部裝置應該會出現在 [資產與相容性] > [概觀] > [裝置] 底下的篩選檢視中。
 
 #### <a name="make-devices-compliant-and-check-the-charts"></a>將裝置設為相容並查看圖表
-7. 將其中一部裝置設為符合其中一個原則。 再次查看 [Overall Device Compliance] (整體裝置相容性) 圖表。 此圖表應該會顯示一部相容的裝置和一部不相容的裝置。
+7. 將其中一部裝置設為符合其中一個原則。 再次查看 [Overall Device Compliance]\(整體裝置相容性) 圖表。 此圖表應該會顯示一部相容的裝置和一部不相容的裝置。
 8. 將另一部裝置設為符合相同原則。 這會讓一部裝置符合兩個原則，而另一部裝置只符合其中一個原則。
-9. 查看 [不相容的主要原因] (Top Non-compliance Reasons) 圖表。 應該只會列出一個不相容的原因。
+9. 查看 [不相容的主要原因]\(Top Non-compliance Reasons) 圖表。 應該只會列出一個不相容的原因。
 <!--7. Click the **Compliant** section of the chart. Only the compliant device should appear in the filtered view. -->
 
 
@@ -454,9 +455,4 @@ Configuration Manager 1609 Technical Preview 引進了新的儀表板。 若要�
 
 ## <a name="see-also"></a>另請參閱
 [System Center Configuration Manager 的 Technical Preview](../../core/get-started/technical-preview.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
