@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: a84d3ab55066d26c3199ea374d8beb472d66f43f
+ms.lasthandoff: 01/24/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1606 中的功能
@@ -36,7 +37,7 @@ ms.openlocfilehash: a84d3ab55066d26c3199ea374d8beb472d66f43f
 
 **以下是您可以使用此版本試用的新功能。**  
 
-## <a name="a-namedmpcategorya-automatically-categorize-devices-into-collections"></a><a name="dmp_category"></a> 自動將裝置分類為集合
+## <a name="dmp_category"></a> 自動將裝置分類為集合
 您可以建立裝置類別，如此可在您使用 Configuration Manager 與 Microsoft Intune 時自動將裝置放在裝置集合中。 使用者向 Intune 註冊裝置時，必須選擇裝置類別。 您也可以從 Configuration Manager 主控台中變更裝置類別。
 
 **重要事項：**這項功能適用於 Microsoft Intune 的 **2016 年 6 月**版。 請先確定已更新為此版，再嘗試這些程序。
@@ -51,15 +52,15 @@ ms.openlocfilehash: a84d3ab55066d26c3199ea374d8beb472d66f43f
 ### <a name="associate-a-collection-with-a-device-category"></a>建立集合與裝置類別的關聯
 當您建立集合與裝置類別的關聯時，您在類別中指定的所有裝置都會新增至該集合。
 1.  在裝置集合的 [內容] 對話方塊中，按一下 [新增規則] > [裝置類別規則]。
-2.  在 [Create Device Category Membership Rule] (建立裝置類別成員資格規則) 對話方塊中，選取將套用至集合中所有裝置的類別。
-3.  關閉 [Create Device Category Membership Rule] (建立裝置類別成員資格規則) 對話方塊和集合的 [內容] 對話方塊。
+2.  在 [Create Device Category Membership Rule]\(建立裝置類別成員資格規則) 對話方塊中，選取將套用至集合中所有裝置的類別。
+3.  關閉 [Create Device Category Membership Rule]\(建立裝置類別成員資格規則) 對話方塊和集合的 [內容] 對話方塊。
 
 ### <a name="change-the-category-of-a-device"></a>變更裝置類別
 1.  在 Configuration Manager 主控台的 [資產與相容性] 工作區中，展開 [概觀]，然後按一下 [裝置]。
 2.  從 [裝置] 清單中選取裝置，然後在 [常用] 索引標籤的 [裝置] 群組中，按一下 [變更類別]。
 3.  在 [編輯裝置類別] 對話方塊中，選擇要套用至此裝置的類別，然後按一下 [確定]。
 
-## <a name="a-namedmpgracea-enforcement-grace-period-for-required-application-and-software-update-deployments"></a><a name="dmp_grace"></a> 針對必要應用程式和軟體更新部署的強制執行寬限期
+## <a name="dmp_grace"></a> 針對必要應用程式和軟體更新部署的強制執行寬限期
 
 在某些情況下，您可能想要提供更多時間給使用者，以在超過您設定的任何期限之後，還能安裝必要應用程式部署或軟體更新。 當電腦已關閉一段時間，而且需要安裝大量應用程式或更新部署時，通常可能會需要此設定。
 例如，如果使用者剛結束休假，他們可能必須等候很長的時間，讓逾期的應用程式部署完成安裝。
@@ -76,7 +77,7 @@ ms.openlocfilehash: a84d3ab55066d26c3199ea374d8beb472d66f43f
 如果您設定施行寬限期並選取此核取方塊，一旦應用程式安裝到期，就會在使用者所設定寬限期內的第一個非營業時間進行安裝。 不過如果需要，使用者仍可隨時開啟 [軟體中心] 並安裝應用程式。 過了寬限期後，就會強制還原為逾時部署的標準行為。
 [軟體更新部署精靈]、[自動部署規則精靈] 和 [內容] 頁面都已新增類似的選項。
 
-##  <a name="a-namedmpdevgausing-configuration-manager-as-a-managed-installer-with-device-guard"></a><a name="dmp_devg"></a>將 Configuration Manager 作為含 Device Guard 的受管理安裝程式
+##  <a name="dmp_devg"></a>將 Configuration Manager 作為含 Device Guard 的受管理安裝程式
 
 Device Guard 是 Windows 10 功能，它使用硬體和軟體功能來嚴格控制可在裝置上執行的功能。
 
@@ -101,7 +102,7 @@ Device Guard 是 Windows 10 功能，它使用硬體和軟體功能來嚴格控�
 - [Device Guard 憑證和相容性](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-certification-and-compliance)
 - [Device Guard 部署指南](https://technet.microsoft.com/itpro/windows/keep-secure/device-guard-deployment-guide)
 
- ##  <a name="a-namedmponprema-multiple-device-management-points-for-on-premises-mobile-device-management"></a><a name="dmp_onprem"></a> 針對內部部署行動裝置管理提供多個裝置管理點  
+ ##  <a name="dmp_onprem"></a> 針對內部部署行動裝置管理提供多個裝置管理點  
  在 Technical Preview 1606 中，內部部署行動裝置管理 (MDM) 支援 Windows 10 年度更新版中的一項新功能，該功能會自動設定已註冊的裝置，以提供多個可供使用的裝置管理點。 這項功能允許在通常使用的裝置無法使用時，以其他裝置管理點代替。 這項功能只適用於安裝 Windows 10 年度更新版的電腦。  
 
 ### <a name="try-it-out"></a>試試看！  
@@ -112,7 +113,7 @@ Device Guard 是 Windows 10 功能，它使用硬體和軟體功能來嚴格控�
 
 如需如何準備站台及註冊裝置以進行內部部署行動裝置管理的資訊，請參閱[在 System Center Configuration Manager 中使用內部部署基礎結構管理行動裝置](../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)。  
 
-## <a name="a-namecloudproxyacloud-proxy-service-for-managing-clients-on-the-internet"></a><a name="cloud_proxy"></a>用於管理網際網路上之用戶端的雲端 Proxy 服務
+## <a name="cloud_proxy"></a>用於管理網際網路上之用戶端的雲端 Proxy 服務
 
 雲端 Proxy 服務提供簡單的方法，管理網際網路上的 Configuration Manager 用戶端。 部署至 Microsoft Azure 且需要 Azure 訂用帳戶的服務，使用稱為雲端 Proxy 連接器端點的新角色，連線到內部部署的 Configuration Manager 基礎結構。 在它完全部署及設定好後，用戶端將能夠存取內部部署的 Configuration Manager 站台系統角色，不論它們是連線到內部的私人網路還是網際網路。
 
@@ -217,7 +218,7 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 
 用戶端取得雲端 Proxy 服務的新位置資訊之後，請嘗試檢查內部私人網路上不再存在但可存取網際網路之用戶端的狀態。 您也可以監視雲端 Proxy 服務上的流量，請移至 [管理] > [雲端服務] > [雲端 Proxy 服務]，選取清單窗格中的服務，然後檢視詳細資料窗格中的流量資訊。   
 
-## <a name="a-namemanageo365amanage-the-office-365-client-agent-in-configuration-manager"></a><a name="manage_o365"></a>在 Configuration Manager 中管理 Office 365 用戶端代理程式  
+## <a name="manage_o365"></a>在 Configuration Manager 中管理 Office 365 用戶端代理程式  
 
 從 Technical Preview 1606 開始，您可以使用 Configuration Manager 用戶端代理程式設定 (而不是群組原則)，讓 Office 365 用戶端從 Configuration Manager 接收更新。 在設定這項設定並部署 Office 365 更新之後，Configuration Manager 用戶端代理程式會與 Office 365 用戶端代理程式進行通訊，從發佈點下載 Office 365 更新並安裝它們。 Configuration Manager 也採用用戶端代理程式設定的清查。
 
@@ -229,13 +230,13 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 3. 按一下 [軟體更新]，然後針對 [啟用管理 Office 365 用戶端代理程式] 設定選取 [是]。  
 
 
-## <a name="a-nameosdpreservedriveletterathe-osdpreservedriveletter-task-sequence-variable-has-been-deprecated"></a><a name="osdpreservedriveletter"></a>OSDPreserveDriveLetter 工作順序變數已被取代
+## <a name="osdpreservedriveletter"></a>OSDPreserveDriveLetter 工作順序變數已被取代
 OSDPreserveDriveLetter 工作順序變數決定工作順序將作業系統映像套用至目的地電腦時，是否要使用該映像 WIM 檔中所擷取的磁碟機代號。
 - 此工作順序變數在 Technical Preview 1606 中已被取代。
 
 在作業系統部署期間，Windows 安裝程式現在預設會決定要使用的最佳磁碟機代號 (通常是 C:)。 如果您想要指定使用不同的磁碟機，您可以在「套用作業系統」工作順序步驟中變更位置。 移至 [請選取要套用此作業系統的位置] 設定，選取 [特定邏輯磁碟機代號]，然後選擇您想要使用的磁碟機。 目的地電腦上必須有指派您所選擇之代號的磁碟機。 
 
-## <a name="a-nameupdatesandservicingachanges-for-the-updates-and-servicing-node"></a><a name="updatesandservicing"></a>更新和服務節點有所變更
+## <a name="updatesandservicing"></a>更新和服務節點有所變更
 在 Technical Preview 1606 中，引進了適用於 Configuration Manager 主控台之 [更新與服務] 的數項變更：
 - **節點名稱變更：**
 
@@ -264,9 +265,4 @@ OSDPreserveDriveLetter 工作順序變數決定工作順序將作業系統映像
 -   **進入生產階段前已重新命名的選項︰**
 
     在 [更新與服務] 節點中，原稱為 [用戶端選項] 的按鈕現在已重新命名為 [將生產階段前用戶端升階]。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 
