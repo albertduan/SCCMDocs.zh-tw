@@ -17,9 +17,9 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 32190ec39af2cf1568b3d57c2c2f25d9ff2f9e20
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: 8c7bf901caa49c8585a9ed3913d4a5a2aac57013
+ms.openlocfilehash: 82f7db908f83d69a86c82ed97b845ff84e78f8b3
+ms.lasthandoff: 03/21/2017
 
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的行動裝置 VPN 設定檔
@@ -32,22 +32,22 @@ ms.lasthandoff: 03/06/2017
 
  當您建立 VPN 設定檔時，您可以在其中加入各種安全性設定，包括藉由使用 System Center Configuration Manager 憑證設定檔佈建的伺服器驗證憑證和用戶端驗證憑證。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](../../protect/deploy-use/introduction-to-certificate-profiles.md)。  
 
- ## <a name="vpn-profiles-when-using-configuration-manager-together-with-intune"></a>使用 Configuration Manager 和 Intune 時的 VPN 設定檔 
- 
+ ## <a name="vpn-profiles-when-using-configuration-manager-together-with-intune"></a>使用 Configuration Manager 和 Intune 時的 VPN 設定檔
+
  若要將設定檔部署到 iOS、Android、Windows Phone 和 Windows 8.1 裝置，這些裝置必須在 Microsoft Intune 註冊。 其他平台上的裝置也可以註冊至 Intune。 如需如何註冊的資訊，請參閱[註冊裝置以在 Intune 中管理](https://technet.microsoft.com/en-us/library/dn646962.aspx)。 此表格顯示各裝置平台支援的連線類型︰  
 
  |連線類型|iOS 與 Mac OS X|Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 與行動裝置版|  
  |---------------------|----------------------|-------------|-----------------|----------------|--------------------|-----------------------|-----------------------------------|  
  |Cisco AnyConnect|是|是|否|否|否|否|是 (OMA-URI)|  
- |Pulse Secure|是|是|是|否|是|是|是|  
- |F5 Edge Client|是|是|是|否|是|是|是|  
- |Dell SonicWALL Mobile Connect|是|是|是|否|是|是|是|  
- |檢查點行動 VPN|是|是|是|否|是|是|是|  
- |Microsoft SSL (SSTP)|否|否|是|是|是|否|否|  
- |Microsoft Automatic|否|否|是|是|是|否|是 (OMA-URI)|  
- |IKEv2|是 (自訂原則)|否|是|是|是|是|是 (OMA-URI)|  
- |PPTP|是|否|是|是|是|否|是 (OMA-URI)|  
- |L2TP|是|否|是|是|是|否|是 (OMA-URI)|  
+ |Pulse Secure|是|[是]|是|否|是|[是]|是|  
+ |F5 Edge Client|是|[是]|是|否|是|[是]|是|  
+ |Dell SonicWALL Mobile Connect|是|[是]|是|否|是|[是]|是|  
+ |檢查點行動 VPN|是|[是]|是|否|是|[是]|是|  
+ |Microsoft SSL (SSTP)|否|否|是|[是]|是|否|否|  
+ |Microsoft Automatic|否|否|是|[是]|是|否|是 (OMA-URI)|  
+ |IKEv2|是 (自訂原則)|否|是|[是]|[是]|是|是 (OMA-URI)|  
+ |PPTP|是|否|是|[是]|是|否|是 (OMA-URI)|  
+ |L2TP|是|否|是|[是]|是|否|是 (OMA-URI)|  
 
 ## <a name="create-vpn-profiles"></a>建立 VPN 設定檔
 [如何在 System Center Configuration Manager 中建立 VPN 設定檔](../../protect/deploy-use/create-vpn-profiles.md)提供有關建立 VPN 設定檔的一般資訊。
@@ -91,7 +91,7 @@ ms.lasthandoff: 03/06/2017
 
         -   **每次登入時記住使用者認證**：記住使用者認證，以便使用者不需在每次登入時都要輸入認證。  
 
-        -   **選取用戶端憑證以進行用戶端驗證** - 選取先前建立的用戶端 [SCEP 憑證](introduction-to-certificate-profiles.md)，用來驗證 VPN 連線。   
+        -   **選取用戶端憑證以進行用戶端驗證** - 選取先前建立的用戶端 [SCEP 憑證](create-pfx-certificate-profiles.md)，用來驗證 VPN 連線。   
 
             > [!NOTE]  
             >  對於 iOS 裝置，您所選取的 SCEP 設定檔會內嵌在 VPN 設定檔中。 對於其他平台，會加入適用性規則以確保當憑證不存在或不符合規範時，不會安裝 VPN 設定檔。  

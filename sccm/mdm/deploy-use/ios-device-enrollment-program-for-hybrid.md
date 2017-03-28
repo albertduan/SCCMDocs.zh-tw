@@ -16,9 +16,9 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
-ms.openlocfilehash: 4222ca27e19ade46d53f8cd4598643ddd4fd5c8f
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 2ace86cc842d6a3a5b2114c4e4c33c2d65c2f256
+ms.lasthandoff: 03/21/2017
 
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>適用於 Configuration Manager 混合式部署的 iOS 裝置註冊計畫 (DEP) 註冊
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/24/2017
 ###  <a name="enable-dep-enrollment-in-configuration-manager-with-intune"></a>啟用搭配 Intune 之 Configuration Manager 中的 DEP 註冊  
 
 1.  **開始使用 Configuration Manager 管理 iOS 裝置**   
-    您必須先完成[設定混合式行動裝置管理](../../mdm/deploy-use/setup-hybrid-mdm.md)的步驟 (包括[支援 iOS 註冊的步驟](../deploy-use/setup-hybrid-mdm.md#ios-and-mac-enrollment-setup)) 之後，才能註冊 iOS 裝置註冊計畫 (DEP) 的裝置。
+    您必須先完成[設定混合式行動裝置管理](../../mdm/deploy-use/setup-hybrid-mdm.md)的步驟 (包括[支援 iOS 註冊的步驟](../deploy-use/enroll-hybrid-ios-mac.md)) 之後，才能註冊 iOS 裝置註冊計畫 (DEP) 的裝置。
 
 2.  **建立 DEP 權杖要求**   
     在 Configuration Manager 主控台的 [系統管理] 工作區中，依序展開 [階層設定]、[雲端服務]，然後按一下 [Windows Intune 訂閱]。 在 [首頁] 索引標籤上按一下 [建立 DEP 權杖要求]，按一下 [瀏覽] 指定 DEP 權杖要求的下載位置，然後按一下 [下載]。 將 DEP 權杖要求 (.pem) 檔案儲存在本機。 這個 .pem 檔案會用於向 Apple 裝置註冊計畫入口網站要求信任的權杖 (.p7m)。  
@@ -78,7 +78,7 @@ ms.lasthandoff: 01/24/2017
 
     2.  在 [裝置註冊方案]  頁面上，指定下列資訊，然後按 [下一步] 。  
 
-        -   **部門**：使用者在啟用期間點選 [About Configuration] (關於設定) 時，會顯示這項資訊。  
+        -   **部門**：使用者在啟用期間點選 [About Configuration]\(關於設定) 時，會顯示這項資訊。  
 
         -   **支援電話號碼**：使用者在啟用期間按一下 [需要協助] 按鈕時顯示。  
 

@@ -13,12 +13,13 @@ ms.topic: get-started-article
 ms.assetid: c1d71899-308f-49d5-adfa-3a3ec0163ed8
 caps.latest.revision: 10
 caps.handback.revision: 0
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 192c3685092df6310b7129877c7fb5dfd9ef7ad5
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
 本文包含 System Center Configuration Manager 中的用戶端以及由 Exchange Server 連接器所管理之行動裝置的安全性與隱私權資訊：  
 
-##  <a name="a-namebkmksecuritycliientsa-security-best-practices-for-clients"></a><a name="BKMK_Security_Cliients"></a> 用戶端的安全性最佳做法  
+##  <a name="BKMK_Security_Cliients"></a> 用戶端的安全性最佳做法  
  當 Configuration Manager 接受來自執行 Configuration Manager 用戶端之裝置的資料時，可能會引發用戶端攻擊網站的風險。 例如傳送格式錯誤的清查，或者嘗試使網站系統超載。 因此，只能將 Configuration Manager 用戶端部署至您信任的裝置。 此外，使用以下安全性最佳作法有助於保護網站不受 Rogue 或遭盜用的裝置攻擊：  
 
  **使用公開金鑰基礎結構 (PKI) 憑證，以執行 IIS 的站台系統進行用戶端通訊。**  
@@ -146,7 +147,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
  此用戶端設定允許 Configuration Manager 用戶端執行未簽署的 PowerShell 指令碼，如此可能會造成用戶端電腦執行惡意程式。 如果您必須選取此選項，請使用自訂用戶端設定，並只將其指派至必須執行未簽署之 PowerShell 指令碼的用戶端電腦。  
 
-##  <a name="a-namebkmkmobilea-security-best-practices-for-mobile-devices"></a><a name="bkmk_mobile"></a> 行動裝置的安全性最佳做法  
+##  <a name="bkmk_mobile"></a> 行動裝置的安全性最佳做法  
  **您以 Configuration Manager 註冊且支援網際網路的行動裝置：將註冊 proxy 點安裝在周邊網路，並將註冊點安裝在內部網路**  
 
  此角色隔離有助於保護註冊點不受攻擊。 如果註冊點受到破壞，攻擊者可以取得憑證進行驗證，並且盜取註冊行動裝置的使用者認證。  
@@ -199,7 +200,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
  如需 Exchange Server 連接器所需之基本 Cmdlet 的清單，請參閱[使用 System Center Configuration Manager 和 Exchange 管理行動裝置](../../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)。  
 
-##  <a name="a-namebkmkmacsa-security-best-practices-for-macs"></a><a name="bkmk_macs"></a> Mac 的安全性最佳做法  
+##  <a name="bkmk_macs"></a> Mac 的安全性最佳做法  
  **對於 Mac 電腦：儲存和存取來自安全位置的用戶端來源檔案。**  
 
  Configuration Manager 不會確認用戶端來源檔案是否已遭竄改。 請從信任的來源下載這些檔案並且以安全的方式儲存和存取。  
@@ -208,7 +209,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
  為確保業務連續性，請監視並追蹤您用於 Mac 電腦的憑證有效期。 Configuration Manager 不支援此憑證的自動更新，憑證即將到期時也不會對您提出警告。 通常有效期限為 1 年。  
 
- 如需如何更新憑證的資訊，請參閱  [Renewing the Mac Client Certificate Manually](../../../../core/clients/deploy/deploy-clients-to-macs.md#BKMK_Man)。  
+ 如需如何更新憑證的資訊，請參閱  [Renewing the Mac Client Certificate Manually](../../../../core/clients/deploy/deploy-clients-to-macs.md#renewing-the-mac-client-certificate)。  
 
  **對於 Mac 電腦：您可以考慮只設定信任的根 CA 憑證至 SSL 通訊協定，以防權限提升。**  
 
@@ -237,7 +238,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
 6.  關閉對話方塊，然後在收到提示時輸入系統管理員的密碼，然後按一下 [更新設定]。  
 
-##  <a name="a-namebkmksecurityissuesclientsa-security-issues-for-configuration-manager-clients"></a><a name="BKMK_SecurityIssues_Clients"></a> Configuration Manager 用戶端的安全性問題  
+##  <a name="BKMK_SecurityIssues_Clients"></a> Configuration Manager 用戶端的安全性問題  
  以下安全性問題並未降低：  
 
 -   狀態訊息未經驗證  
@@ -282,7 +283,7 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
      如果 Windows Embedded 裝置在執行 Windows 7 之前的作業系統，而且使用者嘗試在停用寫入篩選器時登入，以認可 Configuration Manager 所做的變更時，帳戶鎖定前所允許的錯誤登入次數會有效減半。 例如，假設 [帳戶鎖定閾值]  設定為 6，而使用者輸入錯誤密碼 3 次，便會鎖定帳戶，以有效建立服務阻斷情況。  在此案例中，如果使用者必須登入內嵌裝置，請警告使用者鎖定閥值可能會降低。  
 
-##  <a name="a-namebkmkprivacycliientsa-privacy-information-for-configuration-manager-clients"></a><a name="BKMK_Privacy_Cliients"></a> Configuration Manager 用戶端的隱私權資訊  
+##  <a name="BKMK_Privacy_Cliients"></a> Configuration Manager 用戶端的隱私權資訊  
  當您部署 Configuration Manager 用戶端時，會啟用用戶端設定，如此就可以使用 Configuration Manager 管理功能。 無論 Configuration Manager 階層中的用戶端是直接連線至公司網路、透過遠端工作階段連線，或是連線至網路網路 (受 Configuration Manager 支援)，您用來設定功能的設定皆可套用至階層中的所有用戶端。  
 
  存放在 Configuration Manager 資料庫中的用戶端資訊，不會傳送給 Microsoft。 資訊會保留在資料庫裡，直到每 90 天由網站維護工作 [刪除過時探索資料]  刪除為止。 您可以設定刪除間隔。  
@@ -299,15 +300,10 @@ ms.openlocfilehash: 6e76c3ae104c0561a5c7b178823b7a48761518fe
 
  透過用戶端狀態檢查安裝 Configuration Manager 用戶端之前，請考量您的隱私權需求。  
 
-##  <a name="a-namebkmkprivacyexchangeconnectora-privacy-information-for-mobile-devices-that-are-managed-with-the-exchange-server-connector"></a><a name="BKMK_Privacy_ExchangeConnector"></a> 使用 Exchange Server 連接器所管理的行動裝置隱私權資訊  
+##  <a name="BKMK_Privacy_ExchangeConnector"></a> 使用 Exchange Server 連接器所管理的行動裝置隱私權資訊  
  Exchange Server 連接器會藉由 ActiveSync 通訊協定尋找並管理連接至 Exchange Server (內部部署或託管) 的裝置。 Exchange Server 連接器找到的記錄會儲存在 Configuration Manager 資料庫內。 此資訊會從 Exchange Server 進行收集。 伺服器不包含來自行動裝置傳送至 Exchange Server 的任何額外資訊。  
 
  行動裝置資訊不會傳送給 Microsoft。 行動裝置資訊儲存在 Configuration Manager 資料庫中。 資訊會保留在資料庫裡，直到每 90 天由網站維護工作 [刪除過時探索資料]  刪除為止。 您可以設定刪除間隔。  
 
  安裝並設定 Exchange Server 連接器之前，請考量您的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

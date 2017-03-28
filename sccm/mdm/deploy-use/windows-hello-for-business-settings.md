@@ -16,9 +16,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 2bacc7cb9a903fa5fde7c8867f516b04847e1172
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: 8c7bf901caa49c8585a9ed3913d4a5a2aac57013
+ms.openlocfilehash: 7ac2baeb3c10ce90eb643fa28a953186b571d037
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -34,7 +34,7 @@ Windows Hello 企業版可讓您藉由 **使用者手勢** 登入，而不使用
 
 -   您可以使用 Configuration Manager 控制使用者可以/不可用以登入的筆勢。  
 
--   您可以將驗證憑證儲存在 Windows Hello 企業版金鑰儲存提供者 (KSP) 中。 如需詳細資訊，請參閱[憑證設定檔](introduction-to-certificate-profiles.md)。  
+-   您可以將驗證憑證儲存在 Windows Hello 企業版金鑰儲存提供者 (KSP) 中。 如需詳細資訊，請參閱[憑證設定檔](create-pfx-certificate-profiles.md)。  
 
 - 您可以將 Windows Hello 企業版原則部署至執行 Configuration Manager 用戶端且已加入網域的 Windows 10 裝置。 [在已加入網域的 Windows 10 裝置上設定 Windows Hello 企業版](../../protect/deploy-use/windows-hello-for-business-settings.md#configure-windows-hello-for-business-on-domain-joined-windows-10-devices)中有此設定的說明。 當您使用 Configuration Manager 與 Intune (混合) 時，您可以在 Windows 10 和 Windows 10 行動裝置上設定這些設定，但不能在執行 Configuration Manager 用戶端且加入網域的裝置上設定。   
 

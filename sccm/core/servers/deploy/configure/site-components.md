@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9e170271e1b690289085e80eeff453219bc24010
-ms.openlocfilehash: 9a61162cb992c1947a4ad52b51710740a1b6c4c6
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
+ms.openlocfilehash: 83550fbf0ef1f9adb0bb2c51a4f3c26a7500d352
+ms.lasthandoff: 03/21/2017
 
 
 ---
@@ -69,7 +69,7 @@ ms.lasthandoff: 02/28/2017
     -   Configuration Manager 中管理點的指定完整網域名稱 (FQDN) 在 DNS 中包含主機項目 (A 或 AAA 記錄)。  
 
     > [!WARNING]  
-    >  對於要尋找 DNS 中所發行之管理點的用戶端，您必須將用戶端指派給特定站台，而不是使用自動站台指派。 設定這些用戶端，透過其管理點的網域尾碼來使用站台碼。 如需詳細資訊，請參閱[如何將用戶端指派給 System Center Configuration Manager 中的站台](../../../../core/clients/deploy/assign-clients-to-a-site.md)中的[尋找管理點](../../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_LocatingMPs)。  
+    >  對於要尋找 DNS 中所發行之管理點的用戶端，您必須將用戶端指派給特定站台，而不是使用自動站台指派。 設定這些用戶端，透過其管理點的網域尾碼來使用站台碼。 如需詳細資訊，請參閱[如何將用戶端指派給 System Center Configuration Manager 中的站台](/sccm/core/clients/deploy/assign-clients-to-a-site)中的[尋找管理點](/sccm/core/clients/deploy/assign-clients-to-a-site#locating-management-points)。  
 
      如果 Configuration Manager 用戶端無法使用 Active Directory 網域服務或 DNS 在內部網路上尋找管理點，則會使用 [WINS](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md#bkmk_wins)。 為此站台安裝的第一個管理點設定為接受內部網路的 HTTP 用戶端連線時，即會自動發行到 WINS。  
 
