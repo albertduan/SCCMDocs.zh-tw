@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 
 使用下列資訊可協助您監視和規劃 System Center Configuration Manager 的電源管理。  
 
-##  <a name="a-namebkmkhowtousereportsa-how-to-use-reports-for-power-management"></a><a name="BKMK_How_to_use_reports"></a> 如何使用電源管理的報告  
+##  <a name="BKMK_How_to_use_reports"></a> 如何使用電源管理的報告  
  Configuration Manager 的電源管理功能包含數份報告，可協助您分析組織的耗電量和電腦電源設定。 這些報告也可以協助您疑難排解問題。  
 
  開始使用電源管理報告之前，您必須先設定報告階層。 如需 Configuration Manager 報告的詳細資訊，請參閱 [System Center Configuration Manager 中的報告](../../../../core/servers/manage/reporting.md)。  
@@ -45,7 +46,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 > [!NOTE]  
 >  電源管理報告會顯示所選集合的實體電腦和虛擬電腦數目。 不過，電源管理報告只會顯示實體電腦的電源管理資訊。  
 
-###  <a name="a-namebkmkactivitya-computer-activity-report"></a><a name="BKMK_Activity"></a> 電腦活動報告  
+###  <a name="BKMK_Activity"></a> 電腦活動報告  
  [電腦活動]  報告顯示的圖表說明指定集合在指定時段的下列活動：  
 
 -   **電腦啟動** – 電腦已開啟。  
@@ -80,7 +81,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |-----------------|-------------|  
 |**電腦活動詳細資料**|按一下 [按一下取得詳細資訊]  連結，查看指定日期的作用中、非作用中和未回報電腦的清單。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Activity Details Report](#BKMK_Activity_Details) 。|  
 
-###  <a name="a-namebkmkcompactivitybycomputera-computer-activity-by-computer-report"></a><a name="BKMK_Comp_Activity_by_computer"></a> 每部電腦的電腦活動報告  
+###  <a name="BKMK_Comp_Activity_by_computer"></a> 每部電腦的電腦活動報告  
  [每部電腦的電腦活動]  報告顯示的圖表說明指定電腦在指定日期的有下列活動：  
 
 -   **電腦啟動** – 電腦已開啟。  
@@ -114,7 +115,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |-----------------|-------------|  
 |**電腦詳細資料**|按一下 [按一下取得詳細資訊]  連結，查看所選電腦的電池容量、電源設定，和套用的電源計劃。|  
 
-###  <a name="a-namebkmkactivitydetailsa-computer-activity-details-report"></a><a name="BKMK_Activity_Details"></a> Computer Activity Details report  
+###  <a name="BKMK_Activity_Details"></a> Computer Activity Details report  
  [電腦活動詳細資料]  報告會顯示作用中或非作用中電腦的清單，並附上其睡眠和喚醒功能。 這份報告是由 [Computer Activity Report](#BKMK_Activity) 呼叫，而且不是直接由網站管理員執行。  
 
  請使用下列參數設定這份報告。  
@@ -127,11 +128,11 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |**集合名稱**|從下拉式清單中選取這份報告要使用的集合。|  
 |**報告日期**|從下拉式清單中選取用於這份報告的日期。|  
 |**報告時間**|從下拉式清單中，選取指定日期的某個小時，這是執行這份報告的時間。 有效值為 **上午 12 點** 到 **晚上 11 點**之間。|  
-|**電腦狀態**|從下拉式清單中，選取執行這份報告的電腦狀態。 有效值為 [全部] (已開啟或關閉的電腦)、[開啟] (已開啟的電腦) 和 [關閉] (已關閉、處於睡眠狀態或處於休眠狀態的電腦)。 只會針對選擇的報告期間傳回這些值。|  
-|**裝置類型：**|從下拉式清單中，選取您想要報告的電腦類型。 有效值為 [全部] (桌上型和可攜式電腦)、[桌上型電腦] (僅限桌上型電腦) 和 [膝上型電腦] (僅限可攜式電腦)。 只會針對選擇的報告期間傳回這些值。|  
-|**睡眠功能**|從下拉式清單中，選取是否要在報告中顯示電腦有睡眠功能。 有效值為 [全部] (可以進入睡眠狀態和無法進入睡眠狀態的電腦)、[否] (無法進入睡眠狀態的電腦) 和 [是] (可以進入睡眠狀態的電腦)。|  
-|**從睡眠狀態喚醒**|從下拉式清單中，選取是否要在報告中顯示電腦可從睡眠狀態喚醒。 有效值為 [全部] (可以從睡眠狀態喚醒和無法從睡眠狀態喚醒的電腦)、[否] (無法從睡眠狀態喚醒的電腦) 和 [是] (可以從睡眠狀態喚醒的電腦)。|  
-|**電源計劃**|從下拉式清單中，選取您想要在報告中顯示的電源計劃類型。 有效值為 [全部] (未套用任何電源管理計劃的電腦；已套用電源管理計劃的電腦；排除不進行電源管理的電腦)、[未指定] (未套用電源管理計劃的電腦)、[已定義] (已套用電源管理計劃的電腦) 和 [已排除] (排除不進行電源管理的電腦)。|  
+|**電腦狀態**|從下拉式清單中，選取執行這份報告的電腦狀態。 有效值為 [全部]\(已開啟或關閉的電腦)、[開啟]\ (已開啟的電腦) 和 [關閉]\(已關閉、處於睡眠狀態或處於休眠狀態的電腦)。 只會針對選擇的報告期間傳回這些值。|  
+|**裝置類型：**|從下拉式清單中，選取您想要報告的電腦類型。 有效值為 [全部]\(桌上型和可攜式電腦)、[桌上型電腦] (僅限桌上型電腦) 和 [膝上型電腦]\(僅限可攜式電腦)。 只會針對選擇的報告期間傳回這些值。|  
+|**睡眠功能**|從下拉式清單中，選取是否要在報告中顯示電腦有睡眠功能。 有效值為 [全部]\(可以進入睡眠狀態和無法進入睡眠狀態的電腦)、[否]\(無法進入睡眠狀態的電腦) 和 [是]\(可以進入睡眠狀態的電腦)。|  
+|**從睡眠狀態喚醒**|從下拉式清單中，選取是否要在報告中顯示電腦可從睡眠狀態喚醒。 有效值為 [全部]\(可以從睡眠狀態喚醒和無法從睡眠狀態喚醒的電腦)、[否]\(無法從睡眠狀態喚醒的電腦) 和 [是]\(可以從睡眠狀態喚醒的電腦)。|  
+|**電源計劃**|從下拉式清單中，選取您想要在報告中顯示的電源計劃類型。 有效值為 [全部]\(未套用任何電源管理計劃的電腦；已套用電源管理計劃的電腦；排除不進行電源管理的電腦)、[未指定] (未套用電源管理計劃的電腦)、[已定義]\(已套用電源管理計劃的電腦) 和 [已排除]\(排除不進行電源管理的電腦)。|  
 |**作業系統**|從下拉式清單中，選取您想要在報告中顯示的電腦作業系統，或選取 [全部]  顯示所有的作業系統。|  
 
 #### <a name="hidden-report-parameters"></a>隱藏的報告參數  
@@ -144,7 +145,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |-----------------|-------------|  
 |**Computer Activity by Computer**|按一下電腦名稱，查看該電腦在所選擇報告期間的特定活動。 這些活動包括 [電腦開啟] (是否已開啟電腦？)、[監視器開啟] (是否已開啟監視器？) 和 [使用者正在使用中] (已透過電腦的滑鼠、鍵盤或遠端桌面連線偵測到活動)。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Activity by Computer Report](#BKMK_Comp_Activity_by_computer) 。|  
 
-###  <a name="a-namebkmkcomputerdetailsa-computer-details-report"></a><a name="BKMK_Computer_Details"></a> 電腦詳細資料報告  
+###  <a name="BKMK_Computer_Details"></a> 電腦詳細資料報告  
  [電腦詳細資料]  報告顯示指定電腦所套用的電池容量、電源設定和電源計劃的詳細資訊。 這份報告是由 [每部電腦的電腦活動]  報告、[具有多個電源計劃的電腦]  報告、[電池容量]  報告和 [電源設定詳細資料]  報告呼叫。 它不是直接由網站管理員執行。  
 
 #### <a name="required-report-parameters"></a>必要的報告參數  
@@ -161,7 +162,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 #### <a name="report-links"></a>報告連結  
  這份報告未連結到任何其他電源管理報告。  
 
-###  <a name="a-namebkmknotreportinga-computer-not-reporting-details-report"></a><a name="BKMK_Not_Reporting"></a> 未回報詳細資料的電腦報告  
+###  <a name="BKMK_Not_Reporting"></a> 未回報詳細資料的電腦報告  
  [未回報詳細資料的電腦]  報告會顯示指定集合中未回報指定日期和時間任何電源活動的電腦清單。 這份報告是由 **Computer Activity Report** 呼叫，而且不是直接由網站管理員執行。  
 
 > [!NOTE]  
@@ -185,7 +186,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 #### <a name="report-links"></a>報告連結  
  這份報告未連結到任何其他電源管理報告。  
 
-###  <a name="a-namebkmkexcludeda-computers-excluded"></a><a name="BKMK_Excluded"></a> 排除的電腦  
+###  <a name="BKMK_Excluded"></a> 排除的電腦  
  [排除的電腦] 報告會顯示指定集合中從 Configuration Manager 電源管理排除的電腦清單。  
 
  請使用下列參數設定這份報告。  
@@ -208,7 +209,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |-----------------|-------------|  
 |**電腦電源詳細資料**|按一下電腦名稱查看所選電腦的電池容量、電源設定，和套用的電源計劃。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Details Report](#BKMK_Computer_Details) 。|  
 
-###  <a name="a-namebkmkmultiplea-computers-with-multiple-power-plans"></a><a name="BKMK_Multiple"></a>   
+###  <a name="BKMK_Multiple"></a>   
  [具有多個電源計劃的電腦]  報告會顯示身兼多個集合成員的電腦清單，每個集合都套用不同的電源計劃。 針對電源設定可能發生衝突的每一部電腦，報告會顯示電腦名稱以及電腦所屬之每個集合要套用的電源計劃。  
 
 > [!IMPORTANT]  
@@ -235,7 +236,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |-----------------|-------------|  
 |**電腦電源詳細資料**|按一下電腦名稱查看所選電腦的電池容量、電源設定，和套用的電源計劃。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Details Report](#BKMK_Computer_Details) 。|  
 
-###  <a name="a-namebkmkconsumptiona-energy-consumption-report"></a><a name="BKMK_Consumption"></a> 能源消耗報告  
+###  <a name="BKMK_Consumption"></a> 能源消耗報告  
  [能源消耗]  報告會顯示下列資訊：  
 
 -   顯示指定集合的電腦在指定時段內每月總耗電量的圖表，單位為每小時千瓦 (kWh)。  
@@ -278,7 +279,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 #### <a name="report-links"></a>報告連結  
  這份報告未連結到任何其他電源管理報告。  
 
-###  <a name="a-namebkmkconsumptionbydaya-energy-consumption-by-day-report"></a><a name="BKMK_Consumption_by_Day"></a> 每日能源消耗報告  
+###  <a name="BKMK_Consumption_by_Day"></a> 每日能源消耗報告  
  [每日能源消耗]  報告會顯示下列資訊：  
 
 -   顯示指定集合的電腦在過去 31 天內每日總耗電量的圖表，單位為每小時千瓦 (kWh)。  
@@ -319,7 +320,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 #### <a name="report-links"></a>報告連結  
  這份報告未連結到任何其他電源管理報告。  
 
-###  <a name="a-namebkmkcosta-energy-cost-report"></a><a name="BKMK_Cost"></a> 能源成本報告  
+###  <a name="BKMK_Cost"></a> 能源成本報告  
  [能源成本]  報告會顯示下列資訊：  
 
 -   顯示指定集合的電腦在指定時段內每月電費總支出的圖表。  
@@ -361,7 +362,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 #### <a name="report-links"></a>報告連結  
  這份報告未連結到任何其他電源管理報告。  
 
-###  <a name="a-namebkmkcostbydaya-energy-cost-by-day-report"></a><a name="BKMK_Cost_by_Day"></a> 每日能源成本報告  
+###  <a name="BKMK_Cost_by_Day"></a> 每日能源成本報告  
  [每日能源成本]  報告會顯示下列資訊：  
 
 -   顯示指定集合的電腦在過去 31 天內每天電費總支出的圖表。  
@@ -401,7 +402,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 #### <a name="report-links"></a>報告連結  
  這份報告未連結到任何其他電源管理報告。  
 
-###  <a name="a-namebkmkenvironmentalimpacta-environmental-impact-report"></a><a name="BKMK_Environmental_Impact"></a> 環境影響報告  
+###  <a name="BKMK_Environmental_Impact"></a> 環境影響報告  
  [環境影響]  報告會顯示下列資訊：  
 
 -   顯示指定集合的電腦在指定時段內每月產生的 CO2 總量圖表 (以噸計)。  
@@ -442,7 +443,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 #### <a name="report-links"></a>報告連結  
  這份報告未連結到任何其他電源管理報告。  
 
-###  <a name="a-namebkmkenvironmentalimpactbydaya-environmental-impact-by-day-report"></a><a name="BKMK_Environmental_Impact_by_Day"></a> 每日環境影響報告  
+###  <a name="BKMK_Environmental_Impact_by_Day"></a> 每日環境影響報告  
  [每日環境影響]  報告會顯示下列資訊：  
 
 -   顯示指定集合的電腦在過去 31 天內每天產生的 CO2 總量的圖表 (以噸計)。  
@@ -479,7 +480,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 #### <a name="report-links"></a>報告連結  
  這份報告未連結到任何其他電源管理報告。  
 
-###  <a name="a-namebkmkinsomniacomputerdetailsa-insomnia-computer-details-report"></a><a name="BKMK_Insomnia_Computer_Details"></a> 無法休眠的電腦詳細資料報告  
+###  <a name="BKMK_Insomnia_Computer_Details"></a> 無法休眠的電腦詳細資料報告  
  [無法休眠的電腦詳細資料]  報告會顯示在指定時段內因特定原因未進入睡眠或休眠狀態的電腦清單。 這份報告是由 [無法休眠報告]  呼叫，而且不是直接由網站管理員執行。  
 
  [無法休眠報告]  會在電腦無法睡眠以及在整個指定報告間隔都開啟時，將其顯示為 **無法睡眠** 。 報告會在電腦無法休眠以及在整個指定報告間隔都開啟時，將其顯示為 **無法休眠** 。  
@@ -508,7 +509,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |-----------------|-------------|  
 |**電腦詳細資料**|按一下 [按一下取得詳細資訊]  連結，查看所選電腦的電池容量、電源設定，和套用的電源計劃。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Details Report](#BKMK_Computer_Details) 。|  
 
-###  <a name="a-namebkmkinsomniaa-insomnia-report"></a><a name="BKMK_Insomnia"></a> Insomnia report  
+###  <a name="BKMK_Insomnia"></a> Insomnia report  
  [無法休眠報告]  顯示妨礙電腦進入睡眠或休眠狀態的常見原因清單，以及在指定時段每個原因所影響的電腦數目。 妨礙電腦進入睡眠或休眠狀態的原因很多，例如某個在電腦上執行的處理序、某個開啟的遠端桌面工作階段，或是電腦不具睡眠或休眠功能。 在這份報告中，您可以開啟 [無法休眠的電腦詳細資料]  報告，它會顯示每個原因所影響的無法睡眠或休眠的電腦清單。  
 
  [電源無法休眠] 報告會在電腦無法睡眠以及在整個指定報告間隔都開啟時，將其顯示為 **無法睡眠** 。 報告會在電腦無法休眠以及在整個指定報告間隔都開啟時，將其顯示為 **無法休眠** 。  
@@ -536,7 +537,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |-----------------|-------------|  
 |**Insomnia Computer Details**|按一下 [受影響的電腦]  欄，查看因為所選原因而無法睡眠或休眠的電腦清單。<br /><br /> 如需詳細資訊，請參閱本主題的 [Insomnia Computer Details Report](#BKMK_Insomnia_Computer_Details) 。|  
 
-###  <a name="a-namebkmkcapabilitesa-power-capabilities-report"></a><a name="BKMK_Capabilites"></a> 電池容量報告  
+###  <a name="BKMK_Capabilites"></a> 電池容量報告  
  [電池容量]  報告顯示指定集合之電腦的電源管理硬體功能。 這份報告通常用在電源管理的監視階段，以判斷貴組織的電腦電源管理功能。 報告中顯示的資訊可用來建立要套用電源計劃，或從電源管理排除的電腦集合。 這份報告顯示的電源管理功能如下：  
 
 -   **睡眠功能** – 指出電腦在設定執行這項操作時，能否進入睡眠狀態。  
@@ -569,7 +570,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |-----------------|-------------|  
 |**電腦詳細資料**|按一下電腦名稱查看所選電腦的電池容量、電源設定，和套用的電源計劃。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Details Report](#BKMK_Computer_Details) 。|  
 
-###  <a name="a-namebkmksettingsa-power-settings-report"></a><a name="BKMK_Settings"></a> 電源設定報告  
+###  <a name="BKMK_Settings"></a> 電源設定報告  
  [電源設定]  報告顯示指定集合電腦所使用的電源設定彙總清單。 每項電源設定、可能的電源模式、值和單位都會顯示，還會顯示使用這些值的電腦數目計數。 這份報告可以用在電源管理的監視階段，協助系統管理員了解站台電腦現行使用的電源設定，以利使用電源管理計劃來規劃要套用的最佳電源設定。 若要驗證是否正確套用電源設定以疑難排解問題時，報告也很有用。  
 
 > [!NOTE]  
@@ -598,7 +599,7 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |-----------------|-------------|  
 |**Power Settings Details**|按一下 [電腦]  欄中的電腦數字 ，以查看該列中使用電源設定的所有電腦清單。<br /><br /> 如需詳細資訊，請參閱本主題的 [Power Settings Details Report](#BKMK_Settings_Details) 。|  
 
-###  <a name="a-namebkmksettingsdetailsa-power-settings-details-report"></a><a name="BKMK_Settings_Details"></a> Power Settings Details report  
+###  <a name="BKMK_Settings_Details"></a> Power Settings Details report  
  [電源設定詳細資料]  報告會顯示 [電源設定]  報告中所選電腦的進一步資訊。 這份報告是由 [電源設定]  報告呼叫，而且不是直接由網站管理員執行。  
 
 #### <a name="required-report-parameters"></a>必要的報告參數  
@@ -624,9 +625,4 @@ ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
 |報告名稱|詳細資料|  
 |-----------------|-------------|  
 |**電腦詳細資料**|按一下電腦名稱查看所選電腦的電池容量、電源設定，和套用的電源計劃。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Details Report](#BKMK_Computer_Details) 。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
