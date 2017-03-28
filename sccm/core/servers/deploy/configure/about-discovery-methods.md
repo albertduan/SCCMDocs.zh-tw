@@ -433,7 +433,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 
 差異探索並非獨立的探索方法，而是適用探索方法的可用選項。 差異探索會搜尋特定的 Active Directory 屬性，自適用的探索方法上次完整探索週期後是否有所變更。 屬性變更會提交至 Configuration Manager 資料庫以更新資源的探索記錄。  
 
-差異探索的執行週期預設為&5; 分鐘。 這比一般的完整探索週期排程更為頻繁。  如此頻繁的週期是可行的，因為差異探索使用的站台伺服器和網路資源比完整探索週期少。 使用差異探索時，您可以降低該探索方法的完整探索週期頻率。  
+差異探索的執行週期預設為 5 分鐘。 這比一般的完整探索週期排程更為頻繁。  如此頻繁的週期是可行的，因為差異探索使用的站台伺服器和網路資源比完整探索週期少。 使用差異探索時，您可以降低該探索方法的完整探索週期頻率。  
 
 以下是差異探索最常偵測到的變更：  
 
@@ -471,7 +471,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 您可以在 [Active Directory 探索內容] 及 [Active Directory 群組探索內容] 對話方塊的 [選項] 索引標籤上設定篩選。 選擇 [僅探索在指定時間登入網域的電腦] 選項。  
 
 > [!WARNING]  
->  當您設定此篩選及 [Filter stale records by computer password] (依電腦密碼篩選過時的記錄) 時，符合其中一項篩選準則的電腦就會從探索中排除。  
+>  當您設定此篩選及 [Filter stale records by computer password]\(依電腦密碼篩選過時的記錄) 時，符合其中一項篩選準則的電腦就會從探索中排除。  
 
 ###  <a name="bkmk_stalepassword"></a> 依電腦密碼篩選過時的記錄  
 可用於：  
@@ -491,7 +491,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 您可以在 [Active Directory 探索內容] 及 [Active Directory 群組探索內容] 對話方塊的 [選項] 索引標籤上設定篩選。 選擇 [僅探索在指定時間更新其電腦帳戶密碼的電腦] 選項。  
 
 > [!WARNING]  
->  當您設定此篩選及 [Filter stale records by domain logon] (依網域登入篩選過時的記錄) 時，符合其中一項篩選準則的電腦就會從探索中排除。  
+>  當您設定此篩選及 [Filter stale records by domain logon]\(依網域登入篩選過時的記錄) 時，符合其中一項篩選準則的電腦就會從探索中排除。  
 
 ###  <a name="bkmk_customAD"></a> 搜尋自訂的 Active Directory 屬性  
  可用於：  
