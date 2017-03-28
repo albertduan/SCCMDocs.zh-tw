@@ -25,9 +25,12 @@
 ###  [特性和功能](plan-design/changes/features-and-capabilities.md)
 ###  [Configuration Manager 2012 的變更內容](plan-design/changes/what-has-changed-from-configuration-manager-2012.md)
 ###  [累加版本的新功能](plan-design/changes/whats-new-incremental-versions.md)
+###  [1702 版的新功能](plan-design/changes/whats-new-in-version-1702.md)
 ###  [1610 版的新功能](plan-design/changes/whats-new-in-version-1610.md)
 ###  [1606 版的新功能](plan-design/changes/whats-new-in-version-1606.md)
-###  [1602 版的新功能](plan-design/changes/whats-new-in-version-1602.md)
+<!--
+###  [What's new in version 1602](plan-design/changes/whats-new-in-version-1602.md)
+-->
 ###  [已移除和已淘汰的功能](plan-design/changes/removed-and-deprecated-features.md)
 
 ##   [支援的設定](plan-design/configs/supported-configurations.md)
@@ -52,6 +55,7 @@
 #### [使用雲端發佈點](plan-design/hierarchy/use-a-cloud-based-distribution-point.md)
 #### [使用提取發佈點](plan-design/hierarchy/use-a-pull-distribution-point.md)
 #### [內容庫](plan-design/hierarchy/the-content-library.md)
+#### [內容庫清理工具](plan-design/hierarchy/content-library-cleanup-tool.md)
 #### [管理帳戶以存取內容](plan-design/hierarchy/manage-accounts-to-access-content.md)
 #### [Configuration Manager 用戶端的對等快取](plan-design/hierarchy/client-peer-cache.md)
 #### [內容來源位置案例](plan-design/hierarchy/content-source-location-scenarios.md)
@@ -69,10 +73,13 @@
 
 ##   [診斷和使用方式資料](plan-design/diagnostics/diagnostics-and-usage-data.md)
 ###  [診斷和使用方式資料的運用](plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)
-###  [1511 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511.md)
-###  [1602 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602.md)
-###  [1606 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
+###  [1702 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1702.md) 
 ###  [1610 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610.md)
+###  [1606 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
+<!--
+###  [Diagnostic data for 1511](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511.md)
+###  [Diagnostic data for 1602](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602.md)
+-->
 ###  [診斷和使用方式資料的收集方式](plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md)
 ###  [如何檢視診斷和使用方式資料](plan-design/diagnostics/view-diagnostics-and-usage-data.md)
 ###  [客戶經驗改進計畫 (CEIP)](plan-design/diagnostics/customer-experience-improvement-program-ceip.md)
@@ -102,10 +109,12 @@
 ###  [1605 中的功能](get-started/capabilities-in-technical-preview-1605.md)
 ###  [1604 中的功能](get-started/capabilities-in-technical-preview-1604.md)
 ###  [1603 中的功能](get-started/capabilities-in-technical-preview-1603.md)
-###  [1602 中的功能](get-started/capabilities-in-technical-preview-1602.md)
-###  [1601 中的功能](get-started/capabilities-in-technical-preview-1601.md)
-###  [1512 中的功能](get-started/capabilities-in-technical-preview-1512.md)
-###  [1511 中的功能](get-started/capabilities-in-technical-preview-1511.md)
+<!--
+###  [Capabilities in 1602](get-started/capabilities-in-technical-preview-1602.md)
+###  [Capabilities in 1601](get-started/capabilities-in-technical-preview-1601.md)
+###  [Capabilities in 1512](get-started/capabilities-in-technical-preview-1512.md)
+###  [Capabilities in 1511](get-started/capabilities-in-technical-preview-1511.md)
+-->
 
 ##   [在階層間移轉資料](migration/migrate-data-between-hierarchies.md)
 ###  [規劃移轉](migration/planning-for-migration.md)
@@ -120,7 +129,8 @@
 #### [規劃監視移轉](migration/planning-to-monitor-migration-activity.md)
 #### [規劃完成移轉](migration/planning-to-complete-migration.md)
 ###  [設定來源階層和來源站台](migration/configuring-source-hierarchies-and-source-sites-for-migration.md)
-###  [移轉作業](migration/operations-for-migration.md)###  [移轉的安全性及隱私權](migration/security-and-privacy-for-migration.md)
+###  [移轉的作業](migration/operations-for-migration.md)
+###  [移轉的安全性和隱私權](migration/security-and-privacy-for-migration.md)
 
 #    [部署伺服器和角色](servers/deploy/start-using.md)
 
@@ -134,6 +144,7 @@
 #### [安裝站台的必要條件](servers/deploy/install/prerequisites-for-installing-sites.md)
 #### [使用安裝精靈](servers/deploy/install/use-the-setup-wizard-to-install-sites.md)
 #### [使用命令列](servers/deploy/install/use-a-command-line-to-install-sites.md)
+##### [命令列選項](servers/deploy/install/command-line-options-for-setup.md)
 #### [安裝主控台](servers/deploy/install/install-consoles.md)
 #### [升級評估安裝](servers/deploy/install/upgrade-an-evaluation-install-to-a-full-install.md)
 #### [升級至 System Center Configuration Manager](servers/deploy/install/upgrade-to-configuration-manager.md)
@@ -157,6 +168,8 @@
 #### [選取探索方法](servers/deploy/configure/select-discovery-methods-to-use.md)
 #### [設定探索方法](servers/deploy/configure/configure-discovery-methods.md)
 ###  [站台界限和界限群組](servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)
+#### [界限](servers/deploy/configure/boundaries.md)
+#### [界限群組](servers/deploy/configure/boundary-groups.md)
 ###  [使用 SQL Server AlwaysOn](servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)
 ###  [使用 SQL Server 叢集](servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database.md)
 ###  [資料庫檔案的自訂位置](servers/deploy/configure/custom-locations-for-site-database-files.md)
@@ -164,6 +177,7 @@
 
 #    管理基礎結構
 ##   [維護工作](servers/manage/maintenance-tasks.md)
+###  [維護工作的參考](servers/manage/reference-for-maintenance-tasks.md)
 ##   [修改基礎結構](servers/manage/modify-your-infrastructure.md)
 ###  [CD.Latest 資料夾](servers/manage/the-cd.latest-folder.md)
 ##   [升級內部部署基礎結構](servers/manage/upgrade-on-premises-infrastructure.md)
@@ -176,14 +190,11 @@
 ###  [使用服務連接工具](servers/manage/use-the-service-connection-tool.md)
 ###  [使用更新註冊工具](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [使用 Hotfix 安裝程式](servers/manage/use-the-hotfix-installer-to-install-updates.md)
-<!--
-###  [Checklist for installing update 1702](servers/manage/checklist-for-installing-update-1702.md)
--->
+###  [安裝更新 1702 的檢查清單](servers/manage/checklist-for-installing-update-1702.md)
 ###  [安裝更新 1610 的檢查清單](servers/manage/checklist-for-installing-update-1610.md)
 ###  [安裝更新 1606 的檢查清單](servers/manage/checklist-for-installing-update-1606.md)
-<!-- Deprecated from Content:
+<!-- Deprecated from Content - still published but out of TOC:
 ###  [Checklist for installing update 1602](servers/manage/checklist-for-installing-update-1602.md)
-###  [Support for current branch versions](servers/manage/current-branch-versions-supported.md)  
 -->
 ###  [最新分支版本支援](servers/manage/current-branch-versions-supported.md)  
 

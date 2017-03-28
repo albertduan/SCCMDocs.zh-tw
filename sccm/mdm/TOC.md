@@ -39,6 +39,7 @@
 ### [Windows Phone](deploy-use/create-configuration-items-for-windows-phone-devices-managed-without-the-client.md)
 ### [iOS 和 Mac OS X](deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)
 ### [Android 和 Samsung KNOX Standard](deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)
+### [Android for Work](deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client.md)
 
 ## [同步處理 Intune 註冊裝置](deploy-use/sync-intune-device.md)
 
@@ -71,10 +72,11 @@
 ### [管理對 O365 服務的電腦存取](deploy-use/manage-access-to-o365-services-for-pcs-managed-by-sccm.md)
 
 ## [依據風險管理存取](deploy-use/manage-access-based-on-device-network-app-risk.md)
-### [設定 Lookout 裝置威脅保護](deploy-use/set-up-your-subscription-with-lookout.md)
+### [設定 Lookout Mobile Threat Defense](deploy-use/set-up-your-subscription-with-lookout.md)
 ### [在 Intune 中啟用 Lookout](deploy-use/enable-lookout-connection-in-intune.md)
 ### [工作應用程式部署 Lookout](deploy-use/configure-and-deploy-lookout-for-work-apps.md)
 ### [啟用裝置威脅保護原則](deploy-use/enable-device-threat-protection-rule-compliance-policy.md)
+### [監視 Mobile Threat Defense](deploy-use/monitor-mobile-threat-defense-compliance.md)
 ### [對 Lookout 整合進行疑難排解](deploy-use/troubleshoot-lookout-integration.md)
 
 # 內部部署行動裝置管理 (MDM)
