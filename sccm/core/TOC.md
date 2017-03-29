@@ -73,7 +73,7 @@
 
 ##   [診斷和使用方式資料](plan-design/diagnostics/diagnostics-and-usage-data.md)
 ###  [診斷和使用方式資料的運用](plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)
-###  [1702 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1702.md) 
+###  [1702 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1702.md)
 ###  [1610 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610.md)
 ###  [1606 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
 <!--
