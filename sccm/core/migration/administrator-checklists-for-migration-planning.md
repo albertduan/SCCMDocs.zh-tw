@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 5e6e8a18a8fc705c993177b3c5b4113a351a45a4
 ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
 
 使用下列系統管理員檢查清單可協助您規劃 System Center Configuration Manager 的移轉策略。
 
-##  <a name="a-namechecklistmigraitonplanninga-administrator-checklist-for-migration-planning"></a><a name="Checklist_Migraiton_Planning"></a> 系統管理員移轉規劃檢查清單  
+##  <a name="Checklist_Migraiton_Planning"></a> 系統管理員移轉規劃檢查清單  
  請使用下列移轉前規劃步驟檢查清單。  
 
 -   **評估目前的環境：**  
@@ -37,7 +38,7 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
 
 -   **檢閱所用之 Configuration Manager 版本的功能和變更，運用這項資訊輔助設計目的地階層：**  
 
-    如需詳細資訊，請參閱 [Fundamentals of System Center Configuration Manager](../../core/understand/fundamentals.md) 和 [What's new in System Center Configuration Manager](../../core/plan-design/changes/what-has-changed-from-configuration-manager-2012.md)。  
+    如需詳細資訊，請參閱 [System Center Configuration Manager 的基礎](../../core/understand/fundamentals.md) 和 [System Center Configuration Manager 的新功能](../../core/plan-design/changes/what-has-changed-from-configuration-manager-2012.md)。  
 
 
 -   **判斷以角色為基礎的系統管理適用的系統管理安全性模式：**  
@@ -76,7 +77,7 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
 
     決定移轉物件和用戶端的時間。 移轉完成後，即可規劃解除委任來源階層中的站台伺服器。  
 
-##  <a name="a-namechecklisthierarchyformigrationa-administrator-checklist-for-hierarchy-migration"></a><a name="Checklist_Hierarchy_for_migration"></a> 系統管理員階層移轉檢查清單  
+##  <a name="Checklist_Hierarchy_for_migration"></a> 系統管理員階層移轉檢查清單  
 開始移轉前，請使用下列檢查清單輔助規劃目的地階層。  
 
 -   **找出要在目的地階層中使用的電腦：**  
@@ -113,7 +114,7 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
     -   確認安裝至目的地階層的 Configuration Manager 用戶端可順利與指派的站台通訊。  
 
 
-##  <a name="a-namechecklisitmigrationa-administrator-checklist-for-migration"></a><a name="Checklisit_Migration"></a> 系統管理員移轉檢查清單  
+##  <a name="Checklisit_Migration"></a> 系統管理員移轉檢查清單  
 請依照下列檢查清單，將來源階層的資料移轉至目的地階層。  
 
 -   **啟用目的地階層中的移轉功能：**  
@@ -151,7 +152,7 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
 
     將用戶端移轉至目的地階層時，該用戶端會與先前已移轉至該目的地階層且屬於該用戶端的資料建立關聯。  
 
-    如需詳細資訊，請參閱 [Planning a client migration strategy in System Center Configuration Manager](../../core/migration/planning-a-client-migration-strategy.md)。  
+    如需詳細資訊，請參閱 [在 System Center Configuration Manager 中規劃移轉作業策略](../../core/migration/planning-a-client-migration-strategy.md)。  
 
 -   **升級或重新指派共用發佈點：**  
 
@@ -163,10 +164,5 @@ ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
 
 -   **完成移轉︰**  
 
-    移轉來源階層中所有站台的資料和用戶端，並且升級可用的發佈點後，即可完成移轉。 若要完成移轉，則必須停止在來源階層中的每個來源站台收集資料。 之後，您可以移除不需要的移轉資訊，並且解除委任來源階層基礎結構。 如需詳細資訊，請參閱 [Planning to complete migration in System Center Configuration Manager](../../core/migration/planning-to-complete-migration.md)。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
+    移轉來源階層中所有站台的資料和用戶端，並且升級可用的發佈點後，即可完成移轉。 若要完成移轉，則必須停止在來源階層中的每個來源站台收集資料。 之後，您可以移除不需要的移轉資訊，並且解除委任來源階層基礎結構。 如需詳細資訊，請參閱 [規劃在 System Center Configuration Manager 中完成移轉](../../core/migration/planning-to-complete-migration.md)。  
 
