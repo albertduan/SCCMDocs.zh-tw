@@ -16,9 +16,9 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: c27d9129b261b166ad7b21aff468d47eba116d67
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 3b1451edaed69a972551bd060293839aa11ec8b2
+ms.openlocfilehash: 20be68496099a67ad2d475067f073da2cef16c86
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -72,7 +72,7 @@ ms.lasthandoff: 03/21/2017
 
 ## <a name="to-monitor-terms-and-conditions"></a>監視條款和條件  
 
-1.  從 1602 版開始，您可以在 Configuration Manager 主控台中監視條款和條件部署。 在 Configuration Manager 主控台中，移至 **[監視]** > **[概觀]** > **[部署]**。  
+1.  您可以在 Configuration Manager 主控台中監視條款和條件部署。 在 Configuration Manager 主控台中，移至 **[監視]** > **[概觀]** > **[部署]**。  
 
 2.  選取條款和條件部署。 (從部署清單中選取)  
 

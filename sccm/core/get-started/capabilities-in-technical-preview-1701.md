@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 34dded3a8caf8c2be0313bc012cbd8ad2a909fad
-ms.openlocfilehash: 20bcc1cd909eec13eaca0a6de66806bd496f729d
-ms.lasthandoff: 02/18/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: b330c97a0853d1673f1cf7e0691891b72407fa51
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1701-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1701 中的功能
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/18/2017
 - 搜尋新軟體更新點的用戶端將嘗試使用與其目前界限群組建立關聯的軟體更新點。
 - 如果用戶端無法連線到其目前軟體更新點，而且從其目前界限群組找不到軟體更新點，用戶端使用後援行為來擴充它可使用的可用軟體更新點集區。    
 
-如需界限群組的詳細資訊，請參閱最新分支內容中的[界限群組](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#BKMK_BoundaryGroups)。
+如需界限群組的詳細資訊，請參閱最新分支內容中的[界限群組](/sccm/core/servers/deploy/configure/boundary-groups)。
 
 不過，使用此 Preview，只會局部實作軟體更新點的界限群組。 您可以新增軟體更新點並設定包含軟體更新點的鄰近界限群組，但尚未支援軟體更新點的後援時間，而且用戶端將等待兩個小時再啟動後援。
 

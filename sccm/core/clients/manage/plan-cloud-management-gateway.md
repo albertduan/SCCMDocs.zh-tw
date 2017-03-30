@@ -1,7 +1,7 @@
 ---
 title: "雲端管理閘道規劃 | Microsoft Docs"
 description: 
-ms.date: 12/19/2016
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-client
@@ -10,9 +10,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1df2d8bcd73633ac1d37cc3ef31343be9c5bc95d
-ms.openlocfilehash: 6e2895565e868eb80a8f4f4b46b8a28eb4961e28
-ms.lasthandoff: 12/19/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: c61769cc97c320452c9ee27a924cb01480e6f33d
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 12/19/2016
 - 雲端管理閘道只支援管理點和軟體更新點角色。
 -   雲端管理閘道目前不支援下列 Configuration Manager 功能︰
 
-    -   使用用戶端推入的用戶端部署和升級
+    -   用戶端部署
     -   自動站台指派
     -   使用者原則
     -   應用程式類別目錄 (包括軟體核准要求)

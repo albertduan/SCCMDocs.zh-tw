@@ -16,9 +16,9 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: b7c55ce5629565cb1e3aede6680ef1796f56cb20
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
+ms.openlocfilehash: e9028a54e538b4ec987dbaeb5ba1ee22ad091728
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -51,7 +51,7 @@ ms.lasthandoff: 03/06/2017
 
 -   Windows 8.1  
 
--   尚未完全支援 Windows 10。  如果您嘗試設定 Windows 10 電腦的條件式存取，您可能會遇到一些問題。  如需詳細資訊，請參閱 [已知問題](#bkmk_KnownIssues) 。  
+-   Windows 10 
 
 ## <a name="configure-conditional-access"></a>設定條件式存取  
  若要設定條件式存取，您必須先建立相容性原則，並設定條件式存取原則。 當您設定電腦的條件式存取原則時，可以要求電腦必須符合相容性原則，才能存取 Exchange Online 和 SharePoint Online 服務。  
@@ -135,15 +135,16 @@ ms.lasthandoff: 03/06/2017
 
  因不相容而遭到封鎖的使用者將可在 System Center Configuration Manager 軟體中心檢視相容性資訊，並且將在補救相容性問題時起始新的原則評估。  
 
-##  <a name="bkmk_KnownIssues"></a> 已知問題  
- 使用此功能時，您可能會看到下列問題︰  
+<!---
+##  <a name="bkmk_KnownIssues"></a> Known issues  
+ You may see the following issues when using this feature:  
 
--   在這個 1602 更新中，不會強制執行 5 天的相容性。 即使使用者裝置上的相容性檢查是在 5 天前發生，使用者仍然可以存取 Office 365 和 SharePoint Online。  
+-   In this 1602 update,  the 5 day compliance is not enforced. Even if compliance check on the end-user's device has happened more than 5 days ago, users still can access Office 365 and SharePoint online.  
 
--   當裝置不符合相容性原則時，不會自動顯示原因。 使用者必須移至新的軟體中心來尋找不相容的原因。 原因會顯示於軟體中心的 [裝置相容性] 區段中。  
+-   When a device is not compliant with the compliance policy, the reason is not automatically displayed. The end- user must go to the new Software Center to find the reason for non-compliance. The reason is displayed in the Device compliance section of the Software Center.  
 
--   當 Windows 10 使用者嘗試連線到 O365 和/或 SharePoint 線上資源時，可能會看到多個存取失敗。 請注意，條件式存取並未完全支援 Windows 10。  
-
+-   Windows 10 users may see multiple access failures when trying to reach O365 and/or SharePoint online resources. Note that conditional access is not fully supported for Windows 10.  
+--->
 ### <a name="see-also"></a>請參閱  
  [使用 System Center Configuration Manager 保護資料和站台基礎結構](../../protect/understand/protect-data-and-site-infrastructure.md)
 

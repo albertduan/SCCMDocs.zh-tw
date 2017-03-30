@@ -16,9 +16,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: 0988899047a0e3464e15055fceb5924ee20b0b88
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: b63367dbaacde60a364e9da6afca65383b635840
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -117,7 +117,8 @@ ms.lasthandoff: 03/21/2017
 
      選擇性。 指定由用戶端用來將狀態訊息提交回溯狀態點伺服器的 FQDN。  
 
-     如需後援狀態點的詳細資訊，請參閱[判斷您是否需要後援狀態點](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#determine-if-you-need-a-fallback-status-point)。  
+     如需後援狀態點的詳細資訊，請參閱 [Determine Whether You Require a Fallback Status Point](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#determine-if-you-need-a-fallback-status-point) 。  
+
 
 -   **-dir &lt;目錄\>**  
 
@@ -143,7 +144,7 @@ ms.lasthandoff: 03/21/2017
 
 -   **-UsePKICert &lt;參數\>**  
 
-     選擇性。 指定 X.509 PKI 憑證的完整路徑和檔案名稱中的公用金鑰憑證標準 (PKCS&#12;) 格式。 此憑證用於用戶端驗證。 如果未在安裝期間指定憑證，而且需要新增或變更憑證，請使用 **certutil** 公用程式。 如需 certutil 的相關資訊，請參閱 [How to manage certificates on the client for Linux and UNIX](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ManageLinuxCerts) 。  
+     選擇性。 指定 X.509 PKI 憑證的完整路徑和檔案名稱中的公用金鑰憑證標準 (PKCS #12) 格式。 此憑證用於用戶端驗證。 如果未在安裝期間指定憑證，而且需要新增或變更憑證，請使用 **certutil** 公用程式。 如需 certutil 的相關資訊，請參閱 [How to manage certificates on the client for Linux and UNIX](../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md#BKMK_ManageLinuxCerts) 。  
 
      當您使用 **-UsePKICert**時，也必須使用 **-certpw** 命令列參數來提供與 PKCS#12 檔案相關聯的密碼。  
 
@@ -158,7 +159,7 @@ ms.lasthandoff: 03/21/2017
 
 -   **-certpw &lt;參數\>**  
 
-     選擇性。 指定使用與您所指定的 PKCS&#12; 檔案相關聯的密碼 **-UsePKICert** 屬性。  
+     選擇性。 指定使用與您所指定的 PKCS #12 檔案相關聯的密碼 **-UsePKICert** 屬性。  
 
      範例：-UsePKICert &lt;完整路徑和檔名\> -certpw &lt;密碼\>  
 
