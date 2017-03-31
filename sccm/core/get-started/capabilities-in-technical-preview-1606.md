@@ -240,7 +240,7 @@ OSDPreserveDriveLetter 工作順序變數決定工作順序將作業系統映像
 在 Technical Preview 1606 中，引進了適用於 Configuration Manager 主控台之 [更新與服務] 的數項變更：
 - **節點名稱變更：**
 
-    在 [監視] 工作區中，[Site Servicing status] (站台服務狀態) 節點已重新命名為 [更新與服務狀態]。
+    在 [監視] 工作區中，[Site Servicing status]\(站台服務狀態) 節點已重新命名為 [更新與服務狀態]。
 - **更多安裝狀態：**
 
     當您檢視站台的更新安裝狀態時，主控台現在會分開顯示下列動作的詳細資料：
