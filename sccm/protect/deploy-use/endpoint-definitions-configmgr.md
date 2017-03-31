@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
 ms.openlocfilehash: ca8dfd2882189065aecdb46b42205a04294dafed
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -56,7 +57,7 @@ ms.openlocfilehash: ca8dfd2882189065aecdb46b42205a04294dafed
 7.  在精靈 [部署設定]  頁面上的 [詳細等級]  清單中，選取 [最小] ，然後按一下 [下一步] 。
 
     > [!NOTE]
-    >  從 [詳細等級] 清單中，選取 [最小] (Configuration Manager 不含 Service Pack) 或 [僅錯誤訊息] (Configuration Manager)。 這將會減少定義部署所傳回的狀態訊息數目。 這項設定有助於減少 Configuration Manager 伺服器上的 CPU 處理使用量。
+    >  從 **[詳細等級]** 清單中，選取 **[最小]** (Configuration Manager 不含 Service Pack) 或 **[僅錯誤訊息]** (Configuration Manager)。 這將會減少定義部署所傳回的狀態訊息數目。 這項設定有助於減少 Configuration Manager 伺服器上的 CPU 處理使用量。
 
 8.  在 [內容篩選器]  清單中，選取 [更新分類]  核取方塊。
 
@@ -93,7 +94,7 @@ ms.openlocfilehash: ca8dfd2882189065aecdb46b42205a04294dafed
 
 20. 請在精靈 [使用者體驗]  頁面上的 [使用者通知]  清單中，選取 [在軟體中心和所有通知中隱藏] 。   這可確保以無訊息模式安裝定義更新。 按一下 [下一步] 。
 
-21. 在精靈的 [警示]  頁面上，您不需要設定任何警示。 Configuration Manager 中的 Endpoint Protection 會產生任何可能需要的警示。 按一下 [ 
+21. 在精靈的 [警示]  頁面上，您不需要設定任何警示。 Configuration Manager 中的 Endpoint Protection 會產生任何可能需要的警示。 按一下  
 
 22. 在精靈的 [下載設定]  頁面上，選取所需的軟體更新下載行為，然後按一下 [下一步] 。
 
@@ -118,9 +119,4 @@ ms.openlocfilehash: ca8dfd2882189065aecdb46b42205a04294dafed
 
 > [!div class="button"]
 [上一步 >](endpoint-configure-alerts.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
