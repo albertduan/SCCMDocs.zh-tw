@@ -25,7 +25,7 @@ ms.lasthandoff: 03/21/2017
 
 適用於：System Center Configuration Manager (最新分支)
 
-公司可以透過 Apple 的裝置註冊計畫，購買 iOS 裝置，並使用 Microsoft Intune 進行管理。 若要使用 Apple 裝置註冊程式 (DEP) 來管理公司所擁有的 iOS 裝置，公司必須完成和 Apple 參與此計畫的步驟，並透過該計畫取得裝置。 下列網址提供該程序的詳細資訊：  [https://deploy來管理它們。apple來管理它們。com](https://deploy.apple.com)來管理它們。 這個方案的優點包括裝置自動安裝，而不需要透過 USB 將每部裝置連線到電腦。  
+公司可以透過 Apple 的裝置註冊計畫，購買 iOS 裝置，並使用 Microsoft Intune 進行管理。 若要使用 Apple 裝置註冊程式 (DEP) 來管理公司所擁有的 iOS 裝置，公司必須完成和 Apple 參與此計畫的步驟，並透過該計畫取得裝置。 下列網址提供該程序的詳細資訊：  [https://deploy.apple.com](https://deploy.apple.com)來管理它們。 這個方案的優點包括裝置自動安裝，而不需要透過 USB 將每部裝置連線到電腦。  
 
  在您以 DEP 註冊公司所擁有的 iOS 裝置之前，您需要從 Apple 取得 DEP 權杖。 此權杖可讓 Intune 同步處理貴公司所擁有的 DEP 參與裝置資訊。 它也讓 Intune 得以將註冊設定檔上傳至 Apple，並將這些設定檔指定給裝置。  
 

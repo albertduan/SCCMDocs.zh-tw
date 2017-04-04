@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 34809ddf7819eab5deb3995cd8138c7b38cd2f9a
 ms.openlocfilehash: 9fdff6049d6e5cde1032864e5d7aa8df71e53686
+ms.lasthandoff: 12/31/2016
 
 ---
 # <a name="what39s-new-in-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 1606 版的新功能
@@ -35,7 +36,7 @@ System Center Configuration Manager 1606 更新會以執行 1511 版或 1602 版
 
 
 
-## <a name="a-nameupdatesandservicingaupdates-and-servicing"></a><a name="updatesandservicing"></a>更新與服務
+## <a name="updatesandservicing"></a>更新與服務
 
 ### <a name="changes-for-the-updates-and-servicing-node"></a>[更新與服務] 節點的變更
 Configuration Manager 主控台的 [更新與服務] 節點變更如下︰
@@ -44,7 +45,7 @@ Configuration Manager 主控台的 [更新與服務] 節點變更如下︰
 
 - **節點名稱變更：**
 
-    在 [監視] 工作區中，[Site Servicing status] (站台服務狀態) 節點已重新命名為 [更新與服務狀態]。
+    在 [監視] 工作區中，[Site Servicing status]\(站台服務狀態) 節點已重新命名為 [更新與服務狀態]。
 - **更多安裝狀態詳細資料：**
 
     當您檢視站台的更新安裝狀態時，主控台現在會分開顯示下列動作的詳細資料：
@@ -81,10 +82,10 @@ Configuration Manager 主控台的 [更新與服務] 節點變更如下︰
 
 
 
-## <a name="a-nameaccessibilitya-accessibility"></a><a name="accessibility"></a> 協助工具
+## <a name="accessibility"></a> 協助工具
 現在，若要在工作區的不同節點間瀏覽，您可以輸入節點名稱的第一個字母。 每個按鍵動作都會將游標移至以該字母開頭的下一個節點。 如果使用者有使用螢幕助讀程式，則助讀程式會讀出該節點的名稱。 如需協助工具選項的詳細資訊，請參閱 [System Center Configuration Manager 的協助工具功能](../../../core/understand/accessibility-features.md)。
 
-## <a name="a-nameadministrationaadministration"></a><a name="administration"></a>管理
+## <a name="administration"></a>管理
 Configuration Manager 主控台的管理變更如下︰
 ### <a name="oms-connector"></a>OMS 連接器
 
@@ -225,9 +226,4 @@ Endpoint Protection 可協助管理及監視 Windows Defender 進階威脅防護
 
 ## <a name="remote-control"></a>遠端控制
 可讓您的使用者在遠端控制工作階段中，從共用剪貼簿傳輸內容之前，得以接受或拒絕檔案傳輸。 使用者只需要在每個工作階段中授與權限一次，且檢視人員不能自我授權進行檔案傳輸。 您可以在 [管理] 工作區中找到這個新設定。 前往 [用戶端設定]，然後開啟 [預設設定] 中的 [遠端工具] 面板。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

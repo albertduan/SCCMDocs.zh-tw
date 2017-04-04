@@ -62,7 +62,7 @@ System Center Configuration Manager 中的獨立媒體包含在電腦上部署�
 >   
 >  `"WMI method SMS_TaskSequencePackage.GetClientConfigPolicies failed (0x80041001)"`
 >   
->  若獨立媒體包含 [安裝套件] 步驟，您必須在啟用軟體發佈代理程式的主要站台建立獨立媒體，或是在工作順序的 [設定 Windows 和 ConfigMgr][](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 步驟之後以及第一個 [安裝套件] 步驟之前新增 [執行命令列][](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 步驟。 [執行命令列]  步驟會執行 WMIC 命令，在第一個安裝套件步驟執行之前啟用軟體發佈代理程式。 您可以在 [執行命令列]  工作順序中使用下列內容：  
+>  若獨立媒體包含 **安裝套件** 步驟，您必須在啟用軟體發佈代理程式的主要站台建立獨立媒體，或是在工作順序的 [設定 Windows 和 ConfigMgr](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 步驟之後以及第一個 **安裝套件** 步驟之前新增 [執行命令列](../understand/task-sequence-steps.md#BKMK_RunCommandLine) 步驟。 [執行命令列]  步驟會執行 WMIC 命令，在第一個安裝套件步驟執行之前啟用軟體發佈代理程式。 您可以在 [執行命令列]  工作順序中使用下列內容：  
 >   
 >  **命令列**：**WMIC /命名空間:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE**  
 

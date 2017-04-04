@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 9951dd9333ebef00c7acd5d72b20a02382e3206c
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -29,7 +30,7 @@ ms.openlocfilehash: 9951dd9333ebef00c7acd5d72b20a02382e3206c
 System Center Configuration Manager 中包含範例報告模型，但您也可以定義符合您商務需求的報告模型，然後再將報告模型部署至 Configuration Manager，以在建立以模型為基礎的新報告時使用。 下表提供建立及部署基本報表模型的步驟。  
 
 > [!NOTE]  
->  如需建立更進階之報表模型的步驟，請參閱本主題中的 [Steps for Creating an Advanced Report Model in SQL Server Reporting Services](#AdvancedReportModel) 一節。  
+>  如需建立更進階之報表模型的步驟，請參閱本主題中的 [在 SQL Server Reporting Services 中建立進階報表模型的步驟](#AdvancedReportModel) 一節。  
 
 |步驟|說明|詳細資訊|  
 |----------|-----------------|----------------------|  
@@ -46,7 +47,7 @@ System Center Configuration Manager 中包含範例報告模型，但您也可�
 
  在執行這些程序的電腦上，確定您是否已安裝 SQL Server Business Intelligence Development Studio，且電腦是否具有與 Reporting Services 點伺服器的網路連線能力。 如需有關 SQL Server Business Intelligence Development Studio 的詳細資訊，請參閱 SQL Server 2008 文件。  
 
-###  <a name="a-namebkmkcreatereportmodelprojecta-to-create-the-report-model-project"></a><a name="BKMK_CreateReportModelProject"></a> To create the report model project  
+###  <a name="BKMK_CreateReportModelProject"></a> To create the report model project  
 
 1.  在桌面上，依序按一下 [開始] 和 [Microsoft SQL Server 2008] ，然後按一下 [SQL Server Business Intelligence Development Studio] 。  
 
@@ -63,7 +64,7 @@ System Center Configuration Manager 中包含範例報告模型，但您也可�
     > [!NOTE]  
     >  如果沒有看到 [方案總管]  窗格，請按一下 [檢視] ，再按一下 [方案總管] 。  
 
-###  <a name="a-namebkmkdefinereportmodeldatasourcea-to-define-the-data-source-for-the-report-model"></a><a name="BKMK_DefineReportModelDataSource"></a> To define the data source for the report model  
+###  <a name="BKMK_DefineReportModelDataSource"></a> To define the data source for the report model  
 
 1.  在 [SQL Server Business Intelligence Development Studio]  的 [方案總管] 窗格中，以滑鼠右鍵按一下 [資料來源]  以選取 [新增資料來源] 。  
 
@@ -92,7 +93,7 @@ System Center Configuration Manager 中包含範例報告模型，但您也可�
     > [!NOTE]  
     >  若要編輯現有資料來源的內容，請按兩下 [方案總管]  窗格的 [資料來源]  資料夾中的資料來源，在 [資料來源設計師] 中顯示資料來源內容。  
 
-###  <a name="a-namebkmkdefinereportmodeldatasourceviewa-to-define-the-data-source-view-for-the-report-model"></a><a name="BKMK_DefineReportModelDataSourceView"></a> To define the data source view for the report model  
+###  <a name="BKMK_DefineReportModelDataSourceView"></a> To define the data source view for the report model  
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下 [資料來源檢視]  ，選取 [加入新的資料來源檢視] 。  
 
@@ -113,7 +114,7 @@ System Center Configuration Manager 中包含範例報告模型，但您也可�
 
 8.  按一下 [完成] 。 此時 [Simple_Model.dsv]  資料來源檢視會顯示在 [方案總管]  的 [資料來源檢視] 資料夾中。  
 
-###  <a name="a-namebkmkcreatereportmodela-to-create-the-report-model"></a><a name="BKMK_CreateReportModel"></a> To create the report model  
+###  <a name="BKMK_CreateReportModel"></a> To create the report model  
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下 [報表模型]  ，選取 [加入新的報表模型] 。  
 
@@ -131,7 +132,7 @@ System Center Configuration Manager 中包含範例報告模型，但您也可�
 
 8.  若要結束精靈，請按一下 [完成] 。 此時報表模型會顯示在 [設計] 視窗中。  
 
-###  <a name="a-namebkmkpublishreportmodela-to-publish-the-report-model-for-use-in-sql-server-reporting-services"></a><a name="BKMK_PublishReportModel"></a> To publish the report model for use in SQL Server Reporting Services  
+###  <a name="BKMK_PublishReportModel"></a> To publish the report model for use in SQL Server Reporting Services  
 
 1.  在 [方案總管] 中，以滑鼠右鍵按一下報表模型，選取 [部署] 。 針對此範例，報表模型為 [Simple_Model.smdl] 。  
 
@@ -139,7 +140,7 @@ System Center Configuration Manager 中包含範例報告模型，但您也可�
 
 3.  依序按一下 [檔案] 和 [全部儲存] ，然後關閉 [SQL Server Business Intelligence Development Studio] 。  
 
-###  <a name="a-namebkmkdeployreportmodela-to-deploy-the-custom-report-model-to-configuration-manager"></a><a name="BKMK_DeployReportModel"></a> To deploy the custom report model to Configuration Manager  
+###  <a name="BKMK_DeployReportModel"></a> To deploy the custom report model to Configuration Manager  
 
 1.  找到您建立報表模型專案的資料夾。 例如，%*USERPROFILE*%\Documents\Visual Studio 2008\Projects\\*&lt;專案名稱\>*。  
 
@@ -180,7 +181,7 @@ System Center Configuration Manager 中包含範例報告模型，但您也可�
     > [!IMPORTANT]  
     >  將報告模型檔案複製到 Configuration Manager 站台伺服器後，您必須先結束並重新啟動 Configuration Manager 主控台，才能在 [建立報告精靈] 中使用報告模型。  
 
-##  <a name="a-nameadvancedreportmodela-steps-for-creating-an-advanced-report-model-in-sql-server-reporting-services"></a><a name="AdvancedReportModel"></a> Steps for Creating an Advanced Report Model in SQL Server Reporting Services  
+##  <a name="AdvancedReportModel"></a> Steps for Creating an Advanced Report Model in SQL Server Reporting Services  
  您可以利用下列程序建立進階報告模型，您站台中的使用者可根據 Configuration Manager 資料庫中多個檢視的資料，使用該模型建立模型為基礎的特殊報告。 您建立的報表模型可對報告作者呈現有關用戶端電腦及電腦上所安裝作業系統的資訊。 此資訊是從 Configuration Manager 資料庫的下列檢視取得：  
 
 -   **V_R_System**：包含有關探索到之電腦和 Configuration Manager 用戶端的資訊。  
@@ -422,9 +423,4 @@ System Center Configuration Manager 中包含範例報告模型，但您也可�
 
     > [!IMPORTANT]  
     >  將報告模型檔案複製到 Configuration Manager 站台伺服器後，您必須先結束並重新啟動 Configuration Manager 主控台，才能在 [建立報告精靈] 中使用報告模型。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
