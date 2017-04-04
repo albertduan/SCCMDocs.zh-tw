@@ -128,7 +128,7 @@ ms.lasthandoff: 01/04/2017
 
     -   **選取的設定︰**選擇 [瀏覽]，然後選取您先前指定的探索指令碼。  
 
-    -   在 **下列值** 的欄位中，輸入 **The domain/default pair of (com.microsoft.ccmclient, SMSID) does not exist**。  
+    -   在 **下列值** 的欄位中，輸入 **(com.microsoft.ccmclient SMSID) 的網域/預設值組不存在**。  
 
     -   啟用 [當此設定不相容時，執行指定的補救指令碼] 選項。  
 
