@@ -15,6 +15,7 @@ ms.assetid: fdf05118-162a-411e-b72e-386b9dc9a5e1
 translationtype: Human Translation
 ms.sourcegitcommit: 238ef5814c0c1b832c28d63c9f3879e21a6c439b
 ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -43,7 +44,7 @@ ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
 > [!WARNING]  
 >  從 WSUS 4.0 開始才支援 [升級] 軟體更新分類。 在您同步處理這個新分類並能夠評估 Windows 10 服務計劃中的 Windows 10 電腦前，請務必在您的軟體更新點與站台伺服器上安裝適用於 WSUS 的 [Hotfix 3095113](https://support.microsoft.com/kb/3095113) 。 此 Hotfix 可讓以 Windows Server 2012 或 Windows Server 2012 R2 為基礎之伺服器上的 WSUS 同步並發佈 Windows 10 的功能升級。 如需詳細資訊，請參閱[將 Windows 作為服務管理](../../osd/deploy-use/manage-windows-as-a-service.md)。  
 >   
->  如果您在安裝 **[升級]** https://support軟體更新的必要條件。microsoft軟體更新的必要條件。com/kb/3095113 [Hotfix 3095113](https://support.microsoft.com/kb/3095113)分類同步處理軟體更新，請參閱 [Recover from synchronizing the [升級] category before you install KB 3095113](#BKMK_RecoverUpgrades)軟體更新的必要條件。  
+>  如果您在安裝 [Hotfix 3095113](https://support.microsoft.com/kb/3095113)之前以 **[升級]** 分類同步處理軟體更新，請參閱[安裝 KB 3095113 之前從同步處理升級類別復原](#BKMK_RecoverUpgrades)。  
 
 ### <a name="wsus-administration-console"></a>WSUS 管理主控台  
  如果軟體更新點位於遠端站台系統伺服器上，且站台伺服器尚未安裝 WSUS，則必須在 Configuration Manager 站台伺服器上安裝 WSUS 管理主控台。  
@@ -83,7 +84,7 @@ ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
 ### <a name="reporting-services-point"></a>Reporting Services 點  
  Reporting Services 點站台系統角色可以顯示軟體更新的報告。 這個角色是選用項目，但建議使用。 如需建立 Reporting Services 點之方式的詳細資訊，請參閱[設定報告](../../core/servers/manage/configuring-reporting.md)。  
 
-##  <a name="a-namebkmkrecoverupgradesa-recover-from-synchronizing-the-upgrades-category-before-you-install-kb-3095113"></a><a name="BKMK_RecoverUpgrades"></a> 安裝 KB 3095113 之前從同步處理升級類別復原  
+##  <a name="BKMK_RecoverUpgrades"></a> 安裝 KB 3095113 之前從同步處理升級類別復原  
  在您同步處理 [Hotfix 3095113](https://support.microsoft.com/kb/3095113) Hotfix 3095113 **[升級]** 。 如果在啟用 **[升級]** 分類時並未安裝 Hotfix，WSUS 會尋找 Windows 10 組建 1511 功能升級，即使該升級無法正確下載及部署相關聯套件。 如果您同步處理任何的升級，而沒有先安裝 [Hotfix 3095113](https://support.microsoft.com/kb/3095113)，您將會在 WSUS 資料庫 (SUSDB) 中填入無法使用的資料，必須先清除那些資料才能正確部署升級。  使用下列程序從此問題中復原。  
 
 #### <a name="to-recover-from-synchronizing-the-upgrades-classification-before-you-install-kb-3095113"></a>從安裝 KB 3095113 之前就同步處理升級分類復原  
@@ -111,9 +112,4 @@ ms.openlocfilehash: 179f076f228daa5adf612275a822cd379b0ce1e3
 
 ## <a name="next-steps"></a>後續步驟
 [準備軟體更新管理](../get-started/prepare-for-software-updates-management.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
