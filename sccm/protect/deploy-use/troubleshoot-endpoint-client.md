@@ -17,8 +17,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1432568286605d29683416885d7aa522c649016e
-ms.openlocfilehash: fde190f141fb55462755119b533519d05af3f3c3
+ms.sourcegitcommit: 6accec2d356861b273b25ba2b6338d9684a46ff6
+ms.openlocfilehash: 1b096e71f5131214fb4e235e84d0b7f63e566831
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -167,8 +168,7 @@ ms.openlocfilehash: fde190f141fb55462755119b533519d05af3f3c3
 ##  <a name="starting-windows-defender-or-endpoint-protection-service"></a>啟動 Windows Defender 或 Endpoint Protection 服務  
  **徵兆**  
 
- 您收到訊息，通知您「**Windows Defender 或 **  
- **Endpoint Protection 並未監視電腦，因為程式的服務已停止。您應該立即重新啟動該服務。**â€  
+ 您收到訊息通知，表示「Windows Defender 或 Endpoint Protection 並未監控電腦，因為程式的服務已停止。**您應該立即重新啟動該服務。」** 
 
  **解決方案**  
 
@@ -176,7 +176,7 @@ ms.openlocfilehash: fde190f141fb55462755119b533519d05af3f3c3
 
 -   關閉所有應用程式，然後重新啟動電腦。  
 
-### <a name="step-2-make-sure-the-windows-defender-orbr-------endpoint-protection-service-is-set-to-automatic-and-is-started"></a>步驟 2：確定 "Windows Defender" 或<br />      "Endpoint Protection" 服務設定為自動並已啟動  
+### <a name="step-2-make-sure-the-windows-defender-or-endpoint-protection-service-is-set-to-automatic-and-is-started"></a>步驟 2：確定「Windows Defender」或「Endpoint Protection 服務」已設定為 [自動] 並已啟動  
 
 1.  按一下 [開始]  ，並搜尋 **services.msc**，然後按 **Enter**。  
 
@@ -318,9 +318,4 @@ ms.openlocfilehash: fde190f141fb55462755119b533519d05af3f3c3
  [Endpoint Protection 用戶端常見問題集](../../protect/deploy-use/endpoint-protection-client-faq.md)   
 
  [Endpoint Protection 用戶端說明](../../protect/deploy-use/endpoint-protection-client-help.md)
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

@@ -2,7 +2,7 @@
 title: "使用裝置註冊管理員註冊裝置 - Configuration Manager | Microsoft Docs"
 description: "使用裝置註冊管理員帳戶來向 System Center Configuration Manager 註冊公司擁有的裝置。"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 03/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,13 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2905f26e-7859-497d-b995-5ff48261efa2
 caps.latest.revision: 8
-author: mtillman
-ms.author: mtillman
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
-ms.openlocfilehash: b356d2351b8a28bdca78176fdf0ff3c913a36bd3
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 7573590763c68a4c97d388be1e64054c318da9cc
+ms.openlocfilehash: 8c491636925670732e6af67d8c1c741e4793ef96
+ms.lasthandoff: 03/24/2017
 
 
 ---
@@ -26,27 +26,23 @@ ms.lasthandoff: 01/24/2017
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-組織可以搭配使用 System Center Configuration Manager 和 Intune，以單一使用者帳戶來管理大量的行動裝置。 「裝置註冊管理員」帳戶是特殊的 Intune 帳戶，具有註冊五部以上裝置的權限。  
+組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 「裝置註冊管理員」(DEM) 帳戶是可註冊多達 1,000 個裝置的特殊使用者帳戶。 您需將現有的使用者新增到 DEM 帳戶中，以授與他們特殊的 DEM 能力。 每個註冊的裝置皆使用一個授權。 建議您使用透過此帳戶註冊的裝置作為沒有使用者親和性的共用裝置，而不要使用個人、專用的裝置。  
 
 ## <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager"></a>使用裝置註冊管理員註冊公司所擁有的裝置  
  您可以指派存放區管理員或監督員 (例如，裝置註冊管理員使用者帳戶)，讓她可以執行下列作業：  
 
--   註冊裝置以進行管理  
-
--   使用公司入口網站應用程式來安裝公司應用程式  
-
--   安裝和解除安裝軟體  
-
+-   註冊多達 1000 個要管理的裝置  
+-   使用「公司入口網站」應用程式來安裝公司應用程式  
 -   設定公司資料存取  
-
 
 下列限制適用於使用裝置註冊管理員帳戶管理的裝置︰
 
 - 存放區管理員無法從公司入口網站重設裝置。  
--  裝置不能加入工作區或 Azure Active Directory。 這可以防止這些裝置使用條件式存取。
+- 裝置不能加入工作區或 Azure Active Directory。 這可以防止這些裝置使用條件式存取。
 -  若要將公司應用程式部署到使用裝置註冊管理員管理的裝置，請將公司入口網站應用程式當作**必要安裝**，部署到裝置註冊管理員的使用者帳戶。 裝置註冊管理員就可以啟動公司入口網站應用程式以安裝其他應用程式。
 - 為了改善效能，公司入口網站應用程式只會顯示本機裝置。 其他 DEM 裝置的遠端管理只能夠從 Configuration Manager 主控台由系統管理員進行
 - 裝置註冊管理員帳戶無法使用公司入口網站。 使用公司入口網站應用程式。
+- (僅限 iOS) 如果您使用 DEM 來註冊 iOS 裝置，便無法使用 Apple Configurator 或 Apple 裝置註冊計劃 (DEP) 來註冊裝置。
 
  **裝置註冊管理員案例的範例：**   
 餐廳想要有銷售點平板電腦，以取得廚房員工的等待員工和訂單監視器。 員工永遠不需要存取公司資料或以使用者身分登入。 Intune 系統管理員會建立裝置註冊管理員帳戶，並使用該帳戶註冊公司所擁有的裝置。 或者，系統管理員可以將裝置註冊管理員認證提供給餐廳經理，讓他或她註冊和管理裝置。  

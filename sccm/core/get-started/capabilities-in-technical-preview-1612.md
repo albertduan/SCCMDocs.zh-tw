@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3c8f968276cb6d412a4a06cb70f1c8e45e91c605
-ms.openlocfilehash: cd53f093056fbaa2ef6fd88d5451b7698f296569
-ms.lasthandoff: 02/11/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: bcb14a2be312d4d8a4a9c235652c7bf971a7a976
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1612-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1612 中的功能
@@ -121,7 +121,7 @@ ms.lasthandoff: 02/11/2017
 | **一般軟體清查報告**  | 檢視特定電腦的所有軟體清查。|
 | **基礎結構健全狀況概觀**  |顯示您 Configuration Manager 基礎結構健全狀況的概觀。|
 | **偵測到的惡意程式碼清單**  |檢視組織中已偵測到的惡意程式碼。|
-|** 軟體發佈摘要報告** | 特定公告和電腦的軟體發佈摘要。|
+|**軟體發佈摘要報告** | 特定公告和電腦的軟體發佈摘要。|
 
 ### <a name="move-the-data-warehouse-database"></a>移動資料倉儲資料庫
 您可以使用下列步驟將資料倉儲資料庫移至新的 SQL Server：
@@ -183,9 +183,15 @@ ms.lasthandoff: 02/11/2017
 
 
 ### <a name="run-the-tool"></a>執行工具
-若要執行此工具，請開啟系統管理命令提示字元至包含 **ContentLibraryCleanup.exe** 的資料夾。  
+執行工具：
+1. 請在包含 **ContentLibraryCleanup.exe** 的資料夾開啟系統管理命令提示字元。  
+2. 接著輸入命令列，其中包含必要的命令列參數及您要使用的選擇性參數。
 
-接著輸入命令列，其中包含必要的命令列參數及您要使用的選擇性參數。
+**已知問題** 執行此工具時，如果有任何套件或部署失敗或正在進行中，可能會傳回類似下列錯誤︰
+-  *System.InvalidOperationException：因為套件 <packageID> 未完全安裝，所以目前無法清除此內容庫。*
+
+**因應措施：** 無。 正在進行部署或無法部署內容時，此工具無法可靠識別孤立的檔案。 因此，在解決該問題之前，此工具不允許您清除內容。
+
 
 
 ### <a name="command-line-switches"></a>命令列參數  

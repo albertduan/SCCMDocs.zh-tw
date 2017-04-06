@@ -2,7 +2,7 @@
 title: "管理大量採購的 iOS 應用程式 | Microsoft Docs"
 description: "部署、管理和追蹤透過 iOS 應用程式市集購買的應用程式授權。"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: aef92114af913b420a6e96876141a13a855677ea
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
+ms.openlocfilehash: a63acf0d80edba1e965ba8ea99fe90edb8aa2faf
+ms.lasthandoff: 03/28/2017
 
 ---
 # <a name="manage-volume-purchased-ios-apps-with-system-center-configuration-manager"></a>Manage volume-purchased iOS apps with System Center Configuration Manager
@@ -30,37 +30,47 @@ ms.lasthandoff: 03/06/2017
 
  iOS App Store 可讓您購買多個想要在公司內執行的應用程式授權。 這可協助您降低針對多個已購買之應用程式複本的追蹤管理開銷。  
 
- System Center Configuration Manager 可從 App Store 匯入授權資訊，並追蹤您已經使用的授權數量，以協助您部署及管理透過方案購買的 iOS 應用程式。  
+ System Center Configuration Manager 可從 App Store 匯入授權資訊，並追蹤您正在使用的授權數量，以協助您部署及管理透過方案購買的 iOS 應用程式。  
 
 ## <a name="manage-volume-purchased-apps-for-ios-devices"></a>管理大量採購的 iOS 裝置應用程式  
  您可以透過 Apple 大量採購方案 (VPP) 購買 iOS 應用程式的多個授權。 這項作業包括從 Apple 網站設定 Apple VPP 帳戶，並將 Apple VPP 權杖上傳到 Configuration Manager，以提供下列功能：  
 
--   同步處理大量採購資訊與 Configuration Manager。  
+-   同步處理大量採購資訊與 Configuration Manager。 
+ 
+- 同步處理來自商用 Apple 大量採購方案和教育用 Apple 大量採購方案的應用程式。
+
+- 建立多個 Apple 大量採購方案權杖與 Configuration Manager 的關聯。
 
 -   Configuration Manager 主控台會顯示您已購買的應用程式。  
 
 -   您可以部署和監視這些應用程式，並追蹤每個應用程式已使用的授權數量。  
 
--   Configuration Manager 可以解除安裝部署至使用者的大量採購應用程式，協助您在需要時取回授權。  
+-   Configuration Manager 可以解除安裝部署的大量採購應用程式，協助您在需要時取回授權。  
 
 ## <a name="before-you-start"></a>開始之前  
  在開始之前，您必須從 Apple 取得 VPP 權杖，並上傳至 Configuration Manager。  
 
-> [!IMPORTANT]  
->  -   每個組織目前只能有一個 VPP 帳戶和權杖。  
-> -   僅支援商用 Apple 大量採購方案。  
-> -   當您將 Apple VPP 帳戶與 Intune 建立關聯後，就不能再與其他帳戶建立關聯。 因此，您所使用的帳戶詳細資訊盡量不要只有自己一人知道，以免不慎遺忘。  
-> -   如果您先前是使用現有 Apple VPP 帳戶中不同 MDM 產品的 VPP 權杖，則必須產生新的權杖，才能搭配 Configuration Manager 使用。  
-> -   每個權杖有效期限為一年。  
-> -   Configuration Manager 預設一天同步處理兩次 Apple VPP 服務，以確保您的授權與 Configuration Manager 保持同步。  
->   
->      只會同步處理您的授權變更。 但每隔七天，皆會執行一次完整同步處理。  
->   
->      當您選擇 [同步處理] 以執行手動同步處理時，一律會執行完整同步處理。  
-> -   如果需要復原或還原您的 Configuration Manager 資料庫，建議您在作業之後執行手動同步處理，以確保同步處理的授權資料是最新狀態。  
-> -   雖然您可以將 iOS 大量採購的應用程式部署至使用者或裝置集合，但如果您將 VPP 應用程式部署至無使用者的裝置 (例如您使用裝置註冊計劃 (DEP) 或 Apple Configurator 註冊而沒有使用者親和性的裝置)，就不會安裝這些應用程式。  
+-   如果您先前是使用現有 Apple VPP 帳戶中不同 MDM 產品的 VPP 權杖，則必須產生新的權杖，才能搭配 Configuration Manager 使用。  
+-   每個權杖有效期限為一年。  
+-   Configuration Manager 預設一天同步處理兩次 Apple VPP 服務，以確保您的授權與 Configuration Manager 保持同步。  
+      只會同步處理您的授權變更。 但每隔七天，皆會執行一次完整同步處理。  
+      當您選擇 [同步處理] 以執行手動同步處理時，一律會執行完整同步處理。  
+-   如果需要復原或還原您的 Configuration Manager 資料庫，建議您在作業之後執行手動同步處理，以確保同步處理的授權資料是最新狀態。  
+-   此外，您必須已從 Apple 匯入有效的 Apple Push Notification Service (APNs) 憑證，才能管理 iOS 裝置，包括應用程式部署。 如需詳細資訊，請參閱 [Set up iOS hybrid device management](enroll-hybrid-ios-mac.md) (設定 iOS 混合式裝置管理)。  
 
- 此外，您必須已從 Apple 匯入有效的 Apple Push Notification Service (APNs) 憑證，才能管理 iOS 裝置，包括應用程式部署。 如需詳細資訊，請參閱 [Set up iOS hybrid device management](enroll-hybrid-ios-mac.md) (設定 iOS 混合式裝置管理)。  
+從 System Center Configuration Manager 1702 開始，您現在可以將授權的應用程式部署到裝置和使用者。 視應用程式是否能夠支援裝置授權而定，當您部署應用程式時，系統會要求適當的授權，如下︰
+
+|||||
+|-|-|-|-|
+|Configuration Manager 版本|應用程式是否支援裝置授權？|部署集合類型|要求的授權|
+|1702 之前|是|使用者|使用者授權|
+|1702 之前|否|使用者|使用者授權|
+|1702 之前|是|裝置|使用者授權|
+|1702 之前|否|裝置|使用者授權|
+|1702 和更新版本|是|使用者|使用者授權|
+|1702 和更新版本|否|使用者|使用者授權|
+|1702 和更新版本|是|裝置|裝置授權|
+|1702 和更新版本|否|裝置|使用者授權|
 
 ## <a name="step-1---to-get-and-upload-an-apple-vpp-token"></a>步驟 1 - 取得並上傳 Apple VPP 權杖  
 
@@ -79,6 +89,8 @@ ms.lasthandoff: 03/06/2017
     -   **描述**：(選擇性) 輸入可協助您在 Configuration Manager 主控台中識別此 VPP 權杖的描述。  
 
     -   **已指派類別來改善搜尋和篩選效果**：(選擇性) 您可以將類別指派給 VPP 權杖，讓搜尋在 Configuration Manager 主控台中更為容易。  
+    -   **Apple ID** - 輸入和 VPP 權杖相關聯的電子郵件識別碼。
+    -   **權杖類型** - 選取您想要使用的 VPP 權杖類型。 您可以選擇 [商用] 和 [教育用] 權杖類型。
 
 5.  選擇 [下一步]，然後完成精靈。  
 
@@ -96,12 +108,14 @@ ms.lasthandoff: 03/06/2017
     > [!IMPORTANT]  
     > 部署目的必須選擇 [必要]。 目前不支援可用的安裝。
 
- 當您部署應用程式時，安裝應用程式的每位使用者都會使用授權。  
+ 當您部署應用程式時，每位使用者都會使用一個授權，或在裝置安裝時，安裝應用程式的每個裝置都會使用一個授權。  如果您的裝置集合目標有支援裝置授權的應用程式，則會要求裝置授權。  如果您的裝置集合目標有不支援裝置授權的應用程式，會要求使用者授權。 
+
+ 當您從 [市集應用程式的授權資訊] 節點建立應用程式時，該應用程式會和來自所選取應用程式權仗的授權相關聯。  例如，您可能會在該節點中看到相同的應用程式有兩種版本。 這是因為應用程式的每個版本都與不同的 Apple VPP 權杖相關聯。  接下來，您可以從每個權杖建立應用程式，然後個別予以部署。
 
  若要回收授權，您必須變更部署動作為 [解除安裝] 。 解除安裝應用程式之後，即會回收授權。  
 
 ## <a name="step-3---monitor-ios-vpp-apps"></a>步驟 3 - 監視 iOS VPP 應用程式  
- [軟體程式庫] 工作區的 [License Information for Store Apps]\(市集應用程式的授權資訊) 節點中，會顯示您大量購買的 iOS 應用程式相關資訊。 這些資訊包括您所擁有之每個應用程式的授權總數及已部署的數量。
+ [軟體程式庫] 工作區的 [License Information for Store Apps]\(市集應用程式的授權資訊) 節點中，會顯示您大量購買的 iOS 應用程式相關資訊。 這些資訊包括您所擁有之每個應用程式的授權總數及已部署的數量。 此外，檢視會顯示和該應用程式相關聯的 VPP 權杖和權杖類型
 
  您也可以使用 [Apple Volume Purchase Program apps for iOS with license counts]\(Apple 大量採購方案 iOS 應用程式與授權計數) 報告，監視已購買的所有 VPP 應用程式授權使用量。  
 

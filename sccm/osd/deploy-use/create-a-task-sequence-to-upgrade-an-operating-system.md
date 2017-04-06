@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 32af7da62bfe767a21a891338bd778ebf45f2685
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 88a72259bca79f2fa985e86cb57ec7a974bad24d
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 32af7da62bfe767a21a891338bd778ebf45f2685
 
 使用 System Center Configuration Manager 中的工作順序，將目的地電腦上的作業系統從 Windows 7 或更新版本自動升級至 Windows 10。 您建立的工作順序，會參考要安裝在目的地電腦上的作業系統映像，以及其他任何內容，例如應用程式或要安裝的軟體更新。 升級作業系統的工作順序是[將 Windows 升級至最新版本](upgrade-windows-to-the-latest-version.md)案例的一部分。  
 
-##  <a name="a-namebkmkupgradeosa-create-a-task-sequence-to-upgrade-an-operating-system"></a><a name="BKMK_UpgradeOS"></a> 建立工作順序以升級作業系統  
+##  <a name="BKMK_UpgradeOS"></a> 建立工作順序以升級作業系統  
  若要將電腦上的作業系統升級至 Windows 10，您可以建立工作順序，並在 [建立工作順序精靈] 中選取 [從升級套件升級作業系統]  。 該精靈會加入升級作業系統、套用軟體更新以及安裝應用程式的步驟。 建立工作順序之前，必須備妥下列事項：  
 
 -   **必要**  
@@ -70,6 +71,42 @@ ms.openlocfilehash: 32af7da62bfe767a21a891338bd778ebf45f2685
 
 9. 完成精靈。  
 
+
+
+## <a name="configure-pre-cache-content"></a>設定預先快取內容
+自版本 1702 起，針對可用的部署和工作順序，您可以選擇使用預先快取功能，讓用戶端在使用者安裝內容之前只下載相關內容。
+> [!TIP]  
+> 隨版本 1702 引進的預先快取是發行前版本功能。 若要啟用它，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/pre-release-features)。
+
+例如，假設您想要部署 Windows 10 就地升級工作順序、只需要適用於所有使用者的單一工作順序，並有多個架構及 (或) 語言。 在版本 1702 之前，如果您建立可用的部署，然後使用者在軟體中心按一下 [安裝]，此時會下載內容。 這會增加準備開始安裝之前的額外時間。 此外，您可以下載工作順序中參照的所有內容。 這包括所有語言和架構的作業系統升級套件。 如果每個大小約 3 GB，下載套件可能會相當大。
+
+預先快取內容可讓您選擇允許用戶端在一收到部署時，就只下載適用的內容。 因此，當使用者在軟體中心按一下 [安裝] 時，由於內容是在本機硬碟上，因此內容已就緒且安裝會快速開始。
+
+### <a name="to-configure-the-pre-cache-feature"></a>設定預先快取功能
+
+1. 建立特定架構和語言的作業系統升級套件。 在套件的 [資料來源] 索引標籤中指定架構和語言。 針對語言，使用十進位轉換 (例如 1033 是英文的十進位表示，而 0x0409 是十六進位的對等用法)。 如需詳細資訊，請參閱[建立工作順序以升級作業系統](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)。
+
+    架構和語言值可用來比對您將在下一個步驟中建立的工作順序步驟條件，以判斷是否應該預先快取作業系統升級套件。
+2. 針對不同的語言和架構，建立具有條件式步驟的工作順序。 例如，您可以針對英文版建立類似如下的步驟：
+
+    ![預先快取內容](../media/precacheproperties2.png)
+
+    ![預先快取選項](../media/precacheoptions2.png)  
+
+3. 部署工作順序。 針對預先快取功能，進行下列設定：
+    - 在 [一般] 索引標籤上，選取 「Pre-download content for this task sequence」 (此工作順序的下載前內容)。
+    - 在 [部署設定] 索引標籤上，將工作順序的 [目的] 設定為 [可用]。 如果您建立 [必要] 部署，預先快取功能將無法運作。
+    - 在 [排程] 索引標籤上，針對 [排程此部署的可用時間] 設定選擇一個未來時間，讓用戶端有足夠的時間預先快取內容，再提供部署給使用者。 例如，您可以將可用時間設定為 3 小時後，以允許有足夠的時間可預先快取內容。  
+    - 在 [發佈點] 索引標籤上，設定 [部署選項] 設定。 如果在使用者開始安裝之前未在用戶端預先快取內容，則會使用這些設定。
+
+
+### <a name="user-experience"></a>使用者經驗
+- 當用戶端收到部署原則時，就會開始預先快取內容。 這包括所有參考的內容 (任何其他套件類型)，以及根據您在工作順序中設定的條件只符合用戶端的作業系統升級套件。
+- 當使用者可以使用部署時 (部署之 [排程] 索引標籤中的設定)，系統會顯示通知，告知使用者有此新的部署，並在軟體中心顯示此部署。 使用者可以前往軟體中心，然後按一下 [安裝] 開始安裝。
+- 如果未完整預先快取內容，則會使用部署之 [部署選項] 索引標籤上指定的設定。 建議在建立部署到部署可供使用者使用之間有足夠的時間，讓用戶端有足夠的時間來預先快取內容。
+
+
+
 ## <a name="download-package-content-task-sequence-step"></a>下載套件內容的工作順序步驟  
  在下列案例中的 [升級作業系統] 步驟之前，可以使用[下載套件內容](../understand/task-sequence-steps.md#BKMK_DownloadPackageContent)步驟：  
 
@@ -91,9 +128,4 @@ ms.openlocfilehash: 32af7da62bfe767a21a891338bd778ebf45f2685
 
 ## <a name="folder-and-files-removed-after-computer-restart"></a>在重新啟動電腦之後移除的資料夾和檔案  
  如果將作業系統升級至 Windows 10 的工作順序以及工作順序中的所有其他步驟完成，則除非重新啟動電腦，否則不會移除後置處理和復原指令碼。  這些指令檔未包含機密資訊。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

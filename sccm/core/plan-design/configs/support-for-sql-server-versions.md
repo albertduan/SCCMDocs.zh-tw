@@ -2,7 +2,7 @@
 title: "支援的 SQL Server 版本 | Microsoft Docs"
 description: "取得裝載 System Center Configuration Manager 站台資料庫的 SQL Server 版本和設定需求。"
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 25aa013896ca118f0689b71e5cddcb8baf049c66
-ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ea9edf6392c41e31276900454cd78ce4bc32be7b
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -27,7 +28,7 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
 
 每個 System Center Configuration Manager 站台都必須有支援的 SQL Server 版本和設定，才能裝載站台資料庫。  
 
-##  <a name="a-namebkmkinstancesa-sql-server-instances-and-locations"></a><a name="bkmk_Instances"></a> SQL Server 執行個體和位置  
+##  <a name="bkmk_Instances"></a> SQL Server 執行個體和位置  
  **管理中心網站和主要站台：**  
 站台資料庫必須使用完整的 SQL Server 安裝。  
 
@@ -52,10 +53,13 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
 
  SQL Server 必須位於站台伺服器電腦上。  
 
-##  <a name="a-namebkmksqlversionsa-supported-versions-of-sql-server"></a><a name="bkmk_SQLVersions"></a> 支援的 SQL Server 版本  
+##  <a name="bkmk_SQLVersions"></a> 支援的 SQL Server 版本  
  在具有多個站台的階層中，不同站台可以使用不同版本的 SQL Server 來裝載站台資料庫，只要 Configuration Manager 支援您使用的 SQL Server 版本即可。  
 
- 除非另有指定，否則以下是 System Center Configuration Manager 1511 和更新版本支援的 SQL Server 版本。  
+ 除非另有指定，否則以下是 System Center Configuration Manager 所有現用版本支援的 SQL Server 版本。 如果新增新 SQL Server 版本或 Service Pack 的支援，則會註明新增該支援的 Configuration Manager 版本。 同樣地，如果支援已被取代，則請查看受影響之 Configuration Manager 版本的相關詳細資料。   
+ 
+針對特定 SQL Server Service Pack 的支援包括累積至該 Service Pack 的更新，除非某個累積更新會中斷針對該 Service Pack 基準版本的回朔。 沒有註明 Service Pack 版本時，支援所針對的是沒有 Service Pack 的特定 SQL Server 版本。 在未來，如果針對該版本發行 Service Pack，將會在支援新的 Service Pack 版本之前，宣告個別的支援聲明。
+
 
 > [!IMPORTANT]  
 >  當您在管理中心網站針對資料庫使用 SQL Server Standard 時，您會限制一個階層所能支援的用戶端總數。 請參閱 [Size and scale numbers](../../../core/plan-design/configs/size-and-scale-numbers.md) (大小與縮放比例)。
@@ -109,7 +113,10 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
 
 
 ### <a name="sql-server-2008-r2-sp3-standard-enterprise-datacenter"></a>SQL Server 2008 R2 SP3：Standard、Enterprise、Datacenter     
-您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
+  [從 1702 版開始](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-support-for-sql-server-versions-as-a-site-database)，不支援此版本的 SQL Server。  
+ 當您使用 1702 之前的 Configuration Manager 版本時，仍支援此版本的 SQL Server。
+
+在受到您的 Configuration Manager 版本支援的情況下，您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
 
 -   管理中心網站  
 -   主要站台
@@ -147,7 +154,7 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
 
 -   次要站台  
 
-##  <a name="a-namebkmksqlconfiga-required-configurations-for-sql-server"></a><a name="bkmk_SQLConfig"></a> 必要的 SQL Server 組態  
+##  <a name="bkmk_SQLConfig"></a> 必要的 SQL Server 組態  
  以下是您用於站台資料庫的所有 SQL Server 安裝 (包括 SQL Server Express) 的必要設定。 如果 Configuration Manager 在安裝次要站台時一併安裝 SQL Server Express，就會自動為您建立這些設定。  
 
  **SQL Server 架構版本：**  
@@ -188,7 +195,7 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
  **SQL Server CLR 整合**  
   站台資料庫會要求啟用 SQL Server 通用語言執行平台 (CLR)。 當 Configuration Manager 安裝時，會自動啟用此功能。 如需 CLR 的詳細資訊，請參閱 [SQL Server CLR 整合簡介](https://msdn.microsoft.com/library/ms254498\(v=vs.110\).aspx)。  
 
-##  <a name="a-namebkmkoptionala-optional-configurations-for-sql-server"></a><a name="bkmk_optional"></a> 選擇性的 SQL Server 組態  
+##  <a name="bkmk_optional"></a> 選擇性的 SQL Server 組態  
  下列組態可選擇性用於使用完整 SQL Server 安裝的各個資料庫。  
 
  **SQL Server 服務：**  
@@ -237,8 +244,9 @@ ms.openlocfilehash: 9bf4c1d9ee12da6801470165d33df50b2d08a810
 
 如需如何將 SQL Server 設為使用特定連接埠的範例，請參閱 SQL Server TechNet 文件庫中的 [如何：將伺服器設為在特定 TCP 連接埠上接聽 (SQL Server 組態管理員)](http://go.microsoft.com/fwlink/p/?LinkID=226349) 。  
 
-
-
-<!--HONumber=Jan17_HO1-->
-
+## <a name="upgrade-options-for-sql-server"></a>SQL Server 的升級選項
+如果您需要升級您的 SQL Server 版本，建議您使用下列方法 (依複雜度由低到高排列)。
+1. [就地升級 SQL Server](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#a-namebkmksupconfigupgradedbsrva-upgrade-sql-server-on-the-site-database-server) (建議選項)。
+2. 在新的電腦上安裝新版本的 SQL Server，然後使用 Configuration Manager 安裝程式的[資料庫移動選項](/sccm/core/servers/manage/modify-your-infrastructure#a-namebkmkdbconfiga-modify-the-site-database-configuration)，將您的站台伺服器指向新的 SQL Server。
+3. 使用[備份及復原](/sccm/protect/understand/backup-and-recovery)。
 

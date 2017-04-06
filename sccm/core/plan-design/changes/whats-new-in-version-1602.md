@@ -15,9 +15,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+robots: noindex,nofollow
 translationtype: Human Translation
-ms.sourcegitcommit: 221228890b12bd6875de51e17a1124303b318201
-ms.openlocfilehash: 0314513bed65457c63508bfe2212e3e52d8d03da
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 9a548f43625a907173e7b967d26356bd80f1c5d9
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="what39s-new-in-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 1602 版的新功能
@@ -38,7 +40,7 @@ System Center Configuration Manager 1602 更新僅會以執行 1511 版之原安
 
 ## <a name="site-infrastructure"></a>站台基礎結構  
 
-###  <a name="a-namebkmkupgradeosa-in-place-upgrade-the-operating-system-of-site-servers-that-run-windows-server-2008-r2"></a><a name="bkmk_UpgradeOS"></a> 就地升級執行 Windows Server 2008 R2 之站台伺服器的作業系統  
+###  <a name="bkmk_UpgradeOS"></a> 就地升級執行 Windows Server 2008 R2 之站台伺服器的作業系統  
  執行 1602 或更新版本的 Configuration Manager 站台，可支援將站台伺服器作業系統從 Windows Server 2008 R2 就地升級到 Windows Server 2012 R2。  
 
 > [!WARNING]  
@@ -48,7 +50,7 @@ System Center Configuration Manager 1602 更新僅會以執行 1511 版之原安
 
  若要升級伺服器，請使用 Windows Server 2012 R2 的升級程序。 您不需要在升級後執行 Configuration Manager 站台伺服器還原。 如需升級程序，請參閱 Windows Server 文件中的 [Windows Server 2012 R2 的升級選項](https://technet.microsoft.com/library/dn303416.aspx) 。  
 
-###  <a name="a-namebkmkaoaga-sql-server-alwayson-availability-groups"></a><a name="bkmk_AOAG"></a> SQL Server AlwaysOn 可用性群組  
+###  <a name="bkmk_AOAG"></a> SQL Server AlwaysOn 可用性群組  
  您可以使用 SQL Server AlwaysOn 可用性群組，於主要站台和管理中心網站裝載站台資料庫，以作為高可用性和災害復原方案。  
 
  如需詳細資訊，請參閱[適用於 System Center Configuration Manager 之高可用性站台資料庫的 SQL Server AlwaysOn](../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)。  
@@ -218,9 +220,4 @@ Configuration Manager 可以要求執行 iOS 7.1 和更新版本之受監督和�
 -   **不符合規範**：使用者已接受某個版本的條款和條件，但不是最新版。  
 
 -   **不明**：使用者從未接受條款和條件 (包括裝置未註冊的使用者)。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

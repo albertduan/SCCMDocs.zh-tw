@@ -2,7 +2,7 @@
 title: "用戶端設定 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 的管理主控台選擇用戶端設定。"
 ms.custom: na
-ms.date: 12/12/2016
+ms.date: 03/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 289db441899359f3bf3abe5d38896c7acd2045b6
-ms.openlocfilehash: 5eaca19f2b21b1c62b956d2a44d492d3ddd6d10a
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: bd2cf7b0df4a1f50c006e8280bf59ea91f1b4477
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>關於 System Center Configuration Manager 中的用戶端設計
@@ -329,7 +329,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
     -   IDMIF 檔案應位於 Windows\System32\CCM\Inventory\Noidmif 資料夾中。  
 
     > [!NOTE]  
-    >  僅預設用戶端設定提供此設定。 
+    >  僅預設用戶端設定提供此設定。
 
 -   **隨機延遲時間上限**
 
@@ -505,7 +505,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
     -   選擇**新增**圖示將新的檔案類型加入清查。 然後在 [已清查的檔案內容] 對話方塊中，指定下列資訊：  
 
-        -   **名稱**：提供您要清查的檔案名稱。 您可以使用 **\** 字元來表示任何文字字串，以及使用 **?** 字元來表示任何單一字元。例如，若您想要清查所有副檔名為 .doc 的檔案，請指定檔案名稱 **\*.doc**。  
+        -   **名稱**：提供您要清查的檔案名稱。 您可以使用 **\** 字元來表示任何文字字串，以及使用**?**字元來表示任何單一字元。例如，若您想要清查所有副檔名為 .doc 的檔案，請指定檔案名稱**\*.doc**。  
 
         -   **位置**：選擇 [設定] 開啟 [路徑內容] 對話方塊。 您可以將軟體清查設定為搜尋所有用戶端硬碟的指定檔案、搜尋指定的路徑 (例如 **C:\資料夾**) 或搜尋指定的變數 (例如 *%windir%*)。 您也可以搜尋指定路徑下的所有子資料夾。  
 
@@ -528,7 +528,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
     -   在 [收集到的檔案內容]  對話方塊中，提供下列資訊：  
 
-        -   **名稱**：提供您要收集的檔案名稱。 您可以使用 **\** 字元來表示任何文字字串，以及使用 **?** 字元來表示任何單一字元。  
+        -   **名稱**：提供您要收集的檔案名稱。 您可以使用 **\** 字元來表示任何文字字串，以及使用**?** 字元來表示任何單一字元。  
 
         -   **位置**：選擇 [設定] 開啟 [路徑內容] 對話方塊。 您可以將軟體清查設定為在所有用戶端硬碟中搜尋您要收集的檔案、搜尋指定的路徑 (例如 **C:\資料夾**)，或搜尋指定的變數 (例如 *%windir%*)。 您也可以搜尋指定路徑下的所有子資料夾。  
 
@@ -601,6 +601,12 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 -   **期限在這段時間內的所有擱置中部署也會安裝的一段時間**  
 
      使用此設定以指定先前設定的時間範圍。 您可以輸入的值為 1 到 23 小時以及 1 到 365 天。 根據預設，這項設定設定為 7 天。  
+
+-   **在用戶端上啟用快速安裝檔案的安裝**
+
+-   **用來下載快速安裝檔案內容的連接埠**
+
+-   **啟用 Office 365 用戶端代理程式的管理** 使用此設定來啟用 Office 365 用戶端代理程式的管理。 當您將值設為 [是] 時，即可讓您設定 Office 365 安裝設定、從 Office 內容傳遞網路 (CDN) 下載檔案，並在 Configuration Manager 中將檔案當做應用程式來部署。
 
 ##  <a name="user-and-device-affinity"></a>使用者和裝置親和性  
 

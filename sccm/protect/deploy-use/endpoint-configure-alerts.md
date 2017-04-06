@@ -2,7 +2,7 @@
 title: "設定 Endpoint Protection 警示 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中設定 Endpoint Protection 警示。"
 ms.custom: na
-ms.date: 02/14/2017
+ms.date: 03/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9b20b50843cadc478d5b75a276d2a24aea30f2ff
-ms.openlocfilehash: 6e7b080c1e1876c0ccef9ce6568ce88b65dfca87
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 7f4329b289b606dee5bf31aad8207de52667229f
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -90,14 +91,15 @@ ms.openlocfilehash: 6e7b080c1e1876c0ccef9ce6568ce88b65dfca87
 
 9. 按一下 [確定] 關閉 [<集合名稱\> 內容] 對話方塊。  
 
+## <a name="alert-for-outdated-malware-client"></a>到期惡意程式碼用戶端的警示
+
+從 Configuration Manager 1702 版開始，您可以設定警示來確保 Endpoint Protection 用戶端未過期。 您現在可以檢視 [反惡意程式碼用戶端版本] 和 [Endpoint Protection 部署狀態]，方法是移至 [資產與合規性] > [概觀] > [裝置] > [所有桌面及伺服器用戶端]。 若要檢查警示，請檢視 [監視] 工作區中的 [警示]。 如果超過 20% 的受管理用戶端執行反惡意程式碼軟體過期版本，則會顯示「反惡意程式碼用戶端版本已過期」警示。 此警示不會出現在 [監視] > [概觀] 索引標籤上。 若要更新過期的反惡意程式碼用戶端，請啟用反惡意程式碼用戶端的軟體更新。
+
+若要設定產生警示的百分比，請展開 [監視] > [警示] > [所有警示]，然後按兩下 [反惡意程式碼用戶端已過期]，並修改 [如果具有反惡意程式碼用戶端過期版本的受管理用戶端百分比超過下列數值，則產生警示] 選項。
+
 > [!div class="button"]
 [下一步 >](endpoint-definition-updates.md)
 
 > [!div class="button"]
 [上一步 >](endpoint-protection-site-role.md)
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

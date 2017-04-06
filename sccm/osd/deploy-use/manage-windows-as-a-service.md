@@ -2,7 +2,7 @@
 title: "管理 Windows 即服務 - Configuration Manager | Microsoft Docs"
 description: "使用 Configuration Manager 檢視 Windows 即服務的狀態、建立服務方案以形成部署環節，以及檢視在 Windows 10 用戶端支援即將結束時所發出的警示。"
 ms.custom: na
-ms.date: 01/23/2017
+ms.date: 03/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: 57478d9a9ee5f933000018b47e8a11a80e281252
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
+ms.openlocfilehash: 87c3a35f4688c505f9b659a1bfe62f7a04cc7f11
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -139,6 +139,8 @@ ms.lasthandoff: 03/21/2017
 
         -   **商務就緒 (最新商務分支)**：CBB 維護分支通常用於廣泛部署。 CBB 服務分支中的 Windows 10 用戶端只是稍後才會接收到 CB 服務分支中 Windows 10 的相同組建。
 
+        如需服務分支以及您最適合使用哪些選項的詳細資訊，請參閱[服務分支](https://technet.microsoft.com/itpro/windows/manage/waas-overview#servicing-branches)。
+
     -   **Microsoft 發行新的升級之後，您想要在您的環境中部署之前等待的天數**：如果目前的日期是在發行日期加上您設定此設定的天數之後，Configuration Manager 會評估是否要在部署中包含升級。
 
     -   在 Configuration Manager 1602 版之前，按一下 [預覽] 可檢視與整備狀態相關的 Windows 10 更新。  
@@ -257,17 +259,17 @@ ms.lasthandoff: 03/21/2017
 
     -   **詳細等級**：針對由用戶端電腦報告的狀態訊息，指定詳細等級。  
 
-   **下載設定**：在 [下載設定] 索引標籤上，指定以下設定：  
+    **下載設定**：在 [下載設定] 索引標籤上，指定以下設定：  
 
-    -   指定當用戶端連線到速度較慢的網路，或使用後援內容位置時，是否要下載並安裝軟體更新。  
+    - 指定當用戶端連線到速度較慢的網路，或使用後援內容位置時，是否要下載並安裝軟體更新。  
 
-    -   指定無法在慣用發佈點使用軟體更新內容時，是否要讓用戶端從後援發佈點下載並安裝軟體更新。  
+    - 指定無法在慣用發佈點使用軟體更新內容時，是否要讓用戶端從後援發佈點下載並安裝軟體更新。  
 
     -   **允許用戶端與同一個子網路上的其他用戶端共用內容**：指定是否允許針對下載內容使用 BranchCache。 如需 BranchCache 的詳細資訊，請參閱[內容管理的概念](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)。  
 
     -   指定若無法在發佈點上使用軟體更新時，是否讓用戶端從 Microsoft Update 下載軟體更新。
-    > [!IMPORTANT]
-    > Windows 10 服務更新請勿使用此設定。 Configuration Manager (至少到 1610 版) 將無法從 Microsoft Update 下載 Windows 10 服務更新。
+        > [!IMPORTANT]
+        > Windows 10 服務更新請勿使用此設定。 Configuration Manager (至少到 1610 版) 將無法從 Microsoft Update 下載 Windows 10 服務更新。
 
     -   指定當用戶端使用計量付費網際網路連線時，是否在過了安裝期限後仍允許用戶端進行下載。 在您處於計量付費網際網路連線時，網際網路提供者有時會根據您傳送和接收的資料量來收取費用。   
 

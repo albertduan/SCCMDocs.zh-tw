@@ -2,7 +2,7 @@
 title: "管理工作順序以自動化工作 | Microsoft Docs"
 description: "您可以建立、編輯、部署、匯入和匯出工作順序，以在 System Center Configuration Manager 環境中管理它們。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d04d28bbd5116a841c0872cf3f9ca18783dddc78
-ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 113fa73bf0bd1b3b8a4754eb1e96549c520d7995
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -29,7 +30,7 @@ ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
 
  請利用下面各區段管理工作順序。
 
-##  <a name="a-namebkmkcreatetasksequencea-create-task-sequences"></a><a name="BKMK_CreateTaskSequence"></a> 建立工作順序  
+##  <a name="BKMK_CreateTaskSequence"></a> 建立工作順序  
  使用 [建立工作順序精靈] 建立工作順序。 此精靈可建立下列類型的工作順序：  
 
 |工作順序類型|詳細資訊|  
@@ -41,7 +42,13 @@ ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
 |[管理虛擬硬碟的工作順序](use-a-task-sequence-to-manage-virtual-hard-disks.md)|此工作順序類型包含建立 VHD 的步驟，VHD 包含安裝作業系統和應用程式的選項，您可以從 Configuration Manager 主控台將 VHD 發佈至 System Center Virtual Machine Manager (VMM)。|  
 |[自訂工作順序](create-a-custom-task-sequence.md)|此工作順序類型不會新增任何步驟至工作順序。 您必須編輯工作順序，然後在建立工作順序之後新增步驟到其中。|  
 
-##  <a name="a-namebkmkmodifytasksequencea-edit-a-task-sequence"></a><a name="BKMK_ModifyTaskSequence"></a> 編輯工作順序  
+## <a name="return-to-previous-page-when-a-task-sequence-fails"></a>工作順序失敗時返回上一頁
+從 Configuration Manager 1702 版開始，當您執行工作順序並失敗時，可以返回上一頁。 在此版本之前，您必須在失敗時重新啟動工作順序。 例如，您可以在下列情況下使用 [上一步] 按鈕：
+
+- 當電腦在 Windows PE 中啟動時，在工作順序可用之前，可能會顯示工作順序啟動程序對話方塊。 當您在此情況下按一下 [下一步] 時，工作順序的最後一頁會顯示訊息，指出沒有工作順序可用。 現在，您可以按一下 [上一步] 重新搜尋可用的工作順序。 您可以重複此程序直到工作順序可用為止。
+- 當您執行工作順序，但發佈點上尚未提供相依內容套件時，工作順序將會失敗。 您現在可以發佈遺失內容 (如果尚未發佈) 或等候發佈點上的內容可供使用，然後按一下 [上一步] 讓工作順序再次搜尋內容。
+
+##  <a name="BKMK_ModifyTaskSequence"></a> 編輯工作順序  
  您可以修改工作順序，方法是新增或移除工作順序步驟、新增或移除工作順序群組，或變更步驟的順序。 利用下列程序修改現有工作順序。  
 
 > [!IMPORTANT]  
@@ -71,7 +78,53 @@ ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
 
  如需可用工作順序步驟的清單，請參閱[工作順序步驟](../understand/task-sequence-steps.md)。  
 
-##  <a name="a-namebkmkdistributetsa-distribute-content-referenced-by-a-task-sequence"></a><a name="BKMK_DistributeTS"></a> 發佈工作順序所參考的內容  
+## <a name="configure-high-impact-task-sequence-settings"></a>設定具有強烈影響的工作順序設定
+從 Configuration Manager 1702 版開始，您可以將工作順序設定為有強烈影響，並自訂要讓使用者在執行工作順序時收到的訊息。
+
+### <a name="set-a-task-sequence-as-a-high-impact-task-sequence"></a>將工作順序設定為具有強烈影響的工作順序
+使用下列程序將工作順序設定為具有強烈影響。
+> [!NOTE]
+> 任何符合特定條件的工作順序都會自動定義為具有強烈影響。 如需詳細資料，請參閱[管理高風險部署](http://docs.microsoft.com/sccm/protect/understand/settings-to-manage-high-risk-deployments)。
+
+1. 在 Configuration Manager 主控台中，移至 [軟體程式庫] > [作業系統] > [工作順序]。
+2. 選取要編輯的工作順序，然後按一下 [內容]。
+3. 在 [使用者通知] 索引標籤上，選取 [這是具有強烈影響的工作順序]。
+
+### <a name="create-a-custom-notification-for-high-risk-deployments"></a>建立高風險部署的自訂通知
+使用下列程序來為具有強烈影響的部署建立自訂通知。
+1. 在 Configuration Manager 主控台中，移至 [軟體程式庫] > [作業系統] > [工作順序]。
+2. 選取要編輯的工作順序，然後按一下 [內容]。
+3. 在 [使用者通知] 索引標籤上，選取 [使用自訂文字]。
+>  [!NOTE]
+>  選取 [這是具有強烈影響的工作順序] 時，您只能設定使用者通知文字。
+
+4. 設定下列設定 (每個文字方塊最多 255 個字元)：
+
+  **使用者通知標題文字**：指定在軟體中心使用者通知上顯示的藍色文字。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「請確認是否要升級這部電腦的作業系統」。
+
+  **使用者通知訊息文字**：有三個文字方塊提供自訂通知的內文。 所有文字方塊都會要求您加入文字。
+  - 第 1 個文字方塊︰指定本文，通常包含使用者指示。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「升級作業系統需要一些時間，而且您的電腦可能會重新啟動數次。」
+  - 第 2 個文字方塊︰指定本文下的粗體文字。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「這項就地升級會安裝新的作業系統，並自動移轉您的應用程式、資料和設定。」
+  - 第 3 個文字方塊︰指定粗體文字下的最後一行文字。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「按一下 [安裝] 開始安裝。 否則，請按一下 [取消]。」   
+
+  假設您在內容中設定下列自訂通知。
+
+    ![工作順序的自訂通知](..\media\user-notification.png)
+
+    使用者從軟體中心開啟安裝時，將會顯示下列通知訊息。
+
+    ![工作順序的自訂通知](..\media\user-notification-enduser.png)
+
+### <a name="configure-software-center-properties"></a>設定軟體中心內容
+使用下列程序設定軟體中心中所顯示工作順序的詳細資料。 這些詳細資料僅供參考。  
+1. 在 Configuration Manager 主控台中，移至 [軟體程式庫] > [作業系統] > [工作順序]。
+2. 選取要編輯的工作順序，然後按一下 [內容]。
+3. 在 [一般] 索引標籤上，可以使用下列軟體中心設定︰
+  - **需要重新啟動**：讓使用者知道在安裝期間是否需要重新啟動。
+  - **下載大小 (MB)**︰指定軟體中心中針對工作順序顯示的 MB 數。  
+  - **估計執行時間 (分鐘)**：指定軟體中心中針對工作順序顯示的估計執行時間 (分鐘)。
+
+##  <a name="BKMK_DistributeTS"></a> 發佈工作順序所參考的內容  
  您必須先將內容發佈到發佈點，用戶端才可以執行參照內容的工作順序。 您隨時都可以選取工作順序並發佈其內容，以便建立要發佈的新參照套件清單。 如果您以更新的內容變更工作順序，則必須重新發佈內容，用戶端才能使用該內容。 利用下列程序，發佈由工作順序所參照的內容。  
 
 #### <a name="to-distribute-referenced-content-to-distribution-points"></a>將參照的內容發佈到發佈點  
@@ -97,7 +150,7 @@ ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
 
  您可以預先設置工作順序中參照的內容。 Configuration Manager 可建立壓縮的預先設置內容檔案，其中包含您所選內容的檔案、相關聯的相依性及相關聯的中繼資料。 接著，您可以在網站伺服器、次要網站或發佈點手動匯入該內容。 如需如何預先設置內容檔案的詳細資訊，請參閱[預先設置內容](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkprestagea-use-prestaged-content)。  
 
-##  <a name="a-namebkmkdeploytsa-deploy-a-task-sequence"></a><a name="BKMK_DeployTS"></a> 部署工作順序  
+##  <a name="BKMK_DeployTS"></a> 部署工作順序  
  利用下列程序，將工作順序部署到集合中的電腦。  
 
 > [!WARNING]  
@@ -230,7 +283,7 @@ ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
 
 11. 完成精靈。  
 
-##  <a name="a-namebkmkexportimporta-export-and-import-task-sequences"></a><a name="BKMK_ExportImport"></a> 匯出和匯入工作順序  
+##  <a name="BKMK_ExportImport"></a> 匯出和匯入工作順序  
  您可以匯出及匯入包含或不含相關物件的工作順序，如作業系統映像、開機映像、用戶端代理程式套件、驅動程式套件，以及具備相依性的應用程式。  
 
  匯出和匯入工作順序時，請考量以下各點。  
@@ -297,7 +350,7 @@ ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
 
  匯入工作順序後，編輯工作順序以指定任何原先位於原始工作順序內的密碼。 基於安全考量，密碼將不會匯出。  
 
-##  <a name="a-namebkmkcreatetsvariablesa-create-task-sequence-variables-for-computers-and-collections"></a><a name="BKMK_CreateTSVariables"></a> 為電腦與集合建立工作順序變數  
+##  <a name="BKMK_CreateTSVariables"></a> 為電腦與集合建立工作順序變數  
  您可以為電腦與集合定義自訂工作順序變數。 針對電腦所定義的變數會參照為個別電腦的工作順序變數。 針對集合所定義的變數會參照為個別集合的工作順序變數。 如果發生衝突，個別電腦的變數優先於個別集合的變數。 這代表指派至特定電腦的工作順序變數，其優先順序會自動高於指派至集合 (其中包含電腦) 的變數。  
 
  例如，如果集合 ABC 具有指派的變數，而集合 ABC 的成員電腦 XYZ 也具有相同名稱的指派變數，則指派至電腦 XYZ 的變數優先順序會高於指派至集合 ABC 的變數。  
@@ -342,7 +395,7 @@ ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
 
 6.  將所有的變數加至集合後，按一下 [確定] 。  
 
-##  <a name="a-namebkmkadditionalactionstsa-additional-actions-to-manage-task-sequences"></a><a name="BKMK_AdditionalActionsTS"></a> 其他管理工作順序的動作  
+##  <a name="BKMK_AdditionalActionsTS"></a> 其他管理工作順序的動作  
  當您使用下列程序選取工作順序時，可使用額外動作來管理工作順序。  
 
 #### <a name="to-select-a-task-sequence-to-manage"></a>若要選取要管理的工作順序  
@@ -366,9 +419,4 @@ ms.openlocfilehash: 417b31fa1feb6d0f674f14ef9e5c7cebd7013916
 
 ## <a name="next-steps"></a>後續步驟
 [部署企業作業系統的案例](scenarios-to-deploy-enterprise-operating-systems.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

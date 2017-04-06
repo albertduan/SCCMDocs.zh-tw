@@ -2,7 +2,7 @@
 title: "協助工具 | Microsoft Docs"
 description: "深入了解可供殘障人士使用的 System Center Configuration Manager 功能。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 3/27/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bf0ca29a68cb8fbbcacc2acd148c06abf08c5cab
-ms.openlocfilehash: ca1207b8d48ca66096d1bbe674541223c033d895
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 98599b3c188c9e9b508fea79ecf9a2b2348e9288
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="accessibility-features-in-system-center-configuration-manager"></a>System Center Configuration Manager 的協助工具功能
@@ -28,7 +29,7 @@ ms.openlocfilehash: ca1207b8d48ca66096d1bbe674541223c033d895
 System Center Configuration Manager 包含協助殘障人士使用的功能。
 
 
-## <a name="a-namebkmkaconsolea-accessibility-features-for-the-configuration-manager-console"></a><a name="bkmk_aconsole"></a> Configuration Manager 主控台的協助工具功能  
+## <a name="bkmk_aconsole"></a> Configuration Manager 主控台的協助工具功能  
 -   使用下列鍵盤快速鍵存取工作區：  
 
 |工作區|鍵盤快速鍵|  
@@ -44,16 +45,16 @@ System Center Configuration Manager 包含協助殘障人士使用的功能。
 
 -   若要存取工作區中的不同區域，請使用 Tab 鍵和 Shift+Tab 鍵。 若要在工作區的某個區域中瀏覽 (例如功能區)，請使用方向鍵。  
 
--   若要在焦點位於樹狀節點時存取位址列，請按 Shift+Tab 鍵&3; 次。  
+-   若要在焦點位於樹狀節點時存取位址列，請按 Shift+Tab 鍵 3 次。  
 
--   在精靈或內容頁面中，使用鍵盤快速鍵可在方塊之間移動。 同時選取 Alt 鍵和加底線的字元 (Alt+_) 可選取特定方塊。  
+-   在精靈或內容頁面中，使用鍵盤快速鍵可在方塊之間移動。 同時選取 Alt 鍵和加底線的字元 (Alt+_) 可選取特定方塊。     
 
- -  自 1606 版開始，若要瀏覽到工作區的不同節點，請輸入節點名稱的第一個字母。 每個按鍵動作都會將游標移至以該字母開頭的下一個節點。 當您使用螢幕助讀程式時，助讀程式會讀出該節點的名稱。
+-  若要瀏覽到工作區的不同節點，請輸入節點名稱的第一個字母。 每個按鍵動作都會將游標移至以該字母開頭的下一個節點。 當您使用螢幕助讀程式時，助讀程式會讀出該節點的名稱。
 
 > [!NOTE]  
 >  本節提供的資訊僅適用於擁有 Microsoft 產品美國地區授權的使用者。 如果您在美國以外地區取得本產品，可以使用軟體套件隨附的子公司資訊卡，或者瀏覽 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431)，取得 Microsoft 支援服務的連絡資訊。 您可以與您所在地區的子公司連絡，了解本節所述的產品及服務類型是否已於當地銷售。 協助工具的相關資訊另有其他語言版本，包括日文及法文。  
 
-##  <a name="a-namebkmkahelpa-accessibility-features-for-configuration-manager-help"></a><a name="bkmk_ahelp"></a> Configuration Manager 說明的協助工具功能  
+##  <a name="bkmk_ahelp"></a> Configuration Manager 說明的協助工具功能  
  Configuration Manager 說明包含可讓手部缺陷、視力不佳或其他殘障等人士方便使用的功能。  
 
 |若要執行這項操作|使用此鍵盤快速鍵|  
@@ -108,9 +109,4 @@ System Center Configuration Manager 包含協助殘障人士使用的功能。
 
     > [!NOTE]  
     >  如果變更 [說明] 視窗中 [說明] 主題的字型，這項變更也會影響 Windows Internet Explorer 中網頁的字型。  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -1,17 +1,18 @@
 ---
 title: "監視雲端管理閘道 - Configuration Manager | Microsoft Docs"
 description: 
-ms.date: 11/18/2016
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-client
 ms.assetid: 15f72f80-9850-40ce-9c3a-443ba04b6a03
-author: nbigman
-ms.author: nbigman
+author: arob98
+ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: ef12c9b966a1b83b61243311b30e1a925c20d2e3
-ms.openlocfilehash: 4475205c37c20631a189e0c315dc48e288c15ba6
+ms.sourcegitcommit: 199096db7a23fb14db98b95e75246ed254848ab7
+ms.openlocfilehash: df32a7d95799d8ae685fd66e2d9ddf25e32b37d0
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -49,16 +50,5 @@ ms.openlocfilehash: 4475205c37c20631a189e0c315dc48e288c15ba6
 
 ## <a name="monitor-logs"></a>監視記錄檔
 
-雲端管理閘道服務會產生下列記錄檔的項目：
-
--   **Cloudmgr.log** – 包含雲端管理閘道服務的部署、進行中的服務狀態，以及與服務相關的使用方式資料等項目。
-
--   **SMS\_Cloud\_ProxyConnector.log** – 包含雲端管理閘道服務和雲端管理閘道連接點之間的連線設定等項目。
-
-如需詳細資訊，請參閱 [Configuration Manager 記錄檔](/sccm/core/plan-design/hierarchy/log-files)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
+雲端管理閘道服務會在數個記錄檔中產生項目。 如需詳細資訊，請參閱 [Configuration Manager 記錄檔](/sccm/core/plan-design/hierarchy/log-files)。
 

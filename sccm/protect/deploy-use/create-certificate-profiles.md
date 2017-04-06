@@ -2,7 +2,7 @@
 title: "如何建立 SCEP 憑證設定檔 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中使用憑證設定檔，透過受管理裝置所需的憑證來佈建受管理裝置。"
 ms.custom: na
-ms.date: 11/22/2016
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,11 +17,13 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
-ms.openlocfilehash: cb9351fc63e49af611c494ec82a6c8651afae30f
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: f919ac97b24604babca4f70f184220604227eb0e
+ms.lasthandoff: 03/27/2017
 
 
 ---
+
 # <a name="create-certificate-profiles"></a>建立憑證設定檔
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -38,7 +40,7 @@ ms.openlocfilehash: cb9351fc63e49af611c494ec82a6c8651afae30f
 
 1.  在 System Center Configuration Manager 主控台中，按一下 [資產與相容性]。  
 
-2.  在 [資產與相容性]  工作區中，依序展開 [相容性設定] 和 [公司資源存取] ，然後按一下 [憑證設定檔] 。  
+2.  在 [資產與合規性] 工作區中，依序展開 [合規性設定] 和 [公司資源存取]，然後按一下 [憑證設定檔] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立憑證設定檔] 。  
 
@@ -56,7 +58,9 @@ ms.openlocfilehash: cb9351fc63e49af611c494ec82a6c8651afae30f
 
 -   **簡單憑證註冊通訊協定 (SCEP) 設定**：如果您使用簡單憑證註冊通訊協定和網路裝置註冊服務角色服務來要求使用者或裝置的憑證，請選取此憑證設定檔類型。
 
--   **個人資訊交換 -- PKCS #12 (PFX) 設定 -- 匯入**：選取此選項以匯入 PFX 憑證。 若要深入了解如何建立 PFX 憑證，請參閱[建立 PFX 憑證設定檔](../../protect/deploy-use/create-pfx-certificate-profiles.md)。
+-   **個人資訊交換 PKCS #12 (PFX) 設定 - 匯入**：選取此選項以匯入 PFX 憑證。 若要深入了解如何建立 PFX 憑證，請參閱[建立 PFX 憑證設定檔](../../protect/deploy-use/create-pfx-certificate-profiles.md)。
+
+- **個人資訊交換 PKCS #12 (PFX) 設定 - 建立**：選取此選項以建立新的 PFX 憑證設定檔。 若要深入了解如何建立 PFX 憑證，請參閱[建立 PFX 憑證設定檔](../../protect/deploy-use/create-pfx-certificate-profiles.md)。
 
 
 
@@ -183,10 +187,7 @@ ms.openlocfilehash: cb9351fc63e49af611c494ec82a6c8651afae30f
 ###  <a name="specify-supported-platforms-for-the-certificate-profile"></a>指定憑證設定檔的支援平台  
 
 1. 在 [建立憑證設定檔精靈] 的 [支援的平台]  頁面上，選取您要安裝憑證設定檔的作業系統。 或者，按一下 [全選]  將憑證設定檔安裝到所有可用的作業系統。
-2. 檢閱精靈的 [摘要] 頁面，並選擇 [完成]。 新的憑證設定檔會出現在 [資產與相容性] 工作區的 [憑證設定檔] 節點，隨時可供部署到使用者或裝置 (如[如何在 System Center Configuration Manager 中部署設定檔](deploy-wifi-vpn-email-cert-profiles.md)中所述)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
-
+2. 檢閱精靈的 [摘要] 頁面，並選擇 [完成]。 
+ 
+ 
+新的憑證設定檔會出現在 [資產與相容性] 工作區的 [憑證設定檔] 節點，隨時可供部署到使用者或裝置 (如[如何在 System Center Configuration Manager 中部署設定檔](deploy-wifi-vpn-email-cert-profiles.md)中所述)。  

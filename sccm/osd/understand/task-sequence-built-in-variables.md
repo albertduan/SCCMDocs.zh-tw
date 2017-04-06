@@ -2,7 +2,7 @@
 title: "工作順序內建變數 | Microsoft Docs"
 description: "工作順序內建變數提供工作順序執行環境的相關資訊，並且可用於整個工作順序期間。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: c9fb0fa46058c773eec6ac23999357d35d9f970f
-ms.openlocfilehash: a75adebfe2bbec8f6fe5206561530a720c0bfbf1
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: a3e6cca8d58055cc2d54aff3cb70a276fb40e829
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -51,7 +52,7 @@ ms.openlocfilehash: a75adebfe2bbec8f6fe5206561530a720c0bfbf1
 |_SMSTSMachineName|儲存並指定電腦名稱。 儲存工作順序用來記錄所有狀態訊息之電腦的名稱。 若要變更新作業系統中的電腦名稱，請使用 **OSDComputerName** 變數。<br /><br /> 範例：<br /><br /> **ABC**|  
 |_SMSTSMDataPath|指定 SMSTSLocalDataDrive 變數所定義的路徑。 如果您在工作順序啟動之前定義 SMSTSLocalDataDrive (例如透過設定集合變數)，Configuration Manager 便會在工作順序啟動之後定義 _SMSTSMDataPath 變數。|  
 |_SMSTSMediaType|指定用來起始安裝的媒體類型。 媒體類型範例包括開機媒體、完整媒體、PXE 和預先設置的媒體。|  
-|_SMSTSMP|儲存 Configuration Manager 管理點的名稱或 IP 位址。|  
+|_SMSTSMP|儲存 Configuration Manager 管理點的 URL 或 IP 位址。|  
 |_SMSTSMPPort|儲存 Configuration Manager 管理點的管理點連接埠號碼。<br /><br /> 範例：<br /><br /> **80**|  
 |_SMSTSOrgName|儲存在工作順序進度使用者介面對話方塊中顯示的商標標題名稱。<br /><br /> 範例：<br /><br /> **XYZ 組織**|  
 |_SMSTSOSUpgradeActionReturnCode|儲存從安裝程式傳回的結束代碼值，以表示成功或失敗。  這個變數會在工作順序步驟的「作業系統升級」工作順序步驟期間設定。 在搭配 Windows 10 安裝程式命令列選項 /Compat 時非常有用。<br /><br /> 範例：<br /><br /> /Compat 完成時，您可以依據失敗或成功結束代碼來採取後續步驟動作。 成功時，您即可啟動升級。 或者，您可以在環境中設定標記 (例如新增檔案或設定登錄機碼)，然後用它來為準備好升級的電腦或必須採取動作才能升級的電腦建立集合。|  
@@ -79,6 +80,7 @@ ms.openlocfilehash: a75adebfe2bbec8f6fe5206561530a720c0bfbf1
 |TSErrorOnWarning|使用這個變數，指定工作順序引擎是否會考慮將「應用程式安裝」工作順序步驟期間所偵測到的警告視為錯誤。 當一或多個應用程式或必要的相依性由於不符合需求而未安裝時，工作順序會將 _TSAppInstallStatus 變數設為 [警告]  。 當您將 TSErrorOnWarning 變數設為 **True** 並將 _TSAppInstallStatus 變數設為 [警告] 時，這個警告會視為錯誤。 預設行為是 **False** 值。|  
 |SMSTSLanguageFolder|使用此變數變更非語言相關開機映像的顯示語言。|  
 |SMSTSLocalDataDrive|指定當工作順序正在執行時，暫存檔案儲存在目的地電腦上的位置。<br /><br /> 這個變數必須在工作順序啟動之前設定，例如透過設定集合變數。 Configuration Manager 會在工作順序啟動之後定義 _SMSTSMDataPath 變數。|  
+|SMSTSMP|使用此變數指定 Configuration Manager 管理點的 URL 或 IP 位址。|  
 |SMSTSMPListRequestTimeout|使用這個變數，指定工作順序從位置服務擷取管理點清單失敗後，到重新嘗試安裝應用程式或軟體更新之前等待的毫秒數。 根據預設，工作順序會等待 60,000 毫秒 (60 秒) 後再重試該步驟，且最多重試三次。 此變數只適用於 [安裝應用程式] 和 [安裝軟體更新] 工作順序步驟。|  
 |SMSTSMPListRequestTimeoutEnabled|如果用戶端不在內部網路上，使用此變數可啟用重複的 MPList 要求以重新整理用戶端。 <br />根據預設，此變數設定為 True。 當用戶端在網際網路上時，您可以將此變數設定為 False，以避免不必要的延遲。 此變數只適用於「安裝應用程式」和「安裝軟體更新」工作順序步驟。|  
 |SMSTSPeerDownload|使用此變數可讓用戶端使用 Windows PE 對等快取。<br /><br /> 範例：<br /><br /> SMSTSPeerDownload  = **TRUE** 可啟用這項功能。|  
@@ -94,9 +96,4 @@ ms.openlocfilehash: a75adebfe2bbec8f6fe5206561530a720c0bfbf1
 |SMSTSSoftwareUpdateScanTimeout| 讓您能夠在[安裝軟體更新](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)工作順序步驟期間，控制軟體更新掃描的逾時。 例如，如果有大量的軟體更新要安裝，您可以增加預設值。 預設值為 30 分鐘。 |
 |SMSTSUDAUsers|指定目的地電腦的主要使用者。 請用下列格式指定使用者。 使用逗號 (,) 分隔多個使用者。<br /><br /> 範例：<br /><br /> **domain\user1, domain\user2, domain\user3**<br /><br /> 如需為使用者與目的地電腦建立關聯的詳細資訊，請參閱[為使用者與目的地電腦建立關聯](../get-started/associate-users-with-a-destination-computer.md)。|  
 |SMSTSWaitForSecondReboot|從 Configuration Manager 1602 版開始，當軟體更新安裝需要兩次重新啟動時，可使用這項選擇性的工作順序變數來協助控制用戶端行為。 在[安裝軟體更新](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)步驟前必須先設定此變數，以防止工作順序因為軟體更新安裝的第二次重新啟動而失敗。<br /><br /> 以秒為單位來設定 SMSTSWaitForSecondReboot 值，指定在「安裝軟體更新」步驟期間電腦重新啟動時工作順序要暫停的時間長度，以在有第二次重新啟動時提供足夠的時間。 <br />例如，如果您將 SMSTSWaitForSecondReboot 設定為 600，工作順序就會在重新啟動後先暫停 10 分鐘，然後再執行其他的工作順序步驟。 在單一「安裝軟體更新」工作順序步驟中安裝數百個軟體更新時，這非常有用。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

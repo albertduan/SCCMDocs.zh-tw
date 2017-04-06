@@ -2,7 +2,7 @@
 title: "如何建立設定項目 | Microsoft Docs"
 description: "建立設定，並將設定部署至 System Center Configuration Manager 所管理的裝置以及使用 Microsoft Intune 所註冊的裝置。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,25 +17,21 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
-ms.openlocfilehash: bfe0e8e68f51e60508f91c806a94a505577cb50a
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: cddf549f017792add1b17b722bf51769060520b7
+ms.lasthandoff: 03/27/2017
 
 
 ---
 # <a name="how-to-create-configuration-items-in-system-center-configuration-manager"></a>如何建立 System Center Configuration Manager 的組態項目
 
-*適用於︰System Center Configuration Manager (最新分支)*
+*適用對象：System Center Configuration Manager (最新分支)*
 
-System Center Configuration Manager 中的相容性設定可讓您建立設定，並將設定部署至 Configuration Manager 所管理的兩部裝置，以及使用 Microsoft Intune 所註冊的裝置。  
+System Center Configuration Manager 中的合規性設定可讓您建立設定，並將設定部署至 Configuration Manager 所管理的兩部裝置，以及使用 Microsoft Intune 所註冊的裝置。  
 
 ## <a name="in-this-section"></a>本節內容  
 
 -   [使用 System Center Configuration Manager 用戶端所管理之裝置的設定項目](../../compliance/deploy-use/configuration-items-for-devices-managed-with-the-client.md)  
 
--   [不使用 System Center Configuration Manager 用戶端所管理之裝置的設定項目](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+-   [使用 Intune 進行管理之裝置的設定項目](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)  
 

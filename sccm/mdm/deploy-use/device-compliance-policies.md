@@ -17,9 +17,9 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: ad9ea7b29e03bb514fe23fdf761b312c85c16714
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: bcaa2a9b5474e06bf344dc4fd47dbb160ea36297
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="device-compliance-policies-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的裝置相容性原則
@@ -40,22 +40,24 @@ System Center Configuration Manager 中的**相容性原則**會定義裝置必�
 
 -   裝置為 jailbroken 或根目錄  
 
--   裝置上的電子郵件是否由 Intune 原則管理，或裝置是否被 Windows 裝置健康情況證明服務回報為狀況不良。  
+-   裝置上的電子郵件是否由 Intune 原則管理，或裝置是否被 Windows 裝置健康情況證明服務回報為狀況不良。
+-   無法安裝在裝置上的應用程式。
 
 
  您可以將相容性原則部署到使用者集合。 將相容性原則部署到使用者時，即會檢查所有使用者裝置的相容性。  
 
  下表列出相容性原則支援的裝置類型，以及在將該原則與條件式存取原則搭配使用時如何管理不相容的設定。  
 
-|規則|Windows 8.1 及更新版本|Windows Phone 8.1 和更新版本|iOS 6.0 和更新版本|Android 4.0 和更新版本、Samsung KNOX Standard 4.0 和更新版本|  
+|規則|Windows 8.1 及更新版本|Windows Phone 8.1 和更新版本|iOS 6.0 和更新版本|Android 4.0 和更新版本、Samsung Knox Standard 4.0 和更新版本、Android for Work|  
 |----------|---------------------------|---------------------------------|-----------------------|---------------------------|-----------------------------------------|  
 |**PIN 碼或密碼設定**|已修復|已修復|已修復|已隔離|  
-|**裝置加密**|N/A|已修復|已修復 (藉由設定 PIN 碼)|已隔離|  
+|**裝置加密**|N/A|已修復|已修復 (藉由設定 PIN 碼)|已隔離<br>(Android for Work 一律會加密)|  
 |**已進行 JB 或 Root 破解的裝置**|N/A|N/A|隔離 (非設定)|隔離 (非設定)|  
 |**電子郵件設定檔**|N/A|N/A|已隔離|N/A|  
 |**最低 OS 版本**|已隔離|已隔離|已隔離|已隔離|  
 |**最高 OS 版本**|已隔離|已隔離|已隔離|已隔離|  
 |**裝置健康情況證明 (1602 更新)**|設定不適用於 Windows 8.1<br /><br /> 已隔離 Windows 10 和 Windows 10 行動裝置版。|N/A|N/A|N/A|  
+|**無法安裝的應用程式**|N/A|N/A|已隔離|已隔離|
 
  **已修復** = 相容性由裝置作業系統執行 (例如強制使用者設定 PIN 碼)。  永遠不可能發生設定值不相容的情況。  
 

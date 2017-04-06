@@ -1,9 +1,8 @@
-
 ---
 title: "用戶端對等快取 | System Center Configuration Manager"
 description: "使用 System Center Configuration Manager 部署內容時，針對用戶端內容來源位置使用對等快取。"
 ms.custom: na
-ms.date: 2/13/2017
+ms.date: 3/27/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -17,11 +16,12 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: 895b8ae58a9fda3fd22f58d77129053df09c4ccb
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 5298f1c836c1a872862b0e972180ac0c99c59751
+ms.lasthandoff: 03/27/2017
 
 ---
+
 # <a name="peer-cache-for-configuration-manager-clients"></a>Configuration Manager 用戶端的對等快取
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -31,11 +31,14 @@ ms.lasthandoff: 03/04/2017
 > [!TIP]  
 > 對等快取和用戶端資料來源儀表板，都是在版本 1610 引進的發行前版本功能。 若要啟用它們，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/pre-release-features)。
 
+## <a name="overview"></a>概觀
  -     您可以使用用戶端設定，讓使用端能夠使用對等快取。
  -     若要共用內容，這兩個對等快取用戶端都必須是搜尋內容的用戶端目前界限群組的成員。 當用戶端使用後援來搜尋鄰近界限群組的內容時，鄰近界限群組中的對等快取用戶端不會包含於可用內容來源位置的集區中。 如需目前和鄰近界限群組的詳細資訊，請參閱[界限群組](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups##a-namebkmkboundarygroupsa-boundary-groups)。
  - 未啟用對等快取，但與啟用對等快取之用戶端同處於目前之界限群組的用戶端，可以從啟用對等快取的用戶端取得內容。  
  - Configuration Manager 用戶端快取中保存的每種內容類型，都可利用對等快取提供給其他的用戶端。
  -    對等快取不會取代其他解決方案 (例如 BranchCache) 的使用，而是可並行運作來提供您更多選項以擴充傳統內容部署解決方案。 這是一個不依賴 BranchCache 的自訂解決方案，所以就算不啟用或使用 Windows BranchCache，這個解決方案仍能運作。
+
+### <a name="operations"></a>作業
 
 將啟用對等快取的用戶端設定部署至集合之後，該集合的成員就能做為同一個界限群組中其他用戶端的對等內容來源：
  -    以對等內容來源運作的用戶端會向其管理點提交可用的快取內容清單。
@@ -45,9 +48,42 @@ ms.lasthandoff: 03/04/2017
 > [!NOTE]
 > 如果對內容的鄰近界限群組發生了後援，就不會將來自鄰近界限群組的對等快取內容來源位置新增至用戶端潛在內容來源位置的集區。  
 
-即使您可以讓所有用戶端參與對等快取，但最理想的做法是只選擇最適合作為對等快取來源的用戶端。  您可以根據用戶端的底座類型、磁碟空間、網路連線能力及更多項目來評估用戶端的適用性。 如需可協助您選取最適合用於對等快取的最佳用戶端詳細資訊，請參閱[這個由 Microsoft 顧問所維護的部落格](https://blogs.technet.microsoft.com/setprice/2016/06/29/pe-peer-cache-custom-reporting-examples/)。
 
+雖然您可以讓所有用戶端以對等快取來源的身分參與，但最理想的做法是只選擇最適合作為對等快取來源的用戶端。  您可以根據用戶端的底座類型、磁碟空間、網路連線能力及更多項目來評估用戶端的適用性。 如需可協助您選取最適合用於對等快取的最佳用戶端詳細資訊，請參閱[這個由 Microsoft 顧問所維護的部落格](https://blogs.technet.microsoft.com/setprice/2016/06/29/pe-peer-cache-custom-reporting-examples/)。
+
+**限制存取對等快取來源**  
+從 1702 版開始，當對等快取來源電腦符合下列任一條件時，對等快取來源電腦將會拒絕內容要求︰  
+  -  處於電力偏低模式。
+  -  CPU 負載會在要求內容時超過 80%。
+  -  磁碟 I/O 的 *AvgDiskQueueLength* 超過 10。
+  -  無法再連線至電腦。   
+
+當您使用 System Center Configuration Manager SDK 時，可以使用對等來源功能的用戶端設定伺服器 WMI 類別來進行這些設定 (*SMS_WinPEPeerCacheConfig*)。
+
+電腦拒絕內容要求時，提出要求的電腦會繼續在其可用內容來源位置集區中的替代來源搜尋內容。   
+
+
+
+### <a name="monitoring"></a>監視   
 為了協助您了解對等快取的用法，您可以檢視 [用戶端資料來源] 儀表板。 請參閱[用戶端資料來源儀表板](/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard)。
+
+從 1702 版開始，您可以使用下列三份報告來檢視對等快取使用情況。 在主控台中，移至 [監視] >  [報告] > [報告]。 所有報告的類型都是 [軟體發佈內容]：
+1.  **對等快取來源內容拒絕**：  
+您可以使用此報告來了解界限群組中的對等快取來源拒絕內容要求的頻率。
+ - **已知問題︰**向下鑽研 *MaxCPULoad* 或 *MaxDiskIO* 之類的結果時，您可能會收到錯誤，暗示找不到報告或詳細資料。 若要解決這個問題，請使用下列兩種報告，直接顯示結果。 
+
+2. **對等快取來源內容拒絕條件**：  
+您可以使用此報告來了解所指定界限群組或拒絕類型的詳細拒絕資料。 您可以指定
+
+  - **已知問題︰**您無法從可用的參數中選取，而必須改為手動輸入。 如同在第一份報告中所見，輸入 [界限群組名稱] 和 [拒絕類型] 的值。 例如，您可能會在 [拒絕類型] 輸入 *MaxCPULoad* 或 *MaxDiskIO*。
+
+3. **對等快取來源內容拒絕詳細資料**：   
+  您可以使用此報告來了解所要求但遭到拒絕的內容。
+
+ - **已知問題︰**您無法從可用的參數中選取，而必須改為手動輸入。 如同在第一份報告 (對等快取來源內容拒絕) 中所見，輸入 [拒絕類型] 的值，然後針對您需要詳細資訊的內容來源輸入其 [資源識別碼]。  尋找內容來源的資源識別碼︰  
+
+    1. 尋找如同第 2 份報告 (依條件拒絕對等快取來源內容) 結果中的 [對等快取來源] 所示的電腦名稱。  
+    2. 接下來，移至 [資產與合規性] > [裝置]，然後搜尋該電腦的名稱。 使用 [資源識別碼] 欄中的值。  
 
 
 ## <a name="requirements-and-considerations-for-peer-cache"></a>對等快取的需求與考量

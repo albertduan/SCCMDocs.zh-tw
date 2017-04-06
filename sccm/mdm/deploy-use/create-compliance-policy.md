@@ -17,9 +17,9 @@ ms.author: andredm
 manager: angrobe
 robots: noindex
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 58375a7f23109bbb2e304c17312f3438aa683cb2
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 6832bb6c6a26be76720938154942a5eb99022785
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -48,17 +48,12 @@ ms.lasthandoff: 03/06/2017
     * **重大** - 不符合這項相容性規則的裝置會回報 Configuration Manager 報告的 [重大] 失敗嚴重性。
     * **重大事件** - 不符合這項相容性規則的裝置會回報 Configuration Manager 報告的 [重大] 失敗嚴重性。 這個嚴重性等級也會在應用程式事件記錄檔中記錄為 Windows 事件。|      
 
-5.  在 [支援的平台]  頁面上，選擇這項相容性原則評估所在的裝置平台，或按一下 [全選]  選擇所有裝置平台。
+5.  在 [支援的平台]  頁面上，選擇這項相容性原則評估所在的裝置平台，或按一下 [全選]  選擇所有裝置平台。 支援的平台有︰Windows 7、8.1、10、Windows Server 2008 R2、2012、 2012 R2 和 2016。
 
 6.  在 [規則]  頁面上，您可以定義一或多項規則，以定義裝置必須具備才能評估為相容的設定。 當您建立相容性原則時，預設會啟用一些規則，但您可以編輯或刪除這些規則。 如需所有規則的完整清單，請參閱本主題稍後的＜相容性原則規則＞一節。
 
 > [!NOTE]  
->  在 Windows 作業系統 8.1 版的 Windows 電腦上回報為 6.3，而不是 8.1。    如果 Windows 的 OS 版本規則設為 Windows 8.1，則即使裝置具有 Windows OS 8.1，還是會回報為不相容。 請確定您針對最低和最高 OS 規則所設的 **回報** Windows 版本是正確的。 版本號碼必須符合 winver 命令所傳回的版本。 Windows Phone 沒有這個問題；版本會如預期般回報為 8.1。  
->   
->  具備 Windows 10 作業系統的 Windows 電腦，其版本應該被設定為 "10.0"+ winver 命令所傳回的作業系統組建編號。 例如，其顯示出的版本可能會類似 10.0.10586。  
-> Windows 10 Mobile 並沒有此問題。  
->   
->  ![CA_Win10OSversion](media/CA_Win10OSversion.png)  
+>  在 Windows 作業系統 8.1 版的 Windows 電腦上回報為 6.3，而不是 8.1。    如果 Windows 的 OS 版本規則設為 Windows 8.1，則即使裝置具有 Windows OS 8.1，還是會回報為不相容。 請確定您針對最低和最高 OS 規則所設的 **回報** Windows 版本是正確的。 版本號碼必須符合 winver 命令所傳回的版本。 Windows Phone 沒有這個問題；版本會如預期般回報為 8.1。 具備 Windows 10 作業系統的 Windows 電腦，其版本應該被設定為 "10.0"+ **winver**命令所傳回的作業系統組建編號。
 
 7.  在精靈的 [摘要]  頁面上，檢閱您所進行的設定，然後完成精靈。
 
@@ -99,6 +94,36 @@ ms.lasthandoff: 03/06/2017
     -   **不相容**：根據受影響的資產數目，顯示一份原則中所有不相容規則的清單。 您可以按一下規則，在 [資產與相容性]  工作區的 [使用者]  或 [裝置]  節點下方建立臨時節點，其中包含與這項規則不相容的所有使用者或裝置。 當您選取使用者或裝置時，[資產詳細資料]  窗格會顯示受到所選問題影響的使用者或裝置。 按兩下清單中的使用者或裝置以顯示這個問題的進一步資訊。
 
     -   **未知**：顯示未針對所選原則部署回報相容性的所有使用者和裝置清單，以及裝置目前的用戶端狀態。
+
+### <a name="to-monitor-the-individual-compliance-status"></a>監視個別的合規性狀態
+
+您也可以查看個別的裝置狀態︰
+
+1.  在 Configuration Manager 主控台中，按一下 [資產與合規性] 工作區。
+
+2.  按一下 [裝置]。
+3.  以滑鼠右鍵按一下其中一個資料行以啟用更多資料行。
+
+您可以新增下列資料行︰
+
+- **Azure Active Directory 裝置識別碼︰**AAD 中的裝置唯一識別碼。
+
+- **合規性錯誤詳細資料︰**端對端程序發生問題時的錯誤訊息詳細資料。 如果這個資料行空白，即表示找不到任何錯誤，並且已成功回報合規性狀態。
+
+- **性錯誤位置︰**提供合規性失敗的詳細資料。 如果這個資料行空白，即表示找不到任何錯誤，並且已成功回報合規性狀態。 合規性程序可能失敗的位置範例︰ 
+    - ConfigMgr 用戶端
+    - 管理點
+    - Intune
+    - Azure Active Directory
+<br></br>
+- **性評估時間︰**上次檢查合規性的時間。
+
+- **性設定時間︰**上次合規性更新至 Azure Active Directory 的時間。
+
+- **符合條件存取規範︰**電腦是否符合條件存取原則的規範。
+
+> [!IMPORTANT]
+> 預設不會顯示這些欄位。
 
 ### <a name="to-view-intune-compliance-policies-charts"></a>檢視 Intune 合規性政策圖表
 1. 從 Configuration Manager 1610 版開始，在 Configuration Manager 主控台中，按一下 [監視]。
@@ -222,4 +247,29 @@ ms.lasthandoff: 03/06/2017
   如需 HAS 服務運作方式的資訊，請參閱 [Health Attestation CSP](https://msdn.microsoft.com/library/dn934876.aspx)(健康情況證明 CSP)。
   **支援於：**
   * Windows 10 和 Windows 10 行動裝置版
+
+- **無法安裝在裝置上的應用程式：**如果使用者安裝來自系統管理員不符合規範的應用程式清單的應用程式，則會在應用程式嘗試存取公司電子郵件和支援條件存取的其他公司資源時封鎖它們。 將應用程式新增至系統管理員所定義的不符合規範清單時，此規則需要應用程式名稱和應用程式識別碼。 也可以新增應用程式發行者，但它不是必要項目。
+    - **支援於：**
+      * iOS 6 或更新版本
+      * Android 4.0+
+      * Samsung KNOX Standard 4.0 或更新版本
+
+#### <a name="whats-app-id"></a>什麼是應用程式識別碼？
+
+應用程式識別碼是在 Apple 與 Google 應用程式服務內唯一識別應用程式的識別碼。 例如，com.contoso.myapp。
+
+#### <a name="find-app-ids"></a>尋找應用程式識別碼
+
+- **Android**
+    - 您可以在 Google Play 商店 URL 中尋找用來建立應用程式的應用程式識別碼︰
+        - 範例應用程式識別碼︰***…?id=com.companyname.appname&hl=en***
+
+- **iOS**
+    - 在 iTunes Store URL 中尋找 **ID#**，範例︰***/id875948587?mt=8***
+    - 在 Web 瀏覽器中瀏覽至下列 URL，將數字取代為剛才找到的 ID#︰ 
+        - https://itunes.apple.com/lookup?id=875948587
+    - 下載並開啟文字檔案
+    - 搜尋的文字 “*bundleid*”
+    - 應用程式識別碼範例︰"*bundleId*":"*com.companyname.appname*" 
+
 

@@ -2,7 +2,7 @@
 title: "Azure 上的 Configuration Manager | Microsoft Docs"
 description: "在 Azure 環境上使用 Configuration Manager 的相關資訊。"
 ms.custom: na
-ms.date: 01/30/2017
+ms.date: 03/27/2017
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 264e009952db34a6f4929ecb70dc6857117ce4fe
-ms.openlocfilehash: e8798adc0e479417c682450d181611284c148e6d
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 5276ad999fc871496d79e6efff34d5edc6335380
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure 的 Configuration Manager - 常見問題集
@@ -39,11 +40,11 @@ ms.openlocfilehash: e8798adc0e479417c682450d181611284c148e6d
 
 ### <a name="what-areas-should-i-pay-attention-to-when-considering-a-move-of-my-configuration-manager-infrastructure-to-azure"></a>將 Configuration Manager 基礎結構移至 Azure 時應注意哪些部分？
 這個問題很棒，以下是進行此決策時最重要的各個部分，本主題會在各節中一一探索︰
-1.  網路功能
-2.  可用性
-3.  效能
-4.  成本
-5.  使用者體驗
+1.    網路功能
+2.    可用性
+3.    效能
+4.    成本
+5.    使用者體驗
 
 ## <a name="networking"></a>網路功能
 ### <a name="what-about-networking-requirements-should-i-use-expressroute-or-an-azure-vpn-gateway"></a>那網路需求呢，我應該使用 ExpressRoute 或 Azure VPN 閘道？
@@ -145,8 +146,8 @@ VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援
 
 您可以在環境中開始使用雲端管理閘道，並提供意見反應，幫助我們改進服務。 如需發行前版本功能的資訊，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/install-in-console-updates#a-namebkmkprereleasea-use-pre-release-features-from-updates)。
 
-### <a name="i-also-heard-that-you-have-another-new-feature-called-peer-cache-in-the-technical-preview-version-1604-is-that-different-than-branchcache-which-one-should-i-choose"></a>我還聽說你們在 Technical Preview 1604 版中有另一個新功能，稱為對等快取。 它和 BranchCache 不一樣嗎？ 我該選哪一種？
-是的，它們完全不一樣。 [對等快取](/sccm/core/get-started/capabilities-in-technical-preview-1604#bkmk_peercache)是 100% 的原生 Configuration Manager 技術，而 BranchCache 則是 Windows 功能。 兩者對您都很有用，BranchCache 使用廣播尋找所需的內容，而對等快取則使用 Configuration Managers 一般發佈流程和界限群組設定。
+### <a name="i-also-heard-that-you-have-another-new-feature-called-peer-cache-introduced-as-a-pre-release-feature-in-version-1610-is-that-different-than-branchcache-which-one-should-i-choose"></a>我還聽說你們有另一個稱為「對等快取」的新功能，其在 1610 版中當成發行前版本功能引進。 它和 BranchCache 不一樣嗎？ 我該選哪一種？
+是的，它們完全不一樣。 [對等快取](/sccm/core/plan-design/hierarchy/client-peer-cache)是 100% 的原生 Configuration Manager 技術，而 BranchCache 則是 Windows 功能。 兩者對您都很有用，BranchCache 使用廣播尋找所需的內容，而對等快取則使用 Configuration Managers 一般發佈流程和界限群組設定。
 
 任何用戶端都可以設定為對等快取來源。 然後，當管理點提供與內容來源位置有關的用戶端資訊時，它們會提供有該用戶端要求內容的發佈點和對等快取來源的詳細資料。
 
@@ -179,9 +180,4 @@ VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援
  - 快速路由詳細資訊：http://azure.microsoft.com/documentation/articles/expressroute-introduction/
 
  
-
-
-
-<!--HONumber=Jan17_HO5-->
-
 

@@ -2,7 +2,7 @@
 title: "設定憑證基礎結構 | Microsoft Docs"
 description: "了解如何在 Configuration Manager 中設定憑證註冊。"
 ms.custom: na
-ms.date: 10/10/2016
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,36 +17,28 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: 56e0a1923305c5134386623b1e306b8ebd013d53
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 859a8da10f55e314b205b7a4a415a1d2a60a920a
+ms.lasthandoff: 03/27/2017
 
 ---
+
 # <a name="certificate-infrastructure"></a>憑證基礎結構
 
-適用於：System Center Configuration Manager (最新分支)
+*適用對象：System Center Configuration Manager (最新分支)*
 
+以下是如何在 System Center Configuration Manager 中設定憑證的步驟、詳細資料和更多資訊。 在開始之前，請先檢查 [System Center Configuration Manager 中憑證設定檔的先決條件](../../protect/plan-design/prerequisites-for-certificate-profiles.md)中列出的任何先決條件。  
 
- 以下是如何在 System Center Configuration Manager 中設定憑證註冊的步驟、詳細資料和更多資訊。 在開始之前，請先檢查 [System Center Configuration Manager 中憑證設定檔的先決條件](../../protect/plan-design/prerequisites-for-certificate-profiles.md)中列出的任何先決條件。  
+使用下列步驟來設定 SCEP 或 PFX 憑證的基礎結構。
 
- 在完成這些步驟並驗證安裝之後，您就可以設定及部署憑證設定檔。 如需詳細資訊，請參閱 [How to create certificate profiles in System Center Configuration Manager](../../protect/deploy-use/create-certificate-profiles.md) (如何在 System Center Configuration Manager 中建立憑證設定檔)。  
+## <a name="step-1---install-and-configure-the-network-device-enrollment-service-and-dependencies-for-scep-certificates-only"></a>步驟 1 - 安裝及設定網路裝置註冊服務和相依性 (僅適用於 SCEP 憑證)
 
-
-**步驟 1：**安裝及設定網路裝置註冊服務和相依性。 Active Directory 憑證服務 (AD CS) 的網路裝置註冊服務角色服務必須在 Windows Server 2012 R2 作業系統上執行。
-     **重要：**您必須先完成其他設定步驟才能透過 System Center Configuration Manager 使用網路裝置註冊服務。
-**步驟 2：**安裝及設定憑證登錄點。 您至少必須安裝一個憑證登錄點。 這個登錄點可以位於管理中心網站中或是主要網站。
-**步驟 3：**安裝 System Center Configuration Manager 原則模組。 在執行網路裝置註冊服務的伺服器上安裝原則模組。
-
-## <a name="supplemental-procedures-to-configure-certificate-enrollment-in-configuration-manager"></a>在 Configuration Manager 中設定憑證註冊的補充程序  
- 當上表中的步驟需要補充程序時，可利用下列資訊。  
-
-###  <a name="step-1-install-and-configure-the-network-device-enrollment-service-and-dependencies"></a>步驟 1：安裝及設定網路裝置註冊服務和相依性  
  您必須安裝及設定 Active Directory 憑證服務 (AD CS) 的網路裝置註冊服務角色服務、變更憑證範本的安全性權限、部署公開金鑰基礎結構 (PKI) 用戶端驗證憑證，並編輯登錄以增加 Internet Information Services (IIS) 預設 URL 大小限制。 若有需要，您還必須設定發行憑證授權單位 (CA) 以允許自訂有效期間。  
 
 > [!IMPORTANT]  
 >  在設定 System Center Configuration Manager 以使用網路裝置註冊服務之前，請先驗證網路裝置註冊服務的安裝和設定。 如果這些相依性無法正常運作，您在使用 System Center Configuration Manager 進行憑證註冊疑難排解時將會遇到困難。  
 
-##### <a name="to-install-and-configure-the-network-device-enrollment-service-and-dependencies"></a>安裝及設定網路裝置註冊服務和相依性  
+### <a name="to-install-and-configure-the-network-device-enrollment-service-and-dependencies"></a>安裝及設定網路裝置註冊服務和相依性  
 
 1.  在執行 Windows Server 2012 R2 的伺服器上，為 Active Directory 憑證服務伺服器角色安裝及設定網路裝置註冊服務角色服務。 如需詳細資訊，請參閱 TechNet 上 Active Directory 憑證服務文件庫中的 [網路裝置註冊服務指南](http://go.microsoft.com/fwlink/p/?LinkId=309016) 。  
 
@@ -107,10 +99,12 @@ ms.lasthandoff: 12/16/2016
 
 8.  使用下列連結做為範例，確認網路裝置註冊服務正常運作： **https://server.contoso.com/certsrv/mscep/mscep.dll**。 您應該查看內建的網路裝置註冊服務網頁。 這個網頁提供服務的說明，並說明網路裝置會使用 URL 來提交憑證要求。  
 
- 現在網路裝置註冊服務和相依性已設定完成，您可以準備安裝及設定憑證登錄點。  
+ 現在網路裝置註冊服務和相依性已設定完成，您可以準備安裝及設定憑證登錄點。
 
-###  <a name="step-2-install-and-configure-the-certificate-registration-point"></a>步驟 2：安裝及設定憑證登錄點  
- 您必須在 System Center Configuration Manager 階層安裝及設定至少一個憑證登錄點，而且您可以將這個站台系統角色安裝在管理中心網站或主要站台中。  
+
+## <a name="step-2---install-and-configure-the-certificate-registration-point"></a>步驟 2 - 安裝及設定憑證登錄點。
+
+您必須在 System Center Configuration Manager 階層安裝及設定至少一個憑證登錄點，而且您可以將這個站台系統角色安裝在管理中心網站或主要站台中。  
 
 > [!IMPORTANT]  
 >  在安裝憑證登錄點之前，請參閱 **站台系統需求** 主題中的 [Supported configurations for System Center Configuration Manager](../../core/plan-design/configs/supported-configurations.md) 一節，取得憑證登錄點的作業系統需求和相依性。  
@@ -127,18 +121,23 @@ ms.lasthandoff: 12/16/2016
 
 5.  在 [Proxy]  頁面上，按 [下一步] 。 憑證登錄點不會使用網際網路 Proxy 設定。  
 
-6.  在 [系統角色選取]  頁面上，在可用角色的清單中選取 [憑證登錄點]  ，然後按 [下一步] 。  
+6.  在 [系統角色選取]  頁面上，在可用角色的清單中選取 [憑證登錄點]  ，然後按 [下一步] 。 
 
-7.  在 [憑證登錄點]  頁面上，接受或變更預設設定，然後按一下 [新增] 。  
+8. 在 [憑證登錄模式] 頁面上，選取您想要此憑證登錄點來 [處理 SCEP 憑證要求] 或 [處理 PFX 憑證要求]。 憑證登錄點無法同時處理這兩種要求，但如果您正在使用這兩種憑證類型，您可以建立多個憑證登錄點。
 
+7.  在 [憑證登錄點設定] 頁面上，您的設定取決於憑證登錄點即將處理的憑證類型︰
+    -   如果您選取 [處理 SCEP 憑證要求]，請設定下列各項︰
+        -   憑證登錄點的 [網站名稱]、[HTTPS 連接埠號碼] 和 [虛擬應用程式名稱]。 這些欄位會自動填入預設值。 
+        -   **網路裝置註冊服務和根 CA 憑證的 URL** - 按一下 [新增]，接著在 [新增 URL 和根 CA 憑證] 對話方塊方塊中，指定下列各項︰
+            - **網路裝置註冊服務的 URL**：指定的 URL 格式如下：https://<伺服器 FQDN>/certsrv/mscep/mscep.dll。 例如，如果執行網路裝置註冊服務的伺服器 FQDN 是 server1.contoso.com，請輸入 **https://server1.contoso.com/certsrv/mscep/mscep.dll**。
+            - **根 CA 憑證**：瀏覽並選取您建立及儲存於 **步驟 1：安裝及設定網路裝置註冊服務和相依性**。 此根 CA 憑證允許憑證登錄點驗證 System Center Configuration Manager 原則模組所要使用的用戶端驗證憑證。  
+    - 如果您選取 [處理 PFX 憑證要求]，請設定下列各項︰
+        - **連線到各憑證授權單位 (CA) 所需的 CA 及帳戶** - 按一下 [新增]，然後在 [新增憑證授權單位與帳戶] 對話方塊中，指定下列各項：
+            - **憑證授權單位伺服器名稱** - 輸入您的憑證授權單位伺服器名稱。
+            - **憑證授權單位帳戶** - 按一下 [設定]，以選取或建立有權限在憑證授權單位上範本中註冊的帳戶。
+        - **憑證登錄點連線帳戶** - 選取或建立可將憑證登錄點連線至 Configuration Manager 資料庫的帳戶。 此外，您可以使用裝載憑證登錄點的電腦本機電腦帳戶。
+        - **Active Directory 憑證發佈帳戶** - 選取帳戶或建立新的帳戶，用來將憑證發行至 Active Directory 中的使用者物件。
 8.  在 [新增 URL 和根 CA 憑證]  對話方塊中指定下列項目，然後按一下 [確定] ：  
-
-    1.  **網路裝置註冊服務的 URL**：指定的 URL 格式如下：https://<伺服器 FQDN>/certsrv/mscep/mscep.dll。 例如，如果執行網路裝置註冊服務的伺服器 FQDN 是 server1.contoso.com，請輸入 **https://server1.contoso.com/certsrv/mscep/mscep.dll**。  
-
-    2.  **根 CA 憑證**：瀏覽並選取您建立及儲存於 **步驟 1：安裝及設定網路裝置註冊服務和相依性**。 此根 CA 憑證允許憑證登錄點驗證 System Center Configuration Manager 原則模組所要使用的用戶端驗證憑證。  
-
-    > [!NOTE]  
-    >  如果您使用多個執行網路裝置註冊服務的伺服器，請按一下 [新增]  以指定其他伺服器的詳細資料。  
 
 9. 按 [下一步]  ，並且完成精靈。  
 
@@ -155,10 +154,10 @@ ms.lasthandoff: 12/16/2016
     > [!TIP]  
     >  這個憑證不會立即出現在此資料夾中。 您可能需稍候片刻 (如半小時)，System Center Configuration Manager 才會將檔案複製到這個位置。  
 
- 現在憑證登錄點已完成安裝及設定，您可以準備安裝網路裝置註冊服務的 System Center Configuration Manager 原則模組。  
 
-###  <a name="step-3-install-the-configuration-manager-policy-module"></a>步驟 3：安裝 Configuration Manager 原則模組  
- 您必須在執行**步驟 2：安裝及設定憑證登錄點**時，在憑證登錄點的內容中指定為 [網路裝置註冊服務的 URL] 的每部伺服器上，安裝及設定 System Center Configuration Manager 原則模組。  
+## <a name="step-3----install-the-system-center-configuration-manager-policy-module-for-scep-certificates-only"></a>步驟 3 - 安裝 System Center Configuration Manager 原則模組 (僅適用於 SCEP 憑證)。
+
+您必須在執行**步驟 2：安裝及設定憑證登錄點**時，在憑證登錄點的內容中指定為 [網路裝置註冊服務的 URL] 的每部伺服器上，安裝及設定 System Center Configuration Manager 原則模組。  
 
 ##### <a name="to-install-the-policy-module"></a>安裝原則模組  
 
@@ -168,7 +167,7 @@ ms.lasthandoff: 12/16/2016
 
     -   PolicyModuleSetup.exe  
 
-     此外，如果您的安裝媒體上含有 LanguagePack 資料夾，就可複製此資料夾與其中的內容。  
+    此外，如果您的安裝媒體上含有 LanguagePack 資料夾，就可複製此資料夾與其中的內容。  
 
 2.  從暫存資料夾執行 PolicyModuleSetup.exe 以啟動 [System Center Configuration Manager 原則模組安裝精靈]。  
 
@@ -189,7 +188,8 @@ ms.lasthandoff: 12/16/2016
 
 9. 按 [下一步]  ，並且完成精靈。  
 
- 現在，您已完成設定步驟以安裝網路裝置註冊服務和相依性、憑證登錄點以及 System Center Configuration Manager 原則模組，您可以建立及部署憑證設定檔以準備將憑證部署至使用者和裝置。 如需如何建立憑證設定檔的詳細資訊，請參閱 [How to create certificate profiles in System Center Configuration Manager](../../protect/deploy-use/create-certificate-profiles.md) (如何在 System Center Configuration Manager 中建立憑證設定檔)。  
+ 如果您要解除安裝 System Center Configuration Manager 原則模組，請使用控制台中的 [程式和功能]。 
 
- 如果您要解除安裝 System Center Configuration Manager 原則模組，請使用控制台中的 [程式和功能]。  
+ 
+設定步驟現已完成，您準備好可以建立和部署憑證設定檔，來將憑證部署至使用者和裝置。 如需如何建立憑證設定檔的詳細資訊，請參閱 [How to create certificate profiles in System Center Configuration Manager](../../protect/deploy-use/create-certificate-profiles.md) (如何在 System Center Configuration Manager 中建立憑證設定檔)。  
 

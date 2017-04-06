@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 03/01/2017
+ms.date: 03/28/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,9 +14,9 @@ ms.technology:
 - configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: 505c60409d14a1c5617333ab57caa3cd44195dc6
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
+ms.openlocfilehash: 2a4fa6dcf8691875f5b262d6dc7bf1522d91acfd
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -79,9 +79,12 @@ ms.lasthandoff: 03/04/2017
 -   **以網際網路為基礎的用戶端**：您可以設定為只允許網際網路連線接收軟體更新點清單，或允許網際網路和內部網路用戶端連線接收軟體更新點清單。  
 
 ###  <a name="BKMK_SUPSwitching"></a> 軟體更新點切換  
- 如果站台擁有多個軟體更新點，而其中有某一個軟體更新點失敗或無法使用，用戶端將會連線至不同的軟體更新點，並繼續掃描最新的軟體更新。 當用戶端第一次獲指派軟體更新點時，除非無法在該軟體更新點上掃描軟體更新，否則會保持指派給該軟更新點。  
+> [!NOTE]
+> 從 1702 版開始，用戶端會使用界限群組來尋找新的軟體更新點，並在目前的軟體更新點已不再可供存取的情況下，尋找新的軟體更新點來遞補。 您可以將個別的軟體更新點新增到不同的界限群組，以控制用戶端可以尋找的伺服器。 如需詳細資訊，請參閱[設定界限群組](/sccm/core/servers/deploy/configure/boundary-groups)主題中的[軟體更新點](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)。
 
- 軟體更新的掃描可能會失敗好幾次，並傳回非重試錯誤碼。 當掃描失敗且傳回重試錯誤碼時，用戶端會開始進行重試程序，以掃描軟體更新點上的軟體更新。 導致傳回重試錯誤碼的高層級狀態，通常是因為無法與 WSUS 伺服器連線，或是發生暫時性的超載情形。 用戶端會在無法掃描軟體更新時使用下列程序：  
+如果站台擁有多個軟體更新點，而其中有某一個軟體更新點失敗或無法使用，用戶端將會連線至不同的軟體更新點，並繼續掃描最新的軟體更新。 當用戶端第一次獲指派軟體更新點時，除非無法在該軟體更新點上掃描軟體更新，否則會保持指派給該軟更新點。  
+
+軟體更新的掃描可能會失敗好幾次，並傳回非重試錯誤碼。 當掃描失敗且傳回重試錯誤碼時，用戶端會開始進行重試程序，以掃描軟體更新點上的軟體更新。 導致傳回重試錯誤碼的高層級狀態，通常是因為無法與 WSUS 伺服器連線，或是發生暫時性的超載情形。 用戶端會在無法掃描軟體更新時使用下列程序：  
 
 1.  用戶端會在排程時間掃描軟體更新，或在透過用戶端的控制台或使用 SDK 起始時掃描軟體更新。 如果掃描失敗，用戶端會等待 30 分鐘重試掃描，並且會使用相同的軟體更新點。  
 
@@ -111,7 +114,7 @@ ms.lasthandoff: 03/04/2017
 
 #### <a name="to-enable-the-option-to-switch-software-update-points"></a>啟用切換軟體更新點的選項  
 
-1.  在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [裝置集合]。  
+1.  在 Configuration Manager 主控台中，移至 **[資產與相容性] > [概觀] > [裝置集合]**。  
 
 2.  在 [常用] 索引標籤的 [及] 群組中，按一下 [用戶端通知]，然後按一下 [切換至下一個軟體更新點]。  
 
@@ -145,7 +148,8 @@ ms.lasthandoff: 03/04/2017
 -   如需 Configuration Manager 站台系統所支援設定的詳細資訊，請參閱[站台及站台系統必要條件](../../core/plan-design/configs/site-and-site-system-prerequisites.md)。  
 
 ###  <a name="BKMK_PlanningForWSUS"></a> 規劃 WSUS 安裝  
- 軟體更新需要在您針對軟體更新點站台系統角色所設定的所有站台系統伺服器上安裝支援版本的 WSUS。 此外，當您未在站台伺服器上安裝軟體更新點時，必須在站台伺服器電腦上安裝 WSUS 管理主控台 (如果尚未安裝)。 如此做可讓站台伺服器與軟體更新點上執行的 WSUS 進行通訊。  
+
+軟體更新需要在您針對軟體更新點站台系統角色所設定的所有站台系統伺服器上安裝支援版本的 WSUS。 此外，當您未在站台伺服器上安裝軟體更新點時，必須在站台伺服器電腦上安裝 WSUS 管理主控台 (如果尚未安裝)。 如此做可讓站台伺服器與軟體更新點上執行的 WSUS 進行通訊。  
 
  當您在 Windows Server 2012 上使用 WSUS 時，必須設定額外的權限，以允許 Configuration Manager 中的 **WSUS Configuration Manager** 連線至 WSUS，以便執行定期的健全狀況檢查。 選擇下列其中一個選項以設定權限：  
 
@@ -161,9 +165,9 @@ ms.lasthandoff: 03/04/2017
  當您安裝 WSUS 時，可以選擇使用現有 IIS 預設網站，或建立自訂 WSUS 網站。 為 WSUS 建立自訂網站可讓 IIS 在專用的虛擬網站上裝載 WSUS 服務，而不是共用與其他 Configuration Manager 站台系統或其他應用程式使用的相同網站。 當您在站台伺服器上安裝軟體更新點站台系統角色時，更是如此。 當您在 Windows Server 2012 中執行 WSUS 時，預設會將 WSUS 設定為 HTTP 使用連接埠 8530，HTTPS 使用連接埠 8531。 您必須在建立站台的軟體更新點時指定這些連接埠設定。  
 
 ####  <a name="BKMK_WSUSInfrastructure"></a> 使用現有 WSUS 基礎結構  
- 在安裝 Configuration Manager 之前，您可以使用您環境中作用中的 WSUS 伺服器。 設定軟體更新點時，您必須指定同步處理設定。 Configuration Manager 會連線至軟體更新點上執行的 WSUS 並且以相同的設定值設定 WSUS 伺服器。 當 WSUS 伺服器先前已與您未設定為軟體更新點同步處理設定值一部分的產品或分類同步處理之後，則無論軟體更新點的同步處理設定為何，產品與分類的軟體更新中繼資料皆會針對 WSUS 資料庫中所有的軟體更新中繼資料同步處理。 如此可能導致站台資料庫中的軟體更新中繼資料與預期不符。 當您將產品或分類直接新增至 WSUS 管理主控台，然後立即啟動同步處理時，將會經歷相同的行為。 根據預設，Configuration Manager 每小時都會連線至軟體更新點上執行的 WSUS，並且重設任何在 Configuration Manager 以外修改的設定。  
+ 在將 Configuration Manager 安裝為軟體更新點之前，您可以選取在您環境中作用的 WSUS 伺服器。 設定軟體更新點時，您必須指定同步處理設定。 Configuration Manager 會連線至在軟體更新點伺服器上執行的 WSUS 伺服器，並且以相同的設定值設定 WSUS。 如果您在將 WSUS 設定為軟體更新點之前，將它與未設定為軟體更新點同步處理設定之一部分的產品或分類進行同步處理，則無論您針對軟體更新點所設定的同步處理設定為何，產品與分類的軟體更新中繼資料皆會針對 WSUS 資料庫中所有的軟體更新中繼資料同步處理。 如此可能導致站台資料庫中的軟體更新中繼資料與預期不符。 當您將產品或分類直接新增至 WSUS 管理主控台，然後立即啟動同步處理時，將會經歷相同的行為。 根據預設，Configuration Manager 每小時都會連線至軟體更新點上的 WSUS，並且重設任何在 Configuration Manager 以外修改的設定。 與您在同步處理設定中所指定的產品和分類不符的軟體更新會設定為到期，然後從站台資料庫中予以移除。
 
- 與您在同步處理設定中所指定的產品和分類不符的軟體更新會設定為到期，然後從站台資料庫中予以移除。  
+ 當 WSUS 伺服器設定為軟體更新點時，就無法將它當作獨立的 WSUS 伺服器使用。 如果您需要未受 Configuration Manager 管理的個別獨立 WSUS 伺服器，則您必須在不同的伺服器上設定它。 
 
 ####  <a name="BKMK_WSUSAsReplica"></a> 將 WSUS 設定為複本伺服器  
  當您在主要站台伺服器上建立軟體更新點站台系統角色時，您無法使用設定為複本的 WSUS 伺服器。 當 WSUS 伺服器設定為複本時，Configuration Manager 無法設定 WSUS 伺服器，而 WSUS 也會無法同步處理。 在次要站台上建立軟體更新點時，Configuration Manager 會將 WSUS 設定為父主要站台軟體更新點上執行的 WSUS 複本伺服器。 您在主要站台安裝的第一個軟體更新點就是預設的軟體更新點。 站台的其他軟體更新點會設定為預設軟體更新點的複本。  

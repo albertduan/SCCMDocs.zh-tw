@@ -15,9 +15,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4c2906c2a963e0ae92e3c0d223afb7a47377526a
-ms.openlocfilehash: 9c614a842fc9e3a01b0128db94fc12bc0be5b52f
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: aaaab003ddd22f18160d4be63cfeab3a7e7f6b03
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -44,6 +44,10 @@ ms.lasthandoff: 03/20/2017
 -   您可以新增或移除裝載站台資料庫的可用性群組複本成員  
 
 -   您可以從可用性群組將站台資料庫移動至獨立 SQL Server 的預設或具名執行個體  
+
+> [!Important]  
+> 當您以混合式組態搭配使用 Microsoft Intune 與 Configuration Manager，從可用性群組來回移動站台資料庫會觸發雲端資料的重新同步處理。 這並無法避免。 
+
 
 
 > [!NOTE]  

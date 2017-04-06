@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b458284961171f11acc3e84f82749addc1b6afb
-ms.openlocfilehash: 890cc72f7ca0619b48ceae7c3a8c731a62341ef7
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 28593d271603ff9775425327996d844d7ed358cd
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -41,7 +41,7 @@ ms.lasthandoff: 02/28/2017
 
  因為您可以部署與現有 System Center 2012 Configuration Manager 站台或階層並存的 System Center Configuration Manager 站台，建議您規劃好以避免任一版本的用戶端嘗試加入另一個版本的站台。
 
-例如，如果有兩個以上 Configuration Manager 階層的界限重疊，且其包括相同網路位置 (請參閱[關於重疊界限](../../../core/servers/deploy/configure/define-site-boundaries-and-boundary-groups.md#BKMK_BoundaryOverlap))，則最好將每個新的用戶端指派至特定站台，而不是使用自動站台指派。 如需了解 System Center 2012 Configuration Manager 中自動站台指派的資訊，請參閱[如何將用戶端指派給 System Center Configuration Manager 中的站台](../../../core/clients/deploy/assign-clients-to-a-site.md)。  
+例如，如果兩個或更多個 Configuration Manager 階層有包含相同網路位置的重疊界限 (請參閱[重疊的界限](/sccm/core/servers/deploy/configure/boundary-groups#overlapping-boundaries))，則最佳做法是將每個新的用戶端指派給特定站台，而不使用自動站台指派。 如需了解 System Center 2012 Configuration Manager 中自動站台指派的資訊，請參閱[如何將用戶端指派給 System Center Configuration Manager 中的站台](../../../core/clients/deploy/assign-clients-to-a-site.md)。  
 
  此外，若電腦上裝載來自 System Center Configuration Manager 的站台系統角色，您不能在其上透過 System Center 2012 Configuration Manager 來安裝用戶端；若電腦上裝載來自 System Center 2012 Configuration Manager 的站台系統角色，也不能在其上安裝 System Center Configuration Manager 用戶端。  
 

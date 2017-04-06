@@ -2,7 +2,7 @@
 title: "安裝程式命令列選項 | Microsoft Docs"
 description: "使用本文的資訊設定指令碼，或從命令列安裝 System Center Configuration Manager。"
 ms.custom: na
-ms.date: 13/2017
+ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 36b1ab794bb1dc80c673bd41dae11f46053f3be3
-ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 04fe7b3e674287c4255563ab4a308e54d0b6c3aa
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="command-line-options-for-setup-in-system-center-configuration-manager"></a>System Center Configuration Manager 的安裝程式命令列選項
@@ -27,7 +28,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
  使用下列資訊設定指令碼，或從命令列安裝 System Center Configuration Manager。  
 
-##  <a name="a-namebkmksetupa-command-line-options-for-setup"></a><a name="bkmk_setup"></a> 安裝程式的命令列選項  
+##  <a name="bkmk_setup"></a> 安裝程式的命令列選項  
  **/DEINSTALL**  
  解除安裝網站。 您必須從網站伺服器電腦執行安裝程式。  
 
@@ -68,7 +69,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
  **/MANAGELANGS <語言指令碼路徑**>**  
  管理原安裝站台所安裝的語言。若要使用此選項，您必須從站台伺服器上的 **<Configuration Manager 安裝路徑**>\BIN\X64** 執行安裝程式，並提供包含語言設定的語言指令碼檔案位置。 如需語言安裝指令碼檔中可用語言選項的詳細資訊，請參閱本主題中的[用以管理語言的命令列選項](#bkmk_Lang) 。  
 
-##  <a name="a-namebkmklanga-command-line-options-to-manage-languages"></a><a name="bkmk_Lang"></a> 用以管理語言的命令列選項  
+##  <a name="bkmk_Lang"></a> 用以管理語言的命令列選項  
  **識別**  
 
 -   **索引鍵名稱：** Action  
@@ -145,7 +146,7 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **詳細資料：** 指定安裝程式必要條件檔案的路徑。 根據 **PrerequisiteComp** 值而定，安裝程式會使用此路徑儲存下載的檔案或尋找之前下載的檔案。  
 
-##  <a name="a-namebkmkunattendeda-unattended-setup-script-file-keys"></a><a name="bkmk_Unattended"></a> 自動安裝程式指令碼檔索引鍵  
+##  <a name="bkmk_Unattended"></a> 自動安裝程式指令碼檔索引鍵  
  使用以下各節有助於建立自動安裝的指令碼。 清單顯示可用的安裝指令碼索引鍵、其對應的值、是否為必要、用於何種安裝類型，以及該索引鍵的簡短描述。  
 
 ### <a name="unattended-install-for-a-central-administration-site"></a>管理中心網站的自動安裝  
@@ -160,6 +161,14 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
     -   **值︰**InstallCAS  
 
     -   **詳細資料：**安裝管理中心網站。  
+
+-   **索引鍵名稱：**CDLatest  
+
+    -   **必要：**是 (只有在使用來自 CD.Latest 資料夾的媒體時)。    
+
+    -   **值：**1 (1 以外的任何值都會被視為不使用 CD.Latest)。
+
+    -   **詳細資料：**當您從 CD.Latest 資料夾中的媒體執行安裝程式，以安裝主要站台或管理中心網站，或是復原主要站台或管理中心網站時，您的指令碼必須包含此索引鍵和值。 這個值會通知安裝程式目前正在使用來自 CD.Latest 的媒體。
 
 **選項**  
 
@@ -398,6 +407,14 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
     -   **值：**InstallPrimarySite  
 
     -   **詳細資料︰**安裝主要站台。  
+
+-   **索引鍵名稱：**CDLatest  
+
+    -   **必要：**是 (只有在使用來自 CD.Latest 資料夾的媒體時)。    
+
+    -   **值：**1 (1 以外的任何值都會被視為不使用 CD.Latest)。
+
+    -   **詳細資料：**當您從 CD.Latest 資料夾中的媒體執行安裝程式，以安裝主要站台或管理中心網站，或是復原主要站台或管理中心網站時，您的指令碼必須包含此索引鍵和值。 這個值會通知安裝程式目前正在使用來自 CD.Latest 的媒體。
 
 **選項**  
 
@@ -717,6 +734,14 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
 
     -   **詳細資料︰**復原管理中心網站。  
 
+-   **索引鍵名稱：**CDLatest  
+
+    -   **必要：**是 (只有在使用來自 CD.Latest 資料夾的媒體時)。    
+
+    -   **值：**1 (1 以外的任何值都會被視為不使用 CD.Latest)。
+
+    -   **詳細資料：**當您從 CD.Latest 資料夾中的媒體執行安裝程式，以安裝主要站台或管理中心網站，或是復原主要站台或管理中心網站時，您的指令碼必須包含此索引鍵和值。 這個值會通知安裝程式目前正在使用來自 CD.Latest 的媒體。
+
 **RecoveryOptions**  
 
 -   **索引鍵名稱：**ServerRecoveryOptions  
@@ -978,6 +1003,14 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
     -   **值︰** <*RecoverPrimarySite*>  
 
     -   **詳細資料︰**復原主要站台。  
+
+-   **索引鍵名稱：**CDLatest  
+
+    -   **必要：**是 (只有在使用來自 CD.Latest 資料夾的媒體時)。    
+
+    -   **值：**1 (1 以外的任何值都會被視為不使用 CD.Latest)。
+
+    -   **詳細資料：**當您從 CD.Latest 資料夾中的媒體執行安裝程式，以安裝主要站台或管理中心網站，或是復原主要站台或管理中心網站時，您的指令碼必須包含此索引鍵和值。 這個值會通知安裝程式目前正在使用來自 CD.Latest 的媒體。    
 
 **RecoveryOptions**  
 
@@ -1243,9 +1276,4 @@ ms.openlocfilehash: 55f9fe5c05cd09b9291b6370200c9fbe15699e7d
     -   **值：** <連接埠號碼>  
 
     -   **詳細資料：**指定要用於 Proxy 連接埠的連接埠號碼。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

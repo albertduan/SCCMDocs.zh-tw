@@ -2,7 +2,7 @@
 title: "Windows 10 的支援 | Microsoft Docs"
 description: "了解哪些 Windows 10 版本支援執行 System Center Configuration Manager 用戶端。"
 ms.custom: na
-ms.date: 2/10/2017
+ms.date: 3/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: eb2092640f7bd68a25e4826cd7f88cda6822a33a
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 6accec2d356861b273b25ba2b6338d9684a46ff6
+ms.openlocfilehash: 188c6b1d7ae7768bb4075688d7d47607ee83be17
+ms.lasthandoff: 03/29/2017
 
 ---
 # <a name="support-for-windows-10-as-a-client-of-system-center-configuration-manager"></a>將 Windows 10 作為 System Center Configuration Manager 用戶端的支援
@@ -31,19 +31,24 @@ ms.lasthandoff: 03/21/2017
 - 這會補充[用戶端和裝置的支援作業系統](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices)。
 - 如果您使用 Configuration Manager 長期維護分支，請參閱[支援的長期維護分支設定](/sccm/core/understand/supported-configurations-for-ltsb)。
 
-Configuration Manager 嘗試在該 Windows 版本發行之後盡快支援每個新 Windows 10 版本。 因為產品具有個別的開發和發行排程，所以 Configuration Manager 提供的支援取決於每個產品的版本和分支發行時。  
+Configuration Manager 嘗試在該 Windows 版本發行之後盡快支援每個新 Windows 10 版本。 因為產品具有個別的開發和發行排程，所以 Configuration Manager 提供的支援取決於每個產品的版本和分支發行時。
+
+例如，當某個 Configuration Manager 版本的[版本支援終止](/sccm/core/servers/manage/current-branch-versions-supported)之後，該版本將會從矩陣中卸除。 同樣地，當 Windows 10 版本的支援 (例如企業版 2015 長期維護分支或 1607 (CBB)) 從 Configuration Manager 支援組態清單中移除時，這些版本將會從矩陣中卸除。 如需詳細資訊，請參閱[已淘汰的作業系統](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-operating-systems)。
 
 
 
-|Windows 10 版本 |Configuration Manager 1602|Configuration Manager 1606|Configuration Manager 1610|
+|Windows 10 版本                    |Configuration Manager 1606          |Configuration Manager 1610          |    Configuration Manager 1702 |
 |---------------------|-----|-----|-----|
-|Enterprise 2015 LTSB |![支援](media/green_check.png) |![支援](media/green_check.png) |![支援](media/green_check.png) |
-|1507 <br />企業版、教育版、專業版 | ![支援](media/green_check.png)| ![支援](media/green_check.png)|![支援](media/green_check.png) |
-|1511 <br />企業版、教育版、專業版 <br />(CB)、(CBB) |![支援](media/green_check.png) |![支援](media/green_check.png) |![支援](media/green_check.png) |
-|Enterprise 2016 LTSB    |![不支援](media/Red_X.png) |![支援](media/green_check.png) | ![支援](media/green_check.png)|
-|1607 <br />企業版、教育版、專業版<br /> (CB)    |![不支援](media/Red_X.png) |![回溯相容](media/blue_compat.png) |![支援](media/green_check.png) |
-|1607 <br />企業版、教育版、專業版 <br />(CBB)    |![不支援](media/Red_X.png) |![回溯相容](media/Red_X.png) |![支援](media/green_check.png) |
+|Enterprise 2015 LTSB                   |![支援](media/green_check.png) |![支援](media/green_check.png) |![支援](media/green_check.png) |
+|1507 <br />(請參閱版本)            |![支援](media/green_check.png) |![支援](media/green_check.png) |![支援](media/green_check.png) |
+|1511 (CB)、(CBB)<br />(請參閱版本) |![支援](media/green_check.png) |![支援](media/green_check.png) |![支援](media/green_check.png) |
+|Enterprise 2016 LTSB                   |![支援](media/green_check.png) |![支援](media/green_check.png) |![支援](media/green_check.png) |
+|1607 (CB)    <br />(請參閱版本)      |![回溯相容](media/blue_compat.png) |![支援](media/green_check.png) |![支援](media/green_check.png) |
+|1607 (CBB)    <br />(請參閱版本)      |![不支援](media/Red_X.png)   |![支援](media/green_check.png) |![支援](media/green_check.png) |
 
+
+
+**版本：**企業版、專業版、教育版、專業教育版   
 
 |機碼|
 |--|

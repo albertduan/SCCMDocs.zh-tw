@@ -2,7 +2,7 @@
 title: "使用 IMEI 或 iOS 序號預先宣告裝置 | Microsoft Docs"
 description: "使用 IMEI 或 iOS 序號預先宣告公司擁有的裝置。"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 03/24/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -12,13 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ddb4c68e-e7f7-475a-89e2-7379a86e44c4
 caps.latest.revision: 3
-author: mtillman
-ms.author: mtillman
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0fd410a6572acce685dc6cdb954c1c2d97d5ed8b
-ms.openlocfilehash: 2aa9c8c65904e573b6a81ac865e09d1cf2458509
-ms.lasthandoff: 12/17/2016
+ms.sourcegitcommit: 7573590763c68a4c97d388be1e64054c318da9cc
+ms.openlocfilehash: 4fe6741481c79ed4e4496846152902d6d8ca1f96
+ms.lasthandoff: 03/24/2017
 
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>使用 IMEI 或 iOS 序號預先宣告裝置
@@ -26,6 +26,8 @@ ms.lasthandoff: 12/17/2016
 *適用於：System Center Configuration Manager (最新分支)*
 
 您可以透過匯入國際站移動設備識別碼 (IMEI) 號碼或 iOS 序號，識別公司擁有的裝置。 您可以上傳一個包含裝置 IMEI 編號的逗號分隔值 (.csv) 檔案，也可以手動輸入裝置資訊。  匯入的資訊將會設定裝置清單中註冊為**公司**之裝置的**擁有權**。 每一位存取服務的使用者還是需要 Intune 授權。  
+
+當您上傳公司 iOS 裝置的序號時，它們必須與公司註冊設定檔搭配。 接著，必須使用 Apple 的裝置註冊計劃 (DEP) 或 Apple Configurator 來註冊裝置，以使它們顯示為公司所擁有。 
 
 ## <a name="how-to-predeclare-corporate-owned-devices"></a>如何預先宣告公司擁有的裝置
 

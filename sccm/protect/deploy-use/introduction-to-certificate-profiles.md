@@ -2,7 +2,7 @@
 title: "憑證設定檔簡介 | Microsoft Docs"
 description: "了解如何搭配使用 System Center Configuration Manager 中的憑證設定檔與 Active Directory 憑證服務。"
 ms.custom: na
-ms.date: 12/28/2016
+ms.date: 03/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,13 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
-ms.openlocfilehash: d51670b47aab77cc4e630a6aeaa0744f916bf3b9
-ms.lasthandoff: 12/30/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ba1d5b04cb0cb0284525e295a6086a3c0ac67e9f
+ms.lasthandoff: 03/27/2017
 
 
 ---
+
 # <a name="introduction-to-certificate-profiles-in-system-center-configuration-manager"></a>簡介 System Center Configuration Manager 中的憑證設定檔
 
 適用於：System Center Configuration Manager (最新分支)
@@ -46,16 +47,16 @@ ms.lasthandoff: 12/30/2016
 ## <a name="types-of-certificate-profiles"></a>憑證設定檔的類型  
  有三種類型的憑證設定檔：  
 
--   **受信任 CA 憑證** - 可讓您部署受信任根 CA 或中繼 CA 憑證，以在裝置必須驗證伺服器時形成憑證信任鏈。  
+-   **信任的 CA 憑證** - 可讓您部署受信任根 CA 或中繼 CA 憑證，以在裝置必須驗證伺服器時形成憑證信任鏈。  
 
--   **簡單憑證註冊通訊協定 (SCEP)** - 可讓您在執行 Windows Server 2012 R2 的伺服器上使用 SCEP 通訊協定和網路裝置註冊服務，以要求裝置或使用者的憑證。
--   -   **個人資訊交換 (.pfx)** - 可讓您要求裝置或使用者的 .pfx (也稱為 PKCS #12) 憑證。
+-   **簡單憑證註冊通訊協定 (SCEP)** - 可讓您在執行 Windows Server 2012 R2 的伺服器上，使用 SCEP 通訊協定和「網路裝置註冊服務」來要求裝置或使用者的憑證。
+-   **個人資訊交換 (.pfx)** - 可讓您要求裝置或使用者的 .pfx (也稱為 PKCS #12) 憑證。
 
     > [!NOTE]  
     >  您必須先建立 [信任的 CA 憑證] 類型的憑證設定檔，才能建立 [簡單憑證註冊通訊協定 (SCEP)] 憑證設定檔。  
 
 ## <a name="requirements-and-supported-platforms"></a>需求和支援的平台  
- 若要部署使用 SCEP 的憑證設定檔，您必須在管理中心網站或主要站台中的站台系統伺服器上安裝憑證登錄點。 您也必須以 Active Directory 憑證服務角色和需要憑證的裝置可存取的作用中 NDES，將用於 NDES 的原則模組 (即 Configuration Manager 原則模組) 安裝在執行 Windows Server 2012 R2 的伺服器上。 若是由 Microsoft Intune 註冊的裝置，則需要可以從網際網路存取的 NDES，例如遮蔽式子網路 (也稱為 DMZ)。  
+ 若要部署使用 SCEP 的憑證設定檔，您必須在管理中心網站或主要站台中的站台系統伺服器上，安裝憑證登錄點。 您也必須以 Active Directory 憑證服務角色和需要憑證的裝置可存取的作用中 NDES，將用於 NDES 的原則模組 (即 Configuration Manager 原則模組) 安裝在執行 Windows Server 2012 R2 的伺服器上。 若是由 Microsoft Intune 註冊的裝置，則需要可以從網際網路存取的 NDES，例如遮蔽式子網路 (也稱為 DMZ)。  
 
  如需網路裝置註冊服務如何支援原則模組，以供 Configuration Manager 部署憑證的詳細資訊，請參閱[使用原則模組和網路裝置註冊服務](http://go.microsoft.com/fwlink/p/?LinkId=328657)。  
 
@@ -100,4 +101,3 @@ ms.lasthandoff: 12/30/2016
 -   System Center Configuration Manager 管理功能已封鎖裝置。  
 
  網站伺服器會傳送撤銷命令到發行憑證授權單位，以撤銷憑證。 撤銷的原因是 [操作停止] 。  
-

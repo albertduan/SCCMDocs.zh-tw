@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 477ffa5d61d2dfaedf8a3a1f5687e2d72698ad28
-ms.openlocfilehash: f175e11d9402e7c57c45edb4d5bbe969de5dcdf7
-ms.lasthandoff: 03/10/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 86109f7186422c2b29ee933e827a7d14123e5792
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -182,6 +182,11 @@ ms.lasthandoff: 03/10/2017
 
 ## <a name="windows-server-2008-r2-with-sp1-x64-standard-enterprise-and-datacenter"></a>Windows Server 2008 R2 with SP1 (x64)：Standard、Enterprise 和 Datacenter  
  Windows Server 2008 R2 現在屬於延伸支援，而不再屬於主流支援，如 [Microsoft 支援週期](https://support.microsoft.com/lifecycle)中詳述。 如需這些作業系統作為 Configuration Manager 站台系統伺服器的未來支援詳細資訊，請參閱 [System Center Configuration Manager 的已移除和已淘汰功能](../../../core/plan-design/changes/removed-and-deprecated-features.md)。  
+
+ 從 Configuration Manager 1702 版開始，站台伺服器或大部分站台系統角色將不會支援此作業系統，但仍會持續支援狀態移轉點和發佈點站台系統角色 (包括提取發佈點，以及針對 PXE 和多點傳送)。
+ 
+ 1702 之前的版本會繼續支援針對下列項目使用此作業系統：
+
 
 **站台伺服器：**  
 

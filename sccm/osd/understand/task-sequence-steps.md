@@ -2,7 +2,7 @@
 title: "工作順序步驟 - Configuration Manager | Microsoft Docs"
 description: "了解您可新增至 Configuration Manager 工作順序的工作順序步驟。"
 ms.custom: na
-ms.date: 01/23/2017
+ms.date: 03/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 79135bcea4b0ed21fe8017045226f393a1e09dac
-ms.openlocfilehash: dd1ccc6ac0e9f4add38f2431c13c6b5a5c8e1357
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 071d758f1015d16217a54fe26df5f8f948c818a3
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -660,7 +660,7 @@ ms.lasthandoff: 03/22/2017
 -   **自訂路徑**  
 
  **將路徑儲存為變數**  
- 您可以將路徑儲存為可用於另一個工作順序步驟的變數。 有多個套件時，Configuration Manager 會在變數名稱後面加上數值尾碼。 例如，如果您指定 %*mycontent*% 變數作為自訂變數，這會是所有參照內容儲存位置的根目錄 (可以是多個封裝)。 當您在後續步驟 (例如 [升級作業系統]) 中參考此變數時，會使用加上數值尾碼的變數。 在這個範例中，%*mycontent01*% 或 %*mycontent02*% 中的數字會與封裝在這個步驟中列出的順序對應。  
+ 您可以將路徑儲存為可用於另一個工作順序步驟的變數。 Configuration Manager 會在變數名稱後面加上數值尾碼。 例如，如果您指定 %*mycontent*% 變數做為自訂變數，它會是所有參照內容儲存位置的根目錄 (可以是多個封裝)。 當您參考變數時，您會在變數後面加上數值尾碼。 例如，針對第一個封裝，您將會參考 %*mycontent01*% 變數。 當您在後續步驟 (例如「作業系統升級」) 中參考該變數時，您會使用 %*mycontent02*% 或 %*mycontent03*%，其中的數字對應步驟中列出封裝的順序。  
 
  **如有封裝下載失敗，繼續下載清單中的其他封裝**  
  指定如有封裝下載失敗，則會移至清單中的下一個封裝並開始下載。  

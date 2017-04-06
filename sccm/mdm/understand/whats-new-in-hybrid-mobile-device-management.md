@@ -2,7 +2,7 @@
 title: "使用 Configuration Manager 的混合式 MDM 新功能 | Microsoft Docs"
 description: "了解 Configuration Manager 與 Intune 的混合式部署可以使用的新行動裝置管理功能。"
 ms.custom: na
-ms.date: 03/16/2017
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 79135bcea4b0ed21fe8017045226f393a1e09dac
-ms.openlocfilehash: fcaead7cbe637fa76d16976f5052cdcd9975b6e8
-ms.lasthandoff: 03/22/2017
+ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
+ms.openlocfilehash: cc3e4055ce6b648e4554773518fc928cfb51c5f3
+ms.lasthandoff: 03/28/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
@@ -82,6 +82,47 @@ ms.lasthandoff: 03/22/2017
 
   iOS 及 Android 版的 Microsoft Teams 應用程式現在可執行 Intune 行動應用程式管理 (MAM) 功能，因此您可以讓團隊在不同裝置間自由工作，同時確保對話和公司資料在每個環節都受到保護。 如需詳細資料，請參閱 Enterprise Mobility + Security 部落格上的 [Microsoft Teams 公告](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/)。
 
+### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager 的新功能 (最新分支)
+
+下列是過去 Configuration Manager Technical Preview 版本提供功能，現在在 Intune 與 Configuration Manager (最新分支) 1702 版的混合式部署中已可供使用。
+
+- [Android for Work 支援](/sccm/core/plan-design/changes/whats-new-in-version-1702##android-for-work-support)
+- [不符合規範的應用程式相容性設定](/sccm/core/plan-design/changes/whats-new-in-version-1702#conditional-access-device-compliance-policy-improvements)
+- [PFX 憑證建立和發佈以及 S/MIME 支援](/sccm/core/plan-design/changes/whats-new-in-version-1702#improvements-to-certificate-profiles)
+- [混合式 MDM 的建立精靈無法再將目標設為 Android 與 iOS 版本](/sccm/core/plan-design/changes/whats-new-in-version-1702#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm)
+
+Configuration Manager (最新分支) 1702 版也包含下列額外的混合式功能：
+
+- **對 Apple Volume Purchase Program (大量採購方案) 的改進支援**
+
+  - 您現在不但可將授權的應用程式部署到使用者，還可部署到裝置。 視應用程式是否能夠支援裝置授權而定，當您部署應用程式時，系統會要求適當的授權，如下︰
+
+    | Configuration Manager 版本 | 應用程式是否支援裝置授權？ | 部署集合類型 | 要求的授權 |
+    |-|-|-|-|
+    |1702 之前|是|使用者|使用者授權|
+    |1702 之前|否|使用者|使用者授權|
+    |1702 之前|是|裝置|使用者授權|
+    |1702 之前|否|裝置|使用者授權|
+    |1702 和更新版本|是|使用者|使用者授權|
+    |1702 和更新版本|否|使用者|使用者授權|
+    |1702 和更新版本|是|裝置|裝置授權|
+    |1702 和更新版本|否|裝置|使用者授權|
+
+  - 您現在也可以部署和追蹤從 iOS Volume Purchase Program for Education (教育單位大量採購方案) 購買的應用程式。
+
+  - 您現在可以將多個 Apple 大量採購方案權杖與 Configuration Manager 建立關聯。
+
+  如需有關大量採購之 iOS 應用程式的詳細資訊，請參閱[管理大量採購的 iOS 應用程式](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)。
+
+- **對商務用 Windows 市集中企業營運應用程式的支援**
+
+  您現在可以從「商務用 Windows 市集」同步處理自訂的企業營運應用程式。
+
+- **新的 Mobile Threat Defense 監視工具**
+
+    您現在可以透過新的方式來監視與您 Mobile Threat Defense 服務提供者的合規性狀態。
+
+    如需詳細資訊，請參閱[如何監視 Mobile Threat Defense 合規性](/sccm/mdm/deploy-use/monitor-mobile-threat-defense-compliance)。
 
 ## <a name="new-hybrid-features-in-february-2017"></a>2017 年 2 月的新混合式功能
 
@@ -101,15 +142,19 @@ ms.lasthandoff: 03/22/2017
 
 - **Android for Work 支援**
 
-  您現在可以使用 Configuration Manager Technical Preview 1702，在混合式 MDM 環境中管理使用 Android for Work 的 Android 裝置。 現在可將支援的 Android 裝置註冊為 Android for Work 裝置，這會在裝置上建立工作設定檔，以便部署 Play for Work 中核准的應用程式。 您也可以為這些裝置設定及部署設定項目、合規性政策和資源存取設定檔。
+  您現在可以使用 Configuration Manager Technical Preview 1702，在混合式 MDM 環境中管理使用 Android for Work 的 Android 裝置。 現在可將支援的 Android 裝置註冊為 Android for Work 裝置，這會在裝置上建立工作設定檔，以便部署 Play for Work 中核准的應用程式。 您也可以為這些裝置設定及部署設定項目、合規性政策和資源存取設定檔。 如需詳細資訊，請參閱 [Android for Work 支援](/sccm/core/get-started/capabilities-in-technical-preview-1702#android-for-work-support)。
 
 - **不符合規範的應用程式相容性設定**
 
-  您現在可以在合規性政策中，為 Android 和 iOS 應用程式建立不符合規範的應用程式規則。 如果裝置已安裝指定的應用程式，則會標示為「不符合規範」，而且根據適當的條件式存取原則將無法存取公司資源。
+  您現在可以在合規性政策中，為 Android 和 iOS 應用程式建立不符合規範的應用程式規則。 如果裝置已安裝指定的應用程式，則會標示為「不符合規範」，而且根據適當的條件式存取原則將無法存取公司資源。 如需詳細資訊，請參閱[條件式存取裝置合規性政策改善](/sccm/core/get-started/capabilities-in-technical-preview-1702#conditional-access-device-compliance-policy-improvements)。
 
 - **PFX 憑證建立和發佈以及 S/MIME 支援**
 
-  您現在可以建立 PFX 憑證，並將該憑證部署給混合式環境中的使用者。 這些憑證接著可供使用者已註冊的裝置用來加密及解密 S/MIME 電子郵件。
+  您現在可以建立 PFX 憑證，並將該憑證部署給混合式環境中的使用者。 這些憑證接著可供使用者已註冊的裝置用來加密及解密 S/MIME 電子郵件。 如需詳細資訊，請參閱[使用 S MIME 支援來建立 PFX 憑證](/sccm/core/get-started/capabilities-in-technical-preview-1702#create-pfx-certificates-with-s-mime-support)。
+
+- **對額外 iOS 組態設定的支援**
+   
+    您現在有 42 個可在設定項目中設定的額外 iOS 設定。 針對受監督的 iOS 裝置，已新增大部分的設定 (總計 35 個)。 如需詳細資訊，請參閱 [iOS 裝置的新合規性設定](/sccm/core/get-started/capabilities-in-technical-preview-1702#new-compliance-settings-for-ios-devices)。
 
 ## <a name="new-hybrid-features-in-january-2017"></a>2017 年 1 月的新混合式功能
 

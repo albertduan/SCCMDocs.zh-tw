@@ -2,7 +2,7 @@
 title: "測試進入生產階段前集合的用戶端升級 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中測試進入生產階段前集合的用戶端升級。"
 ms.custom: na
-ms.date: 12/12/2016
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
-ms.openlocfilehash: 250c9312b932670c408554f3968ae43ae4f3dbaa
-ms.lasthandoff: 01/03/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 533c8e8b30519d83b8fc7a9d204d51e76974c4b1
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -57,7 +57,7 @@ ms.lasthandoff: 01/03/2017
 
 ##  <a name="to-install-a-configuration-manager-update-that-includes-a-new-version-of-the-client"></a>安裝包含新版用戶端的 Configuration Manager 更新  
 
-1.  在 Configuration Manager 主控台中，開啟 [系統管理] > [雲端服務] > [更新和服務]、選取 [可用] 更新，然後選擇 [安裝更新套件]  
+1.  在 Configuration Manager 主控台中，開啟 [系統管理] > [更新與服務]，選取 [可用] 更新，然後選擇 [安裝更新套件]。 (1702 版之前，[更新與服務] 位於 [系統管理] > [雲端服務] 底下)。
 
      如需安裝更新的詳細資訊，請參閱 [System Center Configuration Manager 的更新](../../../../core/servers/manage/updates.md)  
 
@@ -72,7 +72,7 @@ ms.lasthandoff: 01/03/2017
 
 ##  <a name="to-promote-the-new-client-to-production"></a>將新用戶端升級到生產環境  
 
-1.  在 Configuration Manager 主控台中，開啟 [系統管理] > [雲端服務] > [更新與服務]，然後選擇 [將生產階段前用戶端升階]。
+1.  在 Configuration Manager 主控台中，開啟 [系統管理] > [更新與服務]，然後選擇 [將生產階段前用戶端升階]。 (1702 版之前，[更新與服務] 位於 [系統管理] > [雲端服務] 底下)。
 
     > [!TIP]
     > 當您監視 **[監視]** [用戶端狀態] **[進入生產階段前用戶端部署]** > **中主控台的用戶端部署時，也可以使用** > **[Promote Pre-production Client (將生產階段前用戶端升階)]**按鈕。

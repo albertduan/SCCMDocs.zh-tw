@@ -2,7 +2,7 @@
 title: "命令列安裝 | Microsoft Docs"
 description: "了解如何在命令提示字元執行 System Center Configuration Manager 安裝程式，以進行各種站台安裝。"
 ms.custom: na
-ms.date: 3/1/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 34e24deb90a39bf655a2e24d16cdbe07528e6193
-ms.openlocfilehash: 0fb8ba4bb3d4abe66f71cc83312281cecbb92c41
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: fefa5f3aa12d82b66a251cf0525475496e1e35cf
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>使用命令列來安裝 System Center Configuration Manager 站台
@@ -33,7 +33,7 @@ ms.lasthandoff: 03/01/2017
 -   **從命令提示字元安裝管理中心網站或主要站台**  
   檢視[安裝程式的命令列選項](../../../../core/servers/deploy/install/command-line-options-for-setup.md)
 
- -  **修改管理中心網站或主要站台所使用的語言**  
+-  **修改管理中心網站或主要站台所使用的語言**  
     若要從命令提示字元修改站台所安裝的語言 (包括行動裝置語言)，您必須：  
 
      -   從站台伺服器的 **&lt;ConfigurationManager 安裝路徑\>\Bin\X64** 執行安裝程式。
@@ -44,7 +44,7 @@ ms.lasthandoff: 03/01/2017
 
     若要建立語言指令檔，請使用[用以管理語言的命令列選項](../../../../core/servers/deploy/install/command-line-options-for-setup.md#bkmk_Lang)中的資訊  
 
- -  **使用安裝指令檔進行自動站台安裝或站台復原**  
+-  **使用安裝指令檔進行自動站台安裝或站台復原**  
     您可以使用安裝指令碼從命令提示字元執行安裝程式，然後執行自動站台安裝。 您也可以使用此選項來復原站台。    
 
     若要搭配指令碼與安裝程式一起使用：  
@@ -58,7 +58,7 @@ ms.lasthandoff: 03/01/2017
     -   識別    
     -   選項    
     -   SQLConfigOptions    
-    -   HierarchyOptions    
+      -   HierarchyOptions    
     -   CloudConnectorOptions   
 
     若要復原站台，您也必須包括指令碼檔的下列區段：  
@@ -66,12 +66,11 @@ ms.lasthandoff: 03/01/2017
     -   識別  
     -   復原
 
-    如需備份和復原的詳細資訊，請參閱 [Configuration Manager 中的備份和復原](../../../../protect/understand/backup-and-recovery.md)主題中的[自動站台復原指令碼檔案金鑰](../../../../protect/understand/backup-and-recovery.md#BKMK_UnattendedSiteRecoveryKeys)。  
+如需備份和復原的詳細資訊，請參閱 [Configuration Manager 中的備份和復原](../../../../protect/understand/backup-and-recovery.md)主題中的[自動站台復原指令碼檔案金鑰](../../../../protect/understand/backup-and-recovery.md#BKMK_UnattendedSiteRecoveryKeys)。  
 
-    如需在自動安裝指令碼檔中使用的索引鍵和值清單，請參閱[自動安裝指令碼檔案索引鍵](../../../../core/servers/deploy/install/command-line-options-for-setup.md#bkmk_Unattended)。  
+如需在自動安裝指令碼檔中使用的索引鍵和值清單，請參閱[自動安裝指令碼檔案索引鍵](../../../../core/servers/deploy/install/command-line-options-for-setup.md#bkmk_Unattended)。  
 
 ## <a name="about-the-command-line-script-file"></a>關於命令列指令檔  
-
  若要自動安裝 Configuration Manager，您可以使用命令列選項 **/SCRIPT** 執行安裝程式，並指定包含安裝選項的指令碼檔。 使用這種方法來支援下列工作：  
 
 -   安裝管理中心網站  
@@ -81,6 +80,18 @@ ms.lasthandoff: 03/01/2017
 
 > [!NOTE]  
 >  您無法使用自動執行指令碼檔，將評估網站升級為 Configuration Manager 的授權安裝。  
+
+### <a name="the-cdlatest-key-name"></a>CDLatest 索引鍵名稱
+當您使用 CD.Latest 資料夾中的媒體，來執行下列四個安裝選項的指令碼式安裝時，您的指令碼必須包含值為 **1** 的 **CDLatest** 索引鍵：
+- 安裝新的管理中心網站
+- 安裝新的主要站台
+- 復原管理中心網站
+- 復原主要站台 
+
+此值不支援搭配從 Microsoft 大量授權網站取得的安裝媒體使用。
+如需如何在指令碼檔案中使用此索引鍵名稱，請參閱[命令列選項](/sccm/core/servers/deploy/install/command-line-options-for-setup)。
+
+
 
 ### <a name="create-the-script"></a>建立指令碼
 當您[執行安裝程式以透過使用者介面安裝站台](../../../../core/servers/deploy/install/use-the-setup-wizard-to-install-sites.md)時，會自動建立安裝指令碼。  確認精靈之 [摘要] 頁面上的設定時，會發生下列情況：  

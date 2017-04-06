@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
-ms.openlocfilehash: de30afa200404d977f56c08d24a9b11e21f9ae88
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 6b1a4584ebcd4dadd983677b714486402c93e190
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -30,29 +31,31 @@ ms.openlocfilehash: de30afa200404d977f56c08d24a9b11e21f9ae88
 
 
 
- 2015 年 12 月發行的 System Center Configuration Manager (1511 版) 是 Microsoft 的 Configuration Manager 版本最新產品。 通常稱之為 System Center Configuration Manager 最新分支。 「最新分支」指出這是支援產品累加式更新的版本。 它也提供一個方法來區別此版本與舊版 Configuration Manager。  
+ 2015 年 12 月發行的 System Center Configuration Manager (版本 1511) 是 Microsoft 目前 Configuration Manager 產品的初始版本。 通常稱之為 System Center Configuration Manager 最新分支。 「最新分支」指出這是支援產品累加式更新的版本。 它也提供一個方法來區別此版本與舊版 Configuration Manager。  
 
- 使用本版的 System Center Configuration Manager：  
+ System Center Configuration Manager：  
 
 -   不同於 Configuration Manager 2007 或 System Center 2012 Configuration Manager 等舊版，產品名稱中不使用年份或產品識別碼。
 
--   支援累加式產品中更新 (也稱為更新版本)。 最初版本為 1511 版。 後續版本在一年內作為主控台中更新發行了數個版本，像是版本 1602 或 1606。
+-   支援累加式產品中更新 (也稱為更新版本)。 初始版本為版本 1511。 後續版本透過主控台內更新的方式於一年中發行數次 (例如版本 1610)。
+-   使用基準版本進行安裝。 雖然 1511 是原始的基準版本，但新的基準版本會不時發行 (例如 1606)。 基準版本可用來安裝新的 System Center Configuration Manager 站台和階層，或從支援的 Configuration Manager 2012 版本進行升級。
 
 
 
 
-##  <a name="a-namebkmkupdatesa-in-console-updates-for-configuration-manager"></a><a name="bkmk_updates"></a> Configuration Manager 的主控台中更新  
+##  <a name="bkmk_updates"></a> Configuration Manager 的主控台中更新  
  System Center Configuration Manager 使用稱為**更新和服務**的主控台內服務方式，可輕鬆尋找並安裝建議的更新。  
 
  某些版本只以現有站台的更新形式提供 (從 Configuration Manager 主控台內)，無法用來安裝新的 Configuration Manager 站台。   
-例如，1602 更新只能從 Configuration Manager 主控台內取得。 它可用來更新執行基準版本 1511 到版本 1602 的站台。  
+例如，1610 更新只能從 Configuration Manager 主控台內取得。 它是用來更新已執行某版本的 System Center Configuration Manager 的站台。
 
-更新版本也會定期發行為新基準版本 (例如更新 1606)。 這種更新可以用來安裝新的階層而不需要從較舊的基準版本 (例如 1511) 開始，也無須升級至最新版本。
+更新版本也會定期發行為新的基準版本 (例如更新 1606)。 這種更新可以用來安裝新的階層而不需要從較舊的基準版本 (例如 1511) 開始，也無須升級至最新版本。
 
 
- 如需使用更新的詳細資訊，請參閱 [Updates for System Center Configuration Manager](../../../core/servers/manage/updates.md) (System Center Configuration Manager 的更新)。  
+如需使用更新的詳細資訊，請參閱 [Updates for System Center Configuration Manager](../../../core/servers/manage/updates.md) (System Center Configuration Manager 的更新)。  
+如需基準的詳細資訊，請參閱[基準和更新版本](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)。
 
-##  <a name="a-namebkmkservicepointa-new-site-system-role-service-connection-point"></a><a name="bkmk_servicepoint"></a> 新的站台系統角色：服務連接點  
+##  <a name="bkmk_servicepoint"></a> 新的站台系統角色：服務連接點  
  **Microsoft Intune 連接器**已為啟用額外功能 (**服務連接點**) 的新站台系統角色所取代。 服務連接點：  
 
 -   整合 Intune 與 System Center Configuration Manager 內部部署行動裝置管理時，取代 Microsoft Intune 連接器。  
@@ -65,19 +68,19 @@ ms.openlocfilehash: de30afa200404d977f56c08d24a9b11e21f9ae88
 
 此站台系統角色支援線上和離線操作模式。 如需詳細資訊，請參閱 [About the service connection point in System Center Configuration Manager](../../../core/servers/deploy/configure/about-the-service-connection-point.md)。  
 
-##  <a name="a-namebkmkusagea-usage-data-collection"></a><a name="bkmk_usage"></a> 使用量資料收集  
+##  <a name="bkmk_usage"></a> 使用量資料收集  
  System Center Configuration Manager 會收集您站台和基礎結構的使用方式資料。 這項資訊是透過服務連接點編譯並提交給 Microsoft 雲端服務。 需要有這項資訊才能讓 Configuration Manager 下載套用至您所使用 Configuration Manager 版本之部署的更新。 當您設定服務連接點時，可以指定資料收集層級，以及這是自動進行提交 (線上模式) 還是手動進行提交 (離線模式)。  
 
  如需詳細資訊，請參閱[使用方式資料層級和設定](../../../core/servers/deploy/install/setup-reference.md#bkmk_usage)。  
 
-##  <a name="a-namebkmkamta-support-for-intel-active-management-technology-amt"></a><a name="bkmk_AMT"></a> Intel 主動管理技術 (AMT) 支援  
+##  <a name="bkmk_AMT"></a> Intel 主動管理技術 (AMT) 支援  
  使用 System Center Configuration Manager，即已從 Configuration Manager 主控台內移除 AMT 型電腦的原生支援。 當您使用 [Microsoft System Center Configuration Manager 的 Intel SCS 附加元件](http://www.intel.com/content/www/us/en/software/setup-configuration-software.html)時，仍會完全管理 AMT 電腦。 附加元件可讓您存取管理 AMT 的最新功能，同時移除 Configuration Manager 併入那些變更之前所引入的限制。  
 
 移除的 System Center Configuration Manager 整合 AMT 包括頻外管理。 頻外管理點站台系統角色已不再使用，也無法再使用。  
 
 請注意，這項變更不會影響 System Center 2012 Configuration Manager 中的頻外管理。
 
-##  <a name="a-namebkmkouta-deprecated-functionality"></a><a name="bkmk_out"></a> 已過時功能  
+##  <a name="bkmk_out"></a> 已過時功能  
  某些功能 (例如 [Intel 主動管理技術 (AMT) 型電腦的原生支援](#bkmk_AMT)已從 Configuration Manager 主控台移除。 其他功能 (例如網路存取保護) 則已完整移除。 此外，不再支援一些較舊的 Microsoft 產品 (如 Windows Vista、Windows Server 2008 和 SQL Server 2008)。  
 
  如需已取代之功能的清單，請參閱 [System Center Configuration Manager 的已移除和已淘汰功能](../../../core/plan-design/changes/removed-and-deprecated-features.md)。  
@@ -165,9 +168,4 @@ System Center Configuration Manager 可讓您與 Windows Hello 企業版 (原 Mi
  您現在可以使用內部部署 Configuration Manager 基礎結構管理行動裝置。 所有裝置管理和管理資料都是在內部部署進行處理，且不屬於 Microsoft Intune 或其他雲端服務。 這種類型的裝置管理不需要用戶端軟體。 Configuration Manager 會使用裝置作業系統的內建功能來管理裝置。  
 
  若要進一步了解，請參閱[在 System Center Configuration Manager 中使用內部部署基礎結構管理行動裝置](../../../mdm/understand/manage-mobile-devices-with-on-premises-infrastructure.md)。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

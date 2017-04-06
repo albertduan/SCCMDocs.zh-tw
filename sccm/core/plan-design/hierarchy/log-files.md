@@ -2,7 +2,7 @@
 title: "Configuration Manager 的記錄檔 | Microsoft Docs"
 description: "使用記錄檔對 System Center Configuration Manager 階層中的問題進行疑難排解。"
 ms.custom: na
-ms.date: 1/12/2017
+ms.date: 3/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: be5fd67e37b6ac7b20903e2e0678c1880715ab07
-ms.openlocfilehash: 1e7706156c9226aacf70e6dedb26a0edc93720d1
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: b991b4ea27e66c233b04f8e65a412404521d89a6
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -114,12 +115,12 @@ ms.openlocfilehash: 1e7706156c9226aacf70e6dedb26a0edc93720d1
 
     -   [WSUS 伺服器](#BKMK_WSUSLog)  
 
-##  <a name="a-namebkmkaboutlogsa-about-configuration-manager-log-files"></a><a name="BKMK_AboutLogs"></a> 關於 Configuration Manager 記錄檔  
+##  <a name="BKMK_AboutLogs"></a> 關於 Configuration Manager 記錄檔  
  Configuration Manager 中大部分程序會將操作資訊寫入該程序專用的記錄檔中。 這些記錄檔是透過 **.log** 或 **.lo_** 副檔名來識別。 Configuration Manager 會寫入 .log 檔，直到記錄檔到達大小上限。 記錄檔已滿時，.log 檔就會複製到同名的檔案，但副檔名為 .lo_，而程序或元件會繼續寫入 .log 檔中。 當 .log 檔再次達到其大小上限時，就會覆寫 .lo_ 檔，且此程序會重複。 某些元件會藉由附加日期和時間戳記至記錄檔名稱並且保留 .log 副檔名的方式，建立記錄檔歷程記錄。 .lo_ 檔的大小上限和使用例外是 Linux 和 UNIX 的用戶端。 如需 Linux 和 UNIX 的用戶端如何使用記錄檔的資訊，請參閱本主題中的[管理用於 Linux 和 UNIX 用戶端的記錄檔](#BKMK_ManageLinuxLogs)。  
 
  若要檢視記錄檔，請使用 Configuration Manager 記錄檢視器工具 CMTrace，其位於 Configuration Manager來源媒體的 \\SMSSetup\\Tools 資料夾中。 CMTrace 工具會新增至所有 [軟體程式庫]中新增的開機映像內。  
 
-###  <a name="a-namebkmklogoptionsa-configure-logging-options-by-using-configuration-manager-service-manager"></a><a name="BKMK_LogOptions"></a> 使用 Configuration Manager Service Manager 設定記錄選項  
+###  <a name="BKMK_LogOptions"></a> 使用 Configuration Manager Service Manager 設定記錄選項  
  在 Configuration Manager 中，您可以變更記錄檔儲存位置，也可以變更記錄檔大小。  
 
  若要修改記錄檔大小、變更記錄檔名稱和位置，或強制將多個元件寫入單一記錄檔，請執行下列步驟。  
@@ -135,13 +136,13 @@ ms.openlocfilehash: 1e7706156c9226aacf70e6dedb26a0edc93720d1
 7.  在 [Configuration Manager 元件記錄]  對話方塊中，完成您選取的可用設定選項。  
 8.  選取 [確定] 儲存設定。  
 
-###  <a name="a-namebkmkloglocationa-find-configuration-manager-logs"></a><a name="BKMK_LogLocation"></a> 尋找 Configuration Manager 記錄檔  
+###  <a name="BKMK_LogLocation"></a> 尋找 Configuration Manager 記錄檔  
 Configuration Manager 記錄檔會依據建立記錄檔的程序以及您站台系統的設定，儲存在各種不同的位置。 由於電腦的記錄檔位置可能有所不同，因此如果需要對特定案例進行疑難排解，請使用搜尋功能尋找 Configuration Manager 電腦上的相關記錄檔。  
 
-##  <a name="a-namebkmkclientlogsa-configuration-manager-client-logs"></a><a name="BKMK_ClientLogs"></a> Configuration Manager 用戶端記錄檔  
+##  <a name="BKMK_ClientLogs"></a> Configuration Manager 用戶端記錄檔  
 下面各節列出與用戶端操作及用戶端安裝相關的記錄檔。  
 
-###  <a name="a-namebkmkclientoplogsa-client-operations"></a><a name="BKMK_ClientOpLogs"></a> 用戶端操作  
+###  <a name="BKMK_ClientOpLogs"></a> 用戶端操作  
 下表列出位於 Configuration Manager 用戶端中的記錄檔。  
 
 |記錄檔名稱|說明|  
@@ -204,7 +205,7 @@ Configuration Manager 記錄檔會依據建立記錄檔的程序以及您站台�
 |wakeprxy-install.log|記錄用戶端收到開啟喚醒 Proxy 的用戶端設定選項時的安裝資訊。|  
 |wakeprxy-uninstall.log|記錄有關用戶端收到關閉喚醒 Proxy 的用戶端設定選項時，解除安裝喚醒 Proxy 的資訊 (如果之前已開啟喚醒 Proxy)。|  
 
-###  <a name="a-namebkmkclientinstallloga-client-installation-log-files"></a><a name="BKMK_ClientInstallLog"></a> 用戶端安裝記錄檔  
+###  <a name="BKMK_ClientInstallLog"></a> 用戶端安裝記錄檔  
  下表列出包含 Configuration Manager 用戶端安裝資訊的記錄檔。  
 
 |記錄檔名稱|說明|  
@@ -214,7 +215,7 @@ Configuration Manager 記錄檔會依據建立記錄檔的程序以及您站台�
 |CcmRepair.log|記錄用戶端代理程式的修復活動。|  
 |client.msi.log|記錄 client.msi 所執行的安裝工作。 可用於疑難排解用戶端安裝或移除問題。|  
 
-###  <a name="a-namebkmklogfilesforlnua-client-for-linux-and-unix"></a><a name="BKMK_LogFilesforLnU"></a> Linux 和 UNIX 的用戶端  
+###  <a name="BKMK_LogFilesforLnU"></a> Linux 和 UNIX 的用戶端  
  Linux 和 UNIX 的 Configuration Manager 用戶端會在下列記錄檔中記錄資訊。  
 
 > [!TIP]  
@@ -253,14 +254,14 @@ Configuration Manager 記錄檔會依據建立記錄檔的程序以及您站台�
 
 在正常作業情況下，請使用「錯誤」記錄層級。 此記錄層級會建立最小的記錄檔。 隨著記錄層級從「錯誤」提升至「警告」、「資訊」，再提升至「追蹤」，所建立的記錄檔會越來越大，因為會有更多資料寫入檔案。  
 
-####  <a name="a-namebkmkmanagelinuxlogsa-manage-log-files-for-the-linux-and-unix-client"></a><a name="BKMK_ManageLinuxLogs"></a> 管理用於 Linux 和 UNIX 用戶端的記錄檔  
+####  <a name="BKMK_ManageLinuxLogs"></a> 管理用於 Linux 和 UNIX 用戶端的記錄檔  
 Linux 和 UNIX 的用戶端不會限制用戶端記錄檔大小上限，用戶端也不會自動將其 .log 檔的內容複製到另一個檔案，例如 .lo_ 檔。 如果您想要控制記錄檔的大小上限，請實作一個可管理記錄檔，但與 Linux 和 UNIX 的 Configuration Manager 用戶端無關的程序。  
 
 例如，您可以使用標準 Linux 和 UNIX 命令 **logrotate** 來管理用戶端記錄檔的大小和輪替。 Linux 與 UNIX 的 Configuration Manager 用戶端所包含的介面，可以讓 **logrotate** 提示用戶端記錄檔完成輪替的時間，因此用戶端可以繼續記錄到記錄檔。  
 
 如需 **logrotate**的詳細資訊，請參閱您用於 Linux 和 UNIX 發佈的文件。  
 
-###  <a name="a-namebkmklogfilesformaca-client-for-mac-computers"></a><a name="BKMK_LogfilesforMac"></a> Mac 電腦的用戶端  
+###  <a name="BKMK_LogfilesforMac"></a> Mac 電腦的用戶端  
 Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資訊。  
 
 |記錄檔名稱|詳細資料|  
@@ -272,10 +273,10 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 
 站台系統伺服器上的 SMS_DM.log 記錄檔也會記錄 Mac 電腦與針對行動裝置與 Mac 電腦設定的管理點之間的通訊。  
 
-##  <a name="a-namebkmkserverlogsa-configuration-manager-site-server-log-files"></a><a name="BKMK_ServerLogs"></a> Configuration Manager 站台伺服器記錄檔  
+##  <a name="BKMK_ServerLogs"></a> Configuration Manager 站台伺服器記錄檔  
  下面各節列出站台伺服器上或是與特定站台系統角色相關的記錄檔。  
 
-###  <a name="a-namebkmksitesiteserverloga-site-server-and-site-system-server-logs"></a><a name="BKMK_SiteSiteServerLog"></a> 站台伺服器與站台系統伺服器記錄檔  
+###  <a name="BKMK_SiteSiteServerLog"></a> 站台伺服器與站台系統伺服器記錄檔  
  下表列出 Configuration Manager 站台伺服器與站台系統伺服器上的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -350,7 +351,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |statmgr.log|記錄傳送至資料庫的所有狀態訊息的編寫。|網站伺服器|  
 |swmproc.log|記錄測量檔案與設定的處理。|網站伺服器|  
 
-###  <a name="a-namebkmksiteinstallloga-site-server-installation-log-files"></a><a name="BKMK_SiteInstallLog"></a> 站台伺服器安裝記錄檔  
+###  <a name="BKMK_SiteInstallLog"></a> 站台伺服器安裝記錄檔  
  下表列出包含網站安裝相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -361,7 +362,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |SMS_BOOTSTRAP.log|記錄有關啟動次要網站安裝處理進度的資訊。 包含在 ConfigMgrSetup.log 內的實際安裝處理詳細資料。|網站伺服器|  
 |smstsvc.log|記錄有關安裝、使用以及移除 Windows 服務的資訊，而該服務使用起始連線之伺服器的電腦帳戶，測試伺服器間的網路連線性與權限。|站台伺服器與站台系統伺服器|  
 
-###  <a name="a-namebkmkfsploga-fallback-status-point-log-files"></a><a name="BKMK_FSPLog"></a> 後援狀態點記錄檔  
+###  <a name="BKMK_FSPLog"></a> 後援狀態點記錄檔  
  下表列出包含後援狀態點相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -370,7 +371,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |fspMSI.log|記錄由後援狀態點安裝所產生的訊息。|網站系統伺服器|  
 |fspmgr.log|記錄後援狀態點網站系統角色的活動。|網站系統伺服器|  
 
-###  <a name="a-namebkmkmploga-management-point-log-files"></a><a name="BKMK_MPLog"></a> 管理點記錄檔  
+###  <a name="BKMK_MPLog"></a> 管理點記錄檔  
  下表列出包含管理點相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -395,7 +396,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |mpMSI.log|記錄有關管理點安裝的詳細資料。|網站伺服器|  
 |MPSetup.log|記錄管理點安裝包裝函式處理程序。|網站伺服器|  
 
-###  <a name="a-namebkmksuploga-software-update-point-log-files"></a><a name="BKMK_SUPLog"></a> 軟體更新點記錄檔  
+###  <a name="BKMK_SUPLog"></a> 軟體更新點記錄檔  
  下表列出包含軟體更新點相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -409,10 +410,10 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |wsyncmgr.log|記錄有關軟體更新同步程序的詳細資料。|網站系統伺服器|  
 |WUSSyncXML.log|記錄有關 Inventory Tool for Microsoft Updates 同步程序的詳細資料。|設定為 Inventory Tool for Microsoft Updates 之同步主機的用戶端電腦|  
 
-##  <a name="a-namebkmkfunctionlogsa-log-files-for-configuration-manager-functionality"></a><a name="BKMK_FunctionLogs"></a> Configuration Manager 功能的記錄檔  
+##  <a name="BKMK_FunctionLogs"></a> Configuration Manager 功能的記錄檔  
  下面各節列出與 Configuration Manager 功能相關的記錄檔。  
 
-###  <a name="a-namebkmkappmanageloga-application-management"></a><a name="BKMK_AppManageLog"></a> 應用程式管理  
+###  <a name="BKMK_AppManageLog"></a> 應用程式管理  
  下表列出包含應用程式管理相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -441,7 +442,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |colleval.log|記錄有關集合評估工具建立、變更和刪除集合時的詳細資料。|網站伺服器|  
 |execmgr.log|記錄有關所執行套件和工作順序的詳細資料。|用戶端|  
 
-###  <a name="a-namebkmkailoga-asset-intelligence"></a><a name="BKMK_AILog"></a> Asset Intelligence  
+###  <a name="BKMK_AILog"></a> Asset Intelligence  
  下表列出包含 Asset Intelligence 相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -454,7 +455,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |ManagedProvider.log|記錄有關使用相關軟體識別標記探索軟體的詳細資料。 另外也會記錄與硬體清查相關的活動。|網站系統伺服器|  
 |MVLSImport.log|記錄有關處理所匯入授權檔案的詳細資料。|網站系統伺服器|  
 
-###  <a name="a-namebkmkbnrloga-backup-and-recovery"></a><a name="BKMK_BnRLog"></a> 備份與復原  
+###  <a name="BKMK_BnRLog"></a> 備份與復原  
  下表列出包含備份和復原動作相關資訊的記錄檔，包括站台重設以及 SMS 提供者的變更。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -464,7 +465,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |smssqlbkup.log|記錄 SQL Server 安裝在非站台伺服器的伺服器上時，來自站台資料庫備份程序的輸出。|網站資料庫伺服器|  
 |Smswriter.log|記錄有關備份程序所使用 Configuration Manager VSS 寫入器之狀態的資訊。|網站伺服器|  
 
-###  <a name="a-namebkmkcertificateenrollmenta-certificate-enrollment"></a><a name="BKMK_CertificateEnrollment"></a> 憑證註冊  
+###  <a name="BKMK_CertificateEnrollment"></a> 憑證註冊  
  下表列出包含憑證註冊相關資訊的 Configuration Manager 記錄檔。 憑證註冊使用憑證登錄點以及伺服器上執行網路裝置註冊服務的 Configuration Manager 原則模組。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -486,7 +487,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
     > [!NOTE]  
     >  此檔案位於網路裝置註冊服務帳戶設定檔的資料夾內，例如 C:\Users\SCEPSvc。 如需如何啟用網路裝置註冊服務記錄功能的詳細資訊，請參閱 TechNet WiKi 上的 Network Device Enrollment Service (NDES) in Active Directory Certificate Services (AD CS) 文章中 [Enable Logging (啟用記錄功能)](http://go.microsoft.com/fwlink/?LinkId=320576) 一節。  
 
-###  <a name="a-namebkmkbgba-client-notification"></a><a name="BKMK_BGB"></a> 用戶端通知  
+###  <a name="BKMK_BGB"></a> 用戶端通知  
  下表列出包含用戶端通知相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -502,12 +503,22 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 
 下表列出包含雲端管理閘道相關資訊的記錄檔。
 
-|記錄檔名稱|說明|含有記錄檔的電腦|  
-|--------------|-----------------|----------------------------|  
-|CloudMgr.log|記錄有關雲端管理閘道服務的部署、進行中的服務狀態，以及服務相關使用資料的詳細資料。|網站系統伺服器|
+||||
+|-|-|-|
+|記錄檔名稱|說明|含有記錄檔的電腦|
+|CloudMgr.log|記錄有關雲端管理閘道服務的部署、進行中的服務狀態，以及服務相關使用資料的詳細資料。<br>您可以編輯登錄機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_CLOUD_SERVICES_MANAGER\Logging level**，以設定記錄層級|站台系統伺服器上的 **SMS/Logs** 資料夾|
+|CMGSetup.log 或 CMG-*RoleInstanceID*-CMGSetup.log<sup>1</sup>|記錄雲端管理閘道部署 (Azure 中的本機部署) 第 2 階段的詳細資料<br>您可以使用 [Azure 入口網站\雲端服務設定] 索引標籤上的 [追蹤層級] ([資訊] (預設)、[詳細資訊]、[錯誤]) 設定來設定記錄層級。|您 Azure 伺服器上的 **%approot%\logs**，或站台系統伺服器上的 SMS/Logs 資料夾|
+|CMGHttpHandler.log 或 CMG-*RoleInstanceID*- CMGHttpHandler.log<sup>1</sup>|記錄在 Azure 中與 Internet Information Services 繫結的雲端管理閘道 http 處理常式的詳細資料<br>您可以使用 [Azure 入口網站\雲端服務設定] 索引標籤上的 [追蹤層級] ([資訊] (預設)、[詳細資訊]、[錯誤]) 設定來設定記錄層級。|您 Azure 伺服器上的 **%approot%\logs**，或站台系統伺服器上的 SMS/Logs 資料夾|
+|CMGService.log 或 CMG-*RoleInstanceID*- CMGService.log<sup>1</sup>|記錄 Azure 中雲端管理閘道服務核心元件的詳細資料<br>您可以使用 [Azure 入口網站\雲端服務設定] 索引標籤上的 [追蹤層級] ([資訊] (預設)、[詳細資訊]、[錯誤]) 設定來設定記錄層級。|您 Azure 伺服器上的 **%approot%\logs**，或站台系統伺服器上的 SMS/Logs 資料夾|
 |SMS_Cloud_ProxyConnector.log|記錄了雲端管理閘道服務和雲端管理閘道連接點之間的連線設定詳細資料。|網站系統伺服器|
 
-###  <a name="a-namebkmkcompsettingsloga-compliance-settings-and-company-resource-access"></a><a name="BKMK_CompSettingsLog"></a> 合規性設定和公司資源存取  
+<sup>1</sup> 這些是雲端服務管理員每 5 分鐘從 Azure 儲存體同步處理的本機 Configuration Manager 記錄檔。 雲端管理閘道每 5 分鐘便會推送記錄檔到 Azure 儲存體。 因此最大延遲為 10 分鐘。 詳細資訊參數會影響本機和遠端記錄檔。
+
+- 如需針對部署進行疑難排解，請使用 **CloudMgr.log** 和 **CMGSetup.log**
+- 如需針對服務健全狀況進行疑難排解，請使用 **CMGService.log** 和 **SMS_Cloud_ProxyConnector.log**。
+- 如需針對用戶端流量進行疑難排解，請使用 **CMGHttpHandler.log**、**CMGService.log** 和 **SMS_Cloud_ProxyConnector.log**。
+
+###  <a name="BKMK_CompSettingsLog"></a> 合規性設定和公司資源存取  
  下表列出包含相容性設定和公司資源存取相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -518,7 +529,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |DCMReporting.log|記錄有關在設定項目的狀態訊息內報告原則平台結果的資訊。|用戶端|  
 |DcmWmiProvider.log|記錄有關從 WMI 讀取設定項目 synclet 的資訊。|用戶端|  
 
-###  <a name="a-namebkmkconsoleloga-configuration-manager-console"></a><a name="BKMK_ConsoleLog"></a> Configuration Manager 主控台  
+###  <a name="BKMK_ConsoleLog"></a> Configuration Manager 主控台  
  下表列出包含 Configuration Manager 主控台相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -527,7 +538,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |SmsAdminUI.log|記錄有關操作 Configuration Manager 主控台的資訊。|執行 Configuration Manager 主控台的電腦|  
 |SMSProv.log|SMS 提供者所執行的記錄活動。 Configuration Manager 主控台活動會使用 SMS 提供者。|網站伺服器或網站系統伺服器|  
 
-###  <a name="a-namebkmkcontentloga-content-management"></a><a name="BKMK_ContentLog"></a> 內容管理  
+###  <a name="BKMK_ContentLog"></a> 內容管理  
  下表列出包含內容管理相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -541,7 +552,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |smsdpprov.log|記錄有關從主要網站收到之壓縮檔解壓縮的詳細資料。 此記錄檔為遠端發佈點的 WMI 提供者所產生。|未與站台伺服器共置的發佈點電腦|  
 
 
-###  <a name="a-namebkmkdiscoveryloga-discovery"></a><a name="BKMK_DiscoveryLog"></a> 探索  
+###  <a name="BKMK_DiscoveryLog"></a> 探索  
 下表列出包含探索相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -554,7 +565,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |InventoryAgent.log|記錄用戶端上硬體清查、軟體清查和活動訊號探索動作的活動。|用戶端|  
 |netdisc.log|記錄網路探索的動作。|網站伺服器|  
 
-###  <a name="a-namebkmkeploga-endpoint-protection"></a><a name="BKMK_EPLog"></a> Endpoint Protection  
+###  <a name="BKMK_EPLog"></a> Endpoint Protection  
  下表列出包含 Endpoint Protection 相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -564,7 +575,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |EPMgr.log|監視 Endpoint Protection 網站系統角色的狀態。|網站系統伺服器|  
 |EPSetup.log|提供有關安裝 Endpoint Protection 網站系統角色的資訊。|網站系統伺服器|  
 
-###  <a name="a-namebkmkextensionsa-extensions"></a><a name="BKMK_Extensions"></a> 擴充功能  
+###  <a name="BKMK_Extensions"></a> 擴充功能  
  下表列出包含延伸模組相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -573,7 +584,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |FeatureExtensionInstaller.log|記錄有關在 Configuration Manager 主控台中啟用或停用擴充功能時，安裝及移除個別擴充功能的資訊。|執行 Configuration Manager 主控台的電腦|  
 |SmsAdminUI.log|記錄 Configuration Manager 主控台活動。|執行 Configuration Manager 主控台的電腦|  
 
-###  <a name="a-namebkmkinventoryloga-inventory"></a><a name="BKMK_InventoryLog"></a> 清查  
+###  <a name="BKMK_InventoryLog"></a> 清查  
  下表列出包含處理清查資料之相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -582,24 +593,24 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |invproc.log|記錄從次要網站將 MIF 檔案轉寄至其父網站的情形。|次要網站伺服器|  
 |sinvproc.log|記錄網站資料庫之軟體清查資料處理的相關資訊。|網站伺服器|  
 
-###  <a name="a-namebkmkmeteringloga-metering"></a><a name="BKMK_MeteringLog"></a> 計量  
+###  <a name="BKMK_MeteringLog"></a> 計量  
  下表列出包含計量相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
 |--------------|-----------------|----------------------------|  
 |mtrmgr.log|監視所有軟體計量程序。|網站伺服器|  
 
-###  <a name="a-namebkmkmigrationloga-migration"></a><a name="BKMK_MigrationLog"></a> 移轉  
+###  <a name="BKMK_MigrationLog"></a> 移轉  
  下表列出包含移轉相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
 |--------------|-----------------|----------------------------|  
 |migmctrl.log|記錄有關包含移轉作業、共用發佈點及發佈點升級等移轉動作的資訊。|Configuration Manager 階層中的頂層站台，以及每個子主要站台。<br /><br /> 在多重主要網站階層中，使用管理中心網站上建立的記錄檔。|  
 
-###  <a name="a-namebkmkmdmloga-mobile-devices"></a><a name="BKMK_MDMLog"></a> 行動裝置  
+###  <a name="BKMK_MDMLog"></a> 行動裝置  
  下面各節列出包含管理行動裝置之相關資訊的記錄檔。  
 
-####  <a name="a-namebkmkenrollmentloga-enrollment"></a><a name="BKMK_EnrollmentLog"></a> 註冊  
+####  <a name="BKMK_EnrollmentLog"></a> 註冊  
  下表列出包含行動裝置註冊相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -613,14 +624,14 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |enrollmentservice.log|記錄註冊 Proxy 點與註冊點之間的通訊。|網站系統伺服器|  
 |SMS_DM.log|記錄行動裝置、Mac 電腦及針對行動裝置與 Mac 電腦啟用的管理點之間的通訊。|網站系統伺服器|  
 
-####  <a name="a-namebkmkexchsrvloga-exchange-server-connector"></a><a name="BKMK_ExchSrvLog"></a> Exchange Server 連接器  
+####  <a name="BKMK_ExchSrvLog"></a> Exchange Server 連接器  
  下列記錄檔包含與 Exchange Server 連接器相關的資訊。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
 |--------------|-----------------|----------------------------|  
 |easdisc.log|記錄 Exchange Server 連接器的活動和狀態。|網站伺服器|  
 
-####  <a name="a-namebkmkmdlegloga-mobile-device-legacy"></a><a name="BKMK_MDLegLog"></a> 行動裝置舊版  
+####  <a name="BKMK_MDLegLog"></a> 行動裝置舊版  
  下表列出包含行動裝置舊版用戶端相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -644,7 +655,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |DmSvc.log|記錄行動裝置舊版用戶端與針對行動裝置啟用之管理點的用戶端通訊。|用戶端|  
 |FspIsapi.log|記錄有關行動裝置舊版用戶端和用戶端電腦與後援狀態點之通訊的詳細資料。|網站系統伺服器|  
 
-###  <a name="a-namebkmkosdloga-operating-system-deployment"></a><a name="BKMK_OSDLog"></a> 作業系統部署  
+###  <a name="BKMK_OSDLog"></a> 作業系統部署  
  下表列出包含作業系統部署相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -681,21 +692,21 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |loadstate.log|記錄有關使用者狀態移轉工具 (USMT) 和還原使用者狀態資料的詳細資料。|用戶端|  
 |scanstate.log|記錄有關使用者狀態移轉工具 (USMT) 和擷取使用者狀態資料的詳細資料。|用戶端|  
 
-###  <a name="a-namebkmkpowermgmtloga-power-management"></a><a name="BKMK_PowerMgmtLog"></a> 電源管理  
+###  <a name="BKMK_PowerMgmtLog"></a> 電源管理  
  下表列出包含電源管理相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
 |--------------|-----------------|----------------------------|  
 |Pwrmgmt.log|記錄有關用戶端電腦上電源管理活動的詳細資料，包括電源管理用戶端代理程式的監視和強制執行設定。|用戶端|  
 
-###  <a name="a-namebkmkrcloga-remote-control"></a><a name="BKMK_RCLog"></a> 遠端控制  
+###  <a name="BKMK_RCLog"></a> 遠端控制  
  下表列出包含遠端控制相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
 |--------------|-----------------|----------------------------|  
 |CMRcViewer.log|記錄有關遠端控制檢視器之活動的詳細資料。|位於執行遠端控制檢視器之電腦上的 %temp% 資料夾中|  
 
-###  <a name="a-namebkmkreportloga-reporting"></a><a name="BKMK_ReportLog"></a> 報告  
+###  <a name="BKMK_ReportLog"></a> 報告  
  下表列出包含報告相關資訊的 Configuration Manager 記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -704,7 +715,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |srsrpMSI.log|記錄來自 MSI 輸出的 Reporting Services 點安裝程序的詳細結果。|網站系統伺服器|  
 |srsrpsetup.log|記錄 Reporting Services 點安裝程序的結果。|網站系統伺服器|  
 
-###  <a name="a-namebkmkrbaloga-role-based-administration"></a><a name="BKMK_RBALog"></a> 以角色為基礎的系統管理  
+###  <a name="BKMK_RBALog"></a> 以角色為基礎的系統管理  
  下表列出包含管理以角色為基礎之系統管理相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -712,7 +723,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |hman.log|記錄有關站台設定變更，以及發佈站台資訊至 Active Directory 網域服務的資訊。|網站伺服器|  
 |SMSProv.log|記錄對網站資料庫的 WMI 提供者存取。|SMS 提供者的電腦|  
 
-###  <a name="a-namebkmkwitloga-service-connection-point"></a><a name="BKMK_WITLog"></a> 服務連接點  
+###  <a name="BKMK_WITLog"></a> 服務連接點  
  下表列出包含與服務連接點相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -735,7 +746,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |SrvBoot.log|記錄服務連接點安裝程式服務的詳細資料。|設有服務連接點的電腦|  
 |statesys.log|記錄行動裝置管理訊息的處理。|主要網站和管理中心網站|  
 
-###  <a name="a-namebkmksunaploga-software-updates"></a><a name="BKMK_SU_NAPLog"></a> 軟體更新  
+###  <a name="BKMK_SU_NAPLog"></a> 軟體更新  
  下表列出包含軟體更新相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -758,7 +769,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |wsyncmgr.log|記錄有關軟體更新同步程序的詳細資料。|網站伺服器|  
 |WUAHandler.log|記錄有關用戶端上 Windows Update 代理程式搜尋軟體更新時的詳細資料。|用戶端|  
 
-###  <a name="a-namebkmkwolloga-wake-on-lan"></a><a name="BKMK_WOLLog"></a> 網路喚醒  
+###  <a name="BKMK_WOLLog"></a> 網路喚醒  
  下表列出包含與使用網路喚醒相關資訊的記錄檔。  
 
 > [!NOTE]  
@@ -769,7 +780,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |wolcmgr.log|記錄有關需要傳送喚醒封包給那一個用戶端，喚醒封包的數量以及重試喚醒封包的數量等詳細資料。|網站伺服器|  
 |wolmgr.log|記錄有關喚醒程序的詳細資料，例如何時喚醒已設定為進行網路喚醒的部署。|網站伺服器|  
 
-###  <a name="a-namebkmkwindowsservicinglogawindows-10-servicing"></a><a name="BKMK_WindowsServicingLog"></a>Windows 10 維護  
+###  <a name="BKMK_WindowsServicingLog"></a>Windows 10 維護  
  下表列出包含 Windows 10 服務相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
@@ -794,23 +805,18 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 |wsyncmgr.log|記錄有關軟體更新同步程序的詳細資料。|網站伺服器|  
 |WUAHandler.log|記錄有關用戶端上 Windows Update 代理程式搜尋軟體更新時的詳細資料。|用戶端|  
 
-###  <a name="a-namebkmkwuloga-windows-update-agent"></a><a name="BKMK_WULog"></a> Windows Update 代理程式  
+###  <a name="BKMK_WULog"></a> Windows Update 代理程式  
  下表列出包含與 Windows Update 代理程式相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
 |--------------|-----------------|----------------------------|  
 |WindowsUpdate.log|記錄有關 Windows Update 代理程式連線至 WSUS 伺服器並擷取軟體更新以進行合規性評估時，是否有代理程式元件更新的詳細資料。|用戶端|  
 
-###  <a name="a-namebkmkwsusloga-wsus-server"></a><a name="BKMK_WSUSLog"></a> WSUS 伺服器  
+###  <a name="BKMK_WSUSLog"></a> WSUS 伺服器  
  下表列出包含與 WSUS 伺服器相關資訊的記錄檔。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
 |--------------|-----------------|----------------------------|  
 |Change.log|記錄有關已變更 WSUS 伺服器資料庫資訊的詳細資料。|WSUS 伺服器|  
 |SoftwareDistribution.log|記錄有關從已設定更新來源同步至 WSUS 伺服器資料庫之軟體更新的詳細資料。|WSUS 伺服器|  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

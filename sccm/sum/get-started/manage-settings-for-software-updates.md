@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 03/26/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,19 +14,20 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 0d484c1a-e903-4bff-9e9b-e452c62e38a8
 translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
-ms.openlocfilehash: 7d37f3c5e398c914482c45ab837fe41d00fce8ea
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: fe4a8f56e0b554e206bcc4503a0268dc761ded81
+ms.lasthandoff: 03/27/2017
 
 
 ---
 
-#  <a name="a-namebkmkmanagesusettingsa-manage-settings-for-software-updates"></a><a name="BKMK_ManageSUSettings"></a> 管理軟體更新的設定  
+#  <a name="BKMK_ManageSUSettings"></a> 管理軟體更新的設定  
 
 *適用於：System Center Configuration Manager (最新分支)*
 
 在 Configuration Manager 中同步處理軟體更新後，設定並確認下列各區段中的設定。
 
-##  <a name="a-namebkmkclientsettingsa-client-settings-for-software-updates"></a><a name="BKMK_ClientSettings"></a> 軟體更新的用戶端設定  
+##  <a name="BKMK_ClientSettings"></a> 軟體更新的用戶端設定  
 在您安裝軟體更新點後，用戶端上會預設啟用軟體更新，而且用戶端設定中 [軟體更新]  頁面上的設定會包含預設值。 用戶端設定可用於全網站，並會影響掃描軟體更新相容性的時機，以及在用戶端電腦上安裝軟體更新的方式和時機。 部署軟體更新之前，請先確認用戶端設定是否適合您網站上的軟體更新。  
 
 > [!IMPORTANT]  
@@ -36,7 +37,7 @@ ms.openlocfilehash: 7d37f3c5e398c914482c45ab837fe41d00fce8ea
 
 如需用戶端設定的詳細資訊，請參閱[關於 Configuration Manager 中的用戶端設定](../../core/clients/deploy/about-client-settings.md)。  
 
-##  <a name="a-namebkmkgrouppolicya-group-policy-settings-for-software-updates"></a><a name="BKMK_GroupPolicy"></a> 軟體更新的群組原則設定  
+##  <a name="BKMK_GroupPolicy"></a> 軟體更新的群組原則設定  
 用戶端電腦上有 Windows Update 代理程式 (WUA) 所使用的特定群組原則設定，這些設定用來連線至軟體更新點上執行的 WSUS。 這些群組原則設定也會用來成功掃描軟體更新相容性，並且自動更新軟體更新和 WUA。
 
 ### <a name="specify-intranet-microsoft-update-service-location-local-policy"></a>指定近端內部網路 Microsoft 更新服務之位置的本機原則  
@@ -65,10 +66,10 @@ ms.openlocfilehash: 7d37f3c5e398c914482c45ab837fe41d00fce8ea
    > [!NOTE]  
    >  在 [所有軟體更新] 節點 上，Configuration Manager 只會顯示在過去 30 天內發行且分類為 [重大] 和 [安全性] 的軟體更新。  
 
-###  <a name="a-namebkmksoftwareupdatesinformationa-review-software-updates-information"></a><a name="BKMK_SoftwareUpdatesInformation"></a> 檢閱軟體更新資訊  
+###  <a name="BKMK_SoftwareUpdatesInformation"></a> 檢閱軟體更新資訊  
 在軟體更新內容中，您可以檢閱有關軟體更新的詳細資訊。 當您選取一個以上的軟體更新時不會顯示詳細資訊。 以下章節將說明適用於所選取軟體更新的資訊。  
 
-####  <a name="a-namebkmksoftwareupdatedetailsa-software-update-details"></a><a name="BKMK_SoftwareUpdateDetails"></a> 軟體更新詳細資料  
+####  <a name="BKMK_SoftwareUpdateDetails"></a> 軟體更新詳細資料  
 在 [更新詳細資料]  索引標籤中，您可以檢視以下有關所選取軟體更新的摘要資訊：  
 
 - **公告識別碼**：指定已與安全性軟體更新建立關聯的公告識別碼。 您可以在 [TechNet 資訊安全技術中心](http://go.microsoft.com/fwlink/p/?LinkId=58313) 網頁搜尋公告識別碼來尋找資訊安全佈告欄的詳細資料。  
@@ -85,7 +86,7 @@ ms.openlocfilehash: 7d37f3c5e398c914482c45ab837fe41d00fce8ea
 
 - **受影響的產品**：列出軟體更新適用的產品。  
 
-####  <a name="a-namebkmkcontentinformationa-content-information"></a><a name="BKMK_ContentInformation"></a> 內容資訊  
+####  <a name="BKMK_ContentInformation"></a> 內容資訊  
 在 [內容資訊]  索引標籤中，檢閱以下與所選軟體更新相關聯之內容的相關資訊。  
 
 -   **內容識別碼**：指定軟體更新的內容識別碼。  
@@ -98,32 +99,32 @@ ms.openlocfilehash: 7d37f3c5e398c914482c45ab837fe41d00fce8ea
 
 -   **大小 (MB)**：指定軟體更新來源檔案的大小。  
 
-####  <a name="a-namebkmkcustombundleinformationa-custom-bundle-information"></a><a name="BKMK_CustomBundleInformation"></a> 自訂配套資訊  
+####  <a name="BKMK_CustomBundleInformation"></a> 自訂配套資訊  
 在 [自訂配套資訊]  索引標籤中，檢閱軟體更新的自訂配套資訊。 所選取的軟體更新包含納入軟體更新檔案的配套軟體更新時，會在 [配套資訊]  區段中顯示出來。 此索引標籤不會顯示 [內容資訊]  索引標籤中所顯示的配套軟體更新，例如不同語言的更新檔案。  
 
-####  <a name="a-namebkmksupersedenceinformationa-supersedence-information"></a><a name="BKMK_SupersedenceInformation"></a> 取代資訊  
+####  <a name="BKMK_SupersedenceInformation"></a> 取代資訊  
 您可以在 [取代資訊]  索引標籤上，檢視軟體更新取代的下列資訊：  
 
 - **此更新已由下列更新取代**：指定取代此更新的軟體更新，這表示列出的更新較新。 在大部分情況下，您將部署其中一種取代軟體更新的軟體更新。 顯示在清單中的軟體更新包含網頁的超連結，提供更多有關軟體更新的詳細資訊。 若此更新並未被取代，則會顯示 [無]  。  
 
 - **此更新取代以下更新**：指定由此軟體更新取代的軟體更新，這表示此軟體更新較新。 在大部分情況下，您將部署此軟體更新來替代已遭取代的軟體更新。 顯示在清單中的軟體更新包含網頁的超連結，提供更多有關軟體更新的詳細資訊。 若此更新未取代任何其他更新，則會顯示 [無]  。  
 
-###  <a name="a-namebkmksoftwareupdatessettingsa-configure-software-updates-settings"></a><a name="BKMK_SoftwareUpdatesSettings"></a> 設定軟體更新設定  
+###  <a name="BKMK_SoftwareUpdatesSettings"></a> 設定軟體更新設定  
 在內容中，您可以針對一或多個軟體更新設定軟體更新設定。 您可以只在管理中心網站或獨立主要網站上設定大部分的軟體更新設定。 以下各節將協助您設定軟體更新的設定。  
 
-####  <a name="a-namebkmksetmaxruntimea-set-maximum-run-time"></a><a name="BKMK_SetMaxRunTime"></a> 設定執行階段上限  
+####  <a name="BKMK_SetMaxRunTime"></a> 設定執行階段上限  
 於 [執行時間上限]  索引標籤中，設定在用戶端電腦上完成軟體更新所配置的時間上限。 如果更新所需的時間大於執行時間上限值，Configuration Manager 會建立狀態訊息，並停止監視軟體更新安裝的部署。 您可以只在管理中心網站或獨立主要網站上設定此設定。  
 
 Configuration Manager 也使用此設定來判斷是否要在設定的維護期間內起始軟體更新的安裝。 如果執行時間上限值超過維護期間中剩下的時間，則會延遲安裝軟體更新，直到下一個維護期間開始為止。 若有多個軟體更新要安裝在已設定維護期間 (時間範圍) 的用戶端電腦上時，會先安裝具備最低執行時間上限的軟體更新，接著會安裝具備次低執行時間上限的軟體更新，以此類推。 安裝每個軟體更新前，用戶端會驗證可用維護期間是否提供足夠時間來安裝軟體更新。 軟體更新開始安裝後，即使安裝超過維護期間尾端，仍會繼續安裝。 如需維護時段的詳細資訊，請參閱[如何使用 System Center Configuration Manager 的維護時段](../../core/clients/manage/collections/use-maintenance-windows.md)。  
 
 在 [執行時間上限]  索引標籤上，您可以檢視並設定以下設定：  
 
-- **執行時間上限**：指定在 Configuration Manager 不再監視安裝前，為完成軟體更新安裝所配置的分鐘數上限。 此設定也會用來判斷在維護期間結束前，剩下的時間是否足夠安裝更新。 Service Pack 的預設設定為 60 分鐘，所有其他軟體更新類型則為 5 分鐘。 值的範圍為 5 到 9999 分鐘。  
+- **執行時間上限**：指定在 Configuration Manager 不再監視安裝前，為完成軟體更新安裝所配置的分鐘數上限。 此設定也會用來判斷在維護期間結束前，剩下的時間是否足夠安裝更新。 Service Pack 的預設設定為 60 分鐘。 對於其他軟體更新類型，如果您安裝的是 Configuration Manager 1511 版或更新版本的全新安裝，預設值是 10 分鐘，而當您從舊版升級時，則為 5 分鐘。 值的範圍為 5 到 9999 分鐘。  
 
 > [!IMPORTANT]  
 >  請確定將執行時間上限值設定為小於設定的維護期間。 否則會永遠無法起始軟體更新安裝。  
 
-####  <a name="a-namebkmksetcustomseveritya-set-custom-severity"></a><a name="BKMK_SetCustomSeverity"></a> 設定自訂嚴重性  
+####  <a name="BKMK_SetCustomSeverity"></a> 設定自訂嚴重性  
 在軟體更新的內容中，您可以使用 [自訂嚴重性]  索引標籤，設定軟體更新的自訂嚴重性值。 若預先定義的嚴重性值不符合您的需求時，這就是必要項目。 自訂值會列在 Configuration Manager 主控台的 [自訂嚴重性] 欄內。 您可利用已定義的自訂嚴重性值來排序軟體更新，也可以建立能篩選這些值的查詢和報告。 您可以只在管理中心網站或獨立主要網站上設定此設定。  
 
 您可以在 [自訂嚴重性]  索引標籤上設定以下設定。  
@@ -139,9 +140,4 @@ Configuration Manager 也使用此設定來判斷是否要在設定的維護期�
 在執行 CRL 檢查的電腦上，從產品 DVD 及命令列提示字元執行下列動作：**\SMSSETUP\BIN\X64\\**<語言>**\UpdDwnldCfg.exe /checkrevocation**。  
 
 例如，針對英文 (美國) 版執行 **\SMSSETUP\BIN\X64\00000409\UpdDwnldCfg.exe /checkrevocation**。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 139dcf9bc2a9bd253592b969b6f9d814ffcdfd8e
-ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 640cdc67f301a81a45bf27f95eb03cbc8754a9aa
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -26,10 +27,10 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 *適用於：System Center Configuration Manager (最新分支)*
 
 本主題中的資訊適用於搭配 System Center Configuration Manager 1511、1602 和 1606 版使用界限群組。
-如果您使用 1610 版或更新版本，請參閱＜為 System Center Configuration Manager 定義站台界限和界限群組＞中的[界限群組](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#a-namebkmkboundarygroupsa-boundary-group/)，了解如何使用重新設計的界限群組。  
+如果您使用 1610 版或更新版本，請參閱[設定界限群組](/sccm/core/servers/deploy/configure/boundary-groups)以了解如何使用重新設計之界限群組的相關資訊。  
 
 
-##  <a name="a-namebkmkboundarygroupsa-boundary-groups"></a><a name="BKMK_BoundaryGroups"></a> Boundary groups  
+##  <a name="BKMK_BoundaryGroups"></a> Boundary groups  
  將界限群組建立到與邏輯網路相關的網路位置 (或界限) 使其更容易管理您的基礎結構。 您必須先將界限指派給界限群組，才能使用界限群組。 用戶端將界限群組組態用於：  
 
 -   自動站台指派  
@@ -122,7 +123,7 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 
  下列章節提供有關界限群組組態的其他詳細資料。  
 
-###  <a name="a-namebkmkboundarysiteassignmenta-about-site-assignment"></a><a name="BKMK_BoundarySiteAssignment"></a> 關於站台指派  
+###  <a name="BKMK_BoundarySiteAssignment"></a> 關於站台指派  
  您可以使用為用戶端指派的站台設定各個界限群組。  
 
 -   使用自動站台指派的新安裝用戶端，將會加入具有用戶端目前網路位置之界限群組的指派站台。  
@@ -137,7 +138,7 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 
 如需用戶端站台指派的詳細資訊，請參閱[如何在 Configuration Manager 中將用戶端指派給站台](../../../../core/clients/deploy/assign-clients-to-a-site.md)中的[針對電腦使用自動站台指派](../../../../core/clients/deploy/assign-clients-to-a-site.md#BKMK_AutomaticAssignment)。  
 
-###  <a name="a-namebkmkboundarycontentlocationa-about-content-location"></a><a name="BKMK_BoundaryContentLocation"></a> 關於內容位置  
+###  <a name="BKMK_BoundaryContentLocation"></a> 關於內容位置  
  您可以使用一或多個發佈點和狀態移轉點來設定各個界限群組，而且可以將同一個發佈點和狀態移轉點與多個界限群組產生關聯。  
 
 -   **在軟體發佈期間**，用戶端會要求可部署內容的位置。 Configuration Manager 會傳送一份發佈點清單給用戶端，這些發佈點與包含用戶端目前網路位置的每個界限群組相關聯。  
@@ -146,7 +147,7 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 
 此行為可讓用戶端選取最接近的伺服器，以傳送內容或狀態移轉資訊。  
 
-###  <a name="a-namebkmkpreferredmpa-about-preferred-management-points"></a><a name="BKMK_PreferredMP"></a> 關於慣用的管理點  
+###  <a name="BKMK_PreferredMP"></a> 關於慣用的管理點  
  慣用的管理點可讓用戶端識別已與用戶端目前網路位置 (或界限) 建立關聯的管理點。  
 
 -   用戶端會先嘗試使用其指派站台中的慣用管理點，再使用其指派站台中未設定為慣用的管理點。  
@@ -158,7 +159,7 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 > [!NOTE]  
 >  當用戶端漫遊時 (就像膝上型電腦移動到遙遠的辦公地點並變更其網路位置時)，可能會在嘗試使用其指派站台 (包含偏好管理點) 的管理點前，先使用位於其新位置的本機站台管理點 (或 Proxy 管理點)。  如需詳細資訊，請參閱[了解用戶端如何找到 System Center Configuration Manager 的站台資源和服務](../../../../core/plan-design/hierarchy/understand-how-clients-find-site-resources-and-services.md)。  
 
-###  <a name="a-namebkmkboundaryoverlapa-about-overlapping-boundaries"></a><a name="BKMK_BoundaryOverlap"></a> 關於重疊界限  
+###  <a name="BKMK_BoundaryOverlap"></a> 關於重疊界限  
  Configuration Manager 支援內容位置的重疊界限設定：  
 
 -   **當用戶端要求內容時**，若用戶端網路位置屬於多個界限群組，Configuration Manager 會為用戶端傳送一份具有內容的所有發佈點清單。  
@@ -167,15 +168,10 @@ ms.openlocfilehash: 6b24d775fe4ca78dfba9645b81096f9228864d99
 
 此行為可讓用戶端選取最接近的伺服器，以傳送內容或狀態移轉資訊。  
 
-###  <a name="a-namebkmkboudnarynetworkspeeda-about-network-connection-speed"></a><a name="BKMK_BoudnaryNetworkSpeed"></a> 關於網路連線速度  
+###  <a name="BKMK_BoudnaryNetworkSpeed"></a> 關於網路連線速度  
  您可以針對界限群組中的各個站台系統伺服器設定網路連線速度。 此設定適用於依據此界限群組設定連接到站台系統的用戶端。 同一部站台系統伺服器可以針對不同界限群組而設有不同的連線速度。  
 
  根據預設，網路連線速度會設為 [快]，但您可以將其變更為 [慢]。 網路連線速度和部署設定，檢查用戶端是否可以在用戶端位在已建立關聯的界限群組時，從發佈點下載內容。  
 
  如需網路連線速度設定如何影響取得內容方式的詳細資訊，請參閱[內容來源位置案例](../../../../core/plan-design/hierarchy/content-source-location-scenarios.md)。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

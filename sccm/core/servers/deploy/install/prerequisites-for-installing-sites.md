@@ -2,7 +2,7 @@
 title: "站台的必要條件 | Microsoft Docs"
 description: "了解安裝不同類型的 System Center Configuration Manager 站台的必要條件。"
 ms.custom: na
-ms.date: 3/1/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: b6c570d8addbe7df5aace461ee725a7df1d35a31
-ms.openlocfilehash: 76c8bb6d0922fad996e27c04a86cb9b4ad32a810
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ff89d4aea6be871e64e0a788f054ba4cadb3e51d
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="prerequisites-for-installing-system-center-configuration-manager-sites"></a>安裝 System Center Configuration Manager 站台的必要條件
@@ -60,14 +60,14 @@ ms.lasthandoff: 03/01/2017
 - 站台伺服器與站台資料庫電腦必須符合所有必要條件組態。 開始安裝程式之前，您可以[手動執行必要條件檢查程式](../../../../core/servers/deploy/install/prerequisite-checker.md)來找出問題並加以修正。  
 
 
-### <a name="bkmk_expand"></a> 擴充獨立主要站台
+### <a name="bkmk_expand"></a> 擴充獨立主要站台的必要條件
 獨立主要站台必須符合以下必要條件，您才能將獨立主要站台擴充到具有管理中心網站的階層：
 
--   **您必須安裝符合獨立主要站台版本的新管理中心網站安裝媒體 (其包含來源檔案)**
+-   **您必須使用符合獨立主要站台版本之 CD.Latest 資料夾 (其中包含來源檔案) 中的媒體來安裝新的管理中心站台安裝**
 
-     若要確保版本相符，請使用獨立主要站台的 [CD.Latest 資料夾](../../../../core/servers/manage/the-cd.latest-folder.md)中找到的來源檔案，來安裝新的站台。
+ 若要確保版本相符，請使用可在獨立主要站台上的 [CD.Latest 資料夾](/sccm/core/servers/manage/the-cd.latest-folder)中找到的來源檔案。
 
-     如需用來安裝不同站台之正確來源檔案的詳細資訊，請參閱[準備安裝站台](../../../../core/servers/deploy/install/prepare-to-install-sites.md)主題中的[安裝不同類型的站台的選項](../../../../core/servers/deploy/install/prepare-to-install-sites.md#bkmk_options)。
+ 如需用來安裝不同站台之正確來源檔案的詳細資訊，請參閱[準備安裝站台](../../../../core/servers/deploy/install/prepare-to-install-sites.md)主題中的[安裝不同類型的站台的選項](../../../../core/servers/deploy/install/prepare-to-install-sites.md#bkmk_options)。
 
 
 -   **您無法將獨立主要站台設定為從另一個 Configuration Manager 階層移轉資料**  

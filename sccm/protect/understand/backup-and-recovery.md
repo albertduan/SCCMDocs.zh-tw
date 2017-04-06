@@ -2,7 +2,7 @@
 title: "備份和復原 | Microsoft Docs"
 description: "了解如何在發生失敗或資料遺失時，使用 System Center Configuration Manager 備份和復原您的站台。"
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: 67441d0c19114f628e8b4308f58165ba67c738df
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ea6668ee7ee6b209b659426a0dc2c0be605ceaf1
+ms.lasthandoff: 03/27/2017
 
 ---
 
@@ -110,9 +110,9 @@ ms.lasthandoff: 03/21/2017
     > [!IMPORTANT]  
     >  若要預防備份檔案遭到竄改，請將檔案儲存在安全的位置。 最安全的備份路徑是本機磁碟機，您可以在資料夾上設定 NTFS 檔案系統權限。 Configuration Manager 不會加密儲存在備份路徑中的備份資料。  
 
-    -   **用於站台資料和資料庫的站台伺服器本機磁碟機**：指定將站台和站台資料庫的備份檔案儲存在站台伺服器本機磁碟上指定的路徑。 您必須先建立本機資料夾才可以執行備份工作。   網站伺服器的本機系統帳戶必須擁有網站伺服器備份本機資料夾的 **寫入** NTFS 檔案系統權限。 電腦若是執行 SQL Server，其本機系統帳戶必須擁有網站資料庫備份資料夾的 **寫入** NTFS 權限。  
+    -   **用於站台資料和資料庫的站台伺服器本機磁碟機**：指定將站台和站台資料庫的備份檔案儲存在站台伺服器本機磁碟上指定的路徑。 您必須先建立本機資料夾才可以執行備份工作。 網站伺服器的本機系統帳戶必須擁有網站伺服器備份本機資料夾的 **寫入** NTFS 檔案系統權限。 電腦若是執行 SQL Server，其本機系統帳戶必須擁有網站資料庫備份資料夾的 **寫入** NTFS 權限。  
 
-    -   **用於站台資料和資料庫的網路路徑 (UNC 名稱)**：指定將站台和站台資料庫的備份檔案儲存在指定的 UNC 路徑。 您必須先建立共用才可以執行備份工作。站台伺服器的電腦帳戶和 SQL Server 的電腦帳戶 (如果 SQL Server 安裝在其他電腦上) 必須擁有共用網路資料夾的 **寫入** NTFS 和共用權限。  
+    -   **用於站台資料和資料庫的網路路徑 (UNC 名稱)**：指定將站台和站台資料庫的備份檔案儲存在指定的 UNC 路徑。 您必須先建立共用才可以執行備份工作。 網站伺服器的電腦帳戶和 SQL Server 的電腦帳戶 (如果 SQL Server 安裝在其他電腦上) 必須擁有共用網路資料夾的 **寫入** NTFS 和共用權限。  
 
     -   **站台伺服器和 SQL Server 上的本機磁碟機**：指定將站台的備份檔案儲存在站台伺服器本機磁碟機上指定的路徑，並將站台資料庫的備份檔案儲存在站台資料庫伺服器本機磁碟機上指定的路徑。 您必須先建立本機資料夾才可以執行備份工作。 網站伺服器的電腦帳戶必須擁有您在網站伺服器上建立之資料夾的 **寫入** NTFS 權限。 SQL Server 的電腦帳戶必須擁有您在網站資料庫伺服器上建立之資料夾的 **寫入** NTFS 權限。 此選項僅在網站伺服器上未安裝網站資料庫時適用。  
 
@@ -390,6 +390,14 @@ ms.lasthandoff: 03/21/2017
 
     -   **詳細資料︰** 復原管理中心站台  
 
+-   **索引鍵名稱：**CDLatest  
+
+    -   **必要：**是 (只有在使用來自 CD.Latest 資料夾的媒體時)。    
+
+    -   **值：**1 (1 以外的任何值都會被視為不使用 CD.Latest)。
+
+    -   **詳細資料：**當您從 CD.Latest 資料夾中的媒體執行安裝程式，以安裝主要站台或管理中心網站，或是復原主要站台或管理中心網站時，您的指令碼必須包含此索引鍵和值。 這個值會通知安裝程式目前正在使用來自 CD.Latest 的媒體。  
+
 **RecoveryOptions**  
 
 -   **索引鍵名稱：** ServerRecoveryOptions  
@@ -602,6 +610,14 @@ ms.lasthandoff: 03/21/2017
     -   **值︰** RecoverPrimarySite  
 
     -   **詳細資料︰** 復原主要站台  
+
+-   **索引鍵名稱：**CDLatest  
+
+    -   **必要：**是 (只有在使用來自 CD.Latest 資料夾的媒體時)。    
+
+    -   **值：**1 (1 以外的任何值都會被視為不使用 CD.Latest)。
+
+    -   **詳細資料：**當您從 CD.Latest 資料夾中的媒體執行安裝程式，以安裝主要站台或管理中心網站，或是復原主要站台或管理中心網站時，您的指令碼必須包含此索引鍵和值。 這個值會通知安裝程式目前正在使用來自 CD.Latest 的媒體。
 
 **RecoveryOptions**  
 

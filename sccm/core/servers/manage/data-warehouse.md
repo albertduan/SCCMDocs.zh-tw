@@ -2,7 +2,7 @@
 title: "資料倉儲 | Microsoft Docs"
 description: "資料倉儲服務點與 System Center Configuration Manager 資料庫"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 3/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: 176d1116c910306f70d9acf934ad90340bcc4fcd
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
+ms.openlocfilehash: 9239f6e749c368835e8594ca2d07378d8555b99e
+ms.lasthandoff: 03/28/2017
 
 
 ---
@@ -54,6 +54,13 @@ ms.lasthandoff: 03/04/2017
   - SQL Server AlwaysOn 可用性群組︰不支援此設定。
   - SQL Server 叢集︰ 不支援 SQL Server 容錯移轉叢集。 這是因為資料倉儲資料庫從未在 SQL Server 容錯移轉叢集上進行深度測試。
   - 當資料倉儲資料庫位於遠端站台伺服器資料庫時，您必須具備裝載資料庫之 SQL Server 的個別授權。
+
+> [!IMPORTANT]  
+> 當執行「資料倉儲」服務點或裝載資料倉儲資料庫的電腦下列其中一種語言時，便不支援「資料倉儲」：
+> - JPN – 日文
+> - KOR – 韓文
+> - CHS – 簡體中文
+> - CHT – 繁體中文。在未來的版本中將會解決這個問題。
 
 
 ## <a name="install-the-data-warehouse"></a>安裝資料倉儲

@@ -2,7 +2,7 @@
 title: "使用 System Center Configuration Manager 透過遠端抹除、鎖定或密碼重設來協助保護資料 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 透過完整抹除、選擇性抹除、遠端鎖定或密碼重設來協助保護裝置資料。"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,13 +13,13 @@ ms.topic: article
 ms.assetid: 770da7bd-02dd-474a-9604-93ff1ea0c1e4
 caps.latest.revision: 18
 caps.handback.revision: 0
-author: mtillman
-ms.author: mtillman
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 3aa4c2ad3568cc6ced70a65141a2c103af8b740f
-ms.lasthandoff: 03/06/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ef020a0409c1f1a68f76ecadc9885801e6c1ad4e
+ms.lasthandoff: 03/27/2017
 
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-using-system-center-configuration-manager"></a>使用 System Center Configuration Manager 透過遠端抹除、鎖定或密碼重設來協助保護資料
@@ -77,19 +77,22 @@ Configuration Manager 提供選擇性抹除、完整抹除、遠端鎖定和密�
 |管理代理程式|撤銷裝置系統管理員權限。|撤銷裝置系統管理員權限。|  
 |電子郵件設定檔|不適用。|若為由 Intune 所佈建的電子郵件設定檔，電子郵件帳戶和電子郵件將被移除。|  
 
+**Android for Work**
+
+在 Android for Work 裝置上執行選擇性抹除會移除該裝置上的工作設定檔，以及工作設定檔中的所有資料、應用程式和設定。 這會從 Configuration Manager 和 Intune 的管理中淘汰該裝置。 Android for Work 不支援完整抹除。
+
  **Windows 10、Windows 8.1、Windows RT 8.1 和 Windows RT**  
 
-|淘汰裝置時移除的內容|Windows 10、Windows 8.1 和 Windows RT 8.1|Windows RT|  
-|---------------------------------|-------------|-----------|
-|使用 Configuration Manager 和 Intune 安裝公司應用程式及相關資料。|將解除安裝應用程式並且移除側載金鑰。 使用 Windows 選擇性抺除的應用程式將會撤銷加密金鑰，而資料將再也無法存取。|會移除側載金鑰，但是應用程式仍維持安裝的狀態。|  
-|VPN 和 Wi-Fi 設定檔|已移除。|不適用。|  
-|憑證|已移除並撤銷。|不適用。|  
-|設定|已移除需求。||  
-|管理代理程式|不適用。 管理代理程式是內建項目。|不適用。 管理代理程式是內建項目。|  
-|電子郵件設定檔|移除已啟用 EFS 的電子郵件，且該電子郵件包含適用於 Windows 電子郵件與附件的郵件應用程式。|不適用。|  
+|淘汰裝置時移除的內容|Windows 10、Windows 8.1 和 Windows RT 8.1|  
+|---------------------------------|-------------|
+|使用 Configuration Manager 和 Intune 安裝公司應用程式及相關資料。|將解除安裝應用程式並且移除側載金鑰。 使用 Windows 選擇性抺除的應用程式將會撤銷加密金鑰，而資料將再也無法存取。|  
+|VPN 和 Wi-Fi 設定檔|已移除。|  
+|憑證|已移除並撤銷。|  
+|設定|已移除需求。|
+|管理代理程式|不適用。 管理代理程式是內建項目。|  
+|電子郵件設定檔|移除已啟用 EFS 的電子郵件，且該電子郵件包含適用於 Windows 電子郵件與附件的郵件應用程式。|  
 
- **Windows 10 行動裝置版、Windows Phone 8.0 和 Windows Phone 8.1**  
-
+ **Windows 10 行動裝置版、Windows Phone 8.0 和 Windows Phone 8.1**
 
  |淘汰裝置時移除的內容|Windows 10 行動裝置版、Windows Phone 8 和 Windows Phone 8.1|  
 |-|-|
@@ -102,53 +105,29 @@ Configuration Manager 提供選擇性抹除、完整抹除、遠端鎖定和密�
  Windows 10 行動裝置版和 Windows Phone 8.1 裝置也移除了下列設定︰  
 
 -   需要密碼來解除鎖定行動裝置  
-
 -   允許簡單密碼  
-
 -   最小密碼長度  
-
 -   所需的密碼類型  
-
 -   密碼到期 (天數)  
-
 -   記住密碼歷程記錄  
-
 -   抹除裝置前允許的重複登入失敗次數  
-
 -   要求密碼前的閒置分鐘數  
-
 -   需要的密碼類型 – 最小字元集數  
-
 -   允許相機  
-
 -   在行動裝置上要求加密  
-
 -   允許卸除式存放裝置  
-
 -   允許網頁瀏覽器  
-
 -   允許應用程式市集  
-
 -   允許螢幕擷取  
-
 -   允許地理位置  
-
 -   允許 Microsoft 帳戶  
-
 -   允許複製並貼上  
-
 -   允許 Wi-Fi 網際網路共用功能  
-
 -   允許自動連線到免費的 Wi-Fi 熱點  
-
 -   允許 Wi-Fi 熱點回報  
-
 -   允許原廠重設  
-
 -   允許藍牙  
-
 -   允許 NFC  
-
 -   允許 Wi-Fi  
 
 ### <a name="to-initiate-a-remote-wipe-from-the-configuration-manager-console"></a>從 Configuration Manager 主控台起始遠端抹除  
@@ -192,10 +171,11 @@ Configuration Manager 提供選擇性抹除、完整抹除、遠端鎖定和密�
 |平台|密碼重設|  
 |--------------|--------------------|  
 |iOS|支援從裝置清除密碼。 不會建立新的暫時密碼。|  
-|Android|支援，且會建立新的暫時密碼。|  
+|Android|支援，且會建立新的暫時密碼。|
+|Android for Work | 不支援|
 |Windows 10|目前不支援。|  
 |Windows Phone 8 和 Windows Phone 8.1|支援|  
-|Windows RT 8.1 和 Windows RT|不支援|  
+|Windows RT 8.1 |不支援|  
 |Windows 8.1|不支援|  
 
 ### <a name="to-reset-the-passcode-on-a-mobile-device-remotely-in-configuration-manager"></a>在 Configuration Manager 遠端重設行動裝置的密碼  
@@ -223,7 +203,7 @@ Configuration Manager 提供選擇性抹除、完整抹除、遠端鎖定和密�
 |Android|支援|  
 |Windows 10|目前不支援。|  
 |Windows Phone 8 和 Windows Phone 8.1|支援|  
-|Windows RT 8.1 和 Windows RT|如果目前的裝置使用者和註冊裝置的使用者是同一位時便支援。|  
+|Windows RT 8.1 |如果目前的裝置使用者和註冊裝置的使用者是同一位時便支援。|  
 |Windows 8.1|如果目前的裝置使用者和註冊裝置的使用者是同一位時便支援。|  
 
 ### <a name="to-lock-a-mobile-device-remotely-through-the-configuration-manager-console"></a>透過 Configuration Manager 主控台從遠端鎖定行動裝置  

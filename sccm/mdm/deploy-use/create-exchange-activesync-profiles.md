@@ -2,7 +2,7 @@
 title: "建立 Exchange ActiveSync 電子郵件設定檔 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中建立和設定與 Microsoft Intune 搭配運作的電子郵件設定檔。"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 03/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8c7bf901caa49c8585a9ed3913d4a5a2aac57013
-ms.openlocfilehash: 74083f65d906fde967081229b244df24e9e08e0a
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: c90e5ebc2aca3f2133227fa59057aad8db3713f4
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -32,39 +32,37 @@ ms.lasthandoff: 03/21/2017
 
  您可以使用電子郵件設定檔設定下列裝置類型：  
 
--   執行 Windows Phone 8 的裝置  
+- Windows 10
+- Windows Phone 8.1
+- Windows Phone 8.0
+- 執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 iPhone  
+- 執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 iPad  
+- Samsung KNOX 標準 ( 4 及更新版本)
+- Android for Work
 
--   執行 Windows Phone 8.1 的裝置  
+若要將電子郵件設定檔部署至裝置，它們必須在 Intune 中註冊。 如需如何取得已註冊裝置的相關資訊，請參閱 [使用 Microsoft Intune 管理行動裝置](https://technet.microsoft.com/en-us/library/dn646962.aspx)。
 
--   執行 Windows 10 Mobile 的裝置  
-
--   執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 iPhone 裝置  
-
--   執行 iOS 5、iOS 6、iOS 7 與 iOS 8 的 iPad 裝置  
-
-> [!IMPORTANT]  
->  若要將設定檔部署到 iOS、Android Samsung KNOX Standard、Windows Phone 和 Windows 8.1 或 Windows 10 裝置，這些裝置必須在 Intune 註冊。 如需如何取得已註冊裝置的相關資訊，請參閱 [使用 Microsoft Intune 管理行動裝置](https://technet.microsoft.com/en-us/library/dn646962.aspx)。  
+>[!NOTE]
+>Intune 提供兩個 Android for Work 電子郵件設定檔，分別用於 Gmail 和 Nine Work 電子郵件應用程式。 這些應用程式都可從 Google Play 商店取得，並支援連線到 Exchange。 若要啟用電子郵件連線功能，請將其中一個電子郵件應用程式部署到使用者的裝置後，再建立及部署適當的設定檔。 Nine Work 之類的電子郵件應用程式可能不是免費的。 請檢閱應用程式的授權詳細資料，如有任何問題，請連絡應用程式公司。
 
  除了在裝置上設定電子郵件帳戶外，您也可以設定連絡人、行事曆和工作的同步處理設定。  
 
- 當您建立電子郵件設定檔時，可以在其中加入各種安全性設定，包括使用 System Center Configuration Manager 憑證設定檔所佈建的識別憑證、加密憑證和簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](create-pfx-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。    
-
+ 當您建立電子郵件設定檔時，可以在其中加入各種安全性設定，包括使用 System Center Configuration Manager 憑證設定檔所佈建的識別憑證、加密憑證和簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](/sccm/protect/deploy-use/introduction-to-certificate-profiles) (System Center Configuration Manager 中的憑證設定檔)。    
 
 ## <a name="create-a-new-exchange-activesync-email-profile"></a>建立新的 Exchange ActiveSync 電子郵件設定檔  
 
 啟動建立 Exchange ActiveSync 電子郵件設定檔精靈  
 
-1.  在 System Center Configuration Manager 主控台中，按一下 [資產與相容性]。  
+1.  在 Configuration Manager 主控台中，按一下 [資產與合規性]。  
 
 2.  在 [資產與相容性]  工作區中，依序展開 [相容性設定] 和 [公司資源存取] ，然後按一下 [電子郵件設定檔] 。  
 
-3.  在 [常用]  索引標籤上，按一下 [建立]  群組中的 [建立 Exchange ActiveSync 設定檔] 。
-
-4.  遵循精靈指示   
-
-### <a name="to-configure-exchange-activesync-settings-for-the-exchange-activesync-email-profile"></a>進行 Exchange ActiveSync 電子郵件設定檔的 Exchange ActiveSync 設定  
-
-1.  在 [建立 Exchange ActiveSync 電子郵件設定檔精靈] 的 [Exchange ActiveSync]  頁面上，指定下列資訊：  
+3.  在 [常用] 索引標籤的 [建立] 群組中，按一下 [建立 Exchange ActiveSync 電子郵件設定檔]。
+4.  在精靈的 [一般] 頁面上，設定下列資訊︰
+    - **名稱** - 提供電子郵件設定檔的描述性名稱。
+    - **描述** - (選擇性) 提供可協助您在 Configuration Manager 主控台中識別此電子郵件設定檔的描述。
+    - **此電子郵件設定檔適用於 Android for Work** - 如果您只會將此電子郵件設定檔部署至 Android for Work 裝置，請選取此選項。 如果您選取此核取方塊，不會顯示 [支援的平台] 精靈頁面。 只會設定 Android for Work 電子郵件設定檔。
+4.  在 [建立 Exchange ActiveSync 電子郵件設定檔精靈] 的 [Exchange ActiveSync]  頁面上，指定下列資訊：  
 
     -   **Exchange ActiveSync 主機** ：指定託管 Exchange ActiveSync 服務之公司 Exchange Server 的主機名稱。  
 
@@ -74,7 +72,7 @@ ms.lasthandoff: 03/21/2017
 
         -   **使用者主體名稱** ：使用完整使用者主體名稱登入 Exchange。  
 
-        -   **sAMAccountName** ：使用  
+        -   **AccountName** 使用 Active Directory 中的完整使用者帳戶名稱
 
         -   **主要 SMTP 位址** ：使用使用者主要 SMTP 位址登入 Exchange。  
 
@@ -101,25 +99,26 @@ ms.lasthandoff: 03/21/2017
     -   **身分識別憑證** ：按一下 [選取]  ，然後選取要用於身分識別的憑證。  
 
         > [!NOTE]  
-        >  您必須先將身分識別憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取身分識別憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](create-pfx-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
+        >  您必須先將身分識別憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取身分識別憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](/sccm/protect/deploy-use/introduction-to-certificate-profiles) (System Center Configuration Manager 中的憑證設定檔)。  
 
          只有當選取 [驗證方法]  下方的 [憑證] 時，才能使用這個選項。  
 
-    -   **使用 S/MIME** ：使用 S/MIME 加密傳送外寄電子郵件。 這個選項僅適用於 iOS 裝置。  
+    -   **使用 S/MIME** (僅適用於 iOS 裝置) - 使用 S/MIME 加密傳送外寄電子郵件。 選擇下列選項：
 
-    -   **加密憑證** ：按一下 [選取]  ，然後選取要用於加密的憑證。 這個選項僅適用於 iOS 裝置。  
+        -   **簽署憑證** ：按一下 [選取]  ，然後選取要用於簽署的憑證。 這個選項僅適用於 iOS 裝置。  
+
+            > [!NOTE]  
+            >  您必須先將簽署憑證設定為簡單憑證註冊通訊協定 (SCEP) 或 PFX 憑證設定檔，才能選取簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
+
+        -   **加密憑證** ：按一下 [選取]  ，然後選取要用於加密的憑證。 這個選項僅適用於 iOS 裝置。 您只能選取一個 PFX 憑證做為加密憑證。
+
+        如果您同時選取加密憑證及簽署憑證，它們都必須是 PFX 格式。
 
         > [!NOTE]  
-        >  您必須先將加密憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取加密憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](create-pfx-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
+        >  您必須先將憑證設定為簡單憑證註冊通訊協定 (SCEP) 或 PFX 憑證設定檔，才能選取它們。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
 
-         只有當選取 [使用 S/MIME] 時，才能使用這個選項。  
 
-    -   **簽署憑證** ：按一下 [選取]  ，然後選取要用於簽署的憑證。 這個選項僅適用於 iOS 裝置。  
 
-        > [!NOTE]  
-        >  您必須先將簽署憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](create-pfx-certificate-profiles.md) (System Center Configuration Manager 中的憑證設定檔)。  
-
-         只有當選取 [使用 S/MIME] 時，才能使用這個選項。  
 
 ###   <a name="configure-synchronization-settings-for-the-exchange-activesync-email-profile"></a>進行 Exchange ActiveSync 電子郵件設定檔的同步處理設定。  
 

@@ -2,7 +2,7 @@
 title: "支援的 Active Directory 網域 | Microsoft Docs"
 description: "取得 Active Directory 網域中的 System Center Configuration Manager 站台系統成員資格需求。"
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 3/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: a3da133205506ba0463dd3207da5ceb5a5d1ab49
-ms.openlocfilehash: ea527a7767b33eaf495e78522364d8a7a47712ca
+ms.sourcegitcommit: 3f397efe458fd85124d2a83d4a869642015fd4a5
+ms.openlocfilehash: 2654ab4eaaaf6a4bf3bd7dca9908e7033647dc2c
+ms.lasthandoff: 03/23/2017
 
 
 ---
@@ -43,16 +44,23 @@ ms.openlocfilehash: ea527a7767b33eaf495e78522364d8a7a47712ca
 您必須先解除安裝站台系統角色 (若為站台伺服器，還包括站台)，才能執行這些變更。  
 
 **支援具有下列網域功能等級的網域：**  
+- Windows Server 2016
 
--   Windows Server 2008  
+- Windows Server 2012 R2  
 
--   Windows Server 2008 R2  
+- Windows Server 2012
 
--   Windows Server 2012  
+- Windows Server 2008 R2
 
--   Windows Server 2012 R2  
+- Windows Server 2008  
 
-##  <a name="a-namebkmkdisjointa-disjoint-namespace"></a><a name="bkmk_Disjoint"></a> 脫離的命名空間  
+
+
+
+
+
+
+##  <a name="bkmk_Disjoint"></a> 脫離的命名空間  
 Configuration Manager 可以在具有脫離之命名空間的網域中安裝站台系統和用戶端。  
 
 脫離的命名空間是指電腦的主要網域名稱系統 (DNS) 尾碼不符合該電腦所在 Active Directory DNS 網域名稱的情況。 使用不相符的主要 DNS 尾碼的電腦即稱為脫離。 另一個脫離的命名空間案例則發生於網域控制站的 NetBIOS 網域名稱不符合 Active Directory DNS 網域名稱時。  
@@ -71,7 +79,7 @@ Configuration Manager 可以在具有脫離之命名空間的網域中安裝站�
 > [!IMPORTANT]  
 >  當您在 Configuration Manager 中參考電腦時，請使用主要 DNS 尾碼來輸入電腦。 這個尾碼應該符合註冊為 Active Directory 網域中 **dnsHostName** 屬性的完整網域名稱，和與系統相關聯的服務主體名稱。  
 
-##  <a name="a-namebkmkslda-single-label-domains"></a><a name="bkmk_SLD"></a> 單一標籤網域  
+##  <a name="bkmk_SLD"></a> 單一標籤網域  
  當符合下列準則時，Configuration Manager 支援單一標籤網域中的站台系統及用戶端：  
 
 -   Active Directory 網域服務中的單一標籤網域，必須設定為具有有效的頂層網域的脫離 DNS 命名空間。  
@@ -79,10 +87,4 @@ Configuration Manager 可以在具有脫離之命名空間的網域中安裝站�
      **例如：** Contoso 的單一標籤網域已設定為在 contoso.com 的 DNS 中具有脫離的命名空間。 因此，當您為 Contoso 網域中的電腦指定 Configuration Manager 中的 DNS 尾碼時，您會指定 "Contoso.com"，而不是 "Contoso"。  
 
 -   系統內容中的站台伺服器之間的分散式元件物件模型 (DCOM) 連線必須成功使用 Kerberos 驗證。  
-  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

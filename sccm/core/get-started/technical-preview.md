@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager 的 Technical Preview | Microsoft Docs"
 description: "了解可讓您試用 System Center Configuration Manager 新功能的 Technical Preview 版本。"
 ms.custom: na
-ms.date: 2/24/2017
+ms.date: 3/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 0d1f8eb9274dde96eb4295c007c0f49036d1a3de
-ms.openlocfilehash: e140ef9daad9fb4105cea543115af19a4378c903
-ms.lasthandoff: 02/27/2017
+ms.sourcegitcommit: f326eb961be400187c2dcadd564a7e344dc4b175
+ms.openlocfilehash: 66b57ec07ebaffd63791741c0ac038d14ab5f367
+ms.lasthandoff: 03/29/2017
 
 
 ---
@@ -67,7 +67,10 @@ ms.lasthandoff: 02/27/2017
 -   僅支援下列安裝旗標 (參數)：  
 
     -   **/silent**  
-    -   **/testdbupgrade**  
+    -   **/testdbupgrade**    
+
+
+-   根據預設，當您使用 Technical Preview 時，服務連接點會在安裝時設定為線上模式，且不支援變更為離線模式。
 
 -   每個 Technical Preview 的特定版本都會附有其他限制或需求，且提供詳細說明 (如果有的話)  
 
@@ -82,15 +85,15 @@ ms.lasthandoff: 02/27/2017
 
  若要使用 Technical Preview，您必須先安裝 Technical Preview 組建的 **基準版本** 。 安裝基準版本之後，您便可以使用 **主控台內更新** ，將安裝升級成最新的預覽版本。     一般而言，每個月都會提供新版本的 Technical Preview。
 
-每個預覽版本最多支援三個連續版本。 這表示，發行 1702 版時，將不再支援 1610 版，但仍然支援 1611、1612 和 1701。 不過，如果不支援最後一個基準 (例如 1610 版)，仍然支援安裝新的 Technical Preview 站台，只要接著將該安裝更新至支援的版本即可。
+每個預覽版本最多支援三個連續版本。 這表示，發行 1702 版時，將不再支援 1610 版，但仍然支援 1611、1612 和 1701。 不過，如果最後一個基準 (例如 1610 版) 不再受支援，它仍然支援安裝新的 Technical Preview 站台 (直到提供新的基準版本為止)，只要接著將該安裝更新至支援的版本即可。
 
 > [!TIP]  
 >  當您將更新安裝為 Technical Preview 時，可以將 Preview 安裝更新為新的 Technical Preview 版本。    Technical Preview 安裝永遠無法升級為最新分支安裝，也不會從最新分支版本接收更新。  
 
  **Technical Preview 的作用中基準版本︰**  
- 在發行後的 1 年內，您都可以安裝基準版本。
+ 在發行後的 1 年內，您都可以安裝基準版本。 不過，當您安裝新的 Technical Preview 站台時，建議您使用最新可用的基準版本。
 
--   **Technical Preview 1610** - Configuration Manager Technical Preview 1610 同時以兩種形式提供：Configuration Manager Technical Preview 的主控台內更新，以及 [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 網站提供的新基準版本。
+-   **Technical Preview 1610** - Configuration Manager Technical Preview 1610 同時以兩種形式提供：Configuration Manager Technical Preview 的主控台內更新，以及 [TechNet Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview) 網站提供的基準版本。
 
 
 
@@ -110,37 +113,37 @@ ms.lasthandoff: 02/27/2017
 
  |功能|Technical Preview 版本|最新分支版本|  
  |----------------|---------------------|--------------------|
- |iOS 裝置的新相容性設定|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#new-compliance-settings-for-ios-devices)|![未新增](media/Red_X.gif)|
- |使用 S/MIME 支援來建立 PFX 憑證|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#create-pfx-certificates-with-s-mime-support)|![未新增](media/Red_X.gif)|
- |在安裝應用程式之前檢查執行中可執行檔|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#check-for-running-executable-files-before-installing-an-application)|![未新增](media/Red_X.gif)|
- |從 Configuration Manager 主控台傳送意見反應 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#send-feedback-from-the-configuration-manager-console)    |![未新增](media/Red_X.gif)  |
- |更新與服務的變更  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#changes-for-updates-and-servicing)  |![未新增](media/Red_X.gif) |
- |對等快取改進  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#peer-cache-improvements) |![未新增](media/Red_X.gif)|
+ |iOS 裝置的新相容性設定|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#new-compliance-settings-for-ios-devices)|[版本 1702](/sccm/mdm/deploy-use/create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client)|
+ |使用 S/MIME 支援來建立 PFX 憑證|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#create-pfx-certificates-with-s-mime-support)|[版本 1702](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)|
+ |在安裝應用程式之前檢查執行中可執行檔|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#check-for-running-executable-files-before-installing-an-application)|[版本 1702](/sccm/apps/deploy-use/deploy-applications)|
+ |從 Configuration Manager 主控台傳送意見反應 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#send-feedback-from-the-configuration-manager-console)    |[版本 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#send-feedback-from-the-configuration-managercconsole)  |
+ |更新與服務的變更  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#changes-for-updates-and-servicing)  |[版本 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#changes-for-updates-and-servicing) |
+ |對等快取改善  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#peer-cache-improvements) |[版本 1702](/sccm/core/plan-design/hierarchy/client-peer-cache)|
  |使用 Azure Active Directory  | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#azurediscovery) |![未新增](media/Red_X.gif)|
- |條件式存取裝置合規性政策改進 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#conditional-access-device-compliance-policy-improvements) |![未新增](media/Red_X.gif)|
- |反惡意程式碼用戶端版本警示 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#antimalware-client-version-alert) |![未新增](media/Red_X.gif)|
- |Windows Update for Business 更新的相容性評估 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#compliance-assessment-for-windows-update-for-business-updates) |![未新增](media/Red_X.gif)|
- |具有強烈影響之工作順序的軟體中心設定和通知訊息的改進| [Tech Preview 1702](capabilities-in-technical-preview-1702.md#improvements-to-software-center-settings-and-notification-messages-for-high-impact-task-sequences) |![未新增](media/Red_X.gif)|
- |Android for Work 支援| [Tech Preview 1702](capabilities-in-technical-preview-1702.md#android-for-work-support) |![未新增](media/Red_X.gif)|
- |軟體更新點的界限群組增強功能 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#boundary-groups-improvements-for-software-update-points)    |![未新增](media/Red_X.gif)  |
- |硬體清查會收集 UEFI 資訊 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#hardware-inventory-collects-uefi-information)|![未新增](media/Red_X.gif)  |
- |作業系統部署增強功能| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#improvements-to-operating-system-deployment)|![未新增](media/Red_X.gif)  |
+ |條件式存取裝置合規性政策改進 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#conditional-access-device-compliance-policy-improvements) |[版本 1702](/sccm/mdm/deploy-use/create-compliance-policy)|
+ |反惡意程式碼用戶端版本警示 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#antimalware-client-version-alert) |[版本 1702](/sccm/protect/deploy-use/endpoint-configure-alerts?branch=live#alert-for-outdated-malware-client)|
+ |Windows Update for Business 更新的合規性評估 | [Tech Preview 1702](capabilities-in-technical-preview-1702.md#compliance-assessment-for-windows-update-for-business-updates) |![未新增](media/Red_X.gif)|
+ |具有強烈影響之工作順序的軟體中心設定和通知訊息的改進|[Tech Preview 1702](capabilities-in-technical-preview-1702.md#antimalware-client-version-alert)|[版本 1702](/sccm/osd/deploy-use/manage-task-sequences-to-automate-tasks#set-a-task-sequence-as-a-high-impact-task-sequence)|
+ |Android for Work 支援| [Tech Preview 1702](capabilities-in-technical-preview-1702.md#android-for-work-support) |[版本 1702](/sccm/mdm/deploy-use/enroll-hybrid-android#enable-android-for-work-enrollment)|
+ |軟體更新點的界限群組增強功能 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#boundary-groups-improvements-for-software-update-points)    |[版本 1702](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)  |
+ |硬體清查會收集 UEFI 資訊 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#hardware-inventory-collects-uefi-information)|[版本 1702](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#hardware-inventory-collects-uefi-information) |
+ |作業系統部署增強功能| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#improvements-to-operating-system-deployment)|[版本 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#operating-system-deployment) |
  |在雲端式發佈點上裝載軟體更新| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#host-software-updates-on-cloud-based-distribution-points)|![未新增](media/Red_X.gif) |
- |透過管理點來驗證裝置健全狀況證明資料| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#validate-device-health-attestation-data-via-management-points)|![未新增](media/Red_X.gif) |
- |針對 Microsoft Azure Government 雲端的 OMS 連接器 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#use-the-oms-connector-for-microsoft-azure-government-cloud) |![未新增](media/Red_X.gif) |
+ |透過管理點來驗證裝置健全狀況證明資料| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#validate-device-health-attestation-data-via-management-points)| [版本 1702](/sccm/core/servers/manage/health-attestation) |
+ |針對 Microsoft Azure Government 雲端的 OMS 連接器 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#use-the-oms-connector-for-microsoft-azure-government-cloud) |[版本 1702](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite#fairfaxconfig) |
  |建立精靈無法再將目標設為 Android 與 iOS 版本 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm) |![未新增](media/Red_X.gif) |
  |OData 端點資料存取 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#odata-endpoint-data-access)|![未新增](media/Red_X.gif)|
- |資料倉儲服務點 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#the-data-warehouse-service-point)|![未新增](media/Red_X.gif)|
- |內容庫清理工具 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#content-library-cleanup-tool)|![未新增](media/Red_X.gif)|
- |主控台內搜尋的增強功能 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#improvements-for-in-console-search)|![未新增](media/Red_X.gif)|
- |防止在指定的程式正在執行時安裝應用程式|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#prevent-installation-of-an-application-if-a-specified-program-is-running)|![未新增](media/Red_X.gif)|
- |使用者的新 Windows Hello 企業版通知|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#new-windows-hello-for-business-notification-for-end-users)|![未新增](media/Red_X.gif)|
+ |資料倉儲服務點 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#the-data-warehouse-service-point)|[版本 1702](/sccm/core/servers/manage/data-warehouse)|
+ |內容庫清理工具 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#content-library-cleanup-tool)|[版本 1702](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool) |
+ |主控台內搜尋的新增功能 |[Tech Preview 1612](capabilities-in-technical-preview-1612.md#improvements-for-in-console-search)|[版本 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#improvements-for-in-console-search)|
+ |防止在指定的程式正在執行時安裝應用程式|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#prevent-installation-of-an-application-if-a-specified-program-is-running)|[版本 1702](/sccm/apps/deploy-use/deploy-applications)|
+ |新增針對使用者的 Windows Hello 企業版通知|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#new-windows-hello-for-business-notification-for-end-users)|![未新增](media/Red_X.gif)|
  |Configuration Manager 中的商務用 Windows 市集支援|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#windows-store-for-business-support-in-configuration-manager)|![未新增](media/Red_X.gif)|
- |工作順序失敗時返回上一頁|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#return-to-previous-page-when-a-task-sequence-fails)|![未新增](media/Red_X.gif)|
- |Windows 10 更新的快速安裝檔案支援|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#express-installation-files-support-for-windows-10-updates)|![未新增](media/Red_X.gif)|
+ |工作順序失敗時返回上一頁|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#return-to-previous-page-when-a-task-sequence-fails)|[版本 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#operating-system-deployment)|
+ |Windows 10 更新的快速安裝檔案支援|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#express-installation-files-support-for-windows-10-updates)|[版本 1702](/sccm/sum/deploy-use/manage-express-installation-files-for-windows-10-updates)|
  |Azure Active Directory 上架|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#azure-active-directory-onboarding)|![未新增](media/Red_X.gif)|
-|設定裝置註冊之 Multi-Factor Authentication 的變更|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#change-to-configuring-multi-factor-authentication-for-device-enrollment)|![未新增](media/Red_X.gif)|
-|預先快取部署和工作順序內容 |[Tech Preview 1611](capabilities-in-technical-preview-1611.md#pre-cache-content-for-available-deployments-and-task-sequences)|![未新增](media/Red_X.gif)|
+ |設定裝置註冊之 Multi-Factor Authentication 的變更|[Tech Preview 1612](capabilities-in-technical-preview-1612.md#change-to-configuring-multi-factor-authentication-for-device-enrollment)|![未新增](media/Red_X.gif)|
+ |預先快取部署和工作順序內容 |[Tech Preview 1611](capabilities-in-technical-preview-1611.md#pre-cache-content-for-available-deployments-and-task-sequences)|[版本 1702](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)|
  |Windows Defender 組態設定|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#windows-defender-configuration-settings)|[1610 版](/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)|
  |從系統管理員主控台要求原則同步|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#request-policy-sync-from-administrator-console)|[1610 版](/sccm/mdm/deploy-use/sync-intune-device)|
  |公司擁有的所有裝置節點的其他安全性角色支援|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#additional-security-role-support)|[1610 版](/sccm/mdm/understand/whats-new-in-hybrid-mobile-device-management#new-hybrid-features-in-november-2016)|
@@ -149,8 +152,8 @@ ms.lasthandoff: 02/27/2017
  |所需軟體對話方塊的功能改善|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#improved-functionality-for-required-software-dialogs)|[1610 版](/sccm/apps/deploy-use/deploy-applications)|
  |拒絕先前核准的應用程式要求|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#deny-previously-approved-application-requests)|[1610 版](/sccm/apps/deploy-use/deploy-applications)|
  |排除自動升級用戶端|[Tech Preview 1610](capabilities-in-technical-preview-1610.md#exclude-clients-from-automatic-upgrade)|[1610 版](/sccm/core/clients/manage/upgrade/exclude-clients-windows)|
- |Endpoint Protection 的改進|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#improvements-to-endpoint-protection)|![未新增](media/Red_X.gif)|
- |增加已註冊裝置數目|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#increased-number-of-enrolled-devices)|![未新增](media/Red_X.gif)|
+ |Endpoint Protection 的改進|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#improvements-to-endpoint-protection)|[版本 1610](/sccm/protect/deploy-use/endpoint-antimalware-policies#cloud-protection-service)|
+ |增加已註冊裝置的數目|[Tech Preview 1609](/sccm/mdm/deploy-use/enable-platform-enrollment)|[版本 1610](/sccm/mdm/deploy-use/enable-platform-enrollment)|
  |其他 Apple DEP 設定|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#additional-apple-dep-settings)|[1610 版](/sccm/mdm/deploy-use/ios-device-enrollment-program-for-hybrid)|
  |商務用 Windows 市集與 Configuration Manager 整合的改善|[Tech Preview 1609](capabilities-in-technical-preview-1609.md)|[1610 版](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)|
  |設定項目的新相容性設定|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#new-compliance-settings-for-configuration-items)|[1610 版](/sccm/compliance/deploy-use/create-configuration-items)|
@@ -158,11 +161,11 @@ ms.lasthandoff: 02/27/2017
  |Windows 10 VPN 混合式設定檔的原生連線類型|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#native-connection-types-for-windows-10-vpn-hybrid-profiles)|![未新增](media/Red_X.gif)|
  |界限群組的增強功能|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#improvements-for-boundary-groups)|[1610 版](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups#BKMK_BoundaryGroups)|
  |Office 365 用戶端管理儀表板|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#office-365-client-management-dashboard)|[1610 版](/sccm/sum/deploy-use/manage-office-365-proplus-updates#office-365-client-management-dashboard)|
- |將 Office 365 應用程式部署至用戶端|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#deploy-office-365-apps-to-clients)|![未新增](media/Red_X.gif)|
+ |將 Office 365 應用程式部署至用戶端|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#deploy-office-365-apps-to-clients)|[版本 1702](/sccm/sum/deploy-use/manage-office-365-proplus-updates#deploy-office-365-apps)|
  |BIOS 轉換成 UEFI 的增強功能|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#BKMK_UEFIConversion)|[1610 版](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion)|
  |Intune 相容性圖表|[Tech Preview 1609](capabilities-in-technical-preview-1609.md#intune-compliance-charts)|[1610 版](/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)|
  |準備 ConfigMgr 用戶端以進行擷取之工作順序步驟的改進|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-the-prepare-configmgr-client-for-capture-task-sequence-step)|[1610 版](/sccm/osd/understand/task-sequence-steps#BKMK_PrepareConfigMgrClientforCapture)|
- |軟體中心的增強功能|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-software-center)|[1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#general-improvements-to-software-center)|
+ |軟體中心的增強功能|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-software-center)|[版本 1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#general-improvements-to-software-center)|
  |Asset Intelligence 的增強功能|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|![未新增](media/Red_X.gif)|
  |遠端控制鍵盤轉譯|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#remote-control-keyboard-translation)|![未新增](media/Red_X.gif)|
  |改進 Windows 10 版本升級原則|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#dmp_edition)|[1610 版](/sccm/compliance/deploy-use/upgrade-windows-version)|

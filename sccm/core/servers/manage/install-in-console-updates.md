@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: eafa95922485066632a5da522e6c3de69b45050f
-ms.lasthandoff: 03/04/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 3b50ada9f63e41d1b6f01009c141b8f361f5180e
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -33,14 +33,14 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 -   在 **線上模式**中，服務連接點會自動連線到 Microsoft 雲端服務，並下載適用的更新。  
 
-     根據預設，Configuration Manager 每隔 24 小時就會檢查新的更新。 您也可以在 Configuration Manager 主控台的 [系統管理] > [雲端服務] > [更新與服務] 節點中選擇 [檢查更新]，立即檢查更新。  
+     根據預設，Configuration Manager 每隔 24 小時就會檢查新的更新。 您也可以在 Configuration Manager 主控台的 [系統管理] > [更新與服務] 節點中選擇 [檢查更新]，來立即檢查更新。 (在 1702 版之前，此節點是位於 [系統管理] > [雲端服務] 底下)。
 
 -   在**離線模式**中，服務連接點不會連線到 Microsoft 雲端服務。 您必須手動[使用 System Center Configuration Manager 的服務連接工具](../../../core/servers/manage/use-the-service-connection-tool.md)，以下載後匯入可用的更新。  
 
 > [!NOTE]  
 >  您的主控台會匯入與 Microsoft 雲端服務進行同步處理時所取得的更新，以及使用[更新註冊工具](http://technet.microsoft.com/library/mt691544.aspx)安裝的頻外修正程式，供您選取以進行安裝。  
 
-同步處理更新之後，您可以在 Configuration Manager 主控台中，移至 [系統管理] > [雲端服務] > [更新與服務] 節點來檢視它們︰  
+在同步處理更新之後，您便可以在 Configuration Manager 主控台中，移至 [系統管理] > [更新與服務] 節點來檢視它們︰  
 
 -   您尚未安裝的更新會顯示為 **[可用]**。
 
@@ -98,7 +98,8 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 - 更新為 1606：請參閱[安裝更新 1606 的檢查清單](../../../core/servers/manage/checklist-for-installing-update-1606.md)。  
 
 - 從 1606 更新為 1610：請參閱[安裝更新 1610 的檢查清單](../../../core/servers/manage/checklist-for-installing-update-1610.md)。  
-<!--- Update to 1702 from either 1606 or 1610: See [Checklist for installing update 1702](../../../core/servers/manage/checklist-for-installing-update-1702.md). -->  
+
+- 從 1606 或 1610 更新為 1702：請參閱[安裝更新 1702 的檢查清單](../../../core/servers/manage/checklist-for-installing-update-1702.md)。
 
 ###  <a name="bkmk_step2"></a> 步驟 2︰安裝更新之前，先測試資料庫升級  
 只有安裝 System Center Configuration Manager 站台的「更新」時，才能使用此步驟中的資訊。 如果您是將 System Center 2012 Configuration Manager 站台「升級」至 System Center Configuration Manager，請參閱[測試站台資料庫升級](/sccm/core/servers/deploy/install/upgrade-to-configuration-manager#a-namebkmktesta-test-the-site-database-upgrade)。
@@ -146,7 +147,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 #### <a name="to-run-the-prerequisite-checker-before-installing-an-update"></a>安裝更新之前先執行必要條件檢查工具  
 
-1.  在 Configuration Manager 主控台中，前往 [系統管理] > [雲端服務] > [更新與服務]。  
+1.  在 Configuration Manager 主控台中，移至 [系統管理] > [更新與服務]。   
 
 2.  以滑鼠右鍵按一下您想要執行必要條件檢查的更新套件。  
 
@@ -203,7 +204,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 **3.安裝更新時，監視更新的進度**  
 使用下列動作來監視進度︰  
 
--   在 Configuration Manager 主控台中：[系統管理] > [雲端服務] > [更新與服務] 節點。 此節點會顯示所有更新套件的安裝狀態。
+-   在 Configuration Manager 主控台中：[系統管理] > [更新與服務] 節點。 此節點會顯示所有更新套件的安裝狀態。
 
 
 -   在 Configuration Manager 主控台中：[監視] > [概觀] > [更新與服務狀態] 節點。 此節點只會顯示目前正在安裝之更新套件的安裝狀態。  
@@ -241,7 +242,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 當主控台更新完成之後，您可以確認主控台和站台版本是正確的。 請移至主控台左上角的 [關於 System Center Configuration Manager]。  
 
 ###  <a name="bkmk_toptier"></a> 在頂層站台上開始安裝更新  
-在階層的頂層站台上，於 Configuration Manager 主控台中，移至 [系統管理] > [雲端服務] > [更新與服務]，並選取 [可用] 更新，然後按一下 [安裝更新套件]。  
+在您階層的頂層站台上，於 Configuration Manager 主控台中，移至 [系統管理] > [更新與服務]、選取 [可用] 更新，然後按一下 [安裝更新套件]。  
 
 ###  <a name="bkmk_secondary"></a> 在次要站台上開始安裝更新  
 在更新次要站台的父主要站台之後，您即可從 Configuration Manager 主控台內更新次要站台。  若要這樣做，您可以使用 **[升級次要站台精靈]**。  
@@ -268,7 +269,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
     -   安裝失敗
     -   將內容複寫至站台失敗   
 
-    移至 [系統管理] > [雲端服務] > [更新與服務]，並選取更新，然後選擇下列其中一項：  
+    移至 [系統管理] > [更新與服務]、選取更新，然後選擇下列其中一項：  
 
     -   **重試** - 當您從這個節點執行 [重試] 時，更新安裝會再次啟動，並自動忽略先決條件警告。 它也會重新複寫更新的內容 (如果先前複寫失敗的話)。
     - **忽略先決條件警告** - 從 1606 版開始，如果因為警告導致更新安裝停止，您可以選擇 [忽略先決條件警告]。 此動作會在幾分鐘後繼續安裝更新，並使用忽略必要條件警告的選項。   
@@ -315,7 +316,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 ##  <a name="bkmk_options"></a> 從更新啟用選擇性功能  
 當您安裝其中包含一或多個選擇性功能的更新時，將有機會在您的階層中啟用這些功能。  您可以在安裝更新期間執行此動作，或者稍後返回主控台並啟用選擇性功能。
 
-若要檢視可用功能及其狀態，可在主控台中瀏覽至 **[系統管理]** > **[雲端服務]** > **[更新與服務]** > **[功能]**。
+若要檢視可用的功能及其狀態，請在主控台中瀏覽至 [系統管理] > [更新與服務] > [功能]。
 
 若功能非為選擇性，就會自動安裝，且不會出現在 [功能] 節點中。  
 

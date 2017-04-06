@@ -2,7 +2,7 @@
 title: "CD.Latest 資料夾 | Microsoft Docs"
 description: "了解從 Configuration Manager 主控台內進行產品更新的新更新程序。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: dcf56f6b82f89e81d636ea920f36133e245cbb1e
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 9cbda4db3c8fcd0bc039e9bb0f490af519b7d04b
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -40,11 +41,13 @@ System Center Configuration Manager 引進新的更新程序，可從 Configurat
 
 -   執行內建的 Configuration Manager 備份工作︰系統會在指定的備份資料夾位置底下建立或更新該資料夾。  
 
+-  從版本 1606 開始，當您使用基準媒體 (例如版本 1606) 安裝新的站台時，會建立 CD.Latest 資料夾。
+
 支援使用來自 [CD.Latest] 資料夾的來源檔案進行下列作業：  
 
-1.  **備份和復原：** CD.Latest 資料夾包含可在站台復原過程中用來重新安裝站台的來源檔案。 若要復原 Configuration Manager 站台，您的站台備份必須包含 CD.Latest 資料夾 (內建的站台備份工作會在站台備份過程中自動包含此資料夾)。  
+1.  **備份及復原：**若要復原站台，您必須使用符合您站台之 CD.Latest 資料夾中的來源檔案。 當您使用內建站台備份工作執行站台備份時，CD.Latest 資料夾會包含為備份的一部分。
 
-    -   **在站台復原過程中重新安裝站台時** ，您是透過備份中包含的 CD.Latest 資料夾來安裝站台。 這會使用與您站台備份和站台資料庫相符的檔案版本來安裝站台。  
+    -   **在站台復原過程中重新安裝站台時** ，您是透過備份中包含的 CD.Latest 資料夾來安裝站台。 這會使用與您站台備份和站台資料庫相符的檔案版本來安裝站台。  如果您無法存取正確的 CD.Latest 資料夾版本，您可以透過在實驗室環境中安裝站台，然後更新該站台以符合您想要復原的版本，來取得具有正確檔案版本的 CD.Latest 資料夾。
 
         > [!IMPORTANT]  
         >  如果沒有正確的 [CD.Latest] 資料夾及其內容可供使用，您就無法復原站台而必須重新安裝。  
@@ -60,9 +63,4 @@ System Center Configuration Manager 引進新的更新程序，可從 Configurat
 >   
 >  -   為新階層安裝新站台  
 >  -   將 Microsoft System Center 2012 Configuration Manager 站台升級至 System Center Configuration Manager
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

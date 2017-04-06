@@ -2,7 +2,7 @@
 title: "Windows 用戶端部署必要條件 | Microsoft Docs"
 description: "了解在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦的必要條件。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 03/5/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: cbcffea0fe2b4c8a05d3a835ff1193b528e55762
-ms.lasthandoff: 12/16/2016
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 7ed1b9e6802cc20defcb92a8e536983fd757bd29
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -36,7 +36,7 @@ ms.lasthandoff: 12/16/2016
 > [!NOTE]  
 >  本文章只列出最低需求的軟體版本號碼。  
 
-##  <a name="a-namebkmkprereqscomputersa-prerequisites-for-computer-clients"></a><a name="BKMK_prereqs_computers"></a> 電腦用戶端的必要條件  
+##  <a name="BKMK_prereqs_computers"></a> 電腦用戶端的必要條件  
  使用下列資訊來判斷在電腦上安裝 Configuration Manager 用戶端時的必要條件。  
 
 ### <a name="dependencies-external-to-configuration-manager"></a>Configuration Manager 外部的相依性  
@@ -65,9 +65,10 @@ ms.lasthandoff: 12/16/2016
 |Microsoft Silverlight 5.1.41212.0 (從 Configuration Manager 1602 版開始)|支援應用程式類別目錄網站使用者經驗所需。|  
 |Microsoft .NET Framework 4.5.2 版|支援用戶端操作所需。 如果未安裝 Microsoft .NET Framework 4.5 或更新版本，就會自動安裝在用戶端電腦上。 如需詳細資訊，請參閱 [關於 Microsoft.NET Framework 4.5.2 版的其他詳細資料](#dotNet)。|  
 |Microsoft SQL Server Compact 3.5 SP2 元件|儲存用戶端操作相關資訊所需。|  
-|Microsoft Windows Imaging 元件|適用於 64 位元電腦的 Windows Server 2003 或 Windows XP SP2 的 Microsoft .NET Framework 4.0 所需。|  
+|Microsoft Windows Imaging 元件|適用於 64 位元電腦的 Windows Server 2003 或 Windows XP SP2 的 Microsoft .NET Framework 4.0 所需。|
+|Microsoft Intune 電腦軟體用戶端|您無法在同一部電腦上執行 Intune 電腦軟體用戶端和 Configuration Manager 用戶端。 在安裝 Configuration Manager 用戶端之前，請確定已經移除 Intune 用戶端。|
 
-####  <a name="a-namedotneta-additional-details-about-microsoft-net-framework-version-452"></a><a name="dotNet"></a> 關於 Microsoft.NET Framework 4.5.2 版的其他詳細資料  
+####  <a name="dotNet"></a> 關於 Microsoft.NET Framework 4.5.2 版的其他詳細資料  
 
 > [!NOTE]  
 >  針對 .NET 4.0、4.5 與 4.5.1 的支援已於 2016 年 1 月 12 日到期。 如需詳細資訊，請參閱位於 support.microsoft.com 中的 [週期支援原則常見問題集 - Microsoft .NET Framework](https://support.microsoft.com/gp/framework_faq?WT.mc_id=azurebg_email_Trans_943_NET452_Update) 。  
@@ -162,7 +163,7 @@ ms.lasthandoff: 12/16/2016
 ### <a name="firewall-requirements"></a>防火牆需求  
  如果站台系統伺服器與您要安裝 Configuration Manager 用戶端的電腦之間有防火牆，請參閱 [System Center Configuration Manager 中用戶端適用的 Windows 防火牆和連接埠設定](../../../core/clients/deploy/windows-firewall-and-port-settings-for-clients.md)。  
 
-##  <a name="a-namebkmkprereqsmobiledevicesa-prerequisites-for-mobile-device-clients"></a><a name="BKMK_prereqs_mobiledevices"></a> 行動裝置用戶端的必要條件  
+##  <a name="BKMK_prereqs_mobiledevices"></a> 行動裝置用戶端的必要條件  
  請利用下列資訊判斷在行動裝置上安裝 Configuration Manager 用戶端及使用 Configuration Manager 註冊行動裝置時的必要條件。  
 
 ### <a name="dependencies-external-to-configuration-manager"></a>Configuration Manager 外部的相依性  

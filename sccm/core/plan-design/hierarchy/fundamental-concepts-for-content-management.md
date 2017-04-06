@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 766120f5ca79f279a513b62c35a2374c859b253a
-ms.openlocfilehash: 079be3c97e4239f8c5293bed5a2ce13abfbe7798
-ms.lasthandoff: 03/15/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: 238e460885b6490b3744690640f9ff040902b35f
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -116,7 +116,8 @@ System Center Configuration Manager 支援強固的工具和選項系統，以�
 ## <a name="content-library"></a>內容庫  
  內容庫是內容的唯一存放區，而 Configuration Manager 可用該內容來減少發佈之內容的合併主體整體大小。  
 
-進一步了解[內容庫](../../../core/plan-design/hierarchy/the-content-library.md)。
+- 進一步了解[內容庫](../../../core/plan-design/hierarchy/the-content-library.md)。
+- 使用[內容庫清理工具](/sccm/core/plan-design/hierarchy/content-library-cleanup-tool)，將不再與應用程式關聯的內容移除。  
 
 
 ## <a name="distribution-points"></a>發佈點  

@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 26a362b4e5f25414178cae6843869a54eb99028c
-ms.openlocfilehash: b190b6116fba8080ad4e144e4e349e0926d1340b
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
+ms.openlocfilehash: ef044af5f6b32e4161d54c0ab1fb2ef2d245264b
+ms.lasthandoff: 03/27/2017
 
 
 ---
@@ -70,7 +70,7 @@ ms.lasthandoff: 03/01/2017
 ##  <a name="long-term-servicing-branch-of-system-center-configuration"></a>System Center Configuration 的長期維護分支
 這是 Configuration Manager 客戶實際執行時使用的授權分支，這些客戶使用最新分支，且其 Configuration Manager 軟體保證 (SA) 或對等訂閱權限在 2016 年 10 月 1 日後才到期。 如需軟體保證和授權選項的詳細資訊，請參閱 [System Center Configuration Manager 的授權和分支](learn-more-editions.md)。
 
-LTSB 不會收到提供新功能或更新現有功能的主控台內更新。 但會提供重要的安全性修正程式。
+LTSB 是以 1606 版為基礎。 這個分支不會收到提供新功能或更新現有功能的主控台內更新。 但會提供重要的安全性修正程式。 若要安裝 LTSB，您必須使用 1606 版[基準媒體](/sccm/core/servers/manage/updates#baseline-and-update-versions)，亦即 System Center 2016 或 System Center Configuration Manager 隨附的 DVD。
 
 若要將 LTSB 安裝為新的站台或從支援的 Configuration Manager 2012 站台升級，請使用 1606 版的[基準媒體](/sccm/core/servers/manage/updates#baseline-and-update-versions) DVD，隨附於 System Center 2016 或 System Center Configuration Manager (最新分支和長期維護分支 1606) 版本。 您可以使用基準媒體來安裝執行 1606 版最新分支的新站台，或執行長期維護分支的新站台。
 
