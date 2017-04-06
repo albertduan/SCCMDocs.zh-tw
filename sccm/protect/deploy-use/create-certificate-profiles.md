@@ -17,9 +17,9 @@ author: Nbigman
 ms.author: nbigman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: f919ac97b24604babca4f70f184220604227eb0e
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: aa8924a013ebdbee888cab33001fddbe7ad2d67e
+ms.openlocfilehash: 80a716f5a42a81e5550eb1b5c7f14534e14a4fb7
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -59,8 +59,6 @@ ms.lasthandoff: 03/27/2017
 -   **簡單憑證註冊通訊協定 (SCEP) 設定**：如果您使用簡單憑證註冊通訊協定和網路裝置註冊服務角色服務來要求使用者或裝置的憑證，請選取此憑證設定檔類型。
 
 -   **個人資訊交換 PKCS #12 (PFX) 設定 - 匯入**：選取此選項以匯入 PFX 憑證。 若要深入了解如何建立 PFX 憑證，請參閱[建立 PFX 憑證設定檔](../../protect/deploy-use/create-pfx-certificate-profiles.md)。
-
-- **個人資訊交換 PKCS #12 (PFX) 設定 - 建立**：選取此選項以建立新的 PFX 憑證設定檔。 若要深入了解如何建立 PFX 憑證，請參閱[建立 PFX 憑證設定檔](../../protect/deploy-use/create-pfx-certificate-profiles.md)。
 
 
 

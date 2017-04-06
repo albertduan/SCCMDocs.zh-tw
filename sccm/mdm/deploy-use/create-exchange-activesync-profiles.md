@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: c90e5ebc2aca3f2133227fa59057aad8db3713f4
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: aa8924a013ebdbee888cab33001fddbe7ad2d67e
+ms.openlocfilehash: a0353c49360cd99bc92b4546e12a52c3d13d1d14
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -105,10 +105,6 @@ ms.lasthandoff: 03/27/2017
 
     -   **使用 S/MIME** (僅適用於 iOS 裝置) - 使用 S/MIME 加密傳送外寄電子郵件。 選擇下列選項：
 
-        -   **簽署憑證** ：按一下 [選取]  ，然後選取要用於簽署的憑證。 這個選項僅適用於 iOS 裝置。  
-
-            > [!NOTE]  
-            >  您必須先將簽署憑證設定為簡單憑證註冊通訊協定 (SCEP) 或 PFX 憑證設定檔，才能選取簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
 
         -   **加密憑證** ：按一下 [選取]  ，然後選取要用於加密的憑證。 這個選項僅適用於 iOS 裝置。 您只能選取一個 PFX 憑證做為加密憑證。
 

@@ -17,9 +17,9 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 06cafc8f7934cde738a87ac1a1da585a9d4e2a99
-ms.openlocfilehash: 534a15279bff96d93ffb6564eeac2835f57f5645
-ms.lasthandoff: 02/09/2017
+ms.sourcegitcommit: 3eb48942c1259d2aa1b3c200fad73b39b11c0b8c
+ms.openlocfilehash: 9989ea1bf4cb74a6286ebae9de7614ed622de5b6
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -36,7 +36,7 @@ System Center Configuration Manager (也稱為 ConfgMgr 或 SCCM) 提供不同�
 
 ###  <a name="manage-devices-with-the-configuration-manager-client"></a>使用 Configuration Manager 用戶端管理裝置  
 
-這個選項 (需要在裝置上安裝 Configuration Manager 用戶端應用程式) 提供最多的功能來管理您環境中的電腦、伺服器和其他裝置。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的用戶端安裝方法](/sccm/core/client/deploy/plan/client-installation-methods)。  
+這個選項 (需要在裝置上安裝 Configuration Manager 用戶端應用程式) 提供最多的功能來管理您環境中的電腦、伺服器和其他裝置。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的用戶端安裝方法](/sccm/core/clients/deploy/plan/client-installation-methods)。  
 
 ###  <a name="manage-devices-with-on-premises-configuration-manager-infrastructure"></a>使用內部部署 Configuration Manager 基礎結構管理裝置  
 
@@ -76,7 +76,7 @@ System Center Configuration Manager (也稱為 ConfgMgr 或 SCCM) 提供不同�
 
  如需支援平台的完整清單，請參閱 [System Center Configuration Manager 用戶端和裝置支援的作業系統](configs\supported-operating-systems-for-clients-and-devices.md)。
 
-##  <a name="a-namebkmkcomp2a-compare-mobile-device-management-solutions-based-on-management-functionality"></a><a name="bkmk_comp2"></a> 根據管理功能比較行動裝置管理解決方案  
+##  <a name="bkmk_comp2"></a> 根據管理功能比較行動裝置管理解決方案  
 
 |管理功能|使用 Configuration Manager 用戶端|Configuration Manager 與 Microsoft Intune (混合式)|內部部署行動裝置管理|使用 Exchange 的 Configuration Manager|  
 |------------------------------|-------------------------------------------|-------------------------------------------------------------------|-------------------------------|-----------------------------------------|  
