@@ -77,7 +77,7 @@ LTSB 是以 1606 版為基礎。 這個分支不會收到提供新功能或更�
 > [!TIP]  
 > 若要了解 System Center 2016，請參閱 [System Center 2016](https://technet.microsoft.com/system-center-docs/system-center) 文件。 這份文件也會告訴您如何取得 System Center 2016，但需要 microsoft 軟體授權合約或類似的權限。
 
-> 若要在大量授權服務中心 (VLSC) 中尋找 System Center Configuration Manager 1606 版，請前往 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx) 的 [Downloads and Keys](下載和金鑰) 索引標籤，並搜尋 "system center config"，然後選取 [System Center Config Mgr (current branch and LTSB 1606)](System Center Configuration Manager (最新分支與 LTSB 1606))。
+> 若要在大量授權服務中心 (VLSC) 中尋找 System Center Configuration Manager 1606 版，請前往 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx) 的 [Downloads and Keys]\(下載和金鑰) 索引標籤，並搜尋 "system center config"，然後選取 [System Center Config Mgr (current branch and LTSB 1606)]\(System Center Configuration Manager (最新分支與 LTSB 1606))。
 
 > 您也可以從 [TechNet Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-system-center-technical-preview) 下載 System Center 2016 評估版。
 
