@@ -86,7 +86,7 @@ ms.lasthandoff: 03/07/2017
 
     -   **來源站台帳戶：** 此帳戶可用於存取來源站台的 SMS 提供者。  
 
-        -   若是 Configuration Manager&2007; SP2 來源站台，此帳戶需要所有來源站台物件的 [讀取] 權限。  
+        -   若是 Configuration Manager 2007 SP2 來源站台，此帳戶需要所有來源站台物件的 [讀取] 權限。  
 
         -   若是 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源站台，此帳戶需要所有來源站台物件的 [讀取] 權限。您可以使用角色為基礎的系統管理將此權限授與帳戶。 如需如何使用以角色為基礎之系統管理的相關資訊，請參閱 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)。  
 
@@ -122,7 +122,7 @@ ms.lasthandoff: 03/07/2017
 
      設定用來從來源站台的 SMS Provider 收集資料的 [來源站台存取帳戶]  必須具備下列權限：  
 
-    -   若要升級 Configuration Manager&2007; 發佈點，帳戶需要 Configuration Manager&2007; 站台伺服器上 [站台] 類別的 [讀取]、[執行] 和 [刪除] 權限，才能成功從 Configuration Manager&2007; 來源站台移除發佈點。  
+    -   若要升級 Configuration Manager 2007 發佈點，帳戶需要 Configuration Manager 2007 站台伺服器上 [站台] 類別的 [讀取]、[執行] 和 [刪除] 權限，才能成功從 Configuration Manager 2007 來源站台移除發佈點。  
 
     -   若要重新指派 System Center 2012 Configuration Manager 或 System Center Configuration Manager 發佈點，帳戶在來源站台上必須具備 [站台] 物件的 [修改] 權限。 您可以使用角色為基礎的系統管理將此權限授與帳戶。 如需如何使用以角色為基礎之系統管理的相關資訊，請參閱 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)。  
 
