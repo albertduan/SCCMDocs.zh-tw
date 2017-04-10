@@ -257,14 +257,14 @@ ms.lasthandoff: 03/27/2017
 若要啟動 Windows 10 快速安裝檔案的中繼資料同步處理，您必須在 [軟體更新點內容] 中將它啟用。
 1.    在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [站台設定] > [站台]。
 2.    選取管理中心網站或獨立主要站台。
-3.    在 [首頁]  索引標籤的 [設定]  群組中，按一下 [設定站台元件] ，然後按一下 [軟體更新點] 。 在 [更新檔案] 索引標籤上，選取 [Download full files for all approved updates and express installation files for Windows 10] (下載所有核准更新的完整檔案和 Windows 10 的快速安裝檔案)。
+3.    在 [首頁]  索引標籤的 [設定]  群組中，按一下 [設定站台元件] ，然後按一下 [軟體更新點] 。 在 [更新檔案] 索引標籤上，選取 [Download full files for all approved updates and express installation files for Windows 10] \(下載所有核准更新的完整檔案和 Windows 10 的快速安裝檔案)。
 
 ### <a name="to-enable-support-for-clients-to-download-and-install-express-installation-files"></a>啟用用戶端支援以下載並安裝快速安裝檔案
 若要啟用用戶端的快速安裝檔案支援，您必須在用戶端設定的 [軟體更新] 區段中，啟用用戶端的快速安裝檔案。 這會建立新的 HTTP 接聽程式，以在您指定的連接埠上接聽下載快速安裝檔案的要求。 在您部署用戶端設定以在用戶端上啟用這項功能之後，該功能會嘗試下載目前月份的 Windows 10 累積更新與上個月更新之間的差異 (用戶端必須執行支援快速安裝檔案的 Windows 10 版本)。
-1.    在 [軟體更新點元件內容] (上一個程序) 中啟用快速安裝檔案的支援。
+1.    在 [軟體更新點元件內容] \(上一個程序) 中啟用快速安裝檔案的支援。
 2.    在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [用戶端設定]。
 3.    選取適當的用戶端設定，然後在 [首頁]索引標籤上，按一下 [內容]。
-4.    選取 [軟體更新] 頁面，在 [啟用安裝用戶端上的 Express Updates] 設定中設定 [是]，然後在 [Port used to download content for Express Updates] (連接埠, 用來下載 Express Updates 的內容) 設定中設定用戶端上的 HTTP 接聽程式所使用的連接埠。
+4.    選取 [軟體更新] 頁面，在 [啟用安裝用戶端上的 Express Updates] 設定中設定 [是]，然後在 [Port used to download content for Express Updates] \(連接埠, 用來下載 Express Updates 的內容) 設定中設定用戶端上的 HTTP 接聽程式所使用的連接埠。
 
 
 ## <a name="odata-endpoint-data-access"></a>OData 端點資料存取
@@ -279,7 +279,7 @@ ms.lasthandoff: 03/27/2017
 
 1.  移至 [系統管理] > [站台設定] > [站台]。
 2.  選取主要站台，然後按一下 [內容]。
-3.  在 [主要站台內容] 工作表的 [一般] 索引標籤上，按一下 [Enable REST endpoint for all providers on this site] (為此站台上的所有提供者啟用 REST 端點)，然後按一下 [確定]。
+3.  在 [主要站台內容] 工作表的 [一般] 索引標籤上，按一下 [Enable REST endpoint for all providers on this site] \(為此站台上的所有提供者啟用 REST 端點)，然後按一下 [確定]。
 
 在您最愛的 OData 查詢檢視器中，嘗試類似下列範例的查詢，以傳回 Configuration Manager 中的各種物件：
 
