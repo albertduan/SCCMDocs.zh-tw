@@ -46,7 +46,7 @@ ms.lasthandoff: 03/01/2017
 
 ### <a name="to-set-up-a-cloud-service-in-azure-for-a-distribution-point"></a>在 Azure 中設定發佈點的雲端服務  
 
-1.  開啟網頁瀏覽器進入 Azure 入口網站 (網址為 https://manage.windowsazure.com)，然後存取您的帳戶。  
+1.  開啟網頁瀏覽器進入 Azure 入口網站 (網址為 https://manage.windowsazure.com )，然後存取您的帳戶。  
 
 2.  按一下 [託管服務、儲存體帳戶和 CDN]，然後選取 [管理憑證]。  
 
