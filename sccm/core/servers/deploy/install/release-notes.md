@@ -2,7 +2,7 @@
 title: "版本資訊 - Configuration Manager | Microsoft Docs"
 description: "請參閱這些注意事項，以了解產品中尚未修正或 Microsoft 知識庫文章未涵蓋的緊急問題。"
 ms.custom: na
-ms.date: 3/27/27
+ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
