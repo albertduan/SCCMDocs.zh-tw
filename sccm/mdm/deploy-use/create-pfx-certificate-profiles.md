@@ -2,7 +2,7 @@
 title: "建立 PFX 憑證設定檔 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中使用 PFX 檔案，產生支援加密資料交換的使用者特定憑證。"
 ms.custom: na
-ms.date: 03/30/2017
+ms.date: 04/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3b1451edaed69a972551bd060293839aa11ec8b2
-ms.openlocfilehash: 2495cef2442706b343bac6d510946c1226b64cfc
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: 26feb0b166beb7e48cb800a5077d00dbc3eec51a
+ms.openlocfilehash: 27435316c6e47531ff989bc8956ca0c874131a0e
+ms.lasthandoff: 04/04/2017
 
 
 ---
@@ -38,7 +38,7 @@ ms.lasthandoff: 03/28/2017
 - 對於其他先決條件，請參閱[憑證設定檔先決條件](../../protect/plan-design/prerequisites-for-certificate-profiles.md)。
 
 ## <a name="pfx-certificate-profiles"></a>PFX 憑證設定檔
-System Center Configuration Manager 可讓您將個人資訊交換 (.pfx) 檔案佈建到使用者裝置。 PFX 檔案可用以產生使用者特定憑證，以支援加密的資料交換。 您可以在 Configuration Manager 中建立或匯入 PFX 憑證。
+System Center Configuration Manager 可讓您匯入，接著將個人資訊交換 (.pfx) 檔案佈建到使用者裝置。 PFX 檔案可用以產生使用者特定憑證，以支援加密的資料交換。
 
 > [!TIP]  
 >  您可以參閱 [如何在 Configuration Manager 中建立與部署 PFX 憑證設定檔](http://blogs.technet.com/b/karanrustagi/archive/2015/09/01/how-to-create-and-deploy-pfx-certificate-profiles-in-configuration-manager.aspx)一文，以取得描述此程序的逐步解說。  
@@ -59,10 +59,10 @@ System Center Configuration Manager 可讓您將個人資訊交換 (.pfx) 檔案
 
     -   **描述**：提供一段描述以說明憑證設定檔的概觀，以及可協助您在 System Center Configuration Manager 主控台中進行識別的其他相關資訊。 您最多可以使用 256 個字元。  
 
-    -   **指定您要建立的憑證設定檔類型**：針對 PFX 憑證，請選擇下列其中一項：  
+    -   **指定您要建立的憑證設定檔類型**：對於 PFX 憑證，請選擇：  
 
         -   **個人資訊交換 PKCS #12 (PFX) 設定 - 匯入**：選取此選項以匯入 PFX 憑證。  
-        -   **個人資訊交換 PKCS #12 (PFX) 設定 - 建立**：選取此選項以建立新的 PFX 憑證。
+       
 
 ### <a name="import-a-pfx-certificate"></a>匯入 PFX 憑證
 
@@ -107,28 +107,7 @@ System Center Configuration Manager 可讓您將個人資訊交換 (.pfx) 檔案
    -   $ProfileName = PFX 設定檔的名稱  
    -   ComputerName = 主機電腦的名稱   
 
-### <a name="create-a-new-pfx-certificate"></a>建立新的 PFX 憑證
 
-建立及部署 PFX 憑證時，相同的憑證將安裝在使用者註冊的所有裝置上。
-
-1. 在精靈的 [支援的平台] 頁面中，選擇將安裝此憑證的裝置平台，然後按一下 [下一步]。
-2. 在精靈的 [憑證授權單位] 頁面上，設定下列項目︰
-    - **主要站台** - 選取您要從中選取憑證授權單位的 Configuration Manager 主要站台。
-    - **憑證授權單位** - 選取主要站台之後，從清單中選取您想要的憑證授權單位，然後按一下 [下一步]。
-3. 在精靈的 [PFX 憑證] 頁面上，設定下列值︰
-    - **更新閾值 (%)** - 指定裝置要求憑證更新之前，剩餘的憑證存留時間百分比。
-    - **憑證範本名稱** - 按一下 [瀏覽] 以選取已新增至發行 CA 的憑證範本名稱。 若要成功瀏覽至憑證範本，您執行 Configuration Manager 主控台所使用的使用者帳戶必須具有憑證範本的 [讀取] 權限。 或者，輸入憑證範本的名稱。 
-    - **主體名稱格式** - 從清單中選取 Configuration Manager 自動在憑證要求中建立主體名稱的方式。 如果憑證是針對使用者，您也可以在主體名稱中包含使用者的電子郵件地址。 從 [一般名稱] 或 [完整的辨別名稱] 中選擇。
-    - **主體別名** - 指定 Configuration Manager 在憑證要求中自動建立主體別名 (SAN) 值的方式。 舉例來說，如果您選擇使用者憑證類型，您可以在主體別名中包含使用者主體名稱 (UPN)。 從下列選項進行選擇：
-        - **電子郵件地址** 
-        - **使用者主體名稱 (UPN)** 
-    - **憑證有效期間** - 
-    - **Windows 金鑰儲存提供者** (只有在您選取 Windows 做為支援的平台時才會顯示) - 
-        -     **安裝至信賴平台模組 (TPM) (若存在)**  
-        -   **安裝至信賴平台模組 (TPM)，否則便失敗** 
-        -   **安裝至 Windows Hello 企業版否則便失敗** 
-        -   **安裝至軟體金鑰儲存提供者** 
-4. 按一下 [下一步] 。
 
 ### <a name="finish-up"></a>完成
 
