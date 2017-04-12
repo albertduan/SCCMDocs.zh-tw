@@ -16,9 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
-ms.openlocfilehash: cc3e4055ce6b648e4554773518fc928cfb51c5f3
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: 3eb48942c1259d2aa1b3c200fad73b39b11c0b8c
+ms.openlocfilehash: 51560360a0cb7ecb4a2b0d7eaeb4fdd62d6afc13
+ms.lasthandoff: 03/30/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
@@ -81,6 +81,16 @@ ms.lasthandoff: 03/28/2017
 - **Microsoft Teams 現在可於 iOS 及 Android 執行 MAM**
 
   iOS 及 Android 版的 Microsoft Teams 應用程式現在可執行 Intune 行動應用程式管理 (MAM) 功能，因此您可以讓團隊在不同裝置間自由工作，同時確保對話和公司資料在每個環節都受到保護。 如需詳細資料，請參閱 Enterprise Mobility + Security 部落格上的 [Microsoft Teams 公告](https://blogs.technet.microsoft.com/enterprisemobility/2017/03/14/microsoft-teams-is-now-generally-available-and-mam-enabled-on-ios-and-android/)。
+
+### <a name="new-in-configuration-manager-technical-preview-1703"></a>Configuration Manager Technical Preview 1703 的新功能
+
+- **Apple 大量採購方案案例的其他支援**
+
+   自 Technical Preview 1703 起，您現在有下列大量採購方案 (VPP) 案例的支援︰
+
+   - 裝置授權 - 對於支援裝置授權且部署至裝置集合的應用程式，每個裝置只需要一個授權。  先前，您必須為裝置上的每個使用者使用授權。 如需詳細資訊，請參閱[將大量採購的 iOS 應用程式部署至裝置集合](/sccm/core/get-started/capabilities-in-technical-preview-1703#deploy-volume-purchased-ios-apps-to-device-collections)。
+   - 使用單一混合式租用戶的多個 VPP 權杖，其中兩個權杖皆用於管理 VPP 應用程式。
+   - 使用 VPP 教育權杖，且具備區分商業和教育權杖的功能。
 
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager 的新功能 (最新分支)
 

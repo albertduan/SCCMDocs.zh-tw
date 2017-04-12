@@ -2,7 +2,7 @@
 title: "Windows 功能的支援 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 所支援的 Windows 和網路功能。"
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 3/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 086efdd180ba3de12f84cabfa6c2abca1fe57537
-ms.openlocfilehash: 3315098f271a5b365914772943094c33f63f25c4
+ms.sourcegitcommit: 3eb48942c1259d2aa1b3c200fad73b39b11c0b8c
+ms.openlocfilehash: 39361102d77441488bf61c9cbbfb0086774e0c09
+ms.lasthandoff: 03/30/2017
 
 
 ---
@@ -29,28 +30,30 @@ ms.openlocfilehash: 3315098f271a5b365914772943094c33f63f25c4
 本主題識別一般 Windows 和網路功能的 System Center Configuration Manager 支援。  
 
 
-##  <a name="a-namebkmkbranchcachea-branchcache"></a><a name="bkmk_branchcache"></a> BranchCache  
-Windows BranchCache 已與 Configuration Manager 整合。 您可以在應用程式的部署類型上、封裝的部署上、以及針對工作序列設定 BranchCache 設定。  
+##  <a name="bkmk_branchcache"></a> BranchCache  
+若您在發佈點上啟用 BranchCache，可以搭配使用 Windows BranchCache 與 Configuration Manager，並將用戶端設為以分散式快取模式使用 BranchCache。
 
-當符合所有 BranchCache 需求時，此功能可讓位於遠端位置的用戶端從具有目前內容快取的本機用戶端取得內容。  
+您可以在應用程式的部署類型上、封裝的部署上、以及針對工作序列設定 BranchCache 設定。  
+
+當符合 BranchCache 需求時，此功能可讓位於遠端位置的用戶端從具有目前內容快取的本機用戶端取得內容。  
 
 例如，當第一台啟用 BranchCache 的用戶端電腦從設定為 BranchCache 伺服器的發佈點要求內容時，用戶端電腦會下載並快取內容。 此內容接著會提供給相同子網路上要求此相同內容的用戶端使用。
 
 這些用戶端也會快取內容。 後續相同子網路上的用戶端若用這種方式，就不需要從發佈點下載內容，之後要傳送時會透過多個用戶端發佈內容。  
 
-**支援 BranchCache 與 Configuration Manager：**  
+**支援 BranchCache 與 Configuration Manager 的需求：**  
+-   **設定發佈點：**  
+    請將 **Windows BranchCache** 功能加入設定為發佈點的站台系統伺服器。    
 
--   請將 **Windows BranchCache** 功能加入設定為發佈點的站台系統伺服器。  
-
-    -   在設定為支援 BranchCache 的伺服器上，其發佈點不需要額外的設定。  
-
+    -   在設定為支援 BranchCache 的伺服器上，其發佈點不需要額外的設定。   
     -   您無法將 Windows BranchCache 新增至雲端架構的發佈點，但雲端架構的發佈點支援針對 Windows BranchCache 設定的用戶端，透過其下載內容。  
 
-**若要讓用戶端使用 BranchCache：**  
+-   **設定用戶端：**    
+    -   可支援 BranchCache 的用戶端必須針對 BranchCache 分散式快取模式進行設定。  
+    -   必須啟用 BITS 用戶端設定的作業系統設定，才能支援 BranchCache。   <br /> <br />
+        
+    如需如何將用戶端資訊設為支援 BranchCache 的資訊，請參閱 [Configure BranchCache for Windows 10 updates](https://technet.microsoft.com/itpro/windows/manage/waas-branchcache) (設定 Windows 10 更新的 BranchCache) 中的[設定用戶端](https://technet.microsoft.com/itpro/windows/manage/waas-branchcache#configure-clients-for-branchcache)一節。
 
--   可支援 BranchCache 的用戶端必須針對 BranchCache 分散模式進行設定。  
-
--   必須啟用 BITS 用戶端設定的作業系統設定，才能支援 BranchCache。  
 
 **Configuration Manager 支援下列使用 Windows BranchCache 的用戶端作業系統：**  
 
@@ -67,7 +70,7 @@ Windows BranchCache 已與 Configuration Manager 整合。 您可以在應用程
 
  如需 BranchCache 的詳細資訊，請參閱 Windows Server 文件中的 [BranchCache for Windows](http://go.microsoft.com/fwlink/p/?LinkId=177945) 。  
 
-##  <a name="a-namebkmkworkgroupsa-computers-in-workgroups"></a><a name="bkmk_Workgroups"></a> 工作群組中的電腦  
+##  <a name="bkmk_Workgroups"></a> 工作群組中的電腦  
 Configuration Manager 會針對工作群組中的用戶端提供支援。  
 
 -   Configuration Manager 支援將用戶端從工作群組移到網域，或從網域移到工作群組。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦](../../../core/clients/deploy/deploy-clients-to-windows-computers.md)主題中的[如何在工作群組電腦上安裝 Configuration Manager 用戶端](../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientWorkgroup)。  
@@ -76,7 +79,7 @@ Configuration Manager 會針對工作群組中的用戶端提供支援。
 >  雖然工作群組中的用戶端會受到支援，但所有站台系統都必須是受支援 Active Directory 網域的成員。  
 
 
-##  <a name="a-namebkmmkdatadedupa-data-deduplication"></a><a name="bkmmk_datadedup"></a> 重複資料刪除  
+##  <a name="bkmmk_datadedup"></a> 重複資料刪除  
 Configuration Manager 支援在下列作業系統上，對發佈點使用重複資料刪除：  
 
 -   Windows Server 2012  
@@ -88,7 +91,7 @@ Configuration Manager 支援在下列作業系統上，對發佈點使用重複�
 
 如需詳細資訊，請參閱 Configuration Manager 小組部落格上的 [Configuration Manager Distribution Points and Windows Server 2012 Data Deduplication](http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx) (Configuration Manager 發佈點和 Windows Server 2012 重複資料刪除)，以及 Windows Server TechNet 文件庫中的[重複資料刪除概觀](http://technet.microsoft.com/library/hh831602.aspx)。  
 
-##  <a name="a-namebkmkdaa-directaccess"></a><a name="bkmk_DA"></a> DirectAccess  
+##  <a name="bkmk_DA"></a> DirectAccess  
 Configuration Manager 支援 Windows Server 2008 R2 中的 DirectAccess 功能，以進行站台系統伺服器與用戶端之間的通訊。  
 
 -   滿足 DirectAccess 的所有需求時，DirectAccess 即可讓網際網路上的 Configuration Manager 用戶端與指派的站台通訊，就彷彿它們位於內部網路上。  
@@ -103,13 +106,13 @@ Configuration Manager 不支援透過 DirectAccess 進行下列作業：
 
 -   站台內 Configuration Manager 站台系統伺服器之間的通訊  
 
-##  <a name="a-namebkmkdualboota-dual-boot-computers"></a><a name="bkmk_dualboot"></a> 雙重開機電腦  
+##  <a name="bkmk_dualboot"></a> 雙重開機電腦  
  Configuration Manager 無法在單一電腦上管理多個作業系統。 如果必須管理的電腦上有多個作業系統，請調整使用的探索與安裝方法，以確保 Configuration Manager 用戶端只安裝在必須管理的作業系統上。  
 
-##  <a name="a-namebkmkipv6a-internet-protocol-version-6"></a><a name="bkmk_IPv6"></a> 網際網路通訊協定第 6 版  
+##  <a name="bkmk_IPv6"></a> 網際網路通訊協定第 6 版  
  Configuration Manager 除了網際網路通訊協定第 4 版 (IPv4) 之外，也支援網際網路通訊協定第 6 版 (IPv6)，但下列例外狀況除外：  
 
-|功能|IPv6 支援的例外狀況|  
+|功能| IPv6 支援的例外狀況|  
 |--------------|-------------------------------|  
 |雲端架構的發佈點|需要 IPv4 才能支援 Microsoft Azure 與雲端式發佈點。|  
 |由 Microsoft Intune 與 Microsoft 服務連接器註冊的行動裝置|需要 IPv4 才能支援由 Microsoft Intune 與 Microsoft 服務連接器註冊的行動裝置。|  
@@ -118,10 +121,10 @@ Configuration Manager 不支援透過 DirectAccess 進行下列作業：
 |喚醒 proxy 通訊|支援用戶端喚醒 proxy 封包時需要 IPv4。|  
 |Windows CE|支援 Windows CE 裝置上的 Configuration Manager 用戶端時需要 IPv4。|  
 
-##  <a name="a-namebkmknata-network-address-translation"></a><a name="bkmk_NAT"></a> 網路位址轉譯  
+##  <a name="bkmk_NAT"></a> 網路位址轉譯  
  除非站台支援位於網際網路上的用戶端，且用戶端偵測到它已連線到網際網路，否則 Configuration Manager 不支援網路位址轉譯 (NAT)。 如需以網際網路為基礎之用戶端管理的詳細資訊，請參閱[在 System Center Configuration Manager 中規劃管理以網際網路為基礎的用戶端](../../../core/clients/deploy/plan/plan-for-managing-internet-based-clients.md)。  
 
-##  <a name="a-namebkmkstoragea-specialized-storage-technology"></a><a name="bkmk_storage"></a> 專門儲存體技術  
+##  <a name="bkmk_storage"></a> 專門儲存體技術  
  Configuration Manager 可以與硬體搭配運作，但硬體必須是安裝 Configuration Manager 元件之作業系統版本的 Windows 硬體相容性清單上已通過認證的硬體。
 
 站台伺服器角色需要 NTFS 檔案系統，以便設定目錄和檔案權限。 因為 Configuration Manager 假設它有完整的邏輯磁碟機擁有權，所以在不同電腦上執行的站台系統無法共用任何儲存技術上的邏輯磁碟分割。 不過，每一部電腦可以在共用存放裝置的相同實體磁碟分割上，使用不同的邏輯磁碟分割。  
@@ -135,9 +138,4 @@ Configuration Manager 不支援透過 DirectAccess 進行下列作業：
      此外，在已啟用 SIS 的磁碟區上也不支援 Configuration Manager 用戶端的快取。  
 
 -   **卸除式磁碟機**：Configuration Manager 不支援在卸除式磁碟機上安裝 Configuration Manager 站台系統或用戶端。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

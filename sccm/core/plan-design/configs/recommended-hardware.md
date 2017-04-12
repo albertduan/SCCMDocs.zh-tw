@@ -2,7 +2,7 @@
 title: "建議的硬體 | Microsoft Docs"
 description: "了解硬體建議，以協助您在基本部署之外調整 System Center Configuration Manager 環境的規模。"
 ms.custom: na
-ms.date: 2/28/2017
+ms.date: 3/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 63ee782a718cf4a66ffe25b022aa317f3e45784c
-ms.openlocfilehash: 6701d5f21e8511ec9cf4fe7bc5804b3e2fdc4c71
-ms.lasthandoff: 02/28/2017
+ms.sourcegitcommit: 8d3791bcf737e63308155787ed23c9cc84e7e99c
+ms.openlocfilehash: fd9f5b25a1e40b5f0df823dcbe9c13a77c534c59
+ms.lasthandoff: 03/31/2017
 
 
 ---
@@ -168,14 +168,12 @@ ms.lasthandoff: 02/28/2017
 
  **PowerShell 支援：**  
 
- 當您在執行 Configuration Manager 主控台的電腦上安裝 PowerShell 支援時，可以在該電腦上執行 PowerShell Cmdlet 來管理 Configuration Manager。 支援下列最低版本：  
+ 當您在執行 Configuration Manager 主控台的電腦上安裝 PowerShell 支援時，可以在該電腦上執行 PowerShell Cmdlet 來管理 Configuration Manager。
 
--   PowerShell 3.0  
+ - 支援 PowerShell 3.0 或更新版本
 
--   PowerShell 4.0  
+除了 PowerShell 之外，也支援 Windows Management Framework (WMF) 3.0 或更新版本。   
 
-除了 PowerShell 之外，也支援 Windows Management Framework (WMF) 3.0 和 4.0。   
-您可以在安裝 Configuration Manager 主控台之前或之後，安裝 PowerShell。  
 
 ##  <a name="bkmk_ScaleLab"></a> 實驗室部署  
  針對 Configuration Manager 實驗室和測試部署，請使用下列最低硬體建議。 這些建議適用於所有站台類型，最多 100 個用戶端：  

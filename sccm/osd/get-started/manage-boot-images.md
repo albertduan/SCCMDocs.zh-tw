@@ -17,9 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4edf7d09d39fa22fb5812aecc88febd763001eba
-ms.openlocfilehash: 369aa062d0f38eedebc0a7c351a7ce67b53d199b
-ms.lasthandoff: 02/21/2017
+ms.sourcegitcommit: 70034213442f4c3d5a28ab65c2ceb51aa64320ad
+ms.openlocfilehash: 207975538b63390fb5789b19c519db89db62e0a5
+ms.lasthandoff: 03/31/2017
 
 
 ---
@@ -29,19 +29,41 @@ ms.lasthandoff: 02/21/2017
 
 Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.microsoft.com/library/windows/hardware/dn938389%28v=vs.85%29.aspx) 映像，在作業系統部署時使用。 開機映像用來以 WinPE 啟動電腦，WinPE 是最低需求的作業系統，內含有限的元件和服務可讓目的地電腦準備好進行 Windows 安裝。  使用以下各節管理開機映像。
 
-##  <a name="a-namebkmkbootimagedefaulta-default-boot-images"></a><a name="BKMK_BootImageDefault"></a> 預設開機映像  
- Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台，另一種支援 x64 平台。 這些映像儲存於：\\\\<伺服器名稱>\SMS_<站台碼>\osd\boot\\<*x64*> 或 <*i386*>。  
+##  <a name="BKMK_BootImageDefault"></a> 預設開機映像  
+自 1702 版起，在您升級 Windows ADK 版本並升級至最新版的 Configuration Manager 時，預設開機映像即會更新。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端，且所有自訂皆維持不變。 不會更新自訂開機映像。 在 1702 版之前，您必須手動將開機映像更新為使用新版的 Windows ADK。
 
- 當您將 Configuration Manager 升級到新版本時，Configuration Manager 可能會將此位置中的預設開機映像，取代為更新過的檔案，包括以預設開機映像為依據的自訂開機映像。 更新開機映像時，您在站台的預設開機映像上設定的選項 (例如選擇性元件) 會一併移轉過去 (包括驅動程式)。 來源驅動程式物件 (包括驅動程式來源檔案) 必須有效，否則驅動程式將不會新增到站台上已更新的開機映像中。 其他不是以預設開機映像為基礎的開機映像，即使是依據相同的 Windows ADK 版本，也不會進行更新。 更新開機映像之後，您將必須把它們重新發佈到發佈點。 所有使用開機映像的媒體都必須重新建立。 如果您不想要自動更新您的自訂/預設開機映像，則應該將它們存放在不同的位置。  
+當您使用安裝程序執行將 Configuration Manager 升級至新的主要版本時，Configuration Manager 可能會更新預設開機映像，並依據預設位置儲存的預設開機映像更新自訂開機映像。
 
- 系統會將 Configuration Manager 追蹤記錄檔工具加入您新增至**軟體程式庫**的所有開機映像中。 當您在 WinPE 中時，可以從命令提示字元輸入 **CMTrace** 來啟動 Configuration Manager 追蹤記錄檔工具。  
+更新開機映像時，您在站台的預設開機映像上設定的選項 (例如選擇性元件) 會一併移轉過去 (包括驅動程式)。 來源驅動程式物件 (包括驅動程式來源檔案) 必須有效，否則驅動程式將不會新增到站台上已更新的開機映像中。 其他不是以預設開機映像為基礎的開機映像，即使是依據相同的 Windows ADK 版本，也不會進行更新。 更新開機映像之後，您將必須把它們重新發佈到發佈點。 所有使用開機映像的媒體都必須重新建立。 如果您不想要自動更新您的自訂/預設開機映像，則應該將它們存放在不同的位置。  
 
-##  <a name="a-namebkmkbootimagecustoma-customize-a-boot-image"></a><a name="BKMK_BootImageCustom"></a> 自訂開機映像  
+
+## <a name="BKMK_BootImageDefault"></a> 預設開機映像
+Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台，另一種支援 x64 平台。 這些映像儲存於：\\\\<伺服器名稱>\SMS_<站台碼>\osd\boot\\<*x64*> 或 <*i386*>。 預設開機映像會根據您所採取的動作更新或重新產生。
+
+**使用 [更新與服務] 安裝最新版的 Configuration Manager** 自 1702 版開始，在您升級 Windows ADK 版本並使用 [更新與服務] 安裝最新版的 Configuration Manager 時，Configuration Manager 會重新產生預設開機映像。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端、驅動程式及自訂等等。不會修改自訂開機映像。 
+
+在 1702 版之前，Configuration Manager 會使用用戶端元件、驅動程式、自訂等更新現有的開機映像 (boot.wim)，但不會使用 Windows ADK 的最新版 Windows PE。 您必須手動將開機映像修改為使用新版的 Windows ADK。
+
+**從 Configuration Manager 2012 升級至 Configuration Manager 最新分支 (CB)** 使用安裝程序將 Configuration Manager 2012 升級至 Configuration Manager CB 時，Configuration Manager 會重新產生預設開機映像。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端，且所有自訂皆維持不變。 不會修改自訂開機映像。
+
+**使用開機映像更新發佈點**：當您在 Configuration Manager 主控台中從**開機映像**節點使用**更新發佈點**動作時，Configuration Manager 會使用用戶端元件、驅動程式及自訂等更新預設開機映像，但不會使用 Windows ADK 的最新版 Windows PE。 不會修改自訂開機映像。
+
+此外，請於進行任何上述動作時考慮下列項目︰
+- 來源驅動程式物件 (包括驅動程式來源檔案) 必須有效，否則驅動程式將不會新增到站台的開機映像。
+- 開機映像若非以預設開機映像為基礎，即使使用相同的 Windows PE 版本，也不會進行修改。
+- 您必須將修改的開機映像重新發佈至發佈點。
+- 您必須重新建立任何使用已修改開機映像的媒體。
+- 如果您不想要自動更新您的自訂/預設開機映像，請勿將其存放在預設位置。
+
+> [!NOTE]
+> Configuration Manager 追蹤記錄檔工具會新增至您新增至**軟體程式庫**的所有開機映像中。 當您在 Windows PE 中時，可以從命令提示字元鍵入 **CMTrace** 來啟動 Configuration Manager 追蹤記錄檔工具。  
+
+##  <a name="BKMK_BootImageCustom"></a> 自訂開機映像  
  如果開機映像是以支援的 Windows ADK 版本中的 Windows PE 版本為基礎，您可以在 Configuration Manager 主控台自訂開機映像或[修改開機映像](#BKMK_ModifyBootImages)。 當站台升級為新版本並安裝新版 Windows ADK 時，自訂開機映像 (不位於預設的開機映像位置) 並不會更新成使用新版 Windows ADK。 發生這種情況時，您將無法再於 Configuration Manager 主控台中自訂開機映像。 不過，它們將如升級之前一樣繼續運作。  
 
  當開機映像是以和站台上安裝之 Windows ADK 版本不同的版本為基礎時，您必須使用其他方法來自訂開機映像，例如使用 Windows AIK 和 Windows ADK 所含的「部署映像服務與管理」(DISM) 命令列工具。 如需詳細資訊，請參閱[自訂開機映像](customize-boot-images.md)。  
 
-##  <a name="a-namebkmkaddbootimagesa-add-a-boot-image"></a><a name="BKMK_AddBootImages"></a> 新增開機映像  
+##  <a name="BKMK_AddBootImages"></a> 新增開機映像  
 
  在站台安裝期間，Configuration Manager 會自動新增以支援的 Windows ADK 版本中的 WinPE 版本為基礎的開機映像。 依據 Configuration Manager 的版本，您或許可以新增以支援的 Windows ADK 版本中不同的 WinPE 版本為基礎的開機映像。  當您嘗試新增包含不受支援 WinPE 版本的開機映像時，會發生錯誤。  
 
@@ -96,7 +118,7 @@ Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.mi
 > [!NOTE]  
 >  當您在 Configuration Manager 主控台中選取 開機映像 節點時，大小 (KB)  欄會顯示每個開機映像解壓縮後的大小。 不過，當 Configuration Manager 透過網路傳送開機映像時，它會傳送映像的壓縮複本，而這個複本的大小通常遠低於 [大小 (KB)] 欄中列出的大小。  
 
-##  <a name="a-namebkmkdistributebootimagesa-distribute-boot-images-to-a-distribution-point"></a><a name="BKMK_DistributeBootImages"></a> 將開機映像發佈至發佈點  
+##  <a name="BKMK_DistributeBootImages"></a> 將開機映像發佈至發佈點  
  開機映像發佈至發佈點的方式，與您發佈其他內容的方式相同。 在大部分情況下，您必須在部署作業系統之前，以及建立媒體之前，將開機映像發佈至至少一個發佈點。  
 
 > [!NOTE]  
@@ -110,7 +132,7 @@ Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.mi
 
  如需發佈開機映像的步驟，請參閱 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)。  
 
-##  <a name="a-namebkmkmodifybootimagesa-modify-a-boot-image"></a><a name="BKMK_ModifyBootImages"></a> 修改開機映像  
+##  <a name="BKMK_ModifyBootImages"></a> 修改開機映像  
  您可以新增或移除映像的裝置驅動程式，或編輯與開機映像相關聯的內容。 新增或移除的裝置驅動程式可能包含網路介面卡或大量儲存裝置驅動程式。 修改開機映像時，請考慮下列因素：  
 
 -   您必須先將裝置驅動程式匯入裝置驅動程式類別目錄，並予以啟用，才能將它們新增至開機映像。  
@@ -212,7 +234,7 @@ Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.mi
 
 6.  設定這些內容之後，請按一下 [確定] 。  
 
-##  <a name="a-namebkmkbootimagepxea-configure-a-boot-image-to-deploy-from-a-pxe-enabled-distribution-point"></a><a name="BKMK_BootImagePXE"></a> 設定開機映像以從支援 PXE 的發佈點部署  
+##  <a name="BKMK_BootImagePXE"></a> 設定開機映像以從支援 PXE 的發佈點部署  
  您必須先設定開機映像，從支援 PXE 的發佈點部署，才能使用開機映像進行 PXE 作業系統部署。  
 
 #### <a name="to-configure-a-boot-image-to-deploy-from-a-pxe-enabled-distribution-point"></a>設定開機映像以從支援 PXE 的發佈點部署  
@@ -232,7 +254,7 @@ Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.mi
 
 6.  設定這些內容之後，請按一下 [確定] 。  
 
-##  <a name="a-namebkmkbootimagelanguagea-configure-multiple-languages-for-boot-image-deployment"></a><a name="BKMK_BootImageLanguage"></a> 設定支援多個語言的開機映像部署  
+##  <a name="BKMK_BootImageLanguage"></a> 設定支援多個語言的開機映像部署  
  開機映像與語言無關。 如果您加入來自 Windows PE 選用元件的適當語言支援，並且設定正確的工作順序變數以指定要顯示的語言，您就可以在 WinPE 中使用開機映像以顯示多種語言的工作順序。 不論 Configuration Manager 版本為何，您部署的作業系統語言都與 WinPE 中所顯示的語言無關。 顯示給使用者的語言是根據下列條件決定：  
 
 -   使用者從現有作業系統執行工作順序時，Configuration Manager 會自動使用為使用者所設定的語言。 工作順序因為強制部署期限而自動執行時，Configuration Manager 會使用作業系統的語言。  

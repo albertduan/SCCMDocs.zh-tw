@@ -2,7 +2,7 @@
 title: "1702 新版 |Microsoft Docs"
 description: "下列各節提供 System Center Configuration Manager 1702 版中的變更和推出的新功能。"
 ms.custom: na
-ms.date: 3/28/2017
+ms.date: 3/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.technology:
@@ -14,9 +14,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 15debff961c872ed90c1365d4f8e9946fbc70cdc
-ms.openlocfilehash: 10e0c2108594253a8e6cb39bc47f84c72c073e6c
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 70034213442f4c3d5a28ab65c2ceb51aa64320ad
+ms.openlocfilehash: 9332278e960051caf6875f45212af644e2ea7890
+ms.lasthandoff: 03/31/2017
 
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 1702 版的新功能
@@ -28,9 +28,9 @@ System Center Configuration Manager 1702 更新最新分支，是先前安裝為
 > [!TIP]  
 > 若要安裝新的站台，您必須使用 Configuration Manager 的基準版本。  
 >  深入了解：    
->  -   [安裝新的站台](https://technet.microsoft.com/library/mt590197.aspx)  
->  -   [在站台安裝更新](https://technet.microsoft.com/library/mt607046.aspx)  
->  -   [基準和更新版本](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
+>   - [安裝新的站台](https://technet.microsoft.com/library/mt590197.aspx)  
+>   - [在站台安裝更新](https://technet.microsoft.com/library/mt607046.aspx)  
+>   - [基準和更新版本](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)  
 
 下列各節提供 Configuration Manager 1702 版中的變更和推出的新功能詳細資料。  
 
@@ -216,6 +216,8 @@ Windows 10 Creators Update 引進一個簡單的轉換工具，能夠為支援 U
 ### <a name="default-boot-image-source-path-can-no-longer-be-changed"></a>預設開機映像來源路徑已不再可變更
 預設開機映像會由 Configuration Manager 管理，您已不再能夠於 Configuration Manager 主控台中或使用 Configuration Manager SDK 來變更預設開機映像來源路徑。 您可以繼續設定自訂開機映像的自訂來源路徑。
 
+### <a name="default-boot-images-are-regenerated-after-upgrading-configuration-manager-to-a-new-version"></a>將 Configuration Manager 升級至新版本後，預設開機映像即會重新產生
+自這一版起，在您升級 Windows ADK 版本並使用 [更新與服務] 安裝最新版的 Configuration Manager 時，Configuration Manager 會重新產生預設開機映像。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端、驅動程式及自訂等等。不會修改自訂開機映像。 如需詳細資料，請參閱[管理開機映像](/sccm/osd/get-started/manage-boot-images#BKMK_BootImageDefault)。
 
 ## <a name="software-updates"></a>軟體更新
 
@@ -267,16 +269,6 @@ Windows 10 Creators Update 引進一個簡單的轉換工具，能夠為支援 U
 - [Android for Work 的電子郵件設定檔](/sccm/mdm/deploy-use/create-exchange-activesync-profiles)
 - [Android for Work 的合規性政策](/sccm/mdm/deploy-use/create-compliance-policy)
 
-
-### <a name="improvements-to-certificate-profiles"></a>對憑證設定檔的改進
-
-您現在可以建立支援 S/MIME 的 PFX 憑證設定檔，並將它部署至使用者。  此憑證可接著在使用者已註冊的所有 iOS 裝置上，用來進行 S/MIME 加密和簽署。
-如需詳細資訊，請參閱[如何建立 PFX 憑證設定檔](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)和 [Exchange ActiveSync 電子郵件設定檔](/sccm/mdm/deploy-use/create-exchange-activesync-profiles)。
-
-此外，您現在可以在多個憑證登錄點站台系統角色上指定多個憑證授權單位 (CA)，然後在憑證設定檔中指派由哪些 CA 處理要求。
-如需詳細資訊，請參閱[憑證基礎結構](/sccm/protect/deploy-use/certificate-infrastructure)。
-
-這些新的憑證功能目前為發行前版本，有可能會變更。
 
 ### <a name="deploy-volume-purchased-ios-apps-to-device-collections"></a>將大量採購的 iOS 應用程式部署至裝置集合
 

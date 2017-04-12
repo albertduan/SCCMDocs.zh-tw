@@ -2,7 +2,7 @@
 title: "用戶端對等快取 | System Center Configuration Manager"
 description: "使用 System Center Configuration Manager 部署內容時，針對用戶端內容來源位置使用對等快取。"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 4/4/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 5298f1c836c1a872862b0e972180ac0c99c59751
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 26feb0b166beb7e48cb800a5077d00dbc3eec51a
+ms.openlocfilehash: dcd05d7d120f8997562da7d92b38c8b52a512357
+ms.lasthandoff: 04/04/2017
 
 ---
 
@@ -70,7 +70,7 @@ ms.lasthandoff: 03/27/2017
 從 1702 版開始，您可以使用下列三份報告來檢視對等快取使用情況。 在主控台中，移至 [監視] >  [報告] > [報告]。 所有報告的類型都是 [軟體發佈內容]：
 1.  **對等快取來源內容拒絕**：  
 您可以使用此報告來了解界限群組中的對等快取來源拒絕內容要求的頻率。
- - **已知問題︰**向下鑽研 *MaxCPULoad* 或 *MaxDiskIO* 之類的結果時，您可能會收到錯誤，暗示找不到報告或詳細資料。 若要解決這個問題，請使用下列兩種報告，直接顯示結果。 
+ - **已知問題︰**向下鑽研 *MaxCPULoad* 或 *MaxDiskIO* 之類的結果時，您可能會收到錯誤，暗示找不到報告或詳細資料。 若要解決這個問題，請使用下列兩種報告，直接顯示結果。
 
 2. **對等快取來源內容拒絕條件**：  
 您可以使用此報告來了解所指定界限群組或拒絕類型的詳細拒絕資料。 您可以指定
@@ -87,9 +87,11 @@ ms.lasthandoff: 03/27/2017
 
 
 ## <a name="requirements-and-considerations-for-peer-cache"></a>對等快取的需求與考量
-- 在任何支援做為 Configuration Manager 用戶端的 Windows 作業系統上都支援對等快取。 非 Windows 作業系統不支援對等快取。
+-   在任何支援做為 Configuration Manager 用戶端的 Windows 作業系統上都支援對等快取。 非 Windows 作業系統不支援對等快取。
 
-- 用戶端只能從其目前界限群組中的對等快取用戶端傳輸內容。
+-   用戶端只能從其目前界限群組中的對等快取用戶端傳輸內容。
+
+-   用戶端會使用對等快取所在的每個站台都必須設有[網路存取帳戶](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#a-namebkmknaaa-network-access-account)。 對等快取來源電腦會使用該帳戶驗證對等的下載要求，且該帳戶只需要網域使用者權限來達到此目的。
 
 -     因為目前的對等快取內容來源界限是根據該用戶端的上次硬體清查提交所決定，所以，若用戶端漫遊至位於不同界限群組的網路位置，基於對等快取的目的，仍然可能被視為是其先前界限群組的成員。 這會導致提供給用戶端的對等快取內容來源不在其中繼網路位置上。 我們建議您排除有此設定傾向的用戶端，不要讓它以對等快取來源的身分參與。
 
