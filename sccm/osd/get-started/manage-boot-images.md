@@ -17,9 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 70034213442f4c3d5a28ab65c2ceb51aa64320ad
-ms.openlocfilehash: 207975538b63390fb5789b19c519db89db62e0a5
-ms.lasthandoff: 03/31/2017
+ms.sourcegitcommit: 0cf2ac6440588ccf4848baa7a195f78e8675447d
+ms.openlocfilehash: c6a1eb9ccaee45eb242fb320cb6b492d1a39d349
+ms.lasthandoff: 04/11/2017
 
 
 ---
@@ -29,18 +29,10 @@ ms.lasthandoff: 03/31/2017
 
 Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.microsoft.com/library/windows/hardware/dn938389%28v=vs.85%29.aspx) 映像，在作業系統部署時使用。 開機映像用來以 WinPE 啟動電腦，WinPE 是最低需求的作業系統，內含有限的元件和服務可讓目的地電腦準備好進行 Windows 安裝。  使用以下各節管理開機映像。
 
-##  <a name="BKMK_BootImageDefault"></a> 預設開機映像  
-自 1702 版起，在您升級 Windows ADK 版本並升級至最新版的 Configuration Manager 時，預設開機映像即會更新。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端，且所有自訂皆維持不變。 不會更新自訂開機映像。 在 1702 版之前，您必須手動將開機映像更新為使用新版的 Windows ADK。
-
-當您使用安裝程序執行將 Configuration Manager 升級至新的主要版本時，Configuration Manager 可能會更新預設開機映像，並依據預設位置儲存的預設開機映像更新自訂開機映像。
-
-更新開機映像時，您在站台的預設開機映像上設定的選項 (例如選擇性元件) 會一併移轉過去 (包括驅動程式)。 來源驅動程式物件 (包括驅動程式來源檔案) 必須有效，否則驅動程式將不會新增到站台上已更新的開機映像中。 其他不是以預設開機映像為基礎的開機映像，即使是依據相同的 Windows ADK 版本，也不會進行更新。 更新開機映像之後，您將必須把它們重新發佈到發佈點。 所有使用開機映像的媒體都必須重新建立。 如果您不想要自動更新您的自訂/預設開機映像，則應該將它們存放在不同的位置。  
-
-
 ## <a name="BKMK_BootImageDefault"></a> 預設開機映像
 Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台，另一種支援 x64 平台。 這些映像儲存於：\\\\<伺服器名稱>\SMS_<站台碼>\osd\boot\\<*x64*> 或 <*i386*>。 預設開機映像會根據您所採取的動作更新或重新產生。
 
-**使用 [更新與服務] 安裝最新版的 Configuration Manager** 自 1702 版開始，在您升級 Windows ADK 版本並使用 [更新與服務] 安裝最新版的 Configuration Manager 時，Configuration Manager 會重新產生預設開機映像。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端、驅動程式及自訂等等。不會修改自訂開機映像。 
+**使用 [更新與服務] 安裝最新版的 Configuration Manager** 自 1702 版開始，在您升級 Windows ADK 版本並使用 [更新與服務] 安裝最新版的 Configuration Manager 時，Configuration Manager 會重新產生預設開機映像。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端、驅動程式及自訂等等。不會修改自訂開機映像。
 
 在 1702 版之前，Configuration Manager 會使用用戶端元件、驅動程式、自訂等更新現有的開機映像 (boot.wim)，但不會使用 Windows ADK 的最新版 Windows PE。 您必須手動將開機映像修改為使用新版的 Windows ADK。
 
