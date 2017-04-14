@@ -16,9 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 88a72259bca79f2fa985e86cb57ec7a974bad24d
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: d7b13f3dea5a3ae413ca6b8150ec24e1632a4d4d
+ms.openlocfilehash: e63b639836bc38a030a051e80db4b057ab75a0b0
+ms.lasthandoff: 04/12/2017
 
 
 ---
@@ -74,7 +74,7 @@ ms.lasthandoff: 03/27/2017
 
 
 ## <a name="configure-pre-cache-content"></a>設定預先快取內容
-自版本 1702 起，針對可用的部署和工作順序，您可以選擇使用預先快取功能，讓用戶端在使用者安裝內容之前只下載相關內容。
+從 1702 版開始，針對工作順序的可用部署，您可以選擇使用預先快取功能，讓用戶端在使用者安裝內容之前只下載相關內容。
 > [!TIP]  
 > 隨版本 1702 引進的預先快取是發行前版本功能。 若要啟用它，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/pre-release-features)。
 

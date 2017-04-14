@@ -2,7 +2,7 @@
 title: "使用 System Center Configuration Manager 建立預先設置的媒體 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中建立預先設置的媒體，以簡化數個案例中的 Windows 部署。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 56cfc5837adf986e5d2bf4a73ef9de3b1f60b4f9
+ms.sourcegitcommit: ae9488a34c6b1e04397c4875de4b3bc607f7116c
+ms.openlocfilehash: 33abf3853d912d423e427db4d35fb4a16167164e
+ms.lasthandoff: 04/11/2017
 
 
 ---
@@ -36,7 +37,7 @@ System Center Configuration Manager 中預先設置的媒體是 Windows 映像�
 
  在電腦套用預先設置媒體後第一次啟動時，電腦會啟動 Windows PE 並連線至管理點，尋找能完成作業系統部署程序的工作順序。 您可以指定在預先設置的媒體中加入應用程式、封裝及驅動程式封裝。 部署使用預先設置媒體的工作順序時，精靈會先檢查本機工作順序快取中的有效內容，如果找不到有效內容，或者內容已經過修改，則精靈會從發佈點下載內容。  
 
-##  <a name="a-namebkmkcreateprestagedmediaa-how-to-create-prestaged-media"></a><a name="BKMK_CreatePrestagedMedia"></a> 如何建立預先設置的媒體  
+##  <a name="BKMK_CreatePrestagedMedia"></a> 如何建立預先設置的媒體  
  使用 [建立工作順序媒體精靈] 建立預先設置的媒體之前，請先確定符合下列所有條件：  
 
 |工作|說明|  
@@ -47,7 +48,7 @@ System Center Configuration Manager 中預先設置的媒體是 Windows 映像�
 |目的電腦上的硬碟機|目的地電腦的硬碟機必須先格式化，再將預先設置的媒體分段安裝至電腦的硬碟機上。 如果在套用媒體時硬碟機未進行格式化，部署作業系統的工作順序在嘗試啟動目的地電腦時將會失敗。|  
 
 > [!NOTE]  
->  [建立工作順序媒體精靈] 會在媒體上設定下列工作順序變數條件： **_SMSTSMedia = OEMMedia**。 您可以在工作順序中使用這個條件。  
+>  [建立工作順序媒體精靈] 會在媒體上設定下列工作順序變數條件：**_SMSTSMediaType = OEMMedia**。 您可以在工作順序中使用這個條件。  
 
  利用下列程序建立預先設置的媒體。  
 
@@ -143,9 +144,4 @@ System Center Configuration Manager 中預先設置的媒體是 Windows 映像�
 
 ## <a name="next-steps"></a>後續步驟
 [部署企業作業系統的案例](scenarios-to-deploy-enterprise-operating-systems.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

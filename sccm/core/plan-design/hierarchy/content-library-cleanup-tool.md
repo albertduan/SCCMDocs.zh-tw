@@ -2,7 +2,7 @@
 title: "內容庫清理工具 | Microsoft Docs"
 description: "使用內容庫清理工具，將不再和 System Center Configuration Manager 部署相關聯的孤立內容移除。"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 4/7/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
-ms.openlocfilehash: 718e9b9eaa2dace2c72b031c244c72ef5f7e7b2f
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
+ms.openlocfilehash: 76e6772bdd5cbd32d525e728f6ebc988b045da78
+ms.lasthandoff: 04/08/2017
 
 ---
 # <a name="the-content-library-cleanup-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager 的內容庫清理工具
@@ -74,7 +74,7 @@ ms.lasthandoff: 03/29/2017
 |**/delete**  |**選擇性** </br> 當您要從發佈點刪除內容時，請使用此參數。 刪除內容之前，您會收到提示。 </br></br> 未使用此參數時，工具會記錄要刪除之內容的相關結果，但不會從發佈點刪除內容。 </br></br> 範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com /delete*** |
 | **/q**       |**選擇性** </br> 此參數以會隱藏所有提示 (例如要刪除內容的提示) 的無訊息模式來執行此工具，而且不會自動開啟記錄檔。 </br></br> 範例︰***ContentLibraryCleanup.exe /q /dp server1.contoso.com*** |
 | **/dp &lt;發佈點 FQDN>**  | **必要** </br> 指定您要清除之發佈點的完整網域名稱 (FQDN)。 </br></br> 範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com***|
-| **/ps &lt;主要站台 FQDN>**       | 從主要站台的發佈點清除內容時為**選擇性**。</br>從次要站台的發佈點清除內容時為**必要**。 </br></br> 指定發佈點所屬之主要站台的 FQDN，或發佈點在次要站台時之父主要站台的 FQDN。 </br></br> 範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com /ps siteserver1.contoso.com*** |
+| **/ps &lt;主要站台 FQDN>**       | 從主要站台的發佈點清除內容時為**選擇性**。</br>從次要站台的發佈點清除內容時為**必要**。 </br></br>連線到父主要站台，以對 SMS_Provider 執行的工具。 這些查詢可讓工具判斷發佈點上應該要有什麼內容，以便識別孤立且可移除的內容。 因為無法直接從次要站台取得必要的詳細資料，所以必須為位於次要站台的發佈點建立父主要站台的連線。</br></br> 指定發佈點所屬之主要站台的 FQDN，或發佈點在次要站台時之父主要站台的 FQDN。 </br></br> 範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com /ps siteserver1.contoso.com*** |
 | **/sc &lt;主要站台碼>**  | 從主要站台的發佈點清除內容時為**選擇性**。</br>從次要站台的發佈點清除內容時為**必要**。 </br></br> 指定發佈點所屬之主要站台的站台碼，或發佈點在次要站台時之父主要站台的站台碼。</br></br> 範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com /sc ABC*** |
 | **/log <log file directory>**       |**選擇性** </br> 指定工具要寫入記錄檔的位置。 這可以是本機磁碟機或在網路共用上。</br></br> 在執行此工具的電腦上，不使用這個參數時，記錄檔會位在使用者的暫存資料夾中。</br></br> 本機磁碟機的範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com /log C:\Users\Administrator\Desktop*** </br></br>網路共用的範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com /log \\&lt;共用>\&lt;資料夾>***|
 

@@ -2,7 +2,7 @@
 title: "服務連接工具 | Microsoft Docs"
 description: "了解這個工具可讓您連線到 Configuration Manager 雲端服務手動上傳使用資訊。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 4/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 7a9c5bb9890b00cf3485998aa46286c890429cc0
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
+ms.openlocfilehash: 0da80521bf223a765c3731f8ad59623d85a4c9fa
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -26,9 +26,9 @@ ms.lasthandoff: 03/27/2017
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-如果您的 Configuration Manager 站台系統伺服器未連線到網際網路，但您仍想要擁有最新的 Configuration Manager 更新，請使用 **服務連接工具** 。  
+在您的服務連接點處於離線模式時，或在 Configuration Manager 站台系統伺服器未連線到網際網路時，使用**服務連線工具**。 這個工具可以協助您讓站台隨時取得 Configuration Manager 的最新更新。  
 
- 這個工具可讓您連線到 Configuration Manager 雲端服務來手動上傳您階層的使用資訊，以及下載更新。 必須先上傳使用資料，才能啟用雲端服務來提供您部署的正確更新。  
+執行時，工具會手動連線到 Configuration Manager 雲端服務以上傳您階層的使用資訊，以及下載更新。 必須先上傳使用資料，才能啟用雲端服務來提供您部署的正確更新。  
 
 ## <a name="prerequisites-for-using-the-service-connection-tool"></a>使用服務連接工具的必要條件
 必要條件和已知問題如下。
@@ -85,11 +85,11 @@ ms.lasthandoff: 03/27/2017
 ### <a name="overview"></a>概觀
 **使用服務連接工具有三個主要步驟：**  
 
-1.  **準備**：這個步驟會將使用方式資料放入 .cab 檔，並將它儲存在 USB 磁碟機 (或指定的其他傳輸位置)。  
+1.  **準備**：此步驟會在裝載服務連接點的電腦上執行。 工具在執行時，會將使用方式資料放入 .cab 檔，並將其儲存在 USB 磁碟機 (或指定的其他傳輸位置)。  
 
-2.  **連線**：在這個步驟中，您將於連線到網際網路的遠端電腦上執行工具，以上傳資料與下載更新。  
+2.  **連線**：在這個步驟中，您將於連線到網際網路的遠端電腦上執行工具，以上傳使用方式資料與下載更新。  
 
-3.  **匯入**：這個步驟會將 Configuration Manager 的更新匯入站台，供您之後從 Configuration Manager 主控台檢視和安裝更新。  
+3.  **重要**：此步驟會在裝載服務連接點的電腦上執行。 執行時，工具會匯入您的下載並將其新增到您的站台，以便您從 Configuration Manager 主控台檢視及安裝這些更新。  
 
 從版本 1606 開始，當您連接到 Microsoft 時，可以一次上傳多個 .cab 檔案 (每一個從不同階層)，並指定 Proxy 伺服器和 Proxy 伺服器的使用者。   
 

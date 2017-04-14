@@ -16,8 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3b387d78e03cc2d1c535e52016d2de4945328f72
-ms.openlocfilehash: c51cf3b3b7563a82db40405677c2edfb6de47cf1
+ms.sourcegitcommit: d7b13f3dea5a3ae413ca6b8150ec24e1632a4d4d
+ms.openlocfilehash: 7496c8bf11d058c94bc36fd28e9557b6470b61f1
+ms.lasthandoff: 04/12/2017
 
 ---
 # <a name="monitor-content-you-have-distributed-with-system-center-configuration-manager"></a>監視您已使用 System Center Configuration Manager 所發佈的內容
@@ -35,7 +36,7 @@ ms.openlocfilehash: c51cf3b3b7563a82db40405677c2edfb6de47cf1
 > [!NOTE]  
 >  Configuration Manager 僅監視位於內容庫中之發佈點上的內容。 不會監視儲存在套件或自訂共用中發佈點上的內容。  
 
-##  <a name="a-namebkmkcontentstatusa-content-status-monitoring"></a><a name="BKMK_ContentStatus"></a> 內容狀態監視  
+##  <a name="BKMK_ContentStatus"></a> 內容狀態監視  
  [監視]  工作區中的 [內容狀態]  節點會提供有關內容套件的資訊。 在 Configuration Manager 主控台中，您可以檢閱下列這類資訊：  
 
 -   套件名稱。  
@@ -151,12 +152,12 @@ ms.openlocfilehash: c51cf3b3b7563a82db40405677c2edfb6de47cf1
 4.  在結果窗格中，按一下 [詳細資料]  索引標籤。 發佈點的狀態資訊隨即顯示。  
 
 ## <a name="client-data-sources-dashboard"></a>用戶端資料來源儀表板
-從 1610 版開始，您即可使用新的 [用戶端資料來源] 儀表板，協助了解環境中[對等快取](/sccm/core/plan-design/hierarchy/client-peer-cache)的使用情況。 當用戶端使用「對等快取」下載內容，並將該資訊回報給站台之後，主控台才會顯示這個儀表板。 最多可能需要 24 小時。
+從 1610 版開始，您即可使用新的 [用戶端資料來源] 儀表板，協助了解環境中[對等快取](/sccm/core/plan-design/hierarchy/client-peer-cache)的使用情況。 儀表板會在用戶端下載內容，並將該資訊回報到站台時，開始顯示資料。 最多可能需要 24 小時。
 
 > [!TIP]  
-> 在版本 1610，對等快取和用戶端資料來源儀表板都是發行前版本功能。 若要啟用它們，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)。
+> 在版本 1610，對等快取和用戶端資料來源儀表板都是發行前版本功能。 若要啟用它們，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)。 **用戶端資料來源**儀表板只會在您啟用後顯示。 在您啟用後。最多可能需要 24 小時的時間開始顯示資料。 
 
-在主控台中，前往 [監視] > [用戶端狀態] > [用戶端資料來源]。 您可以在這裡選取一個要套用到儀表板的時段。 然後，在顯示中，您可以選取您想要檢視資訊的界限群組或套件。 檢視資訊時，您可以將滑鼠游標暫留在介面上，以查看有關不同內容或原則來源的更多詳細資料。
+在主控台中，前往 [監視] > [發佈狀態] > [用戶端資料來源]。 您可以在這裡選取一個要套用到儀表板的時段。 然後，在顯示中，您可以選取您想要檢視資訊的界限群組或套件。 檢視資訊時，您可以將滑鼠游標暫留在介面上，以查看有關不同內容或原則來源的更多詳細資料。
 
 這些詳細資料包括下列：  
 - **用戶端內容來源**：顯示用戶端從中取得內容的來源。
@@ -168,9 +169,4 @@ ms.openlocfilehash: c51cf3b3b7563a82db40405677c2edfb6de47cf1
 
 
 您也可以使用新的報表**用戶端資料來源 - 摘要**，檢視每個界限群組的用戶端資料來源之摘要。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

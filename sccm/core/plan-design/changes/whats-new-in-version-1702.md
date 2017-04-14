@@ -14,16 +14,16 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 70034213442f4c3d5a28ab65c2ceb51aa64320ad
-ms.openlocfilehash: 9332278e960051caf6875f45212af644e2ea7890
-ms.lasthandoff: 03/31/2017
+ms.sourcegitcommit: d7b13f3dea5a3ae413ca6b8150ec24e1632a4d4d
+ms.openlocfilehash: 3e97184dc923cd3972c23252c1bc001edb73fe3f
+ms.lasthandoff: 04/12/2017
 
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 1702 版的新功能
 
-*適用對象：System Center Configuration Manager (最新分支)*
+*適用於：System Center Configuration Manager (最新分支)*
 
-System Center Configuration Manager 1702 更新最新分支，是先前安裝為執行版本 1606 或 1610 之站台的主控台內更新。
+System Center Configuration Manager Update 1702 最新分支以主控台內更新形式提供，適用於先前安裝、執行 1602、1606 或 1610 版本的站台。
 
 > [!TIP]  
 > 若要安裝新的站台，您必須使用 Configuration Manager 的基準版本。  
@@ -189,7 +189,7 @@ System Center Configuration Manager 1702 更新最新分支，是先前安裝為
 - 當您執行工作順序，但發佈點上尚未提供相依內容套件時，工作順序將會失敗。 您現在可以發佈遺失內容 (如果尚未發佈) 或等候發佈點上的內容可供使用，然後按一下 [上一步] 讓工作順序再次搜尋內容。
 
 ### <a name="pre-cache-content-for-available-deployments-and-task-sequences"></a>預先快取可用的部署和工作順序內容
-從 1702 版開始，針對可用的部署和工作順序，您可以選擇使用預先快取內容。 預先快取內容可讓您選擇允許用戶端在一收到部署時，就只下載適用的內容。 因此，當使用者在軟體中心按一下 [安裝] 時，由於內容是在本機硬碟上，因此內容已就緒且安裝會快速開始。 如需詳細資料，請參閱[設定預先快取內容](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)。
+從 1702 版開始，針對工作順序的可用部署，您可以選擇使用預先快取內容。 預先快取內容可讓您選擇允許用戶端在一收到部署時，就只下載適用的內容。 因此，當使用者在軟體中心按一下 [安裝] 時，由於內容是在本機硬碟上，因此內容已就緒且安裝會快速開始。 如需詳細資料，請參閱[設定預先快取內容](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system#configure-pre-cache-content)。
 
 ### <a name="convert-from-bios-to-uefi-during-an-in-place-upgrade"></a>在就地升級期間從 BIOS 轉換至 UEFI
 Windows 10 Creators Update 引進一個簡單的轉換工具，能夠為支援 UEFI 的硬體自動執行硬碟重新分割程序，並將轉換工具整合至 Windows 7 到 Windows 10 的就地升級程序中。 當您將此工具與您的作業系統升級工作順序，以及將韌體從 BIOS 轉換至 UEFI 的 OEM 工具結合時，您可以在就地升級至 Windows 10 Creators Update 的期間，將您的電腦從 BIOS 轉換至 UEFI。 如需詳細資訊，請參閱[管理 BIOS 到 UEFI 轉換的工作順序步驟](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#convert-from-bios-to-uefi-during-an-in-place-upgrade)。

@@ -2,7 +2,7 @@
 title: "主控台內更新 | Microsoft Docs"
 description: "System Center Configuration Manager 會與 Microsoft 雲端進行同步處理以取得更新，讓您可在主控台內安裝這類更新。"
 ms.custom: na
-ms.date: 3/7/2017
+ms.date: 4/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 3b50ada9f63e41d1b6f01009c141b8f361f5180e
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
+ms.openlocfilehash: 18c199e78750eadc06b9635fa6104d36c2ac018d
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -319,6 +319,10 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 若要檢視可用的功能及其狀態，請在主控台中瀏覽至 [系統管理] > [更新與服務] > [功能]。
 
 若功能非為選擇性，就會自動安裝，且不會出現在 [功能] 節點中。  
+
+
+當您啟用新功能或發行前功能時，Configuration Manager 階層管理員 (HMAN) 必須在該功能提供使用前，先處理變更。 變更的處理通常立即進行，但可能需要 30 分鐘的時間完成，時間長度取決於 HAMN 處理循環。 在處理變更後，您必須先重新啟動主控台，才能檢視該功能相關的新 UI。
+
 
 ##  <a name="bkmk_prerelease"></a> 使用更新的發行前版本功能
 發行前版本功能是「最新分支」中所包含，用來在生產環境中進行早期測試的功能。 這些功能不應視為準備好用於生產環境，但是可以在您的生產環境中使用。 若要深入了解發行前版本功能，包括如何在您的環境中啟用它們，請參閱[發行前版本功能](/sccm/core/servers/manage/pre-release-features)。                |

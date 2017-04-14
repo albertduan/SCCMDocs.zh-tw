@@ -2,7 +2,7 @@
 title: "發行前版本功能| Microsoft Docs"
 description: "System Center Configuration Manager 的發行前版本功能"
 ms.custom: na
-ms.date: 3/29/2017
+ms.date: 4/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6accec2d356861b273b25ba2b6338d9684a46ff6
-ms.openlocfilehash: c1c8cf505bbc5cab1b6dfb7637eda4a87941c722
-ms.lasthandoff: 03/29/2017
+ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
+ms.openlocfilehash: a7ebfea849afcaf236d7e630aad2c7f3f1807a23
+ms.lasthandoff: 04/08/2017
 
 
 ---
@@ -43,6 +43,8 @@ ms.lasthandoff: 03/29/2017
   -   **如果您尚未同意︰**安裝更新時，[更新與服務精靈] 中會顯示發行前版本功能，但為灰色且無法啟用。 安裝更新之後，您可以在 [功能] 節點中檢視這些功能，但未在 [階層設定] 中表示同意之前將無法啟用它們。
 
 如果您已在獨立主要站台表示同意，然後藉由安裝新的管理中心網站來擴充階層，則必須於管理中心網站再授權一次。
+
+ 當您啟用發行前功能時，Configuration Manager 階層管理員 (HMAN) 必須在該功能提供使用前，先處理變更。 變更的處理通常立即進行，但可能需要 30 分鐘的時間完成，時間長度取決於 HAMN 處理循環。 在處理變更後，您必須先重新啟動主控台，才能檢視該功能相關的新 UI。
 
 **下列為可用的發行前版本功能：**
 
