@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c890fd27-7a8c-4f51-bbe2-f9908af1f42b
 caps.latest.revision: 15
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: a1fc9f2db7c9c2b40d986bb39a0b27d6cc699987
@@ -27,7 +27,7 @@ ms.lasthandoff: 01/05/2017
 
 您可以使用 System Center Configuration Manager CCMSetup.exe 命令，手動安裝 Configuration Manager 用戶端。  
 
-##  <a name="a-nameaboutccmsetupa-about-ccmsetupexe"></a><a name="aboutCCMSetup"></a> 關於 CCMSetup.exe  
+##  <a name="aboutCCMSetup"></a> 關於 CCMSetup.exe  
  CCMSetup.exe 命令會下載所需的檔案，以從管理點或來源位置安裝用戶端。 這些檔案可能包含下列項目：  
 
 -   安裝用戶端軟體的 Windows Installer 套件 Client.msi。  
@@ -167,7 +167,7 @@ ms.lasthandoff: 01/05/2017
 
 ### <a name="usepkicert"></a>/UsePKICert
 
- 指定此內容時，用戶端會使用包含用戶端驗證的 PKI 憑證 (如果可用)。 如果找不到有效的憑證 (或未使用此內容時)，用戶端會使用 HTTP 連線和自我簽署的憑證。 
+ 指定此內容時，用戶端會使用包含用戶端驗證的 PKI 憑證 (如果可用)。 如果找不到有效的憑證 (或未使用此內容時)，用戶端會使用 HTTP 連線和自我簽署的憑證。
 
 > [!NOTE]  
 >  某些情況下，您不需要在安裝用戶端時指定此內容，且仍可以使用用戶端憑證。 這些情況包括使用用戶端推入和以軟體更新點為基礎的用戶端安裝來安裝用戶端。 不過，當您手動安裝用戶端並使用 **/mp** 內容來指定設定為只接受 HTTPS 用戶端連線的管理點時，就必須指定此內容。 您還必須在安裝僅能進行網際網路通訊的用戶端時，利用 CCMALWAYSINF=1 內容指定此內容 (搭配以網際網路為基礎的管理點和網站碼的內容)。 如需以網際網路為基礎之用戶端管理的詳細資訊，請參閱 [System Center Configuration Manager 中端點之間的通訊](../../plan-design/hierarchy/communications-between-endpoints.md)中的[從網際網路或未受信任之樹系的用戶端通訊考量](../../plan-design/hierarchy/communications-between-endpoints.md#BKMK_clientspan)。  
@@ -186,9 +186,9 @@ ms.lasthandoff: 01/05/2017
 
 ### <a name="configltconfiguration-file"></a>/config:&lt;組態檔\>
 
-指定包含用戶端安裝內容的文字檔名稱。 
+指定包含用戶端安裝內容的文字檔名稱。
 
-- 如果您未指定 **/noservice** CCMSetup 內容，這個檔案就必須位於 CCMSetup 資料夾中，即 32 位元或 64 位元作業系統的 %Windir%\\Ccmsetup 資料夾。 
+- 如果您未指定 **/noservice** CCMSetup 內容，這個檔案就必須位於 CCMSetup 資料夾中，即 32 位元或 64 位元作業系統的 %Windir%\\Ccmsetup 資料夾。
 - 如果指定 **/noservice** 內容，此檔案必須與您執行之 CCMSetup.exe 位於相同的資料夾。  
 
 範例：`CCMSetup.exe /config:&lt;Configuration File Name.txt\>`  
@@ -200,7 +200,7 @@ ms.lasthandoff: 01/05/2017
 ### <a name="skipprereqltfilename"></a>/skipprereq:&lt;檔名\>
 
  指定 CCMSetup.exe 不可在安裝 Configuration Manager 用戶端時安裝指定的必要條件程式。 此內容支援輸入多個值。 使用分號字元 (;) 分隔每一個值。  
- 
+
 
  範例：`CCMSetup.exe /skipprereq:silverlight.exe` 或 `CCMSetup.exe /skipprereq:dotnetfx40_client_x86_x64.exe;Silverlight.exe`  
 
@@ -217,7 +217,7 @@ ms.lasthandoff: 01/05/2017
 > [!NOTE]  
 >  在此版本， **ClientUI** 是 **/ExcludeFeatures** 內容唯一支援的值。  
 
-##  <a name="a-nameccmsetupreturncodesa-ccmsetupexe-return-codes"></a><a name="ccmsetupReturnCodes"></a> CCMSetup.exe 傳回碼  
+##  <a name="ccmsetupReturnCodes"></a> CCMSetup.exe 傳回碼  
  CCMSetup.exe 命令會提供下列已完成的傳回碼。 若要進行疑難排解，請檢視用戶端電腦上的 ccmsetup.log 檔案，以取得傳回碼的內容和其他詳細資料。  
 
 |傳回碼|意義|  
@@ -229,7 +229,7 @@ ms.lasthandoff: 01/05/2017
 |9|必要條件評估失敗|  
 |10|安裝程式資訊清單雜湊驗證失敗|  
 
-##  <a name="a-nameclientmsipropsa-clientmsi-properties"></a><a name="clientMsiProps"></a> Client.msi 內容  
+##  <a name="clientMsiProps"></a> Client.msi 內容  
  下列內容可以修改 client.msi 的安裝行為。 如果您使用用戶端推入安裝方法，您也可以在 [用戶端推入安裝內容]  對話方塊的 [用戶端]  索引標籤中指定內容。  
 
 ### <a name="ccmadmins"></a>CCMADMINS  
@@ -563,7 +563,7 @@ ms.lasthandoff: 01/05/2017
 
  範例：`CCMSetup.exe SMSSITECODE=XZY`  
 
-##  <a name="a-namebkmkattributevaluesa-supported-attribute-values-for-the-pki-certificate-selection-criteria"></a><a name="BKMK_attributevalues"></a> PKI 憑證選擇準則支援的屬性值  
+##  <a name="BKMK_attributevalues"></a> PKI 憑證選擇準則支援的屬性值  
  Configuration Manager 支援下列 PKI 憑證選擇準則屬性值：  
 
 |OID 屬性|辨別名稱屬性|屬性定義|  

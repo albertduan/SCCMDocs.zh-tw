@@ -13,8 +13,8 @@ ms.topic: article
 ms.assetid: dce4b640-c92f-401a-9873-ce9aa9262014
 caps.latest.revision: 8
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
@@ -31,7 +31,7 @@ System Center Configuration Manager 中執行 Windows 防火牆的用戶端，�
 
  使用以下各節識別這些管理功能，以及取得有關如何在 Windows 防火牆設定這些例外的詳細資訊。  
 
-##  <a name="a-namebkmkmodifyingwindowsfirewalla-modifying-the-ports-and-programs-permitted-by-windows-firewall"></a><a name="BKMK_ModifyingWindowsFirewall"></a> 修改 Windows 防火牆准許的連接埠和程式  
+##  <a name="BKMK_ModifyingWindowsFirewall"></a> 修改 Windows 防火牆准許的連接埠和程式  
  使用下列程序可在 Windows 防火牆上為 Configuration Manager 用戶端修改連接埠和程式。  
 
 #### <a name="to-modify-the-ports-and-programs-permitted-by-windows-firewall"></a>修改 Windows 防火牆准許的連接埠和程式  
