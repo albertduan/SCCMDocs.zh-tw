@@ -32,7 +32,7 @@
 ## [憑證設定檔](deploy-use/introduction-to-certificate-profiles.md)
 ### [建立憑證設定檔](deploy-use/create-certificate-profiles.md)
 ### [設定憑證基礎結構](deploy-use/certificate-infrastructure.md)
-### [密碼編譯控制項技術參考](deploy-use/cryptographic-controls-technical-reference.md)
+### [密碼編譯控制技術參考](deploy-use/cryptographic-controls-technical-reference.md)
 
 ## [Endpoint Protection](deploy-use/endpoint-protection.md)
 ### [設定 Endpoint Protection](deploy-use/endpoint-protection-configure.md)
@@ -54,9 +54,9 @@
 ### [Endpoint Protection 案例](deploy-use/scenarios-endpoint-protection.md)
 ### [Endpoint Protection 用戶端說明](deploy-use/endpoint-protection-client-help.md)
 ### [為用戶端進行疑難排解](deploy-use/troubleshoot-endpoint-client.md)
+### [Device Guard 設定](deploy-use/use-device-guard-with-configuration-manager.md)
 
 ## [部署 Wi-Fi、VPN、電子郵件和憑證設定檔](deploy-use/deploy-wifi-vpn-email-cert-profiles.md)
-
 ## [商務用 Windows Hello 設定](deploy-use/windows-hello-for-business-settings.md)
 
 ## [條款及條件設定](../mdm/deploy-use/terms-and-conditions.md)
