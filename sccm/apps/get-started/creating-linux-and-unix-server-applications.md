@@ -2,7 +2,7 @@
 title: "建立 Linux 和 UNIX 伺服器應用程式 | Microsoft Docs"
 description: "查看在您建立和部署 Linux 和 Unix 裝置的應用程式時，必須考慮的事項。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,8 +16,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: b599a58f25a868c638b7ee00cefff80b2f71244e
-ms.openlocfilehash: f4373c888434aa6cd22e5f9b871e172cc50a7d30
+ms.sourcegitcommit: 4b9261db93c9bf72c492e3c9be5b30f81835134a
+ms.openlocfilehash: 72ebd8bd29b5ecdd817631e447291c04f49d9808
+ms.lasthandoff: 04/13/2017
 
 
 ---
@@ -145,7 +146,7 @@ ms.openlocfilehash: f4373c888434aa6cd22e5f9b871e172cc50a7d30
 
     -   **節流時段的最大傳輸速率 (Kbps)**  
 
-    -   **節流時段的最大傳輸速率 (Kbps)**  
+    -   **節流時段以外的最大傳輸速率 (Kbps)**  
 
 下列 [背景智慧型傳送] 的設定未受支援，且遭到 Linux 和 UNIX 的用戶端忽略：  
 
@@ -164,9 +165,4 @@ ms.openlocfilehash: f4373c888434aa6cd22e5f9b871e172cc50a7d30
 
 > [!TIP]  
 >  如果您要部署的軟體位於 Linux 或 UNIX 伺服器可以存取的網路檔案系統 (NFS) 共用，則不需要使用發佈點來下載套件。 不過，當您建立套件時，請勿選取 [此套件包含來源檔案] 核取方塊。 接著，當您在設定程式時，請指定適當的命令列以直接存取 NFS 掛接點上的套件。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

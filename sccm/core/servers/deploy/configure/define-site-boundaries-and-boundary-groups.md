@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: e9d6f53961c4eb410a56774443e357cca7c18dcc
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: dda2f4c01078fbbd174cbcb30357554c24f6abeb
+ms.openlocfilehash: 0fea1dece0768a2b7bcd3fcedc2288ea2d52e73d
+ms.lasthandoff: 04/17/2017
 
 
 ---
@@ -45,7 +45,7 @@ System Center Configuration Manager 的界限會在您的內部網路上定義�
 
 **開始著手：**
 - 首先，[將網路位置定義成界限](/sccm/core/servers/deploy/configure/boundaries)。
-- 然後，繼續[設定界限群組](/sccm/core/servers/deploy/configure/boundary-groups)，將這些界限中的用戶端與其可用的站台系統伺服器建立關聯。 
+- 然後，繼續[設定界限群組](/sccm/core/servers/deploy/configure/boundary-groups)，將這些界限中的用戶端與其可用的站台系統伺服器建立關聯。
 
 
 
