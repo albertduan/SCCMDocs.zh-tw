@@ -29,5 +29,5 @@
 
 ## [建立使用者資料和設定檔設定項目](deploy-use/create-user-data-and-profiles-configuration-items.md)
 ## [建立遠端連線設定檔](deploy-use/create-remote-connection-profiles.md)
-## [將 Windows 裝置升級至較新版本](deploy-use/upgrade-windows-version.md)
+## [將 Windows 裝置升級至新版本](deploy-use/upgrade-windows-version.md)
 ## [監視相容性設定](deploy-use/monitor-compliance-settings.md)

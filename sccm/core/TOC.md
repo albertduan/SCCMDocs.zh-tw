@@ -67,6 +67,7 @@
 
 ##   [規劃網路基礎結構](plan-design/network/configure-firewalls-ports-domains.md)
 ###  [準備 Active Directory 架構](plan-design/network/extend-the-active-directory-schema.md)
+#### [架構延伸模組](plan-design/network/schema-extensions.md)
 ###  [準備 Windows Server 以支援站台系統](plan-design/network/prepare-windows-servers.md)
 ###  [站台系統伺服器的網站](plan-design/network/websites-for-site-system-servers.md)
 ###  [PKI 憑證需求](plan-design/network/pki-certificate-requirements.md)
@@ -138,8 +139,10 @@
 ##   安裝基礎結構
 ###  [取得安裝媒體](servers/deploy/install/get-install-media.md)
 ###  執行安裝程式之前
+#### [設定參考](servers/deploy/install/setup-reference.md)
 #### [安裝程式下載程式](servers/deploy/install/setup-downloader.md)
 #### [必要條件檢查工具](servers/deploy/install/prerequisite-checker.md)
+#### [必要條件檢查](servers/deploy/install/list-of-prerequisite-checks.md)
 ###  [安裝站台](servers/deploy/install/installing-sites.md)
 #### [準備安裝站台](servers/deploy/install/prepare-to-install-sites.md)
 #### [安裝站台的必要條件](servers/deploy/install/prerequisites-for-installing-sites.md)
@@ -150,6 +153,7 @@
 #### [升級評估安裝](servers/deploy/install/upgrade-an-evaluation-install-to-a-full-install.md)
 #### [升級至 System Center Configuration Manager](servers/deploy/install/upgrade-to-configuration-manager.md)
 #### [安裝簡化案例](servers/deploy/install/scenarios-to-streamline-your-installation.md)
+#### [解除安裝站台和階層](servers/deploy/install/uninstall-sites-and-hierarchies.md)
 
 ##   [設定站台和階層](servers/deploy/configure/configure-sites-and-hierarchies.md)
 ###  [新增站台系統角色](servers/deploy/configure/add-site-system-roles.md)
@@ -171,10 +175,24 @@
 ###  [站台界限和界限群組](servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)
 #### [界限](servers/deploy/configure/boundaries.md)
 #### [界限群組](servers/deploy/configure/boundary-groups.md)
+#### [1610 之前版本的界限群組](servers/deploy/configure/boundary-groups-for-1511-1602-and-1606.md)
 ###  [使用 SQL Server AlwaysOn](servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)
 ###  [使用 SQL Server 叢集](servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database.md)
 ###  [資料庫檔案的自訂位置](servers/deploy/configure/custom-locations-for-site-database-files.md)
 ###  [設定以角色為基礎的系統管理](servers/deploy/configure/configure-role-based-administration.md)
+##   技術參考
+###  [帳戶](plan-design/hierarchy/accounts.md)
+###  [端點之間的通訊](plan-design/hierarchy/communications-between-endpoints.md)
+###  [階層維護工具](servers/manage/hierarchy-maintenance-tool-preinst.exe.md)
+###  [國際支援](plan-design/hierarchy/international-support.md)
+###  [不同版本之間的互通性](plan-design/hierarchy/interoperability-between-different-versions.md)
+###  [語言套件](servers/deploy/install/language-packs.md)
+###  [記錄檔](plan-design/hierarchy/log-files.md)
+###  [連接埠](plan-design/hierarchy/ports.md)
+###  [Proxy 伺服器支援](plan-design/network/proxy-server-support.md)
+###  [版本資訊](servers/deploy/install/release-notes.md)
+###  [Unicode 和 ASCII 支援](plan-design/hierarchy/unicode-and-ascii-support.md)
+
 
 #    管理基礎結構
 ##   [維護工作](servers/manage/maintenance-tasks.md)
