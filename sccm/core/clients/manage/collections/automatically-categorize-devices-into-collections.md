@@ -2,7 +2,7 @@
 title: "自動將裝置分類為集合 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 自動將裝置分類為集合。"
 ms.custom: na
-ms.date: 01/07/2016
+ms.date: 04/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -18,6 +18,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
 ms.openlocfilehash: b1bac05e9335dd757b8f499f97daea24e0f4acbd
+ms.lasthandoff: 01/03/2017
 
 ---
 # <a name="automatically-categorize-devices-into-collections-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 自動將裝置分類為集合
@@ -55,9 +56,4 @@ ms.openlocfilehash: b1bac05e9335dd757b8f499f97daea24e0f4acbd
 如果 [裝置類別] 欄未顯示，請以滑鼠右鍵按一下 [裝置] 清單中的其中一個欄標題 (例如 [名稱])，然後選取 [裝置類別]。
 
 如果您將裝置指派給一個類別，然後刪除該類別，[Microsoft Intune 中每位使用者註冊的裝置清單] 報告會在 [裝置類別] 欄中顯示 GUID，而不是類別名稱。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

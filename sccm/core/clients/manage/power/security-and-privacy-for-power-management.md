@@ -2,7 +2,7 @@
 title: "電源管理的安全性和隱私權 | Microsoft Docs"
 description: "取得 System Center Configuration Manager 中電源管理的安全性和隱私權資訊。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -19,6 +19,7 @@ manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: f72059973057e707f58cb6b7aa495226b6c1962c
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -37,9 +38,4 @@ ms.openlocfilehash: f72059973057e707f58cb6b7aa495226b6c1962c
  電源使用量資訊存放在 Configuration Manager 資料庫中，且不會傳送給 Microsoft。 詳細資訊會在資料庫中保留 31 天，摘要資訊會保留 13 個月。 您可以設定刪除間隔。  
 
  在您設定電源管理之前，請先考慮隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -2,7 +2,7 @@
 title: "範例案例 - 部署 Windows Embedded 用戶端 | Microsoft Docs"
 description: "請參閱在 Windows Embedded 裝置上部署及管理 System Center Configuration Manager 用戶端的示範案例。"
 ms.custom: na
-ms.date: 01/12/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na

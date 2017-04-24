@@ -2,7 +2,7 @@
 title: "管理用戶端 | Microsoft Docs"
 description: "了解如何管理 System Center Configuration Manager 中的用戶端。"
 ms.custom: na
-ms.date: 01/04/2017
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3986a992-c175-4b6f-922e-fc561e3d7cb7
 caps.latest.revision: 17
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 19e111e0cb174f11ad08f98d2516e52c4c183d86
@@ -35,7 +35,7 @@ ms.lasthandoff: 01/05/2017
 >   
 >  使用 Configuration Manager 主控台的 [用戶端] 欄判斷是否已安裝 Configuration Manager 用戶端，以便從 Configuration Manager 主控台管理該用戶端。  
 
-##  <a name="a-namebkmkmanagingclientsdevicesnodea-manage-clients-from-the-devices-node"></a><a name="BKMK_ManagingClients_DevicesNode"></a> 從裝置節點管理用戶端  
+##  <a name="BKMK_ManagingClients_DevicesNode"></a> 從裝置節點管理用戶端  
 
 請注意，根據不同的裝置類型，某些選項可能無法使用。  
 
@@ -153,7 +153,7 @@ ms.lasthandoff: 01/05/2017
 
          如需詳細資訊，請參閱[搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理 (MDM)](../../../mdm/understand/hybrid-mobile-device-management.md)。  
 
-##  <a name="a-namebkmkmanagingclientsdevicecollectionsnodea-manage-clients-from-the-device-collections-node"></a><a name="BKMK_ManagingClients_DeviceCollectionsNode"></a> 從裝置集合節點管理用戶端  
+##  <a name="BKMK_ManagingClients_DeviceCollectionsNode"></a> 從裝置集合節點管理用戶端  
   您可以在 [裝置] 節點中的單一裝置或多部裝置上執行的許多工作，也可以在集合上執行。 這會自動將操作套用到集合中所有合格的裝置。 請注意，這會產生大量的網路封包，以及增加站台伺服器的 CPU 使用量。  
 
   在您執行集合等級的用戶端管理工作之前，請考慮集合中有多少裝置、這些裝置是否連線到低頻寬的網路連線，以及所有裝置需要多長時間才能完成工作。 一旦啟動，就無法從主控台停止工作。  
@@ -186,7 +186,7 @@ ms.lasthandoff: 01/05/2017
 
          用戶端通知工作會顯示在 [監視]  工作區的 [用戶端操作]  節點中。  
 
-##  <a name="a-namebkmkclientcachea-configure-the-client-cache-for-configuration-manager-clients"></a><a name="BKMK_ClientCache"></a> 設定 Configuration Manager 用戶端的用戶端快取  
+##  <a name="BKMK_ClientCache"></a> 設定 Configuration Manager 用戶端的用戶端快取  
 用戶端快取會儲存用戶端安裝應用程式和程式時所使用的暫存檔案。 軟體更新也可以使用用戶端快取，但是軟體更新不受所設定快取大小的限制，而且將一律嘗試下載至快取。 您可以在手動安裝 Configuration Manager 用戶端時、使用用戶端推入安裝時，或用戶端安裝後，設定用戶端快取設定，例如大小和位置。
 
 從 Configuration Manager 1606 版開始，您可以使用 Configuration Manager 主控台中的用戶端設定來指定快取資料夾的大小。   
@@ -275,7 +275,7 @@ Configuration Manager 用戶端會在收到部署後隨即下載所需軟體的�
 
      在下載下一個用戶端原則時，Configuration Manager 用戶端會使用這些設定以設定快取大小。
 
-##  <a name="a-namebkmkuninstalclienta-uninstall-the-configuration-manager-client"></a><a name="BKMK_UninstalClient"></a> 解除安裝 Configuration Manager 用戶端  
+##  <a name="BKMK_UninstalClient"></a> 解除安裝 Configuration Manager 用戶端  
  您可以使用 **CCMSetup.exe** 搭配 **/Uninstall** 內容，從電腦中解除安裝 Windows Configuration Manager 用戶端軟體。 在個別電腦上的命令提示字元中執行 CCMSetup.exe，或部署套件和程式來解除安裝一組電腦集合的用戶端。  
 
 > [!WARNING]  
@@ -290,7 +290,7 @@ Configuration Manager 用戶端會在收到部署後隨即下載所需軟體的�
 > [!NOTE]  
 >  解除安裝程序不會在畫面上顯示任何結果。 若要確認用戶端解除安裝成功，請查看用戶端電腦上 *%windir%\ ccmsetup* 資料夾中的記錄檔 **CCMSetup.log**。  
 
-##  <a name="a-namebkmkconflictingrecordsa-manage-conflicting-records-for-configuration-manager-clients"></a><a name="BKMK_ConflictingRecords"></a> 管理 Configuration Manager 用戶端的衝突記錄  
+##  <a name="BKMK_ConflictingRecords"></a> 管理 Configuration Manager 用戶端的衝突記錄  
  Configuration Manager 會使用硬體識別碼嘗試識別可能重複的用戶端，並發出衝突記錄的警示。 例如，如果您重新安裝電腦，硬體識別碼會相同，但 Configuration Manager 使用的 GUID 可能會變更。  
 
  當 Configuration Manager 可以使用電腦帳戶的 Windows 驗證或來自受信任來源的 PKI 憑證解決衝突時，即會自動解決衝突。 不過，若 Configuration Manager 無法解決衝突，則會使用階層設定，在偵測到重複的硬體識別碼時自動合併記錄 (預設設定)，或是讓您決定何時合併、封鎖或建立新的用戶端記錄。 如果您決定手動管理重複的記錄，則必須在 Configuration Manager 主控台中手動解決衝突的記錄。  
@@ -326,7 +326,7 @@ Configuration Manager 用戶端會在收到部署後隨即下載所需軟體的�
 2. 在 [首頁] 索引標籤的 [站台] 群組中，選擇 [階層設定]。
 3. 在 [用戶端核准和衝突的記錄] 索引標籤的 [Duplicate hardware identifiers] (重複的硬體識別碼) 區段中，選擇 [新增] 新增硬體識別碼。
 
-##  <a name="a-namebkmkpolicyretrievala-initiate-policy-retrieval-for-a-configuration-manager-client"></a><a name="BKMK_PolicyRetrieval"></a> 起始 Configuration Manager 用戶端的原則抓取  
+##  <a name="BKMK_PolicyRetrieval"></a> 起始 Configuration Manager 用戶端的原則抓取  
  Windows Configuration Manager 用戶端會依照您設定的排程 (用戶端設定) 下載其用戶端原則。 不過，有時候您可能想要從用戶端起始臨機操作原則抓取，例如用於疑難排解或測試。  
 
 您可以使用下列方法來起始原則抓取：

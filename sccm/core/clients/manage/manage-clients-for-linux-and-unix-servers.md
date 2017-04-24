@@ -2,7 +2,7 @@
 title: "管理 Linux 和 UNIX 用戶端 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中管理 Linux 和 UNIX 伺服器上的用戶端。"
 ms.custom: na
-ms.date: 12/26/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: article
 ms.assetid: 948664f2-239d-47a8-92fc-f8efeebd5796
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
@@ -29,7 +29,7 @@ ms.lasthandoff: 12/30/2016
 
 當您使用 System Center Configuration Manager 管理 Linux 和 UNIX 伺服器時，可以設定集合、維護期間和用戶端設定來協助管理伺服器。 此外，雖然 Linux 和 UNIX 的 Configuration Manager 用戶端沒有使用者介面，但是您可以強制用戶端手動輪詢用戶端原則。
 
-##  <a name="a-namebkmkcollectionsforlnua-collections-of-linux-and-unix-servers"></a><a name="BKMK_CollectionsforLnU"></a> Collections of Linux and UNIX servers  
+##  <a name="BKMK_CollectionsforLnU"></a> Collections of Linux and UNIX servers  
  使用集合來管理 Linux 和 UNIX 伺服器群組的方式，與使用集合來管理其他用戶端類型的方式相同。 集合可以是直接成員資格集合或查詢型集合，以識別用戶端作業系統、硬體設定或有關站台資料庫中所儲存之用戶端的其他詳細資料。 例如，您可以使用包含 Linux 和 UNIX 伺服器的集合來管理下列項目：  
 
 -   用戶端設計  
@@ -48,10 +48,10 @@ ms.lasthandoff: 12/30/2016
 
  當您建立 Linux 和 UNIX 伺服器的自訂集合時，請包含內含 Operating System 屬性之 Caption 屬性中的成員資格規則查詢。 如需建立集合的資訊，請參閱[如何在 System Center Configuration Manager 中建立集合](../../../core/clients/manage/collections/create-collections.md)。  
 
-##  <a name="a-namebkmkmaintenancewindowsforlnua-maintenance-windows-for-linux-and-unix-servers"></a><a name="BKMK_MaintenanceWindowsforLnU"></a> Maintenance windows for Linux and UNIX servers  
+##  <a name="BKMK_MaintenanceWindowsforLnU"></a> Maintenance windows for Linux and UNIX servers  
  Linux 和 UNIX 伺服器的 Configuration Manager 用戶端支援使用[維護期間](../../../core/clients/manage/collections/use-maintenance-windows.md)。 這項支援與 Windows 型用戶端的支援相同。  
 
-##  <a name="a-namebkmkclientsettingsforlnua-client-settings-for-linux-and-unix-servers"></a><a name="BKMK_ClientSettingsforLnU"></a> Client settings for Linux and UNIX servers  
+##  <a name="BKMK_ClientSettingsforLnU"></a> Client settings for Linux and UNIX servers  
  [設定用戶端設定](../../../core/clients/deploy/configure-client-settings.md) (適用於 Linux 和 UNIX 伺服器) 的方式，與設定其他用戶端設定的方式相同。  
 
  根據預設， **Default Client Agent Settings** 適用於 Linux 和 UNIX 伺服器。 您也可以建立自訂用戶端設定，然後將它們部署至特定用戶端集合。  
@@ -60,7 +60,7 @@ ms.lasthandoff: 12/30/2016
 
  例如，因為 Linux 和 UNIX 的用戶端不支援遠端控制，所以Linux 和 UNIX 伺服器將會忽略啟用和進行遠端控制設定的自訂用戶端裝置設定。  
 
-##  <a name="a-namebkmkpolicyforlnua-computer-policy-for-linux-and-unix-servers"></a><a name="BKMK_PolicyforLnU"></a> Computer policy for Linux and UNIX servers  
+##  <a name="BKMK_PolicyforLnU"></a> Computer policy for Linux and UNIX servers  
  Linux 和 UNIX 伺服器的用戶端會定期輪詢其站台中的電腦原則，以深入了解要求的設定，以及檢查部署。  
 
  您也可以在 Linux 或 UNIX 伺服器上強制用戶端立即輪詢電腦原則。 若要這麼做，請在伺服器上使用 **root** 認證來執行下列命令：**/opt/microsoft/configmgr/bin/ccmexec -rs policy**。  
@@ -70,7 +70,7 @@ ms.lasthandoff: 12/30/2016
 > [!NOTE]  
 >  Linux 和 UNIX 的 Configuration Manager 用戶端永遠不會要求，也不會處理使用者原則。  
 
-##  <a name="a-namebkmkmanagelinuxcertsa-how-to-manage-certificates-on-the-client-for-linux-and-unix"></a><a name="BKMK_ManageLinuxCerts"></a> How to manage certificates on the client for Linux and UNIX  
+##  <a name="BKMK_ManageLinuxCerts"></a> How to manage certificates on the client for Linux and UNIX  
  在您安裝 Linux 和 UNIX 的用戶端之後，即可使用 **certutil** 工具，以使用新的 PKI 憑證來更新用戶端，以及匯入新的憑證撤銷清單 (CRL)。 當您安裝 Linux 和 UNIX 的用戶端時，這個工具位於 **/opt/microsoft/configmgr/bin/certutil**。 
 
  若要管理憑證，請在每個用戶端上執行具有下列其中一個選項的 certutil：  

@@ -2,7 +2,7 @@
 title: "將用戶端指派至站台 | Microsoft Docs"
 description: "將用戶端指派給 System Center Configuration Manager 中的站台。"
 ms.custom: na
-ms.date: 12/16/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,8 +12,8 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: ba9b623f-6e86-4006-93f2-83d563de0cd0
 caps.latest.revision: 10
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 08afca8b422474639cbdb860e555fe0da27361a4
@@ -56,7 +56,7 @@ ms.lasthandoff: 12/16/2016
 > [!NOTE]  
 >  如果您手動將用戶端電腦指派至不存在的 Configuration Manager 站台碼，則站台指派將失敗。   
 
-##  <a name="a-namebkmkautomaticassignmenta-using-automatic-site-assignment-for-computers"></a><a name="BKMK_AutomaticAssignment"></a> 針對電腦使用自動站台指派  
+##  <a name="BKMK_AutomaticAssignment"></a> 針對電腦使用自動站台指派  
  自動站台指派可以在用戶端部署期間進行，或者在您按一下控制台中 [Configuration Manager 內容]  的 [進階]  索引標籤上的 [尋找站台]  時進行。 Configuration Manager 用戶端會比對其自身的網路位置與 Configuration Manager 階層中所設定的界限。 當用戶端的網路位置落在已針對站台指派啟用的界限群組內，或者當階層已針對後援站台設定時，用戶端便會自動指派至該站台，您不需要指定站台代碼。  
 
  您可以使用以下一種或多種方式設定界限：  

@@ -1,13 +1,13 @@
 ---
 title: "管理網際網路上的用戶端 - Configuration Manager | Microsoft Docs"
 description: "了解如何在 Configuration Manager 中使用雲端管理閘道和以網際網路為基礎的用戶端管理來管理用戶端。"
-ms.date: 11/18/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-client
 ms.assetid: c667d6af-80c4-485f-910c-896c0171fd00
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b

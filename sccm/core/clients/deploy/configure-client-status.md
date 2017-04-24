@@ -2,7 +2,7 @@
 title: "設定用戶端狀態 | Microsoft Docs"
 description: "選取 System Center Configuration Manager 中的用戶端狀態設定。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: a2275ba2-c83d-43e7-90ed-418963a707fe
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
@@ -29,7 +29,7 @@ ms.lasthandoff: 12/16/2016
 
 您必須設定站台指定用於將用戶端標記為非作用中的參數，以及設定一旦用戶端活動低於指定閾值時的警示選項，才能監視 System Center Configuration Manager 用戶端狀態，以及補救所找到的問題。 您也可以停止讓電腦自動補救用戶端狀態找到的所有問題。  
 
-##  <a name="a-namebkmk1a-to-configure-client-status"></a><a name="BKMK_1"></a> 設定用戶端狀態  
+##  <a name="BKMK_1"></a> 設定用戶端狀態  
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 12/16/2016
 
 5.  按一下 [確定]  儲存內容，並且關閉 [用戶端狀態設定內容]  對話方塊。  
 
-##  <a name="a-namebkmkschedulea-to-configure-the-schedule-for-client-status"></a><a name="BKMK_Schedule"></a> 設定用戶端狀態排程  
+##  <a name="BKMK_Schedule"></a> 設定用戶端狀態排程  
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
@@ -67,7 +67,7 @@ ms.lasthandoff: 12/16/2016
     > [!NOTE]  
     >  變更用戶端狀態更新的排程時，更新會在下次排程的用戶端狀態更新 (之前設定的排程) 時生效。  
 
-##  <a name="a-namebkmk2a-to-configure-alerts-for-client-status"></a><a name="BKMK_2"></a> 設定用戶端狀態警示  
+##  <a name="BKMK_2"></a> 設定用戶端狀態警示  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
@@ -95,7 +95,7 @@ ms.lasthandoff: 12/16/2016
 
 7.  按一下 [確定] 關閉 [&lt;集合名稱\> 內容] 對話方塊。  
 
-##  <a name="a-namebkmk3a-to-exclude-computers-from-automatic-remediation"></a><a name="BKMK_3"></a> 排除電腦的自動補救功能  
+##  <a name="BKMK_3"></a> 排除電腦的自動補救功能  
 
 1.  在要停用自動補救功能的用戶端電腦上開啟登錄編輯程式。  
 

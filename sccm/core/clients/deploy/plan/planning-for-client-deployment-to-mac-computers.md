@@ -2,7 +2,7 @@
 title: "規劃 Mac 電腦用戶端部署 | Microsoft Docs"
 description: "規劃在 System Center Configuration Manager 中將用戶端部署至 Mac 電腦。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,8 +13,8 @@ ms.topic: get-started-article
 ms.assetid: 8d15ae3f-de42-461f-a907-c43873da22d2
 caps.latest.revision: 6
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
