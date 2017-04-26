@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: aca3525fc143b281f41c3d9bd20bb93b1d91f6ce
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
+ms.openlocfilehash: 44338c705e308896c5203be239c160a8220369a8
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -234,4 +234,11 @@ ConfigMgrSetup.log：
 此問題會影響含有更新 1602 之 System Center Configuration Manager 對 **Exchange 內部部署**的條件存取，並預期會在未來的更新中解決。  
 
 **因應措施︰** 新增 **使用者集合** 到 **[目標集合]** 頁面，然後在 **[豁免集合]** 頁面上選取 **使用者集合** ，或確定您沒有將相同的 **使用者集合** 同時新增到目標與豁免集合。
+
+## <a name="endpoint-protection"></a>Endpoint Protection
+<!--  Product Studio bug 485370 added by Nathbarn 04 19 2017 -->
+### <a name="antimalware-policy-fails-to-apply-on-windows-server-2016-core"></a>反惡意程式碼原則無法套用至 Windows Server 2016 Core
+反惡意程式碼原則無法套用至 Windows Server 2016 Core。  錯誤碼為 0x80070002。  ConfigSecurityPolicy.exe 遺失相依性。
+
+**因應措施：**  無。  身為系統管理員，您可以使用群組原則管理 Windows Server 2016 Core 的設定。
 

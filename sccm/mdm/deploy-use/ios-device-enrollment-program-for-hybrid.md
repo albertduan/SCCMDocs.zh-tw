@@ -16,9 +16,9 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: 2ace86cc842d6a3a5b2114c4e4c33c2d65c2f256
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 4eee9731a4a27328c47c0d15931cab28cf520a18
+ms.openlocfilehash: 555da7187b505a926731350d16787bc02d28dad3
+ms.lasthandoff: 04/18/2017
 
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>適用於 Configuration Manager 混合式部署的 iOS 裝置註冊計畫 (DEP) 註冊
@@ -75,12 +75,14 @@ ms.lasthandoff: 03/21/2017
             > 設有使用者親和性的 DEP 必須啟用 WS-Trust 1.3 使用者名稱/混合端點，才能要求使用者權杖。
 
             -   **沒有使用者親和性**：該裝置不會關聯到使用者。 針對執行工作而不需存取本機使用者資料的裝置，請使用此關係。 需要使用者關係的 App 會無法運作。  
+             ![DEP 設定檔名稱、描述及使用者親和性提示的螢幕擷取畫面](../media/dep-general.png)
 
-    2.  在 [裝置註冊方案]  頁面上，指定下列資訊，然後按 [下一步] 。  
+    2.  在 [裝置註冊計劃設定] 頁面上，指定下列資訊，然後按一下 [下一步]。  
 
         -   **部門**：使用者在啟用期間點選 [About Configuration]\(關於設定) 時，會顯示這項資訊。  
 
-        -   **支援電話號碼**：使用者在啟用期間按一下 [需要協助] 按鈕時顯示。  
+        -   **支援電話號碼**：使用者在啟用期間按一下 [需要協助] 按鈕時顯示。
+       ![將 DEP 設定檔指派給 iOS 裝置的螢幕擷取畫面](../media/dep-settings.png)
 
         -   **準備模式**：在啟用期間會設定此狀態，而且需要將裝置重設為出廠預設值才能進行變更︰  
 
@@ -105,6 +107,7 @@ ms.lasthandoff: 03/21/2017
         -   **縮放** - 啟用時，設定助理會在啟用期間提示此服務
         -   **Siri** - 啟用時，設定輔助程式會在啟用期間提示此服務。  
         -   **傳送診斷資料給 Apple** - 啟用時，設定輔助程式會在啟用期間提示此服務。  
+        ![將 DEP 設定檔指派給 iOS 裝置的螢幕擷取畫面](../media/dep-setup-assistant.png)
 
     4.  在 [其他管理] 頁面上，指定其他管理設定是否可以使用 USB 連線。 當您選取 [需要憑證] ，您就必須匯入為了此設定檔而使用的 Apple Configurator 管理憑證。  設為 [不允許] 時，可防止使用 iTunes 同步處理檔案或透過 Apple Configurator 進行管理。 Microsoft 建議您選擇 [不允許]，並從 Apple Configurator 匯出任何進一步設定，然後將其部署為自訂 iOS 組態設定檔，而不是使用此設定來允許進行手動部署 (不論是否使用憑證)。  
 
@@ -118,8 +121,11 @@ ms.lasthandoff: 03/21/2017
     移至 [裝置註冊計畫入口網站](https://deploy.apple.com) (https://deploy.apple.com) ，並使用公司的 Apple ID 登入。 移至 [部署計畫] > [裝置註冊計畫] > [管理裝置]。 指定您 [Choose Devices (選擇裝置)] 的方式、提供裝置資訊，並利用裝置的 [序號]、[訂單號碼] 或 [上傳 CSV 檔案] 來指定詳細資料。 接著，選取 [指派給伺服器]，選取您在步驟 3 指定的 [<*伺服器名稱*>]，然後按一下 [確定]。  
 
 3.  **同步處理 DEP 管理的裝置**   
-    在 [資產與相容性] 工作區中，前往 [公司擁有的所有裝置] > [iOS] > [裝置資訊]。 在 [首頁] 索引標籤上，按一下 [DEP 同步處理] 。 同步處理要求會傳送至 Apple。 同步處理完成之後，會顯示 DEP 管理的裝置。 受管理裝置的 [註冊狀態]  會顯示為 **未連線** ，直到裝置開機並執行 [設定助理] 來註冊該裝置為止。  
+    在 [資產與相容性] 工作區中，前往 [公司擁有的所有裝置] > [預先宣告的裝置]。 在 [首頁] 索引標籤上，按一下 [DEP 同步處理] 。 同步處理要求會傳送至 Apple。 同步處理完成之後，會顯示 DEP 管理的裝置。
 
-4.  **將裝置散發給使用者**   
-    現在您可以將公司所擁有的裝置提供給使用者。 當 iOS 裝置開機時，就會加以註冊交由 Intune 管理。
+4.  **指派 DEP 設定檔**<br>在 [資產與相容性] 工作區中，前往 [公司擁有的所有裝置] > [iOS] > [註冊設定檔]。 選取 DEP 註冊設定檔，然後在 [首頁] 索引標籤中，按一下 [指派給裝置]。 選取將使用此註冊設定檔的裝置，按一下 [新增]，然後按一下 [確定]。   
+     ![將 DEP 設定檔指派給 iOS 裝置的螢幕擷取畫面](../media/dep-assign-profile.png)
+
+5.  **將裝置散發給使用者**   
+    現在您可以將公司所擁有的裝置提供給使用者。 受管理裝置的 [註冊狀態]  會顯示為 **未連線** ，直到裝置開機並執行 [設定助理] 來註冊該裝置為止。 當 iOS 裝置開機時，就會加以註冊交由 Intune 管理。
 

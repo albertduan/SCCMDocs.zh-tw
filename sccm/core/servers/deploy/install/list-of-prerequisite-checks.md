@@ -2,7 +2,7 @@
 title: "必要條件檢查 | Microsoft Docs"
 description: "檢閱 System Center Configuration Manager 可用的必要條件檢查。 包括安全性權限的檢查。"
 ms.custom: na
-ms.date: 3/1/2017
+ms.date: 4/17/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,16 +16,16 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 496c1444822a4601fad67f421115a609e976386d
-ms.openlocfilehash: 5a8f4a84ef5b4ccb4434ca8eb260c1c7899207ab
-ms.lasthandoff: 03/01/2017
+ms.sourcegitcommit: dda2f4c01078fbbd174cbcb30357554c24f6abeb
+ms.openlocfilehash: 14834f62ffaa8fcba5ddb7536a0b76e18b557e53
+ms.lasthandoff: 04/17/2017
 
 ---
 # <a name="list-of-prerequisite-checks-for-system-center-configuration-manager"></a>System Center Configuration Manager 的必要條件檢查清單
 
 *適用對象：System Center Configuration Manager (最新分支)*
 
-下列章節詳述可用的必要條件檢查。 
+下列章節詳述可用的必要條件檢查。
 
 如需使用必要條件檢查工具的資訊，請參閱[必要條件檢查工具](prerequisite-checker.md)。  
 
@@ -117,7 +117,7 @@ ms.lasthandoff: 03/01/2017
 |**網域成員資格**|確認 Configuration Manager 電腦是 Windows 網域的成員。|錯誤|管理中心網站， <br>主要站台， <br>次要站台， <br>SMS 提供者， <br>SQL Server|
 |**網域成員資格**|確認 Configuration Manager 電腦是 Windows 網域的成員。|警告|管理點， <br>發佈點|
 |**站台伺服器上的 FAT 磁碟機**|檢查磁碟機是否使用 FAT 檔案系統格式化。 在使用 NTFS 檔案系統格式化的磁碟機上安裝站台伺服器元件可獲得較高的安全性。|警告|主要網站|
-|**站台伺服器上的可用磁碟空間**|站台伺服器電腦必須至少有 5 GB 的可用磁碟空間供安裝站台伺服器使用。 如果您在同一部電腦上安裝 SMS 提供者網站系統角色，則必須有額外 1 GB 的可用空間。|錯誤|管理中心網站， <br>主要站台， <br>次要網站|
+|**站台伺服器上的可用磁碟空間**|站台伺服器電腦必須至少有 15 GB 的可用磁碟空間供安裝站台伺服器使用。 如果您在同一部電腦上安裝 SMS 提供者網站系統角色，則必須有額外 1 GB 的可用空間。|錯誤|管理中心網站， <br>主要站台， <br>次要網站|
 |**系統重新啟動擱置中**|檢查在您執行安裝程式之前，是否有其他程式要求重新啟動伺服器。|錯誤|管理中心網站， <br>主要站台， <br>次要站台， <br>Configuration Manager 主控台， <br>SMS 提供者， <br>SQL Server， <br>管理點， <br>發佈點|
 |**唯讀網域控制站**|唯讀網域控制站 (RODC) 上不支援網站資料庫伺服器和次要網站伺服器。 如需詳細資訊，請參閱 Microsoft 知識庫中的 [You may encounter problems when installing SQL Server on a domain controller](http://go.microsoft.com/fwlink/p/?LinkId=264856) (在網域控制站上安裝 SQL Server 時，您可能會遇到問題)。|錯誤|管理中心網站， <br>主要站台， <br>次要網站|
 |**架構延伸模組**|判斷 Active Directory 網域服務架構是否已擴充，如果已擴充，則架構延伸模組版本為何。 站台伺服器安裝並不需要 Configuration Manager Active Directory 架構延伸模組，但若要完整使用所有 Configuration Manager 功能，建議使用它們。 如需擴充架構之優點的詳細資訊，請參閱[準備 Active Directory 以發行站台](../../../../core/plan-design/network/extend-the-active-directory-schema.md)。|警告|管理中心網站， <br>主要網站|

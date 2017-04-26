@@ -2,7 +2,7 @@
 title: "發行前版本功能| Microsoft Docs"
 description: "System Center Configuration Manager 的發行前版本功能"
 ms.custom: na
-ms.date: 4/7/2017
+ms.date: 4/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
-ms.openlocfilehash: a7ebfea849afcaf236d7e630aad2c7f3f1807a23
-ms.lasthandoff: 04/08/2017
+ms.sourcegitcommit: 329de5ffb6eb1403c02cd1db634c32f045e82488
+ms.openlocfilehash: c9896d53061b11f249f32f118620524c6a270ec9
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -50,6 +50,7 @@ ms.lasthandoff: 04/08/2017
 
  |功能          |已新增為發行前版本 | 已新增為完整功能|  
 |------------------|---------------------|---------------------|
+| 使用 Configuration Manager 的 Device Guard 管理 |  [版本 1702](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)|![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 在安裝應用程式之前檢查執行中可執行檔  |   [版本 1702](/sccm/apps/deploy-use/deploy-applications#how-to-check-for-running-executable-files-before-installing-an-application) |![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 資料倉儲服務點  |  [版本 1702](/sccm/core/servers/manage/data-warehouse) |![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|
 | 可將內容發佈至用戶端的對等快取 |  [版本 1610](/sccm/core/plan-design/hierarchy/client-peer-cache) |![尚未提供此服務](media/83c5d168-8faf-4e8e-920b-528e3c43ffd4.gif)|

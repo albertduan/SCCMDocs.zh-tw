@@ -2,7 +2,7 @@
 title: "升級至 System Center Configuration Manager | Microsoft Docs"
 description: "了解從執行 System Center 2012 Configuration Manager 的站台和階層中執行成功就地升級的步驟。"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 4/19/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 6424fb07802b62820b4dc78a58ab30d3b956abef
-ms.openlocfilehash: ca07b46db0967ca03cc5e858b835d2c2108f1210
-ms.lasthandoff: 03/17/2017
+ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
+ms.openlocfilehash: e75413d0b03681bf7244bd3917cd6099394ee3c9
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -75,6 +75,9 @@ ms.lasthandoff: 03/17/2017
  下列檢查清單可協助您規劃順利升級至 System Center Configuration Manager。  
 
 ### <a name="before-you-upgrade"></a>升級之前  
+
+**檢閱您的 System Center 2012 Configuration Manager 環境**，並解決 KB4018655 中所述的問題︰[由於週期性重試工作，Configuration Manager 用戶端會每隔五小時重新安裝，而且可能會導致意外的用戶端升級](https://support.microsoft.com/help/4018655)。
+
 **確認您的運算環境符合升級至 System Center Configuration Manager 所需的支援設定：**  
 
 檢閱用來裝載站台系統角色的伺服器作業系統：  
@@ -251,7 +254,7 @@ Configuration Manager 不支援次要站台的備份或次要站台資料庫的�
 
 -   **軟體中心：**  
     下列軟體中心項目會重設為預設值：  
-    -   [工作資訊] 的工作時間會從星期一到星期五 [上午&5;.00]  重設為 [下午&10;.00]  Monday 重設為 [下午&10;.00] Friday.  
+    -   [工作資訊] 的工作時間會從星期一到星期五 [上午 5.00]  重設為 [下午 10.00]  Monday 重設為 [下午 10.00] Friday.  
     -   [電腦維護]  的值會設為 [當電腦在簡報模式時暫停軟體中心活動] 。  
     -   [遠端控制]  的值會設為指派至電腦之用戶端設定中的值。  
 -   **軟體更新摘要排程：**  

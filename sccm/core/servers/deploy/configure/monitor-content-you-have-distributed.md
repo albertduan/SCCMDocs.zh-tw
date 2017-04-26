@@ -2,7 +2,7 @@
 title: "監視內容 | Microsoft Docs"
 description: "使用 Configuration Manager 主控台了解如何監視發佈的內容。"
 ms.custom: na
-ms.date: 2/8/2017
+ms.date: 4/17/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d7b13f3dea5a3ae413ca6b8150ec24e1632a4d4d
-ms.openlocfilehash: 7496c8bf11d058c94bc36fd28e9557b6470b61f1
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: dda2f4c01078fbbd174cbcb30357554c24f6abeb
+ms.openlocfilehash: 7659d5789b8ce4e9e0b585a331c8f68869c9492d
+ms.lasthandoff: 04/17/2017
 
 ---
 # <a name="monitor-content-you-have-distributed-with-system-center-configuration-manager"></a>監視您已使用 System Center Configuration Manager 所發佈的內容
@@ -155,7 +155,7 @@ ms.lasthandoff: 04/12/2017
 從 1610 版開始，您即可使用新的 [用戶端資料來源] 儀表板，協助了解環境中[對等快取](/sccm/core/plan-design/hierarchy/client-peer-cache)的使用情況。 儀表板會在用戶端下載內容，並將該資訊回報到站台時，開始顯示資料。 最多可能需要 24 小時。
 
 > [!TIP]  
-> 在版本 1610，對等快取和用戶端資料來源儀表板都是發行前版本功能。 若要啟用它們，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)。 **用戶端資料來源**儀表板只會在您啟用後顯示。 在您啟用後。最多可能需要 24 小時的時間開始顯示資料。 
+> [用戶端對等快取] 和 [用戶端資料來源] 儀表板，都是在版本 1610 引進的發行前版本功能。 您必須啟用 [用戶端對等快取]，[用戶端資料來源] 儀表板才會顯示在主控台中。 若要啟用 [用戶端對等快取]，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)。 在您啟用後。最多可能需要 24 小時的時間開始顯示資料。
 
 在主控台中，前往 [監視] > [發佈狀態] > [用戶端資料來源]。 您可以在這裡選取一個要套用到儀表板的時段。 然後，在顯示中，您可以選取您想要檢視資訊的界限群組或套件。 檢視資訊時，您可以將滑鼠游標暫留在介面上，以查看有關不同內容或原則來源的更多詳細資料。
 

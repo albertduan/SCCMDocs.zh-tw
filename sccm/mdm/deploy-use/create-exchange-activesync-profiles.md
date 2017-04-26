@@ -17,18 +17,18 @@ author: arob98
 ms.author: angrobe
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: aa8924a013ebdbee888cab33001fddbe7ad2d67e
-ms.openlocfilehash: a0353c49360cd99bc92b4546e12a52c3d13d1d14
-ms.lasthandoff: 03/30/2017
+ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
+ms.openlocfilehash: bcf337d2abbcd5aad0f99098f6afd4a73ada3a0b
+ms.lasthandoff: 04/19/2017
 
 
 ---
 
 # <a name="exchange-activesync-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的 Exchange ActiveSync 電子郵件設定檔
 
-*適用於︰System Center Configuration Manager (最新分支)*
+*適用於：System Center Configuration Manager (最新分支)*
 
-電子郵件設定檔可與 Microsoft Intune 搭配運作，讓您使用 Exchange ActiveSync 為裝置佈建電子郵件設定檔和限制。 這可讓您的使用者只需以最少的安裝步驟，即可存取其裝置上的公司電子郵件。  
+您可以使用 Microsoft Intune 和 Exchange ActiveSync，為裝置設定電子郵件設定檔和限制。 這可讓您的使用者只需以最少的安裝步驟，即可存取其裝置上的公司電子郵件。  
 
  您可以使用電子郵件設定檔設定下列裝置類型：  
 
@@ -37,140 +37,141 @@ ms.lasthandoff: 03/30/2017
 - Windows Phone 8.0
 - 執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 iPhone  
 - 執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 iPad  
-- Samsung KNOX 標準 ( 4 及更新版本)
+- Samsung KNOX Standard (4 及更新版本)
 - Android for Work
 
-若要將電子郵件設定檔部署至裝置，它們必須在 Intune 中註冊。 如需如何取得已註冊裝置的相關資訊，請參閱 [使用 Microsoft Intune 管理行動裝置](https://technet.microsoft.com/en-us/library/dn646962.aspx)。
+若要將電子郵件設定檔部署至裝置，您必須在 Intune 中註冊裝置。 如需如何取得已註冊裝置的相關資訊，請參閱 [使用 Microsoft Intune 管理行動裝置](https://technet.microsoft.com/en-us/library/dn646962.aspx)。
 
->[!NOTE]
->Intune 提供兩個 Android for Work 電子郵件設定檔，分別用於 Gmail 和 Nine Work 電子郵件應用程式。 這些應用程式都可從 Google Play 商店取得，並支援連線到 Exchange。 若要啟用電子郵件連線功能，請將其中一個電子郵件應用程式部署到使用者的裝置後，再建立及部署適當的設定檔。 Nine Work 之類的電子郵件應用程式可能不是免費的。 請檢閱應用程式的授權詳細資料，如有任何問題，請連絡應用程式公司。
+> [!NOTE]
+> Intune 提供兩個 Android for Work 電子郵件設定檔，分別用於 Gmail 電子郵件應用程式和 Nine Work 電子郵件應用程式。 這些應用程式都可從 Google Play 商店取得，並支援連線到 Exchange。 若要啟用電子郵件連線功能，請將其中一個電子郵件應用程式部署到使用者的裝置後，再建立及部署適當的設定檔。 Nine Work 之類的電子郵件應用程式可能不是免費的。 請檢閱應用程式的授權詳細資料，如有任何問題，請連絡應用程式公司。
 
  除了在裝置上設定電子郵件帳戶外，您也可以設定連絡人、行事曆和工作的同步處理設定。  
 
- 當您建立電子郵件設定檔時，可以在其中加入各種安全性設定，包括使用 System Center Configuration Manager 憑證設定檔所佈建的識別憑證、加密憑證和簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](/sccm/protect/deploy-use/introduction-to-certificate-profiles) (System Center Configuration Manager 中的憑證設定檔)。    
+ 建立電子郵件設定檔時，您可以加入多種安全性設定。 這些設定包括使用 System Center Configuration Manager 憑證設定檔所設定的身分識別、加密和簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。    
 
-## <a name="create-a-new-exchange-activesync-email-profile"></a>建立新的 Exchange ActiveSync 電子郵件設定檔  
+## <a name="create-an-exchange-activesync-email-profile"></a>建立 Exchange ActiveSync 電子郵件設定檔  
 
-啟動建立 Exchange ActiveSync 電子郵件設定檔精靈  
+若要建立設定檔，您可以使用 [建立 Exchange ActiveSync 電子郵件設定檔精靈]。 
 
-1.  在 Configuration Manager 主控台中，按一下 [資產與合規性]。  
+1.  在 Configuration Manager 主控台中，選擇 [資產與相容性]。  
 
-2.  在 [資產與相容性]  工作區中，依序展開 [相容性設定] 和 [公司資源存取] ，然後按一下 [電子郵件設定檔] 。  
+2.  在 [資產與相容性] 工作區中，依序展開 [相容性設定]和 [公司資源存取]，然後選擇 [電子郵件設定檔]。  
 
-3.  在 [常用] 索引標籤的 [建立] 群組中，按一下 [建立 Exchange ActiveSync 電子郵件設定檔]。
-4.  在精靈的 [一般] 頁面上，設定下列資訊︰
-    - **名稱** - 提供電子郵件設定檔的描述性名稱。
-    - **描述** - (選擇性) 提供可協助您在 Configuration Manager 主控台中識別此電子郵件設定檔的描述。
-    - **此電子郵件設定檔適用於 Android for Work** - 如果您只會將此電子郵件設定檔部署至 Android for Work 裝置，請選取此選項。 如果您選取此核取方塊，不會顯示 [支援的平台] 精靈頁面。 只會設定 Android for Work 電子郵件設定檔。
-4.  在 [建立 Exchange ActiveSync 電子郵件設定檔精靈] 的 [Exchange ActiveSync]  頁面上，指定下列資訊：  
+3.  在 [首頁] 索引標籤的 [建立] 群組中，選擇 [建立 Exchange ActiveSync 電子郵件設定檔] 啟動精靈。
 
-    -   **Exchange ActiveSync 主機** ：指定託管 Exchange ActiveSync 服務之公司 Exchange Server 的主機名稱。  
+4.  在精靈的 [一般] 頁面上，設定下列資訊：
 
-    -   **帳戶名稱** ：指定要在使用者裝置上向使用者顯示之電子郵件帳戶的顯示名稱。  
+    - **名稱**。 提供電子郵件設定檔的描述性名稱。
 
-    -   **帳戶使用者名稱** ：選取用戶端裝置上電子郵件帳戶使用者名稱的設定方式。 您可以從下拉式清單中選取下列其中一個選項：  
+    - **描述**。 (選擇性) 提供可協助您在 Configuration Manager 主控台中識別此電子郵件設定檔的描述。
 
-        -   **使用者主體名稱** ：使用完整使用者主體名稱登入 Exchange。  
+    - **此電子郵件設定檔適用於 Android for Work**： 如果您只會將此電子郵件設定檔部署至 Android for Work 裝置，請選擇此選項。 如果您核取此方塊，不會顯示 [支援的平台] 精靈頁面。 只會設定 Android for Work 電子郵件設定檔。
 
-        -   **AccountName** 使用 Active Directory 中的完整使用者帳戶名稱
+4.  在精靈的 [Exchange ActiveSync] 頁面上，指定下列資訊：  
 
-        -   **主要 SMTP 位址** ：使用使用者主要 SMTP 位址登入 Exchange。  
+    -   **Exchange ActiveSync 主機**： 指定託管 Exchange ActiveSync 服務之公司 Exchange 伺服器的主機名稱。  
 
-    -   **電子郵件地址** ：選取每個用戶端裝置上使用者電子郵件地址的產生方式。 您可以從下拉式清單中選取下列其中一個選項：  
+    -   **帳戶名稱**： 指定在使用者裝置上向使用者顯示的電子郵件帳戶顯示名稱。  
 
-        -   **主要 SMTP 位址** ：使用使用者主要 SMTP 位址登入 Exchange。  
+    -   **帳戶使用者名稱**： 選擇用戶端裝置上之電子郵件帳戶使用者名稱的設定方式。 您可以從下拉式清單中選擇下列其中一個選項：  
 
-        -   **使用者主體名稱** ：使用完整使用者主體名稱做為電子郵件地址。  
+        -   **使用者主體名稱**： 使用完整使用者主體名稱登入 Exchange。  
 
-    -   **帳戶網域** ：請選擇下列其中一個選項：  
+        -   **帳戶名稱**： 使用 Active Directory 中的完整使用者帳戶名稱。
+
+        -   **主要 SMTP 位址**： 使用使用者的主要 SMTP 位址登入 Exchange。  
+
+    -   **電子郵件地址**： 選擇每個用戶端裝置上使用者的電子郵件地址的產生方式。 您可以從下拉式清單中選擇下列其中一個選項：  
+
+        -   **主要 SMTP 位址**： 使用使用者的主要 SMTP 位址登入 Exchange。  
+
+        -   **使用者主體名稱**： 使用完整使用者主體名稱作為電子郵件地址。  
+
+    -   **帳戶網域**： 選擇下列其中一個選項：  
 
         -   **從 Active Directory 取得**  
 
         -   **自訂**  
 
-         只有當選取 [帳戶使用者名稱]  下拉式清單中的 **sAMAccountName** 時，這個欄位才適用。  
+         只有當選取 [帳戶使用者名稱] 下拉式清單中的 **sAMAccountName** 時，這個欄位才適用。  
 
-    -   **驗證方法** ：請選擇下列其中一個驗證方法，用來驗證 Exchange ActiveSync 連線：  
+    -   **驗證方法**： 選擇要用來驗證 Exchange ActiveSync 連線的下列其中一個驗證方法：  
 
-        -   **憑證** ：要用來驗證 Exchange ActiveSync 連線的身分識別憑證。  
+        -   **憑證**： 要用來驗證 Exchange ActiveSync 連線的身分識別憑證。  
 
-        -   **使用者名稱和密碼** ：裝置使用者必須提供用來連線至 Exchange ActiveSync 的密碼 (使用者名稱已設定為電子郵件設定檔的一部分)。  
+        -   **使用者名稱和密碼**： 裝置使用者必須提供用來連線至 Exchange ActiveSync 的密碼 (使用者名稱已設定為電子郵件設定檔的一部分)。  
 
-    -   **身分識別憑證** ：按一下 [選取]  ，然後選取要用於身分識別的憑證。  
-
-        > [!NOTE]  
-        >  您必須先將身分識別憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選取身分識別憑證。 如需憑證設定檔的詳細資訊，請參閱 [Certificate profiles in System Center Configuration Manager](/sccm/protect/deploy-use/introduction-to-certificate-profiles) (System Center Configuration Manager 中的憑證設定檔)。  
-
-         只有當選取 [驗證方法]  下方的 [憑證] 時，才能使用這個選項。  
-
-    -   **使用 S/MIME** (僅適用於 iOS 裝置) - 使用 S/MIME 加密傳送外寄電子郵件。 選擇下列選項：
-
-
-        -   **加密憑證** ：按一下 [選取]  ，然後選取要用於加密的憑證。 這個選項僅適用於 iOS 裝置。 您只能選取一個 PFX 憑證做為加密憑證。
-
-        如果您同時選取加密憑證及簽署憑證，它們都必須是 PFX 格式。
+    -   **身分識別憑證**： 選擇 [選取]，然後選擇要用於身分識別的憑證。  
 
         > [!NOTE]  
-        >  您必須先將憑證設定為簡單憑證註冊通訊協定 (SCEP) 或 PFX 憑證設定檔，才能選取它們。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
+        > 您必須先將身分識別憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選擇身分識別憑證。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
 
+         只有當選擇 [驗證方法] 下方的 [憑證] 時，才能使用這個選項。  
 
+    -   **使用 S/MIME**： 使用 S/MIME 加密傳送外寄電子郵件。 這個選項僅適用於 iOS 裝置。 選擇下列選項：
 
+        -   **加密憑證**： 選擇 [選取]，然後選擇要用於加密的憑證。 您只能選擇一個 PFX 憑證作為加密憑證。
 
-###   <a name="configure-synchronization-settings-for-the-exchange-activesync-email-profile"></a>進行 Exchange ActiveSync 電子郵件設定檔的同步處理設定。  
+        如果您同時選擇加密憑證及簽署憑證，它們都必須是 PFX 格式。
 
-1.  在 [建立 Exchange ActiveSync 電子郵件設定檔精靈] 的 [設定同步處理設定]  頁面上，指定下列資訊：  
+        > [!NOTE]  
+        > 您必須先將憑證設定為 SCEP 或 PFX 憑證設定檔，才能選擇憑證。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
 
-    -   **排程** ：選取裝置用來同步處理 Exchange Server 資料的排程。 這個選項僅適用於 Windows Phone 裝置。 從下列選項進行選擇：  
+## <a name="configure-synchronization-settings-for-the-exchange-activesync-email-profile"></a>進行 Exchange ActiveSync 電子郵件設定檔的同步處理設定  
 
-        -   **未設定** ：不會強制執行同步處理排程。 這個選項可讓使用者設定自己的同步處理排程。  
+在 [建立 Exchange ActiveSync 電子郵件設定檔精靈] 的 [設定同步處理設定]  頁面上，指定下列資訊：  
 
-        -   **郵件送達時** ：電子郵件和行事曆項目等資料送達時，會自動進行同步處理。  
+-   **排程**。 選擇裝置用來同步 Exchange 伺服器中資料的排程。 這個選項僅適用於 Windows Phone 裝置。 從下列選項進行選擇：  
 
-        -   **15 分鐘** ：每隔 15 分鐘會自動同步處理電子郵件和行事曆項目等資料。  
+    -   **未設定**： 不會強制執行同步處理排程。 這個選項可讓使用者設定自己的同步處理排程。  
 
-        -   **30 分鐘** ：每隔 30 分鐘會自動同步處理電子郵件和行事曆項目等資料。  
+    -   **郵件送達時**： 電子郵件和行事曆項目等資料送達時，會自動進行同步。  
 
-        -   **60 分鐘** ：每隔 60 分鐘會自動同步處理電子郵件和行事曆項目等資料。  
+    -   **15 分鐘**： 每隔 15 分鐘會自動同步電子郵件和行事曆項目等資料。  
 
-        -   **手動** ：裝置使用者必須手動起始同步處理。  
+    -   **30 分鐘**： 每隔 30 分鐘會自動同步電子郵件和行事曆項目等資料。  
 
-    -   **要同步處理的電子郵件天數** ：從下拉式清單中，選取您想要同步處理電子郵件的天數。 選擇下列其中一個值：  
+    -   **60 分鐘**： 每隔 60 分鐘會自動同步電子郵件和行事曆項目等資料。  
 
-        -   **未設定** ：不會強制執行設定。 這個選項可讓使用者設定要下載至其裝置的電子郵件數目。  
+    -   **手動**： 裝置使用者必須手動起始同步處理。  
 
-        -   **無限制** ：同步處理所有可用的電子郵件。  
+-   **要同步處理的電子郵件天數**： 從下拉式清單中，選擇您要同步電子郵件的天數。 選擇下列其中一個值：  
 
-        -   **1 天**  
+    -   **未設定**： 不會強制執行設定。 這個選項可讓使用者設定要下載至其裝置的電子郵件數目。  
 
-        -   **3 天**  
+    -   **無限制**： 同步所有可用的電子郵件。  
 
-        -   **1 週**  
+    -   **1 天**  
 
-        -   **2 週**  
+    -   **3 天**  
 
-        -   **1 個月**  
+    -   **1 週**  
 
-    -   **允許將郵件移至其他電子郵件帳戶** ：選取這個選項可讓使用者在其裝置上所設定的不同帳戶之間移動電子郵件訊息。 這個選項僅適用於 iOS 裝置。  
+    -   **2 週**  
 
-    -   **允許從協力廠商應用程式傳送電子郵件** ：選取這個選項可讓使用者從特定非預設的協力廠商電子郵件應用程式傳送電子郵件。 這個選項僅適用於 iOS 裝置。  
+    -   **1 個月**  
 
-    -   **同步處理最近使用的電子郵件地址** ：選取這個選項可同步處理裝置上最近使用的電子郵件地址清單。 這個選項僅適用於 iOS 裝置。  
+-   **允許將郵件移到其他電子郵件帳戶**： 選擇這個選項可讓使用者在其裝置上所設定的不同帳戶之間移動電子郵件訊息。 這個選項僅適用於 iOS 裝置。  
 
-    -   **使用 SSL** ：選取這個選項可在傳送電子郵件、接收電子郵件，以及與 Exchange Server 通訊時，使用安全通訊端層 (SSL) 通訊。  
+-   **允許從協力廠商應用程式傳送電子郵件**： 選擇這個選項可讓使用者從特定非預設的協力廠商電子郵件應用程式傳送電子郵件。 這個選項僅適用於 iOS 裝置。  
 
-    -   **要同步處理的內容類型** ：選取您想要與裝置同步處理的內容類型。 這個選項僅適用於 Windows Phone 裝置。 從下列選項進行選擇：  
+-   **同步處理最近使用的電子郵件地址**： 選擇這個選項可同步裝置上最近使用的電子郵件地址清單。 這個選項僅適用於 iOS 裝置。  
 
-        -   **電子郵件**  
+-   **使用 SSL**： 選擇這個選項可在傳送電子郵件、接收電子郵件，以及與 Exchange 伺服器通訊時，使用安全通訊端層 (SSL) 通訊。  
 
-        -   **連絡人**  
+-   **要同步處理的內容類型**： 選擇您想要與裝置同步的內容類型。 這個選項僅適用於 Windows Phone 裝置。 從下列選項進行選擇：  
 
-        -   **行事曆**  
+    -   **電子郵件**  
 
-        -   **工作**  
+    -   **連絡人**  
 
-###  <a name="specify-supported-platforms-for-the-exchange-activesync-email-profile"></a>指定 Exchange ActiveSync 電子郵件設定檔的支援平台。  
+    -   **行事曆**  
 
-1.  在 [建立 Exchange ActiveSync 電子郵件設定檔精靈] 的 [支援的平台]  頁面上，選取將安裝電子郵件設定檔的作業系統，或按一下 [全選]  在所有可用的作業系統上安裝電子郵件設定檔。  
+    -   **工作**  
+
+## <a name="specify-supported-platforms-for-the-exchange-activesync-email-profile"></a>指定 Exchange ActiveSync 電子郵件設定檔的支援平台  
+
+1.  在 [建立 Exchange ActiveSync 電子郵件設定檔精靈] 的 [支援的平台] 頁面上，選擇將安裝電子郵件設定檔的作業系統。 或者，選擇 [全選] 將電子郵件設定檔安裝到所有可用的作業系統。  
 
 2.  完成精靈。
 

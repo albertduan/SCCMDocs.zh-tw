@@ -17,8 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 1069a18eecbc5f53b74ad89e166e6f2c7b180693
+ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
+ms.openlocfilehash: 11c0f169afebdb071fefb5ce300fd1ae3481a94f
+ms.lasthandoff: 04/19/2017
 
 
 ---
@@ -28,12 +29,12 @@ ms.openlocfilehash: 1069a18eecbc5f53b74ad89e166e6f2c7b180693
 
 若要在 System Center Configuration Manager 中部署作業系統，您必須先準備下列需要進行特定設定和考量的站台系統角色。
 
-##  <a name="a-namebkmkdistributionpointsa-distribution-points"></a><a name="BKMK_DistributionPoints"></a> 發佈點  
+##  <a name="BKMK_DistributionPoints"></a> 發佈點  
  發佈點站台系統角色包含可供用戶端下載的來源檔案 (例如應用程式內容、軟體更新、作業系統映像和開機映像)。 您可以利用頻寬、節流及排程選項控制內容發佈。  
 
  您的發佈點數量必須足以支援在電腦上進行作業系統部署。 規劃這些發佈點在階層中的位置也十分重要。 您可以在[內容與內容基礎結構](../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)中找到大部分的規劃資訊。 不過，關於作業系統部署特有的發佈點仍有些額外規劃考量。  
 
-###  <a name="a-namebkmkadditionalplanninga-additional-planning-considerations-for-distribution-points"></a><a name="BKMK_AdditionalPlanning"></a> 發佈點的額外規劃考量  
+###  <a name="BKMK_AdditionalPlanning"></a> 發佈點的額外規劃考量  
  以下是發佈點的額外規劃考量：  
 
 -   **如何防止不想要的作業系統部署？**  
@@ -54,7 +55,7 @@ ms.openlocfilehash: 1069a18eecbc5f53b74ad89e166e6f2c7b180693
 
      您可以將作業系統部署至發佈點，但必須從不同的發佈點接收作業系統映像。  
 
-###  <a name="a-namebkmkpxedistributionpointa-configuring-distribution-points-to-accept-pxe-requests"></a><a name="BKMK_PXEDistributionPoint"></a> 設定發佈點接受 PXE 要求  
+###  <a name="BKMK_PXEDistributionPoint"></a> 設定發佈點接受 PXE 要求  
  若要將作業系統部署至發出 PXE 開機要求的 Configuration Manager 用戶端，您必須設定一或多個發佈點來接受 PXE 要求。 在您設定發佈點之後，發佈點將會回應 PXE 開機要求，並判斷要採取的適當部署動作。
 
 > [!IMPORTANT]  
@@ -97,7 +98,7 @@ ms.openlocfilehash: 1069a18eecbc5f53b74ad89e166e6f2c7b180693
 
 11. 按一下 [確定]  更新發佈點的內容。  
 
-###  <a name="a-namebkmkramdisktftpa-customize-the-ramdisk-tftp-block-size-and-window-size-on-pxe-enabled-distribution-points"></a><a name="BKMK_RamDiskTFTP"></a> 自訂支援 PXE 之發佈點的相關 RamDisk TFTP 區塊大小和視窗大小  
+###  <a name="BKMK_RamDiskTFTP"></a> 自訂支援 PXE 之發佈點的相關 RamDisk TFTP 區塊大小和視窗大小  
 您可以為支援 PXE 的發佈點自訂 RamDisk TFTP 區塊大小，而從 Configuration Manager 1606 版開始，也可以自訂視窗大小。 如果您已自訂網路，可能會導致開機映像下載因發生逾時錯誤而失敗，因為區塊或視窗大小太大。 自訂 RamDisk TFTP 區塊大小和視窗大小可讓您在使用 PXE 來滿足特定的網路需求時，將 TFTP 流量最佳化。   
 您將需要在您的環境中測試自訂的設定，以確定最有效率的設定是哪一個。  
 
@@ -115,7 +116,7 @@ ms.openlocfilehash: 1069a18eecbc5f53b74ad89e166e6f2c7b180693
 
      **類型**：REG_DWORD  
 
-     **值**：<自訂視窗大小\>  
+     **值**：&lt;自訂視窗大小>  
 
  預設值為 1 (1 個資料區塊填滿視窗)  
 
@@ -128,12 +129,12 @@ ms.openlocfilehash: 1069a18eecbc5f53b74ad89e166e6f2c7b180693
 
      **類型**：REG_DWORD  
 
-     **值**：<自訂區塊大小\>  
+     **值**：&lt;自訂區塊大小>  
 
  預設值為 4096 (4k)。  
 
 
-###  <a name="a-namebkmkdpmulticasta-configure-distribution-points-to-support-multicast"></a><a name="BKMK_DPMulticast"></a> 設定發佈點支援多點傳送  
+###  <a name="BKMK_DPMulticast"></a> 設定發佈點支援多點傳送  
  多點傳送是一種網路最佳化方法，如果可能有多個用戶端同時下載同一個作業系統映像，即可以在發佈點上使用這種方法。 使用多點傳送時，多部電腦可以同時下載由發佈點多點傳送的作業系統映像，不需由發佈點一一透過個別連線傳送資料複本至每個用戶端。 您至少必須設定一個發佈點才能支援多點傳送。 如需詳細資訊，請參閱[使用多點傳送透過網路來部署 Windows](../deploy-use/use-multicast-to-deploy-windows-over-the-network.md)。  
 
  您必須將發佈點設定為支援多點傳送，才能部署作業系統。 利用下列程序，將現有的發佈點修改為支援多點傳送。 如需如何安裝新發佈點的資訊，請參閱[安裝和設定發佈點](../../core/servers/deploy/configure/install-and-configure-distribution-points.md)。
@@ -176,7 +177,7 @@ ms.openlocfilehash: 1069a18eecbc5f53b74ad89e166e6f2c7b180693
 
 6.  按一下 [ **確定**]。  
 
-##  <a name="a-namebkmkstatemigrationpointsa-state-migration-point"></a><a name="BKMK_StateMigrationPoints"></a> 狀態移轉點  
+##  <a name="BKMK_StateMigrationPoints"></a> 狀態移轉點  
  狀態移轉點會儲存在某台電腦上擷取到的使用者狀態資料，再將資料還原至另一台電腦。 不過，當您擷取同一部電腦的作業系統部署使用者設定時 (例如您在此重新整理作業系統之目的地電腦的部署)，您可以選擇使用永久連結將資料儲存在同一部電腦，還是使用狀態移轉點。 進行部分電腦部署時，若要建立狀態存放區，Configuration Manager 會自動在狀態存放區和目的地電腦之間建立關聯。 規劃狀態移轉點時，請考慮下列因素。  
 
 ### <a name="user-state-size"></a>使用者狀態的大小  
@@ -219,9 +220,4 @@ ms.openlocfilehash: 1069a18eecbc5f53b74ad89e166e6f2c7b180693
 -   狀態移轉點是否只回應還原使用者狀態資料的要求。 當您啟用此選項時，將無法使用狀態移轉點來儲存使用者狀態資料。  
 
  如需安裝站台系統角色的步驟，請參閱[新增站台系統角色](../../core/servers/deploy/configure/add-site-system-roles.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -1,8 +1,8 @@
 ---
-title: "將 Windows 裝置升級至新版本 | Microsoft Docs"
-description: "自動將執行 Windows 10 桌面版、Windows 10 行動裝置版或 Windows 10 全像攝影版的裝置升級至較新版本。"
+title: "使用 Configuration Manager 將 Windows 裝置升級至不同的版本 | Microsoft Docs"
+description: "使用 Configuration Manager 自動將執行 Windows 10 桌面版、Windows 10 行動裝置版或 Windows 10 全像攝影版的裝置升級至不同的版本。"
 ms.custom: na
-ms.date: 11/18/2016
+ms.date: 04/18/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
-ms.openlocfilehash: f14dfb77be7b53e74d53e0c1fc7e7f1731952d40
+ms.sourcegitcommit: 4eee9731a4a27328c47c0d15931cab28cf520a18
+ms.openlocfilehash: cfde0a43947013bbd3a1093688cee19fe309fd03
+ms.lasthandoff: 04/18/2017
 
 
 ---
@@ -28,7 +29,7 @@ ms.openlocfilehash: f14dfb77be7b53e74d53e0c1fc7e7f1731952d40
 *適用於：System Center Configuration Manager (最新分支)*
 
 
-System Center Configuration Manager **版本升級原則**可讓您自動將執行下列其中一個 Windows 10 版本的裝置升級至較新版本：
+System Center Configuration Manager **版本升級原則**可讓您自動將執行下列其中一個 Windows 10 版本的裝置升級至不同的版本：
 
 - Windows 10 Desktop
 - Windows 10 Mobile
@@ -92,9 +93,4 @@ System Center Configuration Manager **版本升級原則**可讓您自動將執�
 您可以從 [監視]  工作區的 [部署]  節點監視您剛剛建立的部署。  
 
  原則到達目標的 Windows 電腦並進行評估之後，電腦便會在兩個小時內重新啟動以套用升級。 確定通知任何您要部署原則的使用者，或排程在非使用者工作時間執行原則。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -16,9 +16,9 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4bf5cc25c4ffb89df620b02044f43a13adc1443e
-ms.openlocfilehash: c87841ee1b30ebbcbbe8cd06309d909c38c01fdf
-ms.lasthandoff: 04/06/2017
+ms.sourcegitcommit: 329de5ffb6eb1403c02cd1db634c32f045e82488
+ms.openlocfilehash: 47348baeac26bfa2ad5016622fe4dbcb9f572483
+ms.lasthandoff: 04/14/2017
 
 
 ---
@@ -47,35 +47,64 @@ ms.lasthandoff: 04/06/2017
 4. 按一下 [確定]  關閉對話方塊。  若要使用公司入口網站簡化註冊程序，您應該為裝置註冊建立 DNS 別名。 您接著就可以告訴使用者如何註冊其裝置。
 
 ## <a name="choose-how-to-enroll-windows-devices"></a>選擇註冊 Windows 裝置的方式
-有兩個因素會決定註冊 Windows 裝置的方式︰
+
+在您將 Intune 授權指派給使用者之後，不需要任何額外的步驟即可註冊 Windows 裝置，但您可以讓使用者更輕鬆地進行註冊。
+
+有兩個因素會決定如何簡化 Windows 裝置註冊：
 - **您是否使用 Azure Active Directory Premium？** <br>[Azure AD Premium](https://docs.microsoft.com/azure/active-directory/active-directory-get-started-premium) 隨附於企業行動力 + 安全性和其他授權計劃內。
 - **哪些版本的 Windows 用戶端會進行註冊？** <br>加入工作或學校帳戶即可自動註冊 Windows 10 裝置。 較舊版本則必須使用公司入口網站應用程式進行註冊。
 
 ||**Azure AD Premium**|**其他 AD**|
 |----------|---------------|---------------|  
-|**Windows 10**|[自動註冊](#automatic-enrollment) |[公司入口網站註冊](#company-portal-enrollment)|
-|**舊版 Windows**|[公司入口網站註冊](#company-portal-enrollment)|[公司入口網站註冊](#company-portal-enrollment)|
+|**Windows 10**|[自動註冊](#enable-windows-10-automatic-enrollment) |[使用者註冊](#enable-windows-enrollment-without-azure-ad-premium)|
+|**舊版 Windows**|[使用者註冊](#enable-windows-enrollment-without-azure-ad-premium)|[使用者註冊](#enable-windows-enrollment-without-azure-ad-premium)|
 
-## <a name="automatic-enrollment"></a>自動註冊
+## <a name="enable-windows-10-automatic-enrollment"></a>啟用 Windows 10 自動註冊
 
-自動註冊可讓使用者藉由新增工作或學校帳戶，並同意進行管理，以註冊公司擁有或個人的 Windows 10 裝置。 在背景中，使用者的裝置會註冊並連接至 Azure Active Directory。 註冊之後，可使用 Intune 來管理裝置。 受管理的裝置仍然可以使用公司入口網站進行工作，但不一定要安裝它才能註冊。
+自動註冊可讓使用者在 Intune 中，新增工作或學校帳戶，並同意進行管理，以註冊公司擁有或個人的 Windows 10 電腦與 Windows 10 行動裝置。 就是這麼簡單。 在背景中，使用者的裝置會註冊並加入 Azure Active Directory。 註冊之後，會使用 Intune 來管理裝置。
 
 **先決條件**
 - Azure Active Directory Premium 訂閱 ([試用訂閱](http://go.microsoft.com/fwlink/?LinkID=816845))
 - Microsoft Intune 訂閱
 
-### <a name="configure-automatic-enrollment"></a>設定自動註冊
 
-1. 登入 [Azure 入口網站](https://manage.windowsazure.com)，並瀏覽至左窗格中的 [Active Directory] 節點，然後選取您的目錄。
-2. 選取 [設定] 索引標籤，並捲動至稱為 [裝置] 的區段。
-3. 選取 [All] (全部)，因為**使用者可能會將裝置與工作場所聯結**。
-4. 選取您想要授權給每位使用者的裝置數目上限。
+### <a name="configure-automatic-mdm-enrollment"></a>設定自動執行 MDM 註冊
+
+1. 登入 [Azure 管理入口網站](https://portal.azure.com) (https://manage.windowsazure.com)，然後選取 **Azure Active Directory**。
+
+  ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-azure-main.png)
+
+2. 選取 [行動性 (MDM 與 MAM)]。
+
+  ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-mdm.png)
+
+3. 選取 [Microsoft Intune]。
+
+  ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-intune.png)
+
+4. 設定 [MDM 使用者範圍]。 指定哪些使用者的裝置應該由 Microsoft Intune 管理。 這些使用者的 Windows 10 裝置將會自動註冊，以便使用 Microsoft Intune 管理。
+
+    - **無**
+    - **部分**
+    - **全部**
+
+   ![Azure 入口網站的螢幕擷取畫面](../media/auto-enroll-scope.png)
+
+5. 使用下列 URL 的預設值：
+    - **MDM 使用條款 URL**
+    - **MDM 探索 URL**
+    - **MDM 合規性 URL**
+
+6. 選取 [儲存]。
+
 
 根據預設，並未對服務啟用雙因素驗證。 不過，於註冊裝置時，會建議使用雙因素驗證。 您必須先在 Azure Active Directory 中設定雙因素驗證提供者，並針對多重要素驗證來設定您的使用者帳戶之後，才會需要此服務的雙因素驗證。 請參閱[開始使用 Azure Multi-Factor Authentication Server](https://docs.microsoft.com/azure/multi-factor-authentication/multi-factor-authentication-get-started-cloud)。
 
+## <a name="enable-windows-enrollment-without-azure-ad-premium"></a>啟用不使用 Azure AD Premium 的 Windows 註冊
+您可以讓使用者註冊其裝置，而不使用 Azure AD Premium 自動註冊。 一旦您指派授權，使用者就可以在將其工作帳戶新增至其個人擁有的裝置，或將其公司擁有的裝置加入您的 Azure AD 之後進行註冊。 建立 DNS 別名 (CNAME 記錄類型)，讓使用者更輕鬆地註冊其裝置。 如果您建立 DNS CNAME 資源記錄，使用者會連線並在 Intune 中註冊，而不需要輸入 Intune 伺服器名稱。
 
-### <a name="create-dns-alias-for-device-enrollment"></a>建立裝置註冊的 DNS 別名  
-DNS 別名 (CNAME 記錄類型) 可讓使用者連線至服務來輕鬆註冊其裝置，而不需要使用者輸入伺服器位址。 若要建立 DNS 別名 (CNAME 記錄類型)，您必須在您公司的 DNS 記錄中設定 CNAME，使傳送到您公司網域中 URL 的要求會重新導向至 Microsoft 的雲端服務伺服器。  例如，假設您公司的網域為 contoso.com，您應該在 DNS 中建立 CNAME，其會將 EnterpriseEnrollment.contoso.com 重新導向到 EnterpriseEnrollment-s.manage.microsoft.com。  
+### <a name="create-cnames-to-simplify-enrollment"></a>建立 CNAME 以簡化註冊
+建立公司網域的 CNAME DNS 資源記錄。 例如，假設公司網站為 contoso.com，您就必須在 DNS 中建立 CNAME，將 EnterpriseEnrollment.contoso.com 重新導向 enterpriseenrollment-s.manage.microsoft.com。
 
 雖然建立 CNAME DNS 項目並非必要，但 CNAME 記錄可以方便使用者進行註冊。 若找不到任何 CNAME 記錄，將會提示使用者手動輸入 MDM 伺服器名稱 enrollment.manage.microsoft.com。
 
@@ -90,6 +119,10 @@ DNS 別名 (CNAME 記錄類型) 可讓使用者連線至服務來輕鬆註冊其
 |CNAME|EnterpriseEnrollment.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 小時|
 |CNAME|EnterpriseEnrollment.us.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com|1 小時|
 |CNAME|EnterpriseEnrollment.eu.contoso.com|EnterpriseEnrollment-s.manage.microsoft.com| 1 小時|
+
+`EnterpriseEnrollment-s.manage.microsoft.com` - 支援從電子郵件的網域名稱辨識網域，重新導向至 Intune 服務
+
+DNS 記錄變更可能需要 72 小時才會傳播完成。 在 DNS 記錄傳播完成之前，您無法在 Intune 中驗證 DNS 變更。
 
 ## <a name="tell-users-how-to-enroll-devices"></a>告知使用者如何註冊裝置  
 

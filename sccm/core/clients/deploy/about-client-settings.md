@@ -13,13 +13,13 @@ ms.topic: article
 ms.assetid: f7560876-8084-4570-aeab-7fd44f4ba737
 caps.latest.revision: 15
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: bd2cf7b0df4a1f50c006e8280bf59ea91f1b4477
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 4eee9731a4a27328c47c0d15931cab28cf520a18
+ms.openlocfilehash: d1d2ec7c053d13ebaeb00d0dfeb126716b5f7ae5
+ms.lasthandoff: 04/18/2017
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>關於 System Center Configuration Manager 中的用戶端設計
@@ -505,7 +505,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
     -   選擇**新增**圖示將新的檔案類型加入清查。 然後在 [已清查的檔案內容] 對話方塊中，指定下列資訊：  
 
-        -   **名稱**：提供您要清查的檔案名稱。 您可以使用 **\** 字元來表示任何文字字串，以及使用**?**字元來表示任何單一字元。例如，若您想要清查所有副檔名為 .doc 的檔案，請指定檔案名稱**\*.doc**。  
+        -   **名稱**：提供您要清查的檔案名稱。 您可以使用 **\** 字元來表示任何文字字串，以及使用 **?** 字元來表示任何單一字元。 例如，若您想要清查所有副檔名為 .doc 的檔案，請指定檔案名稱 **\*.doc**。  
 
         -   **位置**：選擇 [設定] 開啟 [路徑內容] 對話方塊。 您可以將軟體清查設定為搜尋所有用戶端硬碟的指定檔案、搜尋指定的路徑 (例如 **C:\資料夾**) 或搜尋指定的變數 (例如 *%windir%*)。 您也可以搜尋指定路徑下的所有子資料夾。  
 
@@ -528,7 +528,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
     -   在 [收集到的檔案內容]  對話方塊中，提供下列資訊：  
 
-        -   **名稱**：提供您要收集的檔案名稱。 您可以使用 **\** 字元來表示任何文字字串，以及使用**?** 字元來表示任何單一字元。  
+        -   **名稱**：提供您要收集的檔案名稱。 您可以使用 **\** 字元來表示任何文字字串，以及使用 **?** 字元來表示任何單一字元。  
 
         -   **位置**：選擇 [設定] 開啟 [路徑內容] 對話方塊。 您可以將軟體清查設定為在所有用戶端硬碟中搜尋您要收集的檔案、搜尋指定的路徑 (例如 **C:\資料夾**)，或搜尋指定的變數 (例如 *%windir%*)。 您也可以搜尋指定路徑下的所有子資料夾。  
 
