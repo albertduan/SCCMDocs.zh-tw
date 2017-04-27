@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: c3ca3b895d54b6dc886068b92b39d0d95c466de2
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
+ms.openlocfilehash: a2d4420c2274a9b1ceb47ffd267849fdb5a55a61
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -76,7 +76,7 @@ ms.lasthandoff: 03/21/2017
 - 次要站台 - 無法使用
 
 
-**刪除過時收集檔案**：使用此工作可從資料庫中，刪除已收集檔案的相關過時資訊。 此工作也會從選定網站的網站伺服器資料夾結構中刪除收集檔案。 根據預設，會將&5; 個收集檔案的最新複本儲存在 **Inboxes\sinv.box\FileCol** 目錄的網站伺服器上。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的軟體清查簡介](/sccm/core/clients/manage/inventory/introduction-to-software-inventory)。  
+**刪除過時收集檔案**：使用此工作可從資料庫中，刪除已收集檔案的相關過時資訊。 此工作也會從選定網站的網站伺服器資料夾結構中刪除收集檔案。 根據預設，會將 5 個收集檔案的最新複本儲存在 **Inboxes\sinv.box\FileCol** 目錄的網站伺服器上。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的軟體清查簡介](/sccm/core/clients/manage/inventory/introduction-to-software-inventory)。  
 
 -   管理中心網站：無法使用    
 -   **主要站台**：已啟用    
@@ -141,13 +141,13 @@ ms.lasthandoff: 03/21/2017
 **刪除過時記錄檔資料**使用此工作可從資料庫中，刪除用來進行疑難排解的過時記錄檔資料。 此一資料與 Configuration Manager 元件運作無關。  
 
 > [!IMPORTANT]  
-> 根據預設，此一工作會在每個網站上每日執行。 在管理中心網站與主要網站上，這個工作會刪除超過 30 天的資料。 在次要網站上使用 SQL Server Express 時，請確保這個工作每日執行，並刪除&7; 天未使用的資料。  
+> 根據預設，此一工作會在每個網站上每日執行。 在管理中心網站與主要網站上，這個工作會刪除超過 30 天的資料。 在次要網站上使用 SQL Server Express 時，請確保這個工作每日執行，並刪除 7 天未使用的資料。  
 
 -   **管理中心網站** - 已啟用    
 -   **主要站台**：已啟用    
 -   **次要站台**：已啟用  
 
-**刪除過時通知工作歷程記錄**：使用此工作可從站台資料庫中，刪除已達一段指定時間未更新的用戶端通知工作資訊。 如需用戶端通知的詳細資訊，請參閱 [Client deployment tasks for System Center Configuration Manager](../../../core/clients/deploy/client-deployment-tasks.md)。  
+**刪除過時通知工作歷程記錄**：使用此工作可從站台資料庫中，刪除已達一段指定時間未更新的用戶端通知工作資訊。 如需用戶端通知的詳細資訊，請參閱 [Client deployment tasks for System Center Configuration Manager](../../../core/clients/manage/monitor-clients.md)。  
 
 -   管理中心網站：無法使用    
 -   **主要站台**：已啟用    
@@ -159,7 +159,7 @@ ms.lasthandoff: 03/21/2017
 -   **主要站台**：已啟用    
 -   **次要站台**：已啟用  
 
-**刪除過時的密碼記錄**：在您階層的頂層網站使用此工作，可刪除 Android 和 Windows Phone 裝置之「密碼重設」的資料。 「密碼重設」資料會經過加密，但不會包含裝置的 PIN 碼。 預設會啟用此工作並刪除超過&1; 天的資料。  
+**刪除過時的密碼記錄**：在您階層的頂層網站使用此工作，可刪除 Android 和 Windows Phone 裝置之「密碼重設」的資料。 「密碼重設」資料會經過加密，但不會包含裝置的 PIN 碼。 預設會啟用此工作並刪除超過 1 天的資料。  
 
 -   **管理中心網站** - 已啟用    
 -   **主要站台**：已啟用    

@@ -2,7 +2,7 @@
 title: "管理集合 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中執行一般集合管理工作。"
 ms.custom: na
-ms.date: 2/22/2017
+ms.date: 4/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,8 +17,9 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: b41b50c75f1b89c8fc712b53988bd8e24813106d
+ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
+ms.openlocfilehash: 4d44f98eb0755619cdd2101203a13725186b835b
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -40,7 +41,7 @@ ms.openlocfilehash: b41b50c75f1b89c8fc712b53988bd8e24813106d
 |---------------------|-------------|----------------------|  
 |**顯示成員**|在 [裝置]  節點下，顯示臨時節點中為所選取集合成員的所有資源。|沒有其他資訊。|  
 |**新增選取的項目**|請提供下列選項來執行下列其中一個動作：<br /><br /> - <br />                    **將選取的項目新增至現有的裝置集合** - 開啟 [選取集合] 對話方塊，您可以在其中選取您要新增所選取集合成員的集合。 使用 [包含集合]  成員資格規則，將選取的集合包含在這個集合。<br /><br /> - **將選取的項目新增至新裝置集合** - 開啟 [建立裝置集合精靈]，您可以在其中建立新的集合。 使用 [包含集合]  成員資格規則，將選取的集合包含在這個集合。|[如何在 System Center Configuration Manager 中建立集合](../../../../core/clients/manage/collections/create-collections.md)|  
-|**安裝用戶端**|開啟 [安裝用戶端精靈]，這個精靈使用用戶端推入安裝在所選取集合的所有電腦上安裝 Configuration Manager 用戶端。|[System Center Configuration Manager 的用戶端部署工作](../../../../core/clients/deploy/client-deployment-tasks.md)|  
+|**安裝用戶端**|開啟 [安裝用戶端精靈]，這個精靈使用用戶端推入安裝在所選取集合的所有電腦上安裝 Configuration Manager 用戶端。|[如何將用戶端部署至 Windows 電腦](../../../../core/clients/deploy/deploy-clients-to-windows-computers.md)|  
 |**管理親和性要求**|開啟 [管理使用者裝置親和性要求]  對話方塊，您可以在其中核准或拒絕擱置要求，以建立所選取集合中裝置的使用者裝置親和性。|[在 System Center Configuration Manager 中使用使用者裝置親和性連結使用者和裝置](../../../../apps/deploy-use/link-users-and-devices-with-user-device-affinity.md)|  
 |**清除必要的 PXE 部署**|清除所選取集合之所有成員中的任何必要 PXE 開機部署。|[作業系統部署簡介](../../../../osd/understand/introduction-to-operating-system-deployment.md)|  
 |**更新成員資格**|評估所選取集合的成員資格。 對於具有許多成員的集合，這個更新可能需要一些時間才能完成。 使用 [重新整理]  動作，會在更新完成之後，使用新的集合成員來更新顯示。|沒有其他資訊。|  
@@ -71,7 +72,7 @@ ms.openlocfilehash: b41b50c75f1b89c8fc712b53988bd8e24813106d
 |**模擬部署**|開啟 [模擬應用程式部署精靈]  ，可讓您不需要安裝或解除安裝應用程式，即可測試應用程式部署的結果。|[如何使用 System Center Configuration Manager 模擬應用程式部署](../../../../apps/deploy-use/simulate-application-deployments.md)|  
 |**部署**|顯示下列選項：<br /><br /> - **應用程式** - 開啟 [部署軟體精靈]，您可以在其中選取並設定所選取集合的應用程式部署。<br /><br /> - <br />                    **程式** – 開啟 [部署軟體精靈]  ，您可以在其中選取並設定所選取集合的封裝和程式部署。<br /><br /> - **設定基準** - 開啟 [部署設定基準] 對話方塊，您可以在其中設定將一個或多個設定基準部署至選取的集合。|[如何使用 System Center Configuration Manager 部署應用程式](../../../../apps/deploy-use/deploy-applications.md)<br /><br /> [System Center Configuration Manager 中的套件和程式](../../../../apps/deploy-use/packages-and-programs.md)<br /><br /> [如何在 System Center Configuration Manager 中部署設定基準](../../../../compliance/deploy-use/deploy-configuration-baselines.md)|  
 
-##  <a name="a-namebkmkcollpropa-collection-properties"></a><a name="BKMK_CollProp"></a> 集合內容  
+##  <a name="BKMK_CollProp"></a> 集合內容  
  當您開啟集合的 [內容]  對話方塊時，可以檢視並設定集合的下列內容。  
 
 |索引標籤名稱|詳細資訊|  
@@ -85,9 +86,4 @@ ms.openlocfilehash: b41b50c75f1b89c8fc712b53988bd8e24813106d
 |**發佈點群組**|可讓您將一個或多個發佈點群組與所選取集合成員產生關聯。 如需詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。|  
 |**安全性**|顯示具有所選取集合與相關聯角色和安全性範圍權限的系統管理使用者。|  
 |**監視**|可讓您設定何時產生用戶端狀態和 Endpoint Protection 的警示。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端狀態](../../../../core/clients/deploy/configure-client-status.md)和[如何監視 System Center Configuration Manager 中的 Endpoint Protection](../../../../protect/deploy-use/monitor-endpoint-protection.md)。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
