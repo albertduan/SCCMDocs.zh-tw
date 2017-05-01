@@ -58,14 +58,10 @@
 ### [建立自訂工作順序](deploy-use/create-a-custom-task-sequence.md)
 ### [建立非作業系統部署的工作順序](deploy-use/create-a-task-sequence-for-non-operating-system-deployments.md)
 ### [管理 BIOS 到 UEFI 轉換的工作順序步驟](deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion.md)
+### [在 Windows PE 中預先佈建 BitLocker](deploy-use/preprovision-bitlocker-in-windows-pe.md)
 
 ## [建立工作順序媒體](deploy-use/create-task-sequence-media.md)
 ### [建立獨立媒體](deploy-use/create-stand-alone-media.md)
 ### [建立預先設置的媒體](deploy-use/create-prestaged-media.md)
 ### [建立可開機媒體](deploy-use/create-bootable-media.md)
 ### [建立擷取媒體](deploy-use/create-capture-media.md)
-
-
-<!--HONumber=Dec16_HO3-->
-
-
