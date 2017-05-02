@@ -324,7 +324,7 @@ Configuration Manager 用戶端會在收到部署後隨即下載所需軟體的�
 #### <a name="to-add-hardware-identifiers-for-configuration-manager-to-ignore"></a>若要新增 Configuration Manager 要略過的硬體識別碼  
 1. 在 Configuration Manager 主控台中，移至 [管理] > [概觀] > [站台設定] > [站台]。
 2. 在 [首頁] 索引標籤的 [站台] 群組中，選擇 [階層設定]。
-3. 在 [用戶端核准和衝突的記錄] 索引標籤的 [Duplicate hardware identifiers] (重複的硬體識別碼) 區段中，選擇 [新增] 新增硬體識別碼。
+3. 在 [用戶端核准和衝突的記錄] 索引標籤的 [Duplicate hardware identifiers]\(重複的硬體識別碼) 區段中，選擇 [新增] 新增硬體識別碼。
 
 ##  <a name="BKMK_PolicyRetrieval"></a> 起始 Configuration Manager 用戶端的原則抓取  
  Windows Configuration Manager 用戶端會依照您設定的排程 (用戶端設定) 下載其用戶端原則。 不過，有時候您可能想要從用戶端起始臨機操作原則抓取，例如用於疑難排解或測試。  
