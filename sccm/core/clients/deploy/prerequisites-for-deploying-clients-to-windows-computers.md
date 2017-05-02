@@ -106,7 +106,7 @@ ms.lasthandoff: 03/27/2017
 
     -   電腦擁有 ADMIN$ 共用。  
 
-    -   如果您要將用戶端自動推入探索到的資源中，則必須選取 [用戶端推入安裝內容] 對話方塊中的 [Enable client push installation to assigned resources] (對指派的資源啟用用戶端推入安裝)。  
+    -   如果您要將用戶端自動推入探索到的資源中，則必須選取 [用戶端推入安裝內容] 對話方塊中的 [Enable client push installation to assigned resources]\(對指派的資源啟用用戶端推入安裝)。  
 
     -   用戶端電腦必須能夠連絡發佈點或管理點，以便下載支援的檔案。  
 

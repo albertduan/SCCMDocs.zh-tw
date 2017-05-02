@@ -98,10 +98,10 @@ Configuration Manager 支援在執行 Configuration Manager 用戶端的 Windows
 **在商務用 Windows 市集中，將 Configuration Manager 設定為市集管理工具**
 1.  開啟 [https://businessstore.microsoft.com/en-us/managementtools](https://businessstore.microsoft.com/en-us/managementtools)，並在出現提示時登入。
 2.  視需要接受使用條款。
-3.  在 [管理工具] 底下，按一下 [Add a management tool] (新增管理工具)。
+3.  在 [管理工具] 底下，按一下 [Add a management tool]\(新增管理工具)。
 4.  在 [Search for the tool by name]\(依名稱搜尋工具) 中，輸入您先前在 AAD 中所建立應用程式的名稱，然後按一下 [新增]。
 5.  按一下您剛才匯入之應用程式旁邊的 [啟用]。
-6.  如果您想要允許購買離線授權的應用程式，請在 [管理] > [帳戶資訊]頁面中，選取 [Show Offline-Licensed Apps] (顯示離線授權的應用程式)。
+6.  如果您想要允許購買離線授權的應用程式，請在 [管理] > [帳戶資訊]頁面中，選取 [Show Offline-Licensed Apps]\(顯示離線授權的應用程式)。
 
 **將市集帳戶新增至 Configuration Manager**
 
