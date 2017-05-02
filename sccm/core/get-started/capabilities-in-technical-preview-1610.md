@@ -142,14 +142,14 @@ Technical Preview 1610 引進新的設定，可讓您用來防止用戶端集合
 
 ## <a name="request-policy-sync-from-administrator-console"></a>從系統管理員主控台要求原則同步
 
-您現在可以從 Configuration Manager 主控台要求行動裝置的原則同步，而不必要求從裝置本身進行同步。 同步要求狀態資訊會以裝置檢視中的新欄位來提供，稱為 [Remote Sync State] (遠端同步處理狀態)。 每部行動裝置的狀態也會出現在 [內容] 對話方塊的 [探索資料] 區段中。
+您現在可以從 Configuration Manager 主控台要求行動裝置的原則同步，而不必要求從裝置本身進行同步。 同步要求狀態資訊會以裝置檢視中的新欄位來提供，稱為 [Remote Sync State]\(遠端同步處理狀態)。 每部行動裝置的狀態也會出現在 [內容] 對話方塊的 [探索資料] 區段中。
 
 ### <a name="try-it-out"></a>試試看！
 
 1.  在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [裝置]。
-2.  在 [遠端裝置動作] 功能表中，選取 [Send Sync Request] (傳送同步處理要求)。
+2.  在 [遠端裝置動作] 功能表中，選取 [Send Sync Request]\(傳送同步處理要求)。
 
-同步處理可能需要五到十分鐘。 原則中的任何變更都會同步處理到裝置。 您可以在 [裝置] 檢視的 [Remote Sync State] (遠端同步處理狀態) 欄中，或在裝置的 [內容] 對話方塊中，追蹤同步處理要求的狀態。
+同步處理可能需要五到十分鐘。 原則中的任何變更都會同步處理到裝置。 您可以在 [裝置] 檢視的 [Remote Sync State]\(遠端同步處理狀態) 欄中，或在裝置的 [內容] 對話方塊中，追蹤同步處理要求的狀態。
 
 ## <a name="additional-security-role-support"></a>其他安全性角色支援
 
