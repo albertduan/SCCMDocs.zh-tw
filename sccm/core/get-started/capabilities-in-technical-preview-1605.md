@@ -255,7 +255,7 @@ ms.lasthandoff: 01/24/2017
     > [!NOTE]  
     >  如果應用程式類別目錄角色未與主要站台共置，請採取下列動作：  
     >   
-    >  -   在 [資產與相容性] 工作區中，找到 [OnPremMDM Portal Configuration CI - server urls] (OnPremMDM 入口網站設定 CI - 伺服器 URL) 設定項目  
+    >  -   在 [資產與相容性] 工作區中，找到 [OnPremMDM Portal Configuration CI - server urls]\(OnPremMDM 入口網站設定 CI - 伺服器 URL) 設定項目  
     > -   將 [相容性規則] 值變更為應用程式類別目錄角色所在之站台系統的完整網域名稱。  
 
 2.  部署公司入口網站應用程式及其設定之後，請使用 Configuration Manager 主控台的 [部署] 區段，確認應用程式和設定基準與指定裝置相容。 公司入口網站會在裝置的 [開始] 功能表中顯示為 [公司入口網站 (Technical Preview)]。  
@@ -272,7 +272,7 @@ ms.lasthandoff: 01/24/2017
 ##  <a name="BKMK_SW1"></a> 提供全新的軟體中心更新和作業系統索引標籤  
  在此版本中，已進行下列變更來改進軟體中心應用程式的配置：  
 
--   [應用程式] 索引標籤已分割成三個不同的索引標籤：[更新]、[作業系統] (前兩者之前位於 [篩選] 清單中)，以及 [應用程式]。  
+-   [應用程式]索引標籤已分割成三個不同的索引標籤：[更新]、[作業系統]\(前兩者之前位於 [篩選] 清單中)，以及 [應用程式]。  
 
 ##  <a name="BKMK_ServerGroups"></a> 提供伺服器群組  
  System Center Configuration Manager Technical Preview 1511 版提供建立集合的功能，此集合中的所有裝置會組成伺服器群組。 之後，您可以設定將軟體更新部署至伺服器群組時所要使用的伺服器群組設定、控制在任何指定時間更新的電腦百分比，以及設定預先部署和部署後 PowerShell 指令碼來執行自訂動作。  
@@ -363,7 +363,7 @@ ms.lasthandoff: 01/24/2017
 
     1.  登入 Windows Defender ATP 線上服務  
 
-    2.  按一下 [Client On-boarding] (用戶端登入) 功能表項目  
+    2.  按一下 [Client On-boarding]\(用戶端登入)功能表項目  
 
     3.  選取 [System Center Configuration Manager]，然後按一下 [下載套件]。  
 
