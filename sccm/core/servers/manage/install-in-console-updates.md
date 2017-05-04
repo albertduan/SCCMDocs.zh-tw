@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
-ms.openlocfilehash: 18c199e78750eadc06b9635fa6104d36c2ac018d
-ms.lasthandoff: 04/08/2017
+ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
+ms.openlocfilehash: 29a55948a1897e1345ba14ec685b9288a844feaa
+ms.lasthandoff: 04/26/2017
 
 
 ---
@@ -325,7 +325,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 
 ##  <a name="bkmk_prerelease"></a> 使用更新的發行前版本功能
-發行前版本功能是「最新分支」中所包含，用來在生產環境中進行早期測試的功能。 這些功能不應視為準備好用於生產環境，但是可以在您的生產環境中使用。 若要深入了解發行前版本功能，包括如何在您的環境中啟用它們，請參閱[發行前版本功能](/sccm/core/servers/manage/pre-release-features)。                |
+發行前版本功能是「最新分支」中所包含，用來在生產環境中進行早期測試的功能。 這些功能不應視為已準備好用於生產環境，但是可以在您的生產環境中使用。 若要深入了解發行前版本功能，包括如何在您的環境中啟用它們，請參閱[發行前版本功能](/sccm/core/servers/manage/pre-release-features)。             
 
 
 ## <a name="known-issues"></a>已知問題

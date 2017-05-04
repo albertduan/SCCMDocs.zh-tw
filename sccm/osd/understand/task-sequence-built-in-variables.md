@@ -17,9 +17,9 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: a3e6cca8d58055cc2d54aff3cb70a276fb40e829
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
+ms.openlocfilehash: f5feccc4f810e1a94bb7dcdd5ad507d84b9c3b4a
+ms.lasthandoff: 04/21/2017
 
 
 ---
@@ -76,6 +76,11 @@ ms.lasthandoff: 03/27/2017
 |SMSTSDownloadProgram|使用此變數指定工作順序的替代內容提供者，這是取代預設 Configuration Manager 下載程式用來下載內容的下載程式。 工作順序會檢查指定下載程式的變數，這是內容下載程序的一部分。 在指定之後，工作順序會執行程式以執行下載。|  
 |SMSTSDownloadRetryCount|使用此變數指定 Configuration Manager 嘗試從發佈點下載內容的次數。 用戶端預設會重試 **2** 次。|  
 |SMSTSDownloadRetryDelay|使用此變數指定 Configuration Manager 在重新嘗試從發佈點下載內容之前等待的秒數。 用戶端預設會等待 **15** 秒後再重試。|  
+|SMSTSDriverReceiveTimeOut|使用此變數指定與伺服器的連線逾時之前的秒數。|
+|SMSTSDriverRequestConnectTimeOut|使用此變數指定在「自動套用驅動程式」工作順序步驟期間，要求驅動程式目錄時等待 HTTP 伺服器連線的秒數。 如果連線時間超過逾時設定，便會取消要求。 根據預設，逾時設定為 60 秒。|  
+|SMSTSDriverRequestReceiveTimeOut|使用此變數指定在「自動套用驅動程式」工作順序步驟期間，等待驅動程式目錄要求回應的秒數。 如果連線時間超過逾時設定，便會取消要求。 根據預設，逾時設定為 480 秒。|
+|SMSTSDriverRequestResolveTimeOut|使用此變數指定在「自動套用驅動程式」工作順序步驟期間，等待驅動程式目錄要求 HTTP 名稱解析的秒數。 如果連線時間超過逾時設定，便會取消要求。 根據預設，逾時設定為 60 秒。|
+|SMSTSDriverRequestSendTimeOut|使用此變數指定在「自動套用驅動程式」工作順序步驟期間，傳送驅動程式目錄要求時所要使用的秒數。 如果要求時間超過逾時設定，便會取消要求。 根據預設，逾時設定為 60 秒。|
 |SMSTSErrorDialogTimeout|工作順序發生錯誤時，會顯示對話方塊，並在這個變數所指定的秒數後自動關閉。 預設會在 **900** 秒 (15 分鐘) 後自動關閉對話方塊。|  
 |TSErrorOnWarning|使用這個變數，指定工作順序引擎是否會考慮將「應用程式安裝」工作順序步驟期間所偵測到的警告視為錯誤。 當一或多個應用程式或必要的相依性由於不符合需求而未安裝時，工作順序會將 _TSAppInstallStatus 變數設為 [警告]  。 當您將 TSErrorOnWarning 變數設為 **True** 並將 _TSAppInstallStatus 變數設為 [警告] 時，這個警告會視為錯誤。 預設行為是 **False** 值。|  
 |SMSTSLanguageFolder|使用此變數變更非語言相關開機映像的顯示語言。|  

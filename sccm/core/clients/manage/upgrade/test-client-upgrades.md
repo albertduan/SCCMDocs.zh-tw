@@ -2,7 +2,7 @@
 title: "測試進入生產階段前集合的用戶端升級 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中測試進入生產階段前集合的用戶端升級。"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,13 +13,13 @@ ms.topic: article
 ms.assetid: 49ef2ed2-2e15-4637-8b63-1d5b7f9c17e1
 caps.latest.revision: 10
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 533c8e8b30519d83b8fc7a9d204d51e76974c4b1
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
+ms.openlocfilehash: 7edd3e46b4813dd50df7d01b367f8e73bb350a7d
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -54,6 +54,9 @@ ms.lasthandoff: 03/27/2017
 
 ![測試用戶端升級](media/test-client-upgrades.png)
 
+>[!NOTE]
+>若要變更這些設定，您的帳戶必須是「系統高權限管理員」安全性角色，以及「全部」安全性範圍的成員。
+
 
 ##  <a name="to-install-a-configuration-manager-update-that-includes-a-new-version-of-the-client"></a>安裝包含新版用戶端的 Configuration Manager 更新  
 
@@ -80,4 +83,7 @@ ms.lasthandoff: 03/27/2017
 2.  檢閱在生產階段和生產階段前的用戶端版本，請確定指定了正確的生產階段前集合，然後依序按一下 [升階] 及 [是]。  
 
 3.  對話方塊關閉後，更新的用戶端版本將會取代階層中使用的用戶端版本。 接著可以升級整個站台的用戶端。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中升級 Windows 電腦的用戶端](../../../../core/clients/manage/upgrade/upgrade-clients-for-windows-computers.md)。  
+
+>[!NOTE]
+>若要啟用生產階段前用戶端，或是將生產階段前用戶端升級為生產階段用戶端，您的帳戶必須是針對 [更新套件] 物件具有「讀取」和「修改」權限的安全性角色成員。
 

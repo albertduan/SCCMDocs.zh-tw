@@ -16,9 +16,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 9b31fab8fa93195c60e9026e2df99311aa6e328f
-ms.openlocfilehash: 61d4b7017769609caf8fcb8fcdd510f5a0b5b712
-ms.lasthandoff: 04/03/2017
+ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
+ms.openlocfilehash: 8ffaee12bd826e2f19653b215ee19423ea672433
+ms.lasthandoff: 04/21/2017
 
 
 ---
@@ -112,8 +112,13 @@ ms.lasthandoff: 04/03/2017
 ##  <a name="bkmk_tpCaps"></a> 在技術預覽中提供功能  
  下方列出每個 Configuration Manager Technical Preview 版本所提供的功能。  自 Technical Preview 開始提供的功能仍會保留在較新版本中。 同樣地，已新增至 System Center Configuration Manager 版本 (最新分支) 的功能仍會在後續的 Technical Preview 中提供。  您可以按一下每個預覽版本的內容，以進一步了解特定功能。  
 
- |功能|Technical Preview 版本|最新分支版本|  
- |----------------|---------------------|--------------------|
+ |功能 |Technical Preview 版本 |最新分支版本|  
+|----------------|---------------------|--------------------|
+ |使用應用程式組態原則設定 Android 應用程式  |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#configure-android-apps-with-app-configuration-policies)|![未新增](media/Red_X.gif)|
+ |硬體清查會收集安全開機資訊 |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#hardware-inventory-collects-secure-boot-information)|![未新增](media/Red_X.gif)|
+ |將子工作順序新增至工作順序|[Tech Preview 1704](capabilities-in-technical-preview-1704.md#add-child-task-sequences-to-a-task-sequence)|![未新增](media/Red_X.gif)|
+ |以目前的 Windows PE 版本重新載入開機映像 |[Tech Preview 1704](capabilities-in-technical-preview-1704.md#reload-boot-images-with-current-windows-pe-version)|![未新增](media/Red_X.gif)|
+ |作業系統部署增強功能|[Tech Preview 1704](capabilities-in-technical-preview-1704.md#improvements-to-operating-system-deployment)|![未新增](media/Red_X.gif)|
  |將大量採購的 iOS 應用程式部署至裝置集合|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#deploy-volume-purchased-ios-apps-to-device-collections)|[版本 1702](/sccm/mdm/deploy-use/manage-volume-purchased-ios-apps)|
  |應用程式的軟體中心直接連結|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#direct-links-to-applications-in-software-center)|![未新增](media/Red_X.gif)
  |Configuration Manager Windows 用戶端電腦的 PFX 憑證|[Tech Preview 1703](capabilities-in-technical-preview-1703.md#pfx-certificates-for-configuration-manager-windows-client-computers)|![未新增](media/Red_X.gif)|
@@ -207,12 +212,12 @@ ms.lasthandoff: 04/03/2017
  |可管理用戶端快取設定和用戶端對等快取的用戶端設定 |[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_peercache)|用戶端設定：[1606 版](/sccm/core/plan-design/changes/whats-new-in-version-1606#administration)<br/>對等快取：[1610 版](/sccm/core/plan-design/hierarchy/client-peer-cache)|  
  |對以 Passport for Work 做為 KSP 的支援 |[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_passport)|[1606 版](/sccm/protect/deploy-use/create-certificate-profiles)|  
  |內部部署裝置健康情況證明|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#bkmk_onpremdha)|[1606 版](/sccm/core/servers/manage/health-attestation)|  
- |適用於 Android 裝置的 SmartLock 設定|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_Smart)|[1606 版](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client#android-and-samsung-knox-configuration-item-settings-reference)|  
- |軟體中心的增強功能|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_SC1603)|[1606 版](/sccm/core/plan-design/changes/whats-new-in-version-1606#application-management)|  
- |對遠端控制的改進|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RC1603)|[1606 版](/sccm/core/plan-design/changes/whats-new-in-version-1606#remote-control)|  
- |自訂支援 PXE 之發佈點的相關 RamDisk TFTP 區塊大小和視窗大小|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RamDiskTFTP)|[1606 版](/sccm/core/plan-design/changes/whats-new-in-version-1606#operating-system-deployment)|  
-
-
+ |適用於 Android 裝置的 SmartLock 設定|[Tech Preview 1604](capabilities-in-technical-preview-1604.md#BKMK_Smart)|[版本 1606](/sccm/compliance/deploy-use/create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client#android-and-samsung-knox-configuration-item-settings-reference)|  
+ <!--  TP 1603 Aged out of support and all features in Current Branch Builds:
+ |Improvements to Software Center|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_SC1603)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#application-management)|  
+ |Improvements to remote control|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RC1603)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#remote-control)|  
+ |Customize the RamDisk TFTP block size and window size on PXE-enabled distribution points|[Tech Preview 1603](capabilities-in-technical-preview-1603.md#BKMK_RamDiskTFTP)|[Version 1606](/sccm/core/plan-design/changes/whats-new-in-version-1606#operating-system-deployment)|  
+-->
  支援的最小最新分支版本中提供 Technical Preview 版本的所有功能時，會從此表格中移除該預覽版本的詳細資料。
 
 

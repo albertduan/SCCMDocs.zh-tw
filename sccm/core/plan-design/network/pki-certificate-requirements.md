@@ -2,7 +2,7 @@
 title: "PKI 憑證需求 | Microsoft Docs"
 description: "尋找 System Center Configuration Manager 可能需要的 PKI 憑證需求。"
 ms.custom: na
-ms.date: 02/23/2017
+ms.date: 04/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 405540b16b60c42430e884febb942bfbbcbeca32
-ms.openlocfilehash: 7021c079b12f03420565f5633102070e4e0ad7f8
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
+ms.openlocfilehash: a99b58acef7448af2c9576bfa0ec2635f5a4f86f
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -36,6 +36,8 @@ ms.lasthandoff: 04/19/2017
 > System Center Configuration Manager 支援安全雜湊演算法 2 (SHA-2) 憑證。 SHA-2 憑證會帶來重要的安全性優勢。 因此，我們建議：
 > - 發行以 SHA-2 (包含 SHA-256 和 SHA-512 等) 簽署的新伺服器及用戶端驗證憑證。
 > - 所有網際網路對向服務都應使用 SHA-2 憑證。 例如，如果購買雲端管理閘道所用的公開憑證，請確定也購買 SHA-2 憑證。  
+>
+>自 2017 年 2 月 14 日起生效，Windows 將不再信任以 SHA-1 簽署的特定憑證。 我們通常會建議您發行以 SHA-2 (包含 SHA-256 及 SHA-512 及更多) 簽署的新伺服器及用戶端驗證憑證。 此外，我們也建議所有網際網路服務都使用 SHA-2 憑證。 例如，如果您購買要搭配雲端管理閘道使用的公開憑證，請確定您購買的是 SHA-2 憑證。
 >
 > 在大部分的情況下，變更 SHA-2 憑證對作業沒有任何影響。 如需詳細資訊，請參閱 [Windows Enforcement of SHA1 certificates](http://social.technet.microsoft.com/wiki/contents/articles/32288.windows-enforcement-of-sha1-certificates.aspx) (Windows 強制 SHA1 憑證)。
 

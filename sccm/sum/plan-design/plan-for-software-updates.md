@@ -14,9 +14,9 @@ ms.technology:
 - configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 translationtype: Human Translation
-ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
-ms.openlocfilehash: 2a4fa6dcf8691875f5b262d6dc7bf1522d91acfd
-ms.lasthandoff: 03/28/2017
+ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
+ms.openlocfilehash: 703adc87b9498e39a1db71b94f1bc1a05a4889ec
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -162,12 +162,12 @@ ms.lasthandoff: 03/28/2017
  當您在主要站台安裝一個以上的軟體更新點時，請在相同的 Active Directory 樹系中針對各軟體更新點使用相同的 WSUS 資料庫。 如果您共用相同資料庫，則當用戶端切換至新的軟體更新點時，可能會大幅度減輕，但不完全排除可能遭遇到的用戶端和網路效能的影響。 當用戶端切換到與舊的軟體更新點共用資料庫的新軟體更新點時，仍會進行差異掃描，但此掃描遠低於 WSUS 伺服器自己擁有資料庫的情況。  
 
 ####  <a name="BKMK_CustomWebSite"></a> 將 WSUS 設定為使用自訂網站  
- 當您安裝 WSUS 時，可以選擇使用現有 IIS 預設網站，或建立自訂 WSUS 網站。 為 WSUS 建立自訂網站可讓 IIS 在專用的虛擬網站上裝載 WSUS 服務，而不是共用與其他 Configuration Manager 站台系統或其他應用程式使用的相同網站。 當您在站台伺服器上安裝軟體更新點站台系統角色時，更是如此。 當您在 Windows Server 2012 中執行 WSUS 時，預設會將 WSUS 設定為 HTTP 使用連接埠 8530，HTTPS 使用連接埠 8531。 您必須在建立站台的軟體更新點時指定這些連接埠設定。  
+ 當您安裝 WSUS 時，可以選擇使用現有 IIS 預設網站，或建立自訂 WSUS 網站。 為 WSUS 建立自訂網站可讓 IIS 在專用的虛擬網站上裝載 WSUS 服務，而不是共用與其他 Configuration Manager 站台系統或其他應用程式使用的相同網站。 當您在站台伺服器上安裝軟體更新點站台系統角色時，更是如此。 當您在 Windows Server 2012 或 Windows Server 2016 中執行 WSUS 時，預設會將 WSUS 設定為針對 HTTP 使用連接埠 8530，並針對 HTTPS 使用連接埠 8531。 您必須在建立站台的軟體更新點時指定這些連接埠設定。  
 
 ####  <a name="BKMK_WSUSInfrastructure"></a> 使用現有 WSUS 基礎結構  
  在將 Configuration Manager 安裝為軟體更新點之前，您可以選取在您環境中作用的 WSUS 伺服器。 設定軟體更新點時，您必須指定同步處理設定。 Configuration Manager 會連線至在軟體更新點伺服器上執行的 WSUS 伺服器，並且以相同的設定值設定 WSUS。 如果您在將 WSUS 設定為軟體更新點之前，將它與未設定為軟體更新點同步處理設定之一部分的產品或分類進行同步處理，則無論您針對軟體更新點所設定的同步處理設定為何，產品與分類的軟體更新中繼資料皆會針對 WSUS 資料庫中所有的軟體更新中繼資料同步處理。 如此可能導致站台資料庫中的軟體更新中繼資料與預期不符。 當您將產品或分類直接新增至 WSUS 管理主控台，然後立即啟動同步處理時，將會經歷相同的行為。 根據預設，Configuration Manager 每小時都會連線至軟體更新點上的 WSUS，並且重設任何在 Configuration Manager 以外修改的設定。 與您在同步處理設定中所指定的產品和分類不符的軟體更新會設定為到期，然後從站台資料庫中予以移除。
 
- 當 WSUS 伺服器設定為軟體更新點時，就無法將它當作獨立的 WSUS 伺服器使用。 如果您需要未受 Configuration Manager 管理的個別獨立 WSUS 伺服器，則您必須在不同的伺服器上設定它。 
+ 當 WSUS 伺服器設定為軟體更新點時，就無法將它當作獨立的 WSUS 伺服器使用。 如果您需要未受 Configuration Manager 管理的個別獨立 WSUS 伺服器，則您必須在不同的伺服器上設定它。
 
 ####  <a name="BKMK_WSUSAsReplica"></a> 將 WSUS 設定為複本伺服器  
  當您在主要站台伺服器上建立軟體更新點站台系統角色時，您無法使用設定為複本的 WSUS 伺服器。 當 WSUS 伺服器設定為複本時，Configuration Manager 無法設定 WSUS 伺服器，而 WSUS 也會無法同步處理。 在次要站台上建立軟體更新點時，Configuration Manager 會將 WSUS 設定為父主要站台軟體更新點上執行的 WSUS 複本伺服器。 您在主要站台安裝的第一個軟體更新點就是預設的軟體更新點。 站台的其他軟體更新點會設定為預設軟體更新點的複本。  

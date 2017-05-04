@@ -2,7 +2,7 @@
 title: "使用 Configuration Manager 的混合式 MDM 新功能 | Microsoft Docs"
 description: "了解 Configuration Manager 與 Intune 的混合式部署可以使用的新行動裝置管理功能。"
 ms.custom: na
-ms.date: 03/28/2017
+ms.date: 04/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
-ms.openlocfilehash: 489defeae18c219fe2f717d5caa1f15bcdaf07cf
-ms.lasthandoff: 04/19/2017
+ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
+ms.openlocfilehash: 0af5ae68353fcf1db846e2e27f3391fe87dcfc42
+ms.lasthandoff: 04/21/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
@@ -57,7 +57,13 @@ ms.lasthandoff: 04/19/2017
 
 - **禁止應用程式存取 SharePoint Online**
 
-    您現在可以建立以應用程式為基礎的條件式存取原則，禁止應用程式存取 [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online)，這樣做不會對其套用應用程式保護原則。 在以應用程式為基礎的條件式存取案例中，您可以指定想要使用 Azure 入口網站存取 SharePoint Online 的應用程式。
+  您現在可以建立以應用程式為基礎的條件式存取原則，禁止應用程式存取 [SharePoint Online](/InTune/deploy-use/mam-ca-for-sharepoint-online)，這樣做不會對其套用應用程式保護原則。 在以應用程式為基礎的條件式存取案例中，您可以指定想要使用 Azure 入口網站存取 SharePoint Online 的應用程式。
+
+### <a name="new-in-configuration-manager-technical-preview-1704"></a>Configuration Manager Technical Preview 1704 的新功能
+
+- **使用應用程式設定原則設定 Android 應用程式**
+
+  您可以在 System Center Configuration Manager (Configuration Manager) 中使用應用程式設定原則，在使用者於 Android for Work 裝置上執行應用程式時發佈預先設定好的設定。 Android 應用程式設定原則僅可於執行 Android for Work 的裝置上使用，並適用於來自 Play for Work 商店的已核准應用程式。 如需如何試用此功能的相關資訊，請參閱[使用應用程式設定原則設定 Android 應用程式](/sccm/core/get-started/capabilities-in-technical-preview-1704#configure-android-apps-with-app-configuration-policies)。
 
 ## <a name="march-2017"></a>2017 年 3 月
 

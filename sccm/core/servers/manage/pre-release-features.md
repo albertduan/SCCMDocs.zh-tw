@@ -2,7 +2,7 @@
 title: "發行前版本功能| Microsoft Docs"
 description: "System Center Configuration Manager 的發行前版本功能"
 ms.custom: na
-ms.date: 4/13/2017
+ms.date: 4/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,16 +16,16 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 329de5ffb6eb1403c02cd1db634c32f045e82488
-ms.openlocfilehash: c9896d53061b11f249f32f118620524c6a270ec9
-ms.lasthandoff: 04/14/2017
+ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
+ms.openlocfilehash: b12fcb3c372c34ee47306a9b536c3d0c4764b8be
+ms.lasthandoff: 04/24/2017
 
 
 ---
 # <a name="pre-release-features-in-system-center-configuration-manager"></a>System Center Configuration Manager 的發行前版本功能
 *適用對象：System Center Configuration Manager (最新分支)*
 
- 發行前版本功能是「最新分支」中所包含，用來在生產環境中進行早期測試的功能。 這些功能不應視為已準備好用於生產環境，但是可以在您的生產環境中使用。
+發行前版本功能是「最新分支」中所包含，用來在生產環境中進行早期測試的功能。 雖然已完整支援這些功能，但它們仍正在開發，且可能在移出發行前版本類別之前接收變更。
 
  在您可以使用發行前版本功能之前，您必須在 Configuration Manager 主控台內同意使用發行前版本功能，才能選取並啟用。  
 

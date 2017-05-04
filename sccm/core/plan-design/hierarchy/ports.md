@@ -17,9 +17,9 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 4c2906c2a963e0ae92e3c0d223afb7a47377526a
-ms.openlocfilehash: ffc2adb34427aa62f4a377e887c2ff54d47abeff
-ms.lasthandoff: 03/20/2017
+ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
+ms.openlocfilehash: 78caa69e10f5d386daab1e61e484d4d134469708
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -552,13 +552,13 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 
 2.  **可用的替代連接埠**：您可以在 Configuration Manager 中定義此值的替代連接埠。 如果定義自訂連接埠，請在定義 IPsec 原則或設定防火牆的 IP 篩選器資訊時替代該自訂連接埠。  
 
-3.  **Windows Server Update Services (WSUS)**：WSUS 可安裝在預設網站 (連接埠 80) 或自訂網站 (連接埠 8530) 上。  
+3.  **Windows Server Update Services (WSUS)**：針對用戶端通訊，可以安裝 WSUS 以使用連接埠 80/443 或連接埠 8530/8531。 當您在 Windows Server 2012 或 Windows Server 2016 中執行 WSUS 時，預設會將 WSUS 設定為針對 HTTP 使用連接埠 8530，並針對 HTTPS 使用連接埠 8531。  
 
      安裝完成後，您可以變更連接埠。 您不需要在整個網站階層都使用相同的連接埠號碼。  
 
     -   如果 HTTP 連接埠是80，HTTPS 連接埠必須是 443。  
 
-    -   如果 HTTP 連接埠使用其他任何號碼，則 HTTPS 連接埠必須比該連接埠號碼多 1 (或以上)，例如 8530 和 8531。  
+    -   如果 HTTP 連接埠使用其他任何號碼，則 HTTPS 連接埠必須比該連接埠號碼多 1 (或以上)，例如 8530 和 8531。   
 
     > [!NOTE]  
     >  當您設定軟體更新點使用 HTTPS 時，也必須開啟 HTTP 連接埠。 未加密的資料，例如特定更新的 EULA，會使用 HTTP 連接埠。  
@@ -707,7 +707,7 @@ SQL Server 裝載來自多個網站的資料庫時，每個資料庫都必須使
 ###  <a name="BKMK_MigrationPorts"></a> 移轉使用的連接埠  
 執行移轉的站台伺服器會在來源階層使用數個連接埠連接至適用的站台，以收集從來源站台 SQL Server 資料庫取得的資料，並共用發佈點。  
 
- 如需這些連接埠的資訊，請參閱[在 System Center&2012; Configuration Manager 中進行移轉的必要條件](../../../core/migration/prerequisites-for-migration.md)主題中的[移轉的必要設定](../../../core/migration/prerequisites-for-migration.md#BKMK_Required_Configurations)一節。  
+ 如需這些連接埠的資訊，請參閱[在 System Center 2012 Configuration Manager 中進行移轉的必要條件](../../../core/migration/prerequisites-for-migration.md)主題中的[移轉的必要設定](../../../core/migration/prerequisites-for-migration.md#BKMK_Required_Configurations)一節。  
 
 ###  <a name="BKMK_ServerPorts"></a> Windows Server 使用的連接埠  
  下表列出 Windows Server 使用的部分重要連接埠及其功能。 如需完整的 Windows Server 服務和網路連接埠需求清單，請參閱 [Windows Server 系統的服務概觀和網路連接埠需求](http://go.microsoft.com/fwlink/p/?LinkID=123652)。  

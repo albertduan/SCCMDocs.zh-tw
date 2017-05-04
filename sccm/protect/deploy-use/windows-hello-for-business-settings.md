@@ -2,7 +2,7 @@
 title: "Windows Hello 企業版設定 | Microsoft Docs"
 description: "了解如何整合 Windows Hello 企業版與 System Center Configuration Manager。"
 ms.custom: na
-ms.date: 03/28/2017
+ms.date: 04/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,9 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: c9a6842958e6fa3f740caabbaf20aabb9df4e8a8
-ms.lasthandoff: 03/27/2017
+ms.sourcegitcommit: 699b79b68440b61904a9053e5004318a2a248bfd
+ms.openlocfilehash: 75def95561feb35f2f060f0daa72291983324d4f
+ms.lasthandoff: 04/25/2017
 
 
 ---
@@ -28,7 +28,9 @@ ms.lasthandoff: 03/27/2017
 
 System Center Configuration Manager 讓您整合 Windows Hello 企業版 (原 Microsoft Passport for Windows)，這是 Windows 10 裝置的另一種登入方法。 Windows Hello 企業版使用 Active Directory 或 Azure Active Directory 帳戶來取代密碼、智慧卡或虛擬智慧卡。  
 
-Windows Hello 企業版可讓您藉由 **使用者手勢** 登入，而不使用密碼。 使用者手勢可能是簡單的 PIN、生物識別驗證或外部裝置 (例如指紋辨識器)。  
+Windows Hello 企業版可讓您藉由 **使用者手勢** 登入，而不使用密碼。 使用者手勢可能是簡單的 PIN、生物識別驗證或外部裝置 (例如指紋辨識器)。
+
+[深入了解 Windows Hello 企業版 (英文)](https://docs.microsoft.com/windows/access-protection/hello-for-business/hello-identity-verification)
 
  Configuration Manager 與 Windows Hello 企業版整合的方法有兩種：  
 
@@ -47,7 +49,7 @@ Windows Hello 企業版可讓您藉由 **使用者手勢** 登入，而不使用
 
 請注意，除了此設定外，您也必須部署憑證設定檔，如[設定憑證設定檔](#configure-a-certificate-profile)中所述。
 
-## <a name="recommended-approach----configure-a-windows-hello-for-business-profile"></a>建議的方法 - 設定 Windows Hello 企業版設定檔  
+## <a name="configure-a-windows-hello-for-business-profile"></a>設定 Windows Hello 企業版設定檔  
 
 在 Configuration Manager 主控台中，以滑鼠右鍵按一下 [公司資源存取] 下的 [Windows Hello 企業版設定檔]，然後選擇 [新增] 啟動設定檔精靈。 提供精靈要求的設定，檢閱及確認最後一頁的設定，然後按一下 [關閉]。 您的設定可能像以下的範例︰  
 
@@ -82,7 +84,7 @@ Windows Hello 企業版可讓您藉由 **使用者手勢** 登入，而不使用
 ## <a name="configure-windows-hello-for-business-by-deploying-a-powershell-script-with-configuration-manager"></a>使用 Configuration Manager 部署 PowerShell 指令碼以設定 Windows Hello 企業版    
 您也可以使用 Configuration Manager 應用程式管理，建立並部署下列 PowerShell 指令碼。    
 
-**powershell.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -Command "& {New-ItemProperty "HKLM:\Software\Policies\Microsoft\PassportForWork" -Name "Enabled" -Value 1 -PropertyType "DWord" -Force}"** 
+**powershell.exe -ExecutionPolicy Bypass -NoLogo -NoProfile -Command "& {New-ItemProperty "HKLM:\Software\Policies\Microsoft\PassportForWork" -Name "Enabled" -Value 1 -PropertyType "DWord" -Force}" ** 
 
 如需 Configuration Manager 應用程式管理的詳細資訊，請參閱 [System Center Configuration Manager 的應用程式管理簡介](/sccm/apps/understand/introduction-to-application-management)。  
 
@@ -111,8 +113,7 @@ Windows Hello 企業版可讓您藉由 **使用者手勢** 登入，而不使用
 
  如需詳細資訊，請參閱[憑證設定檔](introduction-to-certificate-profiles.md)。  
 
-## <a name="see-also"></a>請參閱  
- [使用 System Center Configuration Manager 保護資料和站台基礎結構](../../protect/understand/protect-data-and-site-infrastructure.md)
 
- [使用商務用 Windows Hello 管理身分識別驗證](https://technet.microsoft.com/itpro/windows/keep-secure/manage-identity-verification-using-microsoft-passport)。  
+
+
 

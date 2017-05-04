@@ -13,13 +13,13 @@ ms.topic: article
 ms.assetid: 45388103-2410-4c7e-b4cf-73a1bda485fc
 caps.latest.revision: 18
 caps.handback.revision: 0
-author: mtillman
-ms.author: mtillman
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 8c7bf901caa49c8585a9ed3913d4a5a2aac57013
-ms.openlocfilehash: 82f7db908f83d69a86c82ed97b845ff84e78f8b3
-ms.lasthandoff: 03/21/2017
+ms.sourcegitcommit: 699b79b68440b61904a9053e5004318a2a248bfd
+ms.openlocfilehash: 8adc41a30bf12a91a272029db49e50ba003d3e9c
+ms.lasthandoff: 04/25/2017
 
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的行動裝置 VPN 設定檔
@@ -75,10 +75,10 @@ ms.lasthandoff: 03/21/2017
 
     -   **驗證方法：**選取 VPN 連線要使用的驗證方法。 可用的方法取決於連線類型，如此表格中所示。  
 
-        |驗證方法|支援的連線類型|  
+        |驗證方法|支援的&nbsp;連線&nbsp;類型|  
         |---------------------------|--------------------------------|  
-        |**憑證**<br /><br /> **注意：**如果要使用用戶端憑證來驗證 RADIUS 伺服器 (例如網路原則伺服器)，則憑證中的主體別名必須設為使用者主體名稱。|- <br />                            Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - Check Point Mobile VPN|  
-        |**使用者名稱和密碼**|- <br />                            Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - Check Point Mobile VPN|  
+        |**憑證**<br /><br /> **注意：**<br />- 如果用戶端憑證會驗證 RADIUS 伺服器 (例如網路原則伺服器)，則憑證中的主體別名必須設為使用者主體名稱。<br/><br />- 針對 Android 部署，請選取 EKU 識別碼及憑證簽發者指紋雜湊值。  否則，使用者必須手動選取適當的憑證。  |- Cisco AnyConnect<br /><br /> - Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - Check Point Mobile VPN|  
+        |**使用者名稱和密碼**|- Pulse Secure<br /><br /> - F5 Edge Client<br /><br /> - Dell SonicWALL Mobile Connect<br /><br /> - Check Point Mobile VPN|  
         |**Microsoft EAP-TTLS**|- Microsoft SSL (SSTP)<br /><br /> - Microsoft Automatic<br /><br /> - PPTP<br /><br /> - IKEv2<br /><br /> - L2TP|  
         |**Microsoft Protected EAP (PEAP)**|- Microsoft SSL (SSTP)<br /><br /> - Microsoft Automatic<br /><br /> - IKEv2<br /><br /> - PPTP<br /><br /> - L2TP|  
         |**Microsoft Secured Password (EAP-MSCHAP v2)**|- Microsoft SSL (SSTP)<br /><br /> - Microsoft Automatic<br /><br /> - IKEv2<br /><br /> - PPTP<br /><br /> - L2TP|  
@@ -109,18 +109,15 @@ ms.lasthandoff: 03/21/2017
 
          ![設定 VPN 的條件式存取](media/vpn-conditional-access.png)
 
+         在由執行 Configuration Manager「以及」選取驗證方法的 Windows 版本所支援的情況下，您可以按一下 [設定] 以開啟 Windows [內容] 對話方塊並設定驗證方法屬性。  如果 [設定] 已停用，請使用其他方法來設定驗證方法屬性。
 
-> [!NOTE]  
-> 對於某些驗證方法，您可以按一下 [設定] 以開啟 Windows 的 [內容] 對話方塊 (如果您用來執行 Configuration Manager 主控台的 Windows 版本支援此驗證方法)，並在其中設定驗證方法的內容。  
-
-
-1.  如果您的 VPN 連線使用 Proxy 伺服器，請在 [建立 VPN 設定檔精靈] 的 [Proxy 設定] 頁面上，選取 [設定此 VPN 設定檔的 Proxy 設定] 核取方塊。 然後，提供 Proxy 伺服器資訊。 如需詳細資訊，請參閱 Windows Server 文件。  
+2.  如果您的 VPN 連線使用 Proxy 伺服器，請在 [建立 VPN 設定檔精靈] 的 [Proxy 設定] 頁面上，選取 [設定此 VPN 設定檔的 Proxy 設定] 核取方塊。 然後，提供 Proxy 伺服器資訊。 如需詳細資訊，請參閱 Windows Server 文件。  
 
     > [!NOTE]  
     >  在 Windows 8.1 電腦上，除非您使用該電腦連線至 VPN，否則 VPN 設定檔不會顯示 Proxy 資訊。  
 
 
-2. 設定其他 DNS 設定 (如有必要)  
+3. 設定其他 DNS 設定 (如有必要)  
  在 [設定自動 VPN 連線] 頁面上，您可以設定下列各項：  
 
     -   **依需求啟用 VPN**：如果您想針對 Windows Phone 8.1 裝置設定進一步的 DNS 設定，請使用此選項。 這個設定僅適用於 Windows Phone 8.1 裝置，而且僅應該在即將部署至 Windows Phone 8.1 裝置的 VPN 設定檔上啟用。
@@ -153,9 +150,9 @@ ms.lasthandoff: 03/21/2017
     >  如果 [透過 VPN 連線傳送所有網路流量] 選項並未選取，且 VPN 連線使用分割通道處理，則 VPN 連線會在您設定路由或連線特定 DNS 尾碼的情況下自動開啟。  
 
 
-1. 在 [建立 VPN 設定檔精靈] 的 [支援的平台] 頁面上，選取將安裝 VPN 設定檔的作業系統，或按一下 [全選] 在所有可用的作業系統上安裝 VPN 設定檔。  
+4. 在 [建立 VPN 設定檔精靈] 的 [支援的平台] 頁面上，選取將安裝 VPN 設定檔的作業系統，或按一下 [全選] 在所有可用的作業系統上安裝 VPN 設定檔。  
 
-2. 完成精靈。 新的 VPN 設定檔會顯示在 [資產與合規性] 工作區的 [VPN 設定檔] 節點中。  
+5. 完成精靈。 新的 VPN 設定檔會顯示在 [資產與合規性] 工作區的 [VPN 設定檔] 節點中。  
 
 
 **部署︰**如需有關部署 VPN 設定檔的詳細資訊，請參閱[部署 Wi-Fi、VPN、電子郵件和憑證設定檔](../../protect/deploy-use/deploy-wifi-vpn-email-cert-profiles.md)。

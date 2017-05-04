@@ -2,7 +2,7 @@
 title: "監視用戶端 - Configuration Manager | Microsoft Docs"
 description: "取得如何在 System Center Configuration Manager 中監視用戶端的詳細指引。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,13 +12,13 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2c8f57cf-1968-48de-87fb-4897432ed6e0
 caps.latest.revision: 23
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
-ms.openlocfilehash: 85afe010e734d20ae1f1479b3edd166c54cc8fd2
-ms.lasthandoff: 01/24/2017
+ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
+ms.openlocfilehash: 08a4d9b29871b49e3118aef949572cef64940f96
+ms.lasthandoff: 04/24/2017
 
 
 ---
@@ -29,7 +29,7 @@ ms.lasthandoff: 01/24/2017
 
  在您站台的 Windows 電腦和裝置上安裝 System Center Configuration Manager 用戶端應用程式之後，即可在 Configuration Manager 主控台中監視其健康情況和活動。  
 
-##  <a name="a-namebkmkabouta-about-client-status"></a><a name="bkmk_about"></a> 關於用戶端狀態  
+##  <a name="bkmk_about"></a> 關於用戶端狀態  
  Configuration Manager 提供下列類型的資訊作為用戶端狀態：  
 
 -   **用戶端線上狀態** - 從 Configuration Manager 1602 版開始，此狀態指出電腦是否在線上。 當電腦已連線到受指派的管理點時，就會被視為在線上。  為了表示用戶端在線上，它會傳送類似 Ping 的訊息給管理點。 如果管理點在 5 分鐘左右未收到訊息，該用戶端就會被視為離線。  
@@ -42,7 +42,7 @@ ms.lasthandoff: 01/24/2017
 
      您可以設定不在特定電腦上執行補救，例如攸關業務的伺服器。 此外，若有其他想要評估的項目，您可以使用 Configuration Manager 相容性設定來提供全面的解決方案，以監視組織中電腦的整體健全狀況、活動和相容性。 如需相容性設定的詳細資訊，請參閱[在 System Center Configuration Manager 中規劃和設定相容性設定](../../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)。  
 
-##  <a name="a-namebkmkindstatusa-monitor-the-status-of-individual-clients"></a><a name="bkmk_indStatus"></a> 監視個別用戶端的狀態  
+##  <a name="bkmk_indStatus"></a> 監視個別用戶端的狀態  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] > [裝置] 或在 [裝置集合] 底下選擇一個集合。  
 
@@ -65,7 +65,7 @@ ms.lasthandoff: 01/24/2017
 
 3.  按一下清單窗格中的個別用戶端，即可在詳細資料窗格中看到更多狀態，包括用戶端活動及用戶端檢查的相關資訊。  
 
-##  <a name="a-namebkmkallstatusa-monitor-the-status-of-all-clients"></a><a name="bkmk_allStatus"></a> 監視所有用戶端的狀態  
+##  <a name="bkmk_allStatus"></a> 監視所有用戶端的狀態  
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] > [用戶端狀態]。 在主控台的這個頁面上，您可以檢閱整個站台的用戶端活動和用戶端檢查的整體統計資料。  您也可以選擇不同的集合來變更資訊的範圍。  
 
@@ -77,7 +77,7 @@ ms.lasthandoff: 01/24/2017
 
  您可以設定警示，以便在用戶端檢查結果或用戶端活動低於集合中指定的百分比，或在指定百分比的用戶端上進行補救失敗時，發出通知。 如需如何設定用戶端狀態的資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端狀態](../../../core/clients/deploy/configure-client-status.md)。  
 
-##  <a name="a-namebkmkclienthealtha-checks-and-remediations-made-by-client-check"></a><a name="BKMK_ClientHealth"></a> 依照用戶端檢查進行檢查及補救  
+##  <a name="BKMK_ClientHealth"></a> 依照用戶端檢查進行檢查及補救  
  下列檢查和補救可以由用戶端檢查來執行。  
 
 |用戶端檢查|補救動作|詳細資訊|  
@@ -110,4 +110,7 @@ ms.lasthandoff: 01/24/2017
 |確認用戶端 WMI 提供者狀況良好|重新啟動 Windows Management Instrumentation 服務|此用戶端檢查的補救措施僅適用於執行 Windows Server 2003、Windows XP (64 位元) 或更早版本的電腦。|  
 |確認喚醒 Proxy 服務 (ConfigMgr Wake-up Proxy) 正在執行|啟動 ConfigMgr Wakeup Proxy 服務|此用戶端檢查只有在支援的作業系統上的 [電源管理] ：[啟用喚醒 Proxy]  用戶端設定已設為 [是]  時才能進行。|  
 |確認喚醒 Proxy 服務 (ConfigMgr Wake-up Proxy) 啟動類型為自動|將 ConfigMgr Wakeup Proxy 服務啟動類型重設為自動|此用戶端檢查只有在支援的作業系統上的 [電源管理] ：[啟用喚醒 Proxy]  用戶端設定已設為 [是]  時才能進行。|  
+
+## <a name="client-deployment-log-files"></a>用戶端部署記錄檔
+如需用戶端部署及管理作業所使用之記錄檔的相關資訊，請參閱 [System Center Configuration Manager 中的記錄檔](/sccm/core/plan-design/hierarchy/log-files#BKMK_ClientLogs)。
 
