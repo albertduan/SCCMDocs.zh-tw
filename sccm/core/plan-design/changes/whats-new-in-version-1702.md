@@ -2,7 +2,7 @@
 title: "1702 新版 |Microsoft Docs"
 description: "下列各節提供 System Center Configuration Manager 1702 版中的變更和推出的新功能。"
 ms.custom: na
-ms.date: 3/31/2017
+ms.date: 05/02/2017
 ms.reviewer: na
 ms.suite: na
 ms.technology:
@@ -14,16 +14,16 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 translationtype: Human Translation
-ms.sourcegitcommit: d7b13f3dea5a3ae413ca6b8150ec24e1632a4d4d
-ms.openlocfilehash: 3e97184dc923cd3972c23252c1bc001edb73fe3f
-ms.lasthandoff: 04/12/2017
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: 4616ebb84ae63acbe6af892918aa2dd1a0be4825
+ms.lasthandoff: 05/03/2017
 
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 1702 版的新功能
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-System Center Configuration Manager Update 1702 最新分支以主控台內更新形式提供，適用於先前安裝、執行 1602、1606 或 1610 版本的站台。
+System Center Configuration Manager Update 1702 最新分支以主控台內更新形式提供，適用於先前安裝、執行 1602、1606 或 1610 版本的站台。 它也當作基準版本來提供，可用於安裝新的部署。
 
 > [!TIP]  
 > 若要安裝新的站台，您必須使用 Configuration Manager 的基準版本。  
