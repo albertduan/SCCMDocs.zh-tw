@@ -438,8 +438,3 @@
 ### [如何判斷公告狀態](core/servers/manage/how-to-determine-advertisement-status.md)
 
 # [Configuration Manager 參考](reference/configuration-manager-reference.md)
-
-
-<!--HONumber=Jan17_HO3-->
-
-
