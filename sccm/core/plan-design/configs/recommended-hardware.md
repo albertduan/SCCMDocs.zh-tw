@@ -2,7 +2,7 @@
 title: "建議的硬體 | Microsoft Docs"
 description: "了解硬體建議，以協助您在基本部署之外調整 System Center Configuration Manager 環境的規模。"
 ms.custom: na
-ms.date: 3/30/2017
+ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 8d3791bcf737e63308155787ed23c9cc84e7e99c
-ms.openlocfilehash: fd9f5b25a1e40b5f0df823dcbe9c13a77c534c59
-ms.lasthandoff: 03/31/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
+ms.openlocfilehash: 8dac6df60b07461d6410d305723b3f03fb09fa16
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/31/2017
 |-------------------------------|---------------|---------------|----------------------------------------|  
 |獨立主要站台伺服器，並在相同伺服器上具有資料庫站台角色<sup>1</sup>|16|96|80|  
 |獨立主要站台伺服器，並具有遠端站台資料庫|8|16|-|  
-|獨立主要站台的遠端資料庫伺服器|16|64|90|  
+|獨立主要站台的遠端資料庫伺服器|16|72|90|  
 |管理中心網站伺服器，並在相同伺服器上具有資料庫站台角色<sup>1</sup>|20|128|80|  
 |管理中心網站伺服器，並具有遠端站台資料庫|8|16|-|  
 |管理中心網站的遠端資料庫伺服器|16|96|90|  
