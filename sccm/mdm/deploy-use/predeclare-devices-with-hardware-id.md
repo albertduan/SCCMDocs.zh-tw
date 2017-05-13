@@ -15,10 +15,11 @@ caps.latest.revision: 3
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 7573590763c68a4c97d388be1e64054c318da9cc
-ms.openlocfilehash: 4fe6741481c79ed4e4496846152902d6d8ca1f96
-ms.lasthandoff: 03/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: e6833951db27b227a3ca22925e9d9f4c3fc443fc
+ms.openlocfilehash: e8606b8a9268a0a0668b75070cf35894f4794123
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/04/2017
 
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>使用 IMEI 或 iOS 序號預先宣告裝置
@@ -27,13 +28,13 @@ ms.lasthandoff: 03/24/2017
 
 您可以透過匯入國際站移動設備識別碼 (IMEI) 號碼或 iOS 序號，識別公司擁有的裝置。 您可以上傳一個包含裝置 IMEI 編號的逗號分隔值 (.csv) 檔案，也可以手動輸入裝置資訊。  匯入的資訊將會設定裝置清單中註冊為**公司**之裝置的**擁有權**。 每一位存取服務的使用者還是需要 Intune 授權。  
 
-當您上傳公司 iOS 裝置的序號時，它們必須與公司註冊設定檔搭配。 接著，必須使用 Apple 的裝置註冊計劃 (DEP) 或 Apple Configurator 來註冊裝置，以使它們顯示為公司所擁有。 
+當您上傳公司 iOS 裝置的序號時，它們必須與公司註冊設定檔搭配。 接著，必須使用 Apple 的裝置註冊計劃 (DEP) 或 Apple Configurator 來註冊裝置，以使它們顯示為公司所擁有。
 
 ## <a name="how-to-predeclare-corporate-owned-devices"></a>如何預先宣告公司擁有的裝置
 
-1.    在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [公司擁有的所有裝置] > 「Predeclared devices」 (預先宣告的裝置)。
+1.    在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [公司擁有的所有裝置] > [預先宣告的裝置]。
 
-2.  按一下 「Create Predeclared Devices」 (建立預先宣告的裝置)。 隨即開啟 「Create Predeclared Devices Wizard」 (建立預先宣告的裝置精靈)。
+2.  按一下 [建立預先宣告的裝置]。 隨即開啟 [建立預先宣告的裝置精靈]。
 
 3.    選擇您要如何新增裝置資訊：
 
@@ -45,15 +46,15 @@ ms.lasthandoff: 03/24/2017
 
         若要手動輸入資訊，請輸入裝置的 IMEI 編號或 iOS 序號和詳細資料。 請更正任何錯誤或警告後再繼續。
 
-    按一下 [下一步] 。
+    按一下 [下一步]。
 
 4. 如果您已上傳 .csv 檔案，請檢閱檔案匯入的結果。 如果先前已匯入裝置號碼，則 Configuration Manager 會顯示那些裝置和取代 [詳細資料]。 選取您要覆寫其詳細資料的裝置。 只有重新匯入裝置識別碼或序號，才能修改裝置詳細資料。
 
   如果您選擇手動輸入號碼，請完成您想要預先宣告之裝置的表單。
 
-  按 [下一步]  以繼續。
+  按一下 [下一步] 以繼續。
 
-4. 如果您的清單包含 iOS 序號，請從可用設定檔清單中選取 「Enrollment Profile to Assign」 (要指派的註冊設定檔)，然後按一下 [下一步]。
+4. 如果您的清單包含 iOS 序號，請從可用設定檔清單中選取 [要指派的註冊設定檔]，然後按一下 [下一步]。
 
 5. 按一下 [下一步] 檢閱詳細資料，然後再按一下 [下一步] 上傳資料。
 
@@ -61,7 +62,7 @@ ms.lasthandoff: 03/24/2017
 
 ## <a name="format-for-uploading-csv-files"></a>上傳 .csv 檔案的格式
 
-用來依 IMEI 或序號識別裝置的 .csv 檔案必須具有下列格式，不包括僅提供作為指引的頂端資料列。 每個資料列都必須包含 IMEI 編號或 iOS 序號。 只能預先宣告 iOS 裝置的序號；請針對其他裝置平台使用 IMEI 編號。 此表格包含範例資料︰
+用來依 IMEI 或序號識別裝置的 .csv 檔案必須具有下列格式，不包括僅提供作為指引的頂端資料列。 每個資料列都必須包含 IMEI 編號或 iOS 序號兩種識別碼其中之一。 您可以兩種都包含。 IMEI 編號適用於 Android、iOS 和 Windows 裝置。 此外也支援 iOS 序號。  此表格包含範例資料︰
 
 | IMEI #  | iOS 序列 #  | OS | 詳細資料 |
 |------------ |---------------|-----|-----|

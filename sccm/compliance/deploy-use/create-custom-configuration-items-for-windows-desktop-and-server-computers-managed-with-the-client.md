@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
-ms.openlocfilehash: e55883471fde63036c91b315ed6db6dceb315207
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
+ms.openlocfilehash: e040c6b3a951d1bdf5a46dd82f1bd92b45c2e71d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/02/2017
 
 
 ---
@@ -33,7 +35,7 @@ ms.openlocfilehash: e55883471fde63036c91b315ed6db6dceb315207
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] > [相容性設定] > [設定項目]。  
 
-3.  在 [常用]  索引標籤上，按一下 [建立]  群組中的 [建立設定項目] 。  
+3.  在 [常用] 索引標籤上，按一下 [建立] 群組中的 [建立設定項目]。  
 
 4.  在 [建立設定項目精靈]  的 [一般] 頁面上，指定設定項目的名稱和選擇性描述。  
 
@@ -52,7 +54,7 @@ ms.openlocfilehash: e55883471fde63036c91b315ed6db6dceb315207
 
  Configuration Manager 中的偵測方法包含用來偵測電腦上是否安裝應用程式的規則。 這項偵測是之前的組態項目評估相容。 若要偵測是否已安裝應用程式，您可以偵測應用程式的 Windows Installer 檔案是否存在，使用自訂指令碼，或選取 **一律假設應用程式安裝** 評估不論是否已安裝應用程式的相容性的組態項目。  
 
- 使用這些程序，在 System Center 2012 Configuration Manager 中設定偵測方法。  
+ 使用這些程序以在 System Center Configuration Manager 中設定偵測方法。  
 
 ### <a name="to-detect-an-application-installation-by-using-the-windows-installer-file"></a>若要使用 Windows Installer 檔案來偵測應用程式安裝  
 
@@ -356,9 +358,4 @@ ms.openlocfilehash: e55883471fde63036c91b315ed6db6dceb315207
 
 ## <a name="complete-the-wizard"></a>完成精靈  
  在精靈的 [摘要]  頁面上，檢閱將採取的動作，然後完成精靈。 新的設定項目會顯示在 **設定項目** 中的節點 **資產與相容性** 工作區。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

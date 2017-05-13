@@ -4,17 +4,18 @@ description:
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.date: 04/23/2017
+ms.date: 05/01/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
 ms.technology:
 - configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
-translationtype: Human Translation
-ms.sourcegitcommit: 2bcc5d9dde1f1a2d9c33575d6c463e281ac818e8
-ms.openlocfilehash: 61b8cd8458718b9a54edb129739c619f947ac380
-ms.lasthandoff: 12/16/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d5a6fdc9a526c4fc3a9027dcedf1dd66a6fff5a7
+ms.openlocfilehash: 97e1bc6585cee0ff433da0ec0b60b9604cb7348f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/02/2017
 
 ---
 
@@ -24,13 +25,27 @@ ms.lasthandoff: 12/16/2016
 
 從版本 1610 開始，設定 Configuration Manager 中的雲端管理閘道包含下列步驟：
 
-## <a name="step-1-create-a-custom-ssl-certificate"></a>步驟 1︰建立自訂 SSL 憑證
+## <a name="step-1-configure-required-certificates"></a>步驟 1︰設定所需的憑證
 
-您可以透過針對雲端架構發佈點所執行的相同方式，為雲端管理閘道建立自訂 SSL 憑證。 請遵循[為雲端架構的發佈點部署服務憑證](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_clouddp2008_cm2012)中的指示，但針對下列作業採用不同的做法：
+## <a name="option-1-preferred---use-the-server-authentication-certificate-from-a-public-and-globally-trusted-certificate-provider-like-verisign"></a>選項 1 (優先) - 使用公用和全球信任之憑證提供者 (如 VeriSign) 的伺服器驗證憑證
 
--   設定新的憑證範本時，將 [讀取] 和 [註冊] 權限授與您針對 Configuration Manager 伺服器所設定的安全性群組。
+使用此方法時，用戶端會自動信任憑證，您不需要自行建立自訂的 SSL 憑證。
 
--  當要求自訂 Web 伺服器憑證時，請針對憑證的一般名稱提供 FQDN，一般名稱以 **cloudapp.net** 結尾 (針對在 Azure 公用雲端上使用雲端管理閘道) 或以 **usgovcloudapp.net** 結尾 (針對 Azure 政府雲端)。
+1. 在組織的公用網域名稱服務 (DNS) 中建立正式名稱記錄 (CNAME)，以建立雲端管理閘道服務的易記名稱別名，以便用於公開憑證。
+例如，Contoso 將其雲端管理閘道服務命名為 **GraniteFalls**，在 Azure 中則是 **GraniteFalls.CloudApp.Net**。 在 Contoso 的公用 DNS contoso.com 命名空間中，DNS 系統管理員會針對真實的主機名稱 **GraniteFalls.CloudApp.net**，為 **GraniteFalls.Contoso.com** 建立新的 CNAME 記錄。
+2. 接著，使用 CNAME 別名的一般名稱 (CN) 向公用提供者要求伺服器驗證憑證。
+例如，Contoso 使用 **GraniteFalls.Contoso.com** 做為憑證 CN。
+3. 使用此憑證在 Configuration Manager 主控台中建立雲端管理閘道服務。
+    - 在 [建立雲端管理閘道精靈] 的 [設定] 頁面上新增此雲端服務的伺服器憑證時 (從「憑證檔」)，精靈會從憑證 CN 擷取主機名稱做為服務名稱，然後將該名稱附加到 **cloudapp.net** (如果是 Azure US Government Cloud 則為 **usgovcloudapp.net**) 做為在 Azure 中建立服務的「服務 FQDN」。
+例如，在 Contoso 建立雲端管理閘道時，會從憑證 CN 擷取主機名稱 **GraniteFalls**，因此 Azure 中建立的實際服務為 **GraniteFalls.CloudApp.net**。
+
+### <a name="option-2---create-a-custom-ssl-certificate-for-cloud-management-gateway-in-the-same-way-as-for-a-cloud-based-distribution-point"></a>選項 2 - 為雲端管理閘道建立自訂 SSL 憑證，其方式與為雲端架構發佈點建立憑證的方式相同
+
+您可以透過針對雲端架構發佈點所執行的相同方式，為雲端管理閘道建立自訂 SSL 憑證。 請遵循[為雲端架構的發佈點部署服務憑證](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)中的指示，但針對下列作業採用不同的做法：
+
+- 設定新的憑證範本時，針對您為 Configuration Manager 伺服器所設定的安全性群組，授與 [讀取] 和 [註冊] 權限。
+- 當要求自訂 Web 伺服器憑證時，請針對憑證的一般名稱提供 FQDN，一般名稱以 **cloudapp.net** 結尾 (針對在 Azure 公用雲端上使用雲端管理閘道) 或以 **usgovcloudapp.net** 結尾 (針對 Azure 政府雲端)。
+
 
 ## <a name="step-2-export-the-client-certificates-root"></a>步驟 2︰匯出用戶端憑證的根目錄
 

@@ -16,23 +16,24 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
-ms.openlocfilehash: 44338c705e308896c5203be239c160a8220369a8
-ms.lasthandoff: 04/19/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 7a6c89254d01f4074e5c170b20338686178ebdd3
+ms.openlocfilehash: 59946d1328be1606ba7c4dab647e814c1b4e638a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 04/28/2017
 
 
 ---
-# <a name="release-notes-for-system-center-configuration-manager"></a>Release notes for System Center Configuration Manager (System Center Configuration Manager 的版本資訊)
+# <a name="release-notes-for-system-center-configuration-manager"></a>System Center Configuration Manager 的版本資訊
 
 適用於：System Center Configuration Manager (最新分支)
 
 System Center Configuration Manager 的產品版本資訊僅限於產品中尚未修正的緊急問題 (可透過主控台內更新)，或 Microsoft 知識庫文章中未詳述的緊急問題。  
 
- 對於影響核心案例的已知問題，這項資訊顯示於 System Center Configuration Manager 文件庫中的線上產品文件中。  
+ 對於影響核心案例的已知問題，此資訊顯示於 System Center Configuration Manager 文件庫中的線上產品文件中。  
 
 > [!TIP]  
->  本主題包含 System Center Configuration Manager 最新分支的版本資訊。 若是 System Center Configuration Manager Technical Preview 版本，請參閱 [Technical Preview for System Center Configuration Manager](../../../../core/get-started/technical-preview.md) (System Center Configuration Manager 的 Technical Preview)。  
+>  本主題包含 System Center Configuration Manager 最新分支的版本資訊。 對於 System Center Configuration Manager Technical Preview 版本，請參閱 [System Center Configuration Manager 的 Technical Preview](../../../../core/get-started/technical-preview.md)。  
 
 ## <a name="setup-and-upgrade"></a>安裝與升級  
 
@@ -51,7 +52,7 @@ System Center Configuration Manager 的產品版本資訊僅限於產品中尚�
 <!--  SMS 486380   Applicability should only be to 1702. -->
 在 1702 版中，預設站台界限群組的 [參考] 索引標籤上有 [使用此界限群組進行站台指派] 核取方塊 (會將站台列為「指派的站台」)，且該核取方塊會呈現灰色，讓使用者無法編輯或移除該設定。
 
-**因應措施：** 無。 您可以忽略此設定。 雖然該群組已針對站台指派啟用，但預設的站台界限群組不會用於站台指派。 在 1702 版中，此設定可確保預設的站台界限群組會和正確的站台相關聯。
+**因應措施：**無。 您可以忽略此設定。 雖然該群組已針對站台指派啟用，但預設的站台界限群組不會用於站台指派。 在 1702 版中，此設定可確保預設的站台界限群組會和正確的站台相關聯。
 
 
 
@@ -67,11 +68,11 @@ System Center Configuration Manager 的產品版本資訊僅限於產品中尚�
 
 若要確認安裝的分支，請在主控台的 [系統管理] > [站台設定] > [站台]，然後開啟 [階層設定]。 只有在站台執行 LTSB 時，才能使用將站台轉換為最新分支站台的選項。  
 
-**因應措施：**  無。   
+**因應措施：** 無。   
 
 
 
-### <a name="the--sql-server-backup-model-in-use-by-configuration-manager-can-change-from-full-to-simple"></a>由 Configuration Manager 所使用的 SQL Server 備份模型可以從完整變更為簡易  
+### <a name="the--sql-server-backup-model-in-use-by-configuration-manager-can-change-from-full-to-simple"></a>由 Configuration Manager 所使用的 SQL Server 備份模型可以從完整變更為簡單  
 <!-- Confirm applicability for upgrade to later baselines. 1511 is out of support. 1606 is minmum supported baseline  -->
 
  當您升級至 System Center Configuration Manager 1511 版時，Configuration Manager 正在使用的 SQL Server 備份模型可以從完整變更為簡單。  
@@ -100,7 +101,7 @@ ConfigMgrSetup.log：
 
 -   **要編輯的機碼**：HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\WinTrust\Trust Providers\Software Publishing  
 
--   **狀態值**︰設為 **146944** (十進位) 或 **0x00023e00** (十六進位)  
+-   **狀態值**︰設定為 **146944** (十進位) 或 **0x00023e00** (十六進位)  
 
 
 ###  <a name="setup-fails-when-using-redist-files-from-the-cdlatest-folder-with-a-manifest-verification-error"></a>使用來自 CD.Latest 資料夾的可轉散發檔案時，安裝程式會失敗，並顯示資訊清單驗證錯誤
@@ -201,7 +202,7 @@ ConfigMgrSetup.log：
 **因應措施**：在連線至管理中心網站的 System Center Configuration Manager 主控台中建立註冊設定檔。  
 
 ### <a name="dep-cannot-use-non-alpha-numeric-characters-in-enrollment-profiles"></a>DEP 無法在註冊設定檔中使用非英數字元  
-啟用 DEP 時，在註冊設定檔的 [名稱] 、[描述] 、[部門]  和 [電話號碼]  等欄位中，與 Apple 裝置註冊設定檔 (DEP) 相關聯的註冊設定檔無法使用非英數字元。 在這些欄位中使用非英數字元可以建立註冊設定檔，但是設定檔無法上傳至 Apple。 Apple 伺服器不會提供任何錯誤訊息或警告，設定檔也不會部署至 DEP 管理的裝置。  
+啟用 DEP 時，在註冊設定檔的 [名稱]、[描述]、[部門] 和 [電話號碼] 等欄位中，與 Apple 裝置註冊設定檔 (DEP) 相關聯的註冊設定檔無法使用非英數字元。 在這些欄位中使用非英數字元可以建立註冊設定檔，但是設定檔無法上傳至 Apple。 Apple 伺服器不會提供任何錯誤訊息或警告，設定檔也不會部署至 DEP 管理的裝置。  
 
 **因應措施**：無。
 
@@ -217,6 +218,12 @@ ConfigMgrSetup.log：
 
 **因應措施**：請確定每位使用者只包含在一個部署了條款的集合中。  
 
+### <a name="android-for-work-email-profiles-that-use-certificate-authentication-are-not-applied-to-devices"></a>使用憑證驗證的 Android for Work 電子郵件設定檔不會套用到裝置
+<!--  487657 -->
+建立 Android for Work 電子郵件設定檔之後，有兩種驗證選項。 一種是使用者名稱和密碼，另外一種是憑證。 憑證選項目前沒有作用。 如果建立設定檔時將驗證方法設為 [憑證]，則設定檔不會套用到裝置，且系統會要求使用者手動輸入電子郵件帳戶詳細資料。
+
+**因應措施**：無。 系統管理員必須使用 [使用者名稱和密碼] 選項，否則只能等到此問題解決為止。
+
 ## <a name="reports-and-monitoring"></a>報告和監視  
 
 ### <a name="the-health-attestation-report-is-empty-even-though-health-attestation-data-was-previously-collected"></a>即使先前已收集健康情況證明資料，健康情況證明報告仍為空白  
@@ -229,16 +236,16 @@ ConfigMgrSetup.log：
 ### <a name="conditional-access"></a>條件式存取  
 
 #### <a name="the-same-user-collection-is-not-blocked-from-being-added-to-both-exempted-and-targeted-collections"></a>不會封鎖將相同的使用者集合同時新增到豁免及目標集合。  
-這只會發生在您將同樣的 **使用者集合** 新增到 **[目標集合]** 頁面 **之前** ，先將它新增到 **[豁免集合]** 頁面時。  如果您先將 **使用者集合** 新增到 **[目標集合]** 頁面，然後嘗試將相同的 **使用者集合** 新增到 **[豁免集合]** 頁面，您應該會看到正常的封鎖訊息。  
+這只會發生在您將同樣的 **使用者集合** 新增到 **[目標集合]** 頁面 **之前** ，先將它新增到 **[豁免集合]** 頁面時。  如果您先將**使用者集合** 新增到 **[目標集合]** 頁面，然後嘗試將相同的 **使用者集合**新增到 **[豁免集合]** 頁面，您應該會看到正常的封鎖訊息。  
 
 此問題會影響含有更新 1602 之 System Center Configuration Manager 對 **Exchange 內部部署**的條件存取，並預期會在未來的更新中解決。  
 
-**因應措施︰** 新增 **使用者集合** 到 **[目標集合]** 頁面，然後在 **[豁免集合]** 頁面上選取 **使用者集合** ，或確定您沒有將相同的 **使用者集合** 同時新增到目標與豁免集合。
+**因應措施︰**新增**使用者集合**到 **[目標集合]** 頁面，然後在 **[豁免集合]** 頁面上選取**使用者集合**，或確定您沒有將相同的**使用者集合**同時新增到目標與豁免集合。
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
 <!--  Product Studio bug 485370 added by Nathbarn 04 19 2017 -->
 ### <a name="antimalware-policy-fails-to-apply-on-windows-server-2016-core"></a>反惡意程式碼原則無法套用至 Windows Server 2016 Core
 反惡意程式碼原則無法套用至 Windows Server 2016 Core。  錯誤碼為 0x80070002。  ConfigSecurityPolicy.exe 遺失相依性。
 
-**因應措施：**  無。  身為系統管理員，您可以使用群組原則管理 Windows Server 2016 Core 的設定。
+**因應措施：**無。  身為系統管理員，您可以使用群組原則管理 Windows Server 2016 Core 的設定。
 

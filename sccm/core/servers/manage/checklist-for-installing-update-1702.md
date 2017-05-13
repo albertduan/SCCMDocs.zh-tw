@@ -2,7 +2,7 @@
 title: "1702 版的檢查清單 | System Center Configuration Manager"
 description: "了解更新至 System Center Configuration Manager 1702 版之前所採取的動作。"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 05/02/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -15,10 +15,11 @@ caps.latest.revision: 7
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: dd54a5668f8df73b0724f5c15a1a6a83f8fe8496
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: c4ace452d62d4fa08f4457cb1735718ca4bd016d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/03/2017
 
 ---
 # <a name="checklist-for-installing-update-1702-for-system-center-configuration-manager"></a>安裝 System Center Configuration Manager 1702 更新的檢查清單
@@ -26,6 +27,9 @@ ms.lasthandoff: 03/27/2017
 *適用於：System Center Configuration Manager (最新分支)*
 
 當您使用 System Center Configuration Manager 的最新分支時，您可以安裝 1702 版的主控台內更新，從之前的版本更新您的階層。
+
+> [!TIP]  
+1702 版也做為[基準媒體](/sccm/core/servers/manage/updates#a-namebkmkbaselinesa-baseline-and-update-versions)提供使用，可用來安裝新階層的第一個站台。
 
 若要取得 1702 版的更新，您必須在階層的頂層站台使用服務連接點站台系統角色。 這可以是線上或離線模式。 在您的階層從 Microsoft 下載更新套件之後，您可以在主控台中的 [管理]&gt; [概觀]&gt; [雲端服務]&gt; [更新與服務] 底下找到此套件。
 

@@ -2,7 +2,7 @@
 title: "應該使用哪個分支 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 可用分支之間的差異。"
 ms.custom: na
-ms.date: 10/12/2016
+ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: ef044af5f6b32e4161d54c0ab1fb2ef2d245264b
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: f791278b0aa8efc734a894da7dab1704bb567ed0
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -29,16 +30,19 @@ ms.lasthandoff: 03/27/2017
 
 從 2016 年 10 月開始，System Center Configuration Manager 有三個分支可使用。 請使用本主題協助選擇正確的分支。
 
+> [!TIP]  
+> 同一個階層中的所有站台必須執行相同的分支。 不支援在不同站台具有不同分支的階層。
+
 ## <a name="current-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager 的最新分支
 這是您希望選項能取得最新特性和功能的生產環境所使用的授權分支。 這是您有下列其中一種產品時使用的分支：System Center Datacenter、System Center Standard、System Center Configuration Manager 或對等訂閱權限。 如需軟體保證和授權選項的詳細資訊，請參閱 [System Center Configuration Manager 的授權和分支](learn-more-editions.md)。
 
 
 >  [!TIP]
-> 最新分支也可以安裝成不需要授權的評估版。 評估版可使用 180 天，並支援升級至最新分支的授權版本。
+> 最新分支可以安裝成不需要授權的評估版。 評估版可使用 180 天，並支援升級至最新分支的授權版本。
 
 最新分支一年會更新數次新功能。 每個更新版本在發行後都有一年支援。 您必須在一年到期日當天或之前，更新至最新分支的較新版本。 較新版本的更新會提供為主控台內更新。
 
-若要將最新分支安裝為新站台或從 System Center 2012 Configuration Manager Service Pack 2 或 System Center 2012 R2 Configuration Manager Service Pack 1 升級，請使用 System Cener 2016 所附 DVD 或屬於 System Center Configuration Manager 獨立版的 System Center Configuration Manager [基準媒體](/sccm/core/servers/manage/updates#baseline-and-update-versions)。 System Center Configuration Manager 的授權方式會決定您對此媒體的存取權。
+若要將最新分支安裝為新站台或從 System Center 2012 Configuration Manager Service Pack 2 或 System Center 2012 R2 Configuration Manager Service Pack 1 升級，請使用 System Cener 2016 所附 DVD 或屬於 System Center Configuration Manager 獨立版的 System Center Configuration Manager [基準媒體](/sccm/core/servers/manage/updates#baseline-and-update-versions)。 System Center Configuration Manager 的授權方式會決定您對此媒體的存取權。 較新的基準版本 (如 1702) 不支援安裝 LTSB。
 
 您也可以使用基準媒體來安裝新站台，它會是最新分支評估版。 如果只想安裝評估版，您可以從 [TechNet Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection) 網站取得軟體。
 
@@ -139,4 +143,15 @@ Technical Preview 首度推出的功能，通常會加入最新分支的新更�
 **更新選項**
 -    您可以安裝新版 Technical Preview 的任何主控台內更新。
 -    沒有任何選項可將 Technical Preview 轉換成最新分支或 LTSB。
+
+
+## <a name="identify-your-branch-and-version"></a>識別您的分支和版本
+當您檢視 Configuration Manager 站台的版本資訊時，也可確認分支。
+
+**版本**   
+若要檢查站台的版本，請在主控台中，移至主控台左上角的 [關於 System Center Configuration Manager]，[站台版本] 會在該處顯示。 如需站台版本的清單，請參閱 []()。
+
+**分支**  
+若要確認站台的分支 (為 LTSB 或最新分支)，請移至主控台的 [系統管理] > [站台設定] > [站台]，並開啟 [階層設定]。 如果其中具有可以轉換為最新分支的作用中選項，即表示站台執行 LTSB 版本。 當站台執行最新分支時，此選項即會呈現灰色。
+如需 Configuration Manager 不同版本的資訊，請參閱 [Configuration Manager 的更新](/sccm/core/servers/manage/updates)中的＜基準和更新版本＞。
 

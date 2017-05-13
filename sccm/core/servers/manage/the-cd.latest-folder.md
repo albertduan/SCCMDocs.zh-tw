@@ -2,7 +2,7 @@
 title: "CD.Latest 資料夾 | Microsoft Docs"
 description: "了解從 Configuration Manager 主控台內進行產品更新的新更新程序。"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 6
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
-ms.openlocfilehash: 5fbf1a2605b4915a2f592875a5ac88368160ce87
-ms.lasthandoff: 04/26/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: 5c39e09b44500fa2f356f83579bb2fb2c1d0e937
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -41,7 +42,7 @@ System Center Configuration Manager 引進新的更新程序，可從 Configurat
 
 -   執行內建的 Configuration Manager 備份工作︰系統會在指定的備份資料夾位置底下建立或更新該資料夾。  
 
--  從版本 1606 開始，當您使用基準媒體 (例如版本 1606) 安裝新的站台時，會建立 CD.Latest 資料夾。
+-  從 1606 版開始，當您使用基準媒體 (例如 1606 版和 1702 版) 安裝新的站台時，會建立 CD.Latest 資料夾。
 
 支援使用來自 [CD.Latest] 資料夾的來源檔案進行下列作業：  
 

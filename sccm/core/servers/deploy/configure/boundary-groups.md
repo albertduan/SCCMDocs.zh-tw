@@ -2,7 +2,7 @@
 title: "定義界限群組 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 中將用戶端連結至站台系統的界限群組。"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 10
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 8da48e89e8376cc23109faa1c74b29a64699aa87
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: cb5c8f8f91857bf5f9377a9f871f0d9d9b0cc939
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -111,6 +112,8 @@ ms.lasthandoff: 03/27/2017
 從 1702 版開始，用戶端會使用界限群組來尋找新的軟體更新點。 您可以將個別的軟體更新點新增到不同的界限群組，以控制用戶端可以尋找的伺服器。
 
 當您從 1702 之前的版本更新時，所有現有的軟體更新點都會加入至每個站台的預設站台界限群組。 如此可保留更新前行為，用戶端會從您為階層設定的可用軟體更新點集區中選取軟體更新點。  在您選擇將個別的軟體更新點新增至使用受控制選擇與後援行為的不同界限群組之前，都會維持這種行為。
+
+如果您安裝執行 1702 版或更新版本的新站台，您必須將軟體更新點指派至界限群組，用戶端才能尋找並使用它們。
 
 
 設定的軟體更新點後援行為類似於其他站台系統角色，但有下列幾點需要特別注意︰
