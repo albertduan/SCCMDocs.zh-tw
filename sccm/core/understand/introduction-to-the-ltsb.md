@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
-ms.openlocfilehash: 90ba9937cf4ea708a3b5fa69c5975fdf906feeaa
+ms.sourcegitcommit: d940fd1bbf96767d44f8c55315e814be55a83897
+ms.openlocfilehash: 91c1ca860069c6ebe0d20230c4620bf3f68735a2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/02/2017
+ms.lasthandoff: 05/08/2017
 
 
 ---
@@ -32,6 +32,8 @@ System Center Configuration Manager 的長期維護分支 (LTSB) 是較為特別
 
 針對以 Configuration Manager 1606 版為基礎的分支而言，相較於 Configuration Manager 的最新分支，LTSB 的功能較少。
 
+ > [!TIP]   
+ > 如需 **Windows Server** 分支的相關資訊，請參閱 [Windows Server 2016 新的最新商務分支維護選項 (英文)]( https://blogs.technet.microsoft.com/windowsserver/2016/07/12/windows-server-2016-new-current-branch-for-business-servicing-option/)。
 
 ## <a name="features-that-are-not-available-in-the-ltsb-of-configuration-manager"></a>Configuration Manager 的 LTSB 未提供的功能
 Configuration Manager 的最新分支支援下列使用 LTSB 時無法取得的功能：
@@ -67,7 +69,7 @@ LTSB 是以最新分支 1606 版為基礎。 如需產品文件，請使用[最�
 
 如果客戶擁有 System Center Configuration Manager 的永久權限 ，或可接受 SA 或訂閱於 10 月 1 日之後失效，則可在失效當下安裝 System Center Configuration Manager LTSB 版。
 
-[您可以在這裡找到透過 Microsoft 大量授權方案購買之產品的完整條款及條件 (英文)](http://go.microsoft.com/fwlink/?LinkId=800052)
+[您可參閱此連結，了解透過 Microsoft 大量授權方案購買之產品的完整條款及條件](http://go.microsoft.com/fwlink/?LinkId=800052)。
 
 如需 Configuration Manager 分支的授權詳細資訊，請參閱 [System Center Configuration Manager 授權與分支](learn-more-editions.md)。
 
