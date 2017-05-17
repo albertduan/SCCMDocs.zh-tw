@@ -15,9 +15,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 1defe96163f1bb70f586619ad89098c6f0e6c665
 ms.openlocfilehash: 3eea3a6e5f23808570ded4be3bd7412954518b96
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -44,7 +46,7 @@ ms.openlocfilehash: 3eea3a6e5f23808570ded4be3bd7412954518b96
 
 -   [修改系統管理使用者的系統管理範圍](#BKMK_ModAdminUser)  
 
-##  <a name="a-namebkmkcreatesecrolea-create-custom-security-roles"></a><a name="BKMK_CreateSecRole"></a> 建立自訂安全性角色  
+##  <a name="BKMK_CreateSecRole"></a> 建立自訂安全性角色  
  Configuration Manager 提供數個內建的安全性角色。 如果需要其他安全性角色，您可以建立現有安全性角色的複本，然後再修改該複本，以建立自訂安全性角色。 您可以建立自訂安全性角色，授與系統管理使用者其他安全性權限，這些權限是系統管理使用者所需，但未包含在目前指派的安全性角色中。 藉由使用自訂安全性角色，您可以只授與使用者所需的權限，並避免為使用者指派超過所需權限的安全性角色。  
 
  利用下列程序，使用現有的安全性角色作為範本，建立新的安全性角色。  
@@ -83,7 +85,7 @@ ms.openlocfilehash: 3eea3a6e5f23808570ded4be3bd7412954518b96
             > [!NOTE]  
             >  匯入安全性角色後，您可以編輯安全性角色內容，以變更與安全性角色相關聯的物件權限。  
 
-##  <a name="a-namebkmkconfigsecrolea-configure-security-roles"></a><a name="BKMK_ConfigSecRole"></a> 設定安全性角色  
+##  <a name="BKMK_ConfigSecRole"></a> 設定安全性角色  
  針對安全性角色定義的安全性權限群組，稱為安全性作業指派。 安全性作業指派代表一組物件類型，和可供每個物件類型使用的動作。 您可以修改可讓任何自訂安全性角色使用的安全性作業，但無法修改 Configuration Manager 提供的內建安全性角色。  
 
  利用下列程序修改安全性角色的安全性作業。  
@@ -109,7 +111,7 @@ ms.openlocfilehash: 3eea3a6e5f23808570ded4be3bd7412954518b96
 
 8.  當您完成安全性作業指派時，可選擇 [確定] 儲存新的安全性角色。  
 
-##  <a name="a-namebkmkconfigsecscopea-configure-security-scopes-for-an-object"></a><a name="BKMK_ConfigSecScope"></a> 設定物件的安全性範圍  
+##  <a name="BKMK_ConfigSecScope"></a> 設定物件的安全性範圍  
  您需要從物件管理物件的安全性範圍關聯，而不是從安全性範圍管理。 安全性範圍唯一支援的直接設定，是變更其名稱和描述。 若要在檢視安全性範圍內容時變更安全性範圍的名稱和描述，您必須擁有 [安全性範圍]  安全物件的 [修改]  權限。  
 
  當您在 Configuration Manager 建立新的物件時，新的物件與每個安全性範圍相關聯，而該安全性範圍與提供**建立**權限，或**設定安全性範圍**權限的安全性角色時，用來建立此物件的帳戶安全性角色相關聯。 只有在建立物件後，您才可以變更與該物件關聯的安全性範圍。  
@@ -131,14 +133,14 @@ ms.openlocfilehash: 3eea3a6e5f23808570ded4be3bd7412954518b96
     > [!NOTE]  
     >  當您建立新的物件時，可以將物件指派給多個安全性範圍。 若要修改與物件關聯的安全性範圍數目，您必須在建立物件後變更此指派。  
 
-##  <a name="a-namebkmkconfigcolla-configure-collections-to-manage-security"></a><a name="BKMK_ConfigColl"></a> 設定集合以管理安全性  
+##  <a name="BKMK_ConfigColl"></a> 設定集合以管理安全性  
  目前沒有程序可為以角色為基礎的系統管理設定集合。 集合沒有以角色為基礎的系統管理設定。 不過您可以在設定系統管理使用者時，改為將集合指派給系統管理使用者。 在已指派安全性角色的使用者中啟用的集合安全性作業，可判斷系統管理使用者是否有集合與集合資源 (集合成員) 的權限。  
 
  當系統管理使用者擁有某個集合的權限時，表示他們也擁有受限於該集合的集合權限。 例如，您的組織使用名為 All Desktops 的集合，而其中存在名為 All North America Desktops 的集合，該集合受限於 All Desktops 集合。 如果系統管理使用者擁有 All Desktops 的權限，則他們在 All North America Desktops 集合也擁有相同權限。
 
  此外，系統管理使用者無法針對直接指派給他們的集合使用**刪除**或**修改**權限。 不過，它們可以針對僅限該集合的集合使用這些權限。 在先前的範例中，系統管理員可以刪除或修改 All North America Desktops 集合，但無法刪除或修改 All Desktops 集合。  
 
-##  <a name="a-namebkmkcreateadminusera-create-a-new-administrative-user"></a><a name="BKMK_Create_AdminUser"></a> 建立新的系統管理使用者  
+##  <a name="BKMK_Create_AdminUser"></a> 建立新的系統管理使用者  
  若要授與個人或安全性群組成員管理 Configuration Manager 的存取權限，請在 Configuration Manager 中建立系統管理使用者，並指定 User 或 User Group 的 Windows 帳戶。 Configuration Manager 中的每一位系統管理使用者，都必須至少有一個指派的安全性角色和安全性範圍。 您也可以指派集合來限制系統管理使用者的系統管理範圍。  
 
  利用下列程序建立新的系統管理使用者。  
@@ -173,7 +175,7 @@ ms.openlocfilehash: 3eea3a6e5f23808570ded4be3bd7412954518b96
 
     -   如果您選取 [僅限指定的安全性範圍或集合中的安全物件]，可以選擇 [新增] 選取其他集合和安全性範圍。 或選取清單中的一個或多個物件，然後選擇 [移除] 將它們移除。 選擇 [確定] 完成此程序。  
 
-##  <a name="a-namebkmkmodadminusera-modify-the-administrative-scope-of-an-administrative-user"></a><a name="BKMK_ModAdminUser"></a> 修改系統管理使用者的系統管理範圍  
+##  <a name="BKMK_ModAdminUser"></a> 修改系統管理使用者的系統管理範圍  
  您可以藉由新增或移除與使用者相關聯的安全性角色、安全性範圍和集合，修改系統管理使用者的系統管理範圍。 每一位系統管理使用者都必須至少與一個安全性角色和一個安全性範圍相關聯。 您可能需要指派一個或多個集合至使用者的系統管理範圍。 大部分安全性角色是與集合互動，沒有指派的集合時會無法正常運作。  
 
  當您修改系統管理使用者時，可以變更安全物件與指派的安全性角色相關聯的行為。 您可以選取的三種行為如下所述：  
@@ -300,9 +302,4 @@ ms.openlocfilehash: 3eea3a6e5f23808570ded4be3bd7412954518b96
 
     > [!CAUTION]  
     >  當安全性角色授與系統管理使用者集合部署權限時，這些系統管理使用者就能從本身具有物件 [讀取]  權限的任何安全性範圍發佈物件，即使該安全性範圍是與不同的安全性角色相關聯。  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

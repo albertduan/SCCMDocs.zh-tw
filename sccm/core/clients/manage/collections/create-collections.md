@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9555a16d97224a1cf49a426ab225468b07403f60
 ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -44,7 +46,7 @@ ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
 
  如需為執行 Linux 和 UNIX 的電腦建立集合的相關資訊，請參閱[如何在 System Center Configuration Manager 中管理 Linux 和 UNIX 伺服器的用戶端](../../../../core/clients/manage/manage-clients-for-linux-and-unix-servers.md)。  
 
-##  <a name="a-namebkmk1a-to-create-a-device-collection"></a><a name="BKMK_1"></a> 若要建立裝置集合  
+##  <a name="BKMK_1"></a> 若要建立裝置集合  
 
 1.  在 Configuration Manager 主控台中，選擇 [資產與合規性] > [裝置集合]。  
 
@@ -120,7 +122,7 @@ ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
 > [!NOTE]  
 >  若要查看集合成員，您必須重新整理或重新載入 Configuration Manager 主控台。 不過，在第一次排程更新，或手動為集合選取 [更新成員資格] 之後，集合才會顯示成員。 可能需要幾分鐘的時間才能完成集合更新。  
 
-##  <a name="a-namebkmk2a-to-create-a-user-collection"></a><a name="BKMK_2"></a> 若要建立使用者集合  
+##  <a name="BKMK_2"></a> 若要建立使用者集合  
 
 1.  在 Configuration Manager 主控台中，選擇 [資產與合規性] > [使用者集合]。  
 
@@ -192,7 +194,7 @@ ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
 > [!NOTE]  
 >  若要查看集合成員，您必須重新整理或重新載入 Configuration Manager 主控台。 不過，在第一次排程更新，或手動選取集合的 [更新成員資格]  之後，集合才會顯示成員。 可能需要幾分鐘的時間才能完成集合更新。  
 
-##  <a name="a-namebkmk3a-to-import-a-collection"></a><a name="BKMK_3"></a> 若要匯入集合  
+##  <a name="BKMK_3"></a> 若要匯入集合  
 
 1.  在 Configuration Manager 主控台中，選擇 [資產與合規性] > [使用者集合] 或 [裝置集合]。  
 
@@ -206,9 +208,4 @@ ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
     >  您要匯入的檔案必須已從站台匯出，且該站台需執行與此項目相同版本的 Configuration Manager。 如需匯出集合的詳細資訊，請參閱[如何在 System Center Configuration Manager 中管理集合](../../../../core/clients/manage/collections/manage-collections.md)。  
 
 6.  完成精靈以匯入集合。 新集合會顯示在 [資產與相容性]  工作區的 [使用者集合]  或 [裝置集合]  節點中。 若要查看新匯入集合的集合成員，請重新整理或重新載入 Configuration Manager 主控台。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

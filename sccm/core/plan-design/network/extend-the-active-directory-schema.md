@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 88649111ea3a38c027efb4952211546afd0bf27e
 ms.openlocfilehash: 58beef440db8e019a06ce7c4c8eaabc8e85ce954
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -110,9 +112,4 @@ ms.openlocfilehash: 58beef440db8e019a06ce7c4c8eaabc8e85ce954
  設定此容器並授與權限，且已安裝 Configuration Manager 主要站台之後，即可將該站台設定為將資料發佈至 Active Directory。  
 
  如需發佈的詳細資訊，請參閱[發佈 System Center Configuration Manager 的站台資料](../../../core/servers/deploy/configure/publish-site-data.md)。  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

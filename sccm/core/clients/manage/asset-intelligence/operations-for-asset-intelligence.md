@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,10 +30,10 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
 
 本主題包含的資訊可協助您管理 System Center Configuration Manager 階層中的一般 Asset Intelligence 工作︰  
 
-##  <a name="a-namebkmkviewinformationa-view-asset-intelligence-information"></a><a name="BKMK_ViewInformation"></a> 檢視 Asset Intelligence 資訊  
+##  <a name="BKMK_ViewInformation"></a> 檢視 Asset Intelligence 資訊  
  您可以在 [Asset Intelligence]  首頁上和 Asset Intelligence 報告中檢視 Asset Intelligence 資訊。  
 
-###  <a name="a-namebkmkassetintelligencehomepagea-asset-intelligence-home-page"></a><a name="BKMK_AssetIntelligenceHomePage"></a> Asset Intelligence 首頁  
+###  <a name="BKMK_AssetIntelligenceHomePage"></a> Asset Intelligence 首頁  
  [Asset Intelligence]  首頁會顯示 Asset Intelligence 類別目錄資訊的摘要儀表板。 在首頁上，您可以檢視類別目錄同步處理和已清查之軟體狀態的相關資訊。 [Asset Intelligence]  首頁分為下列各區段：  
 
 -   **類別目錄同步處理**：提供下列項目的相關資訊：是否啟用 Asset Intelligence、Asset Intelligence 同步處理點的目前狀態、同步處理排程、是否匯入客戶授權聲明、上次更新狀態的時間、下次排定的更新時間，以及安裝 Asset Intelligence 同步處理點站台系統之後發生的變更數目。  
@@ -49,7 +51,7 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
 
 2.  在 [資產與相容性]  工作區中，按一下 [Asset Intelligence] 。 即會顯示 Asset Intelligence 報告。  
 
-###  <a name="a-namebkmkassetintelligencereportsa-asset-intelligence-reports"></a><a name="BKMK_AssetIntelligenceReports"></a> Asset Intelligence 報告  
+###  <a name="BKMK_AssetIntelligenceReports"></a> Asset Intelligence 報告  
  有超過 60 份的 Asset Intelligence 報告顯示 Asset Intelligence 所收集的資訊。 這當中有許多報告可連結至更特定的報告，供您在其中查詢一般資訊，並向下鑽研至更詳細的資訊。 Asset Intelligence 報告位於 Configuration Manager 主控台之 [監視] 工作區的 [報告] 節點下。 這份報告提供硬體、授權管理和軟體的相關資訊。 如需 Configuration Manager 報告的詳細資訊，請參閱 [Reporting in System Center Configuration Manager](../../../../core/servers/manage/reporting.md) (System Center Configuration Manager 中的報告)。  
 
 > [!NOTE]  
@@ -68,7 +70,7 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
 
 3.  選取您要執行的 Asset Intelligence 報告，然後在 [首頁]  索引標籤的 [報告群組]  群組中按一下 [執行] 。  
 
-##  <a name="a-namebkmksynchronizethecataloga-synchronize-the-asset-intelligence-catalog"></a><a name="BKMK_SynchronizeTheCatalog"></a> 同步處理 Asset Intelligence 類別目錄  
+##  <a name="BKMK_SynchronizeTheCatalog"></a> 同步處理 Asset Intelligence 類別目錄  
  您可以同步處理本機 Asset Intelligence 類別目錄與 System Center Online，來擷取最新的軟體項目分類。 當您手動要求與 System Center Online 的類別目錄同步處理時，可能需要 15 分鐘或更長的時間才能完成與 System Center Online 的同步處理程序。 Configuration Manager 會使用同步處理成功完成時的目前時間來更新 [Asset Intelligence] 首頁上的 [上次成功更新] 設定。  
 
 > [!NOTE]  
@@ -96,7 +98,7 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
 > [!WARNING]  
 >  System Center Online 只會在 12 小時的期間內接受一個手動同步處理要求。  
 
-###  <a name="a-namebkmkmanuallysynchronizecataloga-to-manually-synchronize-the-asset-intelligence-catalog"></a><a name="BKMK_ManuallySynchronizeCatalog"></a> 手動同步處理 Asset Intelligence 類別目錄  
+###  <a name="BKMK_ManuallySynchronizeCatalog"></a> 手動同步處理 Asset Intelligence 類別目錄  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
@@ -104,10 +106,10 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，依序按一下 [同步處理] 、[同步處理 Asset Intelligence 類別目錄] 和 [確定] 。  
 
-##  <a name="a-namebkmkcustomizecataloga-customize-the-asset-intelligence-catalog"></a><a name="BKMK_CustomizeCatalog"></a> 自訂 Asset Intelligence 類別目錄  
+##  <a name="BKMK_CustomizeCatalog"></a> 自訂 Asset Intelligence 類別目錄  
  接收自 System Center Online 的 Asset Intelligence 類別目錄分類資訊以唯讀權限儲存在站台資料庫中，無法進行修改或刪除。 不過，您可以建立、修改和刪除自訂軟體類別、軟體系列、軟體標籤和硬體需求類別目錄資訊。 然後，您可以使用自訂分類資料，而不是 System Center Online 針對現有或使用者定義軟體項目資訊所提供的資訊。 當您變更或新增分類資訊時，會將類別目錄資訊視為由使用者所定義。 使用者定義的分類資訊儲存在與已驗證之類別目錄資訊不同的資料庫資料表中。  
 
-###  <a name="a-namebkmksoftwarecategoriesa-software-categories"></a><a name="BKMK_SoftwareCategories"></a> 軟體類別  
+###  <a name="BKMK_SoftwareCategories"></a> 軟體類別  
  Asset Intelligence 軟體類別可用來廣泛分類已清查的軟體項目，也可作為更特定之軟體系列的高階分組。 例如，軟體類別可能是能源公司，而該軟體類別內的軟體系列可能是石油與天然氣或水力電氣。 Asset Intelligence 類別目錄中預先定義許多軟體類別，並且建立其他使用者定義的類別，以進一步定義已清查的軟體。 所有預先定義之軟體類別的驗證狀態一律是 [已驗證] ，而新增至 Asset Intelligence 類別目錄的自訂軟體類別資訊則是 [使用者定義] 。  
 
  使用下列程序建立使用者定義的軟體類別。  
@@ -131,7 +133,7 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
 
 6.  在 [完成]  頁面上，按一下 [關閉]  結束精靈。  
 
-###  <a name="a-namebkmksoftwarefamiliesa-software-families"></a><a name="BKMK_SoftwareFamilies"></a> 軟體系列  
+###  <a name="BKMK_SoftwareFamilies"></a> 軟體系列  
  Asset Intelligence 軟體系列可用來進一步定義軟體類別內已清查的軟體項目。 例如，軟體類別可能是能源公司，而該軟體類別內的軟體系列可能是石油與天然氣或水力電氣。 Asset Intelligence 類別目錄中預先定義許多軟體系列，並且建立其他使用者定義的系列，以定義已清查的軟體。 所有預先定義之軟體系列的驗證狀態一律是 [已驗證] ，而新增至 Asset Intelligence 類別目錄的自訂軟體系列資訊則是 [使用者定義] 。  
 
  使用下列程序建立使用者定義的軟體系列。  
@@ -153,7 +155,7 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
 
 6.  在 [完成]  頁面上，按一下 [關閉]  結束精靈。  
 
-###  <a name="a-namebkmksoftwarelabelsa-software-labels"></a><a name="BKMK_SoftwareLabels"></a> 軟體標籤  
+###  <a name="BKMK_SoftwareLabels"></a> 軟體標籤  
  Asset Intelligence 自訂軟體標籤可讓您建立篩選器以群組軟體項目，並使用 Asset Intelligence 報告來檢視它們。 例如，您可以建立稱為「共享軟體」的軟體標籤，並建立它與一些應用程式的關聯性，然後執行報告，以顯示具有共享軟體之軟體標籤的所有標題。 新增至 Asset Intelligence 類別目錄之所有自訂軟體標籤的驗證狀態是 [使用者定義]  。  
 
  使用下列程序建立使用者定義的自訂標籤。  
@@ -175,7 +177,7 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
 
 6.  在 [完成]  頁面上，按一下 [關閉]  結束精靈。  
 
-###  <a name="a-namebkmkhardwarerequirementsa-hardware-requirements"></a><a name="BKMK_HardwareRequirements"></a> 硬體需求  
+###  <a name="BKMK_HardwareRequirements"></a> 硬體需求  
  硬體需求資訊可協助您確認電腦符合軟體項目的硬體需求之後，再將它們設為軟體部署的目標。 Asset Intelligence 類別目錄提供許多預先定義的硬體需求，您也可以建立新的使用者定義硬體需求資訊，以符合自訂需求。 所有預先定義之硬體需求的驗證狀態一律是 [已驗證] ，而新增至 Asset Intelligence 類別目錄的使用者定義硬體需求資訊則是 [使用者定義] 。  
 
 > [!IMPORTANT]  
@@ -211,7 +213,7 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
 
 6.  在 [完成]  頁面上，按一下 [關閉]  結束精靈。  
 
-###  <a name="a-namebkmkmodifycategorizationa-modify-categorization-information-for-inventoried-software"></a><a name="BKMK_ModifyCategorization"></a> 修改已清查軟體的分類資訊  
+###  <a name="BKMK_ModifyCategorization"></a> 修改已清查軟體的分類資訊  
  使用特定分類資訊 (例如產品名稱、廠商、軟體類別和軟體系列) 來設定 Asset Intelligence 類別目錄中的預先定義軟體。 預先定義的分類資訊不符合您的需求時，您可以修改軟體項目之內容中的資訊。 修改預先定義之軟體的分類資訊時，軟體的驗證狀態會從 [已驗證]  變更為 [使用者定義] 。  
 
 > [!IMPORTANT]  
@@ -265,7 +267,7 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
 
 6.  還原 Asset Intelligence 類別目錄中軟體的分類資訊時，驗證狀態會從 [使用者定義]  變更為 [已驗證] 。 還原不在類別目錄中的軟體時，驗證狀態會從 [使用者定義]  變更為 [未分類] 。  
 
-##  <a name="a-namebkmkrequestcatalogupdatea-request-a-catalog-update-for-uncategorized-software-titles"></a><a name="BKMK_RequestCatalogUpdate"></a> 要求未分類軟體項目的類別目錄更新  
+##  <a name="BKMK_RequestCatalogUpdate"></a> 要求未分類軟體項目的類別目錄更新  
  未分類軟體項目資訊可以提交給 System Center Online，以進行研究和分類。 提交未分類的軟體項目之後，若有客戶對相同軟體項目提出 4 個以上的分類要求時，研究人員會識別、分類，然後將軟體項目分類資訊提供給所有使用 System Center Online 服務的客戶。 Microsoft 會將最高的分類優先順序提供給分類要求數最多的軟體項目。 自訂軟體和企業營運應用程式不太可能會收到分類，因此最佳做法是不要將這類軟體項目傳送給 Microsoft 進行分類。  
 
  將軟體項目資訊提交給 System Center Online 進行分類時，下列情況適用：  
@@ -308,7 +310,7 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
     > [!NOTE]  
     >  提交給 System Center Online 進行分類的軟體，其在管理中心網站上的驗證狀態為 [擱置]  ，但在子主要站台上仍會顯示 [未分類]  驗證狀態。  
 
-##  <a name="a-namebkmkresolvesoftwaredetailsa-resolve-software-details-conflicts"></a><a name="BKMK_ResolveSoftwareDetails"></a> 解決軟體詳細資料衝突  
+##  <a name="BKMK_ResolveSoftwareDetails"></a> 解決軟體詳細資料衝突  
  從 System Center Online 接收到與現有軟體詳細資料資訊衝突的剛更新軟體分類詳細資料之後，即可選擇如何解決衝突。 具有目前衝突之軟體的驗證狀態為 [可更新] 。 解決軟體詳細資料衝突之後，會根據您指定的設定，將軟體分類資訊保留在 Asset Intelligence 類別目錄中。 除非在解決衝突之後變更 System Center Online 值，否則相同的軟體分類值不會再發生軟體詳細資料衝突。  
 
  使用下列程序解決軟體詳細資料衝突。  
@@ -336,9 +338,4 @@ ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
     -   **使用下載的 System Center Online 值覆寫本機編輯類別目錄資訊**：使用取自 System Center Online 的新資訊來覆寫現有 Asset Intelligence 類別目錄軟體分類資訊，來解決軟體詳細資料衝突。 當您選取這個設定時，軟體項目狀態會從 [可更新]  變更為 [已驗證] 。  
 
      按一下 [確定]  儲存衝突解決方法。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

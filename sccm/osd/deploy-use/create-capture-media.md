@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 5acf800ff5aebd849e294393337755145a60cca5
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -30,7 +32,7 @@ Configuration Manager 中的擷取媒體可讓您從參照電腦擷取作業系�
 
 -   [建立工作順序以擷取作業系統](create-a-task-sequence-to-capture-an-operating-system.md)  
 
-##  <a name="a-namebkmkcreatecapturemediaa-how-to-create-capture-media"></a><a name="BKMK_CreateCaptureMedia"></a> 如何建立擷取媒體  
+##  <a name="BKMK_CreateCaptureMedia"></a> 如何建立擷取媒體  
  使用擷取媒體從參照電腦擷取作業系統映像。 擷取媒體包含啟動參照電腦的開機映像，以及擷取作業系統映像的工作順序。
 
 您可使用 [建立工作順序媒體精靈] 建立擷取媒體。 請確定符合下列所有條件之後再執行精靈：  
@@ -80,9 +82,4 @@ Configuration Manager 中的擷取媒體可讓您從參照電腦擷取作業系�
         >  您必須擁有發佈點上內容庫的讀取存取權限。  
 
 7.  完成精靈。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

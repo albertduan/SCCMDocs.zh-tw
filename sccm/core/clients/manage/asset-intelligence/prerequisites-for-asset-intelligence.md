@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 156d6679817b81ca27fbd2b8836431396e1e6b23
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -48,9 +50,4 @@ System Center Configuration Manager 中的 Asset Intelligence 具有外部相依
 |軟體計量用戶端代理程式相依性|有些 Asset Intelligence 軟體報告需要軟體計量用戶端代理程式來提供資料。 如需啟用軟體計量用戶端代理程式的相關資訊，請參閱[在 System Center Configuration Manager 中使用軟體計量監視應用程式使用量](../../../../apps/deploy-use/monitor-app-usage-with-software-metering.md)。<br /><br /> 下列 Asset Intelligence 報告需要軟體計量用戶端代理程式來提供資料：<br /><br /> -   軟體 07A - 依電腦數目列出最近使用過的可執行檔<br />-   軟體 07B - 最近使用過指定可執行檔的電腦<br />-   軟體 07C - 特定電腦上最近使用過的可執行檔<br />-   軟體 08A - 依使用者數目列出最近使用過的可執行檔<br />-   軟體 08B - 最近使用過指定可執行檔的使用者<br />-   軟體 08C - 依指定使用者列出最近使用過的可執行檔|  
 |Asset Intelligence 硬體清查報告類別先決條件|Configuration Manager 中的 Asset Intelligence 報告需要特定硬體清查報告類別。 在啟用硬體清查報告類別，且用戶端已根據這些類別回報硬體清查之前，相關聯的 Asset Intelligence 報告不會包含任何資料。 您可以啟用下列硬體清查報告類別，來支援 Asset Intelligence 報告需求：<br /><br /> -   SMS_SystemConsoleUsage<sup>1</sup><br />-   SMS_SystemConsoleUser<sup>1</sup><br />-   SMS_InstalledSoftware<br />-   SMS_AutoStartSoftware<br />-   SMS_BrowserHelperObject<br />-   Win32_USBDevice<br />-   SMS_InstalledExecutable<br />-   SMS_SoftwareShortcut<br />-   SoftwareLicensingService<br />-   SoftwareLicensingProduct<br />-   SMS_SoftwareTag<br /><br /> <sup>1</sup> 預設已啟用 **SMS_SystemConsoleUsage** 和 **SMS_SystemConsoleUser** Asset Intelligence 硬體清查報告類別。<br /><br /> 當您按一下 [Asset Intelligence] 節點時，您可以在 Configuration Manager 主控台的 [資產與相容性] 工作區中，編輯 Asset Intelligence 硬體清查報告類別。 如需詳細資訊，請參閱[設定 System Center Configuration Manager 中的 Asset Intelligence](../../../../core/clients/manage/asset-intelligence/configuring-asset-intelligence.md) 主題中的[啟用 Asset Intelligence 硬體清查報告類別](../../../../core/clients/manage/asset-intelligence/configuring-asset-intelligence.md#BKMK_EnableAssetIntelligence)一節。|  
 |Reporting Services 點|您必須先安裝 Reporting Services 點站台系統角色，才會顯示軟體更新報告。 如需建立 Reporting Services 點的詳細資訊，請參閱 [在 Configuration Manager 中設定報告](http://go.microsoft.com/fwlink/p/?LinkId=232661)。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

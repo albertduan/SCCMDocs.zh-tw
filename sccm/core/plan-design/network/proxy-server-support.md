@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: c4f30e4839709722b216262b21d7b51c07d24d1e
 ms.openlocfilehash: dc36be47310d2c2178c974a2b503d0b5f9f6e2ec
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -85,9 +87,4 @@ System Center Configuration Manager 站台系統伺服器與用戶端，都可�
 3.  在 [站台系統內容]中，選取 [Proxy] 索引標籤，然後為這個主要站台伺服器設定 Proxy 設定。  
 
 4.  選擇 [確定] 即可儲存新的 Proxy 伺服器設定。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

@@ -15,9 +15,11 @@ caps.latest.revision: 8
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 584dad7d8b05a2da9f7a66b73028ae99ff1a594f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -29,13 +31,13 @@ ms.openlocfilehash: 584dad7d8b05a2da9f7a66b73028ae99ff1a594f
 
 請使用下列章節的內容，以新版的 Windows 重新整理現有的電腦。  
 
-##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 方案  
+##  <a name="BKMK_Plan"></a> 方案  
 
 -   **規劃並實作基礎結構需求**  
 
      必須要備妥數個基礎結構需求，才能部署作業系統，例如 Windows ADK、Windows 部署服務 (WDS)、支援的硬碟設定等。如需詳細資訊，請參閱[作業系統部署的基礎結構需求](../plan-design/infrastructure-requirements-for-operating-system-deployment.md)。
 
-##  <a name="a-namebkmkconfigurea-configure"></a><a name="BKMK_Configure"></a> 設定  
+##  <a name="BKMK_Configure"></a> 設定  
 
 1.  **準備開機映像**  
 
@@ -59,7 +61,7 @@ ms.openlocfilehash: 584dad7d8b05a2da9f7a66b73028ae99ff1a594f
 
      使用網路上自動化作業系統安裝的工作順序。 請使用[建立工作順序以安裝作業系統](create-a-task-sequence-to-install-an-operating-system.md)中的步驟，建立工作順序以部署作業系統。 根據所選部署方法之不同，工作順序可能有其他考量。  
 
-##  <a name="a-namebkmkdeploya-deploy"></a><a name="BKMK_Deploy"></a> 部署  
+##  <a name="BKMK_Deploy"></a> 部署  
 
 -   使用下列部署方法之一來部署作業系統：  
 
@@ -78,9 +80,4 @@ ms.openlocfilehash: 584dad7d8b05a2da9f7a66b73028ae99ff1a594f
 -   **監視工作順序部署**  
 
      若要監視工作順序部署以安裝作業系統，請參閱[監視作業系統部署](monitor-operating-system-deployments.md)。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

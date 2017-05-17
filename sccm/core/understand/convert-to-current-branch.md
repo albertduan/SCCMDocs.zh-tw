@@ -15,9 +15,11 @@ caps.latest.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 60631bc0346bd78d704e7129bb755af504c59b1b
 ms.openlocfilehash: 6e7edc85630d22c5bbba1ff66bd1199903db76db
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 
@@ -54,9 +56,4 @@ ms.openlocfilehash: 6e7edc85630d22c5bbba1ff66bd1199903db76db
  2. 選取要轉換成最新分支的選項，然後選擇 [套用]。  
 
 當站台轉換到最新分支時，原先無法使用的功能即可使用。
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

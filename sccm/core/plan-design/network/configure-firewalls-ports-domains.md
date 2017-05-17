@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bd20983eeca47bdd63e0385440e6c8d64901b902
 ms.openlocfilehash: 4a2a8f96a900a2c4959ae3ff59232771ece95991
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -34,9 +36,4 @@ ms.openlocfilehash: 4a2a8f96a900a2c4959ae3ff59232771ece95991
 |站台伺服器與用戶端可能需要使用的**網域及服務** 。|Configuration Manager 功能可能需要站台伺服器及用戶端存取網際網路上的特定服務及網域，例如 Windowsudpate.microsoft.com 或 Microsoft Intune 服務。<br /><br /> 若要使用 Microsoft Intune 管理行動裝置，還必須設定對 [Intune 所需之連接埠及網域](https://docs.microsoft.com/en-us/intune/get-started/network-infrastructure-requirements-for-microsoft-intune)的存取權。|  
 |站台系統伺服器用及用戶端通訊用的**Proxy 伺服器** 。 您可以為不同的站台系統伺服器及用戶端指定不同的 Proxy 伺服器。|因為這些組態是在您安裝站台系統角色或用戶端時指定，所以您只需要記下 Proxy 伺服器組態，供日後設定站台系統角色及用戶端時的參考。<br /><br /> 若不確定部署是否需要使用 Proxy 伺服器，請參閱 [System Center Configuration Manager 中的 Proxy 伺服器支援](../../../core/plan-design/network/proxy-server-support.md)，了解可以使用 Proxy 伺服器的站台系統角色與用戶端動作。|   
 |  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 9032698fa12bf453041ea06bf330d3b4687c2a97
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -32,7 +34,7 @@ Configuration Manager 中的可開機媒體包含開機映像、選擇性的啟�
 
 -   [取代現有的電腦和傳輸設定](replace-an-existing-computer-and-transfer-settings.md)  
 
-##  <a name="a-namebkmkcreatebootablemediaa-create-bootable-media"></a><a name="BKMK_CreateBootableMedia"></a> 建立可開機媒體  
+##  <a name="BKMK_CreateBootableMedia"></a> 建立可開機媒體  
  當您將可開機媒體開機時，目的地電腦會啟動、連線至網路，並從網路擷取指定的工作順序、作業系統映像，以及任何其他必要的內容。 由於工作順序不在媒體上，因此不需要重新建立媒體即可變更工作順序或內容。 可開機媒體上的套件並未加密。 您必須採取適當的安全防護措施 (例如新增媒體密碼)，以確保未經授權的使用者無法存取套件內容。  
 
  使用 [建立工作順序媒體精靈] 建立可開機媒體之前，請先確定符合下列所有條件：  
@@ -155,9 +157,4 @@ Configuration Manager 中的可開機媒體包含開機映像、選擇性的啟�
 
 ## <a name="next-steps"></a>後續步驟  
 [透過網路使用可開機媒體部署 Windows](use-bootable-media-to-deploy-windows-over-the-network.md)  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

@@ -15,9 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fff93794afdfa9f890b1f06d6c330d8cffc5796c
 ms.openlocfilehash: b4db5d86cc0ed020ed176feb2e8f1f9dc51a2280
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="configuration-options-for-site-system-roles-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 設定站台系統角色的選項
@@ -26,7 +28,7 @@ ms.openlocfilehash: b4db5d86cc0ed020ed176feb2e8f1f9dc51a2280
 
 System Center Configuration Manager 站台系統角色的大部分設定選項都是一目了然，或是您在設定它們時已在精靈或對話方塊中說明。 下列各節說明其設定可能需要其他資訊的站台系統角色。  
 
-##  <a name="a-namebkmkapplicationcatalogwebsitea-application-catalog-website-point"></a><a name="BKMK_ApplicationCatalog_Website"></a> 應用程式類別目錄網站點  
+##  <a name="BKMK_ApplicationCatalog_Website"></a> 應用程式類別目錄網站點  
  如需如何為應用程式類別目錄設定應用程式類別目錄網站點的資訊，請參閱 [Plan for and configure application management in System Center Configuration Manager](../../../../apps/plan-design/plan-for-and-configure-application-management.md) (在 System Center Configuration Manager 中規劃和設定應用程式管理)。  
 
  **用戶端連線**  
@@ -45,7 +47,7 @@ System Center Configuration Manager 站台系統角色的大部分設定選項�
 
  輸入使用者在應用程式類別目錄中看到的名稱。 此商標資訊可協助使用者將此網站識別為信任的來源。  
 
-##  <a name="a-namebkmkapplicationcatalogwebservicea-application-catalog-web-service-point"></a><a name="BKMK_ApplicationCatalog_WebService"></a> 應用程式類別目錄 Web 服務點  
+##  <a name="BKMK_ApplicationCatalog_WebService"></a> 應用程式類別目錄 Web 服務點  
  如需如何為應用程式類別目錄設定應用程式類別目錄 Web 服務點的資訊，請參閱 [Plan for and configure application management in System Center Configuration Manager](../../../../apps/plan-design/plan-for-and-configure-application-management.md) (在 System Center Configuration Manager 中規劃和設定應用程式管理)。  
 
  **HTTPS**  
@@ -54,10 +56,10 @@ System Center Configuration Manager 站台系統角色的大部分設定選項�
 
  如需伺服器憑證的部署範例，以及如何在 IIS 中進行設定的資訊，請參閱[為 Configuration Manager 部署 PKI 憑證的逐步範例：Windows Server 2008 憑證授權單位](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)的＜為執行 IIS 的站台系統部署 Web 伺服器憑證＞一節。  
 
-##  <a name="a-namebkmkcertificateregistrationpointa-certificate-registration-point"></a><a name="BKMK_CertificateRegistrationPoint"></a> 憑證登錄點  
+##  <a name="BKMK_CertificateRegistrationPoint"></a> 憑證登錄點  
  如需如何設定憑證登錄點的詳細資訊，請參閱[憑證設定檔簡介](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
 
-##  <a name="a-namebkmkdistributionpointa-distribution-point"></a><a name="BKMK_Distribution_Point"></a> 發佈點  
+##  <a name="BKMK_Distribution_Point"></a> 發佈點  
  如需如何設定內容部署發佈點的詳細資訊，請參閱[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
  如需如何設定 PXE 部署發佈點的詳細資訊，請參閱[利用 System Center Configuration Manager 使用 PXE 透過網路來部署 Windows](../../../../osd/deploy-use/use-pxe-to-deploy-windows-over-the-network.md)。  
@@ -97,7 +99,7 @@ System Center Configuration Manager 站台系統角色的大部分設定選項�
  - **在 1610 版之前**，您可以選取 [允許內容的後援來源位置] 核取方塊，讓位於這些界限群組以外的用戶端回復，並在沒有其他發佈點可用時，將發佈點當成內容的來源位置使用。
  - **從 1610 版開始**，您無法再設定 [允許內容的後援來源位置]。  相反地，您可以設定界限群組之間的關聯性，以查看用戶端何時可以開始搜尋其他界限群組中的有效內容來源位置。
 
-##  <a name="a-namebkmkenrollmentpointa-enrollment-point"></a><a name="BKMK_Enrollment_Point"></a> 註冊點  
+##  <a name="BKMK_Enrollment_Point"></a> 註冊點  
 註冊點可用於安裝 Mac 電腦，且註冊利用內部部署行動裝置管理所管理的裝置。 如需詳細資訊，請參閱下列各項：  
 
 -   [How to deploy clients to Macs in System Center Configuration Manager](../../../../core/clients/deploy/deploy-clients-to-macs.md) (如何在 System Center Configuration Manager 中將用戶端部署至 Mac 電腦)  
@@ -109,7 +111,7 @@ System Center Configuration Manager 站台系統角色的大部分設定選項�
 
  如需伺服器憑證的部署範例，以及如何在 IIS 中進行設定的資訊，請參閱[為 Configuration Manager 部署 PKI 憑證的逐步範例：Windows Server 2008 憑證授權單位](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)的＜為執行 IIS 的站台系統部署 Web 伺服器憑證＞一節。  
 
-##  <a name="a-namebkmkenrollmentproxypointa-enrollment-proxy-point"></a><a name="BKMK_Enrollment_Proxy_Point"></a> 註冊 Proxy 點  
+##  <a name="BKMK_Enrollment_Proxy_Point"></a> 註冊 Proxy 點  
 如需如何設定行動裝置註冊 Proxy 點的資訊，請參閱 [How users enroll devices with On-premises Mobile Device Management in System Center Configuration Manager](../../../../mdm/deploy-use/user-enroll-devices-on-premises-mdm.md) (使用者如何在 System Center Configuration Manager 中使用內部部署行動裝置管理註冊裝置)。  
 
 **用戶端連線**  
@@ -117,7 +119,7 @@ System Center Configuration Manager 站台系統角色的大部分設定選項�
 
  如需伺服器憑證的部署範例，以及如何在 IIS 中進行設定的資訊，請參閱[為 Configuration Manager 部署 PKI 憑證的逐步範例：Windows Server 2008 憑證授權單位](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)的＜為執行 IIS 的站台系統部署 Web 伺服器憑證＞一節。  
 
-##  <a name="a-namebkmkfallbackstatuspointa-fallback-status-point"></a><a name="BKMK_Fallback_Status_Point"></a> 後援狀態點  
+##  <a name="BKMK_Fallback_Status_Point"></a> 後援狀態點  
 [狀況訊息數目] 和 [節流間隔 (秒)]  
 雖然這些選項的預設設定 (10,000 個狀況訊息和 3,600 秒的節流間隔) 足夠應付大部分情況，但您可能需要在以下兩種狀況為 True 時，變更設定：  
 
@@ -152,9 +154,4 @@ System Center Configuration Manager 站台系統角色的大部分設定選項�
 -   您發現目前的節流設定值會在站台伺服器上造成高 CPU 使用量。  
 
 除非您清楚會產生何種結果，否則請勿變更後援狀態點節流設定的設定值。 例如，當您新增過高的節流設定，站台伺服器上的 CPU 使用量便會增高，進而造成所有的站台作業變得緩慢。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

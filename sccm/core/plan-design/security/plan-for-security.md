@@ -16,9 +16,10 @@ caps.handback.revision: 0
 author: arob98
 ms.author: angrobe
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: af06fb10d905e3fe447c6cd6ed35dac10488161f
 ms.openlocfilehash: 1bf519ad4593f6a08d7dc393f9fab91c70b51b25
+ms.contentlocale: zh-tw
 ms.lasthandoff: 01/05/2017
 
 
@@ -27,7 +28,7 @@ ms.lasthandoff: 01/05/2017
 
 適用於：System Center Configuration Manager (最新分支)
 
-##  <a name="a-namebkmkplanningforcertificatesa-plan-for-certificates-self-signed-and-pki"></a><a name="BKMK_PlanningForCertificates"></a> 規劃憑證 (自我簽署與 PKI)  
+##  <a name="BKMK_PlanningForCertificates"></a> 規劃憑證 (自我簽署與 PKI)  
  Configuration Manager 使用自我簽署憑證及公開金鑰基礎結構 (PKI) 憑證的組合。  
 
  盡可能使用 PKI 憑證，因為它是安全性最佳作法。 如需 PKI 憑證需求的詳細資訊，請參閱 [System Center Configuration Manager 的 PKI 憑證需求](../../../core/plan-design/network/pki-certificate-requirements.md)。 當 Configuration Manager 要求 PKI 憑證時 (例如註冊行動裝置和 Intel 主動管理技術 (AMT) 佈建期間)，您必須使用 Active Directory 網域服務和企業憑證授權單位。 對於其他所有 PKI 憑證，您必須從 Configuration Manager 獨立部署和管理這些憑證。  
@@ -61,7 +62,7 @@ ms.lasthandoff: 01/05/2017
 
 3.  使用 Client.msi 內容 **SMSSIGNCERT=**&lt;完整路徑和檔案名稱\> 和 CCMSetup.exe 安裝用戶端。  
 
-###  <a name="a-namebkmkplanningforcrlsa-plan-for-pki-certificate-revocation"></a><a name="BKMK_PlanningForCRLs"></a> 規劃 PKI 憑證撤銷  
+###  <a name="BKMK_PlanningForCRLs"></a> 規劃 PKI 憑證撤銷  
 與 Configuration Manager 搭配使用 PKI 憑證時，規劃用戶端和伺服器如何及是否使用憑證撤銷清單 (CRL) 確認連線電腦上的憑證。 CRL 是憑證授權單位 (CA) 所建立並簽署的檔案，它有一份由 CA 簽發但撤銷的憑證清單。 例如，如果已簽發的憑證已知或有遭到洩露的可能時，CA 管理員便可以撤銷憑證。  
 
 > [!IMPORTANT]  
@@ -79,7 +80,7 @@ ms.lasthandoff: 01/05/2017
 
 -   檢查每一個站台系統 (其設定為使用 PKI 憑證) 連線的 CRL 需求，遠大於對用戶端更快速連線及更有效處理的需求，以及用戶端找不到 CRL 時無法連線到伺服器的風險。  
 
-###  <a name="a-namebkmkplanningforrootcasa-plan-for-the-pki-trusted-root-certificates-and-the-certificate-issuers-list"></a><a name="BKMK_PlanningForRootCAs"></a> 規劃 PKI 受信任根憑證及憑證簽發者清單  
+###  <a name="BKMK_PlanningForRootCAs"></a> 規劃 PKI 受信任根憑證及憑證簽發者清單  
 如果您的 IIS 網站系統使用 PKI 用戶端憑證，以透過 HTTP 供用戶端驗證之用，或是透過 HTTPS 供用戶端驗證及加密之用時，您可能必須匯入根 CA 憑證，並將它當成網站內容來使用。 以下是兩個案例︰  
 
 -   您使用 Configuration Manager 部署作業系統，且管理點只接受 HTTPS 用戶端連線。  
@@ -101,7 +102,7 @@ ms.lasthandoff: 01/05/2017
 
 不同於網站設定，當您註冊行動裝置及 Mac 電腦，以及設定 Intel AMT 型電腦的無線網路時，您可能也必須匯入根 CA 憑證。  
 
-###  <a name="a-namebkmkplanningforclientcertificateselectiona-plan-for-pki-client-certificate-selection"></a><a name="BKMK_PlanningForClientCertificateSelection"></a> 規劃 PKI 用戶端憑證選擇  
+###  <a name="BKMK_PlanningForClientCertificateSelection"></a> 規劃 PKI 用戶端憑證選擇  
  如果您的 IIS 站台系統會使用 PKI 用戶端憑證，以透過 HTTP 供用戶端驗證之用，或是透過 HTTPS 供用戶端驗證及加密之用時，請規劃 Windows 用戶端如何選取可供 Configuration Manager 使用的憑證。  
 
 > [!NOTE]  
@@ -175,7 +176,7 @@ ms.lasthandoff: 01/05/2017
 
 如需如何設定用戶端憑證設定的詳細資訊，請參閱[設定 System Center Configuration Manager 的安全性](../../../core/plan-design/security/configure-security.md)一文的[設定用戶端 PKI 憑證的設定](../../../core/plan-design/security/configure-security.md#BKMK_ConfigureClientPKI)一節。  
 
-###  <a name="a-namebkmkplanningforpkitransitiona-plan-a-transition-strategy-for-pki-certificates-and-internet-based-client-management"></a><a name="BKMK_PlanningForPKITransition"></a> 規劃用於 PKI 憑證和以網際網路為基礎的用戶端管理的轉換策略  
+###  <a name="BKMK_PlanningForPKITransition"></a> 規劃用於 PKI 憑證和以網際網路為基礎的用戶端管理的轉換策略  
 Configuration Manager 中的彈性設定選項可讓您逐漸轉換用戶端和網站，以使用 PKI 憑證來協助確保用戶端端點的安全。 PKI 憑證提供更好的安全性讓您管理網際網路用戶端。  
 
 由於 Configuration Manager 中設定選項和選擇的數目，轉換網站的方法不只一種，如此一來，所有用戶端就都會使用 HTTPS 連線。 不過，您可以遵循這些步驟作為指引：  
@@ -223,7 +224,7 @@ Configuration Manager 中的彈性設定選項可讓您逐漸轉換用戶端和�
 
  遵循此規劃來漸漸導入 PKI 憑證時，若先僅透過 HTTP 進行驗證，然後透過 HTTPS 驗證並加密，您就會降低用戶端變成不受管理的風險。 此外，您也會因 Configuration Manager 支援的最高安全性而受益。  
 
-##  <a name="a-namebkmkplanningforrtka-plan-for-the-trusted-root-key"></a><a name="BKMK_PlanningForRTK"></a> 規劃受信任的根金鑰  
+##  <a name="BKMK_PlanningForRTK"></a> 規劃受信任的根金鑰  
 Configuration Manager 受信任根的金鑰提供 Configuration Manager 用戶端機制來確認網站系統隸屬其階層。 每個網站伺服器會產生網站交換金鑰，以與其他網站通訊。 來自階層頂層網站的網站交換金鑰稱為受信任的根金鑰。  
 
 Configuration Manager 中受信任根金鑰的功能類似公開金鑰基礎結構的根憑證，因為由受信任根金鑰的私密金鑰所簽署的任何物件，都會沿著階層受到信任。 例如，藉由以受信任根金鑰組的私密金鑰來簽署管理點憑證，以及藉由複製用戶端可用之受信任根金鑰組的公開金鑰，用戶端可以區別出階層中的管理點與不在階層中的管理點。 用戶端使用 Windows Management Instrumentation (WMI) 將受信任根金鑰的複本儲存在 **root\ccm\locationservices** 命名空間中。  
@@ -295,7 +296,7 @@ Configuration Manager 中受信任根金鑰的功能類似公開金鑰基礎結�
 
 9. 在 [TrustedRootKey=@ 的物件編輯器] 對話方塊中的 [內容] 區段，向下捲動到 [TrustedRootKey CIM_STRING]。 右側欄位中的字串是受信任根金鑰。 請確認該金鑰與檔案 *&lt;Configuration Manager 目錄\>***\bin\mobileclient.tcf** 中的 **SMSPublicRootKey** 值相符。  
 
-##  <a name="a-namebkmkplanningforsigningencryptiona-plan-for-signing-and-encryption"></a><a name="BKMK_PlanningForSigningEncryption"></a> 規劃簽署與加密  
+##  <a name="BKMK_PlanningForSigningEncryption"></a> 規劃簽署與加密  
  針對所有用戶端通訊使用 PKI 憑證時，您不需要為協助保障用戶端資料通訊而規劃簽署與加密。 但是，如果您設定執行 IIS 的任何站台系統以允許 HTTP 用戶端連線，就必須決定如何協助站台保護用戶端通訊。  
 
  若要保護用戶端傳送至管理點的資料，您可以要求簽署資料。 此外，您可以要求來自使用 HTTP 之用戶端的所有已簽署資料都使用 SHA-256 演算法簽署。 雖然這個設定比較安全，但除非所有用戶端都支援 SHA-256，否則切勿啟用這個選項。 許多作業系統都可原生支援 SHA-256，但較舊的作業系統需要更新或是 Hotfix。 例如，執行 Windows Server 2003 SP2 的電腦必須安裝 [知識庫文章 938397](http://go.microsoft.com/fwlink/p/?LinkId=226666)中所參照的 Hotfix。  
@@ -304,7 +305,7 @@ Configuration Manager 中受信任根金鑰的功能類似公開金鑰基礎結�
 
  如需如何設定簽章和加密設定的詳細資訊，請參閱[設定System Center Configuration Manager 的安全性](../../../core/plan-design/security/configure-security.md)一文的[設定簽署及加密](../../../core/plan-design/security/configure-security.md#BKMK_ConfigureSigningEncryption)一節。  
 
-##  <a name="a-namebkmkplanningforrbaa-plan-for-role-based-administration"></a><a name="BKMK_PlanningForRBA"></a> 規劃以角色為基礎的系統管理  
+##  <a name="BKMK_PlanningForRBA"></a> 規劃以角色為基礎的系統管理  
  如需詳細資訊，請參閱 [Fundamentals of role-based administration for System Center Configuration Manager](../../../core/understand/fundamentals-of-role-based-administration.md) (System Center Configuration Manager 的以角色為基礎的系統管理)。  
 
 ### <a name="see-also"></a>請參閱

@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 2e711cce2435957f3e85dad08f17260e1a224fc2
 ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -32,7 +34,7 @@ ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
 
 - 如果您想要將 System Center Configuration Manager 基礎結構更新至新版本，請參閱 [System Center Configuration Manager 的更新](/sccm/core/servers/manage/updates)。
 
-##  <a name="a-namebkmksupconfigupgradesitesrva-upgrade-the-operating-system-of-site-systems"></a><a name="BKMK_SupConfigUpgradeSiteSrv"></a>升級站台系統的作業系統  
+##  <a name="BKMK_SupConfigUpgradeSiteSrv"></a>升級站台系統的作業系統  
  Configuration Manager 在下列案例中支援就地升級裝載站台伺服器的伺服器的作業系統，以及裝載任何站台系統角色的遠端伺服器的作業系統︰  
 
 -   若 Configuration Manager 仍然支援所產生的 Windows Service Pack 層級，便會就地升級為更新版本的 Windows Server Service Pack。  
@@ -148,7 +150,7 @@ ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
 
 
 
-##  <a name="a-namebkmksupconfigupgradeclienta-upgrade-the-operating-system-of-configuration-manager-clients"></a><a name="BKMK_SupConfigUpgradeClient"></a> 升級 Configuration Manager 用戶端的作業系統  
+##  <a name="BKMK_SupConfigUpgradeClient"></a> 升級 Configuration Manager 用戶端的作業系統  
  在下列情況下，Configuration Manager 支援 Configuration Manager 用戶端的作業系統就地升級：  
 
 -   若 Configuration Manager 仍然支援所產生的 Service Pack 層級，便會就地升級至更新版本的 Windows Service Pack。  
@@ -157,7 +159,7 @@ ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
 
 -   Windows 10 的組建至組建維護升級。  如需詳細資訊，請參閱[使用 System Center Configuration Manager 管理 Windows 即服務](../../../osd/deploy-use/manage-windows-as-a-service.md)。  
 
-##  <a name="a-namebkmksupconfigupgradedbsrva-upgrade-sql-server-on-the-site-database-server"></a><a name="BKMK_SupConfigUpgradeDBSrv"></a> 在站台資料庫伺服器升級 SQL Server  
+##  <a name="BKMK_SupConfigUpgradeDBSrv"></a> 在站台資料庫伺服器升級 SQL Server  
   Configuration Manager 支援從站台資料庫伺服器上的支援 SQL 版本進行 SQL Server 就地升級。 Configuration Manager 支援本節中的 SQL Server 升級案例，而且包含每個案例的需求。
 
  如需 Configuration Manager 支援之 SQL Server 版本的資訊，請參閱 [System Center Configuration Manager 支援的 SQL Server 版本](../../../core/plan-design/configs/support-for-sql-server-versions.md)。  
@@ -210,9 +212,4 @@ ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
 
 > [!NOTE]  
 >  當您將管理中心網站使用的 SQL Server 版本，從 Standard Edition 變更成 Datacenter 或 Enterprise Edition 時，限制階層支援的用戶端數目的資料庫資料分割不會變更。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

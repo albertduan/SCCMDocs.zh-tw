@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 37e4f27fcea0bbdd39c9fd3ab38aa46e3059f73a
 ms.openlocfilehash: d9dff97126c34a726677de60dd7647370c553b6e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -26,7 +28,7 @@ ms.openlocfilehash: d9dff97126c34a726677de60dd7647370c553b6e
 # <a name="manage-network-bandwidth-for-content"></a>管理內容的網路頻寬
 為協助您管理用於 System Center Configuration Manager 內容管理程序的網路頻寬，您可以使用為排程及節流所內建的控制項。 您也可使用預先設置的內容。 下列章節將詳細說明這些選項。
 
-##  <a name="a-namebkmkplanningforthrottlingascheduling-and-throttling"></a><a name="BKMK_PlanningForThrottling"></a>排程及節流  
+##  <a name="BKMK_PlanningForThrottling"></a>排程及節流  
 
  當您建立套件、變更內容的來源路徑，或在發佈點上更新內容時，會將檔案從來源路徑複製到站台伺服器上的內容庫。 接著，會將內容從網站伺服器上的內容庫複製到發佈點上的內容庫。 當更新內容來源檔案時，若已發佈來源檔案，Configuration Manager 只會擷取新的或已更新的檔案，然後再將這些檔案傳送至發佈點。
 
@@ -41,7 +43,7 @@ ms.openlocfilehash: d9dff97126c34a726677de60dd7647370c553b6e
 
 如需詳細資訊，請參閱[為 System Center Configuration Manager 安裝及設定發佈點](/sccm/core/servers/deploy/configure/install-and-configure-distribution-points)。  
 
-##  <a name="a-namebkmkprestagingcontentaprestaged-content"></a><a name="BKMK_PrestagingContent"></a>預先設置的內容  
+##  <a name="BKMK_PrestagingContent"></a>預先設置的內容  
  您可以預先設置內容，先將內容檔加入站台伺服器或發佈點上的內容庫，然後再發佈該內容。 因為內容檔已經存在於內容庫中，所以當您發佈內容時，就不會透過網路傳送。 您可以預先設置應用程式和套件的內容檔案。  
 
 在 Configuration Manager 主控台中，選取您要預先設置的內容，然後使用 [建立預先設置的內容檔案精靈]。 如此可建立壓縮且預先設置的內容檔案，其中包含內容的檔案以及相關聯的中繼資料。 接著，您便可在站台伺服器或發佈點上手動匯入內容。 請注意下列事項：  
@@ -58,7 +60,7 @@ ms.openlocfilehash: d9dff97126c34a726677de60dd7647370c553b6e
 
 -   一律為套件的內容使用標準內容發佈程序。  
 
-###  <a name="a-namebkmkdeterminetoprestagecontentadetermine-whether-to-prestage-content"></a><a name="BKMK_DetermineToPrestageContent"></a>判斷是否要預先設置內容  
+###  <a name="BKMK_DetermineToPrestageContent"></a>判斷是否要預先設置內容  
  在以下案例中，請考慮為應用程式和套件預先設置內容：  
 
 -   **解決從站台伺服器到發佈點的網路頻寬限制之問題。** 如果排程和節流不足以滿足您對於頻寬的顧慮，請考慮在發佈點上的預先設置內容。 每個發佈點皆內含 [啟用此發佈點供預先設置的內容使用] 設定，您可以在發佈點內容中選擇。 當您啟用此選項時，會將發佈點識別為預先設置的發佈點，您可以選擇如何以每個套件為基礎來管理內容。  
@@ -75,9 +77,4 @@ ms.openlocfilehash: d9dff97126c34a726677de60dd7647370c553b6e
     >  上述選項適用於以每個套件為基礎的情況，並且只有在已將發佈點識別為已預先設置的情況下才能使用。 尚未識別為預先設置的發佈點會忽略這些設定。 在這種情況下，內容將一律透過網路從網站伺服器發佈到發佈點。  
 
 -   **還原站台伺服器上的內容庫。** 當網站伺服器失敗時，系統會在進行還原程序時將內容庫中包含的套件和應用程式相關資訊還原至網站資料庫，但不會還原內容庫檔案。 如果沒有可還原內容庫的檔案系統備份，可以從其他內含所需套件及應用程式的站台，建立預先設置的內容檔案。 然後，可以擷取經過復原之站台伺服器上預先設置的內容檔案。 如需站台伺服器備份與復原的詳細資訊，請參閱 [Backup and recovery for System Center Configuration Manager](/sccm/protect/understand/backup-and-recovery) (System Center Configuration Manager 的備份和復原)。  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

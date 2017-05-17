@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
 ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -32,7 +34,7 @@ ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
 > [!NOTE]
 > 在規劃新的 Configuration Manager 安裝時，請注意[版本資訊]( /sccm/core/servers/deploy/install/release-notes)，其中詳細說明使用中版本的目前問題。 此版本資訊適用於 Configuration Manager 的所有分支。  不過，當您使用 [Technical Preview 分支]( /sccm/core/get-started/technical-preview)時，會在每一版的 Technical Preview 文件中發現只有該分支才會出現的問題。  
 
-##  <a name="a-namebkmktopologya-hierarchy-topology"></a><a name="bkmk_topology"></a> 階層拓樸  
+##  <a name="bkmk_topology"></a> 階層拓樸  
  階層拓撲從單一獨立主要站台與管理中心網站之階層的頂層 (頂層) 站台連線的主要和次要站台的群組。   類型的主要驅動程式，而且階層中所使用站台的計數通常是必須支援的裝置數目及類型，如下所示：   
 
  **獨立的主要站台**︰當單一主要站台可以支援所有裝置和使用者的管理時，請使用獨立的主要站台 (請參閱[調整大小和縮放數字](/sccm/core/plan-design/configs/size-and-scale-numbers))。 當公司的不同地理位置可順利由單一主要站台服務時，此拓撲也會成功。  您可以使用慣用的管理點和仔細規劃的內容基礎結構，以利管理網路流量 (請參閱 [System Center Configuration Manager 的內容管理基本概念](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md))。  
@@ -57,7 +59,7 @@ ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
 
  下列各節可協助您了解何時使用特定站台或內容管理選項，來取代其他站台。  
 
-##  <a name="a-namebkmkchoosecasa-determine-when-to-use-a-central-administration-site"></a><a name="BKMK_ChooseCAS"></a> 判斷何時要使用管理中心網站。  
+##  <a name="BKMK_ChooseCAS"></a> 判斷何時要使用管理中心網站。  
  使用管理中心網站設定全階層設定，並監視階層中的所有網站及物件。 此站台類型不會直接管理用戶端，但會協調站台間的資料複寫，包括整個階層的站台和用戶端的設定。  
 
 **使用下列資訊，協助您決定何時要安裝管理中心網站：**  
@@ -82,7 +84,7 @@ ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
 
 -   您可以設定檔案複寫和資料庫複寫，以控制階層中各站台間的通訊。 這包括排定站台資料的資料庫複寫，以及管理站台間檔案資料傳輸的頻寬。  
 
-##  <a name="a-namebkmkchoosepriimarya-determine-when-to-use-a-primary-site"></a><a name="BKMK_ChoosePriimary"></a> 判斷何時使用主要站台。  
+##  <a name="BKMK_ChoosePriimary"></a> 判斷何時使用主要站台。  
  使用主要站台管理用戶端。 您可以安裝主要站台，作為管理中心網站底下的子主要站台，或是作為新階層的第一個站台。 安裝成階層中第一個站台的主要站台會建立獨立主要站台。 子主要站台和獨立主要站台都支援以次要站台作為主要站台的子站台。  
 
  針對下列任何一種理由，考慮使用主要站台：  
@@ -108,7 +110,7 @@ ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
 
 -   主要站台使用資料庫複寫，直接與其管理中心網站進行通訊 (當安裝新的站台時自動設定)。  
 
-##  <a name="a-namebkmkchoosesecondarya-determine-when-to-use-a-secondary-site"></a><a name="BKMK_ChooseSecondary"></a> 判斷何時使用次要站台。  
+##  <a name="BKMK_ChooseSecondary"></a> 判斷何時使用次要站台。  
  使用次要站台管理在低頻寬網路上部署內容與用戶端資料的傳輸。  
 
  您可經由管理中心網站或次要站台的直接父主要站台來管理次要站台。 次要站台必須連結到主要站台，並且您無法在還未解除安裝的狀況下，將其移至不同的父站台，然後重新安裝為新主要站台下的子站台。
@@ -138,7 +140,7 @@ ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
 
 -   安裝次要站台時會自動部署位於次要站台伺服器上的管理點和發佈點。  
 
-##  <a name="a-namebkmkchoosesecondaryordpa-determine-when-to-use-content-management-options"></a><a name="BKMK_ChooseSecondaryorDP"></a> 判斷何時要使用內容管理選項。  
+##  <a name="BKMK_ChooseSecondaryorDP"></a> 判斷何時要使用內容管理選項。  
  如果您有用戶端位於遠端位置，請考慮使用一個或多個內容管理選項，不要使用主要或次要站台。 在您使用 Windows BRanchCache、設定頻寬控制的發佈點，或手動將內容複製到發佈點 (預先設置內容) 時，您經常可以移除安裝一個站台的需求。  
 
 
@@ -150,7 +152,7 @@ ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
 
  如需 Configuration Manager 內容管理選項的詳細資訊，請參閱 [System Center Configuration Manager 中的內容管理基本概念](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md)。  
 
-##  <a name="a-namebkmkbeyonda-beyond-hierarchy-topology"></a><a name="bkmk_beyond"></a> 階層拓撲之外  
+##  <a name="bkmk_beyond"></a> 階層拓撲之外  
  除了初始階層拓撲外，請考慮階層中不同站台 (站台系統角色) 提供哪些服務或功能，以及您的基礎結構如何管理階層範圍設定和功能。 下列常見考量事項涵蓋在不同的主題中。 這些可能會影響階層設計或受到階層設計所影響，因此十分重要：  
 
 -   當準備[使用 System Center Configuration Manager 管理電腦和裝置](/sccm/core/clients/manage/manage-clients)時，請考量您管理的裝置是位於內部部署、雲端中還是包含使用者擁有的裝置 (BYOD)。  亦請考量您要如何管理受多種管理選項支援的裝置，例如可以直接由 Configuration Manager 管理或透過與 Microsoft Intune 整合的 Windows 10 電腦。  
@@ -186,9 +188,4 @@ ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
 -   [System Center Configuration Manager 中站台間的資料傳輸](../../../core/servers/manage/data-transfers-between-sites.md)  
 
 -   [System Center Configuration Manager 以角色為基礎之系統管理的基礎](../../../core/understand/fundamentals-of-role-based-administration.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

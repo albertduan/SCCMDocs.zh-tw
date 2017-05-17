@@ -12,9 +12,11 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: a0767664-fd60-46a8-9da5-86cc431ce53c
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 4e44e2b8f6baf020c3b7742bafd607082ffacaa4
 ms.openlocfilehash: 02e30ba48f3564fa8a31f21793c145054e02e002
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 
@@ -58,9 +60,4 @@ ms.openlocfilehash: 02e30ba48f3564fa8a31f21793c145054e02e002
 6.  按一下 [軟體更新群組]  節點，以顯示軟體更新群組。  
 
 7.  選取軟體更新群組，然後在 [首頁]  索引標籤的 [更新]  群組中按一下 [顯示成員]  ，顯示軟體更新群組包括的軟體更新的清單。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

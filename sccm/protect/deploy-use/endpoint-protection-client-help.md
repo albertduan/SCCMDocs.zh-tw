@@ -15,9 +15,11 @@ caps.latest.revision: 6
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
 ms.openlocfilehash: 212c73fcb947c3b56da6055bf47fe078301ad90d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -59,9 +61,4 @@ Windows Defender 設定可啟用設定來協助保護電腦免受惡意軟體攻
 ### <a name="see-also"></a>請參閱  
  [Endpoint Protection 用戶端常見問題集](endpoint-protection-client-faq.md)   
  [Windows Defender 或 Endpoint Protection 用戶端疑難排解](troubleshoot-endpoint-client.md)
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

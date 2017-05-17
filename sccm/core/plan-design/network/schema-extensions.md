@@ -17,9 +17,11 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 7479e54b5db2eff893bf9fbaf52c104836cda519
 ms.openlocfilehash: 5b5540c35c02df6e3d06e4aa9269b8da3238233e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -149,9 +151,4 @@ ms.openlocfilehash: 5b5540c35c02df6e3d06e4aa9269b8da3238233e
 > -   Class: cn=MS-SMS-Server-Locator-Point  
 
 您可以檢視 System Center Configuration Manager 安裝媒體之 **\SMSSETUP\BIN\x64** 資料夾的 **ConfigMgr_ad_schema.LDF** 檔案，以確定上述清單是否為最新。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

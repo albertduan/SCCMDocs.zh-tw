@@ -15,9 +15,11 @@ caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e592a732259147ee71d404a68982c28e5138e243
 ms.openlocfilehash: 0e982d08d54af39b13f553fc531a200f921e94a6
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="manage-accounts-to-access-content-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中管理用來存取內容的帳戶
@@ -34,7 +36,7 @@ ms.openlocfilehash: 0e982d08d54af39b13f553fc531a200f921e94a6
 
 -   **多點傳送連線帳戶**。 用於作業系統部署。  
 
-##  <a name="a-namebkmknaaa-network-access-account"></a><a name="bkmk_NAA"></a> 網路存取帳戶  
+##  <a name="bkmk_NAA"></a> 網路存取帳戶  
  用戶端電腦在無法使用其本機電腦帳戶來存取發佈點上的內容時，就會使用網路存取帳戶。 例如，這會套用至不受信任網域的工作群組用戶端和電腦。 當安裝作業系統的電腦沒有網域上的電腦帳戶時，此帳戶也會在作業系統部署期間使用。  
 
 -   用戶端只會使用網路存取帳戶存取網路上的資源。  
@@ -66,7 +68,7 @@ ms.openlocfilehash: 0e982d08d54af39b13f553fc531a200f921e94a6
 
 3.  選擇 [網路存取帳戶] 索引標籤。 設定一或多個帳戶，然後選擇 [確定]。  
 
-##  <a name="a-namebkmkpaaa-package-access-accounts"></a><a name="bkmk_Paa"></a> 套件存取帳戶  
+##  <a name="bkmk_Paa"></a> 套件存取帳戶  
  您可利用套件存取帳戶來設定 NTFS 檔案系統權限，以指定可存取發佈點上套件內容的使用者和使用者群組。 根據預設，Configuration Manager 只會將存取權授與一般的**使用者**與**系統管理員**帳戶。 但您可以使用其他 Windows 帳戶或群組，控制用戶端電腦的存取。 因為行動裝置一律會匿名擷取套件內容，所以這些裝置不會使用套件存取帳戶。  
 
  根據預設，當 Configuration Manager 將套件中的內容檔案複製到發佈點時，會將 [讀取] 權限授與本機**使用者**群組，並將 [完全控制] 授與本機**系統管理員**群組。 實際需要的權限取決於套件。 如果有用戶端位於工作群組或不受信任的樹系中，這些用戶端會使用網路存取帳戶來存取套件內容。 請使用定義的套件存取帳戶，確定網路存取帳戶擁有存取套件的權限。  
@@ -102,7 +104,7 @@ ms.openlocfilehash: 0e982d08d54af39b13f553fc531a200f921e94a6
     > [!NOTE]  
     >  當您新增帳戶的使用者名稱，且 Configuration Manager 同時找到使用該名稱的本機使用者帳戶與網域使用者帳戶時，Configuration Manager 會為網域使用者帳戶設定存取權限。  
 
-##  <a name="a-namebkmkmultia-multicast-connection-account"></a><a name="bkmk_multi"></a> 多點傳送連線帳戶  
+##  <a name="bkmk_multi"></a> 多點傳送連線帳戶  
  針對多點傳送設定的發佈點會使用多點傳送連線帳戶，來讀取站台資料庫的資訊。  
 
 -   指定將 Configuration Manager 資料庫連接設定為多點傳送時，所要使用的帳戶。  
@@ -119,9 +121,4 @@ ms.openlocfilehash: 0e982d08d54af39b13f553fc531a200f921e94a6
 
 > [!IMPORTANT]  
 >  請勿將互動登入權限授與此帳戶進行登入。  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

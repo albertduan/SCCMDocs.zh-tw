@@ -15,9 +15,11 @@ caps.latest.revision: 13
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 288a4c649f371d9701fe7249449356aa222bf372
 ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -37,7 +39,7 @@ ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
 
  使用下列章節，使用工作順序透過網路來部署作業系統。  
 
-##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 方案  
+##  <a name="BKMK_Plan"></a> 方案  
 
 -   **檢閱升級作業系統之工作順序的限制**  
 
@@ -59,7 +61,7 @@ ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
 
      升級案例的唯一先決條件是您具有可供作業系統升級套件和您在工作順序中包含之任何其他套件使用的發佈點。 如需詳細資訊，請參閱[安裝或修改發佈點](../../core/servers/deploy/configure/install-and-configure-distribution-points.md)。
 
-##  <a name="a-namebkmkconfigurea-configure"></a><a name="BKMK_Configure"></a> 設定  
+##  <a name="BKMK_Configure"></a> 設定  
 
 1.  **準備作業系統升級套件**  
 
@@ -75,7 +77,7 @@ ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
     > [!NOTE]  
     >  您通常會使用[建立工作順序以升級作業系統](create-a-task-sequence-to-upgrade-an-operating-system.md)中的步驟建立工作順序，將作業系統升級為 Windows 10。 該工作順序包含 [升級作業系統] 步驟，以及其他建議的步驟和群組，以處理端對端升級程序。 不過，您可以建立自訂工作順序，並新增[升級作業系統](../understand/task-sequence-steps.md#BKMK_UpgradeOS)工作順序步驟，將作業系統升級。 這是將作業系統升級為 Windows 10 的唯一必要步驟。 如果您選擇這個方法，請在 [升級作業系統] 步驟之後也同時新增[重新啟動電腦](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer)步驟，完成升級。 請務必使用 [目前安裝的預設作業系統] 設定，將電腦重新啟動為已安裝的作業系統，而不是 Windows PE。  
 
-##  <a name="a-namebkmkdeploya-deploy"></a><a name="BKMK_Deploy"></a> 部署  
+##  <a name="BKMK_Deploy"></a> 部署  
 
 -   使用下列部署方法之一來部署作業系統：  
 
@@ -88,9 +90,4 @@ ms.openlocfilehash: 35f04e237efffbdb12893f658950a99dc0b98b85
 -   **監視工作順序部署**  
 
      若要監視工作順序部署以升級作業系統，請參閱[監視作業系統部署](monitor-operating-system-deployments.md)。  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

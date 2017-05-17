@@ -15,9 +15,11 @@ caps.latest.revision: 8
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: e7629fdf7fdf615fa27894158c3d101432c95a04
 ms.openlocfilehash: bcfb002c503485f03ba27d7346acb61d0d3c6087
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -71,9 +73,4 @@ ms.openlocfilehash: bcfb002c503485f03ba27d7346acb61d0d3c6087
     >  若啟用站台能發佈至樹系，則必須為 Configuration Manager 延伸該樹系的 Active Directory 架構。 Active Directory 樹系帳戶必須具有該樹系中系統容器的完全控制權限。  
 
 5.  當您完成此樹系的設定以搭配使用 Active Directory 樹系探索時，請按一下 [ **OK** ] 以儲存設定。  
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

@@ -15,9 +15,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 099345d59891841a336cbada896ec349751fecd3
 ms.openlocfilehash: 54e54409a1792c7e28620a5e3cea3e8d8695c7d4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="package-transfer-manager-in-system-center-configuration-manager"></a>System Center Configuration Manager 的套件傳輸管理員
@@ -87,9 +89,4 @@ ms.openlocfilehash: 54e54409a1792c7e28620a5e3cea3e8d8695c7d4
     -   **標準發佈點：**在套件傳輸管理員完成將檔案傳送到每個指定的遠端發佈點的作業之後，它會驗證發佈點上內容的雜湊。 然後它會通知發佈管理員發佈已完成。  
 
     -   **提取發佈點：**提取發佈點完成內容下載之後，發佈點會驗證內容雜湊。 然後它會將狀態訊息送出至站台管理點，表示成功。 如果在 60 分鐘之後，未收到此狀態，則會再次喚醒套件傳輸管理員。 它會檢查提取發佈點，確認提取發佈點是否已下載內容。 如果下載內容仍在進行中，套件傳輸管理員會再度進入睡眠狀態 60 分鐘，然後會再次檢查提取發佈點。 此週期會持續進行，直到提取發佈點完成內容傳輸為止。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

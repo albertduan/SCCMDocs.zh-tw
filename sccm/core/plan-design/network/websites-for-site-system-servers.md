@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 26bbec1e8d6c53ce297689ba4390b9347229eb15
 ms.openlocfilehash: 886ff3b8e867fc340c79648a57feae81653b0ccd
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -34,7 +36,7 @@ ms.openlocfilehash: 886ff3b8e867fc340c79648a57feae81653b0ccd
 
 
 
-##  <a name="a-namebkmkwhat2knowa-what-to-know-before-choosing-to-use-custom-websites"></a><a name="BKMK_What2Know"></a> 選擇使用自訂網站前的須知事項  
+##  <a name="BKMK_What2Know"></a> 選擇使用自訂網站前的須知事項  
  站台系統角色預設會在 IIS 中使用 **預設網站** 。 此設定在安裝站台系統角色時即自動完成。 不過，在主要站台，您可以選擇改用自訂網站。 當您使用自訂網站時：  
 
 -   自訂網站的啟用對象為整個站台，而非個別站台系統或角色。  
@@ -132,9 +134,4 @@ ms.openlocfilehash: 886ff3b8e867fc340c79648a57feae81653b0ccd
     2.  啟動 **SMSWEB** 網站。  
 
     3.  重新啟動站台的站台伺服器上 **SMS_SITE_COMPONENT_MANAGER** 服務。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

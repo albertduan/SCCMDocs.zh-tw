@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: ab2ecb64c9c80b4effed79ba08769c99473db0c4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -300,9 +302,4 @@ Configuration Manager 的每個版本都可支援特定版本的 Windows 評定�
     3.  按一下步驟 3 中識別的開機映像。  
 
     4.  在 [首頁]  索引標籤的 [部署]  群組中，按一下 [更新發佈點] 。  
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

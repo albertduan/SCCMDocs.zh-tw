@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: dd102603356864add4084c6881c39bebcbd635f2
 ms.openlocfilehash: 9b97dedb5d2be0bd2e47260033e6e4361467dc4e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -34,7 +36,7 @@ ms.openlocfilehash: 9b97dedb5d2be0bd2e47260033e6e4361467dc4e
 
 這篇文章中的資訊提供支援 Configuration Manager 站台系統所需的 Windows 設定類型概觀。 如需特定站台系統角色的設定詳細資料，請參閱[站台和站台系統必要條件](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)。
 
-##  <a name="a-namebkmkwinfeaturesa-windows-features-and-roles"></a><a name="BKMK_WinFeatures"></a> Windows 功能和角色  
+##  <a name="BKMK_WinFeatures"></a> Windows 功能和角色  
  當您在電腦上設定 Windows 功能和角色時，可能需要將電腦重新開機，才能完成設定。 因此，在安裝 Configuration Manager 站台或站台系統伺服器之前，找出即將裝載特定站台系統角色是個不錯的主意。
 ### <a name="features"></a>功能  
  下列 Windows 功能為特定站台系統伺服器所需，並且應該先加以設定，再將站台系統角色安裝於該電腦。  
@@ -98,7 +100,7 @@ ms.openlocfilehash: 9b97dedb5d2be0bd2e47260033e6e4361467dc4e
 -   **Windows 部署服務**：此角色是與「作業系統部署」搭配使用。  
 -   **Windows Server Update Services**：此角色為您部署軟體更新時所需。  
 
-##  <a name="a-namebkmkiisfilteringa-iis-request-filtering-for-distribution-points"></a><a name="BKMK_IISFiltering"></a> 用於發佈點的 IIS 要求篩選  
+##  <a name="BKMK_IISFiltering"></a> 用於發佈點的 IIS 要求篩選  
  IIS 預設會使用要求篩選來封鎖 HTTP 或 HTTPS 通訊存取伺服器數個副檔名和資料夾位置。 在發佈點上，如此可預防用戶端下載包含遭封鎖副檔名或資料夾位置的套件。  
 
  如果您的套件來源檔案包含在 IIS 遭要求篩選設定封鎖的副檔名，您就必須將要求篩選設為允許這些副檔名。 在您的發佈點電腦上 IIS Manager 中 [編輯要求篩選功能](https://technet.microsoft.com/library/hh831621.aspx) 即可完成此作業。  
@@ -140,9 +142,4 @@ ms.openlocfilehash: 9b97dedb5d2be0bd2e47260033e6e4361467dc4e
  - PROPFIND
 
 如需設定要求篩選的相關資訊，請參閱 TechNet 上的[在 IIS 中設定要求篩選](https://technet.microsoft.com/library/hh831621.aspx#Verbs)，或適用於裝載管理點的 Windows Server 版本的類似文件。
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

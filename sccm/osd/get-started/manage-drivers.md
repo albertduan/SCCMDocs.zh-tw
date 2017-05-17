@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 87ab9925717a307cbda3cea1f2e470ae012fa067
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -28,10 +30,10 @@ ms.openlocfilehash: 87ab9925717a307cbda3cea1f2e470ae012fa067
 
 System Center Configuration Manager 提供驅動程式類別目錄，讓您可以用於管理 Configuration Manager 環境中的 Windows 裝置驅動程式。 您可以使用驅動程式類別目錄將裝置驅動程式匯入至 Configuration Manager，將裝置驅動程式分組成不同套件，再將這些套件發佈至發佈點，當您部署作業系統時即可透過發佈點存取套件。 當您在目的地電腦上安裝完整作業系統，或者是使用開機映像時，皆可使用裝置驅動程式。 Windows 裝置程式包含安裝資訊檔案 (INF) 及完成裝置支援所需的其他任何檔案。 部署作業系統時，Configuration Manager 會自其 INF 檔案取得該裝置的硬體和平台資訊。 使用下列項目以管理 Configuration Manager 環境中的驅動程式。
 
-##  <a name="a-namebkmkdrivercategoriesa-device-driver-categories"></a><a name="BKMK_DriverCategories"></a> 裝置驅動程式類別  
+##  <a name="BKMK_DriverCategories"></a> 裝置驅動程式類別  
  匯入裝置驅動程式時，您可以將裝置驅動程式指派至類別。 裝置驅動程式類別有助於將您所使用的類似裝置驅動程式依照驅動程式類別目錄進行分組。 例如，您可以將網路介面卡裝置驅動程式全數指派至特定類別。 當您建立包含[自動套用動程式](../understand/task-sequence-steps.md#BKMK_AutoApplyDrivers)步驟的工作順序時，您可以指定特定類別的裝置驅動程式。 Configuration Manager 接著會掃描硬體，並從該類別選取適用的驅動程式，佈置到系統上供 Windows 安裝程式使用。  
 
-##  <a name="a-namebkmkmanagingdriverpackagesa-driver-packages"></a><a name="BKMK_ManagingDriverPackages"></a> 驅動程式套件  
+##  <a name="BKMK_ManagingDriverPackages"></a> 驅動程式套件  
  您可以將套件中類似的裝置驅動程式分組，以協助簡化作業系統部署。 比方說，您可能會決定為每一個在您網路上的電腦製造商建立驅動程式套件。 您可以直接在 [驅動程式套件]  節點中，在將驅動程式匯入至驅動程式類別目錄時建立驅動程式套件。 建立驅動程式套件後，必須將該套件發佈至發佈點，Configuration Manager 用戶端電腦才能視需要透過發佈點安裝驅動程式。 請考慮下列事項：  
 
 -   當您建立驅動程式套件時，套件來源位置必須指向空的網路共用 (沒有其他任何驅動程式套件使用此共用)，而且 SMS 提供者必須具備該位置的讀取和寫入權限。  
@@ -42,7 +44,7 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
  使用下列各節來建立和管理驅動程式套件。  
 
-###  <a name="a-namecreatingdriverpackagesa-create-a-driver-package"></a><a name="CreatingDriverPackages"></a> 建立驅動程式套件  
+###  <a name="CreatingDriverPackages"></a> 建立驅動程式套件  
  利用下列程序建立新驅動程式套件。  
 
 > [!IMPORTANT]  
@@ -74,7 +76,7 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
  如果 [驅動程式套件]  節點包含數個套件，您可以將資料夾加入至節點，將套件劃分為幾個邏輯群組。  
 
-###  <a name="a-namebkmkpackageactionsa-additional-actions-for-driver-packages"></a><a name="BKMK_PackageActions"></a> 驅動程式套件的其他動作  
+###  <a name="BKMK_PackageActions"></a> 驅動程式套件的其他動作  
  當您從 [驅動程式套件]  節點選取一個或多個驅動程式套件時，可執行其他動作以管理驅動程式套件。 這些動作包括下列各項：  
 
 |動作|說明|  
@@ -87,10 +89,10 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 |**更新發佈點**|在所有儲存裝置驅動程式套件的發佈點上更新該套件。 此動作只會複製自上次發佈後變更過的內容。|  
 |**Properties**|開啟 [內容]  對話方塊，您可在其中檢閱並變更裝置驅動程式的內容與屬性。 例如，您可以變更裝置驅動程式的名稱與說明、啟用裝置驅動程式，並指定裝置驅動程式可在哪一個平台上執行。|  
 
-##  <a name="a-namebkmkdevicedriversa-device-drivers"></a><a name="BKMK_DeviceDrivers"></a> 裝置驅動程式  
+##  <a name="BKMK_DeviceDrivers"></a> 裝置驅動程式  
  您可以將裝置驅動程式安裝在目的地電腦上，而不需要將驅動程式包含在要部署的作業系統映像中。 Configuration Manager 提供的驅動程式類別目錄中，包含您匯入 Configuration Manager 之所有裝置驅動程式的參照。 該驅動程式類別目錄位於 [軟體程式庫]  工作區，由兩個節點組成：[驅動程式]  和 [驅動程式封裝] 。 [驅動程式]  節點會列出您已匯入至驅動程式類別目錄中的所有驅動程式。 使用此節點來探索有關每個已匯入驅動程式的詳細資料、修改驅動程式套件或開機映像中的驅動程式、啟用或停用驅動程式等等。  
 
-###  <a name="a-namebkmkimportdriversa-import-device-drivers-into-the-driver-catalog"></a><a name="BKMK_ImportDrivers"></a> 將裝置驅動程式匯入驅動程式類別目錄  
+###  <a name="BKMK_ImportDrivers"></a> 將裝置驅動程式匯入驅動程式類別目錄  
  您必須先將裝置驅動程式匯入至驅動程式類別目錄中，才能在部署作業系統時使用這些驅動程式。 若要加強管理裝置驅動程式，除了規劃欲在部署作業系統時安裝的裝置驅動程式之外，請勿匯入其他驅動程式。 不過，您也可以將多個版本的裝置驅動程式儲存在驅動程式類別目錄，當網路上的硬體裝置需求改變時，您就能夠輕鬆地升級現有裝置驅動程式。  
 
  在裝置驅動程式的匯入過程中，Configuration Manager 會讀取提供者、類別、版本、簽章、支援的硬體，以及與裝置相關聯的支援平台資訊。 根據預設，會在使用第一個支援的硬體裝置後為驅動程式命名；不過，您可以稍後再重新命名裝置驅動程式。 支援的平台清單取決於驅動程式 INF 檔案中的資訊。 由於此資訊的準確性可能會有所變動，請在將裝置驅動程式匯入驅動程式類別目錄後，手動確認是否支援裝置驅動程式。  
@@ -166,7 +168,7 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
 8.  完成精靈。  
 
-###  <a name="a-namebkmkmodifydriverpackagea-manage-device-drivers-in-a-driver-package"></a><a name="BKMK_ModifyDriverPackage"></a> 管理驅動程式套件中的裝置驅動程式  
+###  <a name="BKMK_ModifyDriverPackage"></a> 管理驅動程式套件中的裝置驅動程式  
  利用下列程序修改驅動程式套件和開機映像。 若要新增或移除裝置驅動程式，請在 [驅動程式]  節點中找到驅動程式，然後編輯與所選驅動程式相關聯的套件或開機映像。  
 
 #### <a name="to-modify-the-device-drivers-in-a-driver-package"></a>修改驅動程式套件中的裝置驅動程式  
@@ -187,7 +189,7 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
      按一下 [ **確定**]。  
 
-###  <a name="a-namebkmkmanagedriversbootimagea-manage-device-drivers-in-a-boot-image"></a><a name="BKMK_ManageDriversBootImage"></a> 管理開機映像中的裝置驅動程式  
+###  <a name="BKMK_ManageDriversBootImage"></a> 管理開機映像中的裝置驅動程式  
  您可以將已匯入至驅動程式類別目錄中的 Windows 裝置驅動程式新增至開機映像。 將裝置驅動程式新增至開機映像時，請遵守下列方針：  
 
 -   只能將大量儲存裝置驅動程式和網路介面卡裝置驅動程式新增至開機映像，因為通常並不需要其他類型的驅動程式。 非必要的驅動程式只會無謂地增加開機映像的大小。  
@@ -228,7 +230,7 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
 7.  按一下 [ **確定**]。  
 
-###  <a name="a-namebkmkdriveractionsa-additional-actions-for-device-drivers"></a><a name="BKMK_DriverActions"></a> 裝置驅動程式的其他動作  
+###  <a name="BKMK_DriverActions"></a> 裝置驅動程式的其他動作  
  當您從 [驅動程式]  節點選取一個或多個裝置驅動程式時，可以執行其他動作以管理裝置驅動程式。 這些動作包括下列各項：  
 
 |動作|說明|  
@@ -240,7 +242,7 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 |**移動**|將裝置驅動程式移到 [驅動程式]  節點中的另一個資料夾。|  
 |**Properties**|開啟 [內容]  對話方塊，您可以在其中檢閱和變更裝置驅動程式的內容。 例如，您可以變更裝置驅動程式的名稱和描述、啟用裝置驅動程式，以及指定可以執行裝置驅動程式的平台。|  
 
-##  <a name="a-namebkmktsdriversa-use-task-sequences-to-install-device-drivers"></a><a name="BKMK_TSDrivers"></a> 使用工作順序來安裝裝置驅動程式  
+##  <a name="BKMK_TSDrivers"></a> 使用工作順序來安裝裝置驅動程式  
  使用工作順序自動完成作業系統部署程序。 工作順序中的每一個步驟皆可執行一個特定動作，例如安裝裝置驅動程式。 部署作業系統時，您可以運用下列兩個工作順序步驟安裝裝置驅動程式：  
 
 -   [Auto Apply Drivers](../understand/task-sequence-steps.md#BKMK_AutoApplyDrivers)：此步驟可讓您在部署作業系統時自動比對及安裝裝置驅動程式。 您可以將工作順序步驟設定為只根據每個偵測到的硬體裝置安裝最符合的驅動程式，也可以指定該工作順序步驟安裝所有與偵測到之硬體裝置相容的驅動程式，然後讓 Windows 安裝程式選擇最適合的驅動程式。 此外，您可以指定裝置驅動程式類別，限制此步驟會出現的驅動程式。  
@@ -249,7 +251,7 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
  若採用以上工作順序步驟，您還可以指定在作業系統部署電腦上安裝裝置驅動程式的方式。 如需詳細資訊，請參閱[管理工作順序，將工作自動化](../deploy-use/manage-task-sequences-to-automate-tasks.md)。  
 
-##  <a name="a-namebkmkinstallingdevicediriverstsa-use-task-sequences-to-install-device-drivers-on-computers"></a><a name="BKMK_InstallingDeviceDiriversTS"></a> 使用工作順序在電腦上安裝裝置驅動程式  
+##  <a name="BKMK_InstallingDeviceDiriversTS"></a> 使用工作順序在電腦上安裝裝置驅動程式  
  利用下列程序，將裝置驅動程式安裝為作業系統部署的一部分。  
 
 #### <a name="use-a-task-sequence-to-install-device-drivers"></a>使用工作順序安裝裝置驅動程式  
@@ -273,11 +275,6 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
  如需建立工作順序以安裝作業系統的詳細資訊，請參閱[建立工作順序以安裝作業系統](../deploy-use/create-a-task-sequence-to-install-an-operating-system.md)。  
 
-##  <a name="a-namebkmkdriverreportsa-driver-management-reports"></a><a name="BKMK_DriverReports"></a> 驅動程式管理報表  
+##  <a name="BKMK_DriverReports"></a> 驅動程式管理報表  
  您可以運用 [驅動程式管理]  報告類別中的數種報告判定與驅動程式類別目錄中的裝置驅動程式相關之一般資訊。 如需報告的詳細資訊，請參閱[報告](../../core/servers/manage/reporting.md)。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

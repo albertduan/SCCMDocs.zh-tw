@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: d1e320c6498e034307557e8a182c36cef2de640b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,14 +30,14 @@ ms.openlocfilehash: d1e320c6498e034307557e8a182c36cef2de640b
 
 在 System Center Configuration Manager 中，Asset Intelligence 驗證狀態並非靜態，而是可以從您執行的系統管理動作變更成影響儲存在 Asset Intelligence 類別目錄的資料。 本主題提供可能的驗證狀態轉換範例。
 
-##  <a name="a-namebkmkuncategorizediscategorizeda-uncategorized-catalog-item-is-categorized-by-the-administrative-user"></a><a name="BKMK_UncategorizedIsCategorized"></a> 未分類的類別目錄項目依系統管理使用者分類  
+##  <a name="BKMK_UncategorizedIsCategorized"></a> 未分類的類別目錄項目依系統管理使用者分類  
 
 |**狀態轉換**|**狀態轉換描述**|  
 |--------------------------|--------------------------------------|  
 |**未分類**|之前未被 System Center Online 分類或系統管理使用者已輸入 Asset Intelligence 類別目錄的已清查軟體項目。|  
 |**未分類** 至 **使用者定義**|未分類的項目依系統管理使用者分類。|  
 
-##  <a name="a-namebkmkcategorizedisrecategorizeda-categorized-catalog-item-is-recategorized-by-the-administrative-user"></a><a name="BKMK_CategorizedIsReCategorized"></a> 已分類的類別目錄項目重新依系統管理使用者分類  
+##  <a name="BKMK_CategorizedIsReCategorized"></a> 已分類的類別目錄項目重新依系統管理使用者分類  
 
 |**狀態轉換**|**狀態轉換描述**|  
 |--------------------------|--------------------------------------|  
@@ -45,7 +47,7 @@ ms.openlocfilehash: d1e320c6498e034307557e8a182c36cef2de640b
 > [!NOTE]  
 >  因為取自 System Center Online 的分類資訊儲存在資料庫中且無法刪除，所以系統管理使用者之後可以回復為 System Center Online 分類。  
 
-##  <a name="a-namebkmkuserdefinedisrecategorizeda-user-defined-catalog-item-is-recategorized-by-system-center-online"></a><a name="BKMK_UserDefinedIsRecategorized"></a> System Center Online 重新分類使用者定義的類別目錄項目  
+##  <a name="BKMK_UserDefinedIsRecategorized"></a> System Center Online 重新分類使用者定義的類別目錄項目  
 
 |**狀態轉換**|**狀態轉換描述**|  
 |--------------------------|--------------------------------------|  
@@ -59,7 +61,7 @@ ms.openlocfilehash: d1e320c6498e034307557e8a182c36cef2de640b
 > [!NOTE]  
 >  因為取自 System Center Online 的分類資訊儲存在資料庫中且無法刪除，所以系統管理使用者之後可以回復為 System Center Online 分類。  
 
-##  <a name="a-namebkmkuncategorizedissubmitteda-uncategorized-catalog-item-is-submitted-to-system-center-online-for-categorization"></a><a name="BKMK_UncategorizedIsSubmitted"></a> 將未分類的類別目錄項目提交至 System Center Online 進行分類  
+##  <a name="BKMK_UncategorizedIsSubmitted"></a> 將未分類的類別目錄項目提交至 System Center Online 進行分類  
 
 |**狀態轉換**|**狀態轉換描述**|  
 |--------------------------|--------------------------------------|  
@@ -67,7 +69,7 @@ ms.openlocfilehash: d1e320c6498e034307557e8a182c36cef2de640b
 |**未分類** 到 **擱置**|未分類的類別目錄項目已提交至 System Center Online，由系統管理使用者進行分類。|  
 |**擱置** 到 **已驗證**|項目由 System Center Online 分類。 系統管理使用者使用大量的類別目錄更新或 Asset Intelligence 類別目錄同步處理，將項目匯入 Asset Intelligence 類別目錄。 使用 Asset Intelligence 同步處理點站台系統角色，兩者都可以使用。|  
 
-##  <a name="a-namebkmkuserdefinedissubmitteda-user-defined-catalog-item-is-submitted-to-system-center-online-for-categorization"></a><a name="BKMK_UserDefinedIsSubmitted"></a> 將使用者定義的類別目錄項目提交至 System Center Online 進行分類  
+##  <a name="BKMK_UserDefinedIsSubmitted"></a> 將使用者定義的類別目錄項目提交至 System Center Online 進行分類  
 
 |**狀態轉換**|**狀態轉換描述**|  
 |--------------------------|--------------------------------------|  
@@ -81,9 +83,4 @@ ms.openlocfilehash: d1e320c6498e034307557e8a182c36cef2de640b
 
 > [!NOTE]  
 >  因為取自 System Center Online 的分類資訊儲存在資料庫中且無法刪除，所以您之後可以回復為 System Center Online 分類。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

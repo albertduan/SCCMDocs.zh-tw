@@ -15,9 +15,11 @@ caps.latest.revision: 10
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a181171cc1a92ec4519f4e4b34ca3274a0aa0440
 ms.openlocfilehash: 1c9e7ada6a8aa228b30e58865baae0f6e529e6af
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -35,7 +37,7 @@ System Center Configuration Manager 用戶端使用稱為*服務位置*的處理
 
 
 
-##  <a name="a-namebkmkfunda-fundamentals-of-service-location"></a><a name="bkmk_fund"></a> Fundamentals of service location  
+##  <a name="bkmk_fund"></a> Fundamentals of service location  
  使用服務位置找到與其進行通訊的管理點時，用戶端會評估其目前網路位置、通訊協定喜好設定和指派的站台。  
 
  **用戶端與管理點通訊︰**  
@@ -56,7 +58,7 @@ System Center Configuration Manager 用戶端使用稱為*服務位置*的處理
 
 -   在部署使用網際網路資訊服務 (IIS) 並支援從用戶端進行通訊的網站系統角色時，您必須指定用戶端要使用 HTTP 或 HTTPS 連線至網站系統。 如果您使用 HTTP，您也必須考慮簽署和加密選擇。 如需詳細資訊，請參閱[在 System Center Configuration Manager 中規劃安全性](../../../core/plan-design/security/plan-for-security.md)中的[規劃簽署和加密](../../../core/plan-design/security/plan-for-security.md#BKMK_PlanningForSigningEncryption)。  
 
-##  <a name="a-namebkmkplanservicelocationa-service-location-and-how-clients-determine-their-assigned-management-point"></a><a name="BKMK_Plan_Service_Location"></a> 服務位置以及用戶端如何判斷其指派的管理點  
+##  <a name="BKMK_Plan_Service_Location"></a> 服務位置以及用戶端如何判斷其指派的管理點  
 用戶端第一次指派至主要站台時，它會為該站台選取預設管理點。 主要站台支援多個管理點，且每個用戶端會獨立地將管理點識別為其預設管理點。 這個預設管理點接著會變成用戶端指派的管理點。 (您也可以使用用戶端安裝命令，來設定用戶端於安裝時指派的管理點。)  
 
 用戶端會依據用戶端目前的網路位置與界限群組組態，選取要通訊的管理點。 用戶端即使有指派的管理點，可能也不是用戶端所使用的管理點。  
@@ -83,7 +85,7 @@ System Center Configuration Manager 用戶端使用稱為*服務位置*的處理
 
 若不是針對網際網路設定的用戶端，就不會提供僅限網際網路對向的管理點。 針對網際網路設定的工作群組用戶端只會與網際網路對向管理點通訊。  
 
-##  <a name="a-namebkmkmplista-the-mp-list"></a><a name="BKMK_MPList"></a> 管理組件 (MP) 清單  
+##  <a name="BKMK_MPList"></a> 管理組件 (MP) 清單  
 管理組件清單是用戶端偏好的服務位置來源，因為它是用戶端先前所識別管理點的優先使用清單。 當用戶端更新清單時，這份清單即會依每個用戶端的網路位置排序，並本機儲存在 WMI 中的用戶端上。  
 
 ### <a name="building-the-initial-mp-list"></a>建立初始管理組件 (MP) 清單  
@@ -134,7 +136,7 @@ System Center Configuration Manager 用戶端使用稱為*服務位置*的處理
 
 接下來，用戶端會隨機選擇要使用的新管理點。  
 
-##  <a name="a-namebkmkada-active-directory"></a><a name="bkmk_ad"></a> Active Directory  
+##  <a name="bkmk_ad"></a> Active Directory  
 加入網域的用戶端可以使用適用於服務位置的 AD DS。 若要這麼做，需具備可 [將資料發佈至 Active Directory](http://technet.microsoft.com/library/hh696543.aspx)的網站。  
 
 當下列任何條件成立時，用戶端可以使用適用於服務位置的 AD DS：  
@@ -145,7 +147,7 @@ System Center Configuration Manager 用戶端使用稱為*服務位置*的處理
 
 如果用戶端無法從 AD DS 找到要用於服務位置的管理點，就會嘗試使用 DNS。  
 
-##  <a name="a-namebkmkdnsa-dns"></a><a name="bkmk_dns"></a> DNS  
+##  <a name="bkmk_dns"></a> DNS  
 內部網路上的用戶端可以使用適用於服務位置的 DNS。 若要這麼做，階層中至少需具備一個可將管理點相關資訊發佈至 DNS 的網站。  
 
 當下列任何條件成立時，請考慮使用適用於服務位置的 DNS：
@@ -243,15 +245,10 @@ Configuration Manager 支援服務位置記錄的 RFC 2782。 這些記錄的格
 
 針對內部網路上要發佈到 DNS 的各管理點，重複執行這些步驟。  
 
-##  <a name="a-namebkmkwinsa-wins"></a><a name="bkmk_wins"></a> WINS  
+##  <a name="bkmk_wins"></a> WINS  
 當其他服務位置機制失敗時，用戶端可檢查 WINS 以尋找初始管理點。  
 
 根據預設，主要網站會在網站上將針對 HTTP 和 HTTPS 設定的第一個管理點發佈到 WINS。  
 
 如果您不想讓用戶端找到 WINS 中的 HTTP 管理點，請使用 CCMSetup.exe Client.msi 內容 **SMSDIRECTORYLOOKUP=NOWINS**來設定用戶端。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

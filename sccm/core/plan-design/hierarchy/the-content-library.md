@@ -15,9 +15,11 @@ caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: d31fecdb71b498864df2bce7403a4290ea9700ae
 ms.openlocfilehash: 0fa9f431c00476d71b2b08f92f914d76636d1a27
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="the-content-library-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的內容庫
@@ -64,9 +66,4 @@ ms.openlocfilehash: 0fa9f431c00476d71b2b08f92f914d76636d1a27
 -   若要避免將內容庫安裝在特定磁碟機，在建立內容庫之前，請建立一個空白檔案 **no_sms_on_drive.sms**，並將檔案複製到磁碟機的根資料夾。  
 
 -   建立內容庫之後，請使用 System Center 2012 R2 Configuration Manager Toolkit 中的**內容庫傳輸工具**來管理內容庫的位置。 您可以從 [Microsoft 下載中心](http://go.microsoft.com/fwlink/?LinkId=279566)下載此工具組。  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

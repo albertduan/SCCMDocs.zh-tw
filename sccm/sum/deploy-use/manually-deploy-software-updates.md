@@ -13,14 +13,16 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: 57184274-5fea-4d79-a2b4-22e08ed26daf
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
 ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
 
-#  <a name="a-namebkmkmanualdeploya-manually-deploy-software-updates"></a><a name="BKMK_ManualDeploy"></a> 手動部署軟體更新  
+#  <a name="BKMK_ManualDeploy"></a> 手動部署軟體更新  
 
 適用於：System Center Configuration Manager (最新分支)
 
@@ -28,7 +30,7 @@ ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
 
  下列各節會提供手動部署軟體更新的步驟。  
 
-##  <a name="a-namebkmk1searchcriteriaa-step-1-specify-search-criteria-for-software-updates"></a><a name="BKMK_1SearchCriteria"></a> 步驟 1：指定軟體更新的搜尋準則  
+##  <a name="BKMK_1SearchCriteria"></a> 步驟 1：指定軟體更新的搜尋準則  
  在 Configuration Manager 主控台內，可能會顯示數以千計的軟體更新。 手動部署軟體更新工作流程的第一個步驟是找出您要部署的軟體更新。 例如，您可以提供某項準則，此一準則可擷取超過 50 個用戶端裝置需要的所有軟體更新，且包含 [安全性]  或 [重大]  軟體更新分類。  
 
 > [!IMPORTANT]  
@@ -54,7 +56,7 @@ ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
     > [!TIP]  
     >  您可使用選項，將篩選準則儲存在 [搜尋]  索引標籤和 [儲存]  群組內。  
 
-##  <a name="a-namebkmk2updategroupa-step-2-create-a-software-update-group-that-contains-the-software-updates"></a><a name="BKMK_2UpdateGroup"></a> 步驟 2：建立含有軟體更新的軟體更新群組  
+##  <a name="BKMK_2UpdateGroup"></a> 步驟 2：建立含有軟體更新的軟體更新群組  
  軟體更新群組可提供您組織軟體更新的有效方法以準備進行部署。 您可以手動將軟體更新新增至軟體更新群組，或使用 ADR，Configuration Manager 會自動將軟體更新新增至全新或現有的軟體更新群組。 利用下列程序，將軟體更新手動新增至新的軟體更新群組。  
 
 #### <a name="to-manually-add-software-updates-to-a-new-software-update-group"></a>手動將軟體更新新增至新的軟體更新群組  
@@ -73,7 +75,7 @@ ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
 
 7.  選取軟體更新群組，然後在 [首頁]  索引標籤的 [更新]  群組中按一下 [顯示成員]  ，顯示此群組包括的軟體更新的清單。  
 
-##  <a name="a-namebkmk3downloadcontenta-step-3-download-the-content-for-the-software-update-group"></a><a name="BKMK_3DownloadContent"></a> 步驟 3：下載軟體更新群組的內容  
+##  <a name="BKMK_3DownloadContent"></a> 步驟 3：下載軟體更新群組的內容  
  在部署軟體更新之前，您可以選擇下載已包含在軟體更新群組中的軟體更新內容。 您可以選擇執行此動作，以便您在部署軟體更新前先行確認該內容是否可在發佈點上使用。 這能協助您避免傳送內容時發生非預期問題。 您可以跳過此一步驟，即可將內容下載並複製到發佈點，作為部署程序的一部分。 利用下列程序，下載軟體更新群組中的軟體更新內容。  
 
 
@@ -160,7 +162,7 @@ ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
 
 4. 在 [首頁]  索引標籤的 [內容]  群組中，按一下 [檢視狀態] 。  
 
-##  <a name="a-namebkmk4deployupdategroupa-step-4-deploy-the-software-update-group"></a><a name="BKMK_4DeployUpdateGroup"></a> 步驟 4：部署軟體更新群組  
+##  <a name="BKMK_4DeployUpdateGroup"></a> 步驟 4：部署軟體更新群組  
  在決定您要部署的軟體更新之後，將這些軟體更新新增到軟體更新群組，您就可以在軟體更新群組中手動部署軟體更新。 利用下列程序，將軟體更新手動部署至新的軟體更新群組。  
 
 #### <a name="to-manually-deploy-the-software-updates-in-a-software-update-group"></a>在軟體更新群族內手動部署軟體更新  
@@ -315,9 +317,4 @@ ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
 
 ## <a name="next-steps"></a>後續步驟
 [監視軟體更新](monitor-software-updates.md)
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

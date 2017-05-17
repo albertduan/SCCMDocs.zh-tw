@@ -15,9 +15,10 @@ caps.latest.revision: 31
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: a84d3ab55066d26c3199ea374d8beb472d66f43f
+ms.contentlocale: zh-tw
 ms.lasthandoff: 01/24/2017
 
 ---

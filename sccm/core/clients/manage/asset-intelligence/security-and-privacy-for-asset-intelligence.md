@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: d577a16725c2b167d1ff9f77096018433a2fa580
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: d577a16725c2b167d1ff9f77096018433a2fa580
 
 本主題包含 System Center Configuration Manager 中 Asset Intelligence 的安全性與隱私權資訊。  
 
-##  <a name="a-namebkmksecurityaia-security-best-practices-for-asset-intelligence"></a><a name="BKMK_Security_AI"></a> Asset Intelligence 的安全性最佳作法  
+##  <a name="BKMK_Security_AI"></a> Asset Intelligence 的安全性最佳作法  
  使用 Asset Intelligence 時，請使用下列安全性最佳作法。  
 
 |安全性最佳作法|詳細資訊|  
@@ -36,7 +38,7 @@ ms.openlocfilehash: d577a16725c2b167d1ff9f77096018433a2fa580
 |當您匯入授權檔案 (Microsoft 大量授權檔案或一般授權聲明檔案) 時，請保護檔案和通訊通道的安全。|使用 NTFS 檔案系統權限，確保只有授權的使用者才能存取授權檔，以及使用伺服器訊息區 (SMB) 簽署，確保匯入程序期間傳送到站台伺服器時的資料完整性。|  
 |使用最低權限的原則來匯入授權檔案。|使用以角色為基礎的系統管理，將 [管理 Asset Intelligence] 權限授與匯入授權檔案的系統管理使用者。 內建角色 [資產管理員] 包含這個權限。|  
 
-##  <a name="a-namebkmkprivacyhardwareinventorya-privacy-information-for-asset-intelligence"></a><a name="BKMK_Privacy_HardwareInventory"></a> Asset Intelligence 的隱私權資訊  
+##  <a name="BKMK_Privacy_HardwareInventory"></a> Asset Intelligence 的隱私權資訊  
  Asset Intelligence 可擴充 Configuration Manager 的清查功能，以提供企業中更高層級的資產可見性。 不會自動啟用 Asset Intelligence 資訊收集。 您可以修改透過啟用硬體清查報告類別所收集的資訊類型。 如需詳細資訊，請參閱[設定 System Center Configuration Manager 中的 Asset Intelligence](../../../../core/clients/manage/asset-intelligence/configuring-asset-intelligence.md)。  
 
  Asset Intelligence 資訊儲存在 Configuration Manager 資料庫的方式，與清查資訊相同。 用戶端使用 HTTPS 來連線至管理點時，一律會在傳送至管理點期間加密資料。 用戶端使用 HTTP 連線時，您可以設定要簽署和加密的清查資料傳送。 清查資料不會以加密格式儲存在資料庫中。 資訊會保留在資料庫中，直到以每 90 天的間隔由站台維護工作 [刪除過時清查歷程記錄]  將它刪除為止。 您可以設定刪除間隔。  
@@ -58,9 +60,4 @@ ms.openlocfilehash: d577a16725c2b167d1ff9f77096018433a2fa580
 -   資料一旦上傳就無法取回。  
 
  在您設定 Asset Intelligence 資料收集並且決定是否將資訊提交給 System Center Online 之前，請考慮貴組織的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

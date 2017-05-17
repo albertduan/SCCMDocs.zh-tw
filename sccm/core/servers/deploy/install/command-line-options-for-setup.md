@@ -19,7 +19,7 @@ ms.translationtype: Human Translation
 ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: 04fe7b3e674287c4255563ab4a308e54d0b6c3aa
 ms.contentlocale: zh-tw
-ms.lasthandoff: 03/27/2017
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="command-line-options-for-setup-in-system-center-configuration-manager"></a>System Center Configuration Manager 的安裝程式命令列選項
@@ -58,17 +58,17 @@ ms.lasthandoff: 03/27/2017
 
  如需安裝程式必要條件檔案的詳細資訊，請參閱[安裝程式下載程式](setup-downloader.md)。  
 
- **/SCRIPT <安裝指令碼路徑**>**  
- 執行自動安裝。當您使用 **/SCRIPT** 選項時，需要安裝程式初始設定檔案。 如需如何自動執行安裝程式的詳細資訊，請參閱[使用命令列安裝站台](../../../../core/servers/deploy/install/use-a-command-line-to-install-sites.md)。  
+ **/SCRIPT <*安裝指令碼路徑*>**  
+ 執行自動安裝。當您使用 /SCRIPT 選項時，需要安裝程式初始設定檔案。**** 如需如何自動執行安裝程式的詳細資訊，請參閱[使用命令列安裝站台](../../../../core/servers/deploy/install/use-a-command-line-to-install-sites.md)。  
 
- **/SDKINST <SMS 提供者 FQDN**>**  
+ **/SDKINST <*SMS 提供者 FQDN*>**  
  在指定的電腦上安裝 SMS 提供者。 您必須提供 SMS 提供者電腦的完整網域名稱 (FQDN)。 如需 SMS 提供者的詳細資訊，請參閱 [Plan for the SMS Provider for System Center Configuration Manager](../../../../core/plan-design/hierarchy/plan-for-the-sms-provider.md) (規劃 System Center Configuration Manager 的 SMS 提供者)。  
 
- **/SDKDEINST <SMS 提供者 FQDN**>**  
+ **/SDKDEINST <*SMS 提供者 FQDN*>**  
  在指定的電腦上解除安裝 SMS 提供者。 您必須提供 SMS 提供者電腦的 FQDN。  
 
- **/MANAGELANGS <語言指令碼路徑**>**  
- 管理原安裝站台所安裝的語言。若要使用此選項，您必須從站台伺服器上的 **<Configuration Manager 安裝路徑**>\BIN\X64** 執行安裝程式，並提供包含語言設定的語言指令碼檔案位置。 如需語言安裝指令碼檔中可用語言選項的詳細資訊，請參閱本主題中的[用以管理語言的命令列選項](#bkmk_Lang) 。  
+ **/MANAGELANGS <*語言指令碼路徑*>**  
+ 管理原安裝站台所安裝的語言。若要使用此選項，您必須從站台伺服器上的 **<*Configuration Manager 安裝路徑*>\BIN\X64** 執行安裝程式，並提供包含語言設定的語言指令碼檔案位置。 如需語言安裝指令碼檔中可用語言選項的詳細資訊，請參閱本主題中的[用以管理語言的命令列選項](#bkmk_Lang) 。  
 
 ##  <a name="bkmk_Lang"></a> 用以管理語言的命令列選項  
  **識別**  

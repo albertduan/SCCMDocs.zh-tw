@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 6ee39d311108253ece1c9d60c25ac06017867c1f
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -40,9 +42,4 @@ ms.openlocfilehash: 6ee39d311108253ece1c9d60c25ac06017867c1f
 |軟體項目 8|軟體發行者|1.08|英文|1|購買編號|轉售商名稱|10/10/2010|0|10/10/2012|註解|  
 |軟體項目 9|軟體發行者|1.09|英文|1|購買編號|轉售商名稱|10/10/2010|0|10/10/2012|註解|  
 |軟體項目 10|軟體發行者|1.10|英文|1|購買編號|轉售商名稱|10/10/2010|0|10/10/2012|註解|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

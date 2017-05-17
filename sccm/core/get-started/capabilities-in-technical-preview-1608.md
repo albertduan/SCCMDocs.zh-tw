@@ -15,9 +15,11 @@ caps.latest.revision: 15
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: c22e29da8036d69db917205f28a19a69281a64db
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1608-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1608 中的功能
@@ -49,7 +51,7 @@ ms.openlocfilehash: c22e29da8036d69db917205f28a19a69281a64db
 
 ### <a name="filter-the-software-display"></a>篩選軟體顯示
 定義父系與子系關聯之後，您可以篩選檢視，只顯示父系軟體或未定義關聯性的軟體。 這會隱藏設定為另一個已清查軟體子系的所有軟體。 操作方法：
-   1.   在搜尋列中，選擇 [新增準則]
+   1.    在搜尋列中，選擇 [新增準則]
    2. 選取 [父系軟體]，然後將準則值變更為 [是空的]，再按一下 [搜尋]。
 
 此顯示畫面現在只會顯示父系軟體項目，或未定義關聯性的軟體。 只是另一個標題子系的軟體則不會顯示。
@@ -62,9 +64,4 @@ ms.openlocfilehash: c22e29da8036d69db917205f28a19a69281a64db
 > [!NOTE]
 >
 > ~!#@$%, 等特殊按鍵不會正確轉譯。
-
-
-
-<!--HONumber=Jan17_HO4-->
-
 

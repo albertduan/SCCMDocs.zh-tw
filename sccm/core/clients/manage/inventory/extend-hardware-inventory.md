@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
 ms.openlocfilehash: 80d5a13ea5d40150ddd537251e837083e649ac52
+ms.contentlocale: zh-tw
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -52,7 +54,7 @@ Configuration.mof 檔案用來定義用戶端上要由硬體清查所清查的�
 ## <a name="procedures-to-extend-hardware-inventory"></a>擴充硬體清查的程序  
 這些程序可協助您設定硬體清查的預設用戶端設定並套用至您的階層中的所有用戶端。 如果您只想要將這些設定套用至部分用戶端，請建立自訂用戶端裝置設定，並將它指派給特定用戶端集合。 請參閱[如何在 System Center Configuration Manager 中設定用戶端設定](../../../../core/clients/deploy/configure-client-settings.md)。  
 
-###  <a name="a-namebkmkenablea-to-enable-or-disable-existing-inventory-classes"></a><a name="BKMK_Enable"></a> 啟用或停用現有清查類別  
+###  <a name="BKMK_Enable"></a> 啟用或停用現有清查類別  
 
 1.  在 Configuration Manager 主控台中，選擇 [系統管理] > [用戶端設定] > [預設用戶端設定]。  
 
@@ -68,7 +70,7 @@ Configuration.mof 檔案用來定義用戶端上要由硬體清查所清查的�
     >  將新的類別新增至 Configuration Manager 硬體清查時，收集並傳送到站台伺服器的清查檔案大小將會增加。 這可能會對網路和 Configuration Manager 站台的效能造成負面影響。 啟用只想要收集的清查類別。  
 
 
-###  <a name="a-namebkmkadda-to-add-a-new-inventory-class"></a><a name="BKMK_Add"></a> 新增清查類別  
+###  <a name="BKMK_Add"></a> 新增清查類別  
 
 您只能新增清查類別從最上層伺服器階層中以及藉由修改預設的用戶端設定。 此選項無法使用。 當您建立自訂的裝置設定
 
@@ -101,7 +103,7 @@ Configuration.mof 檔案用來定義用戶端上要由硬體清查所清查的�
      完成內容的設定之後，請按一下 [確定] 關閉 [類別限定詞] 對話方塊和其他開啟對話方塊。 
 
 
-###  <a name="a-namebkmkimporta-to-import-hardware-inventory-classes"></a><a name="BKMK_Import"></a> 匯入硬體清查類別  
+###  <a name="BKMK_Import"></a> 匯入硬體清查類別  
 
 當您修改預設的用戶端設定時您可以只匯入清查類別。 不過，您可以使用自訂用戶端設定匯入不包含結構描述變更，例如變更從現有類別的屬性資訊 **True** 至 **False**。  
 
@@ -117,7 +119,7 @@ Configuration.mof 檔案用來定義用戶端上要由硬體清查所清查的�
 
 8.  在 [匯入] 對話方塊中，選取您要匯入的管理物件格式 (MOF) 檔案，然後選擇 [確定]。 檢閱將匯入的項目，然後按一下 [匯入]。  
 
-###  <a name="a-namebkmkexporta-to-export-hardware-inventory-classes"></a><a name="BKMK_Export"></a> 匯出硬體清查類別  
+###  <a name="BKMK_Export"></a> 匯出硬體清查類別  
 
 1.  在 Configuration Manager 主控台中，選擇 [系統管理] > [用戶端設定] > [預設用戶端設定]。  
 
@@ -140,7 +142,7 @@ Configuration.mof 檔案用來定義用戶端上要由硬體清查所清查的�
 > [!IMPORTANT]  
 >  將資訊從 MIF 檔案新增至 Configuration Manager 資料庫之前，您必須建立或匯入其類別資訊。 如需詳細資訊，請參閱本主題中的 [新增清查類別](#BKMK_Add) 和 [匯入硬體清查類別](#BKMK_Import) 小節。  
 
-###  <a name="a-namebkmknoidmifa-to-create-noidmif-files"></a><a name="BKMK_NOIDMIF"></a> 建立 NOIDMIF 檔案  
+###  <a name="BKMK_NOIDMIF"></a> 建立 NOIDMIF 檔案  
  NOIDMIF 檔案可以用來將資訊新增至 Configuration Manager 通常無法收集且與特定用戶端裝置相關聯的用戶端硬體清查。 例如，許多公司都會使用資產編號來標示組織中的每部電腦，然後手動將這些電腦編成目錄。 當您建立 NOIDMIF 檔案時，這項資訊可以新增至 Configuration Manager 資料庫並用於查詢和報告。 如需建立 NOIDMIF 檔案的相關資訊，請參閱 Configuration Manager SDK 文件。  
 
 > [!IMPORTANT]  
@@ -148,16 +150,11 @@ Configuration.mof 檔案用來定義用戶端上要由硬體清查所清查的�
 
  建立 NOIDMIF 檔案之後，請將其儲存至每個用戶端上的 *%Windir%***\System32\CCM\Inventory\Noidmifs** 資料夾。 在下次排程的硬體清查週期，Configuration Manager 會從這個資料夾中的 NODMIF 檔案收集資訊。  
 
-###  <a name="a-namebkmkidmifa-to-create-idmif-files"></a><a name="BKMK_IDMIF"></a> 建立 IDMIF 檔案  
+###  <a name="BKMK_IDMIF"></a> 建立 IDMIF 檔案  
  IDMIF 檔案可以用來將資產相關資訊新增至 Configuration Manager 資料庫，而這些資產通常無法透過 Configuration Manager 進行清查而且與特定用戶端裝置不相關。 例如，您可以使用 IDMIFS 收集下列項目的相關資訊：投影機，DVD 播放機、影印機或不包含 Configuration Manager 用戶端的其他設備。 如需建立 IDMIF 檔案的相關資訊，請參閱 Configuration Manager SDK 文件。  
 
  建立 IDMIF 檔案之後，請將其儲存至用戶端電腦上的 *%Windir%***\System32\CCM\Inventory\Idmifs** 資料夾。 在下次排程的硬體清查週期，Configuration Manager 會從這個檔案收集資訊。 您必須宣告新類別，藉由新增或匯入這些檔案中包含的資訊。  
 
 > [!NOTE]
 > MIF 檔案可能包含大量資料，而且收集這項資料可能會對站台效能造成負面影響。 只在需要時才啟用 MIF 收集，並在硬體清查設定中設定 [自訂 MIF 檔案大小上限 (KB)]  選項。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的硬體清查簡介](introduction-to-hardware-inventory.md)。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

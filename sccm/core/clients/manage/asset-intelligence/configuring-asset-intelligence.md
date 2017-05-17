@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
 ms.openlocfilehash: 27566be49a673bebca6ac3621e692fad65523ca4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -39,7 +41,7 @@ Asset Intelligence 清查和管理軟體授權使用量。
 - **步驟 6**：[設定 Asset Intelligence 維護工作](#BKMK_ConfigureMaintenanceTasks) 
 
 
-###  <a name="a-namebkmkenableassetintelligencea-enable-asset-intelligence-hardware-inventory-reporting-classes"></a><a name="BKMK_EnableAssetIntelligence"></a> Enable Asset Intelligence hardware inventory reporting classes  
+###  <a name="BKMK_EnableAssetIntelligence"></a> Enable Asset Intelligence hardware inventory reporting classes  
  若要在 Configuration Manager 站台中啟用 Asset Intelligence，您必須啟用一或多個 Asset Intelligence 硬體清查報告類別。 您可以在 [Asset Intelligence]  首頁上啟用類別，或是透過 [管理]  工作區中 [用戶端設定]  節點的用戶端設定屬性，來啟用類別。 請利用下列其中一項程序。  
 
 ##### <a name="to-enable-asset-intelligence-hardware-inventory-reporting-classes-from-the-asset-intelligence-home-page"></a>若要從 Asset Intelligence 首頁啟用 Asset Intelligence 硬體清查報告類別  
@@ -70,7 +72,7 @@ Asset Intelligence 清查和管理軟體授權使用量。
     >  在用戶端掃描並傳回硬體清查之後，透過此程序啟用之硬體清查類別的相關 Asset Intelligence 報告才會顯示資料。  
   
 
-###  <a name="a-namebkmkinstallassetintelligencesynchronizationpointa-install-an-asset-intelligence-synchronization-point"></a><a name="BKMK_InstallAssetIntelligenceSynchronizationPoint"></a> Install an Asset Intelligence Synchronization Point  
+###  <a name="BKMK_InstallAssetIntelligenceSynchronizationPoint"></a> Install an Asset Intelligence Synchronization Point  
 
 Asset Intelligence 同步處理點站台系統角色可用來將 Configuration Manager 站台連線至 System Center Online，以同步處理 Asset Intelligence 類別目錄資訊。 Asset Intelligence 同步處理點僅可安裝在位於 Configuration Manager 階層最上層站台的站台系統中，而且需要使用 TCP 連接埠 443 存取網際網路才能與 System Center Online 同步。
 
@@ -110,7 +112,7 @@ Asset Intelligence 同步處理點站台系統角色可用來將 Configuration M
 
 10. 完成精靈 
 
-###  <a name="a-namebkmkenablesuccesslogoneventsa-enable-auditing-of-success-logon-events"></a><a name="BKMK_EnableSuccessLogonEvents"></a> Enable auditing of success logon events  
+###  <a name="BKMK_EnableSuccessLogonEvents"></a> Enable auditing of success logon events  
  系統提供四種 Asset Intelligence 報告，以顯示在用戶端電腦上收集到的 Windows 安全性事件記錄檔資訊。 以下是如何設定電腦的安全性原則登入設定，以啟用成功登入事件的稽核。  
 
 ##### <a name="to-enable-success-logon-event-logging-by-using-a-local-security-policy"></a>使用本機安全性原則啟用成功登入事件記錄  
@@ -129,7 +131,7 @@ Asset Intelligence 同步處理點站台系統角色可用來將 Configuration M
 
 3.  在 [結果] 窗格中，按兩下 [稽核登入事件]，確認選取 [成功] 核取方塊，然後選擇 [確定]。  
 
-###  <a name="a-namebkmkimportsoftwarelicenseinformationa-import-software-license-information"></a><a name="BKMK_ImportSoftwareLicenseInformation"></a> Import software license information  
+###  <a name="BKMK_ImportSoftwareLicenseInformation"></a> Import software license information  
  下列章節說明使用 [匯入軟體授權精靈] 將 Microsoft 和一般軟體授權資訊匯入 Configuration Manager 站台資料庫的必要程序。 當您從授權聲明檔案將軟體授權資訊匯入站台資料庫時，站台伺服器電腦帳戶需具備 NTFS 檔案系統與用來匯入軟體授權資訊之檔案共用的 [完全控制]  權限。  
 
 > [!IMPORTANT]  
@@ -153,7 +155,7 @@ Asset Intelligence 同步處理點站台系統角色可用來將 Configuration M
 
 6. 完成精靈。  
 
-###  <a name="a-namebkmkcreategenerallicensestatementa-create-a-general-license-statement-information-file-for-import"></a><a name="BKMK_CreateGeneralLicenseStatement"></a> Create a general license statement information file for import  
+###  <a name="BKMK_CreateGeneralLicenseStatement"></a> Create a general license statement information file for import  
  您也可以手動建立以逗號分隔之檔案格式 (.csv) 的授權匯入檔案，將一般授權聲明匯入 Asset Intelligence 類別目錄中。  
 
 > [!NOTE]  
@@ -209,7 +211,7 @@ Asset Intelligence 會使用產品名稱和產品版本來比對您在一般授�
 |SupportExpirationDate|日期值，格式如下：MM/DD/YYYY|否|購買支援的結束日期|  
 |註解|最多 255 個字元|否|選擇性註解|  
 
-###  <a name="a-namebkmkconfiguremaintenancetasksa-configure-asset-intelligence-maintenance-tasks"></a><a name="BKMK_ConfigureMaintenanceTasks"></a> Configure Asset Intelligence maintenance tasks  
+###  <a name="BKMK_ConfigureMaintenanceTasks"></a> Configure Asset Intelligence maintenance tasks  
  下列為 Asset Intelligence 提供的維護工作：  
 
 -   **使用清查資訊檢查應用程式標題**：確認軟體清查中回報的軟體項目與 Asset Intelligence 類別目錄中的軟體項目一致。 預設會啟用這項工作並排程於星期六凌晨 12:00 之後、 上午 5:00 之前執行。 這項維護工作僅適用於 Configuration Manager 階層的頂層站台。  
@@ -232,9 +234,4 @@ Asset Intelligence 會使用產品名稱和產品版本來比對您在一般授�
 
     > [!NOTE]  
     >  若第一次嘗試時無法執行工作，Configuration Manager 會嘗試重新執行工作直到工作執行成功，或直到可執行工作的時段已過為止。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

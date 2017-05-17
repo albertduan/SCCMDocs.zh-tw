@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
 ms.openlocfilehash: 6189726bbcade8229e0b2e929ebedeefdbf266a4
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/30/2016
 
 
 ---
@@ -53,9 +55,4 @@ ms.openlocfilehash: 6189726bbcade8229e0b2e929ebedeefdbf266a4
 
 4.  您可以在資源總管視窗的右窗格中，以滑鼠右鍵按一下任何項目，然後選擇 [內容] 以更容易閱讀的格式檢視收集到的清查資訊。  
  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

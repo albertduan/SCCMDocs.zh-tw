@@ -15,9 +15,10 @@ caps.latest.revision: 6
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
 ms.openlocfilehash: 74dcc0f4e680893db804956615248b7e1230d2b5
+ms.contentlocale: zh-tw
 ms.lasthandoff: 12/16/2016
 
 ---
@@ -27,7 +28,7 @@ ms.lasthandoff: 12/16/2016
 
 當設定公司所擁有裝置的設定檔時，系統管理員可以指定受管理裝置是否可以具有「使用者親和性」，這會識別特定使用者與裝置。  
 
-##  <a name="a-namebkmkioscpa-managed-devices-with-user-affinity"></a><a name="BKMK_iOSCP"></a> 具有使用者親和性的受管理裝置  
+##  <a name="BKMK_iOSCP"></a> 具有使用者親和性的受管理裝置  
  已設定 [使用者親和性] 的裝置可以安裝並執行 [公司入口網站] 應用程式，以下載 App 及管理裝置。 使用者收到裝置之後，他們必須完成一些額外步驟，以完成 [設定助理] 並安裝 [公司入口網站] 應用程式。  
 
 #### <a name="how-to-enroll-ios-devices-with-user-affinity"></a>如何註冊包含使用者親和性的 iOS 裝置  
@@ -52,6 +53,6 @@ ms.lasthandoff: 12/16/2016
 
 8.  現在已經完成註冊。 您現在即可使用裝置所含的完整功能。  
 
-##  <a name="a-namebkmknouaa-managed-devices-without-user-affinity"></a><a name="BKMK_noUA"></a> 沒有使用者親和性的受管理裝置  
+##  <a name="BKMK_noUA"></a> 沒有使用者親和性的受管理裝置  
  已設定 [沒有使用者親和性] 的裝置不支援 [公司入口網站]，而且不應該安裝應用程式。 [公司入口網站] 是針對有公司認證且需要存取個人化公司資源 (如電子郵件) 的使用者而設計。 註冊為 [沒有使用者親和性] 的裝置應該不會有專用的使用者登入。 Kiosk、銷售點 (POS)，或共用的工具裝置，皆屬註冊為無使用者親和性的常見案例。 如果需要使用者親和性，請在註冊裝置之前，確認裝置的註冊設定檔已選取 [使用者親和性]。 若要變更裝置的親和性狀態，您必須將裝置淘汰並重新註冊該裝置。
 

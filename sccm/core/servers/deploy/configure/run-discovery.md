@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 7b6674f331c82cc7899b8661cf38b9d3022cf21b
 ms.openlocfilehash: 647826e9d340d3ef97abab0dba51041a3727dedc
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -64,7 +66,7 @@ ms.openlocfilehash: 647826e9d340d3ef97abab0dba51041a3727dedc
 
 -   部署用戶端設定以及相關設定。
 
-##  <a name="a-namebkmkddrsa-about-discovery-data-records"></a><a name="BKMK_DDRs"></a> 關於探索資料記錄  
+##  <a name="BKMK_DDRs"></a> 關於探索資料記錄  
  DDR 是由探索方法所建立的檔案。 其包含可於 Configuration Manager 中管理之資源的相關資訊，例如電腦、使用者，某些情況下還有網路基礎結構。 這些資訊會在主要站台或管理中心網站上處理。 當 DDR 中的資源資訊輸入到資料庫後，就會將 DDR 刪除，並會複寫資訊以當作階層中所有站台的全域資料。  
 
  站台所處理的 DDR，取決於其所含的資訊：  
@@ -87,9 +89,4 @@ DDR 檔案是以 .ddr 副檔名作為識別，檔案大小通常約 1 KB。
 -   [Select discovery methods to use for System Center Configuration Manager](../../../../core/servers/deploy/configure/select-discovery-methods-to-use.md) (選取用於 System Center Configuration Manager 的探索方法)  
 
 然後，當您了解想要使用的方法後，在[設定 System Center Configuration Manager 的探索方法](../../../../core/servers/deploy/configure/configure-discovery-methods.md)內，尋找設定每一種方法的指引。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

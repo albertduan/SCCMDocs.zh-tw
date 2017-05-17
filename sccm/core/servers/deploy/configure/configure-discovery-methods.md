@@ -15,9 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 860815010068422f2d8854ed2d574c24cc386891
 ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>設定 System Center Configuration Manager 的探索方法
@@ -44,7 +46,7 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 4.  選擇 [確定] 儲存設定。  
 
 
-##  <a name="a-namebkmkconfigadforestdisca-configure-active-directory-forest-discovery"></a><a name="BKMK_ConfigADForestDisc"></a> 設定 Active Directory 樹系探索  
+##  <a name="BKMK_ConfigADForestDisc"></a> 設定 Active Directory 樹系探索  
 若要完成 Active Directory 樹系探索的設定，您必須在下面兩個位置進行設定：  
 
 -   在 [探索方法] 節點中，您可以︰
@@ -98,7 +100,7 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 
 4.  當您完成此樹系的設定以搭配使用 Active Directory 樹系探索時，選擇 [確定] 儲存設定。  
 
-##  <a name="a-namebkmkconfigaddiscgenerala-configure-active-directory-discovery-for-computers-users-or-groups"></a><a name="BKMK_ConfigADDiscGeneral"></a> 設定電腦、使用者或群組的 Active Directory 探索  
+##  <a name="BKMK_ConfigADDiscGeneral"></a> 設定電腦、使用者或群組的 Active Directory 探索  
  使用以下各節中的資訊設定電腦、使用者或群組的探索。 您將使用這些探索方法︰  
 
 -   Active Directory 群組探索  
@@ -210,7 +212,7 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 
 8.  當您完成設定此站台的 Active Directory 使用者探索時，選擇 [確定] 儲存設定。  
 
-##  <a name="a-namebkmkconfighbdisca-configure-heartbeat-discovery"></a><a name="BKMK_ConfigHBDisc"></a> 設定活動訊號探索  
+##  <a name="BKMK_ConfigHBDisc"></a> 設定活動訊號探索  
  根據預設，活動訊號探索會在您安裝 Configuration Manager 主要站台時啟用。 因此，您只需要在不想使用每七天的預設值時，設定用戶端將活動訊號探索資料記錄傳送至管理點的排程即可。  
 
 > [!NOTE]  
@@ -226,10 +228,10 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 
 4.  設定用戶端提交活動訊號探索資料記錄的頻率，然後選擇 [確定] 儲存設定。  
 
-##  <a name="a-namebkmkconfignetworkdisca-configure-network-discovery"></a><a name="BKMK_ConfigNetworkDisc"></a> 設定網路探索  
+##  <a name="BKMK_ConfigNetworkDisc"></a> 設定網路探索  
  使用以下各節中的資訊可幫助您設定網路探索。  
 
-###  <a name="a-namebkmkaboutconfignetworkdisca-about-configuring-network-discovery"></a><a name="BKMK_AboutConfigNetworkDisc"></a> 關於設定網路探索  
+###  <a name="BKMK_AboutConfigNetworkDisc"></a> 關於設定網路探索  
  在您設定網路探索之前，必須先瞭解下列資訊：  
 
 -   可用的網路探索層級  
@@ -244,14 +246,14 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 
  例如，您可能想要探索所有使用特定 SNMP 社群名稱的簡易網路管理通訊協定 (SNMP) 裝置。 此外，針對同一次探索執行，您可能會停用特定子網路上的探索。 當探索執行時，網路探索不會在已停用的子網路上探索所指定社群名稱的 SNMP 裝置。  
 
-####  <a name="a-namebkmkdeterminenettopologya-determine-your-network-topology"></a><a name="BKMK_DetermineNetTopology"></a> 判斷您的網路拓撲  
+####  <a name="BKMK_DetermineNetTopology"></a> 判斷您的網路拓撲  
  您可以使用拓撲專屬探索對應您的網路。 此類探索不會探索潛在用戶端。 拓撲專屬網路探索依賴 SNMP。  
 
  對應網路拓撲時，您必須設定 [網路探索內容] 對話方塊中 [SNMP] 索引標籤上的 [躍點數上限]。 只需幾個躍點，便有助於控制探索執行時所使用的網路頻寬。 進一步探索網路時，您可以增加躍點數以深入瞭解您的網路拓撲。  
 
  瞭解網路拓撲之後，您便可以在藉由可用設定限制網路探索可搜尋之網路區段的同時，將網路探索的其他內容設定為探索潛在用戶端及其作業系統。  
 
-####  <a name="a-namebkmklimitbysubneta-limit-searches-by-using-subnets"></a><a name="BKMK_LimitBySubnet"></a> 使用子網路限制搜尋  
+####  <a name="BKMK_LimitBySubnet"></a> 使用子網路限制搜尋  
  您可以將網路探索設定為在探索執行期間搜尋特定子網路。 根據預設，網路探索會搜尋執行探索的伺服器子網路。 您設定與啟用的其他任何子網路，只能套用於 SNMP 和動態主機設定通訊協定 (DHCP) 搜尋選項。 當網路探索搜尋網域時，並不會受到子網路設定的限制。  
 
  如果您在 [網路探索內容]  對話方塊中的 [子網路]  索引標籤上指定一個或多個子網路，則只會搜尋標記為 [已啟用]  的子網路。  
@@ -264,7 +266,7 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 
 -   網域為主的查詢可以探索位於子網路的資源。  
 
-####  <a name="a-namebkmksearchbydomaina-search-a-specific-domain"></a><a name="BKMK_SearchByDomain"></a> 搜尋特定網域  
+####  <a name="BKMK_SearchByDomain"></a> 搜尋特定網域  
  您可以將網路探索設定為在探索執行期間，搜尋特定網域或一組網域。 根據預設，網路探索會搜尋執行探索的本機伺服器網域。  
 
  如果您在 [網路探索內容]  對話方塊中的 [網域]  索引標籤上指定一個或多個網域，則只會搜尋標記為 [已啟用]  的網域。  
@@ -277,7 +279,7 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 
 -   DHCP 伺服器仍可用位於網域中的資源清單來回覆。  
 
-####  <a name="a-namebkmklimitbysnmpnamea-limit-searches-by-using-snmp-community-names"></a><a name="BKMK_LimitBySNMPname"></a> 使用 SNMP 群體名稱限制搜尋  
+####  <a name="BKMK_LimitBySNMPname"></a> 使用 SNMP 群體名稱限制搜尋  
  您可以將網路探索設定為在探索執行期間，搜尋特定 SNMP 群體或一組群體。 預設為設定 [公用]  群體名稱以供使用。  
 
  網路探索會使用群體名稱來存取等於 SNMP 裝置的路由器。 路由器會提供網路探索有關其他路由器，以及連結至第一個路由器的子網路的資訊。  
@@ -290,7 +292,7 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 > [!NOTE]  
 >  除了使用 SNMP 群體名稱之外，您也可以指定特定 SNMP 裝置的 IP 位址或可解析名稱。 您可以在 [網路探索內容] 對話方塊的 [SNMP 裝置] 索引標籤上進行。  
 
-####  <a name="a-namebkmksearchbydhcpa-search-a-specific-dhcp-server"></a><a name="BKMK_SearchByDHCP"></a> 搜尋特定的 DHCP 伺服器  
+####  <a name="BKMK_SearchByDHCP"></a> 搜尋特定的 DHCP 伺服器  
  您可以將網路探索設定為使用特定 DHCP 伺服器或多個伺服器，在探索執行期間探索 DHCP 用戶端。  
 
  網路探索會搜尋您在 [網路探索內容]  對話方塊中的 [DHCP]  索引標籤上指定的各個 DHCP 伺服器。 如果執行探索的伺服器是租用 DHCP 伺服器的 IP 位址，您可以勾選 [包含設定站台伺服器使用的 DHCP 伺服器] 方塊，將探索設定為搜尋該 DHCP 伺服器。  
@@ -298,7 +300,7 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 > [!NOTE]  
 >  若要成功設定網路探索中的 DHCP 伺服器，您的環境必須支援 IPv4。 您不能將網路探索設定為在原生 IPv6 環境中使用 DHCP 伺服器。  
 
-###  <a name="a-namebkmkhowtoconfignetdisca-how-to-configure-network-discovery"></a><a name="BKMK_HowToConfigNetDisc"></a> 如何設定網路探索  
+###  <a name="BKMK_HowToConfigNetDisc"></a> 如何設定網路探索  
  使用以下程序，先只探索您的網路拓撲，然後使用一個或多個可用的網路探索選項，將網路探索設定為探索潛在用戶端。  
 
 ##### <a name="to-determine-your-network-topology"></a>判斷您的網路拓撲  
@@ -407,7 +409,7 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
 
 12. 選擇 [確定] 儲存設定。  
 
-###  <a name="a-namebkmkhowtoverifynetdisca-how-to-verify-that-network-discovery-has-finished"></a><a name="BKMK_HowToVerifyNetDisc"></a> 如何確認網路探索是否已完成  
+###  <a name="BKMK_HowToVerifyNetDisc"></a> 如何確認網路探索是否已完成  
  完成網路探索所需的時間，會因各種不同因素而有所不同。 這些可能包括以下一種或多種因素：  
 
 -   網路的大小  
@@ -454,9 +456,4 @@ ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
     -   描述： **此元件已啟動**  
 
     這項資訊會確認網路探索已啟動。 如果沒有此資訊，請重新排程網路探索。  
-
-
-
-<!--HONumber=Feb17_HO3-->
-
 

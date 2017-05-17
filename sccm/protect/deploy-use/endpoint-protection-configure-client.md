@@ -15,9 +15,11 @@ caps.latest.revision: 21
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
 ms.openlocfilehash: 2d7ec9cc626f3ccfded990cf8ba392c4979adfee
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -173,9 +175,4 @@ ms.openlocfilehash: 2d7ec9cc626f3ccfded990cf8ba392c4979adfee
 在完成上述步驟後，您就可以準備參照電腦進行映像處理。 如需詳細資訊，請參閱[使用 System Center Configuration Manager 管理作業系統映像](/sccm/osd/get-started/manage-operating-system-images)。
 
 部署含有 Endpoint Protection 用戶端軟體的映像時，Endpoint Protection 用戶端會自動將資訊報告給電腦被指派的 Configuration Manager 站台，並且會下載並套用適用於用戶端電腦的原則。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

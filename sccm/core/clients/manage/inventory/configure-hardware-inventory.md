@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
 ms.openlocfilehash: deed112cca011b3b410c1197b7abf0f36a864f3c
+ms.contentlocale: zh-tw
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -48,9 +50,4 @@ ms.openlocfilehash: deed112cca011b3b410c1197b7abf0f36a864f3c
 7.  設定您需要的其他[硬體清查用戶端設定](../../../../core/clients/deploy/about-client-settings.md#hardware-inventory)。  
 
 在下次下載用戶端原則時，用戶端裝置會使用這些設定來進行設定。 若要起始單一用戶端的原則擷取，請參閱 [How to manage clients in System Center Configuration Manager](../../../../core/clients/manage/manage-clients.md)。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
 

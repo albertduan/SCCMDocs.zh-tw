@@ -15,9 +15,11 @@ caps.latest.revision: 7
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
 ms.openlocfilehash: 6265ee70b70a715862b1651d2f3760bef096ee8a
+ms.contentlocale: zh-tw
+ms.lasthandoff: 01/03/2017
 
 
 ---
@@ -49,10 +51,5 @@ ms.openlocfilehash: 6265ee70b70a715862b1651d2f3760bef096ee8a
 3.  選擇您想要檢視、包含清查的電腦，然後在 [首頁] 索引標籤 > [裝置] 群組中，選擇 [開始] >  資源總管。   
 
 4.  在資源總管視窗的右窗格中，以滑鼠右鍵按一下任何項目，然後選擇 [內容] 開啟 [<項目名稱\> 內容] 對話方塊，以更容易閱讀的格式檢視收集到的清查資訊。  
-
-
-
-
-<!--HONumber=Jan17_HO1-->
 
 

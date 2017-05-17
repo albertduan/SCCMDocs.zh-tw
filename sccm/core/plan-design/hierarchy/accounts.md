@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 72263ec5e7104924a1ca46dc2000be9f8568599f
 ms.openlocfilehash: a776667cc9f24bd4a468afea76e466c34ce66864
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -344,9 +346,4 @@ Configuration Manager 會使用此群組來授與軟體清查所收集之檔案�
 >  限制帳戶的範圍。 例如，為每個工作順序建立不同的工作順序執行身分帳戶，一旦其中一個帳戶遭受入侵時，只有該帳戶能夠存取的用戶端電腦會出現風險。  
 >   
 >  如果命令列要求電腦的系統管理存取權限，請考慮在所有將執行該工作順序的電腦上建立單獨作為工作順序執行身分帳戶的本機系統管理員帳戶。 不需要此類帳戶時立即加以刪除。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

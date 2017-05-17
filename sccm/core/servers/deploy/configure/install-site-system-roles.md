@@ -15,9 +15,11 @@ caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 8370e3b102afed518e8154d4944ab420188faccf
 ms.openlocfilehash: 76b070f8e203cc0c751f35e5a4b4904504786c04
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="install-site-system-roles-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 安裝站台系統角色
@@ -38,7 +40,7 @@ ms.openlocfilehash: 76b070f8e203cc0c751f35e5a4b4904504786c04
 
 -   Configuration Manager 會使用**站台系統安裝帳戶**來安裝網站系統角色。 您可在執行適用之精靈時指定此帳戶，以建立新網站系統，或將系統角色新增至現有網站系統伺服器。 根據預設，此帳戶是網站伺服器電腦的本機系統帳戶，但您可指定網域使用者帳戶來當成網站系統安裝帳戶使用。 如需詳細資訊，請參閱 [Accounts used in System Center Configuration Manager](../../../../core/plan-design/hierarchy/accounts.md) (System Center Configuration Manager 中使用的帳戶)。  
 
-##  <a name="a-namebkmkinstalla-to-install-site-system-roles-on-an-existing-site-system-server"></a><a name="bkmk_Install"></a> 在現有站台系統伺服器上安裝站台系統角色  
+##  <a name="bkmk_Install"></a> 在現有站台系統伺服器上安裝站台系統角色  
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理] 。  
 
@@ -81,9 +83,4 @@ ms.openlocfilehash: 76b070f8e203cc0c751f35e5a4b4904504786c04
 
 > [!TIP]  
 >  Windows PowerShell Cmdlet New-CMSiteSystemServer 會執行與此程序相同的功能。 如需詳細資訊，請參閱 System Center 2012 Configuration Manager SP1 Cmdlet 參考文件中的 [New-CMSiteSystemServer](http://go.microsoft.com/fwlink/p/?LinkID=271414)。  
-
-
-
-<!--HONumber=Feb17_HO2-->
-
 

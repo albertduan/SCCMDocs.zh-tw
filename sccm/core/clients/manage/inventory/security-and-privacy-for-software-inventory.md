@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 2144dfa87f40fcb2195f7278a21b47e05d6d6f38
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: 2144dfa87f40fcb2195f7278a21b47e05d6d6f38
 
 本主題包含 System Center Configuration Manager 中軟體清查的安全性與隱私權資訊。  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-software-inventory"></a><a name="BKMK_Security_HardwareInventory"></a> 軟體清查的安全性最佳做法  
+##  <a name="BKMK_Security_HardwareInventory"></a> 軟體清查的安全性最佳做法  
  當您收集來自用戶端的軟體清查資料時，請使用下列安全性最佳做法：  
 
 |安全性最佳作法|詳細資訊|  
@@ -52,7 +54,7 @@ ms.openlocfilehash: 2144dfa87f40fcb2195f7278a21b47e05d6d6f38
 
  軟體清查預設會啟用為用戶端設定。  
 
-##  <a name="a-namebkmkprivacyhardwareinventorya-privacy-information-for-software-inventory"></a><a name="BKMK_Privacy_HardwareInventory"></a> 軟體清查的隱私權資訊  
+##  <a name="BKMK_Privacy_HardwareInventory"></a> 軟體清查的隱私權資訊  
  硬體清查可讓您擷取登錄以及 Configuration Manager 用戶端之 WMI 中所儲存的任何資訊。 軟體清查可讓您找出所指定類型的所有檔案，或從用戶端中收集任何指定的檔案。 Asset Intelligence 透過擴充硬體與軟體清查，並加入新的授權管理功能，來增強清查功能。  
 
  硬體清查預設會啟用為用戶端設定，而收集到的 WMI 資訊取決於您選取的選項。 預設會啟用軟體清查，但預設不會收集檔案。 雖然您可以選取要啟用的硬體清查報告類別，但是會自動啟用 Asset Intelligence 資料收集。  
@@ -60,9 +62,4 @@ ms.openlocfilehash: 2144dfa87f40fcb2195f7278a21b47e05d6d6f38
  清查資訊不會傳送給 Microsoft。 清查資訊會儲存在 Configuration Manager 資料庫中。 用戶端使用 HTTPS 來連線到管理點時，會在傳輸期間加密他們傳送到站台的清查資料。 如果用戶端使用 HTTP 來連線到管理點，則您可以選擇啟用清查加密。 清查資料不會以加密格式儲存在資料庫中。 資訊會保留在資料庫中，直到每 90 天由站台維護工作 [刪除過時清查歷程記錄]  或 [刪除過時收集檔案]  刪除為止。 您可以設定刪除間隔。  
 
  設定硬體清查、軟體清查、檔案收集或 Asset Intelligence 資料收集之前，請考慮您的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
