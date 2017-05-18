@@ -2,7 +2,7 @@
 title: "以網際網路為基礎的用戶端管理 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中建立方案以管理以網際網路為基礎的用戶端。"
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 05/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 828e2ac9a3f9bcea1571d24145a1021fdf1091f3
-ms.openlocfilehash: 82867e77840e14e9b8170801ea3c4a9f399c9890
+ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
+ms.openlocfilehash: 90c30bfb22735f73422f1547301552bf42022bb9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -34,7 +34,7 @@ ms.lasthandoff: 12/16/2016
 
  請利用以下各節來協助您規劃以網際網路為基礎的用戶端管理。  
 
-##  <a name="BKMK_IBCM_FeaturesNotSupported"></a> 網際網路上「不」支援的功能  
+##  <a name="features-that-are-not-supported-on-the-internet"></a>網際網路上「不」支援的功能  
  並非所有用戶端管理功能都可在網際網路上使用，因此，在網際網路上管理用戶端時，就不會支援某些功能。 網際網路管理不支援的功能，一般需依賴 Active Directory 網域服務，或不適合在公用網路上使用，例如網路探索和網路喚醒 (WOL)。  
 
  在網際網路上管理用戶端時，不支援以下功能：  
@@ -55,7 +55,7 @@ ms.lasthandoff: 12/16/2016
 
  當您擁有設定為接受來自網際網路的連線的軟體更新點時，Configuration Manager 在網際網路上以網際網路為基礎的用戶端一律皆會掃描此軟體更新點，藉以判斷所需的軟體更新。 不過，當這些用戶端位於網際網路上時，首先會嘗試從 Microsoft Update 下載軟體更新，而不是從以網際網路為基礎的發佈點下載。 只有在下載失敗後，才會嘗試從以網際網路為基礎的發佈點下載所需的軟體更新。 未針對以網際網路為基礎的用戶端管理設定的用戶端，永遠不會嘗試從 Microsoft Update 下載軟體更新，但會一直使用 Configuration Manager 發佈點。  
 
-##  <a name="BKMK_PlanforInternetSiteSystems"></a> 從網際網路或未受信任之樹系的用戶端通訊考量  
+##  <a name="considerations-for-client-communications-from-the-internet-or-untrusted-forest"></a>從網際網路或未受信任之樹系的用戶端通訊考量  
  安裝在主要網站的下列網站系統角色支援來自不受信任位置 (例如網際網路或不受信任樹系) 的用戶端連線 (次要網站不支援來自不受信任位置的用戶端連線)：  
 
 -   應用程式類別目錄網站點  
@@ -96,7 +96,7 @@ ms.lasthandoff: 12/16/2016
 -   **通道**：   
     若您的 Proxy 網頁伺服器無法支援 SSL 橋接的需求，或您想設定網際網路支援由 Configuration Manager 註冊的行動裝置，則也支援 SSL 通道。 這是比較危險的選項，因為來自網際網路的 SSL 封包會轉寄到沒有 SSL 終止的網站系統，因此無法檢查封包內是否存在惡意內容。 使用 SSL 通道時，Proxy 網頁伺服器不需要憑證。  
 
-##  <a name="BKMK_PlanforInternetClients"></a> 規劃以網際網路為基礎的用戶端  
+##  <a name="planning-for-internet-based-clients"></a>規劃以網際網路為基礎的用戶端  
  您必須判斷在網際網路上受管理的用戶端電腦是否要針對在內部網路與網際網路上受管理來進行設定，或是設定僅在網際網路內接受用戶端管理。 在安裝用戶端電腦時，您只能設定用戶端管理選項。 若您稍後改變心意，就必須重新安裝用戶端。  
 
 > [!NOTE]  
@@ -116,7 +116,7 @@ ms.lasthandoff: 12/16/2016
 
  在以網際網路為基礎的用戶端管理，以及內部網路用戶端管理間進行自動切換的優點是：只要用戶端電腦連線至內部網路，且只要它們在網際網路上，就能繼續以基礎管理功能管理時，這些用戶端電腦就可以自動使用所有 Configuration Manager 功能。 此外，在網際網路上開始的下載可以在內部網路上順利恢復，反之亦然。  
 
-##  <a name="BKMK_PrerequisitsForInternetClientMgmt"></a> 以網際網路為基礎之用戶端管理的必要條件  
+##  <a name="prerequisites-for-internet-based-client-management"></a>以網際網路為基礎之用戶端管理的必要條件  
  Configuration Manager 中以網際網路為基礎的用戶端管理有以下外部相依性：  
 
 -   將在網際網路上進行管理的用戶端必須具備網際網路連線。  
