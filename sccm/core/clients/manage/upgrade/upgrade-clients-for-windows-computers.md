@@ -2,7 +2,7 @@
 title: "升級用戶端 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中升級 Windows 電腦上的用戶端。"
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: a5b59a1d31d897473262edcd0912ef0fcbedd100
-ms.lasthandoff: 03/06/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
+ms.openlocfilehash: 98b8c92e4dad3cef1ed3701b9c0f9111eb9941ea
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -98,5 +99,8 @@ ms.lasthandoff: 03/06/2017
 
 8.  如果您要將用戶端安裝套件複製到已經啟用預先設置內容的發佈點，請按一下 [將用戶端安裝套件自動發佈至針對預先設置內容啟用的發佈點] 。  
 
-9. 按一下 [確定]  儲存設定，然後關閉 [階層設定內容]  對話方塊。 用戶端接著下載原則時，就會收到這些設定。  
+9. 按一下 [確定]  儲存設定，然後關閉 [階層設定內容]  對話方塊。 用戶端接著下載原則時，就會收到這些設定。
+
+>[!NOTE]
+>用戶端升級會遵循您所設定的任何 Configuration Manager 維護時段。
 

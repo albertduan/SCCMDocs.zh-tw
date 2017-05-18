@@ -15,10 +15,11 @@ caps.latest.revision: 24
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: 562e81df12e46a2332aa5e4de8b7c9e5819bde80
-ms.lasthandoff: 03/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 065b1fcb25d7c7845b6f26e757b36e7fb97ce013
+ms.openlocfilehash: ef4536578456c13de5afaa5cd1977d2e6b4b6bd1
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/10/2017
 
 
 ---
@@ -52,6 +53,9 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
 -   [給 IT 專業人員，適用於 Windows 10 的 Windows ADK 案例](https://technet.microsoft.com/library/mt280162\(v=vs.85\).aspx)  
 
 -   [下載適用於 Windows 10 的 Windows ADK](https://msdn.microsoft.com/windows/hardware/dn913721.aspx#adkwin10)  
+
+-   [Windows 10 的支援](/sccm/core/plan-design/configs/support-for-windows-10)  
+
 
 ### <a name="user-state-migration-tool-usmt"></a>使用者狀態移轉工具 (USMT)  
  Configuration Manager 會使用包含 USMT 10 來源檔案的 USMT 套件來擷取使用者狀態，並將其還原為作業系統部署的一部分。 Configuration Manager 安裝程式會自動在頂層站台建立 USMT 套件。 USMT 10 可以從 Windows 7、Windows 8、Windows 8.1 及 Windows 10 擷取使用者狀態。 USMT 10 發佈於適用於 Windows 10 的 Windows 評定及部署套件 (Windows ADK) 中。  

@@ -2,7 +2,7 @@
 title: "部署 Mac 用戶端 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中將用戶端部署至 Mac 電腦。"
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: aaroncz
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 12
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: 9cab5b91a94e8bf2ad96a8a706f46c58e2a3d712
-ms.lasthandoff: 03/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6a6137fa978e1ea28aefea2aea4e29ba661efd6
+ms.openlocfilehash: 6ce212c6745b70a47553891e5dbc124b4c4e50fa
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -34,7 +35,10 @@ ms.lasthandoff: 03/21/2017
 
 -   利用 [CMEnroll 工具](#install-the-client-and-then-enroll-the-client-certificate-on-the-mac)使用 Configuration Manager 註冊。 註冊程序不支援自動憑證更新，所以您必須在安裝的憑證到期前，先重新註冊 Mac 電腦。    
 
--   [使用與 Configuration Manager 無關的憑證要求和安裝方法](#use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager)。  
+-   [使用與 Configuration Manager 無關的憑證要求和安裝方法](#use-a-certificate-request-and-installation-method-that-is-independent-from-configuration-manager)。 
+
+>[!IMPORTANT]
+>  若要將用戶端部署到執行 macOS Sierra 的裝置上，必須正確設定管理點憑證的「主體名稱」，例如，使用管理點伺服器的 FQDN。
 
 
 ## <a name="configure-client-settings-for-enrollment"></a>設定註冊時使用的用戶端設定  
@@ -299,7 +303,7 @@ ms.lasthandoff: 03/21/2017
 
     -   **選取的設定︰**選擇 [瀏覽]，然後選取您先前指定的探索指令碼。  
 
-    -   在 **下列值** 的欄位中，輸入 **The domain/default pair of (com.microsoft.ccmclient, SMSID) does not exist**。  
+    -   在 **下列值** 的欄位中，輸入 **(com.microsoft.ccmclient SMSID) 的網域/預設值組不存在**。  
 
     -   啟用 [當此設定不相容時，執行指定的補救指令碼] 選項。  
 
@@ -322,7 +326,7 @@ ms.lasthandoff: 03/21/2017
 17. 重新啟動。  
 
 
-### <a name="see-also"></a>請參閱
+## <a name="see-also"></a>請參閱
 
 [維護 Mac 用戶端](/sccm/core/clients/manage/maintain-mac-clients)
 

@@ -2,7 +2,7 @@
 title: "內容管理基礎 | Microsoft Docs"
 description: "請使用 System Center Configuration Manager 中的工具和選項來管理您部署的內容。"
 ms.custom: na
-ms.date: 3/15/2017
+ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 238e460885b6490b3744690640f9ff040902b35f
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
+ms.openlocfilehash: f73dde64e0e8a0fc49f45b3afb3b8f00c926a820
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -29,9 +30,12 @@ ms.lasthandoff: 03/27/2017
 
 System Center Configuration Manager 支援強固的工具和選項系統，以管理您部署為應用程式、套件、軟體更新和作業系統部署的內容。  
 
- 您部署的內容會同時儲存於站台伺服器和發佈點站台系統伺服器上。 此內容在位置之間傳輸時可能需要大量網路頻寬。 若要有效規劃及使用內容管理基礎結構，建議您了解可用的選項與設定，然後考量如何使用才能最滿足您的網路環境和內容部署需求。  
+您部署的內容會同時儲存於站台伺服器和發佈點站台系統伺服器上。 此內容在位置之間傳輸時可能需要大量網路頻寬。 若要有效規劃及使用內容管理基礎結構，建議您了解可用的選項與設定，然後考量如何使用才能最滿足您的網路環境和內容部署需求。  
 
-以下是內容管理的重要概念。 當概念需要其他資訊或複雜資訊時，便會提供連結將您導向那些詳細資料。  
+> [!TIP]    
+> 您可以深入了解內容發佈程序，以及找到診斷與解決一般內容發佈問題的說明。 請參閱 support.microsoft.com 的[了解及針對 Microsoft Configuration Manager 中的內容發佈進行疑難排解 (英文)](https://support.microsoft.com/help/4000401/content-distribution-in-mcm)。
+
+以下是內容管理的重要概念。 當概念需要其他資訊或複雜資訊時，便會提供連結將您導向那些詳細資料。
 
 ## <a name="accounts-used-for-content-management"></a>用於內容管理的帳戶  
  下列帳戶可用於內容管理：  

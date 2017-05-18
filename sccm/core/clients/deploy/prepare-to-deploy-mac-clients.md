@@ -2,7 +2,7 @@
 title: "準備將用戶端軟體部署到 Mac | Microsoft Docs"
 description: "先完成設定工作，再將 Configuration Manager 用戶端部署至 Mac。"
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: aaroncz
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 12
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 0900e45115f02861c33fe2abdb046d11fdef3474
-ms.openlocfilehash: 9f51c15adaa850eb8343601ddcd13046480fc9c0
-ms.lasthandoff: 01/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6a6137fa978e1ea28aefea2aea4e29ba661efd6
+ms.openlocfilehash: b3bb72f81812705b4654e268025074402e89a7cb
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/04/2017
 
 
 ---
@@ -100,6 +101,9 @@ Web 伺服器憑證必須包含網站系統內容中指定的網際網路 FQDN�
  如需建立及安裝管理點用戶端憑證的部署範例，請參閱[部署 Windows 電腦的用戶端憑證](../../plan-design/network/example-deployment-of-pki-certificates.md#BKMK_client2008_cm2012)。  
 
  如需建立及安裝管理點用戶端憑證的部署範例，請參閱[部署發佈點的用戶端憑證](../../plan-design/network/example-deployment-of-pki-certificates.md#BKMK_clientdistributionpoint2008_cm2012)。  
+
+>[!IMPORTANT]
+>  若要將用戶端部署到執行 macOS Sierra 的裝置上，必須正確設定管理點憑證的「主體名稱」，例如，使用管理點伺服器的 FQDN。
 
 ## <a name="prepare-the-client-certificate-template-for-macs"></a>準備 Mac 的用戶端憑證範本  
 

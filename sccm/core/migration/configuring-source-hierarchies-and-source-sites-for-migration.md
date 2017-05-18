@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 96bfa443cd2894bb1c46322cd5f984071916d9a6
-ms.openlocfilehash: 6942f4d74303d8ade8add6cc81da872648f208be
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c5a58d79f81ccdf19ad88dc932e3a52eac2c18ab
+ms.openlocfilehash: 80c43ab93ee5a2de6bf8d7993dfd46f0005d2df8
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/09/2017
 
 
 ---
@@ -37,7 +39,7 @@ ms.openlocfilehash: 6942f4d74303d8ade8add6cc81da872648f208be
 
 -   [識別來源階層的其他來源站台](#BKBM_ConfigSrcSites)  
 
-##  <a name="a-namebkbmconfigsrchierarchya-specify-a-source-hierarchy-for-migration"></a><a name="BKBM_ConfigSrcHierarchy"></a> 指定移轉的來源階層  
+##  <a name="BKBM_ConfigSrcHierarchy"></a> 指定移轉的來源階層  
  若要將資料移轉到目的地階層，您必須指定支援的來源階層，該階層內含您要移轉的資料。 根據預設，該階層的頂層站台會成為來源階層的來源站台。 如果您從 Configuration Manager 2007 階層移轉，在從初始來源站台收集資料後，可以設定其他用於移轉的來源站台。 如果您從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 階層移轉，就不需要設定其他從來源階層移轉資料的來源站台。 這是因為 Configuration Manager 的這些版本會使用可在來源階層頂層站台使用的共用資料庫。 共用資料庫含有所有您可以移轉的資訊。  
 
  使用下列程序指定移轉的來源階層，以及識別 Configuration Manager 2007 階層中的其他來源站台。  
@@ -58,7 +60,7 @@ ms.openlocfilehash: 6942f4d74303d8ade8add6cc81da872648f208be
 
 6.  指定具有下列權限的來源站台存取帳戶：  
 
-    -   來源站台帳戶：來源階層中指定頂層站台之 SMS 提供者的 [讀取]  權限。  
+    -   來源站台帳戶：來源階層中指定頂層站台之 SMS 提供者的 [讀取]  權限。 發佈點共用及升級需要在來源階層中具有該站台的「修改」和「刪除」權限。
 
     -   來源站台資料庫帳戶：來源階層中指定頂層站台之 SQL Server 資料庫的 [讀取]  和 [執行]  權限。  
 
@@ -70,7 +72,7 @@ ms.openlocfilehash: 6942f4d74303d8ade8add6cc81da872648f208be
 
 9. 完成資料收集時，請按一下 [關閉]  以關閉 [資料收集狀態]  對話方塊，並完成設定。  
 
-##  <a name="a-namebkbmconfigsrcsitesa-identify-additional-source-sites-of-the-source-hierarchy"></a><a name="BKBM_ConfigSrcSites"></a> 識別來源階層的其他來源站台  
+##  <a name="BKBM_ConfigSrcSites"></a> 識別來源階層的其他來源站台  
  當您設定支援的來源階層時，會將該階層的頂層站台自動設定為來源站台，並自動從該站台收集資料。 您應採取的下一個動作，取決於來源階層所執行的 Configuration Manager 版本：  
 
 -   對於 Configuration Manager 2007 來源階層，在完成初始來源站台的資料收集後，您可以開始只從該初始來源站台進行移轉，或者設定來源階層的其他來源站台。 若要移轉只能從子站台使用的資料，請為 Configuration Manager 2007 階層設定其他來源站台。 例如，您可以將其他來源站台設定為，當您要移轉的內容是在來源階層中的子站台建立，而且無法在來源階層的頂層站台使用時，即收集關於該內容的資料。  
@@ -93,7 +95,7 @@ ms.openlocfilehash: 6942f4d74303d8ade8add6cc81da872648f208be
 
 5.  在 [來源站台認證]  對話方塊中，針對來源站台存取帳戶指定具有下列權限的帳戶：  
 
-    -   來源站台帳戶：來源階層中指定頂層站台之 SMS 提供者的 [讀取]  權限。  
+    -   來源站台帳戶：來源階層中指定頂層站台之 SMS 提供者的 [讀取]  權限。 發佈點共用及升級需要在來源階層中具有該站台的「修改」和「刪除」權限。  
 
     -   來源站台資料庫帳戶：來源階層中指定頂層站台之 SQL Server 資料庫的 [讀取]  和 [執行]  權限。  
 
@@ -104,9 +106,4 @@ ms.openlocfilehash: 6942f4d74303d8ade8add6cc81da872648f208be
 7. 按一下 [確定]  儲存設定。 此時會開啟 [資料收集狀態]  對話方塊，並會自動開始收集資料。  
 
 8.  當完成資料收集時，可按一下 [關閉]  完成設定。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

@@ -2,7 +2,7 @@
 title: "測試進入生產階段前集合的用戶端升級 | Microsoft Docs"
 description: "在 System Center Configuration Manager 中測試進入生產階段前集合的用戶端升級。"
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 05/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
-ms.openlocfilehash: 7edd3e46b4813dd50df7d01b367f8e73bb350a7d
-ms.lasthandoff: 04/24/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
+ms.openlocfilehash: 572ef13883f7930e69ec1f1f53c9bfe029898c81
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/05/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.lasthandoff: 04/24/2017
 
 2.  安裝包含新版用戶端的 Configuration Manager 更新。  
 
-3.  將新用戶端升級到生產環境。  
+3.  將新用戶端升階到生產環境。  
 
 ##  <a name="to-configure-automatic-client-upgrades-to-use-a-pre-production-collection"></a>設定自動升級用戶端使用進入生產階段前集合  
 
@@ -86,4 +87,5 @@ ms.lasthandoff: 04/24/2017
 
 >[!NOTE]
 >若要啟用生產階段前用戶端，或是將生產階段前用戶端升級為生產階段用戶端，您的帳戶必須是針對 [更新套件] 物件具有「讀取」和「修改」權限的安全性角色成員。
+>用戶端升級會遵循您所設定的任何 Configuration Manager 維護時段。
 
