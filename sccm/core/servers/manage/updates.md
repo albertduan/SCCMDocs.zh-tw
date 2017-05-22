@@ -2,7 +2,7 @@
 title: "更新 | Microsoft Docs"
 description: "了解稱為**更新和服務**的主控台內服務方式，可讓您輕鬆尋找並安裝建議的更新。"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: bd72d17e463cb65e79b78613b631b0267b2b26a0
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: a33960fb89b71c0f8128e21a5054f5b63cfc6b17
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -48,7 +49,7 @@ System Center Configuration Manager 使用稱為**更新和服務**的主控台�
 
 
 ##  <a name="bkmk_Baselines"></a> 基準和更新版本  
- System Center Configuration Manager 最新分支的初次發行為版本 1511，該版本為基準版本。 較新的基準版本為 1606。
+ System Center Configuration Manager 最新分支的初次發行為版本 1511，該版本為基準版本。 較近期的基準版本包括 1606 版和 1702 版：
 
 -   在新階層中安裝新的站台時，請使用最新的基準版本。  
 
@@ -76,7 +77,7 @@ System Center Configuration Manager 使用稱為**更新和服務**的主控台�
 
 |版本 |可用時間|[支援結束日期](/sccm/core/servers/manage/current-branch-versions-supported) |基準|主控台內更新|  
 |-------------|-----------|------------|--------------|------------------------|  
-|[1702](/sccm/core/plan-design/changes/whats-new-in-version-1702)<br /><br /> 5.00.8498.1000|2017 年 3 月 27 日| 2018 年 3 月 27 日|否|是|
+|[1702](/sccm/core/plan-design/changes/whats-new-in-version-1702)<br /><br /> 5.00.8498.1000|2017 年 3 月 27 日| 2018 年 3 月 27 日|是|是|
 |[1610](/sccm/core/plan-design/changes/whats-new-in-version-1610)<br /><br /> 5.00.8458.1000|11/18/2016| 11/18/2017|否|是|
 |[1606](/sccm/core/plan-design/changes/whats-new-in-version-1606)<br /><br /> 5.00.8412.1000|7/22/2016| 7/22/2017|否|是|
 |[1606](/sccm/core/plan-design/changes/whats-new-in-version-1606) 與 1606 Hotfix 彙總套件 (KB3186654) </br></br>5.00.8412.1307 *(注意 1)* |10/12/2016| 7/22/2017|是|否|

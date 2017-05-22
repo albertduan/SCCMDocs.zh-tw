@@ -2,7 +2,7 @@
 title: "Configuration Manager 2012 的變更 | Microsoft Docs "
 description: "識別 System Center Configuration Manager 與 System Center 2012 Configuration Manager 中的變更與新功能。"
 ms.custom: na
-ms.date: 12/30/2016
+ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 51
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 6b1a4584ebcd4dadd983677b714486402c93e190
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
+ms.openlocfilehash: 0a3eb93a99533a1569d8f72ca01d6dfcdc75da20
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/03/2017
 
 
 ---
@@ -38,7 +39,7 @@ ms.lasthandoff: 03/27/2017
 -   不同於 Configuration Manager 2007 或 System Center 2012 Configuration Manager 等舊版，產品名稱中不使用年份或產品識別碼。
 
 -   支援累加式產品中更新 (也稱為更新版本)。 初始版本為版本 1511。 後續版本透過主控台內更新的方式於一年中發行數次 (例如版本 1610)。
--   使用基準版本進行安裝。 雖然 1511 是原始的基準版本，但新的基準版本會不時發行 (例如 1606)。 基準版本可用來安裝新的 System Center Configuration Manager 站台和階層，或從支援的 Configuration Manager 2012 版本進行升級。
+-   使用基準版本進行安裝。 雖然 1511 是原始的基準版本，但新的基準版本會不定時發行，例如 1702。 基準版本可用來安裝新的 System Center Configuration Manager 站台和階層，或從支援的 Configuration Manager 2012 版本進行升級。
 
 
 
@@ -49,7 +50,7 @@ ms.lasthandoff: 03/27/2017
  某些版本只以現有站台的更新形式提供 (從 Configuration Manager 主控台內)，無法用來安裝新的 Configuration Manager 站台。   
 例如，1610 更新只能從 Configuration Manager 主控台內取得。 它是用來更新已執行某版本的 System Center Configuration Manager 的站台。
 
-更新版本也會定期發行為新的基準版本 (例如更新 1606)。 這種更新可以用來安裝新的階層而不需要從較舊的基準版本 (例如 1511) 開始，也無須升級至最新版本。
+另外，也會定期發行更新版本做為新的基準版本，例如更新 1702。 這種更新可以用來安裝新的階層而不需要從較舊的基準版本 (例如 1511) 開始，也無須升級至最新版本。
 
 
 如需使用更新的詳細資訊，請參閱 [Updates for System Center Configuration Manager](../../../core/servers/manage/updates.md) (System Center Configuration Manager 的更新)。  
