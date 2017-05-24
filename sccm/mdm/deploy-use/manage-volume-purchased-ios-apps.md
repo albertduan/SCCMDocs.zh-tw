@@ -2,7 +2,7 @@
 title: "管理大量採購的 iOS 應用程式 | Microsoft Docs"
 description: "部署、管理和追蹤透過 iOS 應用程式市集購買的應用程式授權。"
 ms.custom: na
-ms.date: 03/28/2017
+ms.date: 05/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
-ms.openlocfilehash: a63acf0d80edba1e965ba8ea99fe90edb8aa2faf
-ms.lasthandoff: 03/28/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6a6137fa978e1ea28aefea2aea4e29ba661efd6
+ms.openlocfilehash: 55f1204b088a7b636a90561f20aa41c7de72bc05
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/04/2017
 
 ---
 # <a name="manage-volume-purchased-ios-apps-with-system-center-configuration-manager"></a>Manage volume-purchased iOS apps with System Center Configuration Manager
@@ -112,7 +113,7 @@ ms.lasthandoff: 03/28/2017
 
  當您從 [市集應用程式的授權資訊] 節點建立應用程式時，該應用程式會和來自所選取應用程式權仗的授權相關聯。  例如，您可能會在該節點中看到相同的應用程式有兩種版本。 這是因為應用程式的每個版本都與不同的 Apple VPP 權杖相關聯。  接下來，您可以從每個權杖建立應用程式，然後個別予以部署。
 
- 若要回收授權，您必須變更部署動作為 [解除安裝] 。 解除安裝應用程式之後，即會回收授權。  
+ 若要回收授權，您必須使用 [解除安裝] 部署動作，針對該應用程式建立新的部署。 您無法變更原始部署中的部署動作。 解除安裝應用程式之後，即會回收授權。  
 
 ## <a name="step-3---monitor-ios-vpp-apps"></a>步驟 3 - 監視 iOS VPP 應用程式  
  [軟體程式庫] 工作區的 [License Information for Store Apps]\(市集應用程式的授權資訊) 節點中，會顯示您大量購買的 iOS 應用程式相關資訊。 這些資訊包括您所擁有之每個應用程式的授權總數及已部署的數量。 此外，檢視會顯示和該應用程式相關聯的 VPP 權杖和權杖類型
