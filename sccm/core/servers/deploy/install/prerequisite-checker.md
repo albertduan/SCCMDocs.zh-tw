@@ -50,8 +50,8 @@ ms.lasthandoff: 05/17/2017
 
 1.  在 Windows 檔案總管中，前往下列其中一個位置：  
 
-    -   **&lt;*Configuration Manager 安裝媒體*\>\SMSSETUP\BIN\X64**  
-    -   **&lt;Configuration Manager 安裝路徑**\>\BIN\X64**  
+    -   &lt;Configuration Manager 安裝媒體\>\SMSSETUP\BIN\X64  
+    -   &lt;Configuration Manager 安裝路徑\>\BIN\X64  
 
 2.  將下列檔案複製到另一部電腦的目的地資料夾：  
 
@@ -65,8 +65,8 @@ ms.lasthandoff: 05/17/2017
 
 1.  在 Windows 檔案總管中，前往下列其中一個位置：  
 
-    -   **&lt;Configuration Manager 安裝媒體**\>\SMSSETUP\BIN\X64**  
-    -   **&lt;Configuration Manager 安裝路徑**\>\BIN\X64**  
+    -   &lt;Configuration Manager 安裝媒體\>\SMSSETUP\BIN\X64  
+    -   &lt;Configuration Manager 安裝路徑\>\BIN\X64  
 
 2.  執行 **prereqchk.exe** ，以啟動必要條件檢查程式。   
     必要條件檢查工具會偵測現有網站，如果找到的話，會執行升級整備程度檢查。 如果未找到網站，則會執行所有檢查。 [網站類型]  欄提供與規則相關聯的網站伺服器或網站系統資訊。  
@@ -75,8 +75,8 @@ ms.lasthandoff: 05/17/2017
 
 1.  開啟 [命令提示字元] 視窗，並將目錄變更為下列其中一個位置：  
 
-    -   **&lt;Configuration Manager 安裝媒體**\>\SMSSETUP\BIN\X64**  
-    -   **&lt;Configuration Manager 安裝路徑**\>\BIN\X64**  
+    -   &lt;Configuration Manager 安裝媒體\>\SMSSETUP\BIN\X64  
+    -   &lt;Configuration Manager 安裝路徑\>\BIN\X64  
 
 2.  輸入  **prereqchk.exe /LOCAL** 以啟動必要條件檢查程式，並在伺服器上執行所有必要條件檢查。  
 
@@ -84,8 +84,8 @@ ms.lasthandoff: 05/17/2017
 
 1.  開啟 [命令提示字元] 視窗，並將目錄變更為下列其中一個位置：  
 
-    -   **&lt;Configuration Manager 安裝媒體**\>\SMSSETUP\BIN\X64**  
-    -   **&lt;Configuration Manager 安裝路徑**\>\BIN\X64**  
+    -   &lt;Configuration Manager 安裝媒體\>\SMSSETUP\BIN\X64  
+    -   &lt;Configuration Manager 安裝路徑\>\BIN\X64  
 
 2.  輸入 **prereqchk.exe**，並加上一個或多個下列命令列選項。  
 
@@ -115,7 +115,7 @@ ms.lasthandoff: 05/17/2017
 
          不需要。 確認防火牆例外狀況有效，可允許 SQL Server Service Broker (SSB) 連接埠上的通訊。 預設 SSB 連接埠為 4022。  
 
-    -   **InstallDir &lt;Configuration Manager 安裝路徑**>**  
+    -   **InstallDir &lt;Configuration Manager 安裝路徑>****  
 
          不需要。 確認符合站台安裝的最小磁碟空間需求。  
 
@@ -153,7 +153,7 @@ ms.lasthandoff: 05/17/2017
 
          不需要。 確認防火牆例外狀況有效，可允許 SSB 連接埠上的通訊。 預設 SSB 連接埠為 4022。  
 
-    -   **InstallDir &lt;Configuration Manager 安裝路徑**>**  
+    -   **InstallDir &lt;Configuration Manager 安裝路徑>****  
 
          不需要。 確認符合站台安裝的最小磁碟空間需求。  
 
@@ -179,7 +179,7 @@ ms.lasthandoff: 05/17/2017
 
          不需要。 確認防火牆例外狀況有效，可允許 SQL Server 服務連接埠的通訊，而且沒有其他具名 SQL Server 執行個體正在使用該連接埠。 預設的連接埠為 1433。  
 
-    -   **InstallDir &lt;Configuration Manager 安裝路徑**>**  
+    -   **InstallDir &lt;Configuration Manager 安裝路徑>****  
 
          不需要。 確認符合站台安裝的最小磁碟空間需求。  
 
