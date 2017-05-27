@@ -15,10 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: b330c97a0853d1673f1cf7e0691891b72407fa51
-ms.lasthandoff: 03/27/2017
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1701-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1701 中的功能
@@ -125,12 +126,10 @@ ms.lasthandoff: 03/27/2017
 
   將設定名稱 *FairFaxAuthorityResource* 的值變更為等於 "https://login.microsoftonline.com/"
 
-  - **原始：**
-    &lt;設定名稱="FairFaxAuthorityResource" serializeAs="String">   
+  - **原始：**&lt;設定名稱="FairFaxAuthorityResource" serializeAs="String">   
     &lt;>&lt;/value>
 
-    - **已編輯：**
-    &lt;設定名稱="FairFaxAuthorityResource" serializeAs="String">   
+    - **已編輯：**&lt;設定名稱="FairFaxAuthorityResource" serializeAs="String">   
     &lt;值>https://login.microsoftonline.com/&lt;/值>
 
 2.    儲存具有這兩項變更的檔案之後，請重新啟動相同電腦上的 Configuration Manager 主控台，然後使用該主控台來安裝 OMS 連接器。 若要安裝連接器，請使用[將資料從 Configuration Manager 同步處理至 Microsoft Operations Management Suite](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) 中的資訊，然後選取 Microsoft Azure Government 雲端上的 [Operations Management Suite 工作區]。

@@ -14,10 +14,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 2f1bc62a4695d60dc4679e479797ee84cd4ddee4
-ms.lasthandoff: 03/27/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
+ms.openlocfilehash: 14b4172ad713a3981b8a5abe182405e271d78c26
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="use-the-setup-wizard-to-install-system-center-configuration-manager-sites"></a>使用 [安裝精靈] 安裝 System Center Configuration Manager 站台
@@ -310,7 +311,7 @@ ms.lasthandoff: 03/27/2017
     > [!IMPORTANT]  
     > 當 Configuration Manager 安裝 SQL Server Express 時，它會安裝不含 Service Pack 的 SQL Server Express 2012：  
 
-    > -   針對要支援的次要站台，在安裝之後，您必須安裝 Service Pack 2 (或更新版本) 來升級 SQL Server Express 2012。
+    > -   針對要支援的次要站台，在安裝之後，您必須將 SQL Server Express 2012 升級至[支援的版本](/sccm/core/plan-design/configs/support-for-sql-server-versions#bkmk_SQLVersions)。
     > -   此外，如果新的次要站台安裝無法完成，但先完成了 SQL Server Express 2012 的安裝，則必須先更新 SQL Server Express 的執行個體，Configuration Manager 才可順利重試次要站台的安裝。  
 
      **使用現有 SQL Server 執行個體**  

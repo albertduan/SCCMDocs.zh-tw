@@ -2,7 +2,7 @@
 title: "支援的 SQL Server 版本 | Microsoft Docs"
 description: "取得裝載 System Center Configuration Manager 站台資料庫的 SQL Server 版本和設定需求。"
 ms.custom: na
-ms.date: 05/01/2017
+ms.date: 05/10/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d5a6fdc9a526c4fc3a9027dcedf1dd66a6fff5a7
-ms.openlocfilehash: fa7f232fd385f742bb11c6596c954d87c2da87a8
+ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
+ms.openlocfilehash: 4166560602edf6eb299511c8b59dc3903e3bfffc
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/02/2017
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -45,14 +45,19 @@ ms.lasthandoff: 05/02/2017
 -   SQL Server 叢集。 請參閱[使用 SQL Server 叢集裝載站台資料庫](../../../core/servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database.md)。
 -   SQL Server AlwaysOn 可用性群組。 此選項需要 Configuration Manager 1602 或更新版本。 如需詳細資訊，請參閱[適用於 System Center Configuration Manager 之高可用性站台資料庫的 SQL Server AlwaysOn](../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)。
 
-> [!NOTE]  
->  在網路負載平衡 (NLB) 叢集設定中不支援 SQL Server 叢集。 此外，也不支援 SQL Server 資料庫鏡像技術和點對點複寫。 僅支援將 SQL Server 標準異動複寫用於將物件複寫至設定為使用 [資料庫複本](https://technet.microsoft.com/library/mt608546.aspx)的管理點。  
-
 
  **次要站台：**  
  站台資料庫可以使用預設的完整 SQL Server 安裝執行個體，或是使用 SQL Server Express。  
 
  SQL Server 必須位於站台伺服器電腦上。  
+
+ **支援上的限制**   
+ 不支援下列設定：
+ -   網路負載平衡 (NLB) 叢集設定中的 SQL Server 叢集
+ -   叢集共用磁碟區 (CSV) 上的 SQL Server 叢集
+ -   SQL Server 資料庫鏡像技術，以及點對點複寫
+
+僅支援將 SQL Server 異動複寫用於將物件複寫至設定為使用[資料庫複本](https://technet.microsoft.com/library/mt608546.aspx)的管理點。  
 
 ##  <a name="bkmk_SQLVersions"></a> 支援的 SQL Server 版本  
  在具有多個站台的階層中，只要符合下列條件，不同站台就可以使用不同版本的 SQL Server 來裝載站台資料庫：
@@ -109,14 +114,14 @@ ms.lasthandoff: 05/02/2017
 -   主要站台  
 -   次要站台  
 
+<!-- Support for this service pack version has been dropped by Microsoft    
+### SQL Server 2012 SP2: Standard, Enterprise   
+ You can use this version of SQL Server with no minimum cumulative update version for the following:  
 
-### <a name="sql-server-2012-sp2-standard-enterprise"></a>SQL Server 2012 SP2：Standard、Enterprise   
- 您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
-
--   管理中心網站  
--   主要站台  
--   次要站台  
-
+-   A central administration site  
+-   A primary site  
+-   A secondary site  
+-->
 
 ### <a name="sql-server-2008-r2-sp3-standard-enterprise-datacenter"></a>SQL Server 2008 R2 SP3：Standard、Enterprise、Datacenter     
   [從 1702 版開始](/sccm/core/plan-design/changes/removed-and-deprecated-features#deprecated-support-for-sql-server-versions-as-a-site-database)，不支援此版本的 SQL Server。  
@@ -155,10 +160,13 @@ ms.lasthandoff: 05/02/2017
 
 -   次要站台  
 
-### <a name="sql-server-2012-express-sp2"></a>SQL Server 2012 Express SP2   
- 您可以針對下列各項使用這個不含最低累計更新版本的 SQL Server 版本：  
+<!-- Support for this service pack version has been dropped by Microsoft   
+### SQL Server 2012 Express SP2   
+ You can use this version of SQL Server with no minimum cumulative update version for the following:  
 
--   次要站台  
+-   A secondary site  
+-->
+
 
 ##  <a name="bkmk_SQLConfig"></a> 必要的 SQL Server 組態  
  以下是您用於站台資料庫的所有 SQL Server 安裝 (包括 SQL Server Express) 的必要設定。 如果 Configuration Manager 在安裝次要站台時一併安裝 SQL Server Express，就會自動為您建立這些設定。  

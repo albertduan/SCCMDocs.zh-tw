@@ -13,10 +13,11 @@ ms.assetid: 409e26e1-7716-4f1d-a0ee-34feabf20792
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: 4616ebb84ae63acbe6af892918aa2dd1a0be4825
-ms.lasthandoff: 05/03/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f4cb711f369698fe8e045f8c83dd96ec6fb29d70
+ms.openlocfilehash: a2954b3c6f9a09b7246347e780c4cfc49ba39ca1
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 1702 版的新功能
@@ -172,8 +173,8 @@ System Center Configuration Manager Update 1702 最新分支以主控台內更�
 ### <a name="hardware-inventory-collects-uefi-information"></a>硬體清查會收集 UEFI 資訊
 新的硬體清查類別 (**SMS_Firmware**) 和屬性 (**UEFI**) 都可以協助您判斷是否以 UEFI 模式啟動電腦。 以 UEFI 模式啟動電腦時，**UEFI** 屬性設為 [TRUE]。 在硬體清查中，預設會啟用此項目。 如需硬體清查的詳細資訊，請參閱[如何設定硬體清查](/sccm/core/clients/manage/inventory/configure-hardware-inventory)。
 
-### <a name="improvements-to-software-center-settings-and-notification-messages-for-high-impact-task-sequences"></a>具有強烈影響之工作順序的軟體中心設定和通知訊息的改善
-這個版本包括具有強烈影響之部署工作順序的軟體中心設定和通知訊息的下列改善：
+### <a name="improvements-to-software-center-warning-messages-for-high-impact-task-sequences"></a>改善針對具有強烈影響之工作順序的軟體中心警告訊息
+這個版本針對具有強烈影響之部署工作順序的軟體中心警告訊息，包括了下列改善：
 
 - 在工作順序的內容中，您現在可以將任何工作順序 (包括非作業系統工作順序) 設定為高風險部署。 任何符合特定條件的工作順序都會自動定義為具有強烈影響。 如需詳細資料，請參閱[管理高風險部署](/sccm/protect/understand/settings-to-manage-high-risk-deployments)。
 - 在工作順序的內容中，您可以選擇使用預設通知訊息，或建立您自己的自訂通知訊息來進行具有強烈影響的部署。

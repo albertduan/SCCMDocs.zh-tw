@@ -16,8 +16,8 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 4eee9731a4a27328c47c0d15931cab28cf520a18
-ms.openlocfilehash: 555da7187b505a926731350d16787bc02d28dad3
+ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
+ms.openlocfilehash: 5b5eadd7b4026eae59acceaef43cdacd7a33d3ac
 ms.contentlocale: zh-tw
 ms.lasthandoff: 05/17/2017
 
@@ -39,7 +39,7 @@ ms.lasthandoff: 05/17/2017
     您必須先完成[設定混合式行動裝置管理](../../mdm/deploy-use/setup-hybrid-mdm.md)的步驟 (包括[支援 iOS 註冊的步驟](../deploy-use/enroll-hybrid-ios-mac.md)) 之後，才能註冊 iOS 裝置註冊計畫 (DEP) 的裝置。
 
 2.  **建立 DEP 權杖要求**   
-    在 Configuration Manager 主控台的 [系統管理] 工作區中，依序展開 [階層設定]、[雲端服務]，然後按一下 [Windows Intune 訂閱]。 在 [首頁] 索引標籤上按一下 [建立 DEP 權杖要求]，按一下 [瀏覽] 指定 DEP 權杖要求的下載位置，然後按一下 [下載]。 將 DEP 權杖要求 (.pem) 檔案儲存在本機。 這個 .pem 檔案會用於向 Apple 裝置註冊計畫入口網站要求信任的權杖 (.p7m)。  
+    在 Configuration Manager 主控台的 [系統管理] 工作區中，依序展開 [階層設定]、[雲端服務]，然後按一下 [Microsoft Intune 訂閱]。 在 [首頁] 索引標籤上按一下 [建立 DEP 權杖要求]，按一下 [瀏覽] 指定 DEP 權杖要求的下載位置，然後按一下 [下載]。 將 DEP 權杖要求 (.pem) 檔案儲存在本機。 這個 .pem 檔案會用於向 Apple 裝置註冊計畫入口網站要求信任的權杖 (.p7m)。  
 
 3.  **取得裝置註冊計畫權杖**   
     移至 [裝置註冊計畫入口網站](https://deploy.apple.com) (https://deploy.apple.com) ，並使用公司的 Apple ID 登入。 未來必須使用這個 Apple 識別碼來更新 DEP 權杖。  
@@ -55,7 +55,7 @@ ms.lasthandoff: 05/17/2017
      此憑證 (.p7m) 檔案會用於建立 Intune 與 Apple 裝置註冊程式伺服器之間的信任關係。  
 
 4.  **將 DEP 權杖新增至 Configuration Manager**   
-    在 Configuration Manager 主控台的 [系統管理] 工作區中，展開 [階層設定]，然後按一下 [Windows Intune 訂閱]。 在 [首頁] 索引標籤上按一下 [設定平台]，然後按一下 [iOS]。 選取 [啟用裝置註冊計畫] ，瀏覽至憑證 (.p7m) 檔案，依序按一下 [開啟]、[上傳] 及 [確定]。  
+    在 Configuration Manager 主控台的 [系統管理] 工作區中，展開 [階層設定]，然後按一下 [Microsoft Intune 訂閱]。 在 [首頁] 索引標籤上按一下 [設定平台]，然後按一下 [iOS]。 選取 [啟用裝置註冊計畫] ，瀏覽至憑證 (.p7m) 檔案，依序按一下 [開啟]、[上傳] 及 [確定]。  
 
 #### <a name="set-up-enrollment-for-apple-device-enrollment-program-dep-ios-devices"></a>針對 Apple 裝置註冊方案 (DEP) iOS 裝置設定註冊  
 

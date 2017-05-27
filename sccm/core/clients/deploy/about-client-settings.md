@@ -17,8 +17,8 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 4eee9731a4a27328c47c0d15931cab28cf520a18
-ms.openlocfilehash: d1d2ec7c053d13ebaeb00d0dfeb126716b5f7ae5
+ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
+ms.openlocfilehash: 3d90f16eac59b7069ff2f33170eba85d2cde65ef
 ms.contentlocale: zh-tw
 ms.lasthandoff: 05/17/2017
 
@@ -215,9 +215,9 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
      如果已在電腦上設定 BitLocker PIN 項目，此選項可以在軟體安裝後重新啟動電腦時，略過輸入 PIN 的需求。  
 
-    -   **永遠**：Configuration Manager 會在安裝需要重新啟動的軟體，以及起始電腦重新啟動後暫停在下一次電腦啟動時輸入 PIN 的 BitLocker 需求。 此設定僅適用於由 Configuration Manager 起始的電腦重新啟動，並且於使用者重新啟動電腦時，不會暫停輸入 BitLocker PIN 的需求。 BitLocker PIN 輸入需求會在 Windows 啟動後繼續作用。  
+    -   **永遠**：Configuration Manager 在安裝需要重新啟動的軟體並起始電腦的重新啟動後，會短暫地暫止 BitLocker。 此設定只會套用在由 Configuration Manager 起始的電腦重新啟動。針對使用者重新啟動電腦的狀況，則不會暫止輸入 BitLocker PIN 的需求。 BitLocker PIN 輸入需求會在 Windows 啟動後繼續作用。
 
-    -   **永不**：在下一次安裝需要重新啟動的軟體後電腦啟動時，Configuration Manager 不會暫停輸入 PIN 的 BitLocker 需求。 在此案例中，除非使用者輸入 PIN 完成標準啟動程序及載入 Windows，否則無法完成軟體安裝。  
+    -   **永不**：Configuration Manager 在安裝需要重新啟動的軟體後，在下一次電腦啟動時不會暫止 BitLocker。 在此案例中，除非使用者輸入 PIN 完成標準啟動程序及載入 Windows，否則無法完成軟體安裝。
 
 -   **其他軟體會管理應用程式和軟體更新的部署**  
 

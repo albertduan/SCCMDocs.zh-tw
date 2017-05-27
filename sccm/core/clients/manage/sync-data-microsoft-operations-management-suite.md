@@ -15,10 +15,11 @@ caps.latest.revision: 9
 author: arob98
 ms.author: angrobe
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: 3acfaa2cf8c64ece5cef65b80372067336d6a815
-ms.lasthandoff: 03/27/2017
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 
@@ -68,7 +69,7 @@ ms.lasthandoff: 03/27/2017
 將 Configuration Manager 連結至 OMS 之後，可以新增或移除集合，以及檢視 OMS 連線的內容。
 
 ## <a name="verify-the-oms-connector-properties"></a>確認 OMS 連接器屬性
-1.    在 Configuration Manager 主控台中，移至 [系統管理] > [雲端服務]，然後選擇 [OMS 連接器] 開啟 [OMS 連線] 頁面**。
+1.    在 Configuration Manager 主控台中，移至 [系統管理] > [雲端服務]，然後選擇 [OMS 連接器] 以開啟 [OMS 連線]** 頁面。
 2.    此頁面有兩個索引標籤︰
   - **Azure Active Directory：**   
     此索引標籤會顯示您的 [租用戶]、[用戶端識別碼]、[用戶端祕密金鑰到期日]，並可讓您確認用戶端祕密金鑰是否到期。
@@ -96,12 +97,10 @@ ms.lasthandoff: 03/27/2017
 
   將設定名稱 *FairFaxAuthorityResource* 的值變更為等於 "https://login.microsoftonline.com/"
 
-  - **原始：**
-    &lt;設定名稱="FairFaxAuthorityResource" serializeAs="String">   
+  - **原始：**&lt;設定名稱="FairFaxAuthorityResource" serializeAs="String">   
     &lt;>&lt;/value>
 
-    - **已編輯：**
-    &lt;設定名稱="FairFaxAuthorityResource" serializeAs="String">   
+    - **已編輯：**&lt;設定名稱="FairFaxAuthorityResource" serializeAs="String">   
     &lt;值>https://login.microsoftonline.com/&lt;/值>
 
 2.    儲存具有這兩項變更的檔案之後，請重新啟動相同電腦上的 Configuration Manager 主控台，然後使用該主控台來安裝 OMS 連接器。 若要安裝連接器，請使用[將資料從 Configuration Manager 同步處理至 Microsoft Operations Management Suite](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) 中的資訊，然後選取 Microsoft Azure Government 雲端上的 [Operations Management Suite 工作區]。

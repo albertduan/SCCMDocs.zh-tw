@@ -15,10 +15,11 @@ caps.latest.revision: 2
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 59633ce68e2bb2d722900215751f345d6d098721
-ms.lasthandoff: 01/24/2017
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1610 中的功能
@@ -64,19 +65,19 @@ ms.lasthandoff: 01/24/2017
 #### <a name="try-it-out"></a>試試看
 若要拒絕應用程式核准要求：
 
-1.  在 Configuration Manager 主控台中，[建立和部署需要核准的應用程式](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/create-applications)。
-2.  在用戶端電腦上，開啟 [軟體中心] 並提交應用程式要求。
-3.  在 Configuration Manager 主控台中，核准應用程式要求。
-4.  拒絕核准的應用程式要求︰ 在 Configuration Manager 主控台中，巡覽 [軟體程式庫] > [概觀] > [應用程式管理] > [核准要求]，然後選取您要拒絕的應用程式要求。  在功能區中，按一下 [拒絕]。
+1.    在 Configuration Manager 主控台中，[建立和部署需要核准的應用程式](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/create-applications)。
+2.    在用戶端電腦上，開啟 [軟體中心] 並提交應用程式要求。
+3.    在 Configuration Manager 主控台中，核准應用程式要求。
+4.    拒絕核准的應用程式要求︰ 在 Configuration Manager 主控台中，巡覽 [軟體程式庫] > [概觀] > [應用程式管理] > [核准要求]，然後選取您要拒絕的應用程式要求。  在功能區中，按一下 [拒絕]。
 
 ## <a name="exclude-clients-from-automatic-upgrade"></a>排除自動升級用戶端
 Technical Preview 1610 引進新的設定，可讓您用來防止用戶端集合自動安裝更新版用戶端版本。  這適用於自動升級及其他方法，例如以軟體更新為基礎的升級、登入指令碼和群組原則。 這可用於需要在升級用戶端時更小心的電腦集合。 排除集合中的用戶端會略過安裝更新版用戶端軟體的要求。
 
 ### <a name="configure-exclusion-from-automatic-upgrade"></a>設定自動升級的排除範圍
 若要設定自動升級的排除範圍：
-1.  在 Configuration Manager 主控台中，開啟 [系統管理] > [站台設定] > [站台] 下的 [階層設定]，然後選取 [用戶端升級] 索引標籤。
-2.  選取 [Exclude specified clients from upgrade]\(排除升級指定的用戶端) 核取方塊，然後針對 [Exclusion collection]\(排除集合)，選取您要排除的集合。 您只能選取單一集合進行排除。
-3.  按一下 [確定] 以關閉並儲存設定。 然後，在用戶端更新原則之後，排除集合中的用戶端就不會再自動安裝用戶端軟體的更新。
+1.    在 Configuration Manager 主控台中，開啟 [系統管理] > [站台設定] > [站台] 下的 [階層設定]，然後選取 [用戶端升級] 索引標籤。
+2.    選取 [Exclude specified clients from upgrade]\(排除升級指定的用戶端) 核取方塊，然後針對 [Exclusion collection]\(排除集合)，選取您要排除的集合。 您只能選取單一集合進行排除。
+3.    按一下 [確定] 以關閉並儲存設定。 然後，在用戶端更新原則之後，排除集合中的用戶端就不會再自動安裝用戶端軟體的更新。
 
   ![自動升級的排除範圍設定](media/automatic_upgrade_exclusion.png)
 
@@ -129,13 +130,13 @@ Technical Preview 1610 引進新的設定，可讓您用來防止用戶端集合
 
 ### <a name="try-it-out"></a>試試看！
 
-1.  在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [合規性設定] > [設定項目]，然後建立新的**設定項目**。
-2.  輸入名稱，然後在 [未以 Configuration Manager 用戶端管理之裝置的設定] 下選取 [Windows 8.1 與 Windows 10]，然後按一下 [下一步]。
-3.  確定在 [支援的平台] 頁面上已選取 [所有 Windows 10 (64 位元)] 和 [所有 Windows 10 (32 位元)]，然後按一下 [下一步]。
-4.  選取 [Windows Defender] 設定群組，然後按一下 [下一步]。
-5.  在此頁面上設定所需的設定，然後按一下 [下一步]。
-6.  完成精靈。
-7.  將此設定項目新增至設定基準，然後將此基準部署到執行 Windows 10 11 月更新 (1511) 或更新版本的電腦。
+1.    在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [合規性設定] > [設定項目]，然後建立新的**設定項目**。
+2.    輸入名稱，然後在 [未以 Configuration Manager 用戶端管理之裝置的設定] 下選取 [Windows 8.1 與 Windows 10]，然後按一下 [下一步]。
+3.    確定在 [支援的平台] 頁面上已選取 [所有 Windows 10 (64 位元)] 和 [所有 Windows 10 (32 位元)]，然後按一下 [下一步]。
+4.    選取 [Windows Defender] 設定群組，然後按一下 [下一步]。
+5.    在此頁面上設定所需的設定，然後按一下 [下一步]。
+6.    完成精靈。
+7.    將此設定項目新增至設定基準，然後將此基準部署到執行 Windows 10 11 月更新 (1511) 或更新版本的電腦。
 
 > [!NOTE]
 > 部署設定基準時，請記得核取 [補救不符合規範的設定] 核取方塊。
@@ -146,14 +147,14 @@ Technical Preview 1610 引進新的設定，可讓您用來防止用戶端集合
 
 ### <a name="try-it-out"></a>試試看！
 
-1.  在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [裝置]。
-2.  在 [遠端裝置動作] 功能表中，選取 [Send Sync Request]\(傳送同步處理要求)。
+1.    在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [裝置]。
+2.    在 [遠端裝置動作] 功能表中，選取 [Send Sync Request]\(傳送同步處理要求)。
 
 同步處理可能需要五到十分鐘。 原則中的任何變更都會同步處理到裝置。 您可以在 [裝置] 檢視的 [Remote Sync State]\(遠端同步處理狀態) 欄中，或在裝置的 [內容] 對話方塊中，追蹤同步處理要求的狀態。
 
 ## <a name="additional-security-role-support"></a>其他安全性角色支援
 
-除了系統高權限管理員，下列內建的安全性角色現在也具備 [公司擁有的所有裝置] 節點中項目的完整存取權，包括**預先宣告的裝置**、**iOS 註冊設定檔**，以及 **Windows 註冊設定檔**：•   **資產管理員** •   **公司資源存取管理員**
+除了系統高權限管理員，下列內建的安全性角色現在也具備 [公司擁有的所有裝置] 節點中項目的完整存取權，包括 [預先宣告的裝置]、[iOS 註冊設定檔]，以及 [Windows 註冊設定檔]：•    [資產管理員] •    [公司資源存取管理員]
 
 系統仍會為**唯讀分析師**角色授與 Configuration Manager 主控台中這些區域的唯讀存取權。
 

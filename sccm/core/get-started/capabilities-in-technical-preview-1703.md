@@ -15,10 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 3eb48942c1259d2aa1b3c200fad73b39b11c0b8c
-ms.openlocfilehash: d497bd5a2971315eecdc0900f735ab2cd8b2e7bc
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f4cb711f369698fe8e045f8c83dd96ec6fb29d70
+ms.openlocfilehash: bb1b96a56db68dcea22270855b899ba3a90afd0d
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1703 中的功能
@@ -65,7 +66,7 @@ ms.lasthandoff: 03/30/2017
 3.    在 [應用程式] 檢視中，以滑鼠右鍵按一下其中一個資料行標頭，然後從清單中選取 [CI 唯一識別碼]。 您會看到清單現在顯示每個應用程式的唯一識別碼。
 4.    請注意您想要提供連結之應用程式的 **CI 唯一識別碼**，例如︰**ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**
 5.    然後，移除接在應用程式 GUID 後方的所有文字，在此案例為 **/2**。 剩下的便是您的應用程式識別碼。
-6.    最後，在前面加上 **=**，以完成建構連結。 使用上述範例，最終連結顯示如下︰**Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**。
+6.    最後，在前面加上  **=**，以完成建構連結。 使用上述範例，最終連結顯示如下︰**Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**。
 
 終端使用者可使用此連結，開啟軟體中心並直接連至您指定的應用程式。
 
@@ -141,28 +142,24 @@ Windows 10 Creators Update 引進一個簡單的轉換工具，能夠為支援 U
 
 
 ## <a name="client-settings-to-configure-windows-analytics-for-upgrade-readiness"></a>設定 Windows Analytics 進行升級整備用的用戶端設定
-自這一版起，您在搭配使用[升級整備](/sccm/core/clients/manage/upgrade/upgrade-analytics)與 Configuration Manager 時，可以使用裝置用戶端設定簡化 Windows Analytics 的設定。 Windows Analytics 會收集您的 Configuration Manager 用戶端相關遙測資料，並回報至您的 Operations Manager Suite (OMS) 工作區。 收集的遙測資料可協助您排定優先順序，為受管理的裝置決定 Windows 升級。
-
-Configuration Manager 收集的遙測資料形式為 Windows (ETW) 記錄檔的事件追蹤。 用戶端提交硬體清查時，這些記錄檔會提交至 Configuration Manager 站台。 這些檔案接著會傳輸至 OMS 工作區。 記錄傳送至 OMS 後，這些記錄檔及其資料會從您的 Configuration Manager 站台移除。
+自這一版起，您可以使用裝置用戶端設定來簡化使用 [Windows Analytics](https://www.microsoft.com/en-us/WindowsForBusiness/windows-analytics) 解決方案 (像是搭配 Configuration Manager 的[升級整備](/sccm/core/clients/manage/upgrade/upgrade-analytics)) 所需的 Windows 遙測設定。 Configuration Manager 可以從 Windows Analytics 擷取資料，根據用戶端電腦所報告的 Windows 遙測資料，提供目前環境狀態的深入解析。 Windows 遙測資料是由用戶端電腦向 Windows 遙測服務報告，相關資料後續會傳輸至 Windows Analytics 解決方案 (裝載於組織 OMS 工作區之一)。 「升級整備」是一種 Windows Analytics 解決方案，可針對受管理的裝置，協助您排定 Windows 升級的優先順序。
 
 如需 Windows 遙測設定資訊，請參閱[在您的組織中設定 Windows 遙測](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)。
 
 ### <a name="prerequisites"></a>先決條件
-- 您必須先設定您的站台，才能從 OMS 升級整備使用 Log Analytics。 如需相關資訊，請參閱最新分支內容庫中的[升級整備](/sccm/core/clients/manage/upgrade/upgrade-analytics)。
-- 用戶端必須使用硬體清查提交遙測資料。
+- 您必須將站台設定為使用「升級整備」雲端服務。 如需詳細資訊，請參閱[升級整備](/sccm/core/clients/manage/upgrade/upgrade-analytics)
 
 ### <a name="configure-windows-analytics-client-settings"></a>設定 Windows Analytics 用戶端設定
-若要設定 Windows Analytics，請在 Configuration Manager 主控台中移至 [管理] > [用戶端設定]，按兩下 [預設用戶端設定]，然後選取 [Windows Analytics]。  
+若要設定 Windows Analytics，請在 Configuration Manager 主控台中移至 [管理] > [用戶端設定]，按兩下 [建立自訂裝置用戶端設定]，然後選取 [Windows Analytics]。  
 
-接著，設定下列各項︰
+接著，移至 [Windows Analytics] 設定索引標籤，以進行下列設定：
 - **商業識別碼**  
-商業識別碼會將您管理之裝置的資訊對應至 OMS 工作區。 如果您已將商業識別碼設為用於與 Configuration Manager 搭配使用的升級整備，請使用該識別碼。 如果您還沒有商業識別碼，請參閱[產生商業識別碼金鑰]( https://technet.microsoft.com /itpro/windows/deploy/upgrade-readiness-get-started#generate-your-commercial-id-key)。
+商業識別碼索引鍵會將您所管理裝置的資訊，對應至裝載組織 Windows Analytics 資料的 OMS 工作區。 如果您已設定商業識別碼索引鍵以供「升級整備」之用，請使用該識別碼。 如果您還沒有商業識別碼索引鍵，請參閱[產生商業識別碼索引鍵 (英文)]( https://technet.microsoft.com /itpro/windows/deploy/upgrade-readiness-get-started#generate-your-commercial-id-key)。
 
 - 設定 **Windows 10 裝置的遙測層級**   
-如需每個 Windows 10 遙測層級所收集項目的資訊，請參閱 Windows 線上文件中的[遙測層級]( https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#telemetry-levels)。
+如需每個 Windows 10 遙測層級所收集項目的資訊，請參閱[設定組織的 Windows 遙測 (英文)]( https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization#telemetry-levels)。
 
 - 選擇**加入 Windows 7、8 和 8.1 裝置的商業資料收集**   
 如需在您選擇加入後這些作業系統所收集資料的資訊，請參閱及下載 Microsoft 的 PDF 檔案 [Windows 7, Windows 8, and Windows 8.1 appraiser telemetry events and fields](https://go.microsoft.com/fwlink/?LinkID=822965) (Windows 7、Windows 8 和 Windows 8.1 評鑑員遙測事件和欄位)。
 
-- **設定網際網路探索資料收集**
-
+- **設定 Internet Explorer 資料收集** 在執行 Windows 8.1 或更舊版本的裝置上，Internet Explorer 資料收集可讓「升級整備」偵測 Web 應用程式的不相容性，以便能夠順利地升級至 Windows 10。 您可以依照網際網路區域，決定是否啟用 Internet Explorer 資料收集。 如需網際網路區域的詳細資訊，請參閱[關於 URL 安全性區域 (英文)](https://msdn.microsoft.com/en-us/library/ms537183(v=vs.85).aspx)。

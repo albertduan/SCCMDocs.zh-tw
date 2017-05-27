@@ -15,10 +15,11 @@ caps.latest.revision: 157
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
-ms.openlocfilehash: 8ffaee12bd826e2f19653b215ee19423ea672433
-ms.lasthandoff: 04/21/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
+ms.openlocfilehash: 3a7370fedee417588d219dc7bff46205faf42929
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -45,23 +46,7 @@ ms.lasthandoff: 04/21/2017
 
 -   每個安裝可持續有效 90 天，之後即變成無效。  
 
--   英文是唯一支援的語言。  
-
--   僅支援獨立主要站台。 不支援管理中心網站、多個主要站台或次要站台。  
-
--   僅支援下列 SQL Server 版本：  
-
-    -   SQL Server 2016 (沒有 Service Pack 和更新版本)
-    -   SQL Server 2014 (沒有 Service Pack 和更新版本)
-    -   SQL Server 2012 (有 Service Pack 2 或更新版本)
-
-
--   站台最多支援 10 個用戶端，每個用戶端都必須執行下列其中一項：  
-
-      -   Windows 10  
-      -   Windows 8.1  
-      -   Windows 8  
-      -   Windows 7  
+-   英文是唯一支援的語言。
 
 
 -   僅支援下列安裝旗標 (參數)：  
@@ -79,6 +64,23 @@ ms.lasthandoff: 04/21/2017
 -   不支援升級為這個預覽版。  
 
 -   不支援從這個預覽版升級為生產版本 (最新分支)。 但為預覽版本提供可用更新時，可從 Configuration Manager 主控台的 [更新與服務] 節點尋找更新，並加以安裝。 如需取得在主控台中升級程序的影片，請參閱 youtube.com 上的 [安裝 Configuration Mananger 更新套件](https://www.youtube.com/embed/KBd_EGFbUT8) 。  
+-   僅支援獨立主要站台。 不支援管理中心網站、多個主要站台或次要站台。  
+
+此 Configuration Manager 分支支援下列產品和技術。 不過，本內容對這些產品和技術的包含，並不表示對任何產品或版本超出產品個別支援週期的支援延伸。 已超出其支援週期的產品不支援搭配 Configuration Manager 使用。 如需 Microsoft 支援週期的詳細資訊，請造訪 [Microsoft 支援週期](http://go.microsoft.com/fwlink/p/?LinkId=208270) 網站。  
+
+-   僅支援下列 SQL Server 版本：  
+
+    -   SQL Server 2016 (不含 Service Pack 和更新版本)
+    -   SQL Server 2014 (含 Service Pack 1 和更新版本)
+    -   SQL Server 2012 (含 Service Pack 3 或更新版本)
+
+
+-   站台最多支援 10 個用戶端，每個用戶端都必須執行下列其中一項：  
+
+      -   Windows 10  
+      -   Windows 8.1  
+      -   Windows 8  
+      -   Windows 7  
 
 ##  <a name="bkmk_install"></a> 安裝並更新 Technical Preview  
  System Center Configuration Manager Technical Preview 與 System Center Configuration Manager 目前版本不同。  

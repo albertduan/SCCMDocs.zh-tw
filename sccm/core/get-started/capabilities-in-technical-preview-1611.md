@@ -15,10 +15,11 @@ caps.latest.revision: 2
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
 ms.openlocfilehash: 5e77ebbfd3f3d573d903fe58024a22feb9884e4a
-ms.lasthandoff: 01/24/2017
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1611-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1611 中的功能
@@ -38,7 +39,7 @@ ms.lasthandoff: 01/24/2017
 
 - ***PowerShell***︰當您從 Configuration Manager 主控台連線到 Windows PowerShell 時，您可能會收到下列錯誤︰**Microsoft.ConfigurationManagement.PowerShell.Types.ps1xml 未經過數位簽署**。  
 
-   從 1610 版開始，您可以將特定檔案取代成已簽署的版本來解決此問題。 從 1610 版安裝中的 **&lt;安裝目錄>\AdminConsole\bin\** 資料夾複製具有下列副檔名的所有檔案︰**.psd1**、**.ps1xml** 和 **.psm1**。將這些檔案貼到 Technical Preview 1611 安裝中的 **&lt;安裝目錄>\AdminConsole\bin\** 資料夾，並覆寫 1611 版檔案。
+   從 1610 版開始，您可以將特定檔案取代成已簽署的版本來解決此問題。 從 1610 版安裝中的 &lt;安裝目錄>\AdminConsole\bin**\** 資料夾複製具有下列副檔名的所有檔案︰**.psd1**、**.ps1xml** 和 **.psm1**。 將這些檔案貼到 Technical Preview 1611 安裝中的 &lt;安裝目錄>\AdminConsole\bin**\** 資料夾，並覆寫 1611 版檔案。
 
 
 **以下是您可以使用此版本試用的新功能。**  

@@ -2,7 +2,7 @@
 title: "支援的 LTSB 設定 | Microsoft Docs"
 description: "了解哪些作業系統和相依產品與 System Center Configuration Manager 的長期維護分支搭配運作。"
 ms.custom: na
-ms.date: 3/9/2017
+ms.date: 5/10/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,10 +15,11 @@ caps.latest.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 477ffa5d61d2dfaedf8a3a1f5687e2d72698ad28
-ms.openlocfilehash: 78dcbf76f21a286506b9c605e2c176714736935b
-ms.lasthandoff: 03/10/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
+ms.openlocfilehash: ec33d5febcbf7b57e220f7fe27db9671080fecff
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -30,7 +31,7 @@ ms.lasthandoff: 03/10/2017
 如果未在本主題或 LTSB 特定主題中指出，則套用至最新分支 1606 版的相同設定和限制也會套用至 LTSB。  發生衝突時，請使用適用於您所使用版本的資訊。 一般而言，LTSB 比最新分支更為受限。
 
 ## <a name="general-statement-of-support"></a>一般支援陳述
-Configuration Manager 支援下列各節詳述的產品和技術。 不過，本內容所含的內容未說明任何超出產品個別支援週期之產品的支援延伸。 已超出其支援週期的產品不支援搭配 Configuration Manager 使用。 如需詳細資訊，請前往 [Microsoft 支援週期](http://go.microsoft.com/fwlink/p/?LinkId=208270)網站，並閱讀 [Microsoft 支援週期原則 - 常見問題集](http://go.microsoft.com/fwlink/p/?LinkId=31976)。
+此 Configuration Manager 分支支援下列產品和技術。 不過，本內容對這些產品和技術的包含，並不代表對任何產品或版本超出產品個別支援週期的支援延伸。 已超出其支援週期的產品不支援搭配 Configuration Manager 使用。 如需詳細資訊，請前往 [Microsoft 支援週期](http://go.microsoft.com/fwlink/p/?LinkId=208270)網站，並閱讀 [Microsoft 支援週期原則 - 常見問題集](http://go.microsoft.com/fwlink/p/?LinkId=31976)。
 
 此外，除非已在 [Enterprise Mobility + Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/) (企業行動力 + 安全性部落格) 上公告下列主題中未列出的產品和產品版本，否則不予支援。
 
@@ -310,13 +311,11 @@ LTSB 支援下列 SQL Server 版本來裝載站台資料庫和報告點。 針�
 - SQL Server 2014 SP2：Standard、Enterprise
 - SQL Server 2014 SP1：Standard、Enterprise
 - SQL Server 2012 SP3：Standard、Enterprise
-- SQL Server 2012 SP2：Standard、Enterprise
 - SQL Server 2008 R2 SP3：Standard、Enterprise、Datacenter
 - SQL Server 2016 Express
 - SQL Server 2014 Express SP2
 - SQL Server 2014 Express SP1
 - SQL Server 2012 Express SP3
-- SQL Server 2012 Express SP2
 
 ## <a name="support-for-active-directory-domains"></a>Active Directory 網域的支援
 所有 LTSB 站台系統都必須是支援的 Windows Active Directory 網域成員。 Active Directory 網域支援的需求和限制與 [Active Directory 網域的支援](/sccm/core/plan-design/configs/support-for-active-directory-domains)中出現的需求和限制相同，但限制為下列網域功能等級︰

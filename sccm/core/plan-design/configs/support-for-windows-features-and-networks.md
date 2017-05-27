@@ -16,10 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 3eb48942c1259d2aa1b3c200fad73b39b11c0b8c
-ms.openlocfilehash: 39361102d77441488bf61c9cbbfb0086774e0c09
-ms.lasthandoff: 03/30/2017
+ms.translationtype: Human Translation
+ms.sourcegitcommit: d5166b16ffbe46af561b1ce98c0494cc4aaa72a8
+ms.openlocfilehash: e040552dab21ba9a71e06a78f6acc2ffe1b0eb61
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -92,7 +93,7 @@ Configuration Manager 支援在下列作業系統上，對發佈點使用重複�
 如需詳細資訊，請參閱 Configuration Manager 小組部落格上的 [Configuration Manager Distribution Points and Windows Server 2012 Data Deduplication](http://blogs.technet.com/b/configmgrteam/archive/2014/02/18/configuration-manager-distribution-points-and-windows-server-2012-data-deduplication.aspx) (Configuration Manager 發佈點和 Windows Server 2012 重複資料刪除)，以及 Windows Server TechNet 文件庫中的[重複資料刪除概觀](http://technet.microsoft.com/library/hh831602.aspx)。  
 
 ##  <a name="bkmk_DA"></a> DirectAccess  
-Configuration Manager 支援 Windows Server 2008 R2 中的 DirectAccess 功能，以進行站台系統伺服器與用戶端之間的通訊。  
+Configuration Manager 支援 Windows Server 2008 R2 及更新版本中的 DirectAccess 功能，以進行用戶端與站台伺服器系統之間的通訊。  
 
 -   滿足 DirectAccess 的所有需求時，DirectAccess 即可讓網際網路上的 Configuration Manager 用戶端與指派的站台通訊，就彷彿它們位於內部網路上。  
 

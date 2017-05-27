@@ -15,9 +15,11 @@ caps.latest.revision: 11
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 4688b4b12a7afa5fcfdc0e42f984271d98f10316
-ms.openlocfilehash: 90e6d82e7fd1ff0ad4f1d616cc23201769fe26e2
+ms.translationtype: Human Translation
+ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
+ms.openlocfilehash: 3c31271f3e3ae7aa45da03b3d75fd78242330646
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -33,21 +35,15 @@ System Center Configuration Manager 中的 Endpoint Protection 可讓您管理 C
  搭配使用 Endpoint Protection 與 Configuration Manager 時，具有下列優點：  
 
 -   設定所選電腦群組的反惡意程式碼原則和 Windows 防火牆設定，以及管理其 Windows Defender 進階威脅防護  
-
 -   使用 Configuration Manager 軟體更新來下載最新的反惡意程式碼定義檔，讓用戶端電腦保持最新狀態  
-
 -   傳送電子郵件通知、使用主控台內監視，以及檢視報告，以在用戶端電腦上偵測到惡意程式碼時通知系統管理使用者。  
 
-從 Windows 10 以及 Windows Server 2016 開始，電腦不需要任何其他用戶端來進行 Endpoint Protection 管理。 在 Windows 8.1 和舊版的電腦上，Endpoint Protection 除了 Configuration Manager 用戶端之外還會安裝自己的用戶端。 Endpoint Protection 用戶端具有下列功能：  
+從 Windows 10 和 Windows Server 2016 電腦開始，作業系統都會隨附安裝 Windows Defender。 針對這些作業系統，系統會在安裝 Configuration Manager 用戶端時一起安裝 Windows Defender 的管理用戶端。 在 Windows 8.1 和舊版的電腦上，隨著 Configuration Manager 用戶端安裝的是 Endpoint Protection 用戶端。 Windows Defender 和 Endpoint Protection 用戶端具有下列功能：  
 
 -   惡意程式碼和間諜軟體的偵測與補救  
-
 -   Rootkit 偵測與補救  
-
 -   重大漏洞評估以及自動定義和引擎更新  
-
 -   透過網路檢查系統的網路漏洞偵測  
-
 -   與雲端保護服務整合，以向 Microsoft 報告惡意程式碼。 當您加入這項服務時，如果在電腦上偵測到無法識別的惡意程式碼，則 Endpoint Protection 用戶端或 Windows Defender 可以從惡意程式碼防護中心下載最新定義。  
 
 > [!NOTE]  
@@ -115,13 +111,8 @@ System Center Configuration Manager 中的 Endpoint Protection 可讓您管理 C
 2. 選取網站頂端的 [下載和金鑰]。
 3. 篩選出 [System Center Endpoint Protection (最新分支)] 產品。
 4. 按一下連結進行**下載**
-5. 按一下 [繼續] 。 您應該會看到數個檔案，包括︰**適用於 Linux 作業系統和 Macintosh 作業系統多語版本的 System Center Endpoint Protection (最新分支 - 1606 版)   32/64 位元   1507 MB ISO**。
+5. 按一下 [繼續] 。 您應該會看到數個檔案，包括︰**適用於 Linux 作業系統和 Macintosh 作業系統多語版本的 System Center Endpoint Protection (最新分支 - 1606 版)    32/64 位元    1507 MB    ISO**。
 6. 按一下箭頭圖示來下載檔案。 檔案名稱是 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_EptProt_Lin_Mac_MLF_X21-30777.ISO**。
 
  如需如何安裝和管理適用於 Linux 和 Mac 電腦之 Endpoint Protection 用戶端的詳細資訊，請使用這些產品隨附的文件 (位於 [文件]  資料夾中)。
-
-
-
-<!--HONumber=Feb17_HO1-->
-
 

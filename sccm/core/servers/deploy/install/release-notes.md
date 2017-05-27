@@ -2,7 +2,7 @@
 title: "版本資訊 - Configuration Manager | Microsoft Docs"
 description: "請參閱這些注意事項，以了解產品中尚未修正或 Microsoft 知識庫文章未涵蓋的緊急問題。"
 ms.custom: na
-ms.date: 03/27/2017
+ms.date: 05/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a6c89254d01f4074e5c170b20338686178ebdd3
-ms.openlocfilehash: 59946d1328be1606ba7c4dab647e814c1b4e638a
+ms.sourcegitcommit: d5166b16ffbe46af561b1ce98c0494cc4aaa72a8
+ms.openlocfilehash: 9da6f9678a7fb5c76f365a3522f5e5e0fdfec037
 ms.contentlocale: zh-tw
-ms.lasthandoff: 04/28/2017
+ms.lasthandoff: 05/17/2017
 
 
 ---
@@ -145,9 +145,16 @@ ConfigMgrSetup.log：
 -->
 
 
-<!-- No current  Client deployment and upgrade relenotes
-## Client deployment and upgrade  
--->
+
+## <a name="client-deployment-and-upgrade"></a>用戶端部署和升級  
+
+### <a name="client-installation-fails-with-error-code-0x8007064c"></a>用戶端安裝失敗並顯示錯誤碼 0x8007064c
+<!--- SMS 486973 -->
+
+當您將用戶端部署至 Windows 電腦時，安裝失敗。 ccmsetup.log 檔案會包含以下項目：「檔案 'C:\WINDOWS\ccmsetup\Silverlight.exe' 傳回失敗，結束代碼 1612。 安裝失敗」，並接著顯示：「InstallFromManifest 已失敗 0x8007064c」。
+
+**因應措施：**這是由先前已安裝且已損毀的 Silverlight 版本所造成。 您可以嘗試在受影響的電腦上執行下列工具來修正此問題：[https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed](https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed) 
+
 
 
 
@@ -247,5 +254,5 @@ ConfigMgrSetup.log：
 ### <a name="antimalware-policy-fails-to-apply-on-windows-server-2016-core"></a>反惡意程式碼原則無法套用至 Windows Server 2016 Core
 反惡意程式碼原則無法套用至 Windows Server 2016 Core。  錯誤碼為 0x80070002。  ConfigSecurityPolicy.exe 遺失相依性。
 
-**因應措施：**無。  身為系統管理員，您可以使用群組原則管理 Windows Server 2016 Core 的設定。
+**因應措施：**此問題已由在 2017 年 5 月 9 日發佈的[知識庫文章 4019472](https://support.microsoft.com/help/4019472/windows-10-update-kb4019472) 解決。 
 

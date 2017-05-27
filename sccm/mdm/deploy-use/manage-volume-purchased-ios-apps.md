@@ -2,7 +2,7 @@
 title: "管理大量採購的 iOS 應用程式 | Microsoft Docs"
 description: "部署、管理和追蹤透過 iOS 應用程式市集購買的應用程式授權。"
 ms.custom: na
-ms.date: 05/03/2017
+ms.date: 05/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: c6a6137fa978e1ea28aefea2aea4e29ba661efd6
-ms.openlocfilehash: 55f1204b088a7b636a90561f20aa41c7de72bc05
+ms.sourcegitcommit: f4cb711f369698fe8e045f8c83dd96ec6fb29d70
+ms.openlocfilehash: ce706e938f558406044f7890c80bb7156c3b262b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/04/2017
+ms.lasthandoff: 05/17/2017
 
 ---
 # <a name="manage-volume-purchased-ios-apps-with-system-center-configuration-manager"></a>Manage volume-purchased iOS apps with System Center Configuration Manager
@@ -58,6 +58,7 @@ ms.lasthandoff: 05/04/2017
       當您選擇 [同步處理] 以執行手動同步處理時，一律會執行完整同步處理。  
 -   如果需要復原或還原您的 Configuration Manager 資料庫，建議您在作業之後執行手動同步處理，以確保同步處理的授權資料是最新狀態。  
 -   此外，您必須已從 Apple 匯入有效的 Apple Push Notification Service (APNs) 憑證，才能管理 iOS 裝置，包括應用程式部署。 如需詳細資訊，請參閱 [Set up iOS hybrid device management](enroll-hybrid-ios-mac.md) (設定 iOS 混合式裝置管理)。  
+-   Configuration Manager 支援新增最多 3000 個 VPP 權杖。
 
 從 System Center Configuration Manager 1702 開始，您現在可以將授權的應用程式部署到裝置和使用者。 視應用程式是否能夠支援裝置授權而定，當您部署應用程式時，系統會要求適當的授權，如下︰
 
