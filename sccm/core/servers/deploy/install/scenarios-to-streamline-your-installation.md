@@ -27,7 +27,7 @@ ms.lasthandoff: 05/17/2017
 
 *適用於︰System Center Configuration Manager (最新分支)*
 
-隨著 System Center Configuration Manager 最新分支更新版本的發行，不論要將新階層安裝到更新版本 (例如更新 1610)，或從 Microsoft System Center 2012 Configuration Manager 進行升級，都提供可簡化程序的新案例。 
+隨著 System Center Configuration Manager 最新分支更新版本的發行，不論要將新階層安裝到更新版本 (例如更新 1610)，或從 Microsoft System Center 2012 Configuration Manager 進行升級，都提供可簡化程序的新案例。
 
 支援的案例包括：  
 
@@ -113,9 +113,7 @@ ms.lasthandoff: 05/17/2017
     -   子主要站台會自動安裝您在管理中心網站所安裝的相同更新。  
     -   次要站台不會自動安裝新版本。 您必須從主控台內手動升級。  
 
-   
-
-    在此步驟之後，當您在管理中心網站上安裝更新時，子主要站台將只有在其維護期間允許的情況下，才會安裝該更新。  
+  在此步驟之後，當您在管理中心網站上安裝更新時，子主要站台將只有在其維護期間允許的情況下，才會安裝該更新。  
 
 4.  **在您的頂層站台安裝更新版本**。 這會更新您的頂層站台。 在管理中心網站安裝更新版本之後，除非維護期間封鎖安裝，否則每個子主要站台都會自動安裝更新。  
 
