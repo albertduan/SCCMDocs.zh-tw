@@ -42,7 +42,7 @@ ms.lasthandoff: 05/29/2017
     >  Configuration Manager 會將硬體清查歷程記錄，保留 [刪除過時清查歷程記錄] 站台維護工作中所指定的天數  
 
 > [!NOTE]  
->  如需如何檢視執行 Linux 與 UNIX 之用戶端的硬體清查資訊，請參閱 [How to monitor clients for Linux and UNIX servers in System Center Configuration Manager](../../../../core/clients/manage/monitor-clients-for-linux-and-unix-servers.md)。  
+>  如需如何檢視執行 Linux 與 UNIX 之用戶端的硬體清查資訊，請參閱 [如何在 System Center Configuration Manager 中監視 Linux 和 UNIX 伺服器的用戶端](../../../../core/clients/manage/monitor-clients-for-linux-and-unix-servers.md)。  
 
 ### <a name="how-to-run-resource-explorer-from-the-configuration-manager-console"></a>如何從 Configuration Manager 主控台執行資源總管  
 
