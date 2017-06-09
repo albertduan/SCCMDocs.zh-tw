@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: 85e254f1074e02a52fea6a3cda21a37c332f249e
 ms.openlocfilehash: 8a59a1769eec4cd6d78d7686a1d8008e832dd924
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -77,7 +79,7 @@ ms.openlocfilehash: 8a59a1769eec4cd6d78d7686a1d8008e832dd924
 
         -   **內容** - 指定將用來在用戶端電腦上評估相容性的 Active Directory 網域服務物件的內容。  
 
-        -   **查詢** - 顯示從 [LDAP 首碼]、[辨別名稱 (DN)]、[搜尋篩選器] (若已指定) 和 [內容] 中之項目建構的 LDAP 查詢。 此查詢將用來評估用戶端電腦上的相容性。  
+        -   **查詢** - 顯示從 [LDAP 首碼]、[辨別名稱 (DN)]、[搜尋篩選器]\(若已指定) 和 [內容] 中之項目建構的 LDAP 查詢。 此查詢將用來評估用戶端電腦上的相容性。  
 
     -   **組件**  
 
@@ -213,9 +215,4 @@ ms.openlocfilehash: 8a59a1769eec4cd6d78d7686a1d8008e832dd924
 7.  選擇 [確定] 以儲存運算式，然後關閉 [新增子句] 對話方塊。  
 
 8.  在完成將子句新增至全域條件的步驟後，選擇 [確定] 以關閉 [建立全域條件] 對話方塊並儲存全域條件。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

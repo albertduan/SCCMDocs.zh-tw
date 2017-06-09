@@ -15,9 +15,11 @@ caps.latest.revision: 8
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: a85a5cece803e5c16da71f897d5780049fbb82cd
 ms.openlocfilehash: eddf20bebd80028336503957dfc4c3d1dbbb23f2
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/16/2016
 
 
 ---
@@ -127,7 +129,7 @@ ms.openlocfilehash: eddf20bebd80028336503957dfc4c3d1dbbb23f2
 
 |管理工作|詳細資料|
 |---------------------|-------------|
-|**啟用**<br /><br /> **停用**|啟用或停用軟體計量規則。 根據用戶端設定之 [用戶端原則]  區段中的 [用戶端原則輪詢間隔]  (根據預設，每 60 分鐘)，將這個設定下載至用戶端電腦。<br /><br /> 請參閱[設定用戶端設定](../../core/clients/deploy/configure-client-settings.md)。|
+|**啟用**<br /><br /> **停用**|啟用或停用軟體計量規則。 根據用戶端設定之 [用戶端原則]  區段中的 [用戶端原則輪詢間隔] \(根據預設，每 60 分鐘)，將這個設定下載至用戶端電腦。<br /><br /> 請參閱[設定用戶端設定](../../core/clients/deploy/configure-client-settings.md)。|
 
 ##  <a name="monitor-software-metering"></a>監視軟體計量
  Configuration Manager 中的軟體計量包含數種內建報告，可讓您監視軟體計量作業的相關資訊。 這些報告的報告類別為 [軟體計量] 。
@@ -152,7 +154,7 @@ ms.openlocfilehash: eddf20bebd80028336503957dfc4c3d1dbbb23f2
 ###  <a name="privacy-information-for-software-metering"></a>隱私權資訊的軟體計量
  軟體計量監視用戶端電腦上的應用程式的使用方式。 預設會啟用軟體計量。 您必須設定要計量的應用程式。 計量資訊會儲存在 Configuration Manager 資料庫中。 資訊會在傳送至管理點期間進行加密，但不會以加密格式儲存在 Configuration Manager 資料庫中。
 
- 這項資訊會保留在資料庫中，直到由站台維護工作 [刪除過時軟體計量資料]  (每 5 天) 和 [刪除過時軟體計量摘要資料]  (每 270 天) 刪除為止。 您可以設定刪除間隔。 計量資訊不會傳送給 Microsoft。
+ 這項資訊會保留在資料庫中，直到由站台維護工作 [刪除過時軟體計量資料] \(每 5 天) 和 [刪除過時軟體計量摘要資料] \(每 270 天) 刪除為止。 您可以設定刪除間隔。 計量資訊不會傳送給 Microsoft。
 
  設定軟體計量之前，請考慮您的隱私權需求。
 
@@ -178,9 +180,4 @@ ms.openlocfilehash: eddf20bebd80028336503957dfc4c3d1dbbb23f2
 - John 每週繼續檢查軟體計量報告，如有必要，也會採取修復動作。
 
  本課程中的動作，可藉由移除不再需要的應用程式而降低 IT 支援和授權成本。 此外，技術支援中心現在有要執行舊版應用程式的使用者清單。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 
