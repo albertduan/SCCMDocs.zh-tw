@@ -70,7 +70,7 @@ ms.lasthandoff: 05/17/2017
 
     -   **自動** – 只有當您已將 Updates Publisher 連線到 Configuration Manager 時，才能使用此模式 (請參閱 [ConfigMgr Server](/sccm/sum/tools/updates-publisher-options#configmgr-server) 選項)。
 
-    使用此類型時，Updates Publisher 會查詢 Configuration Manager 以判斷應該以 [完整內容] 或 [僅中繼資料] 選項發行更新或配套。 只有當更新符合 [要求的用戶端計數閾值] 與 [套件來源大小閾值] (在 Updates Publisher 選項的 [ConfigMgr Server] 頁面所指定) 時，才會發行更新的完整內容。
+    使用此類型時，Updates Publisher 會查詢 Configuration Manager 以判斷應該以 [完整內容] 或 [僅中繼資料] 選項發行更新或配套。 只有當更新符合 [要求的用戶端計數閾值] 與 [套件來源大小閾值]\(在 Updates Publisher 選項的 [ConfigMgr Server] 頁面所指定) 時，才會發行更新的完整內容。
 
 -   選取發行集：
 
