@@ -109,7 +109,7 @@ Azure AD 沒有可儲存群組的 OU。 相反地，使用與 [系統] 或 [使�
 
 ## <a name="conditional-access-device-compliance-policy-improvements"></a>條件式存取裝置合規性政策改善
 
-使用者所使用的應用程式為不符合規範的應用程式清單一部分時，新的裝置合規性政策規則是可用來協助您封鎖存取可支援條件式存取的公司資源。 新增符合規範規則 [無法安裝的應用程式] 時，系統管理員可以定義不符合規範的應用程式清單。 將應用程式新增至不符合規範的清單時，此規則需要系統管理員輸入 [應用程式名稱]、[應用程式識別碼] 和 [應用程式發行者] (選擇性)。 這項設定僅適用於 iOS 和 Android 裝置。
+使用者所使用的應用程式為不符合規範的應用程式清單一部分時，新的裝置合規性政策規則是可用來協助您封鎖存取可支援條件式存取的公司資源。 新增符合規範規則 [無法安裝的應用程式] 時，系統管理員可以定義不符合規範的應用程式清單。 將應用程式新增至不符合規範的清單時，此規則需要系統管理員輸入 [應用程式名稱]、[應用程式識別碼] 和 [應用程式發行者]\(選擇性)。 這項設定僅適用於 iOS 和 Android 裝置。
 
 此外，這可協助組織透過不安全的應用程式來降低資料外洩，並透過特定應用程式來避免過多的資料使用。
 
@@ -143,7 +143,7 @@ Azure AD 沒有可儲存群組的 OU。 相反地，使用與 [系統] 或 [使�
 2. 按一下 [建立合規性政策]，或選取要修改的現有合規性政策。
 3. 在 [一般] 頁面上，提供名稱和描述，並選取 [使用 Configuration Manager 用戶端管理之裝置的合規性規則]，然後設定報告的非合規性嚴重性並按一下 [下一步]。
 4. 在 [支援的平台] 頁面上，選取 [Windows 10]，然後按一下 [下一步]。
-5. 在 [規則] 頁面上，按一下 [新增...]，然後針對 [條件] 選擇 [Require Windows Update for Business compliance] (需要 Windows Update for Business 合規性)。 [值] 設定會自動設為 [True]。
+5. 在 [規則] 頁面上，按一下 [新增...]，然後針對 [條件] 選擇 [Require Windows Update for Business compliance]\(需要 Windows Update for Business 合規性)。 [值] 設定會自動設為 [True]。
 
 新的原則會顯示在 [資產與相容性]  工作區的 [相容性原則]  節點中。
 
@@ -187,9 +187,9 @@ Azure AD 沒有可儲存群組的 OU。 相反地，使用與 [系統] 或 [使�
    **使用者通知標題文字**：指定在軟體中心使用者通知上顯示的藍色文字。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「請確認是否要升級這部電腦的作業系統」。
 
    **使用者通知訊息文字**：有三個文字方塊提供自訂通知的內文。
-   - 第&1; 個文字方塊︰指定本文，通常包含使用者指示。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「升級作業系統需要一些時間，而且您的電腦可能會重新啟動數次。」
-   - 第&2; 個文字方塊︰指定本文下的粗體文字。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「這項就地升級會安裝新的作業系統，並自動移轉您的應用程式、資料和設定。」
-   - 第&3; 個文字方塊︰指定粗體文字下的最後一行文字。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「按一下 [安裝] 開始安裝。 否則，請按一下 [取消]。」   
+   - 第 1 個文字方塊︰指定本文，通常包含使用者指示。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「升級作業系統需要一些時間，而且您的電腦可能會重新啟動數次。」
+   - 第 2 個文字方塊︰指定本文下的粗體文字。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「這項就地升級會安裝新的作業系統，並自動移轉您的應用程式、資料和設定。」
+   - 第 3 個文字方塊︰指定粗體文字下的最後一行文字。 例如，在預設使用者通知中，本節包含與下列類似的訊息：「按一下 [安裝] 開始安裝。 否則，請按一下 [取消]。」   
 
    假設您在內容中設定下列自訂通知。
 
@@ -316,7 +316,7 @@ Android for Work 是與 Android 不同的平台，而且您需要決定哪種形
   - **將這些群組中僅限使用者的受支援裝置作為 Android for Work 管理** - (測試中) 可讓您將 Android for Work 管理的目標設為有限的一組使用者。 只有註冊支援 Android for Work 之裝置的所選群組成員，才能註冊為 Android for Work 裝置。 所有其他成員則會註冊為 Android 裝置。
   
 > [!NOTE]
-> 一項已知的問題會造成 [將這些群組中僅限使用者的受支援裝置作為 Android for Work 管理]** Android** 選項無法正常運作。 指定的 Azure AD 群組中的使用者裝置將註冊為 Android，而不是 Android for Work。 若要測試 Android for Work，您必須使用 [Manage all supported devices as Android for Work] (將所有支援的裝置作為 Android for Work 管理)。
+> 一項已知的問題會造成 [將這些群組中僅限使用者的受支援裝置作為 Android for Work 管理] **Android** 選項無法正常運作。 指定的 Azure AD 群組中的使用者裝置將註冊為 Android，而不是 Android for Work。 若要測試 Android for Work，您必須使用 [Manage all supported devices as Android for Work]\(將所有支援的裝置作為 Android for Work 管理)。
 
 
   若要啟用 Android for Work 註冊，您必須選擇下面兩個選項中的其中一個。 [將這些群組中僅限使用者的受支援裝置作為 Android for Work 管理] 選項需要您先設定 Azure Active Directory 安全性群組。
@@ -357,5 +357,5 @@ Android for Work 有兩個設定項目設定群組︰
 若要選擇性地抹除 Android for Work 裝置，請使用 Configuration Manager 主控台中的一般[選擇性抹除](https://docs.microsoft.com/sccm/mdm/deploy-use/wipe-lock-reset-devices#selective-wipe)程序。
 
 #### <a name="known-issues-for-android-for-work"></a>Android for Work 的已知問題
-[Configuring sync schedule in Android for Work email profiles causes them to fail to deploy] (在 Android for Work 電子郵件設定檔中設定同步處理排程，會導致它們無法部署) Android for Work 電子郵件設定檔之 ConfigMgr UI 中的其中一個選項為「排程」。 在其他平台上，這可讓系統管理員設定排程，以將電子郵件和其他電子郵件帳戶資料同步處理到部署的目標行動裝置上。 不過，它不適用於 Android for Work 電子郵件設定檔，而且選擇「未設定」以外的任何選項，則會導致該設定檔無法部署至任何裝置。
+[Configuring sync schedule in Android for Work email profiles causes them to fail to deploy]\(在 Android for Work 電子郵件設定檔中設定同步處理排程，會導致它們無法部署) Android for Work 電子郵件設定檔之 ConfigMgr UI 中的其中一個選項為「排程」。 在其他平台上，這可讓系統管理員設定排程，以將電子郵件和其他電子郵件帳戶資料同步處理到部署的目標行動裝置上。 不過，它不適用於 Android for Work 電子郵件設定檔，而且選擇「未設定」以外的任何選項，則會導致該設定檔無法部署至任何裝置。
 
