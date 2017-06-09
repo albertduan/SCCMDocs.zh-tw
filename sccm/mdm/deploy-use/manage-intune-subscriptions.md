@@ -41,7 +41,7 @@ ms.lasthandoff: 05/17/2017
 
 2.  以滑鼠右鍵按一下列出的 [Microsoft Intune 訂閱]，然後按一下 [刪除]。
 
-3.   在精靈中，按一下 [Remove Microsoft Intune Subscription from Configuration Manager] (從 Configuration Manager 移除 Microsoft Intune 訂閱)，並按一下 [下一步]，然後按一下 [下一步] 移除訂閱。
+3.   在精靈中，按一下 [Remove Microsoft Intune Subscription from Configuration Manager]\(從 Configuration Manager 移除 Microsoft Intune 訂閱)，並按一下 [下一步]，然後按一下 [下一步] 移除訂閱。
 
 
 ## <a name="how-to-remove-the-service-connection-point-role"></a>如何移除服務連接點角色
