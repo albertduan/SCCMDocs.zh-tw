@@ -38,5 +38,5 @@ ms.lasthandoff: 05/17/2017
 1.    在 [軟體更新點元件內容] \(上一個程序) 中啟用快速安裝檔案的支援。
 2.    在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [用戶端設定]。
 3.    選取適當的用戶端設定，然後在 [首頁]索引標籤上，按一下 [內容]。
-4.    選取 [軟體更新] 頁面，在 [啟用安裝用戶端上的 Express Updates] 設定中設定 [是]，然後在 [Port used to download content for Express Updates] (連接埠, 用來下載 Express Updates 的內容) 設定中設定用戶端上的 HTTP 接聽程式所使用的連接埠。
+4.    選取 [軟體更新] 頁面，在 [啟用安裝用戶端上的 Express Updates] 設定中設定 [是]，然後在 [Port used to download content for Express Updates]\(連接埠, 用來下載 Express Updates 的內容) 設定中設定用戶端上的 HTTP 接聽程式所使用的連接埠。
 
