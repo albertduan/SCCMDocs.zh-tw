@@ -36,15 +36,15 @@ ms.lasthandoff: 05/17/2017
 2.  在 Configuration Manager 主控台的 [系統管理] 工作區中，依序移至 [概觀] > [雲端服務] > [Microsoft Intune 訂閱]。  
 3.  在功能區中，按一下 [設定平台]，然後針對 Windows 電腦和膝上型電腦
     - 選取 Windows 平台：[Windows]，然後執行下列步驟︰
-      1. 在 [一般]  索引標籤中，按一下 [Enable Windows enrollment] (啟用 Windows 註冊) 核取方塊。
+      1. 在 [一般]  索引標籤中，按一下 [Enable Windows enrollment]\(啟用 Windows 註冊) 核取方塊。
       2. 如果您使用憑證以進行程式碼簽署和部署公司入口網站應用程式的話，請瀏覽至**程式碼簽署憑證**。 裝置的使用者也可以從 Windows 市集安裝公司入口網站應用程式，或著您也可以從商務用 Windows 市集部署應用程式，而不需要程式碼簽署。
       3. 您也可以設定 [Windows Hello 企業版設定](windows-hello-for-business-settings.md)。
     - 為 Windows phone 和平板電腦使用 **Windows Phone** 設定，然後執行下列步驟︰
-      1. 在 [一般] 索引標籤中，按一下 [Windows Phone 8.1 and Windows 10 Mobile] (Windows Phone 8.1 和 Windows 10 行動裝置版) 核取方塊。 已不再支援 Windows Phone 8.0。
+      1. 在 [一般] 索引標籤中，按一下 [Windows Phone 8.1 and Windows 10 Mobile]\(Windows Phone 8.1 和 Windows 10 行動裝置版) 核取方塊。 已不再支援 Windows Phone 8.0。
       2. 如果您的組織需要側載公司應用程式，您可以上傳所需的權杖或檔案。 如需側載應用程式的詳細資訊，請參閱[建立 Windows 應用程式](https://docs.microsoft.com/sccm/apps/get-started/creating-windows-applications)。
         - **應用程式註冊權杖**
         - **.pfx 檔案**
-        - **無**如果您使用 Symantec 憑證，您可以指定 [Show an alert before Symantec certificates expire] (在 Symantec 憑證過期前顯示警示)。
+        - **無**如果您使用 Symantec 憑證，您可以指定 [Show an alert before Symantec certificates expire]\(在 Symantec 憑證過期前顯示警示)。
 4. 按一下 [確定]  關閉對話方塊。  若要使用公司入口網站簡化註冊程序，您應該為裝置註冊建立 DNS 別名。 您接著就可以告訴使用者如何註冊其裝置。
 
 ## <a name="choose-how-to-enroll-windows-devices"></a>選擇註冊 Windows 裝置的方式
