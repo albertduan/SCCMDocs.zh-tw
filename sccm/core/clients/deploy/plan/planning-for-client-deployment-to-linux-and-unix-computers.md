@@ -248,7 +248,7 @@ ms.lasthandoff: 12/16/2016
 
  **防火牆需求**:請確定防火牆不會在您指定為用戶端要求連接埠的連接埠上封鎖通訊。 Linux 和 UNIX 的用戶端會直接與管理點、發佈點及後援狀態點通訊。  
 
- 如需用戶端通訊及用戶端要求連接埠的詳細資訊，請參閱  [Configure the Client for Linux and UNIX to Locate Management Points](../../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md#BKMK_ConfigClientMP)。  
+ 如需用戶端通訊及用戶端要求連接埠的詳細資訊，請參閱  [設定 Linux 和 UNIX 用戶端來找出管理點](../../../../core/clients/deploy/deploy-clients-to-unix-and-linux-servers.md#BKMK_ConfigClientMP)。  
 
 ##  <a name="BKMK_PlanningforCommunicationsforLnU"></a> Linux 和 UNIX 伺服器通訊的規劃跨樹系信任  
  您使用 Configuration Manager 所管理的 Linux 和 UNIX 伺服器會作為工作群組用戶端運作，且需要具有與工作群組中以 Windows 為基礎之用戶端類似的設定。 如需工作群組中電腦通訊的詳細資訊，請參閱 [System Center Configuration Manager 中端點之間的通訊](../../../../core/plan-design/hierarchy/communications-between-endpoints.md)主題中的[跨 Active Directory 樹系的通訊](../../../../core/plan-design/hierarchy/communications-between-endpoints.md#Plan_Com_X-Forest)一節。  
