@@ -104,9 +104,9 @@ Lookout 支援會與您的主要連絡人合作以將您的訂閱上架，並使
 
 
 ### <a name="step-4-configure-state-sync"></a>步驟 4：設定狀態同步處理
-在 [State Sync] (狀態同步處理) 選項中，指定應該傳送至 Intune 的資料類型。  目前，您必須啟用裝置狀態和威脅狀態，Lookout Intune 整合才能正確運作。  根據預設會啟用這些項目。
+在 [State Sync]\(狀態同步處理) 選項中，指定應該傳送至 Intune 的資料類型。  目前，您必須啟用裝置狀態和威脅狀態，Lookout Intune 整合才能正確運作。  根據預設會啟用這些項目。
 ### <a name="step-5-configure-error-report-email-recipient-information"></a>步驟 5︰設定錯誤報告電子郵件收件者資訊
-在 [Error Management] (錯誤管理) 選項中，輸入應接收錯誤報告的電子郵件地址。
+在 [Error Management]\(錯誤管理) 選項中，輸入應接收錯誤報告的電子郵件地址。
 
 ![Intune 連接器錯誤管理頁面的螢幕擷取畫面](media/lookout-connector-error-notifications.png)
 

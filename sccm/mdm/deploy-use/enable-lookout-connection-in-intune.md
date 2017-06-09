@@ -29,7 +29,7 @@ ms.lasthandoff: 03/06/2017
 
 本主題說明如何在 Intune 中啟用 Lookout MTP 連線。 您應該先在 Lookout 主控台中設定 Intune 連接器再執行此步驟。  如果尚未設定，請執行[設定 Lookout Mobile Threat Protection 訂閱](set-up-your-subscription-with-lookout.md)中所述的步驟。
 
-若要在 Intune 中啟用 Lookout MTP 連線，請在 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com) 的 [管理] 頁面中，選擇 [Third Party Service Integration] (協力廠商服務整合)。 選擇 [Lookout 狀態] 並使用切換按鈕啟用 [與 MTP 同步處理]。
+若要在 Intune 中啟用 Lookout MTP 連線，請在 [Microsoft Intune 系統管理員主控台](https://manage.microsoft.com) 的 [管理] 頁面中，選擇 [Third Party Service Integration]\(協力廠商服務整合)。 選擇 [Lookout 狀態] 並使用切換按鈕啟用 [與 MTP 同步處理]。
 
 ![反白顯示啟用切換按鈕的 Lookout 同步處理頁面的螢幕擷取畫面](media/lookout-intune-synchronization.png)
 

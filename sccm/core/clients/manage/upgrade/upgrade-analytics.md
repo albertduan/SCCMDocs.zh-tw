@@ -31,7 +31,7 @@ Upgrade Readiness 是 Microsoft Operations Management Suite (OMS) 中的解決�
 您必須採取數個設定步驟，確保您的用戶端可以將資料提供給 Upgrade Readiness︰
 
 -  如[在您的組織中設定 Windows 遙測](https://technet.microsoft.com/itpro/windows/manage/configure-windows-telemetry-in-your-organization)中所述，進行用戶端遙測設定。
--  安裝 [Get started with Upgrade Readiness](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness) (開始使用 Upgrade Readiness) 的 *Deploy the compatibility update and related KBs * (部署相容性更新和相關知識庫) 一節中所述的知識庫。
+-  安裝 [Get started with Upgrade Readiness](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness) (開始使用 Upgrade Readiness) 的 *Deploy the compatibility update and related KBs*  (部署相容性更新和相關知識庫) 一節中所述的知識庫。
 
     > [!NOTE]
     > 您可以下載自動化許多用戶端設定工作的指令碼。 如需指令碼的資訊，請參閱 [Get started with Upgrade Readiness](https://technet.microsoft.com/itpro/windows/deploy/manage-windows-upgrades-with-upgrade-readiness) (開始使用 Upgrade Readiness) 中的 *Run the Upgrade Readiness deployment script* (執行 Upgrade Readiness 部署指令碼) 一節。
@@ -50,7 +50,7 @@ Upgrade Readiness 是 Microsoft Operations Management Suite (OMS) 中的解決�
 
 ### <a name="create-the-connection"></a>建立連線
 
-1.  在 Configuration Manager 主控台中，選擇 [系統管理] > [雲端服務] > [Upgrade Readiness Connector] (升級整備連接器) > [建立 Upgrade Analytics 的連線] 來啟動 [新增 Upgrade Analytics 連線精靈]。
+1.  在 Configuration Manager 主控台中，選擇 [系統管理] > [雲端服務] > [Upgrade Readiness Connector]\(升級整備連接器) > [建立 Upgrade Analytics 的連線] 來啟動 [新增 Upgrade Analytics 連線精靈]。
 3.  在 [Azure Active Directory] 畫面上，提供 [租用戶]、[用戶端識別碼] 和 [用戶端祕密金鑰]，然後選取 [下一步]。
 4.  在 [Upgrade Readiness] 畫面上，填入 [Azure 訂用帳戶]、[Azure 資源群組] 和 [Operations Management Suite 工作區] 以提供連線設定。
 5.  確認 [摘要] 畫面上的連線設定，然後選取 [下一步]。
@@ -97,7 +97,7 @@ Upgrade Readiness 部署指令碼執行下列動作︰
 
 ## <a name="view-microsoft-upgrade-readiness-properties-in-configuration-manager"></a>在 Configuration Manager 中檢視 Microsoft Upgrade Readiness 內容  
 
-1.  在 Configuration Manager 主控台中，瀏覽至 [雲端服務]，然後選擇 [OMS 連接器] 開啟 [OMS Connection Properties] (OMS 連線內容) 頁面。  
+1.  在 Configuration Manager 主控台中，瀏覽至 [雲端服務]，然後選擇 [OMS 連接器] 開啟 [OMS Connection Properties]\(OMS 連線內容) 頁面。  
 
 2.  此頁面有兩個索引標籤︰
   * [Azure Active Directory] 索引標籤會顯示您的 [租用戶]、[用戶端識別碼]、[用戶端祕密金鑰到期]，並可讓您在用戶端祕密金鑰到期時「確認」[用戶端祕密金鑰]。

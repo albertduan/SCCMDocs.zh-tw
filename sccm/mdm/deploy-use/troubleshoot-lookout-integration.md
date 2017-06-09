@@ -51,7 +51,7 @@ Azure AD 全域系統管理員使用者尚未接受初始 Lookout 安裝程式�
 ### <a name="device-not-showing-up-in-the-lookout-mtp-console-device-list"></a>未顯示在 Lookout MTP 主控台裝置清單中的裝置
 
 在下列任一案例中，可能會發生這個錯誤︰
-* 擁有此裝置的使用者不在 [Lookout MTP Console] (Lookout MTP 主控台) 中所指定的 [註冊群組] 內。  從 [系統] 模組中，移至 [Intune 連接器] 索引標籤，並查看 [Enrollment Management] (註冊管理) 設定。  您應該會看到設定要進行註冊的一或多個 Azure AD 群組。  確認擁有遺失裝置的使用者是否屬於其中一個指定的 Azure AD 群組。  將新的使用者新增至註冊群組之後，需要設定的輪詢間隔 (5 分鐘是預設值) 才能看到裝置顯示在 Lookout MTP 主控台的 [裝置] 模組中。
+* 擁有此裝置的使用者不在 [Lookout MTP Console]\(Lookout MTP 主控台) 中所指定的 [註冊群組] 內。  從 [系統] 模組中，移至 [Intune 連接器] 索引標籤，並查看 [Enrollment Management]\(註冊管理) 設定。  您應該會看到設定要進行註冊的一或多個 Azure AD 群組。  確認擁有遺失裝置的使用者是否屬於其中一個指定的 Azure AD 群組。  將新的使用者新增至註冊群組之後，需要設定的輪詢間隔 (5 分鐘是預設值) 才能看到裝置顯示在 Lookout MTP 主控台的 [裝置] 模組中。
 
 * 如果 Lookout MTP 不支援裝置。  不支援的裝置將會出現在 Lookout MTP 主控台上之連接器設定的 [受管理的裝置] 區段中。
 
