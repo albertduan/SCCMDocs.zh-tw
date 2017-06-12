@@ -115,7 +115,7 @@ Configuration Manager 會在您同步服務連接點站台系統角色與 Micros
 
 -   當您的服務連線端點處於線上模式時，您的站台會每天自動與 Microsoft 同步，以自動識別適用於您基礎結構的新更新。  若要下載更新和更新的可轉散發檔案，裝載服務連接點站台系統角色的電腦會使用**系統**內容來存取下列網際網路位置︰go.microsoft.com 和 download.microsoft.com。 如需服務連接點所連線之其他位置的相關資訊，請參閱[關於 System Center Configuration Manager 中的服務連接點](../../../core/servers/deploy/configure/about-the-service-connection-point.md)中的[網際網路存取需求](../../../core/servers/deploy/configure/about-the-service-connection-point.md#bkmk_urls)。  
 
--   當您的服務連線端點處於離線模式時，請使用服務連線工具來手動與 Microsoft 雲端進行同步。 如需詳細資訊，請參閱 [Use the Service Connection Tool for System Center Configuration Manager](../../../core/servers/manage/use-the-service-connection-tool.md)。  
+-   當您的服務連線端點處於離線模式時，請使用服務連線工具來手動與 Microsoft 雲端進行同步。 如需詳細資訊，請參閱 [使用 System Center Configuration Manager 的服務連接工具](../../../core/servers/manage/use-the-service-connection-tool.md)。  
 
 -   主控台內更新會取代需要個別尋找和安裝個別更新、Service Packs 及新功能的需求。  
 
