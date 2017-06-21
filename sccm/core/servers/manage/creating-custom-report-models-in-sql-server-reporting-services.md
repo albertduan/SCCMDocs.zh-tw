@@ -36,12 +36,12 @@ System Center Configuration Manager 中包含範例報告模型，但您也可�
 |步驟|說明|詳細資訊|  
 |----------|-----------------|----------------------|  
 |確認是否已安裝 SQL Server Business Intelligence Development Studio|報表模型是使用 SQL Server Business Intelligence Development Studio 設計及建置的。 確認您用於建立自訂報表模型的電腦上，是否已安裝 SQL Server Business Intelligence Development Studio。|如需有關 SQL Server Business Intelligence Development Studio 的詳細資訊，請參閱 SQL Server 2008 文件。|  
-|建立報表模型專案|報表模型專案內含資料來源的定義 (.ds 檔案)、資料來源檢視的定義 (.dsv 檔案)，以及報表模型 (.smdl 檔案)。|如需詳細資訊，請參閱此主題中的＜ [To create the report model project](#BKMK_CreateReportModelProject) ＞一節。|  
-|定義報表模型的資料來源|建立報表模型專案後，您必須定義一種要自其擷取商務資料的資料來源。 這一般是 Configuration Manager 站台資料庫。|如需詳細資訊，請參閱此主題中的＜ [To define the data source for the report model](#BKMK_DefineReportModelDataSource) ＞一節。|  
-|定義報表模型的資料來源檢視|在報表模型專案中定義要使用的資料來源後，下一個步驟便是定義專案的資料來源檢視。 資料來源檢視是以一個或多個資料來源為基礎的邏輯資料模型。 資料來源檢視封裝了底層資料來源中所含對實體物件的存取，例如表格和檢視。 SQL Server Reporting Services 會從資料來源檢視產生報表模型。<br /><br /> 資料來源檢視為您所指定的資料提供了一個有用的呈現方式，方便您進行模型設計的程序。 不需要變更底層的資料來源，您就可以重新命名資料表和欄位，以及在資料來源檢視中新增彙總欄位和衍生資料表。 對於一個有效的模型，則只將您想要使用的資料表新增至資料來源檢視。|如需詳細資訊，請參閱此主題中的＜ [To define the data source view for the report model](#BKMK_DefineReportModelDataSourceView) ＞一節。|  
-|建立報表模型|報表模型位於資料頂端層，用於識別企業實體、欄位和角色。 使用這些模型發佈時，報告產生器使用者可以在不需要熟悉資料庫結構，或瞭解及撰寫查詢的情況下製作報表。 這些模型是由幾組以好記名稱分組的相關報表項目所組成，在這些商務項目間使用預先定義的關聯性，並進行預先定義的計算。 這些模型是使用名為語意模型定義語言 (SMDL) 的 XML 語言所定義。 報表模型檔案的副檔名為 .smdl。|如需詳細資訊，請參閱此主題中的＜ [To create the report model](#BKMK_CreateReportModel) ＞一節。|  
+|建立報表模型專案|報表模型專案內含資料來源的定義 (.ds 檔案)、資料來源檢視的定義 (.dsv 檔案)，以及報表模型 (.smdl 檔案)。|如需詳細資訊，請參閱此主題中的＜ [建立報表模型專案](#BKMK_CreateReportModelProject) ＞一節。|  
+|定義報表模型的資料來源|建立報表模型專案後，您必須定義一種要自其擷取商務資料的資料來源。 這一般是 Configuration Manager 站台資料庫。|如需詳細資訊，請參閱此主題中的＜ [若要定義報表模型的資料來源](#BKMK_DefineReportModelDataSource) ＞一節。|  
+|定義報表模型的資料來源檢視|在報表模型專案中定義要使用的資料來源後，下一個步驟便是定義專案的資料來源檢視。 資料來源檢視是以一個或多個資料來源為基礎的邏輯資料模型。 資料來源檢視封裝了底層資料來源中所含對實體物件的存取，例如表格和檢視。 SQL Server Reporting Services 會從資料來源檢視產生報表模型。<br /><br /> 資料來源檢視為您所指定的資料提供了一個有用的呈現方式，方便您進行模型設計的程序。 不需要變更底層的資料來源，您就可以重新命名資料表和欄位，以及在資料來源檢視中新增彙總欄位和衍生資料表。 對於一個有效的模型，則只將您想要使用的資料表新增至資料來源檢視。|如需詳細資訊，請參閱此主題中的＜ [若要定義報表模型的資料來源檢視](#BKMK_DefineReportModelDataSourceView) ＞一節。|  
+|建立報表模型|報表模型位於資料頂端層，用於識別企業實體、欄位和角色。 使用這些模型發佈時，報告產生器使用者可以在不需要熟悉資料庫結構，或瞭解及撰寫查詢的情況下製作報表。 這些模型是由幾組以好記名稱分組的相關報表項目所組成，在這些商務項目間使用預先定義的關聯性，並進行預先定義的計算。 這些模型是使用名為語意模型定義語言 (SMDL) 的 XML 語言所定義。 報表模型檔案的副檔名為 .smdl。|如需詳細資訊，請參閱此主題中的＜ [建立報表模型](#BKMK_CreateReportModel) ＞一節。|  
 |發佈報表模型|若要使用剛才建立的模型建立報告，您必須將該模型發佈到報告伺服器。 當模型發佈時，其中會包含資料來源和資料來源檢視。|如需詳細資訊，請參閱此主題中的＜ [若要發佈在 SQL Server Reporting Services 中使用的報表模型](#BKMK_PublishReportModel) ＞一節。|  
-|將報告模型部署到 Configuration Manager|您必須先將報告模型部署至 Configuration Manager，才能在 [建立報告精靈]中使用自訂報告模型，建立以模型為基礎的報告。|如需詳細資訊，請參閱此主題中的＜ [To deploy the custom report model to Configuration Manager](#BKMK_DeployReportModel) ＞一節。|  
+|將報告模型部署到 Configuration Manager|您必須先將報告模型部署至 Configuration Manager，才能在 [建立報告精靈]中使用自訂報告模型，建立以模型為基礎的報告。|如需詳細資訊，請參閱此主題中的＜ [將自訂報表模型部署至 Configuration Manager](#BKMK_DeployReportModel) ＞一節。|  
 
 ## <a name="steps-for-creating-a-basic-report-model-in-sql-server-reporting-services"></a>在 SQL Server Reporting Services 中建立基本報告模型的步驟  
  您可以使用下列程序建立基本報告模型，站台的使用者可以根據 Configuration Manager 資料庫單一檢視中的資料，使用這些基本報告模型建立特定模型的報告。 您可以建立一個表示站台用戶端電腦之相關資訊的報表模型給報表作者。 此資訊是從 Configuration Manager 資料庫的 **v_R_System** 檢視取得。  
