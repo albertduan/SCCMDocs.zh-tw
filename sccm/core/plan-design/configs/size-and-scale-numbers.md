@@ -15,9 +15,11 @@ caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
+ms.translationtype: Human Translation
 ms.sourcegitcommit: f9c43e26758d5171a6ef56e827b4b054ebc8a5e5
 ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
+ms.contentlocale: zh-tw
+ms.lasthandoff: 12/31/2016
 
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager 的大小和縮放比例
@@ -37,7 +39,7 @@ ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
 
 下列支援數目是根據使用建議的 Configuration Manager 硬體以及所有可用 Configuration Manager 功能的預設設定。 如果您未使用建議的硬體，或使用更積極的自訂設定 (例如執行硬體或軟體清查的頻率高於每七天一次的預設值)，站台系統的效能可能會降低，也可能不符合指定層級的支援。
 
-##  <a name="a-namebkmksitesystemscalea-site-types"></a><a name="bkmk_SiteSystemScale"></a> 站台類型  
+##  <a name="bkmk_SiteSystemScale"></a> 站台類型  
  **管理中心網站：**  
 
 -   管理中心網站可支援最多 25 個子主要站台。  
@@ -67,7 +69,7 @@ ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
 
     -   此站台系統角色的每個執行個體都支援由階層所支援的用戶端數目上限。  
 
-## <a name="a-namebkmkrolesa-site-system-roles"></a><a name="bkmk_roles"></a> Site system roles    
+## <a name="bkmk_roles"></a> Site system roles    
 
 **應用程式類別目錄 Web 服務點：**  
 
@@ -125,10 +127,10 @@ ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
 
 -   根據預設，Configuration Manager 不支援將軟體更新點設定為網路負載平衡 (NLB) 叢集。 不過，您可以使用 Configuration Manager SDK，在 NLB 叢集上設定最多四個軟體更新點。  
 
-##  <a name="a-namebkmkclientnumbersa-client-numbers-for-sites-and-hierarchies"></a><a name="bkmk_clientnumbers"></a> 站台和階層的用戶端數目  
+##  <a name="bkmk_clientnumbers"></a> 站台和階層的用戶端數目  
  使用下列資訊，判斷您可以於站台上或階層中支援的用戶端數目和用戶端類型。  
 
-###  <a name="a-namebkmkcasa-hierarchy-with-a-central-administration-site"></a><a name="bkmk_cas"></a> 使用管理中心網站的階層  
+###  <a name="bkmk_cas"></a> 使用管理中心網站的階層  
 管理中心網站支援的裝置總數，包含針對下列三個群組所列出之最多裝置數目：  
 
 -   700,000 部桌上型電腦 (執行 Windows、Linux 和 UNIX 的電腦)  
@@ -137,7 +139,7 @@ ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
 
 -   下列其中一項，根據您的部署如何支援行動裝置管理 (MDM)：  
 
-    -   使用內部部署 MDM 管理的&100;,000 部裝置  
+    -   使用內部部署 MDM 管理的 100,000 部裝置  
 
     -   300,000 部雲端型裝置  
 
@@ -147,17 +149,17 @@ ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
 >  在管理中心網站使用 SQL Server 標準版的階層中，階層支援最多 50,000 部桌上型電腦與裝置。 在獨立主要站台使用中的 SQL Server 版本不會限制該站台容量，以支援最多指定數目的用戶端。  
 
 
-###  <a name="a-namebkmkchipria-child-primary-site"></a><a name="bkmk_chipri"></a> 子主要站台  
+###  <a name="bkmk_chipri"></a> 子主要站台  
 使用管理中心網站之階層中的每個子主要站台支援下列：  
 
--   總計&150;,000 部用戶端與裝置，不限於特定群組或類型，只要支援不超過階層所支援的數目即可。  
+-   總計 150,000 部用戶端與裝置，不限於特定群組或類型，只要支援不超過階層所支援的數目即可。  
 
 例如，支援執行 Mac 和 Windows CE 7.0 的 25,000 部電腦的主要站台 (因為這是階層的限制)，之後可以支援額外的 125,000 部桌上型電腦。 其所支援裝置的總數最高為子主要站台支援的最大限制：150,000。
 
-###  <a name="a-namebkmkpria-stand-alone-primary-site"></a><a name="bkmk_pri"></a> 獨立主要站台  
+###  <a name="bkmk_pri"></a> 獨立主要站台  
 獨立主要站台支援下列的裝置數目：  
 
--   總計&175;,000 部用戶端與裝置，不得超過：  
+-   總計 175,000 部用戶端與裝置，不得超過：  
 
     -   150,000 部桌上型電腦 (執行 Windows、Linux 和 UNIX 的電腦)  
 
@@ -165,32 +167,27 @@ ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
 
     -   下列其中一項，根據您的部署如何支援行動裝置管理：  
 
-        -   使用內部部署 MDM 管理的&50;,000 部裝置  
+        -   使用內部部署 MDM 管理的 50,000 部裝置  
 
         -   150,000 部雲端型裝置  
 
 例如，支援 150,000 部桌上型電腦和 10,000 部 Mac 或 Windows CE 7.0 的獨立主要站台僅可以支援額外的 15,000 部裝置。 這些可以是雲端型或使用內部部署 MDM 管理的裝置。  
 
-###  <a name="a-namebkmkseca-secondary-sites"></a><a name="bkmk_sec"></a> 次要站台  
+###  <a name="bkmk_sec"></a> 次要站台  
 次要站台支援下列：  
 
 -   15,000 部桌上型電腦 (執行 Windows、Linux 和 UNIX 的電腦)  
 
-###  <a name="a-namebkmkmpa-management-points"></a><a name="bkmk_mp"></a> 管理點  
+###  <a name="bkmk_mp"></a> 管理點  
 每個管理點都可以支援下列數目的裝置：  
 
--   總計&25;,000 部用戶端和裝置，不得超過：  
+-   總計 25,000 部用戶端和裝置，不得超過：  
 
     -   25,000 部桌上型電腦 (執行 Windows、Linux 和 UNIX 的電腦)  
 
     -   下列其中之一 (非兩者皆是)：  
 
-        -   使用內部部署 MDM 管理的&10;,000 部裝置  
+        -   使用內部部署 MDM 管理的 10,000 部裝置  
 
         -   10,000 部執行 Mac 和 Windows CE 7.0 用戶端的裝置
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

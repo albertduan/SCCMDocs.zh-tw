@@ -144,7 +144,7 @@ ms.lasthandoff: 05/17/2017
 
 > [!NOTE]  
 
->  延伸架構可能包括繼承自舊版產品但 Configuration Manager&2015; 並未使用的屬性和類別。 例如：  
+>  延伸架構可能包括繼承自舊版產品但 Configuration Manager 2015 並未使用的屬性和類別。 例如：  
 
 >   
 >  -   Attribute: cn=MS-SMS-Site-Boundaries  
