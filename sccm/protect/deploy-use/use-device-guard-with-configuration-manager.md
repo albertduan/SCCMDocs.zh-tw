@@ -95,7 +95,7 @@ Windows Device Guard 讓您強式控制可在您管理之電腦上執行的項�
 1.    在 Configuration Manager 主控台中，按一下 [資產與合規性]。
 2.    在 [資產與相容性] 工作區中，展開 [Endpoint Protection]，然後按一下 [Device Guard 原則]。
 3.    從設定檔清單選取您要部署的設定檔，然後在 [首頁] 索引標籤的 [部署] 群組中，按一下 [部署]。
-4.    在 [Deploy Device Guard Policy] (部署 Device Guard 原則) 對話方塊中，選取您要部署原則的目標集合，設定用戶端將評估原則的排程，最後選取用戶端是否可以在任何設定的維護期間以外評估原則。
+4.    在 [Deploy Device Guard Policy]\(部署 Device Guard 原則) 對話方塊中，選取您要部署原則的目標集合，設定用戶端將評估原則的排程，最後選取用戶端是否可以在任何設定的維護期間以外評估原則。
 5.    完成後，請按一下 [確定] 部署原則。 
 
 在用戶端電腦上處理原則之後，會根據 [電腦重新啟動] 的 [用戶端設定]，在該用戶端上排程重新啟動。
@@ -112,7 +112,7 @@ Windows Device Guard 讓您強式控制可在您管理之電腦上執行的項�
 若要確認特定軟體正被封鎖或稽核，請參閱下列本機用戶端事件記錄檔。 在 [事件檢視器] 中，相關記錄檔如下所示：
 
 1.    如需封鎖及稽核可執行檔，請使用 [應用程式及服務記錄檔] > [Microsoft] > [Windows] > [程式碼完整性] > [操作]。
-2.    如需封鎖及稽核 Windows 安裝程式和指令碼檔案，請使用 [應用程式及服務記錄檔] > [Microsoft] > [Windows] > [AppLocker] > [MSI and Script] (MSI 和指令碼)。
+2.    如需封鎖及稽核 Windows 安裝程式和指令碼檔案，請使用 [應用程式及服務記錄檔] > [Microsoft] > [Windows] > [AppLocker] > [MSI and Script]\(MSI 和指令碼)。
 
 ## <a name="security-and-privacy-information-for-device-guard"></a>Device Guard 的安全性和隱私權資訊
 
