@@ -2,7 +2,7 @@
 title: "安裝 Updates Publisher | Microsoft Docs"
 description: "在您的環境中安裝 System Center Updates Publisher"
 ms.custom: na
-ms.date: 4/29/2017
+ms.date: 07/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: 996766d0bd9ab2a3acb1970414f0ae511d97fbff
+ms.sourcegitcommit: 70772ba7d08560aa66abcce29dc6cc6334aa2032
+ms.openlocfilehash: 63ea0383497a3f06870c0907c732010259d1a809
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/03/2017
 
 ---
 # <a name="install-updates-publisher"></a>安裝 Updates Publisher
@@ -119,7 +119,7 @@ Updates Publisher 只提供英文版，但可以管理其他語言的更新。 �
 安裝完成之後，請執行 [UpdatesPublisher] 資料夾中的 **UpdatesPublisher.exe** 來啟動 Updates Publisher。
 
 ## <a name="next-steps"></a>後續步驟
- 安裝 Updates Publisher 之後，建議您[設定 Updates Publisher 的選項](/tools/updates-publisher-options)。 在可以使用 Updates Publisher 的某些功能之前，您必須先設定一些選項。
+ 安裝 Updates Publisher 之後，建議您[設定 Updates Publisher 的選項](updates-publisher-options.md)。 在可以使用 Updates Publisher 的某些功能之前，您必須先設定一些選項。
 
- 不過，如果您想要使用預設值，且沒有計畫要將更新部署到更新伺服器或受管理的裝置，則可以跳至[管理軟體更新類別目錄](/tools/updates-publisher-catalogs)或[建立軟體更新](/tools/create-updates-with-updates-publisher)，並建立您自己的更新類別目錄。
+ 不過，如果您想要使用預設值，且沒有計畫要將更新部署到更新伺服器或受管理的裝置，則可以跳至[管理軟體更新類別目錄](updates-publisher-catalogs.md)或[建立軟體更新](create-updates-with-updates-publisher.md)，並建立您自己的更新類別目錄。
 
