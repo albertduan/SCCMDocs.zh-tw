@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
-ms.openlocfilehash: ec33d5febcbf7b57e220f7fe27db9671080fecff
+ms.sourcegitcommit: b0ba955aa7f854c3fa2c06ccf9ccd8ed354758b0
+ms.openlocfilehash: 31bddee83b2365cfa903077ffaa1d7116b194378
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/12/2017
 
 
 ---
@@ -40,7 +40,7 @@ ms.lasthandoff: 05/17/2017
 **Windows：**
 - 只會支援 Windows 的品質和安全性更新。
 - 不支援最新分支 (CB)、最新商務分支 (CBB) 或 Windows 10 的 LTSB。
--    不支援 Windows Server 的新主要版本。
+-   不支援 Windows Server 的新主要版本。
 
 **SQL Server：**
 - SQL Server 僅支援品質和安全性更新或次要升級 (例如 Service Pack)。
@@ -51,6 +51,7 @@ LTSB 支援使用下列 Windows 電腦作業系統作為站台系統。  每個�
 
 **支援的作業系統：**
 - Windows Server 2016
+- Windows Server 2012 R2 (x64)：Standard、Datacenter
 - Windows Server 2012 (x64)：Standard、Datacenter
 - Windows Server 2008 R2 (含 SP1) (x64)：Standard、Enterprise、Datacenter
 - Windows Server 2008 (含 SP2) (x86、x64)：Standard、Enterprise、Datacenter *(請參閱註 1)*
