@@ -15,26 +15,27 @@ caps.latest.revision: 12
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d7b13f3dea5a3ae413ca6b8150ec24e1632a4d4d
-ms.openlocfilehash: e63b639836bc38a030a051e80db4b057ab75a0b0
+ms.translationtype: HT
+ms.sourcegitcommit: 1035dbbf944a3a467d637a4a948a75b0946eb711
+ms.openlocfilehash: 4a3c69edc85a4ea7501510b6b3f12c72ad3a24ff
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 07/11/2017
 
 ---
-# <a name="create-a-task-sequence-to-upgrade-an-operating-system-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中建立工作順序以升級作業系統
+# 在 System Center Configuration Manager 中建立工作順序以升級作業系統
+<a id="create-a-task-sequence-to-upgrade-an-operating-system-in-system-center-configuration-manager" class="xliff"></a>
 
-*適用於︰System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
-使用 System Center Configuration Manager 中的工作順序，將目的地電腦上的作業系統從 Windows 7 或更新版本自動升級至 Windows 10。 您建立的工作順序，會參考要安裝在目的地電腦上的作業系統映像，以及其他任何內容，例如應用程式或要安裝的軟體更新。 升級作業系統的工作順序是[將 Windows 升級至最新版本](upgrade-windows-to-the-latest-version.md)案例的一部分。  
+使用 System Center Configuration Manager 中的工作順序，將目的地電腦上的作業系統從 Windows 7 或更新版本自動升級至 Windows 10，或是從 Windows Server 2012 或更新版本升級至 Windows Server 2016。 您建立的工作順序，會參考要安裝在目的地電腦上的作業系統映像，以及其他任何內容，例如應用程式或要安裝的軟體更新。 升級作業系統的工作順序是[將 Windows 升級至最新版本](upgrade-windows-to-the-latest-version.md)案例的一部分。  
 
 ##  <a name="BKMK_UpgradeOS"></a> 建立工作順序以升級作業系統  
- 若要將電腦上的作業系統升級至 Windows 10，您可以建立工作順序，並在 [建立工作順序精靈] 中選取 [從升級套件升級作業系統]  。 該精靈會加入升級作業系統、套用軟體更新以及安裝應用程式的步驟。 建立工作順序之前，必須備妥下列事項：  
+ 若要升級電腦上的作業系統，您可以建立工作順序，並在 [建立工作順序精靈] 中選取 [從升級套件升級作業系統]。 該精靈會加入升級作業系統、套用軟體更新以及安裝應用程式的步驟。 建立工作順序之前，必須備妥下列事項：    
 
 -   **必要**  
 
-     - Configuration Manager 主控台中必須提供 Windows 10 [作業系統升級套件](../get-started/manage-operating-system-upgrade-packages.md)。  
+     - Configuration Manager 主控台中必須有[作業系統升級套件](../get-started/manage-operating-system-upgrade-packages.md)。
+     - 當您升級到 Windows Server 2016 時，必須在 [升級作業系統] 工作順序步驟中選取 [忽略任何可解除的相容性訊息] 設定，否則升級會失敗。
 
 -   **必要 (如果有用到)**  
 
@@ -42,7 +43,8 @@ ms.lasthandoff: 05/17/2017
 
     -   Configuration Manager 主控台中必須新增[應用程式](../../apps/deploy-use/create-applications.md)。  
 
-#### <a name="to-create-a-task-sequence-that-upgrades-an-operating-system"></a>建立升級作業系統的工作順序  
+#### 建立升級作業系統的工作順序
+<a id="to-create-a-task-sequence-that-upgrades-an-operating-system" class="xliff"></a>  
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
@@ -64,7 +66,9 @@ ms.lasthandoff: 05/17/2017
 
     -   **版本索引**：如果套件中有多個作業系統版本索引，請選取所需的版本索引。 依預設，會選取第一個項目。  
 
-    -   **產品金鑰**：指定要安裝之 Windows 作業系統的產品金鑰。 您可以指定編碼的大量授權金鑰和標準產品金鑰。 如果您使用非編碼的產品金鑰，則必須以破折號 (-) 分隔字元，每 5 個字元為一組。 例如： *XXXXX-XXXXX-XXXXX-XXXXX-XXXXX*。 當大量授權版本進行升級時，不需要產品金鑰。 只有在零售版的 Windows 版本升級時，才需要產品金鑰。  
+    -   **產品金鑰**：指定要安裝之 Windows 作業系統的產品金鑰。 您可以指定編碼的大量授權金鑰和標準產品金鑰。 如果您使用未編碼的產品金鑰，則每五個字元為一組，之間必須以破折號 (-) 來分隔。 例如： *XXXXX-XXXXX-XXXXX-XXXXX-XXXXX*。 當大量授權版本進行升級時，不需要產品金鑰。 只有在零售版的 Windows 版本升級時，才需要產品金鑰。  
+
+    -   **忽略任何可解除的相容性訊息**：如果是升級到 Windows Server 2016，請選取此選項。 如果您未選取此設定，則工作順序將會失敗，因為 Windows 安裝程式會等待使用者按一下 Windows 應用程式相容性對話方塊中的 [確認]。   
 
 7.  在 [包含更新]  頁面上，指定要安裝必要的軟體更新、所有軟體更新或不安裝軟體更新，然後按 [下一步] 。 如果您指定安裝軟體更新，Configuration Manager 只會將目標軟體更新安裝至目的地電腦為其成員的集合。  
 
@@ -74,16 +78,18 @@ ms.lasthandoff: 05/17/2017
 
 
 
-## <a name="configure-pre-cache-content"></a>設定預先快取內容
+## 設定預先快取內容
+<a id="configure-pre-cache-content" class="xliff"></a>
 從 1702 版開始，針對工作順序的可用部署，您可以選擇使用預先快取功能，讓用戶端在使用者安裝內容之前只下載相關內容。
 > [!TIP]  
 > 隨版本 1702 引進的預先快取是發行前版本功能。 若要啟用它，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/pre-release-features)。
 
-例如，假設您想要部署 Windows 10 就地升級工作順序、只需要適用於所有使用者的單一工作順序，並有多個架構及 (或) 語言。 在版本 1702 之前，如果您建立可用的部署，然後使用者在軟體中心按一下 [安裝]，此時會下載內容。 這會增加準備開始安裝之前的額外時間。 此外，您可以下載工作順序中參照的所有內容。 這包括所有語言和架構的作業系統升級套件。 如果每個大小約 3 GB，下載套件可能會相當大。
+例如，假設您想要部署 Windows 10 就地升級工作順序、只需要適用於所有使用者的單一工作順序，並有多個架構及 (或) 語言。 在版本 1702 之前，如果您建立可用的部署，然後使用者在軟體中心按一下 [安裝]，此時會下載內容。 這會增加準備開始安裝之前的額外時間。 此外，您可以下載工作順序中參照的所有內容。 這包括所有語言和架構的作業系統升級套件。 如果每個大小約 3 GB，則下載套件可能會相當大。
 
 預先快取內容可讓您選擇允許用戶端在一收到部署時，就只下載適用的內容。 因此，當使用者在軟體中心按一下 [安裝] 時，由於內容是在本機硬碟上，因此內容已就緒且安裝會快速開始。
 
-### <a name="to-configure-the-pre-cache-feature"></a>設定預先快取功能
+### 設定預先快取功能
+<a id="to-configure-the-pre-cache-feature" class="xliff"></a>
 
 1. 建立特定架構和語言的作業系統升級套件。 在套件的 [資料來源] 索引標籤中指定架構和語言。 針對語言，使用十進位轉換 (例如 1033 是英文的十進位表示，而 0x0409 是十六進位的對等用法)。 如需詳細資訊，請參閱[建立工作順序以升級作業系統](/sccm/osd/deploy-use/create-a-task-sequence-to-upgrade-an-operating-system)。
 
@@ -101,14 +107,16 @@ ms.lasthandoff: 05/17/2017
     - 在 [發佈點] 索引標籤上，設定 [部署選項] 設定。 如果在使用者開始安裝之前未在用戶端預先快取內容，則會使用這些設定。
 
 
-### <a name="user-experience"></a>使用者經驗
+### 使用者經驗
+<a id="user-experience" class="xliff"></a>
 - 當用戶端收到部署原則時，就會開始預先快取內容。 這包括所有參考的內容 (任何其他套件類型)，以及根據您在工作順序中設定的條件只符合用戶端的作業系統升級套件。
 - 當使用者可以使用部署時 (部署之 [排程] 索引標籤中的設定)，系統會顯示通知，告知使用者有此新的部署，並在軟體中心顯示此部署。 使用者可以前往軟體中心，然後按一下 [安裝] 開始安裝。
 - 如果未完整預先快取內容，則會使用部署之 [部署選項] 索引標籤上指定的設定。 建議在建立部署到部署可供使用者使用之間有足夠的時間，讓用戶端有足夠的時間來預先快取內容。
 
 
 
-## <a name="download-package-content-task-sequence-step"></a>下載套件內容的工作順序步驟  
+## 下載套件內容的工作順序步驟
+<a id="download-package-content-task-sequence-step" class="xliff"></a>  
  在下列案例中的 [升級作業系統] 步驟之前，可以使用[下載套件內容](../understand/task-sequence-steps.md#BKMK_DownloadPackageContent)步驟：  
 
 -   您使用可同時搭配 x86 和 x64 平台使用的單一升級工作順序。 若要執行此作業，請在 **準備升級** 群組中加入兩個 **下載套件內容** 步驟，這些步驟設有條件，可偵測用戶端架構，僅下載適用的作業系統升級套件。 將每個 **下載套件內容** 步驟設定為使用相同的變數，並使用該變數來代表 **升級作業系統** 步驟中的媒體路徑。  
@@ -118,15 +126,18 @@ ms.lasthandoff: 05/17/2017
    > [!NOTE]
    > 有多個套件時，Configuration Manager 會在變數名稱後面加上數值尾碼。 例如，如果您指定 %mycontent% 變數作為自訂變數，這會是所有參照內容儲存位置的根目錄 (可以是多個套件)。 當您在後續步驟 (例如 [升級作業系統]) 中參考此變數時，會使用加上數值尾碼的變數。 在這個範例中，%mycontent01% 或 %mycontent02% 中的數字會與套件在這個步驟中列出的順序對應。
 
-## <a name="optional-post-processing-task-sequence-steps"></a>選擇性的後續處理工作順序步驟  
+## 選擇性的後續處理工作順序步驟
+<a id="optional-post-processing-task-sequence-steps" class="xliff"></a>  
  建立工作順序之後，可新增其他步驟來解除安裝出現已知相容性問題的應用程式，或新增重新啟動電腦之後要執行的後續處理動作，如此即已成功升級為 Windows 10。 在工作順序的後續處理群組中新增下列其他步驟。  
 
 > [!NOTE]  
 >  因為這個工作順序並非線性順序，所以根據是否成功升級用戶端電腦，或者是否必須將用戶端電腦復原成啟動所用的作業系統版本，會出現不同的步驟，而可能影響工作順序的結果。  
 
-## <a name="optional-rollback-task-sequence-steps"></a>選擇性的復原工作順序步驟  
+## 選擇性的復原工作順序步驟
+<a id="optional-rollback-task-sequence-steps" class="xliff"></a>  
  重新啟動電腦之後若升級程序出錯，安裝程式會將升級復原為先前的作業系統，而工作順序會繼續執行復原群組中的任何步驟。 建立工作順序之後，可對復原群組新增選擇性的步驟。  
 
-## <a name="folder-and-files-removed-after-computer-restart"></a>在重新啟動電腦之後移除的資料夾和檔案  
+## 在重新啟動電腦之後移除的資料夾和檔案
+<a id="folder-and-files-removed-after-computer-restart" class="xliff"></a>  
  如果將作業系統升級至 Windows 10 的工作順序以及工作順序中的所有其他步驟完成，則除非重新啟動電腦，否則不會移除後置處理和復原指令碼。  這些指令檔未包含機密資訊。  
 
