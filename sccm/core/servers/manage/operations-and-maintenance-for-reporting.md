@@ -15,9 +15,11 @@ caps.latest.revision: 5
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: f5a58ba9ecd9b0998c2859b6d3f45e493d7ef3cb
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f62d969dd49fb00b688602128df74b28ff551135
+ms.openlocfilehash: df572cd0c64c82e25164430a53e1b893b3ba3cf5
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/07/2017
 
 
 ---
@@ -27,10 +29,10 @@ ms.openlocfilehash: f5a58ba9ecd9b0998c2859b6d3f45e493d7ef3cb
 
 System Center Configuration Manager 中用於報告的基礎結構就緒後，您通常會執行一些作業來管理報告及報告訂閱。  
 
-##  <a name="a-namebkmkmanagereportsa-manage-configuration-manager-reports"></a><a name="BKMK_ManageReports"></a> 管理 Configuration Manager 報告  
+##  <a name="BKMK_ManageReports"></a> 管理 Configuration Manager 報告  
  Configuration Manager 提供超過 400 種預先定義的報告，可幫助您收集、組織及呈現有關組織內使用者、硬體和軟體清查、軟體更新、應用程式、站台狀態，以及其他 Configuration Manager 作業的資訊。 您可以依原樣使用預先定義的報告，也可以修改報告以因應您的需求。 您也可以建立自訂的模型式和 SQL 式報告，以因應您的需求。 下列各節可協助您規劃 Configuration Manager 報告。  
 
-###  <a name="a-namebkmkrunreporta-run-a-configuration-manager-report"></a><a name="BKMK_RunReport"></a> 執行 Configuration Manager 報告  
+###  <a name="BKMK_RunReport"></a> 執行 Configuration Manager 報告  
  Configuration Manager 中的報表會儲存在 SQL Server Reporting Services，並從 Configuration Manager 站台資料庫擷取報表中轉譯的資料。 您可以存取在 Configuration Manager 主控台或使用報表管理員中，您在 web 瀏覽器來存取報表。 您可以在可存取執行 SQL Server Reporting Services 電腦的任何電腦上開啟報告，但是您必須有足夠的權限才能檢視報告。 當您執行報告時，報告標題、描述及類別會以本機作業系統的語言顯示。  
 
 > [!NOTE]  
@@ -38,6 +40,9 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 > [!WARNING]  
 >  若要執行報告，您必須具有 [站台]  權限的 [讀取]  權限，以及針對特定物件設定的 [執行報告]  權限。  
+
+> [!IMPORTANT]    
+> 除了 Reporting Servicies 點帳戶之外，還必須為來自不同網域的使用者建立雙向信任，才能成功執行報告。
 
 > [!NOTE]  
 >  報表管理員是 Web 式報告存取和管理工具，可透過 HTTP 連線用來管理遠端位置上的單一報表伺服器執行個體。 您可以使用報表管理員進行操作工作，例如檢視報告、修改報告內容，以及管理相關聯的報告訂閱。 本主題提供在報表管理員中檢視報告和修改報告內容的步驟，如需有關報表管理員所提供其他選項的詳細資訊，請參閱《SQL Server 2008 線上叢書》中的 [報表管理員](http://go.microsoft.com/fwlink/p/?LinkId=224916) 。  
@@ -73,7 +78,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 4.  如果有必要的參數，請指定參數，然後按一下 [檢視報告] 。  
 
-###  <a name="a-namebkmkmodifyreportpropertiesa-modify-the-properties-for-a-configuration-manager-report"></a><a name="BKMK_ModifyReportProperties"></a> 修改 Configuration Manager 報告的內容  
+###  <a name="BKMK_ModifyReportProperties"></a> 修改 Configuration Manager 報告的內容  
  您可以在 Configuration Manager 主控台中檢視報告的內容，例如報告名稱和描述，但是若要變更內容，請使用報表管理員。 利用下列程序修改 Configuration Manager 報告的內容。  
 
 #### <a name="to-modify-report-properties-in-report-manager"></a>若要在報表管理員中修改報表內容  
@@ -91,7 +96,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 5.  完成時，按一下 [套用] 。 報告內容會儲存在報告伺服器上，而且 Configuration Manager 主控台會針對報告擷取更新的報告內容。  
 
-###  <a name="a-namebkmkeditreporta-edit-a-configuration-manager-report"></a><a name="BKMK_EditReport"></a> 編輯 Configuration Manager 報告  
+###  <a name="BKMK_EditReport"></a> 編輯 Configuration Manager 報告  
  當現有 Configuration Manager 報告未擷取必要的資訊，或未提供您需要的配置或設計時，您可以在報表產生器中編輯報告。  
 
 > [!NOTE]  
@@ -115,7 +120,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 4.  在報告產生器中，修改適當的報告設定，然後按一下 [儲存]  將報告儲存至報告伺服器。  
 
-###  <a name="a-namebkmkcreatemodelbasedreporta-create-a-model-based-report"></a><a name="BKMK_CreateModelBasedReport"></a> 建立模型式報告  
+###  <a name="BKMK_CreateModelBasedReport"></a> 建立模型式報告  
  模型式報告可讓您以互動方式選取要包含在報告中的項目。 如需建立自訂報表模型的詳細資訊，請參閱[在 SQL Server Reporting Services 中建立 System Center Configuration Manager 的自訂報表模型](creating-custom-report-models-in-sql-server-reporting-services.md)。  
 
 > [!IMPORTANT]  
@@ -157,7 +162,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 10. 按一下 [儲存]  將報告儲存至報告伺服器。 您可以在 [監視]  工作區的 [報告]  節點中，執行和修改新報告。  
 
-###  <a name="a-namebkmkcreatesqlbasedreporta-create-a-sql-based-report"></a><a name="BKMK_CreateSQLBasedReport"></a> 建立 SQL 式報告  
+###  <a name="BKMK_CreateSQLBasedReport"></a> 建立 SQL 式報告  
  SQL 式報告可讓您擷取 Report SQL Statement 為基礎的資料。  
 
 > [!IMPORTANT]  
@@ -200,10 +205,10 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 9. 按一下 [儲存]  將報告儲存至報告伺服器。 您可以在 [監視]  工作區的 [報告]  節點中，執行新報告。  
 
-##  <a name="a-namebkmkmanagereportsubscriptionsa-manage-report-subscriptions"></a><a name="BKMK_ManageReportSubscriptions"></a> 管理報告訂閱  
+##  <a name="BKMK_ManageReportSubscriptions"></a> 管理報告訂閱  
  SQL Server Reporting Services 中的報告訂閱可讓您設定以電子郵件自動傳遞指定的報告，或依排程的間隔傳遞至檔案共用。 使用 System Center 2012 Configuration Manager 中的 [建立訂閱精靈] 來設定報告訂閱。  
 
-###  <a name="a-namebkmkreportsubscriptionfilesharea-create-a-report-subscription-to-deliver-a-report-to-a-file-share"></a><a name="BKMK_ReportSubscriptionFileShare"></a> 建立報告訂閱，將報告傳遞至檔案共用  
+###  <a name="BKMK_ReportSubscriptionFileShare"></a> 建立報告訂閱，將報告傳遞至檔案共用  
  當您建立報告訂閱將報告傳遞至檔案共用時，報告會以指定的格式複製到您指定的檔案共用。 您一次只能訂閱和要求傳遞一份報告。  
 
  與報告伺服器所裝載和管理的報告不同的是，傳遞至共用資料夾的報告為靜態檔案。 針對報告定義的互動功能對於做為檔案儲存在檔案系統上的報告沒有作用。 互動功能會做為靜態項目呈現。 如果報告包含圖表，則會使用預設呈現方式。 如果報告連結至另一個報告，連結會轉譯為靜態文字。 如果您要在傳遞的報告中保留互動功能，請改用電子郵件傳遞。 如需電子郵件傳遞的詳細資訊，請參閱本主題稍後的 [建立報告訂閱以使用電子郵件傳遞報告](#BKMK_ReportSubscriptionEmail) 章節。  
@@ -270,7 +275,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
     -   **描述**：指定報告訂閱的描述。  
 
-     按一下 [   
+     按一下    
 
 5.  在 [訂閱排程]  頁面上，為報告訂閱選取下列其中一個傳遞排程選項：  
 
@@ -284,7 +289,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 8.  在 [完成]  頁面上，按一下 [關閉]  結束精靈。 確認報告訂閱已成功建立。 您可以在 [監視]  工作區的 [報告]  下，於 [訂閱]  節點中檢視及修改告訂閱。  
 
-###  <a name="a-namebkmkreportsubscriptionemaila-create-a-report-subscription-to-deliver-a-report-by-email"></a><a name="BKMK_ReportSubscriptionEmail"></a> 建立報告訂閱以使用電子郵件傳遞報告  
+###  <a name="BKMK_ReportSubscriptionEmail"></a> 建立報告訂閱以使用電子郵件傳遞報告  
  當您建立報告訂閱使用電子郵件傳遞報告時，電子郵件會傳送至您設定的收件者，而報告會做為附件包含在其中。 報告伺服器不會驗證電子郵件地址，或是從電子郵件伺服器取得電子郵件地址。 您必須事先得知要使用的電子郵件地址。 根據預設，您可以用電子郵件將報告寄給組織內外任何有效的電子郵件帳戶。 您可以選取下列其中一個電子郵件傳遞選項，或兩個都選取：  
 
 -   傳送通知及所產生報告的超連結。  
@@ -358,9 +363,4 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 -   在 [摘要]  頁面上檢閱報告訂閱設定。 按一下 [上一步]  變更設定，或按 [下一步]  建立報告訂閱。  
 
 -   在 [完成]  頁面上，按一下 [關閉]  結束精靈。 確認報告訂閱已成功建立。 您可以在 [監視]  工作區的 [報告]  下，於 [訂閱]  節點中檢視及修改告訂閱。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

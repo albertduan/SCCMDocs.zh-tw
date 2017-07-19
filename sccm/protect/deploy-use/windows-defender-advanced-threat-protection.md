@@ -16,10 +16,10 @@ author: NathBarn
 ms.author: nathbarn
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
-ms.openlocfilehash: 237dc9cbccb973720a633490f096aed4bc16d183
+ms.sourcegitcommit: 0ebda27c0f3848615346c2ecf1ab8b9bb9ab6f0d
+ms.openlocfilehash: 6c3b67278fa587c137a29e174e277fb0f15872c8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 05/26/2017
 
 ---
 # <a name="windows-defender-advanced-threat-protection"></a>Windows Defender 進階威脅防護
@@ -33,10 +33,10 @@ Windows Defender ATP 是 [Windows 資訊安全中心](https://securitycenter.win
  **先決條件**  
 
 -   Windows Defender 進階威脅防護線上服務訂閱  
+-   執行 Windows 10 (1607 版及更新版本) 的用戶端電腦  
+-   執行 Configuration Manager 1610 版或更新版本用戶端代理程式的用戶端電腦
 
--   執行 Windows 10 1607 和更新版本的用戶端  
-
-## <a name="how-to-create-an-onboarding-configuration-file"></a>如何建立上架設定檔  
+## <a name="how-to-create-an-onboarding-configuration-file"></a>如何建立登入設定檔  
 
  1.  登入 [Windows Defender ATP 線上服務](https://securitycenter.windows.com/)   
 
