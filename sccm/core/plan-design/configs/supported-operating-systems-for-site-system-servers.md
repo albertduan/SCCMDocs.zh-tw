@@ -2,7 +2,7 @@
 title: "支援的站台系統伺服器 | Microsoft Docs"
 description: "了解您可用來裝載 System Center Configuration Manager 站台或站台系統角色的 Windows 版本。"
 ms.custom: na
-ms.date: 3/9/2017
+ms.date: 06/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 86109f7186422c2b29ee933e827a7d14123e5792
+ms.sourcegitcommit: 0ec241d07f51b80b84d65676ef1207b31a9a9983
+ms.openlocfilehash: be635e4df79b57b6f650287fa3774d2c10613cee
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/28/2017
 
 
 ---
@@ -184,8 +184,8 @@ ms.lasthandoff: 05/17/2017
 ## <a name="windows-server-2008-r2-with-sp1-x64-standard-enterprise-and-datacenter"></a>Windows Server 2008 R2 with SP1 (x64)：Standard、Enterprise 和 Datacenter  
  Windows Server 2008 R2 現在屬於延伸支援，而不再屬於主流支援，如 [Microsoft 支援週期](https://support.microsoft.com/lifecycle)中詳述。 如需這些作業系統作為 Configuration Manager 站台系統伺服器的未來支援詳細資訊，請參閱 [System Center Configuration Manager 的已移除和已淘汰功能](../../../core/plan-design/changes/removed-and-deprecated-features.md)。  
 
- 從 Configuration Manager 1702 版開始，站台伺服器或大部分站台系統角色將不會支援此作業系統，但仍會持續支援狀態移轉點和發佈點站台系統角色 (包括提取發佈點，以及針對 PXE 和多點傳送)。
- 
+ 從 Configuration Manager 1702 版開始，站台伺服器或大部分站台系統角色將不會支援此作業系統，但發佈點站台系統角色 (包括提取發佈點，以及針對 PXE 和多點傳送) 仍會持續支援它。
+
  1702 之前的版本會繼續支援針對下列項目使用此作業系統：
 
 

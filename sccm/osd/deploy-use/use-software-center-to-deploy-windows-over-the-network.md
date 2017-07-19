@@ -2,7 +2,7 @@
 title: "透過網路使用軟體中心部署 Windows | Microsoft Docs"
 description: "您可以將作業系統部署至 Software Center，以使用新版本的 Windows 重新整理現有電腦，或將 Windows 升級至最新版本。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 6/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,39 +12,36 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 919e3636-53fe-4119-ad14-2d03702b391b
 caps.latest.revision: 5
-author: Dougeby
-ms.author: dougeby
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: 4c3ec20396da37d36f908af527f445a7a736e0ac
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
+ms.openlocfilehash: 8988409c68b7f69439ed03872c316b2139d25616
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/28/2017
 
 
 ---
 # <a name="use-software-center-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>使用軟體中心透過網路利用 System Center Configuration Manager 部署 Windows
 
-*適用於：System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
-在 System Center Configuration Manager 中安裝作業系統的工作順序，可於軟體中心內提供。 在下列作業系統部署案例中，您可以將作業系統部署到軟體中心：  
+針對會在 System Center Configuration Manager 中安裝作業系統的工作順序，您可以讓軟體中心提供此工作順序。 您可以透過下列作業系統部署案例將作業系統部署到軟體中心：
 
--   [使用新的 Windows 版本重新整理現有的電腦](refresh-an-existing-computer-with-a-new-version-of-windows.md)  
+-   [使用新的 Windows 版本重新整理現有的電腦](refresh-an-existing-computer-with-a-new-version-of-windows.md)
 
--   [將 Windows 升級至最新版本](upgrade-windows-to-the-latest-version.md)  
+-   [將 Windows 升級至最新版本](upgrade-windows-to-the-latest-version.md)
 
- 完成任一作業系統部署案例中的步驟，然後使用以下各節準備可在軟體中心內進行的部署。  
+完成其中一個作業系統部署案例的步驟。 然後使用以下各節的內容來針對於軟體中心提供的部署進行準備。
 
 ## <a name="configure-deployment-settings"></a>設定部署設定  
- 當您想要在軟體中心內提供作業系統部署時，必須將部署設定為讓 Configuration Manager 用戶端可以使用該作業系統。 您可以在 [部署軟體精靈] 的 [部署設定]  頁面上設定此項目，或是在部署的內容之 [部署設定]  索引標籤上設定此項目。  如果是 [供下列項目使用]  設定，請設定 [只有 Configuration Manager 用戶端]  或是 [Configuration Manager 用戶端、媒體與 PXE] 。 在部署完作業系統之後，它就會顯示在目標集合成員的「軟體中心」內。  
+請設定部署來使作業系統部署可在軟體中心取得。 您可以在 [部署軟體精靈] 的 [部署設定] 頁面上，或是在部署內容的 [部署設定] 索引標籤上設定部署。 如果是 [供下列項目使用]  設定，請設定 [只有 Configuration Manager 用戶端]  或是 [Configuration Manager 用戶端、媒體與 PXE] 。 當系統部署作業系統之後，目標集合的成員就可以在軟體中心中看到該作業系統。
 
-##  <a name="a-namebkmkdeploya-deploy-the-task-sequence-to-computers"></a><a name="BKMK_Deploy"></a> 將工作順序部署到電腦  
- 將作業系統部署至目標集合。 如需詳細資訊，請參閱 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)。 當您部署軟體中心的作業系統時，可設定部署是否為需要部署或是提供進行部署。  
+##  <a name="BKMK_Deploy"></a> 將工作順序部署到電腦  
+將作業系統部署至目標集合。 如需詳細資訊，請參閱 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)。 當您針對軟體中心部署作業系統時，可以將該部署設定為必要或可用的部署。
 
--   **需要部署**：需要部署會在軟體中心內提供作業系統，而且會在設定的指派排程時自動啟動。  
+-   **需要部署**：需要部署會在軟體中心內提供作業系統，而且會在設定的指派排程時自動啟動。
 
--   **提供進行部署**：軟體中心內會提供作業系統，使用者可於需求時安裝該作業系統。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
+-   **提供進行部署**：軟體中心內會提供作業系統，使用者可於需求時安裝該作業系統。
 

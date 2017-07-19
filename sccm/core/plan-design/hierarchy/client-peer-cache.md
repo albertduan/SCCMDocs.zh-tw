@@ -2,7 +2,7 @@
 title: "用戶端對等快取 | System Center Configuration Manager"
 description: "使用 System Center Configuration Manager 部署內容時，針對用戶端內容來源位置使用對等快取。"
 ms.custom: na
-ms.date: 4/4/2017
+ms.date: 7/3/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 26feb0b166beb7e48cb800a5077d00dbc3eec51a
-ms.openlocfilehash: dcd05d7d120f8997562da7d92b38c8b52a512357
+ms.sourcegitcommit: ed6b65a1a5aabc0970cd0333cb033405cf6d2aea
+ms.openlocfilehash: 94802680747a3d371716c1b345b2cba098150716
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/03/2017
 
 ---
 
@@ -33,18 +33,20 @@ ms.lasthandoff: 05/17/2017
 > 對等快取和用戶端資料來源儀表板，都是在版本 1610 引進的發行前版本功能。 若要啟用它們，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/pre-release-features)。
 
 ## <a name="overview"></a>概觀
- -     您可以使用用戶端設定，讓使用端能夠使用對等快取。
- -     若要共用內容，這兩個對等快取用戶端都必須是搜尋內容的用戶端目前界限群組的成員。 當用戶端使用後援來搜尋鄰近界限群組的內容時，鄰近界限群組中的對等快取用戶端不會包含於可用內容來源位置的集區中。 如需目前和鄰近界限群組的詳細資訊，請參閱[界限群組](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups##a-namebkmkboundarygroupsa-boundary-groups)。
- - 未啟用對等快取，但與啟用對等快取之用戶端同處於目前之界限群組的用戶端，可以從啟用對等快取的用戶端取得內容。  
+對等快取用戶端是可以使用對等快取的 Configuration Manager 用戶端。 具有可與其他用戶端共用之內容的對等快取用戶端為對等快取來源。
+ -  您可以使用用戶端設定，讓使用端能夠使用對等快取。
+ -  若要以對等快取來源的形式共用內容，對等快取用戶端必須：
+    -  已加入網域。 不過，未加入網域的用戶端仍可以從已加入網域的對等快取來源取得內容。
+    -  為正在尋找內容之用戶端的目前界限群組成員。 當用戶端使用後援來搜尋鄰近界限群組的內容時，鄰近界限群組中的對等快取用戶端不會包含於可用內容來源位置的集區中。 如需目前和鄰近界限群組的詳細資訊，請參閱[界限群組](/sccm/core/servers/deploy/configure/define-site-boundaries-and-boundary-groups##a-namebkmkboundarygroupsa-boundary-groups)。
  - Configuration Manager 用戶端快取中保存的每種內容類型，都可利用對等快取提供給其他的用戶端。
- -    對等快取不會取代其他解決方案 (例如 BranchCache) 的使用，而是可並行運作來提供您更多選項以擴充傳統內容部署解決方案。 這是一個不依賴 BranchCache 的自訂解決方案，所以就算不啟用或使用 Windows BranchCache，這個解決方案仍能運作。
+ -  對等快取不會取代其他解決方案 (例如 BranchCache) 的使用，而是可並行運作來提供您更多選項以擴充傳統內容部署解決方案。 這是一個不依賴 BranchCache 的自訂解決方案，所以就算不啟用或使用 Windows BranchCache，這個解決方案仍能運作。
 
 ### <a name="operations"></a>作業
 
 將啟用對等快取的用戶端設定部署至集合之後，該集合的成員就能做為同一個界限群組中其他用戶端的對等內容來源：
- -    以對等內容來源運作的用戶端會向其管理點提交可用的快取內容清單。
- -    然後，當該界限群組中的下一個用戶端要求該內容時，就會傳回具有該內容的每個對等快取來源以做為潛在的內容來源，以及該界限群組中的發佈點與其他內容來源位置。
- -    針對每個標準作業程序，搜尋內容的用戶端會從提供給它的來源集區中選取一個內容來源，然後繼續嘗試取得內容。
+ -  以對等內容來源運作的用戶端會向其管理點提交可用的快取內容清單。
+ -  然後，當該界限群組中的下一個用戶端要求該內容時，就會傳回具有該內容的每個對等快取來源以做為潛在的內容來源，以及該界限群組中的發佈點與其他內容來源位置。
+ -  針對每個標準作業程序，搜尋內容的用戶端會從提供給它的來源集區中選取一個內容來源，然後繼續嘗試取得內容。
 
 > [!NOTE]
 > 如果對內容的鄰近界限群組發生了後援，就不會將來自鄰近界限群組的對等快取內容來源位置新增至用戶端潛在內容來源位置的集區。  
@@ -94,13 +96,13 @@ ms.lasthandoff: 05/17/2017
 
 -   用戶端會使用對等快取所在的每個站台都必須設有[網路存取帳戶](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#a-namebkmknaaa-network-access-account)。 對等快取來源電腦會使用該帳戶驗證對等的下載要求，且該帳戶只需要網域使用者權限來達到此目的。
 
--     因為目前的對等快取內容來源界限是根據該用戶端的上次硬體清查提交所決定，所以，若用戶端漫遊至位於不同界限群組的網路位置，基於對等快取的目的，仍然可能被視為是其先前界限群組的成員。 這會導致提供給用戶端的對等快取內容來源不在其中繼網路位置上。 我們建議您排除有此設定傾向的用戶端，不要讓它以對等快取來源的身分參與。
+-   因為目前的對等快取內容來源界限是根據該用戶端的上次硬體清查提交所決定，所以，若用戶端漫遊至位於不同界限群組的網路位置，基於對等快取的目的，仍然可能被視為是其先前界限群組的成員。 這會導致提供給用戶端的對等快取內容來源不在其中繼網路位置上。 我們建議您排除有此設定傾向的用戶端，不要讓它以對等快取來源的身分參與。
 
 ## <a name="to-configure-client-peer-cache-client-settings"></a>設定用戶端對等快取的用戶端設定
-1.    在 Configuration Manager 主控台中，移至 [系統管理] > [用戶端設定]，然後開啟您要使用的裝置用戶端設定物件。 您也可以修改 [預設用戶端設定] 物件。
-2.    從可用的設定清單中，選擇 [用戶端快取設定]。
-3.    將 [在完整作業系統中啟用 Configuration Manager 用戶端以共用內容] 設為 [是]。
-4.    設定下列設定來定義您想要用於對等快取的連接埠：  
+1.  在 Configuration Manager 主控台中，移至 [系統管理] > [用戶端設定]，然後開啟您要使用的裝置用戶端設定物件。 您也可以修改 [預設用戶端設定] 物件。
+2.  從可用的設定清單中，選擇 [用戶端快取設定]。
+3.  將 [在完整作業系統中啟用 Configuration Manager 用戶端以共用內容] 設為 [是]。
+4.  設定下列設定來定義您想要用於對等快取的連接埠：  
   -  **用於初始網路廣播的連接埠**
   -  **為用戶端對等通訊啟用 HTTPS**
   -  **用於從對等節點下載內容的連接埠 (HTTP/HTTPS)**

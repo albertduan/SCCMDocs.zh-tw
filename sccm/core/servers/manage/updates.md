@@ -1,6 +1,6 @@
 ---
 title: "更新 | Microsoft Docs"
-description: "了解稱為**更新和服務**的主控台內服務方式，可讓您輕鬆尋找並安裝建議的更新。"
+description: "了解稱為「更新和服務」的主控台內服務方式，可讓您輕鬆尋找並安裝建議的更新。"
 ms.custom: na
 ms.date: 05/02/2017
 ms.prod: configuration-manager
@@ -17,10 +17,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: a33960fb89b71c0f8128e21a5054f5b63cfc6b17
+ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
+ms.openlocfilehash: 4bc076bba4672d0be0032ec785da20e60b11a6c4
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/23/2017
+ms.lasthandoff: 06/28/2017
 
 
 ---
@@ -30,7 +30,7 @@ ms.lasthandoff: 05/23/2017
 
 System Center Configuration Manager 使用稱為**更新和服務**的主控台內服務方式，可輕鬆尋找並為您的 Configuration Manager 基礎結構安裝建議的更新。 此主控台內的服務方式會以頻外更新的方式進行增補，例如適用於需要解決客戶環境特定問題的 hotfix。  
 
-> [!TIP]
+> [!TIP]  
 > 管理 System Center Configuration Manager 站台及階層基礎結構時，「升級」、「更新」及「安裝」等詞彙是用來描述三種不同的概念。 若要了解如何使用每個詞彙，請參閱[關於升級、更新和安裝](/sccm/core/understand/upgrade-update-install)。
 
 
@@ -85,7 +85,7 @@ System Center Configuration Manager 使用稱為**更新和服務**的主控台�
 | 1511 <br /><br /> 5.00.8325.1000|12/8/2015| 12/8/2016|是|否|  
 
 
-*(注意 1)* 這個 1606 基準媒體是 Microsoft System Center 2016 或 System Center Configuration Manager (最新分支和長期維護分支 1606) 版本的一部分。
+*(附註 1)* 1606 和 1702 基準媒體是屬於[大量授權服務中心](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx) (VLSC) 上 Microsoft System Center 2016 或 System Center Configuration Manager (最新分支和長期維護分支) 版本的一部分。 例如，您可以在 VLSC 上搜尋「System Center Config Mgr (最新分支和 LTSB)」，系統將會傳回可供下載的 1606 和 1702 版基準媒體。
 
 要檢查您 Configuration Manager 站台的版本，請移至主控台左上角的 **關於 System Center Configuration Manager** (會顯示新站台和主控台版本)。  
 

@@ -17,10 +17,10 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 071d758f1015d16217a54fe26df5f8f948c818a3
+ms.sourcegitcommit: 6f9e6e93fce95666503907010a5c253158c5de7c
+ms.openlocfilehash: f648d7626af50d95fbaa5a7a2abd821a9c47f5d1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/07/2017
 
 
 ---
@@ -629,6 +629,9 @@ ms.lasthandoff: 05/17/2017
 
 -   若要動態下載適用的驅動程式套件，請使用兩個 **下載套件內容** 步驟，並設定條件來偵測每個驅動程式套件適用的硬體類型。 將每個 [下載封裝內容]  步驟設定成使用相同的變數，並使用這個變數來表示 [升級作業系統]  步驟之 [驅動程式] 區段中的 [分段內容]  值。  
 
+> [!NOTE]    
+> 當您部署包含 [下載套件內容] 步驟的工作順序時，針對 [部署軟體精靈] 之 [發佈點] 頁面上的 [部署選項]，請勿選取 [開始工作順序前將所有內容下載至本機]。  
+
 此步驟可以在標準作業系統或 Windows PE 中執行。 不過，WinPE 不支援在 Configuration Manager 用戶端快取中儲存套件的選項。
 
 ### <a name="details"></a>詳細資料  
@@ -654,11 +657,11 @@ ms.lasthandoff: 05/17/2017
  **放入下列位置**  
  選擇此選項可將封裝儲存在下列其中一個位置：  
 
--   **工作順序工作目錄**  
+ -   **工作順序工作目錄**  
 
--   **Configuration Manager 用戶端快取**：您可以使用這個選項將內容儲存在用戶端快取中。 這樣做可讓用戶端作為其他對等快取用戶端的對等快取來源。 如需詳細資訊，請參閱[準備 Windows PE 對等快取以減少 WAN 流量](../get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic.md)。  
+ -   **Configuration Manager 用戶端快取**：您可以使用這個選項將內容儲存在用戶端快取中。 這樣做可讓用戶端作為其他對等快取用戶端的對等快取來源。 如需詳細資訊，請參閱[準備 Windows PE 對等快取以減少 WAN 流量](../get-started/prepare-windows-pe-peer-cache-to-reduce-wan-traffic.md)。  
 
--   **自訂路徑**  
+ -   **自訂路徑**  
 
  **將路徑儲存為變數**  
  您可以將路徑儲存為可用於另一個工作順序步驟的變數。 Configuration Manager 會在變數名稱後面加上數值尾碼。 例如，如果您指定 %*mycontent*% 變數做為自訂變數，它會是所有參照內容儲存位置的根目錄 (可以是多個封裝)。 當您參考變數時，您會在變數後面加上數值尾碼。 例如，針對第一個封裝，您將會參考 %*mycontent01*% 變數。 當您在後續步驟 (例如「作業系統升級」) 中參考該變數時，您會使用 %*mycontent02*% 或 %*mycontent03*%，其中的數字對應步驟中列出封裝的順序。  

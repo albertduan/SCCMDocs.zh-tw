@@ -2,7 +2,7 @@
 title: "升級內部部署基礎結構 | Microsoft Docs"
 description: "了解如何升級基礎結構 (例如 SQL Server 和站台系統的站台作業系統)。"
 ms.custom: na
-ms.date: 2/14/2017
+ms.date: 06/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 2e711cce2435957f3e85dad08f17260e1a224fc2
-ms.openlocfilehash: c6448932e91a02984ca57cef0b75c10ea3f43fa1
+ms.sourcegitcommit: 0564cb678200d17d97c0f1d111c0b4b41d8ba40e
+ms.openlocfilehash: 188b7f2537dd0e569a5c00995620124512cf311b
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/30/2017
 
 
 ---
@@ -39,9 +39,10 @@ ms.lasthandoff: 05/17/2017
 
 -   若 Configuration Manager 仍然支援所產生的 Windows Service Pack 層級，便會就地升級為更新版本的 Windows Server Service Pack。  
 -   就地升級方向：
-    - Windows Server 2012 R2 到 Windows Server 2016 ([請參閱其他詳細資料](#upgrade-windows-server-2012-r2-to-2016))。
-    - Windows Server 2012 到 Windows Server 2012 R2 ([請參閱其他詳細資料](#upgrade-windows-server-2012-to-windows-server-2012-r2))。
-    - 若是使用 Configuration Manager 1602 版或更新版本，也可將 Windows Server 2008 R2 升級為 Windows Server 2012 R2 ([請參閱其他詳細資料](#upgrade-windows-server-2008-r2-to-windows-server-2012-r2))。
+    - Windows Server 2012 R2 到 Windows Server 2016 ([請參閱其他詳細資料](#bkmk_2016))。
+    - Windows Server 2012 到 Windows Server 2016 ([請參閱其他詳細資料](#bkmk_2016))。
+    - Windows Server 2012 到 Windows Server 2012 R2 ([請參閱其他詳細資料](#bkmk_2012r2))。
+    - 若是使用 Configuration Manager 1602 版或更新版本，也可以將 Windows Server 2008 R2 升級到 Windows Server 2012 R2 ([請參閱其他詳細資料](#bkmk_from2008r2))。
 
     > [!WARNING]  
     >  在升級到 Windows Server 2012 R2 之前，您必須從伺服器 *解除安裝 WSUS 3.2* 。  
@@ -52,29 +53,29 @@ ms.lasthandoff: 05/17/2017
   -  Windows Server 文件中的 [Windows Server 2012 R2 的升級選項](https://technet.microsoft.com/library/dn303416.aspx)。  
   - Windows Server 文件中的 [Windows Server 2016 的升級和轉換選項](https://technet.microsoft.com/windows-server-docs/get-started/supported-upgrade-paths)。
 
-### <a name="upgrade-windows-server-2012-r2-to-2016"></a>將 Windows Server 2012 R2 升級到 2016  
-此作業系統升級案例的條件如下：
+### <a name="bkmk_2016"></a>  將 Windows Server 2012 或 Windows Server 2012 R2 升級到 Windows Server 2016
+當您將 Windows Server 2012 或 Windows Server 2012 R2 升級到 Windows Server 2016 時，請進行下列檢查：
+
 
 **升級之前：**  
--     移除 System Center Endpoint Protection (SCEP) 用戶端。 Windows Server 2016 內建 Windows Defender，其取代 SCEP 用戶端。 SCEP 用戶端可能會導致無法升級為 Windows Server 2016。
+-   移除 System Center Endpoint Protection (SCEP) 用戶端。 Windows Server 2016 內建 Windows Defender，其取代 SCEP 用戶端。 SCEP 用戶端可能會導致無法升級為 Windows Server 2016。
 
 **升級之後：**
--     確定 Windows Defender 已啟用、設為自動啟動，並且執行中。
--     確定下列 Configuration Manager 服務正在執行︰
+-   確定 Windows Defender 已啟用、設為自動啟動，並且執行中。
+-   確定下列 Configuration Manager 服務正在執行︰
   -     SMS_EXECUTIVE
   -     SMS_SITE_COMPONENT_MANAGER
 
 
--     確定已啟用 [Windows 處理程序啟動] 和 **WWW/W3svc** 服務、設定為自動啟動，並執行下列站台系統角色 (在升級期間，會停用這些服務)：
+-   確定已啟用 [Windows 處理程序啟動] 和 **WWW/W3svc** 服務、設定為自動啟動，並執行下列站台系統角色 (在升級期間，會停用這些服務)：
   -     網站伺服器
   -     管理點
   -     應用程式類別目錄 Web 服務點
   -     應用程式類別目錄網站點
 
+-   請確定每部裝載站台系統角色的伺服器都能繼續符合該伺服器上執行之[站台系統角色的所有必要條件](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)。 例如，您可能需要重新安裝 BITS、WSUS，或設定 IIS 的特定設定。
 
--     請確定每部裝載站台系統角色的伺服器都能繼續符合該伺服器上執行之[站台系統角色的所有必要條件](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)。 例如，您可能需要重新安裝 BITS、WSUS，或設定 IIS 的特定設定。
-
-  還原缺少的先決條件之後，請再重新啟動伺服器，以確保服務已啟動並正常運作。
+-   還原缺少的先決條件之後，請再重新啟動伺服器，以確保服務已啟動並正常運作。
 
 **遠端 Configuration Manager 主控台的已知問題：**  
 在您將站台伺服器或裝載 SMS_Provider 執行個體的伺服器升級至 Windows Server 2016 之後，系統管理使用者可能無法將 Configuration Manager 主控台連線至站台。 若要解決這個問題，您必須手動還原 WMI 中 SMS Admins 群組的權限。 設定站台伺服器及每部裝載 SMS_Provider 執行個體的遠端伺服器上都必須設定權限︰
@@ -84,46 +85,45 @@ ms.lasthandoff: 05/17/2017
 3. 展開根目錄下的樹狀結構，再選取 [SMS] 節點，然後選擇 [安全性]。  確定 **SMS Admins** 群組具有下列權限︰
   -     啟用帳戶
   -     遠端啟用
-4. 在 [安全性] 索引標籤上，於 **SMS** 節點下選取 **site_**&lt;*站台碼*> 節點，然後選擇 [安全性]。 確定 **SMS Admins** 群組具有下列權限︰
+4. 在 [SMS] 節點下的 [安全性] 索引標籤上，選取 [站台_&lt;站台碼>] 節點，然後選擇 [安全性]。 確定 **SMS Admins** 群組具有下列權限︰
   -   執行方法
   -   提供者寫入
   -   啟用帳戶
   -   遠端啟用
 5. 儲存可還原 Configuration Manager 主控台存取權的權限。
 
-### <a name="windows-server-2012-to-windows-server-2012-r2"></a>Windows Server 2012 到 Windows Server 2012 R2
+### <a name="bkmk_2012r2"></a> Windows Server 2012 到 Windows Server 2012 R2
 
 **升級之前：**
 -  與其他支援的案例不同，在升級之前，這種情況不需要額外的考量。
 
 **升級之後：**
-  -    確定 Windows 部署服務已啟動並執行下列站台系統角色 (在升級期間，會停止這個服務)︰
+  - 確定 Windows 部署服務已啟動並執行下列站台系統角色 (在升級期間，會停止這個服務)︰
     - 網站伺服器
     - 管理點
     - 應用程式類別目錄 Web 服務點
     - 應用程式類別目錄網站點
 
-
   -     確定已啟用 [Windows 處理程序啟動] 和 **WWW/W3svc** 服務、設定為自動啟動，並執行下列站台系統角色 (在升級期間，會停用這些服務)：
-    -     網站伺服器
-    -     管理點
-    -     應用程式類別目錄 Web 服務點
-    -     應用程式類別目錄網站點
+    -   網站伺服器
+    -   管理點
+    -   應用程式類別目錄 Web 服務點
+    -   應用程式類別目錄網站點
 
 
   -     請確定每部裝載站台系統角色的伺服器都能繼續符合該伺服器上執行之[站台系統角色的所有必要條件](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)。 例如，您可能需要重新安裝 BITS、WSUS，或設定 IIS 的特定設定。
 
   還原缺少的先決條件之後，請再重新啟動伺服器，以確保服務已啟動並正常運作。
 
-### <a name="upgrade-windows-server-2008-r2-to-windows-server-2012-r2"></a>將 Windows Server 2008 R2 升級到 Windows Server 2012 R2
+### <a name="bkmk_from2008r2"></a>  將 Windows Server 2008 R2 升級到 Windows Server 2012 R2
 此作業系統升級案例的條件如下：  
 
 **升級之前：**
--     解除安裝 WSUS 3.2。  
+-   解除安裝 WSUS 3.2。  
     將伺服器作業系統升級到 Windows Server 2012 R2 之前，您必須從伺服器解除安裝 WSUS 3.2。 如需此重要步驟的相關資訊，請參閱 Windows Server 文件中＜Windows Server Update Services 概觀＞的＜新功能和變更的功能＞一節。
 
 **升級之後：**
-  -    確定 Windows 部署服務已啟動並執行下列站台系統角色 (在升級期間，會停止這個服務)︰
+  - 確定 Windows 部署服務已啟動並執行下列站台系統角色 (在升級期間，會停止這個服務)︰
     - 網站伺服器
     - 管理點
     - 應用程式類別目錄 Web 服務點
@@ -131,10 +131,10 @@ ms.lasthandoff: 05/17/2017
 
 
   -     確定已啟用 [Windows 處理程序啟動] 和 **WWW/W3svc** 服務、設定為自動啟動，並執行下列站台系統角色 (在升級期間，會停用這些服務)：
-    -     網站伺服器
-    -     管理點
-    -     應用程式類別目錄 Web 服務點
-    -     應用程式類別目錄網站點
+    -   網站伺服器
+    -   管理點
+    -   應用程式類別目錄 Web 服務點
+    -   應用程式類別目錄網站點
 
 
   -     請確定每部裝載站台系統角色的伺服器仍然符合在該伺服器上執行的所有[站台系統角色必要條件](/sccm/core/plan-design/configs/site-and-site-system-prerequisites)。 例如，您可能需要重新安裝 BITS、WSUS，或設定 IIS 的特定設定。

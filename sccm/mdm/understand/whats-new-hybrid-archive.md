@@ -2,7 +2,7 @@
 title: "新混合式 MDM 的封存 | Microsoft Docs"
 description: "System Center Configuration Manager 與 Intune 的混合式部署可以使用過去之行動裝置管理功能的封存。"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 06/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ ms.author: mtillman
 manager: angrobe
 ROBOTS: NOINDEX, NOFOLLOW
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 623a30eddebcae196ff345ef5debc8183ecd6ae6
+ms.sourcegitcommit: ed6b65a1a5aabc0970cd0333cb033405cf6d2aea
+ms.openlocfilehash: 0abd1cdcf44e778c91bacb8011efd711818ce2e9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/03/2017
 
 ---
 # <a name="past-hybrid-features-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 過去的混合式功能
@@ -36,7 +36,87 @@ ms.lasthandoff: 05/17/2017
 |-|  
 |**Microsoft Intune 的新功能**：通常此類別下列出的所有功能都應該能夠搭配所有的 Configuration Manager 版本，包括 System Center 2012 R2 Configuration Manager 版本，因為這些功能只需要 Intune 服務，不需要其他的 Configuration Manager 功能。<br /><br /> **Configuration Manager Technical Preview 的新功能**：此類別下列出的所有功能只能搭配 Technical Preview 版本使用。 若要試用這些功能，您必須安裝功能描述中指定的 Technical Preview 版本。 如需詳細資訊，請參閱 [Technical Preview for System Center Configuration Manager](../../core/get-started/technical-preview.md) 。<br /><br /> **Configuration Manager 的新功能 (最新分支)**：此類別下列出的所有功能僅能搭配指定的 Configuration Manager 版本 (最新分支) 使用，例如 1511 版或 1602 版。 如果您的混合式部署使用舊版的 Configuration Manager，即必須升級到功能描述中指定的 Configuration Manager 版本 (最新分支)。 如需詳細資訊，請參閱[升級至 System Center Configuration Manager](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)。|  
 
-## <a name="new-hybrid-features-in-october-2016"></a>2016 年 10 月的新混合式功能
+## <a name="december-2016"></a>2016 年 12 月
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
+
+- **移至 Azure 入口網站的註冊相關 Multi-Factor Authentication (MFA)**
+
+  您之前會移至 Intune 主控台或 Configuration Manager 主控台，來設定用於 Intune 註冊的 MFA。 透過這項更新的功能，您現在可以使用 Intune 認證登入 [Microsoft Azure 入口網站] (https://manage.windowsazure.com)，並透過 Azure AD 進行 MFA 設定。 若要深入了解，請參閱 [Microsoft Intune 的 Multi-Factor Authentication] (https://aka.ms/mfa_ad)。
+
+- **中國現在提供適用於 Android 的公司入口網站應用程式**
+
+  中國現在提供適用於 Android 的公司入口網站應用程式。 由於中國沒有 Google Play 商店，因此 Android 裝置必須從中文應用程式服務商場取得應用程式。 適用於 Android 的公司入口網站應用程式已於下列市集中可供下載：
+
+  - [百度](https://go.microsoft.com/fwlink/?linkid=836946)
+  - [華為](https://go.microsoft.com/fwlink/?linkid=836948)
+  - [騰訊](https://go.microsoft.com/fwlink/?linkid=836949)
+  - [豌豆莢](https://go.microsoft.com/fwlink/?linkid=836950)
+  - [小米應用商店](https://go.microsoft.com/fwlink/?linkid=836947)
+
+  適用於 Android 的公司入口網站應用程式會使用 Google Play 服務來與 Microsoft Intune 服務通訊。 由於中國尚無法使用 Google Play 服務，因此執行下列任何工作可能需要多達 8 小時才能完成。
+
+  | Configuration Manager 系統管理員主控台 | 適用於 Android 的 Intune 公司入口網站應用程式 | Intune 公司入口網站 |
+  |----|----|----|      
+  | 淘汰/抹除 (移除所有資料)   | 移除遠端裝置 | 移除裝置 (本機和遠端) |
+  | 淘汰/抹除 (移除公司資料)   | 重設裝置 | 重設裝置|
+  | 新的或更新的應用程式部署 | 安裝可用的企業營運應用程式 | 裝置密碼重設|
+  | 遠端鎖定 | | |
+  | 密碼重設 | | |        
+
+
+## <a name="november-2016"></a>2016 年 11 月
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
+
+- **適用於 Windows 10 裝置的新 Microsoft Intune 公司入口網站**
+
+  Microsoft 已發行新的[適用於 Windows 10 裝置的公司入口網站應用程式](https://www.microsoft.com/store/apps/9wzdncrfj3pz)。 此應用程式會利用新的 Windows 10 通用格式，提供與所有 Windows 10 裝置、電腦及行動裝置之類的裝置上完全相同的更新使用者體驗，同時仍會啟用先前公司入口網站應用程式所提供的所有相同功能。
+
+  新的應用程式會利用 Windows 10 裝置上的平台功能，例如單一登入 (SSO) 和憑證式驗證。 此應用程式可用來升級到現有的 Windows 8.1 公司入口網站，而 Windows Phone 8.1 公司入口網站會從 Windows 市集進行安裝。 如需詳細資訊，請參閱 [Intune 支援小組部落格](http://aka.ms/intunecp_universalapp)。
+
+  新的公司入口網站應用程式也會在 Configuration Manager 主控台中，顯示所有標記為**可用**的商務用 Windows 市集應用程式。
+
+
+### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager 的新功能 (最新分支)
+
+Configuration Manager Technical Preview 各版本過去提供的下列功能，目前可在 Intune 和 Configuration Manager (最新分支) 1610 版的混合式部署中使用。
+
+* [設定項目的額外設定和改進體驗](/sccm/core/plan-design/changes/whats-new-in-version-1610#new-compliance-settings-for-configuration-items)
+* [DEP 設定檔的其他設定](whats-new-hybrid-archive.md#new-in-configuration-manager-technical-preview-1609)
+* [商務用 Windows 市集的付費 App](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+* [Windows 10 VPN 設定檔的原生連接類型](whats-new-hybrid-archive.md#new-in-configuration-manager-technical-preview-1609)
+* [Intune 相容性圖表](/sccm/protect/deploy-use/create-compliance-policy#monitor-the-compliance-policy)
+* [從主控台要求同步處理原則](/sccm/mdm/deploy-use/sync-intune-device)
+* [Windows Defender 組態設定](/sccm/compliance/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client#windows-defender)
+
+Configuration Manager (最新分支) 1610 版也包含下列額外的混合式功能：
+
+- **增加已註冊裝置的數目**
+
+  您現在可讓使用者最多註冊 15 個裝置。 先前的限制是每位使用者 5 個裝置。
+
+
+- **其他的安全性支援**
+
+  除了系統高權限管理員，下列內建的安全性角色現在也具備「公司擁有的所有裝置」節點中項目的完整存取權，包括預先宣告的裝置、iOS 註冊設定檔，以及 Windows 註冊設定檔：
+
+    - 資產管理員
+    - 公司資源存取管理員
+
+  系統仍會為唯讀分析師角色授與 Configuration Manager 主控台中這些區域的唯讀存取權。
+
+- **從 Windows 資訊保護應用程式自動觸發 VPN 存取**
+
+  您可以將 Windows 資訊保護主要網域加入 Windows 10 VPN 設定檔，這將導致所有相關聯的應用程式在裝置上執行時會自動觸發 VPN 連線。 唯有在選擇原生連線類型時，才能使用此選項。
+
+- **Windows 10 VPN 設定檔的條件式存取**
+
+    您現在可以要求在 Azure Active Directory 中註冊的 Windows 10 裝置必須符合標準，才能透過在 Configuration Manager 主控台中建立的 Windows 10 VPN 設定檔來存取 VPN。 這能夠透過 VPN 設定檔精靈中 [驗證方法] 頁面上新的 [為此 VPN 連線啟用條件存取] 核取方塊以及 Windows 10 VPN 設定檔的 VPN 設定檔內容來進行。 唯有在選擇原生連線類型時，才能使用此選項。
+
+    如果您啟用設定檔的條件式存取，您也可以指定不同的憑證來進行單一登入驗證。
+
+## <a name="october-2016"></a>2016 年 10 月
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -46,7 +126,7 @@ ms.lasthandoff: 05/17/2017
 
   您可以限制存取 Exchange Online，只讓支援 Intune 行動應用程式管理原則的應用程式存取，例如 Outlook。 [這項新功能](/intune/deploy-use/allow-policy-managed-apps-access-to-o365)可以完美配合 Intune 行動應用程式管理 (MAM) 原則，因為您可以封鎖內建郵件用戶端或其他尚未使用 Intune MAM 原則設定之應用程式的存取權。 這可確保您的使用者以使用 Intune MAM 保護的應用程式存取組織資料。 您可以透過 Azure 入口網站在 Intune 行動裝置應用程式管理中開始。 在 [設定] 刀鋒視窗中尋找新的 [條件式存取] 區段。
 
--    **適用於 Android 的 Intune 應用程式包裝工具**
+-   **適用於 Android 的 Intune 應用程式包裝工具**
 
   您可以使用 Intune 應用程式包裝工具，讓應用程式使用 Intune 行動應用程式管理 (MAM) 原則。
 
@@ -57,10 +137,10 @@ ms.lasthandoff: 05/17/2017
   受影響的型號為︰
 
   - SM-G313HU
-  -    SM-G313HY
-  -    SM-G313M
-  -    SM-G313MY
-  -    SM-G313U
+  - SM-G313HY
+  - SM-G313M
+  - SM-G313MY
+  - SM-G313U
 
   您和您的使用者不需要採取任何進一步的動作。 如需詳細資訊，請瀏覽 Samsung KNOX 網站。
 
@@ -81,7 +161,7 @@ Configuration Manager Technical Preview 1610 於 2016 年 10 月推出下列新�
 
 Configuration Manager 2016 年 8 月 (最新分支) 未推出任何新的混合式功能。
 
-## <a name="new-hybrid-features-in-september-2016"></a>2016 年 9 月的新混合式功能
+## <a name="september-2016"></a>2016 年 9 月
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -131,7 +211,7 @@ Configuration Manager Technical Preview 1609 於 2016 年 9 月推出下列新�
 
   如果您有以所有 iOS 平台為目標的設定檔或設定項目，它們也會推送至 iOS 10。 我們也已經發行 Configuration Manager 1606 版的更新，讓您以個別 iOS 平台，包括 iOS 10 的設定檔和設定項目為目標。 您可以在 [管理] > [概觀] > [雲端服務] > [更新與服務]，使用 Configuration Manager 管理主控台安裝更新。 您可以在 [http://support.microsoft.com/kb/3192616](http://support.microsoft.com/kb/3192616) 找到更新的詳細資訊。
 
-## <a name="new-hybrid-features-in-august-2016"></a>2016 年 8 月的新混合式功能
+## <a name="august-2016"></a>2016 年 8 月
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -170,7 +250,7 @@ Configuration Manager Technical Preview 2016 年 8 月未推出任何新的混�
 
 Configuration Manager 2016 年 8 月 (最新分支) 未推出任何新的混合式功能。
 
-## <a name="new-hybrid-features-in-july-2016"></a>2016 年 7 月的新混合式功能
+## <a name="july-2016"></a>2016 年 7 月
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 
@@ -214,18 +294,18 @@ Configuration Manager Technical Preview 2016 年 7 月未推出任何新的混�
 Configuration Manager Technical Preview 各版本過去提供的下列功能，目前可在 Intune 和 Configuration Manager 1606 版 (最新分支) 的混合式部署中使用。
 
 * 從 Configuration Manager 主控台尋找、管理及散發 Windows 10 裝置的商務用 Windows 市集應用程式 ([1604](#new-in-1604-technical-preview))
-*     適用於 Android 裝置的 SmartLock 設定 ([1604](#new-in-1604-technical-preview))
-*    適用於 Windows 10 裝置的應用程式觸發的 VPN ([1605](#new-in-1605-technical-preview))
-*    遠端裝置動作的全新體驗 ([1605](#new-in-1605-technical-preview))
-*    商務用 Windows 市集應用程式 ([1605](#new-in-1605-technical-preview))
-*    針對大量購買之應用程式的一般改進 ([1605](#new-in-1605-technical-preview))
-*    Windows 資訊保護 (WIP) ([1605](#new-in-1605-technical-preview))
-*    使用 IMEI 或 iOS 序號預先宣告公司擁有的裝置 ([1605](#new-in-1605-technical-preview))
-*    自動將裝置分類為集合 ([1606](#new-in-1606-technical-preview))
+*   適用於 Android 裝置的 SmartLock 設定 ([1604](#new-in-1604-technical-preview))
+*   適用於 Windows 10 裝置的應用程式觸發的 VPN ([1605](#new-in-1605-technical-preview))
+*   遠端裝置動作的全新體驗 ([1605](#new-in-1605-technical-preview))
+*   商務用 Windows 市集應用程式 ([1605](#new-in-1605-technical-preview))
+*   針對大量購買之應用程式的一般改進 ([1605](#new-in-1605-technical-preview))
+*   Windows 資訊保護 (WIP) ([1605](#new-in-1605-technical-preview))
+*   使用 IMEI 或 iOS 序號預先宣告公司擁有的裝置 ([1605](#new-in-1605-technical-preview))
+*   自動將裝置分類為集合 ([1606](#new-in-1606-technical-preview))
 
 如需新功能的資訊，請參閱指定的 Technical Preview 版本文件。
 
-## <a name="new-hybrid-features-in-june-2016"></a>2016 年 6 月的新混合式功能
+## <a name="june-2016"></a>2016 年 6 月
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
 2016 年 6 月推出的下列 Intune 功能可在混合式部署中運作。
@@ -286,7 +366,7 @@ Configuration Manager Technical Preview 各版本過去提供的下列功能，�
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager 的新功能 (最新分支)
 Configuration Manager 2016 年 6 月 (最新分支) 未推出任何新的混合式功能。
 
-##  <a name="new-hybrid-features-in-may-2016"></a>2016 年 5 月的新混合式功能  
+##  <a name="may-2016"></a>2016 年 5 月  
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能  
  2016 年 5 月推出的下列 Intune 功能可在混合式部署中運作。
@@ -350,7 +430,7 @@ Configuration Manager 2016 年 6 月 (最新分支) 未推出任何新的混合�
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager 的新功能 (最新分支)  
  Configuration Manager 2016 年 5 月 (最新分支) 未推出任何新的混合式功能。  
 
-##  <a name="new-hybrid-features-in-april-2016"></a>2016 年 4 月的新混合式功能  
+##  <a name="april-2016"></a>2016 年 4 月  
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能  
  2016 年 4 月推出的下列 Intune 功能可在混合式部署中運作。  
@@ -398,7 +478,7 @@ Configuration Manager 2016 年 6 月 (最新分支) 未推出任何新的混合�
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager 的新功能 (最新分支)  
  Configuration Manager 2016 年 4 月 (最新分支) 未推出任何新的混合式功能。  
 
-##  <a name="new-hybrid-features-in-march-2016"></a>2016 年 3 月的新混合式功能  
+##  <a name="march-2016"></a>2016 年 3 月  
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能  
  2016 年 3 月推出的下列 Intune 功能可在混合式部署中運作。  

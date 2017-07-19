@@ -15,11 +15,11 @@ caps.latest.revision: 18
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-experimental: true
-experiment_id: rob-table-161101
-translationtype: Human Translation
-ms.sourcegitcommit: 5aef08865b232ff2dacec6906098bebf4e42e6b1
-ms.openlocfilehash: 699adb5fac0c625c321db011af6989cc4c0778ec
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
+ms.openlocfilehash: 959a36413d06bb225f260bd44c1d3d59efd44e69
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/28/2017
 
 
 ---
@@ -37,11 +37,11 @@ ms.openlocfilehash: 699adb5fac0c625c321db011af6989cc4c0778ec
 
  將應用程式部署至裝置時， **需求** 決定在裝置上安裝的部署類型。  
 
- 當然，您可以使用應用程式來執行許多作業，而閱讀本指南將可了解這些作業。 下表介紹您在深入探索之前需要知道的一些概念。 在您建立的每個應用程式中，並不需要所有這些概念：  
+ 您可以使用應用程式完成更多工作。 透過閱讀本指南，您將會了解這些事項。 下表介紹您在深入探索之前需要知道的一些概念：  
 
 |概念|說明|    
 |-|-|  
-|**Requirements**|在舊版的 Configuration Manager 中，您通常會建立集合，以包含您想要在其中部署應用程式的目標裝置。 雖然您仍然可以執行這項作業，但是需求可讓您指定用來安裝應用程式的更細微準則來減少這項需求。<br /><br /> 例如，您可以指定應用程式只能安裝在執行 Windows 10 的裝置上。 然後，您可以將應用程式部署至所有裝置，但它只會安裝於執行 Windows 10 的裝置上。<br /><br /> Configuration Manager 會評估需求，以判斷是否要安裝應用程式和其任何部署類型。 然後會判斷可套用來安裝應用程式的正確部署類型。 根據預設，系統會每 7 天根據用戶端設定 [排程部署的重新評估] 重新評估需求規則，確保其相容性。<br /><br /> 如需詳細資訊，請參閱[建立和部署應用程式](../../apps/get-started/create-and-deploy-an-application.md)。|  
+|**Requirements**|在舊版的 Configuration Manager 中，您通常會建立集合，以包含您想要在其中部署應用程式的目標裝置。 雖然您仍然可以建立集合，但是可以透過需求為應用程式部署指定更詳細的準則。<br /><br /> 例如，您可以指定應用程式只能安裝在執行 Windows 10 的裝置上。 之後，您可以將應用程式部署至裝置，但該應用程式只會安裝於執行 Windows 10 的裝置上。<br /><br /> Configuration Manager 會評估需求，以判斷是否要安裝應用程式和其任何部署類型。 然後會判斷可套用來安裝應用程式的正確部署類型。 根據預設，系統會每 7 天根據用戶端設定 [排程部署的重新評估] 重新評估需求規則，確保其相容性。<br /><br /> 如需詳細資訊，請參閱[建立和部署應用程式](../../apps/get-started/create-and-deploy-an-application.md)。|  
 |**全域條件**|雖然需求要搭配單一應用程式中的特定部署類型來使用，但您也可以建立全域條件。 這些是預先定義需求的程式庫，您可以與任何應用程式和部署類型搭配使用。<br /><br /> Configuration Manager 包含一組內建全域條件，而您也可以建立專屬的全域條件。<br /><br /> 如需詳細資訊，請參閱[建立全域條件](../../apps/deploy-use/create-global-conditions.md)。|  
 |**模擬部署**|評估應用程式的需求、偵測方法及相依性。 它會報告結果，而不會實際安裝應用程式。<br /><br /> 如需詳細資訊，請參閱[模擬應用程式部署](../../apps/deploy-use/simulate-application-deployments.md)。|  
 |**部署動作**|指定是要安裝或解除安裝 (支援時) 正在部署的應用程式。<br /><br /> 如需詳細資訊，請參閱[部署應用程式](../../apps/deploy-use/deploy-applications.md)。|  
@@ -56,7 +56,7 @@ ms.openlocfilehash: 699adb5fac0c625c321db011af6989cc4c0778ec
  Configuration Manager 可讓您部署下列應用程式類型：  
 
 - Windows Installer (*.msi 檔案)
-- Windows 應用程式套件 (*.appx、*.appxbundle)
+- Windows 應用程式封裝 (*.appx、*.appxbundle)
 - Windows 應用程式套件 (在 Windows 市集中)
 - Microsoft Application Virtualization 4
 - Microsoft Application Virtualization  5
@@ -110,9 +110,4 @@ ms.openlocfilehash: 699adb5fac0c625c321db011af6989cc4c0778ec
 -   按週期性排程執行且無法使用全域評估的指令碼。
 
  如需詳細資訊，請參閱[套件和程式](../../apps/deploy-use/packages-and-programs.md)。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
 

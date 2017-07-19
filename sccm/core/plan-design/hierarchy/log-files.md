@@ -2,7 +2,7 @@
 title: "Configuration Manager 的記錄檔 | Microsoft Docs"
 description: "使用記錄檔對 System Center Configuration Manager 階層中的問題進行疑難排解。"
 ms.custom: na
-ms.date: 3/28/2017
+ms.date: 7/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: b991b4ea27e66c233b04f8e65a412404521d89a6
+ms.sourcegitcommit: 5e1bc0063ab3d34410f7dbc773a5eacdd5eb6d2f
+ms.openlocfilehash: 28597cf1cb269fff0872c7f79ef961496aea32ab
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/05/2017
 
 
 ---
@@ -507,10 +507,10 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
 ||||
 |-|-|-|
 |記錄檔名稱|說明|含有記錄檔的電腦|
-|CloudMgr.log|記錄有關雲端管理閘道服務的部署、進行中的服務狀態，以及服務相關使用資料的詳細資料。<br>您可以編輯登錄機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_CLOUD_SERVICES_MANAGER\Logging level**，以設定記錄層級|站台系統伺服器上的 **SMS/Logs** 資料夾|
+|CloudMgr.log|記錄有關雲端管理閘道服務的部署、進行中的服務狀態，以及服務相關使用資料的詳細資料。<br>您可以編輯登錄機碼 **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SMS\COMPONENTS\SMS_CLOUD_SERVICES_MANAGER\Logging level**，以設定記錄層級|主要站台伺服器或 CAS 上的 *installdir* 資料夾。|
 |CMGSetup.log 或 CMG-*RoleInstanceID*-CMGSetup.log<sup>1</sup>|記錄雲端管理閘道部署 (Azure 中的本機部署) 第 2 階段的詳細資料<br>您可以使用 [Azure 入口網站\雲端服務設定] 索引標籤上的 [追蹤層級]\([資訊]\(預設)、[詳細資訊]、[錯誤]) 設定來設定記錄層級。|您 Azure 伺服器上的 **%approot%\logs**，或站台系統伺服器上的 SMS/Logs 資料夾|
-|CMGHttpHandler.log 或 CMG-*RoleInstanceID*- CMGHttpHandler.log<sup>1</sup>|記錄在 Azure 中與 Internet Information Services 繫結的雲端管理閘道 http 處理常式的詳細資料<br>您可以使用 [Azure 入口網站\雲端服務設定] 索引標籤上的 [追蹤層級]\([資訊]\(預設)、[詳細資訊]、[錯誤]) 設定來設定記錄層級。|您 Azure 伺服器上的 **%approot%\logs**，或站台系統伺服器上的 SMS/Logs 資料夾|
-|CMGService.log 或 CMG-*RoleInstanceID*- CMGService.log<sup>1</sup>|記錄 Azure 中雲端管理閘道服務核心元件的詳細資料<br>您可以使用 [Azure 入口網站\雲端服務設定] 索引標籤上的 [追蹤層級]\([資訊]\(預設)、[詳細資訊]、[錯誤]) 設定來設定記錄層級。|您 Azure 伺服器上的 **%approot%\logs**，或站台系統伺服器上的 SMS/Logs 資料夾|
+|CMGHttpHandler.log 或 CMG-*RoleInstanceID*- CMGHttpHandler.log<sup>1</sup>|記錄在 Azure 中與 Internet Information Services 繫結的雲端管理閘道 http 處理常式的詳細資料<br>您可以使用 [Azure 入口網站\雲端服務設定] 索引標籤上的 [追蹤層級]\([資訊] (預設)、[詳細資訊]、[錯誤]) 設定來設定記錄層級。|您 Azure 伺服器上的 **%approot%\logs**，或站台系統伺服器上的 SMS/Logs 資料夾|
+|CMGService.log 或 CMG-*RoleInstanceID*- CMGService.log<sup>1</sup>|記錄 Azure 中雲端管理閘道服務核心元件的詳細資料<br>您可以使用 [Azure 入口網站\雲端服務設定] 索引標籤上的 [追蹤層級]\([資訊] (預設)、[詳細資訊]、[錯誤]) 設定來設定記錄層級。|您 Azure 伺服器上的 **%approot%\logs**，或站台系統伺服器上的 SMS/Logs 資料夾|
 |SMS_Cloud_ProxyConnector.log|記錄了雲端管理閘道服務和雲端管理閘道連接點之間的連線設定詳細資料。|網站系統伺服器|
 
 <sup>1</sup> 這些是雲端服務管理員每 5 分鐘從 Azure 儲存體同步處理的本機 Configuration Manager 記錄檔。 雲端管理閘道每 5 分鐘便會推送記錄檔到 Azure 儲存體。 因此最大延遲為 10 分鐘。 詳細資訊參數會影響本機和遠端記錄檔。

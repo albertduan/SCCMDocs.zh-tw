@@ -6,7 +6,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 03/28/2017
+ms.date: 06/27/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -14,10 +14,10 @@ ms.technology:
 - configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
-ms.openlocfilehash: 703adc87b9498e39a1db71b94f1bc1a05a4889ec
+ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
+ms.openlocfilehash: b5a2fd9f15992c9e5ef8aede64af5446b6852b1a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/28/2017
 
 
 ---
@@ -294,6 +294,9 @@ ms.lasthandoff: 05/17/2017
 
 -   如果取代的軟體更新未獲核准部署在您的生產環境。  
 
+    > [!NOTE]  
+    >  當 Configuration Manager 將已取代的軟體更新設定為 [已到期] 時，它並不會在 WSUS 中將該更新設定為 [已到期]。 但是在執行 WSUS 清除工作時，在 Configuration Manager 中設定為 [已到期] 的更新，將會在 WSUS 伺服器上設定為 [已拒絕] 的狀態，且電腦上的 Windows Update 代理程式將不會再掃描這些更新。 這表示在執行清除工作之前，用戶端將會繼續掃描已到期的更新。 如需 WSUS 清理工作的相關資訊，請參閱[軟體更新維護](/sccm/sum/deploy-use/software-updates-maintenance)。
+    
 ###  <a name="BKMK_UpdateLanguages"></a> 語言  
  軟體更新點的語言設定，可讓您設定哪些摘要詳細資料的語言 (軟體更新中繼資料) 要與軟體更新同步處理，以及將為軟體更新下載的軟體更新檔案語言。  
 
