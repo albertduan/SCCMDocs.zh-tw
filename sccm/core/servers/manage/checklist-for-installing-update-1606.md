@@ -2,7 +2,7 @@
 title: "1606 版的檢查清單 | Microsoft Docs"
 description: "了解從 System Center Configuration Manager 1511 或 1602 版更新至 1606 版之前所採取的動作。"
 ms.custom: na
-ms.date: 2/7/2017
+ms.date: 6/6/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 30af3326578d39c6d995672071705bcaeb877e4d
-ms.openlocfilehash: b0def6eb962d243a7ea5910b8d56bbb448b3a2e4
+ms.sourcegitcommit: 3619a73d3a39659de927e1711a7ec81de9918064
+ms.openlocfilehash: a6bda116499845fedff0126e2890755931de85bb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/13/2017
 
 ---
 # <a name="checklist-for-installing-update-1606-for-system-center-configuration-manager"></a>安裝 System Center Configuration Manager 1606 更新的檢查清單
@@ -78,11 +78,7 @@ ms.lasthandoff: 05/17/2017
 
  **針對裝載站台、站台資料庫伺服器，以及遠端站台系統角色的電腦，安裝所有適用的作業系統重大更新：**安裝 Configuration Manager更新之前，請為每一個適用的站台系統安裝任何重大更新。 如果您安裝的更新需要重新啟動，請先重新啟動適用的電腦再開始進行更新。  
 
- **停用主要站台的管理點資料庫複本：**如果主要站台已啟用管理點資料庫複本，Configuration Manager 即無法成功更新此主要站台。 在下列情況之前先停用資料庫複寫：  
-
--   建立站台資料庫的備份以測試資料庫升級。  
-
--   安裝 Configuration Manager 的更新。  
+ **停用主要站台的管理點資料庫複本：**如果主要站台已啟用管理點資料庫複本，Configuration Manager 即無法成功更新此主要站台。 請停用資料庫複寫後，再安裝 Configuration Manager 的更新。  
 
 如需詳細資訊，請參閱 [System Center Configuration Manager 的管理點資料庫複本](../../../core/servers/deploy/configure/database-replicas-for-management-points.md)。  
 
@@ -111,22 +107,23 @@ ms.lasthandoff: 05/17/2017
 
 如需詳細資訊，請參閱 [System Center Configuration Manager 備份和復原](../../../protect/understand/backup-and-recovery.md)。  
 
+<!-- Removed from update guidance 6/6/2017
+ **Test the database upgrade on a copy of the most recent site database backup:** Before you update a System Center Configuration Manager central administration site or primary site, test the site database upgrade process on a copy of the site database.  
 
- **在最新的站台資料庫備份複本上測試資料庫升級：**在更新 System Center Configuration Manager 管理中心網站或主要站台之前，請在站台資料庫複本上測試站台資料庫升級程序。  
+-   You should test the site database upgrade process because when you upgrade a site, the site database might be modified.  
 
--   您應該測試站台資料庫升級程序，因為當您升級站台時，站台資料庫可能會經過修改。  
+-   Although a test database upgrade is not required, it can identify problems for the upgrade before your production database is affected.  
 
--   測試資料庫升級並非必要，但是可以在您的生產資料庫受到影響之前找出升級問題。  
+-   A failed site database upgrade can render your site database inoperable and might require a site recovery to restore functionality.  
 
--   網站資料庫升級失敗可能會造成網站資料庫無法運作，且可能需要網站復原才能恢復功能。  
+-   Although the site database is shared between sites in a hierarchy, plan to test the database at each applicable site before you upgrade that site.  
 
--   雖然網站資料庫在階層中的網站之間共用，您仍需要在升級該網站之前先規劃每個適用網站上的資料庫測試。  
+-   If you use database replicas for management points at a primary site, disable replication before you create the backup of the site database.  
 
--   如果您在主要網站上使用管理點的資料庫複本，請在建立網站資料庫的備份之前停用複寫。  
+Configuration Manager does not support the backup of secondary sites nor does it support the test upgrade of a secondary site database.   
 
-Configuration Manager 不支援次要站台的備份，也不支援次要站台資料庫的測試升級。   
-
-請勿在生產網站資料庫上執行測試資料庫升級。 在站台資料庫上進行這類更新可能會造成站台無法運作。 如需詳細資訊，請參閱＜安裝主控台內更新之前＞中的[步驟 2︰安裝更新之前，先測試資料庫升級](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2)。
+Do not run a test database upgrade on the production site database. Doing so updates the site database and could render your site inoperable. For more information, For more information, see [Step 2: Test the database upgrade before installing an update](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2) from **Before you install an in-console update**.
+-->
 
  **規劃試驗的用戶端︰**當您安裝更新用戶端的更新時，可以在進入生產階段前先測試新的用戶端更新，再部署並升級所有使用中的用戶端。   
 

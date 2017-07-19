@@ -16,10 +16,10 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
-ms.openlocfilehash: 5b5eadd7b4026eae59acceaef43cdacd7a33d3ac
+ms.sourcegitcommit: 255249332350843ba0b78128423482e260974521
+ms.openlocfilehash: 1ea0360b5b182b92e11ea9dfe78b5a3552ae4845
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 05/30/2017
 
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>適用於 Configuration Manager 混合式部署的 iOS 裝置註冊計畫 (DEP) 註冊
@@ -123,6 +123,9 @@ ms.lasthandoff: 05/17/2017
 
 3.  **同步處理 DEP 管理的裝置**   
     在 [資產與相容性] 工作區中，前往 [公司擁有的所有裝置] > [預先宣告的裝置]。 在 [首頁] 索引標籤上，按一下 [DEP 同步處理] 。 同步處理要求會傳送至 Apple。 同步處理完成之後，會顯示 DEP 管理的裝置。
+
+> [!NOTE]
+> 使用混合式設定時，在 Configuration Manager 主控台中，按一下 [DEP 同步處理] 可手動觸發 DEP 同步處理作業。
 
 4.  **指派 DEP 設定檔**<br>在 [資產與相容性] 工作區中，前往 [公司擁有的所有裝置] > [iOS] > [註冊設定檔]。 選取 DEP 註冊設定檔，然後在 [首頁] 索引標籤中，按一下 [指派給裝置]。 選取將使用此註冊設定檔的裝置，按一下 [新增]，然後按一下 [確定]。   
      ![將 DEP 設定檔指派給 iOS 裝置的螢幕擷取畫面](../media/dep-assign-profile.png)

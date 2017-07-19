@@ -5,7 +5,7 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 03/24/2017
+ms.date: 05/31/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
@@ -13,10 +13,10 @@ ms.technology:
 - configmgr-sum
 ms.assetid: eac542eb-9aa1-4c63-b493-f80128e4e99b
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 016580dc6ee3c5268833db941d42416a976d201c
+ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
+ms.openlocfilehash: 744bcb603a02bc7d237ffb3a7f925037b94a23ba
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/01/2017
 
 ---
 
@@ -142,6 +142,9 @@ Configuration Manager 會同步處理 Office 365 用戶端更新，並使其可�
 4. 在 [匯入用戶端設定] 頁面上，選擇要從現有的 XML 組態檔匯入 Office 365 用戶端設定，還是要手動指定設定，然後按一下 [下一步]。  
 
     如果您有現成的組態檔，請輸入檔案的位置，然後跳至步驟 7。 請注意，您必須使用 &#92;&#92;*server*&#92;*share*&#92;*檔案名稱*.XML 格式來指定位置。
+    > [!IMPORTANT]    
+    > XML 設定檔中只可包含 [Office 365 ProPlus 用戶端所支援的語言](https://technet.microsoft.com/library/cc179219&#40;v=office.16&#41;.aspx)。
+
 5. 在 [Client Products]\(用戶端產品) 頁面上，依序選取您使用的 Office 365 套件、要包含的應用程式、應包含的任何其他 Office 產品，然後按一下 [下一步]。
 6. 在 [用戶端設定] 頁面上，選擇要包含的設定，然後按一下 [下一步]。
 7. 在 [部署] 頁面上，選擇是否要部署應用程式，然後按一下 [下一步]。  
@@ -151,7 +154,7 @@ Configuration Manager 會同步處理 Office 365 用戶端更新，並使其可�
 10. 您可以在 Configuration Manager 中，從 [軟體程式庫] > [概觀] > [應用程式管理] > [應用程式] 部署或編輯應用程式，就像是任何其他應用程式一樣。   
 
 > [!IMPORTANT]
-> 您使用 Configuration Manager 中的「Office 365 應用程式精靈」來建立和部署的 Office 365 應用程式並不會自動由 Configuration Manager 管理，除非您再次啟用 [啟用管理 Office 365 用戶端代理程式] 軟體更新用戶端代理程式設定。 如需詳細資料，請參閱[關於用戶端設定](/sccm/core/clients/deploy/about-client-settings)。
+> 除非先啟用 [啟用管理 Office 365 用戶端代理程式] 軟體更新用戶端代理程式設定，否則使用 Configuration Manager 中「Office 365 應用程式精靈」所建立和部署的 Office 365 應用程式並不會自動由 Configuration Manager 管理。 如需詳細資料，請參閱[關於用戶端設定](/sccm/core/clients/deploy/about-client-settings)。
 
 >[!NOTE]
 >部署 Office 365 應用程式之後，您可以建立自動部署規則，以維護應用程式。 若要建立適用於 Office 365 應用程式的自動部署規則，請從 Office 365 用戶端管理儀表板按一下 [建立 ADR]，然後在您選擇產品時，選取 [Office 365 用戶端]。 如需詳細資訊，請參閱[自動部署軟體更新](/sccm/sum/deploy-use/automatically-deploy-software-updates)。

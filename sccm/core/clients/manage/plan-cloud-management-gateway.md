@@ -1,7 +1,7 @@
 ---
 title: "雲端管理閘道規劃 | Microsoft Docs"
 description: 
-ms.date: 05/16/2017
+ms.date: 06/07/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-client
@@ -10,10 +10,10 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
-ms.openlocfilehash: b1295891a5567e64b901c79100c2971e526dc874
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: a7380ae781447880ffcba0778694ea62e10c4889
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/08/2017
 
 ---
 
@@ -22,6 +22,9 @@ ms.lasthandoff: 05/17/2017
 適用於：System Center Configuration Manager (最新分支)
 
 從 1610 版開始，雲端管理閘道提供簡單的方法，管理網際網路上的 Configuration Manager 用戶端。 雲端管理閘道服務已部署至 Microsoft Azure，並需要 Azure 訂用帳戶。 它會使用稱為雲端管理閘道連接器端點的新角色，連線至您內部部署的 Configuration Manager 基礎結構。 在部署及設定後，用戶端就能夠存取內部部署的 Configuration Manager 站台系統角色，不論它們位在內部的私人網路還是網際網路。
+
+> [!TIP]  
+> 隨 1610 版引進的雲端管理閘道為發行前版本的功能。 若要啟用它，請參閱[使用更新的發行前版本功能](/sccm/core/servers/manage/pre-release-features)。
 
 請使用 Configuration Manager 主控台將服務部署至 Azure、新增雲端管理閘道連接器端點角色，並設定站台系統角色以允許雲端管理閘道流量。 雲端管理閘道目前只支援管理點和軟體更新點角色。
 
@@ -93,11 +96,6 @@ ms.lasthandoff: 05/17/2017
 
     - 如需詳細資訊，請參閱使用[雲端式發佈](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#cost-of-using-cloud-based-distribution)的成本。
 
-## <a name="next-steps"></a>後續步驟
-
-[設定雲端管理閘道](setup-cloud-management-gateway.md)
-
-
 ## <a name="frequently-asked-questions-about-the-cloud-management-gateway-cmg"></a>雲端管理閘道 (CMG) 的相關常見問題集
 
 ### <a name="why-use-the-cloud-management-gateway"></a>為何使用雲端管理閘道？
@@ -122,7 +120,7 @@ ms.lasthandoff: 05/17/2017
 
 您需要下列憑證以保護 CMG：
 
-- **管理憑證**：這可以是任何憑證，包括自我簽署憑證。 您可以使用已上傳至 Azure AD 的公開憑證，或是已匯入 Configuration Manager 之[具有私密金鑰的 PFX](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)，以向 Azure AD 進行驗證。 
+- **管理憑證**：這可以是任何憑證，包括自我簽署憑證。 您可以使用已上傳至 Azure AD 的公開憑證，或是已匯入 Configuration Manager 之[具有私密金鑰的 PFX](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)，以向 Azure AD 進行驗證。
 - **Web 服務憑證**：建議使用公開 CA 憑證以取得用戶端的原生信任。 CNAME 必須在公開 DNS 登錄中建立。 不支援萬用字元憑證。
 - **上傳至 CMG 的根/次級 CA 憑證**：CMG 必須在用戶端 PKI 憑證上執行完整鏈結驗證。 如果您使用企業 CA 發行用戶端 PKI 憑證，且其根或次級 CA 無法自網際網路取得，您必須將它上傳至 CMG。
 
@@ -159,15 +157,17 @@ CMG 可透過下列方式協助確保安全性：
 
 - 保護發行端點 Configuration Manager 用戶端對向角色，像是管理點和 IIS 中軟體更新點主機端點，以處理用戶端要求。 每個發行至 CMG 的端點都具有 URL 對應。
 用戶端使用外部 URL 來與 CMG 通訊。
-內部 URL 為用來將要求轉送至內部伺服器的 CMG 連接點。 
+內部 URL 為用來將要求轉送至內部伺服器的 CMG 連接點。
 
 #### <a name="example"></a>範例：
 當您在管理點上啟用 CMG 流量時，Configuration Manager 會在內部針對每個管理點伺服器 (例如，ccm_system、ccm_incoming 及 sms_mp) 建立一組 URL 對應。
-管理點 ccm_system 端點的外部 URL 看起來應該會類似：**https://<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>/CCM_System**。 每個管理點的 URL 皆會是唯一的。 接著，Configuration Manager 用戶端會將已啟用 CMG 的 MP 名稱 (例如 **<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>**) 置於其網際網路管理點清單中。 所有已發行的外部 URL 都會在 CMG 能夠進行 URL 篩選時自動上傳至 CMG。 所有 URL 對應都會複寫至 CMG 連接點，使它可以根據用戶端要求外部 URL 轉送至內部伺服器。
+管理點 ccm_system 端點的外部 URL 看起來應該會類似：**https://<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>/CCM_System**。
+每個管理點的 URL 皆會是唯一的。 接著，Configuration Manager 用戶端會將已啟用 CMG 的 MP 名稱 (例如 **<CMG service name>/CCM_Proxy_MutualAuth/<MP Role ID>**) 置於其網際網路管理點清單中。
+所有已發行的外部 URL 都會在 CMG 能夠進行 URL 篩選時自動上傳至 CMG。 所有 URL 對應都會複寫至 CMG 連接點，使它可以根據用戶端要求外部 URL 轉送至內部伺服器。
 
-### <a name="what-ports-are-used-by-the-cloud-management-gateway"></a>雲端管理閘道所使用的連接埠為何？ 
+### <a name="what-ports-are-used-by-the-cloud-management-gateway"></a>雲端管理閘道所使用的連接埠為何？
 
-- 內部部署網路不需要任何輸入連接埠。 CMG 的部署將會自動在 CMG 上大量建立。 
+- 內部部署網路不需要任何輸入連接埠。 CMG 的部署將會自動在 CMG 上大量建立。
 - 除了 443 之外，CMG 連接點也會需要部份輸出連接埠。
 
 |||||
@@ -182,7 +182,7 @@ CMG 可透過下列方式協助確保安全性：
 
 - 如果可以的話，請在相同的網路區域中設定 CMG、CMG 連接點及 Configuration Manager 站台伺服器，以降低延遲。
 - 目前 Configuration Manager 用戶端和 CMG 之間的連線並無法感知區域。
-- 若要獲得高可用性，建議每個站台至少有 2 個 CMG 虛擬執行個體及 2 個 CMG 連接點 
+- 若要獲得高可用性，建議每個站台至少有 2 個 CMG 虛擬執行個體及 2 個 CMG 連接點
 - 您可以透過新增更多 VM 執行個體來調整 CMG，以支援更多用戶端。 它們會由 Azure AD 負載平衡器進行負載平衡。
 - 建立更多 CMG 連接點以將負載分散於它們之間。 CMG 會透過「循環配置資源」的方式，將流量引導至其正在連線的 CMG 連接點。
 - 在 1702 版中，每個 CMG VM 執行個體所支援的用戶端數目為 6 千個。 當 CMG 通道處於高負載時，系統仍然會處理要求，但可能會花費比平常更久的時間。
@@ -195,4 +195,7 @@ CMG 可透過下列方式協助確保安全性：
 
 如需所有 CMG 相關的記錄檔清單，請參閱 [Configuration Manager 中的記錄檔](https://docs.microsoft.com/sccm/core/plan-design/hierarchy/log-files#cloud-management-gateway)
 
+## <a name="next-steps"></a>後續步驟
+
+[設定雲端管理閘道](setup-cloud-management-gateway.md)
 

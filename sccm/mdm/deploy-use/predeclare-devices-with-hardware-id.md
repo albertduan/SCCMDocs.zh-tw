@@ -16,10 +16,10 @@ author: nathbarn
 ms.author: nathbarn
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: e6833951db27b227a3ca22925e9d9f4c3fc443fc
-ms.openlocfilehash: e8606b8a9268a0a0668b75070cf35894f4794123
+ms.sourcegitcommit: 5eed004bd38a567dfdd4e392300be656a7abe3f7
+ms.openlocfilehash: c692fad43807e54cecbd7ab60284ea740d60617d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 05/25/2017
 
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>使用 IMEI 或 iOS 序號預先宣告裝置
@@ -62,7 +62,7 @@ ms.lasthandoff: 05/17/2017
 
 ## <a name="format-for-uploading-csv-files"></a>上傳 .csv 檔案的格式
 
-用來依 IMEI 或序號識別裝置的 .csv 檔案必須具有下列格式，不包括僅提供作為指引的頂端資料列。 每個資料列都必須包含 IMEI 編號或 iOS 序號兩種識別碼其中之一。 您可以兩種都包含。 IMEI 編號適用於 Android、iOS 和 Windows 裝置。 此外也支援 iOS 序號。  此表格包含範例資料︰
+用來依 IMEI 或 iOS 序號識別裝置的 .csv 檔案必須具有下列格式，不包括僅提供作為指引的頂端資料列。 每個資料列都必須包含 IMEI 編號或 iOS 序號兩種識別碼其中之一。 對於 iOS 裝置，您可以同時包含兩者。 IMEI 編號適用於 Android、iOS 和 Windows 裝置。 此表格包含範例資料︰
 
 | IMEI 編號  | iOS 序號  | OS | 詳細資料 |
 |------------ |---------------|-----|-----|

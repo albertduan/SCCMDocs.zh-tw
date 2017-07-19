@@ -2,7 +2,7 @@
 title: "資料倉儲 | Microsoft Docs"
 description: "資料倉儲服務點與 System Center Configuration Manager 資料庫"
 ms.custom: na
-ms.date: 3/28/2017
+ms.date: 5/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 3c2a07f560e0aa3d2beb7cc50e71c98ac45c27e1
-ms.openlocfilehash: 9239f6e749c368835e8594ca2d07378d8555b99e
+ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
+ms.openlocfilehash: f11a53bbc85b40077b3909568db5ae5552b0456c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/01/2017
 
 
 ---
@@ -51,6 +51,7 @@ ms.lasthandoff: 05/17/2017
 - 安裝站台系統角色之電腦的電腦帳戶是用來與資料倉儲資料庫同步處理資料。 此帳戶需要下列權限：  
   - 將裝載資料倉儲資料庫之電腦上的**系統管理員**。
   - 資料倉儲資料庫上的 **DB_owner** 權限。
+  - 頂層站台站台資料庫的 **DB_reader** 和「執行」權限。
 -    SQL Server 2012 或更新版本之預設或具名執行個體支援資料倉儲資料庫。 版本必須是 Enterprise 或 Datacenter。
   - SQL Server AlwaysOn 可用性群組︰不支援此設定。
   - SQL Server 叢集︰ 不支援 SQL Server 容錯移轉叢集。 這是因為資料倉儲資料庫從未在 SQL Server 容錯移轉叢集上進行深度測試。

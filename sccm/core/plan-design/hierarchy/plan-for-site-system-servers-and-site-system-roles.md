@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: a93ea730c39cce9dc46036f5aa6ece4a62679d0f
-ms.openlocfilehash: 0d16d362b798c194645f987088ba8a95a7be3f19
+ms.sourcegitcommit: 0ebda27c0f3848615346c2ecf1ab8b9bb9ab6f0d
+ms.openlocfilehash: 0a3704a2d3b75ed7e0a7f718b681448ab6fc078d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 05/26/2017
 
 
 ---
@@ -47,7 +47,7 @@ ms.lasthandoff: 05/17/2017
 -   一或多個站台系統角色專屬功能。 例如，軟體更新點可用來管理受管理裝置的軟體更新，Reporting Services 點可讓您執行報表來監視及了解或分享部署資訊。  
 
 
-不同的 Configuration Manager 站台可以支援不同的站台系統角色集合。 支援的站台系統角色組合取決於站台類型 (管理中心網站、主要站台或次要站台)。 階層的拓樸可限制特定站台類型上某些角色的放置。 例如，只有階層的最上層站台才支援服務連接點，該站台可能是管理中心網站或獨立主要站台。 子主要站台或次要站台不支援此角色。  
+不同的 Configuration Manager 站台可以支援不同的站台系統角色集合。 支援的站台系統角色組合取決於站台類型 (管理中心網站、主要站台或次要站台)。 階層的拓撲可限制特定站台類型上放置某些角色。 例如，只有階層的最上層站台才支援服務連接點，該站台可能是管理中心網站或獨立主要站台。 子主要站台或次要站台不支援此角色。  
 
 安裝站台之後，您可以將部分站台系統角色的位置從站台伺服器上的預設位置移動到到另一部伺服器。 例如，預設會安裝在主要或次要站台伺服器上的管理點或發佈點即符合前文敘述。 您也可以安裝某些其他的站台系統角色以擴充站台功能 (提供更多服務給用戶端) 並滿足業務需求。 有些角色是必要的，有些則是選擇性的。  
 
@@ -81,7 +81,7 @@ ms.lasthandoff: 05/17/2017
 
 -   **發佈點。** 一種網站系統角色，其包含可供用戶端下載的來源檔案，例如應用程式內容、軟體套件、軟體更新、作業系統映像和開機映像。 依預設，這個角色在站台安裝時會安裝到新的主要及次要站台的站台伺服器電腦上。 管理中心網站不支援該角色。 您可以在支援的站台和相同階層中的多個站台，安裝此角色的多個執行個體。 如需詳細資訊，請參閱 [Fundamental concepts for content management in System Center Configuration Manager](../../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md) (System Center Configuration Manager 的內容管理基本概念) 和[管理 System Center Configuration Manager 的內容與內容基礎結構](../../../core/servers/deploy/configure/manage-content-and-content-infrastructure.md)。  
 
--   **後援狀態點。** 一種網站系統角色，其可協助您監視安裝，並且識別因無法與其管理點通訊而未受管理的用戶端。 雖然只在主要站台支援這個角色，但您可以在一個站台和相同階層中的多個站台，安裝此角色的多個執行個體。 如需詳細資訊，請參閱 [Content source location scenarios](../../../core/plan-design/hierarchy/content-source-location-scenarios.md)。
+-   **後援狀態點。** 一種網站系統角色，其可協助您監視安裝，並且識別因無法與其管理點通訊而未受管理的用戶端。 雖然只在主要站台支援這個角色，但您可以在一個站台和在相同階層中的多個站台，安裝此角色的多個執行個體。     
 
 
 -   **Endpoint Protection 點。** 一種網站系統角色，Configuration Manager 用於接受 Endpoint Protection 授權條款，以及設定雲端保護服務的預設成員資格。 階層只支援此角色的單一執行個體，且必須位於階層的最上層站台 (管理中心網站或獨立主要站台)。 如果您擴充獨立主要站台到較大的階層時，必須從主要站台解除安裝此角色，然後在管理中心網站安裝此角色。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的 Endpoint Protection](../../../protect/deploy-use/endpoint-protection.md)。  

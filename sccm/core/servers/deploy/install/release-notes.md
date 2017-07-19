@@ -2,7 +2,7 @@
 title: "版本資訊 - Configuration Manager | Microsoft Docs"
 description: "請參閱這些注意事項，以了解產品中尚未修正或 Microsoft 知識庫文章未涵蓋的緊急問題。"
 ms.custom: na
-ms.date: 05/11/2017
+ms.date: 05/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d5166b16ffbe46af561b1ce98c0494cc4aaa72a8
-ms.openlocfilehash: 9da6f9678a7fb5c76f365a3522f5e5e0fdfec037
+ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
+ms.openlocfilehash: 6113576ca38da27e9e8732b3930deee96db4ae2c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/01/2017
 
 
 ---
@@ -153,7 +153,7 @@ ConfigMgrSetup.log：
 
 當您將用戶端部署至 Windows 電腦時，安裝失敗。 ccmsetup.log 檔案會包含以下項目：「檔案 'C:\WINDOWS\ccmsetup\Silverlight.exe' 傳回失敗，結束代碼 1612。 安裝失敗」，並接著顯示：「InstallFromManifest 已失敗 0x8007064c」。
 
-**因應措施：**這是由先前已安裝且已損毀的 Silverlight 版本所造成。 您可以嘗試在受影響的電腦上執行下列工具來修正此問題：[https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed](https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed) 
+**因應措施：**這是由先前已安裝且已損毀的 Silverlight 版本所造成。 您可以嘗試在受影響的電腦上執行下列工具來修正此問題：[https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed](https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed)
 
 
 
@@ -200,6 +200,14 @@ ConfigMgrSetup.log：
 
 **因應措施**：  
 使用者必須關閉第一個高風險部署的對話方塊，才能查看下一個高風險部署的對話方塊。
+
+## <a name="software-updates"></a>軟體更新
+
+### <a name="importing-an-office-365-client-settings-from-a-configuration-file-fails-when-it-contains-unsupported-languages"></a>當設定檔包含不支援的語言時，從該設定檔匯入 Office 365 用戶端設定會失敗
+當您從現有的 XML 設定檔匯入 Office 365 用戶端設定，且該檔案包含 Office 365 專業增強版用戶端不支援的語言時，將會發生錯誤。 如需詳細資料，請參閱[從 Office 365 用戶端管理儀表板將 Office 365 應用程式部署至用戶端](/sccm/sum/deploy-use/manage-office-365-proplus-updates#to-deploy-office-365-apps-to-clients-from-the-office-365-client-management-dashboard)。
+
+**因應措施**：    
+在 XML 設定檔中只使用 [Office 365 專業增強版用戶端所支援的語言](https://technet.microsoft.com/library/cc179219&#40;v=office.16&#41;.aspx)。  
 
 ## <a name="mobile-device-management"></a>行動裝置管理  
 
@@ -250,9 +258,16 @@ ConfigMgrSetup.log：
 **因應措施︰**新增**使用者集合**到 **[目標集合]** 頁面，然後在 **[豁免集合]** 頁面上選取**使用者集合**，或確定您沒有將相同的**使用者集合**同時新增到目標與豁免集合。
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
-<!--  Product Studio bug 485370 added by Nathbarn 04 19 2017 -->
+<!--  Product Studio bug 485370 added 04 19 2017 -->
 ### <a name="antimalware-policy-fails-to-apply-on-windows-server-2016-core"></a>反惡意程式碼原則無法套用至 Windows Server 2016 Core
 反惡意程式碼原則無法套用至 Windows Server 2016 Core。  錯誤碼為 0x80070002。  ConfigSecurityPolicy.exe 遺失相依性。
 
-**因應措施：**此問題已由在 2017 年 5 月 9 日發佈的[知識庫文章 4019472](https://support.microsoft.com/help/4019472/windows-10-update-kb4019472) 解決。 
+**因應措施：**此問題已由在 2017 年 5 月 9 日發佈的[知識庫文章 4019472](https://support.microsoft.com/help/4019472/windows-10-update-kb4019472) 解決。
+
+<!-- Product Studio bug 462286 added  05 25 2017 and valid until July 2017 GA release -->
+### <a name="windows-defender-advanced-threat-protection-policies-fail-on-older-client-agents"></a>Windows Defender 進階威脅防護原則在較舊版本的用戶端代理程式上會發生失敗
+
+從 Configuration Manager 1610 版或更新版本的站台伺服器所建立的 Windows Defender 進階威脅防護原則，無法套用至 Configuration Manager 1606 版和較舊版本的用戶端上。  用戶端不會上線，且原則評估會回報錯誤。 Windows Defender 進階威脅防護設定中的 [部署狀態] 會顯示 [錯誤]。
+
+**因應措施**：將 Configuration Manager 用戶端升級至 1610 版或更新版本。
 

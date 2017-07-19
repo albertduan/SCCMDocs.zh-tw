@@ -2,7 +2,7 @@
 title: "建立工作順序以擷取和還原使用者狀態 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 工作順序來擷取和還原作業系統部署案例中的使用者狀態資料。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 06/07/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
-ms.openlocfilehash: fdfbdd1acb1190ca7de9cff2b4b7f916d8dc1272
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: 4b3668094d576b1b8710f08b384aa2f7c5eb0cca
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -28,7 +30,7 @@ ms.openlocfilehash: fdfbdd1acb1190ca7de9cff2b4b7f916d8dc1272
 
 您可以使用 System Center Configuration Manager 工作順序來擷取和還原作業系統部署案例 (您想保留目前作業系統的使用者狀態) 中的使用者狀態資料。 視您建立的工作順序類型而定，擷取和還原步驟可能會自動新增為工作順序的一部分。 在其他情況下，您可能需要手動新增擷取和還原步驟至工作順序中。 本主題提供必須新增到現有工作順序以擷取和還原使用者狀態資料的步驟。  
 
-##  <a name="a-namebkmkcapturerestoreuserstatea-how-to-capture-and-restore-user-state-data"></a><a name="BKMK_CaptureRestoreUserState"></a> 如何擷取及還原使用者狀態資料  
+##  <a name="BKMK_CaptureRestoreUserState"></a> 如何擷取及還原使用者狀態資料  
  若要擷取及還原使用者狀態，您必須將下列步驟新增到工作順序中：  
 
 -   **要求狀態存放區**：只有在您將使用者狀態儲存在狀態移轉點上時，才需要執行此步驟。  
@@ -80,7 +82,7 @@ ms.openlocfilehash: fdfbdd1acb1190ca7de9cff2b4b7f916d8dc1272
 
         -   按一下 [使用標準選項擷取所有使用者設定檔]  ，擷取所有使用者設定檔。  
 
-        -   按一下 [自訂要擷取的使用者設定檔]  ，指定要擷取的個別使用者設定檔。  
+        -   按一下 [自訂要擷取的使用者設定檔]  ，指定要擷取的個別使用者設定檔。 選取包含使用者設定檔資訊的設定檔 (miguser.xml、migsys.xml 或 migapp.xml)。 您不能在此處使用 config.xml 設定檔，但可以使用 OSDMigrageAdditionalCaptureOptions 和 OSDMigrateAdditionalRestoreOptions 變數，將它手動加入 USMT 命令列。
 
     -   選取 [啟用詳細資訊記錄]  ，指定發生錯誤時要寫入多少資訊到記錄檔。  
 
@@ -133,7 +135,7 @@ ms.openlocfilehash: fdfbdd1acb1190ca7de9cff2b4b7f916d8dc1272
 
         -   按一下 [使用標準選項還原所有擷取的使用者設定檔]  以還原所有使用者設定檔。  
 
-        -   按一下 [自訂使用者設定檔擷取]  以還原個別使用者設定檔。  
+        -   按一下 [自訂使用者設定檔還原] 以還原個別使用者設定檔。 選取包含使用者設定檔資訊的設定檔 (miguser.xml、migsys.xml 或 migapp.xml)。 您不能在此處使用 config.xml 設定檔，但可以使用 OSDMigrageAdditionalCaptureOptions 和 OSDMigrateAdditionalRestoreOptions 變數，將它手動加入 USMT 命令列。
 
     -   選取 [還原本機使用者設定檔]  ，為還原的設定檔提供新密碼。 您無法移轉本機設定檔的密碼。  
 
@@ -169,9 +171,4 @@ ms.openlocfilehash: fdfbdd1acb1190ca7de9cff2b4b7f916d8dc1272
 
 ## <a name="next-steps"></a>後續步驟
 [監視工作順序部署](monitor-operating-system-deployments.md#BKMK_TSDeployStatus)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

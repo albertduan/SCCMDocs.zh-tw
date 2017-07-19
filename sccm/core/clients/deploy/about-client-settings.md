@@ -17,10 +17,10 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
-ms.openlocfilehash: 3d90f16eac59b7069ff2f33170eba85d2cde65ef
+ms.sourcegitcommit: c8717925dba42451b1e241a7c2f59e43896d7d99
+ms.openlocfilehash: 4a169098f30e4a9d708e41ee25c6a400d5ff0e85
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/19/2017
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>關於 System Center Configuration Manager 中的用戶端設計
@@ -65,7 +65,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
 - **設定用戶端快取大小**
 
-  Windows 電腦上的用戶端快取會儲存用於安裝應用程式和程式的暫存檔案。 選擇 [是] 指定 「最大的快取大小」 (MB 或是磁碟百分比)。 此選項如為 [否]，則預設大小為 5120 MB。
+  Windows 電腦上的用戶端快取會儲存用於安裝應用程式和程式的暫存檔案。 選擇 [是] 指定 「最大的快取大小」 (MB 或是磁碟百分比)。 用戶端快取大小能以 MB 或磁碟百分比為單位 (**以較低者為準**) 擴充至最大。 此選項如為 [否]，則預設大小為 5120 MB。
 
 ## <a name="client-policy"></a>用戶端原則  
 
@@ -248,6 +248,10 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
     > -   錯誤識別碼 **0X87D00327** 和**未簽署指令碼**的描述，會在 Configuration Manager 主控台的 [監視] 工作區中列為部署狀態錯誤。  
     > -   報告中錯誤類型為**探索錯誤**的錯誤碼和描述為 **0X87D00327** 及**未簽署指令碼**，或 **0X87D00320** 和**尚未安裝指令碼裝載**。 例如**資產的設定基準中設定項目的錯誤詳細資訊**。  
     > -   **Script is not signed (Error: 87D00327; Source: CCM)** 檔案中的訊息 **DcmWmiProvider.log** 。  
+
+-   **針對新部署顯示通知**  
+
+     如果您想要針對提供尚未滿一週的部署顯示通知，請選擇 [是]。  此訊息會在每次用戶端代理程式啟動時顯示。
 
 -   **停用期限隨機設定**  
 

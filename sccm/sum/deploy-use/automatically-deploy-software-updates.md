@@ -12,19 +12,21 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: b27682de-adf8-4edd-9572-54886af8f7fb
-translationtype: Human Translation
-ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
-ms.openlocfilehash: 34b0819957ffcc3711ee354a5b821d78fa7445cb
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: 804a9d7a32cfbdb498c6748c5d99a1874261c231
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/08/2017
 
 ---
 
-#  <a name="a-namebkmkautodeploya-automatically-deploy-software-updates"></a><a name="BKMK_AutoDeploy"></a> 自動部署軟體更新  
+#  <a name="BKMK_AutoDeploy"></a> 自動部署軟體更新  
 
 *適用於：System Center Configuration Manager (最新分支)*
 
  您可經由將新的軟體更新新增到與現用部署相關聯的更新群組，或使用自動部署規則 (ADR)，來自動部署軟體更新。 您通常會使用 ADR 部署每月軟體更新 (一般稱為「週二修補程式日」更新) 以及管理定義更新。 如果需要協助來判斷哪種部署方法最適合您，請參閱[部署軟體更新](deploy-software-updates.md)
 
-##  <a name="a-namebkmkaddupdatestoexistinggroupa-add-software-updates-to-a-deployed-update-group"></a><a name="BKMK_AddUpdatesToExistingGroup"></a> 將軟體更新新增至已部署的更新群組  
+##  <a name="BKMK_AddUpdatesToExistingGroup"></a> 將軟體更新新增至已部署的更新群組  
 建立並部署軟體更新群組之後，您可以將軟體更新新增至更新群組，然後就會自動部署軟體更新。  
 
 > [!IMPORTANT]  
@@ -46,7 +48,7 @@ ms.openlocfilehash: 34b0819957ffcc3711ee354a5b821d78fa7445cb
 
 6.  按一下軟體更新群組，然後在 [首頁]  索引標籤的 [更新]  群組中按一下 [顯示成員]  ，顯示此群組的軟體更新清單。  
 
-##  <a name="a-namebkmkcreateautomaticdeploymentrulea-create-an-automatic-deployment-rule-adr"></a><a name="BKMK_CreateAutomaticDeploymentRule"></a> 建立自動部署規則 (ADR)  
+##  <a name="BKMK_CreateAutomaticDeploymentRule"></a> 建立自動部署規則 (ADR)  
 您可以使用 ADR 來自動核准並部署軟體更新。 每次執行規則或在現有群組中新增軟體更新時，您都可以在新的軟體更新群組中加入軟體更新。 在現有群組執行規則並加入軟體更新時，該規則會從群組中移除所有軟體更新，然後新增符合您定義群組之準則的軟體更新。 例如，若要每天執行 ADR，以尋找新發行的軟體更新並將其部署至用戶端，您必須選擇建立新軟體更新群組的選項，而非在現有群組中新增軟體更新。  
 
 > [!WARNING]  
@@ -167,15 +169,15 @@ ms.openlocfilehash: 34b0819957ffcc3711ee354a5b821d78fa7445cb
 
 10. 在 [下載設定] 頁面，設定以下設定：  
 
-    -   指定當用戶端連線到速度較慢的網路，或使用後援內容位置時，是否要下載並安裝軟體更新。  
+    - 指定當用戶端連線到速度較慢的網路，或使用後援內容位置時，是否要下載並安裝軟體更新。  
 
-    -   指定無法在慣用發佈點使用軟體更新內容時，是否要讓用戶端從後援發佈點下載並安裝軟體更新。  
+    - 指定無法在慣用發佈點使用軟體更新內容時，是否要讓用戶端從後援發佈點下載並安裝軟體更新。  
 
-    -   **允許用戶端與同一個子網路上的其他用戶端共用內容**：指定是否允許針對下載內容使用 BranchCache。 如需有關 BranchCache 的詳細資訊，請參閱 [Concepts for content management](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)。  
+    - **允許用戶端與同一個子網路上的其他用戶端共用內容**：指定是否允許針對下載內容使用 BranchCache。 如需有關 BranchCache 的詳細資訊，請參閱 [Concepts for content management](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)。  
 
-    -   指定若無法在發佈點上使用軟體更新時，是否要讓連線到內部網路的用戶端從 Microsoft Update 下載軟體更新。  
+    - **如果在目前、鄰近或網站群組的發佈點上找不到軟體更新，則從 Microsoft Update 下載內容**：選取這個設定可讓連線至內部網路的用戶端，在發佈點上找不到軟體更新時從 Microsoft Update 下載軟體更新。 可連上網際網路的用戶端隨時可移至 Microsoft Update 取得軟體更新內容。
 
-    -   指定當用戶端使用計量付費網際網路連線時，是否在過了安裝期限後仍允許用戶端進行下載。 在您處於計量付費網際網路連線時，網際網路提供者有時會根據您傳送和接收的資料量來收取費用。  
+    - 指定當用戶端使用計量付費網際網路連線時，是否在過了安裝期限後仍允許用戶端進行下載。 在您處於計量付費網際網路連線時，網際網路提供者有時會根據您傳送和接收的資料量來收取費用。  
 
     > [!NOTE]  
     >  用戶端會從部署內軟體更新的管理點來請求內容位置。 下載行為會根據您如何設定發佈點、部署套件和本頁設定而定。 如需詳細資訊，請參閱 [Content source location scenarios](../../core/plan-design/hierarchy/content-source-location-scenarios.md)。  
@@ -221,7 +223,7 @@ ms.openlocfilehash: 34b0819957ffcc3711ee354a5b821d78fa7445cb
 
  在您完成精靈後，ADR 就會執行。 它會將符合指定準則的軟體更新新增至軟體更新群組、將軟體更新下載至網站伺服器上的內容庫、將軟體更新發佈至設定的發佈點，然後將軟體更新群組部署至目標集合中的用戶端。  
 
-##  <a name="a-namebkmkadddeploymenttoadra-add-a-new-deployment-to-an-existing-adr"></a><a name="BKMK_AddDeploymentToADR"></a> 將新的部署新增至現有的 ADR  
+##  <a name="BKMK_AddDeploymentToADR"></a> 將新的部署新增至現有的 ADR  
  建立 ADR 之後，您可以將其他的部署加入規則中。 如此可協助您管理將不同更新部署到不同集合的複雜性。 每個新部署都會有完整的功能和部署監視體驗。  
 
 #### <a name="to-add-a-new-deployment-to-an-existing-adr"></a>將新的部署新增至現有的 ADR  
@@ -299,26 +301,21 @@ ms.openlocfilehash: 34b0819957ffcc3711ee354a5b821d78fa7445cb
 
 8. 在 [下載設定] 頁面，設定以下設定：  
 
-    -   指定當用戶端連線到速度較慢的網路，或使用後援內容位置時，是否要下載並安裝軟體更新。  
+    - 指定當用戶端連線到速度較慢的網路，或使用後援內容位置時，是否要下載並安裝軟體更新。  
 
-    -   指定無法在慣用發佈點使用軟體更新內容時，是否要讓用戶端從後援發佈點下載並安裝軟體更新。  
+    - 指定無法在慣用發佈點使用軟體更新內容時，是否要讓用戶端從後援發佈點下載並安裝軟體更新。  
 
-    -   **允許用戶端與同一個子網路上的其他用戶端共用內容**：指定是否允許針對下載內容使用 BranchCache。 如需有關 BranchCache 的詳細資訊，請參閱 [Concepts for content management](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)。  
+    - **允許用戶端與同一個子網路上的其他用戶端共用內容**：指定是否允許針對下載內容使用 BranchCache。 如需有關 BranchCache 的詳細資訊，請參閱 [Concepts for content management](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)。  
 
-    -   指定若無法在發佈點上使用軟體更新時，是否要讓連線到內部網路的用戶端從 Microsoft Update 下載軟體更新。  
+    - **如果在目前、鄰近或網站群組的發佈點上找不到軟體更新，則從 Microsoft Update 下載內容**：選取這個設定可讓連線至內部網路的用戶端，在發佈點上找不到軟體更新時從 Microsoft Update 下載軟體更新。 可連上網際網路的用戶端隨時可移至 Microsoft Update 取得軟體更新內容。
 
-    -   指定當用戶端使用計量付費網際網路連線時，是否在過了安裝期限後仍允許用戶端進行下載。 在您處於計量付費網際網路連線時，網際網路提供者有時會根據您傳送和接收的資料量來收取費用。  
+    - 指定當用戶端使用計量付費網際網路連線時，是否在過了安裝期限後仍允許用戶端進行下載。 在您處於計量付費網際網路連線時，網際網路提供者有時會根據您傳送和接收的資料量來收取費用。  
 
     > [!NOTE]  
-    >  用戶端會從部署內軟體更新的管理點來請求內容位置。 下載行為會根據您如何設定發佈點、部署套件和本頁設定而定。 如需詳細資訊，請參閱 [Content source location scenarios](../../core/plan-design/hierarchy/content-source-location-scenarios.md)。  
+    > 用戶端會從部署內軟體更新的管理點來請求內容位置。 下載行為會根據您如何設定發佈點、部署套件和本頁設定而定。 如需詳細資訊，請參閱 [Content source location scenarios](../../core/plan-design/hierarchy/content-source-location-scenarios.md)。  
 
 如需部署程序的詳細資訊，請參閱 [Software update deployment process](../../sum/understand/software-updates-introduction.md#BKMK_DeploymentProcess)。
 
 ## <a name="next-steps"></a>後續步驟
 [監視軟體更新](monitor-software-updates.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

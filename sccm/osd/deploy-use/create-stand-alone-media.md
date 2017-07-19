@@ -2,7 +2,7 @@
 title: "使用 System Center Configuration Manager 建立獨立媒體 | Microsoft Docs"
 description: "使用獨立媒體，在未連線至 Configuration Manager 站台或網路的電腦上部署作業系統。"
 ms.custom: na
-ms.date: 03/24/2017
+ms.date: 06/07/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: Dougeby
 ms.author: dougeby
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: d4689545ce2be5c16a65b24489f30028a0f90f94
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: 98f902429ad1b9965a0dc4cc2e1bd071ad5c0779
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -36,10 +36,10 @@ Configuration Manager 中的獨立媒體包含在未連線至 Configuration Mana
 
 -   [將 Windows 升級至最新版本](upgrade-windows-to-the-latest-version.md)  
 
- 獨立媒體包含工作順序，會將安裝作業系統和所有其他必要內容的步驟自動化，包括開機映像、作業系統映像，以及裝置驅動程式。 由於部署作業系統所需的全部內容都儲存在獨立媒體中，因此獨立媒體比其他類型的媒體需要更大的磁碟空間。 當您在管理中心網站上建立獨立媒體時，用戶端會從 Active Directory 擷取其指派的站台碼。 建立於子站台上的獨立媒體會將該站台的站台碼自動指派給用戶端。  
+獨立媒體包含工作順序，會將安裝作業系統和所有其他必要內容的步驟自動化，包括開機映像、作業系統映像，以及裝置驅動程式。 由於部署作業系統所需的全部內容都儲存在獨立媒體中，因此獨立媒體比其他類型的媒體需要更大的磁碟空間。 當您在管理中心網站上建立獨立媒體時，用戶端會從 Active Directory 擷取其指派的站台碼。 建立於子站台上的獨立媒體會將該站台的站台碼自動指派給用戶端。  
 
 ##  <a name="BKMK_CreateStandAloneMedia"></a> 建立獨立媒體  
- 使用 [建立工作順序媒體精靈] 建立獨立媒體之前，請先確定符合下列條件：  
+使用 [建立工作順序媒體精靈] 建立獨立媒體之前，請先確定符合下列條件：  
 
 ### <a name="create-a-task-sequence-to-deploy-an-operating-system"></a>建立部署作業系統的工作順序
 作為獨立媒體的一部分，您必須指定工作順序以部署作業系統。 如需建立新工作順序的步驟，請參閱[在 System Center Configuration Manager 中建立工作順序以安裝作業系統](create-a-task-sequence-to-install-an-operating-system.md)。
@@ -54,10 +54,19 @@ Configuration Manager 中的獨立媒體包含在未連線至 Configuration Mana
 - 動態套件會透過 [安裝套件] 工作來進行安裝。
 - 動態應用程式會透過 [安裝應用程式] 工作來進行安裝。
 
-如果您部署作業系統的工作順序包含[安裝套件](../../osd/understand/task-sequence-steps.md#BKMK_InstallPackage)步驟，而且您在管理中心網站建立獨立媒體，就有可能會發生錯誤。 管理中心網站並未包含執行工作順序期間啟用軟體發佈代理程式所需的所有用戶端設定原則。 CreateTsMedia.log 檔案中，可能會出現下列錯誤：<br /><br /> "WMI method SMS_TaskSequencePackage.GetClientConfigPolicies failed (0x80041001)"<br /><br /> 若獨立媒體包含 [安裝套件] 步驟，您必須在啟用軟體發佈代理程式的主要站台建立獨立媒體，或是在工作順序中[設定 Windows 和 ConfigMgr](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 步驟之後、第一個**安裝套件**步驟之前新增[執行命令列](../understand/task-sequence-steps.md#BKMK_RunCommandLine)步驟。 [執行命令列]  步驟會執行 WMIC 命令，在第一個安裝套件步驟執行之前啟用軟體發佈代理程式。 您可以在 [執行命令列]  工作順序中使用下列內容：<br /><br />
-```
-WMIC /namespace:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE
-```
+> [!NOTE]    
+> 如果您部署作業系統的工作順序包含[安裝套件](../../osd/understand/task-sequence-steps.md#BKMK_InstallPackage)步驟，而且您在管理中心網站建立獨立媒體，就有可能會發生錯誤。 管理中心網站並未包含執行工作順序期間啟用軟體發佈代理程式所需的所有用戶端設定原則。 CreateTsMedia.log 檔案中，可能會出現下列錯誤：    
+>     
+> "WMI method SMS_TaskSequencePackage.GetClientConfigPolicies failed (0x80041001)"    
+> 
+> 若獨立媒體包含 [安裝套件] 步驟，您必須在啟用軟體發佈代理程式的主要站台建立獨立媒體，或是在工作順序中[設定 Windows 和 ConfigMgr](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr) 步驟之後、第一個**安裝套件**步驟之前新增[執行命令列](../understand/task-sequence-steps.md#BKMK_RunCommandLine)步驟。 [執行命令列]  步驟會執行 WMIC 命令，在第一個安裝套件步驟執行之前啟用軟體發佈代理程式。 您可以在 [執行命令列]  工作順序中使用下列內容：    
+>    
+> *WMIC /namespace:\\\root\ccm\policy\machine\requestedconfig path ccm_SoftwareDistributionClientConfig CREATE ComponentName="Enable SWDist", Enabled="true", LockSettings="TRUE", PolicySource="local", PolicyVersion="1.0", SiteSettingsKey="1" /NOINTERACTIVE*
+
+
+> [!IMPORTANT]    
+> 當您在作業系統工作順序中使用「設定 Windows 和 ConfigMgr」工作順序步驟時，請勿為獨立媒體選取 [使用生產前的用戶端封裝 (如可使用)] 設定。 如果選取了此設定，且有可用的生產前用戶端封裝，則將會用於獨立媒體中。 不支援這麼做。 如需與此設定相關的詳細資訊，請參閱[設定 Windows 和 ConfigMgr](/sccm/osd/understand/task-sequence-steps#BKMK_SetupWindowsandConfigMgr)。
+
 
 ### <a name="distribute-all-content-associated-with-the-task-sequence"></a>發佈與工作順序相關聯的所有內容
 您必須將工作順序所需的所有內容都發佈到至少一個發佈點。 這包括開機映像、作業系統映像，以及其他相關聯的檔案。 精靈會在建立獨立媒體時從發佈點收集資訊。 您必須擁有該發佈點上內容庫的 **[讀取]** 存取權限。  如需詳細資訊，請參閱[發佈工作順序所參考的內容](manage-task-sequences-to-automate-tasks.md#BKMK_DistributeTS)。

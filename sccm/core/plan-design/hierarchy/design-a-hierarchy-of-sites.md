@@ -2,7 +2,7 @@
 title: "設計站台階層 - Configuration Manager | Microsoft Docs"
 description: "了解 System Center Configuration Manager 可用的拓撲和管理選項，以便您可以規劃站台階層。"
 ms.custom: na
-ms.date: 1/3/2017
+ms.date: 6/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 35e48666f4d1a2363304650f960531fd0630a291
-ms.openlocfilehash: e346e83b0ae0dc7a612cef7a7b9fb1fdb42236bc
+ms.sourcegitcommit: db673277d1cc2d24e8dba2439b2b1891c883ebd0
+ms.openlocfilehash: 4710b1b89eb50cb7bcf4c4ee50c12a96b6561bc9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/16/2017
 
 
 ---
@@ -66,7 +66,7 @@ ms.lasthandoff: 05/17/2017
 
 -   管理中心網站是階層中的頂層站台。  
 
--   當您設定具有一個以上主要站台的階層時，您必須安裝管理中心網站，且該網站必須是您所安裝的第一個站台。  
+-   當您設定具有一個以上主要站台的階層時，必須安裝管理中心網站。 如果您立即需要兩個或兩個以上的主要站台，請先安裝管理中心網站。 當您已經擁有主要站台，並想要接著安裝管理中心網站時，必須[擴充獨立主要站台](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#bkmk_expand)以安裝管理中心網站。 
 
 -   管理中心網站只支援使用主要站台作為子站台。  
 

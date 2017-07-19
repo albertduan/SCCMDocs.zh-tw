@@ -2,7 +2,7 @@
 title: "管理與 System Center Configuration Manager 相關聯的 Intune 訂用帳戶 | Microsoft Docs"
 description: "管理與 System Center Configuration Manager 相關聯的 Intune 訂用帳戶。"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 06/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 2e0b3cd1070d0f8adb1219acd33c3126d2758a49
+ms.sourcegitcommit: 662901e850566756759fcfc61c58f3c0e56bc5aa
+ms.openlocfilehash: 2cb4d724c8b78657458a30c0bb020f67c6b62795
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="manage-an-intune-subscription-associated-with-system-center-configuration-manager"></a>管理與 System Center Configuration Manager 相關聯的 Intune 訂用帳戶
@@ -55,6 +55,5 @@ ms.lasthandoff: 05/17/2017
 您現在可以建立新的服務連接點、將新的 Intune 訂閱加入至 Configuration Manager，然後將 Configuration Manager 設定為 MDM 授權單位。
 
 ## <a name="how-to-change-mdm-authority-to-intune"></a>如何將 MDM 授權單位變更為 Intune
-
-從 1610 版開始，您可以將 MDM 授權從 Configuration Manager 切換至 Intune。 即將提供這項功能的資訊。
+自 Configuration Manager 1610 版和 Microsoft Intune 1705 版開始，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，您便可以變更 MDM 授權單位。 如需詳細資訊，請參閱[變更您的 MDM 授權單位](/sccm/mdm/deploy-use/change-mdm-authority)。
 

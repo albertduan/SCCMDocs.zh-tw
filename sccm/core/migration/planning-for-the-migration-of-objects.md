@@ -16,9 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 45931f60273f3130cca36320770126a36dcc3d1e
-ms.openlocfilehash: 9870ffa6ae5f80db823bfc74a7cc2e67fc8cf21d
+ms.translationtype: Human Translation
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: 17f3955aa7c63a13bab03b46002f7de0b0ec38fe
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -48,7 +50,7 @@ ms.openlocfilehash: 9870ffa6ae5f80db823bfc74a7cc2e67fc8cf21d
 
 -   [規劃移轉軟體計量規則自訂項目](#Plan_Migrate_SWM_Rules)  
 
-##  <a name="a-nameplanmigratesoftwareupdatesa-plan-to-migrate-software-updates"></a><a name="Plan_migrate_Software_updates"></a> 規劃移轉軟體更新  
+##  <a name="Plan_migrate_Software_updates"></a> 規劃移轉軟體更新  
  您可以移轉軟體更新物件，例如軟體更新套件和軟體更新部署。  
 
  若要成功移轉軟體更新物件，您必須先設定目的地階層，使其設定與來源階層環境相符。 您需要執行下列動作：  
@@ -79,7 +81,7 @@ ms.openlocfilehash: 9870ffa6ae5f80db823bfc74a7cc2e67fc8cf21d
 
 從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源階層移轉物件時，不會修改軟體更新物件。  
 
-##  <a name="a-nameplanmigratecontenta-plan-to-migrate-content"></a><a name="Plan_Migrate_content"></a> 規劃移轉內容  
+##  <a name="Plan_Migrate_content"></a> 規劃移轉內容  
  您可以從支援的來源階層將內容移轉至您的目的地階層。 若是 Configuration Manager 2007 來源階層，此內容會包含軟體發佈套件和程式以及虛擬應用程式，例如 Microsoft Application Virtualization (App-V)。 針對 System Center 2012 Configuration Manager 和 System Center Configuration Manager 來源階層，此內容會包含應用程式與 App-V 虛擬應用程式。 當您在階層之間移轉內容時，壓縮的來源檔案會移轉至目的地階層。  
 
 ### <a name="packages-and-programs"></a>封裝和程式  
@@ -121,12 +123,12 @@ ms.openlocfilehash: 9870ffa6ae5f80db823bfc74a7cc2e67fc8cf21d
 ### <a name="applications"></a>應用程式  
  您可以將應用程式從支援的 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源階層移轉至目的地階層。 如果您將用戶端從來源階層重新指派至目的地階層，用戶端會保留之前所安裝應用程式的歷程記錄，以避免用戶端再次執行已移轉的應用程式。  
 
-##  <a name="a-namebkmkmigratecollectionsa-plan-to-migrate-collections"></a><a name="BKMK_MigrateCollections"></a> 規劃移轉集合  
+##  <a name="BKMK_MigrateCollections"></a> 規劃移轉集合  
  您可以從支援的 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源階層移轉集合準則。 若要這麼做，您可以使用以物件為基礎的移轉作業。 當您移轉集合時，會移轉集合的規則，而不是有關集合成員的資訊或是與集合成員相關的資訊或物件。  
 
  從 Configuration Manager 2007 來源階層移轉時，不支援移轉集合物件。  
 
-##  <a name="a-nameplanmigrateosda-plan-to-migrate-operating-system-deployments"></a><a name="Plan_migrate_OSD"></a> 規劃移轉作業系統部署  
+##  <a name="Plan_migrate_OSD"></a> 規劃移轉作業系統部署  
 您可以從支援的來源階層移轉下列作業系統部署物件：  
 
 -   作業系統映像和套件。 開機映像的來源路徑會更新為目的地站台上 Windows 系統管理安裝套件 (Windows AIK) 的預設映像位置。 以下是移轉作業系統映像和套件的需求和限制：  
@@ -142,9 +144,9 @@ ms.openlocfilehash: 9870ffa6ae5f80db823bfc74a7cc2e67fc8cf21d
     > [!NOTE]  
     >  當您移轉工作順序時，Configuration Manager 可能會移轉目的地階層中不需要的物件。 這些物件包括開機映像和 Configuration Manager 2007 用戶端安裝套件。  
 
--   驅動程式和驅動程式套件。  
+-   驅動程式和驅動程式套件。 當您移轉驅動程式套件，目的地階層中的 SMS 提供者電腦帳戶必須具有套件來源的完全控制權限。
 
-##  <a name="a-nameplanmigratecompliancesettingsa-plan-to-migrate-desired-configuration-management"></a><a name="Plan_Migrate_Compliance_settings"></a> 規劃移轉 Desired Configuration Management  
+##  <a name="Plan_Migrate_Compliance_settings"></a> 規劃移轉 Desired Configuration Management  
 您可以移轉設定項目和設定基準。  
 
 > [!NOTE]  
@@ -152,14 +154,14 @@ ms.openlocfilehash: 9870ffa6ae5f80db823bfc74a7cc2e67fc8cf21d
 
 您可以匯入 Configuration Manager 2007 設定套件。 匯入程序會自動轉換設定套件，使其與 System Center Configuration Manager 相容。  
 
-##  <a name="a-nameplanmigrateboundariesa-plan-to-migrate-boundaries"></a><a name="Plan_migrate_Boundaries"></a> 規劃移轉界限  
+##  <a name="Plan_migrate_Boundaries"></a> 規劃移轉界限  
  您可以移轉階層之間的界限。 當您從 Configuration Manager 2007 移轉界限時，來源站台的每個界限都會同時移轉，並新增至目的地階層中建立的新界限群組中。 當您從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 階層移轉界限時，您選取的每個界限都會新增至目的地階層中的新界限群組。  
 
  將針對內容位置啟用每個自動建立的界限群組，但並未針對網站指派啟用。 如此可避免網站指派時，來源和目的地階層間發生界限重疊。 從 Configuration Manager 2007 來源站台移轉，有助於防止新安裝的 Configuration Manager 2007 用戶端被不當指派至目的地階層。 System Center Configuration Manager 用戶端預設不會自動指派至 Configuration Manager 2007 站台。  
 
  若您在移轉期間與目的地階層共用發佈點，任何與該發佈相關聯的界限都將自動移轉至目的地階層。 在目的地階層中，移轉會為每個共用的發佈點新建一個唯讀界限群組。 若您變更來源階層中發佈點的界限，目的地階層中的界限群組會在下次資料收集週期期間更新這些變更。  
 
-##  <a name="a-nameplanmigratereportsa-plan-to-migrate-reports"></a><a name="Plan_Migrate_reports"></a> 規劃移轉報告  
+##  <a name="Plan_Migrate_reports"></a> 規劃移轉報告  
 Configuration Manager 不支援報告的移轉。 反之，它會使用 SQL Server Reporting Services 報表產生器將報告從來源階層中匯出，然後再將其匯入至目的地階層。  
 
 > [!NOTE]  
@@ -167,7 +169,7 @@ Configuration Manager 不支援報告的移轉。 反之，它會使用 SQL Serv
 
 如需報告的詳細資訊，請參閱 [System Center Configuration Manager 中的報告](../../core/servers/manage/reporting.md)。  
 
-##  <a name="a-nameplanmigrateorgfoldersa-plan-to-migrate-organizational-and-search-folders"></a><a name="Plan_Migrate_Org_Folders"></a> 規劃移轉組織與搜尋資料夾  
+##  <a name="Plan_Migrate_Org_Folders"></a> 規劃移轉組織與搜尋資料夾  
  您可以將組織資料夾和搜尋資料夾從支援的來源階層移轉至目的地階層。 此外，您還可以將已儲存搜尋的準則從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源階層移轉至目的地階層。  
 
  依預設，在進行移轉時，移轉程序會維持物件和集合的搜尋資料夾和系統管理資料夾架構。 不過，在 [建立移轉作業精靈] 中的 [設定] 頁面上，您可以藉由取消核取此選項的方塊，將移轉作業設定為不移轉物件的組織架構。 集合的組織架構一律不變。  
@@ -176,19 +178,14 @@ Configuration Manager 不支援報告的移轉。 反之，它會使用 SQL Serv
 
  當您從 System Center 2012 Configuration Manager 或 System Center Configuration Manager 來源階層移轉已儲存的搜尋時，所移轉的是搜尋的準則，而非搜尋結果的相關資訊。 已儲存搜尋的移轉不適用於 Configuration Manager 2007 來源站台。  
 
-##  <a name="a-nameplanmigrateaia-plan-to-migrate-asset-intelligence-customizations"></a><a name="Plan_Migrate_AI"></a> 規劃移轉 Asset Intelligence 自訂項目  
+##  <a name="Plan_Migrate_AI"></a> 規劃移轉 Asset Intelligence 自訂項目  
  您可以將 Asset Intelligence 自訂項目從支援的來源階層移轉至目的地階層。 Configuration Manager 2007 與 System Center Configuration Manager 之間的 Asset Intelligence 自訂項目架構並沒有重大變更。  
 
 > [!NOTE]  
 >  System Center Configuration Manager 不支援從使用 Asset Intelligence Service 2.0 (AIS 2.0) 的 Configuration Manager 2007 站台移轉 Asset Intelligence 物件。  
 
-##  <a name="a-nameplanmigrateswmrulesa-plan-to-migrate-software-metering-rules-customizations"></a><a name="Plan_Migrate_SWM_Rules"></a> 規劃移轉軟體計量規則自訂項目  
+##  <a name="Plan_Migrate_SWM_Rules"></a> 規劃移轉軟體計量規則自訂項目  
  Configuration Manager 2007 與 System Center Configuration Manager 之間的軟體計量並沒有重大變更。 您可以將軟體計量規則從支援的來源階層移轉至目的地階層。  
 
  依預設，您移轉至目的地階層的軟體計量規則與目的地階層中的特定網站並無關聯，因此這些規則可套用至階層中的所有用戶端。 若要將軟體計量規則套用至特定網站中的用戶端，您必須在移轉後編輯該計量規則。  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
 

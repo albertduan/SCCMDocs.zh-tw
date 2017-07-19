@@ -15,9 +15,11 @@ caps.latest.revision: 4
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 479a7e902ff19b8ec501ff01c8e56565fd69f51b
+ms.translationtype: Human Translation
+ms.sourcegitcommit: 2087badc9dd1d216352dce232b145a786783ac89
+ms.openlocfilehash: 44f454d2f7c9d317d1ad99ba724931b4631bd11e
+ms.contentlocale: zh-tw
+ms.lasthandoff: 05/18/2017
 
 
 ---                     
@@ -27,17 +29,12 @@ ms.openlocfilehash: 479a7e902ff19b8ec501ff01c8e56565fd69f51b
 
 System Center Configuration Manager 的查詢功能可依據您指定的準則，從站台資料庫中傳回資訊。 您可以使用查詢，來擷取站台中資源或是清查資料的相關資訊，以及狀態訊息。  
 
-## <a name="queries-topics"></a>查詢主題  
- 使用下列主題可協助您使用 Configuration Manager 中的查詢功能。  
+## <a name="topics-about-using-queries-in-configuration-manager"></a>有關使用 Configuration Manager 中查詢功能的主題  
+ 使用下列主題可協助您使用 Configuration Manager 中的查詢功能：  
 
 -   [System Center Configuration Manager 的查詢簡介](../../../core/servers/manage/introduction-to-queries.md)  
 
 -   [System Center Configuration Manager 中查詢的操作和維護](../../../core/servers/manage/operations-and-maintenance-for-queries.md)  
 
 -   [System Center Configuration Manager 的查詢安全性和隱私權](../../../core/servers/manage/security-and-privacy-for-queries.md)  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: fefa5f3aa12d82b66a251cf0525475496e1e35cf
+ms.sourcegitcommit: f7cd9c71287d62c9f5d36e2f032bc2a6065572ae
+ms.openlocfilehash: 8ff48b08d1abb7481592c0ea076d4efa15c3d8ee
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/06/2017
 
 ---
 # <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>使用命令列來安裝 System Center Configuration Manager 站台
@@ -67,7 +67,7 @@ ms.lasthandoff: 05/17/2017
     -   識別  
     -   復原
 
-如需備份和復原的詳細資訊，請參閱 [Configuration Manager 中的備份和復原](../../../../protect/understand/backup-and-recovery.md)主題中的[自動站台復原指令碼檔案金鑰](../../../../protect/understand/backup-and-recovery.md#BKMK_UnattendedSiteRecoveryKeys)。  
+如需詳細資訊，請參閱 [Configuration Manager 的自動站台復原](/sccm/protect/understand/unattended-recovery)。  
 
 如需在自動安裝指令碼檔中使用的索引鍵和值清單，請參閱[自動安裝指令碼檔案索引鍵](../../../../core/servers/deploy/install/command-line-options-for-setup.md#bkmk_Unattended)。  
 
@@ -87,7 +87,7 @@ ms.lasthandoff: 05/17/2017
 - 安裝新的管理中心網站
 - 安裝新的主要站台
 - 復原管理中心網站
-- 復原主要站台 
+- 復原主要站台
 
 此值不支援搭配從 Microsoft 大量授權網站取得的安裝媒體使用。
 如需如何在指令碼檔案中使用此索引鍵名稱，請參閱[命令列選項](/sccm/core/servers/deploy/install/command-line-options-for-setup)。

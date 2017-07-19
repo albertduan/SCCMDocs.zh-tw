@@ -16,10 +16,10 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
-ms.openlocfilehash: e9028a54e538b4ec987dbaeb5ba1ee22ad091728
+ms.sourcegitcommit: c8717925dba42451b1e241a7c2f59e43896d7d99
+ms.openlocfilehash: e78fe989b7ff445717c8320c4eae3900eb46baea
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/19/2017
 
 
 ---
@@ -27,31 +27,25 @@ ms.lasthandoff: 05/17/2017
 
 適用於：System Center Configuration Manager (最新分支)
 
-
-
- 從 Configuration Manager 1602 版開始，您可以針對 System Center Configuration Manager 管理的電腦設定條件式存取。  
+從 Configuration Manager 1602 版開始，您可以針對 System Center Configuration Manager 管理的電腦設定條件式存取。  
 
 > [!IMPORTANT]  
->  這是 1602、1606 和 1610 更新版所提供的發行前版本功能。 發行前版本功能會包含在產品內，以便在生產環境中進行早期測試，但不應視為生產環境就緒。 如需詳細資訊，請參閱[使用發行前版本功能](../../core/servers/manage/install-in-console-updates.md#bkmk_prerelease)。
+> 這是 1602、1606 和 1610 更新版所提供的發行前版本功能。 發行前版本功能會包含在產品內，以便在生產環境中進行早期測試，但不應視為生產環境就緒。 如需詳細資訊，請參閱[使用發行前版本功能](../../core/servers/manage/install-in-console-updates.md#bkmk_prerelease)。
 > - 安裝 1602 更新版之後，功能類型會顯示為已發行，不過這是發行前功能。
 > - 如果您接著從 1602 更新至 1606，功能類型會顯示為已發行，不過這仍是發行前功能。
 > - 如果您從 1511 版直接更新至 1606，功能類型會顯示為發行前版本。
 
- 如果您正在尋找如何針對 Intune 所註冊和管理的裝置，或者已加入網域但未評估其相容性的電腦，對其設定條件式存取的資訊，請參閱[管理 System Center Configuration Manager 中的服務存取權](../../protect/deploy-use/manage-access-to-services.md)。  
-
+如果您正在尋找如何針對 Intune 所註冊和管理的裝置，或者已加入網域但未評估其相容性的電腦，對其設定條件式存取的資訊，請參閱[管理 System Center Configuration Manager 中的服務存取權](../../protect/deploy-use/manage-access-to-services.md)。
 
 ## <a name="supported-services"></a>支援的服務  
 
--   Exchange Online  
-
--   SharePoint Online  
+-   Exchange Online
+-   SharePoint Online
 
 ## <a name="supported-pcs"></a>支援的電腦  
 
--   Windows 7  
-
--   Windows 8.1  
-
+-   Windows 7
+-   Windows 8.1
 -   Windows 10 
 
 ## <a name="configure-conditional-access"></a>設定條件式存取  
@@ -61,7 +55,7 @@ ms.lasthandoff: 05/17/2017
 
 -   ADFS 同步處理以及 O365 訂閱。 O365 訂閱可用於設定 Exchange Online 和 SharePoint Online。  
 
--   Microsoft Intune 訂閱。 應該在 Configuration Manager 主控台中設定 Microsoft Intune 訂閱。 這仍會要求您處於混合式部署中。  
+-   Microsoft Intune 訂閱。 應該在 Configuration Manager 主控台中設定 Microsoft Intune 訂閱。 Intune 訂閱是用來將裝置合規性狀態轉送到 Azure Active Directory，並提供使用者授權使用。  
 
  電腦必須符合下列需求：  
 
@@ -146,6 +140,8 @@ ms.lasthandoff: 05/17/2017
 
 -   Windows 10 users may see multiple access failures when trying to reach O365 and/or SharePoint online resources. Note that conditional access is not fully supported for Windows 10.  
 --->
-### <a name="see-also"></a>請參閱  
- [使用 System Center Configuration Manager 保護資料和站台基礎結構](../../protect/understand/protect-data-and-site-infrastructure.md)
+## <a name="see-also"></a>請參閱
+
+- [使用 System Center Configuration Manager 保護資料和站台基礎結構](../../protect/understand/protect-data-and-site-infrastructure.md)
+- [Configuration Manager 條件式存取疑難排解流程圖](https://gallery.technet.microsoft.com/Conditional-access-fd747c1a?redir=0) \(英文\)
 

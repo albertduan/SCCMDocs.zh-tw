@@ -15,10 +15,11 @@ caps.latest.revision: 6
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: aed95333b6509b0aa7061f23969381f1ce8aff7f
-ms.lasthandoff: 12/16/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: f62d969dd49fb00b688602128df74b28ff551135
+ms.openlocfilehash: 7ae6bac23e585d6f61aff0f3155d050f1b537620
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/07/2017
 
 
 ---
@@ -80,8 +81,11 @@ ms.lasthandoff: 12/16/2016
 > [!IMPORTANT]  
 >  選取站台以安裝 Reporting Services 點時，請注意，存取報告的使用者所在的安全性範圍，必須與安裝 Reporting Services 點的站台相同。  
 
-> [!IMPORTANT]  
+> [!NOTE]  
 >  在您於站台伺服器上安裝 Reporting Services 點之後，請勿變更報告伺服器的 URL。 例如，若您建立了 Reporting Services 點，然後在 Reporting Services 組態管理員中修改報表伺服器的 URL，則 Configuration Manager 主控台將會繼續使用舊的 URL，而您將無法從主控台執行、編輯或建立報告。 當您必須變更 URL 報告伺服器時，請先移除 Reporting Services 點、變更 URL，然後重新安裝 Reporting Services 點。  
+
+> [!IMPORTANT]    
+> 當您安裝 Reporting Services 點時，必須指定 Reporting Services 點帳戶。 之後，當不同網域的使用者嘗試執行報告時，除非在網域之間建立雙向信任，否則報告將會無法執行。
 
  利用下列程序安裝 Reporting Services 點。  
 
@@ -127,7 +131,7 @@ ms.lasthandoff: 12/16/2016
 
     -   **Reporting Services 點帳戶**：按一下 [設定]，然後選取 Reporting Services 點上的 SQL Server Reporting Services 連線到 Configuration Manager 站台資料庫時，用以擷取顯示在報告中資料的帳戶。 選取 [現有的帳戶] 以指定之前設定為 Configuration Manager 帳戶的 Windows 使用者帳戶，或選取 [新增帳戶] 以指定目前未設定為 Configuration Manager 帳戶的 Windows 使用者帳戶。 Configuration Manager 會自動授與指定之使用者存取站台資料庫的權限。 顯示在 [系統管理]  工作區中 [安全性]  節點之 [帳戶]  子資料夾中的使用者，具有 [ConfigMgr Reporting Services 點]  帳戶名稱。  
 
-         執行 Reporting Services 的帳戶必須隸屬於網域本機安全性群組 [Windows Authorization Access Group] ，且將 [Read tokenGroupsGlobalAndUniversal]  權限設定為 [允許] 。  
+         執行 Reporting Services 的帳戶必須隸屬於網域本機安全性群組 [Windows Authorization Access Group] ，且將 [Read tokenGroupsGlobalAndUniversal]  權限設定為 [允許] 。 除了 Reporting Servicies 點帳戶之外，還必須為來自不同網域的使用者建立雙向信任，才能成功執行報告。
 
          指定的 Windows 使用者帳戶和密碼會經過加密，並儲存於 Reporting Services 資料庫中。 Reporting Services 會使用此帳戶和密碼，擷取來自站台資料庫的報告資料。  
 

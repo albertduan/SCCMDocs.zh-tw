@@ -2,7 +2,7 @@
 title: "使用 System Center Configuration Manager 設定 Intune 訂閱 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 設定 Intune 訂閱。"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 06/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -17,10 +17,10 @@ author: mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 10cc64ae7e4d91f53201c2896b359e77ef04d32d
+ms.sourcegitcommit: 662901e850566756759fcfc61c58f3c0e56bc5aa
+ms.openlocfilehash: 22d890c972d3166f9c7b583d8d3fa917c1897880
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/03/2017
 
 ---
 # <a name="configure-your-intune-subscription-with-system-center-configuration-manager-and-microsoft-intune"></a>使用 System Center Configuration Manager 和 Microsoft Intune 設定 Intune 訂閱
@@ -53,7 +53,7 @@ Intune 訂閱會執行下列動作：
 5.  在 [訂閱]  頁面上按一下 [登入]  ，並使用您的工作或學校帳戶登入。 在 [設定行動裝置管理授權單位] 對話方塊中，選取只透過 Configuration Manager 主控台使用 Configuration Manager 管理行動裝置的核取方塊。 若要繼續訂閱，您必須選取此選項。
 
     > [!IMPORTANT]
-    >  一旦將 Configuration Manager 選取為您的管理授權單位，日後您就無法將管理授權單位變更為 Microsoft Intune。
+    >  一旦您選取 Configuration Manager 作為管理授權單位，便只能在 Configuration Manager 1610 版或更新版本以及 Microsoft Intune 1705 版中，才能將管理授權單位變更為 Microsoft Intune，而不需要連絡 Microsoft 支援服務，也不需要取消現有受管理裝置的註冊並重新註冊。 如需詳細資訊，請參閱[變更您的 MDM 授權單位](/sccm/mdm/deploy-use/change-mdm-authority)。
 
 6.  按一下隱私權連結以檢閱其內容，然後按 [下一步] 。
 

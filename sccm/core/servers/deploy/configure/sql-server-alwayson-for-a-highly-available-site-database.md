@@ -1,7 +1,8 @@
 ---
-title: SQL Server AlwaysOn | Microsoft Docs
+title: SQL Server Always On | Microsoft Docs
+description: "規劃以將 SQL Server AlwaysOn 可用性群組與 SCCM 搭配使用。"
 ms.custom: na
-ms.date: 1/4/2017
+ms.date: 5/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,262 +16,242 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: aaaab003ddd22f18160d4be63cfeab3a7e7f6b03
+ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
+ms.openlocfilehash: 188ae877368a6cb2ec9998bff74259b4e5b5e7ce
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/01/2017
 
 
 ---
-# <a name="sql-server-alwayson-for-a-highly-available-site-database-for-system-center-configuration-manager"></a>適用於 System Center Configuration Manager 之高可用性站台資料庫的 SQL Server AlwaysOn
+# <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>準備將 SQL Server AlwaysOn 可用性群組與 Configuration Manager 搭配使用
 
-*適用於：System Center Configuration Manager (最新分支)*
+*適用於︰System Center Configuration Manager (最新分支)*
 
+準備 System Center Configuration Manager 以使用 SQL Server Always On 可用性群組作為站台資料庫的高可用性與災害復原解決方案。  
+Configuration Manager 支援在下列位置使用可用性群組：
+-     在主要站台和管理中心網站。
+-     內部部署環境或 Microsoft Azure 中。
 
- 從 System Center Configuration Manager 1602 版開始，您可以使用 SQL Server [AlwaysOn 可用性群組](https://msdn.microsoft.com/library/hh510230\(v=sql.120\).aspx)於主要站台和管理中心網站裝載站台資料庫，以作為高可用性和災害復原方案。 可用性群組可以裝載在內部部署環境或 Microsoft Azure 中。  
+當您在 Microsoft Azure 中使用可用性群組時，可以使用「Azure 可用性設定組」來進一步提升站台資料庫的可用性。 如需 Azure 可用性集合的詳細資訊，請參閱 [管理虛擬機器的可用性](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-manage-availability/)。
 
- 當您使用 Microsoft Azure 來裝載可用性群組時，您可以將「SQL Server AlwaysOn 可用性群組」與「Azure 可用性設定組」搭配使用，以進一步提升站台資料庫的可用性。 如需 Azure 可用性集合的詳細資訊，請參閱 [管理虛擬機器的可用性](https://azure.microsoft.com/documentation/articles/virtual-machines-windows-manage-availability/)。  
+>  [!Important]   
+>  在您繼續操作之前，必須先熟悉 SQL Server 和 SQL Server 可用性群組的設定。 接下來的資訊會參考 SQL Server 文件庫和程序。
 
- Configuration Manager 支援在位於內部或外部負載平衡器後方的 SQL 可用性群組上裝載站台資料庫。 除了在各複本上設定防火牆例外，您也必須為下列連接埠新增負載平衡規則：
-  - 透過 TCP 的 SQL：TCP 1433
-  - SQL Server Service Broker：TCP 4022
-  - 伺服器訊息區 (SMB)：TCP 445
-  - RPC 端點對應程式：TCP 135
+## <a name="supported-scenarios"></a>支援的案例
+以下是將可用性群組與 Configuration Manager 搭配使用的支援案例。 如需每個案例的詳細資料和程序，請參閱[設定 Configuration Manager 的可用性群組](/sccm/core/servers/deploy/configure/configure-aoag)。
 
 
-支援可用性群組的案例如下︰  
+-      [建立要與 Configuration Manager 搭配使用的可用性群組](/sccm/core/servers/deploy/configure/configure-aoag#create-and-configure-an-availability-group)。
+-     [設定站台以使用可用性群組](/sccm/core/servers/deploy/configure/configure-aoag#configure-a-site-to-use-the-database-in-the-availability-group)。
+-     [在裝載站台資料庫的可用性群組中新增或移除複本成員](/sccm/core/servers/deploy/configure/configure-aoag#add-and-remove-replica-members)。
+-     [將站台資料庫從可用性群組移到獨立 SQL Server 的預設或具名執行個體](/sccm/core/servers/deploy/configure/configure-aoag#stop-using-an-availability-group)。
 
--   您可以將站台資料庫移至可用性群組的預設執行個體  
 
--   您可以新增或移除裝載站台資料庫的可用性群組複本成員  
+## <a name="prerequisites"></a>先決條件
+下列先決條件適用於所有案例。 如果有其他先決條件適用於特定案例，將會針對該案例詳述那些先決條件。   
 
--   您可以從可用性群組將站台資料庫移動至獨立 SQL Server 的預設或具名執行個體  
+### <a name="configuration-manager-accounts-and-permissions"></a>Configuration Manager 帳戶和權限
+**站台伺服器對複本成員的存取：**   
+站台伺服器的電腦帳戶必須是具備可用性群組成員身分之每部電腦上的 **「本機系統管理員」** 群組成員。
 
-> [!Important]  
-> 當您以混合式組態搭配使用 Microsoft Intune 與 Configuration Manager，從可用性群組來回移動站台資料庫會觸發雲端資料的重新同步處理。 這並無法避免。 
+### <a name="sql-server"></a>SQL Server
+**版本 (Version)：**  
+可用性群組中的每個複本都必須執行您 Configuration Manager 版本所支援的 SQL Server 版本。 只要 SQL Server 支援，可用性群組的不同節點便可執行不同版本的 SQL Server。
 
+**版本 (Edition)：**  
+您必須使用 SQL Server *Enterprise* Edition。
 
+**帳戶：**  
+每個 SQL Server 執行個體都可在網域使用者帳戶 (**服務帳戶**) 或「本機系統」下執行。 群組中的每個複本可以有不同的設定。 依據 [SQL Server 最佳做法](/sql/sql-server/install/security-considerations-for-a-sql-server-installation#before-installing-includessnoversionincludesssnoversion-mdmd)，請使用具有最低可能權限的帳戶。
 
-> [!NOTE]  
->  若要成功設定及使用可用性群組，您必須熟悉 SQL Server 和 SQL Server 可用性群組的設定。 本主題中的 System Center Configuration Manager 程序有賴於可在 SQL Server 文件庫中找到的其他文件和程序說明。  
+例如，若要為 SQL Server 2016 設定「服務帳戶」和權限，請參閱 MSDN 上的[設定 Windows 服務帳戶和權限](/sql/database-engine/configure-windows/configure-windows-service-accounts-and-permissions)。
 
- **搭配 Configuration Manager 使用 AlwaysOn 可用性群組時的已知的問題︰**  
+  如果您使用「本機系統」來執行複本，就必須設定端點驗證。 這包括委派權限來啟用與複本伺服器端點的連線。
+  -     透過新增每個 SQL Server 的電腦帳戶作為節點中其他 SQL Server 的登入，並將 SA 權限授與該帳戶，來委派 SQL Server 權限。  
+  -     透過在每個複本上執行下列指令碼，將端點權限委派給本機端點上的每個遠端伺服器：    
 
--   **所有複本伺服器都需要在設定 Configuration Manager 使用可用性群組時，使用相同的檔案路徑︰**  
+              GRANT CONNECT ON endpoint::[endpoint_name]  
+              TO [domain\servername$]
 
-    -   在您執行 Configuration Manager 安裝程式，以將站台重新導向至使用可用性群組中的資料庫時，群組中的每部次要複本伺服器必須具有檔案路徑，該檔案路徑等同於用來裝載目前主要複本上站台資料庫檔案的檔案路徑。 如果相同的路徑不存在於次要複本上，安裝程式就無法將可用性群組執行個體作為站台資料庫的新位置加入。  
+如需詳細資訊，請參閱[為 Always On 可用性群組建立資料庫鏡像端點](/sql/database-engine/availability-groups/windows/database-mirroring-always-on-availability-groups-powershell)。
 
-         此外，每個次要複本伺服器上，本機 SQL Server 服務帳戶必須有 **[完全控制]** 此資料夾的權限。  
+### <a name="availability-group-configurations"></a>可用性群組設定
+**複本成員：**  
+可用性群組必須有一個主要複本，而且最多可以有兩個同步次要複本。  每個複本成員必須：
+-   使用 **[預設執行個體]**  
+    從 1702 版開始，您可以使用「具名執行個體」。
 
-         只有當您使用安裝程式來指定可用性群組中的資料庫執行個體時，次要複本伺服器才需要此檔案路徑。  在安裝程式完成使用可用性群組中之站台資料庫的變更之後，您可以從次要複本伺服器刪除不使用的路徑。  
+-      將 [主要角色的連接] 設定為 [是]
+-      將 [可讀取次要] 設定為 [是]  
+-      針對 **[手動容錯移轉]**做設定       
 
-         例如，請考慮下列案例：  
+    >  [!TIP]
+    >  設定為 [自動容錯移轉] 時，Configuration Manager 支援使用可用性群組複本。 不過，在下列情況下必須設定 [手動容錯移轉]：
+    >  -  您執行安裝程式來指定使用可用性群組中的站台資料庫。
+    >  -  當您安裝任何 Configuration Manager 更新 (不僅僅是適用於站台資料庫的更新) 時。  
 
-        -   建立使用三部 SQL Server 的可用性群組  
+**複本成員位置：**  
+可用性群組中的所有複本都必須裝載在內部部署環境或 Microsoft Azure 中。 不支援含有內部部署成員和 Azure 中成員的群組。     
 
-        -   您的主要複本伺服器是 SQL Server 2014 的全新安裝。  依預設，資料庫 .MDF 和 .LDF 檔案會儲存在 C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA  
+當您在 Azure 中設定可用性群組，而該群組位於內部或外部負載平衡器之後時，您必須開啟下列預設連接埠，才能讓安裝程式存取每個複本：   
 
-        -   您的兩個次要複本伺服器從舊版升級至 SQL Server 2014，並保留原始的檔案路徑來儲存下列資料庫檔案︰C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\DATA  
+-      RCP 端點對應程式 - **TCP 135**   
+-      伺服器訊息區 - **TCP 445**  
+    *您可以在資料庫移動完成之後移除此連接埠。從 1702 版開始，已不再需要此連接埠。*
+-      SQL Server Service Broker - **TCP 4022**
+-      透過 TCP 的 SQL - **TCP 1433**   
 
-        -   在您嘗試將站台資料庫移至這個可用性群組之前，您必須在每個次要複本伺服器上建立下列檔案路徑 (如果次要複本不會使用這個檔案位置)︰C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA (這是在主要複本上使用之路徑的複製)  
+在安裝程式執行完成之後，下列連接埠必須仍然可供存取：
+-      SQL Server Service Broker - **TCP 4022**
+-      透過 TCP 的 SQL - **TCP 1433**
 
-        -   之後，授與每個次要複本上的 SQL Server 服務帳戶在該伺服器上新建立之檔案位置的完全控制存取  
+從 1702 版開始，您可以使用自訂連接埠來進行這些設定。 相同的連接埠必須供端點使用，在可用性群組中的所有複本上也必須使用這些連接埠。
 
-        -   現在，您可以成功執行 Configuration Manager 安裝程式，將站台導向使用可用性群組中的站台資料庫  
 
--   **執行安裝程式以導向使用可用性群組中的站台資料庫時，則可能會將類似下列的錯誤記錄在 configmgrsetup.log 中︰**  
+**接聽程式：**   
+可用性群組至少必須有一個 **可用性群組接聽程式**。 當您將 Configuration Manager 設定為使用可用性群組中的站台資料庫時，將會使用此接聽程式的虛擬名稱。 雖然一個可用性群組可以包含多個接聽程式，但是 Configuration Manager 只能使用一個接聽程式。 如需詳細資訊，請參閱[建立或設定可用性群組接聽程式 (SQL Server)](/sql/database-engine/availability-groups/windows/create-or-configure-an-availability-group-listener-sql-server)。
 
-    -   錯誤︰SQL Server 錯誤：[25000][3906][Microsoft][SQL Server Native Client 11.0][SQL Server] 無法更新資料庫 "CM_AAA"，因為資料庫處於唯讀狀態。   Configuration Manager 安裝程式 1/21/2016 4:54:59 PM  7344 (0x1CB0)  
+**檔案路徑：**   
+當您執行 Configuration Manager 安裝程式來設定讓站台使用可用性群組中的資料庫時，每部次要複本伺服器都必須具有 SQL Server 檔案路徑，且此路徑與在目前主要複本上找到之站台資料庫檔案的檔案路徑相同。
+-   如果相同的路徑不存在，安裝程式就無法新增可用性群組執行個體作為站台資料庫的新位置。
+-   此外，本機 SQL Server 服務帳戶必須具備此資料夾的「完全控制」權限。
 
-     當安裝程式嘗試處理可用性群組之次要複本上的資料庫角色時，就會記錄這些錯誤。 您可以放心地忽略這些錯誤。
-- **裝載其他可用性群組的 SQL 伺服器︰**
+只有當您使用安裝程式來指定可用性群組中的資料庫執行個體時，次要複本伺服器才需要此檔案路徑。 在安裝程式完成可用性群組中站台資料庫的設定之後，您可以從次要複本伺服器刪除不使用的路徑。
 
-  安裝 1610 版之前，如果您使用可用性群組，然後執行 Configuration Manager 安裝程式或安裝 Configuration Manager 的更新，則裝載 Configuration Manager 可用性群組之 SQL Server 上每個其他可用性群組中的每個複本都必須具有下列設定：
-    - **[手動容錯移轉]**
-    - **[允許任何唯讀連線]**
+例如，請考慮下列案例：
+-    您建立一個使用三部 SQL Server 的可用性群組。
 
+-    您的主要複本伺服器是 SQL Server 2014 的全新安裝。 根據預設，資料庫 .MDF 和 .LDF 檔案會儲存在 C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA。
 
-##  <a name="bkmk_BnR"></a> 使用 SQL Server AlwaysOn 可用性群組時的備份和復原變更  
- **備份：**  
+-    您的兩個次要複本伺服器已從舊版升級至 SQL Server 2014，並保留原始的檔案路徑來儲存下列位置的資料庫檔案︰C:\Program Files\Microsoft SQL Server\MSSQL10.MSSQLSERVER\MSSQL\DATA。
 
- 當站台資料庫在可用性群組中執行時，您應該繼續執行內建的「備份站台」伺服器維護工作以備份一般 Configuration Manager 設定和檔案，但計劃不使用該備份所建立的 .MDF 或 .LDF 檔案。 取而代之的是，改為使用 SQL Server 來直接備份站台資料庫。  
+-    嘗試將站台資料庫移至這個可用性群組之前，您必須在每個次要複本伺服器上建立下列檔案路徑 (即使次要複本並不會使用這個檔案位置)︰C:\Program Files\Microsoft SQL Server\MSSQL12.MSSQLSERVER\MSSQL\DATA (這與主要複本上使用的路徑相同)。
 
- 此外，由於資料庫的復原模式是設定為完整，因此您必須計劃監控和維護站台資料庫交易記錄檔的大小。  在完整復原模式下，必須等到建立資料庫或交易記錄檔的完整備份之後，才會強行寫入交易。 完整復原模式是使用可用性群組中站台資料庫的要求條件，並且是在您設定要與 Configuration Manager 搭配使用的群組時所設定。 如需 SQL Server 備份與還原的詳細資訊，請參閱 SQL Server 文件中的 [SQL Server 資料庫的備份與還原](https://msdn.microsoft.com/library/ms187048\(v=sql.120\).aspx) 。  
+-    接著，您需將該伺服器上新建立之檔案位置的完全控制存取權，授與每個次要複本上的 SQL Server 服務帳戶。
 
- **復原：**  
+-    現在，您即可成功執行 Configuration Manager 安裝程式，來設定讓站台使用可用性群組中的站台資料庫。
 
- 進行站台復原時，只要其中一個可用性群組節點維持正常運作，您便可以使用 **[略過資料庫復原 (如果資料庫未受到影響，則使用此選項)]**站台復原選項。  
+**設定新複本上的資料庫：**   
+ 您必須為每個複本的資料庫進行下列設定：
+-     [CLR 整合] 必須為 [已啟用]
+-      [最大文字複寫大小] 必須為 *2147483647*
+-      資料庫擁有者必須為 [SA 帳戶]
+-      [TRUSTWORTY] 必須為 [ON]
+-      [Service Broker] 必須為 [已啟用]
 
- 不過，如果可用性群組的所有節點都已遺失，您就必須先重新建立可用性群組 (System Center Configuration Manager 無法重建或還原可用性節點)，才能復原站台。在使用還原的備份來重新建立群組並重新設定之後，您便可以使用 **[略過資料庫復原 (如果資料庫未受到影響，則使用此選項)]** 站台復原選項。  
+您只能在主要複本上進行這些設定。 若要設定次要複本，您必須先將主要複本容錯移轉成次要複本，以讓次要複本成為新的主要複本。   
 
- 如需備份與復原的詳細資訊，請參閱 [Backup and recovery for System Center Configuration Manager](../../../../protect/understand/backup-and-recovery.md) (System Center Configuration Manager 中的備份和復原)。  
+請視需要使用 SQL Server 文件來協助您進行這些設定。 例如，請參閱 SQL Server 文件中的 [TRUSTWORTHY](/sql/relational-databases/security/trustworthy-database-property) 或 [CLR 整合](/sql/relational-databases/clr-integration/clr-integration-enabling)。
 
-##  <a name="bkmk_create"></a> 設定要與 Configuration Manager 搭配使用的可用性群組  
- 在您開始下列程序前，請先熟悉完成這項設定所需的 SQL Server 程序，以及下列適用於您所設定要與 Configuration Manager 搭配使用之可用性群組的詳細資訊。  
+### <a name="verification-script"></a>驗證指令碼
+您可以執行下列指令碼來驗證主要複本及次要複本的資料庫設定。 您必須先將次要複本變更為主要複本，才能修正次要複本上的問題。
 
- **與 System Center Configuration Manager 搭配使用的 AlwaysOn 可用性群組需求：**  
+    SET NOCOUNT ON
 
--  版本：可用性群組中的每個節點 (或複本) 都必須執行 System Center Configuration Manager 所支援的 SQL Server 版本。 如果 SQL Server 支援，可用性群組的不同節點可以執行不同版本的 SQL Server。   
+    DECLARE @dbname NVARCHAR(128)
 
-- 版次︰您必須使用 SQL Server Enterprise Edition。  SQL Server 2016 Standard Edition 推出了 Configuration Manager 不支援的基本可用性群組。
+    SELECT @dbname = sd.name FROM sys.sysdatabases sd WHERE sd.dbid = DB_ID()
 
+    IF (@dbname = N'master' OR @dbname = N'model' OR @dbname = N'msdb' OR @dbname = N'tempdb' OR @dbname = N'distribution' ) BEGIN
+    RAISERROR(N'ERROR: Script is targetting a system database.  It should be targeting the DB you created instead.', 0, 1)
+    GOTO Branch_Exit;
+    END ELSE
+    PRINT N'INFO: Targetted database is ' + @dbname + N'.'
 
--   可用性群組必須有一個主要複本，而且最多可以有兩個同步次要複本。  
+    PRINT N'INFO: Running verifications....'
 
--  在將資料庫加入可用性群組之後，您必須將主要複本容錯移轉到次要複本 (讓它成為新的主要複本)，並接著使用下列項目來設定資料庫︰
-    - 啟用 Trustworthy︰等於 True
-    - 啟用 Service Broker︰等於 True
-    - 設定 dbowner︰等於 SA
+    IF NOT EXISTS (SELECT * FROM sys.configurations c WHERE c.name = 'clr enabled' AND c.value_in_use = 1)
+    PRINT N'ERROR: CLR is not enabled!'
+    ELSE
+    PRINT N'PASS: CLR is enabled.'
 
-    您可以執行下列指令碼以進行這些設定，其中 cm_ABC 是站台資料庫的名稱︰  
+    DECLARE @repltable TABLE (
+    name nvarchar(max),
+    minimum int,
+    maximum int,
+    config_value int,
+    run_value int )
 
-    >     USE master  
-    >     ALTER DATABASE cm_ABC SET NEW_BROKER   
-    >     ALTER DATABASE cm_ABC SET ENABLE_BROKER  
-    >     ALTER DATABASE cm_ABC SET TRUSTWORTHY ON;  
-    >     USE cm_ABC  
-    >     EXEC sp_changedbowner 'sa'  
-    >     Exec sp_configure 'max text repl size (B)', 2147483647 reconfigure
+    INSERT INTO @repltable
+    EXEC sp_configure 'max text repl size (B)'
 
+    IF NOT EXISTS(SELECT * from @repltable where config_value = 2147483647 and run_value = 2147483647 )
+    PRINT N'ERROR: Max text repl size is not correct!'
+    ELSE
+    PRINT N'PASS: Max text repl size is correct.'
 
+    IF NOT EXISTS (SELECT db.owner_sid FROM sys.databases db WHERE db.database_id = DB_ID() AND db.owner_sid = 0x01)
+    PRINT N'ERROR: Database owner is not sa account!'
+    ELSE
+    PRINT N'PASS: Database owner is sa account.'
 
--   可用性群組至少必須有一個 **可用性群組接聽程式**。  當您將 Configuration Manager 設定為使用可用性群組中的站台資料庫時，將會使用此接聽程式的虛擬名稱。 雖然一個可用性群組可以包含多個接聽程式，但是 Configuration Manager 只能使用一個接聽程式  
+    IF NOT EXISTS( SELECT * FROM sys.databases db WHERE db.database_id = DB_ID() AND db.is_trustworthy_on = 1 )
+    PRINT N'ERROR: Trustworthy bit is not on!'
+    ELSE
+    PRINT N'PASS: Trustworthy bit is on.'
 
--   每個主要和次要複本都必須︰  
-    - 設定為 **[允許任何唯讀連線]**
-    - 使用 **[預設執行個體]**
-    - 針對 **[手動容錯移轉]**做設定  
+    IF NOT EXISTS( SELECT * FROM sys.databases db WHERE db.database_id = DB_ID() AND db.is_broker_enabled = 1 )
+    PRINT N'ERROR: Service broker is not enabled!'
+    ELSE
+    PRINT N'PASS: Service broker is enabled.'
 
-        > [!TIP]  
-        >  設定為 [自動容錯移轉] 時，System Center Configuration Manager 支援使用可用性群組複本。 不過，當您執行安裝程式以指定使用可用性群組中的站台資料庫，以及當您安裝任何 Configuration Manager 更新 (不只是適用於站台資料庫的更新) 時，都必須設定「手動容錯移轉」。  
+    IF NOT EXISTS( SELECT * FROM sys.databases db WHERE db.database_id = DB_ID() AND db.is_honor_broker_priority_on = 1 )
+    PRINT N'ERROR: Service broker priority is not set!'
+    ELSE
+    PRINT N'PASS: Service broker priority is set.'
 
-  **可用性群組的限制**
-   - 不支援基本可用性群組 (由 SQL Server 2016 Standard Edition 所推出)。 這是因為基本可用性群組不支援次要複本的讀取存取，但這是搭配使用 Configuration manager 的需求。 如需詳細資訊，請參閱[基本可用性群組 (AlwaysOn 可用性群組)](https://msdn.microsoft.com/en-us/library/mt614935.aspx)。
+    PRINT N'Done!'
 
-   - 可用性群組只支援站台資料庫，而不適用於軟體更新資料庫或報表資料庫。   
-   - 當您使用可用性群組時，您必須手動設定報告點以使用目前的主要複本，而不是可用性群組接聽程式。 如果主要複本容錯移轉至另一個複本，則必須將報告點重新設定為使用新的主要複本。  
-   - 安裝更新之前 (像是 1606 版本)，請確定可用性群組設定為手動容錯移轉。 站台更新之後，您可以還原為自動容錯移轉。
+    Branch_Exit:
 
+## <a name="limitations-and-known-issues"></a>限制與已知問題
+下列限制適用於所有案例。   
 
+**不支援基本可用性群組：**  
+[基本可用性群組](https://msdn.microsoft.com/library/mt614935.aspx)是在 SQL Server 2016 Standard Edition 中引進，這些群組不支援對次要複本的讀取存取，而這是與 Configuration Manager 搭配使用的一項需求。
 
- **設定和使用可用性群組時必須具備的權限︰**  
+**裝載額外可用性群組的 SQL Server︰**   
+在 Configuration Manager 1610 版之前，當 SQL Server 上的可用性群組除了您用於 Configuration Manager 的群組之外還裝載一或多個可用性群組時，每個這些額外可用性群組中的每個複本在您執行 Configuration Manager 安裝程式或安裝 Configuration Manager 的更新時，必須都已做好下列設定：
+-   **[手動容錯移轉]**
+-     **[允許任何唯讀連線]**
 
--   站台伺服器的電腦帳戶必須是具備可用性群組成員身分之每部電腦上的 **「本機系統管理員」** 群組成員。  
+**不支援的資料庫使用：**
+-   **Configuration Manager 僅支援可用性群組中的站台資料庫：**不支援下列資料庫：
+    -   報表資料庫
+    -   WSUS 資料庫
+-   **既存的資料庫：**您無法使用在複本上建立的新資料庫。 反之，當您設定可用性群組時，必須將現有 Configuration Manager 資料庫的複本還原至主要複本。
 
-#### <a name="to-configure-an-availability-group-to-host-a-site-database"></a>設定可用性群組以裝載站台資料庫  
+**ConfigMgrSetup.log 中的安裝程式錯誤：**  
+當您執行安裝程式來將站台資料庫移至可用性群組時，安裝程式會嘗試處理可用性群組之次要複本上的資料庫角色，並記錄錯誤，如下所示：
+-   錯誤︰SQL Server 錯誤：[25000][3906][Microsoft][SQL Server Native Client 11.0][SQL Server] 無法更新資料庫 "CM_AAA"，因為資料庫處於唯讀狀態。 Configuration Manager 安裝程式 2016 年 1 月 21 日下午 4:54:59 7344 (0x1CB0)  
 
-1.  使用下列命令來停止 Configuration Manager 站台：  
-     **Preinst.exe /stopsite**  
+您可以放心地忽略這些錯誤。
 
-     如需使用 Preinst.exe 的詳細資訊，請參閱 [System Center Configuration Manager 的階層維護工具 (Preinst.exe)](../../../../core/servers/manage/hierarchy-maintenance-tool-preinst.exe.md)。  
+## <a name="changes-for-site-backup"></a>站台備份的變更
+**備份資料庫檔案：**  
+當站台資料庫在可用性群組中執行時，您應該執行內建的「備份站台伺服器」維護工作，以備份常用的 Configuration Manager 設定和檔案。 不過，請勿使用該備份所建立的 .MDF 或 .LDF 檔案， 應改為使用 SQL Server 來直接備份這些資料庫檔案。
 
-2.  將站台資料庫的備份模式從 **[簡單]** 變更為 **[完整]**。  
+**交易記錄檔：**  
+站台資料庫的復原模型必須設定為 [完整] (在可用性群組中使用時的需求)。 使用此設定時，請規劃以監視及維護站台資料庫交易記錄檔的大小。 在完整復原模式下，必須等到建立資料庫或交易記錄檔的完整備份之後，才會強行寫入交易。 如需詳細資訊，請參閱 SQL Server 文件中的 [SQL Server 資料庫的備份與還原](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)。
 
-     請參閱 SQL Server 文件中的 [檢視或變更資料庫的復原模式](https://msdn.microsoft.com/library/ms189272\(v=sql.120\).aspx) 。 (可用性群組僅支援 [完整] 模式)。  
+## <a name="changes-for-site-recovery"></a>站台復原的變更
+如果至少有一個可用性群組節點仍然可運作，您便可以使用 [略過資料庫復原 (如果資料庫未受到影響，則使用此選項)] 站台復原選項。
 
-3.  在將裝載群組之主要複本的伺服器上，使用 **[新增可用性群組精靈]** 來建立可用性群組。 在精靈中：  
+ 當可用性群組的所有節點都已遺失時，您則必須先重新建立可用性群組，才能復原站台。 Configuration Manager 無法重建或還原可用性節點。 在重新建立群組並已還原及重新設定備份之後，您便可以使用 [略過資料庫復原 (如果資料庫未受到影響，則使用此選項)] 站台復原選項。
 
-    -   在 [選取資料庫] 頁面上，為您的 Configuration Manager 站台選取資料庫  
+如需詳細資訊，請參閱 [System Center Configuration Manager 備份和復原](/sccm/protect/understand/backup-and-recovery)。
 
-    -   在 **[指定複本]** 頁面上，設定︰  
+## <a name="changes-for-reporting"></a>報告的變更
+**安裝 Reporting Services 點：**  
+Reporting Services 點不支援使用可用性群組的接聽程式虛擬名稱，或是將 Reporting Services 資料庫裝載在 SQL Server Always On 可用性群組中：
+-   根據預設，Reporting Services 點安裝會將 [站台資料庫伺服器名稱] 設定為指定成接聽程式的虛擬名稱。 請將此名稱變更為指定可用性群組中複本的電腦名稱和執行個體。
+-   若要在某個複本節點離線時，卸載報告負載並提升可用性，請考慮在每個複本節點上安裝額外的 Reporting Services 點，並將每個 Reporting Services 點設定為指向自己的電腦名稱。
 
-        -   **複本**︰指定將裝載次要複本的伺服器  
+當您在可用性群組的每個複本上安裝 Reporting Services 點時，報告功能將一律可以連線到作用中的報告點伺服器。
 
-        -   **接聽程式**︰指定 [接聽程式 DNS 名稱] 作為完整 DNS 名稱 (例如 **&lt;Listener_Server>.fabrikam.com**)。 當您設定 Configuration Manager 使用可用性群組中的資料庫時，將會使用此項目。
+**切換主控台所使用的 Reporting Services 點：**  
+若要執行報告，請在主控台中移至 [監視] > [概觀] > [報告] > [報告]，然後選擇 [報告選項]。 在 [報告選項] 對話方塊中，選取所需的 Reporting Services 點。
 
-    -   在 **[選取初始資料同步處理]** 頁面上，選取 **[完整]**。 在精靈建立可用性群組之後，精靈會備份主要資料庫和交易記錄檔，然後在裝載次要複本的每部伺服器上還原它們。 如果您不使用此步驟，就必須將站台資料庫的複本還原到裝載次要複本的每部伺服器，然後手動將該資料庫加入群組中。  
-
-    如需詳細資訊，請參閱 SQL Server 文件中的 [使用可用性群組精靈](https://msdn.microsoft.com/library/hh403415\(v=sql.120\).aspx) 。  
-
-4.  設定可用性群組之後，請為主要複本上的站台資料庫設定 **TRUSTWORTHY** 屬性，然後 **[啟用 CLR 整合]**。 如需如何進行這些設定的資訊，請參閱 SQL Server 文件中的 [TRUSTWORTHY 資料庫屬性](https://msdn.microsoft.com/library/ms187861\(v=sql.120\).aspx) 和  [啟用 CLR 整合](https://msdn.microsoft.com/library/ms131048\(v=sql.120\).aspx) 。  
-
-5.  採取下列動作來設定可用性群組中的每個次要複本︰  
-
-    1.  將目前的主要複本手動容錯移轉至次要複本。 請參閱 SQL Server 文件中的 [執行可用性群組的已規劃手動容錯移轉](https://msdn.microsoft.com/library/hh231018\(v=sql.120\).aspx) 。  
-
-    2.  為新主要複本上的資料庫設定 **TRUSTWORTHY** 屬性，然後 **[啟用 CLR 整合]**。  
-
-6.  在所有複本都升級為主要複本且設定好資料庫之後，可用性群組即可與 Configuration Manager 搭配使用。  
-
-
-
-
-
-##  <a name="bkmk_direct"></a> 將站台資料庫移至可用性群組  
- 您可以將先前安裝之站台的站台資料庫移至可用性群組。 您必須先建立可用性群組，然後設定可用性群組中作業的資料庫。  
-
- 若要完成此程序，執行 Configuration Manager 安裝程式的使用者帳戶必須是具備可用性群組成員身分之每部電腦上的**本機系統管理員**群組成員。  
-
-#### <a name="to-move-a-site-database-to-an-availability-group"></a>將站台資料庫移至可用性群組  
-
-1.  從 **&lt;Configuration Manager 站台安裝資料夾\>\BIN\X64\setup.exe** 執行 [Configuration Manager 安裝程式]。  
-
-2.  在 [開始使用]  頁面上，選取 [執行站台維護或重設此站台] ，然後按 [下一步] 。  
-
-3.  選取 **[修改 SQL Server 設定]** 選項，然後按一下 **[下一步]**。  
-
-4.  為站台資料庫重新設定下列各項︰  
-
-    -   **SQL Server 名稱** ：輸入建立可用性群組時所設定的可用性群組接聽程式虛擬名稱。 這個虛擬名稱應該是完整 DNS 名稱，例如 **&lt;endpointServer\>.fabrikam.com**  
-
-    -   **執行個體：** 此值必須為空白以指定可用性群組之可用性群組接聽程式的預設執行個體。  如果目前的站台資料庫是安裝在具名執行個體上，該具名執行個體將會列出且必須清除  
-
-    -   **資料庫︰** 保留顯示的名稱。 這是目前站台資料庫的名稱。  
-
-5.  提供新資料庫位置的資訊之後，請使用您的一般程序和設定來完成安裝。  
-
-##  <a name="bkmk_change"></a> 新增或移除作用中可用性群組的成員  
- 在 Configuration Manager 使用裝載在可用性群組中的站台資料庫之後，您可以移除複本成員或新增其他複本成員 (不要超過一個主要和兩個次要節點)。  
-
-#### <a name="to-add-a-new-replica-member"></a>新增新的複本成員  
-
-1.  新增新的伺服器作為可用性群組的次要複本。 請參閱 SQL Server 文件庫中的  [將次要複本加入至可用性群組 (SQL Server)](https://msdn.microsoft.com/library/hh213247\(v=sql.120\).aspx)。  
-
-2.  藉由執行 **Preinst.exe /stopsite** 以停止 Configuration Manager 站台。請參閱 [System Center Configuration Manager 的階層維護工具 (Preinst.exe)](../../../../core/servers/manage/hierarchy-maintenance-tool-preinst.exe.md)。  
-
-3.  設定每個次要複本。 針對可用性群組中的每個次要複本執行下列動作︰  
-
-    1.  將主要複本手動容錯移轉至新的次要複本。 請參閱 SQL Server 文件中的 [執行可用性群組的已規劃手動容錯移轉](https://msdn.microsoft.com/library/hh231018\(v=sql.120\).aspx) 。  
-
-    2.  將新伺服器上的資料庫設定成 Trustworthy，然後啟用 CLR 整合。 請參閱 SQL Server 文件中的 [TRUSTWORTHY 資料庫屬性](https://msdn.microsoft.com/library/ms187861\(v=sql.120\).aspx) 和  [啟用 CLR 整合](https://msdn.microsoft.com/library/ms131048\(v=sql.120\).aspx)。  
-
-4.  啟動「站台元件管理員」(**sitecomp**) 和 **SMS_Executive** 服務來重新啟動站台。  
-
-#### <a name="to-remove-a-replica-member-from-the-availability-group"></a>從可用性群組移除複本成員  
-
--   請參閱 SQL Server 文件庫中 [將次要複本從可用性群組移除](https://msdn.microsoft.com/library/hh213149\(v=sql.120\).aspx) 中的資訊。  
-
-##  <a name="bkmk_remove"></a> 將站台資料庫從可用性群組移回到單一執行個體 SQL Server  
- 當您不想再將站台資料庫裝載在可用性群組中時，請使用下列程序。  
-
-#### <a name="to-move-the-site-database-from-an-availability-group-back-to-a-single-instance-sql-server"></a>將站台資料庫從可用性群組移回到單一執行個體 SQL Server  
-
-1.  使用下列命令來停止 Configuration Manager 站台：  
-     **Preinst.exe /stopsite**。  如需詳細資訊，請參閱 [System Center Configuration Manager 的階層維護工具 (Preinst.exe)](../../../../core/servers/manage/hierarchy-maintenance-tool-preinst.exe.md)。  
-
-2.  使用 SQL Server 從主要複本建立站台資料庫的完整備份。 如需如何完成此步驟的資訊，請參閱 SQL Server 文件中的 [建立完整資料庫備份](https://msdn.microsoft.com/library/ms187510\(v=sql.120\).aspx) 。  
-
-3.  如果裝載可用性群組之主要複本的伺服器現在將裝載站台資料庫的單一執行個體，您可以略過此步驟 ︰  
-
-    -   使用 SQL Server 將站台資料庫備份還原到將裝載站台資料庫的伺服器。  請參閱 SQL Server 文件中的 [還原資料庫備份 (SQL Server Management Studio)](https://msdn.microsoft.com/library/ms177429\(v=sql.120\).aspx) 。  
-
-4.  在已還原的站台資料庫上，將站台資料庫的備份模式從 **[完整]** 變更為 **[簡單]**。  請參閱 SQL Server 文件中的 [檢視或變更資料庫的復原模式](https://msdn.microsoft.com/library/ms189272\(v=sql.120\).aspx) 。  
-
-5.  從 **&lt;Configuration Manager 站台安裝資料夾\>\BIN\X64\setup.exe** 執行 [Configuration Manager 安裝程式]。  
-
-6.  在 [開始使用]  頁面上，選取 [執行站台維護或重設此站台] ，然後按 [下一步] 。  
-
-7.  選取 **[修改 SQL Server 設定]** 選項，然後按一下 **[下一步]**。  
-
-8.  為站台資料庫重新設定下列各項︰  
-
-    -   **SQL Server 名稱：** 輸入現在裝載站台資料庫的伺服器名稱。  
-
-    -   **執行個體︰** 指定裝載站台資料庫的具名執行個體，或如果資料庫位於預設執行個體上，則保留空白。  
-
-    -   **資料庫︰** 保留顯示的名稱。 這是目前站台資料庫的名稱。  
-
-9. 提供新資料庫位置的資訊之後，請使用您的一般程序和設定來完成安裝。 當安裝完成時，站台會重新啟動並開始使用新的資料庫位置。  
-
-10. 若要清除具備可用性群組成員身分的伺服器，請遵循 SQL Server 文件中 [移除可用性群組](https://msdn.microsoft.com/library/ff878113\(v=sql.120\).aspx) 中的指引進行。
+## <a name="next-steps"></a>後續步驟
+在您了解使用可用性群組時所需的先決條件、限制及對一般工作所做的變更之後，請參閱[設定 Configuration Manager 的可用性群組](/sccm/core/servers/deploy/configure/configure-aoag)，以了解安裝及設定站台以使用可用性群組的程序。
 

@@ -6,17 +6,18 @@ keywords:
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.date: 10/06/2016
+ms.date: 05/30/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
 ms.technology:
 - configmgr-sum
 ms.assetid: b099a645-6434-498f-a408-1d438e394396
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
-ms.openlocfilehash: 1d9911274fd76942131054231cdcc2bcebbd3fcb
-ms.lasthandoff: 12/16/2016
+ms.translationtype: Human Translation
+ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
+ms.openlocfilehash: 7d369384d133c90a15e01df50ac53992d61f3873
+ms.contentlocale: zh-tw
+ms.lasthandoff: 06/01/2017
 
 
 
@@ -35,6 +36,9 @@ ms.lasthandoff: 12/16/2016
 
 > [!IMPORTANT]  
 >  您可以在站台上安裝一個以上的軟體更新點。 您安裝的第一個軟體更新點會設定為同步處理來源，同步處理來自 Microsoft Update 或上游同步處理來源的更新。 站台的其他軟體更新點，會設定為第一個軟體更新點的複本。 因此，某些設定在您安裝及設定初始軟體更新點後將無法使用。  
+
+> [!IMPORTANT]  
+>  不支援在已設定並且用來作為獨立 WSUS 伺服器的伺服器上安裝軟體更新點站台系統角色，或使用軟體更新點直接管理 WSUS 用戶端。 現有的 WSUS 伺服器僅支援作為主動式軟體更新點的上游同步處理來源。 請參閱[從上游資料來源位置同步處理](#BKMK_wsussync)
 
  您可以將軟體更新點站台系統角色新增至現有站台系統伺服器，或建立新的站台系統伺服器。 在 [建立站台系統伺服器精靈]  或 [新增站台系統角色精靈]  的 [系統角色選取]  頁面上，根據您是否要將站台系統角色新增至新的或現有的站台伺服器來選取 [軟體更新點] ，然後在精靈中設定軟體更新點設定。 這些設定會因使用不同的 Configuration Manager 版本而異。 如需安裝站台系統角色方式的詳細資訊，請參閱[安裝站台系統角色](../../core/servers/deploy/configure/install-site-system-roles.md)。  
 
@@ -96,7 +100,7 @@ ms.lasthandoff: 12/16/2016
     > [!NOTE]  
     >  當軟體更新點與網際網路之間有防火牆時，可能需要將防火牆設定為接受用於 WSUS 網站的 HTTP 與 HTTPS 連接埠。 您也可以選擇將防火牆上的存取權限制在有限的網域。 如需如何規劃支援軟體更新之防火牆的詳細資訊，請參閱 [Configure firewalls](../plan-design/plan-for-software-updates.md#BKMK_ConfigureFirewalls)。  
 
--   **從上游資料來源位置同步處理**：使用此設定可從上游同步處理來源同步處理軟體更新中繼資料。 子主要站台與次要站台會自動設定為對此設定使用父站台 URL。 您可以選擇從現有的 WSUS 伺服器同步處理軟體更新。 指定 URL，例如 https://WSUSServer:8531 ，其中 8531 是用於連線至 WSUS 伺服器的連接埠。  
+-   **<a name="BKMK_wsussync"></a>從上游資料來源位置同步處理**：使用此設定可從上游同步處理來源來同步處理軟體更新中繼資料。 子主要站台與次要站台會自動設定為對此設定使用父站台 URL。 您可以選擇從現有的 WSUS 伺服器同步處理軟體更新。 指定 URL，例如 https://WSUSServer:8531 ，其中 8531 是用於連線至 WSUS 伺服器的連接埠。  
 
 -   **不要從 Microsoft Update 或上游資料來源同步處理**：使用此設定可在頂層站台的軟體更新點從網際網路中斷連線時，手動同步處理軟體更新。 如需詳細資訊，請參閱[從已中斷連線的軟體更新點同步處理軟體更新](synchronize-software-updates-disconnected.md)。  
 

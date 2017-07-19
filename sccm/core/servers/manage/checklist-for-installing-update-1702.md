@@ -2,7 +2,7 @@
 title: "1702 版的檢查清單 | System Center Configuration Manager"
 description: "了解更新至 System Center Configuration Manager 1702 版之前所採取的動作。"
 ms.custom: na
-ms.date: 05/02/2017
+ms.date: 6/6/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 90775fcf2549080a43e9c1606caa79d9eb90a89c
-ms.openlocfilehash: c4ace452d62d4fa08f4457cb1735718ca4bd016d
+ms.sourcegitcommit: 3619a73d3a39659de927e1711a7ec81de9918064
+ms.openlocfilehash: 355dfb361a1ab3e1bd436dae1df8a416bf79c6c8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/13/2017
 
 ---
 # <a name="checklist-for-installing-update-1702-for-system-center-configuration-manager"></a>安裝 System Center Configuration Manager 1702 更新的檢查清單
@@ -108,10 +108,7 @@ ms.lasthandoff: 05/17/2017
 **針對裝載站台、站台資料庫伺服器，以及遠端站台系統角色的電腦，安裝所有適用的作業系統重大更新：**安裝 Configuration Manager更新之前，請為每一個適用的站台系統安裝任何重大更新。 如果您安裝的更新需要重新啟動，請先重新啟動適用的電腦再開始進行更新。
 
 **在主要站台上停用管理點的資料庫複本：**   
-Configuration Manager 無法成功更新具有已啟用管理點之資料庫複本的主要站台。 在下列情況之前先停用資料庫複寫：
-
--   建立站台資料庫的備份以測試資料庫升級。
--   安裝 Configuration Manager 的更新。
+Configuration Manager 無法成功更新具有已啟用管理點之資料庫複本的主要站台。 請停用資料庫複寫後，再安裝 Configuration Manager 的更新。
 
 如需詳細資訊，請參閱 [System Center Configuration Manager 的管理點資料庫複本](/sccm/core/servers/deploy/configure/database-replicas-for-management-points)。
 
@@ -139,21 +136,24 @@ Configuration Manager 無法更新使用網路負載平衡 (NLB) 叢集來裝載
 
 如需詳細資訊，請參閱 [System Center Configuration Manager 備份和復原](/sccm/protect/understand/backup-and-recovery)。
 
-**在最新的站台資料庫備份複本上測試資料庫升級：**在更新 System Center Configuration Manager 管理中心網站或主要站台之前，您可以在站台資料庫複本上測試站台資料庫升級程序。
+<!-- Removed from update guidance 6/6/2017
+**Test the database upgrade on a copy of the most recent site database backup:** 
+Before you update a System Center Configuration Manager central administration site or primary site, you can test the site database upgrade process on a copy of the site database.
 
--   建議您測試站台資料庫升級程序，因為當您升級站台時，站台資料庫可能經過修改。
+-   We recommend that you test the site database upgrade process because when you upgrade a site, the site database might be modified.
 
--   測試資料庫升級並非必要，但是可以在您的生產資料庫受到影響之前找出升級問題。
+-   Although a test database upgrade is not required, it can identify problems for the upgrade before your production database is affected.
 
--   網站資料庫升級失敗可能會造成網站資料庫無法運作，且可能需要網站復原才能恢復功能。
+-   A failed site database upgrade can render your site database inoperable and might require a site recovery to restore functionality.
 
--   雖然網站資料庫在階層中的網站之間共用，您仍需要在升級該網站之前先規劃每個適用網站上的資料庫測試。
+-   Although the site database is shared between sites in a hierarchy, plan to test the database at each applicable site before you upgrade that site.
 
--   如果您在主要網站上使用管理點的資料庫複本，請在建立網站資料庫的備份之前停用複寫。
+-   If you use database replicas for management points at a primary site, disable replication before you create the backup of the site database.
 
-Configuration Manager 不支援次要站台的備份，也不支援次要站台資料庫的測試升級。
+Configuration Manager does not support the backup of secondary sites nor does it support the test upgrade of a secondary site database.
 
-請勿在生產網站資料庫上執行測試資料庫升級。 在站台資料庫上進行這類更新可能會造成站台無法運作。 如需詳細資訊，請參閱＜安裝主控台內更新之前＞中的[步驟 2︰安裝更新之前，先測試資料庫升級](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2)。
+Do not run a test database upgrade on the production site database. Doing so updates the site database and could render your site inoperable. For more information, see [Step 2: Test the database upgrade before installing an update](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2) from **Before you install an in-console update**.
+-->
 
 **規劃用戶端試驗：**   
 當您安裝更新用戶端的更新時，可以在進入生產階段前先測試新的用戶端更新，再部署並升級所有使用中的用戶端。
@@ -186,11 +186,11 @@ Configuration Manager 不支援次要站台的備份，也不支援次要站台�
 
 ## <a name="post-update-checklist"></a>更新後檢查清單
 檢閱下列完成更新安裝之後應採取的動作︰
-1.    確認站台對站台複寫功能正在作用中。 在主控台中，檢視 [監視] > [站台階層] 和 [監視] > [資料庫複寫] 是否有問題指示或確認複寫連結正在作用中。
-2.    請確定每個站台伺服器和站台系統角色均已更新為 1702 版。 在主控台中，您可以將 [版本] 選擇性欄位新增到某些節點的顯示畫面，包括[站台] 和 [發佈點]。
+1.  確認站台對站台複寫功能正在作用中。 在主控台中，檢視 [監視] > [站台階層] 和 [監視] > [資料庫複寫] 是否有問題指示或確認複寫連結正在作用中。
+2.  請確定每個站台伺服器和站台系統角色均已更新為 1702 版。 在主控台中，您可以將 [版本] 選擇性欄位新增到某些節點的顯示畫面，包括[站台] 和 [發佈點]。
 
  必要時，站台系統角色將會自動重新安裝以更新為新版本。 請考慮將未成功更新的遠端站台系統重新啟動。
-3.    在您開始更新之前停用的主要站台上，重新設定管理點的資料庫複本。
+3.  在您開始更新之前停用的主要站台上，重新設定管理點的資料庫複本。
 4.  重新設定您在開始更新之前停用的資料庫維護工作。
-5.    如果您在安裝更新之前設定用戶端試驗，請根據您建立的方案來升級用戶端。
+5.  如果您在安裝更新之前設定用戶端試驗，請根據您建立的方案來升級用戶端。
 

@@ -14,10 +14,10 @@ ms.technology:
 - configmgr-sum
 ms.assetid: 57184274-5fea-4d79-a2b4-22e08ed26daf
 ms.translationtype: Human Translation
-ms.sourcegitcommit: 78524abd4c45f0b7402d6f1e85afc60bb72ab0ee
-ms.openlocfilehash: d736715f1f2c92b4c91f156ecb8abe3513811a34
+ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
+ms.openlocfilehash: 2a0d5f12b99689749833c109d4fa399f99451d8a
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/08/2017
 
 
 ---
@@ -236,10 +236,10 @@ ms.lasthandoff: 05/17/2017
 
     -   **使用者通知**：指定是否要在設定的 [軟體可用時間]  ，於用戶端電腦上 [軟體中心] 內顯示軟體更新的通知，以及是否要在用戶端電腦上顯示使用者通知。 [部署設定] 頁面上的 [部署的類型]  設定為 [可用]  時，您不能選取 [在軟體中心和所有通知中隱藏] 。  
 
-    -   **期限行為**：只有在 [部署設定] 頁面上的 [部署的類型] 設定為 [必要] 時才可使用。   
+    -   **期限行為**：*只有在 [部署設定] 頁面上的 [部署的類型] *設定為 [必要] *時才可使用。*   
     指定到達軟體更新部署期限時會出現的行為。 指定是否安裝部署中的軟體更新。 同時也指定是否於無論設定之維護期間為何的狀況下，只要軟體更新安裝完成，就執行系統重新啟動。 如需維護期間的詳細資訊，請參閱[如何在 Configuration Manager 中使用維護期間](../../core/clients/manage/collections/use-maintenance-windows.md)。  
 
-    -   **裝置重新啟動行為**：只有在 [部署設定] 頁面上的 [部署的類型] 設定為 [必要] 時才可使用。    
+    -   **裝置重新啟動行為**：*只有在 [部署設定] 頁面上的 [部署的類型] *設定為 [必要] *時才可使用。*    
     於安裝軟體更新，且需要重新啟動系統才能完成安裝的狀況下，指定是否抑制在伺服器和工作站上重新啟動系統。  
 
         > [!IMPORTANT]  
@@ -259,15 +259,15 @@ ms.lasthandoff: 05/17/2017
 
 10. 在 [下載設定] 頁面，設定以下設定：  
 
-    -   指定當用戶端連線到速度較慢的網路，或使用後援內容位置時，是否要下載並安裝軟體更新。  
+    - 指定當用戶端連線到速度較慢的網路，或使用後援內容位置時，是否要下載並安裝軟體更新。  
 
-    -   指定無法在慣用發佈點使用軟體更新內容時，是否要讓用戶端從後援發佈點下載並安裝軟體更新。  
+    - 指定無法在慣用發佈點使用軟體更新內容時，是否要讓用戶端從後援發佈點下載並安裝軟體更新。  
 
-    -   **允許用戶端與同一個子網路上的其他用戶端共用內容**：指定是否允許針對下載內容使用 BranchCache。 如需 BranchCache 的詳細資訊，請參閱[內容管理的概念](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)。  
+    - **允許用戶端與同一個子網路上的其他用戶端共用內容**：指定是否允許針對下載內容使用 BranchCache。 如需 BranchCache 的詳細資訊，請參閱[內容管理的概念](../../core/plan-design/hierarchy/fundamental-concepts-for-content-management.md#branchcache)。  
 
-    -   指定若無法在發佈點上使用軟體更新時，是否要讓連線到內部網路的用戶端從 Microsoft Update 下載軟體更新。  
+    - **如果在目前、鄰近或網站群組的發佈點上找不到軟體更新，則從 Microsoft Update 下載內容**：選取這個設定可讓連線至內部網路的用戶端，在發佈點上找不到軟體更新時從 Microsoft Update 下載軟體更新。 可連上網際網路的用戶端隨時可移至 Microsoft Update 取得軟體更新內容。
 
-    -   指定當用戶端使用計量付費網際網路連線時，是否在過了安裝期限後仍允許用戶端進行下載。 在您處於計量付費網際網路連線時，網際網路提供者有時會根據您傳送和接收的資料量來收取費用。  
+    - 指定當用戶端使用計量付費網際網路連線時，是否在過了安裝期限後仍允許用戶端進行下載。 在您處於計量付費網際網路連線時，網際網路提供者有時會根據您傳送和接收的資料量來收取費用。  
 
     > [!NOTE]  
     >  用戶端會從部署內軟體更新的管理點來請求內容位置。 下載行為會根據您如何設定發佈點、部署套件和本頁設定而定。 如需詳細資訊，請參閱 [Content source location scenarios](../../core/plan-design/hierarchy/content-source-location-scenarios.md)。  

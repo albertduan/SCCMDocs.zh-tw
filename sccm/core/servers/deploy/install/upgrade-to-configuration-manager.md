@@ -2,7 +2,7 @@
 title: "升級至 System Center Configuration Manager | Microsoft Docs"
 description: "了解從執行 System Center 2012 Configuration Manager 的站台和階層中執行成功就地升級的步驟。"
 ms.custom: na
-ms.date: 05/02/2017
+ms.date: 6/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: Human Translation
-ms.sourcegitcommit: d940fd1bbf96767d44f8c55315e814be55a83897
-ms.openlocfilehash: 9e58ab8dd892adf25429564adfd6f86849ddcbdf
+ms.sourcegitcommit: 3619a73d3a39659de927e1711a7ec81de9918064
+ms.openlocfilehash: 1166b739e1e8d667172d97883f484fdbc3a142c1
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 06/13/2017
 
 
 ---
@@ -38,11 +38,11 @@ ms.lasthandoff: 05/17/2017
 
 **升級到 1702 版**   
 當您具有 1702 版基準媒體時，可以將下列產品升級至 System Center Configuration Manager 1702 版的完整授權版本：   
--      System Center Configuration Manager 1702 版的評估版安裝
--      System Center 2012 Configuration Manager (含 Service Pack 1)
--      System Center 2012 Configuration Manager (含 Service Pack 2)
--      System Center 2012 R2 Configuration Manager
--      System Center 2012 R2 Configuration Manager (含 Service Pack 1)
+-     System Center Configuration Manager 1702 版的評估版安裝
+-     System Center 2012 Configuration Manager (含 Service Pack 1)
+-     System Center 2012 Configuration Manager (含 Service Pack 2)
+-     System Center 2012 R2 Configuration Manager
+-     System Center 2012 R2 Configuration Manager (含 Service Pack 1)
 
 **升級至 1606 版**  
 在 2016 年 12 月 15 日，發行 1606 版的基準媒體，以新增額外升級案例的支援。 這個新版本支援將下列產品升級至 System Center Configuration Manager 1606 版的完整授權版本：  
@@ -115,7 +115,7 @@ When you have version 1511 baseline media, you can upgrade the following to a fu
 下列站台系統角色無法再用於 System Center Configuration Manager，必須先解除安裝才能從 System Center 2012 Configuration Manager 升級：  
 
 -   超出訊號範圍管理點  
--   服務健全狀況驗證程式點  
+-   系統健全狀況驗證程式點  
 
 **在主要站台上停用管理點的資料庫複本：**  
 Configuration Manager 無法成功升級具有已啟用管理點之資料庫複本的主要站台。 在下列情況之前先停用資料庫複寫：  
@@ -271,7 +271,7 @@ Configuration Manager 不支援次要站台的備份或次要站台資料庫的�
      軟體更新或軟體更新群組的自訂摘要排程會重設為預設值 (1 小時)。 升級結束後，請將自訂摘要值重設為所需的頻率。  
 
 ##  <a name="bkmk_test"></a> 測試站台資料庫升級  
-只有在將 System Center 2012 Configuration Manager 這類舊版本升級到 System Center Configuration Manager 時，下列資訊才會適用。 如果您的站台已執行 System Center Configuration Manager 並安裝新的更新，請參閱＜安裝主控台內更新之前＞中的[步驟 2︰安裝更新之前，先測試資料庫升級](/sccm/core/servers/manage/install-in-console-updates#bkmk_step2)。
+只有在將 System Center 2012 Configuration Manager 這類舊版本升級到 System Center Configuration Manager 時，下列資訊才會適用。
 
 請先測試要進行升級的站台資料庫複本，再升級該站台。  
 
