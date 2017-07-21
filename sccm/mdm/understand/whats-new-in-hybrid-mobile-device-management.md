@@ -15,11 +15,11 @@ caps.latest.revision: 40
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f9e6e93fce95666503907010a5c253158c5de7c
-ms.openlocfilehash: b9777e8cfa63eda77512e4837de17b99c792a036
+ms.translationtype: HT
+ms.sourcegitcommit: 1035dbbf944a3a467d637a4a948a75b0946eb711
+ms.openlocfilehash: a9e03d4c5b290886bda87fae41e4df362eca1b71
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/07/2017
+ms.lasthandoff: 07/11/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
@@ -30,13 +30,21 @@ ms.lasthandoff: 07/07/2017
 
 ##  <a name="compatibility-with-configuration-manager-versions"></a>與 Configuration Manager 版本的相容性  
 
- 本文的各節會列出 3 個不同目錄下的混合式功能。 請使用下列指導方針判斷每個類別功能與 Configuration Manager 不同版本的相容性︰  
+ 本文的各節會列出 3 個不同類別下的混合式功能。 請使用下列指導方針判斷每個類別功能與 Configuration Manager 不同版本的相容性︰  
 
 |功能類別|說明|
 |-|-|
 |**Microsoft Intune 的新功能** | 通常此類別下列出的所有功能都應該能夠與所有的 Configuration Manager 版本 (包括 System Center 2012 R2 Configuration Manager 版本) 搭配使用，因為這些功能只需要 Intune 服務，不需要其他的 Configuration Manager 功能。|
 |**Configuration Manager Technical Preview 的新功能**| 此類別下列出的所有功能只能搭配指定的 Technical Preview 版本使用。 若要試用這些功能，您必須安裝功能描述中指定的 Technical Preview 版本。 如需詳細資訊，請參閱 [Technical Preview for System Center Configuration Manager](../../core/get-started/technical-preview.md) 。|
 |**Configuration Manager (最新分支) 的新功能**| 此類別下列出的所有功能只能搭配指定的 Configuration Manager 版本 (最新分支) 使用，例如 1511 版或 1602 版。 如果您的混合式部署使用舊版的 Configuration Manager，即必須升級到功能描述中指定的 Configuration Manager 版本 (最新分支)。 如需詳細資訊，請參閱[升級至 System Center Configuration Manager](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)。|
+
+## <a name="july-2017"></a>2017 年 7 月
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能
+
+- **新增 Android 支援版本的通知**
+
+    針對 Android 的支援版本，新增了新的通知。 如需詳細資料，請參閱[終止支援 Android 4.3 與較舊版本](#notices)。
 
 ## <a name="june-2017"></a>2017 年 6 月
 
@@ -52,15 +60,15 @@ ms.lasthandoff: 07/07/2017
 
 - **Android 版公司入口網站應用程式已推出應用程式保護原則的全新使用者體驗**
 
-  我們根據客戶的意見反應修改了 Android 版公司入口網站應用程式，使它會顯示 [存取公司內容] 按鈕。 目的是讓使用者再只需要存取支援應用程式保護原則 (Intune 行動應用程式管理的功能) 的應用程式時，可以避免不必要的註冊程序。 您可以在[應用程式 UI 的新功能](/intune/whats-new-app-ui)頁面上查看這些變更。
+  我們根據客戶的意見反應修改了 Android 版公司入口網站應用程式，使它會顯示 [存取公司內容] 按鈕。 目的是讓使用者在只需要存取支援應用程式保護原則 (Intune 行動應用程式管理的功能) 的應用程式時，可以避免不必要的註冊程序。 您可以在[應用程式 UI 的新功能](/intune/whats-new-app-ui)頁面上查看這些變更。
 
 - **可輕鬆移除公司入口網站的新功能表動作**
 
-  根據使用者的意見反應，Android 版公司入口網站應用程式已新增可將公司入口網站從裝置上移除的新功能表動作。 此動作會將裝置從 Intune 管理移除，來讓使用者可以將應用程式從裝置移除。 您可以在 [Android 使用者文件](/intune-user-help/unenroll-your-device-from-intune-android)的[應用程式 UI 的新功能](/intune/whats-new-app-ui)頁面上查看這些變更。
+  根據使用者的意見反應，Android 版公司入口網站應用程式已新增可將公司入口網站從裝置上移除的新功能表動作。 此動作會將裝置從 Intune 管理移除，來讓使用者可以將應用程式從裝置移除。 您可以在[應用程式 UI 的新功能](/intune/whats-new-app-ui)頁面上與 [Android 使用者文件](/intune-user-help/unenroll-your-device-from-intune-android)中查看這些變更。
 
 - **針對 Windows 10 Creators Update 改善應用程式同步處理**
 
-  針對具有 Windows 10 Creators Update (1703 版) 的裝置，Windows 10 版公司入口網站應用程式現在會自動針對應用程式安裝要求起始同步處理。 這會減少應用程式安裝在「待同步」狀態期間停止的問題。 此外，使用者將能從應用程式內手動起始同步處理。 您可以在[應用程式 UI 的新功能](/intune/whats-new-app-ui)頁面上查看這些變更。
+  針對具有 Windows 10 Creators Update (1703 版) 的裝置，Windows 10 版公司入口網站應用程式現在會對應用程式安裝要求自動起始同步處理。 如此可減少應用程式安裝在「待同步」狀態期間懸置的問題。 此外，使用者將能從應用程式內手動起始同步處理。 您可以在[應用程式 UI 的新功能](/intune/whats-new-app-ui)頁面上查看這些變更。
 
 - **Windows 10 版公司入口網站新型引導式體驗**
 
@@ -119,7 +127,7 @@ ms.lasthandoff: 07/07/2017
 
 - **MyApps 可供 Managed Browser 使用**
 
-  Microsoft MyApps 現在於 Managed Browser 內有更好的支援。 非管理目標的 Managed Browser 使用者會直接前往 MyApps 服務，並可在其中存取其系統管理員佈建的 SaaS 應用程式。 Intune 管理目標的使用者將能夠繼續從內建 Managed Browser 書籤存取 MyApps。
+  Microsoft MyApps 現在於 Managed Browser 內有更好的支援。 非管理目標的 Managed Browser 使用者會直接前往 MyApps 服務，並可在其中存取其系統管理員佈建的 SaaS 應用程式。 Intune 管理目標的使用者將能夠繼續從內建 Managed Browser 書籤來存取 MyApps。
 
 - **Managed Browser 和公司入口網站的新圖示**
 
@@ -155,11 +163,11 @@ ms.lasthandoff: 07/07/2017
   - 瀏覽應用程式：[所有應用程式] 檢視會以索引標籤式的檢視顯示 [精選]、[所有] 與 [類別] 以方便瀏覽。
   - 支援：已更新 [我的裝置] 和 [連絡 IT] 索引標籤，以改善可讀性。
 
-  如需這些變更的詳細資料，請參閱 [Intune 終端使用者應用程式的 UI 更新](/intune/whats-new/whats-new-in-intune-app-ui)。
+  如需這些變更的詳細資訊，請參閱 [Intune 終端使用者應用程式的 UI 更新](/intune/whats-new/whats-new-in-intune-app-ui)。
 
 - **簽署 Windows 10 公司入口網站的指令碼**
 
-  如果您必須下載及側載 Windows 10 公司入口網站，現在可以使用指令碼為組織簡化應用程式的簽署程序。  若要下載指令碼及其使用指示，請參閱 TechNet 組件庫上的 [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) (Microsoft Intune 簽署 Windows 10 公司入口網站的指令碼)。 如需此公告的詳細資料，請參閱 Intune Support Team Blog 上的 [Updating your Windows 10 Company Portal app](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) (更新您的 Windows 10 公司入口網站應用程式)。
+  如果您必須下載及側載 Windows 10 公司入口網站，現在可以使用指令碼為組織簡化應用程式的簽署程序。  若要下載指令碼及其使用指示，請參閱 TechNet 組件庫上的 [Microsoft Intune Signing Script for Windows 10 Company Portal](https://aka.ms/win10cpscript) (Microsoft Intune 簽署 Windows 10 公司入口網站的指令碼)。 如需此公告的詳細資訊，請參閱 Intune 支援團隊部落格上的[更新您的 Windows 10 公司入口網站應用程式](https://blogs.technet.microsoft.com/intunesupport/2017/03/13/updating-your-windows-10-company-portal-app/) \(英文\)。
 
 - **為中國的 Andriud 使用者改進支援**
 
@@ -190,7 +198,7 @@ ms.lasthandoff: 07/07/2017
 
    自 Technical Preview 1703 起，您現在有下列大量採購方案 (VPP) 案例的支援︰
 
-   - 裝置授權 - 對於支援裝置授權且部署至裝置集合的應用程式，每個裝置只需要一個授權。  先前，您必須為裝置上的每個使用者使用授權。 如需詳細資訊，請參閱[將大量採購的 iOS 應用程式部署至裝置集合](/sccm/core/get-started/capabilities-in-technical-preview-1703#deploy-volume-purchased-ios-apps-to-device-collections)。
+   - 裝置授權：對於支援裝置授權且部署至裝置集合的應用程式，每個裝置只需要一個授權。  先前，您必須為裝置上的每個使用者使用授權。 如需詳細資訊，請參閱[將大量採購的 iOS 應用程式部署至裝置集合](/sccm/core/get-started/capabilities-in-technical-preview-1703#deploy-volume-purchased-ios-apps-to-device-collections)。
    - 使用單一混合式租用戶的多個 VPP 權杖，其中兩個權杖皆用於管理 VPP 應用程式。
    - 使用 VPP 教育權杖，且具備區分商業和教育權杖的功能。
 
@@ -207,7 +215,7 @@ Configuration Manager (最新分支) 1702 版也包含下列額外的混合式�
 
 - **對 Apple Volume Purchase Program (大量採購方案) 的改進支援**
 
-  - 您現在不但可將授權的應用程式部署到使用者，還可部署到裝置。 視應用程式是否能夠支援裝置授權而定，當您部署應用程式時，系統會要求適當的授權，如下︰
+  - 您現在不但可將授權的應用程式部署到使用者，還可部署到裝置。 視應用程式是否能夠支援裝置授權而定，當您部署應用程式時，將會如下所述索取適當的授權︰
 
     | Configuration Manager 版本 | 應用程式是否支援裝置授權？ | 部署集合類型 | 要求的授權 |
     |-|-|-|-|
@@ -256,7 +264,7 @@ Configuration Manager (最新分支) 1702 版也包含下列額外的混合式�
 
 - **不符合規範的應用程式相容性設定**
 
-  您現在可以在合規性政策中，為 Android 和 iOS 應用程式建立不符合規範的應用程式規則。 如果裝置已安裝指定的應用程式，則會標示為「不符合規範」，而且根據適當的條件式存取原則將無法存取公司資源。 如需詳細資訊，請參閱[條件式存取裝置合規性政策改善](/sccm/core/get-started/capabilities-in-technical-preview-1702#conditional-access-device-compliance-policy-improvements)。
+  您現在可以在合規性政策中，為 Android 和 iOS 應用程式建立不符合規範的應用程式規則。 如果裝置已安裝指定的應用程式，則會標示為「不符合規範」，並根據對應的條件式存取原則而無法存取公司資源。 如需詳細資訊，請參閱[條件式存取裝置合規性政策改善](/sccm/core/get-started/capabilities-in-technical-preview-1702#conditional-access-device-compliance-policy-improvements)。
 
 - **PFX 憑證建立和發佈以及 S/MIME 支援**
 
@@ -287,8 +295,14 @@ Configuration Manager (最新分支) 1702 版也包含下列額外的混合式�
 
 ## <a name="notices"></a>通知
 
-### <a name="system-center-2012-configuration-sp1-and-system-center-2012-r2-configuration-manager-rtm-support-for-hybrid-mobile-device-management-ending-on-april-10-2017"></a>System Center 2012 Configuration SP1 和 System Center 2012 R2 Configuration Manager (RTM)：對混合式行動裝置管理的支援將於 2017 年 4 月 10 日結束
+### <a name="end-of-support-for-android-43-and-lower"></a>終止支援 Android 4.3 與較舊版本
+<!---1171127--->
+*2017 年 7 月 6 日*
 
+受管理的應用程式與 Android 版公司入口網站應用程式將需要 Android 4.4 或更新的版本，才能存取公司資源。 裝置若未在 10 月初之前更新，將無法再存取公司入口網站或前述的應用程式。 最晚不超過 12 月，所有註冊的裝置將在 12 月強制淘汰，而導致無法存取公司資源。 如果您未經由 MDM 來使用應用程式保護原則，應用程式將不再接收更新，應用程式的體驗品質也會隨著時間而下降。
+
+
+### <a name="system-center-2012-configuration-sp1-and-system-center-2012-r2-configuration-manager-rtm-support-for-hybrid-mobile-device-management-ending-on-april-10-2017"></a>System Center 2012 Configuration SP1 和 System Center 2012 R2 Configuration Manager (RTM)：對混合式行動裝置管理的支援將於 2017 年 4 月 10 日結束
 *2017 年 1 月 11 日*
 
 對 System Center 2012 Configuration Manager SP1 和 System Center 2012 R2 Configuration Manager RTM 的支援已經於 2016 年 7 月 12 日結束。 接著，對連線到 Microsoft Intune 服務以使用混合式 MDM 的這些版本的支援將於 2017 年 4 月 10 日結束。 在這個日期之後，搭配這些版本使用的混合式 MDM 將會停止運作。 受管理的裝置基本上會變成不受管理，因為 Intune Connector 將不會再連線到 Intune 服務。 除非執行升級，否則 Configuration Manager 資料 (例如原則和應用程式) 將不會往上流動至 Intune，而受管理裝置的資料不會往下流動至 Configuration Manager。
