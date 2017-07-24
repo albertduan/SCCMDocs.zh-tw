@@ -15,12 +15,11 @@ caps.latest.revision: 15
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c8717925dba42451b1e241a7c2f59e43896d7d99
-ms.openlocfilehash: e78fe989b7ff445717c8320c4eae3900eb46baea
+ms.translationtype: HT
+ms.sourcegitcommit: 5ebdd12672fecc633321a66738a0978f94ba0aa4
+ms.openlocfilehash: aede531a0406c3d30c9cca957896e002ed22ae51
 ms.contentlocale: zh-tw
-ms.lasthandoff: 06/19/2017
-
+ms.lasthandoff: 07/20/2017
 
 ---
 # <a name="manage-access-to-o365-services-for-pcs-managed-by-system-center-configuration-manager"></a>管理 System Center Configuration Manager 所管理之電腦對 O365 服務的存取
@@ -46,7 +45,17 @@ ms.lasthandoff: 06/19/2017
 
 -   Windows 7
 -   Windows 8.1
--   Windows 10 
+-   Windows 10
+
+## <a name="supported-windows-servers"></a>支援的 Windows 伺服器
+
+-   2008 R2
+-   2012
+-   2012 R2
+-   2016
+
+    > [!IMPORTANT]
+    > 針對可能有多位使用者同時登入的 Windows 伺服器，必須將相同的條件式存取原則部署至所有登入的使用者。
 
 ## <a name="configure-conditional-access"></a>設定條件式存取  
  若要設定條件式存取，您必須先建立相容性原則，並設定條件式存取原則。 當您設定電腦的條件式存取原則時，可以要求電腦必須符合相容性原則，才能存取 Exchange Online 和 SharePoint Online 服務。  
