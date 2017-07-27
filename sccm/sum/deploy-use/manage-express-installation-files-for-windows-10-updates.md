@@ -20,23 +20,20 @@ ms.lasthandoff: 07/11/2017
 
 ---
 
-# 管理適用於 Windows 10 更新的快速安裝檔案
-<a id="manage-express-installation-files-for-windows-10-updates" class="xliff"></a>
+# <a name="manage-express-installation-files-for-windows-10-updates"></a>管理適用於 Windows 10 更新的快速安裝檔案
 從 Configuration Manager 1702 版開始，Configuration Manager 支援適用於 Windows 10 更新的快速安裝檔案。 當您使用支援的 Windows 10 版本時，您可以使用 Configuration Manager 設定來只下載目前月份的「Windows 10 累積更新」與上個月更新之間的變更。 如果沒有快速安裝檔案，Configuration Manager 就會每月下載完整的「Windows 10 累積更新」(包括先前月份的所有更新)。 使用快速安裝檔案可在用戶端提供較小的下載項目及更快速的安裝時間。
 
 > [!IMPORTANT]
 > 雖然 Configuration Manager 1702 版提供支援使用快速安裝檔案的設定，但隨附 Windows Update 代理程式更新的 Windows 10 1607 版才提供作業系統用戶端支援。 此更新會隨附在 2017 年 4 月 11 (週二修補程式日) 發行的更新。 如需這些更新的詳細資訊，請參閱[支援文章 4015217](http://support.microsoft.com/kb/4015217)。 未來的更新將會運用快速功能提供較小的下載項目。 不含更新的 Windows 10 1607 版和舊版不支援快速安裝檔案。
 
 
-### 下載 Windows 10 更新的快速安裝檔案
-<a id="to-enable-the-download-of-express-installation-files-for-windows-10-updates" class="xliff"></a>
+### <a name="to-enable-the-download-of-express-installation-files-for-windows-10-updates"></a>下載 Windows 10 更新的快速安裝檔案
 若要啟動 Windows 10 快速安裝檔案的中繼資料同步處理，您必須在 [軟體更新點內容] 中將它啟用。
 1.  在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [站台設定] > [站台]。
 2.  選取管理中心網站或獨立主要站台。
 3.  在 [首頁]  索引標籤的 [設定]  群組中，按一下 [設定站台元件] ，然後按一下 [軟體更新點] 。 在 [更新檔案] 索引標籤上，選取 [Download full files for all approved updates and express installation files for Windows 10] \(下載所有核准更新的完整檔案和 Windows 10 的快速安裝檔案)。
 
-### 啟用用戶端支援以下載並安裝快速安裝檔案
-<a id="to-enable-support-for-clients-to-download-and-install-express-installation-files" class="xliff"></a>
+### <a name="to-enable-support-for-clients-to-download-and-install-express-installation-files"></a>啟用用戶端支援以下載並安裝快速安裝檔案
 若要啟用用戶端的快速安裝檔案支援，您必須在用戶端設定的 [軟體更新] 區段中啟用快速安裝檔案。 這會建立新的 HTTP 接聽程式，以在您指定的連接埠上接聽下載快速安裝檔案的要求。
 
 > [!NOTE]    

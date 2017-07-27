@@ -22,8 +22,7 @@ ms.contentlocale: zh-tw
 ms.lasthandoff: 07/11/2017
 
 ---
-# 使用 System Center Configuration Manager 將 Windows 升級至最新版本
-<a id="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager" class="xliff"></a>
+# <a name="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 將 Windows 升級至最新版本
 
 適用於：System Center Configuration Manager (最新分支)
 
@@ -87,8 +86,7 @@ ms.lasthandoff: 07/11/2017
 
     -   [使用獨立媒體，而不使用網路來部署 Windows](use-stand-alone-media-to-deploy-windows-without-using-the-network.md)  
 
-## 監視
-<a id="monitor" class="xliff"></a>  
+## <a name="monitor"></a>監視  
 
 -   **監視工作順序部署**  
 
