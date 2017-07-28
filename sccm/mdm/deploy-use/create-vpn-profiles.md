@@ -103,7 +103,7 @@ ms.lasthandoff: 05/17/2017
 
         - **條件式存取**
             - 選擇 [啟用此 VPN 連線的條件式存取] 確保先測試連線至 VPN 裝置的條件式存取合規性，再連線。 合規性原則已在 [System Center Configuration Manager 中的裝置合規性原則](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/device-compliance-policies.md)中描述。
-            - 選擇 [允許使用其他憑證進行單一登入 (SSO)] 以選擇針對裝置合規性之 VPN 驗證憑證以外的憑證。 如果您選擇此選項，請提供 [EKU] (逗號分隔清單) 和 [簽發者雜湊]，讓 VPN 用戶端找到正確的憑證。
+            - 選擇 [允許使用其他憑證進行單一登入 (SSO)] 以選擇針對裝置合規性之 VPN 驗證憑證以外的憑證。 如果您選擇此選項，請提供 [EKU] \(逗號分隔清單) 和 [簽發者雜湊]，讓 VPN 用戶端找到正確的憑證。
 
          - 針對 [Windows 資訊保護]，請提供企業管理的公司身分識別，這通常是貴組織的主要網域，例如 *contoso.com*。 您可以使用 "|" 字元分隔，來指定貴組織擁有的多個網域。 例如 *contoso.com|newcontoso.com*。   
               如需 Windows 資訊保護的詳細資訊，請參閱[使用 Microsoft Intune 建立 Windows 資訊保護 (WIP) 原則 (英文)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/create-wip-policy-using-intune)。   
