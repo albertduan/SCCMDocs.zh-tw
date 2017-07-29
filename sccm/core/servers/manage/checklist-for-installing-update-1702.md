@@ -2,7 +2,7 @@
 title: "1702 版的檢查清單 | System Center Configuration Manager"
 description: "了解更新至 System Center Configuration Manager 1702 版之前所採取的動作。"
 ms.custom: na
-ms.date: 6/6/2017
+ms.date: 06/06/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
