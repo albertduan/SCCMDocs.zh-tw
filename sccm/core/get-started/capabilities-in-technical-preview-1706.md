@@ -278,7 +278,7 @@ ms.lasthandoff: 07/07/2017
 
 2.  在 [Azure 服務] 頁面上，選取 [升級整備連接器]，然後按 [下一步]。
 
-3.  在 [應用程式] 頁面上，指定您的 [Azure 環境] (Technical Preview 僅支援 [公用雲端])。 然後，按一下 [匯入] 來開啟 [匯入應用程式] 視窗。
+3.  在 [應用程式] 頁面上，指定您的 [Azure 環境] \(Technical Preview 僅支援 [公用雲端])。 然後，按一下 [匯入] 來開啟 [匯入應用程式] 視窗。
 
 4.  在 [匯入應用程式] 視窗中，指定您 Azure AD 中已存在之 Web 應用程式的詳細資料。
     -   為 [Azure AD 租用戶名稱] 提供一個易記的名稱。 然後，指定 [租用戶識別碼]、[用戶端識別碼]、Azure Web 應用程式的祕密金鑰，以及 [應用程式識別碼 URI]。
@@ -308,8 +308,8 @@ ms.lasthandoff: 07/07/2017
 ### <a name="try-it-out"></a>試試看！
 
 1. 使用[如何設定用戶端設定](/sccm/core/clients/deploy/configure-client-settings)中的資訊來設定下列用戶端設定 (可在 [雲端服務] 中找到) 區段。
-    -   **自動向 Azure Active Directory 註冊新加入 Windows 10 網域的裝置** - 設定為 [是] (預設值) 或 [否]。
-    -   **允許用戶端使用雲端管理閘道** - 設定為 [是] (預設值) 或 [否]。
+    -   **自動向 Azure Active Directory 註冊新加入 Windows 10 網域的裝置** - 設定為 [是]\ (預設值) 或 [否]。
+    -   **允許用戶端使用雲端管理閘道** - 設定為 [是] \(預設值) 或 [否]。
 2.  將用戶端設定部署至所需的裝置集合。
 
 若要確認裝置是否已加入 Azure AD，請在命令提示字元視窗中執行 **dsregcmd.exe /status** 命令。 如果裝置已加入 Azure AD 網域，結果中的 **AzureAdjoined** 欄位將會顯示 **YES**。

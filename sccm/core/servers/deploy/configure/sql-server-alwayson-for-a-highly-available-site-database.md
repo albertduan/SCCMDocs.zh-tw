@@ -232,7 +232,7 @@ Configuration Manager 支援在下列位置使用可用性群組：
 當站台資料庫在可用性群組中執行時，您應該執行內建的「備份站台伺服器」維護工作，以備份常用的 Configuration Manager 設定和檔案。 不過，請勿使用該備份所建立的 .MDF 或 .LDF 檔案， 應改為使用 SQL Server 來直接備份這些資料庫檔案。
 
 **交易記錄檔：**  
-站台資料庫的復原模型必須設定為 [完整] (在可用性群組中使用時的需求)。 使用此設定時，請規劃以監視及維護站台資料庫交易記錄檔的大小。 在完整復原模式下，必須等到建立資料庫或交易記錄檔的完整備份之後，才會強行寫入交易。 如需詳細資訊，請參閱 SQL Server 文件中的 [SQL Server 資料庫的備份與還原](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)。
+站台資料庫的復原模型必須設定為 [完整] \(在可用性群組中使用時的需求)。 使用此設定時，請規劃以監視及維護站台資料庫交易記錄檔的大小。 在完整復原模式下，必須等到建立資料庫或交易記錄檔的完整備份之後，才會強行寫入交易。 如需詳細資訊，請參閱 SQL Server 文件中的 [SQL Server 資料庫的備份與還原](/sql/relational-databases/backup-restore/back-up-and-restore-of-sql-server-databases)。
 
 ## <a name="changes-for-site-recovery"></a>站台復原的變更
 如果至少有一個可用性群組節點仍然可運作，您便可以使用 [略過資料庫復原 (如果資料庫未受到影響，則使用此選項)] 站台復原選項。
