@@ -26,10 +26,11 @@
 ###  [特性和功能](plan-design/changes/features-and-capabilities.md)
 ###  [Configuration Manager 2012 的變更內容](plan-design/changes/what-has-changed-from-configuration-manager-2012.md)
 ###  [累加版本的新功能](plan-design/changes/whats-new-incremental-versions.md)
+###  [1706 版的新功能](plan-design/changes/whats-new-in-version-1706.md)
 ###  [1702 版的新功能](plan-design/changes/whats-new-in-version-1702.md)
 ###  [1610 版的新功能](plan-design/changes/whats-new-in-version-1610.md)
-###  [1606 版的新功能](plan-design/changes/whats-new-in-version-1606.md)
 <!--
+###  [What's new in version 1606](plan-design/changes/whats-new-in-version-1606.md)
 ###  [What's new in version 1602](plan-design/changes/whats-new-in-version-1602.md)
 -->
 ###  [已移除和已淘汰的功能](plan-design/changes/removed-and-deprecated-features.md)
@@ -75,14 +76,17 @@
 
 ##   [診斷和使用情況資料](plan-design/diagnostics/diagnostics-and-usage-data.md)
 ###  [診斷和使用情況資料的運用](plan-design/diagnostics/how-diagnostics-and-usage-data-is-used.md)
+###  [1706 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1706.md)
 ###  [1702 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1702.md)
 ###  [1610 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1610.md)
-###  [1606 的診斷資料](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
+
 <!--
-###  [Diagnostic data for 1511](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511.md)
+###  [Diagnostic data for 1606](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1606.md)
 ###  [Diagnostic data for 1602](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1602.md)
+###  [Diagnostic data for 1511](plan-design/diagnostics/levels-of-diagnostic-usage-data-collection-1511.md)
+
 -->
-###  [診斷和使用情況資料的收集方式](plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md)
+###  [診斷和使用方式資料的收集方式](plan-design/diagnostics/how-diagnostics-and-usage-data-is-collected.md)
 ###  [如何檢視診斷和使用情況資料](plan-design/diagnostics/view-diagnostics-and-usage-data.md)
 ###  [客戶經驗改進計畫 (CEIP)](plan-design/diagnostics/customer-experience-improvement-program-ceip.md)
 
@@ -181,12 +185,12 @@
 ###  [站台界限和界限群組](servers/deploy/configure/define-site-boundaries-and-boundary-groups.md)
 #### [界限](servers/deploy/configure/boundaries.md)
 #### [界限群組](servers/deploy/configure/boundary-groups.md)
-#### [1610 之前版本的界限群組](servers/deploy/configure/boundary-groups-for-1511-1602-and-1606.md)
 ###  [準備使用 SQL Server Alwayson](servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)
 ###  [設定 SQL Server Alwayson](servers/deploy/configure/configure-aoag.md)
 ###  [使用 SQL Server 叢集](servers/deploy/configure/use-a-sql-server-cluster-for-the-site-database.md)
 ###  [自訂資料庫檔案的位置](servers/deploy/configure/custom-locations-for-site-database-files.md)
 ###  [設定以角色為基礎的系統管理](servers/deploy/configure/configure-role-based-administration.md)
+###  [設定 Azure 服務](servers/deploy/configure/azure-services-wizard.md)
 ##   技術參考
 ###  [帳戶](plan-design/hierarchy/accounts.md)
 ###  [端點之間的通訊](plan-design/hierarchy/communications-between-endpoints.md)
@@ -199,7 +203,9 @@
 ###  [Proxy 伺服器支援](plan-design/network/proxy-server-support.md)
 ###  [版本資訊](servers/deploy/install/release-notes.md)
 ###  [Unicode 和 ASCII 支援](plan-design/hierarchy/unicode-and-ascii-support.md)
-
+<!-- Deprecated from Content - still published but out of TOC:
+#### [Boundary groups for versions prior to 1610](servers/deploy/configure/boundary-groups-for-1511-1602-and-1606.md)
+-->
 
 #    管理基礎結構
 ##   [維護工作](servers/manage/maintenance-tasks.md)
@@ -209,6 +215,7 @@
 ##   [升級內部部署基礎結構](servers/manage/upgrade-on-premises-infrastructure.md)
 ##   [Configuration Manager 的更新](servers/manage/updates.md)
 ###  [安裝主控台內更新](servers/manage/install-in-console-updates.md)
+#### [更新重設工具](servers/manage/update-reset-tool.md)
 #### [測試資料庫升級](servers/manage/test-database-upgrade.md)
 #### [流程圖 - 下載更新](servers/manage/download-updates-flowchart.md)
 #### [流程圖 - 更新複寫](servers/manage/update-replication-flowchart.md)
@@ -217,10 +224,11 @@
 ###  [使用服務連接工具](servers/manage/use-the-service-connection-tool.md)
 ###  [使用更新註冊工具](servers/manage/use-the-update-registration-tool-to-import-hotfixes.md)
 ###  [使用 Hotfix 安裝程式](servers/manage/use-the-hotfix-installer-to-install-updates.md)
+###  [安裝更新 1706 的檢查清單](servers/manage/checklist-for-installing-update-1706.md)
 ###  [安裝更新 1702 的檢查清單](servers/manage/checklist-for-installing-update-1702.md)
 ###  [安裝更新 1610 的檢查清單](servers/manage/checklist-for-installing-update-1610.md)
-###  [安裝更新 1606 的檢查清單](servers/manage/checklist-for-installing-update-1606.md)
 <!-- Deprecated from Content - still published but out of TOC:
+###  [Checklist for installing update 1606](servers/manage/checklist-for-installing-update-1606.md)
 ###  [Checklist for installing update 1602](servers/manage/checklist-for-installing-update-1602.md)
 -->
 ###  [最新分支版本支援](servers/manage/current-branch-versions-supported.md)  
@@ -278,6 +286,7 @@
 #### [Linux 和 UNIX 的用戶端命令](clients/deploy/linux-and-unix-clients-technical-reference.md)
 ###  [準備將用戶端部署到 Mac](clients/deploy/prepare-to-deploy-mac-clients.md)
 ###  [如何將用戶端部署至 Mac](clients/deploy/deploy-clients-to-macs.md)
+###  [使用 Azure AD 從網際網路安裝用戶端](clients/deploy/deploy-clients-cmg-azure.md)
 ###  [如何將用戶端指派至站台](clients/deploy/assign-clients-to-a-site.md)
 ###  [如何設定用戶端狀態](clients/deploy/configure-client-status.md)
 ###  [如何監視用戶端部署狀態](clients/deploy/monitor-client-deployment-status.md)
@@ -286,6 +295,7 @@
 
 ##   [監視和管理用戶端](clients/manage/monitor-clients.md)
 ###  [如何監視用戶端](clients/manage/monitor-clients.md)
+###  [使用 Windows Analytics](clients/manage/monitor-windows-analytics.md)
 ###  [如何監視 Linux 和 UNIX 用戶端](clients/manage/monitor-clients-for-linux-and-unix-servers.md)
 ###  [如何管理用戶端](clients/manage/manage-clients.md)
 ###  [如何管理 Linux 和 UNIX 用戶端](clients/manage/manage-clients-for-linux-and-unix-servers.md)

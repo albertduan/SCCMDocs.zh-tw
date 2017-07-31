@@ -20,6 +20,7 @@
 
 ## 部署應用程式
 ### [部署應用程式](deploy-use/deploy-applications.md)
+### [共用應用程式](deploy-use/share-applications.md)
 ### [模擬應用程式部署](deploy-use/simulate-application-deployments.md)
 ### [部署 App-V 虛擬應用程式](get-started/deploying-app-v-virtual-applications.md)
 
@@ -37,3 +38,5 @@
 ### [更新和淘汰應用程式](deploy-use/update-and-retire-applications.md)
 ### [修改和取代應用程式](deploy-use/revise-and-supersede-applications.md)
 ### [解除安裝應用程式](deploy-use/uninstall-applications.md)
+
+## [執行和管理指令碼](deploy-use/create-deploy-scripts.md)
