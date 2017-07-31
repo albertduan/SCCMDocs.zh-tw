@@ -1,7 +1,7 @@
 ---
 title: "安裝精靈 | Microsoft Docs"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 7/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
-ms.openlocfilehash: 14b4172ad713a3981b8a5abe182405e271d78c26
+ms.translationtype: HT
+ms.sourcegitcommit: 5945abb49fe06c59355805aa94b04d0d445ecbc3
+ms.openlocfilehash: 678f1b35fe6f7649dacb766f7c671f4ec8ea1435
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/24/2017
 
 ---
 # <a name="use-the-setup-wizard-to-install-system-center-configuration-manager-sites"></a>使用 [安裝精靈] 安裝 System Center Configuration Manager 站台
@@ -140,7 +140,9 @@ ms.lasthandoff: 05/17/2017
 
 12. 在 [資料庫資訊] 頁面上，指定下列資訊：  
 
-    -   **SQL Server 名稱 (FQDN)：** 此設定預設會設定為該站台伺服器電腦。  
+    -   **SQL Server 名稱 (FQDN)：** 此設定預設會設定為該站台伺服器電腦。
+
+     如果您使用自訂連接埠，請將該連接埠新增至 SQL Server 的 FQDN。 若要新增，請在 SQL Server 的 FQDN 後方加上逗號，再加上通訊埠號碼。   例如，若是伺服器 *SQLServer1.fabrikam.com*，請使用下列方式指定連接埠 *1551*：**SQLServer1.fabrikam.com,1551**
 
     -   **執行個體名稱：**根據預設，這為空白。 它會使用站台伺服器電腦上的預設 SQL 執行個體。  
 

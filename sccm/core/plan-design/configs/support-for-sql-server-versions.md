@@ -15,12 +15,11 @@ caps.latest.revision: 21
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f809c9327db9f298168674add2d09820fdecd1b8
-ms.openlocfilehash: 4166560602edf6eb299511c8b59dc3903e3bfffc
+ms.translationtype: HT
+ms.sourcegitcommit: ef42d1483053e9a6c502f4ebcae5a231aa6ba727
+ms.openlocfilehash: b35e45b9514297e2f9ce405a3244462ed735f39f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 07/26/2017
 
 ---
 # <a name="supported-sql-server-versions-for-system-center-configuration-manager"></a>System Center Configuration Manager 的 SQL Server 版本支援
@@ -55,7 +54,7 @@ ms.lasthandoff: 05/17/2017
  不支援下列設定：
  -   網路負載平衡 (NLB) 叢集設定中的 SQL Server 叢集
  -   叢集共用磁碟區 (CSV) 上的 SQL Server 叢集
- -   SQL Server 資料庫鏡像技術，以及點對點複寫
+ -   SQL Server 資料庫鏡像技術以及點對點複寫
 
 僅支援將 SQL Server 異動複寫用於將物件複寫至設定為使用[資料庫複本](https://technet.microsoft.com/library/mt608546.aspx)的管理點。  
 
@@ -204,7 +203,7 @@ ms.lasthandoff: 05/17/2017
     -   針對次要站台：最少設定 4 GB。  
 
 **SQL 巢狀觸發程序：**  
-必須啟用 [SQL 巢狀觸發程序](http://go.microsoft.com/fwlink/?LinkId=528802) 。  
+ 必須啟用[SQL 巢狀觸發程序](http://go.microsoft.com/fwlink/?LinkId=528802) 。  
 
  **SQL Server CLR 整合**  
   站台資料庫會要求啟用 SQL Server 通用語言執行平台 (CLR)。 當 Configuration Manager 安裝時，會自動啟用此功能。 如需 CLR 的詳細資訊，請參閱 [SQL Server CLR 整合簡介](https://msdn.microsoft.com/library/ms254498\(v=vs.110\).aspx)。  
@@ -261,6 +260,6 @@ ms.lasthandoff: 05/17/2017
 ## <a name="upgrade-options-for-sql-server"></a>SQL Server 的升級選項
 如果需要升級您的 SQL Server 版本，建議使用下列方法 (依複雜度由低到高排列)。
 1. [就地升級 SQL Server](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#a-namebkmksupconfigupgradedbsrva-upgrade-sql-server-on-the-site-database-server) (建議選項)。
-2. 在新的電腦上安裝新版本的 SQL Server，然後使用 Configuration Manager 安裝程式的[資料庫移動選項](/sccm/core/servers/manage/modify-your-infrastructure#a-namebkmkdbconfiga-modify-the-site-database-configuration)，將您的站台伺服器指向新的 SQL Server。
+2. 在新的電腦上安裝新的 SQL Server 版本，然後[使用 Configuration Manager 安裝程式的資料庫移動](/sccm/core/servers/manage/modify-your-infrastructure#a-namebkmkdbconfiga-modify-the-site-database-configuration)選項，將您的站台伺服器指向新的 SQL Server。
 3. 使用[備份及復原](/sccm/protect/understand/backup-and-recovery)。
 

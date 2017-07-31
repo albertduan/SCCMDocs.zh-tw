@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0ec241d07f51b80b84d65676ef1207b31a9a9983
-ms.openlocfilehash: e23acf743d8f73afd213c44c3728d1b66d7e558f
+ms.translationtype: HT
+ms.sourcegitcommit: ef42d1483053e9a6c502f4ebcae5a231aa6ba727
+ms.openlocfilehash: 98fa323cb94013d875e2cea41b80fff8cc75b6b2
 ms.contentlocale: zh-tw
-ms.lasthandoff: 06/28/2017
-
+ms.lasthandoff: 07/26/2017
 
 ---
 # <a name="removed-and-deprecated-features-for-system-center-configuration-manager"></a>System Center Configuration Manager 的已移除和已淘汰功能
@@ -91,7 +90,7 @@ ms.lasthandoff: 06/28/2017
 
 如果您需要升級您的 SQL Server 版本，建議您使用下列方法 (依複雜度由低到高排列)。
 1. [就地升級 SQL Server](/sccm/core/servers/manage/upgrade-on-premises-infrastructure#a-namebkmksupconfigupgradedbsrva-upgrade-sql-server-on-the-site-database-server) (建議選項)。
-2. 在新的電腦上安裝新版本的 SQL Server，然後使用 Configuration Manager 安裝程式的[資料庫移動選項](/sccm/core/servers/manage/modify-your-infrastructure#a-namebkmkdbconfiga-modify-the-site-database-configuration)，將您的站台伺服器指向新的 SQL Server。
+2. 在新的電腦上安裝新的 SQL Server 版本，然後[使用 Configuration Manager 安裝程式的資料庫移動](/sccm/core/servers/manage/modify-your-infrastructure#a-namebkmkdbconfiga-modify-the-site-database-configuration)選項，將您的站台伺服器指向新的 SQL Server。
 3. 使用[備份及復原](/sccm/protect/understand/backup-and-recovery)。
 
 

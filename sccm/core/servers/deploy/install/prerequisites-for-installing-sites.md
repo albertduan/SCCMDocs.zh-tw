@@ -2,7 +2,7 @@
 title: "站台的必要條件 | Microsoft Docs"
 description: "了解安裝不同類型的 System Center Configuration Manager 站台的必要條件。"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: ff89d4aea6be871e64e0a788f054ba4cadb3e51d
+ms.translationtype: HT
+ms.sourcegitcommit: 5945abb49fe06c59355805aa94b04d0d445ecbc3
+ms.openlocfilehash: d46a8b66ace45d25da9d86f2e91b19ae1d6875ab
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/24/2017
 
 ---
 # <a name="prerequisites-for-installing-system-center-configuration-manager-sites"></a>安裝 System Center Configuration Manager 站台的必要條件
@@ -100,6 +100,19 @@ ms.lasthandoff: 05/17/2017
 -   **必須開啟獨立主要站台與將安裝管理中心網站的電腦之間的 SQL Server Service Broker (SSB) 連接埠**  
 
      為了在管理中心網站與主要站台之間成功複寫資料，Configuration Manager 要求兩個站台之間要有開啟連接埠以供 SSB 使用。 當您安裝管理中心網站並擴充獨立主要站台時，必要條件檢查不會驗證是否已在主要站台上開啟您為 SSB 指定的連接埠。  
+
+**已設定 Azure 服務時的已知問題：**  
+當您搭配 Configuration Manager 使用下列其中一種 Azure 服務，並打算擴充站台時，您必須在擴展站台之後移除並重新建立對該服務的連線。
+
+服務：  
+-       [Operations Manager 套件](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite)   (OMS)
+-       [更新整備](/sccm/core/clients/manage/upgrade/upgrade-analytics)
+-       [商務用 Windows 市集](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)
+
+若要解決此問題，請使用下列步驟：
+ 1.    在 Configuration Manager 主控台中，刪除 Azure 服務節點中的 Azure 服務。
+ 2.    在 Azure 入口網站中，從 Azure Active Directory 租用戶節點上刪除已與服務建立關聯的租用戶。  這也會刪除已與服務建立關聯的 Azure AD Web 應用程式。  
+ 3.   重新設定對 Azure 服務的連線，以搭配 Configuration Manager 使用。
 
 
 ## <a name="bkmk_secondary"></a> 次要站台

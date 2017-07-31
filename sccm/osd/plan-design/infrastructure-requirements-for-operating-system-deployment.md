@@ -12,15 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 1dc74219-7ff5-4e3b-b4f6-5aad663bb75b
 caps.latest.revision: 24
-author: Dougeby
-ms.author: dougeby
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 065b1fcb25d7c7845b6f26e757b36e7fb97ce013
-ms.openlocfilehash: ef4536578456c13de5afaa5cd1977d2e6b4b6bd1
+ms.translationtype: HT
+ms.sourcegitcommit: 1f57c63ceeb13c7f7d760d7ecfb48df749da6770
+ms.openlocfilehash: 167e639cdb9995fd743787cc9fbf364ec70f6ed9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/10/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="infrastructure-requirements-for-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager 中作業系統部署的基礎結構需求
@@ -35,13 +34,15 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
 ### <a name="windows-adk-for-windows-10"></a>Windows ADK for Windows 10  
  Windows ADK 是一組工具和文件，支援設定及部署 Windows 作業系統。 Configuration Manager 會使用 Windows ADK 自動化 Windows 安裝、擷取 Windows 映像、進行使用者設定檔和資料移轉等作業。  
 
- 下列 Windows ADK 功能必須安裝到階層中頂層站台的站台伺服器、階層中每個主要站台的站台伺服器，以及 SMS 提供者站台系統伺服器上：  
+ 下列 Windows ADK 功能必須安裝到階層中頂層網站的站台伺服器、階層中每個主要站台的站台伺服器，以及 SMS 提供者站台系統伺服器上：  
 
 -   使用者狀態移轉工具 (USMT) <sup>1</sup>  
 
 -   Windows 部署工具  
 
--   Windows 預先安裝環境 (Windows PE)  
+-   Windows 預先安裝環境 (Windows PE)
+
+如需可搭配不同 Configuration Manager 版本使用的 Windows 10 ADK 版本清單，請參閱[對 Windows 10 用戶端的支援](https://docs.microsoft.com/en-us/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)。
 
  <sup>1</sup> USMT 在 SMS 提供者站台系統伺服器上並不需要。  
 
@@ -58,7 +59,7 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
 
 
 ### <a name="user-state-migration-tool-usmt"></a>使用者狀態移轉工具 (USMT)  
- Configuration Manager 會使用包含 USMT 10 來源檔案的 USMT 套件來擷取使用者狀態，並將其還原為作業系統部署的一部分。 Configuration Manager 安裝程式會自動在頂層站台建立 USMT 套件。 USMT 10 可以從 Windows 7、Windows 8、Windows 8.1 及 Windows 10 擷取使用者狀態。 USMT 10 發佈於適用於 Windows 10 的 Windows 評定及部署套件 (Windows ADK) 中。  
+ Configuration Manager 會使用包含 USMT 10 來源檔案的 USMT 套件來擷取使用者狀態，並在作業系統部署過程中將其還原。 Configuration Manager 安裝程式會自動在頂層站台建立 USMT 套件。 USMT 10 可以從 Windows 7、Windows 8、Windows 8.1 及 Windows 10 擷取使用者狀態。 USMT 10 發佈於適用於 Windows 10 的 Windows 評定及部署套件 (Windows ADK) 中。  
 
  如需詳細資訊，請參閱：  
 
@@ -171,7 +172,7 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
  Windows 部署服務 (WDS) 必須與您設定支援 PXE 或多點傳送的部署點安裝在同一部伺服器上。 WDS 已包含在伺服器的作業系統中。 對於 PXE 部署而言，WDS 是執行 PXE 開機的服務。 安裝並啟用 PXE 的發佈點時，Configuration Manager 會將提供者安裝到使用 WDS PXE 開機功能的 WDS 中。  
 
 > [!NOTE]  
->  如果伺服器需要重新啟動，則 WDS 安裝可能會失敗。  
+>  如果伺服器需要重新啟動，則 WDS 安裝可能會失敗。 
 
  其他必須納入考慮的 WDS 設定包括下列：  
 

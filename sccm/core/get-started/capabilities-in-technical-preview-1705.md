@@ -14,11 +14,11 @@ ms.assetid: 00684289-d21a-45f8-b1e3-c5c787d73096
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
-ms.openlocfilehash: 1a38d25fbc26bd1f45c6fa2a0e931536af2d8b2f
+ms.translationtype: HT
+ms.sourcegitcommit: ef42d1483053e9a6c502f4ebcae5a231aa6ba727
+ms.openlocfilehash: b977a79baec73999caa21648adcb6fcfec4a4935
 ms.contentlocale: zh-tw
-ms.lasthandoff: 06/28/2017
+ms.lasthandoff: 07/26/2017
 
 ---
 # <a name="capabilities-in-technical-preview-1705-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1705 中的功能
@@ -93,9 +93,9 @@ ms.lasthandoff: 06/28/2017
 | **-I &lt;SQL Server 執行個體名稱>**             | *選擇性* <br> 使用此參數來識別裝載站台資料庫的 SQL Server 執行個體。 |
 | **-FDELETE**                              | *選擇性* <br> 使用此參數來強制刪除已成功下載的更新套件。 |  
  **範例：**  
- 在典型的案例中，您想要重設有下載問題的更新。 您的 SQL Server FQDN 是 *server1.fabrikam.com*、站台資料庫是 *CM_XYZ*，而套件 GUID 是 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*。  您需執行：***CMUpdateReset.exe -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***
+ 在典型的案例中，您想要重設有下載問題的更新。 您的 SQL Server FQDN 為*server1.fabrikam.com*，站台資料庫位於*CM_XYZ*，而套件 GUID 是*61F16B3C-F1F6-4F9F-8647-2A524B0C802C*。  您需執行：***CMUpdateReset.exe -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***
 
- 在較極端的案例中，您想要強制刪除有問題的更新套件。 您的 SQL Server FQDN 是 *server1.fabrikam.com*、站台資料庫是 *CM_XYZ*，而套件 GUID 是 *61F16B3C-F1F6-4F9F-8647-2A524B0C802C*。  您需執行：***CMUpdateReset.exe  -FDELETE -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***
+ 在較極端的案例中，您想要強制刪除有問題的更新套件。 您的 SQL Server FQDN 為*server1.fabrikam.com*，站台資料庫位於*CM_XYZ*，而套件 GUID 是*61F16B3C-F1F6-4F9F-8647-2A524B0C802C*。  您需執行：***CMUpdateReset.exe  -FDELETE -S server1.fabrikam.com -D CM_XYZ -P 61F16B3C-F1F6-4F9F-8647-2A524B0C802C***
 
 ### <a name="test-the-tool-with-the-technical-preview"></a>使用 Technical Preview 來測試此工具  
 您可以將此工具與 Technical Preview 1606 版或更新版本搭配使用。 由於提供了這項回溯支援，因此這個工具能夠與更多的 Technical Preview 更新案例搭配使用，而不需等到有下一個 Technical Preview 可供使用。

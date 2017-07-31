@@ -15,12 +15,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
-ms.openlocfilehash: f11a53bbc85b40077b3909568db5ae5552b0456c
+ms.translationtype: HT
+ms.sourcegitcommit: ef42d1483053e9a6c502f4ebcae5a231aa6ba727
+ms.openlocfilehash: c421c3495f56503d5cbda7b1a5ab5350a168912d
 ms.contentlocale: zh-tw
-ms.lasthandoff: 06/01/2017
-
+ms.lasthandoff: 07/26/2017
 
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager 的資料倉儲服務點
@@ -52,7 +51,7 @@ ms.lasthandoff: 06/01/2017
   - 將裝載資料倉儲資料庫之電腦上的**系統管理員**。
   - 資料倉儲資料庫上的 **DB_owner** 權限。
   - 頂層站台站台資料庫的 **DB_reader** 和「執行」權限。
--    SQL Server 2012 或更新版本之預設或具名執行個體支援資料倉儲資料庫。 版本必須是 Enterprise 或 Datacenter。
+-   SQL Server 2012 或更新版本之預設或具名執行個體支援資料倉儲資料庫。 版本必須是 Enterprise 或 Datacenter。
   - SQL Server AlwaysOn 可用性群組︰不支援此設定。
   - SQL Server 叢集︰ 不支援 SQL Server 容錯移轉叢集。 這是因為資料倉儲資料庫從未在 SQL Server 容錯移轉叢集上進行深度測試。
   - 當資料倉儲資料庫位於遠端站台伺服器資料庫時，您必須具備裝載資料庫之 SQL Server 的個別授權。
@@ -78,7 +77,7 @@ ms.lasthandoff: 06/01/2017
 [系統角色選取] 頁面：  
 
 [一般] 頁面：
--     **Configuration Manager 資料倉儲資料庫連線設定**：
+-   **Configuration Manager 資料倉儲資料庫連線設定**：
  - **SQL Server 完整網域名稱**：  
  指定裝載資料倉儲服務點資料庫之伺服器的完整網域名稱 (FQDN)。
  - **SQL Server 執行個體名稱 (如適用)**：   
@@ -103,15 +102,15 @@ ms.lasthandoff: 06/01/2017
  - **應用程式部署 - 歷程記錄**：   
  檢視特定應用程式和電腦之應用程式部署的詳細資料。
  - **Endpoint Protection 和軟體更新合規性 - 歷程記錄**：檢視缺少軟體更新的電腦。  
- - **一般硬體清查 - 歷程記錄**：      
+ - **一般硬體清查 - 歷程記錄**：   
  檢視特定電腦的所有硬體清查。
- - **一般軟體清查 - 歷程記錄**：      
+ - **一般軟體清查 - 歷程記錄**：   
  檢視特定電腦的所有軟體清查。
- - **基礎結構健康情況概觀 - 歷程記錄**：     
+ - **基礎結構健康情況概觀 - 歷程記錄**：  
  顯示您 Configuration Manager 基礎結構健全狀況的概觀
- - **偵測到的惡意程式碼清單 - 歷程記錄**：     
+ - **偵測到的惡意程式碼清單 - 歷程記錄**：    
  檢視組織中已偵測到的惡意程式碼。
- - **軟體發佈摘要 - 歷程記錄**:     
+ - **軟體發佈摘要 - 歷程記錄**:   
  特定公告和電腦的軟體發佈摘要。
 
 
@@ -126,13 +125,13 @@ ms.lasthandoff: 06/01/2017
 ## <a name="move-the-data-warehouse-database"></a>移動資料倉儲資料庫
 您可以使用下列步驟將資料倉儲資料庫移至新的 SQL Server：
 
-1.    使用 SQL Server Management Studio 備份資料倉儲資料庫，然後將該資料庫還原到將裝載資料倉儲之新電腦上的 SQL Server。   
+1.  使用 SQL Server Management Studio 備份資料倉儲資料庫，然後將該資料庫還原到將裝載資料倉儲之新電腦上的 SQL Server。   
 > [!NOTE]     
 > 當您將資料庫還原到新的伺服器之後，請確定新資料倉儲資料庫的資料庫存取權限與原始資料倉儲資料庫的權限相同。  
 
-2.    使用 Configuration Manager 主控台從目前的伺服器移除資料倉儲服務點站台系統角色。
-3.    重新安裝資料倉儲服務點，並指定裝載您還原之資料倉儲資料庫的新 SQL Server 和執行個體名稱。
-4.    安裝站台系統角色之後，即完成移動。
+2.  使用 Configuration Manager 主控台從目前的伺服器移除資料倉儲服務點站台系統角色。
+3.  重新安裝資料倉儲服務點，並指定裝載您還原之資料倉儲資料庫的新 SQL Server 和執行個體名稱。
+4.  安裝站台系統角色之後，即完成移動。
 
 ## <a name="troubleshooting-data-warehouse-issues"></a>針對資料倉儲問題進行疑難排解
 **記錄檔**：  
@@ -167,7 +166,7 @@ ms.lasthandoff: 06/01/2017
     1. 開啟 IIS，按一下 [伺服器憑證]，以滑鼠右鍵按一下 [建立自我簽署憑證]，然後將憑證名稱的「易記名稱」指定為**資料倉儲 SQL Server 識別憑證**。 選取憑證存放區為 [個人]。
     2. 開啟 [SQL Server Configuration Manager]，在 [SQL Server 網路組態] 底下以滑鼠右鍵按一下 [MSSQLSERVER 的通訊協定] 並選取 [內容]。 然後，在 [憑證] 索引標籤上，選取 [資料倉儲 SQL Server 識別憑證] 作為憑證，然後儲存變更。  
     3. 開啟 [SQL Server Configuration Manager]，在 [SQL Server 服務] 底下，重新啟動 **SQL Server 服務**與 **Reporting Service**。
-    4.    開啟 Microsoft Management Console (MMC) 並加入 [憑證] 嵌入式管理單元，選取以管理本機電腦 [電腦帳戶] 的憑證。 然後，在 MMC 中，展開 [個人] 資料夾 > [憑證]，並將**資料倉儲 SQL Server 識別憑證**匯出為 **DER 編碼二進位 X.509 (.CER)** 檔案。    
+    4.  開啟 Microsoft Management Console (MMC) 並加入 [憑證] 嵌入式管理單元，選取以管理本機電腦 [電腦帳戶] 的憑證。 然後，在 MMC 中，展開 [個人] 資料夾 > [憑證]，並將**資料倉儲 SQL Server 識別憑證**匯出為 **DER 編碼二進位 X.509 (.CER)** 檔案。    
   2.    在裝載 SQL Server Reporting Services 的電腦上，開啟 MMC 並加入 [憑證] 嵌入式管理單元，然後選取以管理 [電腦帳戶] 的憑證。 在 [信任的根憑證授權單位] 資料夾底下，匯入**資料倉儲 SQL Server 識別憑證**。
 
 
@@ -178,7 +177,7 @@ ms.lasthandoff: 06/01/2017
 
 | 步驟   | 詳細資料  |
 |:------:|-----------|  
-| **1**  |     站台伺服器將資料傳送並儲存在站台資料庫。  |  
+| **1**  |  站台伺服器將資料傳送並儲存在站台資料庫。  |  
 | **2**  |      資料倉儲服務點根據其排程和設定，從站台資料庫取得資料。  |  
 | **3**  |  資料倉儲服務點將同步處理的資料複本傳送並儲存在資料倉儲資料庫。 |  
 **報告**

@@ -2,7 +2,7 @@
 title: "大小和縮放比例 | Microsoft Docs"
 description: "識別 System Center Configuration Manager 環境中支援裝置所需的站台系統角色和站台數目。"
 ms.custom: na
-ms.date: 12/30/2016
+ms.date: 07/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: 4
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f9c43e26758d5171a6ef56e827b4b054ebc8a5e5
-ms.openlocfilehash: c7ad33339e65e6e00e88f98d6e13baceb98dae77
+ms.translationtype: HT
+ms.sourcegitcommit: 5945abb49fe06c59355805aa94b04d0d445ecbc3
+ms.openlocfilehash: f539e2d282b56e56a9c58c773788325b27ea6b37
 ms.contentlocale: zh-tw
-ms.lasthandoff: 12/31/2016
+ms.lasthandoff: 07/24/2017
 
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager 的大小和縮放比例
@@ -133,7 +133,7 @@ ms.lasthandoff: 12/31/2016
 ###  <a name="bkmk_cas"></a> 使用管理中心網站的階層  
 管理中心網站支援的裝置總數，包含針對下列三個群組所列出之最多裝置數目：  
 
--   700,000 部桌上型電腦 (執行 Windows、Linux 和 UNIX 的電腦)  
+-   700,000 部電腦 (執行 Windows、Linux 和 UNIX 的電腦)。 另請參閱[內嵌裝置](#embedded)的支援。
 
 -   25,000 部執行 Mac 和 Windows CE 7.0 的裝置  
 
@@ -152,7 +152,7 @@ ms.lasthandoff: 12/31/2016
 ###  <a name="bkmk_chipri"></a> 子主要站台  
 使用管理中心網站之階層中的每個子主要站台支援下列：  
 
--   總計 150,000 部用戶端與裝置，不限於特定群組或類型，只要支援不超過階層所支援的數目即可。  
+-   總計 150,000 部用戶端與裝置，不限於特定群組或類型，只要支援不超過階層所支援的數目即可。 另請參閱[內嵌裝置](#embedded)的支援。
 
 例如，支援執行 Mac 和 Windows CE 7.0 的 25,000 部電腦的主要站台 (因為這是階層的限制)，之後可以支援額外的 125,000 部桌上型電腦。 其所支援裝置的總數最高為子主要站台支援的最大限制：150,000。
 
@@ -161,7 +161,7 @@ ms.lasthandoff: 12/31/2016
 
 -   總計 175,000 部用戶端與裝置，不得超過：  
 
-    -   150,000 部桌上型電腦 (執行 Windows、Linux 和 UNIX 的電腦)  
+    -   150,000 部電腦 (執行 Windows、Linux 和 UNIX 的電腦)。 另請參閱[內嵌裝置](#embedded)的支援。
 
     -   25,000 部執行 Mac 和 Windows CE 7.0 的裝置
 
@@ -171,7 +171,11 @@ ms.lasthandoff: 12/31/2016
 
         -   150,000 部雲端型裝置  
 
+
 例如，支援 150,000 部桌上型電腦和 10,000 部 Mac 或 Windows CE 7.0 的獨立主要站台僅可以支援額外的 15,000 部裝置。 這些可以是雲端型或使用內部部署 MDM 管理的裝置。  
+
+### <a name="embedded"></a> 主要站台和 Windows Embedded 裝置
+主要站台支援已啟用檔案型寫入篩選器 (FBWF) 的 Windows Embedded 裝置。 當內嵌的裝置未啟用寫入篩選器時，主要站台支援的內嵌裝置數目上限即為該站台允許的裝置數目。 主要站台支援的裝置總數中，如果這些裝置已針對[規劃將用戶端部署至 Windows Embedded 裝置](/sccm/core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices)中重要事項所列例外狀況而設定的話，最多有 10,000 部可以作為 Windows Embedded 裝置。 主要站台只支援 3,000 部已啟用 EWF 且未針對例外狀況而設定的 Windows Embedded 裝置。
 
 ###  <a name="bkmk_sec"></a> 次要站台  
 次要站台支援下列：  
