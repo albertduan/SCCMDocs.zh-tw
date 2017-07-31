@@ -34,7 +34,7 @@ ms.lasthandoff: 06/03/2017
 - 您必須有 Configuration Manager 1610 版或更新版本，才有變更 MDM 授權單位的選項可供選擇。
 - 在您變更至新的 MDM 授權單位之後，裝置可能需要最多 8 小時的時間才能連線至服務。
 - 在變更 MDM 授權單位之前，請務必特別將 Intune/EMS 授權指派給所有目前由混合式管理的使用者。 這能確保在變更 MDM 授權單位之後，使用者及其裝置會由 Intune 獨立部署所管理。 如需詳細資訊，請參閱[將 Intune 授權指派給使用者帳戶](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4) \(英文\)。
-- 在變更 MDM 授權單位之前，請確定已指派 Intune/EMS 授權給「管理使用者」帳戶，並確認「管理使用者」帳戶可以登入 Intune。 在變更 MDM 授權單位之前，Microsoft Intune 管理主控台的 MDM 授權單位應該會顯示為 [設定為 Configuration Manager] (混合式租用戶)。
+- 在變更 MDM 授權單位之前，請確定已指派 Intune/EMS 授權給「管理使用者」帳戶，並確認「管理使用者」帳戶可以登入 Intune。 在變更 MDM 授權單位之前，Microsoft Intune 管理主控台的 MDM 授權單位應該會顯示為 [設定為 Configuration Manager] \(混合式租用戶)。
 - 在 Configuration Manager 主控台中，移除所有「裝置註冊管理員」角色。 移至 [系統管理] > [雲端服務] > [Microsoft Intune 訂閱]，選取 [Microsoft Intune 訂閱]，按一下 [內容]，按一下 [裝置註冊管理員] 索引標籤，然後移除所有「裝置註冊管理員」角色。
 - 在 Configuration Manager 主控台中，移除現有的裝置類別。 移至 [資產與合規性] > [概觀] > [裝置集合]，選擇 [管理裝置類別]，然後移除現有的裝置類別。
 - 變更 MDM 授權單位期間，應該不會對使用者造成明顯影響。 不過，您應該向使用者通知此變更，以確保他們的裝置已開啟，並會在變更後盡快連線至服務。 這能確保絕大多數的裝置都會以最快的速度透過新授權單位與服務進行連線及註冊。
@@ -137,7 +137,7 @@ ms.lasthandoff: 06/03/2017
 
 
 ## <a name="change-the-mdm-authority-to-configuration-manager-hybrid"></a>將 MDM 授權單位變更為 Configuration Manager (混合式)
-使用此節的內容以在無需將現有受管理裝置解除註冊並重新註冊的情況下，將從 Intune 設定並將 MDM 授權單位設定為 [Microsoft Intune] (獨立部署) 的現有 Microsoft Intune 租用戶，設定為 [Configuration Manager] (混合式)。
+使用此節的內容以在無需將現有受管理裝置解除註冊並重新註冊的情況下，將從 Intune 設定並將 MDM 授權單位設定為 [Microsoft Intune] \(獨立部署) 的現有 Microsoft Intune 租用戶，設定為 [Configuration Manager] \(混合式)。
 
 ### <a name="key-considerations"></a>重要考量
 當您切換至新的 MDM 授權單位之後，在裝置簽入服務並完成同步處理之前，很可能需要經歷一些轉換時間 (最多 8 小時)。 您必須在新的 MDM 授權單位 (混合式) 中進行設定，以確保已註冊裝置在變更後會繼續受到管理及保護。 ，並注意下列事項：
@@ -150,10 +150,10 @@ ms.lasthandoff: 06/03/2017
 - 在您變更至新的 MDM 授權單位之後，裝置可能需要最多 8 小時的時間才能連線至服務。
 - 建立具有目前由 Intune 獨立部署所管理之所有使用者的 Configuration Manager 使用者集合，當您在 Configuration Manager 主控台中設定 Intune 訂閱時將會用到它。 這可在變更 MDM 授權單位之後，協助確保使用者及其裝置在混合式環境中將會被指派 Configuration Manager 授權並受到管理。
 - 請確定 IT 管理使用者也位於此使用者集合之中。  
-- 變更之前，MDM 授權單位在 Intune 管理主控台中會顯示為 [設定為 Microsoft Intune] (獨立部署)。
-- 在變更 MDM 授權單位之前，Microsoft Intune 管理主控台的 MDM 授權單位應該會顯示 [設定為 Microsoft Intune] (獨立租用戶)。
+- 變更之前，MDM 授權單位在 Intune 管理主控台中會顯示為 [設定為 Microsoft Intune]\ (獨立部署)。
+- 在變更 MDM 授權單位之前，Microsoft Intune 管理主控台的 MDM 授權單位應該會顯示 [設定為 Microsoft Intune] \(獨立租用戶)。
     > [!NOTE]    
-    > 如果 MDM 授權單位顯示 [由 Intune 和 Office 365 管理]，則當您將 MDM 授權單位變更為 [Configuration Manager] (混合式) 之後，由 Office 365 管理的 MDM 裝置將不會再受到管理。 變更 MDM 授權單位之前，建議您為那些使用者提供 Intune 或 Enterprise Mobility Suite 的授權。   
+    > 如果 MDM 授權單位顯示 [由 Intune 和 Office 365 管理]，則當您將 MDM 授權單位變更為 [Configuration Manager] \(混合式) 之後，由 Office 365 管理的 MDM 裝置將不會再受到管理。 變更 MDM 授權單位之前，建議您為那些使用者提供 Intune 或 Enterprise Mobility Suite 的授權。   
 
 - 在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移除「裝置註冊管理員」角色。 如需詳細資料，請參閱[從 Intune 刪除裝置註冊管理員](/intune-classic/deploy-use/enroll-corporate-owned-devices-with-the-device-enrollment-manager-in-microsoft-intune#delete-a-device-enrollment-manager-from-intune)。
 - 關閉所有已設定的裝置群組對應。 如需詳細資料，請參閱[在 Microsoft Intune 使用裝置群組對應分類裝置](/intune-classic/deploy-use/categorize-devices-with-device-group-mapping-in-microsoft-intune)。
