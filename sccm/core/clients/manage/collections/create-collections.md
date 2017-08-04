@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9555a16d97224a1cf49a426ab225468b07403f60
-ms.openlocfilehash: e28fdeae809cadf78017dd2920e3f1a9484ec8a3
+ms.translationtype: HT
+ms.sourcegitcommit: 5f1412fb132e3a074742e11f1142b2594146cbe1
+ms.openlocfilehash: 44b4707b1a40624c51decf548d23ddd2164c5833
 ms.contentlocale: zh-tw
-ms.lasthandoff: 12/30/2016
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-create-collections-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中建立集合
@@ -57,65 +56,65 @@ ms.lasthandoff: 12/30/2016
 5.  在 [建立裝置集合精靈] 的 [成員資格規則] 頁面上，於 [新增規則] 清單中，選取您要用於此集合的成員資格規則類型。 您可以為每個集合設定多個規則。  
 
         
-        ##### To configure a direct rule  
+##### <a name="to-configure-a-direct-rule"></a>若要設定直接規則  
 
-        1.  在 [建立直接成員資格規則精靈]  的 [搜尋資源] 頁面上，指定下列資訊：  
+1.  在 [建立直接成員資格規則精靈]  的 [搜尋資源] 頁面上，指定下列資訊：  
 
-            -   **資源類別**：選取您要搜尋並新增至集合的資源類型。 從 [系統資源]  的值進行選取以搜尋用戶端電腦傳回的清查資料，或選擇 [未知電腦]  以從未知電腦所傳回的值進行選取。  
+-   **資源類別**：選取您要搜尋並新增至集合的資源類型。 從 [系統資源]  的值進行選取以搜尋用戶端電腦傳回的清查資料，或選擇 [未知電腦]  以從未知電腦所傳回的值進行選取。  
 
-            -   **屬性名稱**：選取您想要搜尋之選定資源類別的相關聯屬性。 例如，如果您想要選取電腦的 NetBIOS 名稱，請依序選取 [資源類別]  清單中的 [系統資源]  和 [屬性名稱]  清單中的 [NetBIOS 名稱]  。  
+-   **屬性名稱**：選取您想要搜尋之選定資源類別的相關聯屬性。 例如，如果您想要選取電腦的 NetBIOS 名稱，請依序選取 [資源類別]  清單中的 [系統資源]  和 [屬性名稱]  清單中的 [NetBIOS 名稱]  。  
 
-            -   **排除標記為以過時的資源** - 如果用戶端電腦已標記為過時，請不要在搜尋結果中包含此值。  
+-   **排除標記為以過時的資源** - 如果用戶端電腦已標記為過時，請不要在搜尋結果中包含此值。  
 
-            -   **排除未安裝 Configuration Manager 用戶端的資源** - 這些不會顯示在搜尋結果中。  
+-   **排除未安裝 Configuration Manager 用戶端的資源** - 這些不會顯示在搜尋結果中。  
 
-            -   **值** ：輸入您要搜尋之選定屬性名稱的值。 您可以將 **%** 百分比字元作為萬用字元。 例如，若要搜尋 NetBIOS 名稱開頭是 "M" 的電腦，請在此欄位中輸入 **M%**。  
+-   **值** ：輸入您要搜尋之選定屬性名稱的值。 您可以將 **%** 百分比字元作為萬用字元。 例如，若要搜尋 NetBIOS 名稱開頭是 "M" 的電腦，請在此欄位中輸入 **M%**。  
 
-        2.  在 [選取資源] 頁面上，從 [資源] 清單中選取您想要新增至集合中的資源，然後選擇 [下一步]。  
+2.  在 [選取資源] 頁面上，從 [資源] 清單中選取您想要新增至集合中的資源，然後選擇 [下一步]。  
 
 
-        ##### To configure a query rule  
+##### <a name="to-configure-a-query-rule"></a>若要設定查詢規則  
 
-        1.  在 [查詢規則內容]  對話方塊中，指定下列資訊：  
+1.  在 [查詢規則內容]  對話方塊中，指定下列資訊：  
 
-            -   **名稱**：指定唯一名稱。  
+-   **名稱**：指定唯一名稱。  
 
-            -   **匯入查詢陳述式** - 開啟 [瀏覽查詢] 對話方塊，您可以在其中選取 [Configuration Manager 查詢](../../../../core/servers/manage/create-queries.md)以作為集合的查詢規則。   
+-   **匯入查詢陳述式** - 開啟 [瀏覽查詢] 對話方塊，您可以在其中選取 [Configuration Manager 查詢](../../../../core/servers/manage/create-queries.md)以作為集合的查詢規則。   
 
-            -   **資源類別**：選取您要搜尋並新增至集合的資源類型。 從 [系統資源]  的值進行選取以搜尋用戶端電腦傳回的清查資料，或選擇 [未知電腦]  以從未知電腦所傳回的值進行選取。  
+-   **資源類別**：選取您要搜尋並新增至集合的資源類型。 從 [系統資源]  的值進行選取以搜尋用戶端電腦傳回的清查資料，或選擇 [未知電腦]  以從未知電腦所傳回的值進行選取。  
 
-            -   **編輯查詢陳述式** - 開啟 [查詢陳述式內容] 對話方塊，您可以在其中撰寫要作為集合規則的查詢。 如需查詢的詳細資訊，請參閱 [System Center Configuration Manager 的查詢技術參考](../../../../core/servers/manage/queries-technical-reference.md)。  
+-   **編輯查詢陳述式** - 開啟 [查詢陳述式內容] 對話方塊，您可以在其中撰寫要作為集合規則的查詢。 如需查詢的詳細資訊，請參閱 [System Center Configuration Manager 的查詢技術參考](../../../../core/servers/manage/queries-technical-reference.md)。  
 
     
-        ##### To configure an include collection rule  
+##### <a name="to-configure-an-include-collection-rule"></a>若要設定包含集合規則  
 
-        In the **Select Collections** dialog box, select the collections you want to include in the new collection, then choose **OK**.  
+在 [選取集合] 對話方塊中，選取您想要在新集合中包含的集合，然後選擇 [確定]。  
 
-        ##### To configure an exclude collection rule  
+##### <a name="to-configure-an-exclude-collection-rule"></a>若要設定排除集合規則  
 
-        In the **Select Collections** dialog box, select the collections you want to exclude from the new collection, then choose **OK**.  
+在 [選取集合] 對話方塊中，選取您想要從新集合排除的集合，然後選擇 [確定]。  
 
-    -   **針對此集合使用累加式更新** - 選取此選項以僅定期掃描上一次集合評估至今新增或變更過的資源，並且不受完整集合評估的影響。 累加式更新的時間間隔為每 10 分鐘發生一次。  
+-   **針對此集合使用累加式更新** - 選取此選項以僅定期掃描上一次集合評估至今新增或變更過的資源，並且不受完整集合評估的影響。 累加式更新的時間間隔為每 10 分鐘發生一次。  
 
-        > [!IMPORTANT]  
-        >  如果您是使用下列類別的查詢規則來設定集合，則不支援累加式更新。  
-        >   
-        >  -   SMS_G_System_CollectedFile  
-        > -   SMS_G_System_LastSoftwareScan  
-        > -   SMS_G_System_AppClientState  
-        > -   SMS_G_System_DCMDeploymentState  
-        > -   SMS_G_System_DCMDeploymentErrorAssetDetails  
-        > -   SMS_G_System_DCMDeploymentCompliantAssetDetails  
-        > -   SMS_G_System_DCMDeploymentNonCompliantAssetDetails  
-        > -   SMS_G_User_DCMDeploymentCompliantAssetDetails (僅限使用者的集合)  
-        > -   SMS_G_User_DCMDeploymentNonCompliantAssetDetails (僅限使用者的集合)  
-        > -   SMS_G_System_SoftwareUsageData  
-        > -   SMS_G_System_CI_ComplianceState  
-        > -   SMS_G_System_EndpointProtectionStatus  
-        > -   SMS_GH_System_*  
-        > -   SMS_GEH_System_*  
+> [!IMPORTANT]  
+>  如果您是使用下列類別的查詢規則來設定集合，則不支援累加式更新。  
+>   
+> -   SMS_G_System_CollectedFile  
+> -   SMS_G_System_LastSoftwareScan  
+> -   SMS_G_System_AppClientState  
+> -   SMS_G_System_DCMDeploymentState  
+> -   SMS_G_System_DCMDeploymentErrorAssetDetails  
+> -   SMS_G_System_DCMDeploymentCompliantAssetDetails  
+> -   SMS_G_System_DCMDeploymentNonCompliantAssetDetails  
+> -   SMS_G_User_DCMDeploymentCompliantAssetDetails (僅限使用者的集合)  
+> -   SMS_G_User_DCMDeploymentNonCompliantAssetDetails (僅限使用者的集合)  
+> -   SMS_G_System_SoftwareUsageData  
+> -   SMS_G_System_CI_ComplianceState  
+> -   SMS_G_System_EndpointProtectionStatus  
+> -   SMS_GH_System_*  
+> -   SMS_GEH_System_*  
 
-    -   **排程此集合的完整更新** - 排程集合成員資格的定期完整評估。  
+-   **排程此集合的完整更新** - 排程集合成員資格的定期完整評估。  
 
 6.  完成精靈以建立新的集合。 新集合會顯示在 [資產與相容性]  工作區的 [裝置集合]  節點中。  
 
@@ -134,60 +133,60 @@ ms.lasthandoff: 12/30/2016
 
     -   在 [新增規則]  清單中，選取您要用於此集合的成員資格規則類型。 您可以為每個集合設定多個規則。  
 
-         ##### <a name="to-configure-a-direct-rule"></a>若要設定直接規則  
+##### <a name="to-configure-a-direct-rule"></a>若要設定直接規則  
 
-        1.  在 [建立直接成員資格規則精靈] 的 [搜尋資源] 頁面上，指定：  
+1.  在 [建立直接成員資格規則精靈] 的 [搜尋資源] 頁面上，指定：  
 
-            -   **資源類別**：選取您要搜尋並新增至集合的資源類型。 從 [使用者資源] 的值進行選取以搜尋 Configuration Manager 所收集的使用者資訊，或選擇 [使用者群組資源] 以搜尋 Configuration Manager 所收集的使用者群組資訊。  
+-   **資源類別**：選取您要搜尋並新增至集合的資源類型。 從 [使用者資源] 的值進行選取以搜尋 Configuration Manager 所收集的使用者資訊，或選擇 [使用者群組資源] 以搜尋 Configuration Manager 所收集的使用者群組資訊。  
 
-            -   **屬性名稱**：選取您想要搜尋之資源類別的相關聯屬性。 例如，如果您想要選取使用者的組織單位名稱，請依序選取 [資源類別]  清單中的 [使用者資源]  和 [屬性名稱]  清單中的 [使用者 OU 名稱]  。  
+-   **屬性名稱**：選取您想要搜尋之資源類別的相關聯屬性。 例如，如果您想要選取使用者的組織單位名稱，請依序選取 [資源類別]  清單中的 [使用者資源]  和 [屬性名稱]  清單中的 [使用者 OU 名稱]  。  
 
-            -   **值︰**輸入您想要搜尋的值。 您可以將 **%** 百分比字元作為萬用字元。 例如，若要在 Contoso OU 中搜尋使用者，請在此欄位中輸入 **Contoso** 。  
+-   **值︰**輸入您想要搜尋的值。 您可以將 **%** 百分比字元作為萬用字元。 例如，若要在 Contoso OU 中搜尋使用者，請在此欄位中輸入 **Contoso** 。  
 
-        2.  在 [選取資源] 頁面上，從 [資源] 清單中選取您想要新增至集合中的資源。  
+2.  在 [選取資源] 頁面上，從 [資源] 清單中選取您想要新增至集合中的資源。  
 
-        ##### <a name="to-configure-a-query-rule"></a>若要設定查詢規則  
+##### <a name="to-configure-a-query-rule"></a>若要設定查詢規則  
 
-        1.  在 [查詢規則屬性] 對話方塊中，提供︰  
+1.  在 [查詢規則屬性] 對話方塊中，提供︰  
 
-            -   **名稱**︰唯一的名稱。  
+-   **名稱**︰唯一的名稱。  
 
-            -   **匯入查詢陳述式** - 開啟 [瀏覽查詢] 對話方塊，您可以在其中選取 [Configuration Manager 查詢](../../../../core/servers/manage/queries-technical-reference.md)以作為集合查詢規則。  
+-   **匯入查詢陳述式** - 開啟 [瀏覽查詢] 對話方塊，您可以在其中選取 [Configuration Manager 查詢](../../../../core/servers/manage/queries-technical-reference.md)以作為集合查詢規則。  
 
-            -   **資源類別**：選取您要搜尋並新增至集合的資源類型。 從 [使用者資源] 的值進行選取以搜尋 Configuration Manager 所收集的使用者資訊，或選擇 [使用者群組資源] 以搜尋 Configuration Manager 所收集的使用者群組資訊。  
+-   **資源類別**：選取您要搜尋並新增至集合的資源類型。 從 [使用者資源] 的值進行選取以搜尋 Configuration Manager 所收集的使用者資訊，或選擇 [使用者群組資源] 以搜尋 Configuration Manager 所收集的使用者群組資訊。  
 
-            -   **編輯查詢陳述式** - 開啟 [查詢陳述式內容] 對話方塊，您可以在其中[撰寫查詢](../../../../core/servers/manage/queries-technical-reference.md)以作為集合的規則。  
+-   **編輯查詢陳述式** - 開啟 [查詢陳述式內容] 對話方塊，您可以在其中[撰寫查詢](../../../../core/servers/manage/queries-technical-reference.md)以作為集合的規則。  
 
-        ##### <a name="to-configure-an-include-collection-rule"></a>若要設定包含集合規則  
+##### <a name="to-configure-an-include-collection-rule"></a>若要設定包含集合規則  
 
-        在 [選取集合] 對話方塊中，選取您想要在新集合中包含的集合，然後選擇 [確定]。  
+在 [選取集合] 對話方塊中，選取您想要在新集合中包含的集合，然後選擇 [確定]。  
 
-        ##### <a name="to-configure-an-exclude-collection-rule"></a>若要設定排除集合規則  
+##### <a name="to-configure-an-exclude-collection-rule"></a>若要設定排除集合規則  
 
-        在 [選取集合] 對話方塊中，選取您想要從新集合排除的集合，然後選擇 [確定]。  
+在 [選取集合] 對話方塊中，選取您想要從新集合排除的集合，然後選擇 [確定]。  
 
 
-    -   **針對此集合使用累加式更新** - 選取此選項以僅定期掃描上一次集合評估至今新增或變更過的資源，並且不受完整集合評估的影響。 累加式更新的時間間隔為每 10 分鐘發生一次。  
+-   **針對此集合使用累加式更新** - 選取此選項以僅定期掃描上一次集合評估至今新增或變更過的資源，並且不受完整集合評估的影響。 累加式更新的時間間隔為每 10 分鐘發生一次。  
 
-        > [!IMPORTANT]  
-        >  如果您是使用下列類別的查詢規則來設定集合，則不支援累加式更新。  
-        >   
-        >  -   SMS_G_System_CollectedFile  
-        > -   SMS_G_System_LastSoftwareScan  
-        > -   SMS_G_System_AppClientState  
-        > -   SMS_G_System_DCMDeploymentState  
-        > -   SMS_G_System_DCMDeploymentErrorAssetDetails  
-        > -   SMS_G_System_DCMDeploymentCompliantAssetDetails  
-        > -   SMS_G_System_DCMDeploymentNonCompliantAssetDetails  
-        > -   SMS_G_User_DCMDeploymentCompliantAssetDetails (僅限使用者的集合)  
-        > -   SMS_G_User_DCMDeploymentNonCompliantAssetDetails (僅限使用者的集合)  
-        > -   SMS_G_System_SoftwareUsageData  
-        > -   SMS_G_System_CI_ComplianceState  
-        > -   SMS_G_System_EndpointProtectionStatus  
-        > -   SMS_GH_System_*  
-        > -   SMS_GEH_System_*  
+> [!IMPORTANT]  
+>  如果您是使用下列類別的查詢規則來設定集合，則不支援累加式更新。  
+>   
+> -   SMS_G_System_CollectedFile  
+> -   SMS_G_System_LastSoftwareScan  
+> -   SMS_G_System_AppClientState  
+> -   SMS_G_System_DCMDeploymentState  
+> -   SMS_G_System_DCMDeploymentErrorAssetDetails  
+> -   SMS_G_System_DCMDeploymentCompliantAssetDetails  
+> -   SMS_G_System_DCMDeploymentNonCompliantAssetDetails  
+> -   SMS_G_User_DCMDeploymentCompliantAssetDetails (僅限使用者的集合)  
+> -   SMS_G_User_DCMDeploymentNonCompliantAssetDetails (僅限使用者的集合)  
+> -   SMS_G_System_SoftwareUsageData  
+> -   SMS_G_System_CI_ComplianceState  
+> -   SMS_G_System_EndpointProtectionStatus  
+> -   SMS_GH_System_*  
+> -   SMS_GEH_System_*  
 
-    -   **排程此集合的完整更新** - 排程集合成員資格的定期完整評估。  
+-   **排程此集合的完整更新** - 排程集合成員資格的定期完整評估。  
 
 6.  完成精靈。 新集合會顯示在 [資產與相容性]  工作區的 [使用者集合]  節點中。  
 

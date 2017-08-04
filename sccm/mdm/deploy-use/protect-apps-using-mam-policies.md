@@ -16,11 +16,11 @@ caps.handback.revision: 0
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 74f4dd44089d4a13526c981589e1f497f0e10290
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 50c137f159b0ef631f7173b8eec190182ce41cee
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="protect-apps-using-mobile-application-management-policies-in-system-center-configuration-manager"></a>使用 System Center Configuration Manager 中的行動應用程式管理原則來保護應用程式
@@ -43,12 +43,12 @@ System Center Configuration Manager 應用程式管理原則可讓您修改所�
 
 若要將限制套用至應用程式，應用程式必須加入 Microsoft Intune 應用程式軟體開發套件 (SDK)。 有兩種方法可以取得這種類型的應用程式：  
 
--   **使用受原則管理的應用程式** (Android 及 iOS)：這些應用程式已內建 App SDK。 若要加入此類型的應用程式，請從應用程式市集 (例如 iTunes Store 或 Google Play) 指定應用程式的連結。 這種類型的應用程式不需要進行任何處理。 如需適用於 iOS 和 Android 裝置之受原則管理的應用程式清單，請參閱 [Microsoft Intune 行動應用程式管理原則的受管理應用程式](https://technet.microsoft.com/en-us/library/dn708489.aspx)。  
+-   **使用受原則管理的應用程式** (Android 及 iOS)：這些應用程式已內建 App SDK。 若要加入此類型的應用程式，請從應用程式市集 (例如 iTunes Store 或 Google Play) 指定應用程式的連結。 這種類型的應用程式不需要進行任何處理。 如需適用於 iOS 和 Android 裝置之受原則管理的應用程式清單，請參閱 [Microsoft Intune 行動應用程式管理原則的受管理應用程式](https://technet.microsoft.com/library/dn708489.aspx)。  
 
 -   **使用「包裝的」應用程式** (Android 及 iOS)：這些應用程式使用 **Microsoft Intune App Wrapping Tool** 進行重新封裝，以包含 App SDK。 此工具通常用來處理內部建立的公司應用程式。 它不能用來處理從應用程式市集下載的應用程式。 如需詳細資訊，請參閱下列文章：
-    - [準備將 iOS 應用程式交由 Intune App Wrapping Tool 進行行動應用程式管理](https://technet.microsoft.com/en-us/library/dn878028.aspx)
+    - [準備將 iOS 應用程式交由 Intune App Wrapping Tool 進行行動應用程式管理](https://technet.microsoft.com/library/dn878028.aspx)
 
-    - [準備 Android 應用程式以使用 Intune 應用程式包裝工具進行行動應用程式管理](https://technet.microsoft.com/en-us/library/mt147413.aspx)  
+    - [準備 Android 應用程式以使用 Intune 應用程式包裝工具進行行動應用程式管理](https://technet.microsoft.com/library/mt147413.aspx)  
 
 ## <a name="create-and-deploy-an-app-with-a-mobile-application-management-policy"></a>以行動應用程式管理原則建立及部署應用程式  
 
@@ -58,7 +58,7 @@ System Center Configuration Manager 應用程式管理原則可讓您修改所�
 
      例如 iPad 版 Microsoft Word 應用程式的 URL 為 **https://itunes.apple.com/us/app/microsoft-word-for-ipad/id586447913?mt=8**  
 
--   **建立包裝的應用程式**：使用[準備將 iOS 應用程式交由 Intune App Wrapping Tool 進行行動應用程式管理](https://technet.microsoft.com/en-us/library/dn878028.aspx)和[準備 Android 應用程式以使用 Intune 應用程式包裝工具進行行動應用程式管理](https://technet.microsoft.com/en-us/library/mt147413.aspx)主題中的資訊，來建立包裝的應用程式。  
+-   **建立包裝的應用程式**：使用[準備將 iOS 應用程式交由 Intune App Wrapping Tool 進行行動應用程式管理](https://technet.microsoft.com/library/dn878028.aspx)和[準備 Android 應用程式以使用 Intune 應用程式包裝工具進行行動應用程式管理](https://technet.microsoft.com/library/mt147413.aspx)主題中的資訊，來建立包裝的應用程式。  
 
      此工具會建立處理過的應用程式和相關聯的資訊清單檔案。 當您建立包含此應用程式的 Configuration Manager 應用程式時，會使用這些檔案。  
 
@@ -178,5 +178,5 @@ System Center Configuration Manager 應用程式管理原則可讓您修改所�
 -   如果原則尚未部署到裝置，並且已部署兩個衝突的設定，則會使用裝置內建的預設設定。  
 
 ##  <a name="see-a-list-of-available-policy-managed-apps"></a>請參閱可用受原則管理的應用程式清單  
- 如需適用於 iOS 和 Android 裝置之受原則管理的應用程式清單，請參閱 [Microsoft Intune application partners](https://www.microsoft.com/en-us/cloud-platform/microsoft-intune-partners) (Microsoft Intune 應用程式合作夥伴)。  
+ 如需適用於 iOS 和 Android 裝置之受原則管理的應用程式清單，請參閱 [Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) (Microsoft Intune 應用程式合作夥伴)。  
 
