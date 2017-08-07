@@ -51,7 +51,7 @@ ms.lasthandoff: 08/04/2017
 
  在命令列提示字元，CCMSetup.exe 命令會使用下列格式：  
 
- `CCMSetup.exe [&lt;Ccmsetup properties\>] [&lt;client.msi setup properties>]`  
+ `CCMSetup.exe [<Ccmsetup properties>] [<client.msi setup properties>]`  
 
  範例：  
 
