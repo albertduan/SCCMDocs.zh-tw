@@ -15,6 +15,7 @@
 ### [管理長期維護分支](understand/manage-the-ltsb.md)
 ### [將長期維護分支升級至最新分支](understand/convert-to-current-branch.md)
 ##  [應該使用的 Configuration Manager 分支](understand/which-branch-should-i-use.md)
+##  [延伸互通性用戶端](understand/interoperability-client.md)
 ##  [System Center Configuration Manager 的授權](understand/learn-more-editions.md)
 ##  [使用雲端服務](understand/use-cloud-services.md)
 ### [Azure 上的 Configuration Manager](understand/configuration-manager-on-azure.md)
