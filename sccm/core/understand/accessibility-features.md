@@ -2,7 +2,7 @@
 title: "協助工具 | Microsoft Docs"
 description: "深入了解可供殘障人士使用的 System Center Configuration Manager 功能。"
 ms.custom: na
-ms.date: 3/27/2017
+ms.date: 7/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -15,11 +15,11 @@ caps.latest.revision: 6
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 98599b3c188c9e9b508fea79ecf9a2b2348e9288
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: ca518796477dda149a9f4c0ebd65f0a082eab806
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="accessibility-features-in-system-center-configuration-manager"></a>System Center Configuration Manager 的協助工具功能
@@ -31,14 +31,38 @@ System Center Configuration Manager 包含協助殘障人士使用的功能。
 
 
 ## <a name="bkmk_aconsole"></a> Configuration Manager 主控台的協助工具功能  
--   使用下列鍵盤快速鍵存取工作區：  
 
-|工作區|鍵盤快速鍵|  
-|------|--------|  
-|資產與相容性|Ctrl+1|  
-|軟體程式庫|Ctrl+2|  
-|monitoring|Ctrl+3|  
-|系統管理|Ctrl+4|  
+**1706 版和更新版本的快速鍵和改良功能**
+
+|鍵盤快速鍵|  目的|
+|--------|--------|  
+|Ctrl + M|將焦點設定在主要 (中央) 窗格上。|
+|Ctrl + T|將焦點設定至瀏覽窗格中的最上層節點。 如果焦點已經在該窗格中，則會將焦點設定至您瀏覽的最後一個節點。|
+|Ctrl + I|將焦點設定至功能區下的階層連結列。|
+|Ctrl + L|將焦點設定至 [搜尋] 欄位 (如果可用)。|
+|Ctrl + D|將焦點設定至 [詳細資料] 窗格 (如果可用)。|
+|Alt     |在功能區內外切換焦點。|
+
+
+- 改進當您輸入節點名稱的字母時在瀏覽窗格中的瀏覽。
+- 在主要檢視和功能區的鍵盤瀏覽現在是採用循環方式。
+- 在詳細資料窗格中的鍵盤瀏覽現在是採用循環方式。 若要返回上一個物件或窗格，請使用 Ctrl + D，然後使用 Shift + TAB。
+- 重新整理 [工作區] 檢視之後，焦點會設定至該工作區的主要窗格。
+- 修正問題，讓螢幕助讀程式能夠朗讀清單項目的名稱。
+- 為頁面上多個控制項新增可存取的名稱，讓螢幕助讀程式能夠朗讀重要資訊。
+
+
+**下列是適用於所有版本的快速鍵**
+
+- 使用下列鍵盤快速鍵存取工作區：  
+
+|鍵盤快速鍵| 工作區|
+|--------|--------|  
+|Ctrl + 1| 資產與相容性|
+|Ctrl + 2|  軟體程式庫|
+|Ctrl + 3|  監視|
+|Ctrl + 4|  系統管理|
+
 
 -   若要存取工作區功能表，請選取 Tab 鍵，直到 [展開/收合] 圖示進入焦點。 接著選取向下鍵以存取工作區功能表。  
 
@@ -56,7 +80,7 @@ System Center Configuration Manager 包含協助殘障人士使用的功能。
 >  本節提供的資訊僅適用於擁有 Microsoft 產品美國地區授權的使用者。 如果您在美國以外地區取得本產品，可以使用軟體套件隨附的子公司資訊卡，或者瀏覽 [Microsoft 協助工具網站](http://go.microsoft.com/fwlink/?LinkId=8431)，取得 Microsoft 支援服務的連絡資訊。 您可以與您所在地區的子公司連絡，了解本節所述的產品及服務類型是否已於當地銷售。 協助工具的相關資訊另有其他語言版本，包括日文及法文。  
 
 ##  <a name="bkmk_ahelp"></a> Configuration Manager 說明的協助工具功能  
- Configuration Manager 說明包含可讓手部缺陷、視力不佳或其他殘障等人士方便使用的功能。  
+ Configuration Manager 說明包含可讓手部缺陷、視力不佳或其他殘障等使用者方便使用的功能。  
 
 |若要執行這項操作|使用此鍵盤快速鍵|  
 |----------------|--------------------------------|  

@@ -2,7 +2,7 @@
 title: "建立 Android 應用程式 | Microsoft Docs"
 description: "查看在您建立和部署 Android 裝置的應用程式時，必須考慮的事項。"
 ms.custom: na
-ms.date: 03/27/2017
+ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,18 +16,17 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.translationtype: HT
-ms.sourcegitcommit: 344b55aecd72479b759b40e8252e64a06c5eaba0
-ms.openlocfilehash: 3bfb7364c3de5264a5fa8a684965d9aebeb84719
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 3a89abc81cd70f4e499bf4e3087fd53915377c44
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/13/2017
+ms.lasthandoff: 07/29/2017
 
 ---
-# 使用 System Center Configuration Manager 建立 Android 應用程式
-<a id="create-android-applications-with-system-center-configuration-manager" class="xliff"></a>
+# <a name="create-android-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立 Android 應用程式
 
-*適用於：System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
-System Center Configuration Manager 應用程式有一或多個部署類型，其中包含將軟體部署至裝置所需的安裝檔案與資訊。 部署類型也包含指定部署軟體之時間和方法的規則。  
+System Center Configuration Manager 應用程式有一或多種部署類型。 部署類型包含將軟體部署到裝置所需的安裝檔案和資訊。 部署類型也包含指定部署軟體之時間和方法的規則。  
 
  您可以使用下列兩種方式建立應用程式：  
 
@@ -37,8 +36,7 @@ System Center Configuration Manager 應用程式有一或多個部署類型，�
 
 如需建立 Configuration Manager 應用程式與部署類型的必要步驟，請參閱[啟動建立應用程式精靈](../../apps/deploy-use/create-applications.md#start-the-create-application-wizard)。 此外，當您建立和部署 Android 裝置的應用程式時，請記住下列考量。  
 
-## Android 應用程式的一般考量
-<a id="general-considerations-for-android-apps" class="xliff"></a>
+## <a name="general-considerations-for-android-apps"></a>Android 應用程式的一般考量
 
 Configuration Manager 支援部署下列適用於 Android 的應用程式類型：
 
@@ -53,9 +51,8 @@ Configuration Manager 支援部署下列適用於 Android 的應用程式類型�
 |Android|**可用**、**必要**：使用者必須同意安裝和解除安裝。|
 |Android for Work | **必要** |
 
-## 核准和部署 Android for Work 應用程式
-<a id="approve-and-deploy-android-for-work-apps" class="xliff"></a>
-身為 Configuration Manager 系統管理員，您也可以在 [Play for Work 網站](https://play.google.com/work)中核准和部署應用程式，並將這些應用程式部署到受管理的 Android for Work 裝置。
+## <a name="approve-and-deploy-android-for-work-apps"></a>核准和部署 Android for Work 應用程式
+身為 Configuration Manager 系統管理員，您也可以在 [Play for Work 網站](https://play.google.com/work)中核准應用程式，並將這些應用程式部署到受管理的 Android for Work 裝置。
 
 遵循下列步驟來核准 Play for Work 市集中的應用程式，並將它們與 Configuration Manager 主控台同步，然後將它們部署至受管理 Android for Work 裝置。 若要將應用程式部署至使用者的工作設定檔，您需要核准 Play for Work 市集中的應用程式，然後將應用程式與 Configuration Manager 主控台同步。
 

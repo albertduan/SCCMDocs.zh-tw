@@ -2,7 +2,7 @@
 title: "System Center Configuration Manager 中的 VPN 設定檔 | Microsoft Docs"
 description: "System Center Configuration Manager 中的行動裝置 VPN 設定檔。"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 07/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.handback.revision: 0
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d5166b16ffbe46af561b1ce98c0494cc4aaa72a8
-ms.openlocfilehash: aacd11708f9f9bd5b0a2d1b1cd6db3c60a7c0c28
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: e4a53caab7d76b604a3fee7dcfc4dc48f22b0fb0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的行動裝置 VPN 設定檔
@@ -37,9 +37,10 @@ ms.lasthandoff: 05/17/2017
 
  若要將設定檔部署到 iOS、Android、Windows Phone 和 Windows 8.1 裝置，這些裝置必須在 Microsoft Intune 中註冊。 其他平台上的裝置也可以註冊至 Intune。 如需如何註冊的資訊，請參閱[註冊裝置以在 Intune 中管理](https://technet.microsoft.com/en-us/library/dn646962.aspx)。 此表格顯示各裝置平台支援的連線類型︰  
 
- |連線類型|iOS    和 macOS X|Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 與行動裝置版|  
+ |連線類型|iOS 和 macOS X|Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 與行動裝置版|  
  |---------------------|----------------------|-------------|-----------------|----------------|--------------------|-----------------------|-----------------------------------|  
- |Cisco AnyConnect|是|是|否|否|否|否|是 (OMA-URI)|  
+ |Cisco AnyConnect|是|是|否|否|否|否|是 (OMA-URI)|
+ |Cisco (IPSec)|僅限 iOS|否|否|否|否|否|否|  
  |Pulse Secure|是|[是]|是|否|是|[是]|是|  
  |F5 Edge Client|是|[是]|是|否|是|[是]|是|  
  |Dell SonicWALL Mobile Connect|是|[是]|是|否|是|[是]|是|  
@@ -106,7 +107,7 @@ ms.lasthandoff: 05/17/2017
             - 選擇 [允許使用其他憑證進行單一登入 (SSO)] 以選擇針對裝置合規性之 VPN 驗證憑證以外的憑證。 如果您選擇此選項，請提供 [EKU] \(逗號分隔清單) 和 [簽發者雜湊]，讓 VPN 用戶端找到正確的憑證。
 
          - 針對 [Windows 資訊保護]，請提供企業管理的公司身分識別，這通常是貴組織的主要網域，例如 *contoso.com*。 您可以使用 "|" 字元分隔，來指定貴組織擁有的多個網域。 例如 *contoso.com|newcontoso.com*。   
-              如需 Windows 資訊保護的詳細資訊，請參閱[使用 Microsoft Intune 建立 Windows 資訊保護 (WIP) 原則 (英文)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/create-wip-policy-using-intune)。   
+            如需 Windows 資訊保護的詳細資訊，請參閱[使用 Microsoft Intune 建立 Windows 資訊保護 (WIP) 原則 (英文)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/create-wip-policy-using-intune)。   
 
          ![設定 VPN 的條件式存取](media/vpn-conditional-access.png)
 

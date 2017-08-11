@@ -2,7 +2,7 @@
 title: "憑證設定檔簡介 | Microsoft Docs"
 description: "了解如何搭配使用 System Center Configuration Manager 中的憑證設定檔與 Active Directory 憑證服務。"
 ms.custom: na
-ms.date: 03/30/2017
+ms.date: 07/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,15 +12,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 41dcc259-f147-4420-bff2-b65bdf8cff77
 caps.latest.revision: 7
-author: arob98
-ms.author: angrobe
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: ba1d5b04cb0cb0284525e295a6086a3c0ac67e9f
+ms.translationtype: HT
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: 7b1c0e449f3d1ef42e279e8707df6bf1df163b3f
 ms.contentlocale: zh-tw
-ms.lasthandoff: 03/27/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -51,17 +50,24 @@ ms.lasthandoff: 03/27/2017
 -   **信任的 CA 憑證** - 可讓您部署受信任根 CA 或中繼 CA 憑證，以在裝置必須驗證伺服器時形成憑證信任鏈。  
 
 -   **簡單憑證註冊通訊協定 (SCEP)** - 可讓您在執行 Windows Server 2012 R2 的伺服器上，使用 SCEP 通訊協定和「網路裝置註冊服務」來要求裝置或使用者的憑證。
+
+    若要建立 [簡單憑證註冊通訊協定 (SCEP)] 憑證設定檔，您必須先建立 [信任的 CA 憑證] 憑證設定檔。
+
 -   **個人資訊交換 (.pfx)** - 可讓您要求裝置或使用者的 .pfx (也稱為 PKCS #12) 憑證。
 
-    > [!NOTE]  
-    >  您必須先建立 [信任的 CA 憑證] 類型的憑證設定檔，才能建立 [簡單憑證註冊通訊協定 (SCEP)] 憑證設定檔。  
+    您可以透過從現有憑證[匯入認證](/sccm/mdm/deploy-use/import-pfx-certificate-profiles.md)，或是透過[定義憑證](/sccm/mdm/deploy-use/create-pfx-certificate-profiles.md)授權單位以處理要求，來建立 PFX 憑證設定檔。
+
+    從 1706 版開始，您可以使用 Microsoft 或 Entrust 作為**個人資訊交換 (.pfx)** 憑證的憑證授權單位。
+
 
 ## <a name="requirements-and-supported-platforms"></a>需求和支援的平台  
- 若要部署使用 SCEP 的憑證設定檔，您必須在管理中心網站或主要站台中的站台系統伺服器上，安裝憑證登錄點。 您也必須以 Active Directory 憑證服務角色和需要憑證的裝置可存取的作用中 NDES，將用於 NDES 的原則模組 (即 Configuration Manager 原則模組) 安裝在執行 Windows Server 2012 R2 的伺服器上。 若是由 Microsoft Intune 註冊的裝置，則需要可以從網際網路存取的 NDES，例如遮蔽式子網路 (也稱為 DMZ)。  
+若要部署使用 SCEP 的憑證設定檔，您必須在管理中心網站或主要站台中的站台系統伺服器上，安裝憑證登錄點。 您也必須以 Active Directory 憑證服務角色和需要憑證的裝置可存取的作用中 NDES，將用於 NDES 的原則模組 (即 Configuration Manager 原則模組) 安裝在執行 Windows Server 2012 R2 的伺服器上。 若是由 Microsoft Intune 註冊的裝置，則需要可以從網際網路存取的 NDES，例如遮蔽式子網路 (也稱為 DMZ)。  
 
- 如需網路裝置註冊服務如何支援原則模組，以供 Configuration Manager 部署憑證的詳細資訊，請參閱[使用原則模組和網路裝置註冊服務](http://go.microsoft.com/fwlink/p/?LinkId=328657)。  
+PFX 憑證在管理中心網站或主要站台中的站台系統伺服器上也需要憑證登錄點。  您也必須針對憑證指定憑證授權單位 (CA)，並指定相關的存取認證。  從 1706 版開始，您可以將 Microsoft 或 Entrust 指定為憑證授權單位。  
 
- Configuration Manager 可根據需求、裝置類型和作業系統，將憑證部署至不同的憑證存放區。 支援下列裝置和作業系統：  
+如需網路裝置註冊服務如何支援原則模組，以供 Configuration Manager 部署憑證的詳細資訊，請參閱[使用原則模組和網路裝置註冊服務](http://go.microsoft.com/fwlink/p/?LinkId=328657)。  
+
+Configuration Manager 可根據需求、裝置類型和作業系統，將憑證部署至不同的憑證存放區。 支援下列裝置和作業系統：  
 
 -   Windows RT 8.1  
 

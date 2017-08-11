@@ -2,7 +2,7 @@
 title: "用戶端設定 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 的管理主控台選擇用戶端設定。"
 ms.custom: na
-ms.date: 03/24/2017
+ms.date: 08/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,11 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c8717925dba42451b1e241a7c2f59e43896d7d99
-ms.openlocfilehash: 4a169098f30e4a9d708e41ee25c6a400d5ff0e85
+ms.translationtype: HT
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: a8233c361e1a78b14a02f328da445814624e38d8
 ms.contentlocale: zh-tw
-ms.lasthandoff: 06/19/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 # <a name="about-client-settings-in-system-center-configuration-manager"></a>關於 System Center Configuration Manager 中的用戶端設計
@@ -63,9 +63,25 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
   從 1606 版開始，使用此設定針對 [BranchCache](/sccm/core/plan-design/configs/support-for-windows-features-and-networks#branchcache) 設定用戶端電腦。 若要允許 BranchCache 在用戶端上進行快取，請將 [啟用 BranchCache] 設定為 [是]。
 
+- **啟用 BranchCache**
+
+在用戶端電腦上啟用 BranchCache。
+
+- **BranchCache 快取大小上限 (磁碟百分比)**。
+
 - **設定用戶端快取大小**
 
-  Windows 電腦上的用戶端快取會儲存用於安裝應用程式和程式的暫存檔案。 選擇 [是] 指定 「最大的快取大小」 (MB 或是磁碟百分比)。 用戶端快取大小能以 MB 或磁碟百分比為單位 (**以較低者為準**) 擴充至最大。 此選項如為 [否]，則預設大小為 5120 MB。
+  Windows 電腦上的用戶端快取會儲存用於安裝應用程式和程式的暫存檔案。 選擇 [是]，然後指定：
+    - **快取大小上限** (MB)。 
+    - **快取大小上限** (磁碟百分比)。
+用戶端快取大小能以 MB 或磁碟百分比為單位 (**以較低者為準**) 擴充至最大。 此選項如為 [否]，則預設大小為 5120 MB。
+
+- **在完整作業系統中啟用 Configuration Manager 用戶端以共用內容**
+
+針對 Configuration Manager 用戶端啟用對等快取。 接著，指定用戶端用來與對等電腦通訊的連接埠資訊。 Configuration Manager 會自動設定 Windows 防火牆規則以允許此流量。 如果您使用不同的防火牆，則必須手動設定規則以允許此流量。
+
+
+
 
 ## <a name="client-policy"></a>用戶端原則  
 
@@ -107,7 +123,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
   -   以網際網路為基礎的管理點，可以使用 Windows 驗證 (Kerberos 或 NTLM) 成功驗證使用者。  
 
-   如果將此選項保留為 [False]  或 [否] ，或任一個條件失敗，位於網際網路上的電腦將只會接收電腦原則。 在此案例中，使用者仍可從以網際網路為基礎的應用程式類別目錄查看、要求及安裝應用程式。 如果此設定為 [False] 或 [否]，但是 [啟用用戶端的使用者原則輪詢] 是 [True]，或者 [在用戶端上啟用使用者原則] 為 [是]，除非電腦連線至內部網路，否則使用者將無法接收使用者原則。  
+   如果將此選項保留為 [False] 或 [否]，或任一個條件失敗，位於網際網路上的電腦將只會接收電腦原則。 在此案例中，使用者仍可從以網際網路為基礎的應用程式類別目錄查看、要求及安裝應用程式。 如果此設定為 [False] 或 [否]，但是 [啟用用戶端的使用者原則輪詢] 是 [True]，或者 [在用戶端上啟用使用者原則] 為 [是]，除非電腦連線至內部網路，否則使用者將無法接收使用者原則。  
 
    如需管理網際網路用戶端的詳細資訊，請參閱 [System Center Configuration Manager 中端點之間的通訊](../../../core/plan-design/hierarchy/communications-between-endpoints.md)中的[從網際網路或未受信任之樹系進行用戶端通訊的考量](../../../core/plan-design/hierarchy/communications-between-endpoints.md#BKMK_clientspan)。  
 
@@ -118,7 +134,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
 -   **排程相容性評估**  
 
-     選擇 [排程] 建立預設排程，其會在使用者部署設定基準時為其顯示。 此值可以在 [部署設定基準]  對話方塊中，針對各個基準進行設定。  
+     選擇 [排程] 來建立預設排程，這會在使用者部署設定基準時向使用者顯示。 此值可以在 [部署設定基準]  對話方塊中，針對各個基準進行設定。  
 
 -   **啟用使用者資料和設定檔**  
 
@@ -140,7 +156,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
 
      -   您可以手動為用戶端設定最接近的伺服器，或確定它們未連線至位於慢速網路連線的伺服器。  
 
-     -   您想要控制哪些用戶端可以連線至哪些伺服器。 這可能基於測試、效能或商務因素。  
+     -   您想要控制哪些用戶端可以連線至哪些伺服器。 此設定可能是基於測試、效能或商務因素。  
 
      -   您不想要等待至 25 小時，或使用不同的應用程式類別目錄網站點設定用戶端的網路變更。  
 
@@ -228,7 +244,7 @@ System Center Configuration Manager 中所有的用戶端設定，都是在 Conf
     -   您可以使用 Configuration Manager 軟體部署套件 (SDK) 來管理用戶端代理程式通知，以及應用程式及軟體更新的安裝。  
 
     > [!WARNING]  
-    >  如果您在任一情況適用時選擇此選項，則不會在用戶端上安裝軟體更新和必要的應用程式。 此設定不會防止使用者從應用程式類別目錄安裝應用程式，或防止在用戶端電腦上安裝套件、程式及工作順序。  
+    >  如果您在任一條件成立時選擇此選項，則不會在用戶端上安裝軟體更新和必要的應用程式。 此設定不會防止使用者從應用程式類別目錄安裝應用程式，或防止在用戶端電腦上安裝套件、程式及工作順序。  
 
 -   **PowerShell 執行原則**  
 

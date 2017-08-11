@@ -2,7 +2,7 @@
 title: "資料倉儲 | Microsoft Docs"
 description: "資料倉儲服務點與 System Center Configuration Manager 資料庫"
 ms.custom: na
-ms.date: 5/31/2017
+ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: HT
-ms.sourcegitcommit: ef42d1483053e9a6c502f4ebcae5a231aa6ba727
-ms.openlocfilehash: c421c3495f56503d5cbda7b1a5ab5350a168912d
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: eedbf12d3bf628666efc90c85a8dfab37e4dc9ab
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/26/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager 的資料倉儲服務點
@@ -27,11 +27,12 @@ ms.lasthandoff: 07/26/2017
 
 從版本 1702 開始，您可以使用資料倉儲服務點來儲存並報告您的 Configuration Manager 部署的長期歷程記錄資料。
 
-> [!TIP]  
-> 「資料倉儲」服務點隨版本 1702 引進，而且是一個發行前版本功能。 若要啟用它，請參閱[使用發行前版本功能](/sccm/core/servers/manage/pre-release-features)。
+> [!TIP]
+> 「資料倉儲」服務點是隨版本 1702 引進的發行前版本功能。 若要啟用它，請參閱[使用發行前版本功能](/sccm/core/servers/manage/pre-release-features)。
 
-資料倉儲支援高達 2 TB 的資料，其含有變更追蹤的時間戳記。 資料儲存可透過從 Configuration Manager 站台資料庫自動同步處理至資料倉儲資料庫來完成。 然後即可從您的 Reporting Services 點存取此資訊。
+> 從 1706 版開始，這項功能不再是發行前版本功能。
 
+資料倉儲支援高達 2 TB 的資料，其含有變更追蹤的時間戳記。 資料儲存可透過從 Configuration Manager 站台資料庫自動同步處理至資料倉儲資料庫來完成。 然後即可從您的 Reporting Services 點存取此資訊。 同步處理到資料倉儲資料庫的資料會保留三年。 內建工作會定期移除超過三年的資料。
 
 同步處理的資料包括來自全域資料和站台資料群組的下列資料：
 - 基礎結構健全狀況
@@ -46,15 +47,22 @@ ms.lasthandoff: 07/26/2017
 
 
 ## <a name="prerequisites-for-the-data-warehouse-service-point"></a>資料倉儲服務點的必要條件
+- 僅階層中的頂層站台才支援資料倉儲站台系統角色。 (管理中心網站或獨立主要站台)。
 - 您安裝站台系統角色的電腦需要 .NET Framework 4.5.2 或更新版本。
 - 安裝站台系統角色之電腦的電腦帳戶是用來與資料倉儲資料庫同步處理資料。 此帳戶需要下列權限：  
   - 將裝載資料倉儲資料庫之電腦上的**系統管理員**。
   - 資料倉儲資料庫上的 **DB_owner** 權限。
   - 頂層站台站台資料庫的 **DB_reader** 和「執行」權限。
--   SQL Server 2012 或更新版本之預設或具名執行個體支援資料倉儲資料庫。 版本必須是 Enterprise 或 Datacenter。
-  - SQL Server AlwaysOn 可用性群組︰不支援此設定。
-  - SQL Server 叢集︰ 不支援 SQL Server 容錯移轉叢集。 這是因為資料倉儲資料庫從未在 SQL Server 容錯移轉叢集上進行深度測試。
-  - 當資料倉儲資料庫位於遠端站台伺服器資料庫時，您必須具備裝載資料庫之 SQL Server 的個別授權。
+- 資料倉儲資料庫需要使用 SQL Server 2012 或更新版本。 可以是 Standard、Enterprise 或 Datacenter 版本。
+- 下列的 SQL Server 組態可以用來裝載倉儲資料庫：  
+  - 預設執行個體
+  - 具名執行個體
+  - SQL Server AlwaysOn 可用性群組
+  - SQL Server 容錯移轉叢集
+-   當資料倉儲資料庫位於遠端站台伺服器資料庫時，您必須具備裝載資料庫之每部 SQL Server 的個別授權。
+- 如果您使用[分散式檢視](/sccm/core/servers/manage/data-transfers-between-sites#bkmk_distviews)，必須在裝載管理中心網站站台資料庫的同一部伺服器上安裝資料倉儲服務點站台系統角色。
+
+
 
 > [!IMPORTANT]  
 > 當執行「資料倉儲」服務點或裝載資料倉儲資料庫的電腦下列其中一種語言時，便不支援「資料倉儲」：
@@ -65,9 +73,7 @@ ms.lasthandoff: 07/26/2017
 
 
 ## <a name="install-the-data-warehouse"></a>安裝資料倉儲
-您只能在階層的頂層站台 (管理中心網站或 擴充獨立主要站台) 安裝資料倉儲站台系統角色。
-
-每個階層都支援此角色的單一執行個體，且可以位於該頂層站台的任何站台系統上。 裝載倉儲資料庫的 SQL Server 可以是本機站台系統角色，或者遠端站台系統角色。 雖然資料倉儲可搭配安裝於相同站台的 Reporting Services 點運作，這兩個站台系統角色不必安裝在同一部伺服器上。   
+每個階層都支援此角色的單一執行個體，位於該頂層站台的任何站台系統上。 裝載倉儲資料庫的 SQL Server 可以是本機站台系統角色，或者遠端站台系統角色。 雖然資料倉儲可搭配安裝於相同站台的 Reporting Services 點運作，這兩個站台系統角色不必安裝在同一部伺服器上。   
 
 若要安裝角色，使用「新增站台系統角色精靈」 或「建立站台系統伺服器精靈」。 如需詳細資訊，請參閱[安裝站台系統角色](/sccm/core/servers/deploy/configure/install-site-system-roles)。  
 
@@ -83,7 +89,8 @@ ms.lasthandoff: 07/26/2017
  - **SQL Server 執行個體名稱 (如適用)**：   
  如果您沒有使用 SQL Server 的預設執行個體，您必須指定執行個體。
  - **資料庫名稱**：   
- 指定資料倉儲資料庫的名稱。  Configuration Manager 將以此名稱建立資料倉儲資料庫。 如果您指定的資料庫名稱已存在於 SQL Server 執行個體上，Configuration Manager 會使用該資料庫。
+ 指定資料倉儲資料庫的名稱。 資料庫名稱不能超過 10 個字元。 (未來的版本將增加支援的名稱長度)。
+ Configuration Manager 會以此名稱建立資料倉儲資料庫。 如果您指定的資料庫名稱已存在於 SQL Server 執行個體上，Configuration Manager 會使用該資料庫。
  - **連線時要使用的 SQL Server 連接埠**：   
  指定針對裝載資料倉儲資料庫之 SQL Server 設定的 TCP/IP 連接埠號碼。 資料倉儲同步處理服務會使用此連接埠來連線到資料倉儲資料庫。  
 
@@ -125,7 +132,7 @@ ms.lasthandoff: 07/26/2017
 ## <a name="move-the-data-warehouse-database"></a>移動資料倉儲資料庫
 您可以使用下列步驟將資料倉儲資料庫移至新的 SQL Server：
 
-1.  使用 SQL Server Management Studio 備份資料倉儲資料庫，然後將該資料庫還原到將裝載資料倉儲之新電腦上的 SQL Server。   
+1.  使用 SQL Server Management Studio 備份資料倉儲資料庫。 然後，將該資料庫還原到裝載資料倉儲的新電腦上的 SQL Server。   
 > [!NOTE]     
 > 當您將資料庫還原到新的伺服器之後，請確定新資料倉儲資料庫的資料庫存取權限與原始資料倉儲資料庫的權限相同。  
 
@@ -140,13 +147,13 @@ ms.lasthandoff: 07/26/2017
  - *Microsoft.ConfigMgrDataWarehouse.log* - 使用此記錄可調查站台資料庫與資料倉儲資料庫之間的資料同步處理。
 
 **設定失敗**  
- 在遠端站台系統伺服器上的資料倉儲服務點安裝失敗，當資料倉儲是該電腦上安裝的第一個站台系統角色。  
+ 當資料倉儲是遠端站台系統伺服器上安裝的第一個站台系統角色時，在該電腦上的資料倉儲服務點安裝會失敗。  
   - **解決方式**：   
     請確定您要安裝資料倉儲服務點的電腦已經裝載至少一個其他站台系統角色。  
 
 
 **已知的同步處理問題**：   
-因為 *Microsoft.ConfigMgrDataWarehouse.log* 中下列原因，同步處理失敗：**「無法填入結構描述物件」**  
+同步處理會因為 *Microsoft.ConfigMgrDataWarehouse.log* 中的下列原因失敗：**“failed to populate schema objects” (無法填入結構描述物件)**  
  - **解決方式**：  
     請確定裝載站台系統角色之電腦的電腦帳戶是資料倉儲資料庫上的 **db_owner**。
 
@@ -167,7 +174,7 @@ ms.lasthandoff: 07/26/2017
     2. 開啟 [SQL Server Configuration Manager]，在 [SQL Server 網路組態] 底下以滑鼠右鍵按一下 [MSSQLSERVER 的通訊協定] 並選取 [內容]。 然後，在 [憑證] 索引標籤上，選取 [資料倉儲 SQL Server 識別憑證] 作為憑證，然後儲存變更。  
     3. 開啟 [SQL Server Configuration Manager]，在 [SQL Server 服務] 底下，重新啟動 **SQL Server 服務**與 **Reporting Service**。
     4.  開啟 Microsoft Management Console (MMC) 並加入 [憑證] 嵌入式管理單元，選取以管理本機電腦 [電腦帳戶] 的憑證。 然後，在 MMC 中，展開 [個人] 資料夾 > [憑證]，並將**資料倉儲 SQL Server 識別憑證**匯出為 **DER 編碼二進位 X.509 (.CER)** 檔案。    
-  2.    在裝載 SQL Server Reporting Services 的電腦上，開啟 MMC 並加入 [憑證] 嵌入式管理單元，然後選取以管理 [電腦帳戶] 的憑證。 在 [信任的根憑證授權單位] 資料夾底下，匯入**資料倉儲 SQL Server 識別憑證**。
+  2.    在裝載 SQL Server Reporting Services 的電腦上，開啟 MMC 並加入 [憑證] 嵌入式管理單元。 然後選取管理 [電腦帳戶] 的憑證。 在 [信任的根憑證授權單位] 資料夾底下，匯入**資料倉儲 SQL Server 識別憑證**。
 
 
 ## <a name="data-warehouse-dataflow"></a>資料倉儲資料流程   
@@ -186,5 +193,5 @@ ms.lasthandoff: 07/26/2017
 |:------:|-----------|  
 | **A**  |  使用者使用內建報表要求資料。 此要求會使用 SQL Server Reporting Services 傳遞到 Reporting Services 點。 |  
 | **B**  |      大部分報告是針對目前的資訊，並會對站台資料庫執行這些要求。 |  
-| **C**  | 當報告要求歷程記錄資料時，使用其中一個 [類別] 為 [資料倉儲] 的報告，對資料倉儲資料庫執行要求。   |  
+| **C**  | 當報告要求歷程記錄資料時，會透過使用其中一個 [類別] 為 [資料倉儲] 的報告，對資料倉儲資料庫執行要求。   |  
 

@@ -2,7 +2,7 @@
 title: "建立 Exchange ActiveSync 電子郵件設定檔 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中建立和設定與 Microsoft Intune 搭配運作的電子郵件設定檔。"
 ms.custom: na
-ms.date: 03/28/2017
+ms.date: 07/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 761c3f58f7c57d8f87ee802da37821895062546d
-ms.openlocfilehash: bcf337d2abbcd5aad0f99098f6afd4a73ada3a0b
+ms.translationtype: HT
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: 7434c98f2217cf63fdcd250b91e772de72daaea9
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -48,7 +47,7 @@ ms.lasthandoff: 05/17/2017
 
  除了在裝置上設定電子郵件帳戶外，您也可以設定連絡人、行事曆和工作的同步處理設定。  
 
- 建立電子郵件設定檔時，您可以加入多種安全性設定。 這些設定包括使用 System Center Configuration Manager 憑證設定檔所設定的身分識別、加密和簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。    
+ 建立電子郵件設定檔時，您可以加入多種安全性設定。 這些設定包括使用 System Center Configuration Manager 憑證設定檔所設定的身分識別、加密和簽署憑證。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles.md)。    
 
 ## <a name="create-an-exchange-activesync-email-profile"></a>建立 Exchange ActiveSync 電子郵件設定檔  
 
@@ -104,19 +103,21 @@ ms.lasthandoff: 05/17/2017
 
     -   **身分識別憑證**： 選擇 [選取]，然後選擇要用於身分識別的憑證。  
 
-        > [!NOTE]  
-        > 您必須先將身分識別憑證設定為簡單憑證註冊通訊協定 (SCEP) 憑證設定檔，才能選擇身分識別憑證。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
+         身分識別憑證必須是 SCEP 憑證，不得使用 PFX 憑證。  若要深入了解，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
 
          只有當選擇 [驗證方法] 下方的 [憑證] 時，才能使用這個選項。  
 
     -   **使用 S/MIME**： 使用 S/MIME 加密傳送外寄電子郵件。 這個選項僅適用於 iOS 裝置。 選擇下列選項：
 
+        -   **簽署憑證**。  選擇 [選取]，然後選擇要用於加密的憑證設定檔。  
+
+            設定檔可以是 SCEP 或 PFX 憑證。  不過，如果同時使用簽署和加密，您必須選取用於簽署和加密*兩者*的 PFX 憑證設定檔。
+
         -   **加密憑證**： 選擇 [選取]，然後選擇要用於加密的憑證。 您只能選擇一個 PFX 憑證作為加密憑證。
 
-        如果您同時選擇加密憑證及簽署憑證，它們都必須是 PFX 格式。
+        -   若要加密 iOS 裝置上的所有郵件訊息，請啟用 [需要加密] 核取方塊。    
 
-        > [!NOTE]  
-        > 您必須先將憑證設定為 SCEP 或 PFX 憑證設定檔，才能選擇憑證。 如需憑證設定檔的詳細資訊，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
+         您必須先建立憑證設定檔，才能在此選擇。  若要深入了解，請參閱 [System Center Configuration Manager 中的憑證設定檔](/sccm/protect/deploy-use/introduction-to-certificate-profiles)。  
 
 ## <a name="configure-synchronization-settings-for-the-exchange-activesync-email-profile"></a>進行 Exchange ActiveSync 電子郵件設定檔的同步處理設定  
 

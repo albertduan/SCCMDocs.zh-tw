@@ -16,11 +16,11 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 robots: noindex
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 216d288aa7b7f2b98df86f59355d879366dcd44d
-ms.openlocfilehash: 4baa6e0fe009f5f7dc33f5ab4adb1ec5e5c5271b
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 6630d0170df22f46f14df241ffd8d48266c69263
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 
@@ -277,6 +277,31 @@ ms.lasthandoff: 05/17/2017
       * iOS 6 或更新版本
       * Android 4.0+
       * Samsung KNOX Standard 4.0 或更新版本
+<br></br>
+* **必要的密碼類型**。 指定使用者必須建立英數密碼還是數值密碼。 如果是英數密碼，您還需指定密碼必須包含的字元集數目下限。 字元集共有四種：小寫字母、大寫字母、符號和數字。
+
+    **支援於：**
+    * Windows Phone 8 或更新版本
+    * Windows 8.1+
+    * iOS 6 或更新版本
+<br></br>
+* **封鎖裝置上的 USB 偵錯**。 您不需要進行此設定，因為 Android for Work 裝置上已停用 USB 偵錯。
+
+    **支援於：**
+    * Android 4.0+
+    * Samsung KNOX Standard 4.0 或更新版本
+<br></br>
+* **封鎖來自不明來源的應用程式**。 要求裝置必須防止來自不明來源的應用程式安裝。 您不需要進行此設定，因為 Android for Work 裝置一律會限制來自不明來源的安裝。
+
+    **支援於：**
+    * Android 4.0+
+    * Samsung KNOX Standard 4.0 或更新版本
+<br></br>
+* **需要對應用程式進行威脅掃描**。 此設定會指定在裝置上啟用 [驗證應用程式] 功能。 
+
+    **支援於：**
+    * Android 4.2 到 4.4
+    * Samsung KNOX Standard 4.0 或更新版本
 
 ### <a name="find-an-app-id"></a>尋找應用程式識別碼
 

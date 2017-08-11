@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
-ms.openlocfilehash: f5feccc4f810e1a94bb7dcdd5ad507d84b9c3b4a
+ms.translationtype: HT
+ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
+ms.openlocfilehash: 32b24b3637dfafe401ea1d9f51b3769aa749f544
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 # <a name="task-sequence-built-in-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的工作順序內建變數
@@ -83,7 +82,8 @@ ms.lasthandoff: 05/17/2017
 |SMSTSDriverRequestResolveTimeOut|使用此變數指定在「自動套用驅動程式」工作順序步驟期間，等待驅動程式目錄要求 HTTP 名稱解析的秒數。 如果連線時間超過逾時設定，便會取消要求。 根據預設，逾時設定為 60 秒。|
 |SMSTSDriverRequestSendTimeOut|使用此變數指定在「自動套用驅動程式」工作順序步驟期間，傳送驅動程式目錄要求時所要使用的秒數。 如果要求時間超過逾時設定，便會取消要求。 根據預設，逾時設定為 60 秒。|
 |SMSTSErrorDialogTimeout|工作順序發生錯誤時，會顯示對話方塊，並在這個變數所指定的秒數後自動關閉。 預設會在 **900** 秒 (15 分鐘) 後自動關閉對話方塊。|  
-|TSErrorOnWarning|使用這個變數，指定工作順序引擎是否會考慮將「應用程式安裝」工作順序步驟期間所偵測到的警告視為錯誤。 當一或多個應用程式或必要的相依性由於不符合需求而未安裝時，工作順序會將 _TSAppInstallStatus 變數設為 [警告]  。 當您將 TSErrorOnWarning 變數設為 **True** 並將 _TSAppInstallStatus 變數設為 [警告] 時，這個警告會視為錯誤。 預設行為是 **False** 值。|  
+| TSDisableProgressUI | 使用此變數以在不同的工作順序區段中隱藏或顯示工作順序進度。 | 
+|TSErrorOnWarning|使用這個變數，指定工作順序引擎是否會考慮將「應用程式安裝」工作順序步驟期間所偵測到的警告視為錯誤。 當一或多個應用程式或必要的相依性由於不符合需求而未安裝時，工作順序會將 _TSAppInstallStatus 變數設為 [警告]  。 當您將 TSErrorOnWarning 變數設為 **True** 並將 _TSAppInstallStatus 變數設為 [警告] 時，這個警告會視為錯誤。 預設行為是 **False** 值。| 
 |SMSTSLanguageFolder|使用此變數變更非語言相關開機映像的顯示語言。|  
 |SMSTSLocalDataDrive|指定當工作順序正在執行時，暫存檔案儲存在目的地電腦上的位置。<br /><br /> 這個變數必須在工作順序啟動之前設定，例如透過設定集合變數。 Configuration Manager 會在工作順序啟動之後定義 _SMSTSMDataPath 變數。|  
 |SMSTSMP|使用此變數指定 Configuration Manager 管理點的 URL 或 IP 位址。|  

@@ -16,10 +16,10 @@ author: Mtillman
 ms.author: mtillman
 manager: angrobe
 ms.translationtype: HT
-ms.sourcegitcommit: 94dc0335dab74bec7989753343418fae49b3ebe9
-ms.openlocfilehash: ab011cb06b43b06fc6e2a89e2f413d35a541a111
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: 8e660c667daec9b1f7630e15599df5e3cfe55b5e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/14/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
@@ -45,6 +45,19 @@ ms.lasthandoff: 07/14/2017
 - **針對 Android 與 Windows Phone 所新增的終止支援通知**
 
     針對 Android 與 Windows Phone 版本，已新增了終止支援的新通知。 如需詳細資料，請參閱[通知](#notices)。
+
+
+
+### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager 的新功能 (最新分支)
+
+下列是過去 Configuration Manager Technical Preview 版本提供的功能，目前在 Intune 與 Configuration Manager (最新分支) 1706 版的混合式部署中已可供使用。
+
+- [針對 Entrust 憑證授權單位的 Entrust 支援](/sccm/core/get-started/capabilities-in-technical-preview-1706#support-for-entrust-certification-authorities)
+- [新的行動應用程式管理原則設定](/sccm/core/plan-design/changes/whats-new-in-version-1706#new-mobile-application-management-policy-settings)
+- [Android for Work 共用設定的更新](/sccm/core/plan-design/changes/whats-new-in-version-1706#updates-to-android-for-work-sharing-configuration)
+- [新的裝置合規性政策規則](/sccm/core/plan-design/changes/whats-new-in-version-1706#new-device-compliance-policy-rules)
+- [未受 Configuration Manager 用戶端管理的 Windows 10 裝置新組態設定](/sccm/core/plan-design/changes/whats-new-in-version-1706#new-configuration-settings-for-windows-10-devices-that-are-not-managed-with-the-configuration-manager-client)
+- [針對 macOS VPN 設定檔的 Cisco (IPsec) 支援](/sccm/core/get-started/capabilities-in-technical-preview-1706#cisco-ipsec-support-for-macos-vpn-profiles)
 
 ## <a name="june-2017"></a>2017 年 6 月
 

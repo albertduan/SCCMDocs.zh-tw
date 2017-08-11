@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: aa8924a013ebdbee888cab33001fddbe7ad2d67e
-ms.openlocfilehash: 80a716f5a42a81e5550eb1b5c7f14534e14a4fb7
+ms.translationtype: HT
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: 1e00804d27ecef2aadd8bfa395db1919c46243ee
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 08/02/2017
 
 ---
 
@@ -34,10 +33,16 @@ ms.lasthandoff: 05/17/2017
 
 本主題描述如何建立受信任根和 SCEP 憑證設定檔。 如果您想要建立 PFX 憑證設定檔，請參閱[建立 PFX 憑證設定檔](../../protect/deploy-use/create-pfx-certificate-profiles.md)。
 
+建立憑證設定檔：
 
-## <a name="create-a-new-certificate-profile"></a>建立新的憑證設定檔  
+1.  啟動建立憑證設定檔精靈。
+1.  提供憑證的一般資訊。
+1.  設定受信任的憑證授權單位 (CA) 憑證。  
+1.  設定 SCEP 憑證資訊 (僅適用於 SCEP 憑證)。  
+1.  指定憑證設定檔的支援平台。
 
-### <a name="start-the-create-certificate-profile-wizard"></a>啟動建立憑證設定檔精靈  
+
+## <a name="start-the-create-certificate-profile-wizard"></a>啟動建立憑證設定檔精靈  
 
 1.  在 System Center Configuration Manager 主控台中，按一下 [資產與相容性]。  
 
@@ -45,7 +50,7 @@ ms.lasthandoff: 05/17/2017
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立憑證設定檔] 。  
 
-### <a name="provide-general-information-about-the-certificate-profile"></a>提供憑證設定檔的一般相關資訊  
+## <a name="provide-general-information-about-the-certificate-profile"></a>提供憑證設定檔的一般相關資訊  
 
 在 [建立憑證設定檔精靈] 的 [一般]  頁面上，指定下列資訊：  
 
@@ -59,11 +64,12 @@ ms.lasthandoff: 05/17/2017
 
 -   **簡單憑證註冊通訊協定 (SCEP) 設定**：如果您使用簡單憑證註冊通訊協定和網路裝置註冊服務角色服務來要求使用者或裝置的憑證，請選取此憑證設定檔類型。
 
--   **個人資訊交換 PKCS #12 (PFX) 設定 - 匯入**：選取此選項以匯入 PFX 憑證。 若要深入了解如何建立 PFX 憑證，請參閱[建立 PFX 憑證設定檔](../../protect/deploy-use/create-pfx-certificate-profiles.md)。
+-   **個人資訊交換 PKCS #12 (PFX) 設定 - 匯入**：選取此選項以匯入 PFX 憑證。 若要深入了解 PFX 憑證的建立，請參閱[匯入 PFX 憑證設定檔](/sccm/mdm/deploy-use/import-pfx-certificate-profiles.md)。
+
+-   **個人資訊交換 PKCS #12 (PFX) 設定 - 建立**：選取此選項以使用憑證授權單位處理 PFX 憑證。 若要深入了解如何建立 PFX 憑證，請參閱[建立 PFX 憑證設定檔](/sccm/mdm/deploy-use/create-pfx-certificate-profiles.md)。
 
 
-
-### <a name="configure-a-trusted-ca-certificate"></a>設定受信任 CA 憑證  
+## <a name="configure-a-trusted-ca-certificate"></a>設定受信任 CA 憑證  
 
 > [!IMPORTANT]  
 >  在建立 SCEP 憑證設定檔之前，您還必須設定至少一個信任的 CA 憑證設定檔。    
@@ -89,7 +95,7 @@ ms.lasthandoff: 05/17/2017
 2.  使用 [憑證指紋]  值來確認您已匯入正確的憑證。  
 
 
-### <a name="configure-scep-certificate-information-only-for-scep-certificates"></a>設定 SCEP 憑證資訊 (僅適用於 SCEP 憑證)  
+## <a name="configure-scep-certificate-information-only-for-scep-certificates"></a>設定 SCEP 憑證資訊 (僅適用於 SCEP 憑證)  
 
 1.  在 [建立憑證設定檔精靈] 的 [SCEP 伺服器]  頁面上，指定會透過 SCEP 發行憑證的 NDES 伺服器之 URL。 您可以選擇依據憑證登錄點站台系統伺服器，自動指派 NDES URL，或以手動方式新增 URL。  
 
@@ -183,7 +189,7 @@ ms.lasthandoff: 05/17/2017
    >  如果您指定未部署到使用者或裝置的根 CA 憑證，System Center Configuration Manager 將不會起始您在此憑證設定檔中設定的憑證要求。  
 
 
-###  <a name="specify-supported-platforms-for-the-certificate-profile"></a>指定憑證設定檔的支援平台  
+##  <a name="specify-supported-platforms-for-the-certificate-profile"></a>指定憑證設定檔的支援平台  
 
 1. 在 [建立憑證設定檔精靈] 的 [支援的平台]  頁面上，選取您要安裝憑證設定檔的作業系統。 或者，按一下 [全選]  將憑證設定檔安裝到所有可用的作業系統。
 2. 檢閱精靈的 [摘要] 頁面，並選擇 [完成]。 

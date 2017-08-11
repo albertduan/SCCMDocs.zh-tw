@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0cf2ac6440588ccf4848baa7a195f78e8675447d
-ms.openlocfilehash: c6a1eb9ccaee45eb242fb320cb6b492d1a39d349
+ms.translationtype: HT
+ms.sourcegitcommit: 0663ba84762c44a5c303562548499f195bae9e1c
+ms.openlocfilehash: cc678c1133b1944f55bcad309cf9ede9f0660b57
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="manage-boot-images-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理開機映像
@@ -33,15 +32,7 @@ Configuration Manager 中的開機映像是 [Windows PE (WinPE)](https://msdn.mi
 ## <a name="BKMK_BootImageDefault"></a> 預設開機映像
 Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台，另一種支援 x64 平台。 這些映像儲存於：\\\\<伺服器名稱>\SMS_<站台碼>\osd\boot\\<*x64*> 或 <*i386*>。 預設開機映像會根據您所採取的動作更新或重新產生。
 
-**使用 [更新與服務] 安裝最新版的 Configuration Manager** 自 1702 版開始，在您升級 Windows ADK 版本並使用 [更新與服務] 安裝最新版的 Configuration Manager 時，Configuration Manager 會重新產生預設開機映像。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端、驅動程式及自訂等等。不會修改自訂開機映像。
-
-在 1702 版之前，Configuration Manager 會使用用戶端元件、驅動程式、自訂等更新現有的開機映像 (boot.wim)，但不會使用 Windows ADK 的最新版 Windows PE。 您必須手動將開機映像修改為使用新版的 Windows ADK。
-
-**從 Configuration Manager 2012 升級至 Configuration Manager 最新分支 (CB)** 使用安裝程序將 Configuration Manager 2012 升級至 Configuration Manager CB 時，Configuration Manager 會重新產生預設開機映像。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端，且所有自訂皆維持不變。 不會修改自訂開機映像。
-
-**使用開機映像更新發佈點**：當您在 Configuration Manager 主控台中從**開機映像**節點使用**更新發佈點**動作時，Configuration Manager 會使用用戶端元件、驅動程式及自訂等更新預設開機映像，但不會使用 Windows ADK 的最新版 Windows PE。 不會修改自訂開機映像。
-
-此外，請於進行任何上述動作時考慮下列項目︰
+針對在下列各節中所描述的任何動作，請考慮下列項目：
 - 來源驅動程式物件 (包括驅動程式來源檔案) 必須有效，否則驅動程式將不會新增到站台的開機映像。
 - 開機映像若非以預設開機映像為基礎，即使使用相同的 Windows PE 版本，也不會進行修改。
 - 您必須將修改的開機映像重新發佈至發佈點。
@@ -50,6 +41,21 @@ Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台�
 
 > [!NOTE]
 > Configuration Manager 追蹤記錄檔工具會新增至您新增至**軟體程式庫**的所有開機映像中。 當您在 Windows PE 中時，可以從命令提示字元鍵入 **CMTrace** 來啟動 Configuration Manager 追蹤記錄檔工具。  
+
+### <a name="use-updates-and-servicing-to-install-the-latest-version-of-configuration-manager"></a>使用 [更新與服務] 來安裝最新版本的 Configuration Manager
+從 1702 版開始，在您升級 Windows ADK 版本並使用 [更新與服務] 安裝最新版的 Configuration Manager 時，Configuration Manager 會重新產生預設開機映像。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端、驅動程式及自訂等等。不會修改自訂開機映像。
+
+在 1702 版之前，Configuration Manager 會使用用戶端元件、驅動程式、自訂等更新現有的開機映像 (boot.wim)，但不會使用 Windows ADK 的最新版 Windows PE。 您必須手動將開機映像修改為使用新版的 Windows ADK。
+
+### <a name="upgrade-from-configuration-manager-2012-to-configuration-manager-current-branch-cb"></a>從 Configuration Manager 2012 升級成 Configuration Manager 最新分支 (CB)
+使用安裝程序將 Configuration Manager 2012 升級至 Configuration Manager CB 時，Configuration Manager 會重新產生預設開機映像。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端，且所有自訂皆維持不變。 不會修改自訂開機映像。
+
+### <a name="update-distribution-points-with-the-boot-image"></a>使用開機映像更新發佈點
+當您在 Configuration Manager 主控台中使用來自 [開機映像] 節點的 [更新發佈點] 動作時，Configuration Manager 會使用用戶端元件、驅動程式及自訂等更新預設開機映像。    
+
+從 Configuration Manager 1706 版開始，您可以選擇在開機映像中重新載入 (來自 Windows ADK 安裝目錄的) 最新版本的 Windows PE。 [更新發佈點] 精靈的 [一般] 頁面會提供站台伺服器上所安裝的 Windows ADK 版本、開機映像中使用 Windows PE 的 Windows ADK 版本，以及 Configuration Manager 用戶端的版本。 您可以使用此資訊來協助決定是否要重新載入開機映像。 此外，當您在 [開機映像] 節點中檢視開機映像時，您也可以利用新的 [用戶端版本] 欄位來了解每個開機映像所使用的 Configuration Manager 用戶端版本為何。    
+
+不會修改自訂開機映像。
 
 ##  <a name="BKMK_BootImageCustom"></a> 自訂開機映像  
  如果開機映像是以支援的 Windows ADK 版本中的 Windows PE 版本為基礎，您可以在 Configuration Manager 主控台自訂開機映像或[修改開機映像](#BKMK_ModifyBootImages)。 當站台升級為新版本並安裝新版 Windows ADK 時，自訂開機映像 (不位於預設的開機映像位置) 並不會更新成使用新版 Windows ADK。 發生這種情況時，您將無法再於 Configuration Manager 主控台中自訂開機映像。 不過，它們將如升級之前一樣繼續運作。  
@@ -123,7 +129,7 @@ Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台�
 >   
 >  如需如何使用 PXE 部署作業系統的詳細資訊，請參閱[使用 PXE 透過網路部署 Windows](../deploy-use/use-pxe-to-deploy-windows-over-the-network.md)。  
 
- 如需發佈開機映像的步驟，請參閱 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)。  
+ 如需發佈開機映像的步驟，請參閱 [Distribute content](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_distribute)。  
 
 ##  <a name="BKMK_ModifyBootImages"></a> 修改開機映像  
  您可以新增或移除映像的裝置驅動程式，或編輯與開機映像相關聯的內容。 新增或移除的裝置驅動程式可能包含網路介面卡或大量儲存裝置驅動程式。 修改開機映像時，請考慮下列因素：  
@@ -132,7 +138,7 @@ Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台�
 
 -   修改開機映像時，開機映像不會變更開機映像參考的任何相關聯的封裝。  
 
--   您對開機映像進行變更之後，必須「更新」  已有開機映像之發佈點上的開機映像，以便提供最新版的開機映像。 如需詳細資訊，請參閱 [Manage content you have distributed](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkmanagea-manage-the-content-you-have-distributed)。  
+-   您對開機映像進行變更之後，必須「更新」  已有開機映像之發佈點上的開機映像，以便提供最新版的開機映像。 如需詳細資訊，請參閱 [Manage content you have distributed](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_manage)。  
 
  請使用下列程序修改開機映像。  
 
@@ -213,7 +219,7 @@ Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台�
         -   設定 [預先設置的發佈點設定]  ，指定如何將開機映像發佈到已啟用預先設置之內容的發佈點。  
 
             > [!NOTE]  
-            >  如需預先設置內容的詳細資訊，請參閱 [Prestage content](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkprestagea-use-prestaged-content)。  
+            >  如需預先設置內容的詳細資訊，請參閱 [Prestage content](/sccm/core/servers/deploy/configure/deploy-and-manage-content#bkmk_prestage)。  
 
     -   在 [內容位置]  索引標籤上，選取發佈點或發佈點群組，並執行下列任何一項動作：  
 

@@ -1,7 +1,7 @@
 ---
 title: "探索方法 | Microsoft Docs"
 ms.custom: na
-ms.date: 2/3/2017
+ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: 8
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 81d7516b814d2db74d4d857871071c8911755754
-ms.openlocfilehash: 6e53f501281e31f2b7df54b9740eac970f108257
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 442e5e1fbddd00248819a8de79adc78929474fc0
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>關於 System Center Configuration Manager 的探索方法
@@ -189,6 +189,27 @@ Active Directory 系統探索動作會記錄在站台伺服器 **&lt;裝路徑\>
 Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝路徑\>\LOGS** 資料夾的 **adusrdis.log** 檔案中。  
 
 如需如何設定此探索方法的詳細資訊，請參閱 [Configure discovery methods for System Center Configuration Manager](../../../../core/servers/deploy/configure/configure-discovery-methods.md) (設定 System Center Configuration Manager 的探索方法)。  
+
+## <a name="azureaddisc"></a> Azure Active Directory 使用者探索
+從 1706 版開始，在您設定環境以使用 Azure 服務時，將可以使用 Azure Active Directory (Azure AD) 使用者探索。
+在您的 Azure AD 中使用此探索方法來搜尋向 Azure AD 執行個體驗證的使用者，以尋找下列屬性：  
+-   objectId
+-   displayName
+-   mail
+-   mailNickname
+-   onPremisesSecurityIdentifier
+-   userPrincipalName
+-   AAD tenantID
+
+此方法支援針對來自 Azure AD 的使用者資料進行完整同步處理和差異同步處理。 此資訊接著可搭配您透過其他探索方法所收集到的探索資料使用。
+
+Azure AD 使用者探索的動作，會記錄在位於階層頂層站台伺服器上的 SMS_AZUREAD_DISCOVERY_AGENT.log 檔案之中。
+
+若要設定 Azure AD 使用者探索，請使用 Azure 服務精靈。  如需有關如何設定此探索方法的相關資訊，請參閱[設定 Azure AD 使用者探索](/sccm/core/servers/deploy/configure/configure-discovery-methods)。
+
+
+
+
 
 ##  <a name="bkmk_aboutHeartbeat"></a> 活動訊號探索  
 **可設定︰**是  
@@ -407,7 +428,7 @@ Active Directory 使用者探索動作會記錄在站台伺服器 **&lt;安裝�
 
 探索會在指定的位置上搜尋物件，然後嘗試收集與這些物件相關的資訊。 當能夠識別足夠的資源相關資訊時便建立 DDR。 必要的資訊會依使用的探索方法而有所不同。  
 
-如果您要設定在不同 Configuration Manager 站台上執行相同的探索方法，以善用本機 Active Directory 伺服器查詢，您可以使用一組唯一的探索選項來設定每個站台。 由於探索資料會在階層中的每個站台間共用，因此請避免重複這些設定以便一次就有效率地探索每個資源。 
+如果您要設定在不同 Configuration Manager 站台上執行相同的探索方法，以善用本機 Active Directory 伺服器查詢，您可以使用一組唯一的探索選項來設定每個站台。 由於探索資料會在階層中的每個站台間共用，因此請避免重複這些設定以便一次就有效率地探索每個資源。
 
 對於規模較小的環境，建議您只在階層中的一個站台上執行各探索方法，藉此減少系統管理上的額外負擔，並避免執行多個探索動作來重新探索相同的資源。 當您將執行探索的站台數目降到最低時，就能減少探索所使用的整體網路頻寬。 您也可以減少站台伺服器所建立及必須處理的整體 DDR 數目。  
 

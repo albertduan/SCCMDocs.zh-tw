@@ -15,12 +15,11 @@ caps.latest.revision: 36
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3619a73d3a39659de927e1711a7ec81de9918064
-ms.openlocfilehash: 34ddb646137aaf1160d850ba7c1e0109f467225d
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 2bbc8935bee306ed0bc312cc43b8f5374a8df7ff
 ms.contentlocale: zh-tw
-ms.lasthandoff: 06/13/2017
-
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="install-in-console-updates-for-system-center-configuration-manager"></a>安裝適用於 System Center Configuration Manager 的主控台內更新
@@ -289,6 +288,9 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 ##  <a name="bkmk_retry"></a> 重試失敗更新的安裝  
 當更新安裝失敗時，請檢閱主控台內的意見反應，以找出適用於警告和錯誤的解決方式。 您也可以檢視站台伺服器上的 ConfigMgrPrereq.log，來取得更多詳細資料。 重試安裝更新之前，您必須先修正錯誤，並且應該修正警告。  
+
+> [!TIP]  
+> 如果無法下載或複寫某個更新，您可以使用[更新重設工具](/sccm/core/servers/manage/update-reset-tool)。 此工具會於執行 1706 版或更新版本的站台上提供。 
 
 當您準備好要重試安裝更新時，請選取失敗的更新，然後選擇適用的選項。 更新安裝重試行為取決於您啟動重試的節點以及所使用的重試選項。  
 

@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
-ms.openlocfilehash: 7a5ff0e75b8cdac68e3854c4f5aba01a7d423e9b
+ms.translationtype: HT
+ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
+ms.openlocfilehash: 506df4f7c7baa5f0586a1ddf0cb02b3de9f4d076
 ms.contentlocale: zh-tw
-ms.lasthandoff: 12/30/2016
-
+ms.lasthandoff: 08/04/2017
 
 ---
 # <a name="how-to-manage-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中管理 Linux 和 UNIX 伺服器的用戶端
@@ -31,7 +30,7 @@ ms.lasthandoff: 12/30/2016
 當您使用 System Center Configuration Manager 管理 Linux 和 UNIX 伺服器時，可以設定集合、維護期間和用戶端設定來協助管理伺服器。 此外，雖然 Linux 和 UNIX 的 Configuration Manager 用戶端沒有使用者介面，但是您可以強制用戶端手動輪詢用戶端原則。
 
 ##  <a name="BKMK_CollectionsforLnU"></a> Collections of Linux and UNIX servers  
- 使用集合來管理 Linux 和 UNIX 伺服器群組的方式，與使用集合來管理其他用戶端類型的方式相同。 集合可以是直接成員資格集合或查詢型集合，以識別用戶端作業系統、硬體設定或有關站台資料庫中所儲存之用戶端的其他詳細資料。 例如，您可以使用包含 Linux 和 UNIX 伺服器的集合來管理下列項目：  
+ 使用集合來管理 Linux 和 UNIX 伺服器群組的方式，與使用集合來管理其他用戶端類型的方式相同。 集合可以是直接成員資格集合，或是查詢式集合。 查詢式集合會識別用戶端作業系統、硬體設定，或其他關於存放在站台資料庫中的用戶端詳細資料。 例如，您可以使用包含 Linux 和 UNIX 伺服器的集合來管理下列設定：  
 
 -   用戶端設計  
 
@@ -43,14 +42,14 @@ ms.lasthandoff: 12/30/2016
 
  硬體清查的預設用戶端設定包含用戶端電腦之作業系統的相關資訊。 您可以使用 **Operating System** 類別的 **Caption** 屬性來識別 Linux 或 UNIX 伺服器的作業系統。  
 
- 您可以在 Configuration Manager 主控台之 [資產與相容性] 工作區的 [裝置] 節點中檢視有關執行 Linux 和 UNIX Configuration Manager 用戶端之電腦的詳細資料。 在 Configuration Manager 主控台的 [資產與相容性] 工作區中，您可以在 [作業系統] 欄中檢視每部電腦之作業系統的名稱。  
+ 在 Configuration Manager 主控台 [資產與相容性] 工作區的 [裝置] 節點中，可以針對執行 Linux 和 UNIX 版本 Configuration Manager 用戶端的電腦，檢視有關電腦的詳細資料。 在 Configuration Manager 主控台的 [資產與相容性] 工作區中，[作業系統] 欄中會顯示每部電腦的作業系統名稱。  
 
- 根據預設，Linux 和 UNIX 伺服器是 **All Systems** 集合的成員。 建議您建立僅包含 Linux 和 UNIX 伺服器或其子集的自訂集合。 這可讓您管理作業 (例如，部署軟體，或將用戶端設定指派給這類電腦的群組)，因此您可以精確地測量部署的成功與否。   
+ 根據預設，Linux 和 UNIX 伺服器是 **All Systems** 集合的成員。 建議您建立僅包含 Linux 和 UNIX 伺服器或其子集的自訂集合。 自訂集合可讓您管理作業 (例如，部署軟體，或將用戶端設定指派給同類電腦的群組)，以便能正確地評估部署是否成功。   
 
  當您建立 Linux 和 UNIX 伺服器的自訂集合時，請包含內含 Operating System 屬性之 Caption 屬性中的成員資格規則查詢。 如需建立集合的資訊，請參閱[如何在 System Center Configuration Manager 中建立集合](../../../core/clients/manage/collections/create-collections.md)。  
 
 ##  <a name="BKMK_MaintenanceWindowsforLnU"></a> Maintenance windows for Linux and UNIX servers  
- Linux 和 UNIX 伺服器的 Configuration Manager 用戶端支援使用[維護期間](../../../core/clients/manage/collections/use-maintenance-windows.md)。 這項支援與 Windows 型用戶端的支援相同。  
+ Linux 和 UNIX 伺服器的 Configuration Manager 用戶端支援使用[維護期間](../../../core/clients/manage/collections/use-maintenance-windows.md)。 對於 Windows 用戶端，此支援維持不變。  
 
 ##  <a name="BKMK_ClientSettingsforLnU"></a> Client settings for Linux and UNIX servers  
  [設定用戶端設定](../../../core/clients/deploy/configure-client-settings.md) (適用於 Linux 和 UNIX 伺服器) 的方式，與設定其他用戶端設定的方式相同。  

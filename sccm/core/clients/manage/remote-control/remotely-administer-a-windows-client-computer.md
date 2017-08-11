@@ -2,7 +2,7 @@
 title: "遠端管理 Windows 電腦 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 管理遠端的 Windows 用戶端電腦。"
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 07/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 08afca8b422474639cbdb860e555fe0da27361a4
-ms.openlocfilehash: dd794de867e1d0db47be9dc21a6d494087f76bc1
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: aecc4ccfec98932f3988f1ca1fcdc898cd417933
 ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="how-to-remotely-administer-a-windows-client-computer-by-using-system-center-configuration-manager"></a>如何使用 System Center Configuration Manager 從遠端管理 Windows 用戶端電腦
@@ -91,12 +90,11 @@ ms.lasthandoff: 12/16/2016
 
 -   在 Windows 命令提示字元中，輸入 *<Configuration Manager 安裝資料夾\>***\AdminConsole\Bin\x64\CmRcViewer.exe**  
 
-    > [!NOTE]  
-    >  CmRcViewer.exe 支援下列命令列選項：  
-    >   
-    >  -   *<位址\>* - 指定 NetBIOS 名稱、完整的網域名稱 (FQDN) 或您想要連線的用戶端電腦 IP 位址。  
-    > -   <站台伺服器名稱\> - 指定要傳送遠端控制工作階段狀態相關訊息的目標 System Center Configuration Manager 站台伺服器名稱。  
-    > -   **/?** - 顯示遠端控制檢視器的命令列選項。  
-    >   
-    >  **範例：CmRcViewer.exe** *<位址\>* *<\\\站台伺服器名稱>*  
+CmRcViewer.exe 支援下列命令列選項：  
+
+- *位址* - 指定 NetBIOS 名稱、完整的網域名稱 (FQDN) 或您想要連線的用戶端電腦 IP 位址。
+- *站台伺服器名稱* - 指定要傳送遠端控制工作階段狀態相關訊息的目標 System Center Configuration Manager 站台伺服器名稱。
+- **/?** - 顯示遠端控制檢視器的命令列選項。  
+     
+**範例：CmRcViewer.exe** *<位址\>* *<\\\站台伺服器名稱>*  
 

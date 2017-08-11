@@ -1,5 +1,4 @@
 ---
-
 title: "設定要同步處理的分類和產品 | Microsoft Docs"
 description: "請遵循下列步驟，在 Configuration Manager 主控台中設定要同步處理的分類和產品。"
 keywords: 
@@ -13,11 +12,11 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
-ms.openlocfilehash: 6add66e625c790b65edf64216c2262a5d082f820
-
-
+ms.translationtype: HT
+ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
+ms.openlocfilehash: 2da61e6e06850b36543b9fd41bd9a7d2368006fb
+ms.contentlocale: zh-tw
+ms.lasthandoff: 08/04/2017
 
 ---
 #  <a name="configure-classifications-and-products-to-synchronize"></a>設定要同步處理的分類和產品  
@@ -51,9 +50,13 @@ ms.openlocfilehash: 6add66e625c790b65edf64216c2262a5d082f820
     > - **工具：**指定有助於完成一或多項工作的公用程式或功能。  
     > - **更新彙總套件：**指定封裝在一起以便於部署的累計 Hotfix 集。 這些 Hotfix 可能包含安全性更新、重大更新、更新等。 更新彙總套件一般處理特定領域，例如安全性或產品元件。  
     > - **更新：**指定給目前已安裝的應用程式或檔案的更新。  
-    > - **升級**︰指定 Windows 10 特性與功能的升級。  
-    >   
-    >      軟體更新點和站台至少必須執行 WSUS 4.0 搭配 [Hotfix 3095113](https://support.microsoft.com/kb/3095113)，才能取得**升級**分類。  
+    > - **升級**︰指定 Windows 10 特性與功能的升級。 軟體更新點和站台至少必須執行 WSUS 4.0 搭配 [Hotfix 3095113](https://support.microsoft.com/kb/3095113)，才能取得**升級**分類。    
+    >       
+
+    > [!NOTE]    
+    > 從 Configuration Manager 1706 版開始，您也可以選取 [包含 Microsoft Surface 驅動程式與韌體更新] 核取方塊，以同步處理 Microsoft Surface 驅動程式。 所有軟體更新點必須都執行 Windows Server 2016，才能順利同步處理 Surface 驅動程式。     
+    >    
+    > 這是發行前版本功能。 發行前版本功能會包含在產品內，以便在生產環境中進行早期測試，但不應視為生產環境就緒。 您必須開啟這項功能才能使用。 如需詳細資訊，請參閱[使用發行前版本功能](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)。
 
 5.  在 [產品]  索引標籤上，指定要同步處理其軟體更新的產品，然後按一下 [關閉] 。  
 
@@ -63,14 +66,8 @@ ms.openlocfilehash: 6add66e625c790b65edf64216c2262a5d082f820
     >  當軟體更新套用到多項產品，而且至少已選取其中一項產品進行同步處理時，所有的產品都會顯示於 Configuration Manager 主控台，即使未選取某些產品。 例如，如果 Windows Server 2012 是您唯一選取的作業系統，而軟體更新套用至 Windows 8 和 Windows Server 2012，則這兩項產品都會顯示在 Configuration Manager 主控台中。  
 
     > [!IMPORTANT]  
-    >  Configuration Manager 儲存了一份產品及產品系列清單，您第一次安裝軟體更新點時就是在這份清單中選擇。 在您完成軟體更新同步處理之前，可能無法選取在 Configuration Manager 發行後所發行的產品和產品系列，因為同步處理會更新可供您選擇的可用產品和產品系列清單。  
-
+    >  Configuration Manager 儲存了一份產品及產品系列清單，您第一次安裝軟體更新點時就是在這份清單中選擇。 在您完成軟體更新同步處理之前，可能無法選取在 Configuration Manager 發行後發行的產品和產品系列，因為同步處理會更新可供您選擇的可用產品和產品系列清單。  
 
 ## <a name="next-steps"></a>後續步驟
 開始軟體更新同步處理，根據新準則擷取軟體更新。 如需詳細資訊，請參閱[同步處理軟體更新](synchronize-software-updates.md)。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
 

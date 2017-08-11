@@ -2,7 +2,7 @@
 title: "管理來自商務用 Windows 市集的應用程式 | Microsoft Docs"
 description: "使用 System Center Configuration Manager，從商務用 Windows 市集管理和部署應用程式。"
 ms.custom: na
-ms.date: 7/25/2017
+ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,10 +16,10 @@ author: robstackmsft
 ms.author: robstack
 manager: angrobe
 ms.translationtype: HT
-ms.sourcegitcommit: ef42d1483053e9a6c502f4ebcae5a231aa6ba727
-ms.openlocfilehash: 93e767c9a115b30d68871baece670977165f55f4
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 369b6a82a20a90ca534f9484c0be71096dd35a30
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/26/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 
@@ -85,6 +85,8 @@ Configuration Manager 支援在執行 Configuration Manager 用戶端的 Windows
 
 ## <a name="set-up-windows-store-for-business-synchronization"></a>設定商務用 Windows 市集同步處理
 
+### <a name="for-configuration-manager-versions-prior-to-1706"></a>針對 1706 之前的 Configuration Manager 版本
+
 **在 Azure Active Directory 中，將 Configuration Manager 登錄為 [Web 應用程式和/或 Web API] 管理工具。這個動作會提供您用戶端識別碼，以供稍後使用。**
 1. 在 [https://manage.windowsazure.com](https://manage.windowsazure.com) 的 [Active Directory] 節點中，選取您的 Azure Active Directory，然後按一下 [應用程式] > [新增]。
 2.  按一下 [加入我的組織正在開發的應用程式]。
@@ -110,6 +112,24 @@ Configuration Manager 支援在執行 Configuration Manager 用戶端的 Windows
 2.  在 [常用] 索引標籤的 [商務用 Windows 市集] 群組中，按一下 [新增商務用 Windows 市集帳戶]。 
 3.  從 Azure Active Directory 中，加入您的租用戶識別碼、用戶端識別碼及用戶端金鑰，然後完成精靈。
 4. 完成之後，您就可在 Configuration Manager 主控台的 [商務用 Windows 市集] 清單中看到您設定的帳戶。
+
+### <a name="for-configuration-manager-version-1706-and-later"></a>針對 Configuration Manager 版本 1706 和更新版本
+
+1. 在主控台中，移至 [管理] > [概觀] > [雲端服務管理] > [Azure] > [Azure 服務]，然後選擇 [設定 Azure 服務] 啟動 [Azure 服務精靈]。
+2. 在 [Azure 服務] 頁面上，選取您想要設定的服務，然後按一下 [下一步]。
+3. 在 [一般] 頁面上，提供 Azure 服務名稱的易記名稱和選擇性的描述，然後按一下 [下一步]。
+4. 在 [應用程式] 頁面上，指定您的 Azure 環境，然後按一下 [瀏覽] 以開啟 [伺服器應用程式] 視窗。
+5. 在 [伺服器應用程式] 視窗中選取您要使用的伺服器應用程式，然後按一下 [確定]。 伺服器應用程式是 Azure Web 應用程式，內含您 Azure 帳戶的設定，包括租用戶識別碼、用戶端識別碼和用戶端的祕密金鑰。 如果您沒有可用的伺服器應用程式，請使用下列其中一項︰
+    - **建立︰**若要建立新的伺服器應用程式，請按一下 [建立]。 提供應用程式和租用戶的易記名稱。 接著，您登入 Azure 後，Configuration Manager 會為您在 Azure 中建立 Web 應用程式，包括和 Web 應用程式搭配使用的用戶端識別碼及祕密金鑰。 您稍後可從 Azure 入口網站加以檢視。
+    - **匯入︰**若要使用您 Azure 訂用帳戶中已存在的 Web 應用程式，請按一下 [匯入]。 提供應用程式與租用戶的易記名稱，然後針對您要讓 Configuration Manager 使用的 Azure Web 應用程式，為其指定租用戶識別碼、用戶端識別碼及祕密金鑰。 **驗證**資訊後，請按一下 [確定] 繼續。 
+6. 檢閱 [資訊] 頁面，並依指示完成任何額外的步驟和設定。 搭配使用此服務與 Configuration Manager 需要這些設定。 例如，若要設定商務用 Windows 市集：
+    - 您必須在 Azure 中將 Configuration Manager 註冊為 Web 應用程式或 Web API，並記錄用戶端識別碼。 您同時指定用戶端金鑰，供管理工具 (也就是 Configuration Manager) 使用。
+    - 在商務用 Windows 市集主控台中，您必須將 Configuration Manager 設定為存放區管理工具、啟用對於離線授權應用程式的支援，然後至少購買一個應用程式。 
+7. 準備好繼續進行時，請按一下 [下一步] 。
+8. 在 [應用程式設定] 頁面上，完成這項服務的應用程式目錄和語言設定，然後按一下 [下一步]。
+9. 在精靈完成後，Configuration Manager 主控台會顯示您已將 [商務用 Windows 市集] 設定為 [雲端服務類型]。
+
+
 
 
 ## <a name="create-and-deploy-a-configuration-manager-application-from-a-windows-store-for-business-app"></a>從商務用 Windows 市集應用程式建立和部署 Configuration Manager 應用程式。

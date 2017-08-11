@@ -1,5 +1,4 @@
 ---
-
 title: "規劃軟體更新 | Microsoft Docs"
 description: "在 System Center Configuration Manager 生產環境中使用軟體更新之前，請務必先規劃軟體更新點基礎結構。"
 keywords: 
@@ -13,12 +12,11 @@ ms.service:
 ms.technology:
 - configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4c46bfab9b40b29654f4e883817a5508ab25b74
-ms.openlocfilehash: b5a2fd9f15992c9e5ef8aede64af5446b6852b1a
+ms.translationtype: HT
+ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
+ms.openlocfilehash: 8b739a01a6bb5cacf0f7109e2e6fa3b31dd666d3
 ms.contentlocale: zh-tw
-ms.lasthandoff: 06/28/2017
-
+ms.lasthandoff: 08/04/2017
 
 ---
 
@@ -109,11 +107,15 @@ ms.lasthandoff: 06/28/2017
 
 
 ###  <a name="BKMK_ManuallySwitchSUPs"></a>手動將用戶端切換到新軟體更新點
-從 Configuration Manager 版本 1606 開始，您可以啟用讓 Configuration Manager 用戶端在主動式軟體更新點發生問題時切換到新軟體更新點的選項。 只有在用戶端從管理點接收到多個軟體更新點時，此選項才會導致變更。  
+從 Configuration Manager 版本 1606 開始，您可以啟用讓 Configuration Manager 用戶端在主動式軟體更新點發生問題時切換到新軟體更新點的選項。 只有在用戶端從管理點接收到多個軟體更新點時，此選項才會導致變更。
 
-在裝置集合或一組選取的裝置上啟用此選項。 啟用之後，用戶端會在下次掃描時尋找另一個軟體更新點。 根據 WSUS 組態設定 (更新分類、產品、軟體更新點是否共用 WSUS 資料庫等)，切換到新軟體更新點將會產生額外的網路流量。 因此，您應該只在必要時才使用此選項。  
+> [!IMPORTANT]    
+> 當您切換裝置以使用新伺服器時，裝置就會使用後援設定來尋找新伺服器。 因此，在開始這項變更之前，請先檢閱您的界限群組設定，確定軟體更新點均位於正確的界限群組中。 如需詳細資訊，請參閱[軟體更新點](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)。
+>
+> 切換到新的軟體更新點會產生額外的網路流量。 流量取決於您的 WSUS 組態設定 (更新分類、產品，軟體更新點是否共用 WSUS 資料庫等等)。 如果您打算切換多個裝置，請考慮在維護期間進行，以降低新的軟體更新點伺服器同步處理期間對網路的影響。
 
 #### <a name="to-enable-the-option-to-switch-software-update-points"></a>啟用切換軟體更新點的選項  
+在裝置集合或一組選取的裝置上啟用此選項。 啟用之後，用戶端會在下次掃描時尋找另一個軟體更新點。
 
 1.  在 Configuration Manager 主控台中，移至 **[資產與相容性] > [概觀] > [裝置集合]**。  
 
@@ -295,8 +297,8 @@ ms.lasthandoff: 06/28/2017
 -   如果取代的軟體更新未獲核准部署在您的生產環境。  
 
     > [!NOTE]  
-    >  當 Configuration Manager 將已取代的軟體更新設定為 [已到期] 時，它並不會在 WSUS 中將該更新設定為 [已到期]。 但是在執行 WSUS 清除工作時，在 Configuration Manager 中設定為 [已到期] 的更新，將會在 WSUS 伺服器上設定為 [已拒絕] 的狀態，且電腦上的 Windows Update 代理程式將不會再掃描這些更新。 這表示在執行清除工作之前，用戶端將會繼續掃描已到期的更新。 如需 WSUS 清理工作的相關資訊，請參閱[軟體更新維護](/sccm/sum/deploy-use/software-updates-maintenance)。
-    
+    > 當 Configuration Manager 將已取代的軟體更新設定為 [已到期] 時，它並不會在 WSUS 中將該更新設定為 [已拒絕]。 但是在執行 WSUS 清除工作時，在 Configuration Manager 中設定為 [已到期] 的更新，將會在 WSUS 伺服器上設定為 [已拒絕] 的狀態，且電腦上的 Windows Update 代理程式將不會再掃描這些更新。 這表示在執行清除工作之前，用戶端將會繼續掃描已到期的更新。 如需 WSUS 清理工作的相關資訊，請參閱[軟體更新維護](/sccm/sum/deploy-use/software-updates-maintenance)。
+
 ###  <a name="BKMK_UpdateLanguages"></a> 語言  
  軟體更新點的語言設定，可讓您設定哪些摘要詳細資料的語言 (軟體更新中繼資料) 要與軟體更新同步處理，以及將為軟體更新下載的軟體更新檔案語言。  
 

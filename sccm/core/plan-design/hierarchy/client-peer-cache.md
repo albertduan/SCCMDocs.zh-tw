@@ -2,7 +2,7 @@
 title: "用戶端對等快取 | System Center Configuration Manager"
 description: "使用 System Center Configuration Manager 部署內容時，針對用戶端內容來源位置使用對等快取。"
 ms.custom: na
-ms.date: 7/3/2017
+ms.date: 7/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -15,11 +15,11 @@ caps.latest.revision: 3
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ed6b65a1a5aabc0970cd0333cb033405cf6d2aea
-ms.openlocfilehash: 94802680747a3d371716c1b345b2cba098150716
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: 89fcd16887ae77299f9d18472ee6a1ba56794eca
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/03/2017
+ms.lasthandoff: 07/29/2017
 
 ---
 
@@ -94,7 +94,9 @@ ms.lasthandoff: 07/03/2017
 
 -   用戶端只能從其目前界限群組中的對等快取用戶端傳輸內容。
 
--   用戶端會使用對等快取所在的每個站台都必須設有[網路存取帳戶](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#a-namebkmknaaa-network-access-account)。 對等快取來源電腦會使用該帳戶驗證對等的下載要求，且該帳戶只需要網域使用者權限來達到此目的。
+-   在 1706 版之前，用戶端使用對等快取所在的每個站台都必須設有[網路存取帳戶](/sccm/core/plan-design/hierarchy/manage-accounts-to-access-content#a-namebkmknaaa-network-access-account)。 從 1706 版開始，該帳戶已非必要，唯一的例外是：  當用戶端使用對等快取從軟體中心取得並執行工作順序，而該工作順序會將用戶端重新開機至 WinPE 時。  在此情況下，用戶端在 WinPE 時仍需要網路存取帳戶，才能存取對等快取來源以取得內容。
+
+    當有需要網路存取帳戶時，對等快取來源電腦會使用此帳戶來驗證對等的下載要求，而針對此目的，只需要網域使用者權限。
 
 -   因為目前的對等快取內容來源界限是根據該用戶端的上次硬體清查提交所決定，所以，若用戶端漫遊至位於不同界限群組的網路位置，基於對等快取的目的，仍然可能被視為是其先前界限群組的成員。 這會導致提供給用戶端的對等快取內容來源不在其中繼網路位置上。 我們建議您排除有此設定傾向的用戶端，不要讓它以對等快取來源的身分參與。
 

@@ -2,7 +2,7 @@
 title: "設定探索 | Microsoft Docs"
 description: "設定在 Configuration Manager 站台上執行的探索方法，以尋找您可以從網路基礎結構與 Active Directory 管理的資源。"
 ms.custom: na
-ms.date: 2/17/2017
+ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.latest.revision: 5
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 860815010068422f2d8854ed2d574c24cc386891
-ms.openlocfilehash: 63a3c2ef66c80d1da9b50e67166a2196cf1b081b
+ms.translationtype: HT
+ms.sourcegitcommit: 0663ba84762c44a5c303562548499f195bae9e1c
+ms.openlocfilehash: 34a539ceaea6b070f81a28d2c0a9ce388e26cfeb
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 08/01/2017
 
 ---
 # <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>設定 System Center Configuration Manager 的探索方法
@@ -33,7 +33,9 @@ ms.lasthandoff: 05/17/2017
 
 -   伺服器探索是自動的探索方法，它能尋找作為站台系統的電腦。 不過您無法設定或停用。  
 
-**啟用任何可設定的探索方法︰**  
+**啟用可設定的探索方法︰**  
+ > [!NOTE]  
+ > 下列資訊不適用於 Azure Active Directory 使用者探索。 請參閱本主題後面的[設定 Azure AD 使用者探索](#azureaadisc)。
 
 1.  在 Configuration Manager 主控台中選擇 [管理] > [階層設定]，然後選擇 [探索方法]。  
 
@@ -211,6 +213,14 @@ ms.lasthandoff: 05/17/2017
 7.  您可以選擇性地在 [Active Directory 屬性]  索引標籤上，針對您要探索的電腦設定其他 Active Directory 屬性。 預設物件屬性也會列出。  
 
 8.  當您完成設定此站台的 Active Directory 使用者探索時，選擇 [確定] 儲存設定。  
+
+## <a name="azureaadisc"></a>設定 Azure AD 使用者探索
+從 1706 版開始，當您將 Configuration Manager 連線至 [Azure 訂用帳戶與 Azure Active Directory](/sccm/core/servers/deploy/configure/azure-services-wizard) 時，可以設定 Azure Active Directory 使用者探索。
+
+Azure AD 使用者探索可設定為*雲端管理*的一部分。 *設定要與 Configuration Manager 搭配使用的 Azure 服務*主題的[建立要與 Configuration Manager 搭配使用的 Azure Web 應用程式](/sccm/core/servers/deploy/configure/Azure-services-wizard#webapp)中有詳細的程序說明。
+
+
+
 
 ##  <a name="BKMK_ConfigHBDisc"></a> 設定活動訊號探索  
  根據預設，活動訊號探索會在您安裝 Configuration Manager 主要站台時啟用。 因此，您只需要在不想使用每七天的預設值時，設定用戶端將活動訊號探索資料記錄傳送至管理點的排程即可。  

@@ -2,7 +2,7 @@
 title: "設定 System Center Configuration Manager 和 Microsoft Intune 的 Android 混合式裝置管理 | Microsoft Docs"
 description: "準備使用 Configuration Manager 和 Intune 管理 Android 行動裝置。"
 ms.custom: na
-ms.date: 03/27/2017
+ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 86620254897aa9a775dc433de7010b5814c1ec3e
-ms.openlocfilehash: af6fa2dfae5549e89c46d05d0cef1e24342558f9
+ms.translationtype: HT
+ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
+ms.openlocfilehash: b47ecd1754a623b1b57dc5c5ecb42a6b0b64404e
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/06/2017
-
+ms.lasthandoff: 07/29/2017
 
 ---
 # <a name="set-up-android-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>以 System Center Configuration Manager 和 Microsoft Intune 設定 Android 混合式裝置管理
@@ -39,6 +38,9 @@ ms.lasthandoff: 07/06/2017
 2. 在 Configuration Manager 主控台的 [系統管理] 工作區中，選擇 [概觀] > [雲端服務] > [Microsoft Intune 訂閱]，然後選擇您的 Intune 訂閱。  
 3. 在 [常用] 索引標籤的 [訂閱] 群組中，選擇 [設定平台] > [Android]。  
 4. 在 [Microsoft Intune 訂閱內容] 對話方塊中，選擇 [Android] 索引標籤並選取 [啟用 Android 註冊] 方塊。  
+
+> [!NOTE]
+>  [封鎖個人擁有的裝置] 功能目前無法使用。 
 
  設定好之後，您必須讓使用者了解如何註冊其裝置。 請參閱[要告訴使用者關於註冊其裝置的事項](https://docs.microsoft.com/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)。 這項資訊適用於透過 Microsoft Intune 與 Configuration Manager 管理的行動裝置。
 

@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
-ms.openlocfilehash: 80d5a13ea5d40150ddd537251e837083e649ac52
+ms.translationtype: HT
+ms.sourcegitcommit: 5f1412fb132e3a074742e11f1142b2594146cbe1
+ms.openlocfilehash: 3e5517e1710d0d12e51fba58efda5dc5edd08544
 ms.contentlocale: zh-tw
-ms.lasthandoff: 01/03/2017
-
+ms.lasthandoff: 07/28/2017
 
 ---
 # <a name="how-to-extend-hardware-inventory-in-system-center-configuration-manager"></a>如何擴充 System Center Configuration Manager 中的硬體清查
@@ -148,12 +147,12 @@ Configuration.mof 檔案用來定義用戶端上要由硬體清查所清查的�
 > [!IMPORTANT]  
 >  當您建立 NOIDMIF 檔案時，必須將其儲存為 ANSI 編碼格式。 Configuration Manager 無法讀取以 UTF-8 編碼格式儲存的 NOIDMIF 檔案。  
 
- 建立 NOIDMIF 檔案之後，請將其儲存至每個用戶端上的 *%Windir%***\System32\CCM\Inventory\Noidmifs** 資料夾。 在下次排程的硬體清查週期，Configuration Manager 會從這個資料夾中的 NODMIF 檔案收集資訊。  
+ 建立 NOIDMIF 檔案之後，請將其儲存至每個用戶端上的 *%Windir%***\CCM\Inventory\Noidmifs** 資料夾。 在下次排程的硬體清查週期，Configuration Manager 會從這個資料夾中的 NODMIF 檔案收集資訊。  
 
 ###  <a name="BKMK_IDMIF"></a> 建立 IDMIF 檔案  
  IDMIF 檔案可以用來將資產相關資訊新增至 Configuration Manager 資料庫，而這些資產通常無法透過 Configuration Manager 進行清查而且與特定用戶端裝置不相關。 例如，您可以使用 IDMIFS 收集下列項目的相關資訊：投影機，DVD 播放機、影印機或不包含 Configuration Manager 用戶端的其他設備。 如需建立 IDMIF 檔案的相關資訊，請參閱 Configuration Manager SDK 文件。  
 
- 建立 IDMIF 檔案之後，請將其儲存至用戶端電腦上的 *%Windir%***\System32\CCM\Inventory\Idmifs** 資料夾。 在下次排程的硬體清查週期，Configuration Manager 會從這個檔案收集資訊。 您必須宣告新類別，藉由新增或匯入這些檔案中包含的資訊。  
+ 建立 IDMIF 檔案之後，請將其儲存至用戶端電腦上的 *%Windir%***\CCM\Inventory\Idmifs** 資料夾。 在下次排程的硬體清查週期，Configuration Manager 會從這個檔案收集資訊。 您必須宣告新類別，藉由新增或匯入這些檔案中包含的資訊。  
 
 > [!NOTE]
 > MIF 檔案可能包含大量資料，而且收集這項資料可能會對站台效能造成負面影響。 只在需要時才啟用 MIF 收集，並在硬體清查設定中設定 [自訂 MIF 檔案大小上限 (KB)]  選項。 如需詳細資訊，請參閱 [System Center Configuration Manager 中的硬體清查簡介](introduction-to-hardware-inventory.md)。

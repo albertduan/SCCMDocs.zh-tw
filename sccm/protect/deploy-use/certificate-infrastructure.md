@@ -2,7 +2,7 @@
 title: "設定憑證基礎結構 | Microsoft Docs"
 description: "了解如何在 Configuration Manager 中設定憑證註冊。"
 ms.custom: na
-ms.date: 03/28/2017
+ms.date: 07/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -13,22 +13,22 @@ ms.topic: get-started-article
 ms.assetid: 29ae59b7-2695-4a0f-a9ff-4f29222f28b3
 caps.latest.revision: 7
 caps.handback.revision: 0
-author: arob98
-ms.author: angrobe
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 859a8da10f55e314b205b7a4a415a1d2a60a920a
+ms.translationtype: HT
+ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
+ms.openlocfilehash: 640eb1df9d53fc83d93c39a7ecbaf2668e176805
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
+ms.lasthandoff: 08/02/2017
 
 ---
 
-# <a name="certificate-infrastructure"></a>憑證基礎結構
+# <a name="configure-certificate-infrastructure"></a>設定憑證基礎結構
 
-*適用對象：System Center Configuration Manager (最新分支)*
+適用於：System Center Configuration Manager (最新分支)
 
-以下是如何在 System Center Configuration Manager 中設定憑證的步驟、詳細資料和更多資訊。 在開始之前，請先檢查 [System Center Configuration Manager 中憑證設定檔的先決條件](../../protect/plan-design/prerequisites-for-certificate-profiles.md)中列出的任何先決條件。  
+了解在 System Center Configuration Manager 中設定憑證基礎結構。 在開始之前，請先檢查 [System Center Configuration Manager 中憑證設定檔的先決條件](../../protect/plan-design/prerequisites-for-certificate-profiles.md)中列出的任何先決條件。  
 
 使用下列步驟來設定 SCEP 或 PFX 憑證的基礎結構。
 
@@ -59,7 +59,7 @@ ms.lasthandoff: 05/17/2017
     > [!NOTE]  
     >  這些是適用於大部分環境的預設安全性權限。 不過，您也可以使用替代的安全性設定。 如需詳細資訊，請參閱[規劃憑證設定檔在 System Center Configuration Manager 中的憑證範本權限](../../protect/plan-design/planning-for-certificate-template-permissions.md)。  
 
-3.  將可支援用戶端驗證 的 PKI 憑證部署至此伺服器。 您可能已在可使用的電腦上安裝適用的憑證，或者您可能需要 (或想要) 特別部署適合此用途的憑證。 如需此憑證需求的詳細資訊，請參閱 [System Center Configuration Manager 的 PKI 憑證需求](../../core/plan-design/network/pki-certificate-requirements.md)主題中**伺服器的 PKI 憑證**一節之＜使用網路裝置註冊服務角色服務執行 Configuration Manager 原則模組的伺服器＞中的詳細資訊。  
+3.  將可支援用戶端驗證 的 PKI 憑證部署至此伺服器。 您可能已在可使用的電腦上安裝適用的憑證，或者您可能需要 (或想要) 特別部署適合此用途的憑證。 如需此憑證需求的詳細資訊，請參閱 [System Center Configuration Manager 的 PKI 憑證需求](../../core/plan-design/network/pki-certificate-requirements.md)主題中＜伺服器的 PKI 憑證＞一節之「使用網路裝置註冊服務角色服務執行 Configuration Manager 原則模組的伺服器」中的詳細資訊。  
 
     > [!TIP]  
     >  如果您需要部署此憑證的協助，您可以使用[部署發佈點的用戶端憑證](/sccm/core/plan-design/network/example-deployment-of-pki-certificates#BKMK_clientdistributionpoint2008_cm2012)的指示，因為其憑證需求完全相同，但有一點例外：  
@@ -124,21 +124,37 @@ ms.lasthandoff: 05/17/2017
 
 6.  在 [系統角色選取]  頁面上，在可用角色的清單中選取 [憑證登錄點]  ，然後按 [下一步] 。 
 
-8. 在 [憑證登錄模式] 頁面上，選取您想要此憑證登錄點來 [處理 SCEP 憑證要求] 或 [處理 PFX 憑證要求]。 憑證登錄點無法同時處理這兩種要求，但如果您正在使用這兩種憑證類型，您可以建立多個憑證登錄點。
+7. 在 [憑證登錄模式] 頁面上，選取您想要此憑證登錄點來 [處理 SCEP 憑證要求] 或 [處理 PFX 憑證要求]。 憑證登錄點無法同時處理這兩種要求，但如果您正在使用這兩種憑證類型，您可以建立多個憑證登錄點。
 
-7.  在 [憑證登錄點設定] 頁面上，您的設定取決於憑證登錄點即將處理的憑證類型︰
+   如果是處理 PFX 憑證，您必須選擇憑證授權單位，即 Microsoft 或 Entrust。
+
+8.  [憑證登錄點設定] 頁面會根據憑證類型而有所不同：
     -   如果您選取 [處理 SCEP 憑證要求]，請設定下列各項︰
         -   憑證登錄點的 [網站名稱]、[HTTPS 連接埠號碼] 和 [虛擬應用程式名稱]。 這些欄位會自動填入預設值。 
         -   **網路裝置註冊服務和根 CA 憑證的 URL** - 按一下 [新增]，接著在 [新增 URL 和根 CA 憑證] 對話方塊方塊中，指定下列各項︰
             - **網路裝置註冊服務的 URL**：指定的 URL 格式如下：https://<伺服器 FQDN>/certsrv/mscep/mscep.dll。 例如，如果執行網路裝置註冊服務的伺服器 FQDN 是 server1.contoso.com，請輸入 **https://server1.contoso.com/certsrv/mscep/mscep.dll**。
             - **根 CA 憑證**：瀏覽並選取您建立及儲存於 **步驟 1：安裝及設定網路裝置註冊服務和相依性**。 此根 CA 憑證允許憑證登錄點驗證 System Center Configuration Manager 原則模組所要使用的用戶端驗證憑證。  
-    - 如果您選取 [處理 PFX 憑證要求]，請設定下列各項︰
-        - **連線到各憑證授權單位 (CA) 所需的 CA 及帳戶** - 按一下 [新增]，然後在 [新增憑證授權單位與帳戶] 對話方塊中，指定下列各項：
+
+    - 如果您選取 [處理 PFX 憑證要求]，則需設定所選憑證授權單位的連線詳細資訊和認證。
+
+        - 若要使用 Microsoft 作為憑證授權單位，請按一下[新增]，然後在 [新增憑證授權單位與帳戶] 對話方塊中指定下列各項：
             - **憑證授權單位伺服器名稱** - 輸入您的憑證授權單位伺服器名稱。
             - **憑證授權單位帳戶** - 按一下 [設定]，以選取或建立有權限在憑證授權單位上範本中註冊的帳戶。
-        - **憑證登錄點連線帳戶** - 選取或建立可將憑證登錄點連線至 Configuration Manager 資料庫的帳戶。 此外，您可以使用裝載憑證登錄點的電腦本機電腦帳戶。
-        - **Active Directory 憑證發佈帳戶** - 選取帳戶或建立新的帳戶，用來將憑證發行至 Active Directory 中的使用者物件。
-8.  在 [新增 URL 和根 CA 憑證]  對話方塊中指定下列項目，然後按一下 [確定] ：  
+            - **憑證登錄點連線帳戶** - 選取或建立可將憑證登錄點連線至 Configuration Manager 資料庫的帳戶。 此外，您可以使用裝載憑證登錄點的電腦本機電腦帳戶。
+            - **Active Directory 憑證發佈帳戶** - 選取帳戶或建立新的帳戶，用來將憑證發行至 Active Directory 中的使用者物件。
+
+            - 在 [網路裝置註冊的 URL 和根 CA 憑證] 對話方塊中指定下列項目，然後按一下 [確定]：  
+
+        - 若要使用 Entrust 作為憑證授權單位，請指定：
+
+           - **MDM Web 服務 URL**
+           - URL 的使用者名稱和密碼認證。
+
+           使用 MDM API 定義 Entrust Web 服務 URL 時，務必使用至少版本 9 的 API，如下列範例所示：
+
+           `https://entrust.contoso.com:19443/mdmws/services/AdminServiceV9`
+
+           更早之前的 API 版本不支援 Entrust。
 
 9. 按 [下一步]  ，並且完成精靈。  
 

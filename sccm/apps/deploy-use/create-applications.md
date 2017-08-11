@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
-ms.openlocfilehash: da86fc2f61ce8229fb0d3f58a4f8a24d1514b30e
+ms.translationtype: HT
+ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
+ms.openlocfilehash: 4d048d4f9ab01b28e6c21a38cca4d82c85030618
 ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 # <a name="create-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立應用程式
@@ -198,6 +197,14 @@ System Center Configuration Manager 應用程式包含將軟體部署至某個�
 
         > [!IMPORTANT]  
         >  站台伺服器電腦的 System 帳戶必須具有您所指定內容位置的權限。  
+
+    -   **解除安裝內容設定**：指定下列其中一個選項：
+        - **與安裝內容相同**：如果安裝和解除安裝內容相同，請選取此選項。 此為預設行為。
+        - **沒有解除安裝內容**：如果您的應用程式不需要解除安裝的內容，請選取此選項。
+        - **與安裝內容不同**：如果解除安裝內容不同於安裝內容，請選取此選項。
+
+4. 如果您選取了 [與安裝內容不同]，請瀏覽至或輸入用來將應用程式解除安裝的應用程式內容位置。
+5. 按一下 [確定] 關閉部署類型內容對話方塊。
 
     -   **將內容保存在用戶端快取中** - 選取這個選項可指定內容是否應永久保存在用戶端電腦上的快取中 (即使已經執行過)。 雖然此選項在某些部署中很實用，例如以 Windows Installer 為基礎的軟體 (這類軟體需要可用的本機來源複本才能套用更新)，但是這樣會減少可用的快取空間。 如果您選取此選項，稍後可能會因為快取沒有足夠的可用空間而造成大型部署失敗。  
 

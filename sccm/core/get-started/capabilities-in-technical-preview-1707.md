@@ -2,7 +2,7 @@
 title: Technical Preview 1707 | Microsoft Docs
 description: "了解 System Center Configuration Manager Technical Preview 1707 版中可用的功能。"
 ms.custom: na
-ms.date: 06/30/2017
+ms.date: 07/28/2017
 ms.prod: configuration-manager
 ms.technology:
 - configmgr-other
@@ -15,8 +15,8 @@ author: Brenduns
 ms.author: brenduns
 manager: angrobe
 ms.translationtype: HT
-ms.sourcegitcommit: 1f57c63ceeb13c7f7d760d7ecfb48df749da6770
-ms.openlocfilehash: 118f20768ffc99364eb9e8cf2074d7a23f4dc572
+ms.sourcegitcommit: 6e890862fd02786b675e2b7abaca7ede7c0e977a
+ms.openlocfilehash: 91fd850f055a7e892a54487307109a291e336696
 ms.contentlocale: zh-tw
 ms.lasthandoff: 07/28/2017
 
@@ -62,7 +62,7 @@ Surface 裝置儀表板提供在您的環境中找到的 Surface 裝置相關資
 ## <a name="configure-and-deploy-windows-defender-application-guard-policies"></a>設定及部署 Windows Defender 應用程式防護原則
 <!-- 1351960 -->
 
-[Windows Defender 應用程式防護](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)是一個新的 Windows 功能，可藉由在作業系統其他部分所無法存取的安全隔離容器中開啟未受信任的網站，來協助保護您的使用者。 在此 Technical Preview 中，我們已新增支援，可使用您所設定並接著部署到集合的 Configuration Manager 合規性設定來設定此功能。 此功能將在 64 位元版「Windows 10 建立者的更新」(代號：RS2) 的預覽版中發行。 若要立即測試此功能，您必須使用此更新的預覽版本。
+[Windows Defender 應用程式防護](https://blogs.windows.com/msedgedev/2016/09/27/application-guard-microsoft-edge/#XLxEbcpkuKcFebrw.97)是一個新的 Windows 功能，可藉由在作業系統其他部分所無法存取的安全隔離容器中開啟未受信任的網站，來協助保護您的使用者。 在此 Technical Preview 中，我們已新增支援，可使用您所設定並接著部署到集合的 Configuration Manager 合規性設定來設定此功能。 此功能將在 64 位元版 Windows 10 Fall Creator’s Update (代號：RS3) 的預覽版中發行。 若要立即測試此功能，您必須使用此更新的預覽版本。
 
 ### <a name="before-you-start"></a>開始之前
 
@@ -87,12 +87,12 @@ Surface 裝置儀表板提供在您的環境中找到的 Surface 裝置相關資
 
 <!-- 1236459 --->
 
-在上一個 Technical Preview 中，我們引進了新的功能，可讓您[從 Configuration Manager 主控台建立和執行 PowerShell 指令碼]( /core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)。
+在上一個 Technical Preview 中，我們引進了新的功能，可讓您[從 Configuration Manager 主控台建立和執行 PowerShell 指令碼](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)。
 在此 Technical Preview 中，我們擴展了這項功能。 Configuration Manager 現在可讀取 PowerShell 指令碼，並會在 [建立指令碼精靈] 中顯示任何參數。 您可以在指令碼執行時會使用的精靈中，為參數提供值。 您也可以將參數保留為空白。 如果這樣做，就必須在執行指令碼時提供參數值。
 
 ### <a name="try-it-out"></a>試試看！
 
-1. 遵循[從 Configuration Manager 主控台建立及執行 PowerShell 指令碼]( /core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)的指示。
+1. 遵循[從 Configuration Manager 主控台建立及執行 PowerShell 指令碼](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)的指示。 
 2. 在 [建立指令碼精靈] 的新 [指令碼參數] 頁面上選擇參數，然後按一下 [編輯]。
 3. 為選取的參數提供參數值，然後按一下 [確定]。
 4. 完成精靈。

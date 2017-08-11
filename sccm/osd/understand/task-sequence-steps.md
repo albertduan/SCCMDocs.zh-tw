@@ -16,12 +16,11 @@ caps.handback.revision: 0
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 6f9e6e93fce95666503907010a5c253158c5de7c
-ms.openlocfilehash: f648d7626af50d95fbaa5a7a2abd821a9c47f5d1
+ms.translationtype: HT
+ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
+ms.openlocfilehash: e0726febc4c36a26c5e067914734838bf2681e6c
 ms.contentlocale: zh-tw
-ms.lasthandoff: 07/07/2017
-
+ms.lasthandoff: 08/03/2017
 
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的工作順序步驟
@@ -1527,9 +1526,9 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 >  如果使用 [設定動態變數] 步驟來匯入工作順序，並且為變數的值選取 [祕密值]  ，當您匯入工作順序時，就會移除該值。 因此，在您匯入工作順序之後，必須重新輸入動態變數的值。  
 
 ##  <a name="BKMK_SetTaskSequenceVariable"></a> 設定工作順序變數  
- 使用 [設定工作順序變數]  工作順序步驟來設定要與工作順序搭配使用的變數值。  
+使用 [設定工作順序變數]  工作順序步驟來設定要與工作順序搭配使用的變數值。  
 
- 此步驟可以在標準作業系統或 Windows PE 中執行。 工作順序變數會被工作順序動作讀取，並指定那些動作的行為。 如需特定工作順序變數的詳細資訊，請參閱[工作順序動作變數](task-sequence-action-variables.md)。  
+此步驟可以在標準作業系統或 Windows PE 中執行。 工作順序變數會被工作順序動作讀取，並指定那些動作的行為。 如需特定工作順序變數的詳細資訊，請參閱[工作順序動作變數](task-sequence-action-variables.md)。  
 
 ### <a name="details"></a>詳細資料  
  在這個步驟的 [內容]  索引標籤上，您可以設定本節所描述的設定。  
@@ -1553,6 +1552,16 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 
  **值**  
  與工作順序變數相關聯的值。 該值可以是 %<變數名稱\>% 語法中的另一個工作順序變數。  
+
+## <a name="hide-task-sequence-progress"></a>隱藏工作順序進度
+<!-- 1354291 -->
+在 1706 版中，您可以使用新的變數來控制對使用者顯示工作順序進度的時機。 請在您的工作順序中，使用 [設定工作順序變數] 步驟來設定 **TSDisableProgressUI** 變數的值，以隱藏或顯示工作順序進度。 您可以在工作順序中多次使用 [設定工作順序變數] 步驟，以變更此變數的值。 這可讓您在不同的工作順序區段中隱藏或顯示工作順序進度。
+
+ - **隱藏工作順序進度**  
+請在工作順序編輯器中，使用[設定工作順序變數](#BKMK_SetTaskSequenceVariable)步驟，將 **TSDisableProgressUI** 變數的值設定為 **True**，以隱藏工作順序進度。
+
+ - **顯示工作順序進度**  
+請在工作順序編輯器中，使用[設定工作順序變數](#BKMK_SetTaskSequenceVariable)步驟，將 **TSDisableProgressUI** 變數的值設定為 **False**，以顯示工作順序進度。
 
 ##  <a name="BKMK_SetupWindowsandConfigMgr"></a> varname  
  使用 [設定 Windows 和 ConfigMgr]  工作順序步驟來執行從 Windows PE 到新作業系統的轉換。 此工作順序步驟是部署任何作業系統的必要部分。 它會將 Configuration Manager 用戶端安裝到新的作業系統中，並準備好讓工作順序繼續在新的作業系統中執行。  
