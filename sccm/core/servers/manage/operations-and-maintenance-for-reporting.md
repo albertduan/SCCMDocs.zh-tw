@@ -6,22 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b89bcfbf-f5b6-4fb1-bb5e-a5cc18ec0c78
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f62d969dd49fb00b688602128df74b28ff551135
 ms.openlocfilehash: df572cd0c64c82e25164430a53e1b893b3ba3cf5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/07/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="operations-and-maintenance-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的報告作業和維護
 
@@ -363,4 +360,3 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 -   在 [摘要]  頁面上檢閱報告訂閱設定。 按一下 [上一步]  變更設定，或按 [下一步]  建立報告訂閱。  
 
 -   在 [完成]  頁面上，按一下 [關閉]  結束精靈。 確認報告訂閱已成功建立。 您可以在 [監視]  工作區的 [報告]  下，於 [訂閱]  節點中檢視及修改告訂閱。  
-

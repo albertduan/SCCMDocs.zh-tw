@@ -4,23 +4,21 @@ description: "了解 System Center Configuration Manager Technical Preview 1606 
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 134a2f60-811e-4dc9-a8f5-1ce0018c5c12
-caps.latest.revision: 31
+caps.latest.revision: "31"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: a84d3ab55066d26c3199ea374d8beb472d66f43f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/24/2017
-
+ms.openlocfilehash: 08747ca981f6697e2bd621afe5df0e3bd06b332d
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1606-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1606 中的功能
 
@@ -266,4 +264,3 @@ OSDPreserveDriveLetter 工作順序變數決定工作順序將作業系統映像
 -   **進入生產階段前已重新命名的選項︰**
 
     在 [更新與服務] 節點中，原稱為 [用戶端選項] 的按鈕現在已重新命名為 [將生產階段前用戶端升階]。
-
