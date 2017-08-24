@@ -9,16 +9,15 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 04536d51-3bf7-45e5-b4af-36ceed10583d
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 70a0ad1da03a7ca88df206fec683ab1df2b531e1
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
-#  <a name="a-namebkmksumdeploya-deploy-software-updates"></a><a name="BKMK_SUMDeploy"></a> 部署軟體更新  
+#  <a name="BKMK_SUMDeploy"></a> 部署軟體更新  
 
 適用於：System Center Configuration Manager (最新分支)
 
@@ -34,7 +33,7 @@ ms.openlocfilehash: 70a0ad1da03a7ca88df206fec683ab1df2b531e1
 
 部署軟體更新的主要狀況有兩種：手動部署和自動部署。 通常，您一開始會以手動部署軟體更新以建立用戶端電腦的基準，然後使用自動部署管理用戶端上的軟體更新。  
 
-## <a name="a-namebkmkmanualdeploymenta-manually-deploy-software-updates"></a><a name="BKMK_ManualDeployment"></a> 手動部署軟體更新
+## <a name="BKMK_ManualDeployment"></a> 手動部署軟體更新
 您可以在 Configuration Manager 主控台中選取軟體更新，並手動開始部署程序。 在您建立自動部署規則以管理每月進行中的軟體更新部署之前，您通常會使用這種部署方式以必要的軟體更新讓用戶端電腦保持在最新狀態，以及部署超出訊號範圍的軟體更新需求。 以下清單提供手動部署軟體更新的一般工作流程：  
 
 1. 篩選使用特定需求的軟體更新。 例如，您可以提供可擷取所有安全性或 50 部以上用戶端電腦上必要的重要軟體更新的準則。  
@@ -74,9 +73,3 @@ The Configuration Manager client downloads the content for required software upd
 
 
  <!-- For more information about the deployment process, see [Software update deployment process](../../sum/understand/software-updates-introduction.md#BKMK_DeploymentProcess).  -->
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

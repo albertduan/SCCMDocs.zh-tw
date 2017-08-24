@@ -6,22 +6,19 @@ ms.date: 5/10/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f0f818d4-7f45-402f-8758-dc88bc024953
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b0ba955aa7f854c3fa2c06ccf9ccd8ed354758b0
 ms.openlocfilehash: 31bddee83b2365cfa903077ffaa1d7116b194378
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/12/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="supported-configurations-for-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager 長期維護分支的支援設定
 
@@ -335,4 +332,3 @@ LTSB 支援下列 SQL Server 版本來裝載站台資料庫和報告點。 針�
 - [建議的硬體](/sccm/core/plan-design/configs/recommended-hardware)
 - [Windows 功能和網路支援](/sccm/core/plan-design/configs/support-for-windows-features-and-networks)
 - [虛擬化環境支援](/sccm/core/plan-design/configs/support-for-virtualization-environments)
-

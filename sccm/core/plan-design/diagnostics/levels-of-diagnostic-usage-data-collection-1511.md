@@ -6,12 +6,11 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9e614ae1-47d2-4a93-ba0a-89dc50d1e266
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
@@ -34,12 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 34a4c3d0d641c4ab03e068c6dad78300057861bd
-ms.openlocfilehash: 4c7717e4f5a20c5c8d20fef21d0c67172b3198bd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/16/2017
-
+ms.openlocfilehash: 215ca2a10c50da08d2265ec0926c0310883588ba
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1511-of-system-center-configuration-manager"></a>System Center Configuration Manager 1511 版的診斷使用方式資料收集層級
 
@@ -284,4 +282,3 @@ System Center Configuration Manager 1511 版會收集三種層級的診斷及使
 -   軟體更新掃描成功百分比  
 
 -   上次軟體更新掃描後經過的最小/最大/平均時數  
-

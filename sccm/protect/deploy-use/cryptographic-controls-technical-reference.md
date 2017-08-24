@@ -6,22 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0c63dcc5-a1bd-4037-959a-2e6ba0fd1b2c
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: 0f76ed3dd74a80d9e22cfa743e5aa484f6cd7d97
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 09d319ce817c925ac002a27733d2ce35464eeca7
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="cryptographic-controls-technical-reference"></a>密碼編譯控制項技術參考
 
@@ -283,4 +280,3 @@ System Center Configuration Manager 使用簽署和加密來協助保護 Configu
 
 ##  <a name="about-ssl-vulnerabilities"></a>關於 SSL 弱點  
  我們建議您停用 SSL 3.0、啟用 TLS 1.1 和 1.2 並重新排序 TLS 相關的加密套件，以改善 Configuration Manager 伺服器的安全性。 若想了解如何執行這些動作，請參閱 [這篇知識庫文章](https://support.microsoft.com/en-us/kb/245030/)。 這個動作不會影響 Configuration Manager 的功能。  
-

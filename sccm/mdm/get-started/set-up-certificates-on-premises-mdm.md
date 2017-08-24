@@ -6,23 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 2a7d7170-1933-40e9-96d6-74a6eb7278e2
-caps.latest.revision: 27
-caps.handback.revision: 0
+caps.latest.revision: "27"
+caps.handback.revision: "0"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: ef35e98ccae0c708cd12767eef9f923f211849fb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: 3d695a2a40fd86ad991a26db3dcecbbb9ca186cc
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-certificates-for-trusted-communications-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中為內部部署行動裝置管理設定受信任通訊的憑證
 
@@ -173,4 +170,3 @@ System Center Configuration Manager 內部部署行動裝置管理需要設定�
      收到「Active Directory 憑證服務」必須重新啟動的通知時，按一下 **[下一步]**之裝置與站台系統伺服器之間受信任通訊的憑證。  
 
 9. 檢閱設定，然後按一下 **[完成]** 。  
-

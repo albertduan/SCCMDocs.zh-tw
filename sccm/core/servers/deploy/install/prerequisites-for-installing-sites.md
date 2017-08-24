@@ -6,21 +6,19 @@ ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 92b339ef-2723-4322-bec6-077b3e8846b0
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 5945abb49fe06c59355805aa94b04d0d445ecbc3
 ms.openlocfilehash: d46a8b66ace45d25da9d86f2e91b19ae1d6875ab
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/24/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisites-for-installing-system-center-configuration-manager-sites"></a>安裝 System Center Configuration Manager 站台的必要條件
 
@@ -129,4 +127,3 @@ ms.lasthandoff: 07/24/2017
         >  安裝程式完成時，這兩個帳戶都必須保有 SQL Server 的 sysadmin 權限。 請不要從這些帳戶移除 sysadmin 權限。  
 
 -   次要站台伺服器電腦必須符合所有必要條件的組態，其中包括 SQL Server 與管理點和發佈點的預設站台系統角色。  
-

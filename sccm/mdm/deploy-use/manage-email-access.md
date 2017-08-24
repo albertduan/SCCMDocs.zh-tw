@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fa648e73-5fb8-4818-ab57-7466ffaf888e
-caps.latest.revision: 24
+caps.latest.revision: "24"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: a7b74ba1d16216983251d19adfa4b78a7e0b66e4
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: a5c2a8912cd2ef95a778b81d0b7f1f98315b8413
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-email-access-in-system-center-configuration-manager"></a>管理 System Center Configuration Manager 中的電子郵件存取
 
@@ -173,11 +170,11 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 #### <a name="for-exchange-online-and-tenants-in-the-new-exchange-online-dedicated-environment"></a>適用於 Exchange Online (以及新的 Exchange Online Dedicated 環境中的租用戶)
 
 >[!NOTE]
->您也可以在 Azure AD 管理主控台中建立條件存取原則。 Azure AD 管理主控台可讓您在其他條件存取原則之外 (例如 Multi-Factor Authentication)，建立 Intune 裝置條件存取原則 (稱為 Azure AD 裝置型條件存取原則)。 您也可以設定 Azure AD 支援的 Salesforce 和 Box 等協力廠商企業應用程式的條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
+>您也可以在 Azure AD 管理主控台中建立條件存取原則。 Azure AD 管理主控台可讓您在其他條件式存取原則 (例如 Multi-Factor Authentication) 之外，建立 Intune 裝置條件式存取原則 (稱為 Azure AD 裝置型條件式存取原則)。 您也可以設定 Azure AD 支援的 Salesforce 和 Box 等協力廠商企業應用程式的條件式存取原則。 如需詳細資訊，請參閱[如何設定 Azure Active Directory 裝置型條件存取原則來控制對 Azure Active Directory 連線應用程式的存取](https://azure.microsoft.com/en-us/documentation/articles/active-directory-conditional-access-policy-connected-applications/)。
 
  適用於 Exchange Online 的條件式存取原則會使用下列流程，來評估要允許還是封鎖裝置。  
 
- ![ConditionalAccess8 -&1;](media/ConditionalAccess8-1.png)  
+ ![ConditionalAccess8 - 1](media/ConditionalAccess8-1.png)  
 
  若要存取電子郵件，裝置必須：  
 
@@ -203,7 +200,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
 -   針對電腦：  
 
-    -   如果原則設定需要加入網域，而電腦未加入網域，就會顯示連絡 IT 管理員的訊息。  
+    -   如果原則設定為需要加入網域，而電腦未加入網域，就會顯示連絡 IT 管理員的訊息。  
 
     -   如果原則設為需要加入或與網域相容，但電腦不符合任一要求，即會顯示訊息指示如何安裝及註冊公司入口網站應用程式。  
 
@@ -242,7 +239,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
     >  **新式驗證** 將 Active Directory 驗證程式庫 (ADAL) 登入整合到 Office 用戶端中。  
     >   
     >  -   ADAL 型驗證可讓 Office 用戶端進行以瀏覽器為基礎的驗證 (又稱為被動驗證)。  系統會將使用者導向登入網頁，以便進行驗證。  
-    > -   這個新的登入方法可根據 [裝置相容性]  以及是否執行 [Multi-Factor Authentication]  ，來啟用條件式存取等新案例。  
+    > -   這個新的登入方法可根據 [裝置合規性] 以及是否執行 [Multi-Factor Authentication] ，來啟用條件式存取等新案例。  
     >   
     >  這篇 [文章](https://support.office.com/en-US/article/How-modern-authentication-works-for-Office-2013-and-Office-2016-client-apps-e4c45989-4b1a-462e-a81b-2a13191cf517) 包含新式驗證運作方式的更詳細資訊。  
 
@@ -299,7 +296,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 ### <a name="for-exchange-on-premises-and-tenants-in-the-legacy-exchange-online-dedicated-environment"></a>適用於 Exchange 內部部署 (以及舊版 Exchange Online Dedicated 環境中的租用戶)  
  適用於 Exchange 內部部署以及舊版 Exchange Online Dedicated 環境中租用戶的條件式存取原則會使用下列流程，來評估要允許還是封鎖裝置。  
 
- ![ConditionalAccess8 -&2;](media/ConditionalAccess8-2.png)  
+ ![ConditionalAccess8 - 2](media/ConditionalAccess8-2.png)  
 
 ##### <a name="to-enable-the-exchange-on-premises-policy"></a>啟用 Exchange 內部部署原則  
 
@@ -362,4 +359,3 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
 ### <a name="see-also"></a>請參閱  
  [管理 System Center Configuration Manager 中的服務存取權](../../protect/deploy-use/manage-access-to-services.md)
-

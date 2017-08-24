@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3343eccf-bf09-41cd-9e68-03e893c7f904
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 916aac9a8f724e37044884cd73de5fea1f1a8f97
 ms.openlocfilehash: 76f907b17df0dd2f102e34ca3cfb3ffc813c0004
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-system-center-configuration-manager"></a>Introduction to System Center Configuration Manager (System Center Configuration Manager 簡介)
 
@@ -74,7 +73,7 @@ Configuration Manager 也會使用：
 -   [尋找使用 System Center Configuration Manager 的說明](../../core/understand/find-help.md)  
 -   [System Center Configuration Manager 的已移除和已淘汰功能](../../core/plan-design/changes/removed-and-deprecated-features.md)  
 
-##  <a name="a-namebkmkconsolea-the-configuration-manager-console"></a><a name="BKMK_Console"></a> Configuration Manager 主控台  
+##  <a name="BKMK_Console"></a> Configuration Manager 主控台  
  在您安裝 Configuration Manager 之後，可使用 Configuration Manager 主控台設定站台和用戶端，並執行和監視管理工作。 此主控台是主要系統管理點，可讓您管理多個網站。  
 
  您可以使用主控台執行次要主控台，以支援特定用戶端管理工作，例如：  
@@ -86,7 +85,7 @@ Configuration Manager 也會使用：
 
 如需詳細資訊，請參閱[安裝 System Center Configuration Manager 主控台](../../core/servers/deploy/install/install-consoles.md)。
 
-##  <a name="a-namebkmkapplicationcataloga-the-application-catalog-software-center-and-the-company-portal"></a><a name="BKMK_ApplicationCatalog"></a> 應用程式類別目錄、軟體中心和公司入口網站  
+##  <a name="BKMK_ApplicationCatalog"></a> 應用程式類別目錄、軟體中心和公司入口網站  
  **「應用程式類別目錄」** 是一個網站，使用者可在該網站上瀏覽，針對其 Windows 電腦要求軟體。 若要使用「應用程式類別目錄」，您必須為站台安裝「應用程式類別目錄」Web 服務點和「應用程式類別目錄」網站點。  
 
  **「軟體中心」**是一種應用程式，其會在 Windows 電腦安裝 Configuration Manager 用戶端時一併安裝。 使用者會執行此應用程式來要求軟體，以及管理 Configuration Manager 部署給他們的軟體。 「軟體中心」可讓使用者執行下列作業：  
@@ -100,12 +99,12 @@ Configuration Manager 也會使用：
 
 如需詳細資訊，請參閱[開始使用 System Center Configuration Manager 的應用程式管理](../../apps/understand/introduction-to-application-management.md)。  
 
-###  <a name="a-namebkmkclienta-configuration-manager-properties-on-windows-pcs"></a><a name="BKMK_Client"></a> Configuration Manager 內容 (在 Windows 電腦上)  
+###  <a name="BKMK_Client"></a> Configuration Manager 內容 (在 Windows 電腦上)  
  在 Windows 電腦上安裝 Configuration Manager 用戶端時，會將 Configuration Manager 安裝在控制台中。 因為用戶端設定是在 Configuration Manager 主控台中執行，所以通常您不需要設定此應用程式。 此應用程式可幫助系統管理使用者和技術服務人員解決個別用戶端的問題。  
 
  如需用戶端部署的詳細資訊，請參閱 [System Center Configuration Manager 中的用戶端安裝方法](../../core/clients/deploy/plan/client-installation-methods.md)。  
 
-##  <a name="a-namebkmkexamplescenariosa-example-scenarios-for-configuration-manager"></a><a name="BKMK_ExampleScenarios"></a> Configuration Manager 的範例案例  
+##  <a name="BKMK_ExampleScenarios"></a> Configuration Manager 的範例案例  
  下列範例案例示範 Trey Research 這家公司如何使用 System Center Configuration Manager，讓使用者能夠：  
 
 -   更具生產力。  
@@ -114,7 +113,7 @@ Configuration Manager 也會使用：
 
 在所有案例中，Adam 是 Configuration Manager 的主要系統管理員。  
 
-###  <a name="a-namebkmkscenarioempowera-example-scenario-empower-users-by-ensuring-access-to-applications-from-any-device"></a><a name="BKMK_ScenarioEmpower"></a> 範例案例：確保使用者能夠從任何裝置存取應用程式  
+###  <a name="BKMK_ScenarioEmpower"></a> 範例案例：確保使用者能夠從任何裝置存取應用程式  
  Trey Research 想要確保員工能夠而且盡可能有效率地存取需要的應用程式。 Adam 將這些公司需求對應到下列案例：  
 
 |需求|目前的用戶端管理狀態|未來的用戶端管理狀態|  
@@ -142,7 +141,7 @@ Configuration Manager 也會使用：
 
  這些設定步驟和結果，讓 Trey Research 能確實從任何裝置存取應用程式，以順利對員工授權。  
 
-###  <a name="a-namebkmkscenariounifya-example-scenario-unify-compliance-management-for-devices"></a><a name="BKMK_ScenarioUnify"></a> 範例案例：整合裝置的相容性管理  
+###  <a name="BKMK_ScenarioUnify"></a> 範例案例：整合裝置的相容性管理  
  Trey Research 想要整合用戶端管理解決方案，以確定他們的電腦執行的防毒軟體會自動保持最新狀態。 即：  
 
 -   [Windows 防火牆] 已啟用。  
@@ -182,7 +181,7 @@ Adam 將這些公司需求對應到下列案例：
 
  這些設定步驟和結果，使得 Trey Research 能順利整合裝置的相容性管理。  
 
-###  <a name="a-namebkmkscenariosimplifya-example-scenario-simplify-client-management-for-devices"></a><a name="BKMK_ScenarioSimplify"></a> 範例案例：簡化裝置的用戶端管理  
+###  <a name="BKMK_ScenarioSimplify"></a> 範例案例：簡化裝置的用戶端管理  
  Trey Research 想要讓所有新電腦自動安裝公司的 Windows 7 基礎電腦映像。 在這些電腦上安裝作業系統映像後，必須管理及監視使用者在這些電腦上安裝的其他軟體。 儲存高度機密資訊的電腦，比其他電腦需要限制更多的管理原則。 例如，技術支援工程師不得從遠端進行連線、必須輸入 BitLocker PIN 才能重新啟動，以及只有本機系統管理員可以安裝軟體。  
 
  Adam 將這些公司需求對應到下列案例：  
@@ -212,16 +211,10 @@ Adam 將這些公司需求對應到下列案例：
 
  Trey Research 報告顯示這些設定步驟和結果已成功地簡化裝置的用戶端管理。  
 
-##  <a name="a-namebkmknextstepsa-next-steps"></a><a name="BKMK_NextSteps"></a> 後續步驟  
+##  <a name="BKMK_NextSteps"></a> 後續步驟  
  安裝 Configuration Manager 之前，請先熟悉一些專屬於 Configuration Manager 的基本概念和詞彙。  
 
 -   如果您已熟悉 System Center 2012 Configuration Manager，請參閱 [System Center Configuration Manager 和 System Center 2012 Configuration Manager 之間的變更](../../core/plan-design/changes/what-has-changed-from-configuration-manager-2012.md)以了解新功能。  
 -   如需 System Center Configuration Manager 的高階技術概觀，請參閱 [System Center Configuration Manager 的基礎](../../core/understand/fundamentals.md)。  
 
 若您已熟悉這些基本概念，請使用 System Center Configuration Manager 文件來協助您成功地部署與使用 Configuration Manager。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

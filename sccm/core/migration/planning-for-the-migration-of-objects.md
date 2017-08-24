@@ -6,23 +6,20 @@ ms.date: 1/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 066caf00-e419-4efb-93d3-ba4ba878297c
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
 ms.openlocfilehash: 17f3955aa7c63a13bab03b46002f7de0b0ec38fe
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-the-migration-of-configuration-manager-objects-to-system-center-configuration-manager"></a>規劃將 Configuration Manager 物件移轉至 System Center Configuration Manager
 
@@ -188,4 +185,3 @@ Configuration Manager 不支援報告的移轉。 反之，它會使用 SQL Serv
  Configuration Manager 2007 與 System Center Configuration Manager 之間的軟體計量並沒有重大變更。 您可以將軟體計量規則從支援的來源階層移轉至目的地階層。  
 
  依預設，您移轉至目的地階層的軟體計量規則與目的地階層中的特定網站並無關聯，因此這些規則可套用至階層中的所有用戶端。 若要將軟體計量規則套用至特定網站中的用戶端，您必須在移轉後編輯該計量規則。  
-

@@ -6,12 +6,11 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: eb20eb90-bcc0-41de-bfea-638ea470c0dd
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
@@ -33,12 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 688e05aae0e0b15b54835f8d64a98487f4d7b64d
-ms.openlocfilehash: 82bcd1a9fe22bf7ecc2dc5765f64f5198494152e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/30/2016
-
+ms.openlocfilehash: ba1e53fdc895690bb958c12d59f82a26067ecad3
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1610-of-system-center-configuration-manager"></a>System Center Configuration Manager 1610 版的診斷使用方式資料收集層級
 
@@ -64,13 +62,13 @@ System Center Configuration Manager 1610 版會收集三種層級的診斷及使
 
 
 -   安裝程式資訊：
-       - 組建、安裝類型、語言套件以及您啟用的功能  
+      - 組建、安裝類型、語言套件以及您啟用的功能  
 
-       - 更新套件部署狀態和錯誤、下載進度和必要條件錯誤     
+      - 更新套件部署狀態和錯誤、下載進度和必要條件錯誤    
 
-       - 升級後的指令碼版本
+      - 升級後的指令碼版本
 
-       - 使用更新快速通道 (Fast Ring)
+      - 使用更新快速通道 (Fast Ring)
 
     - ***[新增]*** 發行前版本的使用、安裝媒體類型及分支類型
 
@@ -265,7 +263,7 @@ System Center Configuration Manager 1610 版會收集三種層級的診斷及使
 
     -   針對 Endpoint Protection 功能所設定的警示計數  
 
-    -     進階威脅防護 (ATP) 原則 (原則的計數以及是否部署原則)
+    -   進階威脅防護 (ATP) 原則 (原則的計數以及是否部署原則)
 
 
 - **移轉：**
@@ -438,4 +436,3 @@ System Center Configuration Manager 1610 版會收集三種層級的診斷及使
 -   詳細的用戶端部署安裝錯誤
 
 - ***[新增]*** 商務用 Windows 市集應用程式詳細資料 (已同步應用程式的非彙總清單，包括 AppID、線上狀態或離線狀態，以及已購買的授權總數)
-

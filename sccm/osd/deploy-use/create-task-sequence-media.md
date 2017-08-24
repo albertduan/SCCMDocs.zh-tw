@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 90498b4b-6a9b-43cd-b465-1d6c9a52df1c
-caps.latest.revision: 8
-caps.handback.revision: 0
+caps.latest.revision: "8"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: bd5448d70c2d465347de840cb197d4c33075c90a
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-task-sequence-media-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立工作順序媒體
 
@@ -35,10 +34,10 @@ ms.openlocfilehash: bd5448d70c2d465347de840cb197d4c33075c90a
 > [!IMPORTANT]  
 >  若要建立工作順序媒體，您必須為執行 Configuration Manager 主控台之電腦上的系統管理員。 如果您不是系統管理員，當您啟動「建立工作順序媒體」精靈時，系統將會提示您輸入系統管理員認證。  
 
-##  <a name="a-namebkmkplancapturemediaa-capture-media-for-operating-system-images"></a><a name="BKMK_PlanCaptureMedia"></a> 作業系統映像的擷取媒體  
+##  <a name="BKMK_PlanCaptureMedia"></a> 作業系統映像的擷取媒體  
  擷取媒體可用於從參照電腦擷取作業系統映像。 擷取媒體包含啟動參照電腦的開機映像，以及擷取作業系統映像的工作順序。 如需如何建立擷取媒體的資訊，請參閱[使用 System Center Configuration Manager 建立擷取媒體](create-capture-media.md)。  
 
-##  <a name="a-namebkmkplanbootablemediaa-bootable-media-operating-system-deployments"></a><a name="BKMK_PlanBootableMedia"></a> 可開機媒體作業系統部署  
+##  <a name="BKMK_PlanBootableMedia"></a> 可開機媒體作業系統部署  
  可開機媒體只包含開機映像、選擇性的[啟動前置命令](../understand/prestart-commands-for-task-sequence-media.md) 和其必要檔案，以及 Configuration Manager 二進位檔。 目的地電腦啟動時會連線至網路，並從網路擷取工作順序、作業系統映像，以及任何其他必要的內容。 由於工作順序不在媒體上，因此不需要重新建立媒體即可變更工作順序或內容。  
 
 > [!IMPORTANT]  
@@ -46,7 +45,7 @@ ms.openlocfilehash: bd5448d70c2d465347de840cb197d4c33075c90a
 
  如需如何建立可開機媒體的相關資訊，請參閱[建立可開機媒體](create-bootable-media.md)。  
 
-##  <a name="a-namebkmkplanprestagedmediaa-prestaged-media-operating-system-deployments"></a><a name="BKMK_PlanPrestagedMedia"></a> 預先設置的媒體作業系統部署  
+##  <a name="BKMK_PlanPrestagedMedia"></a> 預先設置的媒體作業系統部署  
  預先設置的媒體可用於在佈建程序之前，將可開機媒體及作業系統映像預先設置到硬碟上。 預先設置的媒體是 Windows 映像格式 (WIM) 檔案，可由廠商或在企業設置中心安裝於未連線 Configuration Manager 環境的裸機電腦。  
 
  預先設置的媒體包含用於啟動目的地電腦的開機映像，以及將套用於目的地電腦的作業系統映像。 您也可以指定在預先設置的媒體中加入應用程式、套件及驅動程式套件。 媒體中不包含部署作業系統的工作順序。 部署使用預先設置媒體的工作順序時，用戶端會先檢查本機工作順序快取中的有效內容，如果找不到有效內容，或者內容已經過修改，則用戶端會從發佈點下載內容。  
@@ -58,7 +57,7 @@ ms.openlocfilehash: bd5448d70c2d465347de840cb197d4c33075c90a
 
  如需如何建立預先設置媒體的相關資訊，請參閱[建立預先設置媒體](create-prestaged-media.md)。  
 
-##  <a name="a-namebkmkplanstandalonemediaa-stand-alone-media-operating-system-deployments"></a><a name="BKMK_PlanStandaloneMedia"></a> 獨立媒體作業系統部署  
+##  <a name="BKMK_PlanStandaloneMedia"></a> 獨立媒體作業系統部署  
  獨立媒體包含部署作業系統所需的完整內容， 其中包括工作順序和任何其他必要內容。 由於部署作業系統所需的全部內容都儲存在獨立媒體中，因此獨立媒體比其他類型的媒體需要更大的磁碟空間。  
 
  如需如何建立獨立媒體的相關資訊，請參閱[建立獨立媒體](create-stand-alone-media.md)。  
@@ -69,9 +68,3 @@ ms.openlocfilehash: bd5448d70c2d465347de840cb197d4c33075c90a
 -   要將媒體設定為動態媒體，所有主要網站都必須要有用於建立媒體之網站的根 CA。 您可以將根 CA 匯入至階層中的所有主要網站。  
 
 -   若 Configuration Manager 階層中的主要站台使用不同的根 CA，您必須在每個站台上使用以站台為基礎的媒體。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -6,27 +6,26 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 68fe0e7e-351e-4222-853a-877475adb589
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 2ac9f98dc7b455d3b72d794d4311863186ed53ef
 ms.openlocfilehash: cd94f9ccc7e196b30e5dc7ae9368d073b7cff5d2
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="communications-between-endpoints-in-system-center-configuration-manager"></a>System Center Configuration Manager 中端點之間的通訊
 
 適用於：System Center Configuration Manager (最新分支)
 
 
-##  <a name="a-nameplanningintra-sitecoma-communications-between-site-systems-in-a-site"></a><a name="Planning_Intra-site_Com"></a> 站台內站台系統之間的通訊  
+##  <a name="Planning_Intra-site_Com"></a> 站台內站台系統之間的通訊  
  當 Configuration Manager 站台系統或元件透過網路與其他站台系統或站台中的 Configuration Manager 元件通訊時，會根據站台設定方式來使用下列其中一項通訊協定：  
 
 -   伺服器訊息區 (SMB)  
@@ -46,7 +45,7 @@ ms.openlocfilehash: cd94f9ccc7e196b30e5dc7ae9368d073b7cff5d2
 如需詳細資訊，請參閱[管理內容管理的網路頻寬](manage-network-bandwidth.md)。
 
 
-##  <a name="a-nameplanningclienttositesystema-communications-from-clients-to-site-systems-and-services"></a><a name="Planning_Client_to_Site_System"></a> 從用戶端到站台系統和服務的通訊  
+##  <a name="Planning_Client_to_Site_System"></a> 從用戶端到站台系統和服務的通訊  
 用戶端會起始與站台系統角色、Active Directory 網域服務及線上服務的通訊。 若要啟用這些通訊，防火牆必須允許用戶端和其通訊端點之間的網路流量。 端點包括：  
 
 -   **應用程式類別目錄網站點**：支援 HTTP 和 HTTPS 通訊
@@ -79,7 +78,7 @@ ms.openlocfilehash: cd94f9ccc7e196b30e5dc7ae9368d073b7cff5d2
 
 如需用戶端與這些端點進行通訊時所用的連接埠和通訊協定的詳細資訊，請參閱 [System Center Configuration Manager 中使用的連接埠](../../../core/plan-design/hierarchy/ports.md)。  
 
-###  <a name="a-namebkmkclientspana-considerations-for-client-communications-from-the-internet-or-an-untrusted-forest"></a><a name="BKMK_clientspan"></a> 從網際網路或未受信任之樹系的用戶端通訊考量  
+###  <a name="BKMK_clientspan"></a> 從網際網路或未受信任之樹系的用戶端通訊考量  
 安裝在主要站台的下列站台系統角色支援來自不受信任位置 (例如網際網路或不受信任樹系) 的用戶端連線。 (次要站台不支援來自不受信任位置的用戶端連線)  
 
 -   應用程式類別目錄網站點  
@@ -120,7 +119,7 @@ ms.openlocfilehash: cd94f9ccc7e196b30e5dc7ae9368d073b7cff5d2
 -   **通道**：   
     若您的 Proxy 網頁伺服器無法支援 SSL 橋接的需求，或您想設定網際網路支援由 Configuration Manager 註冊的行動裝置，則也支援 SSL 通道。 這是比較危險的選項，因為來自網際網路的 SSL 封包會轉寄到沒有 SSL 終止的網站系統，因此無法檢查封包內是否存在惡意內容。 使用 SSL 通道時，Proxy 網頁伺服器不需要憑證。  
 
-##  <a name="a-nameplancomx-foresta-communications-across-active-directory-forests"></a><a name="Plan_Com_X-Forest"></a> 跨 Active Directory 樹系的通訊  
+##  <a name="Plan_Com_X-Forest"></a> 跨 Active Directory 樹系的通訊  
 System Center Configuration Manager 支援跨 Active Directory 樹系的站台與階層。  
 
 Configuration Manager 也支援不在相同 Active Directory 樹系作為站台伺服器的網域電腦，以及工作群組內的電腦：  
@@ -152,7 +151,7 @@ Configuration Manager 也支援不在相同 Active Directory 樹系作為站台�
 
     -   [如何在工作群組電腦上安裝 Configuration Manager 用戶端](../../../core/clients/deploy/deploy-clients-to-windows-computers.md#BKMK_ClientWorkgroup)  
 
-###  <a name="a-namebkmkspana-scenarios-to-support-a-site-or-hierarchy-that-spans-multiple-domains-and-forests"></a><a name="bkmk_span"></a> 可支援跨多個網域和樹系之站台或階層的案例  
+###  <a name="bkmk_span"></a> 可支援跨多個網域和樹系之站台或階層的案例  
 
 #### <a name="communication-between-sites-in-a-hierarchy-that-spans-forests"></a>跨樹系階層中網站間的通訊  
 此案例需要支援 Kerberos 驗證的雙向樹系信任。  如果您沒有支援 Kerberos 驗證的雙向樹系信任，Configuration Manager 就不支援遠端樹系中的子站台。  
@@ -256,11 +255,5 @@ Configuration Manager 中的站台間通訊使用資料庫複寫和以檔案為�
 
 -   設定每個站台將其資料發佈至 Active Directory 網域服務。 此設定可啟用該樹系中的用戶端，以擷取網站資訊和找出管理點。 針對無法使用服務位置之 Active Directory 網域服務的用戶端，您可以使用 DNS、WINS，或用戶端指派的管理點。  
 
-###  <a name="a-namebkmkxchangea-put-the-exchange-server-connector-in-a-remote-forest"></a><a name="bkmk_xchange"></a> 將 Exchange Server 連接器放在遠端樹系中  
+###  <a name="bkmk_xchange"></a> 將 Exchange Server 連接器放在遠端樹系中  
 若要支援此案例，請確認名稱解析可在樹系之間運作 (例如設定 DNS 轉寄)，並在您設定 Exchange Server 連接器時指定 Exchange Server 的內部網路 FQDN。 如需詳細資訊，請參閱[使用 System Center Configuration Manager 和 Exchange 管理行動裝置](../../../mdm/deploy-use/manage-mobile-devices-with-exchange-activesync.md)。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

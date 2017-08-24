@@ -6,23 +6,20 @@ ms.date: 2/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d09a82c6-bbd1-49ca-8ffe-e3ce87b85d33
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ce0d7fc5f3d1812c4d62e551661c0ef89707567b
 ms.openlocfilehash: 53f119bbb1f8827a9c23c8b747840350bbb92790
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-a-sql-server-cluster-for-the-system-center-configuration-manager-site-database"></a>針對 System Center Configuration Manager 站台資料庫使用 SQL Server 叢集
 
@@ -103,4 +100,3 @@ ms.lasthandoff: 05/17/2017
 
     > [!IMPORTANT]  
     >  當您輸入輸入虛擬 SQL Server 叢集執行個體的名稱時，請勿輸入 Windows Server 叢集所建立的虛擬 Windows Server 名稱。 若是使用虛擬 Windows Server 名稱，站台資料庫將會安裝在作用中 Windows Server 叢集節點的本機硬碟上。 若該節點失敗，將會造成容錯移轉失敗。  
-

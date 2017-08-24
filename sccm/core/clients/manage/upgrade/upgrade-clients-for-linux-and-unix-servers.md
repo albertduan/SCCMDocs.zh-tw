@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7d2bb377-1005-4a55-bd1f-b80a6d0b22e1
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: eea9faaac579ecafd67eaac05dc7ee7ca7819db7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 394ba7c236c05cc90a3d7f99eb6146b15d620f11
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-upgrade-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中升級 Linux 和 UNIX 伺服器的用戶端
 
@@ -63,4 +60,3 @@ ms.lasthandoff: 12/16/2016
      例如，使用下列命令列來執行指令碼：**at -f /tmp/upgrade.sh -m now + 5 minutes**  
 
  用戶端成功排程 **upgrade.sh** 指令碼執行之後，用戶端會提交狀態訊息，指出已順利完成軟體部署。 不過，在延遲之後，實際用戶端安裝之後是由電腦所管理。 完成用戶端升級之後，請檢閱用戶端電腦上的 **/var/opt/microsoft/scxcm.log** 檔案來驗證安裝。 此外，您還可以在 Configuration Manager 主控台之 [資產與相容性] 工作區的 [裝置] 節點中檢視用戶端詳細資料，確認已安裝用戶端，而且用戶端正在與站台通訊。  
-

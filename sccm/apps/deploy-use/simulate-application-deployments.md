@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 28b240a4-d358-40ce-8006-c697b1622ece
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 0ad42d07d260581099046f11255ee312046b2595
 ms.openlocfilehash: b06539ded21eac71dda7da89dae96fda7a801260
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="simulate-application-deployments-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 模擬應用程式部署
 
@@ -55,9 +54,3 @@ ms.openlocfilehash: b06539ded21eac71dda7da89dae96fda7a801260
 4.  按一下 [下一步]，並檢閱 [摘要] 頁面上的資訊，然後完成精靈以建立模擬應用程式部署。  
 
 5.  模擬應用程式會出現在 [監視] 工作區的 [部署] 節點中，目的為 [模擬]。 如需如何監視應用程式部署的詳細資訊，請參閱[從 System Center Configuration Manager 主控台監視應用程式](../../apps/deploy-use/monitor-applications-from-the-console.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

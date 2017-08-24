@@ -6,24 +6,20 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: e63f2394-6eb1-4a33-bec5-8377fc62a34e
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a8218e23743dafaf8ff1166142cf2dcca1212133
 ms.openlocfilehash: 6917644d6719a1ca636713aa5aebf277927123c8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="configure-endpoint-protection"></a>設定 Endpoint Protection
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -46,4 +42,3 @@ ms.lasthandoff: 05/17/2017
 |**步驟 3：**[設定 Endpoint Protection 用戶端的定義更新來源](endpoint-definition-updates.md)|可將 Endpoint Protection 設定為使用各種不同的來源來下載定義更新。 |  
 |**步驟 4：**[設定預設反惡意程式碼原則，並建立自訂反惡意程式碼原則](endpoint-antimalware-policies.md)|安裝 Endpoint Protection 用戶端時，會套用預設反惡意程式碼原則。 根據預設，部署用戶端後 60 分鐘內即會套用任何已部署的自訂原則。 請確定您在部署 Endpoint Protection 用戶端之前，設定反惡意程式碼原則。 |  
 |**步驟 5：**[設定 Endpoint Protection 的自訂用戶端設定](endpoint-protection-configure-client.md)|使用自訂用戶端設定，針對階層中的電腦集合設定 Endpoint Protection 設定。<br /><br /> 注意：請勿設定預設 Endpoint Protection 用戶端設定 (除非您確定要將這些設定套用到階層中的所有電腦)。 |  
-

@@ -6,23 +6,20 @@ ms.date: 06/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8ca970dd-e71c-404f-9435-d36e773a0db2
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0564cb678200d17d97c0f1d111c0b4b41d8ba40e
 ms.openlocfilehash: 188b7f2537dd0e569a5c00995620124512cf311b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/30/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="upgrade-on-premises-infrastructure-that-supports-system-center-configuration-manager"></a>升級支援 System Center Configuration Manager 的內部部署基礎結構
 
@@ -212,4 +209,3 @@ ms.lasthandoff: 06/30/2017
 
 > [!NOTE]  
 >  當您將管理中心網站使用的 SQL Server 版本，從 Standard Edition 變更成 Datacenter 或 Enterprise Edition 時，限制階層支援的用戶端數目的資料庫資料分割不會變更。
-

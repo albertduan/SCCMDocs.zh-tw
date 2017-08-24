@@ -6,22 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8adbe2e2-de26-4a80-8bbd-a5f34b8bac79
-caps.latest.revision: 18
-caps.handback.revision: 0
+caps.latest.revision: "18"
+caps.handback.revision: "0"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
 ms.openlocfilehash: bc7bb99bc526ed0bbaaad15fc9af39fa8b7c3893
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-applications-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中管理應用程式
 
@@ -56,4 +54,3 @@ ms.lasthandoff: 05/17/2017
 ### <a name="next-steps"></a>後續步驟
 
 您最終可能會想要對應用程式做出變更、將應用程式解除安裝，或將已部署的應用程式取代為新的應用程式。 請參閱[使用 System Center Configuration Manager 更新及淘汰應用程式](../../apps/deploy-use/update-and-retire-applications.md)，以了解這些功能。
-

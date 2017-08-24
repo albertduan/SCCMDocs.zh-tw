@@ -6,22 +6,20 @@ ms.date: 07/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3c9648c4-645e-4e47-ae10-2da817b8c83b
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: aecc4ccfec98932f3988f1ca1fcdc898cd417933
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-remotely-administer-a-windows-client-computer-by-using-system-center-configuration-manager"></a>如何使用 System Center Configuration Manager 從遠端管理 Windows 用戶端電腦
 
@@ -97,4 +95,3 @@ CmRcViewer.exe 支援下列命令列選項：
 - **/?** - 顯示遠端控制檢視器的命令列選項。  
      
 **範例：CmRcViewer.exe** *<位址\>* *<\\\站台伺服器名稱>*  
-

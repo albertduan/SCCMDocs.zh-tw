@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: dccf0b73-43bd-4545-8914-114168ebad36
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
-ms.openlocfilehash: bdb7f78480f73bc4559c4ff49ecb7b047581780a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 451317db1d7aab888c03d1a099b9ce25311e06d0
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="email-profile-prerequisites"></a>電子郵件設定檔必要條件
 
@@ -42,4 +39,3 @@ System Center Configuration Manager 中的電子郵件設定檔在產品內外�
 |相依性|詳細資訊|  
 |----------------|----------------------|  
 |Active Directory 中的郵件屬性|如果您要利用使用者的主要 SMTP 位址，在電子郵件設定檔中產生使用者的電子郵件地址，此位址必須存在於 Active Directory 的 [郵件] 屬性中。<br /><br /> 如需詳細資訊，請參閱 Windows Server 文件。|
-

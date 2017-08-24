@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6893fce1-7ad5-4151-9ba9-3096871e8e4a
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
 ms.openlocfilehash: 8aa6971d75924ab5bcacd70c330913097ecf8717
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-migration-to-system-center-configuration-manager"></a>移轉至 System Center Configuration Manager 的安全性和隱私權
 
@@ -64,9 +63,3 @@ ms.openlocfilehash: 8aa6971d75924ab5bcacd70c330913097ecf8717
 預設不啟用移轉功能，而且需要數個設定步驟。 不會將移轉資訊傳送給 Microsoft。  
 
 從來源階層移轉資料時，需先考慮您的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

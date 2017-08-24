@@ -1,5 +1,4 @@
 ---
-
 title: "軟體更新簡介 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 軟體更新的基本概念。"
 keywords: 
@@ -10,15 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: e9778b13-c8a3-40eb-8655-34ac8ce9cdaa
-translationtype: Human Translation
-ms.sourcegitcommit: d8cace9edd58e8fa438dbb43e54e57cd0dc55d2b
 ms.openlocfilehash: 2904b904bbaf155f016f55fbd36af80308a42d76
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager 的軟體更新簡介
 
@@ -28,7 +25,7 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 
 如需顯示如何在環境中部署軟體更新的範例案例，請參閱[部署安全性軟體更新的範例案例](../deploy-use/example-scenario-deploy-monitor-monthly-security-updates.md)。  
 
-##  <a name="a-namebkmksynchronizationa-software-updates-synchronization"></a><a name="BKMK_Synchronization"></a> 軟體更新同步處理  
+##  <a name="BKMK_Synchronization"></a> 軟體更新同步處理  
  Configuration Manager 中的軟體更新同步處理會連線到 Microsoft Update 以擷取軟體更新中繼資料。 頂層站台 (管理中心網站或獨立主要站台) 會依排程或在您從 Configuration Manager 主控台手動啟動同步處理時，與 Microsoft Update 同步處理。 當 Configuration Manager 於頂層站台完成軟體更新同步處理時，軟體更新同步處理就會在子站台開始同步處理 (如果有的話)。 當每個主要網站或次要網站的同步處理完成時，就會建立全網站原則，提供軟體更新點的位置給用戶端電腦。  
 
 > [!NOTE]  
@@ -82,7 +79,7 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 
 7.  WSUS 同步處理管理員會一次將一個要求傳送至於網站上其他軟體更新點上執行的 WSUS。 其他更新點上的 WSUS 伺服器會設定為網站中預設軟體更新點上所執行 WSUS 的複本。  
 
-##  <a name="a-namebkmksumcompliancea-software-updates-compliance-assessment"></a><a name="BKMK_SUMCompliance"></a> Software updates compliance assessment  
+##  <a name="BKMK_SUMCompliance"></a> Software updates compliance assessment  
  您在 Configuration Manager 中將軟體更新部署至用戶端電腦之前，請先掃描用戶端電腦上的軟體更新相容性。 系統會針對每一個軟體更新建立狀態訊息，其中包含更新的相容性狀態。 狀態訊息會大量傳送至管理點，再傳送至網站伺服器，相容性狀態會在該處插入網站資料庫中。 軟體更新的相容性狀態會在 Configuration Manager 主控台中顯示。 您可以在需要更新的電腦上部署和安裝軟體更新。 下面各節提供有關相容性狀態的資訊，並且描述掃描軟體更新相容性的程序。  
 
 ### <a name="software-updates-compliance-states"></a>軟體更新相容性狀態  
@@ -180,7 +177,7 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 
      安裝軟體更新且重新啟動電腦之後，「軟體更新用戶端代理程式」會使用本機中繼資料啟動掃描。 用戶端永遠不會連線至軟體更新點上執行的 WSUS，以擷取軟體更新中繼資料。  
 
-##  <a name="a-namebkmkdeploymentpackagesa-software-update-deployment-packages"></a><a name="BKMK_DeploymentPackages"></a> 軟體更新部署套件  
+##  <a name="BKMK_DeploymentPackages"></a> 軟體更新部署套件  
  軟體更新部署套件是一種載具，用於將軟體更新下載至網路共用資料夾，以及將軟體更新來源檔案複製至網站伺服器上的內容庫以及部署中定義的發佈點上的內容庫。 藉由使用「下載更新精靈」，您可以下載軟體更新，以及在進行部署之前將軟體更新新增至部署套件。 此精靈可讓您在發佈點上準備軟體更新，以及在您部署軟體更新至用戶端之前，先確認部署程序的這部分是否成功。  
 
  當您使用「部署軟體更新精靈」部署下載的軟體更新時，部署會自動使用含有軟體更新的部署套件。 當部署尚未下載的軟體更新時，您必須在「部署軟體更新精靈」中指定新的或現有的部署套件，而在精靈完成時軟體更新便會下載。  
@@ -195,10 +192,10 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 
  用戶端會使用任何具有可用軟體更新 (無論部署套件為何) 的發佈點在部署中安裝軟體更新。 即使作用中部署的部署套件已經刪除，只要各個更新是下載到至少一個其他部署套件並且可在能從用戶端存取的發佈點上使用，用戶端仍然可以在部署中安裝軟體更新。 刪除最近一個含有軟體更新的部署套件時，在更新再次下載至部署套件之前，用戶端電腦會無法擷取軟體更新。 當更新檔案不在任何部署套件中時，軟體更新會顯示在 Configuration Manager 主控台中且含有紅色箭號。 如果在這個情況下部署中含有任何更新，部署就會顯示雙重紅色箭頭。  
 
-##  <a name="a-namebkmkdeploymentworkflowsa-software-update-deployment-workflows"></a><a name="BKMK_DeploymentWorkflows"></a> 軟體更新部署工作流程  
+##  <a name="BKMK_DeploymentWorkflows"></a> 軟體更新部署工作流程  
  在您的環境中部署軟體更新的主要狀況有兩種，即手動部署和自動部署。 通常，您是手動部署軟體更新以建立用戶端電腦的基準，然後使用自動部署管理用戶端上的軟體更新。 以下章節提供軟體更新的手動和自動部署的工作流程。  
 
-###  <a name="a-namebkmkmanualdeploymenta-manual-deployment-of-software-updates"></a><a name="BKMK_ManualDeployment"></a> 手動部署軟體更新  
+###  <a name="BKMK_ManualDeployment"></a> 手動部署軟體更新  
  手動部署軟體更新是在 Configuration Manager 主控台中選取軟體更新並且手動啟動部署程序的程序。 在您建立自動部署規則以管理每月進行中的軟體更新部署之前，您通常會使用這種部署方式以必要的軟體更新讓用戶端電腦保持在最新狀態，以及部署超出訊號範圍的軟體更新需求。 以下清單提供手動部署軟體更新的一般工作流程：  
 
 1.  篩選使用特定需求的軟體更新。 例如，您可以提供可擷取所有安全性或 50 部以上用戶端電腦上必要的重要軟體更新的準則。  
@@ -209,7 +206,7 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 
 4.  手動部署軟體更新群組。  
 
-###  <a name="a-namebkmkautomaticdeploymenta-automatic-deployment-of-software-updates"></a><a name="BKMK_AutomaticDeployment"></a> 自動部署軟體更新  
+###  <a name="BKMK_AutomaticDeployment"></a> 自動部署軟體更新  
  自動軟體更新部署是使用自動部署規則 (ADR) 來設定。 您通常會使用此方式部署您的每月軟體更新 (一般稱為 Patch Tuesday (周二修補)) 以及管理定義更新。 執行規則時，軟體更新會從軟體更新群組中移除 (使用現有群組時)，符合指定準則的軟體更新 (例如，最近一週發行的所有安全性軟體更新) 會新增至軟體更新群組，軟體更新的內容檔案會下載並複製到發佈點，並且軟體更新會部署至目標集合中的用戶端電腦。 以下清單提供自動部署軟體更新的一般工作流程：  
 
 1.  建立指定部署設定的 ADR，例如下列：  
@@ -254,7 +251,7 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 
     -   分隔這個部署的警示  
 
-##  <a name="a-namebkmkdeploymentprocessa-software-update-deployment-process"></a><a name="BKMK_DeploymentProcess"></a> 軟體更新部署程序  
+##  <a name="BKMK_DeploymentProcess"></a> 軟體更新部署程序  
  在您部署軟體更新之後，或在自動部署規則執行以及部署軟體更新時，部署指派原則會新增至網站的電腦原則。 軟體更新是從下載位置、網際網路或網路共用資料夾下載至套件來源。 軟體更新會從套件來源複製到網站伺服器上的內容庫，然後複製到發佈點上的內容庫。  
 
  當部署目標集合中的用戶端電腦收到電腦原則時，「軟體更新用戶端代理程式」會啟動評估掃描。 用戶端代理程式會在收到部署後迅速從發佈點將必要軟體更新的內容下載至本機用戶端快取，但是在軟體更新可供安裝之前，會先等待部署的 [軟體可用時間]  設定的時間。 在使用者手動啟動安裝之前，不會下載選用部署 (沒有安裝期限的部署) 中的軟體更新。  
@@ -267,7 +264,7 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 ### <a name="deployment-reevaluation-cycle"></a>部署重新評估週期  
  根據預設，用戶端電腦會每 7 天啟動部署重新評估週期一次。 在此評估週期期間，用戶端電腦會掃描先前已部署和安裝的軟體更新。 如果有缺少任何軟體更新，則會從本機快取重新安裝軟體更新。 如果軟體更新在本機快取中已無法使用，便會從發佈點下載然後安裝。 您可以在網站用戶端設定的 [軟體更新]  頁面上設定重新評估排程。  
 
-##  <a name="a-namebkmkembeddeddevicesa-support-for-windows-embedded-devices-that-use-write-filters"></a><a name="BKMK_EmbeddedDevices"></a> 支援使用寫入篩選器的 Windows Embedded 裝置  
+##  <a name="BKMK_EmbeddedDevices"></a> 支援使用寫入篩選器的 Windows Embedded 裝置  
  當您部署軟體更新至啟用寫入篩選器的 Windows Embedded 裝置時，您可以指定是否在部署期間停用裝置上的寫入篩選器，然後在部署後重新啟動裝置。 如果寫入篩選器未啟用，則軟體會部署為暫時重疊，而當裝置重新啟動時就不再安裝軟體，除非有其他部署強制持續變更。  
 
 > [!NOTE]  
@@ -277,14 +274,8 @@ System Center Configuration Manager 中的軟體更新會提供一組工具和�
 
  如需 Configuration Manager 如何管理使用寫入篩選器之內嵌裝置的詳細資訊，請參閱[規劃將用戶端部署至 Windows Embedded 裝置](../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)。  
 
-##  <a name="a-namebkmkextendsoftwareupdatesa-extend-software-updates-in-configuration-manager"></a><a name="BKMK_ExtendSoftwareUpdates"></a> 擴充 Configuration Manager 的軟體更新  
+##  <a name="BKMK_ExtendSoftwareUpdates"></a> 擴充 Configuration Manager 的軟體更新  
  使用 System Center Updates Publisher 管理無法從 Microsoft Update 使用的軟體更新。 在您將軟體更新發行至更新伺服器並且同步處理 Configuration Manager 中的軟體更新後，您可以將軟體更新部署至 Configuration Manager 用戶端。 如需 Updates Publisher 的詳細資訊，請參閱 [Updates Publisher 2011](http://go.microsoft.com/fwlink/p/?LinkId=252947)。  
 
 ## <a name="next-steps"></a>後續步驟
 [規劃軟體更新](../plan-design/plan-for-software-updates.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

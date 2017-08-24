@@ -6,21 +6,19 @@ ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0e9f0fbd-e442-4509-a021-bfdedf2d04dd
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fff93794afdfa9f890b1f06d6c330d8cffc5796c
 ms.openlocfilehash: b4db5d86cc0ed020ed176feb2e8f1f9dc51a2280
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configuration-options-for-site-system-roles-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 設定站台系統角色的選項
 
@@ -154,4 +152,3 @@ System Center Configuration Manager 站台系統角色的大部分設定選項�
 -   您發現目前的節流設定值會在站台伺服器上造成高 CPU 使用量。  
 
 除非您清楚會產生何種結果，否則請勿變更後援狀態點節流設定的設定值。 例如，當您新增過高的節流設定，站台伺服器上的 CPU 使用量便會增高，進而造成所有的站台作業變得緩慢。  
-

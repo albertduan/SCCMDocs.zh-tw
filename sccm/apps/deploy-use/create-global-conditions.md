@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2d5f871a-19dc-4bd3-a3ad-4230c7a69f1b
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 85e254f1074e02a52fea6a3cda21a37c332f249e
 ms.openlocfilehash: 8a59a1769eec4cd6d78d7686a1d8008e832dd924
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-global-conditions-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中建立全域條件
 
@@ -215,4 +212,3 @@ ms.lasthandoff: 12/16/2016
 7.  選擇 [確定] 以儲存運算式，然後關閉 [新增子句] 對話方塊。  
 
 8.  在完成將子句新增至全域條件的步驟後，選擇 [確定] 以關閉 [建立全域條件] 對話方塊並儲存全域條件。  
-

@@ -6,21 +6,19 @@ ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e025c48c-1514-4ab7-836c-e0635aaa993a
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 3a89abc81cd70f4e499bf4e3087fd53915377c44
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-android-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立 Android 應用程式
 
@@ -66,4 +64,3 @@ Configuration Manager 支援部署下列適用於 Android 的應用程式類型�
 8. 移至 [軟體程式庫] > [概觀] > [應用程式管理] > [應用程式]，再選擇 Android for Work 應用程式，然後如常部署。
 
 若要將 Play for Work 應用程式與 Configuration Manager 同步，您必須先至少核准 Play for Work 網站上的一個應用程式。
-

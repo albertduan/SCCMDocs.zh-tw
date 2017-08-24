@@ -6,23 +6,20 @@ ms.date: 01/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 84802d55-112e-4f7f-9a48-74a80d91a0f4
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: 87ab9925717a307cbda3cea1f2e470ae012fa067
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-drivers-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中管理驅動程式
 
@@ -277,4 +274,3 @@ System Center Configuration Manager 提供驅動程式類別目錄，讓您可�
 
 ##  <a name="BKMK_DriverReports"></a> 驅動程式管理報表  
  您可以運用 [驅動程式管理]  報告類別中的數種報告判定與驅動程式類別目錄中的裝置驅動程式相關之一般資訊。 如需報告的詳細資訊，請參閱[報告](../../core/servers/manage/reporting.md)。
-

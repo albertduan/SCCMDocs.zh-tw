@@ -6,23 +6,20 @@ ms.date: 3/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ec976930-7467-4d3c-b33c-991bf408a74a
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ee7f69bd65152deffb2456d9807e1e8fee8802ec
 ms.openlocfilehash: cd90f5462ac4bb4c0a2021e6d5dde65161b9c5f6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisites-for-migration-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中進行移轉的必要條件
 
@@ -128,4 +125,3 @@ ms.lasthandoff: 05/17/2017
     -   若要重新指派 System Center 2012 Configuration Manager 或 System Center Configuration Manager 發佈點，帳戶在來源站台上必須具備 [站台] 物件的 [修改] 權限。 您可以使用角色為基礎的系統管理將此權限授與帳戶。 如需如何使用以角色為基礎之系統管理的相關資訊，請參閱 [Fundamentals of role-based administration for System Center Configuration Manager](../../core/understand/fundamentals-of-role-based-administration.md)。  
 
      若要成功升級或重新指派發佈點至新階層，針對管理來源階層中發佈點之站台的用戶端要求所設定的連接埠，必須與針對將管理發佈點之目的地站台的用戶端要求所設定的連接埠相符。 如需用戶端要求連接埠的資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端通訊連接埠](../../core/clients/deploy/configure-client-communication-ports.md)。  
-

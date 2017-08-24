@@ -6,22 +6,19 @@ ms.date: 4/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6e4964c5-43cb-4372-9a89-b62ae6a4775c
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
 ms.openlocfilehash: 0da80521bf223a765c3731f8ad59623d85a4c9fa
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>使用 System Center Configuration Manager 的服務連接工具
 
@@ -163,4 +160,3 @@ ms.lasthandoff: 05/17/2017
 |**-connect -usagedatasrc [drive:][path] -updatepackdest [drive:][path] -proxyserveruri [FQDN of proxy server] -proxyusername [username]** <br /> <br /> 如果您使用比 1606 更早的 Configuration Manager 版本，就必須指定 .cab 檔案名稱，而且無法使用 Proxy 伺服器的選項。  支援的命令參數如下： <br /> **-connect -usagedatasrc [drive:][path][filename] -updatepackdest [drive:][path]** |此命令會連線至 Configuration Manager 雲端服務，以從指定的位置上傳使用方式資料 .cab 檔案，並下載可用的更新套件和主控台內容。 Proxy 伺服器的選項為選擇性。<br /><br /> 在可連線到網際網路的電腦上，以 **本機系統管理員** 身分執行這個命令。<br /><br /> 不使用 Proxy 伺服器連接的範例： **-connect -usagedatasrc D:\USB\ -updatepackdest D:\USB\UpdatePacks** <br /><br /> 使用 Proxy 伺服器連接的範例： **-connect -usagedatasrc D:\USB\Usagedata.cab -updatepackdest D:\USB\UpdatePacks -proxyserveruri itgproxy.redmond.corp.microsoft.com -proxyusername Meg** <br /><br /> 如果您使用 1606 之前的版本，就必須指定 .cab 檔案的檔案名稱，而且無法指定 Proxy 伺服器。 請使用下列命令列範例： **-connect -usagedatasrc D:\USB\Usagedata.cab -updatepackdest D:\USB\UpdatePacks**|      
 |**-import -updatepacksrc [drive:][path]**|這個命令會匯入先前下載到 Configuration Manager 主控台的更新套件和主控台內容。<br /><br /> 在裝載服務連接點的伺服器上，以 **本機系統管理員** 身分執行這個命令。<br /><br /> 範例：  **-import -updatepacksrc D:\USB\UpdatePacks**|  
 |**-export -dest [drive:][path][filename.csv]**|這個命令會將使用資料匯出至 .csv 檔案，以供您進行檢視。<br /><br /> 在裝載服務連接點的伺服器上，以 **本機系統管理員** 身分執行這個命令。<br /><br /> 範例： **-export -dest D:\USB\usagedata.csv**|  
-

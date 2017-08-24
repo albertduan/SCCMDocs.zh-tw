@@ -6,21 +6,18 @@ ms.date: 03/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bd3df04a-902f-4e91-89eb-5584b47d9efa
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
 ms.openlocfilehash: 528ce515c86c4e778532290026a90a46476c4576
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="task-sequence-steps-to-manage-bios-to-uefi-conversion"></a>用於管理 BIOS 轉換到 UEFI 的工作順序步驟
 Windows 10 提供許多新安全性功能，都需要啟用 UEFI 的裝置。 您可能有支援 UEFI，不過是使用傳統 BIOS 的新型 Windows 電腦。 在過去，將裝置轉換為 UEFI 需要您實際操作每部電腦，重新分割硬碟，並重新設定韌體。 透過使用 Configuration Manager 中的工作順序，您可以準備硬碟以進行 BIOS 至 UEFI 轉換，以就地升級程序之一部分的方式從 BIOS 轉換至 UEFI，並以硬體清查之一部分的方式收集 UEFI 資訊。
@@ -66,4 +63,3 @@ Windows 10 Creators Update 引進一個簡單的轉換工具，能夠為支援 U
    2. 新增啟動 OEM 工具的步驟，以將韌體從 BIOS 轉換成 UEFI。 這通常會是「執行命令列」工作順序步驟，其中包含啟動 OEM 工具的命令列。
    3. 在 [一般] 中，新增 [重新啟動電腦] 步驟。 如需指定重新啟動後要執行的項目，請選取 [目前安裝的預設作業系統]。
 3. 部署工作順序。
-

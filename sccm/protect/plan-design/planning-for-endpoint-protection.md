@@ -9,17 +9,15 @@ ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 7610bbd3-a67f-4a09-8115-e35d40d43b42
-caps.latest.revision: 16
+caps.latest.revision: "16"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
 ms.openlocfilehash: 6c4273dae99ec8db2cf827f463b973e876d0d35b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="planning-for-endpoint-protection-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的 Endpoint Protection 規劃
 
@@ -117,4 +115,3 @@ Configuration Manager 中的 Endpoint Protection 可讓您建立包含 Endpoint 
 
 ### <a name="distributing-definition-updates-by-using-software-updates"></a>使用軟體更新散發的定義更新檔  
  如果您使用 Configuration Manager 散佈定義更新的軟體更新，請考慮將程式碼定義更新放在不包含其他軟體更新的套件中。 如此一來定義更新封裝的大小較小使得複寫到更快速地發佈點。
-

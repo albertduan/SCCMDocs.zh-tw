@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: b06f781b-ab25-4d9a-b128-02cbd7cbcffe
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 130c053c9f2a1817dd85b1f3c01285aab19d59cb
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="database-replicas-for-management-points-for-system-center-configuration-manager"></a>System Center Configuration Manager 的管理點資料庫複本
 
@@ -32,7 +31,7 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 -   如此有助於減少站台資料庫伺服器上的 CPU 處理需求，方法是卸載與用戶端相關的常用處理工作。  用戶端常用處理工作的範例，包括有大量經常提出用戶端原則要求的用戶端之站台。  
 
 
-##  <a name="a-namebkmkpreparea-prepare-to-use-database-replicas"></a><a name="bkmk_Prepare"></a> 準備使用資料庫複本  
+##  <a name="bkmk_Prepare"></a> 準備使用資料庫複本  
 **有關管理點的資料庫複本：**  
 
 -   複本是站台資料庫的部分複本，其會複寫到另一個 SQL Server 執行個體：  
@@ -87,7 +86,7 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 
 -   **單一 SQL Server 上的多個複本**：若將資料庫複本伺服器設定成要為管理點裝載多個資料庫複本 (每個複本都必須位於個別的執行個體上)，您必須使用經過修改的組態指令碼 (來自下一節的步驟 4)，以避免覆寫先前在該伺服器上設定的資料庫複本所使用的自我簽署憑證。  
 
-##  <a name="a-namebkmkdbreplicaconfiga-configure-database-replicas"></a><a name="BKMK_DBReplica_Config"></a> 設定資料庫複本  
+##  <a name="BKMK_DBReplica_Config"></a> 設定資料庫複本  
 若要設定資料庫複本，必須完成下列步驟：  
 
 -   [步驟 1 - 設定站台資料庫伺服器以發佈資料庫複本](#BKMK_DBReplica_ConfigSiteDB)  
@@ -100,7 +99,7 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 
 -   [步驟 5 - 設定資料庫複本伺服器的 SQL Server Service Broker](#BKMK_DBreplica_SSB)  
 
-###  <a name="a-namebkmkdbreplicaconfigsitedba-step-1---configure-the-site-database-server-to-publish-the-database-replica"></a><a name="BKMK_DBReplica_ConfigSiteDB"></a> 步驟 1 - 設定站台資料庫伺服器以發佈資料庫複本  
+###  <a name="BKMK_DBReplica_ConfigSiteDB"></a> 步驟 1 - 設定站台資料庫伺服器以發佈資料庫複本  
  使用下列程序作為範例，以引導您在 Windows Server 2008 R2 電腦上設定網站資料庫伺服器來發佈資料庫複本。 如果您有不同的作業系統版本，請參考您的作業系統文件並視需要調整您在此程序中的步驟。  
 
 ##### <a name="to-configure-the-site-database-server"></a>設定網站資料庫伺服器  
@@ -132,7 +131,7 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 
 當完成預存程序時，網站資料庫伺服器會設定為發佈資料庫複本。  
 
-###  <a name="a-namebkmkdbreplicaconfigsrva-step-2---configuring-the-database-replica-server"></a><a name="BKMK_DBReplica_ConfigSrv"></a> 步驟 2 - 設定資料庫複本伺服器  
+###  <a name="BKMK_DBReplica_ConfigSrv"></a> 步驟 2 - 設定資料庫複本伺服器  
 資料庫複本伺服器是執行 SQL Server 的電腦，並裝載網站資料庫的複本供管理點使用。 資料庫複本伺服器會依照固定排程，與網站資料庫伺服器發佈的資料庫複本同步處理其資料庫的複本。  
 
 資料庫複本伺服器必須符合與網站資料庫伺服器相同的需求。 不過，資料庫複本伺服器執行的 SQL Server 版本可以與網站資料庫伺服器使用的版本不同。 如需 SQL Server 支援版本的資訊，請參閱 [System Center Configuration Manager 的 SQL Server 版本支援](../../../../core/plan-design/configs/support-for-sql-server-versions.md)主題。  
@@ -213,7 +212,7 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 
  資料庫複本現在已備妥可供管理點使用。  
 
-###  <a name="a-namebkmkdbreplicaconfigmpa-step-3---configure-management-points-to-use-the-database-replica"></a><a name="BKMK_DBReplica_ConfigMP"></a> 步驟 3 - 設定要使用資料庫複本的管理點  
+###  <a name="BKMK_DBReplica_ConfigMP"></a> 步驟 3 - 設定要使用資料庫複本的管理點  
  您可以在主要網站上設定管理點，使您在安裝管理點角色時可使用資料庫複本，或者您可以重新設定現有的管理點來使用資料庫複本。  
 
  使用下列資訊來設定管理點以使用資料庫複本：  
@@ -232,7 +231,7 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 
 3.  將 [Windows 驗證]  設為 [已啟用] ，然後關閉 [Internet Information Services (IIS) 管理員] 。  
 
-###  <a name="a-namebkmkdbreplicacerta-step-4--configure-a-self-signed-certificate-for-the-database-replica-server"></a><a name="BKMK_DBReplica_Cert"></a> 步驟 4 - 設定資料庫複本伺服器的自我簽署憑證  
+###  <a name="BKMK_DBReplica_Cert"></a> 步驟 4 - 設定資料庫複本伺服器的自我簽署憑證  
  您必須在資料庫複本伺服器上建立自我簽署憑證，並且讓使用該資料庫複本伺服器的每個管理點都能使用此憑證。  
 
  該憑證會自動提供給安裝在資料庫複本伺服器上的管理點使用。 不過，您必須先匯出憑證，然後將其新增至遠端管理點上的 [受信任的人] 憑證存放區中，遠端管理點才能使用此憑證。  
@@ -413,7 +412,7 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 
     5.  按一下 [完成]  關閉精靈，並完成管理點上的憑證設定。  
 
-###  <a name="a-namebkmkdbreplicassba-step-5---configure-the-sql-server-service-broker-for-the-database-replica-server"></a><a name="BKMK_DBreplica_SSB"></a> 步驟 5 - 設定資料庫複本伺服器的 SQL Server Service Broker  
+###  <a name="BKMK_DBreplica_SSB"></a> 步驟 5 - 設定資料庫複本伺服器的 SQL Server Service Broker  
 若要針對管理點支援資料複本的用戶端通知，您必須針對 SQL Server Service Broker 設定網站資料庫伺服器與資料庫複本伺服器之間的通訊。 您會需要設定每個資料庫中有關其他資料庫的資訊，以及在兩個資料庫之間交換憑證以進行安全通訊。  
 
 > [!NOTE]  
@@ -453,20 +452,20 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 
  完成網站資料庫及資料庫複本資料庫的設定後經過幾分鐘，主網站的通知管理員就會建立從主網站資料庫到資料庫複本的用戶端通知 Service Broker 交談。  
 
-###  <a name="a-namebkmksupscripta-supplemental-script-for-additional-database-replicas-on-a-single-sql-server"></a><a name="bkmk_supscript"></a> 單一的 SQL Server 上的其他資料庫複本補充指令碼  
+###  <a name="bkmk_supscript"></a> 單一的 SQL Server 上的其他資料庫複本補充指令碼  
  當您使用步驟 4 中的指令碼，設定 SQL Server (已有預計要繼續使用的資料庫複本) 上資料庫複本伺服器的自我簽署憑證時，必須使用經過修改的原始指令碼版本。 下列修改內容可避免指令碼刪除伺服器上現有的憑證，同時建立易記名稱不重複的後續憑證。  編輯原始的指令碼，如下所示：  
 
 -   將指令碼項目 **# Delete existing cert if one exists** 與 **# Create the new cert**之間的指令碼項目，標為註解以避免執行。 若要執行此作業，請加入  **#**  作為適用的每一行之第一個字元。  
 
 -   為每個使用此指令碼進行設定的後續資料庫複本，更新憑證的易記名稱。  若要執行此作業，請編輯行 **$enrollment.CertificateFriendlyName = "ConfigMgr SQL Server Identification Certificate"** ，並以新名稱取代 **ConfigMgr SQL Server Identification Certificate** ，像是  **ConfigMgr SQL Server Identification Certificate1**。  
 
-##  <a name="a-namebkmkdbreplicaopsa-manage-database-replica-configurations"></a><a name="BKMK_DBReplicaOps"></a> 管理資料庫複本組態  
+##  <a name="BKMK_DBReplicaOps"></a> 管理資料庫複本組態  
  當您在網站上使用資料庫複本時，請使用以下各節中的資訊以補充解除安裝資料庫複本、解除安裝使用資料庫複本的網站，或是將網站資料庫移至新的 SQL Server 安裝的程序。 當您利用下面各節的資訊刪除發佈時，請使用指引刪除用於資料庫複本之 SQL Server 版本的交易複寫。 例如，若您使用 SQL Server 2008 R2，請參閱 [如何：刪除發行集 (複寫 Transact-SQL 程式設計)](http://go.microsoft.com/fwlink/p/?LinkId=273934)。  
 
 > [!NOTE]  
 >  在您還原為資料庫複本設定的網站資料庫之後，必須先重新設定每個資料庫複本並重建發佈及訂閱，才能使用資料庫複本。  
 
-###  <a name="a-namebkmkuninstalldbreplicaa-uninstall-a-database-replica"></a><a name="BKMK_UninstallDbReplica"></a> 解除安裝資料庫複本  
+###  <a name="BKMK_UninstallDbReplica"></a> 解除安裝資料庫複本  
  您針對管理點使用資料庫複本時，可能需要解除安裝資料庫複本一段時間，然後再重新設定它以供使用。 例如，將 Configuration Manager 站台升級為新的 Service Pack 之前，必須先移除資料庫複本。 網站升級完成後，您就可以還原資料庫複本以供使用。  
 
  利用下列步驟解除安裝資料庫複本。  
@@ -489,7 +488,7 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 
 5.  在網站資料庫伺服器上刪除發佈、訂閱、複本資料庫及停用發佈後，資料庫複本便已解除安裝。  
 
-###  <a name="a-namebkmkdbreplicaopsuninstalla-uninstall-a-site-server-that-publishes-a-database-replica"></a><a name="BKMK_DBReplicaOps_Uninstall"></a> 解除安裝發佈資料庫複本的站台伺服器  
+###  <a name="BKMK_DBReplicaOps_Uninstall"></a> 解除安裝發佈資料庫複本的站台伺服器  
  解除安裝發佈資料庫複本的網站之前，請先利用下列步驟清除發佈及任何訂閱。  
 
 1.  使用 [SQL Server Management Studio]  刪除網站伺服器資料庫中的資料庫複本發佈。  
@@ -498,7 +497,7 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 
 3.  解除安裝網站。  
 
-###  <a name="a-namebkmkdbreplicaopsmovea-move-a-site-server-database-that-publishes-a-database-replica"></a><a name="BKMK_DBReplicaOps_Move"></a> 移動發佈資料庫複本的站台伺服器資料庫  
+###  <a name="BKMK_DBReplicaOps_Move"></a> 移動發佈資料庫複本的站台伺服器資料庫  
  將網站資料庫移至新電腦時，請利用下列步驟：  
 
 1.  使用 [SQL Server Management Studio]  刪除網站伺服器資料庫中的資料庫複本發佈。  
@@ -510,9 +509,3 @@ System Center Configuration Manager 主要站台可以使用資料庫複本，�
 4.  重建網站資料庫伺服器上的資料庫複本發佈。 如需詳細資訊，請參閱本主題的 [步驟 1 - 設定站台資料庫伺服器以發佈資料庫複本](#BKMK_DBReplica_ConfigSiteDB) 。  
 
 5.  重建每一部資料庫複本伺服器上的資料庫複本訂閱。 如需詳細資訊，請參閱本主題的 [步驟 2 - 設定資料庫複本伺服器](#BKMK_DBReplica_ConfigSrv) 。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

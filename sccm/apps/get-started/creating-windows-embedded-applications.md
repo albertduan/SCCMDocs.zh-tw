@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 16acfd63-0c40-424c-82f4-8c63f7f1c30b
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 557888d1f1f899e3198c430bbe5ccdd44178f824
 ms.openlocfilehash: cb0c22f3060ba654778dca958d620f1e1725b93c
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-windows-embedded-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立 Windows Embedded 應用程式
 
@@ -50,9 +49,3 @@ ms.openlocfilehash: cb0c22f3060ba654778dca958d620f1e1725b93c
 此外，如果 Configuration Manager 正在認可軟體安裝及更新的變更，低權限的使用者就無法在維護期間登入。 在此期間，使用者會看見一則訊息，說明裝置無法使用，因為正在維修。  
 
 **如果應用程式需要使用者接受授權條款，則不要將應用程式部署到已啟用寫入篩選器的 Windows Embedded 裝置。** 停用寫入篩選器，讓 Configuration Manager 能夠在嵌入式裝置上安裝軟體時，低權限的使用者無法登入該裝置。 如果安裝需要使用者接受授權條款，就會無法進行且安裝將失敗。 如果安裝需要使用者互動，請確定未將軟體部署到 Windows Embedded 裝置。 您可以使用 [可用平台] 清單篩選這些作業系統。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

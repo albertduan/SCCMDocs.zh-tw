@@ -6,23 +6,20 @@ ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9123a87a-0b6f-43c7-b5c2-fac5d09686b1
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c4f30e4839709722b216262b21d7b51c07d24d1e
 ms.openlocfilehash: dc36be47310d2c2178c974a2b503d0b5f9f6e2ec
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="proxy-server-support-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的 Proxy 伺服器支援
 
@@ -87,4 +84,3 @@ System Center Configuration Manager 站台系統伺服器與用戶端，都可�
 3.  在 [站台系統內容]中，選取 [Proxy] 索引標籤，然後為這個主要站台伺服器設定 Proxy 設定。  
 
 4.  選擇 [確定] 即可儲存新的 Proxy 伺服器設定。  
-

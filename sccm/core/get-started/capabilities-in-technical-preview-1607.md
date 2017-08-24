@@ -4,23 +4,21 @@ description: "了解 System Center Configuration Manager Technical Preview 1607 
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2bb69547-3370-4860-96b0-7fb600c56482
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
 ms.openlocfilehash: 4717e0f8eef01501fb5b5790e855c476c1ca4590
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1607-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1607 中的功能
 
@@ -78,4 +76,3 @@ Configuration Manager 1602 版中引進了軟體中心的自訂商標。 在 Tec
 2. 在 [首頁]  索引標籤的 [建立]  群組中，按一下 [階層設定] 。
 3. 移至 [用戶端核准和衝突的記錄] 索引標籤。
 4. 在 [重複硬體識別碼] 區段中，按一下 [新增] 以新增硬體識別碼。
-

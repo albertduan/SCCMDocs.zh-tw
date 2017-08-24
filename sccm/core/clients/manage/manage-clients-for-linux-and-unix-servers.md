@@ -6,22 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 948664f2-239d-47a8-92fc-f8efeebd5796
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
 ms.openlocfilehash: 506df4f7c7baa5f0586a1ddf0cb02b3de9f4d076
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/04/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-manage-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中管理 Linux 和 UNIX 伺服器的用戶端
 
@@ -80,4 +78,3 @@ ms.lasthandoff: 08/04/2017
 |importPFX|使用這個選項指定憑證，以取代用戶端目前所使用的憑證。<br /><br /> 當您使用 **-importPFX** 時，也必須使用 **-password** 命令列參數來提供與 PKCS#12 檔案相關聯的密碼。<br /><br /> 使用 **-rootcerts** 指定任何其他根憑證需求。<br /><br /> 範例︰**certutil -importPFX &lt;PKCS#12 憑證的路徑> -password &lt;憑證密碼\> [-rootcerts &lt;以逗號分隔的憑證清單>]**|  
 |-importsitecert|使用這個選項更新管理伺服器上的站台伺服器簽署憑證。<br /><br /> 範例：**certutil -importsitecert &lt;DER 憑證的路徑\>**|  
 |-importcrl|使用這個選項，利用一個或多個 CRL 檔案路徑來更新用戶端上的 CRL。<br /><br /> 範例︰**certutil importcrl &lt;以逗號分隔的 CRL 檔案路徑\>**|  
-

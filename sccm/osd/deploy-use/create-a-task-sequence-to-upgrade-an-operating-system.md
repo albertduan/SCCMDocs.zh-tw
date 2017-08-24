@@ -6,21 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7591e386-a9ab-4640-8643-332dce5aa006
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 1035dbbf944a3a467d637a4a948a75b0946eb711
 ms.openlocfilehash: 4a3c69edc85a4ea7501510b6b3f12c72ad3a24ff
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/11/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-a-task-sequence-to-upgrade-an-operating-system-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中建立工作順序以升級作業系統
 
@@ -131,4 +129,3 @@ ms.lasthandoff: 07/11/2017
 
 ## <a name="folder-and-files-removed-after-computer-restart"></a>在重新啟動電腦之後移除的資料夾和檔案  
  如果將作業系統升級至 Windows 10 的工作順序以及工作順序中的所有其他步驟完成，則除非重新啟動電腦，否則不會移除後置處理和復原指令碼。  這些指令檔未包含機密資訊。  
-

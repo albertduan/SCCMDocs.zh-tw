@@ -6,22 +6,20 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 66f7759c-6272-4116-aad7-0d05db1d46cd
-caps.latest.revision: 8
-caps.handback.revision: 0
+caps.latest.revision: "8"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 468673581e0464fab21397c472b76708b8a5438b
 ms.openlocfilehash: 25619d91522193178e0415f649ca4b34c94ecc89
-ms.lasthandoff: 12/31/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-a-content-deployment-migration-strategy-in-system-center-configuration-manager"></a>規劃 System Center Configuration Manager 中的內容部署移轉策略
 
@@ -210,4 +208,3 @@ Configuration Manager 在 1610 版以前，一次只能處理一個發佈點。 
  若要將移轉內容時佔用的網路頻寬降到最少，您可以考慮將網路上已封閉之目的地階層中站台的內容擁有權轉換至來源階層的內容位置。 因為關於目的地階層中的內容資訊是全域共用，所有每個站台都可使用。  
 
  雖然藉由使用資料庫複寫，就能在所有站台上共用內容相關資訊，您指派至主要站台，然後部署到其他主要站台發佈點的內容仍會依照以檔案為基礎的複寫來傳輸。 這項傳輸是透過管理中心網站路由傳送至其他主要站台。 在您將站台指派為內容擁有者時，藉由在移轉前或移轉期間，將您規劃發佈至多個主要站台的套件集中化，就能跨低頻寬網路來降低資料傳輸量。
-

@@ -6,22 +6,19 @@ ms.date: 04/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 79cd131a-1a24-4751-87c8-7f275e45d847
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 4b9261db93c9bf72c492e3c9be5b30f81835134a
 ms.openlocfilehash: 72ebd8bd29b5ecdd817631e447291c04f49d9808
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-linux-and-unix-server-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立 Linux 和 UNIX 伺服器應用程式
 
@@ -166,4 +163,3 @@ ms.lasthandoff: 05/17/2017
 
 > [!TIP]  
 >  如果您要部署的軟體位於 Linux 或 UNIX 伺服器可以存取的網路檔案系統 (NFS) 共用，則不需要使用發佈點來下載套件。 不過，當您建立套件時，請勿選取 [此套件包含來源檔案] 核取方塊。 接著，當您在設定程式時，請指定適當的命令列以直接存取 NFS 掛接點上的套件。  
-

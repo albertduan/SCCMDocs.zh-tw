@@ -6,23 +6,20 @@ ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7b66f3c4-e3bb-4f6a-abd5-55be649ff90d
-caps.latest.revision: 17
-caps.handback.revision: 0
+caps.latest.revision: "17"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 4b9261db93c9bf72c492e3c9be5b30f81835134a
 ms.openlocfilehash: c9961c2e9866199571a1b39a7b185cb6bb96f998
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-system-center-configuration-manager-client"></a>如何為不是使用 System Center Configuration Manager 用戶端所管理的 Android 和 Samsung KNOX 裝置建立組態項目
 
@@ -185,9 +182,9 @@ Android for Work 有兩個設定項目設定群組︰
 - **密碼**： 與 Android「傳統」的設定相同。
 
 - **工作設定檔**： 啟用下列 Android for Work 設定：
-  -    **允許工作與個人設定檔之間的資料共用**
+  - **允許工作與個人設定檔之間的資料共用**
   - **裝置鎖定時隱藏工作設定檔通知** (Android 6.0 +)
-  -    **設定預設的應用程式權限原則** (Android 6.0+)
+  - **設定預設的應用程式權限原則** (Android 6.0+)
 
 若要在 Android 工作設定檔中建立設定項目，請選擇 [一般] 頁面上的 [Android for Work]，然後設定每個設定群組的設定。 將設定項目新增至基準，並如常部署。 這些設定只適用於註冊為 Android for Work 的裝置，而不適用於註冊為 Android 的裝置。
 
@@ -217,4 +214,3 @@ Android for Work 有兩個設定項目設定群組︰
 
 ## <a name="see-also"></a>請參閱  
 [不使用 System Center Configuration Manager 用戶端所管理之裝置的設定項目](../../compliance/deploy-use/configuration-items-for-devices-managed-without-the-client.md)
-

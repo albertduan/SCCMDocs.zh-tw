@@ -6,22 +6,20 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 887f8029-1a3a-423c-a9c1-31dc0d693386
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
 ms.openlocfilehash: 7451d699e0e5e146b0538a57deca595188d113bf
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-software-update-catalogs-in-updates-publisher"></a>在 Updates Publisher 中管理軟體更新目錄
 
@@ -105,4 +103,3 @@ Updates Publisher 可在每次啟動時自動檢查訂閱以確認是否有變�
 匯入更新之後，常見的動作包括︰
 -   [管理更新](/sccm/sum/tools/manage-updates-with-updates-publisher)以對它們進行配套及指派，並將它們部署至您的更新伺服器。
 -   [建立適用性規則](/sccm/sum/tools/updates-publisher-applicability-rules)，以協助判斷更新部署至更新伺服器的時機。
-

@@ -6,21 +6,19 @@ ms.date: 7/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b57acf0b-05b7-46af-ad4c-f3e707bd3861
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
 ms.openlocfilehash: 043c9521f4a94ea2df5cebb4ca1c0b1127f0edbc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/02/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="whats-new-in-system-center-configuration-manager-incremental-versions"></a>System Center Configuration Manager 累加版本的新功能
 
@@ -44,4 +42,3 @@ ms.lasthandoff: 08/02/2017
 
 
  每個更新版本在發行後都有一年支援。 最好是盡可能地維持在最新的更新版本。 如需詳細資訊，請參閱 [System Center Configuration Manager 最新分支版本的支援](../../../core/servers/manage/current-branch-versions-supported.md)。  
-

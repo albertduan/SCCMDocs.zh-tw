@@ -6,21 +6,19 @@ ms.date: 4/17/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 6a279624-ffc9-41aa-8132-df1809708dd5
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dda2f4c01078fbbd174cbcb30357554c24f6abeb
 ms.openlocfilehash: 14834f62ffaa8fcba5ddb7536a0b76e18b557e53
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="list-of-prerequisite-checks-for-system-center-configuration-manager"></a>System Center Configuration Manager 的必要條件檢查清單
 
@@ -126,4 +124,3 @@ ms.lasthandoff: 05/17/2017
 |**不支援的 Configuration Manager 主控台作業系統**|確認 Configuration Manager 主控台可安裝在執行受支援作業系統版本的電腦上。 如需詳細資訊，請參閱 [System Center Configuration Manager 主控台的支援作業系統](/sccm/core/plan-design/configs/supported-operating-systems-consoles)。|錯誤|Configuration Manager 主控台|
 |**安裝程式不支援的站台伺服器作業系統版本**|確認伺服器上執行的是否為支援的作業系統。 如需詳細資訊，請參閱 [System Center Configuration Manager 站台系統伺服器支援的作業系統](/sccm/core/plan-design/configs/supported-operating-systems-for-site-system-servers.md)。|錯誤|管理中心網站， <br>主要站台， <br>次要站台， <br>Configuration Manager 主控台， <br>管理點， <br>發佈點|
 |**驗證資料庫一致性**|從 1602 版開始，這項檢查會驗證資料庫一致性。|錯誤|管理中心網站， <br>主要網站|  
-

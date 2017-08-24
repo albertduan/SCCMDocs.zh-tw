@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 784c295c-b8b8-4202-ab9f-665908d49d6d
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fd7ea34b605d70f2ba9bd40384eb566ec3a87430
 ms.openlocfilehash: 42d21d10489bffe32b875384f8801686239a0ba4
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="monitor-applications-from-the-system-center-configuration-manager-console"></a>從 System Center Configuration Manager 主控台監視應用程式
 
@@ -91,9 +90,3 @@ ms.openlocfilehash: 42d21d10489bffe32b875384f8801686239a0ba4
 3. 在 [狀態摘要器] 對話方塊中，依序選擇 [應用程式部署摘要器] 和 [編輯]。  
 
 4. 在 [應用程式部署摘要器內容] 對話方塊中，設定所需的摘要間隔，然後選擇 [確定]。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

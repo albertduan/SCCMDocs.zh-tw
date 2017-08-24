@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8e68e1fb-a8ec-4543-bb8a-cbbaf184a418
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: 2144dfa87f40fcb2195f7278a21b47e05d6d6f38
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 7652e46d2168e2de623fa8e6d5b8663701764244
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager 中軟體清查的安全性和隱私權
 
@@ -62,4 +59,3 @@ ms.lasthandoff: 12/16/2016
  清查資訊不會傳送給 Microsoft。 清查資訊會儲存在 Configuration Manager 資料庫中。 用戶端使用 HTTPS 來連線到管理點時，會在傳輸期間加密他們傳送到站台的清查資料。 如果用戶端使用 HTTP 來連線到管理點，則您可以選擇啟用清查加密。 清查資料不會以加密格式儲存在資料庫中。 資訊會保留在資料庫中，直到每 90 天由站台維護工作 [刪除過時清查歷程記錄]  或 [刪除過時收集檔案]  刪除為止。 您可以設定刪除間隔。  
 
  設定硬體清查、軟體清查、檔案收集或 Asset Intelligence 資料收集之前，請考慮您的隱私權需求。  
-

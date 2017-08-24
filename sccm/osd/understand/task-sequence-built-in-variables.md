@@ -6,22 +6,20 @@ ms.date: 03/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 02bc6bd4-ca53-4e22-8b80-d8ee5fe72567
-caps.latest.revision: 15
-caps.handback.revision: 0
+caps.latest.revision: "15"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
 ms.openlocfilehash: 32b24b3637dfafe401ea1d9f51b3769aa749f544
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/03/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="task-sequence-built-in-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的工作順序內建變數
 
@@ -102,4 +100,3 @@ ms.lasthandoff: 08/03/2017
 |SMSTSSoftwareUpdateScanTimeout| 讓您能夠在[安裝軟體更新](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)工作順序步驟期間，控制軟體更新掃描的逾時。 例如，如果有大量的軟體更新要安裝，您可以增加預設值。 預設值為 30 分鐘。 |
 |SMSTSUDAUsers|指定目的地電腦的主要使用者。 請用下列格式指定使用者。 使用逗號 (,) 分隔多個使用者。<br /><br /> 範例：<br /><br /> **domain\user1, domain\user2, domain\user3**<br /><br /> 如需為使用者與目的地電腦建立關聯的詳細資訊，請參閱[為使用者與目的地電腦建立關聯](../get-started/associate-users-with-a-destination-computer.md)。|  
 |SMSTSWaitForSecondReboot|從 Configuration Manager 1602 版開始，當軟體更新安裝需要兩次重新啟動時，可使用這項選擇性的工作順序變數來協助控制用戶端行為。 在[安裝軟體更新](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)步驟前必須先設定此變數，以防止工作順序因為軟體更新安裝的第二次重新啟動而失敗。<br /><br /> 以秒為單位來設定 SMSTSWaitForSecondReboot 值，指定在「安裝軟體更新」步驟期間電腦重新啟動時工作順序要暫停的時間長度，以在有第二次重新啟動時提供足夠的時間。 <br />例如，如果您將 SMSTSWaitForSecondReboot 設定為 600，工作順序就會在重新啟動後先暫停 10 分鐘，然後再執行其他的工作順序步驟。 在單一「安裝軟體更新」工作順序步驟中安裝數百個軟體更新時，這非常有用。|  
-

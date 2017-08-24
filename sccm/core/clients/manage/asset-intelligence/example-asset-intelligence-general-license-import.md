@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e6258333-a783-440b-b1af-f8023b782fbc
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: 6ee39d311108253ece1c9d60c25ac06017867c1f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 400afbe8c09b80985187a34b0dd0f3f8581c7d4e
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="example-asset-intelligence-general-license-import-file-in-system-center-configuration-manager"></a>System Center Configuration Manager 中範例 Asset Intelligence 一般授權匯入檔案
 
@@ -42,4 +39,3 @@ ms.lasthandoff: 12/16/2016
 |軟體項目 8|軟體發行者|1.08|英文|1|購買編號|轉售商名稱|10/10/2010|0|10/10/2012|註解|  
 |軟體項目 9|軟體發行者|1.09|英文|1|購買編號|轉售商名稱|10/10/2010|0|10/10/2012|註解|  
 |軟體項目 10|軟體發行者|1.10|英文|1|購買編號|轉售商名稱|10/10/2010|0|10/10/2012|註解|  
-

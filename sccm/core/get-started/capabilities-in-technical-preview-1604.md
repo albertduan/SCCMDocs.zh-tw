@@ -4,24 +4,22 @@ description: "了解 System Center Configuration Manager Technical Preview 1604 
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 684a5559-9e6e-469b-86ae-e768e9f0c9ac
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: d36de897e6407ec7431d4dbe24ad04423aee2ca1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/24/2017
-
+ms.openlocfilehash: 26b0d8ea7b3e841c48945df55f8860394a98a29f
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1604-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1604 中的功能
 
@@ -172,4 +170,3 @@ Passport 可讓您使用使用者筆勢登入，而不使用密碼。 使用者�
 
 ##  <a name="BKMK_Smart"></a> 適用於 Android 裝置的 SmartLock 設定  
  新的設定 [允許 SmartLock 和其他信任代理程式] 已新增至 [Android 和 Samsung KNOX] 設定項目，可讓您控制相容 Android 裝置上的 SmartLock 功能。 此電話功能 (有時也稱為信任代理程式) 可讓您在裝置位於受信任的位置 (例如連線到特定的藍牙裝置或靠近 NFC 標記) 時，停用或略過裝置鎖定畫面密碼。 您可以使用此設定來防止使用者設定 SmartLock。  
-

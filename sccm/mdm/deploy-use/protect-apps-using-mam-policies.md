@@ -6,22 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 28115475-e563-4e16-bf30-f4c9fe704754
-caps.latest.revision: 18
-caps.handback.revision: 0
+caps.latest.revision: "18"
+caps.handback.revision: "0"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 50c137f159b0ef631f7173b8eec190182ce41cee
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="protect-apps-using-mobile-application-management-policies-in-system-center-configuration-manager"></a>使用 System Center Configuration Manager 中的行動應用程式管理原則來保護應用程式
 
@@ -179,4 +177,3 @@ System Center Configuration Manager 應用程式管理原則可讓您修改所�
 
 ##  <a name="see-a-list-of-available-policy-managed-apps"></a>請參閱可用受原則管理的應用程式清單  
  如需適用於 iOS 和 Android 裝置之受原則管理的應用程式清單，請參閱 [Microsoft Intune application partners](https://www.microsoft.com/cloud-platform/microsoft-intune-partners) (Microsoft Intune 應用程式合作夥伴)。  
-

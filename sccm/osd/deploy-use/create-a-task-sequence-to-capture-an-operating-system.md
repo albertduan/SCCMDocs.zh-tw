@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 25e4ac68-0e78-4bbe-b8fc-3898b372c4e8
-caps.latest.revision: 19
-caps.handback.revision: 0
+caps.latest.revision: "19"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: e9320e40b8e5031ffa3da5e5149c7da718cc87d5
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-a-task-sequence-to-capture-an-operating-system-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 建立工作順序以擷取作業系統
 
@@ -28,10 +27,10 @@ ms.openlocfilehash: e9320e40b8e5031ffa3da5e5149c7da718cc87d5
 
 當您使用工作順序將作業系統部署到 System Center Configuration Manager 中的電腦時，電腦會安裝您在工作順序中指定的作業系統映像。 若要自訂作業系統映像，使其包含特定驅動程式、應用程式、軟體更新等，您可以使用組建和擷取工作順序，以建立參照電腦，然後從參照電腦擷取作業系統映像。 如果您已經有用於擷取的參照電腦，您可以建立自訂工作順序，以擷取作業系統。 您可以使用下列章節來擷取自訂的作業系統。  
 
-##  <a name="a-namebkmkbuildcapturetsa-use-a-task-sequence-to-build-and-capture-a-reference-computer"></a><a name="BKMK_BuildCaptureTS"></a> 使用工作順序來建立和擷取參照電腦  
+##  <a name="BKMK_BuildCaptureTS"></a> 使用工作順序來建立和擷取參照電腦  
  組建和擷取工作順序會分割並格式化參照電腦、安裝作業系統，以及安裝 Configuration Manager 用戶端、應用程式和軟體更新，然後從參照電腦擷取作業系統。 建立組建和擷取工作順序之前，在發佈點上必須先有與工作順序相關聯的套件，例如應用程式。  
 
-###  <a name="a-namebkmkcreatepackagesa-prepare-for-operating-system-deployments"></a><a name="BKMK_CreatePackages"></a> 準備作業系統部署  
+###  <a name="BKMK_CreatePackages"></a> 準備作業系統部署  
  有很多案例可用於將作業系統部署到您環境中的電腦。 在大部分情況下，您將建立工作順序，然後在 [建立工作順序精靈] 中選取 [安裝現有的映像套件]  來安裝作業系統、移轉使用者設定、套用軟體更新及安裝應用程式。 建立工作順序以安裝作業系統之前，下列項目必須先準備就緒：  
 
 -   **必要**  
@@ -48,7 +47,7 @@ ms.openlocfilehash: e9320e40b8e5031ffa3da5e5149c7da718cc87d5
 
     -   Configuration Manager 主控台中必須新增[應用程式](../../apps/deploy-use/create-applications.md)。  
 
-###  <a name="a-namebkmkcreatebuildcapturetsa-create-a-build-and-capture-task-sequence"></a><a name="BKMK_CreateBuildCaptureTS"></a> 建立組建和擷取工作順序  
+###  <a name="BKMK_CreateBuildCaptureTS"></a> 建立組建和擷取工作順序  
  請使用下列程序，以使用工作順序建立參照電腦和擷取作業系統。  
 
 #### <a name="to-create-a-task-sequence-that-builds-and-captures-an-operating-system-image"></a>建立組建和擷取作業系統映像的工作順序  
@@ -145,7 +144,7 @@ ms.openlocfilehash: e9320e40b8e5031ffa3da5e5149c7da718cc87d5
 
 -   如果參照電腦不是 Configuration Manager 用戶端，或如果您想要在參照電腦上手動執行工作順序，請執行 [建立工作順序媒體精靈] 以建立可開機媒體。 如需如何建立可開機媒體的資訊，請參閱[建立可開機媒體](create-bootable-media.md) 。  
 
-##  <a name="a-namebkmkcaptureexistingrefcomputera-capture-an-operating-system-image-from-an-existing-reference-computer"></a><a name="BKMK_CaptureExistingRefComputer"></a> 從現有的參照電腦擷取作業系統映像  
+##  <a name="BKMK_CaptureExistingRefComputer"></a> 從現有的參照電腦擷取作業系統映像  
  如果您已經有要擷取的參照電腦，您可以建立從參照電腦擷取作業系統的工作順序。 您將使用 [擷取作業系統映像]  工作順序步驟，從參照電腦擷取一或多個映像，並將其存放在指定網路共用上的映像檔 (.wim) 中。 會在 Windows PE 中使用開機映像啟動此參照電腦，並將此參照電腦上的每個硬碟都擷取成 .wim 檔案內的個別映像。 如果參照的電腦中有多個磁碟機，所產生的 .wim 檔案將會包含每個磁碟區的個別映像。 只會擷取格式化為 NTFS 或 FAT32 的磁碟區。 會略過其他格式的磁碟區和 USB 磁碟區。  
 
  請使用下列程序，從現有的參照電腦擷取作業系統映像。  
@@ -192,7 +191,7 @@ ms.openlocfilehash: e9320e40b8e5031ffa3da5e5149c7da718cc87d5
 
 -   如果參照電腦不是 Configuration Manager 用戶端，或如果您想要在參照電腦上手動執行工作順序，請執行 [建立工作順序媒體精靈] 以建立可開機媒體。 如需如何建立可開機媒體的資訊，請參閱[建立可開機媒體](create-bootable-media.md) 。  
 
-##  <a name="a-namebkmkbuildandcapturetsexamplea-task-sequence-example-to-build-and-capture-an-operating-system-image"></a><a name="BKMK_BuildandCaptureTSExample"></a> 建立並擷取作業系統映像的工作順序範例  
+##  <a name="BKMK_BuildandCaptureTSExample"></a> 建立並擷取作業系統映像的工作順序範例  
  使用下表做為指南，您在建立工作順序來建置和擷取作業系統映像。 資料表會協助您決定您的工作順序步驟及如何組織和組織成邏輯群組的那些工作順序步驟的一般順序。 您所建立的工作順序可能與此範例不同，而且可能包含更多或更少的工作順序步驟和群組。  
 
 > [!IMPORTANT]  
@@ -232,9 +231,3 @@ ms.openlocfilehash: e9320e40b8e5031ffa3da5e5149c7da718cc87d5
 
 ## <a name="next-steps"></a>後續步驟  
 [部署企業作業系統的方法](methods-to-deploy-enterprise-operating-systems.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

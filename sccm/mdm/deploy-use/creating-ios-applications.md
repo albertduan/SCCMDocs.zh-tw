@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ff633013-5313-4cd3-949c-56d45e777280
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 22bfae0509a5ce0b52763ea3eda7b8d6891431ed
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: 349fcf335e7faddbcbd2ffe0ece7e711465f28df
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-ios-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立 iOS 應用程式
 
@@ -54,4 +51,3 @@ System Center Configuration Manager 應用程式有一或多個部署類型，�
 
 > [!IMPORTANT]  
 >  使用者目前無法從適用於 iOS 的 Microsoft Intune 公司入口網站應用程式安裝公司應用程式。 這是因為 iOS App Store 中發行之應用程式的限制所致 (請參閱 App Store 審核指南的第 2 節)。 使用者可以在其裝置上瀏覽至 Intune Web 入口網站 (portal.manage.microsoft.com) 來安裝公司應用程式 (包括受管理的 App Store 應用程式與企業營運應用程式套件)。 如需 Intune 公司入口網站應用程式所啟用的行動管理功能詳細資訊，請參閱 [Microsoft Intune 的已註冊裝置管理功能](https://technet.microsoft.com/library/dn600287.aspx)。  
-

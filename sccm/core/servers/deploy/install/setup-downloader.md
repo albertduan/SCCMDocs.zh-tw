@@ -6,21 +6,19 @@ ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: bda87fc5-2e4c-4992-98a4-01770365038c
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 34e24deb90a39bf655a2e24d16cdbe07528e6193
 ms.openlocfilehash: b72148ecc16141843178cbd220fe021fab8be992
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager 的安裝程式下載程式
 
@@ -46,7 +44,7 @@ ms.lasthandoff: 05/17/2017
 
 ## <a name="run-setup-downloader-with-the-user-interface"></a>使用使用者介面來執行安裝程式下載程式  
 
-1.  在可存取網際網路的電腦上，開啟 Windows 檔案總管，並移至 **&lt;Configuration Manager 安裝媒體\>\SMSSETUP\BIN\X64**。  
+1.  在可存取網際網路的電腦上，開啟 Windows 檔案總管，並移至 &lt;Configuration Manager 安裝媒體\>\SMSSETUP\BIN\X64。  
 
 2.  若要開啟安裝程式下載程式，請按兩下 **Setupdl.exe**。   
 
@@ -56,7 +54,7 @@ ms.lasthandoff: 05/17/2017
 
 ## <a name="run-setup-downloader-from-a-command-prompt"></a>從命令提示字元中執行安裝程式下載程式  
 
-1.  在命令提示字元視窗中，移至 **&lt;Configuration Manager 安裝媒體**\>\SMSSETUP\BIN\X64**。   
+1.  在命令提示字元視窗中，移至 &lt;Configuration Manager 安裝媒體\>\SMSSETUP\BIN\X64。   
 
 2.  若要開啟安裝程式下載程式，請執行 **Setupdl.exe**。
 
@@ -95,4 +93,3 @@ ms.lasthandoff: 05/17/2017
         -   啟動安裝程式下載程式，然後您必須指定下載資料夾的路徑。 接下來，在您按一下 [驗證] 之後，安裝程式下載程式會驗證下載資料夾中的檔案。  
 
 3.  若要檢閱下載結果，請在磁碟機 C 的根目錄中開啟 **ConfigMgrSetup.log** 檔案。
-

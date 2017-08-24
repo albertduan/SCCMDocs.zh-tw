@@ -6,20 +6,19 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c28e3492-851a-40fc-ba13-67ebc2d8b41a
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 5df6478362499d87038fa4ed2cb444aa8d5b4b7c
 ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="operations-for-migrating-to-system-center-configuration-manager"></a>移轉到 System Center Configuration Manager 的作業
 
@@ -39,7 +38,7 @@ ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
 
 -   [完成移轉](#Complete_Migration)  
 
-##  <a name="a-namecreateeditmigrationjobsa-create-and-edit-migration-jobs"></a><a name="Create_Edit_migration_Jobs"></a> 建立和編輯移轉作業  
+##  <a name="Create_Edit_migration_Jobs"></a> 建立和編輯移轉作業  
  請依照下列程序建立移轉作業、編輯以集合為基礎的移轉作業之排除清單、設定共用發佈點，以及編輯移轉作業排程。  
 
 > [!NOTE]  
@@ -133,7 +132,7 @@ ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
 
 10. 確認設定，然後完成精靈。  
 
-###  <a name="a-namebkmkmodifyexclusionlista-modify-the-exclusion-list-for-migration"></a><a name="BKMK_Modify_Exclusion_List"></a> 修改移轉排除清單  
+###  <a name="BKMK_Modify_Exclusion_List"></a> 修改移轉排除清單  
 
 1.  在 Configuration Manager 主控台中，選擇 [系統管理]。  
 
@@ -167,7 +166,7 @@ ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
 
 4.  在移轉作業的內容中，選取 [設定] 索引標籤，並變更移轉作業的執行時間，然後選擇 [確定]。  
 
-##  <a name="a-namerunmigrationjobsa-run-migration-jobs"></a><a name="Run_Migration_Jobs"></a> 執行移轉作業  
+##  <a name="Run_Migration_Jobs"></a> 執行移轉作業  
  利用下列程序執行尚未開始的移轉作業。  
 
 
@@ -179,7 +178,7 @@ ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
 
 4.  選擇 [是]，開始移轉作業。  
 
-##  <a name="a-namebkmkprocupgrdssa-upgrade-or-reassign-a-shared-distribution-point"></a><a name="BKMK_ProcUpgrdSS"></a> 升級或重新指派共用發佈點  
+##  <a name="BKMK_ProcUpgrdSS"></a> 升級或重新指派共用發佈點  
  您可以升級 Configuration Manager 2007 來源站台所共用的支援發佈點，也可以將 System Center Configuration Manager 來源站台所共用的支援發佈點重新指派為目的地階層中的發佈點。  
 
 > [!IMPORTANT]  
@@ -204,7 +203,7 @@ ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
 
 6.  確認設定，然後完成精靈。  
 
-##  <a name="a-namemonitormigrationa-monitor-migration-activity-in-the-migration-workspace"></a><a name="Monitor_MIgration"></a> 在移轉工作區中監視移轉活動  
+##  <a name="Monitor_MIgration"></a> 在移轉工作區中監視移轉活動  
  使用 Configuration Manager 主控台監視移轉。  
 
 1.  在 Configuration Manager 主控台中，選擇 [系統管理]。  
@@ -215,10 +214,10 @@ ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
 
 4.  在 [摘要]  和 [作業中的物件] 索引標籤中，檢視有關所選移轉作業的詳細資料和狀態。  
 
-##  <a name="a-namebkmkmigrateclientsa-migrate-clients"></a><a name="BKMK_MigrateClients"></a> 移轉用戶端  
+##  <a name="BKMK_MigrateClients"></a> 移轉用戶端  
  您在階層之間移轉用戶端的資料之後，但是尚未完成移轉之時，請規劃將用戶端移轉至目的地階層。 在階層之間移轉用戶端時會需要解除安裝指派至來源階層之電腦上的 Configuration Manager 用戶端軟體，然後從目的地階層安裝 Configuration Manager 用戶端軟體。 當您從目的地階層安裝用戶端時，您也會將用戶端指派至該階層的主要站台。 如需移轉用戶端的詳細資訊，請參閱[規劃 System Center Configuration Manager 的用戶端移轉策略](../../core/migration/planning-a-client-migration-strategy.md)。  
 
-##  <a name="a-namecompletemigrationa-finish-migration"></a><a name="Complete_Migration"></a> 完成移轉  
+##  <a name="Complete_Migration"></a> 完成移轉  
  使用此程序完成從來源階層移轉的作業。  
 
 1.  在 Configuration Manager 主控台中，選擇 [系統管理]。  
@@ -238,9 +237,3 @@ ms.openlocfilehash: fb8a292c4fecbe5744e2cd09bc1442fab11046bc
 8.  在 [清理移轉資料] 對話方塊上，從 [來源階層] 下拉式清單中選取來源階層頂層站台的站台碼和站台伺服器，然後選擇 [確定]。  
 
 9. 選擇 [是] 完成來源階層的移轉程序。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

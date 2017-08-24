@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 507bf676-2679-4e4d-8831-3ffc9cf8557e
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: b308329635400438cebc4935efe79b46e607fd58
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-monitor-and-plan-for-power-management-in-system-center-configuration-manager"></a>如何監視和規劃 System Center Configuration Manager 的電源管理
 
@@ -179,7 +176,7 @@ ms.lasthandoff: 12/16/2016
 |**集合名稱**|從下拉式清單中選取這份報告要使用的集合。|  
 |**報告日期**|從下拉式清單中選取這份報告的日期。|  
 |**報告時間**|從下拉式清單中，選取指定日期的某個小時，這是執行這份報告的時間。 有效值為 **上午 12 點** 到 **晚上 11 點**之間。|  
-|**裝置類型：**|從下拉式清單中，選取您想要報告的電腦類型。 有效值為 [全部]\(桌上型和可攜式電腦)、[桌上型電腦]\(僅限桌上型電腦) 和 [膝上型電腦]\ (僅限可攜式電腦)。 只會針對選擇的報告期間傳回這些值。|  
+|**裝置類型：**|從下拉式清單中，選取您想要報告的電腦類型。 有效值為 [全部]\(桌上型和可攜式電腦)、[桌上型電腦]\(僅限桌上型電腦) 和 [膝上型電腦]\(僅限可攜式電腦)。 只會針對選擇的報告期間傳回這些值。|  
 
 #### <a name="hidden-report-parameters"></a>隱藏的報告參數  
  這份報告沒有可設定的任何隱藏參數。  
@@ -261,7 +258,7 @@ ms.lasthandoff: 12/16/2016
 |**開始日期**|從下拉式清單中選取這份報告的開始日期。|  
 |**結束日期**|從下拉式清單中選取這份報告的結束日期。|  
 |**集合名稱**|從下拉式清單中選取這份報告的集合。|  
-|**裝置類型：**|從下拉式清單中，選取您想要報告的電腦類型。 有效值為 [全部]\(桌上型和可攜式電腦)、[桌上型電腦]\(僅限桌上型電腦) 和 [膝上型電腦]\ (僅限可攜式電腦)。 只會針對選擇的報告期間傳回這些值。|  
+|**裝置類型：**|從下拉式清單中，選取您想要報告的電腦類型。 有效值為 [全部]\(桌上型和可攜式電腦)、[桌上型電腦]\(僅限桌上型電腦) 和 [膝上型電腦]\(僅限可攜式電腦)。 只會針對選擇的報告期間傳回這些值。|  
 
 #### <a name="hidden-report-parameters"></a>隱藏的報告參數  
  若要變更這份報告的行為，您可以選擇性地指定下列隱藏參數。  
@@ -626,4 +623,3 @@ ms.lasthandoff: 12/16/2016
 |報告名稱|詳細資料|  
 |-----------------|-------------|  
 |**電腦詳細資料**|按一下電腦名稱查看所選電腦的電池容量、電源設定，和套用的電源計劃。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Details Report](#BKMK_Computer_Details) 。|  
-

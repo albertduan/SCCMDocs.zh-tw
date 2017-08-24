@@ -6,22 +6,19 @@ ms.date: 01/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d17e1188-d277-438f-9236-db9cd213b421
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 05c27c7aa36e0b4236867766dab36125c31467b3
-ms.openlocfilehash: fd4c6fd85d12592b3d4f57a48cf6da6c7a668615
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/03/2017
-
-
+ms.openlocfilehash: 547d231d48ccbc8241e9f1f8f71e3750b266b73e
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-collections-in-system-center-configuration-manager"></a>System Center Configuration Manager 的集合簡介
 
@@ -65,5 +62,4 @@ ms.lasthandoff: 01/03/2017
 
 ### <a name="custom-collections"></a>自訂集合  
  當您在 Configuration Manager 中建立自訂集合時，該集合的成員資格是由一或多個集合規則所決定，如[如何在 System Center Configuration Manager 中建立集合](../../../../core/clients/manage/collections/create-collections.md)中所述。 
-
 

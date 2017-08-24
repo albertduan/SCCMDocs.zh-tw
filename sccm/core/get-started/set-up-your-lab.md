@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b1970688-0cd2-404f-a17f-9e2aa4a78758
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 3bf44f850722afdb8dfe5922c8ceff11c9b56d08
-ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
-
-
+ms.openlocfilehash: 11f5d0c3c61d675a8182e985f82e6af363b34592
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>設定 System Center Configuration Manager 實驗室
 
@@ -28,7 +27,7 @@ ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
 
 遵循本主題中的指引可讓您設定實驗室，以使用模擬實際活動來評估 Configuration Manager 。  
 
-##  <a name="a-namebkmklabcorea-core-components"></a><a name="BKMK_LabCore"></a> 核心元件  
+##  <a name="BKMK_LabCore"></a> 核心元件  
  設定 System Center Configuration Manager 的環境需要一些核心元件，才能支援 Configuration Manager 安裝。    
 
 -   **實驗室環境會使用 Windows Server 2012 R2** (在其中安裝 System Center Configuration Manager)。  
@@ -81,7 +80,7 @@ ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
 
 安裝所有這些元件之後，還必須採取其他步驟，才能設定 Configuration Manager 的 Windows 環境：  
 
-###  <a name="a-namebkmklabadprepa-prepare-active-directory-content-for-the-lab"></a><a name="BKMK_LabADPrep"></a> 準備實驗室的 Active Directory 內容  
+###  <a name="BKMK_LabADPrep"></a> 準備實驗室的 Active Directory 內容  
  在本實驗室中，您將建立安全性群組，然後在其中加入網域使用者。  
 
 -   安全性群組： **Evaluation**  
@@ -96,7 +95,7 @@ ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
 
 下列程序列出讓 Configuration Manager 用戶端查詢 Active Directory 網域服務以找到站台資源所需的後續步驟。  
 
-###  <a name="a-namebkmkcreatesysmgmtlaba-create-the-system-management-container"></a><a name="BKMK_CreateSysMgmtLab"></a> 建立系統管理容器  
+###  <a name="BKMK_CreateSysMgmtLab"></a> 建立系統管理容器  
  Configuration Manager 不會在擴充架構時，自動在 Active Directory 網域服務中建立必要系統管理容器。 因此，您將為實驗室建立這個項目。 這個步驟將要求您 [安裝 ADSI 編輯](https://technet.microsoft.com/en-us/library/cc773354\(WS.10\).aspx#BKMK_InstallingADSIEdit)。  
 
  請確定您以具有 Active Directory 網域服務之 [系統]  容器 [建立所有子物件]  權限的帳戶登入。  
@@ -113,7 +112,7 @@ ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
 
 5.  按一下 [完成]  完成程序。  
 
-###  <a name="a-namebkmksetsecpermlaba-set-security-permissions-for-the-system-management-container"></a><a name="BKMK_SetSecPermLab"></a> 設定系統管理容器的安全性權限  
+###  <a name="BKMK_SetSecPermLab"></a> 設定系統管理容器的安全性權限  
  請將站台資訊發佈到容器所需的權限授與站台伺服器的電腦帳戶。 您也將針對這個工作使用 ADSI 編輯。  
 
 > [!IMPORTANT]  
@@ -133,7 +132,7 @@ ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
 
      如需此程序的其他資訊，請檢閱[擴充 System Center Configuration Manager 的 Active Directory 架構](../../core/plan-design/network/extend-the-active-directory-schema.md)。  
 
-###  <a name="a-namebkmkextadschlaba-extend-the-active-directory-schema-using-extadschexe"></a><a name="BKMK_ExtADSchLab"></a> 使用 extadsch.exe 延伸 Active Directory 架構  
+###  <a name="BKMK_ExtADSchLab"></a> 使用 extadsch.exe 延伸 Active Directory 架構  
  您將擴充這個實驗室的 Active Directory 架構，這可讓您以最少的管理成本來使用所有的 Configuration Manager 特性和功能。 延伸 Active Directory 架構是對每個樹系都只能執行一次的整個樹系組態。 永久延伸架構會修改基底 Active Directory 組態中的這組類別和屬性。 這項動作無法復原。 擴充架構可讓 Configuration Manager 存取元件，以允許它在實驗室環境內最有效地運作。  
 
 > [!IMPORTANT]  
@@ -151,7 +150,7 @@ ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
 
      如需此程序的其他資訊，請檢閱[擴充 System Center Configuration Manager 的 Active Directory 架構](../../core/plan-design/network/extend-the-active-directory-schema.md)。  
 
-###  <a name="a-namebkmkothertaskslaba-other-required-tasks"></a><a name="BKMK_OtherTasksLab"></a> 其他必要工作  
+###  <a name="BKMK_OtherTasksLab"></a> 其他必要工作  
  您也需要先完成下列工作，再進行安裝。  
 
  **建立資料夾來儲存所有下載**  
@@ -164,7 +163,7 @@ ms.openlocfilehash: 36e5307449bd843156307598ccdde717b4b59be3
 
 ##### <a name="to-install-net-and-activate-windows-communication-foundation"></a>安裝 .NET 並啟動 Windows Communication Foundation：  
 
-1.  開啟 **Server Manager**，然後瀏覽至 [管理] 。 按一下 [新增角色及功能]  開啟 [新增角色及功能精靈] ** Wizard.**。  
+1.  開啟 **Server Manager**，然後瀏覽至 [管理] 。 按一下 [新增角色及功能]  開啟 [新增角色及功能精靈]  **Wizard.**。  
 
 2.  檢閱 [開始之前]  面板中所提供的資訊，然後按一下 [下一步] 。  
 
@@ -344,7 +343,7 @@ Internet Information Services (IIS) 是彈性可擴充的網頁伺服器，可�
 
 4.  將 **.msi** 輸入對話方塊中，然後按一下 [確定] 。  
 
-###  <a name="a-namebkmkinstallcmlaba-installing-configuration-manager"></a><a name="BKMK_InstallCMLab"></a> 安裝 Configuration Manager  
+###  <a name="BKMK_InstallCMLab"></a> 安裝 Configuration Manager  
 您將建立[判斷何時使用主要站台](../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md#BKMK_ChoosePriimary)來直接管理用戶端。 這將讓您的實驗室環境支援潛在裝置之[站台系統縮放](/sccm/core/plan-design/configs/size-and-scale-numbers)的管理。  
 在這個過程中，您也會安裝 Configuration Manager 主控台，以用來管理您之後的評估裝置。  
 
@@ -370,7 +369,7 @@ Internet Information Services (IIS) 是彈性可擴充的網頁伺服器，可�
     |步驟 15： **用戶端通訊設定**|確認未選取 [所有站台系統角色僅能接受用戶端傳來的 HTTPS 通訊]  。|  
     |步驟 16： **站台系統角色**|輸入 FQDN，並確認仍選取 [所有站台系統角色僅能接受用戶端傳來的 HTTPS 通訊]  。|  
 
-###  <a name="a-namebkmkenablepublaba-enable-publishing-for-the-configuration-manager-site"></a><a name="BKMK_EnablePubLab"></a> 啟用 Configuration Manager 站台的發行  
+###  <a name="BKMK_EnablePubLab"></a> 啟用 Configuration Manager 站台的發行  
 每個 Configuration Manager 站台都會將其專屬的站台特定資訊發行至 Active Directory 架構中網域分割內的系統管理容器。 必須開啟 Active Directory 與 Configuration Manager 間通訊的雙向通道，才能處理這個流量。 您也會額外啟用樹系探索，以判斷 Active Directory 及網路基礎結構的某些元件。  
 
 ##### <a name="to-configure-active-directory-forests-for-publishing"></a>若要設定 Active Directory 樹系進行發佈：  
@@ -398,9 +397,3 @@ Internet Information Services (IIS) 是彈性可擴充的網頁伺服器，可�
 3.  在 [系統管理]  工作區中，按一下 [Active Directory 樹系] 。  
 
 4.  在站台內容的 [發佈]  索引標籤上，選取您已連線的樹系，然後按一下 [確定]  儲存組態。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

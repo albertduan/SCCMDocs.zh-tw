@@ -6,21 +6,19 @@ ms.date: 01/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c890fd27-7a8c-4f51-bbe2-f9908af1f42b
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
+ms.openlocfilehash: 36bcbbca4fdee3e95d293c436a105a41a6e3953e
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
 ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
-ms.openlocfilehash: fef330a14ad2a1f75d520eac0706a376953993e8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/04/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="about-client-installation-properties-in-system-center-configuration-manager"></a>關於 System Center Configuration Manager 中的用戶端安裝內容
 
@@ -582,4 +580,3 @@ ms.lasthandoff: 08/04/2017
 |2.5.4.42|G 或 GN 或 GivenName|指定的名稱|  
 |2.5.4.43|I 或 Initials|縮寫|  
 |2.5.29.17|(沒有值)|主體替代名稱|  
-

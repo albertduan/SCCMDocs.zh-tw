@@ -6,23 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8e25e00c-c9a8-473f-bcb7-ea989f6ca3c5
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 7c8d38ad6bdfece5432d4886f60ff98b8d3bd342
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: d2dd2c25a2714851ba1e71414cabcef38d3ce014
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-internet-access-using-managed-browser-policies-with-system-center-configuration-manager"></a>透過 System Center Configuration Manager 使用受管理的瀏覽器原則管理網際網路存取
 
@@ -153,4 +150,3 @@ ms.lasthandoff: 03/06/2017
 -   如果裝置是第一次接收受管理的瀏覽器原則且有兩個原則發生衝突，則不會在裝置上強制執行 URL。 請使用 [原則]  工作區的 [原則衝突]  節點來檢視衝突。  
 
 -   如果裝置已經接收受管理的瀏覽器原則且部署的第二個原則含有發生衝突的設定，則會在裝置上保留原始的設定。 請使用 [原則]  工作區的 [原則衝突]  節點來檢視衝突。  
-

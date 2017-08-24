@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3ddff2a7-99eb-4ef8-b969-f3f7f24053db
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: f46c9479021c814b1102d72c7d493f21a7243bf1
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 的電源管理簡介
 
@@ -49,9 +48,3 @@ System Center Configuration Manager 的電源管理功能可滿足許多組織�
 
 ### <a name="compliance-phase"></a>相容性階段  
  在相容性階段中，您可以執行報告，協助您評估貴組織的用電量和電費節約成效。 您也可以執行報告，說明電腦 CO2 產量降低的成效。 另有報告協助您驗證該電源設定是否正確套用至電腦，並幫助您疑難排解與電源管理功能有關的問題。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

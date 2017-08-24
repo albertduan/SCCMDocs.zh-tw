@@ -1,5 +1,4 @@
 ---
-
 title: "移除軟體更新點 | Microsoft Docs"
 description: "請依照此程序，以從站台的 Configuration Manager 主控台移除軟體更新點站台系統角色。"
 keywords: 
@@ -10,16 +9,15 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 2486375c-d4a2-4cf2-9124-9bee02bbf173
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 22de02c51be3a0cd66b1be0f04b2fbdeb897858c
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-#  <a name="a-namebkmkremovesupa-remove-the-software-update-point-site-system-role"></a><a name="BKMK_RemoveSUP"></a> 移除軟體更新點站台系統角色  
+#  <a name="BKMK_RemoveSUP"></a> 移除軟體更新點站台系統角色  
 
 *適用於：System Center Configuration Manager (最新分支)*
 
@@ -39,9 +37,3 @@ ms.openlocfilehash: 22de02c51be3a0cd66b1be0f04b2fbdeb897858c
 3.  選取包含要移除之軟體更新點的站台系統伺服器，然後在 [站台系統角色] 中選取 [軟體更新點] 。  
 
 4.  在 [站台角色]  索引標籤的 [站台角色]  群組中，按一下 [移除角色] 。 確認您想要移除軟體更新點，或為站台的其他軟體更新點選取新的同步處理來源。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

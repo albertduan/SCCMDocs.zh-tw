@@ -6,20 +6,19 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 552e7e3d-e584-4a7c-9155-0f796a14b678
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: cf29123923436ed4cefc17c69630fc39989caeb4
 ms.openlocfilehash: 0034381a7a388ddc3eda5e774f3c63d741336301
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-security-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中設定安全性
 
@@ -27,7 +26,7 @@ ms.openlocfilehash: 0034381a7a388ddc3eda5e774f3c63d741336301
 
 請使用本文的資訊，協助設定 System Center Configuration Manager 的安全性相關選項。  
 
-##  <a name="a-namebkmkconfigureclientpkia-configure-settings-for-client-pki-certificates"></a><a name="BKMK_ConfigureClientPKI"></a> 設定用戶端 PKI 憑證的設定  
+##  <a name="BKMK_ConfigureClientPKI"></a> 設定用戶端 PKI 憑證的設定  
 如果您想要使用公開金鑰基礎結構 (PKI) 憑證，和使用 Internet Information Services (IIS) 的站台系統進行用戶端連線，請使用下列程序設定這些憑證的設定。  
 
 #### <a name="to-configure-client-pki-certificate-settings"></a>設定用戶端 PKI 憑證設定  
@@ -62,7 +61,7 @@ ms.openlocfilehash: 0034381a7a388ddc3eda5e774f3c63d741336301
 
 為階層中的所有主要站台重複此程序。  
 
-##  <a name="a-namebkmkconfiguresigningencryptiona-configure-signing-and-encryption"></a><a name="BKMK_ConfigureSigningEncryption"></a> 設定簽署及加密  
+##  <a name="BKMK_ConfigureSigningEncryption"></a> 設定簽署及加密  
 為站台系統設定站台之所有用戶端皆支援的最安全簽署及加密設定。 這些設定在您讓用戶端使用自我簽署憑證透過 HTTP 與站台系統通訊時，尤其重要。  
 
 #### <a name="to-configure-signing-and-encryption-for-a-site"></a>設定站台的簽署及加密  
@@ -86,7 +85,7 @@ ms.openlocfilehash: 0034381a7a388ddc3eda5e774f3c63d741336301
 
 為階層中的所有主要站台重複此程序。  
 
-##  <a name="a-namebkmkconfigurerbaa-configure-role-based-administration"></a><a name="BKMK_ConfigureRBA"></a> 設定以角色為基礎的系統管理  
+##  <a name="BKMK_ConfigureRBA"></a> 設定以角色為基礎的系統管理  
 以角色為基礎的系統管理結合了安全性角色、安全性範圍和指派的集合，為每個系統管理使用者定義系統管理範圍。 系統管理範圍包含系統管理使用者可以在 Configuration Manager 主控台中檢視的物件，以及與這些系統管理使用者擁有執行權限之物件相關的工作。 以角色為基礎的系統管理設定會套用到階層中的每個站台。  
 
 下列為[為 System Center Configuration Manager 設定以角色為基礎的系統管理](../../../core/servers/deploy/configure/configure-role-based-administration.md)一文之相關章節的連結：  
@@ -106,7 +105,7 @@ ms.openlocfilehash: 0034381a7a388ddc3eda5e774f3c63d741336301
 > [!IMPORTANT]  
 >  您自己的系統管理範圍，定義您在為其他系統管理使用者設定以角色為基礎的系統管理時，可指派的物件和設定。 如需規劃以角色為基礎之系統管理的詳細資訊，請參閱 [System Center Configuration Manager 以角色為基礎之系統管理的基礎](../../../core/understand/fundamentals-of-role-based-administration.md)。  
 
-##  <a name="a-namebkmkmanageaccountsa-manage-accounts-that-are-used-by-configuration-manager"></a><a name="BKMK_ManageAccounts"></a> 管理 Configuration Manager 使用的帳戶  
+##  <a name="BKMK_ManageAccounts"></a> 管理 Configuration Manager 使用的帳戶  
 Configuration Manager 支援用於多種不同工作及用途的 Windows 帳戶。  
 
 利用下列程序檢視針對不同工作設定的帳戶，以及管理 Configuration Manager 用於每個帳戶的密碼。  
@@ -127,9 +126,3 @@ Configuration Manager 支援用於多種不同工作及用途的 Windows 帳戶�
     >  您指定的密碼必須符合在 [Active Directory 使用者和電腦] 中為帳戶指定的密碼。  
 
 6.  選擇 [確定] 完成程序。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

@@ -7,20 +7,18 @@ ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.topic: article
 ms.assetid: d24257d8-8136-47f4-8e0d-34021356dc37
-caps.latest.revision: 2
+caps.latest.revision: "2"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: 5276ad999fc871496d79e6efff34d5edc6335380
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configuration-manager-on-azure---frequently-asked-questions"></a>Azure 的 Configuration Manager - 常見問題集
 *適用對象：System Center Configuration Manager (最新分支)*
@@ -41,11 +39,11 @@ ms.lasthandoff: 05/17/2017
 
 ### <a name="what-areas-should-i-pay-attention-to-when-considering-a-move-of-my-configuration-manager-infrastructure-to-azure"></a>將 Configuration Manager 基礎結構移至 Azure 時應注意哪些部分？
 這個問題很棒，以下是進行此決策時最重要的各個部分，本主題會在各節中一一探索︰
-1.    網路功能
-2.    可用性
-3.    效能
-4.    成本
-5.    使用者體驗
+1.  網路功能
+2.  可用性
+3.  效能
+4.  成本
+5.  使用者體驗
 
 ## <a name="networking"></a>網路功能
 ### <a name="what-about-networking-requirements-should-i-use-expressroute-or-an-azure-vpn-gateway"></a>那網路需求呢，我應該使用 ExpressRoute 或 Azure VPN 閘道？
@@ -117,7 +115,7 @@ VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援
 |**25 k 到 50 k**      | 站台伺服器：F4S </br>資料庫伺服器：DS13_V2 | 站台伺服器：1xP30 </br>資料庫伺服器：2xP30 (等量)   |
 |**50 k 至 100 k**     | 站台伺服器：F8S </br>資料庫伺服器：DS14_V2 | 站台伺服器：2xP30 (等量)   </br>資料庫伺服器：3xP30 (等量)   |
 
-下圖顯示 DS14_V2 上 50k 至 100k 之用戶端的設定範例，其在等量磁碟區中有 3xP30 個磁碟，並有不同的邏輯磁碟區以供 Configuration Manager 安裝和資料庫檔案使用： ![VM)disks](media/vm_disks.png)  
+下圖顯示 DS14_V2 上 50k 至 100k 之用戶端的設定範例，其在等量磁碟區中有 3xP30 個磁碟，並有不同的邏輯磁碟區以供 Configuration Manager 安裝和資料庫檔案使用：![VM)disks](media/vm_disks.png)  
 
 
 
@@ -181,4 +179,3 @@ VM 中必須使用 Microsoft SQL Server。 Configuration Manager 目前不支援
  - 快速路由詳細資訊：http://azure.microsoft.com/documentation/articles/expressroute-introduction/
 
  
-

@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9f7142e1-c972-4384-853b-2da1568cb3e3
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: d3cc24c7923141f039dcda26ac27489cb0143e89
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="best-practices-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 中電源管理的最佳做法
 
@@ -82,9 +81,3 @@ ms.openlocfilehash: d3cc24c7923141f039dcda26ac27489cb0143e89
  每月報告所使用的電源管理資訊會在 Configuration Manager 站台資料庫中保留 13 個月。  
 
  當您在電源管理的監視和規劃階段以及相容性階段執行報告時，請儲存或匯出想要保留資料以供日後比較的所有報告結果，以防 Configuration Manager 移除任何結果。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

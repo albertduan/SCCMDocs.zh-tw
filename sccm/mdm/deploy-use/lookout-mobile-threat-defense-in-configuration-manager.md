@@ -6,8 +6,7 @@ ms.date: 04/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9083c571-f4fc-4a78-adc5-8aec84dabcbd
@@ -15,13 +14,11 @@ caps.latest.revision:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6a6137fa978e1ea28aefea2aea4e29ba661efd6
 ms.openlocfilehash: 21841d97387f07f53993d957641f9ad892d723c2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-access-to-company-resource-based-on-device-network-and-application-risk"></a>根據裝置、網路和應用程式的風險，來管理公司資源的存取權
 
@@ -90,9 +87,8 @@ ms.lasthandoff: 05/17/2017
 
 ## <a name="next-steps"></a>後續步驟
 您必須執行下列主要步驟來實作這個解決方案：
-1.    [設定您的訂閱與 Lookout Mobile Threat Protection](set-up-your-subscription-with-lookout.md)
-2.    [在 Intune 中啟用 Lookout MTP 的連線](enable-lookout-connection-in-intune.md)
+1.  [設定您的訂閱與 Lookout Mobile Threat Protection](set-up-your-subscription-with-lookout.md)
+2.  [在 Intune 中啟用 Lookout MTP 的連線](enable-lookout-connection-in-intune.md)
 3.  [設定和部署 Lookout for Work 應用程式](configure-and-deploy-lookout-for-work-apps.md)
-4.    [設定合規性政策](enable-device-threat-protection-rule-compliance-policy.md)
-5.    [對 Lookout 整合進行疑難排解](troubleshoot-lookout-integration.md)
-
+4.  [設定合規性政策](enable-device-threat-protection-rule-compliance-policy.md)
+5.  [對 Lookout 整合進行疑難排解](troubleshoot-lookout-integration.md)

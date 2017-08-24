@@ -6,24 +6,21 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: bb95154b-f63e-4491-896e-41d732c802f8
-caps.latest.revision: 34
-caps.handback.revision: 0
+caps.latest.revision: "34"
+caps.handback.revision: "0"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
 ms.openlocfilehash: c494fcc38955571c06507278a1ae88e5777b5708
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="setup-hybrid-mobile-device-management-mdm-with-system-center-configuration-manager-and-microsoft-intune"></a>使用 System Center Configuration Manager 和 Microsoft Intune 設定混合式行動裝置管理 (MDM)
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -51,4 +48,3 @@ ms.lasthandoff: 05/17/2017
 完成混合式設定之後，有數種方式可以在 Configuration Manager 中註冊裝置︰
 - **公司擁有的裝置 (COD)：**[註冊公司擁有的裝置](enroll-company-owned-devices.md)提供註冊公司所擁有裝置之不同平台特有方式的指引。
 - **使用者擁有的 (BYOD) 裝置：**[註冊使用者擁有的 (BYOD) 裝置](enroll-hybrid-ios-mac.md)提供註冊使用者擁有之裝置的指引。
-

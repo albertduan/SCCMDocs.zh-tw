@@ -6,21 +6,19 @@ ms.date: 07/18/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 73ff9bb9-e605-4b68-92a1-487684fed42d
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: dougeby
 ms.author: dougeby
 manager: angrobe
+ms.openlocfilehash: 26c36df77c21254c7ad2b8a45906bd3706f9ec65
+ms.sourcegitcommit: 06aef618f72c700f8a716a43fb8eedf97c62a72b
 ms.translationtype: HT
-ms.sourcegitcommit: 648bc6b96aa5ccc834442a962e6d5b5125f88bb5
-ms.openlocfilehash: ddb6d47e5dba4fddd6fa811d83b1bf0c91ad26f9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/19/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="choose-between-microsoft-intune-standalone-and-hybrid-mobile-device-management-with-system-center-configuration-manager"></a>在 Microsoft Intune 獨立部署與使用 System Center Configuration Manager 的混合式行動裝置管理之間進行選擇
 
@@ -51,8 +49,7 @@ Intune 獨立部署是 Microsoft 建議的部署拓撲。 Intune 獨立部署是
 
 
 ## <a name="changing-the-mdm-authority-setting"></a>變更 MDM 授權單位設定
-若需要變更 MDM 授權單位設定，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，便可以自行變更。 如需詳細資訊，請參閱[變更您的 MDM 授權單位](/sccm/mdm/deploy-use/change-mdm-authority.md)。
+若需要變更 MDM 授權單位設定，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，便可以自行變更。 如需詳細資訊，請參閱[變更您的 MDM 授權單位](../deploy-use/change-mdm-authority.md)。
 
 > [!NOTE]    
 > 您必須要有 Configuration Manager 1610 版或更新的版本，才能將 MDM 授權單位變更為 Intune 獨立部署。 若是使用先前版本的 Configuration Manager，仍然可以變更 MDM 授權單位，但是需要 Microsoft 支援服務與作業的協助。 同時您也需要在變更 MDM 授權單位之後，解除註冊並重新註冊所有的裝置。  
-

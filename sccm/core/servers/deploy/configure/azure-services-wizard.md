@@ -6,21 +6,19 @@ ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: a26a653e-17aa-43eb-ab36-0e36c7d29f49
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 0663ba84762c44a5c303562548499f195bae9e1c
 ms.openlocfilehash: 22203b358830903cf2e531c0532ae3111b8265fc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/01/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>設定要與 Configuration Manager 搭配使用的 Azure 服務
 
@@ -96,4 +94,3 @@ Azure 服務的 Web 應用程式會將您的 Configuration Manager 站台連線�
 您可以檢視設定要使用之 Azure 服務的屬性。
 
 在主控台中，移至 [管理] > [概觀] > [雲端服務] > [Azure 服務]。 接著，選擇您想要檢視或編輯的服務，然後按一下 [屬性]。
-

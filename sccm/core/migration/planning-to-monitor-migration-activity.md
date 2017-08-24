@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fc731d3f-edd7-4049-b17b-653d6693a564
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 5e3d3f4194b06442e34c10988a20fe9ca40ac5d7
 ms.openlocfilehash: 896807ec2c4be2835094a27add59d4cc09e93add
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="planning-to-monitor-migration-activity-in-system-center-configuration-manager"></a>規劃在 System Center Configuration Manager 中監視移轉活動
 
@@ -39,9 +38,3 @@ ms.openlocfilehash: 896807ec2c4be2835094a27add59d4cc09e93add
     >  如果移轉作業失敗，請盡快檢閱 migmctrl.log 檔案中的詳細資料。 移轉記錄檔項目會持續新增至檔案，並覆寫舊的詳細資料。 如果項目遭到覆寫，您可能無法識別移轉物件所遇到的問題，是否與移轉問題有關。 移轉活動會記錄在階層的頂層站台，不論您在設定移轉時 Configuration Manager 主控台連線到哪個站台。  
 
 -   使用 Configuration Manager 報告。 Configuration Manager 提供多種內建移轉報告，或者您也可以編輯這些報告以符合您的需求。 如需 Configuration Manager 報告的詳細資訊，請參閱 [System Center Configuration Manager 中的報告](../../core/servers/manage/reporting.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

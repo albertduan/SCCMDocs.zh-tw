@@ -6,23 +6,20 @@ ms.date: 3/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8c5a13f8-42d5-4898-b7b6-e594dae8b335
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3f397efe458fd85124d2a83d4a869642015fd4a5
 ms.openlocfilehash: 2654ab4eaaaf6a4bf3bd7dca9908e7033647dc2c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="supported-active-directory-domains-for-system-center-configuration-manager"></a>System Center Configuration Manager 支援的 Active Directory 網域
 
@@ -88,4 +85,3 @@ Configuration Manager 可以在具有脫離之命名空間的網域中安裝站�
      **例如：** Contoso 的單一標籤網域已設定為在 contoso.com 的 DNS 中具有脫離的命名空間。 因此，當您為 Contoso 網域中的電腦指定 Configuration Manager 中的 DNS 尾碼時，您會指定 "Contoso.com"，而不是 "Contoso"。  
 
 -   系統內容中的站台伺服器之間的分散式元件物件模型 (DCOM) 連線必須成功使用 Kerberos 驗證。  
-

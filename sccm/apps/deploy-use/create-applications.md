@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
-caps.latest.revision: 14
-caps.handback.revision: 0
+caps.latest.revision: "14"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
 ms.openlocfilehash: 4d048d4f9ab01b28e6c21a38cca4d82c85030618
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/03/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立應用程式
 
@@ -477,4 +475,3 @@ System Center Configuration Manager 應用程式包含將軟體部署至某個�
 |**Mac OS X**|從您使用 CMAppUtil 工具建立的 .cmmac 檔案建立 Mac 電腦的部署類型。<br /><br /> 僅套用至執行 Configuration Manager 用戶端的 Mac 電腦。|  
 |**Web 應用程式**|建立指定通往 Web 應用程式之連結的部署類型。 部署類型可在使用者裝置上安裝通往 Web 應用程式的捷徑。<br /><br /> 如果您已在您管理的 iOS 或 Android 裝置上安裝 Intune Managed Browser，就能確保使用者只能使用受管理的瀏覽器來開啟應用程式。 若要這樣做，請在您指定連至應用程式的連結時，使用下列其中一個格式，並將 **http:** 取代為 **http-intunemam:** 或將 **https:** 取代為 **https-intunemam:**<br /><br /> - **http-intunemam://<Web 應用程式的路徑\>**<br /><br /> - **https-intunemam://<Web 應用程式的路徑\>**<br /><br /> 您可以使用 Configuration Manager 應用程式需求，來確保您想要關聯至受管理瀏覽器的應用程式只會安裝到 iOS 和 Android 裝置。<br /><br /> 如需 Intune Managed Browser 的詳細資訊，請參閱[使用受管理的瀏覽器原則管理網際網路存取](../../apps/deploy-use/manage-internet-access-using-managed-browser-policies.md)。|  
 |**透過 MDM 的 Windows Installer (\*.msi)**|這種安裝程式類型可讓您建立 Windows Installer 應用程式，並將其部署到執行 Windows 10 的電腦上。<br /><br /> 當您使用這種安裝程式類型時，必須考量下列幾點：<br><br>- 您只能上傳副檔名為 .msi 的單一檔案。<br /><br /> - 使用檔案的產品代碼和產品版本來偵測應用程式。<br /><br /> - 使用應用程式的預設重新啟動行為。 Configuration Manager 不會控制這個項目。<br /><br /> - 將針對單一使用者安裝每個使用者的 MSI 套件。<br /><br /> - 將針對裝置上的所有使用者安裝每部電腦的 MSI 套件。<br /><br /> - 目前只有裝置上的所有使用者可安裝雙重模式的 MSI 套件。<br /><br /> - 當各版的 MSI 產品代碼相同時，就支援應用程式更新。|  
-

@@ -6,25 +6,22 @@ ms.date: 07/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4bb6afeb-d267-4f9b-ade2-26e5400c223b
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 344b55aecd72479b759b40e8252e64a06c5eaba0
 ms.openlocfilehash: 5bf4457af6bedf7bc9cd73c879f1857209c0725d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/13/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-# 以 System Center Configuration Manager 建立及部署組態基準的一般工作
-<a id="common-tasks-for-creating-and-deploying-configuration-baselines-with-system-center-configuration-manager" class="xliff"></a>
+# <a name="common-tasks-for-creating-and-deploying-configuration-baselines-with-system-center-configuration-manager"></a>以 System Center Configuration Manager 建立及部署組態基準的一般工作
 
 *適用對象：System Center Configuration Manager (最新分支)*
 
@@ -34,8 +31,7 @@ ms.lasthandoff: 07/13/2017
 
  開始之前，請參閱 [Get started with compliance settings in System Center Configuration Manager](../../compliance/get-started/get-started-with-compliance-settings.md) (開始使用 System Center Configuration Manager 的相容性設定)，了解相容性設定的一些基本概念，另請參閱[規劃及設定相容性設定](../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)，實作任何必要條件。  
 
-## 建立組態基準
-<a id="create-a-configuration-baseline" class="xliff"></a>  
+## <a name="create-a-configuration-baseline"></a>建立組態基準  
  在這個範例中，您只為執行 Configuration Manager 用戶端的 Windows 10 電腦建立了設定項目。  
 
  這個組態項目會在 Windows 10 電腦上強制執行至少 6 個字元的必要密碼。 組態項目的名稱是 **Windows 10 密碼強化**。  
@@ -60,8 +56,7 @@ ms.lasthandoff: 07/13/2017
 
  您現在可以看到 Configuration Manager 主控台 [設定基準] 節點中的設定基準。  
 
-## 部署設定基準
-<a id="deploy-the-configuration-baseline" class="xliff"></a>  
+## <a name="deploy-the-configuration-baseline"></a>部署設定基準  
  在這個範例中，您要將在上一個程序中建立的設定基準部署到電腦集合。  
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] > [相容性設定] > [設定基準]。  
@@ -87,8 +82,6 @@ ms.lasthandoff: 07/13/2017
 
  如果想要快速瀏覽這項部署的相容性統計資料，請在 [監視]  工作區中按一下 [部署] 。 在畫面底部，您會看到 [合規性統計資料] 圖表。  
 
-## 後續步驟
-<a id="next-steps" class="xliff"></a> 
+## <a name="next-steps"></a>後續步驟 
 
 如需如何監視設定基準的詳細資訊，請參閱[監視合規性設定](../../compliance/deploy-use/monitor-compliance-settings.md)。  
-

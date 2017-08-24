@@ -6,22 +6,19 @@ ms.date: 04/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ff6e7267-302a-4563-815e-cdc0d1a4b60f
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae9488a34c6b1e04397c4875de4b3bc607f7116c
 ms.openlocfilehash: 33abf3853d912d423e427db4d35fb4a16167164e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-prestaged-media-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立預先設置的媒體
 
@@ -145,4 +142,3 @@ System Center Configuration Manager 中預先設置的媒體是 Windows 映像�
 
 ## <a name="next-steps"></a>後續步驟
 [部署企業作業系統的案例](scenarios-to-deploy-enterprise-operating-systems.md)
-

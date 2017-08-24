@@ -6,20 +6,19 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b7bff8a0-fe76-4d3b-aac6-065290888bea
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 9e88ed671ce56f19a545b2749b46710d56dac2ae
 ms.openlocfilehash: 135a30085a1a02f75e9a88ed5f9ded06e9c33367
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-best-practices-and-privacy-information-for-system-center-configuration-manager"></a>System Center Configuration Manager 的安全性最佳作法與隱私權資訊
 
@@ -68,9 +67,3 @@ ms.openlocfilehash: 135a30085a1a02f75e9a88ed5f9ded06e9c33367
 -   [System Center Configuration Manager 的憑證設定檔安全性和隱私權](../../../protect/plan-design/security-and-privacy-for-certificate-profiles.md)  
 
 -   [System Center Configuration Manager 中的 Wi-Fi 和 VPN 設定檔安全性及隱私權](../../../protect/plan-design/security-and-privacy-for-wifi-vpn-profiles.md)  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -1,5 +1,4 @@
 ---
-
 title: "註冊裝置 | Microsoft Docs"
 description: "了解在 System Center Configuration Manager 中註冊裝置以進行內部行動裝置管理的方法。"
 ms.custom: na
@@ -7,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: b58472e3-31a5-4305-8eb6-2522befebe02
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3b1451edaed69a972551bd060293839aa11ec8b2
 ms.openlocfilehash: 4abaef35969ef1a5340ae8ca8aa5699cd3942642
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="enroll-devices-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中註冊裝置以進行內部行動裝置管理
 
@@ -46,4 +42,3 @@ ms.lasthandoff: 05/17/2017
 > -   Windows 10 團隊版 
 > -   Windows 10 Mobile  
 > -   Windows 10 Mobile Enterprise   
-

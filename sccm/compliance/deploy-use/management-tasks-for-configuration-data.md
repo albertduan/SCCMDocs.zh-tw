@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b48c693c-d2b0-4707-a5dd-fe92172c49fe
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 1a6084834384e695b49a71fe23833049c86f8dbc
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-configuration-data-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中管理設定資料
 
@@ -58,9 +57,3 @@ ms.openlocfilehash: 1a6084834384e695b49a71fe23833049c86f8dbc
 |**複製**|使用您指定的名稱，建立一份所選取組態基準的複本。 新的組態基準不會保留任何與原始組態基準的關聯性。|  
 |**刪除**|開啟 [刪除組態基準]  對話方塊，以在其中檢閱這個組態基準的任何參考。<br /><br /> 您必須先移除組態基準的所有參考，才能刪除組態基準。|  
 |**部署**|開啟 [部署組態基準]  對話方塊，以在其中將一個或多個組態基準部署至階層中的裝置。<br /><br /> 如需詳細資訊，請參閱[部署設定基準](../../compliance/deploy-use/deploy-configuration-baselines.md)。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e2745bac-e1b4-4dac-8ac7-32f1c820bc9c
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a25c6b409ea6501ead762fabb8cc11c62c84885d
-ms.openlocfilehash: cf98bbb9dee6142e8b085dbffcadb3ed712adcb9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 88bef04a52f716ae13afc21c25d33dea06a3fc9c
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-ios-activation-lock-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理 iOS 啟用鎖定
 
@@ -106,4 +103,3 @@ Configuration Manager 可以透過兩種方式協助您管理啟用鎖定：
     - 裝置內容對話方塊中裝置的探索資料。
     - **[裝置]** 檢視中的 **[啟用鎖定略過狀態]** 資料行 (預設會隱藏此資料行)。
     - 詳細資料窗格的 **[摘要]** 索引標籤中的 **[遠端裝置動作資訊]** 區段 (選取裝置時)。
-

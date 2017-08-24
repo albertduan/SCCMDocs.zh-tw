@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 10049c89-b37c-472b-b317-ce4f56cd4be7
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a650ad8e7b1f9468dd04165a3e43a89387b5d696
-ms.openlocfilehash: b07af49e2fecf6cc41258c87794ca7952206bb8a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/17/2017
-
-
+ms.openlocfilehash: c535bc62497b5ff0b60ca266c28630d890af3604
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="example-scenario-for-deploying-and-managing-system-center-configuration-manager-clients-on-windows-embedded-devices"></a>在 Windows Embedded 裝置上部署及管理 System Center Configuration Manager 用戶端的示範案例
 
@@ -181,4 +178,3 @@ Coho Vineyard & Winery 開闢了一個遊客中心，需要在執行 Windows Emb
     -   已安裝互動式簡報軟體並可自動執行，隨時可供遊客使用。  
 
 14. 初始設定完成後，如必須重新啟動以進行更新，只會在遊客中心關閉後進行。  
-

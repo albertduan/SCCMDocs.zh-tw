@@ -6,21 +6,18 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4cd6031f-8844-4d0b-8166-b24d6528a94e
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 6451ce59e01254d96ca4aa9bbe07cde829fae9ce
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: de5602179f3ac55b51133b8280a0143f1b0ff30e
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-exclude-upgrading-clients-for-windows-computers-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中排除升級的 Windows 電腦用戶端
 
@@ -55,4 +52,3 @@ ms.lasthandoff: 12/16/2016
   如果您嘗試手動升級屬於排除集合成員的用戶端，但未使用此參數，則用戶端不會安裝新的用戶端軟體。 如需詳細資訊，請參閱[如何手動安裝 Configuration Manager 用戶端](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_Manual)。
 
 如需用戶端安裝方法的詳細資訊，請參閱[如何在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦](/sccm/core/clients/deploy/deploy-clients-to-windows-computers)。
-

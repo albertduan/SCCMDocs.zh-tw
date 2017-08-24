@@ -6,21 +6,19 @@ ms.date: 08/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d827cf91-b18f-4ee7-b538-24ba6f003ab9
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
 ms.openlocfilehash: 62843bd544217734c4566d656a7c3a35bd5613cb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/04/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-monitor-clients-for-linux-and-unix-servers-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中監視 Linux 和 UNIX 伺服器的用戶端
 
@@ -54,4 +52,3 @@ ms.lasthandoff: 08/04/2017
  此外，也可以建立 Linux 和 UNIX 伺服器資料特定的自訂報表。 硬體清查類別 **作業系統** 的 **標題** 屬性，是實用的屬性，可讓您識別在報表查詢中的特定作業系統。  
 
  如需 Configuration Manager 報告的相關資訊，請參閱 [System Center Configuration Manager 中的報告](../../../core/servers/manage/reporting.md)。  
-

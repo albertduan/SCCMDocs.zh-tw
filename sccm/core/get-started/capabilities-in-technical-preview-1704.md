@@ -4,8 +4,7 @@ description: "了解 System Center Configuration Manager Technical Preview 1704 
 ms.custom: na
 ms.date: 4/21/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,12 +13,11 @@ ms.assetid: e318e705-20f2-417d-8cde-7dfe661b2fa7
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae008c91a7387ba76f2bfac13f8feb489a0cc558
 ms.openlocfilehash: d7caee47ca74064630e09c1bdb94187af256d4b4
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1704-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1704 中的功能
 
@@ -73,4 +71,3 @@ ms.lasthandoff: 05/17/2017
 - [針對作業系統映像的新 [OS 版本] 欄位 (英文)](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/17558407-add-a-column-to-the-operating-system-images-node-f)：我們已新增名為 [OS 版本] 的新欄位，以在您檢視 [作業系統映像] 和 [作業系統升級套件] 節點中的資訊時，顯示映像的作業系統版本。 僅會顯示 .WIM 中第一個索引的版本。 請移至 [詳細資料] 索引標籤以取得映像以檢閱其他索引的作業系統版本。
 
 - [Smsts.log 中更有效率的記錄 (英文)](https://configurationmanager.uservoice.com/forums/300492-ideas/suggestions/16791919-stop-filling-smsts-log-with-useless)：從此版本開始，我們將不再針對 CCM_CIVersionInfo.PolicyID 資訊將項目寫入 smsts.log 檔案中。 在此版本之前，可能會有很多具有此資訊的項目，這使得在記錄檔中尋找更相關的資訊變得較為困難。
-

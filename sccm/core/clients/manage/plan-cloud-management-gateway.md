@@ -3,20 +3,17 @@ title: "雲端管理閘道規劃 | Microsoft Docs"
 description: 
 ms.date: 06/07/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
 ms.openlocfilehash: a7380ae781447880ffcba0778694ea62e10c4889
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>在 Configuration Manager 中進行雲端管理閘道規劃
 
 適用於：System Center Configuration Manager (最新分支)
@@ -198,4 +195,3 @@ CMG 可透過下列方式協助確保安全性：
 ## <a name="next-steps"></a>後續步驟
 
 [設定雲端管理閘道](setup-cloud-management-gateway.md)
-

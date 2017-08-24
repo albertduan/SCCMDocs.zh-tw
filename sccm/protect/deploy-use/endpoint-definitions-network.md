@@ -6,24 +6,20 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: ddef4d2a-f481-4020-9ddd-9cca5f9795cb
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: 6b1780c4ea4304d950188fbb6201d810e940c4fc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 110bd9a9d04b27ef6794145fae66dbd910308bdc
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="enable-endpoint-protection-malware-definitions-to-download-from-a-network-share-for-configuration-manager"></a>啟用 Endpoint Protection 惡意程式碼定義，從網路共用針對 Configuration Manager 下載
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -59,4 +55,3 @@ ms.lasthandoff: 12/16/2016
 
 > [!div class="button"]
 [上一步 >](endpoint-configure-alerts.md)
-

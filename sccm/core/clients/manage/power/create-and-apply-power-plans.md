@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 738eddaa-52e2-467f-b453-821ef2884d47
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: de81da31b524cebe8e820766a64ecc5fdb7e4771
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-and-apply-power-plans-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中建立及套用電源計劃
 
@@ -89,7 +88,7 @@ System Center Configuration Manager 中的電源管理可讓您將 Configuration
 
 10. 按一下 [確定] 關閉 [*<集合名稱\>* 設定] 對話方塊，並套用電源計劃。  
 
-##  <a name="a-namebkmkplansa-available-power-management-plan-settings"></a><a name="BKMK_Plans"></a> Available power management plan settings  
+##  <a name="BKMK_Plans"></a> Available power management plan settings  
  下表列出 Configuration Manager 中可用的電源管理設定。 您可以在電腦接上電源或使用電池電力運作時，對其進行個別設定。 根據您使用的 Windows 版本，可能無法設定某些設定。  
 
 > [!NOTE]  
@@ -112,9 +111,3 @@ System Center Configuration Manager 中的電源管理可讓您將 Configuration
 |**執行睡眠動作時允許待命狀態**|選取 [開啟] 或 [關閉] 值讓電腦處於待命狀態，這仍會消耗一些電力，但可讓電腦更快喚醒。 如果這項設定設為 [關閉] ，則電腦只能休眠或關機。|  
 |**必須要閒置才能進入睡眠 (%)**|指定電腦進入睡眠狀態所需的閒置時間佔電腦處理器時間的百分比。 在執行 Windows 7 的電腦上，這個值一律會設定為 **0**。|  
 |**針對桌上型電腦啟用 Windows 喚醒計時器**|選取 [啟用] 或 [停用] 值可以啟用內建 Windows 計時器，可供電源管理用來喚醒桌上型電腦。 當桌上型電腦利用 Windows 喚醒計時器喚醒時，預設會保持喚醒狀態 10 分鐘，以容許電腦有時間安裝任何更新或接收原則。<br /><br /> 為防止可攜式電腦可能在未接上電源時被喚醒，可攜式電腦不支援喚醒計時器。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

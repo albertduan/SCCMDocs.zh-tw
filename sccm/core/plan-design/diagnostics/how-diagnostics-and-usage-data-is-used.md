@@ -6,20 +6,19 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a8021bc8-2799-41f4-83c2-e27d1242028c
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 24a233516058e645df2a43623855665b97b041b0
 ms.openlocfilehash: 9864f6ba7b9a2211c99b1a5d9ebd582e01ccfeb6
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-diagnostics-and-usage-data-is-used-for-system-center-configuration-manager"></a>診斷和使用方式資料如何用於 System Center Configuration Manager
 
@@ -43,7 +42,7 @@ System Center Configuration Manager 所收集的診斷和使用方式資料會�
 
 -   根據可用資料 (例如功能使用習慣或地理位置 (時區)) 推銷廣告  
 
-##  <a name="a-namebkmkimprovea-examples-of-how-diagnostics-and-usage-data-improves-the-product"></a><a name="bkmk_improve"></a> 診斷和使用方式資料如何改進產品的範例  
+##  <a name="bkmk_improve"></a> 診斷和使用方式資料如何改進產品的範例  
 Microsoft 會利用可用的資料來改進產品。 以下是一些範例：  
 
 -   **修改較舊的伺服器作業系統的支援：**  
@@ -53,9 +52,3 @@ Microsoft 會利用可用的資料來改進產品。 以下是一些範例：
 -   **改善必要條件檢查：**  
 
      根據使用方式資料，我們已經改善安裝更新的必要條件檢查，以移除過時的規則、處理額外情況，以及在某些情況下自動修補某些問題。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

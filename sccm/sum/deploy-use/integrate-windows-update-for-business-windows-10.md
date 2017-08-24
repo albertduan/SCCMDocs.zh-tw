@@ -9,15 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 183315fe-27bd-456f-b2c5-e8d25e05229b
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 26e73a69d5e6ca69e766fcf3cedd992353c92cd6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="integration-with-windows-update-for-business-in-windows-10"></a>與 Windows 10 中的 Windows Update for Business 整合
 
@@ -103,4 +101,3 @@ Windows Update for Business 所管理的 Windows 10 裝置必須能夠連線到�
     - **隨機延遲 (小時)**：指定一個延遲時間範圍，以避免「網路裝置註冊服務」的處理時間過長。 預設值是 64 小時。
     - **排程**：指定在用戶端電腦上評估已部署之設定檔時所依據的合規性評估排程。 此排程可以是簡易或自訂排程。 當使用者登入時，用戶端電腦會評估此設定檔。
 4.  完成精靈步驟以部署設定檔。
-

@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 46dd9cb2-a812-4b6a-a747-b840f92fef8b
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 40e018084dd2703327ff653f962f488432b1ec98
 ms.openlocfilehash: 3bab51be96445f766e8f5bbf54eee854e5d09cee
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="international-support-in-system-center-configuration-manager"></a>System Center Configuration Manager 的多語系支援
 
@@ -45,4 +42,3 @@ ms.lasthandoff: 05/17/2017
     >  這些資料庫定序是 [System Center Configuration Manager 的 SQL Server 版本支援](../../../core/plan-design/configs/support-for-sql-server-versions.md)中所述需求的例外狀況。  
 
 -   您必須將名為 **GB18030.SMS** 的檔案置於階層中每台站台伺服器電腦系統磁碟區的根資料夾中。 此檔案不含任何資料，而且可以是根據此需求命名的空白文字檔。  
-

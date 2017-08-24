@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 78a0aecc-f775-451e-aa05-56377ec91b1f
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 9b94330221548da15cda8423c2a47568fd22342e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: 7ab9042a525e07b8e3107479cedeec6b99f7bc86
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-configure-hardware-inventory-for-mobile-devices-enrolled-by-microsoft-intune-and-system-center-configuration-manager"></a>如何為 Microsoft Intune 與 Configuration Manager 註冊的行動裝置設定硬體清查
 
@@ -140,4 +137,3 @@ ms.lasthandoff: 03/06/2017
  <sup>1</sup> 除了最後 4 碼以外，電話號碼的其他部分將以星號 (*) 遮蔽。  
 
  若要讓清查收集電話號碼，裝置必須插入 SIM 卡，而且電訊廠商必須提供電話號碼給該 SIM 卡。  
-

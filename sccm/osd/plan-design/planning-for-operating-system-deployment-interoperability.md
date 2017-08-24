@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: e327ce38-6c07-4a27-b6eb-7e5bf74ed04b
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 50a4b75b8c8c1cb6f7a8e696abad285f99080fcd
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="planning-for-operating-system-deployment-interoperability-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中規劃作業系統部署互通性
 
@@ -71,9 +70,3 @@ ms.openlocfilehash: 50a4b75b8c8c1cb6f7a8e696abad285f99080fcd
  當管理中心網站升級為最新版 Configuration Manager 之後，您必須執行下列步驟，以確保部署到指派給舊版 Configuration Manager 站台 (尚未升級為最新版的 Configuration Manager) 之用戶端的作業系統部署工作順序，不會讓用戶端處於未受管理狀態。  
 
 -   只在 Configuration Manager 站台中建立用來部署至用戶端的工作順序。 同樣地，您要建立一份工作順序，用來部署至最新版 Configuration Manager 站台的用戶端，然後修改此工作順序，以便將它部署至舊版 Configuration Manager 站台的用戶端。 接著設定工作順序參照使用舊版 Configuration Manager 用戶端安裝來源的自訂用戶端安裝套件。 如果沒有參照舊版 Configuration Manager 用戶端安裝來源的自訂用戶端安裝套件，則必須手動建立一份。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

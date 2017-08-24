@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 94e42cbe-9df8-4228-a04e-0ad7626180ca
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: e6a7a0b853be930b558cdd739b90285ebb8538e7
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="administrator-checklist-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 中電源管理的系統管理員檢查清單
 
@@ -81,4 +79,3 @@ ms.lasthandoff: 12/16/2016
 |----------|-------------|  
 |如果階層中的電腦尚未進入睡眠或休眠，請執行報告 [無法休眠報告]  來顯示可能的原因。|[無法休眠報告]  顯示妨礙電腦進入睡眠或休眠狀態的常見原因清單，以及在指定時段每個原因所影響的電腦數目。 如需詳細資訊，請參閱 [How to monitor and plan for power management](monitor-and-plan-for-power-management.md) (如何監視及規劃 Configuration Manager 的電源管理)。|  
 |如果將多個電源計劃套用至一部電腦，則會套用最不嚴格的電源計劃。 執行報告 [具有多個電源計劃的電腦]  ，查看已套用多個電源計劃的電腦。|請參閱 [How to monitor and plan for power management](monitor-and-plan-for-power-management.md) (如何監視及規劃 Configuration Manager 的電源管理 ) 中的 **Computers with Multiple Power Plans** (具有多個電源計劃的電腦)。|  
-

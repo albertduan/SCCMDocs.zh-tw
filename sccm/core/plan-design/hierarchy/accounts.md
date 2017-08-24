@@ -6,23 +6,20 @@ ms.date: 2/9/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 72d7b174-f015-498f-a0a7-2161b9929198
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 72263ec5e7104924a1ca46dc2000be9f8568599f
 ms.openlocfilehash: a776667cc9f24bd4a468afea76e466c34ce66864
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="accounts-used-in-system-center-configuration-manager"></a>System Center Configuration Manager 中使用的帳戶
 
@@ -346,4 +343,3 @@ Configuration Manager 會使用此群組來授與軟體清查所收集之檔案�
 >  限制帳戶的範圍。 例如，為每個工作順序建立不同的工作順序執行身分帳戶，一旦其中一個帳戶遭受入侵時，只有該帳戶能夠存取的用戶端電腦會出現風險。  
 >   
 >  如果命令列要求電腦的系統管理存取權限，請考慮在所有將執行該工作順序的電腦上建立單獨作為工作順序執行身分帳戶的本機系統管理員帳戶。 不需要此類帳戶時立即加以刪除。  
-

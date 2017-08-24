@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3986a992-c175-4b6f-922e-fc561e3d7cb7
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 19e111e0cb174f11ad08f98d2516e52c4c183d86
-ms.openlocfilehash: a079824ba96897bbd3f9475efcaea81804858171
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/05/2017
-
-
+ms.openlocfilehash: 3a86924b2e5db3ac16eeda78b95ae6747ffd656f
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-manage-clients-in-system-center-configuration-manager"></a>如何管理 System Center Configuration Manager 中的用戶端
 
@@ -410,4 +407,3 @@ Configuration Manager 用戶端會在收到部署後隨即下載所需軟體的�
     -   開啟命令提示字元，然後輸入：**cscript &lt;路徑\檔案名稱.vbs>**。  
 
 5.  在 [Windows Script Host] 對話方塊中，選擇 [確定]。  
-

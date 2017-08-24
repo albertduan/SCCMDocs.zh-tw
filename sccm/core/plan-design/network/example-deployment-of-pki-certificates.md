@@ -6,22 +6,19 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 3417ff88-7177-4a0d-8967-ab21fe7eba17
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2a62ef64bf4e08d7027d10827d35d648bdbbeefe
-ms.openlocfilehash: 21fe718835bbbaa6382e0f0a87784e01e4c35283
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/14/2017
-
-
+ms.openlocfilehash: b15f85b4483bbae2444d4e73d2e2aa0b3979d9ab
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="step-by-step-example-deployment-of-the-pki-certificates-for-system-center-configuration-manager-windows-server-2008-certification-authority"></a>為 System Center Configuration Manager 部署 PKI 憑證的逐步範例：Windows Server 2008 憑證授權單位
 
@@ -778,4 +775,3 @@ ms.lasthandoff: 02/14/2017
 13. 如果您不需要建立及發行其他憑證，請關閉 [憑證授權單位]。  
 
  您現在可以在設定註冊的用戶端設定時，選取 Mac 用戶端憑證範本。
-

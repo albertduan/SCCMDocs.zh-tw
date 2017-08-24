@@ -6,22 +6,19 @@ ms.date: 6/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: c64e7483-b4bb-4738-95f4-ecdaeb6a2ba6
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3619a73d3a39659de927e1711a7ec81de9918064
 ms.openlocfilehash: 1166b739e1e8d667172d97883f484fdbc3a142c1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/13/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="upgrade-to-system-center-configuration-manager"></a>升級至 System Center Configuration Manager
 
@@ -402,4 +399,3 @@ Configuration Manager 不支援次要站台的備份或次要站台資料庫的�
 - **當您升級至 1511 版時：**若要確保次要站台上的用戶端可以從次要站台尋找管理點 (Proxy 管理點)，請手動將管理點新增至也包含次要站台上發佈點的界限群組。  
 
 - **當您升級至 1606 版或更新版本時：**Proxy 管理點會自動新增至包含次要站台上發佈點的界限群組。
-

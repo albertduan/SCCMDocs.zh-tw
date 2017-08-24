@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9c062f13-3c1f-4621-9cae-de0e322aa03f
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
 ms.openlocfilehash: 711ef491899846b86bfed0355ac7fd0f9d509c4f
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisites-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 中電源管理的必要條件
 
@@ -42,9 +41,3 @@ System Center Configuration Manager 中的電源管理具有外部相依性和�
 |----------------|----------------------|  
 |必須先啟用電源管理，才能建立和監視電源計劃。|如需如何啟用和設定電源管理的相關資訊，請參閱[設定 System Center Configuration Manager 的電源管理](../../../../core/clients/manage/power/configuring-power-management.md)。|  
 |Reporting Services 點|您必須先設定 Reporting Services 點，才能檢視電源管理報告。 如需詳細資訊，請參閱 [Reporting in System Center Configuration Manager](../../../../core/servers/manage/reporting.md) (System Center Configuration Manager 中的報告)。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 79eb49da-cd2b-4ffc-b355-b595aeba3aea
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
 ms.openlocfilehash: 969f2d28649853ddc95860fe72597d6d2c9a94e9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-software-inventory-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的軟體清查簡介
 
@@ -47,4 +44,3 @@ ms.lasthandoff: 05/17/2017
  Configuration Manager 可以探索雙重開機電腦，但只會傳回清查時仍作用中的作業系統清查資訊。  
 
 **行動裝置︰**如需有關收集行動裝置所安裝之應用程式清查的詳細資訊，請參閱[向 Microsoft Intune 註冊之行動裝置的軟體清查](../../../../mdm/deploy-use/software-inventory-mobile-devices.md)。
-

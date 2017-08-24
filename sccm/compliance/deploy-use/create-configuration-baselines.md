@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 678c9622-c61b-47d1-ba25-690616e431c7
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 649942d3d468ec35c7246e08f741cdebd22fb3ac
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-configuration-baselines-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中建立設定基準
 
@@ -70,9 +69,3 @@ System Center Configuration Manager 中的設定基準包含預先定義的設�
 8.  若要從設定基準移除設定項目，請選取設定項目，然後按一下 [移除]。  
 
 9. 按一下 [確定]  關閉 [建立組態基準]  對話方塊並建立組態基準。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

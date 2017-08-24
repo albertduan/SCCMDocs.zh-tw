@@ -6,21 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 127ce713-d085-430f-ac7b-2701637fe126
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f72317cefab5ce8cad13b3120c3c93c856fa40b7
 ms.openlocfilehash: 4b6be888be2ad6c1f5e7c0be33d9830bb870114e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="select-discovery-methods-to-use-for-system-center-configuration-manager"></a>選取在 System Center Configuration Manager 使用的探索方法
 
@@ -128,4 +126,3 @@ ms.lasthandoff: 05/17/2017
 - **當您想要從探索資料自動建立界限時，只能在一個站台上執行 Active Directory 樹系探索。**  
 
  如果您要在階層的一個以上的站台上執行 Active Directory 樹系探索，則最好只在單一站台啟用自動建立界限的選項。 這是因為當 Active Directory 樹系探索在各個站台執行並建立界限時，Configuration Manager 無法將這些界限合併為單一界限物件。 當您將 Active Directory 樹系探索設定為在多個站台自動建立界限時，可能會在 Configuration Manager 主控台產生重複的界限物件。  
-

@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3bd1e487-ea18-43c1-b7c3-acbd9b86d429
-caps.latest.revision: 15
-caps.handback.revision: 0
+caps.latest.revision: "15"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 6516db6f4c09fdd173b498c58ccc411847752c4e
 ms.openlocfilehash: bbbf278f5d31c51bfe061dd44e170f7ab1ca70ad
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-and-deploy-an-application-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立和部署應用程式
 
@@ -206,9 +205,3 @@ ms.openlocfilehash: bbbf278f5d31c51bfe061dd44e170f7ab1ca70ad
 ## <a name="end-user-experience"></a>使用者體驗  
 
 具有由 Configuration Manager 所管理且執行 Windows 10 之電腦的使用者會看到一則訊息，告知他們必須安裝 Contoso 應用程式。 當他們接受安裝之後，即會安裝應用程式。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

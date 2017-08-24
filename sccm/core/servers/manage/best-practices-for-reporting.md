@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 64f9d931-33f1-456f-a4e4-0ec077465bd0
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 759258999f3eaa810803a6a7f856f00fe7771a9e
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="best-practices-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager 的報告最佳做法
 
@@ -39,9 +38,3 @@ ms.openlocfilehash: 759258999f3eaa810803a6a7f856f00fe7771a9e
 
 ## <a name="next-steps"></a>後續步驟
 [設定報告](configuring-reporting.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e2269031-0977-4f01-a274-420e00630575
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="task-sequence-action-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的工作順序動作變數
 
@@ -39,7 +38,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 > [!NOTE]  
 >  並非所有工作順序動作都會與一組工作順序變數相關聯。 例如，雖然具有與 [啟用 BitLocker] 動作相關聯的變數，但是沒有與 [停用 BitLocker] 動作相關聯的變數。  
 
-###  <a name="a-namebkmkapplydataimagea-apply-data-image-task-sequence-action-variables"></a><a name="BKMK_ApplyDataImage"></a> 套用資料映像工作順序動作變數  
+###  <a name="BKMK_ApplyDataImage"></a> 套用資料映像工作順序動作變數  
  這個動作的變數指定 WIM 檔案的哪一個映像套用至目的地電腦，以及是否刪除目的地磁碟分割上的檔案。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[套用資料映像工作順序步驟](task-sequence-steps.md#BKMK_ApplyDataImage)。  
 
 #### <a name="details"></a>詳細資料  
@@ -49,7 +48,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDDataImageIndex<br /><br /> (input)|指定套用至目的地電腦之映像的索引值。|  
 |OSDWipeDestinationPartition<br /><br /> (input)|指定是否刪除目的地磁碟分割上的檔案。<br /><br /> 有效值：<br /><br /> **"true"** (預設值)<br /><br /> **"false"**|  
 
-###  <a name="a-namebkmkapplydriverpackagea-apply-driver-package-task-sequence-action-variables"></a><a name="BKMK_ApplyDriverPackage"></a> 套用驅動程式套件工作順序動作變數  
+###  <a name="BKMK_ApplyDriverPackage"></a> 套用驅動程式套件工作順序動作變數  
  這個動作的變數指定大型存放驅動程式安裝以及是否安裝未簽署驅動程式的相關資訊。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[套用驅動程式套件](task-sequence-steps.md#BKMK_ApplyDriverPackage)。  
 
 #### <a name="details"></a>詳細資料  
@@ -62,7 +61,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDApplyDriverBootCriticalID<br /><br /> (input)|指定要安裝之大型儲存裝置驅動程式的開機關鍵識別碼。 這個識別碼會列在裝置驅動程式之 txtsetup.oem 檔案的 "**scsi**" 區段中。<br /><br /> <br /><br /> 如果設定 OSDApplyDriverBootCriticalContentUniqueID，則需要這個工作順序變數。|  
 |OSDAllowUnsignedDriver<br /><br /> (input)|指定是否設定 Windows 允許未簽署裝置驅動程式的安裝。 部署 Windows Vista 和更新版本的作業系統時，不會使用這個工作順序變數。<br /><br /> 有效值：<br /><br /> **"true"**<br /><br /> **"false"** (預設值)|  
 
-###  <a name="a-namebkmkapplynetworksettingsa-apply-network-settings-task-sequence-action-variables"></a><a name="BKMK_ApplyNetworkSettings"></a> 套用網路設定工作順序動作變數  
+###  <a name="BKMK_ApplyNetworkSettings"></a> 套用網路設定工作順序動作變數  
  這個動作的變數指定目的地電腦的網路設定 (例如，電腦網路介面卡設定、網域設定和工作群組設定)。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[套用網路設定步驟](task-sequence-steps.md#BKMK_ApplyNetworkSettings)。  
 
 #### <a name="details"></a>詳細資料  
@@ -81,7 +80,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDDNSSuffixSearchOrder<br /><br /> (input)|指定目的地電腦的 DNS 搜尋順序。|  
 |OSDWorkgroupName<br /><br /> (input)|指定目的地電腦所加入之工作群組的名稱。<br /><br /> 您必須指定這個值或 **OSDDomainName** 值。 工作群組名稱不可超過 32 個字元。<br /><br /> 範例：<br /><br /> **"Accounting"**|  
 
-###  <a name="a-namebkmkapplyoperatingsystema-apply-operating-system-image-task-sequence-action-variables"></a><a name="BKMK_ApplyOperatingSystem"></a> 套用作業系統映像工作順序動作變數  
+###  <a name="BKMK_ApplyOperatingSystem"></a> 套用作業系統映像工作順序動作變數  
  這個動作的變數指定您要在目的地電腦上安裝之作業系統的設定。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[套用作業系統映像](task-sequence-steps.md#BKMK_ApplyOperatingSystemImage)。  
 
 #### <a name="details"></a>詳細資料  
@@ -93,7 +92,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDInstallEditionIndex<br /><br /> (input)|指定已安裝之 Windows Vista 或更新版本的作業系統版本。 如果未指定版本，Windows 安裝程式將使用參照的產品金鑰來決定要安裝的版本。<br /><br /> 如果符合下列情況，請僅使用值 0：<br /><br /> -   您將安裝 Windows Vista 之前的作業系統<br />-   您將安裝 Windows Vista 或更新版本的大量授權版本，且未指定產品金鑰。<br /><br /> 有效值：<br /><br /> **"0"** (預設值)|  
 |OSDTargetSystemDrive (output)|指定包含作業系統檔案之磁碟分割的磁碟機代號。|  
 
-###  <a name="a-namebkmkapplywindowssettingsa-apply-windows-settings-task-sequence-action-variables"></a><a name="BKMK_ApplyWindowsSettings"></a> 套用 Windows 設定工作順序動作變數  
+###  <a name="BKMK_ApplyWindowsSettings"></a> 套用 Windows 設定工作順序動作變數  
  這個動作的變數指定目的地電腦的 Windows 設定 (例如電腦名稱、Windows 產品金鑰、已註冊的使用者和組織，以及本機系統管理員密碼)。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[套用 Windows 設定](task-sequence-steps.md#BKMK_ApplyWindowsSettings)。  
 
 #### <a name="details"></a>詳細資料  
@@ -110,7 +109,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDRandomAdminPassword<br /><br /> (input)|指定新作業系統中針對系統管理員帳戶所隨機產生的密碼。 如果設為 **true**，將會停用目標電腦上的本機系統管理員帳戶。 如果設為 **false**，將會啟用目標電腦上的本機系統管理員帳戶，並會將 **OSDLocalAdminPassword** 變數的值指派給本機系統管理員帳戶密碼。<br /><br /> 有效值：<br /><br /> **"true"** (預設值)<br /><br /> **"false"**|  
 |OSDLocalAdminPassword<br /><br /> (input)|指定本機系統管理員密碼。 如果啟用 [隨機產生本機系統管理員密碼並在所有支援的平台上停用帳戶]  選項，則會忽略這個值。 指定的值必須介於 1 到 255 個字元。|  
 
-###  <a name="a-namebkmkautoapplydriversa-auto-apply-drivers-task-sequence-action-variables"></a><a name="BKMK_AutoApplyDrivers"></a> 自動套用驅動程式工作順序動作變數  
+###  <a name="BKMK_AutoApplyDrivers"></a> 自動套用驅動程式工作順序動作變數  
  這個動作的變數指定目的地電腦上安裝的 Windows 驅動程式，以及是否安裝未簽署的驅動程式。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[自動套用驅動程式](task-sequence-steps.md#BKMK_AutoApplyDrivers)。  
 
 #### <a name="details"></a>詳細資料  
@@ -121,7 +120,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDAllowUnsignedDriver<br /><br /> (input)|指定是否設定 Windows 允許安裝未簽署的裝置驅動程式。 部署 Windows Vista 和更新版本的作業系統時，不會使用這個工作順序變數。<br /><br /> 有效值：<br /><br /> **"true"**<br /><br /> **"false"** (預設值)|  
 |OSDAutoApplyDriverBestMatch<br /><br /> (input)|指定驅動程式類別目錄中有多個與硬體裝置相容的裝置驅動程式時的工作順序動作用途。 如果設為 **"true"**，則只會安裝最適合的裝置驅動程式。  如果為 **false**，將安裝所有相容的裝置驅動程式，而且作業系統將選擇要使用的最適合驅動程式。<br /><br /> 有效值：<br /><br /> **"true"** (預設值)<br /><br /> **"false"**|  
 
-###  <a name="a-namebkmkcapturenetworksettingsa-capture-network-settings-task-sequence-action-variables"></a><a name="BKMK_CaptureNetworkSettings"></a> 擷取網路設定工作順序動作變數  
+###  <a name="BKMK_CaptureNetworkSettings"></a> 擷取網路設定工作順序動作變數  
  這個動作的變數指定是否擷取網路介面卡設定 (TCP/IP、DNS 和 WINS) 組態資訊，以及是否在作業系統部署時移轉工作群組或網域成員資格資訊。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[擷取網路設定](task-sequence-steps.md#BKMK_CaptureNetworkSettings)。  
 
 #### <a name="details"></a>詳細資料  
@@ -131,7 +130,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDMigrateAdapterSettings<br /><br /> (input)|指定是否擷取網路介面卡設定 (TCP/IP、DNS 和 WINS) 組態資訊。<br /><br /> 範例：<br /><br /> **"true"** (預設值)<br /><br /> **"false"**|  
 |OSDMigrateNetworkMembership<br /><br /> (input)|指定是否在作業系統部署時移轉工作群組或網域成員資格資訊。<br /><br /> 範例：<br /><br /> **"true"** (預設值)<br /><br /> **"false"**|  
 
-###  <a name="a-namebkmkcaptureoperatingsystemimagea-capture-operating-system-image-task-sequence-action-variables"></a><a name="BKMK_CaptureOperatingSystemImage"></a> 擷取作業系統映像工作順序動作變數  
+###  <a name="BKMK_CaptureOperatingSystemImage"></a> 擷取作業系統映像工作順序動作變數  
  這個動作的變數指定所擷取作業系統映像的相關資訊 (例如映像儲存位置、映像建立者，以及映像描述)。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[擷取作業系統映像](task-sequence-steps.md#BKMK_CaptureOperatingSystemImage)。  
 
 #### <a name="details"></a>詳細資料  
@@ -146,7 +145,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDImageVersion<br /><br /> (input)|選用的使用者定義的版本號碼，可指派給所擷取的作業系統映像。 這個版本號碼儲存在 WIM 檔案中。 這個值可以是任意字母組合，且長度上限為 32 個字元。|  
 |OSDTargetSystemRoot<br /><br /> (input)|指定參照電腦上已安裝作業系統之 Windows 目錄的路徑。 這個作業系統驗證為 Configuration Manager 所擷取的受支援作業系統。|  
 
-###  <a name="a-namebkmkcaptureuserstatea-capture-user-state-task-sequence-action-variables"></a><a name="BKMK_CaptureUserState"></a> 擷取使用者狀態工作順序動作變數  
+###  <a name="BKMK_CaptureUserState"></a> 擷取使用者狀態工作順序動作變數  
  這個動作的變數指定使用者狀態移轉工具 (USMT) 所使用的資訊 (例如，儲存使用者狀態的資料夾、USMT 的命令列選項，以及用來控制使用者設定檔擷取的設定檔案)。  如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[擷取使用者狀態](task-sequence-steps.md#BKMK_CaptureUserState)。  
 
 #### <a name="details"></a>詳細資料  
@@ -162,7 +161,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDMigrateSkipEncryptedFiles<br /><br /> (input)|指定是否擷取加密檔案。<br /><br /> 有效值：<br /><br /> **"true"**<br /><br /> **"false"** (預設值)|  
 |_OSDMigrateUsmtPackageID<br /><br /> (input)|指定將包含 USMT 檔案之 Configuration Manager 套件的套件識別碼。 這是必要變數。|  
 
-###  <a name="a-namebkmkcapturewindowssettingsa-capture-windows-settings-task-sequence-action-variables"></a><a name="BKMK_CaptureWindowsSettings"></a> 擷取 Windows 設定工作順序動作變數  
+###  <a name="BKMK_CaptureWindowsSettings"></a> 擷取 Windows 設定工作順序動作變數  
  這個動作的變數指定特定 Windows 設定是否移轉至目的地電腦 (例如電腦名稱、註冊組織名稱和時區資訊)。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[擷取 Windows 設定](task-sequence-steps.md#BKMK_CaptureWindowsSettings)。  
 
 #### <a name="details"></a>詳細資料  
@@ -176,7 +175,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDMigrateTimeZone<br /><br /> (input)|指定是否移轉電腦時區。<br /><br /> 有效值：<br /><br /> **"true"** (預設值)<br /><br /> **"false"**<br /><br /> 如果值為 "true"，則 OSDTimeZone 變數會設為電腦的時區。|  
 |OSDTimeZone<br /><br /> (output)|設為電腦的時區。 只有在 OSDMigrateTimeZone 變數設為 "true" 時，才會設定這個值。|  
 
-###  <a name="a-namebkmkconnecttonetworkfoldera-connect-to-network-folder-task-sequence-action-variables"></a><a name="BKMK_ConnecttoNetworkFolder"></a> 連線至網路資料夾工作順序動作變數  
+###  <a name="BKMK_ConnecttoNetworkFolder"></a> 連線至網路資料夾工作順序動作變數  
  這個動作的變數指定網路上資料夾的相關資訊 (例如，用來連線至網路資料夾的帳戶和密碼、資料夾的磁碟機代號，以及資料夾的路徑)。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[連線至網路資料夾](task-sequence-steps.md#BKMK_ConnectToNetworkFolder)。  
 
 #### <a name="details"></a>詳細資料  
@@ -188,7 +187,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |SMSConnectNetworkFolderPassword<br /><br /> (input)|指定用來連線至網路共用的網路密碼。|  
 |SMSConnectNetworkFolderPath<br /><br /> (input)|指定連線的網路路徑。<br /><br /> 範例：<br /><br /> **"\\\servername\sharename"**|  
 
-###  <a name="a-namebkmkconvertdiska-convert-disk-to-dynamic-task-sequence-action-variables"></a><a name="BKMK_ConvertDisk"></a> 將磁碟轉換成動態磁碟工作順序動作變數  
+###  <a name="BKMK_ConvertDisk"></a> 將磁碟轉換成動態磁碟工作順序動作變數  
  這個動作的變數指定要從基本轉換成動態磁碟的實體磁碟數目。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[將磁碟轉換成動態磁碟](task-sequence-steps.md#BKMK_ConvertDisktoDynamic)。  
 
 #### <a name="details"></a>詳細資料  
@@ -197,7 +196,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |--------------------------|-----------------|  
 |OSDConvertDiskIndex<br /><br /> (input)|指定已轉換的實體磁碟編號。|  
 
-###  <a name="a-namebkmkenablebitlockera-enable-bitlocker-task-sequence-action-variables"></a><a name="BKMK_EnableBitLocker"></a> 啟用 BitLocker 工作順序動作變數  
+###  <a name="BKMK_EnableBitLocker"></a> 啟用 BitLocker 工作順序動作變數  
  這個動作的變數指定用來在目的地電腦上啟用 BitLocker 的修復密碼和啟動金鑰選項。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[啟用 BitLocker](task-sequence-steps.md#BKMK_EnableBitLocker)。  
 
 #### <a name="details"></a>詳細資料  
@@ -207,7 +206,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDBitLockerRecoveryPassword<br /><br /> (input)|[啟用 BitLocker]  工作順序動作會使用指定的值作為修復密碼，而不是產生隨機修復密碼。 值必須是有效的數值 BitLocker 修復密碼。|  
 |OSDBitLockerStartupKey<br /><br /> (input)|[啟用 BitLocker] 工作順序動作會使用信賴平台模組 (TPM) 作為啟動金鑰，而不是針對金鑰管理選項 [僅 USB 上的啟動金鑰] 產生隨機啟動金鑰。 值必須是有效的 256 位元 Base64 編碼的 BitLocker 啟動金鑰。|  
 
-###  <a name="a-namebkmkformatpartitiondiska-format-and-partition-disk-task-sequence-action-variables"></a><a name="BKMK_FormatPartitionDisk"></a> 格式化和分割磁碟工作順序動作變數  
+###  <a name="BKMK_FormatPartitionDisk"></a> 格式化和分割磁碟工作順序動作變數  
  這個動作的變數指定格式化和分割實體磁碟的資訊 (例如，磁碟編號以及磁碟分割設定陣列)。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[格式化和分割磁碟](task-sequence-steps.md#BKMK_FormatandPartitionDisk)。  
 
 #### <a name="details"></a>詳細資料  
@@ -220,7 +219,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDPartitions<br /><br /> (input)|指定磁碟分割設定陣列；請參閱 SDK 主題來存取工作順序環境中的陣列變數。<br /><br /> 這個工作順序變數是陣列變數。 陣列中的每個項目都代表硬碟上單一磁碟分割的設定。 針對每個磁碟分割所定義的設定的存取方式，是合併具有以零為起始之磁碟分割編號的陣列變數名稱與屬性名稱。<br /><br /> 例如，下列變數名稱可以用來定義這個工作順序動作將在硬碟上建立之第一個磁碟分割的屬性：<br /><br /> - **OSDPartitions0Type** - 指定磁碟分割類型。 這是必要屬性。 有效值為 "**Primary**"、"**Extended**"、"**Logical**" 和 "**Hidden**"。<br />-   **OSDPartitions0FileSystem** - 指定要在格式化磁碟分割時使用的檔案系統類型。 這是選擇性屬性；如果未指定任何檔案系統，則不會格式化磁碟分割。 有效值為 "**FAT32**" 和 "**NTFS**"。<br />-   **OSDPartitions0Bootable** - 指定是否為可開機磁碟分割。 這是必要屬性。 如果 MBR 磁碟的這個值設為 "**TRUE**"，則會將這個 MBR 磁碟設為使用中磁碟分割。<br />-   **OSDPartitions0QuickFormat** - 指定所使用格式的類型。 這是必要屬性。 如果這個值設為 "**TRUE**"，則會執行快速格式化；否則將會執行完整格式化。<br />-   **OSDPartitions0VolumeName** - 指定格式化磁碟區時指派給磁碟區的名稱。 這是選擇性屬性。<br />-   **OSDPartitions0Size** - 指定磁碟分割大小。 單位是透過 **OSDPartitions0SizeUnits** 變數所指定。 這是選擇性屬性。 如果未指定這個屬性，則會使用所有剩餘的可用空間來建立磁碟分割。<br />-   **OSDPartitions0SizeUnits** - 指定解譯 **OSDPartitions0Size** 工作順序變數時將使用的單位。 這是選擇性屬性。 有效值為 "**MB**" (預設值)、"**GB**" 和 "**Percent**"。<br />-   **OSDPartitions0VolumeLetterVariable** - 建立磁碟分割時，磁碟分割一律會使用 Windows PE 中的下一個可用磁碟機代號。 使用這個選擇性屬性來指定另一個工作順序變數的名稱，以用來儲存新的磁碟機代號，供日後參考。<br /><br /> <br /><br /> 如果將使用這個工作順序動作定義多個磁碟分割，則可以在變數名稱中使用其索引來定義第二個磁碟分割的屬性；例如，**OSDPartitions1Type**、**OSDPartitions1FileSystem**、**OSDPartitions1Bootable**、**OSDPartitions1QuickFormat**、**OSDPartitions1VolumeName** 等。|  
 |OSDPartitionStyle<br /><br /> (input)|指定分割磁碟時要使用的磁碟分割樣式。 "**MBR**" 表示主開機記錄磁碟分割樣式，而 "**GPT**" 表示 GUID 磁碟分割表格樣式。<br /><br /> 有效值：<br /><br /> **"GPT"**<br /><br /> **"MBR"**|  
 
-###  <a name="a-namebkmkinstallsoftwareupdatesa-install-software-updates-task-sequence-action-variables"></a><a name="BKMK_InstallSoftwareUpdates"></a> 安裝軟體更新工作順序動作變數  
+###  <a name="BKMK_InstallSoftwareUpdates"></a> 安裝軟體更新工作順序動作變數  
  這個動作的變數指定安裝所有更新還是只安裝必要更新。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[安裝軟體更新](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)。  
 
 #### <a name="details"></a>詳細資料  
@@ -229,7 +228,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |----------------------------------------|-----------------|  
 |SMSInstallUpdateTarget<br /><br /> (input)|指定安裝所有更新還是只安裝必要更新。<br /><br /> 有效值：<br /><br /> **"All"**<br /><br /> **"Mandatory"**|  
 
-###  <a name="a-namebkmkjoindomainworkgroupa-join-domain-or-workgroup-task-sequence-action-variables"></a><a name="BKMK_JoinDomainWorkgroup"></a> 加入網域或工作群組工作順序動作變數  
+###  <a name="BKMK_JoinDomainWorkgroup"></a> 加入網域或工作群組工作順序動作變數  
  這個動作的變數指定將目的地電腦新增至 Windows 網域或工作群組所需的資訊。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[加入網域或工作群組](task-sequence-steps.md#BKMK_JoinDomainorWorkgroup)。  
 
 #### <a name="details"></a>詳細資料  
@@ -244,7 +243,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDJoinType<br /><br /> (input)|指定目的地電腦是否加入 Windows 網域或工作群組。 若要將目的地電腦加入 Windows 網域，請指定 "**0**"。 若要將目的地電腦加入工作群組，請指定 "**1**"。<br /><br /> 有效值：<br /><br /> **"0"**<br /><br /> **"1"**|  
 |OSDJoinWorkgroupName<br /><br /> (input)|指定目的地電腦所加入之工作群組的名稱。 工作群組名稱的長度必須介於 1 到 32 個字元。<br /><br /> 範例：<br /><br /> **"Accounting"**|  
 
-###  <a name="a-namebkmkpreparewindowscapturea-prepare-windows-for-capture-task-sequence-action-variables"></a><a name="BKMK_PrepareWindowsCapture"></a> 準備 Windows 以進行擷取工作順序動作變數  
+###  <a name="BKMK_PrepareWindowsCapture"></a> 準備 Windows 以進行擷取工作順序動作變數  
  這個動作的變數指定用來從目標電腦中擷取 Windows 作業系統的資訊。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[準備 ConfigMgr 用戶端以進行擷取](task-sequence-steps.md#BKMK_PrepareConfigMgrClientforCapture)。  
 
 #### <a name="details"></a>詳細資料  
@@ -255,7 +254,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDKeepActivation<br /><br /> (input)|指定 sysprep 是否重設產品啟動旗標。<br /><br /> 有效值：<br /><br /> **"true"**<br /><br /> **"false"** (預設值)|  
 |OSDTargetSystemRoot<br /><br /> (output)|指定參照電腦上已安裝作業系統之 Windows 目錄的路徑。 這個作業系統驗證為 Configuration Manager 所擷取的受支援作業系統。|  
 
-###  <a name="a-namebkmkreleasestatestorea-release-state-store-sequence-action-variables"></a><a name="BKMK_ReleaseStateStore"></a> 釋放狀態存放區工作順序動作變數  
+###  <a name="BKMK_ReleaseStateStore"></a> 釋放狀態存放區工作順序動作變數  
  這個動作的變數指定用來釋放所儲存之使用者狀態的資訊。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[釋放狀態存放區](task-sequence-steps.md#BKMK_ReleaseStateStore)。  
 
 #### <a name="details"></a>詳細資料  
@@ -264,7 +263,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |--------------------------|-----------------|  
 |OSDStateStorePath<br /><br /> (input)|從中還原使用者狀態之位置的 UNC 或本機路徑名稱。 [擷取使用者狀態]  工作順序動作和 [還原使用者狀態]  工作順序動作都使用這個值。|  
 
-###  <a name="a-namebkmkrequeststatea-request-state-store-task-sequence-action-variables"></a><a name="BKMK_RequestState"></a> 要求狀態存放區工作順序動作變數  
+###  <a name="BKMK_RequestState"></a> 要求狀態存放區工作順序動作變數  
  這個動作的變數指定用來要求所儲存之使用者狀態的資訊 (例如，狀態移轉點上儲存使用者資料的資料夾)。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[釋放狀態存放區](../../osd/understand/task-sequence-steps.md#BKMK_ReleaseStateStore)。  
 
 #### <a name="details"></a>詳細資料  
@@ -276,7 +275,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDStateSMPRetryTime<br /><br /> (input)|指定工作順序步驟在重試嘗試之間的秒數。 秒數上限為 30 個字元。|  
 |OSDStateStorePath<br /><br /> (output)|狀態移轉點上儲存使用者狀態之資料夾的 UNC 路徑。|  
 
-###  <a name="a-namebkmkrestartcomputera-restart-computer-task-sequence-action-variables"></a><a name="BKMK_RestartComputer"></a> 重新啟動電腦工作順序動作變數  
+###  <a name="BKMK_RestartComputer"></a> 重新啟動電腦工作順序動作變數  
  這個動作的變數指定用來重新啟動目的地電腦的資訊。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[重新啟動電腦](task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer)。  
 
 #### <a name="details"></a>詳細資料  
@@ -286,7 +285,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |SMSRebootMessage<br /><br /> (input)|指定重新啟動目的地電腦之前要顯示給使用者的訊息。 如果未設定這個變數，則會顯示預設訊息文字。 指定的訊息不得超過 512 個字元。<br /><br /> 範例：<br /><br /> -   "This computer will be restarted; please save your work."|  
 |SMSRebootTimeout<br /><br /> (input)|指定重新啟動電腦之前向使用者顯示之警告的秒數。 指定零秒，表示未顯示任何重新開機訊息。<br /><br /> 範例：<br /><br /> **"0"** (預設值)<br /><br /> **"5"**<br /><br /> **"10"**|  
 
-###  <a name="a-namebkmkrestoreuserstatea-restore-user-state-task-sequence-action-variables"></a><a name="BKMK_RestoreUserState"></a> 還原使用者狀態工作順序動作變數  
+###  <a name="BKMK_RestoreUserState"></a> 還原使用者狀態工作順序動作變數  
  這個動作的變數指定用來還原目的地電腦之使用者狀態的資訊 (例如，從中還原使用者狀態之資料夾的路徑名稱，以及是否還原本機電腦帳戶)。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[還原使用者狀態](task-sequence-steps.md#BKMK_RestoreUserState)。  
 
 #### <a name="details"></a>詳細資料  
@@ -301,7 +300,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |OSDMigrateAdditionalRestoreOptions<br /><br /> (input)|指定還原使用者狀態時所使用的其他使用者狀態移轉工具 (USMT) 命令列選項。 以附加至自動產生之 USMT 命令列的字串形式指定其他選項。 在執行工作順序之前，不會驗證使用這個工作順序變數所指定之 USMT 選項的正確性。|  
 |_OSDMigrateUsmtRestorePackageID<br /><br /> (input)|指定包含 USMT 檔案之 Configuration Manager 套件的套件識別碼。 這是必要變數。|  
 
-###  <a name="a-namebkmkruncommanda-run-command-line-task-sequence-action-variables"></a><a name="BKMK_RunCommand"></a> 執行命令列工作順序動作變數  
+###  <a name="BKMK_RunCommand"></a> 執行命令列工作順序動作變數  
  這個動作的變數指定用來從命令列執行命令的資訊 (例如，執行命令的工作目錄)。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[執行命令列](task-sequence-steps.md#BKMK_RunCommandLine)。  
 
 #### <a name="details"></a>詳細資料  
@@ -329,7 +328,7 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |_SMSTSUUID|指定電腦的 UUID。|  
 |_SMSTSDefaultGateways|指定的電腦所使用的預設閘道。|  
 
-###  <a name="a-namebkmksetupwindowsa-setup-windows-and-configmgr-task-sequence-action-variables"></a><a name="BKMK_SetupWindows"></a> 設定 Windows 和 ConfigMgr 工作順序動作變數  
+###  <a name="BKMK_SetupWindows"></a> 設定 Windows 和 ConfigMgr 工作順序動作變數  
  這個動作的變數指定安裝 Configuration Manager 用戶端時所使用的用戶端安裝內容。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[設定 Windows 和 ConfigMgr](task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr)。  
 
 #### <a name="details"></a>詳細資料  
@@ -346,9 +345,3 @@ ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
 |動作變數名稱<br /><br /> (input)|說明|  
 |----------------------------------------|-----------------|  
 |OSDSetupAdditionalUpgradeOptions<br /><br /> (input)|指定在 Windows 10 升級期間新增至安裝程式的其他命令列選項。 未驗證命令列選項。 因此，請檢查您輸入的選項正確。<br /><br /> 如需詳細資訊，請參閱 [Windows 安裝程式命令列選項](https://msdn.microsoft.com/library/windows/hardware/dn938368\(v=vs.85\).aspx)。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

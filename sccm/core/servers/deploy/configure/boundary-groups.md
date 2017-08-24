@@ -6,21 +6,19 @@ ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 5db2926f-f03e-49c7-b44b-e89b1a5a6779
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 5debc6559f4b1c213e8ca513d685941c9e669063
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-boundary-groups-for-system-center-configuration-manager"></a>設定 System Center Configuration Manager 的界限群組
 
@@ -360,4 +358,3 @@ ms.lasthandoff: 07/29/2017
  2.  在 [階層設定] 的 [一般]  索引標籤，選取 [用戶端偏好使用界限群組中指定的管理點] 。  
 
  3.  按一下 [確定]  關閉對話方塊並儲存組態。  
-

@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cead6825-6113-4ba5-a381-ac3598dfee86
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: f3ddeaadfb1418aeeaacdca47768600c86b59083
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="hierarchy-maintenance-tool-preinstexe-for-system-center-configuration-manager"></a>System Center Configuration Manager 的階層維護工具 (Preinst.exe)
 
@@ -93,7 +92,7 @@ ms.openlocfilehash: f3ddeaadfb1418aeeaacdca47768600c86b59083
 
 使用此選項執行 preinst.exe 後，請將 &lt;站台碼>.CT7 檔案手動複製到復原站台的 ...\Inboxes\hman.box 資料夾 (非 hman.box\pubkey)。  
 
-##  <a name="a-namebkmkmanuallyexchangekeysa-manually-exchange-public-keys-between-sites"></a><a name="BKMK_ManuallyExchangeKeys"></a> 在站台之間手動交換公開金鑰  
+##  <a name="BKMK_ManuallyExchangeKeys"></a> 在站台之間手動交換公開金鑰  
 Configuration Manager 站台預設會啟用 [要求安全金鑰交換] 選項。 需要交換安全金鑰時，在兩種情況下，您必須手動起始站台之間交換公開金鑰的程序：  
 
 -   如果 Active Directory 架構未針對 Configuration Manager 擴充  
@@ -124,9 +123,3 @@ Configuration Manager 站台預設會啟用 [要求安全金鑰交換] 選項。
 3.  /keyforchild 選項會將父站台的公開金鑰置於 **&lt;站台碼\>.CT5** 檔案中，該檔案位於系統磁碟機的根目錄中。  
 
 4.  將 **&lt;站台碼\>.CT5** 檔案移至子站台的 **&lt;安裝目錄\>\inboxes\hman.box** 目錄。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

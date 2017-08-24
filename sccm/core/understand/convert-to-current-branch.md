@@ -6,24 +6,20 @@ ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ec5b54cf-62b7-4ed1-9bb3-e8c63b9641c8
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 60631bc0346bd78d704e7129bb755af504c59b1b
 ms.openlocfilehash: 6e7edc85630d22c5bbba1ff66bd1199903db76db
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
-
 # <a name="upgrade-the-long-term-servicing-branch-to-the-current-branch"></a>將長期維護分支升級至最新分支
 
 *適用於：System Center Configuration Manager (長期維護分支)*
@@ -34,7 +30,7 @@ ms.lasthandoff: 05/17/2017
 
 如有多個站台，您只需要轉換階層的頂層站台。 轉換頂層站台之後︰
 - 子主要站台會自動轉換。
--    您必須從 Configuration Manager 主控台內手動更新次要站台。
+-   您必須從 Configuration Manager 主控台內手動更新次要站台。
 
 ## <a name="run-setup-to-convert-the-long-term-servicing-branch"></a>執行安裝程式，將長期服務分支轉換為維護分支
 在階層的頂層站台，您可以從合格的基準媒體執行 Configuration Manager 安裝程式，並選取 [站台維護]。  然後，當您看到授權頁面時，請選取最新分支的選項來完成精靈。
@@ -56,4 +52,3 @@ ms.lasthandoff: 05/17/2017
  2. 選取要轉換成最新分支的選項，然後選擇 [套用]。  
 
 當站台轉換到最新分支時，原先無法使用的功能即可使用。
-

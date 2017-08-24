@@ -6,20 +6,19 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 035b7f73-8b78-4ed1-835e-a31f9a5c4a02
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: d56c8a76e4770336d4a2ab519e776e48fec8ebcd
 ms.openlocfilehash: df3198885259b1db4a1aadee0db6512a1a2d4911
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="fundamentals-of-security-for-system-center-configuration-manager"></a>System Center Configuration Manager 的安全性基本概念
 
@@ -70,9 +69,3 @@ System Center Configuration Manager 的安全性包含數個層級。 第一層�
  由於企業管理產品能夠有效管理大量的用戶端，而有許多優點，但您也必須知道此軟體可能對組織中的使用者隱私權有何影響。 System Center Configuration Manager 包含許多可用來收集資料和監視裝置的工具。 部分工具可能會引發隱私權疑慮。  
 
  例如，當您安裝 Configuration Manager 用戶端時，許多管理設定都會預設為啟用。 這會導致用戶端軟體將資訊傳送到 Configuration Manager 站台。 用戶端資訊會儲存在 Configuration Manager 資料庫中，這些資訊並不會傳送到 Microsoft。 在實作 System Center Configuration Manager 之前，請考慮您的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

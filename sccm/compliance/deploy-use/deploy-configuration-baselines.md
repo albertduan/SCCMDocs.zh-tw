@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9be8aaf3-075e-4acd-abd2-7459254e16e2
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 9c9e6b7780c7c10c20a60dbbbf506e916031eb88
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-deploy-configuration-baselines-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中部署組態基準
 
@@ -57,9 +56,3 @@ System Center Configuration Manager 中的設定基準必須先部署至一或�
     >  如果組態基準部署至電腦，則會評估所排程之開始時間的兩個小時內的相容性。 如果部署給使用者，則會在使用者登入時評估相容性。  
 
 9. 按一下 [確定]  關閉 [部署組態基準]  對話方塊並建立部署。 如需如何監視部署的詳細資訊，請參閱[監視相容性設定](/sccm/compliance/deploy-use/monitor-compliance-settings)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

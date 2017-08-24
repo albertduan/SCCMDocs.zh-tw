@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a7d3df90-062d-4d57-9e9d-e137d3e7cd7f
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 07aba04fb1b845e389a5f75b115d536136c1569c
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-an-image-for-an-oem-in-factory-or-a-local-depot-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立 OEM 原廠或本機 Depot 的映像
 
@@ -55,9 +54,3 @@ System Center Configuration Manager 中的預先設置媒體部署可讓您將�
 
 ## <a name="start-the-computer-to-install-the-operating-system"></a>啟動電腦以安裝作業系統  
  預先設置的媒體檔案會套用至電腦。 當第一次啟動電腦時，就會開始作業系統安裝程序。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

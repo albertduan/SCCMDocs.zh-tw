@@ -6,21 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 52ee82b2-0b91-4829-89df-80a6abc0e63a
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 12ee719a6a8b072fab27d083aeb2b8439484058d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
+ms.openlocfilehash: 20f595a5b0634a627dff9ba6feeb848754615f2c
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-how-to-wake-up-clients-in-system-center-configuration-manager"></a>規劃如何在 System Center Configuration Manager 中喚醒用戶端
 
@@ -98,4 +96,3 @@ ms.lasthandoff: 12/16/2016
 
 > [!WARNING]  
 >  具有與子網路導向廣播相關的安全性風險：攻擊者可以從偽造的來源位址不斷將網際網路控制訊息通訊協定 (ICMP) 回應請求的串流傳送到導向的廣播位址，這會導致所有主機回覆該來源位址。 這種阻斷服務的攻擊類型通常稱為 Smurf 攻擊，一般只要不啟用子網路導向的廣播，就可以避免遭到此種攻擊。
-

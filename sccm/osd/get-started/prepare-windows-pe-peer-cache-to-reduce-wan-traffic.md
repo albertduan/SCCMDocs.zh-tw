@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 6c64f276-b88c-4b1e-8073-331876a03038
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prepare-windows-pe-peer-cache-to-reduce-wan-traffic-in-system-center-configuration-manager"></a>準備 Windows PE 對等快取，以降低 System Center Configuration Manager 中的 WAN 流量
 
@@ -35,7 +34,7 @@ ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
 
 使用下列各節管理對等快取。
 
-##  <a name="a-namebkmkpeercacheobjectsa-objects-stored-on-a-peer-cache-source"></a><a name="BKMK_PeerCacheObjects"></a> 存放在對等快取來源的物件  
+##  <a name="BKMK_PeerCacheObjects"></a> 存放在對等快取來源的物件  
  在 Windows PE 中執行工作順序時，其設定為會使用 Windows PE 對等快取可以取得下列內容物件：  
 
 -   作業系統映像  
@@ -52,17 +51,17 @@ ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
 
 -   軟體更新  
 
-##  <a name="a-namebkmkpeercacheworka-how-does--windows-pe-peer-cache-work"></a><a name="BKMK_PeerCacheWork"></a> Windows PE 對等快取運作方式為何？  
+##  <a name="BKMK_PeerCacheWork"></a> Windows PE 對等快取運作方式為何？  
  假設分公司沒有發佈點，但允許幾個用戶端使用 Windows PE 對等快取的情況。 您部署的工作順序，設定為對設定成是對等快取來源一部分的數個用戶端，使用對等快取。 第一個執行工作順序的用戶端，會為具備該內容的對等，廣播一則要求。 因為找不到任何項目，所以會從 WAN 中的發佈點取得內容。 用戶端會安裝新映像，然後將內容儲存在其 Configuration Manager 用戶端快取中，以作為其他用戶端的對等快取來源。 當下一個用戶端執行工作順序時，它會在對等快取來源的子網路上廣播要求，而第一個用戶端會回應並提供其快取內容。  
 
-##  <a name="a-namebkmkpeercachedeterminea-determine-what--clients-will-be-part-of-the-windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheDetermine"></a> 決定哪些用戶端將隸屬於 Windows PE 對等快取來源  
+##  <a name="BKMK_PeerCacheDetermine"></a> 決定哪些用戶端將隸屬於 Windows PE 對等快取來源  
  為協助您判斷哪些電腦要選取為 Windows PE 對等快取來源，您應該考量一些情況：  
 
 -   Windows PE 對等快取來源應為一直開機且對等快取用戶端可以使用的桌上型電腦。  
 
 -   Windows PE 對等快取的用戶端快取大小，足以儲存映像。  
 
-##  <a name="a-namebkmkpeercacherequirementsa-requirements-for-a-client-to-use-a--windows-pe-peer-cache-source"></a><a name="BKMK_PeerCacheRequirements"></a> 使用 Windows PE 對等快取來源的用戶端需求  
+##  <a name="BKMK_PeerCacheRequirements"></a> 使用 Windows PE 對等快取來源的用戶端需求  
  若是使用 Windows PE 對等快取來源的用戶端，必須符合下列需求：  
 
 -   Configuration Manager 用戶端必須能夠跨網路上的下列連接埠進行通訊：  
@@ -78,7 +77,7 @@ ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
 
 -   工作順序部署的 [部署] 選項，必須設定為 [工作順序需要時將內容下載到本機]。  
 
-##  <a name="a-namebkmkpeercacheconfigurea-configure-windows-pe-peer-cache"></a><a name="BKMK_PeerCacheConfigure"></a> 設定 Windows PE 對等快取  
+##  <a name="BKMK_PeerCacheConfigure"></a> 設定 Windows PE 對等快取  
  您可以使用下列方法，利用對等快取內容來佈建用戶端，使其可成為對等快取來源：  
 
 -   找不到具有內容之對等快取來源的對等快取用戶端會從發佈點下載內容。  如果用戶端收到的用戶端設定啟用對等快取，並將工作順序設定為保留快取內容，則用戶端會變成對等快取來源。  
@@ -112,7 +111,7 @@ ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
 
  使用這個設定物件設定裝置之後，會將裝置設定為對等快取來源。 這些設定應該部署到潛在的對等快取用戶端，以便設定必要的連接埠和通訊協定。  
 
-###  <a name="a-namebkmkpeercacheconfiguretsa-configure-a-task-sequence-for-windows-pe-peer-cache"></a><a name="BKMK_PeerCacheConfigureTS"></a> 為 Windows PE 對等快取設定工作順序  
+###  <a name="BKMK_PeerCacheConfigureTS"></a> 為 Windows PE 對等快取設定工作順序  
  當您設定工作順序時，請使用下列工作順序變數作為部署工作順序所在之集合上的集合變數：  
 
 -   **SMSTSPeerDownload**  
@@ -135,15 +134,9 @@ ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
 
  如需詳細資訊，請參閱[工作順序內建變數](../understand/task-sequence-built-in-variables.md)。  
 
-###  <a name="a-namebkmkpeercachevalidatea-validate-the-success-of-using-windows-pe-peer-cache"></a><a name="BKMK_PeerCacheValidate"></a> 確認順利使用 Windows PE 對等快取  
+###  <a name="BKMK_PeerCacheValidate"></a> 確認順利使用 Windows PE 對等快取  
  使用 Windows PE 對等快取部署工作順序且加以安裝之後，可以透過檢視執行工作順序之用戶端上的 **smsts.log** ，來確認程序中已順利使用該對等快取。  
 
  在記錄檔中，尋找類似如下的項目，其中 <*SourceServerName*> 可識別用戶端取得內容的來源電腦。 這部電腦應該是對等快取來源，而不是發佈點伺服器。 其他詳細資料會依您的本機環境和組態而有所不同。  
 
 -   *<![LOG[Downloaded file from http:// <SourceServerName\>:8003/SCCM_BranchCache$/SS10000C/sccm?/install.wim to C:\\_SMSTaskSequence\Packages\SS10000C\install.wim ]LOG]!><time="14:24:33.329+420" date="06-26-2015" component="ApplyOperatingSystem" context="" type="1" thread="1256" file="downloadcontent.cpp:1626">*  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

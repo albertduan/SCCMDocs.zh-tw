@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4b7aa5f6-5ebd-49be-b7f3-4206caadc187
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
-ms.openlocfilehash: 6189726bbcade8229e0b2e929ebedeefdbf266a4
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/30/2016
-
-
+ms.openlocfilehash: b76bcf65c61b0a2690a468d375ac95b1334d5298
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-use-resource-explorer-to-view-software-inventory-in-system-center-configuration-manager"></a>如何使用資源總管檢視 System Center Configuration Manager 的軟體清查
 
@@ -55,4 +52,3 @@ ms.lasthandoff: 12/30/2016
 
 4.  您可以在資源總管視窗的右窗格中，以滑鼠右鍵按一下任何項目，然後選擇 [內容] 以更容易閱讀的格式檢視收集到的清查資訊。  
  
-

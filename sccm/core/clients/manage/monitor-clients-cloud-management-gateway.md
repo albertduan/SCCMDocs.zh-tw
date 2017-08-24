@@ -3,20 +3,17 @@ title: "監視雲端管理閘道 - Configuration Manager | Microsoft Docs"
 description: 
 ms.date: 04/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: 15f72f80-9850-40ce-9c3a-443ba04b6a03
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 199096db7a23fb14db98b95e75246ed254848ab7
-ms.openlocfilehash: df32a7d95799d8ae685fd66e2d9ddf25e32b37d0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/27/2017
-
+ms.openlocfilehash: daa0790995dc13ec2c78ae2d98a9eb38c0bcf8ae
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="monitor-cloud-management-gateway-in-configuration-manager"></a>在 Configuration Manager 中監視雲端管理閘道
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -52,4 +49,3 @@ ms.lasthandoff: 03/27/2017
 ## <a name="monitor-logs"></a>監視記錄檔
 
 雲端管理閘道服務會在數個記錄檔中產生項目。 如需詳細資訊，請參閱 [Configuration Manager 記錄檔](/sccm/core/plan-design/hierarchy/log-files)。
-

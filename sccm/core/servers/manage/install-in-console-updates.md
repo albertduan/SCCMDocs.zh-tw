@@ -6,21 +6,19 @@ ms.date: 06/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c14a3607-253b-41fb-8381-ae2d534a9022
-caps.latest.revision: 36
+caps.latest.revision: "36"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 2bbc8935bee306ed0bc312cc43b8f5374a8df7ff
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="install-in-console-updates-for-system-center-configuration-manager"></a>安裝適用於 System Center Configuration Manager 的主控台內更新
 
@@ -386,4 +384,3 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 -   如果您先前已安裝較舊的更新，則不需要安裝的日期較新的更新。 不過，如果您在安裝第一個更新之後，安裝較新的更新，則會更新有問題的二進位檔。 不會有其他變更，您也不需要採取任何其他動作。
 
 -   如果先前安裝過最新的更新，然後再安裝日期較舊的更新，則不需要採取其他動作。 這是因為您已安裝過較新的二進位檔，而不會再從原始的更新覆寫這些相同的二進位檔。
-

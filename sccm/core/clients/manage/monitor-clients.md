@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2c8f57cf-1968-48de-87fb-4897432ed6e0
-caps.latest.revision: 23
+caps.latest.revision: "23"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
 ms.openlocfilehash: 08a4d9b29871b49e3118aef949572cef64940f96
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-monitor-clients-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中監視用戶端
 
@@ -114,4 +111,3 @@ ms.lasthandoff: 05/17/2017
 
 ## <a name="client-deployment-log-files"></a>用戶端部署記錄檔
 如需用戶端部署及管理作業所使用之記錄檔的相關資訊，請參閱 [System Center Configuration Manager 中的記錄檔](/sccm/core/plan-design/hierarchy/log-files#BKMK_ClientLogs)。
-

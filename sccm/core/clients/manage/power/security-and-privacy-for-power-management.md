@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 469ff35f-59a1-484d-902b-107dd6070baf
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: f72059973057e707f58cb6b7aa495226b6c1962c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 94d5418c364c318dba92dc9f9066f54d1130aa34
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-power-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 的電源管理安全性與隱私權
 
@@ -39,4 +36,3 @@ ms.lasthandoff: 12/16/2016
  電源使用量資訊存放在 Configuration Manager 資料庫中，且不會傳送給 Microsoft。 詳細資訊會在資料庫中保留 31 天，摘要資訊會保留 13 個月。 您可以設定刪除間隔。  
 
  在您設定電源管理之前，請先考慮隱私權需求。  
-

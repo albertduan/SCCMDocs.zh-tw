@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 54ef5fbb-521d-4ca5-a1c5-61e6f538d71e
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: c1b3b3e7fe756ce3e0c82ffc15693999d8e817d2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 3e323ab90ec4cc274581e19065fd7d81c0c11c35
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="determine-whether-to-block-clients-in-system-center-configuration-manager"></a>判斷是否要在 System Center Configuration Manager 中封鎖用戶端
 
@@ -73,4 +70,3 @@ ms.lasthandoff: 12/16/2016
 
     > [!NOTE]  
     >  您可以在 IIS 中設定憑證信任清單 (CTL)，進一步防範未知用戶端破壞執行 IIS 的網站系統。  
-

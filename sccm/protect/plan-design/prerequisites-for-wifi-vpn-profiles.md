@@ -6,21 +6,20 @@ ms.date: 11/23/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d2dacb2d-ab3b-42a2-8dc8-94da31f993c2
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 31b68ede677df8b86412a334d1d100041a0e659e
 ms.openlocfilehash: 309b0363f9b3ec4a31b8323b9e64c9f73060c281
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisites-for-wi-fi-and-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager 中 Wi-Fi 和 VPN 設定檔的必要條件
 
@@ -51,9 +50,3 @@ System Center Configuration Manager 中的 Wi-Fi 和 VPN 設定檔僅具有產�
 -   建立和管理 Wi-Fi 設定檔：[Wi-Fi 設定檔] 物件的 [撰寫原則] 、[修改報告] 、[讀取]  及 [執行報告]  。  
 
  [公司資源存取管理員] 安全性角色包括在 System Center Configuration Manager 中管理 Wi-Fi 設定檔所需的上列權限。 如需詳細資訊，請參閱[在 System Center Configuration Manager 中設定安全性](../../core/plan-design/security/configure-security.md)。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

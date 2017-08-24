@@ -1,5 +1,4 @@
 ---
-
 title: "軟體更新維護 | Microsoft Docs"
 description: "若要在 Configuration Manager 中維護更新，您可以排程 WSUS 清理工作，也可以手動進行執行。"
 keywords: 
@@ -10,15 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 4b0e2e90-aac7-4d06-a707-512eee6e576c
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 1590c623f7bc2f42a8617f110de5321212732a03
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="software-updates-maintenance"></a>軟體更新維護
 
@@ -33,9 +30,3 @@ ms.openlocfilehash: 1590c623f7bc2f42a8617f110de5321212732a03
 2.  按一下 [設定]  群組中的 [設定站台元件]  ，然後按一下 [軟體更新點]  開啟軟體更新點元件屬性。  
 
 3.  按一下 [取代規則]  索引標籤，選取 [執行 WSUS 清理精靈] ，然後按一下 [確定] 。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

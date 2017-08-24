@@ -6,21 +6,19 @@ ms.date: 4/7/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 226cbbb2-9afa-4e2e-a472-be989c0f0e11
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 32f7fc4ef9c8e8d3c2ec8eeaf9a3174bad992ffb
 ms.openlocfilehash: 76e6772bdd5cbd32d525e728f6ebc988b045da78
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="the-content-library-cleanup-tool-for-system-center-configuration-manager"></a>System Center Configuration Manager 的內容庫清理工具
 
@@ -49,7 +47,7 @@ ms.lasthandoff: 05/17/2017
     當您搭配 **/delete** 參數執行此工具時，此工具會在刪除模式中執行。
 
      - 當在此模式中執行時，您可以從發佈點的內容庫刪除指定發佈點上所發現的孤立內容。
-     -     在刪除每個檔案之前，您都必須確認應刪除檔案。  您可以選取 **Y** 表示是、選取 **N** 表示否，或選取 [全部皆是] 略過接下來的提示並刪除所有孤立的內容。  
+     -  在刪除每個檔案之前，您都必須確認應刪除檔案。  您可以選取 **Y** 表示是、選取 **N** 表示否，或選取 [全部皆是] 略過接下來的提示並刪除所有孤立的內容。  
      </br>
 
 當此工具在任一種模式中執行時，它會自動建立記錄，其名稱包含此工具的執行模式、發佈點名稱以及操作的日期和時間。 當工具完成時，會自動開啟記錄檔。
@@ -78,4 +76,3 @@ ms.lasthandoff: 05/17/2017
 | **/ps &lt;主要站台 FQDN>**       | 從主要站台的發佈點清除內容時為**選擇性**。</br>從次要站台的發佈點清除內容時為**必要**。 </br></br>連線到父主要站台，以對 SMS_Provider 執行的工具。 這些查詢可讓工具判斷發佈點上應該要有什麼內容，以便識別孤立且可移除的內容。 因為無法直接從次要站台取得必要的詳細資料，所以必須為位於次要站台的發佈點建立父主要站台的連線。</br></br> 指定發佈點所屬之主要站台的 FQDN，或發佈點在次要站台時之父主要站台的 FQDN。 </br></br> 範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com /ps siteserver1.contoso.com*** |
 | **/sc &lt;主要站台碼>**  | 從主要站台的發佈點清除內容時為**選擇性**。</br>從次要站台的發佈點清除內容時為**必要**。 </br></br> 指定發佈點所屬之主要站台的站台碼，或發佈點在次要站台時之父主要站台的站台碼。</br></br> 範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com /sc ABC*** |
 | **/log <log file directory>**       |**選擇性** </br> 指定工具要寫入記錄檔的位置。 這可以是本機磁碟機或在網路共用上。</br></br> 在執行此工具的電腦上，不使用這個參數時，記錄檔會位在使用者的暫存資料夾中。</br></br> 本機磁碟機的範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com /log C:\Users\Administrator\Desktop*** </br></br>網路共用的範例︰***ContentLibraryCleanup.exe /dp server1.contoso.com /log \\&lt;共用>\&lt;資料夾>***|
-

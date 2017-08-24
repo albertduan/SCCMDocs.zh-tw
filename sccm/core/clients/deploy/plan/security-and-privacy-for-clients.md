@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: c1d71899-308f-49d5-adfa-3a3ec0163ed8
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
-ms.openlocfilehash: 192c3685092df6310b7129877c7fb5dfd9ef7ad5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/21/2017
-
-
+ms.openlocfilehash: 1d871b0e1a2897c236d17211a23c9c7d93e42313
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的用戶端安全性和隱私權
 
@@ -307,4 +304,3 @@ ms.lasthandoff: 03/21/2017
  行動裝置資訊不會傳送給 Microsoft。 行動裝置資訊儲存在 Configuration Manager 資料庫中。 資訊會保留在資料庫裡，直到每 90 天由網站維護工作 [刪除過時探索資料]  刪除為止。 您可以設定刪除間隔。  
 
  安裝並設定 Exchange Server 連接器之前，請考量您的隱私權需求。  
-

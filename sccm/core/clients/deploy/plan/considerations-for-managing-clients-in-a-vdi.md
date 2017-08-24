@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: abd45393-d84e-4583-bc80-74bbb3709577
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 58251f6a4eebac4cba9f3d51f8d0aaad068c3ab8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: d73daf6427b8c58d21d579f3b41df513cc3e3b0b
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="considerations-for-managing-system-center-configuration-manager-clients--in-a-virtual-desktop-infrastructure-vdi"></a>在虛擬桌面基礎結構 (VDI) 中管理 System Center Configuration Manager 用戶端的考量
 
@@ -50,4 +47,3 @@ System Center Configuration Manager 支援在下列虛擬桌面基礎結構 (VDI
 >  Windows Embedded 用戶端的一項例外狀況是在維修模式下，未執行於虛擬化環境的 Configuration Manager 用戶端也會使用此隨機延遲。 當您有許多已部署的用戶端時，此行為可避免網路頻寬尖峰，以及降低 Configuration Manager 站台系統上的 CPU 處理需求，例如管理點和站台伺服器。 延遲間隔會依 Configuration Manager 功能而有所不同。  
 >   
 >  預設會針對必要的軟體更新和必要的應用程式部署來停用隨機延遲，但必須使用下列用戶端設定： **電腦代理程式**： **停用期限隨機設定**。
-

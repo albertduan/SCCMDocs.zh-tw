@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7341cc6e-9e08-41e4-bcc6-6c1ff12e85ca
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-alerts-and-the-status-system-for-system-center-configuration-manager"></a>使用 System Center Configuration Manager 的警示和狀態系統
 
@@ -28,7 +27,7 @@ ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
 設定警示，並使用內建狀態系統通知有關 System Center Configuration Manager 部署的狀態。  
 
 
-##  <a name="a-namebkmkstatusa-status-system"></a><a name="bkmk_Status"></a> 狀態系統  
+##  <a name="bkmk_Status"></a> 狀態系統  
  所有主要網站元件都會產生可提供網站和階層作業意見反應的狀態訊息。    這項資訊可讓您隨時掌握不同網站處理序的健全狀況。 您可以調整警示系統以略過已知問題，同時加速早期發現可能需要注意的其他問題。  
 
  Configuration Manager 狀態系統預設會使用適合多數環境的設定操作，而不需要進行任何設定。 不過，您可以進行下列設定：  
@@ -55,7 +54,7 @@ ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
 
 因為狀態系統會維護每個站台的個別組態，所以您必須分別編輯每個站台。  
 
-###  <a name="a-namebkmkconfigstatusa-procedures-for-configuring-the-status-system"></a><a name="bkmk_configstatus"></a> 設定狀態系統的程序  
+###  <a name="bkmk_configstatus"></a> 設定狀態系統的程序  
 
 ##### <a name="to-configure-status-summarizers"></a>設定狀態摘要器  
 
@@ -154,7 +153,7 @@ ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
 
 4.  按一下 [ **確定**]。  
 
-###  <a name="a-namebkmkmonitorsystemstatusa-monitor-the-status-system-of-configuration-manager"></a><a name="BKMK_MonitorSystemStatus"></a> 監視 Configuration Manager 的狀態系統  
+###  <a name="BKMK_MonitorSystemStatus"></a> 監視 Configuration Manager 的狀態系統  
  Configuration Manager 中的 [系統狀態] 概述階層中的一般站台作業和站台伺服器作業。 它可顯示站台系統伺服器或元件的作業問題，而且您可以使用系統狀態檢閱不同 Configuration Manager 作業的特定詳細資料。 您可以從 Configuration Manager 主控台之 [監視] 工作區的 [系統狀態] 節點監視系統狀態。  
 
  大部分 Configuration Manager 站台系統角色和元件都會產生狀態訊息。 狀態訊息詳細資料會記錄在每個元件的操作記錄中，同時也會提交至站台資料庫，於其中摘要、並且在每個元件或站台系統健全狀況的一般彙總套件中呈現。 這些狀態訊息彙總套件可提供一般操作的資訊詳細資料，以及警告和錯誤詳細資料。 您可以設定觸發警告或錯誤的臨界值，並且微調系統以確保彙總套件資訊忽略不相關的已知問題，同時著重於伺服器上或您想調查之元件操作的實際問題。  
@@ -170,19 +169,19 @@ ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
 |衝突的記錄|利用此節點檢視可能有衝突記錄之用戶端的狀態訊息。<br /><br /> Configuration Manager 會使用硬體識別碼嘗試識別可能重複的用戶端，並發出衝突記錄的警示。 例如，如果您需要重新安裝電腦，則硬體識別碼會相同，但 Configuration Manager 使用的 GUID 可能會變更。|  
 |狀態訊息查詢|利用此節點查詢特定事件的狀態訊息和相關詳細資料。 您可以使用狀態訊息查詢尋找與特定事件相關的狀態訊息。<br /><br /> 您可以經常使用狀態訊息查詢識別特定元件、作業或 Configuration Manager 物件何時經過修改，以及用來進行修改的帳戶。 例如，您可以執行 [已建立、修改或刪除的集合]  的內建查詢，識別特定集合的建立時間以及用來建立集合的使用者帳戶。|  
 
-####  <a name="a-namebkmkmanagestatusa-manage-site-status-and-component-status"></a><a name="bkmk_managestatus"></a> 管理站台狀態和元件狀態  
+####  <a name="bkmk_managestatus"></a> 管理站台狀態和元件狀態  
  利用下列資訊管理站台狀態和元件狀態：  
 
 -   若要設定狀態系統的臨界值，請參閱 [設定狀態系統的程序](#bkmk_configstatus)。  
 
 -   若要在 Configuration Manager 中管理個別元件，請使用 **Configuration Manager Service Manager**。  
 
-####  <a name="a-namebkmkviewa-view-status-messages"></a><a name="bkmk_view"></a> 檢視狀態訊息  
+####  <a name="bkmk_view"></a> 檢視狀態訊息  
  您可以檢視個別站台系統伺服器和元件的狀態訊息。  
 
  若要在 Configuration Manager 主控台中檢視狀態訊息，請選取特定站台系統伺服器或元件，然後按一下 [顯示訊息]。 當您檢視訊息時，可以選取檢視特定訊息類型或指定期間的訊息，也可以根據狀態訊息詳細資料篩選結果。  
 
-##  <a name="a-namebkmkalertsa-alerts"></a><a name="bkmk_Alerts"></a> 警示  
+##  <a name="bkmk_Alerts"></a> 警示  
  特定條件發生時，部分作業會產生 Configuration Manager 警示。  
 
 -   通常警示是在發生您必須解決的錯誤時產生  
@@ -204,7 +203,7 @@ ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
 |設定電子郵件警示訂閱|請參閱本主題中的 [Management tasks for alerts](#BKMK_Manage) 一節。|  
 |監視警示|請參閱本主題中的 [監視警示](#BKMK_MonitorAlerts)|  
 
-###  <a name="a-namebkmkmanagea-management-tasks-for-alerts"></a><a name="BKMK_Manage"></a> Management tasks for alerts  
+###  <a name="BKMK_Manage"></a> Management tasks for alerts  
 
 ##### <a name="to-manage-general-alerts"></a>管理一般警示  
 
@@ -288,7 +287,7 @@ ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
     > [!NOTE]  
     >  如果您展開 [警示]  節點，然後按一下 [訂閱]  節點，則可以在 [監視]  工作區中刪除和編輯訂閱。  
 
-###  <a name="a-namebkmkmonitoralertsa-monitor-alerts"></a><a name="BKMK_MonitorAlerts"></a> 監視警示  
+###  <a name="BKMK_MonitorAlerts"></a> 監視警示  
  您可以在 [監視]  工作區的 [警示]  節點中檢視警示。 警示會有下列其中一種警示狀態：  
 
 -   **永不觸發**：尚未符合警示的條件。  
@@ -310,9 +309,3 @@ ms.openlocfilehash: ed692bdea055775890535d2666f09ba5f5c7c4e1
      您只能在警示為作用中時將其延後。  
 
 -   您可以編輯警示的 [註解]  ，讓其他系統管理使用者得知您已注意到警示。 例如，您可以在註解中識別如何解決此條件、提供此條件目前狀態的相關資訊，或解釋延後警示的理由。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

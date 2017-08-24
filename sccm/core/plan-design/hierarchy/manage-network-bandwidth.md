@@ -6,25 +6,21 @@ ms.date: 2/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e80d1151-91db-4a27-8411-a957297b67d0
-caps.latest.revision: 15
-caps.handback.revision: 0
+caps.latest.revision: "15"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 37e4f27fcea0bbdd39c9fd3ab38aa46e3059f73a
 ms.openlocfilehash: d9dff97126c34a726677de60dd7647370c553b6e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="manage-network-bandwidth-for-content"></a>管理內容的網路頻寬
 為協助您管理用於 System Center Configuration Manager 內容管理程序的網路頻寬，您可以使用為排程及節流所內建的控制項。 您也可使用預先設置的內容。 下列章節將詳細說明這些選項。
 
@@ -77,4 +73,3 @@ ms.lasthandoff: 05/17/2017
     >  上述選項適用於以每個套件為基礎的情況，並且只有在已將發佈點識別為已預先設置的情況下才能使用。 尚未識別為預先設置的發佈點會忽略這些設定。 在這種情況下，內容將一律透過網路從網站伺服器發佈到發佈點。  
 
 -   **還原站台伺服器上的內容庫。** 當網站伺服器失敗時，系統會在進行還原程序時將內容庫中包含的套件和應用程式相關資訊還原至網站資料庫，但不會還原內容庫檔案。 如果沒有可還原內容庫的檔案系統備份，可以從其他內含所需套件及應用程式的站台，建立預先設置的內容檔案。 然後，可以擷取經過復原之站台伺服器上預先設置的內容檔案。 如需站台伺服器備份與復原的詳細資訊，請參閱 [Backup and recovery for System Center Configuration Manager](/sccm/protect/understand/backup-and-recovery) (System Center Configuration Manager 的備份和復原)。  
-

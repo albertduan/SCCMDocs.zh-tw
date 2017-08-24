@@ -9,14 +9,13 @@ ms.date: 12/07/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 304a83ea-0f72-437d-9688-2e6e0c7526dd
-translationtype: Human Translation
-ms.sourcegitcommit: af5f58dd5fe1f19d7a70cb9516af159c6682d194
 ms.openlocfilehash: ae09a02dd5d67113b9a7e2ce146c844efa4caf55
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 >[!IMPORTANT]
 >這是在 Configuration Manager 版本 1606 和版本 1610 中提供的發行前版本功能。 發行前版本功能會包含在產品內，以便在生產環境中進行早期測試，但不應視為生產環境就緒。 您必須開啟這項功能才能使用。 如需詳細資訊，請參閱[使用發行前版本功能](https://docs.microsoft.com/sccm/core/servers/manage/install-in-console-updates#bkmk_prerelease)。
@@ -89,9 +88,3 @@ ms.openlocfilehash: ae09a02dd5d67113b9a7e2ce146c844efa4caf55
 1.  在 [資產與相容性] 工作區中，按一下 [裝置集合]，再按一下集合清除部署鎖定。  
 
 2.  在 [常用] 索引標籤的 [部署] 群組中，按一下 [清除伺服器群組部署鎖定]。 當用戶端無法安裝軟體更新，並阻止其他用戶端安裝軟體更新時，您可以手動清除部署鎖定。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

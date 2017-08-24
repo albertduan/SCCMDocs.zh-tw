@@ -6,21 +6,20 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 99222dc8-0e1e-4513-8302-7a1acf671e9b
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: d37261c03fddc3d576fcef73fabd7189e4c46d38
 ms.openlocfilehash: 9dc5f6c9f58e1fc33b2dc9dd76737ae23af81993
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="determine-whether-to-migrate-data-to-system-center-configuration-manager"></a>判斷是否要將資料移轉至 System Center Configuration Manager
 
@@ -50,7 +49,7 @@ ms.openlocfilehash: 9dc5f6c9f58e1fc33b2dc9dd76737ae23af81993
 
 -   [不可以移轉至 System Center Configuration Manager 的資料](#Cannot_migrate)  
 
-##  <a name="a-namecanmigratea-data-that-you-can-migrate-to-system-center-configuration-manager"></a><a name="Can_Migrate"></a> 可以移轉至 System Center Configuration Manager 的資料  
+##  <a name="Can_Migrate"></a> 可以移轉至 System Center Configuration Manager 的資料  
  移轉程序可以在支援的 Configuration Manager 階層之間移轉大部分物件。 從支援的 Configuration Manager 2007 版本移轉的某些物件執行個體，必須進行修改才能符合 Systerm Center 2012 Configuration Manager 架構及物件格式。
 
 這些修改不會影響來源站台資料庫中的資料。 從支援的 System Center 2012 Configuration Manager 或 System Center Configuration Manager 版本移轉的物件不需要進行修改。  
@@ -161,7 +160,7 @@ ms.openlocfilehash: 9dc5f6c9f58e1fc33b2dc9dd76737ae23af81993
 
 -   虛擬應用程式套件  
 
-##  <a name="a-namecannotmigratea-data-that-you-cannot-migrate-to-system-center-configuration-manager"></a><a name="Cannot_migrate"></a> 無法移轉至 System Center Configuration Manager 的資料  
+##  <a name="Cannot_migrate"></a> 無法移轉至 System Center Configuration Manager 的資料  
  您無法移轉下列類型的物件：  
 
 -   AMT 用戶端佈建資訊  
@@ -187,9 +186,3 @@ ms.openlocfilehash: 9dc5f6c9f58e1fc33b2dc9dd76737ae23af81993
     -   安全性角色  
 
     -   安全性範圍  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

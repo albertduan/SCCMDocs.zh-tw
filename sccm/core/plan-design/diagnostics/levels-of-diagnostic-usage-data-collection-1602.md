@@ -6,12 +6,11 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1210a1ca-78c7-4d17-81cf-ac1bc5c5cf3e
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
@@ -34,12 +33,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ebbc2b250d651aa8befd7f2458d67bf0f4a8ff10
-ms.openlocfilehash: e54ed320ce95876d29e6dd889dcba2f1f964164c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 02/08/2017
-
+ms.openlocfilehash: 3e50327678d29fa2c1fed4ac0fd63738e65776cb
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1602-of-system-center-configuration-manager"></a>System Center Configuration Manager 1602 版的診斷使用方式資料收集層級
 
@@ -65,13 +63,13 @@ System Center Configuration Manager 1602 版會收集三種層級的診斷及使
 
 
  -   安裝程式資訊：
-     - 組建、安裝類型、語言套件以及您啟用的功能  
+    - 組建、安裝類型、語言套件以及您啟用的功能  
 
-     - ***[已更新]*** 更新套件部署狀態和錯誤、下載進度和必要條件錯誤     
+    - ***[已更新]*** 更新套件部署狀態和錯誤、下載進度和必要條件錯誤     
 
-     - ***[新增]*** 升級後的指令碼版本
+    - ***[新增]*** 升級後的指令碼版本
 
-     - ***[新增]*** 使用更新快速通道 (Fast Ring)
+    - ***[新增]*** 使用更新快速通道 (Fast Ring)
 
 -   資料庫效能標準 (複寫處理資訊、依處理器和磁碟使用量列出前幾個 SQL Server 預存程序)
 
@@ -275,7 +273,7 @@ System Center Configuration Manager 1602 版會收集三種層級的診斷及使
 
     -   ***[已更新]*** 集合評估統計資料 (查詢時間、已指派與未指派計數的比較、依類型的計數、ID 變換和規則使用方式)
 
-    - ***[新增]***   SQL 變更追蹤保留期限
+    - ***[新增]***   SQL Server 變更追蹤保留期間
 
 -   ***[新增] 網站更新：***
 
@@ -316,4 +314,3 @@ System Center Configuration Manager 1602 版會收集三種層級的診斷及使
 -   ***[新增]*** 合規性設定︰SCEP、VPN、Wi-Fi 和合規性政策範本設定詳細資料
 
 -   ***[新增]*** 受 Intune 管理之裝置的 EAS 條件式存取原則類型 (封鎖或隔離)
-

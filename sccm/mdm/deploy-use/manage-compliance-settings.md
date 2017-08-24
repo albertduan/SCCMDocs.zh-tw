@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9e83007f-e81c-4b7e-b47e-b01d7b19cfbc
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 355f6ffec7a77bf03a26f0a1963c2638e67bd75b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: b3a63f6c55c317c9c84d4394dfdcb9f1cbbbc90b
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="managing-compliance-on-devices-managed-with-intune"></a>管理透過 Intune 進行管理之裝置的合規性
 
@@ -34,13 +31,13 @@ ms.lasthandoff: 03/06/2017
  [開始使用合規性設定](../../compliance/get-started/get-started-with-compliance-settings.md)提供有關合規性設定的基本概念，而[規劃和設定合規性設定](../../compliance/plan-design/plan-for-and-configure-compliance-settings.md)可協助您實作任何所需的先決條件。  
 
 ## <a name="general-information-for-each-scenario"></a>每個案例的通用資訊  
- 在每個案例中，您會建立執行特定工作的設定項目。 使用下列步驟開啟 [建立設定項目精靈]：  
+ 在每個案例中，您會建立執行特定工作的設定項目。 請使用下列步驟開啟 [建立設定項目精靈]：  
 
-1.  在 Configuration Manager 主控台中，按一下 [資產與合規性] > [合規性設定] > [設定項目]。  
+1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] > [相容性設定] > [設定項目]。  
 
-3.  在 [常用] 索引標籤上，按一下 [建立] 群組中的 [建立設定項目]。  
+3.  在 [常用]  索引標籤上，按一下 [建立]  群組中的 [建立設定項目] 。  
 
-4.  在 [建立設定項目精靈] 的 [一般] 索引標籤上 (如下所示)，指定設定項目的名稱和描述，然後為本主題的每個案例選擇適當的設定項目類型。  
+4.  在 [建立設定項目精靈] 的 [一般]  索引標籤上 (如下所示)，指定設定項目的名稱和描述，然後為本主題的每個案例選擇適當的設定項目類型。  
 
      ![顯示 [建立設定項目精靈] 的 [一般] 頁面。](media/Compliance-Settings-Wizard---1.png)  
 
@@ -135,4 +132,3 @@ ms.lasthandoff: 03/06/2017
  -   [如何建立使用 Intune 進行管理之 iOS 與 Mac OS X 裝置的設定項目](create-configuration-items-for-ios-and-mac-os-x-devices-managed-without-the-client.md)  
 
  -   [如何建立使用 Intune 進行管理之 Android 與 Samsung KNOX Standard 裝置的設定項目](create-configuration-items-for-android-and-samsung-knox-devices-managed-without-the-client.md)  
-

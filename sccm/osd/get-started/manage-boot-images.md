@@ -6,22 +6,20 @@ ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 97f2d81a-2c58-442c-88bc-defd5a1cd48f
-caps.latest.revision: 23
-caps.handback.revision: 0
+caps.latest.revision: "23"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 0663ba84762c44a5c303562548499f195bae9e1c
 ms.openlocfilehash: cc678c1133b1944f55bcad309cf9ede9f0660b57
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/01/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-boot-images-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理開機映像
 
@@ -270,4 +268,3 @@ Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台�
 1.  更新開機映像之前，確認站台伺服器上的正確工作順序資源檔 (tsres.dll) 置於相對應的語言資料夾內。 例如，英文資源檔位於下列位置： <Configuration Manager 安裝資料夾>\OSD\bin\x64\00000409\tsres.dll。  
 
 2.  在啟動前置命令中，將 SMSTSLanguageFolder 環境變數設為適當的語言識別碼。 語言識別碼必須使用十進位而不是十六進位來指定。 例如，若要將語言識別碼設為英文，您應指定 1033 的十進位值，而不是用於資料夾名稱的 00000409 十六進位值。  
-

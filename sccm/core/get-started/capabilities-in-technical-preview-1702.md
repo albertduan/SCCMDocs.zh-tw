@@ -4,23 +4,21 @@ description: "了解 System Center Configuration Manager Technical Preview 1702 
 ms.custom: na
 ms.date: 02/24/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aedd608d-6db3-4ea5-851d-70f2dcda6bb5
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8f4ec982a54cf3cefef310268a54850e70e2e63a
 ms.openlocfilehash: 3bdbcd1a3c64a1d50f2f6219b2a5e17d60979864
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1702-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1702 中的功能
 
@@ -57,7 +55,7 @@ ms.lasthandoff: 05/17/2017
 
 ## <a name="peer-cache-improvements"></a>對等快取改善
 從這個版本開始，對等快取來源電腦將會拒絕對等快取來源電腦符合下列任一條件時的內容要求︰  
- -     處於電力偏低模式。
+ -  處於電力偏低模式。
  -  CPU 負載會在要求內容時超過 80%。
  -  磁碟 I/O 的 *AvgDiskQueueLength* 超過 10。
  -  無法再連線至電腦。   
@@ -75,10 +73,10 @@ Technical Preview 站台基礎結構、用戶端和 Azure AD 網域服務網域�
 
 ### <a name="set-up-configuration-manager-to-use-azure-ad"></a>設定 Configuration Manager 使用 Azure AD
 若要搭配使用 Azure AD 與 Configuration Manager，您需要下列項目︰
--    Azure 訂用帳戶。
--    含網域服務 (DS) 的 Azure AD。
--    在加入 Azure AD 的 Azure VM 上執行的 Configuration Manager 站台。
--    在相同 Azure AD 環境中執行的 Configuration Manager 用戶端。
+-   Azure 訂用帳戶。
+-   含網域服務 (DS) 的 Azure AD。
+-   在加入 Azure AD 的 Azure VM 上執行的 Configuration Manager 站台。
+-   在相同 Azure AD 環境中執行的 Configuration Manager 用戶端。
 
 若要設定 Azure AD 網域服務，請參閱[開始使用 Azure AD 網域服務](https://docs.microsoft.com/azure/active-directory-domain-services/active-directory-ds-getting-started)。
 
@@ -93,7 +91,7 @@ Technical Preview 站台基礎結構、用戶端和 Azure AD 網域服務網域�
 下列範例會使用 *contoso.onmicrosoft.com* 的 Azure AD：
  - **系統探索**   
 Azure AD 會將裝置儲存在 **AADDC Computers** OU 下方。  設定下列各項：  
-  -    *LDAP://OU=AADDC Computers,DC=contoso,DC=onmicrosoft,DC=com*  
+  - *LDAP://OU=AADDC Computers,DC=contoso,DC=onmicrosoft,DC=com*  
 
 
 - **使用者探索** AAD 會將使用者儲存在 **AADDC Users** OU 下方。  設定下列各項：
@@ -109,7 +107,7 @@ Azure AD 沒有可儲存群組的 OU。 相反地，使用與 [系統] 或 [使�
 
 ## <a name="conditional-access-device-compliance-policy-improvements"></a>條件式存取裝置合規性政策改善
 
-使用者所使用的應用程式為不符合規範的應用程式清單一部分時，新的裝置合規性政策規則是可用來協助您封鎖存取可支援條件式存取的公司資源。 新增符合規範規則 [無法安裝的應用程式] 時，系統管理員可以定義不符合規範的應用程式清單。 將應用程式新增至不符合規範的清單時，此規則需要系統管理員輸入 [應用程式名稱]、[應用程式識別碼] 和 [應用程式發行者]\(選擇性)。 這項設定僅適用於 iOS 和 Android 裝置。
+使用者所使用的應用程式為不符合規範的應用程式清單一部分時，新的裝置合規性政策規則是可用來協助您封鎖存取可支援條件式存取的公司資源。 新增符合規範規則 [無法安裝的應用程式] 時，系統管理員可以定義不符合規範的應用程式清單。 將應用程式新增至不符合規範的清單時，此規則需要系統管理員輸入 [應用程式名稱]、[應用程式識別碼] 和 [應用程式發行者]\ (選擇性)。 這項設定僅適用於 iOS 和 Android 裝置。
 
 此外，這可協助組織透過不安全的應用程式來降低資料外洩，並透過特定應用程式來避免過多的資料使用。
 
@@ -215,9 +213,9 @@ Azure AD 沒有可儲存群組的 OU。 相反地，使用與 [系統] 或 [使�
 
 ### <a name="try-it-out"></a>請試試看。
 
-1.    在 Configuration Manager 部署類型的內容中，選擇 [安裝行為] 索引標籤。
-2.    選擇 [新增] 以新增您想要檢查的一或多個可執行檔名稱。 您也可以新增顯示名稱，讓使用者可以輕鬆地找出清單中的應用程式。
-3.    如果部署是必要的，則可以在部署軟體精靈中選擇性選擇 [自動關閉您在部署類型屬性對話方塊之 [安裝行為] 索引標籤上所指定且正在執行的可執行檔]。
+1.  在 Configuration Manager 部署類型的內容中，選擇 [安裝行為] 索引標籤。
+2.  選擇 [新增] 以新增您想要檢查的一或多個可執行檔名稱。 您也可以新增顯示名稱，讓使用者可以輕鬆地找出清單中的應用程式。
+3.  如果部署是必要的，則可以在部署軟體精靈中選擇性選擇 [自動關閉您在部署類型屬性對話方塊之 [安裝行為] 索引標籤上所指定且正在執行的可執行檔]。
 
 如果應用程式已部署為 [可用]，而且使用者嘗試安裝應用程式，則會提示他們在繼續安裝之前關閉任何您指定的執行中可執行檔。
 
@@ -358,4 +356,3 @@ Android for Work 有兩個設定項目設定群組︰
 
 #### <a name="known-issues-for-android-for-work"></a>Android for Work 的已知問題
 [Configuring sync schedule in Android for Work email profiles causes them to fail to deploy]\(在 Android for Work 電子郵件設定檔中設定同步處理排程，會導致它們無法部署) Android for Work 電子郵件設定檔之 ConfigMgr UI 中的其中一個選項為「排程」。 在其他平台上，這可讓系統管理員設定排程，以將電子郵件和其他電子郵件帳戶資料同步處理到部署的目標行動裝置上。 不過，它不適用於 Android for Work 電子郵件設定檔，而且選擇「未設定」以外的任何選項，則會導致該設定檔無法部署至任何裝置。
-

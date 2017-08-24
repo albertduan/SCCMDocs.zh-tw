@@ -6,8 +6,7 @@ ms.date: 03/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 408190da-bea6-4122-9dd6-f90155040e88
@@ -15,15 +14,12 @@ caps.latest.revision:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 212628639300e9c361f7cee61b3df6b1cb6874ce
 ms.openlocfilehash: 8edf83a0f761dfc16274ce49c3aa2b878c7fe6cd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/18/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="monitor-mobile-threat-defense-compliance"></a>**監視 Mobile Threat Defense 合規性**
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -76,4 +72,3 @@ ms.lasthandoff: 05/18/2017
 
 > [!TIP] 
 > 請務必啟用不是「預設為可見」的欄位，以查看您裝置的 Mobile Threat Defense 合規性狀態詳細資訊。
-

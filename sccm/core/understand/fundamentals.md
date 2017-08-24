@@ -6,20 +6,20 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cc4cdb35-f0b4-42b5-9cec-6431a8c30793
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 9725fd25dc6584005fb3c2c1538d00513c3945a5
 ms.openlocfilehash: 662ac092746f37c354e5accf288e3375c16b9c72
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="fundamentals-of-system-center-configuration-manager"></a>System Center Configuration Manager 的基礎
 
@@ -47,9 +47,3 @@ ms.openlocfilehash: 662ac092746f37c354e5accf288e3375c16b9c72
 -   [System Center Configuration Manager 的用戶端管理基本概念](../../core/understand/fundamentals-of-client-management-tasks.md)  
 
 -   [System Center Configuration Manager 的安全性基本概念](../../core/understand/fundamentals-of-security.md)  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

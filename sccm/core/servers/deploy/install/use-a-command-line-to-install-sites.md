@@ -6,21 +6,19 @@ ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e7cdb1a9-140a-436e-ac71-72d083110223
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f7cd9c71287d62c9f5d36e2f032bc2a6065572ae
 ms.openlocfilehash: 8ff48b08d1abb7481592c0ea076d4efa15c3d8ee
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/06/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-a-command-line-to-install-system-center-configuration-manager-sites"></a>使用命令列來安裝 System Center Configuration Manager 站台
 
@@ -126,4 +124,3 @@ ms.lasthandoff: 06/06/2017
     -   當您參考命令提示字元的安裝設定檔時，必須提供檔案的完整路徑。 例如，若您將安裝初始設定檔命名為 Setup.ini，並將其儲存在 C:\Setup 資料夾中，則請在命令提示字元輸入：**setup /script c:\setup\setup.ini**。  
 
 -   執行安裝程式的帳戶，在電腦上必須具有 [系統管理員] 權限。 使用自動指令碼執行安裝程式時，請使用 [以系統管理員身分執行] 選項開啟 [命令提示字元] 視窗。   
-

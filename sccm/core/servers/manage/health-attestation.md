@@ -6,22 +6,19 @@ ms.date: 03/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 91f9de33-b277-4500-acd6-e7d90a2947c9
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 23b1d24e908d04b64c3bbfa518793a44e696d468
 ms.openlocfilehash: 54b3433a002b8ef29059bab04458138348f95d66
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="health-attestation-for-system-center-configuration-manager"></a>System Center Configuration Manager 的健康情況證明
 
@@ -83,4 +80,3 @@ Configuration Manager 的裝置健康情況證明會顯示下列各項資訊：
 -   **遺失的前幾項健康情況證明設定** - 顯示遺漏健康情況證明設定的裝置數目 (依每個設定列出)
 
 「用戶端裝置健康情況證明」狀態可用來針對使用 Configuration Manager 搭配 Microsoft Intune 來管理的裝置，定義合規性政策中的條件式存取規則。 如需詳細資訊，請參閱[管理 System Center Configuration Manager 中的裝置相容性原則](/sccm/protect/deploy-use/device-compliance-policies)。  
-

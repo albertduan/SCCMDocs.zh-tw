@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 92c1ccca-a748-44cd-a52e-e41d34bf981d
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 75cd7e811262633d81d978265f21ec7ed3b61a58
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="monitor-compliance-settings-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中監視相容性設定
 
@@ -110,9 +109,3 @@ ms.openlocfilehash: 75cd7e811262633d81d978265f21ec7ed3b61a58
 5.  根據組態項目部署至使用者或裝置，來開啟 [建立使用者集合精靈]  或 [建立裝置集合精靈]  。 這個精靈會自動填入建立集合的正確值；不過，您可以編輯這些值。  
 
 6.  完成這個精靈之後，集合會顯示在 [資產與相容性]  工作區的 [使用者集合]  或 [裝置集合]  節點中。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

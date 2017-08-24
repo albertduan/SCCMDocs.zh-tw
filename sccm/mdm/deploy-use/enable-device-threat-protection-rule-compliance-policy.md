@@ -6,8 +6,7 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 99a5b715-f172-46e1-ac27-ad55bde66d0d
@@ -15,13 +14,11 @@ caps.latest.revision:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: b6e7fe0416870ebb6258f89808affe77997c879d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: faa92e150686e615164ce3f5435b77a65305aab3
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="enable-device-threat-protection-rule-in-the-compliance-policy"></a>啟用合規性原則中的裝置威脅保護規則
 
@@ -55,4 +52,3 @@ ms.lasthandoff: 03/06/2017
 裝置威脅保護狀態顯示於 [監視] 工作區的 [安全性] 節點上。
 各種威脅等級狀態的摘要會以視覺化圖表顯示。 您可以按一下圖表的個別區段來查看詳細資訊，例如平台報告為不符合規範之裝置的數量，以及已報告的任何錯誤。
 您也可以在 [資產與合規性] 工作區的 [裝置] 底下查看個別裝置狀態。  您可以新增 [裝置威脅合規性] 和 [裝置威脅等級] 欄位來查看狀態。  預設不會顯示這些欄位。
-

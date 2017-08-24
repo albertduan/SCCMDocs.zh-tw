@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b189a346-8c0d-4870-a876-0719fbb0ab04
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: b247cbb68ed63a8eb99715a248686d68a28c53e2
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="refresh-an-existing-computer-with-a-new-version-of-windows-using-system-center-configuration-manager"></a>使用 System Center Configuration Manager 以新的 Windows 版本重新整理現有的電腦
 
@@ -29,7 +28,7 @@ ms.openlocfilehash: b247cbb68ed63a8eb99715a248686d68a28c53e2
 
  請使用下列章節的內容，以新版的 Windows 重新整理現有的電腦。  
 
-##  <a name="a-namebkmkplana-plan"></a><a name="BKMK_Plan"></a> 方案  
+##  <a name="BKMK_Plan"></a> 方案  
 
 -   **規劃並實作基礎結構需求**  
 
@@ -39,7 +38,7 @@ ms.openlocfilehash: b247cbb68ed63a8eb99715a248686d68a28c53e2
 
      當您要從現有的電腦擷取設定，然後將設定還原到新的作業系統時，您必須安裝狀態移轉點。 如需詳細資訊，請參閱[狀態移轉點](../get-started/prepare-site-system-roles-for-operating-system-deployments.md#BKMK_StateMigrationPoints)。  
 
-##  <a name="a-namebkmkconfigurea-configure"></a><a name="BKMK_Configure"></a> 設定  
+##  <a name="BKMK_Configure"></a> 設定  
 
 1.  **準備開機映像**  
 
@@ -66,7 +65,7 @@ ms.openlocfilehash: b247cbb68ed63a8eb99715a248686d68a28c53e2
     > [!NOTE]  
     >  在此案例中，工作順序會格式化電腦上的硬碟，並進行磁碟分割。 若要擷取使用者設定，您必須使用狀態移轉點，然後在 [建立工作順序精靈] 的 [狀態移轉]  頁面上選取 [將使用者設定和檔案儲存在狀態移轉點上]  。 如果您在本機儲存使用者設定和檔案，它們將在格式化硬碟時遺失，且 Configuration Manager 將無法還原設定。 如需詳細資訊，請參閱[管理使用者狀態](../get-started/manage-user-state.md)。  
 
-##  <a name="a-namebkmkdeploya-deploy"></a><a name="BKMK_Deploy"></a> 部署  
+##  <a name="BKMK_Deploy"></a> 部署  
 
 -   使用下列部署方法之一來部署作業系統：  
 
@@ -87,9 +86,3 @@ ms.openlocfilehash: b247cbb68ed63a8eb99715a248686d68a28c53e2
 -   **監視工作順序部署**  
 
      若要監視工作順序部署以安裝作業系統，請參閱[監視作業系統部署](monitor-operating-system-deployments.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

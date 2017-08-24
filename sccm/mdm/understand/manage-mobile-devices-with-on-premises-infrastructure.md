@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 497c05c7-fe9f-4b88-983b-1c5b3d59308e
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: cbd33bf3cf7d623d9ba7a657d4ca7d746d7e79da
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 7b96c4d4d87aa150eacc5d7d20710f5d2199e48a
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="on-premises-mobile-device-management-mdm-in-system-center-configuration-manager"></a>System Center Configuration Manager 的內部部署行動裝置管理 (MDM)
 
@@ -52,4 +49,3 @@ System Center Configuration Manager 內部部署行動裝置管理是一種裝�
 -   [在 System Center Configuration Manager 中註冊裝置以進行內部部署行動裝置管理](../deploy-use/enroll-devices-on-premises-mdm.md)  
 
      了解如何進行註冊、使用者如何註冊自己的裝置，以及如何使用註冊套件來大量註冊裝置。  
-

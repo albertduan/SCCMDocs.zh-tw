@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3fab4d67-8d2a-45ce-8b06-471280102cf6
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 132803a1aa9aad5c5462686bd656688418e47d07
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="monitor-hierarchy-and-replication-infrastructure-in-system-center-configuration-manager"></a>監視 System Center Configuration Manager 的階層及複寫基礎結構
 
@@ -244,4 +241,3 @@ Configuration Manager 提供數種可監視階層狀態和操作的方法。 您
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
 2.  在 [監視]  工作區中，按一下 [資料庫複寫] ，然後選取您要監視之連結的複寫連結。 然後在工作區中，選取適當的索引標籤檢視有關該連結之複寫狀態的各種不同詳細資料。  
-

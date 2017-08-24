@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 68ac8a07-8e54-4a3c-91e3-e50dc1cabf5d
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: c9fb0fa46058c773eec6ac23999357d35d9f970f
 ms.openlocfilehash: 805e04c447747b4d12350b692880dbc005bd7168
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="update-and-retire-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 更新及淘汰應用程式
 
@@ -39,9 +38,3 @@ ms.openlocfilehash: 805e04c447747b4d12350b692880dbc005bd7168
 -   **解除安裝應用程式**。 Configuration Manager 可輕鬆地解除安裝應用程式。 這可以透過無訊息方式完成，而不需要應用程式或裝置使用者介入。  
 
   如需詳細資訊，請參閱[解除安裝應用程式](uninstall-applications.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

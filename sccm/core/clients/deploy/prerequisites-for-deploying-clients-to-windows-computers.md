@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 1a2a9b48-a95b-4643-b00c-b3079584ae2e
-caps.latest.revision: 16
-caps.handback.revision: 0
+caps.latest.revision: "16"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 7ed1b9e6802cc20defcb92a8e536983fd757bd29
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/27/2017
-
-
+ms.openlocfilehash: 6636ce4d929326fad0210407d7634ea585eb0a2d
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisites-for-deploying-clients-to-windows-computers-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦的必要條件
 
@@ -238,4 +235,3 @@ ms.lasthandoff: 03/27/2017
 -   註冊 Proxy 點與註冊點之間：HTTPS (預設為 TCP 443)  
 
  如果您使用 Proxy 網路伺服器，必須設定伺服器允許 SSL 通道作業；行動裝置不支援 SSL 橋接作業。  
-

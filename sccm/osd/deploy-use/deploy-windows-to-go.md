@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8eed50f5-80a4-422e-8aa6-a7ccb2171475
-caps.latest.revision: 8
-caps.handback.revision: 0
+caps.latest.revision: "8"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
 ms.openlocfilehash: a8b1a42c43438553cfbb62328bed933378bb344c
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="deploy-windows-to-go-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 部署 Windows To Go
 
@@ -51,7 +50,7 @@ ms.openlocfilehash: a8b1a42c43438553cfbb62328bed933378bb344c
 
 8.  [使用者登入 Windows 8](#BKMK_UserLogsIn)  
 
-###  <a name="a-namebkmkprereqsa-prerequisites-to-provision-windows-to-go"></a><a name="BKMK_Prereqs"></a> 佈建 Windows To Go 的必要條件  
+###  <a name="BKMK_Prereqs"></a> 佈建 Windows To Go 的必要條件  
  佈建 Windows To Go 之前，必須在 Configuration Manager 中完成下列步驟：  
 
 -   **將開機映像發佈至發佈點**  
@@ -72,7 +71,7 @@ ms.openlocfilehash: a8b1a42c43438553cfbb62328bed933378bb344c
 
      您必須建立用於部署 Windows 8 的工作順序，當您建立預先設置媒體時將參照此工作順序。 如需詳細資訊，請參閱[管理工作順序，將工作自動化](manage-task-sequences-to-automate-tasks.md)。  
 
-###  <a name="a-namebkmkcreateprestagedmediaa-create-prestaged-media"></a><a name="BKMK_CreatePrestagedMedia"></a> 建立預先設置的媒體  
+###  <a name="BKMK_CreatePrestagedMedia"></a> 建立預先設置的媒體  
  預先設置的媒體包含用於啟動目的地電腦的開機映像，以及將套用於目的地電腦的作業系統映像。 您可以使用開機映像啟動以預先設置媒體佈建的電腦。 之後，該電腦可以執行現有的作業系統部署工作順序，以安裝完整的作業系統部署。 媒體中不包含部署作業系統的工作順序。  
 
  除了作業系統映像和開機映像之外，您還可以在預先設置階段新增應用程式和裝置驅動程式之類的內容。 這樣可以縮短部署作業系統所需的時間，並且可以減少網路流量，因為內容已經存放在磁碟機中了。  
@@ -213,7 +212,7 @@ ms.openlocfilehash: a8b1a42c43438553cfbb62328bed933378bb344c
     > [!NOTE]  
     >  精靈可能需要很長的時間才能完成預先設置的媒體檔案。  
 
-###  <a name="a-namebkmkcreatepackagea-create-a-windows-to-go-creator-package"></a><a name="BKMK_CreatePackage"></a> 建立 Windows To Go Creator 套件  
+###  <a name="BKMK_CreatePackage"></a> 建立 Windows To Go Creator 套件  
  進行 Windows To Go 部署期間，您必須建立套件以部署預先設置的媒體檔案。 套件必須包含可以設定 Windows To Go 磁碟機，以及將預先設置的媒體解壓縮到磁碟機的工具。 利用下列程序建立 Windows To Go Creator 套件。  
 
 #### <a name="to-create-the-windows-to-go-creator-package"></a>建立 Windows To Go Creator 套件  
@@ -278,7 +277,7 @@ ms.openlocfilehash: a8b1a42c43438553cfbb62328bed933378bb344c
 
      按 [下一步]  ，並且完成精靈。  
 
-###  <a name="a-namebkmkupdatetasksequencea-update-the-task-sequence-to-enable-bitlocker-for-windows-to-go"></a><a name="BKMK_UpdateTaskSequence"></a> 更新工作順序以啟用 Windows To Go 的 BitLocker  
+###  <a name="BKMK_UpdateTaskSequence"></a> 更新工作順序以啟用 Windows To Go 的 BitLocker  
  Windows To Go 可在未使用 TPM 的外部可開機磁碟機上，啟用 BitLocker。 因此，您必須使用不同的工具來設定 Windows To Go 磁碟機上的 BitLocker。 若要啟用 BitLocker，您必須在執行 **設定 Windows 和 ConfigMgr** 步驟後，新增動作至工作順序。  
 
 > [!NOTE]  
@@ -341,7 +340,7 @@ ms.openlocfilehash: a8b1a42c43438553cfbb62328bed933378bb344c
     > [!NOTE]  
     >  可能是在新命令列步驟之後的 [啟用 BitLocker]  步驟，不會用來啟用 Windows To Go 的 BitLocker。 不過，您可以在工作順序中保留此步驟，以便在不使用 Windows To Go 磁碟機的 Windows 8 部署中使用。  
 
-###  <a name="a-namebkmkdeploymentsa-deploy-the-windows-to-go-creator-package-and-task-sequence"></a><a name="BKMK_Deployments"></a> 部署 Windows To Go Creator 套件和工作順序  
+###  <a name="BKMK_Deployments"></a> 部署 Windows To Go Creator 套件和工作順序  
  Windows To Go 是一個混合部署程序。 因此，您必須部署 Windows To Go Creator 套件和 Windows 8 工作順序。 利用下列程序完成部署程序。  
 
 #### <a name="to-deploy-the-windows-to-go-creator-package"></a>部署 Windows To Go Creator 套件  
@@ -456,20 +455,14 @@ ms.openlocfilehash: a8b1a42c43438553cfbb62328bed933378bb344c
 
 11. 完成精靈。  
 
-###  <a name="a-namebkmkuserexperiencea-user-runs-the-windows-to-go-creator"></a><a name="BKMK_UserExperience"></a> 使用者執行 Windows To Go Creator  
+###  <a name="BKMK_UserExperience"></a> 使用者執行 Windows To Go Creator  
  部署 Windows To Go 套件與 Windows 8 工作順序後，使用者就可使用 Windows To Go Creator。 如果 Windows To Go Creator 已部署到裝置，使用者可以前往軟體類別目錄或是「軟體中心」並執行 Windows To Go Creator。 下載建立程式套件後，工作列上會顯示閃爍的圖示。 使用者可按一下圖示並使用顯示的對話方塊來選取 Windows To Go 磁碟以進行佈建 (除非使用了磁碟命令列選項)。 如果磁碟不符合 Windows To Go 的需求或是如果磁碟沒有足夠的可用磁碟空間以安裝映像，建立程式就會顯示錯誤訊息。 使用者可以確認將從確認頁面套用的磁碟與映像。 建立程式設定並將內容預先設置到 Windows To Go 磁碟的同時，程式會顯示進度對話方塊。 預先設置作業完成後，建立程式會顯示提示以重新啟動電腦並開機至 Windows To Go 磁碟。  
 
 > [!NOTE]  
 >  如果您並未在 [Create a Windows To Go Creator package](#BKMK_CreatePackage) 一節中啟用開機重新導向作為建立程式的一部分，系統可能會要求使用者在每次系統重新啟動時手動開機至 Windows To Go 磁碟。  
 
-###  <a name="a-namebkmkconfigurestagedrivea-configuration-manager-configures-and-stages-the-windows-to-go-drive"></a><a name="BKMK_ConfigureStageDrive"></a> Configuration Manager 設定與設置 Windows To Go 磁碟機  
+###  <a name="BKMK_ConfigureStageDrive"></a> Configuration Manager 設定與設置 Windows To Go 磁碟機  
  電腦重新啟動至 Windows To Go 磁碟後，磁碟將開機至 Windows PE 並連線至管理點以取得原則來完成作業系統部署。 Configuration Manager 設定與設置磁碟機。 Configuration Manager 設置磁碟後，使用者可以重新啟動電腦以結束佈建程序 (例如加入網域或安裝應用程式)。 此程序對於任何預先設置媒體來說皆為相同。  
 
-###  <a name="a-namebkmkuserlogsina-user-logs-in-to-windows-8"></a><a name="BKMK_UserLogsIn"></a> 使用者登入 Windows 8  
+###  <a name="BKMK_UserLogsIn"></a> 使用者登入 Windows 8  
  Configuration Manager 完成佈建程序並顯示 Windows 8 鎖定螢幕後，使用者即可登入作業系統。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

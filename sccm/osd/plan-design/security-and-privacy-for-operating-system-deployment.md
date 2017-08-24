@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5ee5928f-3d72-4b00-8156-1e0d1030a96c
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 5632a753fc565312a80b2ed69ce438335b3fad50
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager 中作業系統部署的安全性和隱私權
 
@@ -28,7 +27,7 @@ ms.openlocfilehash: 5632a753fc565312a80b2ed69ce438335b3fad50
 
 本主題包含 System Center Configuration Manager 中作業系統部署的安全性和隱私權資訊。  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-operating-system-deployment"></a><a name="BKMK_Security_HardwareInventory"></a> 作業系統部署的安全性最佳作法  
+##  <a name="BKMK_Security_HardwareInventory"></a> 作業系統部署的安全性最佳作法  
  當您以 Configuration Manager 來部署作業系統時，可使用下列安全性最佳做法：  
 
 -   **實作存取控制以保護可開機媒體**  
@@ -193,7 +192,7 @@ ms.openlocfilehash: 5632a753fc565312a80b2ed69ce438335b3fad50
 
      雖然集合變數有彈性方法以部署作業系統，這可能會造成資訊洩漏。  
 
-##  <a name="a-namebkmkprivacyhardwareinventorya-privacy-information-for-operating-system-deployment"></a><a name="BKMK_Privacy_HardwareInventory"></a> 作業系統部署的隱私權資訊  
+##  <a name="BKMK_Privacy_HardwareInventory"></a> 作業系統部署的隱私權資訊  
  除了將作業系統部署至沒有作業系統的電腦之外，還可以使用 Configuration Manager 將使用者檔案與設定從一部電腦移轉至另一部電腦。 系統管理員會設定要傳輸的資訊，包括個人資料檔案、組態設定以及瀏覽器 Cookie。  
 
  資訊會儲存在狀態移轉點上，並會在傳輸與儲存期間加密。 系統允許與狀態資訊相關的新電腦擷取資訊。 如果新電腦遺失用來擷取資訊的金鑰，在電腦關聯執行個體物件上具有「檢視復原資訊」權限的 Configuration Manager 系統管理員可存取該資訊，並將其與新電腦相關聯。 新電腦還原狀態資訊之後，就會根據預設值在一天之後刪除資料。 您可以設定狀態移轉點何時移除標示為可刪除的資料。 狀態移轉資訊不會儲存在站台資料庫中，且不會傳送到 Microsoft。  
@@ -207,9 +206,3 @@ ms.openlocfilehash: 5632a753fc565312a80b2ed69ce438335b3fad50
  Configuration Manager 不會根據預設實作作業系統部署，而且在收集使用者狀態資訊或建立工作順序或開機映像之前，需要數個設定步驟。  
 
  設定作業系統部署之前，請考量您的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

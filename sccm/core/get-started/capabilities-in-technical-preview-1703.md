@@ -4,23 +4,21 @@ description: "了解 System Center Configuration Manager Technical Preview 1703 
 ms.custom: na
 ms.date: 03/24/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2e801f8c-d331-41ee-8f27-908448fc0951
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f4cb711f369698fe8e045f8c83dd96ec6fb29d70
 ms.openlocfilehash: bb1b96a56db68dcea22270855b899ba3a90afd0d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1703-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1703 中的功能
 
@@ -61,12 +59,12 @@ ms.lasthandoff: 05/17/2017
 
 ### <a name="how-to-get-the-application-identifier-of-an-application"></a>如何取得應用程式的應用程式識別碼。
 
-1.    在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。
-2.    在 [軟體程式庫] 工作區中，展開 [應用程式管理]，然後按一下 [應用程式]。
-3.    在 [應用程式] 檢視中，以滑鼠右鍵按一下其中一個資料行標頭，然後從清單中選取 [CI 唯一識別碼]。 您會看到清單現在顯示每個應用程式的唯一識別碼。
-4.    請注意您想要提供連結之應用程式的 **CI 唯一識別碼**，例如︰**ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**
-5.    然後，移除接在應用程式 GUID 後方的所有文字，在此案例為 **/2**。 剩下的便是您的應用程式識別碼。
-6.    最後，在前面加上  **=**，以完成建構連結。 使用上述範例，最終連結顯示如下︰**Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**。
+1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。
+2.  在 [軟體程式庫] 工作區中，展開 [應用程式管理]，然後按一下 [應用程式]。
+3.  在 [應用程式] 檢視中，以滑鼠右鍵按一下其中一個資料行標頭，然後從清單中選取 [CI 唯一識別碼]。 您會看到清單現在顯示每個應用程式的唯一識別碼。
+4.  請注意您想要提供連結之應用程式的 **CI 唯一識別碼**，例如︰**ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f/2**
+5.  然後，移除接在應用程式 GUID 後方的所有文字，在此案例為 **/2**。 剩下的便是您的應用程式識別碼。
+6.  最後，在前面加上  **=**，以完成建構連結。 使用上述範例，最終連結顯示如下︰**Softwarecenter:SoftwareId= ScopeId_1672B0CD-912A-4613-9BAB-D4EF2696D416/Application_970b1fef-1f38-405c-ad37-c753400b895f**。
 
 終端使用者可使用此連結，開啟軟體中心並直接連至您指定的應用程式。
 
@@ -86,17 +84,17 @@ Technical Preview 1703 引入**設定 Azure 服務**精靈。 此精靈取代個
 
 對於 Technical Preview 1703 版，只有商務用 Windows 市集 (WSfB) 會使用此精靈進行設定。  其他雲端服務使用其個別工作流程進行設定。
 
--    使用本預覽主題中的資訊，取代最新分支主題[使用 System Center Configuration Manager 管理從商務用 Windows 市集購買的應用程式](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)的章節[設定商務用 Windows 市集同步處理](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#set-up-windows-store-for-business-synchronization)中的設定步驟資訊。
+-   使用本預覽主題中的資訊，取代最新分支主題[使用 System Center Configuration Manager 管理從商務用 Windows 市集購買的應用程式](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business)的章節[設定商務用 Windows 市集同步處理](/sccm/apps/deploy-use/manage-apps-from-the-windows-store-for-business#set-up-windows-store-for-business-synchronization)中的設定步驟資訊。
 
--    如需 Web 應用程式的詳細資訊，請參閱 [Azure App Service 中的驗證與授權](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview)，以及 [Web Apps 概觀](https://docs.microsoft.com/azure/app-service-web/app-service-web-overview)。
+-   如需 Web 應用程式的詳細資訊，請參閱 [Azure App Service 中的驗證與授權](https://docs.microsoft.com/azure/app-service/app-service-authentication-overview)，以及 [Web Apps 概觀](https://docs.microsoft.com/azure/app-service-web/app-service-web-overview)。
 
 ### <a name="prerequisites-and-planning"></a>必要條件與規劃
 設定 Configuration Manager 和商務用 Windows 市集之間的連線時，您必須提供一個資料夾來存放從市集同步處理的應用程式內容。 若要保障此資料夾的安全且其內容可順利部署到裝置，請確定下列權限都已就緒：
--    使用 **Computer$** 帳戶時，安裝服務連接點站台系統角色 (階層中的頂層站台) 的電腦，必須具有指定資料夾的讀取和寫入權限。  
+-   使用 **Computer$** 帳戶時，安裝服務連接點站台系統角色 (階層中的頂層站台) 的電腦，必須具有指定資料夾的讀取和寫入權限。  
 
--    應用程式作者必須具有指定資料夾的讀取權限。  
+-   應用程式作者必須具有指定資料夾的讀取權限。  
 
--    裝載 SMS 提供者執行個體的每部電腦，其 **Computer$** 帳戶必須能夠使用您指定的資料夾。
+-   裝載 SMS 提供者執行個體的每部電腦，其 **Computer$** 帳戶必須能夠使用您指定的資料夾。
 
 在 Azure Active Directory 中，將 Configuration Manager 註冊為 Web 應用程式或 Web API 管理工具。 這會建立您稍後所需的用戶端識別碼。
 
@@ -112,8 +110,8 @@ Technical Preview 1703 引入**設定 Azure 服務**精靈。 此精靈取代個
 
 5. 在 [伺服器應用程式] 視窗中選取您要使用的伺服器應用程式，然後按一下 [確定]。
 伺服器應用程式是 Azure Web 應用程式，內含您 Azure 帳戶的設定，包括租用戶識別碼、用戶端識別碼和用戶端的祕密金鑰。 如果您沒有可用的伺服器應用程式，請使用下列其中一項︰
-  -    **建立**︰若要建立新的伺服器應用程式，請按一下 [建立]。 提供應用程式和租用戶的易記名稱。 接著，您登入 Azure 後，Configuration Manager 會為您在 Azure 中建立 Web 應用程式，包括和 Web 應用程式搭配使用的用戶端識別碼及祕密金鑰。 您稍後可從 Azure 入口網站加以檢視。
-  -    **匯入**︰若要使用您 Azure 訂用帳戶中已存在的 Web 應用程式，請按一下 [匯入]。 提供應用程式與租用戶的易記名稱，然後針對您要讓 Configuration Manager 使用的 Azure Web 應用程式，為其指定租用戶識別碼、用戶端識別碼及祕密金鑰。 **驗證**資訊後，請按一下 [確定] 繼續。  </br></br>
+  - **建立**︰若要建立新的伺服器應用程式，請按一下 [建立]。 提供應用程式和租用戶的易記名稱。 接著，您登入 Azure 後，Configuration Manager 會為您在 Azure 中建立 Web 應用程式，包括和 Web 應用程式搭配使用的用戶端識別碼及祕密金鑰。 您稍後可從 Azure 入口網站加以檢視。
+  - **匯入**︰若要使用您 Azure 訂用帳戶中已存在的 Web 應用程式，請按一下 [匯入]。 提供應用程式與租用戶的易記名稱，然後針對您要讓 Configuration Manager 使用的 Azure Web 應用程式，為其指定租用戶識別碼、用戶端識別碼及祕密金鑰。 **驗證**資訊後，請按一下 [確定] 繼續。  </br></br>
 
 6. 檢閱 [資訊] 頁面，並依指示完成任何額外的步驟和設定。 搭配使用此服務與 Configuration Manager 需要這些設定。
 例如，若要設定 WSfB：

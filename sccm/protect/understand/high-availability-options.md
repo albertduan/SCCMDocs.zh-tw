@@ -6,19 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1a38421d-24c1-4fef-bf6c-42fce53109ac
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
 ms.openlocfilehash: d3e9afb90cdc85bc7299626b642c52be659e3bdf
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="high-availability-options-for-system-center-configuration-manager"></a>System Center Configuration Manager 的高可用性選項
 
@@ -61,7 +61,7 @@ ms.openlocfilehash: d3e9afb90cdc85bc7299626b642c52be659e3bdf
 -   [站台和站台系統必要條件](../../core/plan-design/configs/site-and-site-system-prerequisites.md)
 
 
-##  <a name="a-namebkmksnha-high-availability-for-sites-and-hierarchies"></a><a name="bkmk_snh"></a> 站台和階層的高可用性  
+##  <a name="bkmk_snh"></a> 站台和階層的高可用性  
  **使用 SQL Server 叢集裝載站台資料庫：**  
 
  當您將 SQL Server 叢集用於管理中心網站或次要站台的資料庫時，便會使用 SQL Server 內建的容錯轉移支援。  
@@ -86,7 +86,7 @@ ms.openlocfilehash: d3e9afb90cdc85bc7299626b642c52be659e3bdf
 
  **於站台安裝多個 SMS 提供者的執行個體：**SMS 提供者針對一或多個 Configuration Manager 主控台提供系統管理連絡點。 當您安裝多重 SMS 提供者時，可提供連絡點複本以管理站台和階層。  
 
-##  <a name="a-namebkmkssra-high-availability-for-site-system-roles"></a><a name="bkmk_ssr"></a> 站台系統角色的高可用性  
+##  <a name="bkmk_ssr"></a> 站台系統角色的高可用性  
  在各個站台，您可以部署站台系統角色以提供您要用戶端在該站台使用的服務。 站台資料庫中包含站台與所有用戶端的設定資訊。 使用一個或多個可用選項，提供站台資料庫的高可用性，如有必要也可提供站台與站台資料庫的復原。  
 
  **重要站台系統角色的複本**  
@@ -155,7 +155,7 @@ ms.openlocfilehash: d3e9afb90cdc85bc7299626b642c52be659e3bdf
 
  如需此用戶端設定與自動偵測運作方法的詳細資訊，請參閱[關於 System Center Configuration Manager 中的用戶端設定](../../core/clients/deploy/about-client-settings.md)主題中的[電腦代理程式](../../core/clients/deploy/about-client-settings.md#computer-agent)一節。  
 
-##  <a name="a-namebkmkclienta-high-availability-for-clients"></a><a name="bkmk_client"></a> 用戶端的高可用性  
+##  <a name="bkmk_client"></a> 用戶端的高可用性  
  **用戶端作業是自主性的：**  
 
  Configuration Manager 用戶端自主性包括下列各項︰  
@@ -200,7 +200,7 @@ ms.openlocfilehash: d3e9afb90cdc85bc7299626b642c52be659e3bdf
 
 -   用戶端電腦的失敗並不影響資料庫中所儲存的資訊完整性。 此資訊仍可供報告使用。  
 
-##  <a name="a-namebkmknonhaoptionsa-options-for-sites-and-site-system-roles-that-are-not-highly-available"></a><a name="bkmk_nonHAoptions"></a> 不具高度可用性的站台與站台系統角色的選項  
+##  <a name="bkmk_nonHAoptions"></a> 不具高度可用性的站台與站台系統角色的選項  
  某些站台系統並不支援站台或階層內的多個執行個體。 此資訊可協助您準備這些要離線的站台系統。  
 
  **站台伺服器 (站台)：**  
@@ -261,9 +261,3 @@ ms.openlocfilehash: d3e9afb90cdc85bc7299626b642c52be659e3bdf
 
 ### <a name="see-also"></a>請參閱  
  [System Center Configuration Manager 的支援設定](../../core/plan-design/configs/supported-configurations.md)
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

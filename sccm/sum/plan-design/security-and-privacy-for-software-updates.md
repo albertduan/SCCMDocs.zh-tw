@@ -1,5 +1,4 @@
 ---
-
 title: "軟體更新的安全性和隱私權 | Microsoft Docs"
 description: "遵循軟體更新安全性的這些最佳作法，並深入了解 Configuration Manager 如何處理隱私權資訊。"
 keywords: 
@@ -10,15 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 41d6d5d8-ba84-4efb-b105-4d1eed239824
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 4b4f045138abc14b6e93b3b990c5f3a8b4f2f952
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager 中軟體更新的安全性和隱私權
 
@@ -26,7 +23,7 @@ ms.openlocfilehash: 4b4f045138abc14b6e93b3b990c5f3a8b4f2f952
 
 本主題包含 System Center Configuration Manager 的軟體更新安全性和隱私權資訊。  
 
-##  <a name="a-namebkmksecurityhardwareinventorya-security-best-practices-for-software-updates"></a><a name="BKMK_Security_HardwareInventory"></a> 軟體更新的安全性最佳做法  
+##  <a name="BKMK_Security_HardwareInventory"></a> 軟體更新的安全性最佳做法  
  為用戶端部署軟體更新時，請參閱下列安全性最佳作法：  
 
 -   請勿變更軟體更新套件的預設權限。  
@@ -62,7 +59,7 @@ ms.openlocfilehash: 4b4f045138abc14b6e93b3b990c5f3a8b4f2f952
 
      如需詳細資訊，請參閱[將 WSUS 設定為使用自訂網站](plan-for-software-updates.md#BKMK_CustomWebSite)。  
 
-##  <a name="a-namebkmkprivacyhardwareinventorya-privacy-information-for-software-updates"></a><a name="BKMK_Privacy_HardwareInventory"></a> 軟體更新的隱私權資訊  
+##  <a name="BKMK_Privacy_HardwareInventory"></a> 軟體更新的隱私權資訊  
  軟體更新會掃描用戶端電腦以判定所需的軟體更新，再將資訊傳回站台資料庫。 軟體更新期間，Configuration Manager 可能會在用戶端和伺服器之間傳送可識別電腦與登入帳戶的資訊。  
 
  Configuration Manager 會保存軟體部署程序的相關資訊。 傳送或儲存時均不會加密狀態資訊。 狀態資訊儲存在 Configuration Manager 資料庫中，由資料庫維護工作進行刪除。 所有狀態資訊皆不會傳送給 Microsoft。  
@@ -72,9 +69,3 @@ ms.openlocfilehash: 4b4f045138abc14b6e93b3b990c5f3a8b4f2f952
  Configuration Manager 預設不會實作軟體更新，而且在收集資訊之前必須執行數個設定步驟。  
 
  設定軟體更新之前，請考慮您的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

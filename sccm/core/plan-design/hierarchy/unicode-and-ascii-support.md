@@ -6,23 +6,20 @@ ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2bdec799-905f-48bc-aed5-2d92134739e8
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: b35e747c8c297d61bb549b9767c4318f51e5fdb4
 ms.openlocfilehash: 18f1c64c1f27001a0fdfbab4236d09a5bc279272
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="unicode-and-ascii-support-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的 Unicode 和 ASCII 支援
 
@@ -146,4 +143,3 @@ System Center Configuration Manager 會使用 Unicode 字元建立大部分的�
  Configuration Manager 資料庫支援多數已儲存物件使用的 Unicode，如果可以，會以符合電腦地區設定的作業系統語言顯示此項資訊。 電腦的地區設定必須與安裝在站台之用戶端或伺服器語言一致，用戶端介面或 Configuration Manager 主控台才能以該電腦的作業系統語言顯示資訊。  
 
  不過，有幾個 Configuration Manager 物件並不支援 Unicode，而是使用 ASCII 儲存在資料庫中，或者有其他語言限制。 這項資訊一律會使用 ASCII 字元集或建立該物件時所使用的語言顯示。  
-

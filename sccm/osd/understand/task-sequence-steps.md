@@ -6,22 +6,20 @@ ms.date: 03/26/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7c888a6f-8e37-4be5-8edb-832b218f266d
-caps.latest.revision: 26
-caps.handback.revision: 0
+caps.latest.revision: "26"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: b7461f89f483314bd07248bbc9d5dde85ca6b6c2
 ms.openlocfilehash: e0726febc4c36a26c5e067914734838bf2681e6c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/03/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的工作順序步驟
 
@@ -1707,4 +1705,3 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
  指定安裝程式是否將執行動態更新作業，例如搜尋、下載及安裝更新 (對應至 /DynamicUpdate 命令列選項)。 這項設定與 Configuration Manager 軟體更新不相容，但可在使用 WSUS (獨立) 或 Windows Update 處理更新時加以啟用。  
 
  **覆寫原則並使用預設的 Microsoft Update**：選取這項設定可即時暫時覆寫本機原則，以執行動態更新作業，並讓電腦從 Windows Update 取得更新。  
-

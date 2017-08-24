@@ -8,18 +8,17 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.assetid: 6d665cef-fc67-4686-bcb3-0572c0a3760c
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
 ms.openlocfilehash: 73bb5d4236469746102fd4893c53f20aaee122d5
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="online-documentation-for-system-center-configuration-manager"></a>System Center Configuration Manager 的線上文件
 
@@ -102,9 +101,3 @@ ms.openlocfilehash: 73bb5d4236469746102fd4893c53f20aaee122d5
 **協助工具：** 如需有助於殘障人士更方便使用 Configuration Manager 之功能、產品及服務的相關資訊，請參閱 [Configuration Manager 的協助工具功能](http://go.microsoft.com/fwlink/p/?LinkId=258586)。  
 
 **可下載的文件：** 可以從 [Microsoft 下載中心下載此技術文件的複本](http://go.microsoft.com/fwlink/?LinkId=253643)的資訊一致。 請使用線上 TechNet 技術文件庫來取得最新的資訊。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

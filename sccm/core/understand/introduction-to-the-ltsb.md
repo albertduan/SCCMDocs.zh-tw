@@ -6,22 +6,19 @@ ms.date: 05/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 694bc29f-a7fd-4e06-815a-1a9c5e9ac563
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d940fd1bbf96767d44f8c55315e814be55a83897
 ms.openlocfilehash: 91c1ca860069c6ebe0d20230c4620bf3f68735a2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-the-long-term-servicing-branch-of-system-center-configuration-manager"></a>System Center Configuration Manager 的長期維護分支簡介
 
@@ -55,10 +52,10 @@ Configuration Manager 的最新分支支援下列使用 LTSB 時無法取得的�
 ## <a name="find-documentation-for-the-ltsb"></a>尋找 LTSB 的文件
 LTSB 是以最新分支 1606 版為基礎。 如需產品文件，請使用[最新分支文件](https://docs.microsoft.com/sccm/)，其中有 LTSB 特定的注意事項與限制。 那些注意事項與限制可在下列線上主題中找到：
 
--      [長期維護分支簡介](introduction-to-the-ltsb.md)：(本主題)
--      [安裝長期維護分支](install-the-ltsb.md)
--      [將長期維護分支升級至最新分支](convert-to-current-branch.md)
--      [支援的長期維護分支設定](supported-configurations-for-ltsb.md)
+-     [長期維護分支簡介](introduction-to-the-ltsb.md)：(本主題)
+-     [安裝長期維護分支](install-the-ltsb.md)
+-     [將長期維護分支升級至最新分支](convert-to-current-branch.md)
+-     [支援的長期維護分支設定](supported-configurations-for-ltsb.md)
 -   [管理 Configuration Manager 的長期維護分支](manage-the-ltsb.md)
 
 當您針對 LTSB 參考最新分支文件時，適用於 1606 版的詳細資料也會適用於 LTSB。 LTSB 不支援 1610 版或更新版本中推出的功能或詳細資料。
@@ -78,4 +75,3 @@ LTSB 是以最新分支 1606 版為基礎。 如需產品文件，請使用[最�
 如果您認為 Configuration Manager LTSB 是適合您環境的正確分支，請[安裝新的 LTSB](/sccm/core/understand/install-the-ltsb#install-a-new-site) 站台做為新階層的一部分，或[升級 System Center 2012 Configuration Manager 站台](/sccm/core/understand/install-the-ltsb#upgrade-from-system-center-2012-configuration-manager)和階層。
 
 如果您沒有安裝媒體，請參閱 [System Center 2016 文件](https://technet.microsoft.com/system-center-docs/system-center)以了解如何取得 System Center 2016，其中包含可用來安裝 System Center Configuration Manager LTSB 的媒體。  
-

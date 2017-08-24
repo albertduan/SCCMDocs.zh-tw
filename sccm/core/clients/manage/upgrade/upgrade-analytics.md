@@ -9,17 +9,14 @@ ms.date: 7/31/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: 68407ab8-c205-44ed-9deb-ff5714451624
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: b1f4cd4a6f19a02d2b2dc3f9a841aeeb2a1403dd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="integrate-upgrade-readiness-with-system-center-configuration-manager"></a>整合 Upgrade Readiness 與 System Center Configuration Manager
 
 適用於：System Center Configuration Manager (最新分支)
@@ -143,4 +140,3 @@ Upgrade Readiness 部署指令碼執行下列動作︰
 
     > [!NOTE]
     > 您必須將 Upgrade Readiness 連線至階層中的頂層站台。 如果您將 Upgrade Readiness 連線至獨立主要站台，然後將管理中心網站新增至環境，則必須在新的階層內刪除並重新建立 OMS 連線。
-

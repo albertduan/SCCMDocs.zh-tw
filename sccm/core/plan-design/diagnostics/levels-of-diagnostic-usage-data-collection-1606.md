@@ -6,12 +6,11 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f7350d03-f440-4744-82d4-75f8c6c25028
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
@@ -33,10 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 688e05aae0e0b15b54835f8d64a98487f4d7b64d
 ms.openlocfilehash: 27eb4225b7e907772fa5ed8b209fc04fa9f3a677
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 1606 版的診斷使用方式資料收集層級
 
@@ -50,12 +50,12 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 > [!IMPORTANT]
 >  Configuration Manager 不會收集「基本」層級或「增強」層級中的站台碼、站台名稱、IP 位址、使用者名稱、電腦名稱、實體位址或電子郵件地址。 而在「完整」層級中收集到的任何上述資訊並不具有目的性；因為這些資訊可能包含在記錄檔或記憶體快照等進階診斷資訊中。 Microsoft 不會將這項資訊用於廣告目的，亦不會用來辨識您的身分或與您連絡。
 
-##  <a name="a-namebkmkchangea-how-to-change-the-level"></a><a name="bkmk_change"></a> 如何變更層級
+##  <a name="bkmk_change"></a> 如何變更層級
  如果系統管理員具有以角色為基礎的系統管理範圍 (包含 [站台] 物件類別的 [修改] 權限)，則可以變更 Configuration Manager 主控台中 [診斷及使用方式資料] 設定所收集的資料層級。
 
    若要這麼做，請在主控台中移至 [Backstage] 索引標籤 (左上角含下拉式箭頭的索引標籤)，並選取 [使用方式資料]，然後選取您要使用的資料層級。  
 
-##  <a name="a-namebkmklevel1a-level-1---basic"></a><a name="bkmk_level1"></a> 層級 1 - 基本
+##  <a name="bkmk_level1"></a> 層級 1 - 基本
  「基本」層級包含您階層的相關資料，我們必須要有這些資料才能協助改善安裝或升級體驗，以及協助判斷哪些 Configuration Manager 更新適用於您的階層。
 
  從 System Center Configuration Manager 1606 版開始，這個層級包含下列項目：
@@ -111,7 +111,7 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 - ***[新增]*** SQL 版本、Service Pack 層級、版本、定序識別碼和字元集
 
 
-##  <a name="a-namebkmklevel2a-level-2---enhanced"></a><a name="bkmk_level2"></a> 層級 2 - 增強
+##  <a name="bkmk_level2"></a> 層級 2 - 增強
 「增強」層級是安裝完成後的預設值。 這個層級包含在「基本」層級中收集的資料以及功能的特定資料 (使用的頻率和持續時間)、Configuration Manager 用戶端設定 (元件名稱、狀態、輪詢間隔等特定設定) 和軟體更新的基本資訊。
 
 建議使用這個層級，因為它會提供 Microsoft 必要的基本資料，以在未來的產品和服務版本中做出實用的改進。 這個層級不會收集物件名稱 (站台、使用者、電腦或物件)、安全性相關物件的詳細資料或漏洞 (例如需要軟體更新的系統計數)。
@@ -374,7 +374,7 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 
 
 
-##  <a name="a-namebkmklevel3a-level-3---full"></a><a name="bkmk_level3"></a> 層級 3 - 完整
+##  <a name="bkmk_level3"></a> 層級 3 - 完整
 「完整」層級包含「基本」和「增強」層級中的所有資料。 它也包含 Endpoint Protection、更新相容性百分比和軟體更新資訊的其他資訊。 這個層級也會包含進階診斷資訊 (例如系統檔案和記憶體快照)，其中可能含有擷取時存在於記憶體或記錄檔中的個人資訊。
 
 從 System Center Configuration Manager 1606 版開始，這個層級包含下列項目：
@@ -419,9 +419,3 @@ System Center Configuration Manager 1606 版會收集三種層級的診斷及使
 -   ***[新增]*** ATP 健全狀況摘要
 
 -   ***[新增]*** 詳細的用戶端部署安裝錯誤
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

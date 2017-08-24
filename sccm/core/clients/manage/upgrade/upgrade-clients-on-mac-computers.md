@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 74c60941-5eae-4905-9e58-252bdb39df96
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 3743c80b0c2b5142f3a537ba3855ffd14794d42b
-ms.openlocfilehash: 6bdc5cca01bf5a79a6177d7cf1de96b8ff2c2305
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 502116b66fc14914ca0606ae416e82202824de7a
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-upgrade-clients-on-mac-computers-in-system-center-configuration-manager"></a>如何升級 System Center Configuration Manager 中 Mac 電腦上的用戶端
 
@@ -104,4 +101,3 @@ ms.lasthandoff: 01/24/2017
 -   將設定項目新增至設定基準，然後將設定基準部署至所有安裝獨立於 Configuration Manager 之憑證的 Mac 電腦。  
 
  如需如何建立和部署 Mac 電腦設定項目的詳細資訊，請參閱[如何為 System Center Configuration Manager 用戶端所管理的 Mac OS X 裝置建立設定項目](../../../../compliance/deploy-use/create-configuration-items-for-mac-os-x-devices-managed-with-the-client.md)和[如何在 System Center Configuration Manager 中部署設定基準](../../../../compliance/deploy-use/deploy-configuration-baselines.md)。  
-

@@ -6,22 +6,19 @@ ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ae72df4b-5f5d-4e19-9052-bda28edfbace
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a181171cc1a92ec4519f4e4b34ca3274a0aa0440
 ms.openlocfilehash: 1c9e7ada6a8aa228b30e58865baae0f6e529e6af
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="learn-how-clients-find-site-resources-and-services-for-system-center-configuration-manager"></a>了解用戶端如何找到 System Center Configuration Manager 的站台資源和服務
 
@@ -251,4 +248,3 @@ Configuration Manager 支援服務位置記錄的 RFC 2782。 這些記錄的格
 根據預設，主要網站會在網站上將針對 HTTP 和 HTTPS 設定的第一個管理點發佈到 WINS。  
 
 如果您不想讓用戶端找到 WINS 中的 HTTP 管理點，請使用 CCMSetup.exe Client.msi 內容 **SMSDIRECTORYLOOKUP=NOWINS**來設定用戶端。  
-

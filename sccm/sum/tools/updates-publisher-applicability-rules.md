@@ -6,24 +6,21 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3cf0c2cd-397a-4622-b11c-961f334fb7d7
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
 ms.openlocfilehash: 2925abda07abaa46ad56b9b433ce003c22aede5e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="manage-applicability-rules-in-updates-publisher"></a>管理 Updates Publisher 中的適用性規則
 
 *適用於：System Center Updates Publisher*
@@ -94,4 +91,3 @@ ms.lasthandoff: 05/17/2017
 若要刪除已儲存的適用性規則，請從 [規則工作區] 的 [我的已儲存規則] 清單中選取規則或規則集，然後從功能區選擇 [刪除]。 這會從 Updates Publisher 移除已儲存規則或規則集。
 
 若要刪除特定更新中的規則，您必須[編輯更新](/sccm/sum/tools/manage-updates-with-updates-publisher#edit-updates-and-bundles)。
-

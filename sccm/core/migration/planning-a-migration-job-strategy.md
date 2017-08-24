@@ -6,23 +6,21 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a70bfbd4-757a-4468-9312-1c3b373ef9fc
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex
-translationtype: Human Translation
-ms.sourcegitcommit: cc0c1075af370b6190cbb269665d4a09e756ab4e
 ms.openlocfilehash: 4c83540db763bea039a92633a1d1a808e60e27ad
-ms.lasthandoff: 01/04/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-a-migration-job-strategy-in-system-center-configuration-manager"></a>規劃 System Center Configuration Manager 中的移轉作業策略
 
@@ -323,4 +321,3 @@ ms.lasthandoff: 01/04/2017
 
 > [!NOTE]  
 >  此移轉作業可識別由來源階層自動更新的物件以及由系統管理使用者更新的物件。  
-

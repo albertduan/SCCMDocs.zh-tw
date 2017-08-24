@@ -5,21 +5,19 @@ ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ed931751-18f2-4230-a09e-a0a329fbfa1c
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: 442e5e1fbddd00248819a8de79adc78929474fc0
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="about-discovery-methods-for-system-center-configuration-manager"></a>關於 System Center Configuration Manager 的探索方法
 
@@ -525,4 +523,3 @@ Azure AD 使用者探索的動作，會記錄在位於階層頂層站台伺服�
 每種探索方法都支援可探索的唯一 Active Directory 屬性清單。  
 
 您可以在 [Active Directory 系統探索內容] 和 [Active Directory 使用者探索內容] 對話方塊中的 [Active Directory 屬性] 索引標籤上，檢視及設定自訂屬性的清單。  
-

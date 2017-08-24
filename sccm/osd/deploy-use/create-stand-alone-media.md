@@ -6,23 +6,20 @@ ms.date: 06/07/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c6b9ccd2-78d9-4f0e-b25a-70d0866300ba
-caps.latest.revision: 21
-caps.handback.revision: 0
+caps.latest.revision: "21"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
 ms.openlocfilehash: 98f902429ad1b9965a0dc4cc2e1bd071ad5c0779
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-stand-alone-media-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立獨立媒體
 
@@ -176,4 +173,3 @@ Configuration Manager 中的獨立媒體包含在未連線至 Configuration Mana
 |[安裝套件]|使用此工作順序步驟來安裝 Configuration Manager 用戶端軟體。 Configuration Manager 會安裝並註冊 Configuration Manager 用戶端 GUID。 您可以在 **[安裝內容]** 視窗中指派必要的安裝參數。|  
 |還原使用者檔案和設定 - **(新工作順序群組)**|建立另一個工作序列子群組。 這個子群組包含還原使用者狀態所需的步驟。|  
 |還原使用者狀態|您可以使用此工作順序步驟來起始使用者狀態移轉工具 (USMT) 從擷取使用者狀態動作的使用者狀態和已擷取的設定還原至目的電腦。|  
-

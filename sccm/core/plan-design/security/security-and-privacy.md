@@ -6,20 +6,19 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e18be4d1-9f6e-477c-a79d-c46014b4a03a
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: b470aee50669bcded176d55d8b1496768d1f3cde
 ms.openlocfilehash: de9df79c7adc24b415fd1be6e45a42aec7e16f9a
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-system-center-configuration-manager"></a>Security and privacy for System Center Configuration Manager (System Center Configuration Manager 的安全性和隱私權)
 
@@ -73,9 +72,3 @@ ms.openlocfilehash: de9df79c7adc24b415fd1be6e45a42aec7e16f9a
 -   [System Center Configuration Manager 中使用的連接埠](../../../core/plan-design/hierarchy/ports.md)  
 
 -   [System Center Configuration Manager 中使用的帳戶](../../../core/plan-design/hierarchy/accounts.md)  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -6,22 +6,19 @@ ms.date: 05/01/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 8da2887a-fd8e-438c-b926-849c121f7fdf
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
 ms.openlocfilehash: 9c6f349ead906532a7a58df74609de976769e251
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-the-long-term-servicing-branch-of-configuration-manager"></a>管理 Configuration Manager 的長期維護分支
 
@@ -57,4 +54,3 @@ LTSB 僅提供重大安全性更新的主控台內更新。
 
 ## <a name="recovery"></a>復原
 當您復原站台時，必須將站台或站台資料庫還原為其原始分支。 您無法將最新分支站台資料庫復原為 LTSB 安裝，反之亦然。
-

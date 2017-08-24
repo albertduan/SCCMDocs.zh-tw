@@ -6,23 +6,20 @@ ms.date: 4/19/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f338e4db-73b5-45ff-92f4-1b89a8ded989
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: lleonard-msft
-caps.handback.revision: 0
+caps.handback.revision: "0"
 ms.author: alleonar
 ms.manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7a6c89254d01f4074e5c170b20338686178ebdd3
 ms.openlocfilehash: 359fcfd9754fb5c81763bc44cac45376ea3ab0b8
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-vpn-profiles-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中建立 VPN 設定檔
 
@@ -41,9 +38,9 @@ ms.lasthandoff: 05/17/2017
 
 1.  完成 [一般] 頁面。 ，並注意下列事項：  
 
-       - 請勿在 VPN 設定檔名稱中使用字元 \\/:*?&lt;>&#124;, 或空格字元。 Windows Server VPN 設定檔不支援這些字元。  
+    - 請勿在 VPN 設定檔名稱中使用字元 \\/:*?&lt;>&#124;, 或空格字元。 Windows Server VPN 設定檔不支援這些字元。  
 
-       -   選取 [從檔案匯入現有的 VPN 設定檔項目] 匯入已匯出至 XML 檔案的 VPN 設定檔資訊 (僅限 Windows 8.1 和 Windows RT)。  
+     -   選取 [從檔案匯入現有的 VPN 設定檔項目] 匯入已匯出至 XML 檔案的 VPN 設定檔資訊 (僅限 Windows 8.1 和 Windows RT)。  
 
 1.  在 [連線] 頁面上，指定：  
 
@@ -79,4 +76,3 @@ ms.lasthandoff: 05/17/2017
 - 針對協力廠商 VPN 連線，請先發佈 VPN 應用程式，再部署 VPN 設定檔。 如果您未部署應用程式，則系統會在使用者嘗試連線至 VPN 時提示他們執行此動作。 若要了解如何部署應用程式，請參閱[使用 System Center Configuration Manager 部署應用程式](../../apps/deploy-use/deploy-applications.md)。
 
 - 部署 VPN 設定檔 (如[如何在 System Center Configuration Manager 中部署設定檔](deploy-wifi-vpn-email-cert-profiles.md)中所述)。  
-

@@ -6,23 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 02979fb8-ea7e-4ec6-b7e0-ecbfda73e52d
-caps.latest.revision: 9
-caps.handback.revision: 0
+caps.latest.revision: "9"
+caps.handback.revision: "0"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 507bad02c6e028f09a8b0c8a566ac55f7c3942a5
 ms.openlocfilehash: 544c3bea0c7df96887ee1717f061c39c64b82d01
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-on-premises-mobile-device-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的內部部署行動裝置管理規劃
 
@@ -122,4 +119,3 @@ ms.lasthandoff: 05/17/2017
 -   [設定 System Center Configuration Manager 中內部部署行動裝置管理的裝置註冊](../../mdm/get-started/set-up-device-enrollment-on-premises-mdm.md)  
 
 -   [在 System Center Configuration Manager 中註冊裝置以進行內部行動裝置管理](../../mdm/deploy-use/enroll-devices-on-premises-mdm.md)  
-

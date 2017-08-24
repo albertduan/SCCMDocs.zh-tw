@@ -6,22 +6,19 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0a2d6c3f-a4e4-4c19-b087-3caada480de9
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1b9e49da1a5bbfca93fe683b82d2c0056a22cc1f
 ms.openlocfilehash: ddf2ad1cae51c1e36df5a6d86822e2b9abe604e2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="fundamentals-of-role-based-administration-for-system-center-configuration-manager"></a>System Center Configuration Manager 以角色為基礎之系統管理的基礎
 
@@ -214,4 +211,3 @@ ms.lasthandoff: 05/17/2017
 -   不同的系統管理使用者針對某些物件類型的執行個體需要不同的存取權限。 例如，某個系統管理使用者群組需要特定軟體更新群組的 [讀取] 權限，另一個系統管理使用者群組則需要其他軟體更新群組的 [修改] 和 [刪除] 權限。 針對這些軟體更新群組建立不同的安全性範圍。  
 
 如需如何針對以角色為基礎的系統管理來設定安全性範圍的詳細資訊，請參閱[為 System Center Configuration Manager 設定以角色為基礎的系統管理](../../core/servers/deploy/configure/configure-role-based-administration.md)主題中的[設定物件的安全性範圍](../../core/servers/deploy/configure/configure-role-based-administration.md#BKMK_ConfigSecScope)。  
-

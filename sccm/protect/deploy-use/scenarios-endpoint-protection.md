@@ -10,19 +10,16 @@ ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 539c7a89-3c03-4571-9cb4-02d455064eeb
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: af0aafb4b7209d840676d16723509f399c662aad
 ms.openlocfilehash: b98684d44874ff246e4d675039c6e443aee82a62
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="example-scenario-using-system-center-endpoint-protection-to-protect-computers-from-malware-in-system-center-configuration-manager"></a>範例案例: 使用 System Center Endpoint Protection 保護電腦免受 System Center Configuration Manager 中惡意程式碼的威脅
 
 適用於：System Center Configuration Manager (最新分支)
@@ -77,4 +74,3 @@ ms.lasthandoff: 05/17/2017
 |John 使用下列方法來監視 Endpoint Protection 的狀態，以及 Endpoint Protection 所採取的動作：<br /><br /> 1) 使用 [監視] 工作區中 [安全性] 下的 [Endpoint Protection 狀態] 節點。<br /><br /> 2) 使用 [資產與相容性] 工作區中的 [Endpoint Protection] 節點。<br /><br /> 3) 使用 Configuration Manager 的內建報告。|請參閱[如何監視 System Center Configuration Manager 中的 Endpoint Protection](monitor-endpoint-protection.md)。|  
 
  根據公司給 John 的業務需求，他向主管回報已成功實作 Endpoint Protection，並確認 Woodgrove Bank 的電腦現已受保護可免受反惡意程式的威脅。
-

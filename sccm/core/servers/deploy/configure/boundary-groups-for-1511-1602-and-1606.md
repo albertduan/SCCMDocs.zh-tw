@@ -6,21 +6,19 @@ ms.date: 2/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: dec1e0d7-5864-43a8-9f56-413923b3914e
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
-ms.openlocfilehash: 640cdc67f301a81a45bf27f95eb03cbc8754a9aa
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.openlocfilehash: 311606b8d52645d3ca89642be4cc341b8a64ec56
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="boundary-groups-for-system-center-configuration-manager-version-1511-1602-and-1606"></a>System Center Configuration Manager 1511、1602 和 1606 版的界限群組
 
@@ -175,4 +173,3 @@ ms.lasthandoff: 05/17/2017
  根據預設，網路連線速度會設為 [快]，但您可以將其變更為 [慢]。 網路連線速度和部署設定，檢查用戶端是否可以在用戶端位在已建立關聯的界限群組時，從發佈點下載內容。  
 
  如需網路連線速度設定如何影響取得內容方式的詳細資訊，請參閱[內容來源位置案例](../../../../core/plan-design/hierarchy/content-source-location-scenarios.md)。  
-

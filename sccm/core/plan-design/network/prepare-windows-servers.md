@@ -6,23 +6,20 @@ ms.date: 2/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 2aca914f-641e-4bc8-98d4-bbf0a2a5276f
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dd102603356864add4084c6881c39bebcbd635f2
 ms.openlocfilehash: 9b97dedb5d2be0bd2e47260033e6e4361467dc4e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prepare-windows-servers-to-support-system-center-configuration-manager"></a>準備 Windows 伺服器以支援 System Center Configuration Manager
 
@@ -142,4 +139,3 @@ ms.lasthandoff: 05/17/2017
  - PROPFIND
 
 如需設定要求篩選的相關資訊，請參閱 TechNet 上的[在 IIS 中設定要求篩選](https://technet.microsoft.com/library/hh831621.aspx#Verbs)，或適用於裝載管理點的 Windows Server 版本的類似文件。
-

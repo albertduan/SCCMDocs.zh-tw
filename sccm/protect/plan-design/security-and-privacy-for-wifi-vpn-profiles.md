@@ -6,21 +6,20 @@ ms.date: 12/28/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ef3ab519-9cf7-47fc-8831-d400e0e96df8
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
 ms.openlocfilehash: 6d1d0a393a2ce614ae5f819475bd47b05e699b45
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-wi-fi-and-vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager 中 Wi-Fi 和 VPN 設定檔的安全性和隱私權
 
@@ -39,9 +38,3 @@ ms.openlocfilehash: 6d1d0a393a2ce614ae5f819475bd47b05e699b45
  根據預設，裝置不會評估 Wi-Fi 和 VPN 設定檔。 此外，您必須設定設定檔，然後將其部署至使用者。  
 
  設定 Wi-Fi 或 VPN 設定檔之前，請考慮您的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

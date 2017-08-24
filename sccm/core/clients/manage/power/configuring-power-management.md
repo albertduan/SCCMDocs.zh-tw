@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 435c923c-ea30-4dce-8afd-48962ed85502
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
 ms.openlocfilehash: e111ac2545dd9e0b96a50c10246bb75d286a737a
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configuring-power-management-in-system-center-configuration-manager"></a>設定 System Center Configuration Manager 的電源管理
 
@@ -85,9 +84,3 @@ ms.openlocfilehash: e111ac2545dd9e0b96a50c10246bb75d286a737a
 4.  在 [<集合名稱\> 內容] 對話方塊的 [電源管理] 索引標籤中，選取 [絕不套用電源管理設定到此集合中的電腦]。  
 
 5.  按一下 [確定] 關閉 [<集合名稱\> 內容] 對話方塊並儲存設定。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

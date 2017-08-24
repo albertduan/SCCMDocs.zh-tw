@@ -1,5 +1,4 @@
 ---
-
 title: "管理軟體更新同步處理 | Microsoft Docs"
 description: "使用下列步驟，以排程軟體更新同步處理、手動啟動軟體更新同步處理，以及監視軟體更新同步處理。"
 keywords: 
@@ -10,18 +9,15 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: ea8698c4-9df5-4cf5-8b62-ab93115b4769
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: e68170a16a6a908e035247ed9c0f3cc6cdbe1983
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
-#  <a name="a-namebkmksumsynca-synchronize-software-updates"></a><a name="BKMK_SUMSync"></a> 同步處理軟體更新
+#  <a name="BKMK_SUMSync"></a> 同步處理軟體更新
 
 適用於：System Center Configuration Manager (最新分支)
 
@@ -80,9 +76,3 @@ ms.openlocfilehash: e68170a16a6a908e035247ed9c0f3cc6cdbe1983
 在您第一次同步處理軟體更新之後，或有新的分類或產品可用之後，必須[設定新的分類和產品](configure-classifications-and-products.md)，使用新的準則來同步處理軟體更新。
 
 使用您需要的準則同步處理軟體更新之後，請[管理軟體更新的設定](manage-settings-for-software-updates.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

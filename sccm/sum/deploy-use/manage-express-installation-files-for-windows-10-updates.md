@@ -9,17 +9,14 @@ ms.date: 03/24/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: b8d8af88-e8ac-4deb-921b-975e2d2afd80
-ms.translationtype: HT
-ms.sourcegitcommit: 1035dbbf944a3a467d637a4a948a75b0946eb711
 ms.openlocfilehash: baffb5f026bd63c50f878214e71d2c9e9b8b51c2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/11/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="manage-express-installation-files-for-windows-10-updates"></a>管理適用於 Windows 10 更新的快速安裝檔案
 從 Configuration Manager 1702 版開始，Configuration Manager 支援適用於 Windows 10 更新的快速安裝檔案。 當您使用支援的 Windows 10 版本時，您可以使用 Configuration Manager 設定來只下載目前月份的「Windows 10 累積更新」與上個月更新之間的變更。 如果沒有快速安裝檔案，Configuration Manager 就會每月下載完整的「Windows 10 累積更新」(包括先前月份的所有更新)。 使用快速安裝檔案可在用戶端提供較小的下載項目及更快速的安裝時間。
 
@@ -44,4 +41,3 @@ ms.lasthandoff: 07/11/2017
 2.  在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [用戶端設定]。
 3.  選取適當的用戶端設定，然後在 [首頁]索引標籤上，按一下 [內容]。
 4.  選取 [軟體更新] 頁面，在 [啟用安裝用戶端上的 Express Updates] 設定中設定 [是]，然後在 [Port used to download content for Express Updates]\(連接埠, 用來下載 Express Updates 的內容) 設定中設定用戶端上的 HTTP 接聽程式所使用的連接埠。
-

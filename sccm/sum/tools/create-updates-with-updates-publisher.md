@@ -6,22 +6,20 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 46a1a8ac-126c-4ee6-ae09-32dfbdb83368
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c8717925dba42451b1e241a7c2f59e43896d7d99
 ms.openlocfilehash: 98e490d7f5ca17dcf2a0aaa848f14e789f214123
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/19/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create--software-updates-and-update-bundles-with-updates-publisher"></a>使用 Updates Publisher 建立軟體更新與更新配套
 
@@ -193,4 +191,3 @@ ms.lasthandoff: 06/19/2017
 7.  在 [成員] 頁面上，選取要新增至更新配套的更新。 僅可以使用您所建立或匯入到 Updates Publisher 的更新。
 
 當精靈完成時，新的更新配套會新增至 [更新工作區] 中的一個節點，它是由您針對該更新配套所使用的 [廠商] 名稱來識別。
-

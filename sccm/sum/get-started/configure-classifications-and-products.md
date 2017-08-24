@@ -9,15 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 5ddde4e6-d553-4182-b752-6bc8b4a26745
-ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
 ms.openlocfilehash: 2da61e6e06850b36543b9fd41bd9a7d2368006fb
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/04/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 #  <a name="configure-classifications-and-products-to-synchronize"></a>設定要同步處理的分類和產品  
 
@@ -70,4 +68,3 @@ ms.lasthandoff: 08/04/2017
 
 ## <a name="next-steps"></a>後續步驟
 開始軟體更新同步處理，根據新準則擷取軟體更新。 如需詳細資訊，請參閱[同步處理軟體更新](synchronize-software-updates.md)。
-

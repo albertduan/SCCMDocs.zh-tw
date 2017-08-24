@@ -6,23 +6,20 @@ ms.date: 3/8/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 68dc6acd-5848-47a4-b4c1-ffa40e47890b
-caps.latest.revision: 16
-caps.handback.revision: 0
+caps.latest.revision: "16"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d94acac84f052a01de9d9c9f65f237c0006c45b8
 ms.openlocfilehash: a2d4420c2274a9b1ceb47ffd267849fdb5a55a61
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="reference-for-maintenance-tasks-for-system-center-configuration-manager"></a>System Center Configuration Manager 的維護工作參考
 
@@ -56,7 +53,7 @@ ms.lasthandoff: 05/17/2017
 
 **刪除過時用戶端下載歷程記錄**：使用此工作可刪除有關用戶端所使用下載來源的歷史資料。 下載來源資訊會用來填入[用戶端資料來源儀表板](/sccm/core/servers/deploy/configure/monitor-content-you-have-distributed#client-data-sources-dashboard)。  
 -  管理中心網站 - 無法使用
--     **主要站台** - 已啟用
+-    **主要站台** - 已啟用
 -  次要站台 - 無法使用
 
 **刪除過時用戶端操作**：使用此工作可從站台資料庫中，刪除過時的用戶端操作資料。 比方說，這包括過時或過期的用戶端通知資料 (例如電腦或使用者原則的下載要求)，以及 Endpoint Protection 資料 (例如系統管理使用者要讓用戶端執行掃描或下載更新定義的要求)。
@@ -311,4 +308,3 @@ ms.lasthandoff: 05/17/2017
 -   管理中心網站：無法使用    
 -   **主要站台**：已啟用    
 -   次要站台：無法使用  
-

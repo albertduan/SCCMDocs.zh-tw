@@ -6,21 +6,20 @@ ms.date: 1/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ca4886d4-7173-46be-8dcd-1657d5b0deb9
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 0d0735c170820259ac8bb6706aac7cc5569a1628
 ms.openlocfilehash: d06a2a955ff59fa84bb844033fe31874fc735087
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 #  <a name="service-windows-for-site-servers"></a>站台伺服器的服務保留時間
 
@@ -43,9 +42,3 @@ ms.openlocfilehash: d06a2a955ff59fa84bb844033fe31874fc735087
 1.  在 Configuration Manager 主控台中，依序開啟 [系統管理] > [站台設定] > [站台]，然後選取要設定維護時段的站台伺服器。  
 
 2.  接著，編輯站台伺服器的 **[內容]** ，然後選取 **[維護時段]** 索引標籤，您可在此為該站台伺服器設定一或多個維護時段。  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

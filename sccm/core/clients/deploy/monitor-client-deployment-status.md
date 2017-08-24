@@ -6,23 +6,20 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 20a573b3-53cb-4ed5-bae1-7542f533ed20
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
-ms.openlocfilehash: 0ca218e4276699dd9029308e1d8ac524563da7c5
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/03/2017
-
-
+ms.openlocfilehash: 3d9d02d8c56aea17e563112f92173c2b56781da6
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-monitor-client-deployment-status-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中監視用戶端部署狀態
 
@@ -65,4 +62,3 @@ ms.lasthandoff: 01/03/2017
  若要監視部署的用戶端狀態，請參閱[如何在 System Center Configuration Manager 中監視用戶端](../../../core/clients/manage/monitor-clients.md)。  
 
  您可以使用 Configuration Manager 報告深入了解站台內用戶端的狀態。 如需如何執行報告的詳細資訊，請參閱 [Reporting in System Center Configuration Manager](../../../core/servers/manage/reporting.md) (System Center Configuration Manager 中的報告)。  
-

@@ -9,17 +9,14 @@ ms.date: 06/27/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: d071b0ec-e070-40a9-b7d4-564b92a5465f
-ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
 ms.openlocfilehash: 8b739a01a6bb5cacf0f7109e2e6fa3b31dd666d3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/04/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="plan-for-software-updates-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中規劃軟體更新
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -327,4 +324,3 @@ ms.lasthandoff: 08/04/2017
 
 ## <a name="next-steps"></a>後續步驟
 一旦規劃軟體更新，請參閱 [Prepare for software updates management](../get-started/prepare-for-software-updates-management.md) (準備軟體更新管理)。
-

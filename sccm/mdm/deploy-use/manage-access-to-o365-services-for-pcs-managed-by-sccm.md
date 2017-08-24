@@ -6,21 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 34024741-edfa-4088-8599-d6bafc331e62
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 5ebdd12672fecc633321a66738a0978f94ba0aa4
 ms.openlocfilehash: aede531a0406c3d30c9cca957896e002ed22ae51
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/20/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-access-to-o365-services-for-pcs-managed-by-system-center-configuration-manager"></a>管理 System Center Configuration Manager 所管理之電腦對 O365 服務的存取
 
@@ -153,4 +151,3 @@ ms.lasthandoff: 07/20/2017
 
 - [使用 System Center Configuration Manager 保護資料和站台基礎結構](../../protect/understand/protect-data-and-site-infrastructure.md)
 - [Configuration Manager 條件式存取疑難排解流程圖](https://gallery.technet.microsoft.com/Conditional-access-fd747c1a?redir=0) \(英文\)
-

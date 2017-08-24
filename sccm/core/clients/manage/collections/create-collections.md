@@ -6,22 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1401a35e-4312-4d3b-8ceb-0abbb10d4f05
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 5f1412fb132e3a074742e11f1142b2594146cbe1
 ms.openlocfilehash: 44b4707b1a40624c51decf548d23ddd2164c5833
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/28/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-collections-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中建立集合
 
@@ -207,4 +205,3 @@ ms.lasthandoff: 07/28/2017
     >  您要匯入的檔案必須已從站台匯出，且該站台需執行與此項目相同版本的 Configuration Manager。 如需匯出集合的詳細資訊，請參閱[如何在 System Center Configuration Manager 中管理集合](../../../../core/clients/manage/collections/manage-collections.md)。  
 
 6.  完成精靈以匯入集合。 新集合會顯示在 [資產與相容性]  工作區的 [使用者集合]  或 [裝置集合]  節點中。 若要查看新匯入集合的集合成員，請重新整理或重新載入 Configuration Manager 主控台。  
-

@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f3058277-c597-4dac-86d1-41b6f7e62b36
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 8ffc7383e895909e6e6c4b8a7875fd5f0df2220e
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-the-hotfix-installer-to-install-updates-for-system-center-configuration-manager"></a>使用 Hotfix 安裝程式來安裝 System Center Configuration Manager 更新
 
@@ -33,7 +32,7 @@ System Center Configuration Manager 的某些更新無法從 Microsoft 雲端服
 > [!NOTE]  
 >  本主題提供有關如何安裝可更新 System Center Configuration Manager 之 Hofix 的一般指引。 如需特定更新的詳細資訊，請參閱 Microsoft 支援服務提供的對應知識庫 (KB) 文章內容。  
 
-##  <a name="a-namebkmkoverviewa-overview-of-hotfixes-for-configuration-manager"></a><a name="bkmk_Overview"></a> Configuration Manager 的 Hotfix 概觀  
+##  <a name="bkmk_Overview"></a> Configuration Manager 的 Hotfix 概觀  
  Configuration Manager 的 Hotfix 類似於其他 Microsoft 產品 (例如 SQL Server) 的 Hotfix，包含了一個個別修正或配套 (修正彙總套件)，且在 Microsoft 知識庫文件有說明。  
 
  個別更新包含特定 Configuration Manager 版本的單一聚焦更新。  
@@ -101,7 +100,7 @@ System Center Configuration Manager 的某些更新無法從 Microsoft 雲端服
 |&lt;更新類型\>|這些是 Configuration Manager 的更新類型。 精靈會為更新配套中所包含之每一種更新類型，建立個別資料夾。 資料夾名稱代表更新類型。 其包括：<br /><br /> **伺服器**：包括執行 SMS 提供者之站台伺服器、站台資料庫伺服器及電腦的更新。<br /><br /> **用戶端**：包括對 Configuration Manager 用戶端的更新。<br /><br /> **AdminConsole**：包括對 Configuration Manager 主控台的更新<br /><br /> 除了之前的更新類型以外，精靈會建立一個名為 **SCUP**的資料夾。 此資料夾不代表更新類型，而是包含了更新發行者的 .cab 檔。|  
 |&lt;平台\>|這是平台特定的資料夾。 該資料夾中包含特定於某種處理器類型的更新檔案。  這些資料夾包括：<br /><br />- x64<br /><br /> - I386|  
 
-##  <a name="a-namebkmkinstalla-how-to-install-updates"></a><a name="bkmk_Install"></a> 如何安裝更新  
+##  <a name="bkmk_Install"></a> 如何安裝更新  
  若要安裝更新，您必須先在站台伺服器上安裝更新配套。 當您安裝更新配套時，便會啟動該更新的安裝精靈。 此精靈會執行下列動作：  
 
 -   解壓縮更新檔案  
@@ -127,15 +126,15 @@ System Center Configuration Manager 的某些更新無法從 Microsoft 雲端服
 
  使用以下各節資訊，在 Configuration Manager 的每一個元件上安裝更新。  
 
-###  <a name="a-namebkmkserversa-update-servers"></a><a name="bkmk_servers"></a> 更新伺服器  
+###  <a name="bkmk_servers"></a> 更新伺服器  
  伺服器的更新，可包含適用於 **站台**、 **site database**以及執行 **SMS 提供者**之執行個體電腦的更新：  
 
-####  <a name="a-namebkmksitea-update-a-site"></a><a name="bkmk_site"></a> 更新站台  
+####  <a name="bkmk_site"></a> 更新站台  
  若要更新 Configuration Manager 站台，您可以將更新配套直接安裝在站台伺服器上，也可在將更新配套安裝到不同站台後，將更新部署到站台伺服器。  
 
  當您將更新安裝在站台伺服器上時，更新安裝程序會管理用以套用更新 (例如更新站台系統角色) 的其他必要動作。 唯一的例外是站台資料庫。 下一節內容包含有關如何更新站台資料庫的資訊。  
 
-####  <a name="a-namebkmkdatabasea-update-a-site-database"></a><a name="bkmk_database"></a> 更新站台資料庫  
+####  <a name="bkmk_database"></a> 更新站台資料庫  
  若要更新站台資料庫，安裝程序會在站台資料庫執行一支名為 **update.sql** 的檔案。 您可以將更新程序設定為可自動更新站台資料庫，或可稍後手動更新站台資料庫。  
 
  **自動更新站台資料庫**  
@@ -167,12 +166,12 @@ System Center Configuration Manager 的某些更新無法從 Microsoft 雲端服
 
 5.  安裝更新配套時，它會將 **update.sql** 擷取到站台伺服器的下列位置：**\\\\&lt;伺服器名稱\>\SMS_&lt;站台碼\>\Hotfix\\&lt;知識庫號碼\>\update.sql**  
 
-####  <a name="a-namebkmkprovidera-update-a-computer-that-runs-the-sms-provider"></a><a name="bkmk_provider"></a> 更新執行 SMS 提供者的電腦  
+####  <a name="bkmk_provider"></a> 更新執行 SMS 提供者的電腦  
  安裝包含 SMS 提供者更新的更新配套後，必須將更新部署至每台執行 SMS 提供者的電腦。 唯一的例外是先前安裝在站台伺服器 (用來安裝更新配套) 上的 SMS 提供者執行個體。 站台伺服器上的本機 SMS 提供者執行個體會在您安裝更新配套時更新。  
 
  如果移除電腦上的 SMS 提供者之後再重新安裝，則必須在該電腦上重新安裝 SMS 提供者更新。  
 
-###  <a name="a-namebkmkclientsa-update-clients"></a><a name="BKMK_clients"></a> 更新用戶端  
+###  <a name="BKMK_clients"></a> 更新用戶端  
  當您安裝包含 Configuration Manager 用戶端更新的更新時，會提供您使用更新安裝自動升級用戶端的選項，或者稍後手動升級用戶端。 如需用戶端自動升級的詳細資訊，請參閱 [如何在 System Center Configuration Manager 中升級 Windows 電腦的用戶端](https://technet.microsoft.com/library/mt627885.aspx)之 Hotfix 的一般指引。  
 
  您可以使用更新發行者或軟體部署套件來部署更新，也可選擇在每個用戶端上手動安裝更新。 如需如何使用部署安裝更新的詳細資訊，請參閱本主題中的 [部署 Configuration Manager 的更新](#BKMK_Deploy) 一節。  
@@ -184,7 +183,7 @@ System Center Configuration Manager 的某些更新無法從 Microsoft 雲端服
 
  例如，您可以使用下列命令列更新用戶端。 這個命令列會在用戶端電腦上執行 MSIEXEC，並且參照更新組合在站台伺服器上解壓縮的 .msp 檔：**msiexec.exe /p \\\\&lt;ServerName\>\SMS_&lt;SiteCode\>\Hotfix\\&lt;知識庫號碼\>\Client\\&lt;平台\>\\&lt;msp\> /L\*v &lt;logfile\>REINSTALLMODE=mous REINSTALL=ALL**  
 
-###  <a name="a-namebkmkconsolea-update-configuration-manager-consoles"></a><a name="BKMK_console"></a> 更新 Configuration Manager 主控台  
+###  <a name="BKMK_console"></a> 更新 Configuration Manager 主控台  
  若要更新 Configuration Manager 主控台，您必須在主控台安裝完成後，在執行主控台的電腦上安裝更新。  
 
 > [!IMPORTANT]  
@@ -200,10 +199,10 @@ System Center Configuration Manager 的某些更新無法從 Microsoft 雲端服
 
 例如，您可以使用下列命令列更新 Configuration Manager 主控台。 這個命令列會在電腦上執行 MSIEXEC，並且參照更新組合在站台伺服器上解壓縮的 .msp 檔：**msiexec.exe /p \\\\&lt;ServerName\>\SMS_&lt;SiteCode\>\Hotfix\\&lt;知識庫號碼\>\AdminConsole\\&lt;平台\>\\&lt;msp\> /L\*v &lt;logfile\>REINSTALLMODE=mous REINSTALL=ALL**  
 
-##  <a name="a-namebkmkdeploya-deploy-updates-for-configuration-manager"></a><a name="BKMK_Deploy"></a> 部署 Configuration Manager 的更新  
+##  <a name="BKMK_Deploy"></a> 部署 Configuration Manager 的更新  
  當您在站台伺服器上安裝更新配套後，可以使用下列三種方法之一，將更新部署至其他電腦。  
 
-###  <a name="a-namebkmkdeployscupa-use-updates-publisher-2011-to-install-updates"></a><a name="BKMK_DeploySCUP"></a> 使用 Updates Publisher 2011 安裝更新  
+###  <a name="BKMK_DeploySCUP"></a> 使用 Updates Publisher 2011 安裝更新  
  當您在站台伺服器上安裝更新配套時，安裝精靈會針對「更新發行者」建立類別目錄檔案，您可以用來將更新部署至適用的電腦。 精靈一律會建立此類別目錄，即使您選取 **[Use package and program to deploy this update (使用套件和程式部署此更新)]**之 Hotfix 的一般指引。  
 
  Updates Publisher 的類別目錄名稱為 **SCUPCatalog.cab**，且可在執行更新配套的電腦的下列位置找到：**\\\\&lt;ServerName\>\SMS_&lt;SiteCode\>\Hotfix\\&lt;知識庫號碼\>\SCUP\SCUPCatalog.cab**  
@@ -231,7 +230,7 @@ System Center Configuration Manager 的某些更新無法從 Microsoft 雲端服
 
 7.  完成精靈以發行更新。  
 
-###  <a name="a-namebkmkdeployswdista-use-software-deployment-to-install-updates"></a><a name="BKMK_DeploySWDist"></a> 使用軟體部署安裝更新  
+###  <a name="BKMK_DeploySWDist"></a> 使用軟體部署安裝更新  
  當您在主要站台或管理中心網站的站台伺服器上安裝更新配套時，您可以設定安裝精靈來建立軟體部署的更新套件。 接著您可以將每個套件部署至欲更新的電腦集合。  
 
  若要建立軟體部署套件，請在精靈的 [設定軟體更新部署]  頁面中，選取欲更新之每種更新套件類型旁的核取方塊。 可用類型可以包含伺服器、Configuration Manager 主控台和用戶端。 您每選取一種更新類型，都會為該類型建立一個獨立套件。  
@@ -249,7 +248,7 @@ System Center Configuration Manager 的某些更新無法從 Microsoft 雲端服
 
  如需如何將套件部署至 Configuration Manager 用戶端的相關資訊，請參閱 [System Center Configuration Manager 中的套件和程式](../../../apps/deploy-use/packages-and-programs.md)。  
 
-###  <a name="a-namebkmkdeploycollectionsa-create-collections-for-deploying-updates-to-configuration-manager"></a><a name="BKMK_DeployCollections"></a> 建立用於將更新部署到 Configuration Manager 的集合  
+###  <a name="BKMK_DeployCollections"></a> 建立用於將更新部署到 Configuration Manager 的集合  
  您可以將特定更新部署至可用的用戶端。 下列資訊可協助您為 Configuration Manager 的不同元件建立裝置集合。  
 
 |Configuration Manager 的元件|指示|  
@@ -266,9 +265,3 @@ System Center Configuration Manager 的某些更新無法從 Microsoft 雲端服
 >  若要更新站台資料庫，請將更新部署至該站台的站台伺服器。  
 
  如需如何建立集合的資訊，請參閱[如何在 System Center Configuration Manager 中建立集合](../../../core/clients/manage/collections/create-collections.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

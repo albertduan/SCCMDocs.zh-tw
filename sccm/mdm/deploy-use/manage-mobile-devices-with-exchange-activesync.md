@@ -6,22 +6,19 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: aba688d9-fd5b-4c42-8cb4-f7e1b161ef50
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0d6479bcc134103e6005159a8ea295a5f359a436
-ms.openlocfilehash: 4a2b60d893e8d430b107a5bc43ec0748177c27c3
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 44958bc35586f5e57ab3fb59681bfb018d2bd5da
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-mobile-devices-with-system-center-configuration-manager-and-exchange"></a>使用 System Center Configuration Manager 和 Exchange 管理行動裝置
 
@@ -137,4 +134,3 @@ ms.lasthandoff: 12/16/2016
     -   若要確認站台元件管理員已成功安裝 Exchange Server 連接器，請搜尋 [SMS_EXCHANGE_CONNECTOR]  元件的狀態識別碼 [1015]  。 如果 Configuration Manager 無法成功安裝連接器 (例如因為指定的 Client Access Server 電腦離線)，Configuration Manager 會每 60 分鐘重試安裝，直到安裝成功或者您將 Exchange Server 連接器移除為止。  
 
     -   在站台伺服器電腦上搜尋 SiteComp.log 檔案，然後在記錄檔中搜尋 `Component SMS_EXCHANGE_CONNECTOR flagged for installation`。 成功的安裝會以下列文字記錄： `STATMSG: ID=1015`。  
-

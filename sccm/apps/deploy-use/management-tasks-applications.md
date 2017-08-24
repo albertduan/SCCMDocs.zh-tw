@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c4041e21-21ff-4d95-ab05-14007e0047cf
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: a53f8ca0cc9c4e4f7d91dd4a08eeea76cbd0b142
 ms.openlocfilehash: 72f99f0c90951f80de3d6e5ed8786d3fa482107e
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="management-tasks-for-system-center-configuration-manager-applications"></a>System Center Configuration Manager 應用程式的管理工作
 
@@ -60,9 +59,3 @@ ms.openlocfilehash: 72f99f0c90951f80de3d6e5ed8786d3fa482107e
 |**降低優先順序**|降低所選部署類型的優先順序。|  
 |**刪除**|刪除選取的部署類型。<br><br>如果某個部署類型正由其他應用程式中的部署類型所參考，您就不能將其刪除。<br>若要刪除部署類型，您必須移除此部署類型在其他部署類型中的所有相依性。<br>如果應用程式具有的部署類型會參考您要刪除的部署類型，則必須移除這所有應用程式的舊有修訂版本。|  
 |**更新內容**|重新整理所選部署類型的內容。<br /><br /> 當您針對具有虛擬應用程式的部署類型啟動此精靈時，會一併啟動 [更新內容精靈]。 此精靈可讓您變更所選虛擬應用程式的發佈選項和需求規則。 如需詳細資訊，請參閱[建立應用程式](../../apps/deploy-use/create-applications.md)。<br /><br /> 當您重新整理部署類型的內容時，會建立新的應用程式修訂版本。 這可能會導致用戶端裝置更新為新的應用程式。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

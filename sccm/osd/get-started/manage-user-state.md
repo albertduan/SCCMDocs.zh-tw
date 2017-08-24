@@ -6,23 +6,20 @@ ms.date: 01/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d8d5c345-1e91-410b-b8a9-0170dcfa846e
-caps.latest.revision: 12
-caps.handback.revision: 0
+caps.latest.revision: "12"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: a0bd86587669c32377b1eafa6a890d37e10ac3f6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-user-state-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中管理使用者狀態
 
@@ -132,4 +129,3 @@ ms.lasthandoff: 05/17/2017
 
 ##  <a name="BKMK_MigrationFails"></a> 在作業系統部署失敗時還原使用者狀態資料  
  如果作業系統部署失敗，可使用 USMT 10.0 LoadState 功能以擷取在部署程序中所擷取的使用者狀態資料。 這包括在狀態移轉點上儲存的資料，或是本機儲存在目的地電腦上的資料。 如需 USMT 功能的詳細資訊，請參閱 [LoadState 語法](https://technet.microsoft.com/library/mt299188\(v=vs.85\).aspx)。  
-

@@ -1,5 +1,4 @@
 ---
-
 title: "在沒有網際網路連線的情況下同步處理更新 - Configuration Manager | Microsoft Docs"
 description: "在與網際網路中斷連線的頂層軟體更新點上，執行軟體更新同步處理。"
 keywords: 
@@ -10,19 +9,14 @@ ms.date: 01/23/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 1a997c30-8e71-4be5-89ee-41efb2c8d199
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 89158debdf4c345a325feeb608db2215a88ed81b
 ms.openlocfilehash: fd9c1e9418ff1956c6ef98753e23a293440179be
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="synchronize-software-updates-from-a-disconnected-software-update-point"></a>從已中斷連線的軟體更新點同步處理軟體更新  
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -110,4 +104,3 @@ ms.lasthandoff: 05/17/2017
 在您第一次同步處理軟體更新之後，或有新的分類或產品可用之後，必須[設定新的分類和產品](configure-classifications-and-products.md)，使用新的準則來同步處理軟體更新。
 
 使用您需要的準則同步處理軟體更新之後，請[管理軟體更新的設定](manage-settings-for-software-updates.md)。  
-

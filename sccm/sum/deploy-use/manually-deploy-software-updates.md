@@ -1,5 +1,4 @@
 ---
-
 title: "手動部署軟體更新 | Microsoft Docs"
 description: "若要手動部署更新，請從 Configuration Manager 主控台中選取更新並手動部署，或將更新新增至更新群組並部署群組。"
 keywords: 
@@ -10,18 +9,14 @@ ms.date: 12/07/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 57184274-5fea-4d79-a2b4-22e08ed26daf
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
 ms.openlocfilehash: 2a0d5f12b99689749833c109d4fa399f99451d8a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 #  <a name="BKMK_ManualDeploy"></a> 手動部署軟體更新  
 
 適用於：System Center Configuration Manager (最新分支)
@@ -317,4 +312,3 @@ ms.lasthandoff: 06/08/2017
 
 ## <a name="next-steps"></a>後續步驟
 [監視軟體更新](monitor-software-updates.md)
-

@@ -6,8 +6,7 @@ ms.date: 6/5/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 19539f4d-1667-4b4c-99a1-9995f12cf5f7
@@ -15,14 +14,12 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f7cd9c71287d62c9f5d36e2f032bc2a6065572ae
 ms.openlocfilehash: 49eea15ea2888f8f93c33eb771c09147ba21529e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/06/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 #  <a name="recover-a-configuration-manager-site"></a>復原 Configuration Manager 站台
 
 *適用於︰System Center Configuration Manager (最新分支)*
@@ -244,4 +241,3 @@ ms.lasthandoff: 06/06/2017
 如果發佈點不在次要網站上，復原次要網站時可以不重新安裝發佈點。 復原次要網站後，網站會自動與發佈點同步。
 
 您可以從 Configuration Manager 主控台的 [站台] 節點，使用 [顯示安裝狀態] 動作來確認次要站台復原的狀態。
-

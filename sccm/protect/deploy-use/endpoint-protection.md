@@ -6,22 +6,19 @@ ms.date: 02/6/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 76c90f64-d729-456b-8304-01852cd66fb6
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
 ms.openlocfilehash: 3c31271f3e3ae7aa45da03b3d75fd78242330646
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="endpoint-protection"></a>Endpoint Protection
 
@@ -111,8 +108,7 @@ System Center Configuration Manager 中的 Endpoint Protection 可讓您管理 C
 2. 選取網站頂端的 [下載和金鑰]。
 3. 篩選出 [System Center Endpoint Protection (最新分支)] 產品。
 4. 按一下連結進行**下載**
-5. 按一下 [繼續] 。 您應該會看到數個檔案，包括︰**適用於 Linux 作業系統和 Macintosh 作業系統多語版本的 System Center Endpoint Protection (最新分支 - 1606 版)    32/64 位元    1507 MB    ISO**。
+5. 按一下 [繼續] 。 您應該會看到數個檔案，包括︰**適用於 Linux 作業系統和 Macintosh 作業系統多語版本的 System Center Endpoint Protection (最新分支 - 1606 版)   32/64 位元   1507 MB ISO**。
 6. 按一下箭頭圖示來下載檔案。 檔案名稱是 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_EptProt_Lin_Mac_MLF_X21-30777.ISO**。
 
  如需如何安裝和管理適用於 Linux 和 Mac 電腦之 Endpoint Protection 用戶端的詳細資訊，請使用這些產品隨附的文件 (位於 [文件]  資料夾中)。
-

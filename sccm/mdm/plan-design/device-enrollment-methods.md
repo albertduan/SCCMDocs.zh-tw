@@ -6,23 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: b81d06dc-3844-4117-9937-16732a227994
-caps.latest.revision: 9
-caps.handback.revision: 0
+caps.latest.revision: "9"
+caps.handback.revision: "0"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: c38b3bae681821a886bfdab66d71cd6067adc425
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: e09e639e939b846cdc162681f9d7bd4c39cd6fbf
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="overview-of-device-enrollment-methods"></a>裝置註冊方法概觀
 
@@ -37,19 +34,19 @@ ms.lasthandoff: 03/06/2017
 
 **iOS 註冊方法**
 
-| **方法** |    **抹除** |    **親和性**    |    **鎖定** | **詳細資料** |
+| **方法** |  **抹除** |  **親和性**    |   **鎖定** | **詳細資料** |
 |:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |    否 | [更多](../deploy-use/enable-platform-enrollment.md)|
-|**[DEM](#dem)**|    否 |否 |否    | [更多](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
-|**[DEP](#dep)**|    是 |    選擇性 |    選擇性|[更多](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
-|**[USB-SA](#usb-sa)**|    是 |    選擇性 |    否| [更多](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
+|**[BYOD](#byod)** | 否|    是 |   否 | [更多](../deploy-use/enable-platform-enrollment.md)|
+|**[DEM](#dem)**|   否 |否 |否  | [更多](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
+|**[DEP](#dep)**|   是 |   選擇性 |  選擇性|[更多](../deploy-use/ios-device-enrollment-program-for-hybrid.md)|
+|**[USB-SA](#usb-sa)**| 是 |   選擇性 |  否| [更多](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md)|
 
 **Windows 和 Android 註冊方法**
 
-| **方法** |    **抹除** |    **親和性**    |    **鎖定** | **詳細資料**|
+| **方法** |  **抹除** |  **親和性**    |   **鎖定** | **詳細資料**|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|**[BYOD](#byod)** | 否|    是 |    否 | [更多](../deploy-use/enroll-hybrid-windows.md)|
-|**[DEM](#dem)**|    否 |否 |否    |[更多](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
+|**[BYOD](#byod)** | 否|    是 |   否 | [更多](../deploy-use/enroll-hybrid-windows.md)|
+|**[DEM](#dem)**|   否 |否 |否  |[更多](../deploy-use/enroll-devices-with-device-enrollment-manager.md)|
 
 如需可協助您判斷最佳方法的一系列問題，請參閱[選擇如何註冊行動裝置](/intune/get-started/choose-how-to-enroll-devices1)。
 
@@ -66,18 +63,18 @@ ms.lasthandoff: 03/06/2017
 
 ### <a name="dep"></a>DEP
 Apple 裝置註冊方案 (DEP) 管理功能可讓您以「無線」方式，建立原則並將其部署至透過 DEP 購買和管理的 iOS 裝置。 當使用者第一次開啟裝置並執行 iOS 設定輔助程式時，即會註冊裝置。 這個方法支援 **iOS 受監管**模式，並可啟用：
-  -    鎖定的註冊
-  -    條件式存取
-  -    破解偵測
-  -    行動應用程式管理
+  - 鎖定的註冊
+  - 條件式存取
+  - 破解偵測
+  - 行動應用程式管理
 
 深入了解 [DEP](../deploy-use/ios-device-enrollment-program-for-hybrid.md)。 ([返回表格](#overview-of-device-enrollment-methods))
 
 ### <a name="usb-sa"></a>USB-SA
 USB 連接的設定輔助程式註冊。 系統管理員會建立原則，並將它匯出至 Apple Configurator。 系統會透過原則來準備已連接 USB 且公司擁有的裝置。 系統管理員必須手動註冊每部裝置。 使用者收到裝置後，可執行設定輔助程式，以註冊其裝置。 這個方法支援 **iOS 受監管**模式，並可啟用：
-  -    條件式存取
-  -    破解偵測
-  -    行動應用程式管理
+  - 條件式存取
+  - 破解偵測
+  - 行動應用程式管理
 
 深入了解 [Setup Assistant enrollment with Apple Configurator](../deploy-use/ios-hybrid-enrollment-using-apple-configurator.md) (使用 Apple Configurator 設定輔助程式註冊)。 ([返回表格](#overview-of-device-enrollment-methods))
 
@@ -85,4 +82,3 @@ USB 連接的設定輔助程式註冊。 系統管理員會建立原則，並將
 針對未註冊但已連接 Exchange ActiveSync (EAS) 的行動裝置，Intune 可以使用 EAS MDM 原則進行管理。 Intune 會使用 Exchange 連接器與 EAS 通訊 (不論內部部署或裝載在雲端中)。
 
 [使用 Exchange ActiveSync 和 Intune 的行動裝置管理](../deploy-use/manage-mobile-devices-with-exchange-activesync.md)
-

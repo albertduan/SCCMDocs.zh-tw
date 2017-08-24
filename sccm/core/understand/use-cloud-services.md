@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 24fca61e-9cdb-447a-ad7a-f4d2e4fd6704
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0d7ddd48cc4e75b12f893e686b847d66058441e1
 ms.openlocfilehash: 52f7c63d155d5c34f0f12e13020767dec1867dab
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-cloud-services-with-system-center-configuration-manager"></a>使用雲端服務搭配 System Center Configuration Manager
 
@@ -105,4 +102,3 @@ System Center Configuration Manager 支援數個雲端式選項。 這些選項�
 -   [Get Past the Security Crossroads in Your Cloud Migration (解決與雲端移轉有關的安全性問題) (解決與雲端移轉有關的安全性問題)](http://go.microsoft.com/fwlink/p/?LinkId=262971)  
 
 -   [Azure 資料安全性的第 1 部分 (共 2 個部分)](http://go.microsoft.com/fwlink/p/?LinkId=262974)  
-

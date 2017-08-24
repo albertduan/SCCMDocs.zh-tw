@@ -1,5 +1,4 @@
 ---
-
 title: "管理軟體更新的設定 | Microsoft Docs"
 description: "深入了解安裝軟體更新點後，適合網站更新軟體的用戶端設定。"
 keywords: 
@@ -10,18 +9,14 @@ ms.date: 03/26/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 0d484c1a-e903-4bff-9e9b-e452c62e38a8
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: fe4a8f56e0b554e206bcc4503a0268dc761ded81
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 #  <a name="BKMK_ManageSUSettings"></a> 管理軟體更新的設定  
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -141,4 +136,3 @@ Configuration Manager 也使用此設定來判斷是否要在設定的維護期�
 在執行 CRL 檢查的電腦上，從產品 DVD 及命令列提示字元執行下列動作：**\SMSSETUP\BIN\X64\\**<語言>**\UpdDwnldCfg.exe /checkrevocation**。  
 
 例如，針對英文 (美國) 版執行 **\SMSSETUP\BIN\X64\00000409\UpdDwnldCfg.exe /checkrevocation**。  
-

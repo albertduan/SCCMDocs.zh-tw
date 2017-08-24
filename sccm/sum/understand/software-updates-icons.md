@@ -9,14 +9,13 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 63c5ef72-5715-4d86-85a2-71beba469fab
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 04c5ccc53263b2672096b564695a636bfb28d952
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="icons-used-for-software-updates-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中軟體更新所使用的圖示
 
@@ -124,9 +123,3 @@ ms.openlocfilehash: 04c5ccc53263b2672096b564695a636bfb28d952
  **操作考量：**  
 
  遺失軟體更新的內容時，除非可以在發佈點上再次使用內容，否則用戶端無法安裝軟體更新。 使用 [重新發佈]  動作，可以將內容重新發佈至發佈點。 遺失在父站台建立之部署中的軟體更新內容時，需要將軟體更新複寫或重新發佈至子站台。 如需內容重新發佈的詳細資訊，請參閱[管理您已發佈的內容](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_manage)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

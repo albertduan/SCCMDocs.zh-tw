@@ -6,22 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: a933d69c-5feb-4b2b-84e8-56b3b64d5947
-caps.latest.revision: 11
+caps.latest.revision: "11"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9206b82eca02877c30eebf146d42bcca7290eb42
-ms.openlocfilehash: 9c2fd7cea178716f81571856608ce517049a3e8d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/30/2016
-
-
+ms.openlocfilehash: 979c21c436429cad03a61671b707a99817146d95
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="best-practices-for-client-deployment-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中進行用戶端部署的最佳做法
 
@@ -80,4 +77,3 @@ ms.lasthandoff: 12/30/2016
  如果您可以選擇要啟用的寫入篩選器類型，請選擇檔案型寫入篩選器，並設定例外狀況以保存裝置重新啟動期間的用戶端狀態和清查資料，確保 Configuration Manager 用戶端上的網路和 CPU 效率。 如需寫入篩選器的詳細資訊，請參閱   [規劃將用戶端部署至 System Center Configuration Manager 中的Windows Embedded 裝置](../../../../core/clients/deploy/plan/planning-for-client-deployment-to-windows-embedded-devices.md)。  
 
  如需主要站台可支援之 Windows Embedded 用戶端數量上限的詳細資訊，請參閱[支援的用戶端與裝置作業系統](../../../../core/plan-design/configs/supported-operating-systems-for-clients-and-devices.md)。  
-

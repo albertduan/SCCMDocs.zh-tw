@@ -6,20 +6,19 @@ ms.date: 1/3/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 70b5cbc0-64ba-49bd-8b34-fb4c09b2b95b
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 7f2fd3e550c7dc1b27996dc309b53f74e8c865e9
 ms.openlocfilehash: a823458dc3b891b1c32d1cb44a96e8cafd376ed5
-ms.lasthandoff: 01/04/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="content-source-location-scenarios-in-system-center-configuration-manager"></a>System Center Configuration Manager 的內容來源位置案例
 
@@ -254,4 +253,3 @@ ms.lasthandoff: 01/04/2017
 4.  管理點會為發佈管理員建立觸發程序，以便將內容發佈到所有建立內容要求的用戶端使用的慣用發佈點。  
 
 5.  發佈管理員會將內容發佈到所有的慣用發佈點，讓其他用戶端不需使用後援發佈點，即可取得內容。  
-

@@ -6,20 +6,19 @@ ms.date: 1/12/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1098e8c5-9676-4c2b-841b-ec88bd04e495
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10192da2633555ab3bae60dbb1156d1926f9a4a0
 ms.openlocfilehash: b49bd179da850cee35b2487a353bb1788df03d58
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="support-for-virtualization-environments-for-system-center-configuration-manager"></a>System Center Configuration Manager 的虛擬化環境支援
 
@@ -52,7 +51,7 @@ Configuration Manager 支援在支援的作業系統上安裝用戶端和站台�
 
 虛擬機器沒有特殊的考量。 例如，如果虛擬機器已停止並重新啟動，而未儲存已套用更新之虛擬機器的狀態，Configuration Manager 可能無法判斷更新是否要重新套用至虛擬機器映像。  
 
-##  <a name="a-namebkmkazurea-microsoft-azure-virtual-machines"></a><a name="bkmk_Azure"></a> Microsoft Azure 虛擬機器  
+##  <a name="bkmk_Azure"></a> Microsoft Azure 虛擬機器  
  Configuration Manager 可以在 Azure 虛擬機器上執行，就像在實體公司網路中內部部署執行一樣。 您可以在下列案例中，搭配使用 Configuration Manager 與 Azure 虛擬機器：  
 
 -   **案例 1：**您可以在 Azure 虛擬機器上執行 Configuration Manager，並用它來管理安裝在其他 Azure 虛擬機器上的用戶端。  
@@ -67,9 +66,3 @@ Configuration Manager 支援在支援的作業系統上安裝用戶端和站台�
 
 > [!IMPORTANT]  
 >  此外，在 Azure 虛擬機器上執行的 Configuration Manager 站台和用戶端受限於與內部部署安裝相同的授權需求。  
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

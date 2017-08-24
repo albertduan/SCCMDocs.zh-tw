@@ -6,23 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dce4b640-c92f-401a-9873-ce9aa9262014
-caps.latest.revision: 8
-caps.handback.revision: 0
+caps.latest.revision: "8"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 140bbc676fe0e3df1037c6bead2211b84486494b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 79686514efcba344c4babc3d3be03b48adca7132
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="windows-firewall-and-port-settings-for-clients-in-system-center-configuration-manager"></a>System Center Configuration Manager 中用戶端適用的 Windows 防火牆和連接埠設定
 
@@ -175,4 +172,3 @@ System Center Configuration Manager 中執行 Windows 防火牆的用戶端，�
  如果 HTTP 連接埠是80，HTTPS 連接埠必須是 443。  
 
  如果 HTTP 連接埠使用其他任何號碼，則 HTTPS 連接埠必須是該連接埠號碼加 1。 例如，8530 和 8531。
-

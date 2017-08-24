@@ -6,21 +6,19 @@ ms.date: 04/23/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b475a0c8-85d6-4cc4-b11f-32c0cc98239e
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 55c953f312a9fb31e7276dde2fdd59f8183b4e4d
-ms.openlocfilehash: 09f8bc7ee04ff64934030f825a791bc043341963
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
+ms.openlocfilehash: 9c920651ba1dc6e0a28df458d28956126ddbaff0
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-configure-wake-on-lan-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中設定網路喚醒
 
@@ -59,4 +57,3 @@ ms.lasthandoff: 12/16/2016
 
 > [!TIP]
 > 若要測試喚醒 Proxy 是否可運作，請測試與睡眠中電腦的連線。 例如，連線至該電腦上的共用資料夾，或嘗試使用遠端桌面連線至電腦。 如果您使用 Direct Access，可嘗試對目前位於網際網路上的睡眠中電腦進行相同的測試，以檢查 IPv6 首碼是否正常運作。
-

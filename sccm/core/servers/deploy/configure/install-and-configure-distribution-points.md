@@ -6,21 +6,19 @@ ms.date: 2/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aebafaf9-b3d5-4a0f-9ee5-685758c037a1
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8728d9f2ae63282a8f58b20105e488fb1a5ef55b
 ms.openlocfilehash: 4c94e4de5bbfe621492e8682c9424a48eb38196d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="install-and-configure-distribution-points-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 安裝及設定發佈點
 
@@ -390,4 +388,3 @@ ms.lasthandoff: 05/17/2017
 -   **脈衝模式**：該選項指定傳送至發佈點的資料區塊大小。 您也可以指定傳送每個資料區塊之間的時間延遲。 如果您必須經由非常低頻寬的網路連線傳送資料至發佈點，請使用此選項。 例如，您可能限制每五秒傳送 1 KB 的資料，無論於特定時間的連結速度或其使用情形為何。  
 
 -   **限制為指定的每小時最大傳送速率**：指定此設定會讓網站僅使用您設定的時間百分比傳送資料至發佈點。 使用此選項時，Configuration Manager 不會識別網路的可用頻寬，而是會細分可傳送資料的時間。 然後資料會傳送一小段時間，下一個時間片段則不傳送資料。 例如，如果最大速率設為 **50%**，則 Configuration Manager 會在傳輸某個時段的資料之後，於一段相等時段內停止傳送資料。 不會管理實際資料量大小 (或資料區塊大小)。 只會管理傳送資料的時間長度。  
-

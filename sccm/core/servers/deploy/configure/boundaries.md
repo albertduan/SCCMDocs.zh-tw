@@ -6,22 +6,19 @@ ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 4a9dc4d9-e114-42ec-ae2b-73bee14ab04f
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: bed70809008fde5e2b0215f4dce049402edf83ba
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="define-network-locations-as-boundaries-for-system-center-configuration-manager"></a>針對 System Center Configuration Manager 將網路位置定義為界限
 
@@ -44,7 +41,7 @@ Configuration Manager 界限是您網路上的位置，該位置包含您要管�
 
 1.  在 Configuration Manager 主控台中按一下 [系統管理] > [階層設定] > [界限]。  
 
-2.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立界限] **Boundary.**。  
+2.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立界限]  **Boundary.**。  
 
 3.  在 [建立界限] 對話方塊的 [一般]  索引標籤上，您可以指定 [描述]  ，以易記名稱或參照來識別界限。  
 
@@ -87,4 +84,3 @@ Configuration Manager 界限是您網路上的位置，該位置包含您要管�
     -   若要從界限群組中移除此界限，請選取界限群組，然後按一下 [移除] 。  
 
 7.  按一下 [確定]  關閉界限內容，並儲存設定。  
-

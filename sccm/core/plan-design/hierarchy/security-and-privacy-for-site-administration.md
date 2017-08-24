@@ -6,22 +6,19 @@ ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1d58176e-abc0-4087-8583-ce70deb4dcf5
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f9097014c7e988ec8e139e518355c4efb19172b3
 ms.openlocfilehash: a60b8c103a303dcae0bd66f3060d5a8f17d1cef9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-site-administration-in-system-center-configuration-manager"></a>System Center Configuration Manager 中網站管理的安全性和隱私權
 
@@ -367,4 +364,3 @@ Configuration Manager 中有多個網站系統角色需要 IIS。 保護 IIS 的
  探索資訊不會傳送給 Microsoft。 相反地，它是儲存在 Configuration Manager 資料庫中。 資訊會保留在資料庫裡，直到每 90 天由站台維護工作 [刪除過時探索資料] 刪除為止。  
 
  設定額外探索方法或延伸 Active Directory 探索之前，請考量您的隱私權需求。  
-

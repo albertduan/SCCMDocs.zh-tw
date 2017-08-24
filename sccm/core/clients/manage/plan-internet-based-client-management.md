@@ -6,23 +6,20 @@ ms.date: 05/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 83a7c934-3b11-435d-ba22-cbc274951e83
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: ae60eb25383f4bd07faaa1265185a471ee79b1e9
 ms.openlocfilehash: 90c30bfb22735f73422f1547301552bf42022bb9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-internet-based-client-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 中以網際網路為基礎的用戶端管理規劃
 
@@ -198,4 +195,3 @@ ms.lasthandoff: 05/17/2017
      如需支援這些要求的設定資訊，請參閱您的防火牆或 Proxy 伺服器說明文件。  
 
      如需您針對來自網際網路之用戶端連線使用軟體更新點時類似的通訊要求，請參閱 Windows Server Update Services (WSUS) 的說明文件。 例如，針對 Windows Server 2003 上的 WSUS，請參閱 [Appendix D: Security Settings (附錄 D：安全性設定)](http://go.microsoft.com/fwlink/p/?LinkId=143368)，安全性設定的部署附錄。
-

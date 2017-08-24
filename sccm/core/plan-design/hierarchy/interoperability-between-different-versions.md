@@ -6,22 +6,19 @@ ms.date: 1/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 9b0a7859-747f-4495-a2f4-13fd5991f897
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dab5da5a4b5dfb3606a8a6bd0c70a0b21923fff9
 ms.openlocfilehash: 28593d271603ff9775425327996d844d7ed358cd
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="interoperability-between-different-versions-of-system-center-configuration-manager"></a>System Center Configuration Manager 不同版本之間的互通性
 
@@ -86,4 +83,3 @@ ms.lasthandoff: 05/17/2017
 |----------------------------------|----------------------|  
 |使用 System Center 2012 Configuration Manager 和 System Center Configuration Manager 的環境|若要管理 Configuration Manager 站台，主控台和主控台連接的站台兩者必須執行相同版本的 Configuration Manager。 例如，您無法使用 System Center 2012 Configuration Manager 主控台來管理 System Center Configuration Manager 站台，反之亦然。<br /><br /> 此外，在同一部電腦上不能安裝 System Center 2012 Configuration Manager 主控台和 System Center Configuration Manager 主控台。|  
 |安裝多重 System Center Configuration Manager 版本的環境|System Center Configuration Manager 只支援在電腦上安裝單一 Configuration Manager 主控台。 若要使用不同 System Center Configuration Manager 版本專用的主控台，您必須在不同的電腦上安裝不同的主控台。<br /><br /> 將階層中的站台更新為新版本時，您可以將主控台連線至執行新版本的站台，並檢視該階層中其他站台的資訊。 不過，我們不建議您使用這種設定，因為主控台版本與 Configuration Manager 站台版本之間的差異可能會導致資料問題，而且最新產品版本中所提供的某些功能將無法在主控台中使用。 <br /></br /> 使用版本與站台版本不符的主控台時，無法管理站台。 這樣做可能會造成資料遺失，也可能讓您的站台面臨風險。 舉例來說，使用 1610 版的主控台無法管理執行 1606 版的站台。 |
-

@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a7975dc8-46ab-4dae-86b6-dc3e3cf3b2f0
-caps.latest.revision: 19
-caps.handback.revision: 0
+caps.latest.revision: "19"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 52d2e088b8db3c2e9a0af640ca3db72b9fd7af60
 ms.openlocfilehash: a5228c4984347be4b115bfa5563791fa2fb7319c
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="modify-your-system-center-configuration-manager-infrastructure"></a>修改您的 System Center Configuration Manager 基礎結構
 
@@ -29,7 +28,7 @@ ms.openlocfilehash: a5228c4984347be4b115bfa5563791fa2fb7319c
 安裝一個或多個站台之後，您可能需要修改組態，或採取會影響您部署之基礎結構的動作。  
 
 
-##  <a name="a-namebkmkmanagesmsprovidera-manage-the-sms-provider"></a><a name="BKMK_ManageSMSprovider"></a> 管理 SMS 提供者  
+##  <a name="BKMK_ManageSMSprovider"></a> 管理 SMS 提供者  
  SMS 提供者 (動態連結程式庫檔案：smsprov.dll) 會提供一個或多個 Configuration Manager 主控台的系統管理連絡點。 當您安裝多重 SMS 提供者時，可提供連絡點複本以管理站台和階層。  
 
  在每個 Configuration Manager 站台上，您可以重新執行安裝程式，進而執行下列程序：  
@@ -65,7 +64,7 @@ ms.openlocfilehash: a5228c4984347be4b115bfa5563791fa2fb7319c
 
  安裝精靈完成後，就會完成 SMS 提供者設定。 在站台 [內容]  對話方塊的 [一般]  索引標籤上，您可以確認是否有已為站台安裝 SMS 提供者的電腦。  
 
-##  <a name="a-namebkmkconsolea-manage-the-configuration-manager-console"></a><a name="bkmk_Console"></a> 管理 Configuration Manager 主控台  
+##  <a name="bkmk_Console"></a> 管理 Configuration Manager 主控台  
  以下是您可以執行來管理 Configuration Manager 主控台的工作：  
 
 -   **修改 Configuration Manager 主控台中顯示的語言** - 若要修改已安裝的語言，請參閱本主題中的[管理 Configuration Manager 主控台語言](#BKMK_ManageConsoleLanguages)。  
@@ -76,7 +75,7 @@ ms.openlocfilehash: a5228c4984347be4b115bfa5563791fa2fb7319c
 
 -   **修改權限來限制系統管理使用者可以在主控台中查看哪些項目** - 若要修改系統管理權限，限制使用者可以在主控台中查看並執行的項目，請參閱[修改系統管理使用者的系統管理範圍](/sccm/core/servers/deploy/configure/configure-role-based-administration#BKMK_ModAdminUser)。     
 
-###  <a name="a-namebkmkmanageconsolelanguagesa-manage-configuration-manager-console-language"></a><a name="BKMK_ManageConsoleLanguages"></a> 管理 Configuration Manager 主控台語言  
+###  <a name="BKMK_ManageConsoleLanguages"></a> 管理 Configuration Manager 主控台語言  
  在站台伺服器安裝期間，Configuration Manager 主控台安裝檔案和站台的支援語言套件，皆會複製到站台伺服器上的 **&lt;ConfigMgrInstallationPath\>\Tools\ConsoleSetup** 子資料夾。  
 
 -   當您從站台伺服器的這個資料夾啟動 Configuration Manager 主控台安裝時，Configuration Manager 主控台和支援的語言套件檔案皆會複製到電腦  
@@ -112,7 +111,7 @@ ms.openlocfilehash: a5228c4984347be4b115bfa5563791fa2fb7319c
 
 4.  若要以為電腦設定的語言開啟 Configuration Manager 主控台，請將資料夾重新命名為原始名稱。 例如，將 [de.disabled]  重新命名為 [de] 。  
 
-##  <a name="a-namebkmkconfigdcomforremoteconsolea-configure-dcom-permissions-for-remote-configuration-manager-consoles"></a><a name="BKMK_ConfigDCOMforRemoteConsole"></a> 設定遠端 Configuration Manager 主控台的 DCOM 權限  
+##  <a name="BKMK_ConfigDCOMforRemoteConsole"></a> 設定遠端 Configuration Manager 主控台的 DCOM 權限  
  執行 Configuration Manager 主控台的使用者帳戶，需要擁有可以使用 SMS 提供者存取站台資料庫的權限。 不過，使用遠端 Configuration Manager 主控台的系統管理使用者，在下列電腦上也需要 [遠端啟用] DCOM 權限：  
 
 -   網站伺服器電腦  
@@ -147,7 +146,7 @@ ms.openlocfilehash: a5228c4984347be4b115bfa5563791fa2fb7319c
 
  在每一部可能會支援遠端 Configuration Manager 主控台的 SMS 提供者電腦上，重複執行此程序。  
 
-##  <a name="a-namebkmkdbconfiga-modify-the-site-database-configuration"></a><a name="bkmk_dbconfig"></a> 修改站台資料庫組態  
+##  <a name="bkmk_dbconfig"></a> 修改站台資料庫組態  
  安裝某個站台後，您可以經由在管理中心網站伺服器或主要站台伺服器上執行安裝程式，來修改站台資料庫和站台資料庫伺服器的設定。 您可以將站台資料庫移到相同電腦上的 SQL Server 新執行個體，或移到執行受支援 SQL Server 版本的另一台電腦上。 次要站台資料庫設定不支援這些變更及相關的變更。  
 
  如需支援限制的詳細資訊，請參閱 [Support policy for manual database changes in a Configuration Manager environment](https://support.microsoft.com/kb/3106512)(在 Configuration Manager 環境中手動變更資料庫的支援原則)。  
@@ -178,7 +177,7 @@ ms.openlocfilehash: a5228c4984347be4b115bfa5563791fa2fb7319c
 > [!IMPORTANT]  
 >  移動管理點有一或多個資料庫複本的資料庫時，必須先移除資料庫複本。 完成資料庫移動後，就可以重新設定資料庫複本。 如需詳細資訊，請參閱 [Database replicas for management points for System Center Configuration Manager](../../../core/servers/deploy/configure/database-replicas-for-management-points.md)。  
 
-##  <a name="a-namebkmkspna-manage-the-spn-for-the-site-database-server"></a><a name="bkmk_SPN"></a> 管理站台資料庫伺服器的 SPN  
+##  <a name="bkmk_SPN"></a> 管理站台資料庫伺服器的 SPN  
 您可以選擇執行該站台資料庫之 SQL 服務的帳戶：  
 
 -   若該服務使用電腦系統帳戶執行，將會自動為您登錄 SPN。  
@@ -248,7 +247,7 @@ SQL Server 文件可協助您 [手動註冊 SPN](https://technet.microsoft.com/l
 
 6.  成功變更服務帳戶後，按一下 [確定]  。  
 
-##  <a name="a-namebkmkreseta-run-a-site-reset"></a><a name="bkmk_reset"></a> 執行站台重設  
+##  <a name="bkmk_reset"></a> 執行站台重設  
  當重設的站台在管理中心網站或主要站台執行時，此站台：  
 
 -   重新套用預設 Configuration Manager 檔案和登錄權限  
@@ -306,7 +305,7 @@ SQL Server 文件可協助您 [手動註冊 SPN](https://technet.microsoft.com/l
 
 完成站台重設後，按一下 [關閉]  完成此程序。  
 
-##  <a name="a-namebkmksitelanga-manage-language-packs-at-a-site"></a><a name="bkmk_sitelang"></a> 管理站台的語言套件  
+##  <a name="bkmk_sitelang"></a> 管理站台的語言套件  
 在站台安裝之後，您可以變更正在使用中的伺服器和用戶端語言套件：  
 
 **伺服器語言套件：**  
@@ -356,7 +355,7 @@ SQL Server 文件可協助您 [手動註冊 SPN](https://technet.microsoft.com/l
 
 8.  按一下 [關閉]  完成此程序。  
 
-##  <a name="a-namebkmkmoddbalerta-modify-the-database-server-alert-threshold"></a><a name="BKMK_ModDBAlert"></a> 修改資料庫伺服器警示閾值  
+##  <a name="BKMK_ModDBAlert"></a> 修改資料庫伺服器警示閾值  
  根據預設，Configuration Manager 會在站台資料庫伺服器的可用磁碟空間變少時產生警示。 預設設定為當可用磁碟空間在 10 GB 或以下時產生警告，而可用磁碟空間在 5 GB 或以下，則產生重大警示。 您可以針對每個網站修改這些值或是停用警示。  
 
  若要變更這些設定：  
@@ -368,9 +367,3 @@ SQL Server 文件可協助您 [手動註冊 SPN](https://technet.microsoft.com/l
 3.  在站台的 [內容] 對話方塊中，選取 [警示] 索引標籤，然後編輯設定。  
 
 4.  按一下 [確定]  以關閉網站 [內容] 對話方塊。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

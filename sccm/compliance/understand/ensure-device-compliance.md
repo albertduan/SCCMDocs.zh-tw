@@ -4,22 +4,21 @@ description: "使用 System Center Configuration Manager 管理組織中的裝�
 ms.custom: na
 ms.date: 10/06/2016
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7568c9aa-b99e-4466-bfc8-0301aa376930
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: f7ecfe550d2e28579ea873442b2a68dc1c7c5483
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="ensure-device-compliance-with-system-center-configuration-manager"></a>Ensure device compliance with System Center Configuration Manager (確定裝置與 System Center Configuration Manager 的相容性)
 
@@ -71,9 +70,3 @@ System Center Configuration Manager 中的合規性設定可提供管理組織�
  版本升級原則可讓您將 Windows 10 裝置自動升級至更新版本。 您可以指定產品金鑰來升級 Windows 10 桌上型電腦版本，或是為執行 Windows 10 行動裝置版和 Windows 10 全像攝影版的裝置指定可將其升級的授權檔案。  
 
  [使用版本升級原則升級 Windows 裝置](/sccm/compliance/deploy-use/upgrade-windows-version)  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

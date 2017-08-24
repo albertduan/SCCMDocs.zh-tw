@@ -6,19 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: d50dcca0-4419-449d-a487-73abcadf328f
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 1a4a9da88caba55d9e340c7fb1f31f4e3b957f3e
 ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="deploy-and-manage-content-for-system-center-configuration-manager"></a>部署和管理 System Center Configuration Manager 的內容
 
@@ -26,7 +26,7 @@ ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
 
 安裝 System Center Configuration Manager 發佈點之後，您可以開始將內容部署到其中。 一般而言，內容會透過網路移轉到發佈點，但也有讓內容到達發佈點的其他選項存在。 內容移轉到發佈點之後，您可以在發佈點上更新、重新發佈、移除，以及驗證該內容。  
 
-##  <a name="a-namebkmkdistributea-distribute-content"></a><a name="bkmk_distribute"></a> 發佈內容  
+##  <a name="bkmk_distribute"></a> 發佈內容  
  一般而言，您要將內容發佈到發佈點，才能讓用戶端電腦使用該內容。 (在您針對特定部署使用隨選內容發佈時，會是例外狀況。)在您發佈內容時，Configuration Manager 會將內容檔案儲存在套件中，然後再將件發佈到發佈點。 您可以發佈的內容類型包括：  
 
 -   應用程式部署類型  
@@ -105,7 +105,7 @@ ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
 
 9. [確認]  頁面會顯示是否已順利將內容指派給發佈點。 若要監視內容發佈，請參閱[使用 System Center Configuration Manager 監視發佈的內容](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)。  
 
-##  <a name="a-namebkmkprestagea-use-prestaged-content"></a><a name="bkmk_prestage"></a> 使用預先設置的內容  
+##  <a name="bkmk_prestage"></a> 使用預先設置的內容  
  您可以預先設置應用程式和套件類型的內容檔案：  
 
 -   在 Configuration Manager 主控台中選取您需要的內容，然後使用 [建立預先設置的內容檔案精靈] 建立壓縮的預先設置內容檔案，其中包含您所選內容的檔案及相關聯的中繼資料。  
@@ -130,7 +130,7 @@ ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
 
 請使用下列章節預先設置內容。  
 
-###  <a name="a-namebkmkcreateprestagedcontentfilea-step-1-create-a-prestaged-content-file"></a><a name="BKMK_CreatePrestagedContentFile"></a> 步驟 1：建立預先設置的內容檔案  
+###  <a name="BKMK_CreatePrestagedContentFile"></a> 步驟 1：建立預先設置的內容檔案  
  您可以建立壓縮的預先設置內容檔案，其中包含在 Configuration Manager 主控台中選取之內容的檔案及相關聯的中繼資料。 利用下列程序建立預先設置的內容檔案。  
 
 ##### <a name="to-create-a-prestaged-content-file"></a>建立預先設置的內容檔案  
@@ -176,7 +176,7 @@ ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
 
 11. 在 [完成]  頁面中，確認是否已成功建立預先設置的內容檔案，然後按一下 [關閉] 。  
 
-###  <a name="a-namebkmkassigncontenttodistributionpointa-step-2-assign-the-content-to-distribution-points"></a><a name="BKMK_AssignContentToDistributionPoint"></a> 步驟 2：將內容指派至發佈點  
+###  <a name="BKMK_AssignContentToDistributionPoint"></a> 步驟 2：將內容指派至發佈點  
  預先設置內容檔案後，請將內容指派至發佈點。  
 
 > [!NOTE]  
@@ -238,7 +238,7 @@ ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
 
 9. [確認]  頁面會顯示內容是否成功指派至發佈點。 若要監視內容發佈，請參閱[使用 System Center Configuration Manager 監視發佈的內容](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)。  
 
-###  <a name="a-namebkmkexportcontentfromprestagedcontentfilea-step-3-extract-the-content-from-the-prestaged-content-file"></a><a name="BKMK_ExportContentFromPrestagedContentFile"></a> 步驟 3：從預先設置的內容檔案擷取內容  
+###  <a name="BKMK_ExportContentFromPrestagedContentFile"></a> 步驟 3：從預先設置的內容檔案擷取內容  
  您建立預先設置的內容檔案並將內容指派至發佈點後，可以擷取內容檔案至站台伺服器或發佈點上的內容庫。 通常您已將預先設置的內容檔案複製到可攜式磁碟機 (例如 USB 磁碟機)，或是將內容燒錄至媒體 (例如 DVD)，並且在站台伺服器或發佈點上需要內容的位置提供內容。  
 
  利用下列程序可使用 [擷取內容] 命令列工具從預先設置的內容檔案手動匯出內容檔案。  
@@ -279,7 +279,7 @@ ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
     >   
     > Configuration Manager 不會自動將套件第 2 版發佈至發佈點。 您必須建立包含新檔案版本的新預先設置內容檔案，然後擷取內容，將更新發佈點以發佈變更的檔案，或是重新發佈套件中的所有檔案。  
 
-###  <a name="a-namebkmkdpsiteservera-how-to-prestage-content-on-a-distribution-point-on-a-site-server"></a><a name="bkmk_dpsiteserver"></a> 如何在站台伺服器上的發佈點預先設置內容  
+###  <a name="bkmk_dpsiteserver"></a> 如何在站台伺服器上的發佈點預先設置內容  
  若發佈點安裝在站台伺服器上，您必須依照下列程序進行才能順利預先設置內容。 這是因為內容檔案已存在於內容庫。  
 
  若發佈點尚未對預先設置內容啟用，或者發佈點並不在站台伺服器上，請參閱本主題中的[使用預先設置內容](#bkmk_prestage)一節。  
@@ -305,7 +305,7 @@ ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
     > [!NOTE]  
     >  若發佈點位於次要站台上，請至少等候 10 分鐘再使用連接至父主要站台的 Configuration Manager 主控台，將內容指派至次要站台上的發佈點。  
 
-##  <a name="a-namebkmkmanagea-manage-the-content-you-have-distributed"></a><a name="bkmk_manage"></a> 管理已發佈的內容  
+##  <a name="bkmk_manage"></a> 管理已發佈的內容  
  管理內容的選項如下：  
  - [更新內容](#update-content)
  - [重新發佈內容](#redistribute-content)
@@ -513,9 +513,3 @@ ms.openlocfilehash: 36b08285ef78d0acb9ba9c44abe2d57e311d44b3
 4.  在 [內容位置]  索引標籤上，選取要驗證其內容的發佈點或發佈點群組，然後依序按一下 [驗證] 、[確定] 及 [確定] 。 所選取發佈點或發佈點群組內容的內容驗證程序隨即開始。  
 
 5.  若要檢視內容驗證程序的結果，請在 [監視]  工作區中展開 [發佈狀態] ，然後按一下 [內容狀態]  節點。 每個套件類型的內容 (例如，應用程式、軟體更新套件和開機映像) 都會顯示。 如需監視內容狀態的詳細資訊，請參閱[使用 System Center Configuration Manager 監視發佈的內容](../../../../core/servers/deploy/configure/monitor-content-you-have-distributed.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

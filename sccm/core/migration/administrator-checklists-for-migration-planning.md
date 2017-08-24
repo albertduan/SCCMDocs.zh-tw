@@ -6,22 +6,20 @@ ms.date: 12/29/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 295fdf07-93cc-490c-acdd-ce3ee88cb36f
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 5e6e8a18a8fc705c993177b3c5b4113a351a45a4
 ms.openlocfilehash: 36f7c37e4da3f2bce64a25d266dae57d9fe98c36
-ms.lasthandoff: 12/30/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="administrator-checklists-for-migration-planning-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的系統管理員移轉規劃檢查清單
 
@@ -165,4 +163,3 @@ ms.lasthandoff: 12/30/2016
 -   **完成移轉︰**  
 
     移轉來源階層中所有站台的資料和用戶端，並且升級可用的發佈點後，即可完成移轉。 若要完成移轉，則必須停止在來源階層中的每個來源站台收集資料。 之後，您可以移除不需要的移轉資訊，並且解除委任來源階層基礎結構。 如需詳細資訊，請參閱 [規劃在 System Center Configuration Manager 中完成移轉](../../core/migration/planning-to-complete-migration.md)。  
-

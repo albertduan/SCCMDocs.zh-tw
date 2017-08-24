@@ -6,22 +6,19 @@ ms.date: 04/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d6a73e68-57d8-4786-842b-36669541d8ff
-caps.latest.revision: 17
+caps.latest.revision: "17"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 690d03d9c8c49a815bd318df549d7401a855bc5d
 ms.openlocfilehash: a99b58acef7448af2c9576bfa0ec2635f5a4f86f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="pki-certificate-requirements-for-system-center-configuration-manager"></a>System Center Configuration Manager 的 PKI 憑證需求
 
@@ -89,4 +86,3 @@ ms.lasthandoff: 05/17/2017
 |Intel AMt 型電腦|伺服器驗證。|**Web 伺服器** (已修改)<br /><br /> 您必須設定 [用這項 Active Directory 資訊來建立] 的 [主體名稱]，然後針對 [主體名稱格式]  選取 [一般名稱] 。<br /><br /> 您必須將 [讀取] 和 [註冊] 權限，授與在頻外管理元件內容中指定的萬用安全性群組。|**[增強金鑰使用方法]** 值必須包含 **[伺服器驗證 (1。3。6。1。5。5。7。3。1)]**。<br /><br /> [主體名稱] 必須包含 AMT 型電腦的 FQDN (Active Directory 網域服務會自動提供)。|此憑證位於電腦管理控制器的非動態隨機存取記憶體中，在 Windows 使用者介面中無法看見。<br /><br /> 每部 Intel AMT 型電腦都會在 AMT 佈建及後續更新期間要求此憑證。 如果從這些電腦中移除 AMT 佈建資訊，就會撤銷此憑證。<br /><br /> 此憑證安裝在 Intel AMT 型電腦上時，會一併安裝根 CA 的憑證鏈結。 AMT 型電腦無法支援金鑰長度超過 2,048 位元的 CA 憑證。<br /><br /> 將憑證安裝在 Intel AMT 型電腦上後，此憑證會對頻外服務點站台系統伺服器及執行頻外管理主控台的電腦驗證 AMT 型電腦，以及使用安全通訊端層 (SSL) 加密兩者之間傳送的所有資料。|  
 |Intel AMT 802.1X 用戶端憑證|用戶端驗證|**工作站驗證**<br /><br /> 您必須針對 [用這項 Active Directory 資訊來建立] 設定 [主體名稱]，針對 [主體名稱格式] 選取 [一般名稱] 並清除 DNS 名稱，然後選取使用者主體名稱 (UPN) 作為主體別名。<br /><br /> 您必須將此憑證範本的 [讀取] 和 [註冊] 權限，授與在頻外管理元件內容中指定的萬用安全性群組。|**[增強金鑰使用方法]** 值必須包含 **[用戶端驗證 (1。3。6。1。5。5。7。3。2)]**。<br /><br /> 主體名稱欄位必須包含 AMT 型電腦的 FQDN，主體別名則必須包含 UPN。<br /><br /> 支援的金鑰長度上限：2,048 位元。|此憑證位於電腦管理控制器的非動態隨機存取記憶體中，在 Windows 使用者介面中無法看見。<br /><br /> 每部 Intel AMT 型電腦皆可在 AMT 佈建期間要求此憑證，但即使移除其 AMT 佈建資訊，電腦也不會撤銷此憑證。<br /><br /> 將憑證安裝在 AMT 型電腦上後，此憑證會對 RADIUS 伺服器驗證 AMT 型電腦，以便獲得網路存取權限。|  
 |由 Microsoft Intune 註冊的行動裝置|用戶端驗證|不適用：Intune 會自動建立此憑證。|[增強金鑰使用方法] 值包含**用戶端驗證 (1.3.6.1.5.5.7.3.2)**。<br /><br /> 有三個自訂延伸可唯一識別客戶的 Windows Intune 訂閱。<br /><br /> 使用者可以在註冊期間提供憑證主體的值。 不過，Intune 不會使用此值識別裝置。<br /><br /> 金鑰大小是 2,048 位元，並且使用 SHA-1 雜湊演算法。<br /><br /> **注意：**您無法變更這些設定。 此資訊僅供參考。|驗證使用者使用 Microsoft Intune 註冊行動裝置時，會自動要求並安裝此憑證。 裝置上產生的憑證位於電腦存放區中，並且會對 Intune 驗證註冊的行動裝置，以便管理該裝置。<br /><br /> 由於憑證中有自訂延伸模組，因此只能驗證針對組織建立的 Intune 訂閱。|
-

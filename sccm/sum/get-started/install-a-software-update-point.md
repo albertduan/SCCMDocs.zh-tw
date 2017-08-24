@@ -1,5 +1,4 @@
 ---
-
 title: "安裝和設定軟體更新點 | Microsoft Docs"
 description: "主要站台需要管理中心網站上的軟體更新點才能進行軟體更新相容性評估，以及將軟體更新部署至用戶端。"
 keywords: 
@@ -10,20 +9,14 @@ ms.date: 05/30/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: b099a645-6434-498f-a408-1d438e394396
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
 ms.openlocfilehash: 7d369384d133c90a15e01df50ac53992d61f3873
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/01/2017
-
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
-
 # <a name="install-and-configure-a-software-update-point"></a>安裝及設定軟體更新點  
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -156,4 +149,3 @@ ms.lasthandoff: 06/01/2017
 您已從 Configuration Manager 階層的最上層站台開始安裝軟體更新點。 請重複本主題中的程序，在子站台上安裝軟體更新點。
 
 安裝好軟體更新點之後，請移至[同步處理軟體更新](synchronize-software-updates.md)。
-

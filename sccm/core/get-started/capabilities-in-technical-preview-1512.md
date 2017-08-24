@@ -4,24 +4,22 @@ description: "了解 System Center Configuration Manager Technical Preview 1512 
 ms.custom: na
 ms.date: 01/23/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e4d9e414-1346-4ed4-85d0-64d602b68731
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: noindex,nofollow
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5d08d1f9ccd995d544c3c21c4af52ede73343077
-ms.openlocfilehash: 7fff6f2807a679b621b736b8ad0b6561fb37affe
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/24/2017
-
+ms.openlocfilehash: 5cf8d54fbaa98a75ac2a875a23a43b1d3e5be0dd
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="capabilities-in-technical-preview-1512-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1512 中的功能
 
@@ -93,4 +91,3 @@ ms.lasthandoff: 01/24/2017
 **使用 Endpoint Protection 原則的必要條件：**  
 
 必須先使用 Endpoint Protection 用戶端設定，安裝及管理 Endpoint Protection 用戶端，才可使用 Endpoint Protection 原則。 若是使用 Windows 7、Windows 8、Windows 8.1 之 System Center Endpoint Protection 用戶端，或是 Windows 10 受管理的 Windows Defender，則此作業已完成。 請參閱 [System Center Configuration Manager 中的 Endpoint Protection](../../protect/deploy-use/endpoint-protection.md)。  
-

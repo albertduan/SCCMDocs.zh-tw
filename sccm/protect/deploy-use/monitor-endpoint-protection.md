@@ -6,22 +6,19 @@ ms.date: 03/13/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: f4a1335c-bb3d-493e-a124-83a32a107dc8
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 0fa837c68eb073d2ceaf48c938137a94141a102e
-ms.openlocfilehash: 99e266e44f718d97c2a6e61e8e6816752751ed7b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: b5771f4faebc06076bdbf84727848c881fc1dfb4
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-monitor-endpoint-protection-status"></a>如何監視 Endpoint Protection 狀態
 
@@ -83,4 +80,3 @@ ms.lasthandoff: 01/24/2017
 |**允許**|選取要包含惡意程式碼執行的軟體可讓系統管理使用者。|  
 |**沒有動作**|Endpoint Protection 對惡意程式碼不採取任何動作。 這可能發生在偵測到惡意程式碼並不會再偵測到惡意程式碼; 之後重新啟動電腦比方說，如果對應的網路磁碟機上偵測到的惡意程式碼是不重新連線時重新啟動電腦。|  
 |**封鎖**|Endpoint Protection 封鎖惡意程式碼，使其無法執行。 這可能會發生在處理序已在電腦上的找到包含惡意程式碼。|
-

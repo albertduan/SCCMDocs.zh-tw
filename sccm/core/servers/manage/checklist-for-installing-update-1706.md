@@ -6,8 +6,7 @@ ms.date: 07/31/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7def067e-845c-4db3-9d56-fa1dcf2fd7c7
@@ -15,12 +14,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: dab99748902df0fad32a1e2adad0c05e0dd8bdc9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="checklist-for-installing-update-1706-for-system-center-configuration-manager"></a>安裝 System Center Configuration Manager 1706 版更新的檢查清單
 
@@ -177,4 +175,3 @@ Configuration Manager 無法更新使用網路負載平衡 (NLB) 叢集來裝載
 -    Microsoft SQL Server 回報 SQL 訊息 515，嚴重性 16：[23000] [515] [Microsoft] [SQL Server Native Client 11.0] [SQL Server] 無法插入 NULL 值到資料行 'RowVersion'，資料表 'CM_GF1.dbo.AAD_SecretChange_Notify'; 資料行不得有 Null。 INSERT 失敗。
 
 此訊息可以忽略。  更新至 1706 版之前若未先設定要使用的雲端服務，就會出現此訊息。 在未來的版本中將會解決這個問題。
-

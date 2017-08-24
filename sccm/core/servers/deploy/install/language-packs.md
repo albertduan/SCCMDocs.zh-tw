@@ -6,20 +6,19 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cd74e5f5-33f6-4566-8c9d-d6a93bfe71ed
-caps.latest.revision: 10
+caps.latest.revision: "10"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: e7075eb675353be130fdcc867d9e4dd1009dab35
 ms.openlocfilehash: 47da3c531289ddf13d357bde8bbda85d79ed2803
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="language-packs-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的語言套件
 
@@ -27,7 +26,7 @@ ms.openlocfilehash: 47da3c531289ddf13d357bde8bbda85d79ed2803
 
 本主題提供 System Center Configuration Manager 的語言支援技術詳細資料。  
 
-## <a name="a-namebkmksuplanguagepacksa-supported-operating-system-languages"></a><a name="BKMK_SupLanguagePacks"></a> 支援的作業系統語言  
+## <a name="BKMK_SupLanguagePacks"></a> 支援的作業系統語言  
  在管理中心網站和主要站台安裝**伺服器語言套件**或**用戶端語言套件**，即可安裝下列各表中顯示語言的支援。 在站台安裝程序期間，您可以從可用的語言套件檔案中選取要在該站台支援的伺服器和用戶端語言。
 
  當您執行安裝程式時，語言套件檔案會作為必要條件和可轉散發檔案下載的一部分下載。 您也可以先使用[安裝程式下載程式](setup-downloader.md)下載這些檔案，然後再執行安裝程式。   
@@ -95,9 +94,3 @@ ms.openlocfilehash: 47da3c531289ddf13d357bde8bbda85d79ed2803
  **HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\CCMSetup\InstalledLangs**  
 
 您可以使用硬體清查收集這項資訊，然後再建立用於檢視語言詳細資料的自訂報告。 如需收集自訂硬體清查的資訊，請參閱[如何在 System Center Configuration Manager 中設定硬體清查](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)。 如需建立報告的相關資訊，請參閱 [System Center Configuration Manager 中的報告作業和維護](../../../../core/servers/manage/operations-and-maintenance-for-reporting.md)主題中的[管理 Configuration Manager 報告](../../../../core/servers/manage/operations-and-maintenance-for-reporting.md#BKMK_ManageReports)一節。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

@@ -6,22 +6,19 @@ ms.date: 02/09/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 2be84a1d-ebb9-47ae-8982-c66d5b92a52a
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1c43c4968f93985515249ddb117269f8ed61302a
 ms.openlocfilehash: 46cc3fcfd9516cf1c124e24b50d0aac0cb0025dc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-and-configure-application-management-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中規劃和設定應用程式管理
 
@@ -227,4 +224,3 @@ ms.lasthandoff: 05/17/2017
 
 > [!WARNING]  
 >  安裝應用程式類別目錄站台系統角色之後，當您從軟體中心選擇 [從應用程式類別目錄尋找其他應用程式] 連結時，將不會立即看見該應用程式類別目錄。 在用戶端下一次下載其用戶端原則，或是應用程式類別目錄站台系統角色安裝後達到 25 小時後，才能在軟體中心內看見應用程式類別目錄。  
-

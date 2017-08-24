@@ -5,25 +5,21 @@ ms.date: 2/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 57413dd3-b2f8-4a5f-b27f-8464d357caff
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 1defe96163f1bb70f586619ad89098c6f0e6c665
 ms.openlocfilehash: 3eea3a6e5f23808570ded4be3bd7412954518b96
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="configure-role-based-administration-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 設定以角色為基礎的系統管理   
 
 *適用對象：System Center Configuration Manager (最新分支)*
@@ -302,4 +298,3 @@ ms.lasthandoff: 05/17/2017
 
     > [!CAUTION]  
     >  當安全性角色授與系統管理使用者集合部署權限時，這些系統管理使用者就能從本身具有物件 [讀取]  權限的任何安全性範圍發佈物件，即使該安全性範圍是與不同的安全性角色相關聯。  
-

@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b7332ed3-8003-454b-bb12-1fdf8721425c
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 1480c38a6a3afef76b2e8759eaafd47d28f978f4
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="list-of-reports-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的報告清單
 
@@ -790,9 +789,3 @@ System Center Configuration Manager 提供許多內建報告，並涵蓋各種�
 |**網路喚醒活動的歷程記錄**|顯示自特定期間以來發生的喚醒活動歷程記錄。|  
 |**喚醒 Proxy 的部署狀態詳細資料**|顯示針對所指定集合中的每部裝置，顯示其喚醒 Proxy 的部署狀態相關資訊。|  
 |**喚醒 Proxy 的部署狀態摘要**|顯示所指定集合中喚醒 Proxy 的部署狀態摘要。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

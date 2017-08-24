@@ -1,5 +1,4 @@
 ---
-
 title: "設定 Endpoint Protection | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 選取及設定 Endpoint Protection 方法，讓用戶端電腦上的反惡意程式碼定義保持最新狀態。"
 ms.custom: na
@@ -7,25 +6,20 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 537dd2a7-4e44-4877-b8dd-5e1499407f8d
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: 9085a4daed409eeff4c95e5c467f123d0a38147a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
-
+ms.openlocfilehash: b5da7900a4f8e2f330c4dcb2cac00b45099bd909
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 #  <a name="configure-definition-updates-for-endpoint-protection"></a>設定 Endpoint Protection 的定義更新  
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -75,4 +69,3 @@ ms.lasthandoff: 12/16/2016
 -   從 Microsoft 惡意程式碼防護中心發佈的更新 - 此方法會從 Microsoft 惡意程式碼防護中心下載定義更新。
 
 -   [來自 UNC 檔案共用的更新](endpoint-definitions-network.md) - 使用此方法，您可以將最新的定義和引擎更新儲存到網路上的共用。 之後，用戶端便可以存取網路來安裝更新。
-

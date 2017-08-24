@@ -6,20 +6,19 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2e27b0b7-7bd3-45cd-bc99-9c991606c637
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: ac4576035fda943e38d960dd425d44b7a6ef6a01
 ms.openlocfilehash: b52ca4059dfeed08cabf1f75319da40d6499622f
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-a-client-migration-strategy-in-system-center-configuration-manager"></a>規劃 System Center Configuration Manager 中的用戶端移轉策略
 
@@ -35,7 +34,7 @@ ms.openlocfilehash: b52ca4059dfeed08cabf1f75319da40d6499622f
 
 -   [規劃移轉期間的清查和相容性資料](#Planning_for_Inventory_data_migration)  
 
-##  <a name="a-nameplanningforclientagentmigrationa-plan-to-migrate-clients-to-the-destination-hierarchy"></a><a name="Planning_for_Client_Agent_Migration"></a> 規劃將用戶端移轉至目的地階層  
+##  <a name="Planning_for_Client_Agent_Migration"></a> 規劃將用戶端移轉至目的地階層  
  從來源階層移轉用戶端時，用戶端電腦上的用戶端軟體會升級，以符合來源階層的產品版本。  
 
 -   **Configuration Manager 2007 來源階層：**當您從執行 Configuration Manager 受支援版本的來源階層移轉用戶端時，用戶端軟體會升級為目的地階層的用戶端版本。  
@@ -69,7 +68,7 @@ ms.openlocfilehash: b52ca4059dfeed08cabf1f75319da40d6499622f
 
 將用戶端移轉至目的地階層之後，您就無法再使用來源階層管理該裝置，而應該考慮從來源階層中移除用戶端。 雖然這不是移轉階層時的需求，但是有助於避免在來源階層報告中識別移轉的用戶端，或是在移轉期間發生兩個階層之間的資源計數不正確。 例如，如果移轉的用戶端留在來源站台資料庫中，您可能會執行軟體更新報告，而誤將該電腦識別為未受管理的資源，而實際上是受到目的地階層管理。  
 
-##  <a name="a-nameplanningforclientdatamigrationa-plan-to-handle-data-maintained-on-clients-during-migration"></a><a name="Planning_for_Client_Data_Migration"></a> 規劃處理移轉期間保留在用戶端上的資料  
+##  <a name="Planning_for_Client_Data_Migration"></a> 規劃處理移轉期間保留在用戶端上的資料  
 您將用戶端從其來源階層移轉至目的地階層時，有些資料會保留在裝置上，而有些資料在移轉後就不會存在裝置上。  
 
 下列資訊會保留在用戶端裝置上：  
@@ -98,13 +97,7 @@ ms.openlocfilehash: b52ca4059dfeed08cabf1f75319da40d6499622f
 
 此外，您可能需要重新安裝部分應用程式。  
 
-##  <a name="a-nameplanningforinventorydatamigrationa-plan-for--inventory-and-compliance-data-during-migration"></a><a name="Planning_for_Inventory_data_migration"></a> 規劃移轉期間的清查和相容性資料  
+##  <a name="Planning_for_Inventory_data_migration"></a> 規劃移轉期間的清查和相容性資料  
 您將用戶端移轉至目的地階層時，用戶端清查和相容性資料並不會儲存。 此資訊會在用戶端初次將其資訊傳送至其指定的站台時，於目的地階層中重新建立。 若要幫助減少產生的網路頻寬需求和伺服器處理，請考慮分階段移轉小量用戶端，而不要一次移轉大量用戶端。  
 
  此外，您無法從來源階層移轉硬體清查的自訂。 您必須在移轉之外另行將這些自訂導入目的地階層中。 如需如何擴充硬體清查的資訊，請參閱[如何擴充 System Center Configuration Manager 中的硬體清查](../../core/clients/manage/inventory/configure-hardware-inventory.md)。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

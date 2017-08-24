@@ -2,28 +2,25 @@
 title: "使用 Configuration Manager 建立並執行指令碼 | Microsoft Docs"
 description: "使用 Configuration Manager 在用戶端裝置上建立並執行指令碼。"
 ms.custom: na
-ms.date: 08/01/2017
+ms.date: 08/09/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
-caps.latest.revision: 14
-caps.handback.revision: 0
+caps.latest.revision: "14"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
+ms.openlocfilehash: ed84f7900eee5c04728d0e4d1b46027c36327bec
+ms.sourcegitcommit: b41d3e5c7f0c87f9af29e02de3e6cc9301eeafc4
 ms.translationtype: HT
-ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
-ms.openlocfilehash: 4dcda88d4e91347f6da97e8da04c38f9e65e07bc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/02/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/11/2017
 ---
-
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>從 Configuration Manager 主控台建立及執行 PowerShell 指令碼
 
 適用於：System Center Configuration Manager (最新分支)
@@ -61,7 +58,6 @@ Configuration Manager 用戶端必須執行至少 1706 版或更新版的用戶�
 2. 在 [系統管理]  工作區中，展開 [網站設定] ，然後按一下 [網站] 。
 3. 在站台清單中，選擇您的站台，然後在 [首頁] 索引標籤上的 [站台] 群組中，按一下 [階層設定]。
 4. 在 [階層設定內容] 對話方塊的 [一般] 索引標籤上，取消選取 [不允許指令碼作者核准自己的指令碼]。
-網站
 
 ## <a name="import-and-edit-a-script"></a>匯入及編輯指令碼
 
@@ -120,4 +116,3 @@ Configuration Manager 用戶端必須執行至少 1706 版或更新版的用戶�
 1. 在 Configuration Manager 主控台中，按一下 [監視] 。
 2. 在 [監視] 工作區中，按一下 [指令碼狀態]。
 3. 在 [指令碼狀態] 清單中，您可以檢視在用戶端裝置上執行之每個指令碼的結果。 指令碼結束代碼 **0** 通常表示指令碼已成功執行。
-

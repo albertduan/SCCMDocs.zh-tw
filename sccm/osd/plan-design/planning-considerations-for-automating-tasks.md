@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: fc497a8a-3c54-4529-8403-6f6171a21c64
-caps.latest.revision: 13
-caps.handback.revision: 0
+caps.latest.revision: "13"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="planning-considerations-for-automating-tasks-in-system-center-configuration-manager"></a>System Center Configuration Manager 的自動化工作規劃考量
 
@@ -28,7 +27,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
 您可以建立工作順序，以在 System Center Configuration Manager 環境中自動化工作。 這些工作範圍涵蓋擷取參照電腦上的作業系統，到將作業系統部署到一部或多部目的地電腦。 工作順序的動作，會在順序的個別步驟中定義。 當工作順序執行時，每個步驟的動作都是在本機系統內容的命令列層級執行，不需要使用者介入。 下列各節可協助規劃在 Configuration Manager 中自動化工作。
 
-##  <a name="a-namebkmktsstepsactionsa-task-sequence-steps-and-actions"></a><a name="BKMK_TSStepsActions"></a> 工作順序的步驟和動作  
+##  <a name="BKMK_TSStepsActions"></a> 工作順序的步驟和動作  
  步驟是工作順序的基本元件。 它們可能包含設定和擷取參照電腦之作業系統的命令，或包含在目的地電腦上安裝作業系統、驅動程式、Configuration Manager 用戶端和軟體的命令。 工作順序的命令是由步驟的動作所定義。 其中有兩種類型的動作。 一種您使用命令列字串定義的動作，稱為自訂動作。 另一種是由 Configuration Manager 預先定義的動作，稱為內建動作。 工作順序可以執行任何組合的自訂和內建動作。  
 
  工作順序步驟也可以包含控制步驟行為的條件，例如若發生錯誤時是要停止工作順序，或繼續工作順序。 新增條件的方式是在步驟中包含工作順序步驟。 例如，您可以使用 **SMSTSLastActionRetCode** 變數測試上一個步驟的條件。 變數可以加入至單一步驟或步驟的群組。  
@@ -40,7 +39,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
  如需可新增至工作順序之步驟的詳細資訊，請參閱[工作順序步驟](../understand/task-sequence-steps.md)。  
 
-##  <a name="a-namebkmktsgroupsa-task-sequence-groups"></a><a name="BKMK_TSGroups"></a> 工作順序群組  
+##  <a name="BKMK_TSGroups"></a> 工作順序群組  
  [群組] 是工作順序內的多個步驟。 工作順序群組是由名稱、選擇性描述，以及其他在工作順序繼續執行下一個步驟前評估為單位的選用條件所組成。 群組可以彼此嵌入，同時群組可以包含混合的步驟和子群組。 群組非常適用於合併多個共用一般條件的步驟。  
 
 > [!IMPORTANT]  
@@ -69,7 +68,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
  雖然群組名稱不一定要是唯一值，但您必須指派名稱給工作順序群組。 您也可以為工作順序群組提供選擇性描述。  
 
-##  <a name="a-namebkmktsvariablesa-task-sequence-variables"></a><a name="BKMK_TSVariables"></a> 工作順序變數  
+##  <a name="BKMK_TSVariables"></a> 工作順序變數  
  工作順序變數是一組成對的名稱和值，為電腦提供設定和作業系統部署設定、作業系統和 Configuration Manager 用戶端電腦上的使用者狀態設定工作。 工作順序變數提供一種機制，可設定及自訂工作順序中的步驟。  
 
  當您執行工作順序時，許多工作順序設定會儲存為環境變數。 您可以存取或變更內建工作順序變數的值，也可以建立新的工作順序變數，以自訂工作順序在目的地電腦上執行的方式。  
@@ -86,7 +85,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
  例如，您可能有一個工作順序，其中包含 [加入網域或工作群組] 工作順序步驟。 工作順序可能會部署至不同的集合，其中集合的成員資格是由網域成員資格所判斷。 在該情況下，您可以為每個集合的網域名稱指定每個集合工作順序變數，然後使用該工作順序變數在工作順序中提供適當的網域名稱。  
 
-###  <a name="a-namebkmktscreatevariablesa-create-task-sequence-variables"></a><a name="BKMK_TSCreateVariables"></a> 建立工作順序變數  
+###  <a name="BKMK_TSCreateVariables"></a> 建立工作順序變數  
  您可以新增工作順序變數，以自訂和控制工作順序中的步驟。 例如，您可以建立工作順序變數，以覆寫內建工作順序步驟的設定。 您也可以建立自訂工作順序變數，以便在工作順序中與條件、命令列或自訂步驟搭配使用。 當您建立工作順序變數時，工作順序變數和指派的值會保留在工作順序環境中，即使工作順序重新啟動目的地電腦亦相同。 變數及其值可在不同作業系統環境的工作順序中使用。 例如，它可以在完整的 Windows 作業系統和 Windows PE 環境中使用。  
 
  下表描述建立工作順序變數和其他使用資訊的方法。  
@@ -148,7 +147,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
 -   可建立多少工作順序變數並無限制。 不過，變數的數目則受限於工作順序環境的大小。 工作順序環境的大小總計限制為 32 MB。  
 
-###  <a name="a-namebkmktsenvironmentvariablesa-access-environment-variables"></a><a name="BKMK_TSEnvironmentVariables"></a> 存取環境變數  
+###  <a name="BKMK_TSEnvironmentVariables"></a> 存取環境變數  
  在使用前一節的其中一個方法來指定工作順序變數及其值之後，您可以在工作順序中使用環境變數值。 您可以存取內建工作順序變數的預設值、指定新的內建變數值，或在命令列或指令碼中使用自訂工作順序變數。  
 
  下表簡述工作順序操作，藉由存取工作順序環境變數可執行這些操作。  
@@ -160,7 +159,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 |評估步驟條件|您可以將內建或自訂工作順序環境變數當成部分的工作順序步驟或群組條件來使用。 環境變數值會在執行工作順序步驟或群組之前進行評估。<br /><br /> 若要新增評估變數值的條件，請執行下列操作：<br /><br /> 1.選取您要為其新增條件的步驟或群組。<br />2.在步驟或群組的 [選項] 索引標籤上，從 [新增條件] 下拉式清單中選取 [工作順序變數]。<br />3.在 [工作順序變數] 對話方塊中，指定變數名稱、受測試條件及變數值。|  
 |提供自訂指令碼的資訊|在執行工作順序的同時，可藉由使用 Microsoft.SMS.TSEnvironment COM 物件來讀取及寫入工作順序變數。<br /><br /> 以下範例說明查詢 **_SMSTSLogPath** 工作順序變數的 Visual Basic 指令檔，以取得目前的記錄位置。 指令碼也會設定自訂變數。<br /><br /> <br /><br /> **dim osd: set env = CreateObject("Microsoft.SMS.TSEnvironment")**<br /><br /> <br /><br /> **dim logPath**<br /><br /> <br /><br /> **' You can query the environment to get an existing variable.**<br /><br /> **logPath = env("_SMSTSLogPath")**<br /><br /> <br /><br /> **' You can also set a variable in the OSD environment.**<br /><br /> **env("MyCustomVariable") = "varname"**<br /><br /> <br /><br /> 如需如何使用指令碼中之工作順序變數的詳細資訊，請參閱 SDK 文件。|  
 
-###  <a name="a-namebkmkcomputercollectionvariablesa-computer-and-collection-variables"></a><a name="BKMK_ComputerCollectionVariables"></a> 電腦和集合變數  
+###  <a name="BKMK_ComputerCollectionVariables"></a> 電腦和集合變數  
  您可以將工作順序設定在多部電腦或集合上同時執行。 您可以指定唯一的每部電腦或每個集合資訊，例如指定唯一的作業系統產品金鑰，或是將所有的集合成員加入到指定的網域。  
 
  您可以將工作順序變數指派到單一電腦或集合。 當工作順序開始在目標電腦或集合上執行時，會將指定值套用到電腦或集合。  
@@ -172,7 +171,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
  如需如何為電腦與集合建立工作順序變數的詳細資訊，請參閱[為電腦與集合建立工作順序變數](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_CreateTSVariables)。  
 
-###  <a name="a-namebkmktsmediavariablesa-task-sequence-media-variables"></a><a name="BKMK_TSMediaVariables"></a> 工作順序媒體變數  
+###  <a name="BKMK_TSMediaVariables"></a> 工作順序媒體變數  
  您可以針對從媒體執行的工作順序，指定工作順序變數。 當利用媒體部署作業系統時，您可新增工作順序變數，並在建立媒體時指定其值，而變數與變數值則會儲存在媒體上。  
 
 > [!NOTE]  
@@ -183,14 +182,14 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 > [!TIP]  
 >  工作順序會將套件識別碼和啟動前置命令列 (包括任何工作順序變數的值) 寫入執行 Configuration Manager 主控台之電腦上的 CreateTSMedia.log 記錄檔中。 您可以檢閱這個記錄檔來驗證工作順序變數的值。  
 
-##  <a name="a-namebkmktscreatea-create-a--task-sequence"></a><a name="BKMK_TSCreate"></a> 建立工作順序  
+##  <a name="BKMK_TSCreate"></a> 建立工作順序  
  您會使用建立工作順序精靈建立工作順序。 該精靈會建立執行特定工作的內建工作順序，或是執行許多不同工作的自訂工作順序。  
 
  例如，您可以建立負責組建及擷取參照電腦 之作業系統映像的工作順序，可以在目的地電腦上安裝現有作業系統映像，或是建立負責執行自訂工作的自訂工作順序。 您可以使用自訂工作順序來執行特定的作業系統部署。  
 
  如需如何建立工作順序的詳細資訊，請參閱[建立工作順序](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_CreateTaskSequence)。  
 
-##  <a name="a-namebkmktsedita-edit-a-task-sequence"></a><a name="BKMK_TSEdit"></a> 編輯工作順序  
+##  <a name="BKMK_TSEdit"></a> 編輯工作順序  
  您可以使用 [工作順序編輯器] 編輯工作順序。 編輯器可以對工作順序做以下變更：  
 
 -   您可以從工作順序新增或移除步驟。  
@@ -208,7 +207,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
  如需如何編輯工作順序的詳細資訊，請參閱[編輯工作順序](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_ModifyTaskSequence)。  
 
-##  <a name="a-namebkmktsdeploya-deploy-a-task-sequence"></a><a name="BKMK_TSDeploy"></a> 部署工作順序  
+##  <a name="BKMK_TSDeploy"></a> 部署工作順序  
  您可以將工作順序部署到位於任何 Configuration Manager 集合中的目的地電腦。 這包含用於將作業系統部署到未知電腦的 **[所有未知電腦]** 集合。 但不可將工作順序部署到使用者集合。  
 
 > [!IMPORTANT]  
@@ -230,7 +229,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
  如需如何部署工作順序的詳細資訊，請參閱[部署工作順序](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)。  
 
-##  <a name="a-namebkmktsexportimporta-export-and-import-a-task-sequences"></a><a name="BKMK_TSExportImport"></a> 匯出和匯入工作順序  
+##  <a name="BKMK_TSExportImport"></a> 匯出和匯入工作順序  
  Configuration Manager 可讓您匯出和匯入工作順序。 當您匯出工作順序時，可將工作順序所參照的物件包含進去。 這些包括作業系統映像、開機映像、用戶端代理程式套件、驅動程式套件，以及具有相依性的應用程式。  
 
 > [!NOTE]  
@@ -238,7 +237,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
  如需如何匯出和匯入工作順序的詳細資訊，請參閱[匯出和匯入工作順序](../deploy-use/manage-task-sequences-to-automate-tasks.md#BKMK_ExportImport)。  
 
-##  <a name="a-namebkmktsruna-run-a-task-sequence"></a><a name="BKMK_TSRun"></a> 執行工作順序  
+##  <a name="BKMK_TSRun"></a> 執行工作順序  
  根據預設，使用本機系統帳戶永遠都可執行工作順序。 工作順序命令列步驟會提供將工作順序當成不同帳戶來執行的能力。 在執行工作順序時，Configuration Manager 用戶端會在啟動工作順序步驟之前，先確認是否有任何參照的套件。 如果參照的套件未在發佈點上驗證，或無法使用時，工作順序會傳回關聯之工作順序步驟的錯誤。  
 
  如果發佈的工作順序設定為下載並執行，則所有相依套件和應用程式都會下載到 Configuration Manager 用戶端快取。 需要的套件和應用程式可從發佈點獲得，而且如果 Configuration Manager 用戶端快取大小太小，或找不到套件和應用程式，工作順序便會失敗，並且會產生狀態訊息。 您也可以在選取 **[執行工作順序以視需要將內容下載到本機]**時，指定用戶端只在需要時下載內容。或是使用 **[從發佈點執行程式]** 選項，指定用戶端直接從發佈點安裝檔案，不需先下載到快取。 僅當參考的套件已在 [套件] 內容的 [資料存取] 索引標籤上啟用 [將此套件中的內容複製到發佈點上的套件共用] 時，[從發佈點執行程式] 選項才可使用。  
@@ -255,7 +254,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 > [!NOTE]  
 >  在 Configuration Manager 用戶端執行工作順序之前，用戶端會檢查所有工作順序是否有可能的相依性，以及發佈點上之相依性的可用性。 如果用戶端找到工作順序相依的已刪除物件，用戶端會產生錯誤且不會執行工作順序。  
 
-###  <a name="a-namebkmkrunprograma-run-a-program-before-the-task-sequence-is-run"></a><a name="BKMK_RunProgram"></a> 先執行程式再執行工作順序  
+###  <a name="BKMK_RunProgram"></a> 先執行程式再執行工作順序  
  您可以選取在執行工作順序之前執行的程式。 若要指定先執行的程式，開啟工作順序 [內容] 對話方塊，並選取 [進階] 索引標籤以設定下列選項：  
 
 > [!IMPORTANT]  
@@ -274,13 +273,13 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
  如果選取的程式無法在用戶端上執行，工作順序就不會執行。  
 
-##  <a name="a-namebkmktsmaintenancewindowa-use-a-maintenance-window-to-specify-when-a-task-sequence-can-run"></a><a name="BKMK_TSMaintenanceWindow"></a> 使用維護期間指定工作順序可以執行的時間  
+##  <a name="BKMK_TSMaintenanceWindow"></a> 使用維護期間指定工作順序可以執行的時間  
  您可以專為包含目的地電腦的集合定義一個維護期間，以藉此指定工作順序的執行時間。 維護期間的設定包括開始日期、開始與結束時間以及週期模式。 此外，在設定維護期間的排程時，您可以指定維護期間僅套用至工作順序。 如需詳細資訊，請參閱[如何使用維護期間](../../core/clients/manage/collections/use-maintenance-windows.md)。  
 
 > [!IMPORTANT]  
 >  設定維護期間執行工作順序時，一旦工作順序開始之後，即使將維護期間關閉，該順序仍會持續執行。 工作順序將順利完成或失敗。  
 
-##  <a name="a-namebkmktsnetworkaccessaccounta-task-sequences-and-the-network-access-account"></a><a name="BKMK_TSNetworkAccessAccount"></a> 工作順序和網路存取帳戶  
+##  <a name="BKMK_TSNetworkAccessAccount"></a> 工作順序和網路存取帳戶  
  雖然工作順序只會在本機系統帳戶的環境中執行，您仍可能需要在下列情形中設定網路存取帳戶：  
 
 -   您必須正確設定網路存取帳戶，否則當工作順序嘗試存取發佈點上的 Configuration Manager 套件以完成其工作時，工作將會失敗。 如需網路存取帳戶的詳細資訊，請參閱[網路存取帳戶](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md#a-namebkmknaaa-network-access-account)。  
@@ -290,7 +289,7 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
 
 -   使用開機映像啟動作業系統部署時，Configuration Manager 會使用非完整作業系統的 Windows PE 環境。 Windows PE 環境使用自動產生的隨機名稱，且該名稱不能是任何網域的成員。 如果您沒有正確設定網路存取帳戶，電腦可能不會有存取必要 Configuration Manager 套件所需的必要權限來完成工作順序。  
 
-##  <a name="a-namebkmktscreatemediaa-create-media-for-task-sequences"></a><a name="BKMK_TSCreateMedia"></a> 建立工作順序的媒體  
+##  <a name="BKMK_TSCreateMedia"></a> 建立工作順序的媒體  
  您可寫入工作順序與其相關檔案以及數種媒體類型的相依性。 這包括寫入至可移除媒體，例如擷取、獨立以及可開機媒體的 DVD 或 CD 組或 USB 快閃磁碟機，或是寫入至預先設置媒體的 Windows 映像格式 (WIM) 檔案。  
 
  您可以建立下列媒體類型：  
@@ -323,9 +322,3 @@ ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
  使用媒體執行工作順序時，將無法辨識媒體上包含的指定電腦晶片架構，即使指定的架構不符合實際安裝在目標電腦上的架構，工作順序仍會嘗試執行。 如果媒體上的晶片架構與目標電腦上所安裝的晶片架構不符，安裝就會失敗。  
 
  如需如何使用媒體部署作業系統的詳細資訊，請參閱[建立工作順序媒體](../deploy-use/create-task-sequence-media.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

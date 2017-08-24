@@ -5,21 +5,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 32609a30-465c-4406-b227-aca5c276e015
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
 ms.openlocfilehash: 1786209f1a1b0d1caab9e31414bfccb690c8e659
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="start-using-system-center-configuration-manager"></a>Start using System Center Configuration Manager (開始使用 System Center Configuration Manager)
 
@@ -36,9 +35,3 @@ ms.openlocfilehash: 1786209f1a1b0d1caab9e31414bfccb690c8e659
 -   [為 System Center Configuration Manager 設定站台和階層](../../../core/servers/deploy/configure/configure-sites-and-hierarchies.md)  
 
 -   [在 System Center Configuration Manager 階層間移轉資料](../../../core/migration/migrate-data-between-hierarchies.md)  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

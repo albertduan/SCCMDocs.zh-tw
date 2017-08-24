@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4d26deed-3b16-4116-b640-f618f2c20f5a
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 521b90b9d497818a4c1e546fca38cd15d4cab487
 ms.openlocfilehash: 6ee99fa0c07676f004e41a50bf16d0d17604e790
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-application-management-in-system-center-configuration-manager"></a>System Center Configuration Manager 的應用程式管理安全性與隱私權
 
@@ -68,7 +67,7 @@ ms.openlocfilehash: 6ee99fa0c07676f004e41a50bf16d0d17604e790
 
      雖然您可以設定用戶端設定，將安裝權限侷限於裝置的主要使用者，或只限定於本機系統管理員，但此設定不適用公司入口網站。 這可能導致因使用者安裝了不被允許安裝的應用程式，而造成權限提高。  
 
-##  <a name="a-namebkmkcertificatessilverlight5a-certificates-for-microsoft-silverlight-5-and-elevated-trust-mode-required-for-the-application-catalog"></a><a name="BKMK_CertificatesSilverlight5"></a> 應用程式類別目錄需要 Microsoft Silverlight 5 憑證和更高的信任模式  
+##  <a name="BKMK_CertificatesSilverlight5"></a> 應用程式類別目錄需要 Microsoft Silverlight 5 憑證和更高的信任模式  
  Configuration Manager 用戶端需要 Microsoft Silverlight 5，且必須在更高的信任模式下執行，以供使用者透過應用程式類別目錄安裝軟體。 根據預設，Silverlight 會以部分信任模式執行，以防止應用程式存取使用者資料。 Configuration Manager 會在用戶端上自動安裝 Microsoft Silverlight 5 (如果尚未安裝)。 根據預設，Configuration Manager 會將電腦代理程式的 [允許 Silverlight 應用程式在更高的信任模式下執行] 用戶端設定設為 [是]。 此設定讓已簽署和信任的 Silverlight 應用程式能夠要求更高的信任模式。  
 
  當您安裝應用程式類別目錄網站點站台系統角色時，用戶端會同時將 Microsoft 簽署憑證安裝在每部 Configuration Manager 用戶端電腦上的 [信任的發行者] 電腦憑證存放區中。 此憑證讓其所簽署的 Silverlight 應用程式能夠在更高的信任模式下執行，使電腦得以從應用程式類別目錄安裝軟體。 Configuration Manager 會自動管理此簽署憑證。 若要確保服務連續性，請勿手動刪除或移動此 Microsoft 簽署憑證。  
@@ -113,9 +112,3 @@ ms.openlocfilehash: 6ee99fa0c07676f004e41a50bf16d0d17604e790
 -  應用程式核准要求的相關資訊會儲存在 Configuration Manager 資料庫中。 被取消或拒絕的要求與對應的要求歷程記錄項目，預設會在 30 天後刪除。 藉由設定 [刪除過時應用程式要求資料]  站台維護工作，就可以設定刪除行為。 處於核准與擱置狀態的應用程式核准要求永遠不會遭到刪除。  
 -  透過應用程式類別目錄傳出或傳入的資訊都不會傳送至 Microsoft。  
 -  根據預設，不會安裝應用程式類別目錄。 此安裝需要數個設定步驟。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

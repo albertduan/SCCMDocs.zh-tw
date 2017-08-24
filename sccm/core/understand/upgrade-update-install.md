@@ -6,22 +6,21 @@ ms.date: 1/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 17fab17f-304d-4f6a-87c7-30ab4f5521ed
-caps.latest.revision: 0
-caps.handback.revision: 0
+caps.latest.revision: "0"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 0d0735c170820259ac8bb6706aac7cc5569a1628
 ms.openlocfilehash: 6bd6cd7ea3c41fa1d70e17a1290c9f1f74cc9e37
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="about-upgrade-update-and-install-for-site-and-hierarchy-infrastructure"></a>關於站台及階層基礎結構的升級、更新及安裝
 
 適用於：System Center Configuration Manager (最新分支)
@@ -56,9 +55,3 @@ ms.openlocfilehash: 6bd6cd7ea3c41fa1d70e17a1290c9f1f74cc9e37
 當您安裝新的主要站台或管理中心網站時，您所使用的 setup.exe 以及與其相關聯的來源檔案位置取決於您的安裝案例。
 
 如需詳細資訊，請參閱[準備安裝站台](/sccm/core/servers/deploy/install/prepare-to-install-sites)。
-
-
-
-<!--HONumber=Jan17_HO2-->
-
-

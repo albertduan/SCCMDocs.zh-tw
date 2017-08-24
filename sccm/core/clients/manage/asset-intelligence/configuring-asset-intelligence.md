@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 08e0382d-de05-4a76-ba5c-7223173f7066
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
-ms.openlocfilehash: 27566be49a673bebca6ac3621e692fad65523ca4
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/30/2016
-
-
+ms.openlocfilehash: d2704e0f93ad9748f7eb06d714b3754463cb3bdb
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-asset-intelligence-in-system-center-configuration-manager"></a>設定 System Center Configuration Manager 中的 Asset Intelligence
 
@@ -226,7 +223,7 @@ Asset Intelligence 會使用產品名稱和產品版本來比對您在一般授�
 
 4.  在 [首頁] 索引標籤的 [設定] 群組中，選擇 [站台維護]。 選取一項工作，然後選擇 [編輯] 修改設定。 
 
-      我們建議，您將時段設為站台的離峰時間。 該時段即為可執行工作的時間間隔。 您可在 [工作內容]  對話方塊中以 [由此開始]  和 [最晚的開始時間]  來指定時段。  
+    我們建議，您將時段設為站台的離峰時間。 該時段即為可執行工作的時間間隔。 您可在 [工作內容]  對話方塊中以 [由此開始]  和 [最晚的開始時間]  來指定時段。  
 
     您可以選取目前的日期，並將 [由此開始]  時間設為目前時間過後幾分鐘，以立即啟動工作。  
 
@@ -234,4 +231,3 @@ Asset Intelligence 會使用產品名稱和產品版本來比對您在一般授�
 
     > [!NOTE]  
     >  若第一次嘗試時無法執行工作，Configuration Manager 會嘗試重新執行工作直到工作執行成功，或直到可執行工作的時段已過為止。  
-

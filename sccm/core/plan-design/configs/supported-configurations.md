@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 45a10878-ff48-4318-9c6d-c014b38a4039
-caps.latest.revision: 9
-caps.handback.revision: 0
+caps.latest.revision: "9"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 6b8601a195e81e011c49ae8662ae224f36c82c0d
 ms.openlocfilehash: aad46e9ab893b9bb3e32d35c17b9678b3a265c99
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="supported-configurations-for-system-center-configuration-manager"></a>System Center Configuration Manager 的支援設定
 
@@ -72,9 +71,3 @@ Configuration Manager 功能需要更特定設定時，功能特定文件會包�
 
 -  [虛擬化環境支援](../../../core/plan-design/configs/support-for-virtualization-environments.md)  
 深入了解如何使用支援的虛擬機器技術。
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

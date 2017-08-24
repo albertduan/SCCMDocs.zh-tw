@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 0212b023-804a-4f84-b880-7a59cdb49c67
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-a-task-sequence-to-manage-virtual-hard-disks-in-system-center-configuration-manager"></a>使用工作順序管理 System Center Configuration Manager 中的虛擬硬碟
 
@@ -60,10 +59,10 @@ ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
     > [!NOTE]  
     >  如果您在開啟 Configuration Manager 主控台時安裝 VMM 主控台，則必須在 VMM 主控台安裝完成之後重新啟動 Configuration Manager 主控台。 否則，Configuration Manager 將無法順利連線至 VMM 管理伺服器以上傳 VHD。  
 
-##  <a name="a-namebkmkcreatevhdstepsa-steps-to-create-a-vhd"></a><a name="BKMK_CreateVHDSteps"></a> 建立 VHD 的步驟  
+##  <a name="BKMK_CreateVHDSteps"></a> 建立 VHD 的步驟  
  若要建立 VHD，您必須建立包含建立 VHD 的步驟的工作順序，然後在建立虛擬硬碟精靈中使用該工作順序來建立 VHD。 以下各節提供建立 VHD 的步驟。  
 
-###  <a name="a-namebkmkcreatetsa-create-a-task-sequence-for-the-vhd"></a><a name="BKMK_CreateTS"></a> 建立 VHD 的工作順序  
+###  <a name="BKMK_CreateTS"></a> 建立 VHD 的工作順序  
  您必須建立工作順序，其中將包含建立 VHD 的步驟。 在建立工作順序精靈中，您可以使用 [安裝現有的映像套件至虛擬硬碟]  選項來完成建立 VHD 的步驟。 舉例來說，精靈會新增下列必要步驟：重新啟動 Windows PE、格式化及分割硬碟、套用作業系統以及將電腦關機。 您無法在完整的作業系統中建立 VHD。 此外，Configuration Manager 必須等待虛擬機器關機之後才能完成套件。 根據預設，精靈在將虛擬機器關機之前會等候 5 分鐘。 在建立工作順序之後，您可以視需要新增其他步驟。  
 
 > [!IMPORTANT]  
@@ -124,7 +123,7 @@ ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
 
 10. 完成精靈。  
 
-###  <a name="a-namebkmkcreatevhda-create-a-vhd"></a><a name="BKMK_CreateVHD"></a> 建立 VHD  
+###  <a name="BKMK_CreateVHD"></a> 建立 VHD  
  在建立 VHD 的工作順序之後，請使用建立虛擬硬碟精靈來建立 VHD。  
 
 > [!IMPORTANT]  
@@ -182,10 +181,10 @@ ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
 > [!NOTE]  
 >  Configuration Manager 會連線至 VHD 的來源位置，以擷取 VHD 的大小。 如果 Configuration Manager 無法存取 VHD 檔案，VHD 的 [大小 (KB)] 資料行就會顯示 **0**。  
 
-##  <a name="a-namebkmkmodifyvhdstepsa-steps-to-modify-an-existing-vhd"></a><a name="BKMK_ModifyVHDSteps"></a> 修改現有 VHD 的步驟  
+##  <a name="BKMK_ModifyVHDSteps"></a> 修改現有 VHD 的步驟  
  若要修改 VHD，您必須使用修改 VHD 的必要步驟來建立工作順序。 接著，請在修改虛擬硬碟精靈中選取該工作順序。 此精靈會將 VHD 連結到虛擬機器、在 VHD 中執行工作順序，然後更新 VHD 檔案。 以下各節提供修改 VHD 的步驟。  
 
-###  <a name="a-namebkmkmodifytsa-create-a-task-sequence-to-modify-the-vhd"></a><a name="BKMK_ModifyTS"></a> 建立工作順序以修改 VHD  
+###  <a name="BKMK_ModifyTS"></a> 建立工作順序以修改 VHD  
  若要修改現有的 VHD，您必須先建立工作順序。 請只選擇修改工作順序所需的步驟。 例如，如果您要新增應用程式到 VHD，請建立自訂工作順序，然後只加入「安裝應用程式」的步驟。  
 
  請使用下列程序建立工作順序以修改 VHD。  
@@ -224,7 +223,7 @@ ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
 
 5.  按一下 [確定]  ，結束工作順序編輯器。  
 
-###  <a name="a-namebkmkmodifyvhda-modify-a-vhd"></a><a name="BKMK_ModifyVHD"></a> 修改 VHD  
+###  <a name="BKMK_ModifyVHD"></a> 修改 VHD  
  在建立 VHD 的工作順序之後，請使用修改虛擬硬碟精靈來修改 VHD。  
 
  請使用下列程序修改 VHD。  
@@ -269,7 +268,7 @@ ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
     >   
     >  此外，您也可以開啟 Hyper-V Manager (如果您已在電腦上安裝 Hyper-V 管理工具) 並連線至精靈建立的暫時虛擬機器，查看執行中的工作順序。 您可以在虛擬機器上監視 smsts.log 檔案以追蹤工作順序的進度。 如果完成工作順序的步驟發生問題，可使用此記錄檔來協助您疑難排解問題。 硬碟格式化之前，smsts.log 檔案位於 x: \windows\temp\smstslog\smsts.log，硬碟格式化之後位於 c:\\_SMSTaskSequence\Logs\Smstslog\。 在工作順序步驟完成之後，系統會在 5 分鐘之後 (根據預設) 將虛擬機器關機並且予以刪除。  
 
-##  <a name="a-namebkmkapplyupdatesa-apply-software-updates-to-a-vhd"></a><a name="BKMK_ApplyUpdates"></a> 將軟體更新套用至 VHD  
+##  <a name="BKMK_ApplyUpdates"></a> 將軟體更新套用至 VHD  
  適用於 VHD 中作業系統的新軟體更新會定期發行。 您可以依指定的排程將適用的軟體更新套用至 VHD。 在您指定的排程上，Configuration Manager 會套用您為 VHD 選取的軟體更新。  
 
  有關 VHD 的資訊會儲存在站台資料庫中，包括建立 VHD 時已套用的軟體更新。 最初建立時已套用至 VHD 的軟體更新也會儲存在站台資料庫中。 當您啟動精靈將軟體更新套用至 VHD 時，精靈會擷取尚未套用至 VHD 的可用軟體更新清單供您選取。  
@@ -303,7 +302,7 @@ ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
 
 8.  在 [完成]  頁面上，確認軟體更新已成功套用至作業系統映像。  
 
-##  <a name="a-namebkmkimporttovmma-import-the-vhd-to-system-center-virtual-machine-manager"></a><a name="BKMK_ImportToVMM"></a> 將 VHD 匯入至 System Center Virtual Machine Manager  
+##  <a name="BKMK_ImportToVMM"></a> 將 VHD 匯入至 System Center Virtual Machine Manager  
  System Center VMM 是一種虛擬資料中心的管理解決方案，可讓您設定及管理虛擬主機、網路和儲存資源，以在您建立的私人雲端上建立及部署虛擬機器和服務。 在 Configuration Manager 中建立 VHD 之後，您就可以使用 VMM 來匯入和管理 VHD。  
 
 > [!TIP]  
@@ -321,16 +320,10 @@ ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
 
 4.  在 [一般]  頁面上，設定下列設定，然後按 [下一步] 。  
 
-    -   ]**VMM 伺服器名稱**：指定要安裝 VMM 管理伺服器的電腦 FQDN。 精靈會連線至 VMM 管理伺服器以下載伺服器的程式庫共用。  
+    -   **VMM 伺服器名稱**：指定要安裝 VMM 管理伺服器的電腦 FQDN。 精靈會連線至 VMM 管理伺服器以下載伺服器的程式庫共用。  
 
     -   **VMM 程式庫共用**：在下拉式清單中指定 VMM 程式庫共用。  
 
     -   **使用未加密的傳輸**：選擇此設定，將 VHD 檔案傳輸至 VMM 管理伺服器且不使用加密。  
 
 5.  在摘要頁面上確認這些設定，然後完成精靈。 上傳 VHD 所需要的時間會根據 VHD 檔案的大小以及 VMM 管理伺服器的網路頻寬而有所不同。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -1,5 +1,4 @@
 ---
-
 title: "準備軟體更新管理 | Microsoft Docs"
 description: "若要準備管理更新，請完成這些工作，以顯示 System Center Configuration Manager 主控台中的相容性評估資料。"
 keywords: 
@@ -10,16 +9,14 @@ ms.date: 10/06/2016
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-sum
+ms.technology: configmgr-sum
 ms.assetid: 01907900-e28b-4cd7-9479-42906416707b
-translationtype: Human Translation
-ms.sourcegitcommit: e6cf8c799b5be2f7dbb6fadadddf702ec974ae45
 ms.openlocfilehash: 5c34bd1ea108dffda10c30281fb9c97ba38ae1ae
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="prepare-for-software-updates-management"></a>準備軟體更新管理
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -37,9 +34,3 @@ ms.openlocfilehash: 5c34bd1ea108dffda10c30281fb9c97ba38ae1ae
 
 ## <a name="step-4-manage-settings-for-software-updates"></a>步驟 4：管理軟體更新的設定
 同步處理軟體更新之後，請先確認 Configuration Manager 用戶端設定、群組原則設定和軟體更新設定，再部署軟體更新。 如需詳細資訊，請參閱[管理軟體更新的設定](manage-settings-for-software-updates.md)。
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

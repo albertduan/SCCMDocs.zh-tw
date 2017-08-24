@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: c7c94ba0-d709-4129-8077-075a8abaea1c
-caps.latest.revision: 4
-caps.handback.revision: 0
+caps.latest.revision: "4"
+caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: baca498dbc5b8e168852aa3c18ee23a9c483e69c
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="preprovision-bitlocker-in-windows-pe-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 在 Windows PE 中預先佈建 BitLocker
 
@@ -60,9 +59,3 @@ System Center Configuration Manager 中的 [預先佈建 BitLocker] 工作順序
 |套用裝置驅動程式|此步驟將比對並安裝驅動程式，作為作業系統部署的一部分。 如需詳細資訊，請參閱[自動套用驅動程式](../understand/task-sequence-steps.md#BKMK_AutoApplyDrivers)。|  
 |設定 Windows 和 ConfigMgr|此步驟會從 Windows PE 轉換為新的作業系統。 此工作順序步驟是部署任何作業系統的必要部分。 它會將 Configuration Manager 用戶端安裝到新的作業系統中，並準備好讓工作順序繼續在新的作業系統中執行。 如需詳細資訊，請參閱[設定 Windows 和 ConfigMgr](../understand/task-sequence-steps.md#BKMK_SetupWindowsandConfigMgr)。|  
 |啟用 BitLocker|此步驟將在硬碟上啟用 BitLocker 加密，並且設定金鑰保護裝置。 由於硬碟已預先佈建 BitLocker，此步驟可以很迅速地完成。 Windows 7 會要求您新增金鑰保護裝置。 若您不使用此步驟，可以執行 manage-bde.exe 命令列工具設定金鑰保護裝置。 如需詳細資訊，請參閱[啟用 BitLocker](../understand/task-sequence-steps.md#BKMK_EnableBitLocker)。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

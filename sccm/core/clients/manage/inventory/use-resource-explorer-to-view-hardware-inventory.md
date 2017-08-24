@@ -6,22 +6,19 @@ ms.date: 01/03/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 375912f5-436d-4315-bdbe-d77afee6c9f3
-caps.latest.revision: 7
+caps.latest.revision: "7"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9c5d1e48b76392beaf54b5377c69b648537e86f8
 ms.openlocfilehash: e39fa60a5d215fa1b0a98d4463058497e63a4d4f
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/29/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-use-resource-explorer-to-view-hardware-inventory-in-system-center-configuration-manager"></a>如何使用資源總管檢視 System Center Configuration Manager 中的硬體清查
 
@@ -51,5 +48,4 @@ ms.lasthandoff: 05/29/2017
 3.  選擇您想要檢視、包含清查的電腦，然後在 [首頁] 索引標籤 > [裝置] 群組中，選擇 [開始] >  資源總管。   
 
 4.  在資源總管視窗的右窗格中，以滑鼠右鍵按一下任何項目，然後選擇 [內容] 開啟 [<項目名稱\> 內容] 對話方塊，以更容易閱讀的格式檢視收集到的清查資訊。  
-
 

@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e8159bd9-5c2b-4d25-82f9-78fcfd732ba9
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: 6bfbfbcce6ef5c38164e161d197f5a3fb4b4e353
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 17168e26f13340847928f6e3623115cd4b55997b
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-use-asset-intelligence-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中使用 Asset Intelligence
 
@@ -338,4 +335,3 @@ ms.lasthandoff: 12/16/2016
     -   **使用下載的 System Center Online 值覆寫本機編輯類別目錄資訊**：使用取自 System Center Online 的新資訊來覆寫現有 Asset Intelligence 類別目錄軟體分類資訊，來解決軟體詳細資料衝突。 當您選取這個設定時，軟體項目狀態會從 [可更新]  變更為 [已驗證] 。  
 
      按一下 [確定]  儲存衝突解決方法。  
-

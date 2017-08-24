@@ -6,22 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: dc526e8d-fac3-4bb5-b206-03ad29b0ae11
-caps.latest.revision: 12
+caps.latest.revision: "12"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bfe77a45b5f781611c343e06d1289add7abd2dfb
 ms.openlocfilehash: bf0fdc8d4b4a72760b2cfb91231378a17df01594
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="data-transfers-between-sites-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的站台間資料傳輸
 
@@ -207,4 +204,3 @@ Configuration Manager 會將資料庫複寫所複寫的資料分類為**全域�
 
 > [!TIP]  
 > 您可以從任一工作區的 [資料庫複寫]  節點，設定資料庫複寫控制。 不過，當您使用 [監視] 工作區中的 [資料庫複寫] 節點時，也可以檢視複寫連結的資料庫複寫狀態，並且存取 [複寫連結分析師] 工具，以協助調查複寫問題。  
-

@@ -6,22 +6,19 @@ ms.date: 05/02/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: a3be4f8f-3d44-4e3c-9fa1-e85f30a36e72
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 662901e850566756759fcfc61c58f3c0e56bc5aa
 ms.openlocfilehash: 26356a80bd8c78d4517253bae73e53d8d8f3a73a
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/03/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="which-branch-of-configuration-manager-should-i-use"></a>我應該使用哪個 Configuration Manager 分支？
 
@@ -86,7 +83,7 @@ LTSB 是以 1606 版為基礎。 這個分支不會收到提供新功能或更�
 > 您也可以從 [TechNet Evaluation Center](https://www.microsoft.com/evalcenter/evaluate-system-center-technical-preview) 下載 System Center 2016 評估版。
 
 **LTSB 的功能**
--    收到提供重要安全性修正程式的主控台內更新
+-   收到提供重要安全性修正程式的主控台內更新
 - 在 Configuration Manager 的 SA 合約或對等權限過期時提供安裝選項
 - 當您有 Configuration Manager 的目前 SA 合約或對等權限時，支援升級 (轉換) 至最新分支
 
@@ -96,14 +93,14 @@ LTSB 是以最新分支 1606 版為基礎，並具有下列限制：
 - 支援一組有限的伺服器和用戶端作業系統及相關技術 (如 SQL Server 版本) 清單。 如需此分支支援項目的詳細資訊，請參閱[支援的長期維護分支設定](supported-configurations-for-ltsb.md)。
 - 不會收到新功能的更新。
 - 不支援新增 Microsoft Intune 訂閱，因此無法使用下列項目：
-  -    混合式 MDM 設定的 Intune
+  - 混合式 MDM 設定的 Intune
  - 內部部署 MDM
--    不支援使用 Windows 10 服務儀表板、服務計畫、Windows 10 最新分支 (CB) 或最新商務分支 (CBB)。
+-   不支援使用 Windows 10 服務儀表板、服務計畫、Windows 10 最新分支 (CB) 或最新商務分支 (CBB)。
 - 不支援 Windows 10 LTSB 和 Windows Server 的未來版本。
--    不支援 Asset Intelligence。
--    不支援雲端式發佈點。
--    不支援將 Exchange Online 的支援作為 Exchange Connector。
--    不支援任何發行前版本功能。
+-   不支援 Asset Intelligence。
+-   不支援雲端式發佈點。
+-   不支援將 Exchange Online 的支援作為 Exchange Connector。
+-   不支援任何發行前版本功能。
 
 
 
@@ -115,7 +112,7 @@ LTSB 是以最新分支 1606 版為基礎，並具有下列限制：
   - [System Center Configuration Manager 的授權和分支](learn-more-editions.md)
   - [Configuration Manager 的更新](/sccm/core/servers/manage/updates)中的[基準和更新版本](/sccm/core/servers/manage/updates#baseline-and-update-versions)
 - 沒有任何選項可將 LTSB 轉換成 Technical Preview。 Technical Preview 是不需要授權的個別安裝。
--    您無法將最新分支的評估版升級為 LTSB 安裝。
+-   您無法將最新分支的評估版升級為 LTSB 安裝。
 
 
 ## <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager 的 Technical Preview
@@ -141,8 +138,8 @@ Technical Preview 首度推出的功能，通常會加入最新分支的新更�
 如需詳細資訊，請參閱 [Technical Preview for System Center Configuration Manager](/sccm/core/get-started/technical-preview) 。
 
 **更新選項**
--    您可以安裝新版 Technical Preview 的任何主控台內更新。
--    沒有任何選項可將 Technical Preview 轉換成最新分支或 LTSB。
+-   您可以安裝新版 Technical Preview 的任何主控台內更新。
+-   沒有任何選項可將 Technical Preview 轉換成最新分支或 LTSB。
 
 
 ## <a name="identify-your-branch-and-version"></a>識別您的分支和版本
@@ -154,4 +151,3 @@ Technical Preview 首度推出的功能，通常會加入最新分支的新更�
 **分支**  
 若要確認站台的分支 (為 LTSB 或最新分支)，請移至主控台的 [系統管理] > [站台設定] > [站台]，並開啟 [階層設定]。 如果其中具有可以轉換為最新分支的作用中選項，即表示站台執行 LTSB 版本。 當站台執行最新分支時，此選項即會呈現灰色。
 如需 Configuration Manager 不同版本的資訊，請參閱 [Configuration Manager 的更新](/sccm/core/servers/manage/updates)中的＜基準和更新版本＞。
-

@@ -6,22 +6,19 @@ ms.date: 3/27/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3cd9c725-6b42-427d-9191-86e67f84e48c
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: c6ee0ed635ab81b5e454e3cd85637ff3e20dbb34
 ms.openlocfilehash: 8caf3319d93b98680ed4a719a8db714c7e4e96ce
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/08/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="use-a-cloud-based-distribution-point-with-system-center-configuration-manager"></a>使用雲端架構發佈點搭配 System Center Configuration Manager
 
@@ -214,4 +211,3 @@ ms.lasthandoff: 06/08/2017
 -   **解除安裝雲端發佈點**：若要解除安裝雲端發佈點，請在 Configuration Manager 主控台中選取發佈點，然後選取 [刪除]。  
 
     當您從階層中刪除雲端發佈點時，Configuration Manager 會從 Azure 中的雲端服務移除內容。  
-

@@ -6,22 +6,20 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2200b02b-e76b-4aa7-a77a-6dc5e70f1333
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
 ms.openlocfilehash: f4951c204b32da58174b94a539b380c278fa9756
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="system-center-updates-publisher"></a>System Center 更新發行者
 
@@ -66,4 +64,3 @@ Updates Publisher 具有四個工作區來協助整理其功能。
 **目錄工作區：**使用此工作區來新增及[管理軟體更新目錄](/sccm/sum/tools/updates-publisher-catalogs)。 這包含將軟體更新從那些目錄匯入到 Updates Publisher 存放庫。
 ## <a name="first-steps"></a>第一步
 若要開始使用，請先[安裝](/sccm/sum/tools/install-updates-publisher) Updates Publisher，然後[設定 Updates Publisher 的選項](/sccm/sum/tools/updates-publisher-options)。
-

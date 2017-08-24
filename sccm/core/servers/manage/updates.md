@@ -6,22 +6,20 @@ ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3a832943-580a-4a40-b454-961d0854ac2b
-caps.latest.revision: 51
-caps.handback.revision: 0
+caps.latest.revision: "51"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: d46aca88111d4ee0e96b75ca5a3ec57aa4274d6d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="updates-for-system-center-configuration-manager"></a>System Center Configuration Manager 的更新
 
@@ -150,4 +148,3 @@ Configuration Manager 會在您同步服務連接點站台系統角色與 Micros
 -   **Hotfix 安裝程式：** 此工具用來手動安裝無法使用主控台內方式安裝的 Hotfix。 使用下列檔案名稱結構的修正程式可使用此方式： **&lt;產品\>-&lt;產品版本\>-&lt;知識庫文章識別碼\>-&lt;平台\>-&lt;語言\>.exe**。
 
      如需詳細資訊，請參閱[使用 Hotfix 安裝程式來安裝 System Center Configuration Manager 更新](../../../core/servers/manage/use-the-hotfix-installer-to-install-updates.md)。
-

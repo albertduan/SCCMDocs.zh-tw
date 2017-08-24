@@ -5,24 +5,20 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: eb4ab74b-b605-41dd-930c-ac18d2f40319
-caps.latest.revision: 21
+caps.latest.revision: "21"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
-ms.openlocfilehash: f562bf051e4561053b45bef5363eb960d83bbdd1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 7bd9f6bc1b6314b7889543d0d6042893538736fc
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="using-the-microsoft-malware-protection-center-to-download-definitions"></a>使用 Microsoft 惡意程式碼防護中心下載定義
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -38,4 +34,3 @@ ms.lasthandoff: 12/16/2016
 
 > [!div class="button"]
 [上一步 >](endpoint-configure-alerts.md)
-

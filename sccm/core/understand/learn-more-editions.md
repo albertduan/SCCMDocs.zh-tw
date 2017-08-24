@@ -6,24 +6,21 @@ ms.date: 10/12/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 495b87ae-41a4-49ba-abe2-d4f7d22ac0d4
-caps.latest.revision: 0
-caps.handback.revision: 0
+caps.latest.revision: "0"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a0d4eb601948aa3abb12409f3475d69cacf4a6aa
 ms.openlocfilehash: 90e16b316872cb370c9c2e645f46ac12afab7107
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="licensing-and-branches-for-system-center-configuration-manager"></a>System Center Configuration Manager 的授權和分支
 
 適用於：System Center Configuration Manager (最新分支)、(長期維護分支)
@@ -53,8 +50,8 @@ ms.lasthandoff: 05/17/2017
 
 ## <a name="licensed-branches"></a>授權的分支
 如果客戶具有 System Center Configuration Manager 授權的作用中軟體保證 (SA) 或自 2016 年 10 月 1 日起的對等訂閱權限，即有權使用 2016 年 10 月發行的 System Center Configuration Manager 1606 版。 如果客戶具有自 2016 年 10 月 1 日起的 System Center Configuration Manager 1606 版權限，則在安裝時 2016 版會發現下列兩個授權選項：
--    **最新分支**
--    **長期維護分支 (LTSB)**
+-   **最新分支**
+-   **長期維護分支 (LTSB)**
 
 
 如需詳細資訊，請參閱上一節的表格。
@@ -115,4 +112,3 @@ LTSB 是以最新分支 1606 版為基礎，並具有下列限制：
 - 尋找作用中軟體保證合約的所在位置 (約在影片 43 秒處)：[https://www.microsoft.com/showcase/video.aspx?uuid=fe1846cb-1d26-49fc-b064-57b25dcc31a0](https://www.microsoft.com/showcase/video.aspx?uuid=fe1846cb-1d26-49fc-b064-57b25dcc31a0)。
 
 - 如何取得 VLSC 的權限：[https://www.microsoft.com/showcase/video.aspx?uuid=ac4ed1ca-d0a9-43cd-89fa-74ccb555dec4](https://www.microsoft.com/showcase/video.aspx?uuid=ac4ed1ca-d0a9-43cd-89fa-74ccb555dec4)。  您可以將 VLSC 讀取和寫入權限委派給組織中的其他人。
-

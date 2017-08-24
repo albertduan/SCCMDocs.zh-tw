@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: caad0507-9913-415a-b13d-d36f8f0a1b80
-caps.latest.revision: 8
-caps.handback.revision: 0
+caps.latest.revision: "8"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 6c5b23270501c11ed5aba9a6045734c73095d1bf
 ms.openlocfilehash: 6146bcf4e5aa9df6fe0b8cf71898e488ecf217cc
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="packages-and-programs-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的封裝和程式
 
@@ -53,7 +52,7 @@ System Center Configuration Manager 會繼續支援 Configuration Manager 2007 �
 
 3.  在 [首頁] 索引標籤的 [建立] 群組中，選擇 [建立套件]。  
 
-4.  在 **封裝** 頁面 **建立套件和程式精靈]**, ，指定下列資訊：  
+4.  在 **封裝** 頁面 **建立套件和程式精靈**, ，指定下列資訊：  
 
     -   **名稱**：指定套件的名稱，不可超過 50 個字元。  
 
@@ -319,7 +318,7 @@ System Center Configuration Manager 會繼續支援 Configuration Manager 2007 �
 
      `Programs=Typical, Custom, Uninstall`  
 
--   **MIFFileName**:包含封裝狀態的 [最多 50 個字元的管理資訊格式 (MIF) 檔案的名稱。  
+-   **MIFFileName**:包含封裝狀態的 最多 50 個字元的管理資訊格式 (MIF) 檔案的名稱。  
 
 -   **MIFName**:最多 50 個字元 (適用於 MIF 比對) 封裝的名稱。  
 
@@ -330,7 +329,7 @@ System Center Configuration Manager 會繼續支援 Configuration Manager 2007 �
 ###  <a name="program"></a>[程式]  
  針對 [Package Definition] 區段的 **Programs** 項目中所指定的每個程式，套件定義檔必須包含可定義該程式的 [Program] 區段。 每個程式 」 一節會提供下列資訊：  
 
--   **名稱**：程式最多 50 個字元的名稱。 此項目必須是唯一在封裝內。 這個名稱用定義廣告時。 用戶端電腦上的程式名稱所示 **執行已公告程式** 控制台] 中。  
+-   **名稱**：程式最多 50 個字元的名稱。 此項目必須是唯一在封裝內。 這個名稱用定義廣告時。 用戶端電腦上的程式名稱所示 **執行已公告程式** 控制台 中。  
 
 -   **圖示**(選擇性)：指定包含要用於此程式之圖示的檔案。 如果指定，此圖示會取代 Configuration Manager 主控台中的預設程式圖示，並在公告程式時顯示在用戶端電腦上。
 
@@ -412,9 +411,3 @@ System Center Configuration Manager 會繼續支援 Configuration Manager 2007 �
 -   **指派**：指定如何將程式指派給使用者。 此值可以是 **FirstUser** (只有第一位登入的使用者才會執行程式) 或 **EveryUser** (每位登入用戶端的使用者都會執行程式)。 當 **CanRunWhen** 未設定為 **UserLoggedOn**, ，此項目設定為 **FirstUser**。  
 
 -   **停用**：指定是否可以向用戶端公告這個程式。 可用的值為 **True** 或 **False**。 預設值為 **False**。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

@@ -6,21 +6,20 @@ ms.date: 1/3/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4800a800-66c8-4c35-aebe-e413a23790c1
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: cb5f7bf52a53935ca61b0e1b66822919b17d33e2
 ms.openlocfilehash: 0619de32f859f512ee1c9f5a9c83ef8d04a256ca
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-a-source-hierarchy-strategy-in-system-center-configuration-manager"></a>規劃 System Center Configuration Manager 中的來源階層策略
 
@@ -28,7 +27,7 @@ ms.openlocfilehash: 0619de32f859f512ee1c9f5a9c83ef8d04a256ca
 
 在您的 System Center Configuration Manager 環境中設定移轉作業之前，必須先設定來源階層，並且至少從該階層的一個來源站台收集資料。 下列各節可幫助您規劃如何設定來源階層、設定來源站台，以及決定 Configuration Manager 如何從來源階層的來源站台收集資料。 
 
-##  <a name="a-namebkmksourcehierarchiesa-source-hierarchies"></a><a name="BKMK_Source_Hierarchies"></a> 來源階層  
+##  <a name="BKMK_Source_Hierarchies"></a> 來源階層  
 來源階層是 Configuration Manager 階層，其中包含您要移轉的資料。 當您設定移轉並且指定來源階層時，會指定來源階層的頂層站台。 此站台也稱為來源站台。 來源階層中您可移轉資料的其他站台也稱為來源站台。  
 
 -   當您設定移轉作業以移轉 Configuration Manager 2007 來源階層的資料時，需要將其設定為從來源階層的一或多個特定來源站台移轉資料。  
@@ -62,7 +61,7 @@ ms.openlocfilehash: 0619de32f859f512ee1c9f5a9c83ef8d04a256ca
 
 如需設定來源階層的詳細資訊，請參閱[設定來源階層和來源站台以移轉到 System Center Configuration Manager](../../core/migration/configuring-source-hierarchies-and-source-sites-for-migration.md)。  
 
-##  <a name="a-namebkmksourcesitesa-source-sites"></a><a name="BKMK_Source_Sites"></a> 來源站台  
+##  <a name="BKMK_Source_Sites"></a> 來源站台  
  來源站台是指來源階層中，擁有您要移轉之資料的站台。 來源階層的頂層站台一律是第一個來源站台。 當移轉從新來源階層的第一個來源站台收集資料時，會探索有關該階層中其他站台的資訊。  
 
  完成初始來源站台的資料收集後，接著要採取的動作會取決於來源階層的產品版本。  
@@ -82,7 +81,7 @@ ms.openlocfilehash: 0619de32f859f512ee1c9f5a9c83ef8d04a256ca
 
  當您設定存取帳戶來收集資料時，可能需要將「來源站台 SMS 提供者帳戶」存取權授與來源階層中的多部電腦。 當來源站台支援 SMS 提供者各自位於不同電腦上的多個執行個體時，可能會需要進行此動作。 資料收集開始時，目的地階層的頂層站台會連絡來源階層中的頂層站台，以識別該站台的 SMS 提供者位置。 只會識別 SMS 提供者的第一個執行個體。 如果資料收集程序無法在識別的位置存取 SMS 提供者，程序就會失敗，而且不會嘗試連線到執行該站台之 SMS 提供者執行個體的其他電腦。  
 
-##  <a name="a-namebkmkdatagatheringa-data-gathering"></a><a name="BKMK_Data_Gathering"></a> 資料收集  
+##  <a name="BKMK_Data_Gathering"></a> 資料收集  
  在您指定來源階層、設定來源階層中各個其他來源站台的認證，或共用來源站台的發佈點之後，Configuration Manager 隨即開始從來源站台收集資料。  
 
  接著資料收集程序會依照簡單的排程自行重複，以便與來源站台中的任何資料變更保持同步。 根據預設，程序每四小時重複一次。 您可以編輯來源站台的 [內容]，來變更此週期的排程。 初始資料收集程序必須檢閱 Configuration Manager 資料庫中的所有物件，而且可能需要較長的時間才能完成。 後續資料收集程序只會識別資料變更，而且完成所需的時間較短。  
@@ -107,9 +106,3 @@ ms.openlocfilehash: 0619de32f859f512ee1c9f5a9c83ef8d04a256ca
  若要停止從每個來源站台收集資料，您必須在底層來源站台執行 [停止收集資料]，然後在每個父站台重複此程序。 來源階層的頂層站台必須是停止收集資料的最後一個站台。 您必須先在每個子站台上停止收集資料，才能在父站台上執行此動作。 通常，您只會在即將完成移轉程序時，停止收集資料。  
 
  停止收集來源站台的資料後，之前從站台收集的物件和集合相關資訊仍可在設定新的移轉作業時使用。 不過，您看不見任何新物件或集合，也看不見對現有物件所做的變更。 如果您重新設定來源站台並再次開始收集資料，就會看見有關之前所移轉物件的資訊和狀態。  
-
-
-
-<!--HONumber=Jan17_HO1-->
-
-

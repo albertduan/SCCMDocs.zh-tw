@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-osd
+ms.technology: configmgr-osd
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 217c8a0e-5112-420e-a325-2a6d75326290
-caps.latest.revision: 13
+caps.latest.revision: "13"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 74341fb60bf9ccbc8822e390bd34f9eda58b4bda
 ms.openlocfilehash: 41aa6cf69a746f0ab67d804f1ee0c70db05d65ee
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-a-task-sequence-to-install-an-operating-system-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中建立安裝作業系統的工作順序
 
@@ -27,7 +26,7 @@ ms.openlocfilehash: 41aa6cf69a746f0ab67d804f1ee0c70db05d65ee
 
 在 System Center Configuration Manager 中使用工作順序，在目的地電腦上自動安裝作業系統映像。 您建立的工作順序，會參照啟動目的地電腦所使用的開機映像、要安裝在目的地電腦上的作業系統映像，以及要安裝的任何其他內容，例如其他應用程式或軟體更新。 接著您將工作順序部署至包含目的地電腦的集合。  
 
-##  <a name="a-namebkmkinstallosa-create-a-task-sequence-to-install-an-operating-system"></a><a name="BKMK_InstallOS"></a> 建立工作順序以安裝作業系統  
+##  <a name="BKMK_InstallOS"></a> 建立工作順序以安裝作業系統  
  有很多案例可用於將作業系統部署到您環境中的電腦。 在大部分情況下，您將建立工作順序，然後在 [建立工作順序精靈] 中選取 [安裝現有的映像套件]  來安裝作業系統、移轉使用者設定、套用軟體更新及安裝應用程式。 建立工作順序以安裝作業系統之前，下列項目必須先準備就緒：   
 
 -   **必要**  
@@ -115,13 +114,13 @@ ms.openlocfilehash: 41aa6cf69a746f0ab67d804f1ee0c70db05d65ee
 
  您現在可以將工作順序部署到電腦集合。  如需詳細資訊，請參閱 [Deploy a task sequence](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)。  
 
-##  <a name="a-namebkmkinstallexistingosimagetsexamplea-example-task-sequence-to-install-an-existing-operating-system-image"></a><a name="BKMK_InstallExistingOSImageTSExample"></a> 安裝現有作業系統映像的工作順序範例  
+##  <a name="BKMK_InstallExistingOSImageTSExample"></a> 安裝現有作業系統映像的工作順序範例  
  當您建立工作順序以使用現有作業系統映像來部署作業系統時，請使用下表作為指南。 資料表會協助您決定您的工作順序步驟及如何組織和組織成邏輯群組的那些工作順序步驟的一般順序。 您所建立的工作順序可能會與此範例不同，而且包含更多或更少工作順序步驟和群組。  
 
 > [!IMPORTANT]  
->  您永遠必須使用 [建立工作順序精靈來建立此工作順序。  
+>  您永遠必須使用 建立工作順序精靈來建立此工作順序。  
 
- 當您使用 [建立工作順序精靈來建立這個新的工作順序的工作順序步驟名稱有些什麼比什麼其方式是如果您手動加入的工作順序步驟到現有的工作順序不同。 下表顯示的命名差異：  
+ 當您使用 建立工作順序精靈來建立這個新的工作順序的工作順序步驟名稱有些什麼比什麼其方式是如果您手動加入的工作順序步驟到現有的工作順序不同。 下表顯示的命名差異：  
 
 |建立工作順序精靈工作順序步驟名稱|對等項目工作序列編輯器中的步驟名稱|  
 |---------------------------------------------------------|-----------------------------------------------|  
@@ -148,7 +147,7 @@ ms.openlocfilehash: 41aa6cf69a746f0ab67d804f1ee0c70db05d65ee
 |套用 Windows 設定|您可以使用此工作順序步驟來設定目的地電腦的 Windows 設定組態資訊。 您可以將套用的 windows 設定是使用者和組織資訊、 產品或授權金鑰資訊、 時區、 和本機系統管理員密碼。|  
 |套用網路設定|您可以使用此工作順序步驟來指定目的地電腦的網路或工作群組組態資訊。 您也可以指定電腦使用 DHCP 伺服器是否可靜態指派 IP 位址資訊。|  
 |套用裝置驅動程式|使用此工作順序步驟來安裝驅動程式做為作業系統部署的一部分。 您可以讓 Windows 安裝程式來搜尋所有現有的驅動程式類別目錄 **考慮所有類別的驅動程式** 或限制哪些驅動程式類別 Windows 安裝程式會藉由選取搜尋 **限制只考慮選取的類別目錄中的驅動程式的驅動程式比對**。<br /><br /> 此步驟中使用唯讀 **_SMSTSMediaType** 工作順序變數。 此工作順序步驟只會在變數的值不等於 **FullMedia**。|  
-|套用驅動程式套件|若要讓 [Windows 安裝程式可供使用驅動程式套件中所有的裝置驅動程式中使用此工作順序步驟。|  
+|套用驅動程式套件|若要讓 Windows 安裝程式可供使用驅動程式套件中所有的裝置驅動程式中使用此工作順序步驟。|  
 |安裝作業系統 - **(新工作順序群組)**|建立另一個工作序列子群組。 這個子群組包含設定已安裝作業系統所需的步驟。|  
 |[安裝套件]|使用此工作順序步驟來安裝 Configuration Manager 用戶端軟體。 Configuration Manager 會安裝並註冊 Configuration Manager 用戶端 GUID。 您可以在 **[安裝內容]** 視窗中指派必要的安裝參數。|  
 |安裝更新|若要指定目的地電腦上安裝軟體更新的方式使用此工作順序步驟。 在執行此工作順序步驟之前，不會評估目的地電腦適用的軟體更新。 此時，會評估目的電腦是否有類似於任何其他 Configuration Manager 管理用戶端的軟體更新。<br /><br /> 此步驟中使用唯讀 **_SMSTSMediaType** 工作順序變數。 只有在變數的值不等於 **FullMedia**時，才會執行這項工作順序步驟。|  
@@ -156,9 +155,3 @@ ms.openlocfilehash: 41aa6cf69a746f0ab67d804f1ee0c70db05d65ee
 |要求使用者狀態存放區|使用此工作順序步驟來要求權限的使用者狀態資料儲存位置的狀態移轉點。|  
 |還原使用者檔案和設定|您可以使用此工作順序步驟來起始使用者狀態移轉工具 (USMT) 將使用者狀態和設定還原至目的電腦。|  
 |發行使用者狀態存放區|請使用這項工作順序步驟，通知狀態移轉點，不再需要使用者狀態資料。|  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

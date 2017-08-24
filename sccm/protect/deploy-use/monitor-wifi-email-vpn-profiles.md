@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e2315b8b-98bc-40e1-8ef9-bfb5e69ab109
-caps.latest.revision: 4
+caps.latest.revision: "4"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: bff083fe279cd6b36a58305a5f16051ea241151e
 ms.openlocfilehash: 73d941633d270cf9628f8be14e1e56f3c78624b6
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="monitor-email-wi-fi-and-vpn-profiles-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中監視電子郵件、Wi-Fi 和 VPN 設定檔
 
 *適用對象：System Center Configuration Manager (最新分支)*
@@ -32,7 +30,7 @@ ms.openlocfilehash: 73d941633d270cf9628f8be14e1e56f3c78624b6
 
 -   [如何使用報告檢視相容性結果](#BKMK_Reports)  
 
-##  <a name="a-namebkmkconsolea-how-to-view-compliance-results-in-the-configuration-manager-console"></a><a name="BKMK_console"></a> 如何在 Configuration Manager 主控台中檢視相容性結果  
+##  <a name="BKMK_console"></a> 如何在 Configuration Manager 主控台中檢視相容性結果  
  使用這個程序，在 System Center Configuration Manager 主控台中檢視已部署設定檔的相容性詳細資料。  
 
 #### <a name="to-view-compliance-results-in-the-configuration-manager-console"></a>在 Configuration Manager 主控台中檢視相容性結果  
@@ -60,16 +58,10 @@ ms.openlocfilehash: 73d941633d270cf9628f8be14e1e56f3c78624b6
 
 5.  在 [部署狀態] 頁面中，您可以檢閱與部署之設定檔相容性有關的詳細資訊。 [部署]  節點下方會建立一個臨時節點以協助您更快再找到此資訊。  
 
-##  <a name="a-namebkmkreportsa-how-to-view-compliance-results-by-using-reports"></a><a name="BKMK_Reports"></a> 如何使用報告檢視相容性結果  
+##  <a name="BKMK_Reports"></a> 如何使用報告檢視相容性結果  
  相容性設定包含 System Center Configuration Manager 中的設定檔，亦包含數個內建報告，可讓您監視關於設定檔的資訊。 這些報告具有 [相容性和設定管理] 的報告類別。  
 
 > [!IMPORTANT]  
 >  當您在相容性設定報告中使用 [裝置篩選器]  和 [使用者篩選器]  參數時，必須使用萬用字元 (%)。  
 
  如需如何在 System Center Configuration Manager 設定報告的詳細資訊，請參閱 [System Center Configuration Manager 中的報告](../../core/servers/manage/reporting.md)。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

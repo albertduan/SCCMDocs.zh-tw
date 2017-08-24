@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 101d7d4d-92db-419d-b2ae-3c1c1dea68e9
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: bc610b495047c49853c0a8f478cbf2773c0d3603
-ms.openlocfilehash: e50095ef618ec40a51c29ef2c8116f8e07401bd1
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
+ms.openlocfilehash: 744bc3792a02f13d3cf940cd1a4f2fd8749ee2f4
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>關於發佈至 Active Directory 網域服務的用戶端安裝內容
 
@@ -63,7 +61,7 @@ ms.lasthandoff: 12/16/2016
 
    -   包含受信任根 CA 憑證清單的憑證發行者清單。  
 
--   在 [用戶端推入安裝內容]  對話方塊的 [用戶端  索引標籤中指定的 Client.mis 安裝內容。
+-   在 用戶端推入安裝內容  對話方塊的 用戶端  索引標籤中指定的 Client.mis 安裝內容。
 
 唯有在未使用下列任何方法指定其他內容的情況下，用戶端安裝 (CCMSetup) 才會使用發佈至 Active Directory 網域服務的內容：  
 
@@ -127,4 +125,3 @@ ms.lasthandoff: 12/16/2016
 -   指派至未發佈到 Active Directory 網域服務之 Configuration Manager 站台的用戶端。  
 
 -   在用戶端連上網際網路時安裝的用戶端。  
-

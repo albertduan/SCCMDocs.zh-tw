@@ -6,20 +6,19 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 4db1e15f-e832-4cf9-be33-d3971e635a55
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 68527c0e82861106b7ec28b34bffa8fd74b2dd4a
 ms.openlocfilehash: f13f38be2a19ab8a1ead246e5272515dd0570984
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="fundamentals-of-sites-and-hierarchies-for-system-center-configuration-manager"></a>System Center Configuration Manager 的站台和階層基本概念
 
@@ -72,9 +71,3 @@ System Center Configuration Manager 部署必須安裝於 Active Directory 網�
  「延伸 Active Directory 架構」的作業在每個樹系只進行一次，並且可在安裝 Configuration Manager 之前或之後進行。   延伸架構時，您必須在每個網域中建立一個名為 System Management 的新 Active Directory 容器。 此容器包含將發佈資料以供用戶端尋找的 Configuration Manager 站台。 如需詳細資訊，請參閱[準備 Active Directory 以發佈站台](../../core/plan-design/network/extend-the-active-directory-schema.md)。  
 
  「發佈站台資料」可以改善 Configuration Manager 階層的安全性並減少系統管理額外負荷，但就 Configuration Manager 基本功能而言並非必要。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

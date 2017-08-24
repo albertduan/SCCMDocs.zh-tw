@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1c409244-6778-4970-a99c-d2508c9cf62b
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: e7dc554ffcd23978eed44819b525f6cc239b2135
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-compliance-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager 中相容性設定的安全性和隱私權
 
@@ -42,9 +41,3 @@ ms.openlocfilehash: e7dc554ffcd23978eed44819b525f6cc239b2135
  您可以使用相容性設定，來評估用戶端裝置是否與您在組態基準中部署的組態項目相容。 某些設定可以在不相容的情況下自動進行補救。 相容性資訊會由管理點傳送至站台伺服器並且儲存在站台資料庫中。 當裝置將此資訊傳送至管理點時會進行加密，但不會以加密格式儲存在站台資料庫內。 資訊會保留在資料庫中，直到每 90 天由站台維護工作 [刪除過時設定管理資料]  將它刪除為止。 您可以設定刪除間隔。 不會將相容性資訊傳送給 Microsoft。  
 
  依預設，裝置不會評估相容性設定。 此外，您必須先進行組態項目和組態基準的設定，然後將其部署至裝置。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

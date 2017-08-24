@@ -6,20 +6,19 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ab1aecdd-d943-44f5-b0a9-e8fe7439e5d6
-caps.latest.revision: 9
+caps.latest.revision: "9"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: ba45f36c517114f7a8d2be8d9056e1b2a800dd4f
 ms.openlocfilehash: ffd66a4047ec253704e9772e2c3e3a4d9db7c46f
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-mac-computer-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立 Mac 電腦應用程式
 
@@ -214,9 +213,3 @@ ms.openlocfilehash: ffd66a4047ec253704e9772e2c3e3a4d9db7c46f
  您可以使用相同程序來監視對 Mac 電腦的應用程式部署，如同您監視對 Windows 電腦的應用程式部署。  
 
  如需詳細資訊，請參閱[監視應用程式](/sccm/apps/deploy-use/monitor-applications-from-the-console)。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

@@ -6,21 +6,19 @@ ms.date: 3/1/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aaf13bb8-4ba2-4bd7-9fac-d36a9d88a1b6
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d5cc318eaf097cb3cfbfde730f7573d27af25648
 ms.openlocfilehash: f0d44f82a0b6068f8cecc5808774677eccb0f8d9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="prerequisite-checker-for-system-center-configuration-manager"></a>System Center Configuration Manager 的必要條件檢查工具
 
@@ -66,7 +64,7 @@ ms.lasthandoff: 05/17/2017
 1.  在 Windows 檔案總管中，前往下列其中一個位置：  
 
     -   &lt;Configuration Manager 安裝媒體\>\SMSSETUP\BIN\X64  
-    -   &lt;Configuration Manager 安裝路徑\>\BIN\X64  
+    -   **&lt;Configuration Manager 安裝路徑**\>\BIN\X64**  
 
 2.  執行 **prereqchk.exe** ，以啟動必要條件檢查程式。   
     必要條件檢查工具會偵測現有網站，如果找到的話，會執行升級整備程度檢查。 如果未找到網站，則會執行所有檢查。 [網站類型]  欄提供與規則相關聯的網站伺服器或網站系統資訊。  
@@ -75,8 +73,8 @@ ms.lasthandoff: 05/17/2017
 
 1.  開啟 [命令提示字元] 視窗，並將目錄變更為下列其中一個位置：  
 
-    -   &lt;Configuration Manager 安裝媒體\>\SMSSETUP\BIN\X64  
-    -   &lt;Configuration Manager 安裝路徑\>\BIN\X64  
+    -   **&lt;Configuration Manager 安裝媒體**\>\SMSSETUP\BIN\X64**  
+    -   **&lt;Configuration Manager 安裝路徑**\>\BIN\X64**  
 
 2.  輸入  **prereqchk.exe /LOCAL** 以啟動必要條件檢查程式，並在伺服器上執行所有必要條件檢查。  
 
@@ -84,8 +82,8 @@ ms.lasthandoff: 05/17/2017
 
 1.  開啟 [命令提示字元] 視窗，並將目錄變更為下列其中一個位置：  
 
-    -   &lt;Configuration Manager 安裝媒體\>\SMSSETUP\BIN\X64  
-    -   &lt;Configuration Manager 安裝路徑\>\BIN\X64  
+    -   **&lt;Configuration Manager 安裝媒體**\>\SMSSETUP\BIN\X64**  
+    -   **&lt;Configuration Manager 安裝路徑**\>\BIN\X64**  
 
 2.  輸入 **prereqchk.exe**，並加上一個或多個下列命令列選項。  
 
@@ -198,4 +196,3 @@ ms.lasthandoff: 05/17/2017
     -   按一下清單中的項目，即可顯示有關如何解決問題的詳細資料。  
     -   您必須在安裝站台伺服器、站台系統或 Configuration Manager 主控台之前，解決清單中所有含 [錯誤] 狀態的項目。  
     -   您也可以在系統磁碟機的根目錄中開啟 **ConfigMgrPrereq.log** 檔案，以檢閱必要條件檢查工具的結果。 記錄檔可能包含未在必要條件檢查工具使用者介面中顯示的其他資訊。  
-

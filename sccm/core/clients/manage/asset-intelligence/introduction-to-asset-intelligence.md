@@ -6,23 +6,20 @@ ms.date: 2/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 0bdfdef5-390f-4099-8bde-de51d9a89175
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: 6a851ddfeee78574fbb0b1eff0c7cc518a7bb598
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: 879dc3f04f361af955afbc4db180d097073e8d41
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="introduction-to-asset-intelligence-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的 Asset Intelligence 簡介
 
@@ -208,4 +205,3 @@ System Center Configuration Manager 中的 Asset Intelligence 可讓您使用 As
 >  分類衝突解決後，只要之後的分類更新沒有導入新的項目資訊，就不會再將項目驗證為衝突。  
 
  如需何時會轉換驗證狀態的範例，請參閱 [System Center Configuration Manager 的 Asset Intelligence 驗證狀態轉換範例](../../../../core/clients/manage/asset-intelligence/example-validation-state-transitions-for-asset-intelligence.md)。  
-

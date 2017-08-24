@@ -6,22 +6,19 @@ ms.date: 2/7/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 9efb4061-f642-48bd-8332-3357ff5b3118
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5f1efaa776079b21d52b9936273380e9bb8963e9
 ms.openlocfilehash: 862f420c063cb44c419d4904fbb4696efb739758
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="configure-sites-and-hierarchies-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 設定站台與階層
 
@@ -54,4 +51,3 @@ ms.lasthandoff: 05/17/2017
 |為管理點設定資料庫複本|設定資料庫複本，以減少管理點在服務來自用戶端的要求時，加諸站台資料庫伺服器的 CPU 負載。 如需詳細資訊，請參閱 [System Center Configuration Manager 的管理點資料庫複本](../../../../core/servers/deploy/configure/database-replicas-for-management-points.md)。|  
 |設定 SQL Server AlwaysOn 可用性群組來裝載站台資料庫|從 1602 版開始，即可將可用性群組設定為在主要站台及管理中心網站裝載站台資料庫的高可用性和災害復原方案。 如需詳細資訊，請參閱[適用於 System Center Configuration Manager 之高可用性站台資料庫的 SQL Server AlwaysOn](../../../../core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database.md)。|  
 |修改站台間的複寫|請參閱 [System Center Configuration Manager 中的站台間資料傳輸](../../../../core/servers/manage/data-transfers-between-sites.md)以了解下列主題：<br /><br /> 設定次要站台之間的[檔案式複寫](../../../../core/servers/manage/data-transfers-between-sites.md#bkmk_fileroute)<br /><br /> 設定[資料庫複寫連結](../../../../core/servers/manage/data-transfers-between-sites.md#bkmk_Dblinks)<br /><br /> 設定[分散式檢視](../../../../core/servers/manage/data-transfers-between-sites.md#bkmk_distviews)|  
-

@@ -6,13 +6,12 @@ ms.date: 12/30/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1fcc921f-085f-4b0b-9c53-1e0707211076
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
@@ -35,10 +34,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
-translationtype: Human Translation
-ms.sourcegitcommit: 47d473b3884c3cd2ff7516629a7c32d4e52ac39b
 ms.openlocfilehash: ef7b3656f9b4a31e07227aa4e864448d0dd1fcdc
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="additional-information-about-privacy-for-system-center-configuration-manager"></a>System Center Configuration Manager 隱私權的其他資訊
 
@@ -112,9 +112,3 @@ Microsoft Intune 的所有通訊皆使用 HTTPS。 若要設定 Microsoft Intune
 為了管理連線至 Microsoft Intune 的裝置，有些資訊會由 Microsoft Intune 傳送和接收。 此資訊包括指派給服務之所有使用者的使用者主體名稱 (UPN)，以及由 Microsoft Intune 管理之裝置的裝置清查資訊。 指派至 Manage.Microsoft.com 發佈點之內容的中繼資料 (如應用程式名稱、發行商與版本) 則會傳送至 Microsoft Intune。 實際指派給 Manage.Microsoft.com 發佈點的二進位內容，在上傳至 Microsoft Intune 之前會先予以加密。
 
 此功能預設並未設定。 系統管理員可以控制要傳送至 Manage.Microsoft.com 發佈點的內容以及要指派給服務的使用者。 此功能隨時都可以移除。
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

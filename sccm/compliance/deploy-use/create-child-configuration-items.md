@@ -6,21 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 113984fa-6150-41a1-89ed-d2a83b979732
-caps.latest.revision: 5
-caps.handback.revision: 0
+caps.latest.revision: "5"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: f9e939d871e95a3248d8e5d96cb73063a81fd5cf
 ms.openlocfilehash: 33d4a2d5a09af74e1d76ac9b34a42b749f5bf7ef
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="how-to-create-child-configuration-items-in-system-center-configuration-manager"></a>如何建立 System Center Configuration Manager 中的子組態項目
 
@@ -43,9 +42,3 @@ System Center Configuration Manager 中的子設定項目是設定項目的複�
 4.  在 [建立子設定項目精靈]  的 [一般] 頁面中，您可以選擇父設定項目的特定修訂版以用來建立子項。 此精靈的其他步驟與建立標準組態項目的步驟一致。 如需詳細資訊，請參閱[如何為 Windows 桌上型電腦和伺服器電腦建立自訂設定項目](../../compliance/deploy-use/create-custom-configuration-items-for-windows-desktop-and-server-computers-managed-with-the-client.md)。  
 
 5.  完成精靈。 新的子設定項目即會顯示在 [設定項目]  清單中。  
-
-
-
-<!--HONumber=Dec16_HO3-->
-
-

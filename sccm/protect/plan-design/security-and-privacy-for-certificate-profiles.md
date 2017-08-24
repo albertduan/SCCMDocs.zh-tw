@@ -6,21 +6,20 @@ ms.date: 12/28/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 3393db41-900a-44c5-b950-2d46a35a198c
-caps.latest.revision: 7
-caps.handback.revision: 0
+caps.latest.revision: "7"
+caps.handback.revision: "0"
 author: Nbigman
 ms.author: nbigman
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 8a5dc7361da34f3e6b926acd35c72c0c0767ce70
 ms.openlocfilehash: c51787ad3fa0bdb285017cfab1ca6931afba9ea6
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="security-and-privacy-for-certificate-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager 的憑證設定檔安全性和隱私權
 
@@ -48,9 +47,3 @@ ms.openlocfilehash: c51787ad3fa0bdb285017cfab1ca6931afba9ea6
  依預設，裝置不會評估憑證設定檔。 此外，您必須設定憑證設定檔，然後將其部署至使用者或裝置。  
 
  設定	憑證設定檔之前，請考慮您的隱私權需求。  
-
-
-
-<!--HONumber=Dec16_HO5-->
-
-

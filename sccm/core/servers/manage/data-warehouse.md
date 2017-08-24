@@ -6,8 +6,7 @@ ms.date: 7/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: aaf43e69-68b4-469a-ad58-9b66deb29057
@@ -15,12 +14,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
 ms.openlocfilehash: eedbf12d3bf628666efc90c85a8dfab37e4dc9ab
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager 的資料倉儲服務點
 *適用於︰System Center Configuration Manager (最新分支)*
@@ -194,4 +192,3 @@ ms.lasthandoff: 07/29/2017
 | **A**  |  使用者使用內建報表要求資料。 此要求會使用 SQL Server Reporting Services 傳遞到 Reporting Services 點。 |  
 | **B**  |      大部分報告是針對目前的資訊，並會對站台資料庫執行這些要求。 |  
 | **C**  | 當報告要求歷程記錄資料時，會透過使用其中一個 [類別] 為 [資料倉儲] 的報告，對資料倉儲資料庫執行要求。   |  
-

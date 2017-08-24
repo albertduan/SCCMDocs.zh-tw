@@ -6,22 +6,19 @@ ms.date: 02/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 1026d616-2a20-4fb2-8604-d331763937f8
-caps.latest.revision: 6
+caps.latest.revision: "6"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: fc392e4440e84614f92218e9c7a09ec1c2c64f53
-ms.openlocfilehash: cb1ac4f33b9ef291050a3406291b8cc1f112b586
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.openlocfilehash: b6776fbe0cfca23244d767cffd554a2ef4567a2d
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="hardware-inventory-for-linux-and-unix-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的 Linux 及 UNIX 的硬體清查
 
@@ -126,4 +123,3 @@ Linux 和 UNIX 的 System Center Configuration Manager 用戶端支援硬體清�
  您必須先匯入定義自訂提供者之結構描述的受管理物件格式 (MOF) 檔案，Configuration Manager 才能報告 Linux 及 UNIX 電腦上新提供者所報告的清查報告。  
 
  若要自訂的 MOF 檔案匯入 Configuration Manager，請參閱[如何在 System Center Configuration Manager 中設定硬體清查](../../../../core/clients/manage/inventory/configure-hardware-inventory.md)。  
-

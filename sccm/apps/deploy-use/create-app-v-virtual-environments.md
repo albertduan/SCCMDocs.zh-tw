@@ -6,22 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b6b86078-fcc4-46cf-87d6-4b52b914b712
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: aa9e87830a3a51b01fae29b564c9267ec930a60d
 ms.openlocfilehash: 377ed9732fb16b062f53e78504aea394acdb7462
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="create-app-v-virtual-environments-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中建立 App-V 虛擬環境
 
@@ -60,4 +58,3 @@ ms.lasthandoff: 12/16/2016
 
     > [!NOTE]  
     >  當已安裝應用程式或是在用戶端下次評估已安裝的應用程式時，便會在用戶端電腦上新增或修改該虛擬環境。  
-

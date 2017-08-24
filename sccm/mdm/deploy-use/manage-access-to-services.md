@@ -6,24 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7b04727b-d563-422f-8d59-4dd66215d0b3
-caps.latest.revision: 26
+caps.latest.revision: "26"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: ea9184cd4fdc87513ed489f0f568efa6d64c1caa
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: d6933a331bb229f7e378e8f0bfa511f6b0553ae9
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="manage-access-to-services-in-system-center-configuration-manager"></a>管理 System Center Configuration Manager 中的服務存取權
 
 適用於：System Center Configuration Manager (最新分支)
@@ -183,4 +179,3 @@ SharePoint Online 條件式存取支援執行下列各項的裝置：
 ### <a name="see-also"></a>請參閱  
 
  [在 System Center Configuration Manager 中開始使用相容性設定](../../compliance/get-started/get-started-with-compliance-settings.md)
-

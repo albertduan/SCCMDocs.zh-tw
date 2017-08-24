@@ -6,24 +6,20 @@ ms.date: 10/06/2016
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-app
+ms.technology: configmgr-app
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: b1fdaee2-2816-4447-94cd-609f6948f215
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: a85a5cece803e5c16da71f897d5780049fbb82cd
 ms.openlocfilehash: eddf20bebd80028336503957dfc4c3d1dbbb23f2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="software-metering-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的軟體計量
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -180,4 +176,3 @@ ms.lasthandoff: 12/16/2016
 - John 每週繼續檢查軟體計量報告，如有必要，也會採取修復動作。
 
  本課程中的動作，可藉由移除不再需要的應用程式而降低 IT 支援和授權成本。 此外，技術支援中心現在有要執行舊版應用程式的使用者清單。
-

@@ -6,22 +6,20 @@ ms.date: 4/29/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e6c1df1d-7728-4980-9199-bc32cde5439e
-caps.latest.revision: 1
+caps.latest.revision: "1"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
 robots: NOINDEX, NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 31819a1df4e63e1114682490a9b3c3b4e5c99cfa
 ms.openlocfilehash: ddea7af935d5be880b96e383401061f8aa11e6da
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-publications-in-updates-publisher"></a>在 Updates Publisher 中管理發行集
 
@@ -105,4 +103,3 @@ ms.lasthandoff: 05/17/2017
     在您可以將自訂更新或配套從 Configuration Manager 移除 (刪除) 之前，必須先使它到期，並將其到期狀態發行到 Configuration Manager。 更新或配套在 Configuration Manager 中到期之後，您就無法再部署或重新啟動該更新或配套。
 
 -   **若要將更新或配套重新啟動**，請在 [更新工作區] 中選取一或多個已到期的更新，然後從工作區的 [常用] 索引標籤選取 [重新啟動]。 如果已到期的更新先前已經以到期的狀態發行到 Configuration Manager，您就無法將它重新啟動。
-
