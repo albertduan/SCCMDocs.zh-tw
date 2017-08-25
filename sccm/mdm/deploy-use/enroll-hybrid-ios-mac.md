@@ -2,26 +2,24 @@
 title: "使用 System Center Configuration Manager 和 Microsoft Intune 設定 iOS 和 Mac 的混合式裝置管理 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 和 Microsoft Intune 設定 iOS 裝置管理。"
 ms.custom: na
-ms.date: 07/31/2017
+ms.date: 08/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 5eae4400-58ca-4c71-804c-6a585cd3df5d
-caps.latest.revision: 10
-caps.handback.revision: 0
+caps.latest.revision: "10"
+caps.handback.revision: "0"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
+ms.openlocfilehash: d84d6f3dba65f1d8114ef2eef9f19a2bb5389027
+ms.sourcegitcommit: 9a6f8e028fb5eb2e752da70f42a5b548339bd8f4
 ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
-ms.openlocfilehash: 1a93a542f55d02df20865fa4ae8d7590dd9be753
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="set-up-ios-hybrid-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>使用 System Center Configuration Manager 和 Microsoft Intune 設定 iOS 的混合式裝置管理
 
@@ -67,9 +65,20 @@ MDM Push Certificate 是用以建立管理服務、Intune 和已註冊的 iOS �
 3.  在 [Microsoft Intune 訂閱內容] 對話方塊中，選取 [iOS] 索引標籤並按一下以選取 [啟用 iOS 註冊] 核取方塊。  
 4.  按一下 [瀏覽]，然後移至從 Apple 下載的 APNs 憑證 (.cer) 檔案。 Configuration Manager 顯示 APNs 憑證的資訊。 按一下 [確定] 以將 APN 憑證儲存到 Intune。  
 
-> [!NOTE]
-> [註冊限制] 功能目前無法使用。 
+設定好之後，您必須讓使用者了解如何註冊其裝置。 請參閱[要告訴使用者關於註冊其裝置的事項](https://docs.microsoft.com/intune/end-user-educate)。 這項資訊適用於透過 Microsoft Intune 與 Configuration Manager 管理的行動裝置。
+
+## <a name="configure-enrollment-restrictions"></a>設定註冊限制
+
+您可以可透過封鎖個人擁有的裝置來限制可註冊的裝置。 這樣可防止使用者使用「公司入口網站」來註冊其裝置。 若您封鎖個人擁有的裝置，則只有下列裝置可註冊：
+- [預先宣告的裝置](predeclare-devices-with-hardware-id.md)
+- [以 Apple Configurator 管理的裝置](ios-hybrid-enrollment-using-apple-configurator.md)
+- [以裝置註冊計劃 (DEP) 管理的裝置](ios-device-enrollment-program-for-hybrid.md)
+- 使用[裝置註冊管理員帳戶](enroll-devices-with-device-enrollment-manager.md)註冊裝置
+
+### <a name="to-enable-enrollment-restrictions"></a>啟用註冊限制
+1.  在 Configuration Manager 主控台的 [系統管理] 工作區中，移至 [雲端服務] > [Microsoft Intune 訂閱]。
+2.  在 [常用] 索引標籤的 [訂閱] 群組中，按一下 [設定平台] > [iOS]。
+3.  選擇 [封鎖個人擁有的裝置] 以限制僅允許公司擁有的裝置註冊。
 
 > [!div class="button"]
 [< 上一個步驟](create-service-connection-point.md)  [下一個步驟 >](set-up-additional-management.md)
-

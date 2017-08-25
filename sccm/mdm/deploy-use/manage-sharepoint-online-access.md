@@ -6,23 +6,20 @@ ms.date: 03/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 49cec466-1676-4fe2-a2fe-5004f01d735e
-caps.latest.revision: 11
-caps.handback.revision: 0
+caps.latest.revision: "11"
+caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 2c723fe7137a95df271c3612c88805efd8fb9a77
-ms.openlocfilehash: 58a82b29743cb37a5d358f020cf11b91d6f6f42e
-ms.contentlocale: zh-tw
-ms.lasthandoff: 03/06/2017
-
-
+ms.openlocfilehash: c564c1fc25c5156a2d9ddfa1b4123024c658bf61
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="manage-sharepoint-online-access-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中管理 SharePoint Online 存取
 
@@ -166,7 +163,7 @@ Office 傳統型應用程式可以在執行下列項目的電腦上存取 ShareP
 
 4.  在 SharePoint Online 和商務用 OneDrive 的 [瀏覽器存取] 下方，您可以選擇只允許透過下列支援的瀏覽器存取 Exchange Online︰Safari (iOS) 和 Chrome (Android)。 來自其他瀏覽器的存取將會被封鎖。  您針對 OneDrive [應用程式存取] 所選取的相同平台限制也適用於此處。
 
-    在 **Android** 裝置上，使用者必須啟用瀏覽器存取。  若要完成此動作，使用者必須在已註冊的裝置上啟用 [允許瀏覽器存取] 選項，如下所示︰
+    在 **Android** 裝置上，使用者必須啟用瀏覽器存取。  若要執行此動作，使用者必須在已註冊的裝置上啟用 [允許瀏覽器存取] 選項，如下所示︰
     1.  啟動**公司入口網站應用程式**。
     2.  透過三個點 (â€¦) 或硬體功能表按鈕，移至 [設定] 頁面。
     3.  按下 [啟用瀏覽器存取] 按鈕。
@@ -203,4 +200,3 @@ Office 傳統型應用程式可以在執行下列項目的電腦上存取 ShareP
 ### <a name="see-also"></a>另請參閱  
 
  [管理 System Center Configuration Manager 中的服務存取權](../../protect/deploy-use/manage-access-to-services.md)
-

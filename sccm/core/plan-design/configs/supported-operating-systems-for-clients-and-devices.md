@@ -2,25 +2,23 @@
 title: "支援的用戶端和裝置 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 支援用於用戶端和裝置的作業系統。"
 ms.custom: na
-ms.date: 2/6/2017
+ms.date: 8/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: d5166b16ffbe46af561b1ce98c0494cc4aaa72a8
-ms.openlocfilehash: cd7b8bf35aeb26c8b7b37f6faa51c9a09138fdb9
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
+ms.openlocfilehash: 82be9b005ec87199f3191612f720f4cc267a4e5c
+ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager 用戶端和裝置支援的作業系統
 
@@ -68,7 +66,7 @@ ms.lasthandoff: 05/17/2017
 -   **Windows 7 (含 SP1)** (x86、x64)：專業版、企業版和旗艦版    
 
 -   **Windows Server 2016 的伺服器核心安裝** (x64) <sup>2</sup>
-  - 從具有 KB3186654 之 Hotfix 彙總套件的 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援此作業系統。 
+  - 從具有 KB3186654 之 Hotfix 彙總套件的 1606 版 (或 2016 年 10 月發行的基準版本 1606) 開始，支援此作業系統。
 
 
 -   **Windows Server 2012 R2 的 Server Core 安裝** (x64) <sup>2</sup>    
@@ -124,6 +122,8 @@ ms.lasthandoff: 05/17/2017
 -   **Windows Embedded POSReady 7** (x86、x64)    
 
 -   **Windows Embedded Standard 7 (含 SP1)** (x86、x64)    
+
+下列作業系統是以 Windows XP Embedded 為基礎，因此只有 Configuration Manager 1610 版與更新版本才支援。 [從 1702 版開始，就不再支援這些嵌入式作業系統](/sccm/core/plan-design/changes/removed-and-deprecated-features#client-operating-systems)。  
 
 -   **WEPOS 1.1 (含 SP3)** (x86)    
 
@@ -351,4 +351,3 @@ Configuration Manager 支援有限制地管理連線至您 Exchange Server 的�
 -   **Exchange Server 2013**  
 
 -   **Exchange Online (Office 365)**：這包括 Business Productivity Online Standard Suite  
-

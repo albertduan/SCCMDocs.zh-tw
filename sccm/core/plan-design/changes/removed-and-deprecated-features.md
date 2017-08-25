@@ -2,26 +2,24 @@
 title: "已淘汰的功能 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 不再支援的功能、產品和作業系統。"
 ms.custom: na
-ms.date: 06/27/2017
+ms.date: 08/16/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: d8c8b44c-1e8a-42b6-bab4-23c72a0a6169
-caps.latest.revision: 15
-caps.handback.revision: 0
+caps.latest.revision: "15"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+ms.openlocfilehash: 8ac7009014a4652a36acf69ebfe9ccab3ba8ecbd
+ms.sourcegitcommit: 3ce56c7350411d8cc3d3cb9b4054f9ada9b0ed54
 ms.translationtype: HT
-ms.sourcegitcommit: ef42d1483053e9a6c502f4ebcae5a231aa6ba727
-ms.openlocfilehash: 98fa323cb94013d875e2cea41b80fff8cc75b6b2
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/26/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/17/2017
 ---
 # <a name="removed-and-deprecated-features-for-system-center-configuration-manager"></a>System Center Configuration Manager 的已移除和已淘汰功能
 
@@ -71,7 +69,7 @@ ms.lasthandoff: 07/26/2017
 |**作業系統**|**首次宣布的淘汰項目**|**移除的支援**|  
 |-|-|-|  
 |Windows XP|2015 年 7 月 10 日|版本 1511|  
-|Windows XP Embedded|2015 年 7 月 10 日|版本 1702|  
+|Windows XP Embedded <br><br> 這包括所有 [XP 型嵌入式作業系統](/sccm/core/plan-design/configs/supported-operating-systems-for-clients-and-devices#windows-embedded-computers)。|2015 年 7 月 10 日|版本 1702|  
 |Windows Server 2003|2015 年 7 月 10 日|版本 1511|  
 |Windows Server 2003 R2|2015 年 7 月 10 日|版本 1511|  
 |Windows Vista|2015 年 7 月 10 日|版本 1511|  
@@ -102,9 +100,10 @@ ms.lasthandoff: 07/26/2017
 |頻外管理 - 自 System Center 2012 Configuration Manager 起提供|2015 年 10 月 16 日|版本 1511|
 |工作順序： <br /> - OSDPreserveDriveLetter  <br /><br /> 在作業系統部署期間，Windows 安裝程式現在預設會決定要使用的最佳磁碟機代號 (通常是 C:)。 如果您想要指定使用不同的磁碟機，您可以在「套用作業系統」工作順序步驟中變更位置。 移至 [請選取要套用此作業系統的位置] 設定，選取 [特定邏輯磁碟機代號]，然後選擇您想要使用的磁碟機。 |2016 年 6 月 20日 |1606 版 |
 |工作順序： <br /> - 將磁碟轉換成動態磁碟 <br /> - 安裝部署工具 |2016 年 11 月 18 日|對於這些工作順序的支援將結束於 2017 年 6 月 1 日後發行的第一個更新。|
-|軟體中心有新的新式外貌。 先前只出現在 Silverlight 相依應用程式類別目錄 (使用者可用的應用程式) 中的應用程式，現在會出現在軟體中心的 [應用程式] 索引標籤中。 應用程式類別目錄還是可以使用軟體中心 [安裝狀態] 索引標籤的連結進行存取。<br><br>幾個月後即不再提供舊版的軟體中心。<br><br>您可以啟用用戶端設定的 [電腦代理程式] > **[使用新的軟體中心]**，設定用戶端使用新的軟體中心。<br><br>如需關於軟體中心的詳細資訊，請參閱[在 System Center Configuration Manager 中規劃和設定應用程式管理](https://docs.microsoft.com/sccm/apps/plan-design/plan-for-and-configure-application-management)。|2016 年 12 月 13 日|針對舊版軟體中心的支援將隨著於 2018 年 1 月 1 日後所發行的第一個更新而結束。|
+|軟體中心有全新的時尚外貌。 幾個月後即不再提供舊版的軟體中心。<br><br>您可以啟用用戶端設定的 [電腦代理程式] > **[使用新的軟體中心]**，設定用戶端使用新的軟體中心。<br><br>如需關於軟體中心的詳細資訊，請參閱[在 System Center Configuration Manager 中規劃和設定應用程式管理](https://docs.microsoft.com/sccm/apps/plan-design/plan-for-and-configure-application-management)。|2016 年 12 月 13 日|針對舊版軟體中心的支援將隨著於 2018 年 1 月 1 日後所發行的第一個更新而結束。|
+|隨著 1511 版中提供的新 Software Center 體驗的到來，以往只會出現在「應用程式類別目錄」(可供使用者使用的應用程式) 現在會出現在「軟體中心」中。 </br></br>隨著這個主要的「應用程式類別目錄」功能現在包含在「軟體中心」中，網頁型「應用程式類別目錄」體驗在未來幾個月後將不再提供。|2017 年 8 月 11 日| 對「應用程式類別目錄」網站使用者體驗的支援將在 2018 年 1 月 1 日後第一個更新發行之後結束|
 |使用 Configuration Manager 管理虛擬硬碟 (VHD)。 </br></br>這包括移除建立新 VHD 或是使用工作序列管理 VHD 的選項，以及從 Configuration Manager 主控台移除虛擬硬碟節點。 </br></br>移除這項支援之後，不會刪除現有的 VHD，但也無法再從 Configuration Manager 主控台中存取它。  |2017 年 1 月 6 日 |VHD 的支援將結束於 2017 年 6 月 1 日後發行的第一個更新。|
-|System Center Configuration Manager 升級評估工具。 </br></br>「升級評估工具」同時依賴 System Center Configuration Manager 和應用程式相容性工具組 (ACT) 6.x。 ACT 的最終版本隨附於 Windows 10 v1511 ADK。 因為 ACT 已不會有任何進一步的更新，將會中止升級評估工具的支援。 </br></br>升級評估工具會由[升級整備](/sccm/core/clients/manage/upgrade/upgrade-analytics)功能取代。 取代注意事項已於 2016 年 9 月 12 日新增至 [UAT 下載頁面 (英文)](https://www.microsoft.com/download/details.aspx?id=37145)。 |2016 年 9 月 12 日  | 2017 年 7 月 11 日 |  
+|System Center Configuration Manager 升級評估工具。 </br></br>「升級評估工具」同時依賴 System Center Configuration Manager 和應用程式相容性工具組 (ACT) 6.x。 ACT 的最終版本隨附於 Windows 10 v1511 ADK。 因為 ACT 已不會有任何進一步的更新，將會中止升級評估工具的支援。 </br></br>升級評估工具會由[升級整備](/sccm/core/clients/manage/upgrade/upgrade-analytics)功能取代。 取代注意事項已於 2016 年 9 月 12 日新增至 [UAT 下載頁面 (英文)](https://www.microsoft.com/download/details.aspx?id=37145)。 |2016 年 9 月 12 日  | 2017 年 7 月 11 日 |
 
 
 <br></br>
@@ -121,4 +120,3 @@ System Center Configuration Manager 1511 版中已移除功能的其他詳細資
  System Center Configuration Manager 已移除網路存取保護的支援。 此功能在 Windows Server 2012 R2 中已淘汰，且已從 Windows 10 移除。  
 
  如需了解網路存取保護的替代方案，請參閱 *網路原則與存取服務概觀* 中的 [淘汰的功能](https://technet.microsoft.com/library/hh831683.aspx)一節。
-

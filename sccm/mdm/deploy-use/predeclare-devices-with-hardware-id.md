@@ -2,25 +2,23 @@
 title: "使用 IMEI 或 iOS 序號預先宣告裝置 | Microsoft Docs"
 description: "使用 IMEI 或 iOS 序號預先宣告公司擁有的裝置。"
 ms.custom: na
-ms.date: 03/24/2017
+ms.date: 08/15/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ddb4c68e-e7f7-475a-89e2-7379a86e44c4
-caps.latest.revision: 3
+caps.latest.revision: "3"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 5eed004bd38a567dfdd4e392300be656a7abe3f7
-ms.openlocfilehash: c692fad43807e54cecbd7ab60284ea740d60617d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/25/2017
-
+ms.openlocfilehash: 7d139a2c74c0f29604f2f3d9b8e2739364633f17
+ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>使用 IMEI 或 iOS 序號預先宣告裝置
 
@@ -30,19 +28,22 @@ ms.lasthandoff: 05/25/2017
 
 當您上傳公司 iOS 裝置的序號時，它們必須與公司註冊設定檔搭配。 接著，必須使用 Apple 的裝置註冊計劃 (DEP) 或 Apple Configurator 來註冊裝置，以使它們顯示為公司所擁有。
 
+>[!NOTE]
+>Android 裝置 (Samsung Knox Standard 裝置除外) 必須有 SIM 卡才能使用 IMEI 編號預先宣告並註冊為公司擁有的裝置。
+
 ## <a name="how-to-predeclare-corporate-owned-devices"></a>如何預先宣告公司擁有的裝置
 
-1.    在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [公司擁有的所有裝置] > [預先宣告的裝置]。
+1.  在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [公司擁有的所有裝置] > [預先宣告的裝置]。
 
 2.  按一下 [建立預先宣告的裝置]。 隨即開啟 [建立預先宣告的裝置精靈]。
 
-3.    選擇您要如何新增裝置資訊：
+3.  選擇您要如何新增裝置資訊：
 
-     -    **上傳包含 IMEI 或序號及詳細資料的 CSV 檔案**
+     -  **上傳包含 IMEI 或序號及詳細資料的 CSV 檔案**
 
         針對這個選項，按一下 [瀏覽] 指定 .csv 檔案，這個檔案包含預先宣告公司擁有之裝置的資訊。 必須正確格式化 .csv 檔案。 如需詳細資訊，請參閱[上傳 .csv 檔案的格式](#format-for-uploading-csv-files)。
 
-     -    **手動新增 IMEI 或序號及詳細資料**
+     -  **手動新增 IMEI 或序號及詳細資料**
 
         若要手動輸入資訊，請輸入裝置的 IMEI 編號或 iOS 序號和詳細資料。 請更正任何錯誤或警告後再繼續。
 
@@ -67,10 +68,10 @@ ms.lasthandoff: 05/25/2017
 | IMEI 編號  | iOS 序號  | OS | 詳細資料 |
 |------------ |---------------|-----|-----|
 | 123456789012345    |   | WINDOWS | 公司擁有的 Windows 裝置|
-|   | A1B2C3D4E5C6 | IOS |     公司擁有的 iOS 裝置|
-| 223456789012345 | E6D5C4B3A210 |   IOS |     另一部 iOS 裝置|
-| 323456789012345 |        |   IOS |     第三部 iOS 裝置|
-| 123456789012346 |         |   ANDROID |     公司擁有的 Android 裝置|
+|   | A1B2C3D4E5C6 | IOS |  公司擁有的 iOS 裝置|
+| 223456789012345 | E6D5C4B3A210 |   IOS |  另一部 iOS 裝置|
+| 323456789012345 |        |   IOS |    第三部 iOS 裝置|
+| 123456789012346 |         |   ANDROID |   公司擁有的 Android 裝置|
 
 .csv 檔案中不包含標頭資料列。 下列範例顯示 CSV 格式的相同範例資料︰
 
@@ -87,4 +88,3 @@ ms.lasthandoff: 05/25/2017
 | 第 1 欄 | 第 2 欄 | 第 3 欄 | 第 4 欄 |
 |---|---|---|---|
 |沒有空格的 IMEI 編號 | iOS 序號 | IOS、WINDOWS 或 ANDROID | 選擇性裝置詳細資料 (1024 個字元限制) |
-

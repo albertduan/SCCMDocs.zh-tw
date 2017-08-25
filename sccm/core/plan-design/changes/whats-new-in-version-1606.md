@@ -1,25 +1,24 @@
 ---
-title: "System Center Configuration Manager 1606 更新中的新功能 | Microsoft Docs"
+title: "System Center Configuration Manager 更新 1606 中的新增功能 | Microsoft Docs"
 description: "下列各節提供 System Center Configuration Manager 1606 版中的變更和推出的新功能。"
 ms.custom: na
 ms.date: 12/30/2016
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: df2e57b9-6445-4067-98e7-ace85d4e6aa6
-caps.latest.revision: 40
+caps.latest.revision: "40"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-translationtype: Human Translation
-ms.sourcegitcommit: 34809ddf7819eab5deb3995cd8138c7b38cd2f9a
 ms.openlocfilehash: 9fdff6049d6e5cde1032864e5d7aa8df71e53686
-ms.lasthandoff: 12/31/2016
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="what39s-new-in-version-1606-of-system-center-configuration-manager"></a>System Center Configuration Manager 1606 版的新功能
 
@@ -226,4 +225,3 @@ Endpoint Protection 可協助管理及監視 Windows Defender 進階威脅防護
 
 ## <a name="remote-control"></a>遠端控制
 可讓您的使用者在遠端控制工作階段中，從共用剪貼簿傳輸內容之前，得以接受或拒絕檔案傳輸。 使用者只需要在每個工作階段中授與權限一次，且檢視人員不能自我授權進行檔案傳輸。 您可以在 [管理] 工作區中找到這個新設定。 前往 [用戶端設定]，然後開啟 [預設設定] 中的 [遠端工具] 面板。
-

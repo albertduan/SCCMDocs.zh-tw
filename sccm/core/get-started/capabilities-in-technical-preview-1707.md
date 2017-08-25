@@ -2,10 +2,9 @@
 title: Technical Preview 1707 | Microsoft Docs
 description: "了解 System Center Configuration Manager Technical Preview 1707 版中可用的功能。"
 ms.custom: na
-ms.date: 07/28/2017
+ms.date: 08/14/2017
 ms.prod: configuration-manager
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.reviewer: na
 ms.suite: na
 ms.tgt_pltfrm: na
@@ -14,12 +13,11 @@ ms.assetid: cb405ba0-8792-4ab7-988b-2f835f3a9550
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+ms.openlocfilehash: 7ee2fd78c6c502394016ba077d42714041ad01c6
+ms.sourcegitcommit: 10f17229c5a359f040cb7f8f5e7bd868a34ac086
 ms.translationtype: HT
-ms.sourcegitcommit: 6e890862fd02786b675e2b7abaca7ede7c0e977a
-ms.openlocfilehash: 91fd850f055a7e892a54487307109a291e336696
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/28/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/15/2017
 ---
 # <a name="capabilities-in-technical-preview-1707-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1707 中的功能
 
@@ -33,6 +31,17 @@ ms.lasthandoff: 07/28/2017
 -   **Issue Name**. Details
     Workaround details.
 -->
+
+**此 Technical Preview 的已知問題：**
+-   **當您有以被動模式執行的站台伺服器時，更新到預覽版 1707 失敗**。 當您執行預覽版 1706 且有[以被動模式執行的主要站台伺服器](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)時，您必須先將被動模式站台伺服器解除安裝，才能順利將預覽站台更新到 1707 版。 當您的站台執行 1707 版之後，您可以重新安裝被動模式站台伺服器。
+
+  解除安裝被動模式站台伺服器：
+  1. 在主控台中，移至 [系統管理] > [概觀] > [站台設定] > [伺服器和站台系統角色]，然後選取被動模式站台伺服器。
+  2. 在 [站台系統角色] 頁面上，以滑鼠右鍵按一下 [站台伺服器] 角色，然後選擇 [移除角色]。
+  3. 以滑鼠右鍵按一下被動模式站台伺服器，然後選擇 [刪除]。
+  4. 站台伺服器解除安裝之後，請在主動主要站台伺服器上重新啟動服務 **CONFIGURATION_MANAGER_UPDATE**。
+
+
 
 **以下是您可以使用此版本試用的新功能。**  
 
@@ -89,13 +98,13 @@ Surface 裝置儀表板提供在您的環境中找到的 Surface 裝置相關資
 
 在上一個 Technical Preview 中，我們引進了新的功能，可讓您[從 Configuration Manager 主控台建立和執行 PowerShell 指令碼](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)。
 在此 Technical Preview 中，我們擴展了這項功能。 Configuration Manager 現在可讀取 PowerShell 指令碼，並會在 [建立指令碼精靈] 中顯示任何參數。 您可以在指令碼執行時會使用的精靈中，為參數提供值。 您也可以將參數保留為空白。 如果這樣做，就必須在執行指令碼時提供參數值。
+在此 Technical Preview 中，您必須提供指令碼所需的所有參數。 在未來的版本中，我們計畫讓提供指令碼參數變成選擇性。
 
 ### <a name="try-it-out"></a>試試看！
 
-1. 遵循[從 Configuration Manager 主控台建立及執行 PowerShell 指令碼](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)的指示。 
+1. 遵循[從 Configuration Manager 主控台建立及執行 PowerShell 指令碼](/sccm/core/get-started/capabilities-in-technical-preview-1706#create-and-run-powershell-scripts-from-the-configuration-manager-console)的指示。
 2. 在 [建立指令碼精靈] 的新 [指令碼參數] 頁面上選擇參數，然後按一下 [編輯]。
 3. 為選取的參數提供參數值，然後按一下 [確定]。
 4. 完成精靈。
 
 指令碼執行時，會使用您所設定的任何參數值。
-

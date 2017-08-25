@@ -2,26 +2,23 @@
 title: "註冊 iOS 裝置 Apple Configurator - Configuration Manager | Microsoft Docs"
 descriptions: Pre-enroll iOS devices by using Apple Configurator with Configuration Manager.
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 08/15/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 61a19d95-83ff-4ad8-9a67-f304d2ba54f2
-caps.latest.revision: 5
+caps.latest.revision: "5"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 991eff171dce95590a7f050e0d3b07f98c0224b3
-ms.openlocfilehash: 6c6e9edbc7b2fca3d1be4feabb238efab80465fa
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/24/2017
-
-
+ms.openlocfilehash: 403f3b730e24c0f76314b04bcdd1d2f817bcd908
+ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="ios-hybrid-enrollment-using-apple-configurator-with-configuration-manager"></a>使用 Apple Configurator 搭配 Configuration Manager 進行 iOS 混合式註冊
 
@@ -41,7 +38,7 @@ ms.lasthandoff: 01/24/2017
 
 -   用來將裝置連接至 Mac 電腦的 USB 纜線  
 
-## <a name="step-1-add-a-corporate-owned-device-enrollment-profile"></a>步驟 1：新增公司擁有的裝置註冊設定檔
+## <a name="add-a-corporate-owned-device-enrollment-profile"></a>新增公司擁有的裝置註冊設定檔
 
 1.  在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [公司擁有的所有裝置] > [iOS] > [註冊設定檔]。 按一下 [建立設定檔]，開啟 [建立設定檔精靈]。 在下列頁面上設定：  
 
@@ -63,13 +60,13 @@ ms.lasthandoff: 01/24/2017
 
 4.  檢閱摘要，然後按一下 [下一步] 建立註冊設定檔。 按一下 [關閉] 以完成精靈。 您現在已經可以新增您想要註冊之裝置的 IMEI 編號或序號。  
 
-## <a name="step-2-predeclare-devices-to-enroll-with-setup-assistant"></a>步驟 2：預先宣告要使用設定助理註冊的裝置
+## <a name="predeclare-devices-to-enroll-with-setup-assistant"></a>預先宣告要使用設定助理註冊的裝置
 
 在此步驟中，您提供硬體識別碼 (IMEI 或序號) 清單，將裝置預先宣告為公司擁有的裝置。
 
 如需詳細資訊，請參閱[使用 IMEI 和 iOS 序號預先宣告裝置](predeclare-devices-with-hardware-id.md)。 當您完成該工作時，請返回此頁面，繼續進行下一個步驟。
 
-## <a name="step-3-export-the-profile-to-deploy-to-ios-devices"></a>步驟 3：匯出要部署到 iOS 裝置的設定檔
+## <a name="export-the-profile-to-deploy-to-ios-devices"></a>匯出要部署到 iOS 裝置的設定檔
 
 1.  在 Configuration Manager 主控台中，移至 [資產與合規性] > [概觀] > [公司擁有的所有裝置] > [iOS] > [註冊設定檔]。
 
@@ -96,7 +93,7 @@ ms.lasthandoff: 01/24/2017
 > [!NOTE]
 > 註冊設定檔 URL 自匯出後的兩週內有效。 兩週之後，您必須匯出新的 URL，才能註冊 iOS 裝置。
 
-## <a name="step-4-prepare-the-device-with-apple-configurator"></a>步驟 4：使用 Apple Configurator 準備裝置
+## <a name="prepare-the-device-with-apple-configurator"></a>使用 Apple Configurator 準備裝置
 
 若要準備 iOS 裝置以進行註冊，您可以將每個裝置連接到 Mac 電腦，並將註冊設定檔上傳至其中。  
 
@@ -135,7 +132,6 @@ ms.lasthandoff: 01/24/2017
 
 重複適用於您想要準備進行註冊之所有裝置的這些步驟。
 
-## <a name="step-5-distribute-devices"></a>步驟 5：散發裝置
+## <a name="distribute-devices"></a>散發裝置
 
 裝置現在已準備好進行公司註冊。 關閉裝置電源，並將它們散發給使用者。 開啟裝置時，設定助理將會啟動並提示使用者輸入其工作或學校帳戶，來開始註冊。
-

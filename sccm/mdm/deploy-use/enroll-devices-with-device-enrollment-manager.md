@@ -2,32 +2,29 @@
 title: "使用裝置註冊管理員註冊裝置 - Configuration Manager | Microsoft Docs"
 description: "使用裝置註冊管理員帳戶來向 System Center Configuration Manager 註冊公司擁有的裝置。"
 ms.custom: na
-ms.date: 03/24/2017
+ms.date: 08/15/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-hybrid
+ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2905f26e-7859-497d-b995-5ff48261efa2
-caps.latest.revision: 8
+caps.latest.revision: "8"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 7573590763c68a4c97d388be1e64054c318da9cc
-ms.openlocfilehash: 8c491636925670732e6af67d8c1c741e4793ef96
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.openlocfilehash: c90ecca1ee46523d16fc1cf11495e40707631e03
+ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="enroll-devices-with-device-enrollment-manager-with-configuration-manager"></a>使用裝置註冊管理員來向 Configuration Manager 註冊裝置
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 「裝置註冊管理員」(DEM) 帳戶是可註冊多達 1,000 個裝置的特殊使用者帳戶。 您需將現有的使用者新增到 DEM 帳戶中，以授與他們特殊的 DEM 能力。 每個註冊的裝置皆使用一個授權。 建議您使用透過此帳戶註冊的裝置作為沒有使用者親和性的共用裝置，而不要使用個人、專用的裝置。  
+組織可以搭配使用 Intune 與單一使用者帳戶來管理大量的行動裝置。 「裝置註冊管理員」(DEM) 帳戶是用於註冊裝置的特殊使用者帳戶。 您需將現有的使用者新增到 DEM 帳戶中，以授與他們特殊的 DEM 能力。 每個註冊的裝置皆使用一個授權。 建議您使用透過此帳戶註冊的裝置作為沒有使用者親和性的共用裝置，而不要使用個人、專用的裝置。  
 
 ## <a name="enroll-corporate-owned-devices-with-the-device-enrollment-manager"></a>使用裝置註冊管理員註冊公司所擁有的裝置  
  您可以指派存放區管理員或監督員 (例如，裝置註冊管理員使用者帳戶)，讓她可以執行下列作業：  
@@ -67,24 +64,14 @@ ms.lasthandoff: 05/17/2017
 7.  裝置註冊管理員現在可以在公司入口網站中，運用使用者用於自攜裝置 (BYOD) 案例中的同一程序註冊行動裝置。  
 
 #### <a name="delete-a-device-enrollment-manager-from-intune"></a>從 Intune 刪除裝置註冊管理員  
+刪除裝置註冊管理員對已註冊的裝置沒有影響。 刪除裝置註冊管理員之後：  
+- 已註冊的裝置不會取消註冊  
+- 仍可全面管理已註冊的裝置  
+- 刪除的裝置註冊管理員帳戶認證仍能繼續用於登入公司入口網站來存取應用程式  
+- 刪除的裝置註冊管理員帳戶認證仍然無法抹除或淘汰裝置  
+- 刪除之裝置註冊管理員帳戶與註冊裝置之間的關聯性仍然存在，但不能再註冊其他裝置
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理] 。  
-
 2.  在 **[系統管理]** 工作區中，展開 **[雲端服務]**，然後按一下 **[Microsoft Intune 訂閱]**(搭配 System Center Configuration Manager 和 Microsoft Intune 的混合式行動裝置管理新功能)。 選取您將新增裝置註冊管理員的 Microsoft Intune 訂閱，然後按一下 [內容]。  
-
 3.  在 [Microsoft Intune 訂閱內容] 對話方塊中，按一下 [裝置註冊管理員] 索引標籤。  
-
 4.  [搜尋] 您想要刪除的裝置註冊管理員，然後依序按一下 [移除]、[確定]。  
-
- 刪除裝置註冊管理員對已註冊的裝置沒有影響。 刪除裝置註冊管理員之後：  
-
--   已註冊的裝置不會受到影響  
-
--   仍可全面管理已註冊的裝置  
-
--   刪除的裝置註冊管理員帳戶認證仍能繼續用於登入公司入口網站來存取應用程式  
-
--   刪除的裝置註冊管理員帳戶認證仍然無法抹除或淘汰裝置  
-
--   刪除之裝置註冊管理員帳戶與註冊裝置之間的關聯性仍然存在，但不能再註冊其他裝置
-

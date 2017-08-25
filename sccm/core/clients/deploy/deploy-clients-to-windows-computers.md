@@ -2,27 +2,24 @@
 title: "部署 Windows 用戶端 | Microsoft Docs"
 description: "了解如何在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦。"
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 08/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 341f0d0b-f907-44cf-9e10-e1b41fc15f82
-caps.latest.revision: 13
-caps.handback.revision: 0
+caps.latest.revision: "13"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 9555a16d97224a1cf49a426ab225468b07403f60
-ms.openlocfilehash: 0e5e624fdfc2b5ee5b497d1063bd4e2d15df578b
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/30/2016
-
-
+ms.openlocfilehash: 9ac54136b93ee366c16cafe89036a79e808980dc
+ms.sourcegitcommit: 06aef618f72c700f8a716a43fb8eedf97c62a72b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="how-to-deploy-clients-to-windows-computers-in-system-center-configuration-manager"></a>如何在 System Center Configuration Manager 中將用戶端部署至 Windows 電腦
 
@@ -58,13 +55,10 @@ ms.lasthandoff: 12/30/2016
 6.  選取是否要在網域控制站上安裝用戶端。  
 
 7.  在 [帳戶] 索引標籤上，指定一或多個帳戶，讓 Configuration Manager 在連線至要安裝用戶端軟體的電腦時使用這些帳戶。 按一下 [建立] 圖示、輸入 [使用者名稱] 和 [密碼]\(不超過 38 個字元)、確認密碼，然後按一下 [確定]。 您必須指定至少一個用戶端推送安裝帳戶，在您要安裝用戶端的每部電腦上，它都必須有本機系統管理員權限。 如果您未指定用戶端推入安裝帳戶，Configuration Manager 會嘗試使用站台系統電腦帳戶，這會造成跨網域用戶端推入失敗。  
-
-    
     > [!NOTE]  
     >  如果您打算從次要網站使用用戶端推入安裝方法，則必須在起始用戶端推入的次要網站上指定該帳戶。  
     >   
     >  如需用戶端推入安裝帳戶的詳細資訊，請參閱下一個程序＜使用用戶端推入安裝精靈＞。  
-
 8.  完成 [安裝內容] 索引標籤。
 
      如果已針對 Configuration Manager 延伸架構，並由用戶端安裝讀取 (其中 CCMSetup 是在未使用安裝內容的情況下執行)，則在此索引標籤中指定的[用戶端安裝內容](../../../core/clients/deploy/about-client-installation-properties.md)會發佈到 Active Directory 網域服務。  
@@ -296,8 +290,8 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
     > [!IMPORTANT]  
     >  請不要在 CCMSetup.exe 命令列內容中指定用戶端的 Configuration Manager 站台碼。  
 
-2.  在命令提示字元中輸入 **net stop ccmexec** ，以確保 **SMS Agent Host** 服務 (Ccmexec.exe) 不在母片映像的電腦上執行。  
-
+2.  在命令提示字元中輸入 **net stop ccmexec** ，以確保 **SMS Agent Host** 服務 (Ccmexec.exe) 不在母片映像的電腦上執行。
+3.  在參照電腦上，將 [Windows] 資料夾中的 **SMSCFG.INI** 檔案刪除。  
 3.  移除主要映像電腦上儲存於本機電腦存放區中的任何憑證。  例如，如果您使用公開金鑰基礎結構 (PKI) 憑證，就必須針對 [電腦]  和 [使用者]  ，在映像處理電腦前移除 [個人]  存放區中的憑證。
 
 4.  如果用戶端將安裝在主要映像電腦以外的不同 Configuration Manager 階層中，請從主要映像電腦移除受信任的根金鑰。  
@@ -470,7 +464,7 @@ CCMSetup.exe /MP:mpserver.contoso.com /UsePKICert SMSSITECODE=ABC CCMHOSTNAME=se
 
 5.  將群組原則物件指派給您要以 Configuration Manager 用戶端安裝內容來佈建的電腦。  
 
- 如需 Windows 群組原則的資訊，請參考您的 Windows Server 說明文件。  
+如需 Windows 群組原則的資訊，請參考您的 Windows Server 說明文件。  
 
-### <a name="see-also"></a>請參閱
-[System Center Configuration Manager 中的用戶端安裝方法](../../../core/clients/deploy/plan/client-installation-methods.md)
+## <a name="next-steps"></a>後續步驟
+如需有關安裝 Configuration Manager 用戶端的詳細資訊，請參閱 [System Center Configuration Manager 中的用戶端安裝方法](../../../core/clients/deploy/plan/client-installation-methods.md)。

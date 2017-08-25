@@ -1,60 +1,66 @@
 ---
-title: "搭配使用最新分支與延伸互通性用戶端 | Microsoft Docs"
+title: "搭配最新分支使用 Configuration Manager 延伸互通性用戶端 | Microsoft Docs"
 description: "了解如何搭配使用 Configuration Manager 長期維護分支的用戶端與最新分支站台。"
 ms.custom: na
-ms.date: 01/04/2017
+ms.date: 08/09/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 600086d5-bd9e-4ac1-8ace-c7a62de80dc2
-caps.latest.revision: 0
+caps.latest.revision: "0"
 author: robstackmsft
 ms.author: robstack
-Robots: NOINDEX,NOFOLLOW
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 10b1010ccbf3889c58c55b87e70b354559243c90
-ms.openlocfilehash: 30d0177dc7fcc7f39d00c48067130d587435bf2d
-ms.contentlocale: zh-tw
-ms.lasthandoff: 12/16/2016
-
+ms.openlocfilehash: 6487a7c0eb958c74ca4c6a7233747966110eceb9
+ms.sourcegitcommit: b41d3e5c7f0c87f9af29e02de3e6cc9301eeafc4
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/11/2017
 ---
-# <a name="use-the-client-software-from-the-version-1606-baseline-media-for-extended-interoperability-with-future-versions-of-a-current-branch-site"></a>使用來自 1606 版基準媒體的用戶端軟體，以保障與未來版本的最新分支站台的延伸互通性
+# <a name="use-the-configuration-manager-client-software-for-extended-interoperability-with-future-versions-of-a-current-branch-site"></a>使用適用於延伸互通性的 Configuration Manager 用戶端軟體來搭配未來的「最新分支」站台版本使用
 
 適用於：System Center Configuration Manager (最新分支)、(長期維護分支)  
 
-您可以藉由下列方式，取得並使用適用於 Windows 電腦 Configuration Manager 用戶端軟體 (client.msi)，來管理屬於最新分支站台的裝置：透過 System Center 2016 隨附的 1606 版基準 DVD 媒體取得，或透過 System Center Configuration Manager (最新分支和長期維護分支 1606) 版本取得。 此用戶端稱為延伸互通性用戶端。
+在某些案例中，您的公司原則可能不允許您定期更新某些電腦上的 Configuration Manager 用戶端。 例如，您可能需要符合變更管理原則，或裝置為關鍵任務所需。
 
-## <a name="how-this-scenario-works"></a>這類案例的運作方式如下：
+從 Configuration Manager 更新 1610 開始，雖然您應該儘可能繼續為大部分的用戶端使用自動用戶端升級，但是您也可以安裝供長期使用的用戶端 (稱為延伸互通性用戶端 (EIC)) 以符合這些需求。
+
+EIC 與執行 1610 或更新版本的 Configuration Manager 網站相容。 EIC 只應該用於無法頻繁更新的特定電腦，例如資訊站或收銀機裝置。 為所有其他電腦使用最新的 Configuration Manager 用戶端。
+
+## <a name="how-this-scenario-works"></a>此案例如何運作
+
 一般來說，當您為最新分支安裝新的主控台內更新時，用戶端即會自動更新其用戶端軟體，以便使用這些新功能。
 
 在這類案例中，您可以使用最新分支，並接收新功能和更新。 大部分的用戶端會透過最新分支來執行用戶端軟體，並使用您安裝的每個版本來更新該用戶端軟體。 不過，您可以在不想接收用戶端軟體更新的關鍵系統子集上，安裝延伸互通性用戶端。 除非您明確地對這些用戶端部署新版用戶端軟體，否則它們不會安裝新的用戶端軟體。
 
-當您安裝新版的 Configuration Manager 時，最新分支 1610 版即會提供如何避免最新分支用戶端自動更新的詳細資訊。
+>[!IMPORTANT]
+>「最新分支」站台必須執行 1610 版或更新版本。
 
-最新分支站台必須執行 1606 版或更新版本。
+## <a name="how-to-use-the-eic"></a>如何使用 EIC
+
+1. Configuration Manager 1606更新安裝媒體的 \SMSSETUP\Client 資料夾取得 EIC (用戶端版本 5.00.8412)。 確定您已複製整個資料夾的內容。
+2. 在那些裝置上手動安裝 EIC。 [深入了解如何手動安裝用戶端](/sccm/core/clients/deploy/deploy-clients-to-windows-computers#BKMK_Manual)。
+3. 從用戶端升級排除該集合。
+
+>[!TIP]
+>若要在大量授權服務中心 (VLSC) 中尋找 System Center Configuration Manager 1606 版，請前往 [VLSC](https://www.microsoft.com/Licensing/servicecenter/Downloads/DownloadsAndKeys.aspx) 的 [下載和金鑰] 索引標籤，並搜尋 "system center config"，然後選取 [System Center Config Mgr (最新分支與 LTSB)]。
 
 ## <a name="the-extended-interoperability-client-software"></a>延伸互通性用戶端軟體
-當您搭配最新分支站台使用來自 System Center 2016 或 System Center Configuration Manager (最新分支和長期維護分支 1606) 版本的延伸互通性用戶端時，支援的用戶端版本為自 2016 年 10 月 12 日上市後的兩年期間。
+
+目前的 EIC 將會繼續隨著 Configuration Manager 最新分支的更新版本而受到支援，至少到 2018 年 11 月 18 日之前都是如此。 屆時，請檢查此頁面以取得有關新 EIC 的詳細資料，或是否延長現有 EIC 支援的相關資訊。
+
+>[!TIP]
+>EIC 至少在發行日期兩年內都會受到支援 (請參閱 [System Center Configuration Manager 最新分支版本支援](/sccm/core/servers/manage/current-branch-versions-supported))。 例如，對目前 EIC 的支援是 1610 發行兩年後，也就是 2018 年 11 月 18 日。
 
 在用戶端的支援到期之前，請針對您使用最新分支管理的裝置，規劃其上的延伸互通性用戶端更新。 若要執行此作業，請從 Microsoft 下載新版本的用戶端，然後將該更新的用戶端軟體部署到使用目前延伸互通性用戶端的裝置。
 
-**延伸互通性用戶端的限制：**
--     您無法藉由使用主控台內更新，取得延伸互通性用戶端軟體的更新。 當更新的用戶端發行時，即會提供部署更新之用戶端軟體的其他詳細資料。
+## <a name="limitations-of-the-extended-interoperability-client"></a>延伸互通性用戶端的限制
 
-## <a name="identify-the-client-version-you-use"></a>識別您所使用的用戶端版本
-以下是適用於最新分支和 LTSB 的主要用戶端版本：
+- 您無法藉由使用主控台內更新，取得延伸互通性用戶端軟體的更新。 當更新的用戶端發行時，即會提供部署更新之用戶端軟體的其他詳細資料。
+- EIC 只支援軟體更新、清查，以及套件與程式。
 
-|用戶端版本|分支和版本 |  
-|----------------|---------------------|
-|5.00.8325.xxxx |    - 最新分支 1511|
-|5.00.8355.xxxx    |- 最新分支 1602|
-|5.00.8412.1307    |- 最新分支 1606 </br> - 最新分支 1606 與 1606 Hotfix 彙總套件 (KB3186654)</br>- 來自 1606 版基準媒體的延伸互通性用戶端|  
+## <a name="next-steps"></a>後續步驟
 
-在用戶端上，您可以透過 Configuration Manager 控制台小程式的 [一般] 索引標籤來檢視用戶端版本。
-
-在小程式的 [元件] 索引標籤上，某些元件會顯示不同的值。 例如，針對用戶端版本 8412.1307，某些元件可能會列為 5.00.8412.**1000** 或 5.00.8412.**1006**。  對某些元件來說，末四碼數不同是正常現象，並不表示元件更新至目前用戶端版本失敗。
-
+使用[如何監視用戶端](/sccm/core/clients/manage/monitor-clients)中的資訊確保用戶端已正在安裝在您要的裝置上。

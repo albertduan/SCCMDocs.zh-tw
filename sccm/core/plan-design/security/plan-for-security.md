@@ -6,23 +6,20 @@ ms.date: 01/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2a216814-ca8c-4d2e-bcef-dc00966a3c9f
-caps.latest.revision: 6
-caps.handback.revision: 0
+caps.latest.revision: "6"
+caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: af06fb10d905e3fe447c6cd6ed35dac10488161f
-ms.openlocfilehash: 1bf519ad4593f6a08d7dc393f9fab91c70b51b25
-ms.contentlocale: zh-tw
-ms.lasthandoff: 01/05/2017
-
-
+ms.openlocfilehash: 6145cb69c69dba1eb1b9842079ee1a33686bb18a
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="plan-for-security-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中規劃安全性
 
@@ -292,9 +289,9 @@ Configuration Manager 中受信任根金鑰的功能類似公開金鑰基礎結�
 
 7.  在 [TrustedRootKey 的物件編輯器] 對話方塊中，選擇 [執行個體]。  
 
-8.  在顯示 **TrustedRootKey** 執行個體的新 [查詢結果] 視窗中，按兩下 [TrustedRootKey=@]。  
+8.  在顯示 [TrustedRootKey] 之執行個體的新 [查詢結果] 視窗中，按兩下 [TrustedRootKey=@]。  
 
-9. 在 [TrustedRootKey=@ 的物件編輯器] 對話方塊中的 [內容] 區段，向下捲動到 [TrustedRootKey CIM_STRING]。 右側欄位中的字串是受信任根金鑰。 請確認該金鑰與檔案 *&lt;Configuration Manager 目錄\>***\bin\mobileclient.tcf** 中的 **SMSPublicRootKey** 值相符。  
+9. 在 [TrustedRootKey=@ 的物件編輯器]  對話方塊中的 [內容]  區段，向下捲動到 [TrustedRootKey CIM_STRING] 。 右側欄位中的字串是受信任根金鑰。 請確認該金鑰與檔案 *&lt;Configuration Manager 目錄\>***\bin\mobileclient.tcf** 中的 **SMSPublicRootKey** 值相符。  
 
 ##  <a name="BKMK_PlanningForSigningEncryption"></a> 規劃簽署與加密  
  針對所有用戶端通訊使用 PKI 憑證時，您不需要為協助保障用戶端資料通訊而規劃簽署與加密。 但是，如果您設定執行 IIS 的任何站台系統以允許 HTTP 用戶端連線，就必須決定如何協助站台保護用戶端通訊。  
@@ -310,4 +307,3 @@ Configuration Manager 中受信任根金鑰的功能類似公開金鑰基礎結�
 
 ### <a name="see-also"></a>請參閱
 [System Center Configuration Manager 的密碼編譯控制項技術參考](../../../protect/deploy-use/cryptographic-controls-technical-reference.md)。  
-

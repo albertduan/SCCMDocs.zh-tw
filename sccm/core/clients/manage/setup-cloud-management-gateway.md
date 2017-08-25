@@ -8,17 +8,14 @@ ms.date: 05/01/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.service: 
-ms.technology:
-- configmgr-client
+ms.technology: configmgr-client
 ms.assetid: e0ec7d66-1502-4b31-85bb-94996b1bc66f
+ms.openlocfilehash: 84b617b3e83636ab4578174ef40e786dcf1178cd
+ms.sourcegitcommit: 06aef618f72c700f8a716a43fb8eedf97c62a72b
 ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
-ms.openlocfilehash: df6e809aadd3d69275c137c92629ab8426bbdcb7
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/04/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/21/2017
 ---
-
 # <a name="set-up-cloud-management-gateway-for-configuration-manager"></a>設定 Configuration Manager 的雲端管理閘道
 
 *適用於：System Center Configuration Manager (最新分支)*
@@ -26,6 +23,9 @@ ms.lasthandoff: 08/04/2017
 從版本 1610 開始，設定 Configuration Manager 中的雲端管理閘道包含下列步驟：
 
 ## <a name="step-1-configure-required-certificates"></a>步驟 1︰設定所需的憑證
+
+> [!TIP]  
+> 要求憑證之前，請確認想要的 Azure 網域名稱 (例如 GraniteFalls.CloudApp.Net) 是唯一的。 若要這樣做，請登入 [Microsoft Azure 入口網站](https://manage.windowsazure.com)，按一下 [新增]，選取 [雲端服務]，然後選取 [自訂建立]。 在 [URL] 欄位中，輸入想要的網域名稱 (不要按一下核取記號以建立服務)。 入口網站將會反映網域名稱可用或已由另一個服務使用。
 
 ## <a name="option-1-preferred---use-the-server-authentication-certificate-from-a-public-and-globally-trusted-certificate-provider-like-verisign"></a>選項 1 (優先) - 使用公用和全球信任之憑證提供者 (如 VeriSign) 的伺服器驗證憑證
 
@@ -43,7 +43,6 @@ ms.lasthandoff: 08/04/2017
 
 您可以透過針對雲端架構發佈點所執行的相同方式，為雲端管理閘道建立自訂 SSL 憑證。 請遵循[為雲端架構的發佈點部署服務憑證](/sccm/core/plan-design/network/example-deployment-of-pki-certificates)中的指示，但針對下列作業採用不同的做法：
 
-- 設定新的憑證範本時，將 [讀取] 和 [註冊] 權限授與您針對 Configuration Manager 伺服器所設定的安全性群組。
 - 當要求自訂 Web 伺服器憑證時，請針對憑證的一般名稱提供 FQDN，一般名稱以 **cloudapp.net** 結尾 (針對在 Azure 公用雲端上使用雲端管理閘道) 或以 **usgovcloudapp.net** 結尾 (針對 Azure 政府雲端)。
 
 
@@ -69,6 +68,9 @@ ms.lasthandoff: 08/04/2017
 
 7.  使用預設憑證格式完成 [憑證匯出精靈]。 記下您所建立之根憑證的名稱和位置。 您將需要這些資訊在[後續步驟](#step-4-set-up-cloud-management-gateway)中設定雲端管理閘道。
 
+>[!NOTE]
+>若用戶端憑證是由次級憑證授權單位所簽發，您將必須為鏈結中的每個憑證重複此步驟。
+
 ## <a name="step-3-upload-the-management-certificate-to-azure"></a>步驟 3︰將管理憑證上傳至 Azure
 
 Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定雲端管理閘道。 如需如何上傳管理憑證的詳細資訊和指示，請參閱 Azure 文件中的下列文章：
@@ -80,74 +82,6 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 >[!IMPORTANT]
 >請務必複製與管理憑證相關聯的訂用帳戶 ID。 您將需要這些資訊在[接下來的步驟](#step-4-set-up-cloud-management-gateway)中於 Configuration Manager 主控台中設定雲端管理閘道。
 
-### <a name="subordinate-ca-certificates-and-azure"></a>次級 CA 憑證和 Azure
-
-如果您的憑證是由次級 CA (subCA) 發行，且您的企業 PKI 基礎結構不在網際網路上，請使用此程序將憑證上傳到 Azure。 
-
-1. 在 Azure 入口網站中，設定雲端管理閘道之後，請找出雲端管理閘道服務並移至 [憑證] 索引標籤。 在那裡上傳您的 subCA 憑證。 如果您有一個以上的 subCA 憑證，您需要將它們全部上傳。 
-2. 上傳憑證之後，請記錄其憑證指紋。 
-3. 使用此指令碼，將憑證指紋加入至站台資料庫：
-    
-```
-
-    DIM serviceCName
-    DIM subCAThumbprints
-
-    ' Verify arguments
-    IF WScript.Arguments.Count <> 2 THEN
-    WScript.StdOut.WriteLine "Usage: CScript UpdateSubCAThumbprints.vbs <ServiceCName> <SubCA cert thumbprints, separated by ;>"
-    WScript.Quit 1
-    END IF
-
-    'Get arguments
-    serviceCName = WScript.Arguments.Item(0)
-    subCAThumbprints = WScript.Arguments.Item(1)
-
-    'Find SMS Provider
-    WScript.StdOut.WriteLine "Searching for SMS Provider for local site..."
-    SET objSMSNamespace = GetObject("winmgmts:{impersonationLevel=impersonate}!\\.\root\sms")
-    SET results = objSMSNamespace.ExecQuery("SELECT * From SMS_ProviderLocation WHERE ProviderForLocalSite = true")
-
-    'Process the results
-    FOR EACH var in results
-    siteCode = var.SiteCode
-    NEXT
-
-    IF siteCode = "" THEN
-    WScript.StdOut.WriteLine "Failed to locate SMS provider."
-    WScript.Quit 1
-    END IF
-
-    WScript.StdOut.WriteLine "SiteCode = " & siteCode 
-
-    ' Connect to the SMS namespace
-    SET objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\.\root\sms\site_" & siteCode)
-
-    'Get instance of SMS_AzureService
-    DIM query
-    query = "SELECT * From SMS_AzureService WHERE ServiceType = 'CloudProxyService' AND ServiceCName = '" & serviceCName & "'"
-    WScript.StdOut.WriteLine "Run WQL query: " &  query
-    SET objInstances = objWMIService.ExecQuery(query)
-
-    IF IsNull(objInstances) OR (objInstances.Count = 0) THEN
-    WScript.StdOut.WriteLine "Failed to get Azure_Service instance."
-    WScript.Quit 1
-    END IF
-
-    FOR EACH var IN objInstances
-    SET azService = var
-    NEXT
-
-    WScript.StdOut.WriteLine "Update [SubCACertThumbprint] to " & subCAThumbprints
-
-    'Update SubCA cert thumbprints
-    azService.Properties_.item("SubCACertThumbprint") = subCAThumbprints
-
-    'Save data back to provider
-    azService.Put_
-
-    WScript.StdOut.WriteLine "[SubCACertThumbprint] is updated successfully."
-```
 
 
 ## <a name="step-4-set-up-cloud-management-gateway"></a>步驟 4︰設定雲端管理閘道
@@ -173,7 +107,7 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 
     - 指定您要從自訂 SSL 憑證匯出的私密金鑰 (.pfx 檔案)。
 
-    - 指定從用戶端憑證匯出的根憑證。
+    - 指定從用戶端憑證匯出的根憑證 (以及任何次級憑證)。 精靈最多接受兩個根憑證與四個次級憑證。
 
     -   指定建立新的憑證範本時所使用的相同服務名稱 FQDN。 您必須根據您所使用的 Azure 雲端，針對 FQDN 服務名稱指定下列其中一項尾碼：
 
@@ -207,7 +141,7 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 
 ## <a name="step-7-configure-roles-for-cloud-management-gateway-traffic"></a>步驟 7︰設定雲端管理閘道流量的角色
 
-設定雲端管理閘道的最後一個步驟就是設定站台系統角色，以接受雲端管理閘道流量。 在 Tech Preview 1606 中，雲端管理閘道只支援管理點、發佈點和軟體更新點角色。 您必須個別設定每個角色。
+設定雲端管理閘道的最後一個步驟就是設定站台系統角色，以接受雲端管理閘道流量。 雲端管理閘道只支援管理點與軟體更新點角色。 您必須個別設定每個角色。
 
 1. 在 Configuration Manager 主控台中，移至 [系統管理] > [站台設定] > [伺服器和站台系統角色]。
 
@@ -215,7 +149,7 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 
 3. 選擇角色，然後選擇 [內容]。
 
-4. 在角色內容表的 [用戶端連線] 底下，選擇 [HTTPS]，選擇 [允許 Configuration Manager 雲端管理閘道流量] 旁邊的核取方塊，然後選擇 [確定]。 針對其餘角色重複上述步驟。
+4. 在角色 [屬性] 工作表的 [Client Connections] 下，選取 [允許 Configuration Manager 雲端管理閘道流量] 旁的方塊，然後選擇 [確定]。 針對其餘角色重複上述步驟。 基於安全性最佳做法，我們也建議您啟用 [HTTPS] 選項，但這並非必要。
 
 ## <a name="step-8-configure-clients-for-cloud-management-gateway"></a>步驟 8︰設定雲端管理閘道的用戶端
 
@@ -237,4 +171,3 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 ## <a name="next-steps"></a>後續步驟
 
 [監視雲端管理閘道的用戶端](monitor-clients-cloud-management-gateway.md)
-

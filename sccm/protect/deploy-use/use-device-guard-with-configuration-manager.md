@@ -6,25 +6,21 @@ ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: dudeso
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 5e5d854c-9cc1-4dd8-b33f-0fcac675b395
-caps.latest.revision: 13
-caps.handback.revision: 0
+caps.latest.revision: "13"
+caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
+ms.openlocfilehash: 3921748d3c99c2a35b670f3ca121dc7ab92d43bc
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
 ms.translationtype: HT
-ms.sourcegitcommit: 3c75c1647954d6507f9e28495810ef8c55e42cda
-ms.openlocfilehash: 4bb1f4a068563a5fe6f384708e10269dcd3229da
-ms.contentlocale: zh-tw
-ms.lasthandoff: 07/29/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
-
 # <a name="device-guard-management-with-configuration-manager"></a>使用 Configuration Manager 的 Device Guard 管理
 
 適用於：System Center Configuration Manager (最新分支)
@@ -97,6 +93,9 @@ Windows Device Guard 讓您強式控制可在您管理之電腦上執行的項�
     - 信任作業系統部署映像中所包含的應用程式。 
 7.  按一下 [下一步]，然後完成精靈。
 
+>[!IMPORTANT]
+>只有在執行 Configuration Manager 用戶端 1706 版或更新版本的電腦上才支援包含信任的檔案或資料夾。 若有任何包含規則被包含在 Device Guard 原則中，且該原則接著被部署到執行舊版 Configuration Manager 用戶端的用戶端電腦上，則將無法套用該原則。 升級這些舊版用戶端將能解決此問題。 不包含任何包含原則的原則可能仍能在舊版 Configuration Manager c用戶端上套用。
+
 ## <a name="how-to-deploy-a-device-guard-policy"></a>如何部署 Device Guard 原則
 1.  在 Configuration Manager 主控台中，按一下 [資產與合規性]。
 2.  在 [資產與相容性] 工作區中，展開 [Endpoint Protection]，然後按一下 [Device Guard 原則]。
@@ -130,7 +129,6 @@ Windows Device Guard 讓您強式控制可在您管理之電腦上執行的項�
 - 在具有 Device Guard 原則的用戶端電腦上使用 Configuration Manager 來啟用可設定的程式碼完整性時，此原則無法防止具有本機系統管理員權限的使用者規避 Device Guard 原則，或執行未受信任的軟體。 
 - 針對具有本機系統管理員權限的使用者，若要防止其停用可設定的程式碼完整性，唯一的方式就是部署已簽署的二進位原則。 此部署可以透過群組原則進行，但目前 Configuration Manager 中不支援。
 - 將 Configuration Manager 設定為用戶端電腦上受管理的安裝程式會使用 AppLocker 原則。 AppLocker 只會用來識別受管理的安裝程式，所有強制作業都會透過可設定的程式碼完整性來進行。 
-
 
 
 

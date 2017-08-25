@@ -6,22 +6,19 @@ ms.date: 02/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: e3aaa9d2-a40e-42b1-ad75-5a115351729e
-caps.latest.revision: 15
+caps.latest.revision: "15"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: 017bd5b899b364fc832c721d63cc7dbad0a11671
 ms.openlocfilehash: b88bc5f734b85527b81e5848deb0617db4c8dfbc
-ms.contentlocale: zh-tw
-ms.lasthandoff: 05/17/2017
-
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
 # <a name="endpoint-protection-client-frequently-asked-questions"></a>Endpoint Protection 用戶端常見問題集
 
@@ -65,7 +62,7 @@ ms.lasthandoff: 05/17/2017
     |監視您電腦上的檔案和程式活動|這個選項會監視檔案和程式何時開始在電腦上執行，然後將其執行的任何動作以及對其採取的動作發出警示給您。 這十分重要，因為惡意軟體可以在您不知道的情況下使用已安裝程式中的弱點來執行惡意或垃圾軟體。 例如，在您啟動經常使用的程式時，間諜軟體可以自行在背景執行。 Windows Defender 會監視您的程式，並在偵測到可疑活動時發出警示。|  
     |啟用行為監視|這個選項可監視傳統防毒偵測方法可能偵測不到的可疑模式行為集合。|  
 
-    |啟用網路檢查系統|這個選項可協助保護您的電腦不受已知漏洞的「零時差」攻擊，進而減少發現到漏洞時與套用更新時之間的時間範圍。|  
+    |啟用網路檢查系統|這個選項可協助保護您的電腦不受已知弱點的「零時差」攻擊，進而減少發現弱點與套用更新之間的時間長度。|  
 
 -   **掃描選項** - 您可以使用 Windows Defender 掃描潛在威脅，例如病毒、間諜軟體和其他可能讓電腦面臨風險的惡意軟體。 您也可以使用它排程定期掃描，以及移除掃描期間偵測到的惡意軟體。  
 
@@ -221,11 +218,11 @@ ms.lasthandoff: 05/17/2017
 |掃描所有下載|這個選項會監視所下載的檔案和程式，包括透過 Windows Internet Explorer 和 Microsoft Outlook® Express (例如 ActiveX ® 控制項和軟體安裝程式) 自動下載的檔案。 瀏覽器本身可以下載、安裝或執行這些檔案。 這些檔案可能包含惡意軟體 (包括病毒、間諜軟體和其他潛在垃圾軟體)，並在您不知道的情況下進行安裝。<br /><br /> 使用即時保護選項，Windows Defender 會隨時監視您的電腦，並檢查是否有任何您可能已下載的惡意檔案或程式。 這個監視功能表示 Windows Defender 不會因要求檢查您可能要下載的任何檔案或程式，而減慢瀏覽或電子郵件經驗。|  
 |監視電腦上的檔案和程式活動|這個選項會監視檔案和程式何時開始在電腦上執行，然後將其執行的任何動作以及對其採取的動作發出警示給您。 這十分重要，因為惡意軟體可以在您不知道的情況下使用已安裝程式中的弱點來執行惡意或垃圾軟體。 例如，在您啟動經常使用的程式時，間諜軟體可以自行在背景執行。 Windows Defender 會監視您的程式，並在偵測到可疑活動時發出警示。|  
 |啟用行為監視|這個選項可監視傳統防毒偵測方法可能偵測不到的可疑模式行為集合。|  
-|啟用網路檢查系統|這個選項可協助保護您的電腦不受已知漏洞的「零時差」攻擊，進而減少發現到漏洞時與套用更新時之間的時間範圍。|  
+|啟用網路檢查系統|這個選項可協助保護您的電腦不受已知弱點的「零時差」攻擊，進而減少發現弱點與套用更新之間的時間長度。|  
 
 ### <a name="to-turn-off-real-time-protection"></a>開啟即時保護  
 
-1.  按一下 [ **設定**]，然後按一下 [ **即時防護**]。  
+1.  按一下 [設定]，然後按一下 [即時保護]。  
 
 2.  清除您要關閉的即時保護選項，然後按一下 [儲存變更] 。 如果系統提示您輸入系統管理員密碼或確認資訊，請輸入密碼或確認動作。  
 
@@ -265,4 +262,3 @@ ms.lasthandoff: 05/17/2017
  [Windows Defender 或 Endpoint Protection 用戶端疑難排解](troubleshoot-endpoint-client.md)   
 
  [Endpoint Protection 用戶端說明](endpoint-protection-client-help.md)
-

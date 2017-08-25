@@ -6,8 +6,7 @@ ms.date: 07/31/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 14ee4fb0-7790-45a6-906e-6e55627d4079
@@ -33,12 +32,11 @@ translation.priority.ht:
 - tr-tr
 - zh-cn
 - zh-tw
+ms.openlocfilehash: 12f1e810c1eb194ec322a916e4e0c1a4c19be414
+ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
 ms.translationtype: HT
-ms.sourcegitcommit: 0663ba84762c44a5c303562548499f195bae9e1c
-ms.openlocfilehash: df28bfbb49c78cafe11b87c04ac4c6c9cf370a08
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/01/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/16/2017
 ---
 # <a name="levels-of-diagnostic-usage-data-collection-for-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 1706 版的診斷使用方式資料收集層級
 
@@ -191,6 +189,10 @@ System Center Configuration Manager 1706 版會收集三種層級的診斷及使
    - 主動管理技術 (AMT) 用戶端版本
 
    - BIOS 存留期 (以年為單位)
+   
+   - ***[新增]*** 在已啟用「安全開機」之情況下的裝置計數
+   
+   - ***[新增]*** 依 TPM 狀態的裝置計數
 
    - 用戶端自動升級：部署設定，包括用戶端試驗和排除使用 (擴充相互操作的用戶端)
 
@@ -503,4 +505,3 @@ System Center Configuration Manager 1706 版會收集三種層級的診斷及使
 - 受 Intune 管理之裝置的 EAS 條件式存取原則類型 (封鎖或隔離)
 
 - 商務用 Windows 市集應用程式詳細資料 (已同步應用程式的非彙總清單，包括 AppID、線上狀態或離線狀態，以及已購買的授權總數)
-

@@ -2,23 +2,21 @@
 title: "1706 新版 |Microsoft Docs"
 description: "取得 System Center Configuration Manager 1706 版中所推出之變更和新功能的詳細資料。"
 ms.custom: na
-ms.date: 07/31/2017
+ms.date: 08/11/2017
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: ac034143-003e-4629-aac2-99eaffef4db1
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+ms.openlocfilehash: 30bd5f1244534511e5cde8ee0e1a8c74819b1634
+ms.sourcegitcommit: 9a6f8e028fb5eb2e752da70f42a5b548339bd8f4
 ms.translationtype: HT
-ms.sourcegitcommit: afe0ecc4230733fa76e41bf08df5ccfb221da7c8
-ms.openlocfilehash: c686b1674f4ead702fa2b4329df6356a558726f6
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/04/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/14/2017
 ---
 # <a name="what39s-new-in-version-1706-of-system-center-configuration-manager"></a>System Center Configuration Manager 1706 版的新功能
 
@@ -207,7 +205,7 @@ Version 1706 drops support for the following products:
 此版本引入展開和摺疊工作順序群組的功能。 您可以個別或一次展開或摺疊所有群組。
 
 ### <a name="reload-boot-images-with-current-windows-pe-version"></a>以目前的 Windows PE 版本重新載入開機映像
-當您在選取的開機映像上執行 [更新發佈點] 時，您現在可以選擇在開機映像中重新載入 (來自 Windows ADK 安裝目錄的) 最新版本的 Windows PE。 如需詳細資訊，請參閱[使用開機映像更新發佈點](/sccm/osd/get-started/manage-boot-images.md#update-distribution-points-with-the-boot-image)。
+當您在選取的開機映像上執行 [更新發佈點] 時，您現在可以選擇在開機映像中重新載入 (來自 Windows ADK 安裝目錄的) 最新版本的 Windows PE。 如需詳細資訊，請參閱[使用開機映像更新發佈點](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)。
 
 ## <a name="software-updates"></a>軟體更新
 
@@ -226,7 +224,7 @@ Version 1706 drops support for the following products:
 #### <a name="to-manage-surface-driver-updates"></a>管理 Surface 驅動程式更新
 
 1. 啟用 Microsoft Surface 驅動程式的同步處理。 使用[設定分類和產品](/sccm/sum/get-started/configure-classifications-and-products)中的程序，並在 [分類] 索引標籤上選取 [包含 Microsoft Surface 驅動程式與韌體更新] 核取方塊，來啟用 Surface 驅動程式。
-2. [同步處理 Microsoft Surface 驅動程式](/sccm/sum/get-started/synchronize-software-updates.md)。
+2. [同步處理 Microsoft Surface 驅動程式](/sccm/sum/get-started/synchronize-software-updates)。
 3. [部署已同步處理的 Microsoft Surface 驅動程式](/sccm/sum/deploy-use/deploy-software-updates)
 
 ### <a name="configure-windows-update-for-business-deferral-policies"></a>設定 Windows Update for Business 延遲原則
@@ -257,6 +255,12 @@ Windows Analytics 是在 Operations Management Suite 上執行的一組解決方
 
 如需詳細資訊，請參閱 [Android for Work 裝置的設定項目](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client)。
 
+### <a name="android-and-ios-enrollment-restrictions"></a>Android 和 iOS 的註冊限制
+<!-- 1290826 -->
+隨著此版本的發行，您現在可以指定使用者無法註冊個人 Android 或 iOS 裝置。 新裝置限制設定可讓您限制 Android 裝置註冊只能在預先宣告的裝置上執行。 對於 iOS 裝置，您可以封鎖除了以 Apple 的裝置註冊計劃、Apple Configurator 或 Intune 裝置註冊管理員帳戶註冊之裝置以外的所有裝置。
+- 如需有關 Android 註冊限制的詳細資訊，請參閱[設定 Android 裝置管理](/sccm/mdm/deploy-use/enroll-hybrid-android)。
+- 如需有關 iOS 註冊限制的詳細資訊，請參閱[設定 iOS 註冊限制](/sccm/mdm/deploy-use/enroll-hybrid-ios-mac#configure-enrollment-restrictions)。
+
 ## <a name="protect-devices"></a>保護裝置
 
 ### <a name="include-trust-for-specific-files-and-folders-in-a-device-guard-policy"></a>在 Device Guard 原則中包含對特定檔案和資料夾的信任
@@ -270,4 +274,3 @@ Windows Analytics 是在 Operations Management Suite 上執行的一組解決方
 - 信任作業系統部署映像中所包含的應用程式
 
 如需詳細資料，請參閱[使用 Configuration Manager 的 Device Guard 管理](/sccm/protect/deploy-use/use-device-guard-with-configuration-manager)。
-

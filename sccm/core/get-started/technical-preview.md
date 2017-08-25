@@ -2,25 +2,23 @@
 title: "Configuration Manager 的 Technical Preview | Microsoft Docs"
 description: "了解可讓您試用 System Center Configuration Manager 新功能的 Technical Preview 版本。"
 ms.custom: na
-ms.date: 07/31/2017
+ms.date: 08/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 9ce0a8cb-f96c-4e41-834c-59ceb54ce44a
-caps.latest.revision: 157
+caps.latest.revision: "157"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
+ms.openlocfilehash: 6d7bac392cf5a4ba01b25758fd91f1003b153589
+ms.sourcegitcommit: 398e30ec703218c4b3680bbb055d686807ca7f1d
 ms.translationtype: HT
-ms.sourcegitcommit: c0d94b8e6ca6ffd82e879b43097a9787e283eb6d
-ms.openlocfilehash: 9f814fc2902cef116f6b1e476af5d4cbdfc4e217
-ms.contentlocale: zh-tw
-ms.lasthandoff: 08/02/2017
-
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/18/2017
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager 的 Technical Preview
 
@@ -139,7 +137,8 @@ ms.lasthandoff: 08/02/2017
  |適用於 IPv6 的 PXE 網路開機支援 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#pxe-network-boot-support-for-ipv6)|![未新增](media/Red_X.gif)|
  |管理 Microsoft Surface 驅動程式更新 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#manage-microsoft-surface-driver-updates)|[版本 1706](/sccm/core/plan-design/changes/whats-new-in-version-1706#manage-microsoft-surface-driver-updates)|
  |設定 Windows Update for Business 延遲原則 |[Tech Preview 1706](capabilities-in-technical-preview-1706.md#configure-windows-update-for-business-deferral-policies)|[版本 1706](/sccm/sum/deploy-use/integrate-windows-update-for-business-windows-10#configure-windows-update-for-business-deferral-policies)|
- |Android 和 iOS 的註冊限制|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#android-and-ios-enrollment-restrictions)|![未新增](media/Red_X.gif)|
+ |iOS 註冊限制|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#android-and-ios-enrollment-restrictions)|[版本 1706](/sccm/mdm/deploy-use/enroll-hybrid-ios-mac#configure-enrollment-restrictions)|
+ |Android 註冊限制|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#android-and-ios-enrollment-restrictions)|[版本 1706](/sccm/mdm/deploy-use/enroll-hybrid-android#enable-android-enrollment)|
  |Android for Work 的應用程式複製貼上管理原則|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#android-for-work-application-management-policy-for-copy-paste)|[版本 1706](/sccm/mdm/deploy-use/create-configuration-items-for-android-for-work-devices-managed-without-the-client#android-for-work-configuration-item-settings-reference)|
  |新的 Windows 組態項目設定|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-windows-configuration-item-settings)|[版本 1706](/sccm/mdm/deploy-use/create-configuration-items-for-windows-8.1-and-windows-10-devices-managed-without-the-client)|
  |新的裝置合規性政策規則|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-device-compliance-policy-rules)|![未新增](media/Red_X.gif)|
@@ -181,7 +180,7 @@ ms.lasthandoff: 08/02/2017
  |軟體更新點的界限群組增強功能 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#boundary-groups-improvements-for-software-update-points)    |[版本 1702](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)  |
  |硬體清查會收集 UEFI 資訊 | [Tech Preview 1701](capabilities-in-technical-preview-1701.md#hardware-inventory-collects-uefi-information)|[版本 1702](/sccm/osd/deploy-use/task-sequence-steps-to-manage-bios-to-uefi-conversion#hardware-inventory-collects-uefi-information) |
  |作業系統部署增強功能| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#improvements-to-operating-system-deployment)|[版本 1702](/sccm/core/plan-design/changes/whats-new-in-version-1702#operating-system-deployment) |
- |在雲端式發佈點上裝載軟體更新| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#host-software-updates-on-cloud-based-distribution-points)|![未新增](media/Red_X.gif) |
+ |在雲端式發佈點上裝載軟體更新| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#host-software-updates-on-cloud-based-distribution-points)|[版本 1702](/sccm/core/plan-design/hierarchy/use-a-cloud-based-distribution-point#plan-to-use-a-cloud-based-distribution-point) |
  |透過管理點來驗證裝置健全狀況證明資料| [Tech Preview 1701](capabilities-in-technical-preview-1701.md#validate-device-health-attestation-data-via-management-points)| [版本 1702](/sccm/core/servers/manage/health-attestation) |
  |針對 Microsoft Azure Government 雲端的 OMS 連接器 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#use-the-oms-connector-for-microsoft-azure-government-cloud) |[版本 1702](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite#fairfaxconfig) |
  |建立精靈無法再將目標設為 Android 與 iOS 版本 |[Tech Preview 1701](capabilities-in-technical-preview-1701.md#android-and-ios-versions-are-no-longer-targetable-in-creation-wizards-for-hybrid-mdm) |![未新增](media/Red_X.gif) |
@@ -265,4 +264,3 @@ ms.lasthandoff: 08/02/2017
 ## <a name="see-also"></a>另請參閱  
 [System Center Configuration Manager 的新功能](/sccm/core/plan-design/changes/whats-new-incremental-versions)  
  [System Center Configuration Manager 簡介](../../core/understand/introduction.md)
-

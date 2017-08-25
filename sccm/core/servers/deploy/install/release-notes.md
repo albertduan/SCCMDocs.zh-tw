@@ -2,27 +2,24 @@
 title: "版本資訊 - Configuration Manager | Microsoft Docs"
 description: "請參閱這些注意事項，以了解產品中尚未修正或 Microsoft 知識庫文章未涵蓋的緊急問題。"
 ms.custom: na
-ms.date: 05/31/2017
+ms.date: 08/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 030947fd-f5e0-4185-8513-2397fb2ec96f
-caps.latest.revision: 41
-caps.handback.revision: 0
+caps.latest.revision: "41"
+caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: dc221ddf547c43ab1f25ff83c3c9bb603297ece6
-ms.openlocfilehash: 6113576ca38da27e9e8732b3930deee96db4ae2c
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/01/2017
-
-
+ms.openlocfilehash: 24f30bddb345e3a08d4b655d89693c226005cb0e
+ms.sourcegitcommit: 06aef618f72c700f8a716a43fb8eedf97c62a72b
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/21/2017
 ---
 # <a name="release-notes-for-system-center-configuration-manager"></a>System Center Configuration Manager 的版本資訊
 
@@ -71,20 +68,8 @@ System Center Configuration Manager 的產品版本資訊僅限於產品中尚�
 **因應措施：** 無。   
 
 
-
-### <a name="the--sql-server-backup-model-in-use-by-configuration-manager-can-change-from-full-to-simple"></a>由 Configuration Manager 所使用的 SQL Server 備份模型可以從完整變更為簡單  
-<!-- Confirm applicability for upgrade to later baselines. 1511 is out of support. 1606 is minmum supported baseline  -->
-
- 當您升級至 System Center Configuration Manager 1511 版時，Configuration Manager 正在使用的 SQL Server 備份模型可以從完整變更為簡單。  
-
--   如果您搭配使用自訂 SQL Server 備份工作與完整備份模型 (而不是 Configuration Manager 的內建備份工作)，則升級可以將您的備份模型從完整變更為簡單。  
-
-**因應措施**：升級至 1511 版之後，請檢閱 SQL Server 組態，並在必要時將它還原為完整。  
-
-
-
 ### <a name="an-update-is-stuck-with-a-state-of-downloading-in-the-updates-and-servicing-node-of-the-configuration-manager-console"></a>在 Configuration Manager 主控台 [更新與服務] 節點中，更新卡在「正在下載」狀態  
-<!-- Source bug pending. Consider move to core content.  -->
+<!-- Source bug pending. Consider move to core content.  8/15 Seeking validation of issue from Dev.  -->
 由線上服務連接點自動下載更新期間，更新可能會卡在「正在下載」狀態。 當更新下載卡住時，指示記錄檔中會顯示以下類似項目：  
 
 DMPdownloader log：  
@@ -105,7 +90,7 @@ ConfigMgrSetup.log：
 
 
 ###  <a name="setup-fails-when-using-redist-files-from-the-cdlatest-folder-with-a-manifest-verification-error"></a>使用來自 CD.Latest 資料夾的可轉散發檔案時，安裝程式會失敗，並顯示資訊清單驗證錯誤
-<!-- Source bug pending  -->
+<!-- Source bug pending    8/15 Seeking validation of issue from Dev.   -->
 
 當您透過為 1606 版建立的 CD.Latest 資料夾執行安裝程式，並使用 CD.Latest 資料夾隨附的可轉散發檔案時，安裝程式會失敗，而 Configuration Manager 安裝記錄檔中的錯誤如下︰
 
@@ -116,78 +101,53 @@ ConfigMgrSetup.log：
  - 在安裝期間，選擇從 Microsoft 下載最新的可轉散發檔案，而不使用 CD.Latest 資料夾隨附的可轉散發檔案。
  - 手動刪除 *cd.latest\redist\languagepack\zhh* 資料夾，然後再次執行安裝程式。
 
+
 ### <a name="service-connection-tool-throws-an-exception-when-sql-server-is-remote-or-when-shared-memory-is-disabled"></a>服務連接工具在 SQL Server 位於遠端或停用共用記憶體時擲回例外狀況
+<!-- 479223   Fixed in 1702 and later   -->
 從 1606 版開始，服務連接工具會在下列其中一項正確時產生例外狀況：  
- -    站台資料庫位於裝載服務連接點並使用非標準連接埠 (1433 以外的連接埠) 之電腦的遠端
- -     站台資料庫位於與服務連接點相同的伺服器上，但已停用 SQL 通訊協定**共用記憶體**
+ -  站台資料庫位於裝載服務連接點並使用非標準連接埠 (1433 以外的連接埠) 之電腦的遠端
+ -  站台資料庫位於與服務連接點相同的伺服器上，但已停用 SQL 通訊協定**共用記憶體**
 
 例外狀況與下列類似：
  - 未處理的例外狀況: System.Data.SqlClient.SqlException: 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個體名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。(提供者: 具名管道提供者，錯誤: 40 - 無法開啟 SQL Server 連線) --
 
 **因應措施**︰使用工具期間，您必須修改裝載服務連接點之伺服器的登錄，以包含 SQL Server 連接埠的相關資訊︰
 
-   1.    使用工具之前，請編輯下列登錄機碼，並將使用中連接埠號碼新增至 SQL Server 名稱︰
+   1.   使用工具之前，請編輯下列登錄機碼，並將使用中連接埠號碼新增至 SQL Server 名稱︰
     - 機碼：HKLM\Microsoft\SMS\COMPONENTS\SMS_DMP_UPLOADER\
       - 值：&lt;SQL Server 名稱>
     - 新增：**,&lt;連接埠>**
 
     例如，若要將連接埠 *15001* 新增至名為 *testserver.test.net* 的伺服器，則產生的機碼會是：***HKLM\Software\Microsoft\SMS\COMPONENTS\SMS_DMP_UPLOADER\testserver.test.net,15001***
 
-   2.    將連接埠新增至登錄之後，工具應該會正常運作。  
+   2.   將連接埠新增至登錄之後，工具應該會正常運作。  
 
-   3.    完成工具的使用之後，針對 **-connect** 和 **-import** 步驟，請將登錄機碼變更回原始值。  
-
-
+   3.   完成工具的使用之後，針對 **-connect** 和 **-import** 步驟，請將登錄機碼變更回原始值。  
 
 
-<!-- No current Backup and Recovery relenotes
-## Backup and recovery
--->
-
+<!-- ## Backup and recovery  -->
 
 
 ## <a name="client-deployment-and-upgrade"></a>用戶端部署和升級  
 
 ### <a name="client-installation-fails-with-error-code-0x8007064c"></a>用戶端安裝失敗並顯示錯誤碼 0x8007064c
 <!--- SMS 486973 -->
-
 當您將用戶端部署至 Windows 電腦時，安裝失敗。 ccmsetup.log 檔案會包含以下項目：「檔案 'C:\WINDOWS\ccmsetup\Silverlight.exe' 傳回失敗，結束代碼 1612。 安裝失敗」，並接著顯示：「InstallFromManifest 已失敗 0x8007064c」。
 
 **因應措施：**這是由先前已安裝且已損毀的 Silverlight 版本所造成。 您可以嘗試在受影響的電腦上執行下列工具來修正此問題：[https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed](https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed)
 
-
-
-
 ## <a name="operating-system-deployment"></a>作業系統部署  
 
-### <a name="issue-with-the-windows-adk-for-windows-10-version-1511"></a>Windows ADK for Windows 10 版本 1511 的問題  
-如果您是透過使用 Windows ADK 10 版本 1511 之 Windows PE v.10.0.10586 開機映像的軟體中心執行工作順序，當電腦重新啟動為 Windows PE 時，只要「初始化硬體裝置」發生 **Windows PE 初始化失敗，錯誤碼 0x80220014** 的錯誤，工作順序會失敗。  
+### <a name="if-the-boot-image-contains-drivers-the-image-fails-to-reload-the-current-windows-pe-version-from-the-windows-assessment-and-deployment-kit-adk"></a>若開機映像包含驅動程式，映像無法從 Windows 評定及部署套件 (ADK) 重新載入目前的 Windows PE 版本
+<!-- 495087 -->
+您可以使用「更新發佈點精靈」，以使用最新版本 Windows PE (位於 Windows 評定及部署套件 (ADK) 的安裝目錄) 儲存之開機映像更新發佈點。 若要更新，請開啟「更新發佈點精靈」並選取 [從 Windows ADK 重新載入具備目前 PE 版本的此開機映像]。
 
-**因應措施**：使用原始的 Windows 10 ADK。 如需詳細資訊，請參閱下列 System Center Configuration Manager 小組部落格： [Issue with the Windows ADK for Windows 10](http://blogs.technet.com/b/configmgrteam/archive/2015/11/20/issue-with-the-windows-adk-for-windows-10-version-1511.aspx)  
+然而，若您的開機映像包含驅動程式，則更新會失敗。 此時精靈會從 ADK 重新載入映像、顯示使用者可以關閉的例外狀況對話方塊，然後顯示成功畫面。 然而，最新的 Configuration Manager 用戶端元件將無法新增到開機映像中。 將不會更新發佈點上的開機映像
 
-### <a name="dynamic-application-installation-fails-during-task-sequence-which-successfully-completes"></a>工作順序順利完成時動態應用程式安裝失敗  
-當您部署使用 [根據動態變數清單安裝應用程式] 選項的工作順序，而其中一個應用程式因為任何原因無法安裝時，工作順序仍會報告成功。 不論如何設定下列選項都會發生這種情況：  
+**因應措施**：執行兩次「更新發佈點精靈」。
 
--   **發生錯誤時仍繼續** (安裝應用程式步驟的 [選項] 索引標籤)  
-
--   **如果某個應用程式安裝失敗，繼續安裝清單中的其他應用程式** (安裝應用程式步驟的 [內容] 索引標籤)  
-
-您可以檢視 smsts.log 判斷應用程式是否安裝失敗。  
-
-**因應措施**：使用 **_TSAppInstallStatus** 變數作為工作順序後續步驟的條件，且若其中一個動態應用程式發生錯誤，則工作順序失敗的條件。  
-
-### <a name="smb-might-not-work-properly-after-you-use-a-task-sequence-to-install-windows-10"></a>使用工作順序安裝 Windows 10 後，SMB 可能無法正常運作  
-當您使用工作順序安裝 Windows 10 映像時，在安裝 Configuration Manager 用戶端之後 SMB 可能無法正常運作。 例如，下列工作順序步驟可能會失敗：  
-
--   當搭配狀態移轉點還原使用者狀態時  
-
--   連線到網路資料夾  
-
-例如您仍然可以從 F8 系統管理員命令提示字元，針對電腦執行 PING 命令，但任何的 SMB 網路流量 (例如從命令提示字元執行 NET USE) 可能會失敗並出現錯誤 1231 - 無法連接網路位置。  
-
-**因應措施**：  
-在「設定 Windows 和 ConfigMgr」工作順序步驟之後，新增「執行命令行」工作順序步驟來停止，然後啟動「工作站服務」，如下所示：    
-**net stop workstation /y &amp; net start workstation**  
+1. 執行精靈並選取 [從 Windows ADK 重新載入具備目前 Windows PE 版本的此開機映像]。 這樣將會取得最新的 Windows PE 版本。
+2. 重新執行精靈，但這次不要選取 [從 Windows ADK 重新載入具備目前 Windows PE 版本的此開機映像]。 這樣將會取得最新的用戶端二進位檔案，並更新發佈點上的開機映像。
 
 ### <a name="servicing-plans-create-a-lot-of-duplicate-software-update-groups-and-deployments-by-default"></a>根據預設，服務計劃會建立大量重複的軟體更新群組和部署  
 根據預設，「建立服務計劃」精靈目前會在每個軟體更新同步處理後執行。 每次執行精靈時，它會建立新的軟體更新群組和部署。 例如，如果您的軟體更新同步處理排程一天會執行多次，「建立服務計劃」精靈每天將會建立多個幾乎相同的軟體更新群組和部署。  
@@ -195,79 +155,65 @@ ConfigMgrSetup.log：
 **因應措施**：    
 在您建立服務計劃後，開啟服務計劃的屬性，移至 **[評估排程]** 索引標籤，選取 **[依排程執行規則]**，按一下 **[自訂]**並建立自訂排程。 例如，您可以每隔 60 天執行服務計劃。  
 
+
 ### <a name="when-a-high-risk-deployment-dialog-is-visible-to-a-user-subsequent-high-risk-dialogs-with-a-sooner-deadline-are-not-displayed"></a>向使用者顯示高風險部署對話方塊時，就不會顯示期限較早的後續高風險對話方塊。
+<!-- Fixed in 1702 and later -->
 建立高風險工作部署並將其部署給使用者之後，會向使用者顯示高風險對話方塊。 如果使用者未關閉對話方塊，您可以建立和部署期限比第一個高風險部署還要早的另一個高風險部署，除非使用者關閉原始對話方塊，否則他們接收不到更新的對話方塊。 在設定的期限，仍會執行部署。
 
 **因應措施**：  
 使用者必須關閉第一個高風險部署的對話方塊，才能查看下一個高風險部署的對話方塊。
 
+
+
 ## <a name="software-updates"></a>軟體更新
 
 ### <a name="importing-an-office-365-client-settings-from-a-configuration-file-fails-when-it-contains-unsupported-languages"></a>當設定檔包含不支援的語言時，從該設定檔匯入 Office 365 用戶端設定會失敗
+<!-- 489258  Fixed in 1706  -->
 當您從現有的 XML 設定檔匯入 Office 365 用戶端設定，且該檔案包含 Office 365 專業增強版用戶端不支援的語言時，將會發生錯誤。 如需詳細資料，請參閱[從 Office 365 用戶端管理儀表板將 Office 365 應用程式部署至用戶端](/sccm/sum/deploy-use/manage-office-365-proplus-updates#to-deploy-office-365-apps-to-clients-from-the-office-365-client-management-dashboard)。
 
 **因應措施**：    
 在 XML 設定檔中只使用 [Office 365 專業增強版用戶端所支援的語言](https://technet.microsoft.com/library/cc179219&#40;v=office.16&#41;.aspx)。  
 
+
+
 ## <a name="mobile-device-management"></a>行動裝置管理  
 
-### <a name="cannot-create-an-enrollment-profile-on-a-primary-site"></a>主要站台無法建立註冊設定檔  
-系統管理員無法在連線至主要站台的 System Center Configuration Manager 系統管理主控台中建立註冊設定檔。 嘗試註冊時，系統管理員會在 [註冊設定檔精靈] 中看到下列錯誤： 「DEP 權杖尚未更新。請上傳 DEP 權杖。」 即使將有效的 DEP 權杖上傳至管理中心網站，還是會發生這個錯誤。  
-
-**因應措施**：在連線至管理中心網站的 System Center Configuration Manager 主控台中建立註冊設定檔。  
-
-### <a name="dep-cannot-use-non-alpha-numeric-characters-in-enrollment-profiles"></a>DEP 無法在註冊設定檔中使用非英數字元  
-啟用 DEP 時，在註冊設定檔的 [名稱]、[描述]、[部門] 和 [電話號碼] 等欄位中，與 Apple 裝置註冊設定檔 (DEP) 相關聯的註冊設定檔無法使用非英數字元。 在這些欄位中使用非英數字元可以建立註冊設定檔，但是設定檔無法上傳至 Apple。 Apple 伺服器不會提供任何錯誤訊息或警告，設定檔也不會部署至 DEP 管理的裝置。  
-
-**因應措施**：無。
-
 ### <a name="full-wipe-disables-windows-10-devices-with-less-than-4-gb-ram"></a>完整抹除會停用 RAM 小於 4 GB 的 Windows 10 裝置
-
 在 RAM 小於 4 GB 的 Windows 10 RTM 裝置 (1511 前的版本) 上執行完整抹除，會導致裝置無法使用。 嘗試抹除裝置後，裝置無法啟動且停止回應。
 
 **因應措施**︰請先確定 Windows 10 RTM 電腦至少有 4 GB 的 RAM 可用，再對裝置執行完整抹除。 若要檢視 Windows 10 裝置的版本號碼，請在命令提示字元中輸入 'winver'。 如果裝置已抹除且不再回應，請使用可開機的 Windows 10 USB 磁碟機啟動並復原裝置的存取。
 
-### <a name="when-a-user-belongs-to-two-or-more-user-collections-that-a-terms-and-conditions-policy-is-deployed-to-the-user-sees-multiple-sets-of-the-same-terms"></a>當使用者屬於兩個或多個部署了條款與條件原則的使用者集合時，使用者會看到多組相同的條款  
 
+### <a name="when-a-user-belongs-to-two-or-more-user-collections-that-a-terms-and-conditions-policy-is-deployed-to-the-user-sees-multiple-sets-of-the-same-terms"></a>當使用者屬於兩個或多個部署了條款與條件原則的使用者集合時，使用者會看到多組相同的條款  
+<!-- 454394    -->
 當系統管理員將一組條款部署到多個使用者集合，而某個使用者是多個這些集合的成員時，該使用者在開啟公司入口網站時就會看到多個相同的條款複本。  例如，如果使用者 SampleUser 是 CompanyEmployeesFTE 和 CompanyEmployeesNA 這兩個不同使用者集合的成員，且 CompanyEmployeesFTE 和 CompanyEmployeesNA 都部署了 CompanyTerms 條款與條件，則 SampleUser 在條款接受頁面上就會看到兩組相同的 CompanyTerms。 因為使用者只能接受或拒絕全部條款，所以不可能出現使用者這邊接受條款、那邊拒絕條款的這種模稜兩可的接受狀態。 條款和條件接受報表中，每位使用者的每組條款都只有一個資料列，因此報表中沒有任何錯誤。 唯一的影響是使用者會在接受頁面上看到兩組條款。  
 
 **因應措施**：請確定每位使用者只包含在一個部署了條款的集合中。  
 
+
 ### <a name="android-for-work-email-profiles-that-use-certificate-authentication-are-not-applied-to-devices"></a>使用憑證驗證的 Android for Work 電子郵件設定檔不會套用到裝置
-<!--  487657 -->
+<!--  487657      -->
 建立 Android for Work 電子郵件設定檔之後，有兩種驗證選項。 一種是使用者名稱和密碼，另外一種是憑證。 憑證選項目前沒有作用。 如果建立設定檔時將驗證方法設為 [憑證]，則設定檔不會套用到裝置，且系統會要求使用者手動輸入電子郵件帳戶詳細資料。
 
 **因應措施**：無。 系統管理員必須使用 [使用者名稱和密碼] 選項，否則只能等到此問題解決為止。
 
-## <a name="reports-and-monitoring"></a>報告和監視  
 
-### <a name="the-health-attestation-report-is-empty-even-though-health-attestation-data-was-previously-collected"></a>即使先前已收集健康情況證明資料，健康情況證明報告仍為空白  
-當具有安全性角色 (包含 **健康情況證明** 權限群組的 **讀取** 權限) 的系統管理使用者檢視健康情況證明報告時，報告為空白且無法顯示資料。 這是因為健康情況證明報告中之資料的檢視權限是連結到 **使用者裝置親和性** 權限群組，而非健康情況證明權限群組。  
 
-此問題會影響含有更新 1602 的 System Center Configuration Manager，並預期會在未來的更新中解決。  
+<!-- ## Reports and monitoring    -->
+<!-- ## Conditional access   -->
 
-**因應措施**︰指派包含 **使用者裝置親和性** 權限群組 **讀取** 權限的安全性群組給系統管理使用者。  
-
-### <a name="conditional-access"></a>條件式存取  
-
-#### <a name="the-same-user-collection-is-not-blocked-from-being-added-to-both-exempted-and-targeted-collections"></a>不會封鎖將相同的使用者集合同時新增到豁免及目標集合。  
-這只會發生在您將同樣的 **使用者集合** 新增到 **[目標集合]** 頁面 **之前** ，先將它新增到 **[豁免集合]** 頁面時。  如果您先將**使用者集合** 新增到 **[目標集合]** 頁面，然後嘗試將相同的 **使用者集合**新增到 **[豁免集合]** 頁面，您應該會看到正常的封鎖訊息。  
-
-此問題會影響含有更新 1602 之 System Center Configuration Manager 對 **Exchange 內部部署**的條件存取，並預期會在未來的更新中解決。  
-
-**因應措施︰**新增**使用者集合**到 **[目標集合]** 頁面，然後在 **[豁免集合]** 頁面上選取**使用者集合**，或確定您沒有將相同的**使用者集合**同時新增到目標與豁免集合。
 
 ## <a name="endpoint-protection"></a>Endpoint Protection
-<!--  Product Studio bug 485370 added 04 19 2017 -->
+
 ### <a name="antimalware-policy-fails-to-apply-on-windows-server-2016-core"></a>反惡意程式碼原則無法套用至 Windows Server 2016 Core
+<!--  Product Studio bug 485370 added 04 19 2017   Fixed in 1702 -->
 反惡意程式碼原則無法套用至 Windows Server 2016 Core。  錯誤碼為 0x80070002。  ConfigSecurityPolicy.exe 遺失相依性。
 
 **因應措施：**此問題已由在 2017 年 5 月 9 日發佈的[知識庫文章 4019472](https://support.microsoft.com/help/4019472/windows-10-update-kb4019472) 解決。
 
-<!-- Product Studio bug 462286 added  05 25 2017 and valid until July 2017 GA release -->
-### <a name="windows-defender-advanced-threat-protection-policies-fail-on-older-client-agents"></a>Windows Defender 進階威脅防護原則在較舊版本的用戶端代理程式上會發生失敗
 
+### <a name="windows-defender-advanced-threat-protection-policies-fail-on-older-client-agents"></a>Windows Defender 進階威脅防護原則在較舊版本的用戶端代理程式上會發生失敗
+<!-- Product Studio bug 462286 added  05 25 2017 and valid until July 2017 GA release      Fixed in 1610 -->
 從 Configuration Manager 1610 版或更新版本的站台伺服器所建立的 Windows Defender 進階威脅防護原則，無法套用至 Configuration Manager 1606 版和較舊版本的用戶端上。  用戶端不會上線，且原則評估會回報錯誤。 Windows Defender 進階威脅防護設定中的 [部署狀態] 會顯示 [錯誤]。
 
 **因應措施**：將 Configuration Manager 用戶端升級至 1610 版或更新版本。
-

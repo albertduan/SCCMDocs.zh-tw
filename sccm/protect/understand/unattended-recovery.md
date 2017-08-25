@@ -6,8 +6,7 @@ ms.date: 6/5/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
-ms.technology:
-- configmgr-other
+ms.technology: configmgr-other
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 828c31d1-3d70-4412-b1a8-c92e7e504d39
@@ -15,18 +14,15 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.translationtype: Human Translation
-ms.sourcegitcommit: f7cd9c71287d62c9f5d36e2f032bc2a6065572ae
 ms.openlocfilehash: b5a1a1d165a6888bc26e809666d2331ff3c24d68
-ms.contentlocale: zh-tw
-ms.lasthandoff: 06/06/2017
-
+ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.translationtype: HT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 08/07/2017
 ---
-
 # <a name="unattended-site-recovery-for-configuration-manager"></a>Configuration Manager 的自動站台復原   
 
-*適用於：System Center Configuration Manager (最新分支)*
- 若要執行 Configuration Manager 管理中心網站或主要站台的[自動復原](/sccm/protect/understand/recover-sites#site-recovery-procedures)，您可以建立自動安裝指令碼，然後搭配 **/script** 命令選項使用安裝程式。 指令碼提供與安裝精靈提示相同的資訊類型，不過沒有預設設定。 所有值必須針對適用於您所使用之復原類型的安裝識別碼進行指定。
+*適用於：System Center Configuration Manager (最新分支)* 若要執行Configuration Manager 管理中心網站或主要站台的[自動復原](/sccm/protect/understand/recover-sites#site-recovery-procedures)，您可以建立自動安裝指令碼，然後搭配 **/script** 命令選項使用安裝程式。 指令碼提供與安裝精靈提示相同的資訊類型，不過沒有預設設定。 所有值必須針對適用於您所使用之復原類型的安裝識別碼進行指定。
 
  若要使用 /script 安裝命令列選項，您必須建立初始設定檔案，並在 /script 安裝命令列選項後指定初始設定檔案名稱。 檔案名稱並不重要，只要檔案名稱的副檔名為 **.ini** 即可。 當您參照來自命令列的安裝初始設定檔案時，您必須提供檔案的完整路徑。 例如，若您將安裝程式初始化檔案命名為 *setup.ini*，並儲存於 *C:\setup* 資料夾，則命令列為：
 
@@ -377,13 +373,12 @@ ms.lasthandoff: 06/06/2017
 -   **索引鍵名稱：** CASRetryInterval
 
     -   **必要：** 否
-    -   **值︰**&lt;間隔>
+    -   **值︰** &lt;*Interval*>
     -   **詳細資料：** 指定連線失敗後，嘗試連線至管理中心站台的重試間隔 (分鐘)。 例如，如果與管理中心網站的連線失敗，主要網站會等待您針對 CASRetryInterval 指定的分鐘數，然後重試連線。
 
 
 -   **索引鍵名稱：** WaitForCASTimeout
 
     -   **必要：** 否
-    -   **值︰**&lt;逾時>
+    -   **值︰** &lt;*Timeout*>
     -   **詳細資料：** 指定主要站台連線至管理中心站台的逾時上限值 (分鐘)。 例如，如果主要網站連線至管理中心網站失敗，則主要網站會依據 CASRetryInterval 重試與管理中心網站的連線，直到達到 WaitForCASTimeout 期間。 您可以指定 0 到 100 的值。
-
