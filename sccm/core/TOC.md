@@ -99,11 +99,11 @@
 ###  [設定安全性](plan-design/security/configure-security.md)
 
 #    開始使用
-
 ##   [在實驗室中評估 Configuration Manager](get-started/evaluate-with-lab-environment.md)
 ###  [設定實驗室](get-started/set-up-your-lab.md)
 
 ##   [Technical Preview](get-started/technical-preview.md)
+###  [1708 的功能](get-started/capabilities-in-technical-preview-1708.md)
 ###  [1707 的功能](get-started/capabilities-in-technical-preview-1707.md)
 ###  [1706 的功能](get-started/capabilities-in-technical-preview-1706.md)
 ###  [1705 的功能](get-started/capabilities-in-technical-preview-1705.md)
