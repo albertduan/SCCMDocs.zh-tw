@@ -2,7 +2,7 @@
 title: "Windows 功能的支援 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 所支援的 Windows 和網路功能。"
 ms.custom: na
-ms.date: 3/30/2017
+ms.date: 8/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: e040552dab21ba9a71e06a78f6acc2ffe1b0eb61
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: be9b7e84fecfa7a07c411c3d46168e5485e0dfab
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="support-for-windows-features-and-networks-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的 Windows 功能和網路支援
 
@@ -49,7 +49,7 @@ ms.lasthandoff: 08/07/2017
 -   **設定用戶端：**    
     -   可支援 BranchCache 的用戶端必須針對 BranchCache 分散式快取模式進行設定。  
     -   必須啟用 BITS 用戶端設定的作業系統設定，才能支援 BranchCache。   <br /> <br />
-        
+
     如需如何將用戶端資訊設為支援 BranchCache 的資訊，請參閱 [Configure BranchCache for Windows 10 updates](https://technet.microsoft.com/itpro/windows/manage/waas-branchcache) (設定 Windows 10 更新的 BranchCache) 中的[設定用戶端](https://technet.microsoft.com/itpro/windows/manage/waas-branchcache#configure-clients-for-branchcache)一節。
 
 
@@ -80,9 +80,11 @@ Configuration Manager 會針對工作群組中的用戶端提供支援。
 ##  <a name="bkmmk_datadedup"></a> 重複資料刪除  
 Configuration Manager 支援在下列作業系統上，對發佈點使用重複資料刪除：  
 
+-   Windows Server 2016
+-   Windows Server 2012 R2  
 -   Windows Server 2012  
 
--   Windows Server 2012 R2  
+
 
 > [!IMPORTANT]  
 >  裝載封裝來源檔案的磁碟區不能標示進行重複資料刪除。 這是因為重複資料刪除會使用重新分析點，且 Configuration Manager 不支援使用其檔案儲存在重新分析點上的內容來源位置。  

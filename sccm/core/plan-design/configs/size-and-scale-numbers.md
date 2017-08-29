@@ -14,11 +14,11 @@ caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: f539e2d282b56e56a9c58c773788325b27ea6b37
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 9c50f6633a5ca04b62f4c3b06119fb1fbcab2643
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="size-and-scale-numbers-for-system-center-configuration-manager"></a>System Center Configuration Manager 的大小和縮放比例
 
@@ -56,18 +56,9 @@ ms.lasthandoff: 08/07/2017
 
 -   管理中心網站可支援最多 25 個子主要站台。  
 
-**應用程式類別目錄網站點：**  
-
--   您可以在主要站台安裝應用程式類別目錄網站點的多個執行個體。  
-
-    > [!TIP]  
-    >  最佳作法是，當應用程式類別目錄網站點和應用程式類別目錄 Web 服務點提供服務給內部網路上的用戶端時，將它們安裝在相同的站台系統上。  
-
-    -   若要改善效能，請規劃每個執行個體支援最多 50,000 個用戶端。  
-
-    -   此站台系統角色的每個執行個體都支援由階層所支援的用戶端數目上限。  
 
 ## <a name="bkmk_roles"></a> Site system roles    
+
 
 **應用程式類別目錄 Web 服務點：**  
 
@@ -79,6 +70,18 @@ ms.lasthandoff: 08/07/2017
     -   若要改善效能，請規劃每個執行個體支援最多 50,000 個用戶端。  
 
     -   此站台系統角色的每個執行個體都支援由階層所支援的用戶端數目上限。  
+
+**應用程式類別目錄網站點：**  
+
+-   您可以在主要站台安裝應用程式類別目錄網站點的多個執行個體。  
+
+    > [!TIP]  
+    >  最佳作法是，當應用程式類別目錄網站點和應用程式類別目錄 Web 服務點提供服務給內部網路上的用戶端時，將它們安裝在相同的站台系統上。  
+
+    -   若要改善效能，請規劃每個執行個體支援最多 50,000 個用戶端。  
+
+    -   此站台系統角色的每個執行個體都支援由階層所支援的用戶端數目上限。  
+
 
 **發佈點：**  
 
