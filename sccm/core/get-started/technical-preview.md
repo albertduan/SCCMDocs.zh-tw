@@ -2,7 +2,7 @@
 title: "Configuration Manager 的 Technical Preview | Microsoft Docs"
 description: "了解可讓您試用 System Center Configuration Manager 新功能的 Technical Preview 版本。"
 ms.custom: na
-ms.date: 08/11/2017
+ms.date: 08/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "157"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 6d7bac392cf5a4ba01b25758fd91f1003b153589
-ms.sourcegitcommit: 398e30ec703218c4b3680bbb055d686807ca7f1d
+ms.openlocfilehash: 0cdbccc0147cb1f4d5130863b9610d0b190d6658
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/18/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager 的 Technical Preview
 
@@ -84,7 +84,7 @@ ms.lasthandoff: 08/18/2017
 
  若要使用 Technical Preview，您必須先安裝 Technical Preview 組建的 **基準版本** 。 安裝基準版本之後，您便可以使用 **主控台內更新** ，將安裝升級成最新的預覽版本。     一般而言，每個月都會提供新版本的 Technical Preview。
 
-每個預覽版本最多支援三個連續版本。 這表示，發行 1702 版時，將不再支援 1610 版，但仍然支援 1611、1612 和 1701。 基準不再受支援時 (例如 1610 版)，它仍然支援安裝新的 Technical Preview 站台 (直到提供新的基準版本為止)，只要接著將該安裝更新至支援的版本即可。 在更新時，如果您在主控台中沒有看到最新版本可用，請更新至所提供的最新版本，然後重複該程序，直到可以安裝最新版的 Technical Preview 為止。
+每個預覽版本最多支援三個連續版本。 亦即發行 1708 版時，將不再支援 1704 版，但仍然支援 1705、1706 和 1707 版。 當不再支援基準時 (例如 1703 版)，仍然會支援安裝新的 Technical Preview 站台。等到有可用的新基準版本時，只要將該安裝更新至支援的版本即可。 在更新時，如果您在主控台中沒有看到最新版本可用，請更新至所提供的最新版本，然後重複該程序，直到可以安裝最新版的 Technical Preview 為止。
 
 > [!TIP]  
 >  當您將更新安裝為 Technical Preview 時，可以將 Preview 安裝更新為新的 Technical Preview 版本。    Technical Preview 安裝永遠無法升級為最新分支安裝，也不會從最新分支版本接收更新。  
@@ -93,8 +93,9 @@ ms.lasthandoff: 08/18/2017
 在發行後的 1 年內，您都可以安裝基準版本。 不過，當您安裝新的 Technical Preview 站台時，建議您使用最新可用的基準版本。
 -  **Technical Preview 1703** - Configuration Manager Technical Preview 1703 同時以兩種形式提供：Configuration Manager Technical Preview 的主控台內更新，以及 [TechNet Evaluation Center 網站提供的](http://www.microsoft.com/evalcenter/evaluate-system-center-configuration-manager-and-endpoint-protection-technical-preview)新基準版本。
 
--  **Technical Preview 1610** - Configuration Manager Technical Preview 1610 同時以兩種形式提供：Configuration Manager Technical Preview 的主控台內更新，以及基準版本。 如果您有可安裝 1610 的媒體，建議您下載 1703 版並改為安裝該版本。
-
+<!-- out of support. Use baseline 1703
+-  **Technical Preview 1610** - The Configuration Manager Technical Preview 1610 was available as both an in-console update for the Configuration Manager Technical Preview, and as a baseline version. If you have media for installing 1610, we recommend you download version 1703 and install that version instead.
+-->
 
 
 
@@ -113,10 +114,10 @@ ms.lasthandoff: 08/18/2017
 
  |功能 |Technical Preview 版本 |最新分支版本|  
  |----------------|---------------------|--------------------|
- |Windows 10 和 Office 365 快速安裝檔案的用戶端對等快取支援|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365)|![未新增](media/Red_X.gif)|
- |Surface 裝置儀表板|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#surface-device-dashboard)|![未新增](media/Red_X.gif)|
- |設定及部署 Windows Defender 應用程式防護原則|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#configure-and-deploy-windows-defender-application-guard-policies)|![未新增](media/Red_X.gif)|
- |在從 Configuration Manager 部署 PowerShell 指令碼時新增參數|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#add-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![未新增](media/Red_X.gif)|
+ |從 Configuration Manager 部署 PowerShell 指令碼時，改善指令碼參數的指定<!-- 1236459 -->|[Tech Preview 1708](capabilities-in-technical-preview-1708.md#improvements-for-specifying-script-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![未新增](media/Red_X.gif)|
+ |Management Insights  <!-- 1353967 --> |[Tech Preview 1708](capabilities-in-technical-preview-1708.md#management-insights)|![未新增](media/Red_X.gif)|
+ |從 Configuration Manager 主控台重新啟動電腦<!-- 1356283 --> |[Tech Preview 1708](capabilities-in-technical-preview-1708.md#restart-computers-from-the-configuration-manager-console)|![未新增](media/Red_X.gif)|
+ |軟體中心自訂 <!-- 1351224 --> |[Tech Preview 1708](capabilities-in-technical-preview-1708.md#software-center-customization)|![未新增](media/Red_X.gif)|
 
 
 ## <a name="capabilities-delivered-in-previous-technical-previews"></a>舊版 Technical Preview 中提供的功能
@@ -124,6 +125,10 @@ ms.lasthandoff: 08/18/2017
 
  |功能 |Technical Preview 版本 |最新分支版本|  
  |----------------|---------------------|--------------------|
+ |Windows 10 和 Office 365 快速安裝檔案的用戶端對等快取支援|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#client-peer-cache-support-for-express-installation-files-for-windows-10-and-office-365)|![未新增](media/Red_X.gif)|
+ |Surface 裝置儀表板|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#surface-device-dashboard)|![未新增](media/Red_X.gif)|
+ |設定及部署 Windows Defender 應用程式防護原則|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#configure-and-deploy-windows-defender-application-guard-policies)|![未新增](media/Red_X.gif)|
+ |在從 Configuration Manager 部署 PowerShell 指令碼時新增參數|[Tech Preview 1707](capabilities-in-technical-preview-1707.md#add-parameters-when-you-deploy-powershell-scripts-from-configuration-manager)|![未新增](media/Red_X.gif)|
  |新的行動應用程式管理原則設定|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#new-mobile-application-management-policy-settings)|![未新增](media/Red_X.gif)|
  |改進的軟體更新點界限群組|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#improved-boundary-groups-for-software-update-points)|[版本 1706](/sccm/core/servers/deploy/configure/boundary-groups#software-update-points)|
  |站台伺服器角色高可用性|[Tech Preview 1706](capabilities-in-technical-preview-1706.md#site-server-role-high-availability) |![未新增](media/Red_X.gif)|

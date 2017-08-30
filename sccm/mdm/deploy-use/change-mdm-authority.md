@@ -9,33 +9,34 @@ ms.topic: article
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: cc397ab5-125f-4f17-905b-fab980194f49
-ms.openlocfilehash: 74b9dbb1ed0172d99956e726fca3aec2b658ce77
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 55f25239dc80641b2f5f7bf1c9d753b146269886
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="change-your-mdm-authority"></a>變更您的 MDM 授權單位
-自 Configuration Manager 1610 版和 Microsoft Intune 1705 版開始，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，您便可以變更 MDM 授權單位。
+自 Configuration Manager 1610 版開始，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，您便可以變更 MDM 授權單位。
 
 ## <a name="change-the-mdm-authority-to-intune-standalone"></a>將 MDM 授權單位變更為 Intune 獨立部署
 使用此節的內容以在無需將現有受管理裝置解除註冊並重新註冊的情況下，將現有 Microsoft Intune 租用戶從 Configuration Manager 主控台 (混合式) 變更為 Intune 獨立部署。
 
 ### <a name="key-considerations"></a>重要考量
-當您變更至新的 MDM 授權單位之後，在裝置簽入服務並完成同步處理之前，很可能需要經歷一些轉換時間 (最多 8 小時)。 您必須在新的 MDM 授權單位 (Intune 獨立部署) 中進行設定，以確保已註冊裝置在變更後會繼續受到管理及保護。 注意下列事項：
-- 裝置在變更後必須與服務連線，來使新 MDM 授權單位 (Intune 獨立部署) 的設定可以取代裝置上的現有設定。
-- 在您變更 MDM 授權單位之後，部分來自先前 MDM 授權單位 (混合式) 的基本設定 (例如設定檔)，將會在裝置上保留最多 7 天的時間。 建議您儘快在新的 MDM 授權單位中設定應用程式及設定 (原則、設定檔、應用程式等)，並針對具有現有已註冊裝置的使用者，將設定部署至包含這些使用者的使用者群組。 在 MDM 授權單位變更之後，裝置在連線至服務時便會立即接收到來自新 MDM 授權單位的新設定，以避免管理及保護上出現間隙。 所有新的目標原則都會覆寫裝置上的現有原則。
+當您變更至新的 MDM 授權單位之後，在裝置簽入服務並完成同步處理之前，很可能需要經歷一些轉換時間 (最多 8 小時)。 您必須在新的 MDM 授權單位 (Intune 獨立部署) 中進行設定，以確保已註冊裝置在變更後會繼續受到管理及保護。 請注意下列考量事項：
+- 裝置在變更後必須與服務連線，以便使新 MDM 授權單位 (Intune 獨立部署) 的設定可以取代裝置上的現有設定。
+- 在您變更 MDM 授權單位之後，部分來自先前 MDM 授權單位 (混合式) 的基本設定 (例如設定檔)，將會在裝置上保留最多 7 天的時間。 建議您儘快在新的 MDM 授權單位中設定應用程式及設定 (原則、設定檔、應用程式等)，並針對具有現有已註冊裝置的使用者，將設定部署至包含這些使用者的使用者群組。 變更 MDM 授權單位後，當裝置連線到服務時，會從新的 MDM 授權單位接收新設定。 所有新的目標原則都會覆寫裝置上的現有原則。
 - 當您變更至新的 MDM 授權單位之後，Microsoft Intune 管理主控台中的合規性資料可能需要最多一週的時間才能正確回報。 不過，位於 Azure Active Directory 中和裝置上的合規性狀態將會是正確的，因此裝置仍然會受到保護。
+- 裝置若無關聯的使用者 (通常發生在 iOS 裝置註冊計劃或大量註冊的案例)，便不會移轉至新的 MDM 授權單位。 針對這些裝置，您需要連絡支援人員來取得協助，以便將這些裝置移至新的 MDM 授權單位。
 
 ### <a name="prepare-to-change-the-mdm-authority-to-intune-standalone"></a>準備將 MDM 授權單位變更為 Intune 獨立部署
 檢閱下列資訊以準備變更 MDM 授權單位：
 - 您必須有 Configuration Manager 1610 版或更新版本，才有變更 MDM 授權單位的選項可供選擇。
 - 在您變更至新的 MDM 授權單位之後，裝置可能需要最多 8 小時的時間才能連線至服務。
-- 在變更 MDM 授權單位之前，請務必特別將 Intune/EMS 授權指派給所有目前由混合式管理的使用者。 這能確保在變更 MDM 授權單位之後，使用者及其裝置會由 Intune 獨立部署所管理。 如需詳細資訊，請參閱[將 Intune 授權指派給使用者帳戶](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4) \(英文\)。
+- 在變更 MDM 授權單位之前，請務必將 Intune/EMS 授權指派給所有目前由混合式管理的使用者。 在變更 MDM 授權單位之後，擁有授權可確保使用者及其裝置會由 Intune 獨立部署所管理。 如需詳細資訊，請參閱[將 Intune 授權指派給使用者帳戶](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4) \(英文\)。
 - 在變更 MDM 授權單位之前，請確定已指派 Intune/EMS 授權給「管理使用者」帳戶，並確認「管理使用者」帳戶可以登入 Intune。 在變更 MDM 授權單位之前，Microsoft Intune 管理主控台的 MDM 授權單位應該會顯示為 [設定為 Configuration Manager] \(混合式租用戶)。
 - 在 Configuration Manager 主控台中，移除所有「裝置註冊管理員」角色。 移至 [系統管理] > [雲端服務] > [Microsoft Intune 訂閱]，選取 [Microsoft Intune 訂閱]，按一下 [內容]，按一下 [裝置註冊管理員] 索引標籤，然後移除所有「裝置註冊管理員」角色。
 - 在 Configuration Manager 主控台中，移除現有的裝置類別。 移至 [資產與合規性] > [概觀] > [裝置集合]，選擇 [管理裝置類別]，然後移除現有的裝置類別。
-- 變更 MDM 授權單位期間，應該不會對使用者造成明顯影響。 不過，您應該向使用者通知此變更，以確保他們的裝置已開啟，並會在變更後盡快連線至服務。 這能確保絕大多數的裝置都會以最快的速度透過新授權單位與服務進行連線及註冊。
+- 變更 MDM 授權單位期間，應該不會對使用者造成明顯影響。 
 - 如果您在變更 MDM 授權單位之前，是使用 Configuration Manager (混合式租用戶) 來管理 iOS 裝置，請務必確保先前用於 Configuration Manager 的 Apple Push Notification Service (APNs) 憑證已經更新，並已再次用來在 Intune 獨立部署中設定租用戶。
 
     > [!IMPORTANT]  
@@ -54,7 +55,7 @@ ms.lasthandoff: 08/07/2017
 2.  選取 [將 MDM 授權單位變更為 Microsoft Intune]，然後按一下 [下一步]。
 
     ![下載 APNs 憑證要求](/sccm/mdm/deploy-use/media/mdm-change-delete-subscription.png)
-3.  登入至您原本在 Configuration Manager 中設定 MDM 授權單位時所使用的 Intune 租用戶。
+3.  登入您原本在 Configuration Manager 中設定 MDM 授權單位時所使用的 Intune 租用戶。
 4.  按 [下一步]  ，並且完成精靈。
 5.  MDM 授權單位已重設完畢。 Intune 訂閱應該已不會再顯示於 Configuration Manager 主控台的 [Microsoft Intune 訂閱] 節點中。
 6.  以您先前所使用的相同 Intune 租用戶登入 [Microsoft Intune 管理主控台](http://manage.microsoft.com)。
@@ -74,7 +75,7 @@ ms.lasthandoff: 08/07/2017
     **Microsoft Intune administration console**   -->
     在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS 和 Mac OS X] &gt; [上傳 APNs 憑證]，然後選擇 [下載 APNs 憑證要求]。 在本機儲存憑證簽署要求 (.csr) 檔案。
     > [!IMPORTANT]    
-    > 您必須下載新的憑證簽署要求。 請勿使用現有的檔案，否則將會失敗。
+    > 下載新的憑證簽署要求。 請勿使用現有的檔案，否則將會失敗。
 
     ![下載 APNs 憑證要求](/sccm/mdm/deploy-use/media/mdm-change-download-apns-certificate.png)
 
@@ -130,7 +131,7 @@ ms.lasthandoff: 08/07/2017
     - 從管理主控台對裝置執行某個動作 (例如遠端鎖定)。 如果成功，便代表該裝置已由新的 MDM 授權單位管理。
 - 如果您在特定裝置上遇到問題，可以將該裝置解除註冊並重新註冊，來盡快使它們連線至新的授權單位並受到管理。
 
-<!-- After the change in MDM authority and devices check-in with the service, note the following:      - The updated compliance status of devices will only display in the Azure portal immediately.
+<!-- After the change in MDM authority and devices check in with the service, note the following:      - The updated compliance status of devices will only display in the Azure portal immediately.
 - There will be a delay for compliance status of devices to display in the Intune administrative console.-->
 
 
@@ -141,6 +142,7 @@ ms.lasthandoff: 08/07/2017
 當您切換至新的 MDM 授權單位之後，在裝置簽入服務並完成同步處理之前，很可能需要經歷一些轉換時間 (最多 8 小時)。 您必須在新的 MDM 授權單位 (混合式) 中進行設定，以確保已註冊裝置在變更後會繼續受到管理及保護。 ，並注意下列事項：
 - 裝置在變更後必須與服務連線，來使新 MDM 授權單位 (Intune 獨立部署) 的設定可以取代裝置上的現有設定。
 - 在您變更 MDM 授權單位之後，部分來自先前 MDM 授權單位 (Intune 獨立部署) 的基本設定 (例如設定檔)，將會在裝置上保留最多 7 天的時間，或直到裝置首次連線至服務為止。 建議您盡快在新的 MDM 授權單位 (混合式) 中設定應用程式及設定 (原則、設定檔、應用程式等)，並針對具有現有已註冊裝置的使用者，將設定部署至包含這些使用者的使用者群組。 在 MDM 授權單位變更之後，裝置在連線至服務時便會立即接收到來自新 MDM 授權單位的新設定，以避免管理及保護上出現間隙。
+- 裝置若無關聯的使用者 (通常發生在 iOS 裝置註冊計劃或大量註冊的案例)，便不會移轉至新的 MDM 授權單位。 針對這些裝置，您需要連絡支援人員來取得協助，以便將這些裝置移至新的 MDM 授權單位。
 
 ### <a name="prepare-to-change-the-mdm-authority-to-configuration-manager-hybrid"></a>準備將 MDM 授權單位變更為 Configuration Manager (混合式)
 檢閱下列資訊以準備變更 MDM 授權單位：

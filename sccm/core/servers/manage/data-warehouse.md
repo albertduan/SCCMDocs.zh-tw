@@ -2,7 +2,7 @@
 title: "資料倉儲 | Microsoft Docs"
 description: "資料倉儲服務點與 System Center Configuration Manager 資料庫"
 ms.custom: na
-ms.date: 7/31/2017
+ms.date: 8/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: eedbf12d3bf628666efc90c85a8dfab37e4dc9ab
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 744614d7e1ec97a4d4b4646c45cb41d734c6be34
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 #  <a name="the-data-warehouse-service-point-for-system-center-configuration-manager"></a>System Center Configuration Manager 的資料倉儲服務點
 *適用於︰System Center Configuration Manager (最新分支)*
@@ -49,8 +49,8 @@ ms.lasthandoff: 08/07/2017
 - 您安裝站台系統角色的電腦需要 .NET Framework 4.5.2 或更新版本。
 - 安裝站台系統角色之電腦的電腦帳戶是用來與資料倉儲資料庫同步處理資料。 此帳戶需要下列權限：  
   - 將裝載資料倉儲資料庫之電腦上的**系統管理員**。
-  - 資料倉儲資料庫上的 **DB_owner** 權限。
-  - 頂層站台站台資料庫的 **DB_reader** 和「執行」權限。
+  - 資料倉儲資料庫上的 **DB_Creator** 權限。
+  - 頂層站台站台資料庫的 **DB_owner** 或 **DB_reader** 加上「執行」權限。
 - 資料倉儲資料庫需要使用 SQL Server 2012 或更新版本。 可以是 Standard、Enterprise 或 Datacenter 版本。
 - 下列的 SQL Server 組態可以用來裝載倉儲資料庫：  
   - 預設執行個體

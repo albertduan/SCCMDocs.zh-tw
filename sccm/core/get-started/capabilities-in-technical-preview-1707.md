@@ -13,11 +13,11 @@ ms.assetid: cb405ba0-8792-4ab7-988b-2f835f3a9550
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 7ee2fd78c6c502394016ba077d42714041ad01c6
-ms.sourcegitcommit: 10f17229c5a359f040cb7f8f5e7bd868a34ac086
+ms.openlocfilehash: 3572004fa43db3e84295b68599dd95e0447f4c65
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/15/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="capabilities-in-technical-preview-1707-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1707 中的功能
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 08/15/2017
 **此 Technical Preview 的已知問題：**
 -   **當您有以被動模式執行的站台伺服器時，更新到預覽版 1707 失敗**。 當您執行預覽版 1706 且有[以被動模式執行的主要站台伺服器](/sccm/core/get-started/capabilities-in-technical-preview-1706#site-server-role-high-availability)時，您必須先將被動模式站台伺服器解除安裝，才能順利將預覽站台更新到 1707 版。 當您的站台執行 1707 版之後，您可以重新安裝被動模式站台伺服器。
 
-  解除安裝被動模式站台伺服器：
+  將被動模式站台伺服器解除安裝：
   1. 在主控台中，移至 [系統管理] > [概觀] > [站台設定] > [伺服器和站台系統角色]，然後選取被動模式站台伺服器。
   2. 在 [站台系統角色] 頁面上，以滑鼠右鍵按一下 [站台伺服器] 角色，然後選擇 [移除角色]。
   3. 以滑鼠右鍵按一下被動模式站台伺服器，然後選擇 [刪除]。

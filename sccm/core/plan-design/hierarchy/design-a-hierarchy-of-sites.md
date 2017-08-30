@@ -2,7 +2,7 @@
 title: "設計站台階層 - Configuration Manager | Microsoft Docs"
 description: "了解 System Center Configuration Manager 可用的拓撲和管理選項，以便您可以規劃站台階層。"
 ms.custom: na
-ms.date: 6/16/2017
+ms.date: 8/24/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 4710b1b89eb50cb7bcf4c4ee50c12a96b6561bc9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 2c587c0ad894dc567a6f1804626db611ff9a1013
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="design-a-hierarchy-of-sites-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 設計站台階層
 
@@ -27,6 +27,13 @@ ms.lasthandoff: 08/07/2017
 
 在安裝第一個新的 System Center Configuration Manager 階層站台前，最好了解可用的 Configuration Manager 拓撲、可用的站台類型及彼此的關聯性，以及每個站台類型提供的管理範圍。
 然後，在考量可減少需要安裝之站台數目的內容管理選項之後，您可以有效率地提供您目前業務需求的拓撲規劃，稍後再擴充以管理未來的成長。  
+
+規劃時，請留意將額外站台新增至階層或獨立站台的限制：
+-   您可以在管理中心網站之下安裝新的主要站台，最多可達階層所[支援的主要站台數目](/sccm/core/plan-design/configs/size-and-scale-numbers)。
+-   您可以[擴充獨立主要站台以安裝新的管理中心網站](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#bkmk_expand)，如此就可以安裝額外的主要站台。
+-   您可以在主要站台之下安裝新的次要站台，最多可達[主要站台的支援限制](/sccm/core/plan-design/configs/size-and-scale-numbers)與整體階層的支援限制。
+-   您無法將先前安裝的站台加入現有階層來合併兩個獨立站台。 只有支援在現有站台階層中安裝新站台。
+
 
 > [!NOTE]
 > 在規劃新的 Configuration Manager 安裝時，請注意[版本資訊]( /sccm/core/servers/deploy/install/release-notes)，其中詳細說明使用中版本的目前問題。 此版本資訊適用於 Configuration Manager 的所有分支。  不過，當您使用 [Technical Preview 分支]( /sccm/core/get-started/technical-preview)時，會在每一版的 Technical Preview 文件中發現只有該分支才會出現的問題。  
@@ -63,7 +70,7 @@ ms.lasthandoff: 08/07/2017
 
 -   管理中心網站是階層中的頂層站台。  
 
--   當您設定具有一個以上主要站台的階層時，必須安裝管理中心網站。 如果您立即需要兩個或兩個以上的主要站台，請先安裝管理中心網站。 當您已經擁有主要站台，並想要接著安裝管理中心網站時，必須[擴充獨立主要站台](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#bkmk_expand)以安裝管理中心網站。 
+-   當您設定具有一個以上主要站台的階層時，必須安裝管理中心網站。 如果您立即需要兩個或兩個以上的主要站台，請先安裝管理中心網站。 當您已經擁有主要站台，並想要接著安裝管理中心網站時，必須[擴充獨立主要站台](/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#bkmk_expand)以安裝管理中心網站。
 
 -   管理中心網站只支援使用主要站台作為子站台。  
 

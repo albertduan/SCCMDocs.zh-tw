@@ -14,11 +14,11 @@ caps.latest.revision: "11"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 3c31271f3e3ae7aa45da03b3d75fd78242330646
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 76319b935695df204b4b83a645504079c60db12b
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="endpoint-protection"></a>Endpoint Protection
 
@@ -91,9 +91,9 @@ System Center Configuration Manager 中的 Endpoint Protection 可讓您管理 C
 ## <a name="endpoint-protection-client-for-mac-computers-and-linux-servers"></a>適用於 Mac 電腦和 Linux 伺服器的 Endpoint Protection 用戶端  
  System Center Endpoint Protection 包含適用於 Linux 和 Mac 電腦的 Endpoint Protection 用戶端。 Configuration Manager 未隨附這些用戶端；您必須改由 [Microsoft 大量授權服務中心](https://www.microsoft.com/licensing/servicecenter/default.aspx)下載下列產品。  
 
--   適用於 Mac 的 System Center 2012 Endpoint Protection  
+-   適用於 Mac 的 System Center Endpoint Protection  
 
--   適用於 Linux 的 System Center 2012 Endpoint Protection  
+-   適用於 Linux 的 System Center Endpoint Protection  
 
 
 > [!IMPORTANT]  
@@ -108,7 +108,13 @@ System Center Configuration Manager 中的 Endpoint Protection 可讓您管理 C
 2. 選取網站頂端的 [下載和金鑰]。
 3. 篩選出 [System Center Endpoint Protection (最新分支)] 產品。
 4. 按一下連結進行**下載**
-5. 按一下 [繼續] 。 您應該會看到數個檔案，包括︰**適用於 Linux 作業系統和 Macintosh 作業系統多語版本的 System Center Endpoint Protection (最新分支 - 1606 版)   32/64 位元   1507 MB ISO**。
-6. 按一下箭頭圖示來下載檔案。 檔案名稱是 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_EptProt_Lin_Mac_MLF_X21-30777.ISO**。
+5. 按一下 [繼續] 。 您應該會看到數個檔案，其中一個檔案命名如下︰**System Center Endpoint Protection (current branch - version 1606) for Linux OS and Macintosh OS Multilanguage   32/64 bit   1579 MB ISO** (適用於 Linux 作業系統和 Macintosh 作業系統多語版本的 System Center Endpoint Protection (最新分支 - 1606 版)   32/64 位元   1579 MB ISO)。
+6. 按一下箭頭圖示來下載檔案。 檔案名稱是 **SW_DVD5_Sys_Ctr_Endpnt_Prtctn_1606_MultiLang_-2_EptProt_Lin_Mac_MLF_X21-44498.ISO**。
+
+此 2017 年 7 月更新 (X21-44498) 包含下列項目：
+
+- 適用於 Mac 4.5.28.1 的 System Center Endpoint Protection (已更新的安裝憑證)
+- 適用於 Linux 4.5.18.0 的 System Center Endpoint Protection (新的語言套件)
+- 適用於 Linux 的 System Center Endpoint Protection 文件 (修訂有關即時保護的指引)
 
  如需如何安裝和管理適用於 Linux 和 Mac 電腦之 Endpoint Protection 用戶端的詳細資訊，請使用這些產品隨附的文件 (位於 [文件]  資料夾中)。

@@ -2,7 +2,7 @@
 title: "使用 1606 基準媒體來安裝站台 | Microsoft Docs"
 description: "安裝或升級到適用於 System Center Configuration Manager 的 LTSB。"
 ms.custom: na
-ms.date: 05/01/2017
+ms.date: 08/25/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 39653604ba5fd8e1fe9dd4d42889221d983f9bec
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 7e7b2fa4114b3bc7c63653ba036a3f5345ce017d
+ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/28/2017
 ---
 # <a name="install-and-upgrade-with-the-version-1606-baseline-media-for-system-center-configuration-manager"></a>使用 1606 版基準媒體為 System Center Configuration Manager 進行安裝或升級
 
@@ -125,8 +125,11 @@ ms.lasthandoff: 08/07/2017
 
 ### <a name="in-place-upgrade-paths-for-the-1606-baseline-media"></a>1606 基準媒體的就地升級路徑
 您可以使用 1606 基準媒體，將下列版本升級至 System Center Configuration Manager 的授權版本：
-- System Center 2012 Configuration Manager Service Pack 2。
-- System Center 2012 R2 Configuration Manager Service Pack 1。
+- System Center 2012 R2 Configuration Manager (含 Service Pack 1)
+- System Center 2012 R2 Configuration Manager (含 Service Pack)
+- System Center 2012 Configuration Manager (含 Service Pack 2)
+- System Center 2012 Configuration Manager (含 Service Pack 1)
+
 
 您也可以使用此媒體，將未經授權的最新分支評估版升級至最新分支的完整授權版本。
 
