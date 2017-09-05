@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 6049ec2369e0a97b21ce6523ba8448335385ab9a
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 675ebf053de98c6ad93a53ae218696012aef96f7
+ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="task-sequence-action-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的工作順序動作變數
 
@@ -187,15 +187,6 @@ ms.lasthandoff: 08/07/2017
 |SMSConnectNetworkFolderPassword<br /><br /> (input)|指定用來連線至網路共用的網路密碼。|  
 |SMSConnectNetworkFolderPath<br /><br /> (input)|指定連線的網路路徑。<br /><br /> 範例：<br /><br /> **"\\\servername\sharename"**|  
 
-###  <a name="BKMK_ConvertDisk"></a> 將磁碟轉換成動態磁碟工作順序動作變數  
- 這個動作的變數指定要從基本轉換成動態磁碟的實體磁碟數目。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[將磁碟轉換成動態磁碟](task-sequence-steps.md#BKMK_ConvertDisktoDynamic)。  
-
-#### <a name="details"></a>詳細資料  
-
-|動作變數名稱|說明|  
-|--------------------------|-----------------|  
-|OSDConvertDiskIndex<br /><br /> (input)|指定已轉換的實體磁碟編號。|  
-
 ###  <a name="BKMK_EnableBitLocker"></a> 啟用 BitLocker 工作順序動作變數  
  這個動作的變數指定用來在目的地電腦上啟用 BitLocker 的修復密碼和啟動金鑰選項。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[啟用 BitLocker](task-sequence-steps.md#BKMK_EnableBitLocker)。  
 
@@ -276,7 +267,7 @@ ms.lasthandoff: 08/07/2017
 |OSDStateStorePath<br /><br /> (output)|狀態移轉點上儲存使用者狀態之資料夾的 UNC 路徑。|  
 
 ###  <a name="BKMK_RestartComputer"></a> 重新啟動電腦工作順序動作變數  
- 這個動作的變數指定用來重新啟動目的地電腦的資訊。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[重新啟動電腦](task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer)。  
+ 這個動作的變數指定用來重新啟動目的地電腦的資訊。 如需與這些變數相關聯之工作順序步驟的詳細資訊，請參閱[重新啟動電腦](task-sequence-steps.md#BKMK_RestartComputer)。  
 
 #### <a name="details"></a>詳細資料  
 

@@ -4,7 +4,7 @@ description: "了解可讓您試用 System Center Configuration Manager 新功�
 ms.custom: na
 ms.date: 08/25/2017
 ms.prod: configuration-manager
-ms.reviewer: na
+ms.reviewer: nab
 ms.suite: na
 ms.technology: configmgr-other
 ms.tgt_pltfrm: na
@@ -14,11 +14,11 @@ caps.latest.revision: "157"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 0cdbccc0147cb1f4d5130863b9610d0b190d6658
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: 1335794bde7805e5fb2899ca685e985afee13c4e
+ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="technical-preview-for-system-center-configuration-manager"></a>System Center Configuration Manager 的 Technical Preview
 
@@ -226,7 +226,7 @@ ms.lasthandoff: 08/28/2017
  |Asset Intelligence 的增強功能|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#improvements-to-asset-intelligence)|![未新增](media/Red_X.gif)|
  |遠端控制鍵盤轉譯|[Tech Preview 1608](capabilities-in-technical-preview-1608.md#remote-control-keyboard-translation)|![未新增](media/Red_X.gif)|
  |改進 Windows 10 版本升級原則|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#dmp_edition)|[1610 版](/sccm/compliance/deploy-use/upgrade-windows-version)|
- |可自訂軟體中心對話方塊的商標|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#customizable-branding-for-software-center-dialogs)|![未新增](media/Red_X.gif)|  
+ |可自訂軟體中心對話方塊的商標|[Tech Preview 1607](capabilities-in-technical-preview-1607.md#customizable-branding-for-software-center-dialogs)|[版本 1610](/sccm/core/plan-design/changes/whats-new-in-version-1610#customizable-branding-for-software-center-dialogs)|  
  |針對內部部署行動裝置管理提供多個裝置管理點|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_onprem)|[1606 版](/sccm/core/plan-design/changes/whats-new-in-version-1606#on-premises-mobile-device-management)|
  |自動將裝置分類為集合|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_category)|[1606 版](/sccm/core/clients/manage/collections/automatically-categorize-devices-into-collections) |
  |針對必要應用程式和軟體更新部署的強制執行寬限期|[Tech Preview 1606](capabilities-in-technical-preview-1606.md#dmp_grace)|[1610 版](/sccm/apps/deploy-use/deploy-applications)|
