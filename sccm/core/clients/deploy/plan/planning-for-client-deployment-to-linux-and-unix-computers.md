@@ -2,7 +2,7 @@
 title: "規劃 Linux 及 UNIX 電腦用戶端部署 | Microsoft Docs"
 description: "規劃在 System Center Configuration Manager 中將用戶端部署至 Linux 和 UNIX 電腦。"
 ms.custom: na
-ms.date: 04/23/2017
+ms.date: 08/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.openlocfilehash: 367ffb919a1adb9a0530f7357a0fcf1e6636af08
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c5385ec5d7e41812df5c2a33d528614547819157
+ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="planning-for-client-deployment-to-linux-and-unix-computers-in-system-center-configuration-manager"></a>規劃將用戶端部署至 System Center Configuration Manager 中的 Linux 和 UNIX 電腦
 
@@ -51,14 +51,6 @@ ms.lasthandoff: 08/07/2017
 ###  <a name="BKMK_ClientDeployExternalforLnU"></a> 相依性外部功能至 Configuration Manager:  
  下列表格說明 UNIX 和 Linux 作業系統需求以及套件相依性。  
 
- **Red Hat Enterprise Linux ES 版本 4**  
-
-|必要的套件|描述|最小版本|  
-|----------------------|-----------------|---------------------|  
-|glibc|C 標準程式庫|2.3.4-2|  
-|Openssl|OpenSSL 程式庫；安全網路通訊協定|0.9.7a-43.1|  
-|PAM|插入式驗證模組|0.77-65.1|  
-
  **Red Hat Enterprise Linux Server 5.1 版 (Tikanga)**  
 
 |必要的套件|描述|最小版本|  
@@ -75,15 +67,6 @@ ms.lasthandoff: 08/07/2017
 |Openssl|OpenSSL 程式庫；安全網路通訊協定|1.0.0-4|  
 |PAM|插入式驗證模組|1.1.1-4|  
 
- **Solaris 9 SPARC**  
-
-|必要的套件|描述|最小版本|  
-|----------------------|-----------------|---------------------|  
-|所需的作業系統修補程式|PAM 記憶體遺漏|112960-48|  
-|SUNWlibC|Sun Workshop 編譯器配套 libC (sparc)|5.9,REV=2002.03.18|  
-|SUNWlibms|適合開發人員一起共用 libm (sparc)|5.9,REV=2001.12.10|  
-|Openssl|SMCosslg (sparc)<br /><br /> Sun 不提供適用 Solaris 9 SPARC 的 OpenSSL 版本。 Sunfreeware 則提供可用版本。|0.9.7g|  
-|PAM|插入式驗證模組<br /><br /> SUNWcsl 核心 Solaris (共用程式庫) (sparc)|11.9.0,REV=2002.04.06.15.27|  
 
  **Solaris 10 SPARC**  
 
@@ -132,15 +115,6 @@ ms.lasthandoff: 08/07/2017
 |SUNWcsr|Core Solaris，(Root)|11.11, REV=2009.11.11|  
 |SUNWopenssl-libraries|OpenSSL 程式庫 (Usr)|11.11.0,REV=2010.05.25.01.00|  
 
- **SUSE Linux Enterprise Server 9 (i586)**  
-
-|必要的套件|描述|最小版本|  
-|----------------------|-----------------|---------------------|  
-|Service Pack 4|SUSE Linux Enterprise Server 9||  
-|OS Patch lib gcc-41.rpm|標準共用程式庫|41-4.1.2_20070115-0.6|  
-|OS Patch lib stdc++-41.rpm|標準共用程式庫|41-4.1.2_20070115-0.6|  
-|Openssl|OpenSSL 程式庫；安全網路通訊協定|0.9.7d-15.35|  
-|PAM|插入式驗證模組|0.77-221-11|  
 
  **SUSE Linux Enterprise Server 10 SP1 (i586)**  
 
@@ -173,13 +147,6 @@ ms.lasthandoff: 08/07/2017
 |Openssl|OpenSSL 程式庫；安全網路通訊協定|0.9.8 或 1.0|  
 |PAM|插入式驗證模組|0.99.6.2-3.14|  
 
- **IBM AIX 5L 5.3**  
-
-|必要的套件|描述|最小版本|  
-|----------------------|-----------------|---------------------|  
-|OS 版本|作業系統版本|AIX 5.3，技術層次 6，Service Pack 5|  
-|xlC.rte|XL C/C++ Runtime|9.0.0.2|  
-|openssl.base|OpenSSL 程式庫；安全網路通訊協定|0.9.8.4|  
 
  **IBM AIX 6.1**  
 
@@ -197,33 +164,6 @@ ms.lasthandoff: 08/07/2017
 |xlC.rte|XL C/C++ Runtime||  
 |OpenSSL/openssl.base|OpenSSL 程式庫；安全網路通訊協定||  
 
- **HP-UX 11i v2 IA 64**  
-
-|必要的套件|描述|最小版本|  
-|----------------------|-----------------|---------------------|  
-|HPUXBaseOS|基礎作業系統|B.11.23|  
-|HPUXBaseAux|HP-UX 基礎作業系統輔助|B.11.23.0706|  
-|HPUXBaseAux.openssl|OpenSSL 程式庫；安全網路通訊協定|A.00.09.07l.003|  
-|PAM|插入式驗證模組|在 HP-UX 上，PAM 是核心作業系統元件的一部分。 沒有其他相依性。|  
-
- **HP-UX 11i v2 PA-RISC**  
-
-|必要的套件|描述|最小版本|  
-|----------------------|-----------------|---------------------|  
-|HPUX11i-OE|HP-UX 基礎作業環境|B.11.23.0706|  
-|OS-Core.MinimumRuntime.CORE-SHLIBS|相容開發工具程式庫|B.11.23|  
-|HPUXBaseAux|HP-UX 基礎作業系統輔助|B.11.23.0706|  
-|HPUXBaseAux.openssl|OpenSSL 程式庫；安全網路通訊協定|A.00.09.071.003|  
-|PAM|插入式驗證模組|在 HP-UX 上，PAM 是核心作業系統元件的一部分。 沒有其他相依性。|  
-
- **HP-UX 11i v3 PA-RISC**  
-
-|必要的套件|描述|最小版本|  
-|----------------------|-----------------|---------------------|  
-|HPUX11i-OE|HP-UX 基礎作業環境|B.11.31.0709|  
-|OS-Core.MinimumRuntime.CORE2-SHLIBS|特定 IA 模擬器程式庫|B.11.31|  
-|openssl/Openssl.openssl|OpenSSL 程式庫；安全網路通訊協定|A.00.09.08d.002|  
-|PAM|插入式驗證模組|在 HP-UX 上，PAM 是核心作業系統元件的一部分。 沒有其他相依性。|  
 
  **HP-UX 11i v3 IA64**  
 
@@ -285,13 +225,8 @@ ms.lasthandoff: 08/07/2017
 ##  <a name="BKMK_NoSHA-256"></a> 關於 Linux 和 UNIX 作業系統的執行不支援 sha-256  
  下列 Linux 和 UNIX 作業系統作為 Configuration Manager 的用戶端而受到支援，其發行時包含不支援 SHA-256 的 OpenSSL 版本：  
 
--   Red Hat Enterprise Linux 版本 4 (x86/x64)  
+-   Solaris 10 版 (SPARC/x86)  
 
--   Solaris 版本 9 (SPARC) 與 Solaris 10 (SPARC/x86)  
-
--   SUSE Linux Enterprise Server 9 版 (x86)  
-
--   HP-UX 版本 11iv2 (PA-RISH/IA64)  
 
  若要使用 Configuration Manager 管理這些作業系統，您必須安裝適用於 Linux 和 UNIX 的 Configuration Manager 用戶端，且其具有引導用戶端略過 SHA 256 驗證的命令列參數。 在這些作業系統版本上執行的 Configuration Manager 用戶端，其運作模式的安全性比支援 SHA-256 的用戶端低。 這種作業較不安全的模式有下列行為：  
 

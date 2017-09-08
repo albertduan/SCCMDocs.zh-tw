@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: e0726febc4c36a26c5e067914734838bf2681e6c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 18a987141e212158424924402859799ba42f8eae
+ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="task-sequence-steps-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的工作順序步驟
 
@@ -139,7 +139,7 @@ ms.lasthandoff: 08/07/2017
  選取此選項可讓目的地電腦加入指定的工作群組。 在 [工作群組]  列上輸入工作群組的名稱。 [擷取網路設定]  工作順序步驟所擷取的值會覆寫此值。  
 
  **加入網域**  
- 選取此選項可讓目的地電腦加入指定的網域。 指定或瀏覽至網域，例如 *fabricam.com*。 指定或瀏覽至組織單位的輕量型目錄存取通訊協定 (LDAP) 路徑 (亦即 LDAP//OU=電腦，DC=Fabricam.com，C=com)。  
+ 選取此選項可讓目的地電腦加入指定的網域。 指定或瀏覽至網域，例如 *fabricam.com*。指定或瀏覽至組織單位的輕量型目錄存取通訊協定 (LDAP) 路徑 (也就是 LDAP//OU=電腦、DC=Fabricam.com、C=com)。  
 
  **帳戶**  
  按一下 [設定]  ，指定具有將電腦加入網域所需權限的帳戶。 在 [Windows 使用者帳戶]  對話方塊中，您可以使用下列格式輸入使用者名稱： **網域\使用者** 。  
@@ -551,31 +551,6 @@ ms.lasthandoff: 08/07/2017
 
 -   指定執行此步驟時，所必須符合的條件。  
 
-##  <a name="BKMK_ConvertDisktoDynamic"></a> 將磁碟轉換成動態磁碟  
- 使用 [將磁碟轉換為動態]  工作順序步驟，將實體磁碟從基本磁碟類型轉換成動態磁碟類型。  
-
- 此步驟可以在標準作業系統或 Windows PE 中執行。 如需這項動作之工作順序變數的詳細資訊，請參閱 [Convert Disk to Dynamic Task Sequence Action Variables](task-sequence-action-variables.md#BKMK_ConvertDisk)。  
-
-### <a name="details"></a>詳細資料  
- 在這個步驟的 [內容]  索引標籤上，您可以設定本節所描述的設定。  
-
- 此外，您可以使用 [選項]  索引標籤來執行下列動作：  
-
--   停用此步驟。  
-
--   指定在執行此步驟時，如果發生錯誤，工作順序是否繼續。  
-
--   指定執行此步驟時，所必須符合的條件。  
-
- **Name**  
- 簡短的使用者定義名稱，描述在此步驟中所採取的動作。  
-
- **說明**  
- 以較詳細的資訊來描述此步驟中所採取的動作。  
-
- **磁碟編號**  
- 將要轉換之磁碟的實體磁碟編號。  
-
 ##  <a name="BKMK_DisableBitLocker"></a> 停用 BitLocker  
  使用 [停用 BitLocker]  工作順序步驟，以停用目前作業系統磁碟或特定磁碟上的 BitLocker 加密。 這個動作會讓金鑰保護裝置以純文字繼續顯示在硬碟上，但是不會將磁碟機的內容解密。 因此，這個動作幾乎是立即完成。  
 
@@ -874,35 +849,6 @@ ms.lasthandoff: 08/07/2017
  **如果某個應用程式失敗，繼續安裝清單中的其他應用程式**  
  此設定指定如果個別應用程式安裝失敗，步驟將繼續進行。 如果指定此設定，無論傳回任何安裝錯誤，工作順序都會繼續進行。 如果未指定此設定，當安裝失敗時，工作順序步驟會立即結束。  
 
-##  <a name="BKMK_InstallDeploymentTools"></a> 安裝部署工具  
- 使用 [安裝部署工具] 工作順序步驟，安裝包含 Sysprep 部署工具的 Configuration Manager 套件。  
-
-### <a name="details"></a>詳細資料  
- 在這個步驟的 [內容]  索引標籤上，您可以設定本節所描述的設定。  
-
- 此外，您可以使用 [選項]  索引標籤來執行下列動作：  
-
--   停用此步驟。  
-
--   指定在執行此步驟時，如果發生錯誤，工作順序是否繼續。  
-
--   指定執行此步驟時，所必須符合的條件。  
-
- **Name**  
- 簡短的使用者定義名稱，描述在此步驟中所採取的動作。  
-
- **說明**  
- 以較詳細的資訊來描述此步驟中所採取的動作。  
-
- **Sysprep 套件**  
- 此設定會針對下列作業系統，指定包含 Sysprep 部署工具的 Configuration Manager 套件：  
-
--   Windows XP SP3  
-
--   Windows XP X64 SP2  
-
--   Windows Server 2003 SP2  
-
 ##  <a name="BKMK_InstallPackage"></a> 安裝套件
 
  使用 [安裝套件]  工作順序步驟，以在工作順序中安裝軟體。 執行這個步驟時，安裝會立即開始，而不會等待原則輪詢間隔  
@@ -1068,6 +1014,9 @@ Configuration Manager 版本 1606 已引進 SMSTSSoftwareUpdateScanTimeout 新�
 使用 [準備 ConfigMgr 用戶端以進行擷取] 步驟，以移除參照電腦上的 Configuration Manager 用戶端或在參照電腦上設定用戶端，將該用戶端準備好，以便在執行映像建立程序時進行擷取。
 
 從 Configuration Manager 1610 版開始，[準備 ConfigMgr 用戶端] 步驟會完全移除 Configuration Manager 用戶端，而不是只移除金鑰資訊。 當工作順序部署擷取的作業系統映像時，每次都會安裝新的 Configuration Manager 用戶端。  
+
+> [!Note]  
+>  您只能在 [建立並擷取參照作業系統映像] 工作順序期間移除用戶端。 其他擷取方法 (例如擷取媒體或自訂工作順序) 將不會移除用戶端。
 
 在 Configuration Manager 1610 版之前，這個步驟會執行下列工作︰  
 

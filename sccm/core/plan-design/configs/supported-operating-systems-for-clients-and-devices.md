@@ -2,7 +2,7 @@
 title: "支援的用戶端和裝置 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 支援用於用戶端和裝置的作業系統。"
 ms.custom: na
-ms.date: 8/16/2017
+ms.date: 8/30/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -11,14 +11,14 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 87f4e041-67df-4c61-aa98-7444faffe565
 caps.latest.revision: "5"
-author: arob98
-ms.author: angrobe
+author: robstackmsft
+ms.author: robstack
 manager: angrobe
-ms.openlocfilehash: f9dd3b3e8f7a2878cd549bf289e1ee5536ee73fc
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: 4c7e0aaed816e45c8770d1cb9fb21d6dcd63f3a3
+ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 08/30/2017
 ---
 # <a name="supported-operating-systems-for-clients-and-devices-for-system-center-configuration-manager"></a>System Center Configuration Manager 用戶端和裝置支援的作業系統
 
@@ -213,7 +213,6 @@ ms.lasthandoff: 08/28/2017
 
 |||  
 |-|-|  
-|5.3 版 (Power)|ccm-Aix53ppc.&lt;組建\>.tar|  
 |6.1 版 (Power)|ccm-Aix61ppc.&lt;組建\>.tar|  
 |7.1 版 (Power)|ccm-Aix71ppc.&lt;組建\>.tar|  
 
@@ -244,10 +243,7 @@ ms.lasthandoff: 08/28/2017
 
 |||  
 |-|-|  
-|11iv2 版 IA64|ccm-HpuxB.11.23i64.&lt;組建\>.tar|  
-|11iv2 版 PA-RISC|ccm-HpuxB.11.23PA.&lt;組建\>.tar|  
 |11iv3 版 IA64|ccm-HpuxB.11.31i64.&lt;組建\>.tar|  
-|11iv3 版 PA-RISC|ccm-HpuxB.11.31PA.&lt;組建\>.tar|  
 
 ### <a name="oracle-linux"></a>Oracle Linux  
 
@@ -263,8 +259,6 @@ ms.lasthandoff: 08/28/2017
 
 |||  
 |-|-|  
-|第 4 版 x86|ccm-RHEL4x86.&lt;組建\>.tar|  
-|第 4 版 x64|ccm-RHEL4x64.&lt;組建\>.tar|  
 |第 5 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
 |第 5 版 x64|ccm-Universalx64.&lt;組建\>.tar|  
 |第 6 版 x86|ccm-Universalx86.&lt;組建\>.tar|  
@@ -275,7 +269,6 @@ ms.lasthandoff: 08/28/2017
 
 |||  
 |-|-|  
-|第 9 版 SPARC|ccm-Sol9sparc.&lt;組建\>.tar|  
 |第 10 版 x86|ccm-Sol10x86.&lt;組建\>.tar|  
 |第 10 版 SPARC|ccm-Sol10sparc.&lt;組建\>.tar|  
 |第 11 版 x86|ccm-Sol11x86.&lt;組建\>.tar|  
@@ -285,7 +278,6 @@ ms.lasthandoff: 08/28/2017
 
 |||  
 |-|-|  
-|第 9 版 x86|ccm-SLES9x86.&lt;組建\>.tar|  
 |第 10 版 SP1 x86|ccm-Universalx86.&lt;組建\>.tar|  
 |第 10 版 SP1 x86|ccm-Universalx64.&lt;組建\>.tar|  
 |第 11 版 SP1 x86|ccm-Universalx86.&lt;組建\>.tar|  
@@ -302,6 +294,9 @@ ms.lasthandoff: 08/28/2017
 |12.04 版 LTS x64|ccm-Universalx64.&lt;組建\>.tar|  
 |14.04 版 LTS x86|ccm-Universalx86.&lt;組建\>.tar|  
 |14.04 版 LTS x64|ccm-Universalx64.&lt;版本\>.tar|  
+|16.04 版 LTS x86|ccm-Universalx86.&lt;組建\>.tar|  
+|16.04 版 LTS x64|ccm-Universalx64.&lt;版本\>.tar|  
+
 
 ##  <a name="mobile-devices-enrolled-by-microsoft-intune"></a>由 Microsoft Intune 註冊的行動裝置  
  如需您整合 Microsoft Intune 與 Configuration Manager 時可以管理之電腦與裝置的詳細資訊，請參閱 Microsoft Intune 文件庫中的下列兩個主題：  
