@@ -14,11 +14,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 22203b358830903cf2e531c0532ae3111b8265fc
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 3046003f000c8abde28a5b6e3bcb88b159be5357
+ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="configure-azure-services-for-use-with-configuration-manager"></a>設定要與 Configuration Manager 搭配使用的 Azure 服務
 
@@ -30,7 +30,7 @@ ms.lasthandoff: 08/07/2017
 
 使用設定 Azure 服務精靈時，會設定下列 Azure 服務：
 -   **雲端管理**   
-    [可讓用戶端使用 Azure Active Directory (Azure AD) 進行驗證]()。 您也可以[設定 Azure AD 使用者探索](/sccm/core/servers/deploy/configure/configure-discovery-methods#azureaadisc)。
+    [可讓用戶端使用 Azure Active Directory (Azure AD) 進行驗證](/sccm/core/clients/deploy/deploy-clients-cmg-azure)。 您也可以[設定 Azure AD 使用者探索](/sccm/core/servers/deploy/configure/configure-discovery-methods#azureaadisc)。
 -   **OMS Connector**
     [連線到 Operations Manager Suite](/sccm/core/clients/manage/sync-data-microsoft-operations-management-suite) (OMS)，並將資料 (如集合) 同步處理到 OMS Log Analytics。
 -   **升級整備**
@@ -85,7 +85,7 @@ Azure 服務的 Web 應用程式會將您的 Configuration Manager 站台連線�
 
 6.  在精靈的 [探索] 頁面，按一下 [啟用 Azure Active Directory 使用者探索]，然後按一下 [設定]。
 在 [Azure AD 使用者探索設定] 對話方塊中，設定進行探索的排程。 您也可以啟用差異探索，這將只檢查 Azure AD 中新的或已變更的帳戶。 深入了解 [Azure AD 使用者探索](/sccm/core/servers/deploy/configure/about-discovery-methods#azureaddisc)。
- 
+
  7. 完成精靈。
 
 此時，您已將 Configuration Manager 站台連線到 Azure AD。

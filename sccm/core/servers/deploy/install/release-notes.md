@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: e54c2cd1c3e83609bff6a8cb64fb3c23b26a4eaa
-ms.sourcegitcommit: 974fbc4408028c8be28911e5cd646efcf47c7f15
+ms.openlocfilehash: 4e818ffd943208eab323b1558f825bd87f3ddc4c
+ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/28/2017
+ms.lasthandoff: 09/11/2017
 ---
 # <a name="release-notes-for-system-center-configuration-manager"></a>System Center Configuration Manager 的版本資訊
 
@@ -119,7 +119,7 @@ ConfigMgrSetup.log：
  -  站台資料庫位於與服務連接點相同的伺服器上，但已停用 SQL 通訊協定**共用記憶體**
 
 例外狀況與下列類似：
- - 未處理的例外狀況: System.Data.SqlClient.SqlException: 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個體名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。(提供者: 具名管道提供者，錯誤: 40 - 無法開啟 SQL Server 連線) --
+ - 未處理的例外狀況: System.Data.SqlClient.SqlException: 建立連接至 SQL Server 時，發生網路相關或執行個體特定的錯誤。找不到或無法存取伺服器。確認執行個體名稱是否正確，以及 SQL Server 是否設定為允許遠端連線。(提供者: 具名管道提供者，錯誤: 40 - 無法開啟 SQL Server 連線) --*
 
 **因應措施**︰使用工具期間，您必須修改裝載服務連接點之伺服器的登錄，以包含 SQL Server 連接埠的相關資訊︰
 
@@ -148,17 +148,6 @@ ConfigMgrSetup.log：
 **因應措施：**這是由先前已安裝且已損毀的 Silverlight 版本所造成。 您可以嘗試在受影響的電腦上執行下列工具來修正此問題：[https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed](https://support.microsoft.com/help/17588/fix-problems-that-block-programs-from-being-installed-or-removed)
 
 ## <a name="operating-system-deployment"></a>作業系統部署  
-
-### <a name="if-the-boot-image-contains-drivers-the-image-fails-to-reload-the-current-windows-pe-version-from-the-windows-assessment-and-deployment-kit-adk"></a>若開機映像包含驅動程式，映像無法從 Windows 評定及部署套件 (ADK) 重新載入目前的 Windows PE 版本
-<!-- 495087 -->
-您可以使用「更新發佈點精靈」，以使用最新版本 Windows PE (位於 Windows 評定及部署套件 (ADK) 的安裝目錄) 儲存之開機映像更新發佈點。 若要更新，請開啟「更新發佈點精靈」並選取 [從 Windows ADK 重新載入具備目前 PE 版本的此開機映像]。
-
-然而，若您的開機映像包含驅動程式，則更新會失敗。 此時精靈會從 ADK 重新載入映像、顯示使用者可以關閉的例外狀況對話方塊，然後顯示成功畫面。 然而，最新的 Configuration Manager 用戶端元件將無法新增到開機映像中。 將不會更新發佈點上的開機映像
-
-**因應措施**：執行兩次「更新發佈點精靈」。
-
-1. 執行精靈並選取 [從 Windows ADK 重新載入具備目前 Windows PE 版本的此開機映像]。 這樣將會取得最新的 Windows PE 版本。
-2. 重新執行精靈，但這次不要選取 [從 Windows ADK 重新載入具備目前 Windows PE 版本的此開機映像]。 這樣將會取得最新的用戶端二進位檔案，並更新發佈點上的開機映像。
 
 ### <a name="servicing-plans-create-a-lot-of-duplicate-software-update-groups-and-deployments-by-default"></a>根據預設，服務計劃會建立大量重複的軟體更新群組和部署  
 根據預設，「建立服務計劃」精靈目前會在每個軟體更新同步處理後執行。 每次執行精靈時，它會建立新的軟體更新群組和部署。 例如，如果您的軟體更新同步處理排程一天會執行多次，「建立服務計劃」精靈每天將會建立多個幾乎相同的軟體更新群組和部署。  
