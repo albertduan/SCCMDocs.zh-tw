@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: cc678c1133b1944f55bcad309cf9ede9f0660b57
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 5668ba3ead3b7415508f9ecf02f2e119c3cd9cc6
+ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="manage-boot-images-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理開機映像
 
@@ -49,11 +49,10 @@ Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台�
 使用安裝程序將 Configuration Manager 2012 升級至 Configuration Manager CB 時，Configuration Manager 會重新產生預設開機映像。 這包括來自更新的 Windows ADK 的新 Window PE 版本、新版 Configuration Manager 用戶端，且所有自訂皆維持不變。 不會修改自訂開機映像。
 
 ### <a name="update-distribution-points-with-the-boot-image"></a>使用開機映像更新發佈點
-當您在 Configuration Manager 主控台中使用來自 [開機映像] 節點的 [更新發佈點] 動作時，Configuration Manager 會使用用戶端元件、驅動程式及自訂等更新預設開機映像。    
+當您在 Configuration Manager 主控台中使用來自 [開機映像] 節點的 [更新發佈點] 動作時，Configuration Manager 會使用用戶端元件、驅動程式及自訂等更新目標開機映像。    
 
 從 Configuration Manager 1706 版開始，您可以選擇在開機映像中重新載入 (來自 Windows ADK 安裝目錄的) 最新版本的 Windows PE。 [更新發佈點] 精靈的 [一般] 頁面會提供站台伺服器上所安裝的 Windows ADK 版本、開機映像中使用 Windows PE 的 Windows ADK 版本，以及 Configuration Manager 用戶端的版本。 您可以使用此資訊來協助決定是否要重新載入開機映像。 此外，當您在 [開機映像] 節點中檢視開機映像時，您也可以利用新的 [用戶端版本] 欄位來了解每個開機映像所使用的 Configuration Manager 用戶端版本為何。    
 
-不會修改自訂開機映像。
 
 ##  <a name="BKMK_BootImageCustom"></a> 自訂開機映像  
  如果開機映像是以支援的 Windows ADK 版本中的 Windows PE 版本為基礎，您可以在 Configuration Manager 主控台自訂開機映像或[修改開機映像](#BKMK_ModifyBootImages)。 當站台升級為新版本並安裝新版 Windows ADK 時，自訂開機映像 (不位於預設的開機映像位置) 並不會更新成使用新版 Windows ADK。 發生這種情況時，您將無法再於 Configuration Manager 主控台中自訂開機映像。 不過，它們將如升級之前一樣繼續運作。  

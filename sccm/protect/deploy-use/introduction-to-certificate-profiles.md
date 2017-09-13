@@ -2,7 +2,7 @@
 title: "憑證設定檔簡介 | Microsoft Docs"
 description: "了解如何搭配使用 System Center Configuration Manager 中的憑證設定檔與 Active Directory 憑證服務。"
 ms.custom: na
-ms.date: 07/25/2017
+ms.date: 09/11/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,18 +14,18 @@ caps.latest.revision: "7"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 7b1c0e449f3d1ef42e279e8707df6bf1df163b3f
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e269b5836648d0d227e91a017512c16217e42646
+ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/11/2017
 ---
 # <a name="introduction-to-certificate-profiles-in-system-center-configuration-manager"></a>簡介 System Center Configuration Manager 中的憑證設定檔
 
 適用於：System Center Configuration Manager (最新分支)
 
 
-憑證設定檔與 Active Directory 憑證服務和網路裝置註冊服務角色搭配運作，以佈建受管理裝置的驗證憑證，讓使用者可以順暢地存取公司資源。 例如，您可以建立和部署憑證設定檔，以提供必要的憑證讓使用者起始 VPN 和無線網路連線。 
+憑證設定檔與 Active Directory 憑證服務和網路裝置註冊服務角色搭配運作，以佈建受管理裝置的驗證憑證，讓使用者可以順暢地存取公司資源。 例如，您可以建立和部署憑證設定檔，以提供必要的憑證讓使用者起始 VPN 和無線網路連線。
 
 憑證設定檔可以自動設定使用者裝置，如此不需要手動安裝憑證或使用超出訊號範圍的程序，就能存取 Wi-Fi 網路和 VPN 伺服器等公司資源。 憑證設定檔也有助於維持公司資源的安全性，因為您可以使用更多您的企業公開金鑰基礎結構 (PKI) 支援的安全設定。 例如，您可以對所有 Wi-Fi 和 VPN 連線進行伺服器驗證，因為您已在受管理的裝置上佈建所需的憑證。   
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/07/2017
 
 -   **個人資訊交換 (.pfx)** - 可讓您要求裝置或使用者的 .pfx (也稱為 PKCS #12) 憑證。
 
-    您可以透過從現有憑證[匯入認證](/sccm/mdm/deploy-use/import-pfx-certificate-profiles.md)，或是透過[定義憑證](/sccm/mdm/deploy-use/create-pfx-certificate-profiles.md)授權單位以處理要求，來建立 PFX 憑證設定檔。
+    您可以透過從現有憑證[匯入認證](/sccm/mdm/deploy-use/import-pfx-certificate-profiles)，或是透過[定義憑證](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)授權單位以處理要求，來建立 PFX 憑證設定檔。
 
     從 1706 版開始，您可以使用 Microsoft 或 Entrust 作為**個人資訊交換 (.pfx)** 憑證的憑證授權單位。
 

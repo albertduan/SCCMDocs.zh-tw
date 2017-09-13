@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: e4a53caab7d76b604a3fee7dcfc4dc48f22b0fb0
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 23ff28189c8010c21ed8b23c35598746a4f09fe7
+ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/11/2017
 ---
 # <a name="vpn-profiles-on-mobile-devices-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的行動裝置 VPN 設定檔
 
@@ -37,20 +37,20 @@ ms.lasthandoff: 08/07/2017
 
  |連線類型|iOS 和 macOS X|Android|Windows 8.1|Windows RT|Windows RT 8.1|Windows Phone 8.1|Windows 10 Desktop 與行動裝置版|  
  |---------------------|----------------------|-------------|-----------------|----------------|--------------------|-----------------------|-----------------------------------|  
- |Cisco AnyConnect|是|是|否|否|否|否|是 (OMA-URI)|
+ |Cisco AnyConnect|是|是|否|否|否|否|是|
  |Cisco (IPSec)|僅限 iOS|否|否|否|否|否|否|  
  |Pulse Secure|是|[是]|是|否|是|[是]|是|  
  |F5 Edge Client|是|[是]|是|否|是|[是]|是|  
  |Dell SonicWALL Mobile Connect|是|[是]|是|否|是|[是]|是|  
  |檢查點行動 VPN|是|[是]|是|否|是|[是]|是|  
  |Microsoft SSL (SSTP)|否|否|是|[是]|是|否|否|  
- |Microsoft Automatic|否|否|是|[是]|是|否|是 (OMA-URI)|  
- |IKEv2|是 (自訂原則)|否|是|[是]|[是]|是|是 (OMA-URI)|  
- |PPTP|是|否|是|[是]|是|否|是 (OMA-URI)|  
+ |Microsoft Automatic|否|否|是|[是]|是|否|是|  
+ |IKEv2|是 (自訂原則，iOS 9 及更新版本)|否|是|[是]|[是]|[是]|是|  
+ |PPTP|是|否|是|[是]|是|否|是|  
  |L2TP|是|否|是|[是]|是|否|是 (OMA-URI)|  
 
 ## <a name="create-vpn-profiles"></a>建立 VPN 設定檔
-[如何在 System Center Configuration Manager 中建立 VPN 設定檔](../../protect/deploy-use/create-vpn-profiles.md)能提供如何建立 VPN 設定檔的相關資訊。
+[如何在 System Center Configuration Manager 中建立 VPN 設定檔](../../protect/deploy-use/create-vpn-profiles.md)能提供如何建立 VPN 設定檔的一般資訊。
 
 ###   <a name="windows-10-vpn-features-available-when-using-configuration-manager-with-intune"></a>於搭配 Intune 使用 Configuration Manager 時可用的 Windows 10 VPN 功能  
 
@@ -104,7 +104,7 @@ ms.lasthandoff: 08/07/2017
             - 選擇 [啟用此 VPN 連線的條件式存取] 確保先測試連線至 VPN 裝置的條件式存取合規性，再連線。 合規性原則已在 [System Center Configuration Manager 中的裝置合規性原則](https://docs.microsoft.com/en-us/sccm/protect/deploy-use/device-compliance-policies.md)中描述。
             - 選擇 [允許使用其他憑證進行單一登入 (SSO)] 以選擇針對裝置合規性之 VPN 驗證憑證以外的憑證。 如果您選擇此選項，請提供 [EKU] \(逗號分隔清單) 和 [簽發者雜湊]，讓 VPN 用戶端找到正確的憑證。
 
-         - 針對 [Windows 資訊保護]，請提供企業管理的公司身分識別，這通常是貴組織的主要網域，例如 *contoso.com*。 您可以使用 "|" 字元分隔，來指定貴組織擁有的多個網域。 例如 *contoso.com|newcontoso.com*。   
+         - 針對 [Windows 資訊保護]，請提供企業管理的公司身分識別，這通常是貴組織的主要網域，例如 *contoso.com*。您可以使用 "|" 字元分隔，來指定貴組織擁有的多個網域。 例如 *contoso.com|newcontoso.com*。   
             如需 Windows 資訊保護的詳細資訊，請參閱[使用 Microsoft Intune 建立 Windows 資訊保護 (WIP) 原則 (英文)](https://technet.microsoft.com/en-us/itpro/windows/keep-secure/create-wip-policy-using-intune)。   
 
          ![設定 VPN 的條件式存取](media/vpn-conditional-access.png)

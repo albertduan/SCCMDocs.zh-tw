@@ -2,7 +2,7 @@
 title: "使用 Configuration Manager 註冊使用者擁有的裝置以進行混合式部署 | Microsoft Docs"
 description: "了解使用 Configuration Manager 註冊使用者擁有的裝置以進行混合式部署的不同方法。"
 ms.custom: na
-ms.date: 03/05/2017
+ms.date: 09/08/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -11,21 +11,21 @@ ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 2bdaa8a7-6a64-4b0e-b617-309dcd912c45
 caps.latest.revision: "13"
-author: mtillman
-ms.author: mtillman
+author: nathbarn
+ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 6793e4736fe2603dfaef9f98b0fb54e5584aa7cd
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 56bd6bfd900a8ecbb149392de62889970ddedb60
+ms.sourcegitcommit: 40f2a4e3cc546e6bfd10f195a8e87af2b0780928
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="enroll-user-owned-devices-for-hybrid-deployments-with-configuration-manager"></a>使用 Configuration Manager 註冊使用者擁有的裝置以進行混合式部署
 
 *適用於：System Center Configuration Manager (最新分支)*
 
-根據裝置以及購買裝置的方式，可以透過各種不同的方式將使用者擁有的裝置 (BYOD) 納入管理。  
+使用者擁有的裝置可以經由註冊接受管理，這個程序通常稱為「攜帶您自己的裝置」或簡稱「BYOD」。 使用者可以藉由安裝公司入口網站應用程式或在裝置 (iOS、macOS 及 Android) 上登入，或將公司或學校帳戶新增到裝置並加入網域 (Windows)，來完成這個程序。 這個程序會向 Intune 註冊裝置，提供使用者受 Intune 管理的資源存取權，並讓 Intune 管理某些裝置設定，像是要求 PIN。
 
-註冊啟用之後，可以透過公司入口網站應用程式註冊使用者擁有的裝置。
+若要讓裝置接受管理，您必須使用系統管理員的身份[設定行動裝置管理](setup-hybrid-mdm.md)及[啟用註冊](enable-platform-enrollment.md)。 註冊一經啟用，使用者即可註冊他們自己的裝置。 如需與使用者共用的考量及步驟，請參閱[如何指導使用者使用 Microsoft Intune](https://docs.microsoft.com/intune/end-user-educate)。
 
-[Microsoft Intune 使用者體驗的相關資源](https://docs.microsoft.com/en-us/intune/deploy-use/what-to-tell-your-end-users-about-using-microsoft-intune)會檢閱使用者註冊其裝置後，在 Intune 中執行不同工作所採取的一些步驟。
+購買裝置的公司或學校可以利用能讓您[管理公司所屬裝置](enroll-company-owned-devices.md)的計劃。

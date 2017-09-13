@@ -2,7 +2,7 @@
 title: "服務連接工具 | Microsoft Docs"
 description: "了解這個工具可讓您連線到 Configuration Manager 雲端服務手動上傳使用資訊。"
 ms.custom: na
-ms.date: 4/7/2017
+ms.date: 09/06/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "11"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 0da80521bf223a765c3731f8ad59623d85a4c9fa
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8039ee0c704bbe570ec3e45ba648f779923087c6
+ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="use-the-service-connection-tool-for-system-center-configuration-manager"></a>使用 System Center Configuration Manager 的服務連接工具
 
@@ -81,7 +81,7 @@ ms.lasthandoff: 08/07/2017
 您也必須將 ServiceConnectionTool 資料夾及其所有內容複製到 USB 磁碟機，或在您將用於步驟 3 和 4 的電腦上提供此資料。  
 
 ### <a name="overview"></a>概觀
-**使用服務連接工具有三個主要步驟：**  
+#### <a name="there-are-three-primary-steps-to-using-the-service-connection-tool"></a>使用服務連線工具有三個主要步驟  
 
 1.  **準備**：此步驟會在裝載服務連接點的電腦上執行。 工具在執行時，會將使用方式資料放入 .cab 檔，並將其儲存在 USB 磁碟機 (或指定的其他傳輸位置)。  
 
@@ -91,15 +91,28 @@ ms.lasthandoff: 08/07/2017
 
 從版本 1606 開始，當您連接到 Microsoft 時，可以一次上傳多個 .cab 檔案 (每一個從不同階層)，並指定 Proxy 伺服器和 Proxy 伺服器的使用者。   
 
-**若要上傳多個 .cab 檔案：**
+#### <a name="to-upload-multiple-cab-files"></a>上傳多個 .cab 檔案
  -  將從不同階層匯出的每個 .cab 檔案，放入相同的資料夾。 每個檔案名稱必須是唯一的，您可以視需要手動重新命名。
  -  接著，當您執行要將資料上傳至 Microsoft 的命令時，即可指定包含 .cab 檔案的資料夾 (在 1606 版之前的更新，您一次只能上傳來自單一階層的資料，且此工具會要求您指定資料夾中的 .cab 檔案名稱)。
  -  之後，當您在某階層的服務連接點上執行匯入工作時，工具只會自動匯入該階層的資料。  
 
-**若要指定 Proxy 伺服器：**  
+#### <a name="to-specify-a-proxy-server"></a>指定 Proxy 伺服器
 若要指定 Proxy 伺服器，您可以使用下列選用參數 (如需使用這些參數的詳細資訊，請參閱本主題的＜命令列參數＞一節)：
   - **-proxyserveruri [FQDN_of_proxy_sever]**  ：使用這個參數可指定要用於此連線的 Proxy 伺服器。
   -  **-proxyusername [username]**  ：若您必須指定 Proxy 伺服器的使用者，請使用這個參數。
+
+#### <a name="specify-the-type-of-updates-to-download"></a>指定要下載的更新類型
+從 1706 版開始，工具預設下載行為已經變更，並支援選項以供您控制要下載的檔案。
+-   根據預設，工具只會下載適用於站台版本的最新可用更新。 Hotfix 則不會下載。
+
+若要修改這個行為，請使用下列其中一個參數變更要下載的檔案。 您的站台版本會從 .cab 檔案中的資料來判斷，該檔案會在工具執行時上傳。
+-   **-downloadall**  這個選項會下載所有內容，包括更新和 Hotfix，而不受您的站台版本影響。
+-   **-downloadhotfix**  這個選項會下載所有 Hotfix，而不受您的站台版本影響。
+-   **-downloadsiteversion**  這個選項會下載版本高於您的站台的更新和 Hotfix。
+
+使用 *-downloadsiteversion* 的範例命令列：
+- **serviceconnectiontool.exe -connect  *-downloadsiteversion* -usagedatasrc D:\USB -updatepackdest D:\USB\UpdatePacks**
+
 
 
 

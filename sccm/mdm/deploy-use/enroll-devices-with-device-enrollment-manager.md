@@ -2,7 +2,7 @@
 title: "使用裝置註冊管理員註冊裝置 - Configuration Manager | Microsoft Docs"
 description: "使用裝置註冊管理員帳戶來向 System Center Configuration Manager 註冊公司擁有的裝置。"
 ms.custom: na
-ms.date: 08/15/2017
+ms.date: 09/08/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "8"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: c90ecca1ee46523d16fc1cf11495e40707631e03
-ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.openlocfilehash: dcc35fb6ebe385d07a3b60e8968e06dec8ad60af
+ms.sourcegitcommit: 40f2a4e3cc546e6bfd10f195a8e87af2b0780928
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="enroll-devices-with-device-enrollment-manager-with-configuration-manager"></a>使用裝置註冊管理員來向 Configuration Manager 註冊裝置
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 08/16/2017
 -  若要將公司應用程式部署到使用裝置註冊管理員管理的裝置，請將公司入口網站應用程式當作**必要安裝**，部署到裝置註冊管理員的使用者帳戶。 裝置註冊管理員就可以啟動公司入口網站應用程式以安裝其他應用程式。
 - 為了改善效能，公司入口網站應用程式只會顯示本機裝置。 其他 DEM 裝置的遠端管理只能夠從 Configuration Manager 主控台由系統管理員進行
 - 裝置註冊管理員帳戶無法使用公司入口網站。 使用公司入口網站應用程式。
-- (僅限 iOS) 如果您使用 DEM 來註冊 iOS 裝置，便無法使用 Apple Configurator 或 Apple 裝置註冊計劃 (DEP) 來註冊裝置。
+- 如果使用 DEM 註冊 iOS 裝置，您就無法使用 Apple Configurator 或 Apple 裝置註冊計劃 (DEP) 來註冊裝置。 (僅限 iOS) 
 
  **裝置註冊管理員案例的範例：**   
 餐廳想要有銷售點平板電腦，以取得廚房員工的等待員工和訂單監視器。 員工永遠不需要存取公司資料或以使用者身分登入。 Intune 系統管理員會建立裝置註冊管理員帳戶，並使用該帳戶註冊公司所擁有的裝置。 或者，系統管理員可以將裝置註冊管理員認證提供給餐廳經理，讓他或她註冊和管理裝置。  

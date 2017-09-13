@@ -14,11 +14,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: dab99748902df0fad32a1e2adad0c05e0dd8bdc9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c8110d9f5fec9027d34570623c32a7474e01b9af
+ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="checklist-for-installing-update-1706-for-system-center-configuration-manager"></a>安裝 System Center Configuration Manager 1706 版更新的檢查清單
 
@@ -62,7 +62,6 @@ ms.lasthandoff: 08/07/2017
 > - 管理中心網站與子主要站台間的**複寫連結**會顯示為未升級。 這會在更新套件安裝狀態中顯示為 [已完成] 狀態，但出現 [正在監視複寫初始化] 的警告。 在主控台的 [監視] 節點中，這會顯示為 [正在設定連結]。
 
 
-
 ## <a name="checklist"></a>檢查清單
 
 **確定所有站台都執行支援更新至 1706 的 System Center Configuration Manager 版本：**   
@@ -86,9 +85,9 @@ ms.lasthandoff: 08/07/2017
 
 如需詳細資訊，請參閱 [Site and site system prerequisites](/sccm/core/plan-design/configs/site-and-site-system-prerequisites) (站台和站台系統必要條件)。
 
-**檢閱適用於 Windows 10 的 Windows 評定及部署套件 (ADK) 版本** Windows 10 ADK 應該是 1607 或更新版本。 如果您必須更新 ADK，請在開始更新 Configuration Manager 之前進行。 這樣可確保預設開機映像會自動更新至最新版的 Windows PE。 (自訂開機映像必須手動更新)。
+**檢閱適用於 Windows 10 的 Windows 評定及部署套件 (ADK) 版本** Windows 10 ADK 應為 1703 或更新版本。 (如需支援的 Windows ADK 版本詳細資訊，請參閱 [Windows 10 ADK](/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)。)如果您必須更新 Windows ADK，請在開始更新 Configuration Manager 之前進行。 這樣可確保預設開機映像會自動更新至最新版的 Windows PE。 (自訂開機映像必須手動更新)。
 
-如果您要在更新 ADK 之前更新站台，請參閱部落格[適用於 Windows 10 的Configuration Manager 和 Windows ADK 1607 版 (英文)](https://blogs.technet.microsoft.com/enterprisemobility/2016/09/09/configuration-manager-and-the-windows-adk-for-windows-10-version-1607/)，以取得用來重新產生開機映像的指令碼。
+如果您在更新 Windows ADK 之前更新站台，請參閱[使用開機映像更新發佈點](/sccm/osd/get-started/manage-boot-images#update-distribution-points-with-the-boot-image)，了解此程序在 Configuration Manager 1706 版中的改進。
 
 **檢閱站台和階層狀態，並確認沒有任何未解決的問題：** 更新站台之前，請解決站台伺服器、站台資料庫伺服器和安裝在遠端電腦上的站台系統角色的所有操作問題。 網站更新會因為現有的操作問題而失敗。
 

@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: robstackmsft
 ms.author: robstack
 manager: angrobe
-ms.openlocfilehash: 3921748d3c99c2a35b670f3ca121dc7ab92d43bc
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 2d305df5e67c3f46360e1735cb6fe263afbaed41
+ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="device-guard-management-with-configuration-manager"></a>使用 Configuration Manager 的 Device Guard 管理
 
@@ -104,7 +104,7 @@ Windows Device Guard 讓您強式控制可在您管理之電腦上執行的項�
 5.  完成後，請按一下 [確定] 部署原則。 
 
 在用戶端電腦上處理原則之後，會根據 [電腦重新啟動] 的 [用戶端設定]，在該用戶端上排程重新啟動。
-重新啟動用戶端電腦之前，原則不會生效。**
+在重新啟動用戶端電腦之前，原則不會生效。
 
 ## <a name="how-to-monitor-a-device-guard-policy"></a>如何監視 Device Guard 原則
 

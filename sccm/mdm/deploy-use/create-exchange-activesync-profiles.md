@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 7434c98f2217cf63fdcd250b91e772de72daaea9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 0af556b5b63b465a99650c8889eae3adbf7307f6
+ms.sourcegitcommit: 13599667ea77c16db1aebe64f8a6748c268f0b45
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/11/2017
 ---
 # <a name="exchange-activesync-email-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的 Exchange ActiveSync 電子郵件設定檔
 
@@ -31,9 +31,8 @@ ms.lasthandoff: 08/07/2017
 
 - Windows 10
 - Windows Phone 8.1
-- Windows Phone 8.0
-- 執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 iPhone  
-- 執行 iOS 5、iOS 6、iOS 7 和 iOS 8 的 iPad  
+- 執行 iOS 8 的 iPhone  
+- 執行 iOS 8 的 iPad  
 - Samsung KNOX Standard (4 及更新版本)
 - Android for Work
 
@@ -134,7 +133,7 @@ ms.lasthandoff: 08/07/2017
 
     -   **手動**： 裝置使用者必須手動起始同步處理。  
 
--   **要同步處理的電子郵件天數**： 從下拉式清單中，選擇您要同步電子郵件的天數。 選擇下列其中一個值：  
+-   **要同步處理的電子郵件天數**： 從下拉式清單中，選擇您要同步電子郵件的天數。選擇下列其中一個值：  
 
     -   **未設定**： 不會強制執行設定。 這個選項可讓使用者設定要下載至其裝置的電子郵件數目。  
 

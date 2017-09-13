@@ -2,7 +2,7 @@
 title: "使用 IMEI 或 iOS 序號預先宣告裝置 | Microsoft Docs"
 description: "使用 IMEI 或 iOS 序號預先宣告公司擁有的裝置。"
 ms.custom: na
-ms.date: 08/15/2017
+ms.date: 09/01/2017
 ms.reviewer: na
 ms.suite: na
 ms.prod: configuration-manager
@@ -14,11 +14,11 @@ caps.latest.revision: "3"
 author: nathbarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 7d139a2c74c0f29604f2f3d9b8e2739364633f17
-ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.openlocfilehash: 424f04b2b3ad4c7ef91f884bbf5bae3580ea6b85
+ms.sourcegitcommit: cd1f9c58e55f1c9a19acd743ec6a8824c39fd3a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/05/2017
 ---
 # <a name="predeclare-devices-with-imei-or-ios-serial-numbers"></a>使用 IMEI 或 iOS 序號預先宣告裝置
 
@@ -29,7 +29,7 @@ ms.lasthandoff: 08/16/2017
 當您上傳公司 iOS 裝置的序號時，它們必須與公司註冊設定檔搭配。 接著，必須使用 Apple 的裝置註冊計劃 (DEP) 或 Apple Configurator 來註冊裝置，以使它們顯示為公司所擁有。
 
 >[!NOTE]
->Android 裝置 (Samsung Knox Standard 裝置除外) 必須有 SIM 卡才能使用 IMEI 編號預先宣告並註冊為公司擁有的裝置。
+>Android 裝置 (含 Samsung Knox Standard 裝置在內) 必須受指派電話號碼，才能使用 IMEI 編號宣告並註冊為公司擁有的裝置。
 
 ## <a name="how-to-predeclare-corporate-owned-devices"></a>如何預先宣告公司擁有的裝置
 

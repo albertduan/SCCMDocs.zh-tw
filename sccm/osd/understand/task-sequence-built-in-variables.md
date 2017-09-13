@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 32b24b3637dfafe401ea1d9f51b3769aa749f544
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 09e1105521f5e72830c2816d04e16690064f4f64
+ms.sourcegitcommit: 40f2a4e3cc546e6bfd10f195a8e87af2b0780928
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/08/2017
 ---
 # <a name="task-sequence-built-in-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的工作順序內建變數
 
@@ -97,6 +97,6 @@ ms.lasthandoff: 08/07/2017
 |SMSTSRebootMessage|指定要求重新啟動時，顯示在 [關機] 對話方塊中的訊息。 如果未設定這個變數，則會顯示預設訊息。<br /><br /> 範例：<br /><br /> **工作順序管理員正在重新啟動這部電腦**。|  
 |SMSTSRebootRequested|表示完成目前的工作順序步驟之後會要求重新啟動。 如果需要重新啟動，只要將這個變數設為 **true**即可，工作順序管理員會在這個工作順序步驟之後重新啟動電腦。 如果需要重新啟動才能完成工作順序步驟，工作順序步驟必須設定這個工作順序變數。 重新啟動電腦之後，工作順序會從下一個工作順序步驟繼續執行。|  
 |SMSTSRetryRequested|完成目前的工作順序步驟之後，要求重試。 如果設定這個工作順序變數，也必須將 **SMSTSRebootRequested** 設為 **true**。 重新啟動電腦之後，工作順序管理員會重新執行相同的工作順序步驟。|  
-|SMSTSSoftwareUpdateScanTimeout| 讓您能夠在[安裝軟體更新](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)工作順序步驟期間，控制軟體更新掃描的逾時。 例如，如果有大量的軟體更新要安裝，您可以增加預設值。 預設值為 30 分鐘。 |
+|SMSTSSoftwareUpdateScanTimeout| 讓您能夠在[安裝軟體更新](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)工作順序步驟期間，控制軟體更新掃描的逾時。 例如，如果有大量的軟體更新要安裝，您可以增加預設值。 預設值為 1,800 秒 (30 分鐘)。 請注意，變數值以秒為單位進行設定。 |
 |SMSTSUDAUsers|指定目的地電腦的主要使用者。 請用下列格式指定使用者。 使用逗號 (,) 分隔多個使用者。<br /><br /> 範例：<br /><br /> **domain\user1, domain\user2, domain\user3**<br /><br /> 如需為使用者與目的地電腦建立關聯的詳細資訊，請參閱[為使用者與目的地電腦建立關聯](../get-started/associate-users-with-a-destination-computer.md)。|  
 |SMSTSWaitForSecondReboot|從 Configuration Manager 1602 版開始，當軟體更新安裝需要兩次重新啟動時，可使用這項選擇性的工作順序變數來協助控制用戶端行為。 在[安裝軟體更新](task-sequence-steps.md#BKMK_InstallSoftwareUpdates)步驟前必須先設定此變數，以防止工作順序因為軟體更新安裝的第二次重新啟動而失敗。<br /><br /> 以秒為單位來設定 SMSTSWaitForSecondReboot 值，指定在「安裝軟體更新」步驟期間電腦重新啟動時工作順序要暫停的時間長度，以在有第二次重新啟動時提供足夠的時間。 <br />例如，如果您將 SMSTSWaitForSecondReboot 設定為 600，工作順序就會在重新啟動後先暫停 10 分鐘，然後再執行其他的工作順序步驟。 在單一「安裝軟體更新」工作順序步驟中安裝數百個軟體更新時，這非常有用。|  
