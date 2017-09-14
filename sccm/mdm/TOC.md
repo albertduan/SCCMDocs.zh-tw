@@ -49,6 +49,7 @@
 ### [iOS 大量採購應用程式](deploy-use/manage-volume-purchased-ios-apps.md)
 ### [建立 Windows Phone 應用程式](deploy-use/creating-windows-phone-applications.md)
 ### [建立 Android 應用程式](deploy-use/creating-android-applications.md)
+### [Android 應用程式設定原則](deploy-use/configure-android-apps-with-app-configuration-policies.md)
 ### [行動應用程式管理原則](deploy-use/protect-apps-using-mam-policies.md)
 ### [受管理的瀏覽器原則](deploy-use/manage-internet-access-using-managed-browser-policies.md)
 ### [商務用 Windows 市集應用程式](deploy-use/windows-store-for-business.md)
