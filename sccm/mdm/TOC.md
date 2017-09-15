@@ -55,8 +55,12 @@
 ### [商務用 Windows 市集應用程式](deploy-use/windows-store-for-business.md)
 
 ## [管理 Intune 訂閱](deploy-use/manage-intune-subscriptions.md)
-
 ## [變更您的 MDM 授權單位](deploy-use/change-mdm-authority.md)
+## [開始從混合式 MDM 移轉至 Intune 獨立版](deploy-use/migrate-hybridmdm-to-intunesa.md) 
+### [將 Configuration Manager 資料匯入至 Microsoft Intune](deploy-use/migrate-import-data.md)
+### [為使用者移轉準備 Intune](deploy-use/migrate-prepare-intune.md)
+### [為特定使用者變更 MDM 授權單位(已混合的 MDM 授權單位)](deploy-use/migrate-mixed-authority.md)
+### [變更您的 MDM 授權單位](deploy-use/migrate-change-mdm-authority.md)
 
 ## 管理資源存取
 ### [建立 Wi-Fi 設定檔](deploy-use/create-wifi-profiles.md)
