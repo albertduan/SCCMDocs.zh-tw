@@ -11,14 +11,14 @@ ms.tgt_pltfrm: na
 ms.topic: get-started-article
 ms.assetid: 2be84a1d-ebb9-47ae-8982-c66d5b92a52a
 caps.latest.revision: "13"
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 46cc3fcfd9516cf1c124e24b50d0aac0cb0025dc
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c8034497299a9b5646674031a40fdee49d55ff7c
+ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="plan-for-and-configure-application-management-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中規劃和設定應用程式管理
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/07/2017
 
  在 System Center Configuration Manager 中，您現在有兩個選項可讓使用者用來變更設定、瀏覽應用程式及安裝應用程式：  
 
--   **新的軟體中心** - 新的軟體中心具備現代化外觀。 先前只出現在 Silverlight 相依應用程式類別目錄 (使用者可用的應用程式) 中的應用程式，現在會出現在軟體中心的 [應用程式] 索引標籤下方。 應用程式類別目錄還是可以使用軟體中心 [安裝狀態] 索引標籤下的連結進行存取。  
+-   **新的軟體中心** - 新的軟體中心具備現代化外觀。 先前只出現在 Silverlight 相依應用程式類別目錄 (使用者可用的應用程式) 中的應用程式，現在會出現在軟體中心的 [應用程式] 索引標籤下方。應用程式類別目錄還是可以使用軟體中心 [安裝狀態] 索引標籤下的連結進行存取。  
 
      您可以啟用用戶端設定 [電腦代理程式] **電腦代理程式** > **使用新的軟體中心**。  
 

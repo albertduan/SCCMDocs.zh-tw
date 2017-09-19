@@ -14,11 +14,11 @@ caps.latest.revision: "10"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 2f3d66362c49d28a52d7f9c535eb0b3b4cc4eaf7
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: c9d94ffb61ed7a7fa40a01eedc763a16a8df30cb
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="manage-task-sequences-to-automate-tasks-in-system-center-configuration-manager"></a>管理工作順序，將 System Center Configuration Manager 中的工作自動化
 
@@ -196,7 +196,7 @@ ms.lasthandoff: 08/07/2017
 
 8.  完成精靈。  
 
- 您可以預先設置工作順序中參照的內容。 Configuration Manager 可建立壓縮的預先設置內容檔案，其中包含您所選內容的檔案、相關聯的相依性及相關聯的中繼資料。 接著，您可以在網站伺服器、次要網站或發佈點手動匯入該內容。 如需如何預先設置內容檔案的詳細資訊，請參閱[預先設置內容](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkprestagea-use-prestaged-content)。  
+ 您可以預先設置工作順序中參照的內容。 Configuration Manager 可建立壓縮的預先設置內容檔案，其中包含您所選內容的檔案、相關聯的相依性及相關聯的中繼資料。 接著，您可以在網站伺服器、次要網站或發佈點手動匯入該內容。 如需如何預先設置內容檔案的詳細資訊，請參閱[預先設置內容](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_prestage)。  
 
 ##  <a name="BKMK_DeployTS"></a> 部署工作順序  
  利用下列程序，將工作順序部署到集合中的電腦。  
@@ -464,7 +464,7 @@ ms.lasthandoff: 08/07/2017
 |**複製**|製作選定工作順序的複本。 當您根據現有工作順序建立新工作順序時，這個動作將會很有用。<br /><br /> 在資料夾內製作工作順序複本時，複本會列在該資料夾內，直到您重新整理工作順序節點。  重新整理後，負本會顯示在根資料夾中。|  
 |**停用**|停用工作順序，使其無法在電腦上執行。 已停用的工作順序可部署至電腦，但在啟用順序之前，電腦不會執行工作順序。|  
 |**啟用**|啟用工作順序以執行順序。 啟用工作順序後，您不需要重新部署已部署的工作順序。|  
-|**建立預先設置的內容檔案**|啟動建立預先設置的內容檔案精靈，以預先設置工作順序內容。 如需如何建立預先設置的內容檔案的詳細資訊，請參閱[預先設置的內容](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkprestagea-use-prestaged-content)。|  
+|**建立預先設置的內容檔案**|啟動建立預先設置的內容檔案精靈，以預先設置工作順序內容。 如需如何建立預先設置的內容檔案的詳細資訊，請參閱[預先設置的內容](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_prestage)。|  
 |**移動**|將選定工作順序移動至另一個資料夾。|  
 
 ## <a name="next-steps"></a>後續步驟

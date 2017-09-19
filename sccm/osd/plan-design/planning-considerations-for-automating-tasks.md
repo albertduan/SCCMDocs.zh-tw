@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 830f715b688cc9929a179da94eba9c81de8db11a
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f44fa4ef0946d3500d15db536333adab571a5f64
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="planning-considerations-for-automating-tasks-in-system-center-configuration-manager"></a>System Center Configuration Manager 的自動化工作規劃考量
 
@@ -282,7 +282,7 @@ ms.lasthandoff: 08/07/2017
 ##  <a name="BKMK_TSNetworkAccessAccount"></a> 工作順序和網路存取帳戶  
  雖然工作順序只會在本機系統帳戶的環境中執行，您仍可能需要在下列情形中設定網路存取帳戶：  
 
--   您必須正確設定網路存取帳戶，否則當工作順序嘗試存取發佈點上的 Configuration Manager 套件以完成其工作時，工作將會失敗。 如需網路存取帳戶的詳細資訊，請參閱[網路存取帳戶](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md#a-namebkmknaaa-network-access-account)。  
+-   您必須正確設定網路存取帳戶，否則當工作順序嘗試存取發佈點上的 Configuration Manager 套件以完成其工作時，工作將會失敗。 如需網路存取帳戶的詳細資訊，請參閱[網路存取帳戶](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md#bkmk_NAA)。  
 
     > [!NOTE]  
     >  網路存取帳戶從未作為執行程式、安裝應用程式、安裝更新或是執行工作順序的安全性內容使用，但網路存取帳戶可用來存取網路上的相關資源。  

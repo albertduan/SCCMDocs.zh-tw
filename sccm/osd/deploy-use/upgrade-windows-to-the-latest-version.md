@@ -14,11 +14,11 @@ caps.latest.revision: "13"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 026d61113a918e43ac4395ef092b1931f33f16d3
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 412c2c644cc7f17f307c02b84471f3ee494045ec
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="upgrade-windows-to-the-latest-version-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 將 Windows 升級至最新版本
 
@@ -74,7 +74,7 @@ ms.lasthandoff: 08/07/2017
     > 當您使用獨立媒體時，工作順序必須內含開機映像，在 [工作順序媒體精靈] 中才可使用該媒體。
 
     > [!NOTE]  
-    > 一般都是使用[建立工作順序以升級作業系統](create-a-task-sequence-to-upgrade-an-operating-system.md)中的步驟來建立工作順序，以便將作業系統升級為 Windows 10。 該工作順序包含 [升級作業系統] 步驟，以及其他建議的步驟和群組，以處理端對端升級程序。 不過，您可以建立自訂工作順序，並新增[升級作業系統](../understand/task-sequence-steps.md#BKMK_UpgradeOS)工作順序步驟，將作業系統升級。 這是將作業系統升級為 Windows 10 的唯一必要步驟。 如果您選擇這個方法，請在 [升級作業系統] 步驟之後也同時新增[重新啟動電腦](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer)步驟，完成升級。 請務必使用 [目前安裝的預設作業系統] 設定，將電腦重新啟動為已安裝的作業系統，而不是 Windows PE。  
+    > 一般都是使用[建立工作順序以升級作業系統](create-a-task-sequence-to-upgrade-an-operating-system.md)中的步驟來建立工作順序，以便將作業系統升級為 Windows 10。 該工作順序包含 [升級作業系統] 步驟，以及其他建議的步驟和群組，以處理端對端升級程序。 不過，您可以建立自訂工作順序，並新增[升級作業系統](../understand/task-sequence-steps.md#BKMK_UpgradeOS)工作順序步驟，將作業系統升級。 這是將作業系統升級為 Windows 10 的唯一必要步驟。 如果您選擇這個方法，請在 [升級作業系統] 步驟之後也同時新增[重新啟動電腦](../understand/task-sequence-steps.md#BKMK_RestartComputer)步驟，完成升級。 請務必使用 [目前安裝的預設作業系統] 設定，將電腦重新啟動為已安裝的作業系統，而不是 Windows PE。  
 
 ##  <a name="BKMK_Deploy"></a> 部署  
 

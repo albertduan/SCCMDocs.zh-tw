@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 5fef04f26b12bced073332fd1f7b4e7c7bd7d398
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 35f527f83799125aa298b99e2cc56867435272ec
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="manage-operating-system-upgrade-packages-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理作業系統升級套件
 
@@ -59,7 +59,7 @@ System Center Configuration Manager 中的升級套件包含用來升級電腦�
  現在您可以將作業系統安裝程式發佈至部署工作順序所存取的發佈點。  
 
 ##  <a name="BKMK_DistributeBootImages"></a> 將作業系統映像發佈至發佈點  
- 作業系統映像發佈至發佈點的方式，與您發佈其他內容的方式相同。 在大部分情況下，您必須在部署作業系統之前，將作業系統映像發佈至至少一個發佈點。 如需發佈作業系統映像的步驟，請參閱 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)。  
+ 作業系統映像發佈至發佈點的方式，與您發佈其他內容的方式相同。 在大部分情況下，您必須在部署作業系統之前，將作業系統映像發佈至至少一個發佈點。 如需發佈作業系統映像的步驟，請參閱 [Distribute content](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)。  
 
 ##  <a name="BKMK_OSUpgradePkgApplyUpdates"></a> 套用軟體更新至作業系統升級套件  
  自 Configuration Manager 1602 版開始，您可以將新的軟體更新套用至作業系統升級套件中的作業系統映像。 在您可將軟體更新套用至升級套件之前，必須先使軟體更新基礎結構就緒、已成功同步處理軟體更新，並已將軟體更新下載至站台伺服器上的內容庫。 如需詳細資訊，請參閱 [Deploy software updates](../../sum/deploy-use/deploy-software-updates.md) (部署軟體更新)。  

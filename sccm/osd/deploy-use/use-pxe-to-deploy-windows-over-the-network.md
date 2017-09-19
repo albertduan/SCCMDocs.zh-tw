@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: b88ab3799027c78a8c605e934b247097b31e1d21
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 57292b1c6f6e8b6be91eace06dbf12d788522e0b
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="use-pxe-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>利用 System Center Configuration Manager 使用 PXE 透過網路來部署 Windows
 
@@ -46,7 +46,7 @@ System Center Configuration Manager 中的開機前執行環境 (PXE) 起始作�
 
 -   若要在開機映像上啟用 PXE，請從開機映像內容中的 [資料來源] 索引標籤，選取 [從支援 PXE 的發佈點部署此開機映像]。
 
--   如果您變更開機映像的內容，請將開機映像重新發佈至發佈點。 如需詳細資訊，請參閱[發佈內容](../../core/servers/deploy/configure/deploy-and-manage-content.md#a-namebkmkdistributea-distribute-content)。
+-   如果您變更開機映像的內容，請將開機映像重新發佈至發佈點。 如需詳細資訊，請參閱[發佈內容](../../core/servers/deploy/configure/deploy-and-manage-content.md#bkmk_distribute)。
 
 ##  <a name="BKMK_PXEExclusionList"></a> 建立 PXE 部署的排除清單
 當您使用 PXE 部署作業系統時，可以在每個發佈點上建立排除清單。 將要發佈點忽略之電腦的 MAC 位址新增到排除清單。 清單中的電腦將不會接收 Configuration Manager 用來進行 PXE 部署的部署工作順序。

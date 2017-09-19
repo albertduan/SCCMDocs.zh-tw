@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: 0ea3edaa-27c6-4391-9896-cd97d9c5d06d
 caps.latest.revision: "4"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: mattbriggs
+ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: f42fee5974567f667c015a6b0bf34d9a9a7d2dab
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 1e9c5506b94eecc1c95af5f31ad4c2d923c2b74f
+ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="uninstall-applications-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 解除安裝應用程式
 
@@ -35,7 +35,7 @@ ms.lasthandoff: 08/07/2017
 > [!IMPORTANT]  
 > 某些應用程式類型不支援解除安裝。  
 
- 此清單提供應用程式解除安裝運作方式的詳細資訊：  
+ 這份清單提供應用程式解除安裝運作方式的詳細資訊：  
 
 -   當您解除安裝 System Center Configuration Manager (Configuration Manager) 應用程式時，不會自動解除安裝任何相依的應用程式。  
 
@@ -43,7 +43,7 @@ ms.lasthandoff: 08/07/2017
 
 -   如果從已部署應用程式的集合中移除使用者或裝置，則不會自動從裝置移除該應用程式。  
 
--   部署目的為 [解除安裝] 的部署作業並不會檢查需求規則。 如果應用程式是安裝在部署執行的電腦上，則會被解除安裝。  
+-   部署目的為 [解除安裝]  的部署作業並不會檢查需求規則。 如果應用程式是安裝在部署執行的電腦上，則會被解除安裝。  
 
 > [!IMPORTANT]  
 > 您必須先刪除集合應用程式的任何現有部署或模擬部署，才能使用 [解除安裝] 部署動作部署該應用程式。  
@@ -56,7 +56,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  使用下列任一方法，以解除安裝命令列設定應用程式部署類型：  
 
-    -   在 [建立部署精靈] 的 [一般] 頁面上，選取 [自動從安裝檔案識別此部署類型的相關資訊] 選項。 如果安裝檔案中包含該資訊，便會自動將解除安裝命令列新增到部署類型內容中。  
+    -   在 [建立部署精靈] 的 [一般] 頁面上，選取 [自動從安裝檔案識別此部署類型的相關資訊] 選項。 如果安裝檔案中包含資訊，便會自動將解除安裝命令列新增到部署類型內容中。  
 
     -   在 [建立部署類型精靈] 的 [內容] 頁面上，於 [解除安裝程式] 欄位中指定用於解除安裝應用程式的命令列。  
 

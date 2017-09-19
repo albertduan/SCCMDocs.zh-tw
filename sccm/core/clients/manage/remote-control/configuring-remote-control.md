@@ -12,20 +12,20 @@ ms.topic: article
 ms.assetid: 45affc27-aa11-4249-9493-082ac23a3a3d
 caps.latest.revision: "4"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 3a386c23c81f413d7d161780bdc0ab3a5b9eccae
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 633336049feca35f76e3a57e14cc42088a303f8d
+ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="configuring-remote-control-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中設定遠端控制
 
 *適用於：System Center Configuration Manager (最新分支)*
 
- 這個程序會說明如何設定遠端控制的預設用戶端設定。 這些設定會套用至階層中的所有電腦。 如果您只想讓某些電腦套用這些設定，請將自訂裝置用戶端設定指派給包含那些電腦的集合。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端設定](../../../../core/clients/deploy/configure-client-settings.md)。 
+ 這個程序會說明設定遠端控制的預設用戶端設定。 這些設定會套用至階層中的所有電腦。 如果您只想讓某些電腦套用這些設定，請將自訂裝置用戶端設定指派給包含那些電腦的集合。 如需詳細資訊，請參閱[如何在 System Center Configuration Manager 中設定用戶端設定](../../../../core/clients/deploy/configure-client-settings.md)。 
 
 若要使用遠端協助或遠端桌面，它必須安裝及設定在執行 Configuration Manager 主控台的電腦上。 如需如何安裝及設定遠端協助或遠端桌面的詳細資訊，請參閱 Windows 文件。  
 
@@ -37,11 +37,11 @@ ms.lasthandoff: 08/07/2017
 
 5.  在 [預設] 對話方塊中，選擇 [遠端工具] 。  
 
-6.  設定遠端控制、遠端協助和遠端桌面用戶端設定。 如需您可以設定的遠端工具用戶端設定清單，請參閱[遠端工具](../../../../core/clients/deploy/about-client-settings.md#remote-tools)。  
+6.  設定遠端控制、遠端協助和遠端桌面用戶端設定。 如需您可設定的遠端工具用戶端設定清單，請參閱[遠端工具](../../../../core/clients/deploy/about-client-settings.md#remote-tools)。  
 
     在 [電腦代理程式]  用戶端設定中設定 [顯示於軟體中心的組織名稱]  的值，就可以變更出現在 [ConfigMgr 遠端控制]  對話方塊中的公司名稱。  
 
- 用戶端電腦會在下一次下載用戶端原則時，使用這些設定進行設定。 若要起始單一用戶端的原則擷取，請參閱[如何管理 System Center Configuration Manager 中的用戶端](../../../../core/clients/manage/manage-clients.md)。  
+ 用戶端電腦會在下一次下載用戶端原則時，使用這些設定進行設定。 若要起始單一用戶端的原則擷取，請參閱 [How to manage clients in System Center Configuration Manager](../../../../core/clients/manage/manage-clients.md)。  
 
 #### <a name="enable-keyboard-translation"></a>啟用鍵盤轉譯
 

@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 4b3668094d576b1b8710f08b384aa2f7c5eb0cca
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 3a8e2759812dae2a328cd09efdc13f8534d14379
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="create-a-task-sequence-to-capture-and-restore-user-state-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中建立工作順序以擷取和還原使用者狀態
 
@@ -56,7 +56,7 @@ ms.lasthandoff: 08/07/2017
 
     -   在 [重試延遲 (以秒為單位)]  方塊中，指定工作順序在重試擷取資料前等待的秒數。  
 
-    -   選取 [如果電腦帳戶無法連線到狀態存放區，則使用網路存取帳戶] 核取方塊，指定是否使用 Configuration Manager [網路存取帳戶](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md#a-namebkmknaaa-network-access-account)連線至狀態存放區。  
+    -   選取 [如果電腦帳戶無法連線到狀態存放區，則使用網路存取帳戶] 核取方塊，指定是否使用 Configuration Manager [網路存取帳戶](../../core/plan-design/hierarchy/manage-accounts-to-access-content.md#bkmk_NAA)連線至狀態存放區。  
 
      在 [選項]  索引標籤上，指定下列選項：  
 
@@ -141,7 +141,7 @@ ms.lasthandoff: 08/07/2017
 
     -   如果無法還原檔案而您想要繼續執行 [還原使用者狀態]  步驟時，請選取 [無法還原部分檔案時仍繼續]  。  
 
-         如果您使用本機連結還原使用者狀態，而且還原不成功，系統管理使用者可以手動刪除為了還原資料所建立的永久連結，或是可讓工作順序執行 USMTUtils 工具。 如果您使用 USMTUtils 刪除永久連結，請在執行 USMTUtils 後新增[重新啟動電腦](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer)步驟。  
+         如果您使用本機連結還原使用者狀態，而且還原不成功，系統管理使用者可以手動刪除為了還原資料所建立的永久連結，或是可讓工作順序執行 USMTUtils 工具。 如果您使用 USMTUtils 刪除永久連結，請在執行 USMTUtils 後新增[重新啟動電腦](../understand/task-sequence-steps.md#BKMK_RestartComputer)步驟。  
 
     -   選取 [啟用詳細資訊記錄]  ，指定發生錯誤時要寫入多少資訊到記錄檔。  
 

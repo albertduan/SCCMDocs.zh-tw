@@ -14,11 +14,11 @@ caps.latest.revision: "6"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: b4b04907f2cd48d81e864e46ca47c14a0b98a9f7
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a50354070c03ad8acbd21432a192f949c0a196fa
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="create-a-task-sequence-for-non-operating-system-deployments-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立非作業系統部署的工作順序
 
@@ -42,7 +42,7 @@ System Center Configuration Manager 中的工作順序是用來將環境中的�
 
 -   [安裝軟體更新](../understand/task-sequence-steps.md#BKMK_InstallSoftwareUpdates)  
 
--   [重新啟動電腦](../understand/task-sequence-steps.md#a-namebkmkrestartcomputera-restart-computer)  
+-   [重新啟動電腦](../understand/task-sequence-steps.md#BKMK_RestartComputer)   
 
 -   [執行命令列](../understand/task-sequence-steps.md#BKMK_RunCommandLine)  
 
@@ -52,5 +52,5 @@ System Center Configuration Manager 中的工作順序是用來將環境中的�
 
 -   [設定工作順序變數](../understand/task-sequence-steps.md#BKMK_SetTaskSequenceVariable)  
 
-## <a name="next-steps"></a>後續步驟
-[部署工作順序](manage-task-sequences-to-automate-tasks.md#a-namebkmkdeploytsa-deploy-a-task-sequence)
+## <a name="next-steps"></a>後續步驟 
+[部署工作順序](manage-task-sequences-to-automate-tasks.md#BKMK_DeployTS)

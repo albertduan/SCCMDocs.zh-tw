@@ -14,11 +14,11 @@ caps.latest.revision: "26"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 2c2c0f81736c1b00ea487ae1261803a8105bb5e4
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: fe02981433482ebf6880feec3e1822e6e8f4550f
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="manage-windows-as-a-service-using-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理 Windows 即服務
 
@@ -40,7 +40,7 @@ ms.lasthandoff: 08/07/2017
 
 -   軟體更新點和站台伺服器都必須安裝 WSUS 4.0 與 [hotfix 3159706](https://support.microsoft.com/kb/3159706)，電腦才能升級至 Windows 10 年度更新版及後續版本。 若要安裝此 Hotfix，您必須採取支援文章所述的手動步驟。 如需詳細資訊，請參閱 [Enterprise Mobility and Security Blog](https://blogs.technet.microsoft.com/enterprisemobility/2016/08/05/update-your-configmgr-1606-sup-servers-to-deploy-the-windows-10-anniversary-update/) (企業行動力和安全性部落格)。
 
--   啟用活動訊號探索。 您可使用探索功能，找到 Windows 10 服務儀表板中所顯示的資料。 如需詳細資訊，請參閱 [Configure Heartbeat Discovery](../../core/servers/deploy/configure/configure-discovery-methods.md#a-namebkmkconfighbdisca-configure-heartbeat-discovery)。  
+-   啟用活動訊號探索。 您可使用探索功能，找到 Windows 10 服務儀表板中所顯示的資料。 如需詳細資訊，請參閱 [Configure Heartbeat Discovery](../../core/servers/deploy/configure/configure-discovery-methods.md#BKMK_ConfigHBDisc)。  
 
      下列 Windows 10 分支和組建資訊會被發現並儲存在下列屬性：  
 

@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: 101d7d4d-92db-419d-b2ae-3c1c1dea68e9
 caps.latest.revision: "6"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: arob98
+ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 744bc3792a02f13d3cf940cd1a4f2fd8749ee2f4
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 73e6b8c39b08bb661cb7ac66dad3c47d4abd09b0
+ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="about-client-installation-properties-published-to-active-directory-domain-services"></a>關於發佈至 Active Directory 網域服務的用戶端安裝內容
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 08/07/2017
  反之，您可以在 [用戶端推入安裝內容] 對話方塊的 [用戶端] 索引標籤中指定用戶端安裝內容。 這些選項和與用戶端相關的站台設定全數儲存在一個檔案中，安裝用戶端時，用戶端會讀取該檔案。  
 
 > [!NOTE]  
->  您不需要在 [用戶端]  索引標籤中指定用戶端推送安裝的 CCMSetup 內容、後援狀態點或受信任根金鑰。 使用用戶端推入安裝安裝用戶端時，會自動提供這些設定給用戶端。  
+>  您不需要在 [用戶端]  索引標籤中指定用戶端推送安裝的 CCMSetup 內容、後援狀態點或受信任根金鑰。使用用戶端推入安裝安裝用戶端時，會自動提供這些設定給用戶端。  
 
  如將該站台發佈至 Active Directory 網域服務，則會將您在 [用戶端] 索引標籤中指定的任何內容發佈至 Active Directory 網域服務。 在不使用安裝內容執行 CCMSetup 的情況下，用戶端安裝會讀取這些設定。  
 

@@ -14,18 +14,18 @@ caps.latest.revision: "10"
 author: dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 26c36df77c21254c7ad2b8a45906bd3706f9ec65
-ms.sourcegitcommit: 06aef618f72c700f8a716a43fb8eedf97c62a72b
+ms.openlocfilehash: 5c9e80fc5bc3f0629e1c27a4928b8a51cfe1ee7e
+ms.sourcegitcommit: 948644072bd158b156f782a4376bcd50fac7c73a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/21/2017
+ms.lasthandoff: 09/14/2017
 ---
 # <a name="choose-between-microsoft-intune-standalone-and-hybrid-mobile-device-management-with-system-center-configuration-manager"></a>在 Microsoft Intune 獨立部署與使用 System Center Configuration Manager 的混合式行動裝置管理之間進行選擇
 
 *適用於：System Center Configuration Manager (最新分支)*
 
 使用 Microsoft Intune 進行行動裝置管理 (MDM) 時，最常詢問的其中一個問題就是：「我應該整合 Intune 和 Configuration Manager (混合式 MDM)，還是在僅限雲端的設定中執行 Intune 獨立部署？」 若要回答此問題，您應該仔細比較這兩個選項。
-
+ 
 ## <a name="intune-standalone"></a>Intune 獨立部署
 Intune 獨立部署是 Microsoft 建議的部署拓撲。 Intune 獨立部署是僅限雲端的 MDM 解決方案，可透過可從世界各地存取的 Web 主控台來進行管理。 北美洲、歐洲和亞洲都有託管的 Intune Datacenter。 因為 Intune 是雲端服務，所以您可以在相對較短的時間範圍內將 Intune 管理部署到您的裝置。
 
