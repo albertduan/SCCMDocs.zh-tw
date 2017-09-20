@@ -2,7 +2,7 @@
 title: "使用 Configuration Manager 建立並執行指令碼 | Microsoft Docs"
 description: "使用 Configuration Manager 在用戶端裝置上建立並執行指令碼。"
 ms.custom: na
-ms.date: 08/09/2017
+ms.date: 09/15/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: cc230ff4-7056-4339-a0a6-6a44cdbb2857
 caps.latest.revision: "14"
 caps.handback.revision: "0"
-author: robstackmsft
-ms.author: robstack
+author: lleonard-msft
+ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: ed84f7900eee5c04728d0e4d1b46027c36327bec
-ms.sourcegitcommit: b41d3e5c7f0c87f9af29e02de3e6cc9301eeafc4
+ms.openlocfilehash: e6b29cd85504742e8638a55db2f6c4ecc8ab3e55
+ms.sourcegitcommit: 5ca89204716750eaaceb01bba40b35b85c7122ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/11/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="create-and-run-powershell-scripts-from-the-configuration-manager-console"></a>從 Configuration Manager 主控台建立及執行 PowerShell 指令碼
 
@@ -44,8 +44,8 @@ Configuration Manager 用戶端必須執行至少 1706 版或更新版的用戶�
 
 若要使用指令碼，您必須是適當 Configuration Manager 安全性角色的成員。
 
-- 若要匯入及撰寫指令碼 - 您的帳戶必須具備**合規性設定管理員**安全性角色中 **SMS 指令碼**的**建立**權限。
-- 若要核准或拒絕指令碼 - 您的帳戶必須具備**合規性設定管理員**安全性角色中 **SMS 指令碼**的**核准**權限。
+- 若要匯入及撰寫指令碼，您的帳戶必須具備**系統高權限管理員**安全性角色中 **SMS 指令碼**的**建立**權限。
+- 若要核准或拒絕指令碼，您的帳戶必須具備**系統高權限管理員**安全性角色中 **SMS 指令碼**的**核准**權限。
 - 若要執行指令碼 - 您的帳戶必須具備**合規性設定管理員**安全性角色中**集合**的**執行指令碼**權限。
 
 如需有關 Configuration Manager 安全性角色的詳細資訊，請參閱[以角色為基礎之系統管理的基礎](/sccm/core/understand/fundamentals-of-role-based-administration)。
@@ -78,9 +78,9 @@ Configuration Manager 用戶端必須執行至少 1706 版或更新版的用戶�
 
 #### <a name="create-a-folder"></a>建立資料夾
 
-*New-Item "c:\scripts" -type folder name* 
- 
- 
+*New-Item "c:\scripts" -type folder name*
+
+
 #### <a name="create-a-file"></a>建立檔案
 
 *New-Item c:\scripts\new_file.txt -type file name*

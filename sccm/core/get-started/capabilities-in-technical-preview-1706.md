@@ -2,7 +2,7 @@
 title: Technical Preview 1706 | Microsoft Docs
 description: "了解 System Center Configuration Manager Technical Preview 1706 版中可用的功能。"
 ms.custom: na
-ms.date: 06/30/2017
+ms.date: 09/15/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-other
 ms.reviewer: na
@@ -13,11 +13,11 @@ ms.assetid: ca3b4714-2a16-495e-8a17-1d87991d5556
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: d45f504dfe0a4c7852b0e2c8ff60d54005346c02
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 5633047669f9730446159781c4ac0b1248178bf4
+ms.sourcegitcommit: 5ca89204716750eaaceb01bba40b35b85c7122ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/18/2017
 ---
 # <a name="capabilities-in-technical-preview-1706-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1706 中的功能
 
@@ -105,7 +105,7 @@ ms.lasthandoff: 08/07/2017
 
 -   將執行被動模式站台伺服器的電腦：
 
-    -   必須符合[安裝主要站台的必要條件](https://docs.microsoft.com/en-us/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#primary-sites-and-the-central-administration-site)。
+    -   必須符合[安裝主要站台的先決條件](https://docs.microsoft.com/en-us/sccm/core/servers/deploy/install/prerequisites-for-installing-sites#primary-sites-and-the-central-administration-site)。
 
     -   會使用與主動模式站台伺服器版本相符的來源檔案來進行安裝。
 
@@ -328,8 +328,8 @@ ms.lasthandoff: 08/07/2017
 
 若要使用指令碼，您必須是適當 Configuration Manager 安全性角色的成員。
 
-- **若要匯入及撰寫指令碼** - 您的帳戶必須具備「合規性設定管理員」安全性角色中「SMS 指令碼」的「建立」權限。
-- **若要核准或拒絕指令碼** - 您的帳戶必須具備「合規性設定管理員」安全性角色中「SMS 指令碼」的「核准」權限。
+- **若要匯入及撰寫指令碼** - 您的帳戶必須具備**系統高權限管理員**安全性角色中 **SMS 指令碼**的**建立**權限。
+- **若要核准或拒絕指令碼** - 您的帳戶必須具備**系統高權限管理員**安全性角色中 **SMS 指令碼**的**核准**權限。
 - **若要執行指令碼** - 您的帳戶必須具備「合規性設定管理員」安全性角色中「集合」的「執行指令碼」權限。
 
 如需有關 Configuration Manager 安全性角色的詳細資訊，請參閱[以角色為基礎之系統管理的基礎](/sccm/core/understand/fundamentals-of-role-based-administration)。

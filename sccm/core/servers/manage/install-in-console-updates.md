@@ -2,7 +2,7 @@
 title: "主控台內更新 | Microsoft Docs"
 description: "System Center Configuration Manager 會與 Microsoft 雲端進行同步處理以取得更新，讓您可在主控台內安裝這類更新。"
 ms.custom: na
-ms.date: 06/13/2017
+ms.date: 09/14/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "36"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 2bbc8935bee306ed0bc312cc43b8f5374a8df7ff
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 10ddbcc19da8c5fc6451f62500f17790a0349389
+ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/15/2017
 ---
 # <a name="install-in-console-updates-for-system-center-configuration-manager"></a>安裝適用於 System Center Configuration Manager 的主控台內更新
 
@@ -106,6 +106,9 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 -   先決條件檢查會在您選擇安裝更新時再次自動執行。  
 
+> [!NOTE]
+> 當您啟動先決條件檢查並檢視狀態時，**安裝**階段看似作用中，但實際上並未安裝更新。 畫面會列出安裝階段，因為某些工作 (例如擷取執行檢查所需的二進位檔) 也是安裝階段的一部分。  
+
 稍後在安裝更新時，您可以設定更新以忽略先決條件檢查警告。  
 
 #### <a name="to-run-the-prerequisite-checker-before-installing-an-update"></a>安裝更新之前先執行必要條件檢查工具  
@@ -114,11 +117,11 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 2.  以滑鼠右鍵按一下您想要執行必要條件檢查的更新套件。  
 
-3.  選擇 **[執行必要條件檢查]**。  
+3.  選擇 [執行先決條件檢查]。  
 
-     當您執行必要條件檢查時，更新的內容會複寫到子站台。  您可以檢視站台伺服器上的 distmgr.log，確認該內容複寫成功。  
+     當您執行先決條件檢查時，更新的內容會複寫到子站台。  您可以檢視站台伺服器上的 distmgr.log，確認該內容複寫成功。  
 
-4.  若要檢視檢查的結果，可在 Configuration Manager 主控台中，移至 [監視] > [更新與服務狀態]，然後尋找必要條件狀態。 您也可以檢視站台伺服器上的 ConfigMgrPrereq.log，來取得更多詳細資料。  
+4.  若要檢視檢查的結果，可在 Configuration Manager 主控台中，移至 [監視] > [更新與服務狀態]，然後尋找先決條件狀態。 您也可以檢視站台伺服器上的 ConfigMgrPrereq.log，來取得更多詳細資料。  
 
 
 
@@ -288,7 +291,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 當更新安裝失敗時，請檢閱主控台內的意見反應，以找出適用於警告和錯誤的解決方式。 您也可以檢視站台伺服器上的 ConfigMgrPrereq.log，來取得更多詳細資料。 重試安裝更新之前，您必須先修正錯誤，並且應該修正警告。  
 
 > [!TIP]  
-> 如果無法下載或複寫某個更新，您可以使用[更新重設工具](/sccm/core/servers/manage/update-reset-tool)。 此工具會於執行 1706 版或更新版本的站台上提供。 
+> 如果無法下載或複寫某個更新，您可以使用[更新重設工具](/sccm/core/servers/manage/update-reset-tool)。 此工具會於執行 1706 版或更新版本的站台上提供。
 
 當您準備好要重試安裝更新時，請選取失敗的更新，然後選擇適用的選項。 更新安裝重試行為取決於您啟動重試的節點以及所使用的重試選項。  
 

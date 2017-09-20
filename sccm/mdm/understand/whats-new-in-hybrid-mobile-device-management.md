@@ -14,11 +14,11 @@ caps.latest.revision: "40"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.openlocfilehash: 93609815ab4d93eddb99b8461dda9f4b4bf8058e
-ms.sourcegitcommit: 9a6f8e028fb5eb2e752da70f42a5b548339bd8f4
+ms.openlocfilehash: c93ba688ba33c309e4d12e924061718e5a33759e
+ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2017
+ms.lasthandoff: 09/13/2017
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
 
@@ -28,13 +28,19 @@ ms.lasthandoff: 08/14/2017
 
 ##  <a name="compatibility-with-configuration-manager-versions"></a>與 Configuration Manager 版本的相容性  
 
- 本文的各節會列出 3 個不同類別下的混合式功能。 請使用下列指導方針判斷每個類別功能與 Configuration Manager 不同版本的相容性︰  
+ 本文的各節會列出 3 個不同類別下的混合式功能。 使用下列指導方針來判斷每個類別中的功能與不同 Configuration Manager 版本的相容性︰  
 
-|功能類別|說明|
+|功能類別|描述|
 |-|-|
-|**Microsoft Intune 的新功能** | 通常此類別下列出的所有功能都應該能夠與所有的 Configuration Manager 版本 (包括 System Center 2012 R2 Configuration Manager 版本) 搭配使用，因為這些功能只需要 Intune 服務，不需要其他的 Configuration Manager 功能。|
+|**Microsoft Intune 的新功能** | 一般而言，此類別下列出的所有功能，應該適用於所有 Configuration Manager 版本。 這其中包含了 System Center 2012 R2 Configuration Manager 版本，因為這些功能只需要 Intune 服務，不需要 Configuration Manager 中的其他功能。|
 |**Configuration Manager Technical Preview 的新功能**| 此類別下列出的所有功能只能搭配指定的 Technical Preview 版本使用。 若要試用這些功能，您必須安裝功能描述中指定的 Technical Preview 版本。 如需詳細資訊，請參閱 [Technical Preview for System Center Configuration Manager](../../core/get-started/technical-preview.md) 。|
 |**Configuration Manager (最新分支) 的新功能**| 此類別下列出的所有功能只能搭配指定的 Configuration Manager 版本 (最新分支) 使用，例如 1511 版或 1602 版。 如果您的混合式部署使用舊版的 Configuration Manager，即必須升級到功能描述中指定的 Configuration Manager 版本 (最新分支)。 如需詳細資訊，請參閱[升級至 System Center Configuration Manager](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)。|
+
+## <a name="august-2017"></a>2017 年 8 月
+
+### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Android 公司入口網站使用者和應用程式保護原則使用者的新登入體驗<!-- 621669 -->
+使用者現在可以使用 Android 公司入口網站應用程式來瀏覽應用程式、管理裝置及檢視 IT 連絡人資訊，而無需註冊其 Android 裝置。 此外，如果使用者已使用受 Intune 應用程式防護原則保護的應用程式，並啟動 Android 公司入口網站，使用者不會再收到註冊裝置的提示。
+
 
 ## <a name="july-2017"></a>2017 年 7 月
 
@@ -42,8 +48,7 @@ ms.lasthandoff: 08/14/2017
 
 - **針對 Android 與 Windows Phone 所新增的終止支援通知**
 
-    針對 Android 與 Windows Phone 版本，已新增了終止支援的新通知。 如需詳細資料，請參閱[通知](#notices)。
-
+    針對 Android 與 Windows Phone 版本，新增了終止支援的新通知。 如需詳細資料，請參閱[通知](#notices)。
 
 
 ### <a name="new-in-configuration-manager-current-branch"></a>Configuration Manager 的新功能 (最新分支)
@@ -64,15 +69,15 @@ ms.lasthandoff: 08/14/2017
 
 - **變更您的 MDM 授權單位**
 
-  自 Configuration Manager 1610 版和 Microsoft Intune 1705 版開始，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，您便可以變更 MDM 授權單位。 如需詳細資訊，請參閱[變更您的 MDM 授權單位]( /sccm/mdm/deploy-use/change-mdm-authority)。
+  自 Configuration Manager 1610 版開始，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，您便可以變更 MDM 授權單位。 如需詳細資訊，請參閱[變更您的 MDM 授權單位]( /sccm/mdm/deploy-use/change-mdm-authority)。
 
 - **受管理的瀏覽器和應用程式 Proxy 整合**
 
-  Intune Managed Browser 現已可和 Azure AD 應用程式 Proxy 服務整合，讓使用者即使在遠端工作也可以存取內部網站。 瀏覽器使用者可以和平常一樣地輸入網站的 URL，Managed Browser 便會透過應用程式 Proxy Web 閘道路由傳送要求。 如需詳細資訊，請參閱[使用受管理的瀏覽器原則管理網際網路存取](/intune/app-configuration-managed-browser)。
+  Intune Managed Browser 現已可和 Azure AD 應用程式 Proxy 服務整合，讓使用者即使在遠端工作也可以存取內部網站。 瀏覽器使用者像平常一樣輸入網站 URL，Managed Browser 便會透過應用程式 Proxy Web 閘道路由傳送要求。 如需詳細資訊，請參閱[使用受管理的瀏覽器原則管理網際網路存取](/intune/app-configuration-managed-browser)。
 
 - **Android 版公司入口網站應用程式已推出應用程式保護原則的全新使用者體驗**
 
-  我們根據客戶的意見反應修改了 Android 版公司入口網站應用程式，使它會顯示 [存取公司內容] 按鈕。 目的是讓使用者在只需要存取支援應用程式保護原則 (Intune 行動應用程式管理的功能) 的應用程式時，可以避免不必要的註冊程序。 您可以在[應用程式 UI 的新功能](/intune/whats-new-app-ui)頁面上查看這些變更。
+  我們根據客戶的意見反應修改了 Android 版公司入口網站應用程式，使它會顯示 [存取公司內容] 按鈕。 目的是讓使用者再只需要存取支援應用程式保護原則 (Intune 行動應用程式管理的功能) 的應用程式時，可以避免不必要的註冊程序。 您可以在[應用程式 UI 的新功能](/intune/whats-new-app-ui)頁面上查看這些變更。
 
 - **可輕鬆移除公司入口網站的新功能表動作**
 
@@ -84,7 +89,7 @@ ms.lasthandoff: 08/14/2017
 
 - **Windows 10 版公司入口網站新型引導式體驗**
 
-  Windows 10 版公司入口網站應用程式將會針對尚未識別或註冊的裝置提供引導式 Intune 逐步解說體驗。 新型體驗能提供逐步指示，可引導使用者註冊至 Azure Active Directory (取得條件式存取功能所需) 及 MDM 註冊 (取得裝置管理功能所需)。 引導式體驗能透過公司入口網站首頁取得。 未完成註冊的使用者可以繼續使用應用程式，但可使用的功能將會受到限制。
+  Windows 10 版公司入口網站應用程式會針對尚未識別或註冊的裝置提供引導式 Intune 逐步解說體驗。 新型體驗能提供逐步指示，可引導使用者註冊至 Azure Active Directory (取得條件式存取功能所需) 及 MDM 註冊 (取得裝置管理功能所需)。 引導式體驗能透過公司入口網站首頁取得。 未完成註冊的使用者可以繼續使用應用程式，但可使用的功能將會受到限制。
 
   此更新只會在執行 Windows 10 年度更新版 (組建 1607) 或更新版本的裝置上顯示。 您可以在[應用程式 UI 的新功能](/intune/whats-new-app-ui)頁面上查看這些變更。
 
@@ -266,7 +271,7 @@ Configuration Manager (最新分支) 1702 版也包含下列額外的混合式�
 
 - **適用於 Windows 裝置的新 MDM 伺服器位址**
 
-  註冊 Windows 和 Windows Phone 裝置的 MDM 伺服器位址，已從 manage.microsoft.com 變更為 enrollment.manage.microsoft.com。 在註冊 Windows 和 Windows Phone 時，如果出現提示，請通知使用者使用 enrollment.manage.microsoft.com 的 MDM 伺服器位址。 這項更新另要求您將 DNS 中任何把 EnterpriseEnrollment.contoso.com 重新導向 manage.microsoft.com 的 CNAME，取代為把 EnterpriseEnrollment.contoso.com 重新導向 EnterpriseEnrollment-s.manage.microsoft.com 的 DNS CNAME。 如需這項變更的詳細資訊，請造訪 http://aka.ms/intuneenrollsvrchange。
+  註冊 Windows 和 Windows Phone 裝置的 MDM 伺服器位址，已從 manage.microsoft.com 變更為 enrollment.manage.microsoft.com。在註冊 Windows 和 Windows Phone 時，如果出現提示，請通知使用者使用 enrollment.manage.microsoft.com 的 MDM 伺服器位址。 這項更新另要求您將 DNS 中任何把 EnterpriseEnrollment.contoso.com 重新導向 manage.microsoft.com 的 CNAME，取代為把 EnterpriseEnrollment.contoso.com 重新導向 EnterpriseEnrollment-s.manage.microsoft.com 的 DNS CNAME。如需這項變更的詳細資訊，請造訪 http://aka.ms/intuneenrollsvrchange。
 
 ### <a name="new-in-configuration-manager-technical-preview-1702"></a>Configuration Manager Technical Preview 1702 的新功能
 

@@ -14,11 +14,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 49eea15ea2888f8f93c33eb771c09147ba21529e
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f5aff56e9948536944140fbadb0539c7a4e20f26
+ms.sourcegitcommit: 5ca89204716750eaaceb01bba40b35b85c7122ba
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/18/2017
 ---
 #  <a name="recover-a-configuration-manager-site"></a>復原 Configuration Manager 站台
 
@@ -29,8 +29,8 @@ ms.lasthandoff: 08/07/2017
 本主題中的各節可協助您復原 Configuration Manager 站台。 若要建立備份，請參閱[備份 Configuration Manager](/sccm/protect/understand/backup-and-recovery)。
 
 ## <a name="considerations-before-recovering-a-site"></a>復原站台前的考量
-**您必須使用相同的 SQL Server 版本：**例如，不支援將 SQL Server 2014 上執行的資料庫還原至 SQL Server 2016。 同樣地，不支援將 SQL Server 2016 Standard 版上執行的站台資料庫還原至 SQL Server 2016 Enterprise 版。
--   SQL Server 絕不能設為 **單一使用者模式**。
+**您必須使用相同的 SQL Server 版本 (Version 與 Edition 都必須相同)：**例如，不支援將 SQL Server 2014 上執行的資料庫還原至 SQL Server 2016。 同樣地，不支援將 SQL Server 2016 Standard 版上執行的站台資料庫還原至 SQL Server 2016 Enterprise 版。
+-   SQL Server 絕不能設定為「單一使用者模式」。
 -   確定 .MDF 和 .LDF 檔案有效。 復原站台時，不會檢查正要還原的檔案狀態。
 
 **如果您使用 SQL Server Always On 可用性群組裝載站台資料庫：**請根據[準備使用 SQL Server Always On](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database#changes-for-site-recovery) 中所述來修改復原計劃。
@@ -126,7 +126,7 @@ ms.lasthandoff: 08/07/2017
 1.  將 [CD.Latest 資料夾](/sccm/core/servers/manage/the-cd.latest-folde)複製到 Configuration Manager 安裝資料夾外部的位置。
 從 CD.Latest 資料夾的複本執行 [Configuration Manager 安裝精靈]。
 
-2.  在 [開始使用]  頁面上，選取 [復原網站] ，然後按 [下一步] 。
+2.  在 [開始使用] 頁面上，選取 [復原網站]，然後按一下 [下一步]。
 
 3.  使用適合復原網站的選項來完成精靈。
 
