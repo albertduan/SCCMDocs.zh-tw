@@ -2,7 +2,7 @@
 title: "使用軟體計量監視應用程式使用量 | Microsoft Docs"
 description: 
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 09/20/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "8"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: d7bc0bebeb0355156553376a3535ed76d5e44835
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 87bafd8ce28d58993666057b6c5bfd8bdc0c4ed9
+ms.sourcegitcommit: 51654bf8b5615eb99084d0a20d18ca3fccfa83a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="software-metering-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的軟體計量
 
@@ -86,7 +86,7 @@ ms.lasthandoff: 09/15/2017
         >
         >  如果指定 [檔案名稱]  的值，則這個方塊是選擇性的。
 
-    -   **版本** - 您想要計量之可執行檔的版本。 您可以使用萬用字元 (*) 來表示任何字串，或使用萬用字元 (?) 來表示任何單一字元。 如果您想要測量可執行檔的所有版本，請使用預設值 (\*)。
+    -   **版本** - 您想要計量之可執行檔的版本。 您可以使用萬用字元 ( &#42; ) 來代表由任何字元組成的字串，或使用萬用字元 ( ?  ) 來代表任何單一字元。 如果您想要測量可執行檔的所有版本，請使用預設值 ( &#42; )。
 
     -   **語言** - 要計量之可執行檔的語言。 預設值是您正在使用之作業系統的目前地區設定。 如果您按一下 [瀏覽]  按鈕來選取要計量的可執行檔，則檔案標頭中有語言資訊時，會自動填入這個方塊。 若要計量檔案的所有語言版本，請選取下拉式清單中的 [任何]  。
 

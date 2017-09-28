@@ -2,7 +2,7 @@
 title: "Configuration Manager 使用的連接埠 | Microsoft Docs"
 description: "了解 System Center Configuration Manager 用於連線的必要和可自訂連接埠。"
 ms.custom: na
-ms.date: 3/20/2017
+ms.date: 09/19/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,18 +15,18 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 78caa69e10f5d386daab1e61e484d4d134469708
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: ac443971a725a7eeecaeea877b8e9636ebb4990b
+ms.sourcegitcommit: 51654bf8b5615eb99084d0a20d18ca3fccfa83a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="ports-used-in-system-center-configuration-manager"></a>System Center Configuration Manager 中使用的連接埠
 
 *適用於：System Center Configuration Manager (最新分支)*
 
 System Center Configuration Manager 是分散式用戶端/伺服器系統。 Configuration Manager 具有分散式特性，因此可以在站台伺服器、站台系統及用戶端之間建立連線。 某些連線使用不可設定的連接埠，有些則支援您指定的自訂連接埠。 如果使用防火牆、路由器、Proxy 伺服器或 IPsec 之類的連接埠篩選技術，則必須驗證所需連接埠是否可用。  
-
+    
 > [!NOTE]  
 >  如果使用 SSL 橋接功能支援以網際網路為基礎的用戶端，除了連接埠需求外，可能還必須允許某些 HTTP 動詞和標頭來周遊防火牆。   
 
@@ -167,7 +167,7 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |通用類別目錄 LDAP|--|3268|  
-|通用類別目錄 LDAP SSL|--|3269|  
+
 
 ###  <a name="BKMK_PortsClient-MP"></a> 用戶端 -- > 管理點  
 
@@ -295,9 +295,7 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |輕量型目錄存取通訊協定 (LDAP)|--|389|  
-|LDAP (安全通訊端層 [SSL] 連線)|636|636|  
 |通用類別目錄 LDAP|--|3268|  
-|通用類別目錄 LDAP SSL|--|3269|  
 |RPC 端點對應程式|135|135|  
 |RPC|--|DYNAMIC (請參閱註 6， **動態連接埠**)|  
 
@@ -391,9 +389,7 @@ Configuration Manager 不允許設定用於下列通訊類型的連接埠：
 |說明|UDP|TCP|  
 |-----------------|---------|---------|  
 |輕量型目錄存取通訊協定 (LDAP)|--|389|  
-|LDAP (安全通訊端層 [SSL] 連線)|636|636|  
 |通用類別目錄 LDAP|--|3268|  
-|通用類別目錄 LDAP SSL|--|3269|  
 |RPC 端點對應程式|135|135|  
 |RPC|--|DYNAMIC (請參閱註 6， **動態連接埠**)|  
 
@@ -641,17 +637,9 @@ SQL Server 裝載來自多個網站的資料庫時，每個資料庫都必須使
 ### <a name="bkmk_discovery"> </a> 探索和發行
 下列連接埠用於探索和發行站台資訊：
  - 輕量型目錄存取通訊協定 (LDAP)：389
- - LDAP (安全通訊端層 [SSL] 連線)：636
-
-
  - 通用類別目錄 LDAP：3268
- - 通用類別目錄 LDAP SSL：3269
-
-
  - RPC 端點對應程式：135
  - RPC：動態配置的高 TCP 連接埠
-
-
  - TCP: 1024: 5000
  - TCP:  49152: 65535
 

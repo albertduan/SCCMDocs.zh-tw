@@ -61,12 +61,12 @@ ms.lasthandoff: 08/28/2017
 
 ## <a name="surface-device-dashboard"></a>Surface 裝置儀表板
 <!--1355788-->
-Surface 裝置儀表板提供在您的環境中找到的 Surface 裝置相關資訊。 在主控台中，移至 [監視] > [Surface Devices] (Surface 裝置)。 您可以檢視下列資訊：
+Surface 裝置儀表板提供在您的環境中找到的 Surface 裝置相關資訊。 在主控台中，移至 [監視] > [Surface Devices]\(Surface 裝置)。 您可以檢視下列資訊：
 - Surface 百分比
 - Surface 模型的百分比
 - 前五大作業系統版本
 
-按一下 [Surface Models] (表面模型) 圖表的一個區段可看到完整裝置清單。  
+按一下 [Surface Models]\(表面模型) 圖表的一個區段可看到完整裝置清單。  
 
 ## <a name="configure-and-deploy-windows-defender-application-guard-policies"></a>設定及部署 Windows Defender 應用程式防護原則
 <!-- 1351960 -->

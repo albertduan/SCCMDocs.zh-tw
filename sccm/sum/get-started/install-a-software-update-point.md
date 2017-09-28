@@ -69,7 +69,7 @@ ms.lasthandoff: 08/07/2017
 ### <a name="configure-ssl-communications-to-wsus"></a>設定與 WSUS 的 SSL 通訊  
  您可以在精靈的 [一般]  頁面或在軟體更新點內容的 [一般]  索引標籤上，設定 SSL 通訊。  
 
- 如需如何使用 SSL 的詳細資訊，請參閱 [Decide whether to configure WSUS to use SSL](../plan-design/plan-for-software-updates.md#BKMK_WSUSandSSL)。  
+ 如需如何使用 SSL 的詳細資訊，請參閱 [決定是否要將 WSUS 設定為使用 SSL](../plan-design/plan-for-software-updates.md#BKMK_WSUSandSSL)。  
 
 ### <a name="wsus-server-connection-account"></a>WSUS 伺服器連線帳戶  
  您可以設定帳戶，以供站台伺服器在連線到軟體更新點上執行的 WSUS 時使用。 當您未設定此帳戶時，Configuration Manager 會使用電腦帳戶讓站台伺服器與 WSUS 連線。 在精靈的 [Proxy 和帳戶設定]  頁面或在 [軟體更新點內容] 的 [Proxy 和帳戶設定]  索引標籤上，設定 WSUS 伺服器連線帳戶。  您可以根據所使用的 Configuration Manager 版本，在精靈的不同位置中設定該帳戶。  

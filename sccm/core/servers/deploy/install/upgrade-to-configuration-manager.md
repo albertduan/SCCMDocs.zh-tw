@@ -14,11 +14,11 @@ caps.latest.revision: "21"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 1166b739e1e8d667172d97883f484fdbc3a142c1
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e65c22240555563cdb011849562069baf5d5887f
+ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="upgrade-to-system-center-configuration-manager"></a>升級至 System Center Configuration Manager
 
@@ -47,7 +47,7 @@ ms.lasthandoff: 08/07/2017
 -   System Center Configuration Manager 的候選版安裝  
 -   System Center 2012 Configuration Manager (含 Service Pack 1)  
 -   System Center 2012 Configuration Manager (含 Service Pack 2)  
--   System Center 2012 R2 Configuration Manager  
+-   System Center 2012 R2 Configuration Manager 不含 Service Pack
 -   System Center 2012 R2 Configuration Manager (含 Service Pack 1)  
 
 如果您使用在 2016 年 12 月 15 日之前下載的 1606 版基準媒體，則只可以將下列產品升級至 System Center Configuration Manager 1606 版的完整授權版本：

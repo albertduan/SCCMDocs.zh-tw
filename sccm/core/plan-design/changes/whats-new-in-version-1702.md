@@ -12,11 +12,11 @@ ms.assetid: 409e26e1-7716-4f1d-a0ee-34feabf20792
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: a2954b3c6f9a09b7246347e780c4cfc49ba39ca1
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: ff7f6c3b9f183502c95a2c551b1131c5abf1dd90
+ms.sourcegitcommit: 474e6ddbaaeac4ba17d8172321e08deeb0140d0a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="what39s-new-in-version-1702-of-system-center-configuration-manager"></a>System Center Configuration Manager 1702 版的新功能
 
@@ -256,7 +256,13 @@ Windows 10 Creators Update 引進一個簡單的轉換工具，能夠為支援 U
 
 透過這項變更，混合式部署可更快為 Android 及 iOS 版本提供支援，而不需要新的 Configuration Manager 版本或延伸模組。 一旦 Intune 獨立版支援新版本，使用者就能將其行動裝置更新為該版本。
 
-為了防止升級舊版 Configuration Manager 時發生問題，這些項目的屬性頁面中還是會有行動作業系統版本。 如果您仍有需要將特定版本設為目標，可以建立新項目，然後在新建項目的屬性頁面上指定設為目標的版本。
+為了防止升級舊版 Configuration Manager 時發生問題，這些項目的屬性頁面中還是會有行動作業系統版本。 如果您仍有需要將特定版本設為目標，可以建立新項目，然後在新建項目的屬性頁面上指定設為目標的版本。 
+
+> [!NOTE]
+> 屬性頁面中最後一個可用的行動作業系統會套用到該版本與所有後續版本。 屬性頁面提供下列選擇供 Android 7 與 iOS 10 以後的作業系統版本作為目標使用： 
+> - **Android 7 與更新版本**
+> - **所有 iOS 10 與更新的 iPhone 或 iPod touch 裝置**
+> - **所有 iOS 10 與更新的 iPad 裝置**
 
 ### <a name="android-for-work-support"></a>Android for Work 支援
 從 1702 版開始，使用 Microsoft Intune 的混合式行動裝置管理現在支援 Android for Work 裝置註冊和管理。 受管理的 Android for Work 裝置指引：

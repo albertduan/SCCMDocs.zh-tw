@@ -14,11 +14,11 @@ caps.latest.revision: "36"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 10ddbcc19da8c5fc6451f62500f17790a0349389
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 5302b5712e33c753d0193a32498bc02a2241428c
+ms.sourcegitcommit: 474e6ddbaaeac4ba17d8172321e08deeb0140d0a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="install-in-console-updates-for-system-center-configuration-manager"></a>安裝適用於 System Center Configuration Manager 的主控台內更新
 
@@ -106,8 +106,8 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 -   先決條件檢查會在您選擇安裝更新時再次自動執行。  
 
-> [!NOTE]
-> 當您啟動先決條件檢查並檢視狀態時，**安裝**階段看似作用中，但實際上並未安裝更新。 畫面會列出安裝階段，因為某些工作 (例如擷取執行檢查所需的二進位檔) 也是安裝階段的一部分。  
+> [!NOTE]   
+> 當您啟動先決條件檢查並檢視狀態時，**安裝**階段看似作用中，但實際上並未安裝更新。 為執行先決條件檢查，更新程序會從內容庫擷取套件，並將它放到複寫用快取資料夾，以便在其中評估目前的先決條件檢查。  當您安裝更新時，會執行這個相同程序。 基於此原因，安裝會顯示為「進行中」。 只有 [擷取更新套件] 步驟會顯示在安裝類別中。  
 
 稍後在安裝更新時，您可以設定更新以忽略先決條件檢查警告。  
 
@@ -117,11 +117,11 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 
 2.  以滑鼠右鍵按一下您想要執行必要條件檢查的更新套件。  
 
-3.  選擇 [執行先決條件檢查]。  
+3.  選擇 **[執行必要條件檢查]**。  
 
-     當您執行先決條件檢查時，更新的內容會複寫到子站台。  您可以檢視站台伺服器上的 distmgr.log，確認該內容複寫成功。  
+     當您執行必要條件檢查時，更新的內容會複寫到子站台。  您可以檢視站台伺服器上的 distmgr.log，確認該內容複寫成功。  
 
-4.  若要檢視檢查的結果，可在 Configuration Manager 主控台中，移至 [監視] > [更新與服務狀態]，然後尋找先決條件狀態。 您也可以檢視站台伺服器上的 ConfigMgrPrereq.log，來取得更多詳細資料。  
+4.  若要檢視檢查的結果，可在 Configuration Manager 主控台中，移至 [監視] > [更新與服務狀態]，然後尋找必要條件狀態。 您也可以檢視站台伺服器上的 ConfigMgrPrereq.log，來取得更多詳細資料。  
 
 
 

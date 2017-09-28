@@ -2,7 +2,7 @@
 title: "Windows Hello 企業版設定 | Microsoft Docs"
 description: "了解如何整合 Windows Hello 企業版與 System Center Configuration Manager。"
 ms.custom: na
-ms.date: 08/10/2017
+ms.date: 09/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "17"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 1985428df0f82ef2e0a92fdec86189d5ffa03aee
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 43586e55f2c0c5cf117b94c61250f26ba4233f53
+ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="windows-hello-for-business-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager 的 Windows Hello 企業版設定
 
@@ -65,8 +65,11 @@ Windows Hello 企業版可讓您藉由 **使用者手勢** 登入，而不使用
 |||||
 |-|-|-|-|
 |Windows 用戶端版本|Configuration Manager 1602 或 1606|Configuration Manager 1610|Configuration Manager 1702 或更新版本|
-|Windows 10 年度更新版|不需要 Hotfix<br><br>不需要權限<br><br>不需要更新 Windows 結構描述|不需要 Hotfix<br><br>不需要權限<br><br>不需要更新 Windows 結構描述|不需要任何動作|
-|Windows 10 Creators Update 或更新版本|不支援|安裝[此 Hotfix](https://support.microsoft.com/help/4010155/update-rollup-for-system-center-configuration-manager-current-branch-v)<br><br>設定權限<br><br>套用 Windows Server 2016 結構描述道 Active Directory|設定權限<br><br>套用 Windows Server 2016 結構描述道 Active Directory|
+|Windows 10 年度更新版|不需要 Hotfix<br><br>不需要權限<br><br>不需要更新 Windows 結構描述|不需要 Hotfix (請參閱＜警告＞)<br><br>不需要權限<br><br>不需要更新 Windows 結構描述|設定權限<br><br>套用 Windows Server 2016 結構描述道 Active Directory|
+|Windows 10 Creators Update 或更新版本|不支援|安裝[此 Hotfix](https://support.microsoft.com/help/4010155/update-rollup-for-system-center-configuration-manager-current-branch-v)<br><br>設定權限<br><br>套用 Windows Server 2016 結構描述道 Active Directory|設定權限<br><br>套用 Windows Server 2016 結構描述到 Active Directory|
+
+> [!WARNING]
+> 雖然 Configuration Manager 1610 與 Windows 10 年度更新版不需要該 [Hotfix](https://support.microsoft.com/help/4010155/update-rollup-for-system-center-configuration-manager-current-branch-v)，系統可能會安裝它。  若該 Hotfix 已安裝，您必須設定權限並套用 Windows Server 2016 結構描述到 Active Directory。
 
 ## <a name="to-configure-permissions"></a>設定權限
 

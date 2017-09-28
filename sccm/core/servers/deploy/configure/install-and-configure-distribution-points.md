@@ -2,7 +2,7 @@
 title: "管理發佈點 | Microsoft Docs"
 description: "裝載您使用發佈點部署至裝置與使用者的內容 (檔案和軟體)。 以下是安裝和設定它們的方法。"
 ms.custom: na
-ms.date: 2/14/2017
+ms.date: 09/18/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,16 +14,16 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 4c94e4de5bbfe621492e8682c9424a48eb38196d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 0213b48c24461cbab5a9acab720064e0e26fa568
+ms.sourcegitcommit: 474e6ddbaaeac4ba17d8172321e08deeb0140d0a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/19/2017
 ---
 # <a name="install-and-configure-distribution-points-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 安裝及設定發佈點
 
 *適用對象：System Center Configuration Manager (最新分支)*
- 
+
 您可安裝 System Center Configuration Manager 發佈點，來裝載部署至裝置與使用者的內容 (檔案和軟體)。 您也可以建立發佈點群組，以簡化發佈點的管理方式與將內容發佈至發佈點的方式。  
 
  當您使用安裝精靈來安裝新的發佈點，或透過編輯發佈點內容來管理現有的發佈點內容時，可以進行大部分的發佈點設定。 有一些設定唯有當您在安裝或編輯時才能使用，無法同時適用於這兩種情況：  
@@ -45,7 +45,8 @@ ms.lasthandoff: 08/07/2017
     -   **替傳輸到發佈點的資料設定排程**  
 
 ##  <a name="bkmk_install"></a> 安裝發佈點  
- 您必須將網站伺服器指定為發佈點，才能讓用戶端電腦使用內容。 您可以將發佈點網站角色新增至新的網站系統伺服器，或將網站角色新增至現有的網站系統伺服器。  
+您必須將網站伺服器指定為發佈點，才能讓用戶端電腦使用內容。 您也必須先將發佈點指派給至少一個[界限群組](/sccm/core/servers/deploy/configure/boundary-groups#distribution-points)，內部部署用戶端電腦才能使用該發佈點作為內容來源位置。 您可以將發佈點網站角色新增至新的網站系統伺服器，或將網站角色新增至現有的網站系統伺服器。
+
 
  當您安裝新的發佈點時，可以使用安裝精靈，逐步引導您完成可用的設定。 開始之前，請考量下列事項：  
 
@@ -339,7 +340,7 @@ ms.lasthandoff: 08/07/2017
 >  雖然您是使用電腦的本機時間來指定內容驗證排程，但 Configuration Manager 主控台會使用 UTC 來顯示排程。  
 
 ### <a name="boundary-group"></a>界限群組  
-管理擁有此指派之發佈點的界限群組。 您可以將界限群組關聯到發佈點。 部署內容期間，用戶端必須存在於與發佈點關聯的界限群組之中，才能將界限群組當成內容的來源位置使用。
+管理擁有此指派之發佈點的界限群組。 規劃將發佈點部署到至少一個界限群組。 部署內容期間，用戶端必須存在於與發佈點關聯的界限群組之中，才能使用該界限群組作為內容的來源位置。
 
 此外：
 

@@ -2,7 +2,7 @@
 title: "支援的 SQL Server 版本 | Microsoft Docs"
 description: "取得裝載 System Center Configuration Manager 站台資料庫的 SQL Server 版本和設定需求。"
 ms.custom: na
-ms.date: 05/10/2017
+ms.date: 09/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "21"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: b35e45b9514297e2f9ce405a3244462ed735f39f
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 0e6613873c09b5e5df4f25ce0dbc16c289ccbd41
+ms.sourcegitcommit: b13fa2885acaa21f16c48df789f1edacb5a4f7cc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/21/2017
 ---
 # <a name="supported-sql-server-versions-for-system-center-configuration-manager"></a>System Center Configuration Manager 的 SQL Server 版本支援
 
@@ -212,7 +212,7 @@ ms.lasthandoff: 08/07/2017
  **SQL Server 服務：**  
  您可以將 SQL Server 服務設為執行時使用：  
 
--   **網域本機使用者**帳戶：  
+-   *低權限網域使用者*帳戶：  
 
     -   這是最佳做法，可能需要您手動註冊該帳戶的服務主體名稱 (SPN)。  
 

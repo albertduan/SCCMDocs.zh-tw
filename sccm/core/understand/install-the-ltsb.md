@@ -14,11 +14,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 82ec84923cc60e7a91d4afa4e9f59564fd416055
-ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
+ms.openlocfilehash: 06565bc52e2c409b905bbc448262cf9da25eabb0
+ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="install-and-upgrade-with-the-version-1606-baseline-media-for-system-center-configuration-manager"></a>使用 1606 版基準媒體為 System Center Configuration Manager 進行安裝或升級
 
@@ -126,7 +126,7 @@ ms.lasthandoff: 09/08/2017
 ### <a name="in-place-upgrade-paths-for-the-1606-baseline-media"></a>1606 基準媒體的就地升級路徑
 您可以使用 1606 基準媒體，將下列版本升級至 System Center Configuration Manager 的授權版本：
 - System Center 2012 R2 Configuration Manager (含 Service Pack 1)
-- System Center 2012 R2 Configuration Manager (不含 Service Pack)
+- 未安裝 Service Pack 的 System Center 2012 R2 Configuration Manager (這要求您必須使用 2016 年 12 月 15 日所發行適用於 1606 版的基礎媒體)。
 - System Center 2012 Configuration Manager (含 Service Pack 2)
 - System Center 2012 Configuration Manager (含 Service Pack 1)
 

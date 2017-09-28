@@ -150,7 +150,7 @@ Configuration Manager 會將資料庫複寫所複寫的資料分類為**全域�
 只要複寫連結具備啟用分散式檢視的資料類型，子主要站台就不會將資料複寫至管理中心網站。 一旦您關閉某個資料類型的分散式檢視，子主要站台就會恢復將資料複寫至管理中心網站，作為一般資料複寫的一部分。 不過，包含此資料的複寫群組必須在主要站台與管理中心網站間重新初始化，才能於管理中心網站上看到此資料。 同樣地，在您解除安裝已開啟分散式檢視的主要站台之後，管理中心網站必須先完成其資料的重新初始化，您才能存取在管理中心網站上啟用分散式檢視的資料。  
 
 > [!IMPORTANT]  
-> 在站台階層的任何複寫連結上使用分散式檢視時，您必須先關閉所有複寫連結的分散式檢視，再解除安裝任何主要站台。 如需詳細資訊，請參閱 [Uninstall a primary site that is configured with distributed views](../../../core/servers/deploy/install/uninstall-sites-and-hierarchies.md#BKMK_UninstallPrimaryDistViews)。  
+> 在站台階層的任何複寫連結上使用分散式檢視時，您必須先關閉所有複寫連結的分散式檢視，再解除安裝任何主要站台。 如需詳細資訊，請參閱 [解除安裝以分散式檢視設定的主要站台](../../../core/servers/deploy/install/uninstall-sites-and-hierarchies.md#BKMK_UninstallPrimaryDistViews)。  
 
 #### <a name="prerequisites-and-limitations-for-distributed-views"></a>分散式檢視的先決條件和限制  
 

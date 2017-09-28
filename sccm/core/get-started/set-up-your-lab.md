@@ -2,7 +2,7 @@
 title: "設定 System Center Configuration Manager 實驗室 | Microsoft Docs"
 description: "設定實驗室，以使用模擬實際活動來評估 Configuration Manager。"
 ms.custom: na
-ms.date: 10/06/2016
+ms.date: 09/21/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -15,11 +15,11 @@ caps.handback.revision: "0"
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 11f5d0c3c61d675a8182e985f82e6af363b34592
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: a8bacdbde00973cfd45963b355c8f810ab06a83d
+ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/22/2017
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>設定 System Center Configuration Manager 實驗室
 
@@ -52,7 +52,7 @@ ms.lasthandoff: 08/07/2017
 
     -   不會限制 SQL Server 的**系統可定址記憶體**。  
 
-    -   設定 **SQL Server 服務帳戶**，使用**網域本機使用者**帳戶執行。  
+    -   設定 **SQL Server 服務帳戶**，以使用低權限網域使用者帳戶執行。  
 
     -   您必須安裝 **SQL Server Reporting Services**。  
 
@@ -80,7 +80,7 @@ ms.lasthandoff: 08/07/2017
 
 安裝所有這些元件之後，還必須採取其他步驟，才能設定 Configuration Manager 的 Windows 環境：  
 
-###  <a name="BKMK_LabADPrep"></a> 準備實驗室的 Active Directory 內容  
+##  <a name="BKMK_LabADPrep"></a> 準備實驗室的 Active Directory 內容  
  在本實驗室中，您將建立安全性群組，然後在其中加入網域使用者。  
 
 -   安全性群組： **Evaluation**  
@@ -95,12 +95,12 @@ ms.lasthandoff: 08/07/2017
 
 下列程序列出讓 Configuration Manager 用戶端查詢 Active Directory 網域服務以找到站台資源所需的後續步驟。  
 
-###  <a name="BKMK_CreateSysMgmtLab"></a> 建立系統管理容器  
+##  <a name="BKMK_CreateSysMgmtLab"></a> 建立系統管理容器  
  Configuration Manager 不會在擴充架構時，自動在 Active Directory 網域服務中建立必要系統管理容器。 因此，您將為實驗室建立這個項目。 這個步驟將要求您 [安裝 ADSI 編輯](https://technet.microsoft.com/en-us/library/cc773354\(WS.10\).aspx#BKMK_InstallingADSIEdit)。  
 
  請確定您以具有 Active Directory 網域服務之 [系統]  容器 [建立所有子物件]  權限的帳戶登入。  
 
-##### <a name="to-create-the-system-management-container"></a>建立系統管理容器：  
+#### <a name="to-create-the-system-management-container"></a>建立系統管理容器：  
 
 1.  執行 [ADSI 編輯] ，並連線至網站伺服器所在的網域。  
 
@@ -112,13 +112,13 @@ ms.lasthandoff: 08/07/2017
 
 5.  按一下 [完成]  完成程序。  
 
-###  <a name="BKMK_SetSecPermLab"></a> 設定系統管理容器的安全性權限  
+##  <a name="BKMK_SetSecPermLab"></a> 設定系統管理容器的安全性權限  
  請將站台資訊發佈到容器所需的權限授與站台伺服器的電腦帳戶。 您也將針對這個工作使用 ADSI 編輯。  
 
 > [!IMPORTANT]  
 >  確認您已連線到站台伺服器的網域，再開始進行下列程序。  
 
-##### <a name="to-set-security-permissions-for-the-system-management-container"></a>設定系統管理容器的安全性權限：  
+#### <a name="to-set-security-permissions-for-the-system-management-container"></a>設定系統管理容器的安全性權限：  
 
 1.  在主控台窗格中，展開**站台伺服器的網域**，並展開 [&lt;DC=伺服器辨別名稱\>]，然後展開 [CN=System]。 以滑鼠右鍵按一下 [CN=System Management] ，然後按一下 [內容] 。  
 
@@ -132,13 +132,13 @@ ms.lasthandoff: 08/07/2017
 
      如需此程序的其他資訊，請檢閱[擴充 System Center Configuration Manager 的 Active Directory 架構](../../core/plan-design/network/extend-the-active-directory-schema.md)。  
 
-###  <a name="BKMK_ExtADSchLab"></a> 使用 extadsch.exe 延伸 Active Directory 架構  
+##  <a name="BKMK_ExtADSchLab"></a> 使用 extadsch.exe 延伸 Active Directory 架構  
  您將擴充這個實驗室的 Active Directory 架構，這可讓您以最少的管理成本來使用所有的 Configuration Manager 特性和功能。 延伸 Active Directory 架構是對每個樹系都只能執行一次的整個樹系組態。 永久延伸架構會修改基底 Active Directory 組態中的這組類別和屬性。 這項動作無法復原。 擴充架構可讓 Configuration Manager 存取元件，以允許它在實驗室環境內最有效地運作。  
 
 > [!IMPORTANT]  
 >  確定您是使用具有 Schema Admins  安全性群組成員身分的帳戶登入架構主機網域控制站。 嘗試使用替代認證將會失敗。  
 
-##### <a name="to-extend-the-active-directory-schema-using-extadschexe"></a>使用 extadsch.exe 延伸 Active Directory 架構：  
+#### <a name="to-extend-the-active-directory-schema-using-extadschexe"></a>使用 extadsch.exe 延伸 Active Directory 架構：  
 
 1.  建立架構主機網域控制站系統狀態的備份。 如需備份主機網域控制站的詳細資訊，請檢閱 [Windows Server 備份](https://technet.microsoft.com/en-us/library/cc770757.aspx)。  
 
@@ -150,7 +150,7 @@ ms.lasthandoff: 08/07/2017
 
      如需此程序的其他資訊，請檢閱[擴充 System Center Configuration Manager 的 Active Directory 架構](../../core/plan-design/network/extend-the-active-directory-schema.md)。  
 
-###  <a name="BKMK_OtherTasksLab"></a> 其他必要工作  
+##  <a name="BKMK_OtherTasksLab"></a> 其他必要工作  
  您也需要先完成下列工作，再進行安裝。  
 
  **建立資料夾來儲存所有下載**  
@@ -161,9 +161,9 @@ ms.lasthandoff: 08/07/2017
 
  您將需要安裝兩個 .NET Frameworks：依序安裝 .NET 3.5.1 和 .NET 4.5.2+。 您也將需要啟動 Windows Communication Foundation (WCF)。 WCF 設計成提供分散式運算、廣泛互通性以及服務導向之直接支援的可管理方式，並透過服務導向的程式設計模型來簡化已連線應用程式的開發。 如需深入了解 WCF，請檢閱 [何謂 Windows Communication Foundation？](https://technet.microsoft.com/en-us/subscriptions/ms731082\(v=vs.90\).aspx) 。  
 
-##### <a name="to-install-net-and-activate-windows-communication-foundation"></a>安裝 .NET 並啟動 Windows Communication Foundation：  
+#### <a name="to-install-net-and-activate-windows-communication-foundation"></a>安裝 .NET 並啟動 Windows Communication Foundation：  
 
-1.  開啟 **Server Manager**，然後瀏覽至 [管理] 。 按一下 [新增角色及功能]  開啟 [新增角色及功能精靈]  **Wizard.**。  
+1.  開啟 **Server Manager**，然後瀏覽至 [管理] 。 按一下 [新增角色及功能]  開啟 [新增角色及功能精靈] ** Wizard.**。  
 
 2.  檢閱 [開始之前]  面板中所提供的資訊，然後按一下 [下一步] 。  
 
@@ -221,7 +221,7 @@ Internet Information Services (IIS) 是彈性可擴充的網頁伺服器，可�
 
 [遠端差異壓縮 (RDC)](https://technet.microsoft.com/en-us/library/cc754372.aspx) 是一組 API，應用程式可用來判斷是否已對一組檔案進行任何變更。 RDC 可讓應用程式僅複寫檔案的變更部分，進而保持最小網路流量。  
 
-##### <a name="to-enable-bits-iis-and-rdc-site-server-roles"></a>啟用 BITS、IIS 和 RDC 站台伺服器角色：  
+#### <a name="to-enable-bits-iis-and-rdc-site-server-roles"></a>啟用 BITS、IIS 和 RDC 站台伺服器角色：  
 
 1.  在站台伺服器上，開啟 **Server Manager**。 瀏覽至 [管理] 。 按一下 [新增角色及功能]  開啟 [新增角色及功能精靈] 。  
 
@@ -319,21 +319,21 @@ Internet Information Services (IIS) 是彈性可擴充的網頁伺服器，可�
 
 6.  新增下列 [功能]  ，方法是從清單中選取它們：  
 
-    -   -   **背景智慧型傳送服務 (BITS)**  
+    -   **背景智慧型傳送服務 (BITS)**  
 
-            -   **IIS 伺服器擴充功能**  
+          -   **IIS 伺服器擴充功能**  
 
-        -   **遠端伺服器管理工具**  
+    -   **遠端伺服器管理工具**  
 
-            -   **功能管理工具**  
+          -   **功能管理工具**  
 
-                -   **BITS 伺服器擴充功能工具**  
+          -   **BITS 伺服器擴充功能工具**  
 
 7.  按一下 [安裝]  ，並在 [伺服器管理員]  的 [通知] 窗格中確認正確地完成安裝。  
 
 根據預設，IIS 會封鎖 HTTP 或 HTTPS 通訊存取數種類型的副檔名和位置。 若要讓這些檔案發佈至用戶端系統，您需要在發佈點上設定 IIS 的要求篩選。 如需詳細資訊，請檢閱[用於發佈點的 IIS 要求篩選](../../core/plan-design/network/prepare-windows-servers.md#BKMK_IISFiltering)。  
 
-##### <a name="to-configure-iis-filtering-on-distribution-points"></a>在發佈點上設定 IIS 篩選：  
+#### <a name="to-configure-iis-filtering-on-distribution-points"></a>在發佈點上設定 IIS 篩選：  
 
 1.  開啟 **IIS Manager** ，然後在資訊看板中選取您的伺服器名稱。 這樣會將您帶到 [首頁]  畫面。  
 
@@ -343,13 +343,13 @@ Internet Information Services (IIS) 是彈性可擴充的網頁伺服器，可�
 
 4.  將 **.msi** 輸入對話方塊中，然後按一下 [確定] 。  
 
-###  <a name="BKMK_InstallCMLab"></a> 安裝 Configuration Manager  
+##  <a name="BKMK_InstallCMLab"></a> 安裝 Configuration Manager  
 您將建立[判斷何時使用主要站台](../../core/plan-design/hierarchy/design-a-hierarchy-of-sites.md#BKMK_ChoosePriimary)來直接管理用戶端。 這將讓您的實驗室環境支援潛在裝置之[站台系統縮放](/sccm/core/plan-design/configs/size-and-scale-numbers)的管理。  
 在這個過程中，您也會安裝 Configuration Manager 主控台，以用來管理您之後的評估裝置。  
 
 開始安裝之前，請在使用 Windows Server 2012 的伺服器上啟動[先決條件檢查程式](/sccm/core/servers/deploy/install/prerequisite-checker)，確認已正確地啟用所有設定。  
 
-##### <a name="to-download-and-install-configuration-manager"></a>下載和安裝 Configuration Manager：  
+#### <a name="to-download-and-install-configuration-manager"></a>下載和安裝 Configuration Manager：  
 
 1.  瀏覽至 [System Center 評估版](https://www.microsoft.com/evalcenter/evaluate-system-center-2012-configuration-manager-and-endpoint-protection)頁面來下載 System Center Configuration Manager 的最新評估版。  
 
@@ -369,10 +369,10 @@ Internet Information Services (IIS) 是彈性可擴充的網頁伺服器，可�
     |步驟 15： **用戶端通訊設定**|確認未選取 [所有站台系統角色僅能接受用戶端傳來的 HTTPS 通訊]  。|  
     |步驟 16： **站台系統角色**|輸入 FQDN，並確認仍選取 [所有站台系統角色僅能接受用戶端傳來的 HTTPS 通訊]  。|  
 
-###  <a name="BKMK_EnablePubLab"></a> 啟用 Configuration Manager 站台的發行  
+##  <a name="BKMK_EnablePubLab"></a> 啟用 Configuration Manager 站台的發行  
 每個 Configuration Manager 站台都會將其專屬的站台特定資訊發行至 Active Directory 架構中網域分割內的系統管理容器。 必須開啟 Active Directory 與 Configuration Manager 間通訊的雙向通道，才能處理這個流量。 您也會額外啟用樹系探索，以判斷 Active Directory 及網路基礎結構的某些元件。  
 
-##### <a name="to-configure-active-directory-forests-for-publishing"></a>若要設定 Active Directory 樹系進行發佈：  
+#### <a name="to-configure-active-directory-forests-for-publishing"></a>若要設定 Active Directory 樹系進行發佈：  
 
 1.  在 Configuration Manager 主控台的左下角，按一下 [系統管理]。  
 
@@ -388,7 +388,7 @@ Internet Information Services (IIS) 是彈性可擴充的網頁伺服器，可�
 
 7.  在 [系統管理]  工作區中，展開 [階層設定] ，然後按一下 [Active Directory 樹系] 。  
 
-##### <a name="to-enable-a-configuration-manager-site-to-publish-site-information-to-your-active-directory-forest"></a>讓 Configuration Manager 站台將站台資訊發行至 Active Directory 樹系：  
+#### <a name="to-enable-a-configuration-manager-site-to-publish-site-information-to-your-active-directory-forest"></a>讓 Configuration Manager 站台將站台資訊發行至 Active Directory 樹系：  
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理] 。  
 

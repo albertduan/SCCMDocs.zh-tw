@@ -14,11 +14,11 @@ caps.latest.revision: "40"
 author: Mtillman
 ms.author: mtillman
 manager: angrobe
-ms.openlocfilehash: c93ba688ba33c309e4d12e924061718e5a33759e
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: 2ef4964a74e000feac029b158f6fe0c52e3de370
+ms.sourcegitcommit: 51654bf8b5615eb99084d0a20d18ca3fccfa83a1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 09/20/2017
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
 
@@ -30,15 +30,36 @@ ms.lasthandoff: 09/13/2017
 
  本文的各節會列出 3 個不同類別下的混合式功能。 使用下列指導方針來判斷每個類別中的功能與不同 Configuration Manager 版本的相容性︰  
 
-|功能類別|描述|
+|功能類別|說明|
 |-|-|
 |**Microsoft Intune 的新功能** | 一般而言，此類別下列出的所有功能，應該適用於所有 Configuration Manager 版本。 這其中包含了 System Center 2012 R2 Configuration Manager 版本，因為這些功能只需要 Intune 服務，不需要 Configuration Manager 中的其他功能。|
 |**Configuration Manager Technical Preview 的新功能**| 此類別下列出的所有功能只能搭配指定的 Technical Preview 版本使用。 若要試用這些功能，您必須安裝功能描述中指定的 Technical Preview 版本。 如需詳細資訊，請參閱 [Technical Preview for System Center Configuration Manager](../../core/get-started/technical-preview.md) 。|
 |**Configuration Manager (最新分支) 的新功能**| 此類別下列出的所有功能只能搭配指定的 Configuration Manager 版本 (最新分支) 使用，例如 1511 版或 1602 版。 如果您的混合式部署使用舊版的 Configuration Manager，即必須升級到功能描述中指定的 Configuration Manager 版本 (最新分支)。 如需詳細資訊，請參閱[升級至 System Center Configuration Manager](../../core/servers/deploy/install/upgrade-to-configuration-manager.md)。|
 
+## <a name="september-2017"></a>2017 年 9 月
+
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能     
+
+- **適用於 Android Oreo 版公司入口網站應用程式上每個終端使用者的其他推播通知** <!--1475932-->    
+    終端使用者將會看到其他通知，這些通知會指出 Android Oreo 版公司入口網站應用程式正在執行背景工作，例如從 Intune 服務擷取原則。 這樣可讓終端使用者清楚了解公司入口網站在其裝置上執行的系統管理工作。 這是適用於 Android Oreo 版公司入口網站應用程式之整體[公司入口網站 UI 最佳化](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)的一部分。 
+
+- **通知終端使用者哪些 iOS 裝置資訊會被看到** <!--739894-->    
+    我們已將 [擁有權類型] 加入到 iOS 版公司入口網站應用程式的 [裝置詳細資料] 畫面。 這樣可讓使用者直接從此頁面從 Intune 終端使用者文件尋找有關隱私權的詳細資訊。他們也可以在 [關於] 畫面上找到此資訊。 
+
+- **Android 版公司入口網站應用程式中更容易了解的措辭** <!---1396349-->       
+    Android 版公司入口網站應用程式的註冊程序已經使用新的文字來簡化，讓使用者可更輕鬆地進行註冊。 如果您有自訂註冊文件，建議您予以更新，以反映新的畫面。 您可以在我們的 [Intune 終端使用者應用程式 UI 更新](https://docs.microsoft.com/intune/whats-new-app-ui#week-of-september-11-2017)頁面找到範例影像。
+
+- **Windows 10 公司入口網站應用程式已加入到 Windows 資訊保護允許原則** <!-- 677129 -->    
+    Windows 10 公司入口網站應用程式已更新，現在支援 Windows 資訊保護 (WIP)。 此應用程式可以加入到 WIP 允許原則。 有了此變更，您再也不需要將應用程式加入到[豁免] 清單。 
+
+- **已針對 iOS 8.0 加入終止支援通知**    
+    已針對 iOS 8.0 終止支援加入通知。 如需詳細資料，請參閱[通知](#notices)。
+
 ## <a name="august-2017"></a>2017 年 8 月
 
-### <a name="new-signed-in-experience-for-android-company-portal-users-and-app-protection-policy-users----621669---"></a>Android 公司入口網站使用者和應用程式保護原則使用者的新登入體驗<!-- 621669 -->
+### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能     
+
+- **Android 公司入口網站使用者和應用程式保護原則使用者的新登入體驗** <!-- 621669 -->    
 使用者現在可以使用 Android 公司入口網站應用程式來瀏覽應用程式、管理裝置及檢視 IT 連絡人資訊，而無需註冊其 Android 裝置。 此外，如果使用者已使用受 Intune 應用程式防護原則保護的應用程式，並啟動 Android 公司入口網站，使用者不會再收到註冊裝置的提示。
 
 
@@ -311,6 +332,10 @@ Configuration Manager (最新分支) 1702 版也包含下列額外的混合式�
 
 
 ## <a name="notices"></a>通知
+
+### <a name="end-of-support-for-ios-80"></a>針對 iOS 8.0 終止支援 
+<!---1164477--->
+受管理的應用程式與 iOS 版公司入口網站應用程式需要 iOS 9.0 與更新版本才能存取公司資源。 未在九月之前更新的裝置將再也無法存取公司入口網站或那些應用程式。 
 
 ### <a name="platform-support-reminder-windows-phone-81-mainstream-support-ended-july-11-2017"></a>平台支援提醒：Windows Phone 8.1 的主要支援已於 2017 年 7 月 11 日結束
 <!-- 1327781 -->
