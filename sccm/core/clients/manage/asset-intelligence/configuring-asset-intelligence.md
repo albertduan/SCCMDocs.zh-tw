@@ -140,7 +140,7 @@ Asset Intelligence 同步處理點站台系統角色可用來將 Configuration M
 
 2.  在 [首頁] 索引標籤的 [Asset Intelligence] 群組中，選擇 [匯入軟體授權]。   
 
-4.  在 [匯入]  頁面上，指定要匯入 Microsoft 大量授權 (MVLS) 檔案 (.xml 或 .csv) 或一般授權聲明檔案 (.csv)。 如需建立一般授權聲明檔案的詳細資訊，請參閱本主題稍後的 [Create a general license statement information file for import](#BKMK_CreateGeneralLicenseStatement) 。  
+4.  在 [匯入]  頁面上，指定要匯入 Microsoft 大量授權 (MVLS) 檔案 (.xml 或 .csv) 或一般授權聲明檔案 (.csv)。 如需建立一般授權聲明檔案的詳細資訊，請參閱本主題稍後的 [建立要匯入的一般授權聲明資訊檔案](#BKMK_CreateGeneralLicenseStatement) 。  
 
     > [!WARNING]  
     >  若要下載 .csv 格式的 MVLS 檔案，以匯入 Asset Intelligence 類別目錄，請參閱 [Microsoft 大量授權服務中心](http://go.microsoft.com/fwlink/p/?LinkId=226547)。 若要存取這項資訊，您必須在該網站上註冊帳戶。 如需如何取得 .xml 格式之 MVLS 檔案的相關資訊，請連絡您的 Microsoft 客戶代表。  
@@ -152,7 +152,7 @@ Asset Intelligence 同步處理點站台系統角色可用來將 Configuration M
 
 6. 完成精靈。  
 
-###  <a name="BKMK_CreateGeneralLicenseStatement"></a> Create a general license statement information file for import  
+###  <a name="BKMK_CreateGeneralLicenseStatement"></a> 建立要匯入的一般授權聲明資訊檔案  
  您也可以手動建立以逗號分隔之檔案格式 (.csv) 的授權匯入檔案，將一般授權聲明匯入 Asset Intelligence 類別目錄中。  
 
 > [!NOTE]  
