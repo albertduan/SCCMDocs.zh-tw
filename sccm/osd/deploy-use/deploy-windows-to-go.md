@@ -82,7 +82,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
+2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立工作順序媒體]  以啟動 [建立工作順序媒體精靈]。  
 
@@ -222,7 +222,7 @@ ms.lasthandoff: 08/07/2017
     > [!NOTE]  
     >  站台伺服器的電腦帳戶，必須擁有來源資料夾的 **讀取** 存取權限。  
 
-2.  將您在 [Create prestaged media](#BKMK_CreatePrestagedMedia) 一節中建立的預先設置的媒體檔案，複製到套件來源資料夾。  
+2.  將您在 [建立預先設置的媒體](#BKMK_CreatePrestagedMedia) 一節中建立的預先設置的媒體檔案，複製到套件來源資料夾。  
 
 3.  將 Windows To Go Creator 工具 (WTGCreator.exe) 複製到套件來源資料夾。 建立者工具可於下列位置的任何主要站台伺服器取得：<*ConfigMgrInstallationFolder*>\OSD\Tools\WTG\Creator。  
 
@@ -230,7 +230,7 @@ ms.lasthandoff: 08/07/2017
 
 5.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-6.  在 [軟體程式庫]  工作區中，展開 [應用程式管理] ，然後按一下 [套件] 。  
+6.  在 軟體程式庫  工作區中，展開 應用程式管理 ，然後按一下套件 。  
 
 7.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立套件] 。  
 
@@ -281,7 +281,7 @@ ms.lasthandoff: 08/07/2017
  Windows To Go 可在未使用 TPM 的外部可開機磁碟機上，啟用 BitLocker。 因此，您必須使用不同的工具來設定 Windows To Go 磁碟機上的 BitLocker。 若要啟用 BitLocker，您必須在執行 **設定 Windows 和 ConfigMgr** 步驟後，新增動作至工作順序。  
 
 > [!NOTE]  
->  Windows To Go 的 BitLocker 需要使用複雜密碼。 在 [Create prestaged media](#BKMK_CreatePrestagedMedia) 步驟中，您可使用 OSDBitLockerPIN 變數在啟動前置命令中設定複雜密碼。  
+>  Windows To Go 的 BitLocker 需要使用複雜密碼。 在 [建立預先設置的媒體](#BKMK_CreatePrestagedMedia) 步驟中，您可使用 OSDBitLockerPIN 變數在啟動前置命令中設定複雜密碼。  
 
  利用下列程序更新 Windows 8 工作順序，以啟用 Windows To Go 的 BitLocker。  
 
@@ -289,7 +289,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 [軟體程式庫]  工作區中，展開 [應用程式管理] ，然後按一下 [套件] 。  
+2.  在 軟體程式庫  工作區中，展開 應用程式管理 ，然後按一下套件 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立套件] 。  
 
@@ -303,13 +303,13 @@ ms.lasthandoff: 08/07/2017
 
 8.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-9. 在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
+9. 在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
 
 10. 選取您在預先設置媒體中參照的 Windows 8 工作順序。  
 
 11. 在 [首頁]  索引標籤的 [工作順序]  群組中，按一下 [編輯] 。  
 
-12. 按一下 [設定 Windows 和 ConfigMgr]  步驟，按一下 [新增] 和 [一般] ，然後按一下 [執行命令列] 。 [執行命令列] 步驟會加在 [設定 Windows 和 ConfigMgr] 步驟之後。  
+12. 按一下 設定 Windows 和 ConfigMgr  步驟，按一下 新增 和 一般 ，然後按一下執行命令列 。 [執行命令列] 步驟會加在 [設定 Windows 和 ConfigMgr] 步驟之後。  
 
 13. 在 [執行命令列]  步驟的 [內容]  索引標籤上，新增下列各項：  
 
@@ -347,7 +347,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 [軟體程式庫]  工作區中，展開 [應用程式管理] ，然後按一下 [套件] 。  
+2.  在 軟體程式庫  工作區中，展開 應用程式管理 ，然後按一下套件 。  
 
 3.  選取您在 [建立 Windows To Go Creator 套件](#BKMK_CreatePackage) 步驟建立的 Windows To Go 套件。  
 
@@ -397,7 +397,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
+2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
 
 3.  選取您在 [Prerequisites to provision Windows To Go](#BKMK_Prereqs) 步驟中所建立的 Windows 8 工作順序。  
 
@@ -410,7 +410,7 @@ ms.lasthandoff: 08/07/2017
     2.  **集合**：按一下 [瀏覽]  以選取包含使用者可能佈建 Windows To Go 之所有裝置的集合。  
 
         > [!IMPORTANT]  
-        >  如果您在 [Create prestaged media](#BKMK_CreatePrestagedMedia) 一節中所建立的預先設置媒體使用 SMSTSPreferredAdvertID 變數，您可以將工作順序佈建到 **所有系統** 集合並且指定 [內容]  頁面上的 [僅限 Windows PE (隱藏)]  設定。 由於工作順序已經隱藏，因此僅可供媒體使用。  
+        >  如果您在 [建立預先設置的媒體](#BKMK_CreatePrestagedMedia) 一節中所建立的預先設置媒體使用 SMSTSPreferredAdvertID 變數，您可以將工作順序佈建到 **所有系統** 集合並且指定 [內容]  頁面上的 [僅限 Windows PE (隱藏)]  設定。 由於工作順序已經隱藏，因此僅可供媒體使用。  
 
     3.  **使用與此集合相關聯的預設發佈點群組**：如果您想要將封裝內容儲存在集合預設發佈點群組中，請選取此選項。 如果您還沒有為所選的集合及發佈點群組建立關聯，將無法使用此選項。  
 
@@ -421,7 +421,7 @@ ms.lasthandoff: 08/07/2017
     -   **提供給下列項目使用**：指定工作順序是否可以使用 Configuration Manager 用戶端、媒體或 PXE。  
 
         > [!IMPORTANT]  
-        >  為自動工作順序部署使用 [僅媒體和 PXE (隱藏)]  設定。 選取 [允許自動部署作業系統]  並將 SMSTSPreferredAdvertID 變數設為預先設置媒體的一部分，以在偵測到 Windows To Go 磁碟時自動開機至 Windows To Go 部署而不需要使用者互動。 如需這些預先設置媒體設定的詳細資訊，請參閱 [Create prestaged media](#BKMK_CreatePrestagedMedia) 一節。  
+        >  為自動工作順序部署使用 [僅媒體和 PXE (隱藏)]  設定。 選取 [允許自動部署作業系統]  並將 SMSTSPreferredAdvertID 變數設為預先設置媒體的一部分，以在偵測到 Windows To Go 磁碟時自動開機至 Windows To Go 部署而不需要使用者互動。 如需這些預先設置媒體設定的詳細資訊，請參閱 [建立預先設置的媒體](#BKMK_CreatePrestagedMedia) 一節。  
 
 7.  在 [排程]  頁面上，設定下列設定，然後按 [下一步] 。  
 
@@ -459,7 +459,7 @@ ms.lasthandoff: 08/07/2017
  部署 Windows To Go 套件與 Windows 8 工作順序後，使用者就可使用 Windows To Go Creator。 如果 Windows To Go Creator 已部署到裝置，使用者可以前往軟體類別目錄或是「軟體中心」並執行 Windows To Go Creator。 下載建立程式套件後，工作列上會顯示閃爍的圖示。 使用者可按一下圖示並使用顯示的對話方塊來選取 Windows To Go 磁碟以進行佈建 (除非使用了磁碟命令列選項)。 如果磁碟不符合 Windows To Go 的需求或是如果磁碟沒有足夠的可用磁碟空間以安裝映像，建立程式就會顯示錯誤訊息。 使用者可以確認將從確認頁面套用的磁碟與映像。 建立程式設定並將內容預先設置到 Windows To Go 磁碟的同時，程式會顯示進度對話方塊。 預先設置作業完成後，建立程式會顯示提示以重新啟動電腦並開機至 Windows To Go 磁碟。  
 
 > [!NOTE]  
->  如果您並未在 [Create a Windows To Go Creator package](#BKMK_CreatePackage) 一節中啟用開機重新導向作為建立程式的一部分，系統可能會要求使用者在每次系統重新啟動時手動開機至 Windows To Go 磁碟。  
+>  如果您並未在 [建立 Windows To Go Creator 套件](#BKMK_CreatePackage) 一節中啟用開機重新導向作為建立程式的一部分，系統可能會要求使用者在每次系統重新啟動時手動開機至 Windows To Go 磁碟。  
 
 ###  <a name="BKMK_ConfigureStageDrive"></a> Configuration Manager 設定與設置 Windows To Go 磁碟機  
  電腦重新啟動至 Windows To Go 磁碟後，磁碟將開機至 Windows PE 並連線至管理點以取得原則來完成作業系統部署。 Configuration Manager 設定與設置磁碟機。 Configuration Manager 設置磁碟後，使用者可以重新啟動電腦以結束佈建程序 (例如加入網域或安裝應用程式)。 此程序對於任何預先設置媒體來說皆為相同。  
