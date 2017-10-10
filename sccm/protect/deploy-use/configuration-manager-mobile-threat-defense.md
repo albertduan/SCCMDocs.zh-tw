@@ -14,17 +14,17 @@ caps.latest.revision:
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 298d879638a2d20d421b19752cb5f20f6725df14
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 25d68e7b16afe8e24939897f01f173d3daa7fa09
+ms.sourcegitcommit: 621b9f8fedf7f1d53ea7abd804af4b63c85dbeb1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/02/2017
 ---
 # <a name="intune-mobile-threat-defense-connectors-in-configuration-manager"></a>Configuration Manager 中的 Intune Mobile Threat Defense 連接器
 
 *適用對象：System Center Configuration Manager (最新分支)*
 
-[混合式 MDM 部署 (搭配 Intune 的 SCCM)](https://docs.microsoft.com/en-us/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)，以及 Intune 與 Mobile Threat Defense 合作夥伴的整合，可讓您依據裝置風險評定，控制公司資源與資料的存取權。
+[混合式 MDM 部署 (搭配 Intune 的 SCCM)](https://docs.microsoft.com/sccm/mdm/understand/choose-between-standalone-intune-and-hybrid-mobile-device-management)，以及 Intune 與 Mobile Threat Defense 合作夥伴的整合，可讓您依據裝置風險評定，控制公司資源與資料的存取權。
 
 Intune Mobile Threat Defense 連接器可讓您運用所選的 Mobile Threat Defense 廠商，做為合規性政策和條件式存取規則的資訊來源。 這可讓 IT 系統管理員為 Exchange 和 Sharepoint 等公司資源添加額外一層的保護，特別是針對已受到危害的行動裝置。
 

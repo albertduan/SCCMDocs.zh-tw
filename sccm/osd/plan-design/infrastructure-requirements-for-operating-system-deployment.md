@@ -14,11 +14,11 @@ caps.latest.revision: "24"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 167e639cdb9995fd743787cc9fbf364ec70f6ed9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 523c7e7fd406274b0c0d88fcc4bd6b6247fa34e8
+ms.sourcegitcommit: c145e515843a0f37c2e5ca5dbd22072a219d06b4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="infrastructure-requirements-for-operating-system-deployment-in-system-center-configuration-manager"></a>System Center Configuration Manager 中作業系統部署的基礎結構需求
 
@@ -40,7 +40,7 @@ System Center 2012 Configuration Manager 中的作業系統部署具有外部相
 
 -   Windows 預先安裝環境 (Windows PE)
 
-如需可搭配不同 Configuration Manager 版本使用的 Windows 10 ADK 版本清單，請參閱[對 Windows 10 用戶端的支援](https://docs.microsoft.com/en-us/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)。
+如需可搭配不同 Configuration Manager 版本使用的 Windows 10 ADK 版本清單，請參閱[對 Windows 10 用戶端的支援](https://docs.microsoft.com/sccm/core/plan-design/configs/support-for-windows-10#windows-10-adk)。
 
  <sup>1</sup> USMT 在 SMS 提供者站台系統伺服器上並不需要。  
 

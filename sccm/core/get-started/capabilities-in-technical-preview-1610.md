@@ -14,11 +14,11 @@ caps.latest.revision: "2"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 59633ce68e2bb2d722900215751f345d6d098721
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b164b6a177b8b4d1eebd0bbd54e67e90376929be
+ms.sourcegitcommit: c145e515843a0f37c2e5ca5dbd22072a219d06b4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="capabilities-in-technical-preview-1610-for-system-center-configuration-manager"></a>System Center Configuration Manager Technical Preview 1610 中的功能
 
@@ -63,7 +63,7 @@ ms.lasthandoff: 08/07/2017
 #### <a name="try-it-out"></a>試試看
 若要拒絕應用程式核准要求：
 
-1.  在 Configuration Manager 主控台中，[建立和部署需要核准的應用程式](https://docs.microsoft.com/en-us/sccm/apps/deploy-use/create-applications)。
+1.  在 Configuration Manager 主控台中，[建立和部署需要核准的應用程式](https://docs.microsoft.com/sccm/apps/deploy-use/create-applications)。
 2.  在用戶端電腦上，開啟 [軟體中心] 並提交應用程式要求。
 3.  在 Configuration Manager 主控台中，核准應用程式要求。
 4.  拒絕核准的應用程式要求︰ 在 Configuration Manager 主控台中，巡覽 [軟體程式庫] > [概觀] > [應用程式管理] > [核准要求]，然後選取您要拒絕的應用程式要求。  在功能區中，按一下 [拒絕]。
