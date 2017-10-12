@@ -173,9 +173,9 @@ ms.lasthandoff: 08/07/2017
 
 1.  按一下通知區域中的圖示，或從 [開始]  功能表中啟動 Windows Defender 或 Endpoint Protection 用戶端，即可開啟 Windows Defender 或 Endpoint Protection 用戶端。  
 
-2.  按一下 [設定] ，然後按一下 [排定的掃描] 。  
+2.  按一下 設定 ，然後按一下排定的掃描 。  
 
-3.  請確定已選取 [在執行排定的掃描前，檢查最新的病毒及間諜軟體定義]  核取方塊，然後按一下 [儲存變更] 。 如果系統提示您輸入系統管理員密碼或確認資訊，請輸入密碼或確認動作。  
+3.  請確定已選取 在執行排定的掃描前，檢查最新的病毒及間諜軟體定義  核取方塊，然後按一下儲存變更 。 如果系統提示您輸入系統管理員密碼或確認資訊，請輸入密碼或確認動作。  
 
 ### <a name="to-check-for-new-definitions-manually"></a>手動檢查新的定義
 
@@ -183,7 +183,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  按一下通知區域中的圖示，或從 [開始]  功能表中啟動 Windows Defender 或 Endpoint Protection 用戶端，即可開啟 Windows Defender 或 Endpoint Protection 用戶端。  
 
-2.  若要手動檢查新的定義，請按一下 [更新]  索引標籤，然後按一下 [更新定義] 。  
+2.  若要手動檢查新的定義，請按一下 更新  索引標籤，然後按一下更新定義 。  
 
 ##  <a name="how-do-i-remove-or-restore-items-quarantined-by-windows-defender-or-endpoint-protection"></a>如何移除或還原 Windows Defender 或 Endpoint Protection 已隔離的項目？  
 
@@ -222,9 +222,9 @@ ms.lasthandoff: 08/07/2017
 
 ### <a name="to-turn-off-real-time-protection"></a>開啟即時保護  
 
-1.  按一下 [設定]，然後按一下 [即時保護]。  
+1.  按一下 設定，然後按一下即時保護。  
 
-2.  清除您要關閉的即時保護選項，然後按一下 [儲存變更] 。 如果系統提示您輸入系統管理員密碼或確認資訊，請輸入密碼或確認動作。  
+2.  清除您要關閉的即時保護選項，然後按一下儲存變更 。 如果系統提示您輸入系統管理員密碼或確認資訊，請輸入密碼或確認動作。  
 
 ##  <a name="how-do-i-know-that-windows-defender-or-endpoint-protection-is-running-on-my-computer"></a>如何得知 Windows Defender 或 Endpoint Protection 正在電腦上執行？  
 
@@ -252,11 +252,11 @@ ms.lasthandoff: 08/07/2017
 
 ### <a name="to-set-up-alerts"></a>設定警示  
 
-1.  按一下 [ **設定**]，然後按一下 [ **即時防護**]。  
+1.  按一下  **設定**，然後按一下 **即時防護**。  
 
 2.  確定已選取 [ **開啟即時防護 (建議)** ] 核取方塊。  
 
-3.  選取您要執行之即時防護選項旁邊的核取方塊，然後按一下 [ **儲存變更**]。 如果系統提示您輸入系統管理員密碼或確認資訊，請輸入密碼或確認動作。  
+3.  選取您要執行之即時防護選項旁邊的核取方塊，然後按一下 **儲存變更**。 如果系統提示您輸入系統管理員密碼或確認資訊，請輸入密碼或確認動作。  
 
 ### <a name="see-also"></a>請參閱  
  [Windows Defender 或 Endpoint Protection 用戶端疑難排解](troubleshoot-endpoint-client.md)   

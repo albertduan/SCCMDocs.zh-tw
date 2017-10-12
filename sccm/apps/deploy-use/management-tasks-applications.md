@@ -42,7 +42,7 @@ ms.lasthandoff: 09/15/2017
 |**建立部署類型**|開啟 [建立部署類型精靈]，即可使用此精靈將新的部署類型新增至選取的應用程式。<br /><br /> 請參閱[建立應用程式](../../apps/deploy-use/create-applications.md)。|  
 |**更新統計資料**|更新 [監視]  工作區中顯示在 [部署]  節點裡的資訊，這項資訊與此應用程式的部署有關。<br /><br /> 請參閱[從 System Center Configuration Manager 主控台監視應用程式](../../apps/deploy-use/monitor-applications-from-the-console.md)。|  
 |**恢復**|恢復之前使用 [淘汰] 管理工作所淘汰掉的應用程式。|  
-|**Retire**|淘汰應用程式後，就不能再部署該應用程式，但不會刪除該應用程式及其部署。 此選項不會移除此應用程式安裝在用戶端電腦上的現有複本。 對該應用程式的任何修訂內容將會在 60 天後從 Configuration Manager 中刪除。 不過，系統並不會移除該應用程式已經安裝的複本。<br /><br /> 若要刪除應用程式，必須先淘汰該應用程式、刪除所有部署、移除其他部署對該應用程式的參考，然後刪除該應用程式的所有修訂版本。<br /><br /> 請參閱[修改和取代應用程式](../../apps/deploy-use/revise-and-supersede-applications.md)。|  
+|<bpt id="p1">**</bpt>Retire<ept id="p1">**</ept>|淘汰應用程式後，就不能再部署該應用程式，但不會刪除該應用程式及其部署。 此選項不會移除此應用程式安裝在用戶端電腦上的現有複本。 對該應用程式的任何修訂內容將會在 60 天後從 Configuration Manager 中刪除。 不過，系統並不會移除該應用程式已經安裝的複本。<br /><br /> 若要刪除應用程式，必須先淘汰該應用程式、刪除所有部署、移除其他部署對該應用程式的參考，然後刪除該應用程式的所有修訂版本。<br /><br /> 請參閱[修改和取代應用程式](../../apps/deploy-use/revise-and-supersede-applications.md)。|  
 |**匯出**|開啟 [匯出應用程式精靈]，此精靈可讓您將選取的應用程式匯出成 .zip 檔案，之後再進行封存或安裝於另一個站台。 如果您選擇匯出應用程式內容，系統會建立一個包含該內容的資料夾。<br /><br /> 您也可以匯出應用程式相依性、取代關聯性和條件，以及應用程式的內容及其相依性。<br /><br /> Windows PowerShell Cmdlet **Export-CMApplication** 可執行相同的功能。 如需詳細資訊，請參閱 Microsoft System Center 2012 Configuration Manager SP1 Cmdlet 參考文件中的 [Export-CMApplication](http://go.microsoft.com/fwlink/p/?LinkID=258880)。|  
 |**刪除**|刪除目前選取的應用程式。<br /><br /> 如果某個應用程式有相依的應用程式、作用中的部署，或者相依的工作順序，您就不能刪除該應用程式。|  
 |**模擬部署**|開啟 [模擬應用程式部署精靈]  ，您不需要安裝或解除安裝應用程式，即可在此精靈中測試該應用程式在電腦中的部署結果。<br /><br /> 請參閱[模擬應用程式部署](../../apps/deploy-use/simulate-application-deployments.md)。|  

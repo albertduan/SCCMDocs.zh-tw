@@ -77,7 +77,7 @@ Windows Device Guard 讓您強式控制可在您管理之電腦上執行的項�
 
 ## <a name="how-to-create-a-device-guard-policy"></a>如何建立 Device Guard 原則
 1.  在 Configuration Manager 主控台中，按一下 [資產與合規性]。
-2.  在 [資產與相容性] 工作區中，展開 [Endpoint Protection]，然後按一下 [Device Guard 原則]。
+2.  在 資產與相容性 工作區中，展開 Endpoint Protection，然後按一下Device Guard 原則。
 3.  在 [首頁] 索引標籤的 [建立] 群組中，按一下 [建立 Device Guard 原則]。
 4.  在 [建立 Device Guard 原則精靈] 的 [一般] 頁面上，指定下列設定：
     - **名稱** - 輸入此 Device Guard 原則的唯一名稱。 
@@ -98,7 +98,7 @@ Windows Device Guard 讓您強式控制可在您管理之電腦上執行的項�
 
 ## <a name="how-to-deploy-a-device-guard-policy"></a>如何部署 Device Guard 原則
 1.  在 Configuration Manager 主控台中，按一下 [資產與合規性]。
-2.  在 [資產與相容性] 工作區中，展開 [Endpoint Protection]，然後按一下 [Device Guard 原則]。
+2.  在 資產與相容性 工作區中，展開 Endpoint Protection，然後按一下Device Guard 原則。
 3.  從設定檔清單選取您要部署的設定檔，然後在 [首頁] 索引標籤的 [部署] 群組中，按一下 [部署]。
 4.  在 [部署 Device Guard 原則] 對話方塊中，選取想要部署原則的集合。 然後，設定用戶端評估原則的排程。 最後，選取用戶端是否可以在任何已設定的維護期間以外評估原則。
 5.  完成後，請按一下 [確定] 部署原則。 
