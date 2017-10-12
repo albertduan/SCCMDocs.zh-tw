@@ -14,11 +14,11 @@ caps.latest.revision: "15"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 5148fe852e4d63e1cfd2d5b9c62369155dbecb89
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: ef515da67a7293de60a7678dee69e9785d339352
+ms.sourcegitcommit: 96b79fa091f44e8e6ac5652f6cbbb4b873a8bad9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/09/2017
 ---
 # <a name="about-client-installation-properties-in-system-center-configuration-manager"></a>關於 System Center Configuration Manager 中的用戶端安裝內容
 
@@ -179,7 +179,7 @@ ms.lasthandoff: 09/15/2017
 
  若未指定此內容，用戶端會先檢查 CRL，再建立 HTTPS 連線。  
 
- 如需用戶端 CRL 檢查的詳細資訊，請參閱 [Plan for Security 中的 System Center Configuration Manager](../../plan-design/security/plan-for-security.md#BKMK_PlanningForCRLs) 中的[Plan for security 中的 System Center Configuration Manager](../../plan-design/security/plan-for-security.md)。  
+ 如需用戶端 CRL 檢查的詳細資訊，請參閱[規劃 System Center Configuration Manager 安全性](../../plan-design/security/plan-for-security.md)中的[規劃 PKI 憑證撤銷](../../plan-design/security/plan-for-security.md#BKMK_PlanningForCRLs)。  
 
  範例：`CCMSetup.exe /UsePKICert /NoCRLCheck`  
 
@@ -332,7 +332,7 @@ ms.lasthandoff: 09/15/2017
 
  請勿指定此選項搭配 SMSSITECODE=AUTO 的安裝內容。 以網際網路為基礎的用戶端，必須直接指派給以網際網路為基礎的網站。  
 
- 範例：`CCMSetup.exe  /UsePKICert/ CCMHOSTNAME="SMSMP01.corp.contoso.com"`  
+ 範例：`CCMSetup.exe  /UsePKICert CCMHOSTNAME="SMSMP01.corp.contoso.com"`  
 
 ### <a name="ccmhttpport"></a>CCMHTTPPORT
 
@@ -402,7 +402,7 @@ ms.lasthandoff: 09/15/2017
 
 指定後援狀態點，這些狀態點會接收及處理 Configuration Manager 用戶端電腦所傳送的狀態訊息。  
 
-如需後援狀態點的詳細資訊，請參閱[判斷您是否需要後援狀態點](/sccm/core/clients/deploy/plan#determine-if-you-need-a-fallback-status-point)。  
+如需後援狀態點的詳細資訊，請參閱[判斷您是否需要後援狀態點](/sccm/core/clients/deploy/plan/determine-the-site-system-roles-for-clients#determine-if-you-need-a-fallback-status-point)。  
 
 範例：`CCMSetup.exe FSP=SMSFP01`  
 

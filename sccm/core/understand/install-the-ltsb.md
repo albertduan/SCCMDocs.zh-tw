@@ -14,11 +14,11 @@ caps.latest.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 06565bc52e2c409b905bbc448262cf9da25eabb0
-ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
+ms.openlocfilehash: 247fbe5313c17be906802acfaa6952ab3358122e
+ms.sourcegitcommit: a17f5dece340a70cedbec03d19938dab90ae60b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="install-and-upgrade-with-the-version-1606-baseline-media-for-system-center-configuration-manager"></a>使用 1606 版基準媒體為 System Center Configuration Manager 進行安裝或升級
 
@@ -69,7 +69,7 @@ ms.lasthandoff: 09/22/2017
 
 
 ### <a name="new-scripted-installation-options"></a>新的指令碼執行的安裝選項
-1606 版基準媒體支援新的自動安裝指令碼檔案機碼，可進行新頂層站台的指令碼執行的安裝。 若要在站台擴充同時，安裝新的獨立主要站台，或新增管理中心網站，就適用這種方式。
+1606 版基準媒體支援新的自動安裝指令碼檔案機碼，可進行新頂層網站的指令碼執行的安裝。 若要在站台擴充同時，安裝新的獨立主要站台，或新增管理中心網站，就適用這種方式。
 
 使用自動安裝指令碼安裝授權的分支時，您必須將下列區段、機碼名稱和值新增至指令碼的 [Options] 區段。 您不需要使用這些值，就可以編寫最新分支評估版安裝的指令碼：  
 
@@ -121,14 +121,14 @@ ms.lasthandoff: 09/22/2017
 **升級至 LTSB：**  
 - 升級前檢查清單完成後要遵循的額外步驟。
 - 在安裝期間，您必須選擇 LTSB，並可指定軟體保證合約的詳細資料。
-- 您可以只升級執行 System Center 2012 Configuration Manager Service Pack 2 或 System Center 2012 R2 Configuration Manager Service Pack 1 的站台。
+- 您只能升級執行下列版本的站台：System Center 2012 Configuration Manager Service Pack 1、System Center 2012 Configuration Manager Service Pack 2、System Center 2012 R2 Configuration Manager Service Pack 1 或無 Service Pack 的 System Center 2012 R2 Configuration Manager。
 
 ### <a name="in-place-upgrade-paths-for-the-1606-baseline-media"></a>1606 基準媒體的就地升級路徑
 您可以使用 1606 基準媒體，將下列版本升級至 System Center Configuration Manager 的授權版本：
 - System Center 2012 R2 Configuration Manager (含 Service Pack 1)
 - 未安裝 Service Pack 的 System Center 2012 R2 Configuration Manager (這要求您必須使用 2016 年 12 月 15 日所發行適用於 1606 版的基礎媒體)。
 - System Center 2012 Configuration Manager (含 Service Pack 2)
-- System Center 2012 Configuration Manager (含 Service Pack 1)
+- System Center 2012 Configuration Manager Service Pack 1 (這要求您必須使用 2016 年 12 月 15 日所發行適用於 1606 版的基礎媒體)。
 
 
 您也可以使用此媒體，將未經授權的最新分支評估版升級至最新分支的完整授權版本。

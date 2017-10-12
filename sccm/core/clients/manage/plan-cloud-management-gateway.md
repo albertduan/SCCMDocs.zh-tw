@@ -1,18 +1,18 @@
 ---
 title: "雲端管理閘道規劃 | Microsoft Docs"
 description: 
-ms.date: 06/07/2017
+ms.date: 10/06/2017
 ms.prod: configuration-manager
 ms.technology: configmgr-client
 ms.assetid: 2dc8c9f1-4176-4e35-9794-f44b15f4e55f
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: d3e658714c30a1eba64f94e248d5e11095ca1dcb
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: c3d036eb91d16ed95c26bbf2bcce1e37851f90a2
+ms.sourcegitcommit: 8ac9c2c9ba1fdcbb7cc8d5be898586865fcf67c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/07/2017
 ---
 # <a name="plan-for-the-cloud-management-gateway-in-configuration-manager"></a>在 Configuration Manager 中進行雲端管理閘道規劃
 
@@ -46,9 +46,9 @@ ms.lasthandoff: 09/14/2017
 
     -   用戶端部署
     -   自動站台指派
-    -   使用者原則
     -   應用程式類別目錄 (包括軟體核准要求)
     -   完整的作業系統部署 (OSD)
+    -   工作順序 (全部)
     -   Configuration Manager 主控台
     -   遠端工具
     -   報告網站
@@ -61,7 +61,7 @@ ms.lasthandoff: 09/14/2017
 ## <a name="cost-of-cloud-management-gateway"></a>雲端管理閘道的成本
 
 >[!IMPORTANT]
->下面提供的成本資訊僅供評估之用。 您的環境可能有其他變數會影響使用雲端管理閘道的總成本。
+>下面的成本資訊僅供評估之用。 您的環境可能有其他變數會影響使用雲端管理閘道的總成本。
 
 雲端管理閘道使用下列 Microsoft Azure 功能，會產生 Azure 訂閱帳戶費用︰
 
@@ -78,7 +78,7 @@ ms.lasthandoff: 09/14/2017
 
 -   輸出資料傳輸
 
-    -   資料從服務傳出即產生費用。 請參閱 [Azure 頻寬定價詳細資料](https://azure.microsoft.com/en-us/pricing/details/bandwidth/)以利判斷潛在成本。
+    -   資料從服務傳出即產生費用。 請參閱 [Azure 頻寬定價詳細資料](https://azure.microsoft.com/pricing/details/bandwidth/)以利判斷潛在成本。
 
     -   僅供評估之用，以網際網路為基礎的用戶端每小時執行原則重新整理計算，預期每個用戶端每月大約為 100 MB。
 
@@ -111,14 +111,14 @@ ms.lasthandoff: 09/14/2017
 
 ### <a name="how-is-the-cloud-management-gateway-deployed"></a>雲端管理閘道如何部署？
 
-服務連接點上的雲端服務管理員元件會處理所有 CMG 部署工作。 此外，它也會從 Azure AD 監視並報告服務健康情況和記錄資訊。
+服務連接點上的雲端服務管理員元件會處理所有 CMG 部署工作。 此外，它也會從 Azure AD 監視並報告服務健康情況和記錄資訊。 請確認您的服務連接點處於[線上模式](/sccm/core/servers/deploy/configure/about-the-service-connection-point#bkmk_modes)。
 
 #### <a name="certificate-requirements"></a>憑證需求
 
 您需要下列憑證以保護 CMG：
 
 - **管理憑證**：這可以是任何憑證，包括自我簽署憑證。 您可以使用已上傳至 Azure AD 的公開憑證，或是已匯入 Configuration Manager 之[具有私密金鑰的 PFX](/sccm/mdm/deploy-use/create-pfx-certificate-profiles)，以向 Azure AD 進行驗證。
-- **Web 服務憑證**：建議使用公開 CA 憑證以取得用戶端的原生信任。 CNAME 必須在公開 DNS 登錄中建立。 不支援萬用字元憑證。
+- **Web 服務憑證**：建議使用公開 CA 憑證以取得用戶端的原生信任。 在公用 DNS 註冊機構建立 CName。 不支援萬用字元憑證。
 - **上傳至 CMG 的根/次級 CA 憑證**：CMG 必須在用戶端 PKI 憑證上執行完整鏈結驗證。 如果您使用企業 CA 發行用戶端 PKI 憑證，且其根或次級 CA 無法自網際網路取得，您必須將它上傳至 CMG。
 
 #### <a name="deployment-process"></a>部署程序
@@ -131,6 +131,9 @@ ms.lasthandoff: 09/14/2017
 - 在您的 Azure AD 伺服器上設定 CMG 元件，並設定 Internet Information Services (IIS) 中的端點、HTTP 處理常式及服務
 
 如果您變更 CMG 的設定，將會針對 CMG 起始設定部署。
+
+### <a name="where-do-i-set-up-the-cloud-management-gateway"></a>在哪裡設定雲端管理閘道？
+您可以在階層的頂層網站建立雲端管理閘道。 如果它是管理中心網站，即可在子主要站台建立 CMG 連接點。
 
 ### <a name="how-does-the-cloud-management-gateway-help-ensure-security"></a>雲端管理閘道如何協助確保安全性？
 
@@ -147,10 +150,10 @@ CMG 可透過下列方式協助確保安全性：
 
 - 保護 CMG 連接點
     - 針對正在連線之 CMG 的所有虛擬執行個體，建置一致的 HTTP/TCP 連線。 於每分鐘檢查並維護連線。
-    - 使用內部憑證來與 CMG 進行相互 SSL 驗證。
+    - 以使用內部憑證的 CMG 相互驗證 SSL 驗證。
     - 根據 URL 對應轉送 HTTP 要求。
     - 報告連線狀態以顯示管理服務健康情況狀態。
-    - 於每 5 分鐘針對每個端點報告端點流量報告。
+    - 每隔五分鐘報告每個端點的端點流量報表。
 
 - 保護發行端點 Configuration Manager 用戶端對向角色，像是管理點和 IIS 中軟體更新點主機端點，以處理用戶端要求。 每個發行至 CMG 的端點都具有 URL 對應。
 用戶端使用外部 URL 來與 CMG 通訊。
@@ -164,7 +167,7 @@ CMG 可透過下列方式協助確保安全性：
 
 ### <a name="what-ports-are-used-by-the-cloud-management-gateway"></a>雲端管理閘道所使用的連接埠為何？
 
-- 內部部署網路不需要任何輸入連接埠。 CMG 的部署將會自動在 CMG 上大量建立。
+- 內部部署網路不需要輸入連接埠。 CMG 的部署將會自動在 CMG 上大量建立。
 - 除了 443 之外，CMG 連接點也會需要部份輸出連接埠。
 
 |||||
@@ -179,7 +182,7 @@ CMG 可透過下列方式協助確保安全性：
 
 - 如果可以的話，請在相同的網路區域中設定 CMG、CMG 連接點及 Configuration Manager 站台伺服器，以降低延遲。
 - 目前 Configuration Manager 用戶端和 CMG 之間的連線並無法感知區域。
-- 若要獲得高可用性，建議每個站台至少有 2 個 CMG 虛擬執行個體及 2 個 CMG 連接點
+- 若要獲得高可用性，建議每個站台至少有兩個 CMG 虛擬執行個體及兩個 CMG 連接點
 - 您可以透過新增更多 VM 執行個體來調整 CMG，以支援更多用戶端。 它們會由 Azure AD 負載平衡器進行負載平衡。
 - 建立更多 CMG 連接點以將負載分散於它們之間。 CMG 會透過「循環配置資源」的方式，將流量引導至其正在連線的 CMG 連接點。
 - 在 1702 版中，每個 CMG VM 執行個體所支援的用戶端數目為 6 千個。 當 CMG 通道處於高負載時，系統仍然會處理要求，但可能會花費比平常更久的時間。

@@ -2,7 +2,7 @@
 title: "健全狀況證明 | Microsoft Docs"
 description: "深入了解可在 Configuration Manager 主控台中檢視的裝置健全狀況證明功能。"
 ms.custom: na
-ms.date: 03/27/2017
+ms.date: 10/05/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "17"
 author: NathBarn
 ms.author: nathbarn
 manager: angrobe
-ms.openlocfilehash: 54b3433a002b8ef29059bab04458138348f95d66
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 11d58237ea1e88785f6991450b3e898562b23918
+ms.sourcegitcommit: a17f5dece340a70cedbec03d19938dab90ae60b1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/06/2017
 ---
 # <a name="health-attestation-for-system-center-configuration-manager"></a>System Center Configuration Manager 的健康情況證明
 
@@ -37,9 +37,9 @@ ms.lasthandoff: 08/07/2017
 
  **需求：**  
 
--   執行 Windows 10 版本 1607 或 Windows Server 2016 版本 1607 並[已啟用裝置健康情況證明](https://technet.microsoft.com/windows-server-docs/security/device-health-attestation)的用戶端裝置
--    支援 TPM 1.2 或 TPM 2 的裝置
--   Configuration Manager 用戶端代理程式與 has.spserv.microsoft.com (連接埠 443)「健康情況證明」服務 (雲端管理) 之間或與支援裝置健康情況證明的管理點 (內部部署) 之間的通訊
+-   執行 Windows 10 版本 1607 或 Windows Server 2016 版本 1607 並[已啟用裝置健康情況證明](https://technet.microsoft.com/windows-server-docs/security/device-health-attestation)的用戶端裝置。
+-   啟用 TPM 1.2 或 TPM 2 的裝置。
+-   使用雲端管理時，Configuration Manager 用戶端代理程式與具有 *has.spserv.microsoft.com* (連接埠 443)「健康情況證明」服務 (雲端管理) 的管理點之間的通訊。 在內部部署時，用戶端必須能夠與啟用裝置健康情況證明的管理點通訊。
 
 ### <a name="how-to-enable-health-attestation-service-communication-on-configuration-manager-client-computers"></a>如何在 Configuration Manager 用戶端電腦上啟用健康情況證明服務通訊
 

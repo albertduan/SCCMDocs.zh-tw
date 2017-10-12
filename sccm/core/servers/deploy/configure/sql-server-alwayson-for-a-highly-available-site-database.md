@@ -2,7 +2,7 @@
 title: SQL Server Always On | Microsoft Docs
 description: "規劃以將 SQL Server AlwaysOn 可用性群組與 SCCM 搭配使用。"
 ms.custom: na
-ms.date: 7/31/2017
+ms.date: 09/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,11 +14,11 @@ caps.latest.revision: "16"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: c746365238e1255d73387a9496521bb03a56b21b
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 3e275f6203a9e0b9210bfbadbf9addf64f6533d8
+ms.sourcegitcommit: 8faf42135a8dc9c384407e64f3f8ba204fb15847
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="prepare-to-use-sql-server-always-on-availability-groups-with-configuration-manager"></a>準備將 SQL Server AlwaysOn 可用性群組與 Configuration Manager 搭配使用
 
@@ -210,8 +210,11 @@ Configuration Manager 支援在下列位置使用可用性群組：
 ## <a name="limitations-and-known-issues"></a>限制與已知問題
 下列限制適用於所有案例。   
 
-**不支援基本可用性群組：**  
-[基本可用性群組](https://msdn.microsoft.com/library/mt614935.aspx)是在 SQL Server 2016 Standard Edition 中引進，這些群組不支援對次要複本的讀取存取，而這是與 Configuration Manager 搭配使用的一項需求。
+**不受支援的 SQL Server 選項和設定：**
+- **基本可用性群組**  
+  [基本可用性群組](https://msdn.microsoft.com/library/mt614935.aspx)是在 SQL Server 2016 Standard Edition 中引進，這些群組不支援對次要複本的讀取存取，而這是與 Configuration Manager 搭配使用的一項需求。
+- **容錯移轉叢集執行個體**  
+  搭配 Configuration Manager 使用的複本不支援[容錯移轉叢集執行個體](/sql/sql-server/failover-clusters/windows/always-on-failover-cluster-instances-sql-server)。
 
 **裝載額外可用性群組的 SQL Server︰**   
 在 Configuration Manager 1610 版之前，當 SQL Server 上的可用性群組除了您用於 Configuration Manager 的群組之外還裝載一或多個可用性群組時，每個這些額外可用性群組中的每個複本在您執行 Configuration Manager 安裝程式或安裝 Configuration Manager 的更新時，必須都已做好下列設定：

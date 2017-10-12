@@ -2,7 +2,7 @@
 title: "使用 Configuration Manager 的混合式 MDM 新功能 | Microsoft Docs"
 description: "了解 Configuration Manager 與 Intune 的混合式部署可以使用的新行動裝置管理功能。"
 ms.custom: na
-ms.date: 06/30/2017
+ms.date: 10/04/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -10,25 +10,29 @@ ms.technology: configmgr-hybrid
 ms.tgt_pltfrm: na
 ms.topic: article
 ms.assetid: 7b127cee-61f1-4681-9760-caebed36ddf5
-caps.latest.revision: "40"
-author: Mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 2ef4964a74e000feac029b158f6fe0c52e3de370
-ms.sourcegitcommit: 51654bf8b5615eb99084d0a20d18ca3fccfa83a1
+ms.openlocfilehash: 6c2c6ffee3b2084ede61e5602a78bf5ca82446f6
+ms.sourcegitcommit: 6c70e0af8d9af208009641786a3b555db4482e97
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/20/2017
+ms.lasthandoff: 10/05/2017
 ---
 # <a name="whats-new-in-hybrid-mobile-device-management-with-system-center-configuration-manager-and-microsoft-intune"></a>System Center Configuration Manager 和 Microsoft Intune 混合式行動裝置管理的新功能
 
 *適用對象：System Center Configuration Manager (最新分支)*
 
-本文提供 System Center Configuration Manager 與 Microsoft Intune 混合式部署可以使用的新行動裝置管理 (MDM) 功能的詳細資訊。  
+本文提供 System Center Configuration Manager 與 Microsoft Intune 混合式部署可以使用的新行動裝置管理 (MDM) 功能的詳細資訊。     
+
+> [!Note]    
+> 在 Azure 上的 Intune 是 Microsoft 建議的 MDM 解決方案。     
+> - 如需 Intune 獨立部署新功能和更新的詳細資料，請參閱 [Intune 的新功能](https://docs.microsoft.com/intune/whats-new)。    
+> - 如需如何移轉至 Intune 獨立部署的詳細資料，請參閱 [Migrate hybrid MDM users and devices to Intune standalone](https://docs.microsoft.com/sccm/mdm/deploy-use/migrate-hybridmdm-to-intunesa) (將混合式 MDM 使用者和裝置移轉至 Intune 獨立部署)。
+> - 如需 Intune 和混合式 MDM UI 更新的詳細資料，請參閱 [Intune 終端使用者應用程式的 UI 更新](https://docs.microsoft.com/intune/whats-new-app-ui)。 
 
 ##  <a name="compatibility-with-configuration-manager-versions"></a>與 Configuration Manager 版本的相容性  
-
- 本文的各節會列出 3 個不同類別下的混合式功能。 使用下列指導方針來判斷每個類別中的功能與不同 Configuration Manager 版本的相容性︰  
+本文的各節會列出 3 個不同類別下的混合式功能。 使用下列指導方針來判斷每個類別中的功能與不同 Configuration Manager 版本的相容性︰  
 
 |功能類別|說明|
 |-|-|
@@ -40,8 +44,8 @@ ms.lasthandoff: 09/20/2017
 
 ### <a name="new-in-microsoft-intune"></a>Microsoft Intune 的新功能     
 
-- **適用於 Android Oreo 版公司入口網站應用程式上每個終端使用者的其他推播通知** <!--1475932-->    
-    終端使用者將會看到其他通知，這些通知會指出 Android Oreo 版公司入口網站應用程式正在執行背景工作，例如從 Intune 服務擷取原則。 這樣可讓終端使用者清楚了解公司入口網站在其裝置上執行的系統管理工作。 這是適用於 Android Oreo 版公司入口網站應用程式之整體[公司入口網站 UI 最佳化](https://blogs.technet.microsoft.com/intunesupport/2017/08/21/android-8-0-o-behaviour-changes-and-microsoft-intune)的一部分。 
+- **新增至 Windows 10 公司入口網站應用程式的重新整理動作** <!-- 1132468 -->    
+    Windows 10 公司入口網站應用程式可讓使用者提取以重新整理，或按桌上型電腦的 F5，重新整理應用程式中的資料。
 
 - **通知終端使用者哪些 iOS 裝置資訊會被看到** <!--739894-->    
     我們已將 [擁有權類型] 加入到 iOS 版公司入口網站應用程式的 [裝置詳細資料] 畫面。 這樣可讓使用者直接從此頁面從 Intune 終端使用者文件尋找有關隱私權的詳細資訊。他們也可以在 [關於] 畫面上找到此資訊。 

@@ -14,11 +14,11 @@ caps.latest.revision:
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.openlocfilehash: 4fd2d3b8aae6a2f42e7c6a87723d16368be30984
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: d353f47671a0c1e67c34bb9641fa9dd007b9f8be
+ms.sourcegitcommit: c145e515843a0f37c2e5ca5dbd22072a219d06b4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/03/2017
 ---
 # <a name="troubleshoot-lookout-integration-with-intune"></a>針對 Lookout 與 Intune 整合進行疑難排解
 
@@ -34,7 +34,7 @@ Lookout MTP 設定成僅允許所設定 Azure AD 群組的使用者具有存取�
 
 * 電子郵件：enterprisesupport@lookout.com
 * 登入 [MTP 主控台](http://aad.lookout.com)，並瀏覽至 [支援] 模組。
-* 前往：https://enterprise.support.lookout.com/hc/en-us/requests，並提出支援要求。
+* 前往：https://enterprise.support.lookout.com/hc/requests，並提出支援要求。
 
 ### <a name="unable-to-sign-in"></a>無法登入
 Azure AD 全域系統管理員使用者尚未接受初始 Lookout 安裝程式時，您可能會看到下列錯誤。
@@ -73,7 +73,7 @@ Azure AD 全域系統管理員使用者尚未接受初始 Lookout 安裝程式�
 從 Lookout MTP 主控台的 [裝置] 模組中，系統管理員可以選取裝置，並選擇將它刪除。   裝置擁有者下一次開啟 Lookout for Work 應用程式，並點選 [啟用] 時，裝置狀態將會執行完整重新同步。
 
 ### <a name="the-owner-of-the-device-is-no-longer-using-this-device"></a>裝置的擁有者不再使用此裝置
-您必須抹除裝置，並要求新的使用者註冊 (如[本主題](https://docs.microsoft.com/en-us/sccm/mdm/deploy-use/wipe-lock-reset-devices#full-wipe)中所述)。
+您必須抹除裝置，並要求新的使用者註冊 (如[本主題](https://docs.microsoft.com/sccm/mdm/deploy-use/wipe-lock-reset-devices#full-wipe)中所述)。
 
 
 您也可以移至 Lookout MTP 主控台的 [裝置] 模組，然後選擇 [刪除]。

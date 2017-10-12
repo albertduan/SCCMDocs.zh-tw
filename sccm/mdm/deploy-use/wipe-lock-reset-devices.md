@@ -2,7 +2,7 @@
 title: "使用 System Center Configuration Manager 透過遠端抹除、鎖定或密碼重設來協助保護資料 | Microsoft Docs"
 description: "使用 System Center Configuration Manager 透過完整抹除、選擇性抹除、遠端鎖定或密碼重設來協助保護裝置資料。"
 ms.custom: na
-ms.date: 03/27/2017
+ms.date: 09/28/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -12,14 +12,14 @@ ms.topic: article
 ms.assetid: 770da7bd-02dd-474a-9604-93ff1ea0c1e4
 caps.latest.revision: "18"
 caps.handback.revision: "0"
-author: nathbarn
-ms.author: nathbarn
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 351fdc6328dd0859d60e00b128963df738e69f81
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: ea92d7b4656a04f312f04c19cac6b17df931c9c5
+ms.sourcegitcommit: db079cd7322e7d4926b2df0ccb37e752c570d902
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="protect-data-with-remote-wipe-lock-or-passcode-reset-by-using-system-center-configuration-manager"></a>使用 System Center Configuration Manager 透過遠端抹除、鎖定或密碼重設來協助保護資料
 
@@ -179,6 +179,9 @@ EFS 選擇性抹除目前支援的資料和應用程式如下：
 |Windows RT 8.1 |不支援。|  
 |Windows 8.1 電腦 |不支援。|  
 
+> [!Note]    
+> 您必須從環境的頂層網站執行密碼重設動作。 例如，如果使用管理中心網站，就只能在該網站上執行動作。 如果使用獨立主要站台，就只能在該站台上執行動作。
+
 #### <a name="to-reset-the-passcode-on-a-mobile-device-remotely-in-configuration-manager"></a>在 Configuration Manager 遠端重設行動裝置的密碼  
 
 1. 在 Configuration Manager 主控台中，選擇 [資產與相容性]，然後選擇 [裝置]。 或者，您可以選擇 [裝置集合]，然後選取集合。  
@@ -206,6 +209,9 @@ EFS 選擇性抹除目前支援的資料和應用程式如下：
 |Windows Phone 8 和 Windows Phone 8.1|支援。|  
 |Windows RT 8.1 |如果目前的裝置使用者和註冊裝置的使用者是同一位時便支援。|  
 |Windows 8.1|如果目前的裝置使用者和註冊裝置的使用者是同一位時便支援。|  
+
+> [!Note]    
+> 您必須從環境的頂層網站執行遠端鎖定動作。 例如，如果使用管理中心網站，就只能在該網站上執行動作。 如果使用獨立主要站台，就只能在該站台上執行動作。
 
 #### <a name="to-lock-a-mobile-device-remotely-through-the-configuration-manager-console"></a>透過 Configuration Manager 主控台從遠端鎖定行動裝置  
 

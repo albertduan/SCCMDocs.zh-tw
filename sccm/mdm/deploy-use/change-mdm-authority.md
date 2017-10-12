@@ -1,6 +1,6 @@
 ---
 title: "變更您的 MDM 授權單位 | Microsoft Docs"
-description: "了解如何將 MDM 授權單位在 Configuration Manager (混合式) 和 Intune 獨立部署之間進行變更。"
+description: "了解如何將 MDM 授權單位從 Configuration Manager (混合式) 變更為 Intune 獨立部署"
 keywords: 
 author: dougeby
 manager: angrobe
@@ -9,14 +9,17 @@ ms.topic: article
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: cc397ab5-125f-4f17-905b-fab980194f49
-ms.openlocfilehash: d24e6e736397a4612db7b47e997d8cb1f97c4de9
-ms.sourcegitcommit: 948644072bd158b156f782a4376bcd50fac7c73a
+ms.openlocfilehash: 489c01f92d42ed12ac5464307a16713ca898d251
+ms.sourcegitcommit: 8ac9c2c9ba1fdcbb7cc8d5be898586865fcf67c0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/07/2017
 ---
 # <a name="change-your-mdm-authority"></a>變更您的 MDM 授權單位
 自 Configuration Manager 1610 版開始，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，您便可以變更 MDM 授權單位。 本主題提供的步驟，可以將設定自 Configuration Manager 主控台的現有 Microsoft Intune 租用戶 (混合式) 變更為 Intune 獨立部署。
+
+> [!Note]    
+> 如果想要將 MDM 授權單位設定為 Intune 的現有 Microsoft Intune 租用戶變更為 Configuration Manager (混合式)，請參閱[變更 MDM 授權單位](https://docs.microsoft.com/intune-classic/deploy-use/change-mdm-authority)。
 
 > [!Important]    
 > 本主題是要變更您的 MDM 授權單位 (如果您先前未移轉使用者)。 若要在您[移轉一部分使用者](migrate-hybridmdm-to-intunesa.md)後變更您的 MDM 授權單位，請參閱[變更您的 MDM 授權單位](migrate-change-mdm-authority.md)。
@@ -32,7 +35,7 @@ ms.lasthandoff: 09/14/2017
 檢閱下列資訊以準備變更 MDM 授權單位：
 - 您必須有 Configuration Manager 1610 版或更新版本，才有變更 MDM 授權單位的選項可供選擇。
 - 在您變更至新的 MDM 授權單位之後，裝置可能需要最多 8 小時的時間才能連線至服務。
-- 在變更 MDM 授權單位之前，請務必將 Intune/EMS 授權指派給所有目前由混合式管理的使用者。 在變更 MDM 授權單位之後，擁有授權可確保使用者及其裝置會由 Intune 獨立部署所管理。 如需詳細資訊，請參閱[將 Intune 授權指派給您的使用者帳戶](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4)。
+- 在變更 MDM 授權單位之前，請務必將 Intune/EMS 授權指派給所有目前由混合式管理的使用者。 在變更 MDM 授權單位之後，擁有授權可確保使用者及其裝置會由 Intune 獨立部署所管理。 如需詳細資訊，請參閱[將 Intune 授權指派給使用者帳戶](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4) \(英文\)。
 - 在變更 MDM 授權單位之前，請確定已指派 Intune/EMS 授權給「管理使用者」帳戶，並確認「管理使用者」帳戶可以登入 Intune。 在變更 MDM 授權單位之前，Microsoft Intune 管理主控台的 MDM 授權單位應該會顯示為 [設定為 Configuration Manager] \(混合式租用戶)。
 - 在 Configuration Manager 主控台中，移除所有「裝置註冊管理員」角色。 移至 [系統管理] > [雲端服務] > [Microsoft Intune 訂閱]，選取 [Microsoft Intune 訂閱]，按一下 [內容]，按一下 [裝置註冊管理員] 索引標籤，然後移除所有「裝置註冊管理員」角色。
 - 在 Configuration Manager 主控台中，移除現有的裝置類別。 移至 [資產與合規性] > [概觀] > [裝置集合]，選擇 [管理裝置類別]，然後移除現有的裝置類別。
@@ -52,10 +55,10 @@ ms.lasthandoff: 09/14/2017
 
 #### <a name="to-change-the-mdm-authority-to-intune-standalone"></a>將 MDM 授權單位變更為 Intune 獨立部署
 1. 在 Configuration Manager 主控台中，移至 [系統管理] &gt; [概觀] &gt; [雲端服務] &gt; [Microsoft Intune 訂閱]，然後刪除現有的 Intune 訂閱。
-2. 選取 [將 MDM 授權單位變更為 Microsoft Intune]，然後按一下 [下一步]。
+2. 選取 將 MDM 授權單位變更為 Microsoft Intune，然後按一下下一步。
    ![下載 APNs 憑證要求](./media/mdm-change-delete-subscription.png)
 3. 登入您原本在 Configuration Manager 中設定 MDM 授權單位時所使用的 Intune 租用戶。
-4. 按一下 [下一步] ，並完成精靈。
+4. 按 [下一步]  ，並且完成精靈。
 5. MDM 授權單位已重設完畢。 Intune 訂閱應該已不會再顯示於 Configuration Manager 主控台的 [Microsoft Intune 訂閱] 節點中。
 6. 以您先前所使用的相同 Intune 租用戶登入 [Microsoft Intune 管理主控台](http://manage.microsoft.com)。
 7. 確認 MDM 授權單位已重設，然後將 MDM 授權單位設定為 [Microsoft Intune]。 在您變更 MDM 授權單位之後，主控台應該就會反映出該變更。 如需詳細資訊，請參閱[如何設定 MDM 授權單位](https://docs.microsoft.com/en-us/intune/deploy-use/prerequisites-for-enrollment#step-2-set-mdm-authority)。
@@ -82,15 +85,15 @@ ms.lasthandoff: 09/14/2017
 
    ![Apple Push Certificates 入口網站登入頁面](./media/mdm-change-apns-portal.png)
 
-3. 選取您用於 Configuration Manager (混合式) 的 APNs 憑證，然後按一下 [更新]。   
+3. 選取您用於 Configuration Manager (混合式) 的 APNs 憑證，然後按一下更新。   
 
     ![更新 APNs 對話方塊](./media/mdm-change-renew-apns.png)
 
-4. 選取您於本機下載的 APNs 憑證簽署要求 (.csr) 檔案，然後按一下 [上傳]。
+4. 選取您於本機下載的 APNs 憑證簽署要求 (.csr) 檔案，然後按一下上傳。
 
     ![Apple Push Certificates 入口網站登入頁面](/sccm/mdm/deploy-use/media/mdm-change-renew-apns-upload.png)
  
-5. 選取相同的 APNs，然後按一下 [下載]。 下載 APNs (.pem) 憑證，並將該檔案儲存在本機。  
+5. 選取相同的 APNs，然後按一下下載。 下載 APNs (.pem) 憑證，並將該檔案儲存在本機。  
 
    ![Apple Push Certificates 入口網站登入頁面](./media/mdm-change-renew-apns-download.png)
 
