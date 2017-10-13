@@ -224,7 +224,7 @@ System Center Configuration Manager 的某些更新無法從 Microsoft 雲端服
 
 4.  在 [安全性警告 - 目錄驗證]  對話方塊中，按一下 [接受] 。 完成後關閉精靈。  
 
-5.  在 Updates Publisher 主控台中，選取您要部署的更新，然後按一下 [發行]。  
+5.  在 Updates Publisher 主控台中，選取您要部署的更新，然後按一下發行。  
 
 6.  在發行軟體更新精靈的 [發行選項]  頁面中，選取 [完整內容] 再按 [下一步] 。  
 

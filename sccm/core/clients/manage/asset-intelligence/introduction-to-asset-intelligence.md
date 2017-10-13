@@ -192,8 +192,8 @@ System Center Configuration Manager 中的 Asset Intelligence 可讓您使用 As
 
 |**狀態**|**定義**|**系統管理員動作**|**註解**|  
 |---------------|--------------------|------------------------------|-----------------|  
-|**Validated**|System Center Online 研究人員已定義類別目錄項目。|無。|最佳狀態。|  
-|**User Defined**|System Center Online 研究人員未定義類別目錄項目。|自訂本機類別目錄資訊。|此狀態會顯示在 Asset Intelligence 報告中。|  
+|<bpt id="p1">**</bpt>Validated<ept id="p1">**</ept>|System Center Online 研究人員已定義類別目錄項目。|無。|最佳狀態。|  
+|<bpt id="p1">**</bpt>User Defined<ept id="p1">**</ept>|System Center Online 研究人員未定義類別目錄項目。|自訂本機類別目錄資訊。|此狀態會顯示在 Asset Intelligence 報告中。|  
 |**擱置**|System Center Online 研究人員未定義類別目錄項目，但項目已提交給 System Center Online 進行分類。|System Center online 已要求分類。|類別目錄項目會維持此狀態，直到 System Center Online 研究人員分類好項目並同步處理 Asset Intelligence 類別目錄為止。|  
 |**可更新**|System Center Online 在後續的類別目錄同步處理期間，已使用不同的方式分類使用者定義的類別目錄項目。|自訂本機 Asset Intelligence 類別目錄，以將項目分類為使用者定義。|您可以使用 [解決衝突] 動作決定要使用新的分類資訊或使用之前的使用者定義值。 如需如何解決衝突的詳細資訊，請參閱 [System Center Configuration Manager 中 Asset Intelligence 的作業](../../../../core/clients/manage/asset-intelligence/operations-for-asset-intelligence.md)。|  
 |**未分類**|System Center Online 研究人員尚未定義類別目錄項目、項目未提交至 System Center Online 以進行分類，以及系統管理員尚未指派使用者定義的分類值。|無。|要求分類或自訂本機類別目錄資訊。<br /><br /> 如需要求分類的詳細資訊，請參閱 [System Center Configuration Manager 中 Asset Intelligence 的作業](../../../../core/clients/manage/asset-intelligence/operations-for-asset-intelligence.md)。<br /><br /> 如需如何變更軟體項目之類別目錄的詳細資訊，請參閱 [System Center Configuration Manager 中 Asset Intelligence 的作業](../../../../core/clients/manage/asset-intelligence/operations-for-asset-intelligence.md)。|  
