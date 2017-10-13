@@ -2,7 +2,7 @@
 title: "使用裝置註冊計劃 (DEP) 註冊 iOS 裝置 - Configuration Manager | Microsoft Docs"
 description: "啟用 iOS 裝置註冊計畫 (DEP) 註冊，以使用 Intune 進行 Configuration Manager 混合式部署。"
 ms.custom: na
-ms.date: 08/15/2017
+ms.date: 09/22/2017
 ms.prod: configuration-manager
 ms.reviewer: na
 ms.suite: na
@@ -14,17 +14,17 @@ caps.latest.revision: "9"
 author: mtillman
 ms.author: mtillman
 manager: angrobe
-ms.openlocfilehash: e76e46ce0d6ee0582d5161709ff114b936ac5660
-ms.sourcegitcommit: db7b7ec347638efd05cdba474e8a8f8535516116
+ms.openlocfilehash: f34f7527c14e1be6229212bfb2d8fd022ee6defe
+ms.sourcegitcommit: 8faf42135a8dc9c384407e64f3f8ba204fb15847
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/16/2017
+ms.lasthandoff: 09/28/2017
 ---
 # <a name="ios-device-enrollment-program-dep-enrollment-for-hybrid-deployments-with-configuration-manager"></a>適用於 Configuration Manager 混合式部署的 iOS 裝置註冊計畫 (DEP) 註冊
 
 適用於：System Center Configuration Manager (最新分支)
 
-公司可以透過 Apple 的裝置註冊計畫，購買 iOS 裝置，並使用 Microsoft Intune 進行管理。 若要使用 Apple 裝置註冊程式 (DEP) 來管理公司所擁有的 iOS 裝置，公司必須完成和 Apple 參與此計畫的步驟，並透過該計畫取得裝置。 下列網址提供該程序的詳細資訊：  [https://deploy.apple.com](https://deploy.apple.com)來管理它們。 這個方案的優點包括裝置自動安裝，而不需要透過 USB 將每部裝置連線到電腦。  
+公司可以透過 Apple 的裝置註冊計畫，購買 iOS 裝置，並使用 Microsoft Intune 進行管理。 若要使用 Apple 裝置註冊程式 (DEP) 來管理公司所擁有的 iOS 裝置，公司必須完成和 Apple 參與此計畫的步驟，並透過該計畫取得裝置。 下列網址提供該程序的詳細資訊：  [https://deploy.apple.com](https://deploy.apple.com)來管理它們。這個方案的優點包括裝置自動安裝，而不需要透過 USB 將每部裝置連線到電腦。  
 
  在您以 DEP 註冊公司所擁有的 iOS 裝置之前，您需要從 Apple 取得 DEP 權杖。 此權杖可讓 Intune 同步處理貴公司所擁有的 DEP 參與裝置資訊。 它也讓 Intune 得以將註冊設定檔上傳至 Apple，並將這些設定檔指定給裝置。  
 
@@ -36,13 +36,14 @@ ms.lasthandoff: 08/16/2017
 1.  **開始使用 Configuration Manager 管理 iOS 裝置**   
     您必須先完成[設定混合式行動裝置管理](../../mdm/deploy-use/setup-hybrid-mdm.md)的步驟 (包括[支援 iOS 註冊的步驟](../deploy-use/enroll-hybrid-ios-mac.md)) 之後，才能註冊 iOS 裝置註冊計畫 (DEP) 的裝置。
 2.  **建立 DEP 權杖要求**   
-    在 Configuration Manager 主控台的 [系統管理] 工作區中，依序展開 [階層設定]、[雲端服務]，然後按一下 [Microsoft Intune 訂閱]。 在 [首頁] 索引標籤上按一下 [建立 DEP 權杖要求]，按一下 [瀏覽] 指定 DEP 權杖要求的下載位置，然後按一下 [下載]。 將 DEP 權杖要求 (.pem) 檔案儲存在本機。 這個 .pem 檔案會用於向 Apple 裝置註冊計畫入口網站要求信任的權杖 (.p7m)。  
+    在 Configuration Manager 主控台的 [系統管理] 工作區中，依序展開 [階層設定]、[雲端服務]，然後按一下 [Microsoft Intune 訂閱]。 在 首頁 索引標籤上按一下 建立 DEP 權杖要求，按一下 瀏覽 指定 DEP 權杖要求的下載位置，然後按一下下載。 將 DEP 權杖要求 (.pem) 檔案儲存在本機。 這個 .pem 檔案會用於向 Apple 裝置註冊計畫入口網站要求信任的權杖 (.p7m)。  
 3.  **取得裝置註冊計畫權杖**   
     移至 [裝置註冊計畫入口網站](https://deploy.apple.com) (https://deploy.apple.com) ，並使用公司的 Apple ID 登入。 未來必須使用這個 Apple 識別碼來更新 DEP 權杖。  
-    1.  在[裝置註冊計畫入口網站](https://deploy.apple.com)中，移至 [裝置註冊計畫] > [管理伺服器]，然後按一下 [新增 MDM 伺服器]。  
-    2.  輸入 [MDM 伺服器名稱] ，然後按一下 [下一步] 。 伺服器名稱可用於識別 MDM 伺服器。 它不是 Intune 或 Configuration Manager 伺服器的名稱或 URL。  
-    3.  [新增 <伺服器名稱\>] 對話方塊隨即開啟。 按一下 [選取檔案...]  上傳您在上一個步驟建立的 .pem 檔案，然後按一下 [下一步]。  
-    4.  [新增 <伺服器名稱\>] 對話方塊會顯示 [您的伺服器權杖] 連結。 將伺服器權杖 (.p7m) 檔案下載到您的電腦，然後按一下 [完成] 。  
+    1.  在[裝置註冊計畫入口網站](https://deploy.apple.com)中，移至 [裝置註冊計畫] > [管理伺服器]，然後按一下新增 MDM 伺服器。  
+    ![在裝置註冊計劃入口網站中新增 MDM 伺服器的螢幕擷取畫面](../media/enrollment-program-token-add-server.png)
+    2.  輸入 MDM 伺服器名稱 ，然後按一下下一步 。 伺服器名稱可用於識別 MDM 伺服器。 它不是 Intune 或 Configuration Manager 伺服器的名稱或 URL。  
+    3.  [新增 <伺服器名稱\>] 對話方塊隨即開啟。 按一下 [選取檔案...]  上傳您在上一個步驟建立的 .pem 檔案，然後按一下下一步。  
+    4.  [新增 <伺服器名稱\>] 對話方塊會顯示 [您的伺服器權杖] 連結。 將伺服器權杖 (.p7m) 檔案下載到您的電腦，然後按一下完成 。  
 
      此憑證 (.p7m) 檔案會用於建立 Intune 與 Apple 裝置註冊程式伺服器之間的信任關係。  
 4.  **將 DEP 權杖新增至 Configuration Manager**   
@@ -63,7 +64,7 @@ ms.lasthandoff: 08/16/2017
       -   **沒有使用者親和性**：該裝置不會關聯到使用者。 針對執行工作而不需存取本機使用者資料的裝置，請使用此關係。 需要使用者關係的 App 會無法運作。  
     ![DEP 設定檔名稱、描述及使用者親和性提示的螢幕擷取畫面](../media/dep-general.png)
 
-3. 在 [裝置註冊計劃設定] 頁面上，指定下列資訊，然後按一下 [下一步]。  
+3. 在 裝置註冊計劃設定 頁面上，指定下列資訊，然後按一下下一步。  
     -   **部門**：使用者在啟用期間點選 [About Configuration]\(關於設定) 時，會顯示這項資訊。  
     -   **支援電話號碼**：使用者在啟用期間按一下 [需要協助] 按鈕時顯示。
        ![將 DEP 設定檔指派給 iOS 裝置的螢幕擷取畫面](../media/dep-settings.png)
@@ -96,15 +97,16 @@ ms.lasthandoff: 08/16/2017
 ## <a name="assign-dep-devices-for-management"></a>指派要管理的 DEP 裝置
 
 1. 移至 [裝置註冊計畫入口網站](https://deploy.apple.com) (https://deploy.apple.com) ，並使用公司的 Apple ID 登入。
-2. 移至 [部署計畫] > [裝置註冊計畫] > [管理裝置]。 指定您 [Choose Devices (選擇裝置)] 的方式、提供裝置資訊，並利用裝置的 [序號]、[訂單號碼] 或 [上傳 CSV 檔案] 來指定詳細資料。 接著，選取 [指派給伺服器]，選取您在步驟 3 指定的 [<*伺服器名稱*>]，然後按一下 [確定]。  
+2. 移至 [部署計畫] > [裝置註冊計畫] > [管理裝置]。 指定您 [Choose Devices (選擇裝置)] 的方式、提供裝置資訊，並利用裝置的 [序號]、[訂單號碼] 或 [上傳 CSV 檔案] 來指定詳細資料。 接著，選取 指派給伺服器，選取您在步驟 3 指定的 <*伺服器名稱*>，然後按一下確定。  
+![新增裝置的 Apple 裝置註冊計劃入口網站螢幕擷取畫面](../media/enrollment-program-token-specify-serial.png)
 
 3.  **同步處理 DEP 管理的裝置**   
-    在 [資產與相容性] 工作區中，前往 [公司擁有的所有裝置] > [預先宣告的裝置]。 在 [首頁] 索引標籤上，按一下 [DEP 同步處理] 。 同步處理要求會傳送至 Apple。 同步處理完成之後，會顯示 DEP 管理的裝置。
+    在 [資產與相容性] 工作區中，前往 [公司擁有的所有裝置] > [預先宣告的裝置]。 在 [首頁] 索引標籤上，按一下 [DEP 同步處理] 。同步處理要求會傳送至 Apple。 同步處理完成之後，會顯示 DEP 管理的裝置。
 
     > [!NOTE]
     > 使用混合式設定時，在 Configuration Manager 主控台中，按一下 [DEP 同步處理] 可手動觸發 DEP 同步處理作業。
 
-4.  **指派 DEP 設定檔**<br>在 [資產與相容性] 工作區中，前往 [公司擁有的所有裝置] > [iOS] > [註冊設定檔]。 選取 DEP 註冊設定檔，然後在 [首頁] 索引標籤中，按一下 [指派給裝置]。 選取將使用此註冊設定檔的裝置，按一下 [新增]，然後按一下 [確定]。   
+4.  **指派 DEP 設定檔**<br>在 [資產與相容性] 工作區中，前往 [公司擁有的所有裝置] > [iOS] > [註冊設定檔]。 選取 DEP 註冊設定檔，然後在 [首頁] 索引標籤中，按一下 [指派給裝置]。 選取將使用此註冊設定檔的裝置，按一下 新增，然後按一下確定。   
      ![將 DEP 設定檔指派給 iOS 裝置的螢幕擷取畫面](../media/dep-assign-profile.png)
 
 ## <a name="distribute-devices-to-users"></a>將裝置散發給使用者
