@@ -125,7 +125,7 @@ ms.lasthandoff: 09/15/2017
 
         -   '網域\名稱'。 例如：'contoso\mnorth'  
 
-        -   'user@domain'。 例如：'mnorth@contoso.com'  
+        -   'user@domain'。  例如：'mnorth@contoso.com'  
 
             > [!IMPORTANT]  
             >  當您使用電子郵件地址填入 [使用者名稱] 欄位時， Configuration Manager 會自動使用電子郵件地址的網域名稱和註冊 Proxy 點伺服器的預設名稱來填入 [伺服器名稱] 欄位。 如果此網域名稱和伺服器名稱不符合註冊 Proxy 點伺服器名稱，請將正確名稱告知使用者，使用者才能在註冊其 Mac 電腦時使用此名稱。  
@@ -157,7 +157,7 @@ ms.lasthandoff: 09/15/2017
 
     -   '網域\名稱'。 例如：'contoso\mnorth'  
 
-    -   'user@domain'。 例如：'mnorth@contoso.com'  
+    -   'user@domain'。  例如：'mnorth@contoso.com'  
 
      使用者名稱和對應密碼必須符合 Active Directory 使用者帳戶，並具有 Mac 用戶端憑證範本的讀取和註冊權限。  
 
