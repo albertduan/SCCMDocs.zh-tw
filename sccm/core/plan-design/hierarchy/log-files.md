@@ -771,7 +771,7 @@ Mac 電腦的 Configuration Manager 用戶端會在下列記錄檔中記錄資�
  下表列出包含與使用網路喚醒相關資訊的記錄檔。  
 
 > [!NOTE]  
->  如果您使用喚醒 Proxy 來補充網路喚醒，這項活動就會記錄在用戶端上。 例如，您可以參閱本主題之[用戶端操作](#BKMK_ClientOpLogs)一節中的 CcmExec.log 與 SleepAgent_<網域\>@SYSTEM_0.log。  
+>  如果您使用喚醒 Proxy 來補充網路喚醒，這項活動就會記錄在用戶端上。 例如，您可以參閱本主題之[用戶端操作](#BKMK_ClientOpLogs)一節中的 CcmExec.log 與 SleepAgent_<網域\>@SYSTEM_0.log 。  
 
 |記錄檔名稱|說明|含有記錄檔的電腦|  
 |--------------|-----------------|----------------------------|  
