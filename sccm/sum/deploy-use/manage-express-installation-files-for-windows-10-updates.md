@@ -28,7 +28,7 @@ ms.lasthandoff: 08/07/2017
 若要啟動 Windows 10 快速安裝檔案的中繼資料同步處理，您必須在 [軟體更新點內容] 中將它啟用。
 1.  在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [站台設定] > [站台]。
 2.  選取管理中心網站或獨立主要站台。
-3.  在 [首頁]  索引標籤的 [設定]  群組中，按一下 [設定站台元件] ，然後按一下 [軟體更新點] 。 在 [更新檔案] 索引標籤上，選取 [Download full files for all approved updates and express installation files for Windows 10] \(下載所有核准更新的完整檔案和 Windows 10 的快速安裝檔案)。
+3.  在 首頁  索引標籤的 設定  群組中，按一下 設定站台元件 ，然後按一下軟體更新點 。 在 [更新檔案] 索引標籤上，選取 [Download full files for all approved updates and express installation files for Windows 10] \(下載所有核准更新的完整檔案和 Windows 10 的快速安裝檔案)。
 
 ### <a name="to-enable-support-for-clients-to-download-and-install-express-installation-files"></a>啟用用戶端支援以下載並安裝快速安裝檔案
 若要啟用用戶端的快速安裝檔案支援，您必須在用戶端設定的 [軟體更新] 區段中啟用快速安裝檔案。 這會建立新的 HTTP 接聽程式，以在您指定的連接埠上接聽下載快速安裝檔案的要求。

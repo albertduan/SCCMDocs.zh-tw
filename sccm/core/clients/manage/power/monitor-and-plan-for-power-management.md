@@ -141,7 +141,7 @@ ms.lasthandoff: 09/15/2017
 
 |報告名稱|詳細資料|  
 |-----------------|-------------|  
-|**Computer Activity by Computer**|按一下電腦名稱，查看該電腦在所選擇報告期間的特定活動。 這些活動包括 [電腦開啟]\(是否已開啟電腦？)、[監視器開啟]\(是否已開啟監視器？) 和 [使用者正在使用中]\(已透過電腦的滑鼠、鍵盤或遠端桌面連線偵測到活動)。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Activity by Computer Report](#BKMK_Comp_Activity_by_computer) 。|  
+|<bpt id="p1">**</bpt>Computer Activity by Computer<ept id="p1">**</ept>|按一下電腦名稱，查看該電腦在所選擇報告期間的特定活動。 這些活動包括 [電腦開啟]\(是否已開啟電腦？)、[監視器開啟]\(是否已開啟監視器？) 和 [使用者正在使用中]\(已透過電腦的滑鼠、鍵盤或遠端桌面連線偵測到活動)。<br /><br /> 如需詳細資訊，請參閱本主題的 [Computer Activity by Computer Report](#BKMK_Comp_Activity_by_computer) 。|  
 
 ###  <a name="BKMK_Computer_Details"></a> 電腦詳細資料報告  
  [電腦詳細資料]  報告顯示指定電腦所套用的電池容量、電源設定和電源計劃的詳細資訊。 這份報告是由 [每部電腦的電腦活動]  報告、[具有多個電源計劃的電腦]  報告、[電池容量]  報告和 [電源設定詳細資料]  報告呼叫。 它不是直接由網站管理員執行。  
@@ -533,7 +533,7 @@ ms.lasthandoff: 09/15/2017
 
 |報告名稱|詳細資料|  
 |-----------------|-------------|  
-|**Insomnia Computer Details**|按一下 [受影響的電腦]  欄，查看因為所選原因而無法睡眠或休眠的電腦清單。<br /><br /> 如需詳細資訊，請參閱本主題的 [Insomnia Computer Details Report](#BKMK_Insomnia_Computer_Details) 。|  
+|<bpt id="p1">**</bpt>Insomnia Computer Details<ept id="p1">**</ept>|按一下 [受影響的電腦]  欄，查看因為所選原因而無法睡眠或休眠的電腦清單。<br /><br /> 如需詳細資訊，請參閱本主題的 [Insomnia Computer Details Report](#BKMK_Insomnia_Computer_Details) 。|  
 
 ###  <a name="BKMK_Capabilites"></a> 電池容量報告  
  [電池容量]  報告顯示指定集合之電腦的電源管理硬體功能。 這份報告通常用在電源管理的監視階段，以判斷貴組織的電腦電源管理功能。 報告中顯示的資訊可用來建立要套用電源計劃，或從電源管理排除的電腦集合。 這份報告顯示的電源管理功能如下：  
@@ -595,7 +595,7 @@ ms.lasthandoff: 09/15/2017
 
 |報告名稱|詳細資料|  
 |-----------------|-------------|  
-|**Power Settings Details**|按一下 [電腦]  欄中的電腦數字 ，以查看該列中使用電源設定的所有電腦清單。<br /><br /> 如需詳細資訊，請參閱本主題的 [Power Settings Details Report](#BKMK_Settings_Details) 。|  
+|<bpt id="p1">**</bpt>Power Settings Details<ept id="p1">**</ept>|按一下 [電腦]  欄中的電腦數字 ，以查看該列中使用電源設定的所有電腦清單。<br /><br /> 如需詳細資訊，請參閱本主題的 [Power Settings Details Report](#BKMK_Settings_Details) 。|  
 
 ###  <a name="BKMK_Settings_Details"></a> Power Settings Details report  
  [電源設定詳細資料]  報告會顯示 [電源設定]  報告中所選電腦的進一步資訊。 這份報告是由 [電源設定]  報告呼叫，而且不是直接由網站管理員執行。  

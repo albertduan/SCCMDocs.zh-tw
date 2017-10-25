@@ -243,7 +243,7 @@ ms.lasthandoff: 08/07/2017
 當您執行工作順序並失敗時，現在可以返回上一頁。 在此版本之前，您必須在失敗時重新啟動工作順序。 例如，您可以在下列情況下使用 [上一步] 按鈕：
 
 - 當電腦在 Windows PE 中啟動時，在工作順序可用之前，可能會顯示工作順序啟動程序對話方塊。 當您在此情況下按一下 [下一步] 時，工作順序的最後一頁會顯示訊息，指出沒有工作順序可用。 現在，您可以按一下 [上一步] 重新搜尋可用的工作順序。 您可以重複此程序直到工作順序可用為止。
-- 當您執行工作順序，但發佈點上尚未提供相依內容套件時，工作順序將會失敗。 您現在可以發佈遺失內容 (如果尚未發佈) 或等候發佈點上的內容可供使用，然後按一下 [上一步] 讓工作順序再次搜尋內容。
+- 當您執行工作順序，但發佈點上尚未提供相依內容套件時，工作順序將會失敗。 您現在可以發佈遺失內容 (如果尚未發佈) 或等候發佈點上的內容可供使用，然後按一下上一步 讓工作順序再次搜尋內容。
 
 ## <a name="express-installation-files-support-for-windows-10-updates"></a>Windows 10 更新的快速安裝檔案支援
 我們在 Configuration Manager 中新增了 Windows 10 更新的快速安裝檔案支援。 當您使用支援的 Windows 10 版本時，您現在可以使用 Configuration Manager 設定，只下載目前月份的 Windows 10 累積更新與上個月更新之間的差異。 目前在 Configuration Manager 最新分支中，每個月會下載完整 Windows 10 累積更新 (包括過去幾個月的所有更新)。 使用快速安裝檔案可在用戶端提供較小的下載項目及更快速的安裝時間。
@@ -256,7 +256,7 @@ ms.lasthandoff: 08/07/2017
 若要啟動 Windows 10 快速安裝檔案的中繼資料同步處理，您必須在 [軟體更新點內容] 中將它啟用。
 1.  在 Configuration Manager 主控台中，瀏覽至 [系統管理] > [站台設定] > [站台]。
 2.  選取管理中心網站或獨立主要站台。
-3.  在 [首頁]  索引標籤的 [設定]  群組中，按一下 [設定站台元件] ，然後按一下 [軟體更新點] 。 在 [更新檔案] 索引標籤上，選取 [Download full files for all approved updates and express installation files for Windows 10] \(下載所有核准更新的完整檔案和 Windows 10 的快速安裝檔案)。
+3.  在 首頁  索引標籤的 設定  群組中，按一下 設定站台元件 ，然後按一下軟體更新點 。 在 [更新檔案] 索引標籤上，選取 [Download full files for all approved updates and express installation files for Windows 10] \(下載所有核准更新的完整檔案和 Windows 10 的快速安裝檔案)。
 
 ### <a name="to-enable-support-for-clients-to-download-and-install-express-installation-files"></a>啟用用戶端支援以下載並安裝快速安裝檔案
 若要啟用用戶端的快速安裝檔案支援，您必須在用戶端設定的 [軟體更新] 區段中，啟用用戶端的快速安裝檔案。 這會建立新的 HTTP 接聽程式，以在您指定的連接埠上接聽下載快速安裝檔案的要求。 在您部署用戶端設定以在用戶端上啟用這項功能之後，該功能會嘗試下載目前月份的 Windows 10 累積更新與上個月更新之間的差異 (用戶端必須執行支援快速安裝檔案的 Windows 10 版本)。
@@ -278,7 +278,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  移至 [系統管理] > [站台設定] > [站台]。
 2.  選取主要站台，然後按一下 [內容]。
-3.  在 [主要站台內容] 工作表的 [一般] 索引標籤上，按一下 [Enable REST endpoint for all providers on this site] \(為此站台上的所有提供者啟用 REST 端點)，然後按一下 [確定]。
+3.  在 主要站台內容 工作表的 一般 索引標籤上，按一下 Enable REST endpoint for all providers on this site \(為此站台上的所有提供者啟用 REST 端點)，然後按一下確定。
 
 在您最愛的 OData 查詢檢視器中，嘗試類似下列範例的查詢，以傳回 Configuration Manager 中的各種物件：
 

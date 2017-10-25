@@ -43,7 +43,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在桌面上，依序按一下 [開始] 、[所有程式] 、[Microsoft SQL Server 2008 R2] 、[組態工具] 和 [Reporting Services 組態管理員] 。  
 
-2.  在 [Reporting Services 組態連接]  對話方塊中，指定裝載 SQL Server Reporting Services 的伺服器名稱，並在功能表上選取已安裝 SQL Reporting Services 的 SQL Server 執行個體，然後按一下 [連線] 。 此時會開啟 [Reporting Services 組態管理員]。  
+2.  在 Reporting Services 組態連接  對話方塊中，指定裝載 SQL Server Reporting Services 的伺服器名稱，並在功能表上選取已安裝 SQL Reporting Services 的 SQL Server 執行個體，然後按一下連線 。 此時會開啟 [Reporting Services 組態管理員]。  
 
 3.  在 [報表伺服器狀態]  頁面上，確認 [報告服務狀態]  設定為 [已啟動] 。 如果不是，請按一下 [啟動] 。  
 
@@ -68,7 +68,7 @@ ms.lasthandoff: 08/07/2017
 
 3.  按兩下 **ReportBuilderApplicationManifestName** 機碼以編輯值資料。  
 
-4.  將 [ReportBuilder_2_0_0_0.application]  變更為 [ReportBuilder_3_0_0_0.application] ，然後按一下 [確定] 。  
+4.  將 ReportBuilder_2_0_0_0.application  變更為 ReportBuilder_3_0_0_0.application ，然後按一下確定 。  
 
 5.  關閉 Windows 登錄編輯程式。  
 
@@ -90,7 +90,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理] 。  
 
-2.  在 [系統管理]  工作區中，展開 [網站設定] ，然後按一下 [伺服器和網站系統角色] 。  
+2.  在 系統管理  工作區中，展開 網站設定 ，然後按一下伺服器和網站系統角色 。  
 
     > [!TIP]  
     >  若只要列出裝載 Reporting Services 點站台角色的站台系統，請以滑鼠右鍵按一下 [伺服器和站台系統角色]  選取 [Reporting Services 點] 。  
@@ -114,7 +114,7 @@ ms.lasthandoff: 08/07/2017
 
     -   **站台資料庫伺服器名稱**：指定裝載 Configuration Manager 站台資料庫的伺服器名稱。 通常，精靈會自動擷取伺服器的完整網域名稱 (FQDN)。 若要指定資料庫執行個體，請使用 &lt;伺服器名稱>\&lt;執行個體名稱> 的格式。  
 
-    -   **資料庫名稱**：指定 Configuration Manager 站台資料庫名稱，然後按一下 [驗證]，確認精靈可存取站台資料庫。  
+    -   **資料庫名稱**：指定 Configuration Manager 站台資料庫名稱，然後按一下驗證，確認精靈可存取站台資料庫。  
 
         > [!IMPORTANT]  
         >  建立 Reporting Services 點的使用者帳戶，必須擁有站台資料庫的 **讀取** 權限。 如果連線測試失敗，則會顯示紅色警告圖示。 將游標移至此圖示上方，即可讀取失敗的詳細資料。 更正錯誤，然後再按一下 [測試]  。  
@@ -191,13 +191,13 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 [監視]  工作區中，展開 [系統狀態] ，然後按一下 [元件狀態] 。  
+2.  在 監視  工作區中，展開 系統狀態 ，然後按一下元件狀態 。  
 
 3.  按一下元件清單中的 [SMS_SRS_REPORTING_POINT]  。  
 
-4.  在 [首頁]  索引標籤的 [元件]  群組中，按一下 [顯示訊息] ，然後按一下 [全部] 。  
+4.  在 首頁  索引標籤的 元件  群組中，按一下 顯示訊息 ，然後按一下全部 。  
 
-5.  指定安裝 Reporting Services 點之前某一期間的日期及時間，然後按一下 [確定] 。  
+5.  指定安裝 Reporting Services 點之前某一期間的日期及時間，然後按一下確定 。  
 
 6.  確認狀態訊息識別碼 1015 列出，表示 Reporting Services 點成功安裝。 或者，您可以開啟位於 &lt;Configuration Manager 安裝路徑>\Logs 中的 Srsrp.log 檔案，並尋找 [安裝成功]。  
 
@@ -217,13 +217,13 @@ ms.lasthandoff: 08/07/2017
 
 1.  在站台伺服器上執行下列步驟將自我簽署憑證匯出：  
 
-    1.  依序按一下 [開始] 與 [執行] ，然後輸入 **mmc.exe**。 在空白主控台中，按一下 [檔案] ，然後按一下 [新增/移除嵌入式管理單元] 。  
+    1.  依序按一下 [開始] 與 [執行] ，然後輸入 **mmc.exe**。 在空白主控台中，按一下 檔案 ，然後按一下新增/移除嵌入式管理單元 。  
 
-    2.  在 [新增或移除嵌入式管理單元]  對話方塊中，從 [可用的嵌入式管理單元]  清單中選取 [憑證] ，然後按一下 [新增] 。  
+    2.  在 新增或移除嵌入式管理單元  對話方塊中，從 可用的嵌入式管理單元  清單中選取 憑證 ，然後按一下新增 。  
 
     3.  在 [憑證嵌入式管理單元]  對話方塊中，選取 [電腦帳戶] ，然後按 [下一步] 。  
 
-    4.  在 [選取電腦]  對話方塊中，確定選取 [本機電腦: (執行這個主控台的電腦)]  ，然後按一下 [完成] 。  
+    4.  在 選取電腦  對話方塊中，確定選取 本機電腦: (執行這個主控台的電腦)  ，然後按一下完成 。  
 
     5.  在 [新增或移除嵌入式管理單元]  對話方塊中，按一下 [確定] 。  
 
@@ -252,7 +252,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理] 。  
 
-2.  在 [系統管理]  工作區中，展開 [站台設定] ，然後按一下 [伺服器和站台系統角色]  列出站台系統。  
+2.  在 系統管理  工作區中，展開 站台設定 ，然後按一下伺服器和站台系統角色  列出站台系統。  
 
     > [!TIP]  
     >  若只要列出裝載 Reporting Services 點站台角色的站台系統，請以滑鼠右鍵按一下 [伺服器和站台系統角色]  選取 [Reporting Services 點] 。  
@@ -265,7 +265,7 @@ ms.lasthandoff: 08/07/2017
 
     -   **站台資料庫伺服器名稱**：指定裝載 Configuration Manager 站台資料庫的伺服器名稱。 通常，精靈會自動擷取伺服器的完整網域名稱 (FQDN)。 若要指定資料庫執行個體，請使用 &lt;伺服器名稱>\&lt;執行個體名稱> 的格式。  
 
-    -   **資料庫名稱**：指定 System Center 2012 Configuration Manager 站台資料庫名稱，然後按一下 [驗證]，確認精靈可存取站台資料庫。  
+    -   **資料庫名稱**：指定 System Center 2012 Configuration Manager 站台資料庫名稱，然後按一下驗證，確認精靈可存取站台資料庫。  
 
         > [!IMPORTANT]  
         >  要用來建立 Reporting Services 點的使用者帳戶必須具有站台資料庫的「讀取」存取權限。 如果連線測試失敗，則會顯示紅色警告圖示。 將游標移至此圖示上方，即可讀取失敗的詳細資料。 更正錯誤，然後再按一下 [測試]  。  
@@ -289,11 +289,11 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 [監視]  工作區中，展開 [報告] ，然後按一下 [報告] 。  
+2.  在 監視  工作區中，展開 報告 ，然後按一下報告 。  
 
 3.  在 [首頁]  索引標籤的 [設定]  群組中，按一下 [報告選項] 。  
 
-4.  在清單中選取預設報告伺服器，然後按一下 [確定] 。 如果清單中未列出 Reporting Services 點，請確認您已在站台中成功安裝及設定 Reporting Services 點。  
+4.  在清單中選取預設報告伺服器，然後按一下確定 。 如果清單中未列出 Reporting Services 點，請確認您已在站台中成功安裝及設定 Reporting Services 點。  
 
 ## <a name="next-steps"></a>後續步驟
 [報告作業和維護](operations-and-maintenance-for-reporting.md)

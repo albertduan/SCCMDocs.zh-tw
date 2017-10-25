@@ -208,8 +208,8 @@ Configuration Manager 需要 Azure 管理憑證才能存取 Azure API 及設定�
 
 1. 在 Configuration Manager 主控台中，移至 [管理] > [站台設定] > [伺服器和站台系統角色]。
 2. 按一下代表您想要為雲端 Proxy 流量設定之角色的站台系統伺服器。
-3. 按一下此角色，然後按一下 [內容]。
-4. 在角色內容表的 [用戶端連線] 底下，選擇 [允許 Configuration Manager 雲端 Proxy 流量] 旁邊的 [HTTPS] 核取方塊，然後按一下 [確定]。 針對其餘角色重複上述步驟。
+3. 按一下此角色，然後按一下內容。
+4. 在角色內容表的 用戶端連線 底下，選擇 允許 Configuration Manager 雲端 Proxy 流量 旁邊的 HTTPS 核取方塊，然後按一下確定。 針對其餘角色重複上述步驟。
 
 #### <a name="check-status-on-a-client-on-the-internet"></a>檢查網際網路上之用戶端的狀態
 

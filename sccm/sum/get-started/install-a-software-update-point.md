@@ -63,7 +63,7 @@ ms.lasthandoff: 08/07/2017
 
  1.  在 WSUS 伺服器上，開啟 Internet Information Services (IIS) Manager。  
 
- 2.  展開 [網站] ，以滑鼠右鍵按一下 WSUS 伺服器的網站，然後按一下 [編輯繫結] 。 在 [站台繫結] 對話方塊中，HTTP 和 HTTPS 連接埠的值都會顯示在 [連接埠]  欄中。
+ 2.  展開 網站 ，以滑鼠右鍵按一下 WSUS 伺服器的網站，然後按一下編輯繫結 。 在 [站台繫結] 對話方塊中，HTTP 和 HTTPS 連接埠的值都會顯示在 [連接埠]  欄中。
 
 
 ### <a name="configure-ssl-communications-to-wsus"></a>設定與 WSUS 的 SSL 通訊  

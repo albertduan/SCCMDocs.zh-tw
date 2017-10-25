@@ -120,7 +120,7 @@ Coho Vineyard & Winery 開闢了一個遊客中心，需要在執行 Windows Emb
 
     1.  她在 [建立新的工作順序]  頁面選取 [建立新的自訂工作順序] ，然後按 [下一步] 。  
 
-    2.  她在 [工作順序資訊]  頁面上輸入 **Maintenance task to commit changes on embedded devices** 作為工作順序名稱，然後按一下 [下一步] 。  
+    2.  她在 工作順序資訊  頁面上輸入 **Maintenance task to commit changes on embedded devices** 作為工作順序名稱，然後按一下下一步 。  
 
     3.  她在 [摘要]  頁面選取 [下一步] 並完成精靈。  
 

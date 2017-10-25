@@ -34,11 +34,11 @@ System Center 2012 Configuration Manager 中 Endpoint Protection 的防火牆原
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
-2.  在 [資產與相容性] 工作區中，展開 [Endpoint Protection]，然後按一下 [Windows 防火牆原則]。  
+2.  在 資產與相容性 工作區中，展開 Endpoint Protection，然後按一下Windows 防火牆原則。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立 Windows 防火牆原則] 。  
 
-4.  在 [建立 Windows 防火牆原則精靈]  的 [一般] 頁面上，指定這個防火牆原則的名稱和選擇性描述，然後按一下 [下一步] 。  
+4.  在 建立 Windows 防火牆原則精靈  的 一般 頁面上，指定這個防火牆原則的名稱和選擇性描述，然後按一下下一步 。  
 
 5.  在精靈的 [設定檔設定]  頁面上，設定每個網路設定檔的下列設定：  
 
@@ -65,7 +65,7 @@ System Center 2012 Configuration Manager 中 Endpoint Protection 的防火牆原
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
-2.  在 [資產與相容性] 工作區中，展開 [Endpoint Protection]，然後按一下 [Windows 防火牆原則]。  
+2.  在 資產與相容性 工作區中，展開 Endpoint Protection，然後按一下Windows 防火牆原則。  
 
 3.  在 [Windows 防火牆原則]  清單中，選取您想要部署的 Windows 防火牆原則。  
 

@@ -216,7 +216,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
-2.  依序展開 [相容性設定] 和 [條件式存取] ，然後按一下 [Exchange Online] 。  
+2.  依序展開 相容性設定 和 條件式存取 ，然後按一下Exchange Online 。  
 
 3.  在 [常用]  索引標籤的 [連結]  群組中，按一下 [在 Intune 主控台中設定條件存取原則] 。 您可能需要提供以 Intune 服務的任何全域管理員身分連線到 Configuration Manager 時，所使用的帳戶使用者名稱和密碼。  
 
@@ -302,7 +302,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
-2.  依序展開 [相容性設定] 和 [條件式存取] ，然後按一下 [內部部署 Exchange] 。  
+2.  依序展開 相容性設定 和 條件式存取 ，然後按一下內部部署 Exchange 。  
 
 3.  在 [常用]  索引標籤的 [內部部署 Exchange]  群組中，按一下 [設定條件存取原則] 。  
 

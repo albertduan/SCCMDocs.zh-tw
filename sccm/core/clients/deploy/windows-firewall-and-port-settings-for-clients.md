@@ -36,7 +36,7 @@ System Center Configuration Manager 中執行 Windows 防火牆的用戶端，�
 
 1.  在執行 Windows 防火牆的電腦上開啟 [控制台]。  
 
-2.  以滑鼠右鍵按一下 [Windows 防火牆] ，然後按一下 [開啟] 。  
+2.  以滑鼠右鍵按一下 Windows 防火牆 ，然後按一下開啟 。  
 
 3.  設定必要的例外，以及所需的自訂程式和連接埠。  
 
