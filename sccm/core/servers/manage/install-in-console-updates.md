@@ -212,7 +212,7 @@ System Center Configuration Manager 會與 Microsoft 雲端服務同步以取得
 當主控台更新完成之後，您可以確認主控台和站台版本是正確的。 請移至主控台左上角的 [關於 System Center Configuration Manager]。  
 
 ###  <a name="bkmk_toptier"></a> 在頂層站台上開始安裝更新  
-在您階層的頂層站台上，於 Configuration Manager 主控台中，移至 [系統管理] > [更新與服務]、選取 [可用] 更新，然後按一下 [安裝更新套件]。  
+在您階層的頂層站台上，於 Configuration Manager 主控台中，移至 系統管理 > 更新與服務、選取 可用 更新，然後按一下安裝更新套件。  
 
 ###  <a name="bkmk_secondary"></a> 在次要站台上開始安裝更新  
 在更新次要站台的父主要站台之後，您可從 Configuration Manager 主控台內更新次要站台。  若要這樣做，您可以使用 **[升級次要站台精靈]**。  
