@@ -64,7 +64,7 @@ ms.lasthandoff: 08/07/2017
 
 -   讓套用至部署的更新可從 Configuration Manager 主控台內取用。  
 
-此站台系統角色支援線上和離線操作模式。 如需詳細資訊，請參閱 [About the service connection point in System Center Configuration Manager](../../../core/servers/deploy/configure/about-the-service-connection-point.md)。  
+此站台系統角色支援線上和離線操作模式。 如需詳細資訊，請參閱 [關於 System Center Configuration Manager 中的服務連線點](../../../core/servers/deploy/configure/about-the-service-connection-point.md)。  
 
 ##  <a name="bkmk_usage"></a> 使用量資料收集  
  System Center Configuration Manager 會收集您站台和基礎結構的使用方式資料。 這項資訊是透過服務連接點編譯並提交給 Microsoft 雲端服務。 需要有這項資訊才能讓 Configuration Manager 下載套用至您所使用 Configuration Manager 版本之部署的更新。 當您設定服務連接點時，可以指定資料收集層級，以及這是自動進行提交 (線上模式) 還是手動進行提交 (離線模式)。  
