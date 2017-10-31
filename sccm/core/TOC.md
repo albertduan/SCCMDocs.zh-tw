@@ -103,6 +103,7 @@
 ###  [設定實驗室](get-started/set-up-your-lab.md)
 
 ##   [Technical Preview](get-started/technical-preview.md)
+###  [1710 的功能](get-started/capabilities-in-technical-preview-1710.md)
 ###  [1709 的功能](get-started/capabilities-in-technical-preview-1709.md)
 ###  [1708 的功能](get-started/capabilities-in-technical-preview-1708.md)
 ###  [1707 的功能](get-started/capabilities-in-technical-preview-1707.md)
