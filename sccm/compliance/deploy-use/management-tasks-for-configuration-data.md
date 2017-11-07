@@ -1,5 +1,6 @@
 ---
-title: "管理設定資料 | Microsoft Docs"
+title: "管理設定資料"
+titleSuffix: Configuration Manager
 description: "在 System Center Configuration Manager 中建立設定項目和基準之後，您可以使用其他命令來執行各種動作。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: 07d4148559c36745e51be46957b1af3c4a94ce44
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 23a6bcf2e9fcb417dabde7700e09c953d436deb7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-configuration-data-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中管理設定資料
 

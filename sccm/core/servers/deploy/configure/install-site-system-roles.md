@@ -1,5 +1,6 @@
 ---
-title: "安裝站台系統角色 | Microsoft Docs"
+title: "安裝站台系統角色"
+titleSuffix: Configuration Manager
 description: "精靈可協助您將站台系統角色新增至站台中現有或新的站台系統伺服器。"
 ms.custom: na
 ms.date: 2/7/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "4"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 76b070f8e203cc0c751f35e5a4b4904504786c04
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: cfb43015204a6651d89c75470754aa7a5791eb72
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="install-site-system-roles-for-system-center-configuration-manager"></a>為 System Center Configuration Manager 安裝站台系統角色
 

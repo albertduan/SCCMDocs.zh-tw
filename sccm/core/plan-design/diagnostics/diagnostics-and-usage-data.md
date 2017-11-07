@@ -1,5 +1,6 @@
 ---
-title: "診斷和使用方式資料 | Microsoft Docs"
+title: "診斷和使用方式資料"
+titleSuffix: Configuration Manager
 description: "了解 System Center Configuration Manager 所收集關於本身的診斷及使用方式資料。"
 ms.custom: na
 ms.date: 3/27/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 4a4b7c9c0d40b6bd3ea2f318e37d744f1a0cc084
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 478951f274c48424a3da0b8803968c2a51c93b76
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="diagnostics-and-usage-data-for-system-center-configuration-manager"></a>System Center Configuration Manager 的診斷和使用方式資料
 

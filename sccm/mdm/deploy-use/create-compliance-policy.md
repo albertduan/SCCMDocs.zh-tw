@@ -1,5 +1,6 @@
 ---
-title: "建立和部署裝置合規性政策 | Microsoft Docs"
+title: "建立和部署裝置相容性原則"
+titleSuffix: Configuration Manager
 description: "了解如何在 System Center Configuration Manager 中建立和部署裝置相容性原則。"
 ms.custom: na
 ms.date: 03/05/2017
@@ -15,11 +16,11 @@ author: andredm7
 ms.author: andredm
 manager: angrobe
 robots: noindex
-ms.openlocfilehash: 6630d0170df22f46f14df241ffd8d48266c69263
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: bf0099cdf4df1b7421a257e910c8682e63f8ee1e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-and-deploy-a-device-compliance-policy"></a>建立和部署裝置相容性原則
 
@@ -238,7 +239,7 @@ ms.lasthandoff: 08/07/2017
   * Android 4.0+
   * Samsung KNOX Standard 4.0 或更新版本
 
-* **允許的最高 OS 版本**。 當裝置使用的 OS 版本比您在規則中所指定的版本還要新時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 系統管理員。 在您變更規則以允許該 OS 版本之前，此裝置無法用來存取公司資源。
+* **允許的最高 OS 版本**。 當裝置使用的 OS 版本比您在規則中所指定的版本還要新時，系統便會封鎖對公司資源的存取權，並要求使用者連絡其 IT 系統管理員。在您變更規則以允許該 OS 版本之前，此裝置無法用來存取公司資源。
 
   **支援於：**
   * Windows Phone 8 或更新版本
@@ -268,7 +269,7 @@ ms.lasthandoff: 08/07/2017
   **支援於：**
   * Windows 10 和 Windows 10 行動裝置版
 
-- **無法安裝在裝置上的應用程式**。 如果使用者安裝來自系統管理員不符合規範應用程式清單的應用程式，他們會在嘗試存取公司電子郵件和其他支援條件式存取的公司資源時被封鎖。 此規則在將應用程式新增至系統管理員所定義的不符合規範清單時，需要應用程式名稱和應用程式識別碼。 也可以新增應用程式發行者，但它不是必要項目。
+- **無法安裝在裝置上的應用程式**。 如果使用者安裝來自系統管理員不符合規範應用程式清單的應用程式，他們會在嘗試存取公司電子郵件和其他支援條件式存取的公司資源時被封鎖。 此規則在將應用程式新增至系統管理員所定義的不符合規範清單時，需要應用程式名稱和應用程式識別碼。也可以新增應用程式發行者，但它不是必要項目。
 
     **支援於：**
       * iOS 6 或更新版本

@@ -1,5 +1,6 @@
 ---
-title: "建立可開機媒體 - Configuration Manager | Microsoft Docs"
+title: "建立可開機媒體 "
+titleSuffix: Configuration Manager
 description: "Configuration Manager 中的可開機媒體讓您更容易安裝新版的 Windows 或取代電腦和傳輸設定。"
 ms.custom: na
 ms.date: 01/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 9032698fa12bf453041ea06bf330d3b4687c2a97
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: f75a29ff27a1f806d4329bd2dfc5e30a8991fac9
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-bootable-media-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立可開機媒體
 
@@ -50,7 +51,7 @@ Configuration Manager 中的可開機媒體包含開機映像、選擇性的啟�
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立工作順序媒體]  以啟動 [建立工作順序媒體精靈]。  
 

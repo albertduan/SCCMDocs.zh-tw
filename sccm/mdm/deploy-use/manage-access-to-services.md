@@ -1,5 +1,6 @@
 ---
-title: "條件式存取 | Microsoft Docs"
+title: "條件式存取"
+titleSuffix: Configuration Manager
 description: "了解如何使用 System Center Configuration Manager 中的條件式存取，以協助保護電子郵件及其他服務。"
 ms.custom: na
 ms.date: 03/05/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "26"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: d6933a331bb229f7e378e8f0bfa511f6b0553ae9
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 4a14f18007524421058c6caf1ec8947cf34328e4
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-access-to-services-in-system-center-configuration-manager"></a>管理 System Center Configuration Manager 中的服務存取權
 

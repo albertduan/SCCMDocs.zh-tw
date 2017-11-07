@@ -1,5 +1,6 @@
 ---
-title: "軟體更新的最佳做法 | Microsoft Docs"
+title: "軟體更新的最佳作法"
+titleSuffix: Configuration Manager
 description: "使用 System Center Configuration Manager 軟體更新的這些最佳做法。"
 keywords: 
 author: dougeby
@@ -11,11 +12,11 @@ ms.prod: configuration-manager
 ms.service: 
 ms.technology: configmgr-sum
 ms.assetid: 6d20389a-9de2-4a64-bced-9fc4fa519174
-ms.openlocfilehash: 5df20f3703442de1be6220ca2770e182e330c036
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 10913870f650bdda6eb7e65dc88ba8e3f0b17de4
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="best-practices-for-software-updates-in-system-center-configuration-manager"></a>System Center Configuration Manager 軟體更新的最佳作法
 

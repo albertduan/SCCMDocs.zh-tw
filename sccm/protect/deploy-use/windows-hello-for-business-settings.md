@@ -1,5 +1,6 @@
 ---
-title: "Windows Hello 企業版設定 | Microsoft Docs"
+title: "Windows Hello 企業版設定"
+titleSuffix: Configuration Manager
 description: "了解如何整合 Windows Hello 企業版與 System Center Configuration Manager。"
 ms.custom: na
 ms.date: 09/21/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "17"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 43586e55f2c0c5cf117b94c61250f26ba4233f53
-ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
+ms.openlocfilehash: 195a5f8e595b6a8597e8c8c8d9046c5864f46526
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="windows-hello-for-business-settings-in-system-center-configuration-manager"></a>System Center Configuration Manager 的 Windows Hello 企業版設定
 
@@ -66,7 +67,7 @@ Windows Hello 企業版可讓您藉由 **使用者手勢** 登入，而不使用
 |-|-|-|-|
 |Windows 用戶端版本|Configuration Manager 1602 或 1606|Configuration Manager 1610|Configuration Manager 1702 或更新版本|
 |Windows 10 年度更新版|不需要 Hotfix<br><br>不需要權限<br><br>不需要更新 Windows 結構描述|不需要 Hotfix (請參閱＜警告＞)<br><br>不需要權限<br><br>不需要更新 Windows 結構描述|設定權限<br><br>套用 Windows Server 2016 結構描述道 Active Directory|
-|Windows 10 Creators Update 或更新版本|不支援|安裝[此 Hotfix](https://support.microsoft.com/help/4010155/update-rollup-for-system-center-configuration-manager-current-branch-v)<br><br>設定權限<br><br>套用 Windows Server 2016 結構描述道 Active Directory|設定權限<br><br>套用 Windows Server 2016 結構描述到 Active Directory|
+|Windows 10 Creators Update 或更新版本|不支援|安裝[此 Hotfix](https://support.microsoft.com/help/4010155/update-rollup-for-system-center-configuration-manager-current-branch-v)<br><br>設定權限<br><br>套用 Windows Server 2016 結構描述道 Active Directory|設定權限<br><br>套用 Windows Server 2016 結構描述道 Active Directory|
 
 > [!WARNING]
 > 雖然 Configuration Manager 1610 與 Windows 10 年度更新版不需要該 [Hotfix](https://support.microsoft.com/help/4010155/update-rollup-for-system-center-configuration-manager-current-branch-v)，系統可能會安裝它。  若該 Hotfix 已安裝，您必須設定權限並套用 Windows Server 2016 結構描述到 Active Directory。
@@ -75,7 +76,7 @@ Windows Hello 企業版可讓您藉由 **使用者手勢** 登入，而不使用
 
 1.  以網域系統管理員身分 (或對等的認證) 登入網域控制站或管理工作站。
 2.  開啟 [Active Directory 使用者和電腦]。
-3.  在瀏覽窗格中，以滑鼠右鍵按一下網域名稱，然後按一下內容。
+3.  在瀏覽窗格中，以滑鼠右鍵按一下網域名稱，然後按一下 [內容]。
 4.  在 [<domain name> 內容] 對話方塊的 [安全性] 索引標籤上，按一下 [進階]。 如果未顯示 [安全性] 索引標籤，請從 [Active Directory 使用者和電腦] 的 [檢視] 功能表，開啟 [進階功能]。
 5.  按一下 [新增] 。
 6.  在 [<domain name> 的權限項目] 對話方塊中，按一下 [選取主體]。

@@ -1,5 +1,6 @@
 ---
-title: "管理工作順序以自動化工作 | Microsoft Docs"
+title: "管理工作順序，將工作自動化"
+titleSuffix: Configuration Manager
 description: "您可以建立、編輯、部署、匯入和匯出工作順序，以在 System Center Configuration Manager 環境中管理它們。"
 ms.custom: na
 ms.date: 03/24/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "10"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: c9d94ffb61ed7a7fa40a01eedc763a16a8df30cb
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: 0174a95f1d3a487cab66d8152a3de70d91b07635
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-task-sequences-to-automate-tasks-in-system-center-configuration-manager"></a>管理工作順序，將 System Center Configuration Manager 中的工作自動化
 

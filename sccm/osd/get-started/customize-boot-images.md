@@ -1,5 +1,6 @@
 ---
-title: "自訂開機映像 - Configuration Manager | Microsoft Docs"
+title: "自訂開機映像 "
+titleSuffix: Configuration Manager
 description: "了解使用 Configuration Manager 或部署映像服務與管理 (DISM) 命令列工具來自訂開機映像的數種方式。"
 ms.custom: na
 ms.date: 01/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: ab2ecb64c9c80b4effed79ba08769c99473db0c4
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 4c1d721c9fb0b01f15f1f0468bc797ffffb9e345
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="customize-boot-images-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 自訂開機映像
 
@@ -134,7 +135,7 @@ Configuration Manager 的每個版本都可支援特定版本的 Windows 評定�
 
     1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-    2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下開機映像 。  
+    2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [開機映像] 。  
 
     3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [新增開機映像]  ，啟動 [新增開機映像精靈]。  
 
@@ -158,13 +159,13 @@ Configuration Manager 的每個版本都可支援特定版本的 Windows 評定�
 
     1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-    2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下開機映像 。  
+    2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [開機映像] 。  
 
     3.  在清單中找出新的開機映像，並識別該映像的套件識別碼。 您可以在開機映像的 [映像識別碼]  欄中找到套件識別碼。  
 
     4.  從命令提示字元輸入 **wbemtest** ，開啟 Windows Management Instrumentation 測試器。  
 
-    5.  在 命名空間 中輸入 \\\\<SMS 提供者電腦>\root\sms\site_<站台碼>，然後按一下連線。  
+    5.  在 [命名空間] 中輸入 \\\\<SMS 提供者電腦>\root\sms\site_<站台碼>，然後按一下 [連線]。  
 
     6.  按一下 **[開啟執行個體]**，輸入 **sms_bootimagepackage.packageID="<封裝識別碼\>"**，然後按一下 **[確定]**。 針對「套件識別碼」，請輸入您在步驟 3 中識別的值。  
 
@@ -178,7 +179,7 @@ Configuration Manager 的每個版本都可支援特定版本的 Windows 評定�
 
     1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-    2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下開機映像 。  
+    2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [開機映像] 。  
 
     3.  按一下步驟 3 中識別的開機映像。  
 
@@ -250,7 +251,7 @@ Configuration Manager 的每個版本都可支援特定版本的 Windows 評定�
 
     1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-    2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下開機映像 。  
+    2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [開機映像] 。  
 
     3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [新增開機映像]  ，啟動 [新增開機映像精靈]。  
 
@@ -274,13 +275,13 @@ Configuration Manager 的每個版本都可支援特定版本的 Windows 評定�
 
     1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-    2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下開機映像 。  
+    2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [開機映像] 。  
 
     3.  在清單中找出新的開機映像，並識別該映像的套件識別碼。 您可以在開機映像的 [映像識別碼]  欄中找到套件識別碼。  
 
     4.  從命令提示字元輸入 **wbemtest** ，開啟 Windows Management Instrumentation 測試器。  
 
-    5.  在 命名空間 中輸入 \\\\<SMS 提供者電腦>\root\sms\site_<站台碼>，然後按一下連線。  
+    5.  在 [命名空間] 中輸入 \\\\<SMS 提供者電腦>\root\sms\site_<站台碼>，然後按一下 [連線]。  
 
     6.  按一下 **[開啟執行個體]**，輸入 **sms_bootimagepackage.packageID="<封裝識別碼\>"**，然後按一下 **[確定]**。 針對「套件識別碼」，請輸入您在步驟 3 中識別的值。  
 
@@ -294,7 +295,7 @@ Configuration Manager 的每個版本都可支援特定版本的 Windows 評定�
 
     1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-    2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下開機映像 。  
+    2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [開機映像] 。  
 
     3.  按一下步驟 3 中識別的開機映像。  
 

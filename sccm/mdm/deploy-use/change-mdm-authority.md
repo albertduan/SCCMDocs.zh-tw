@@ -1,19 +1,20 @@
 ---
-title: "變更您的 MDM 授權單位 | Microsoft Docs"
+title: "變更您的 MDM 授權單位"
+titleSuffix: Configuration Manager
 description: "了解如何將 MDM 授權單位從 Configuration Manager (混合式) 變更為 Intune 獨立部署"
 keywords: 
 author: dougeby
 manager: angrobe
-ms.date: 09/14/2017
+ms.date: 10/04/2017
 ms.topic: article
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: cc397ab5-125f-4f17-905b-fab980194f49
-ms.openlocfilehash: 489c01f92d42ed12ac5464307a16713ca898d251
-ms.sourcegitcommit: 8ac9c2c9ba1fdcbb7cc8d5be898586865fcf67c0
+ms.openlocfilehash: cbf45c5f9f04affc65243fdc4c8410d4ff033c1e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="change-your-mdm-authority"></a>變更您的 MDM 授權單位
 自 Configuration Manager 1610 版開始，不需要連絡 Microsoft 支援服務，也不需要將現有受管理裝置解除註冊並重新註冊，您便可以變更 MDM 授權單位。 本主題提供的步驟，可以將設定自 Configuration Manager 主控台的現有 Microsoft Intune 租用戶 (混合式) 變更為 Intune 獨立部署。
@@ -55,7 +56,7 @@ ms.lasthandoff: 10/07/2017
 
 #### <a name="to-change-the-mdm-authority-to-intune-standalone"></a>將 MDM 授權單位變更為 Intune 獨立部署
 1. 在 Configuration Manager 主控台中，移至 [系統管理] &gt; [概觀] &gt; [雲端服務] &gt; [Microsoft Intune 訂閱]，然後刪除現有的 Intune 訂閱。
-2. 選取 將 MDM 授權單位變更為 Microsoft Intune，然後按一下下一步。
+2. 選取 [將 MDM 授權單位變更為 Microsoft Intune]，然後按一下 [下一步]。
    ![下載 APNs 憑證要求](./media/mdm-change-delete-subscription.png)
 3. 登入您原本在 Configuration Manager 中設定 MDM 授權單位時所使用的 Intune 租用戶。
 4. 按 [下一步]  ，並且完成精靈。
@@ -75,7 +76,7 @@ ms.lasthandoff: 10/07/2017
     In the [Azure portal](https://azure.portal.com), choose **More Services** &gt; **Monitoring + Management** &gt; **Intune**. On the **Intune** blade, choose **Device enrollment** &gt; **Apple Enrollment** &gt; **Apple MDM Push Certificate**, and then select **Download your CSR** to download and save the .csr file locally.   
     <br/>
     **Microsoft Intune administration console**   -->
-   在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS 和 Mac OS X] &gt; [上傳 APNs 憑證]，然後選擇 [下載 APNs 憑證要求]。 在本機儲存憑證簽署要求 (.csr) 檔案。
+   在 [Microsoft Intune 管理主控台](http://manage.microsoft.com)中，移至 [系統管理] &gt; [行動裝置管理] &gt; [iOS 和 Mac OS X] &gt; [上傳 APNs 憑證]，然後選擇 [下載 APNs 憑證要求]。 在本機儲存憑證簽署要求 (.csr) 檔案。    
    > [!IMPORTANT]    
    > 下載新的憑證簽署要求。 請勿使用現有的檔案，否則將會失敗。
 
@@ -85,15 +86,15 @@ ms.lasthandoff: 10/07/2017
 
    ![Apple Push Certificates 入口網站登入頁面](./media/mdm-change-apns-portal.png)
 
-3. 選取您用於 Configuration Manager (混合式) 的 APNs 憑證，然後按一下更新。   
+3. 選取您用於 Configuration Manager (混合式) 的 APNs 憑證，然後按一下 [更新]。   
 
     ![更新 APNs 對話方塊](./media/mdm-change-renew-apns.png)
 
-4. 選取您於本機下載的 APNs 憑證簽署要求 (.csr) 檔案，然後按一下上傳。
+4. 選取您於本機下載的 APNs 憑證簽署要求 (.csr) 檔案，然後按一下 [上傳]。
 
     ![Apple Push Certificates 入口網站登入頁面](/sccm/mdm/deploy-use/media/mdm-change-renew-apns-upload.png)
  
-5. 選取相同的 APNs，然後按一下下載。 下載 APNs (.pem) 憑證，並將該檔案儲存在本機。  
+5. 選取相同的 APNs，然後按一下 [下載]。 下載 APNs (.pem) 憑證，並將該檔案儲存在本機。  
 
    ![Apple Push Certificates 入口網站登入頁面](./media/mdm-change-renew-apns-download.png)
 

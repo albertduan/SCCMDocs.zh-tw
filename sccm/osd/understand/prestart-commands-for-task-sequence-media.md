@@ -1,5 +1,6 @@
 ---
-title: "工作順序媒體的啟動前置命令 | Microsoft Docs"
+title: "工作順序媒體的啟動前置命令"
+titleSuffix: Configuration Manager
 description: "建立用於啟動前置命令的指令碼，並發佈與啟動前置命令相關聯的內容，然後在媒體中設定啟動前置命令。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 1c396534425179c6828d48acc578295167c566be
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 52a4dccfe547f8c25759669dd1b09976302d5c50
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prestart-commands-for-task-sequence-media-in-system-center-configuration-manager"></a>System Center Configuration Manager 中工作順序媒體的啟動前置命令
 
@@ -53,7 +54,7 @@ env("MyCustomVariable") = "varname"
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立工作順序媒體]  以啟動 [建立工作順序媒體精靈]。  
 

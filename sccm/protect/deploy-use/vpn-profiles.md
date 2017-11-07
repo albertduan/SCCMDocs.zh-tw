@@ -1,5 +1,6 @@
 ---
-title: "System Center Configuration Manager 中的 VPN 設定檔 | Microsoft Docs"
+title: "VPN 設定檔"
+titleSuffix: Configuration Manager
 description: "了解如何在 System Center Configuration Manager 中使用 VPN 設定檔，將 VPN 設定部署至組織中的使用者。"
 ms.custom: na
 ms.date: 11/27/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: e07a80c1a59043b74cda7219f78c5fef66989ba8
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 02d9178dbfe8cb00d38367d0dfcb2f521d4c26a0
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="vpn-profiles-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的 VPN 設定檔
 

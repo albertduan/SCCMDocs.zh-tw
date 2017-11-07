@@ -1,5 +1,6 @@
 ---
-title: "建立和部署應用程式 | Microsoft Docs"
+title: "建立和部署應用程式"
+titleSuffix: Configuration Manager
 description: "建立和部署包含商務營運應用程式的應用程式，並了解如何有效地管理應用程式。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: f52dbb5e89746e30562132d4fe19886e7d9b5ea7
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: a9f8a54400897e30d01d97f81b98e0e539fc86a7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-and-deploy-an-application-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立和部署應用程式
 

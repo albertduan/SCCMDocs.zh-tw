@@ -1,5 +1,6 @@
 ---
-title: "報告的作業和維護 | Microsoft Docs"
+title: "報告作業和維護 "
+titleSuffix: Configuration Manager
 description: "了解 System Center Configuration Manager 中管理報告及報告訂閱的詳細資料。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: df572cd0c64c82e25164430a53e1b893b3ba3cf5
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 05a81cdfd46ba2bf0bea17b06bd72f79296b3930
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="operations-and-maintenance-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的報告作業和維護
 
@@ -50,7 +51,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視  工作區中，展開 報告 ，然後按一下報告  列出可用的報告。  
+2.  在 [監視]  工作區中，展開 [報告] ，然後按一下 [報告]  列出可用的報告。  
 
     > [!IMPORTANT]  
     >  在這個版本的 Configuration Manager 中，[所有內容] 報告只會顯示套件，不會顯示應用程式。  
@@ -60,7 +61,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 3.  選取您要執行的報告，然後在 [首頁]  索引標籤的 [報告群組]  區段中，按一下 [執行]  開啟報告。  
 
-4.  如果有必要的參數，請指定參數，然後按一下檢視報告 。  
+4.  如果有必要的參數，請指定參數，然後按一下 [檢視報告] 。  
 
 #### <a name="to-run-a-report-in-a-web-browser"></a>若要在 Web 瀏覽器中執行報告  
 
@@ -73,7 +74,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 3.  按一下您要執行之報告的報告類別，然後按一下報告的連結。 報告會在報表管理員中開啟。  
 
-4.  如果有必要的參數，請指定參數，然後按一下檢視報告 。  
+4.  如果有必要的參數，請指定參數，然後按一下 [檢視報告] 。  
 
 ###  <a name="BKMK_ModifyReportProperties"></a> 修改 Configuration Manager 報告的內容  
  您可以在 Configuration Manager 主控台中檢視報告的內容，例如報告名稱和描述，但是若要變更內容，請使用報表管理員。 利用下列程序修改 Configuration Manager 報告的內容。  
@@ -89,7 +90,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 3.  按一下您要修改內容之報告的報告類別，然後按一下報告的連結。 報告會在報表管理員中開啟。  
 
-4.  按一下 [內容]  索引標籤。 您可以修改報告名稱和描述。  
+4.  按一下 [內容]  索引標籤。您可以修改報告名稱和描述。  
 
 5.  完成時，按一下 [套用] 。 報告內容會儲存在報告伺服器上，而且 Configuration Manager 主控台會針對報告擷取更新的報告內容。  
 
@@ -111,11 +112,11 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視  工作區中，展開 報告 ，然後按一下報告  列出可用的報告。  
+2.  在 [監視]  工作區中，展開 [報告] ，然後按一下 [報告]  列出可用的報告。  
 
-3.  選取您要修改的報告，然後在 [首頁]  索引標籤的 [報告群組]  區段中，按一下 [編輯] 。 出現提示時，輸入您的使用者名稱和密碼，然後按一下確定 。 如果電腦上未安裝報告產生器，則會提示您進行安裝。 按一下 [執行]  安裝報告產生器，其為修改及建立報告時所需。  
+3.  選取您要修改的報告，然後在 [首頁]  索引標籤的 [報告群組]  區段中，按一下 [編輯] 。 出現提示時，輸入您的使用者名稱和密碼，然後按一下 [確定] 。 如果電腦上未安裝報告產生器，則會提示您進行安裝。 按一下 [執行]  安裝報告產生器，其為修改及建立報告時所需。  
 
-4.  在報告產生器中，修改適當的報告設定，然後按一下儲存  將報告儲存至報告伺服器。  
+4.  在報告產生器中，修改適當的報告設定，然後按一下 [儲存]  將報告儲存至報告伺服器。  
 
 ###  <a name="BKMK_CreateModelBasedReport"></a> 建立模型式報告  
  模型式報告可讓您以互動方式選取要包含在報告中的項目。 如需建立自訂報表模型的詳細資訊，請參閱[在 SQL Server Reporting Services 中建立 System Center Configuration Manager 的自訂報表模型](creating-custom-report-models-in-sql-server-reporting-services.md)。  
@@ -151,7 +152,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 6.  在 [摘要]  頁面上，檢閱設定。 按一下 [上一步] 變更設定，或按一下 [下一步] 在 Configuration Manager 中建立報告。  
 
-7.  在 [確認]  頁面上，按一下 [關閉]  結束精靈，然後開啟報告產生器進行報告設定。 出現提示時，輸入您的使用者名稱和密碼，然後按一下確定 。 如果電腦上未安裝報告產生器，則會提示您進行安裝。 按一下 [執行]  安裝報告產生器，其為修改及建立報告時所需。  
+7.  在 [確認]  頁面上，按一下 [關閉]  結束精靈，然後開啟報告產生器進行報告設定。 出現提示時，輸入您的使用者名稱和密碼，然後按一下 [確定] 。 如果電腦上未安裝報告產生器，則會提示您進行安裝。 按一下 [執行]  安裝報告產生器，其為修改及建立報告時所需。  
 
 8.  在 Microsoft 報表產生器中，建立報告配置、在可用的 SQL Server 檢視中選取資料、新增參數至報告等。 如需有關使用報告產生器建立新報告的詳細資訊，請參閱&lt;報告產生器說明&gt;。  
 
@@ -174,7 +175,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視  工作區中，展開 報告 ，然後按一下報告 。  
+2.  在 [監視]  工作區中，展開 [報告] ，然後按一下 [報告] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  區段中，按一下 [建立報告]  開啟 [建立報告精靈] 。  
 
@@ -194,7 +195,7 @@ System Center Configuration Manager 中用於報告的基礎結構就緒後，�
 
 5.  在 [摘要]  頁面上，檢閱設定。 按一下 [上一步] 變更設定，或按一下 [下一步] 在 Configuration Manager 中建立報告。  
 
-6.  在 [確認]  頁面上，按一下 [關閉]  結束精靈，然後開啟報告產生器進行報告設定。 出現提示時，輸入您的使用者名稱和密碼，然後按一下確定 。 如果電腦上未安裝報告產生器，則會提示您進行安裝。 按一下 [執行]  安裝報告產生器，其為修改及建立報告時所需。  
+6.  在 [確認]  頁面上，按一下 [關閉]  結束精靈，然後開啟報告產生器進行報告設定。 出現提示時，輸入您的使用者名稱和密碼，然後按一下 [確定] 。 如果電腦上未安裝報告產生器，則會提示您進行安裝。 按一下 [執行]  安裝報告產生器，其為修改及建立報告時所需。  
 
 7.  在 Microsoft 報表產生器中，為報告提供 SQL 陳述式或使用可用 SQL Server 檢視中的資料行建立 SQL 陳述式，新增參數至報告等。  
 

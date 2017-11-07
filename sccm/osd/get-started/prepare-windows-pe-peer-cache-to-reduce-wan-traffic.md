@@ -1,5 +1,6 @@
 ---
-title: "準備 Windows PE 對等快取以減少 WAN 流量 | Microsoft Docs"
+title: "準備 Windows PE 對等快取以減少 WAN 流量"
+titleSuffix: Configuration Manager
 description: "Windows PE 對等快取作用於 Windows PE，以從本機對等取得內容，並在沒有本機發佈點時，將 WAN 流量降至最低。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "11"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 814c6133a30b1116d05aaeafddb0dfb7fe2a390e
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: bb0ed6809d1350c4ce28e20d1a83082a51c2e687
+ms.sourcegitcommit: 1132886e07d0c0a87dcc7eeef4577dd8d8840023
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 11/01/2017
 ---
 # <a name="prepare-windows-pe-peer-cache-to-reduce-wan-traffic-in-system-center-configuration-manager"></a>準備 Windows PE 對等快取，以降低 System Center Configuration Manager 中的 WAN 流量
 
@@ -26,7 +27,7 @@ ms.lasthandoff: 08/07/2017
 
 當您在 System Center Configuration Manager 中部署新的作業系統時，執行工作順序的電腦可使用 Windows PE 對等快取，從本機對等裝置 (對等快取來源) 取得內容，而不是從發佈點下載內容。 這有助於在分公司沒有本機發佈點的案例中，降低廣域網路 (WAN) 流量。  
 
- Windows PE 對等快取類似 [Windows BranchCache](http://technet.microsoft.com/library/mt617255\(TechNet.10\).aspx#bkmk_branchcache)，但可在 Windows 預先安裝環境 (Windows PE) 中運作。 如果您從作業系統內容 (例如從用戶端的軟體中心) 啟動工作順序，則不會使用 Windows PE 對等快取。 下列字詞用以描述使用 Windows PE 對等快取的用戶端：  
+ Windows PE 對等快取類似 [Windows BranchCache](http://technet.microsoft.com/library/mt617255\(TechNet.10\).aspx#bkmk_branchcache)，但可在 Windows 預先安裝環境 (Windows PE) 中運作。 下列字詞用以描述使用 Windows PE 對等快取的用戶端：  
 
 -   **對等快取用戶端** 是設定為使用 Windows PE 對等快取的電腦。  
 

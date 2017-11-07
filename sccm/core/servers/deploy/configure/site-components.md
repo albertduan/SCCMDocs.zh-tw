@@ -1,5 +1,6 @@
 ---
-title: "Configuration Manager 的站台元件 | Microsoft Docs"
+title: "站台元件"
+titleSuffix: Configuration Manager
 description: "了解如何設定站台元件，以修改站台系統角色和站台狀態報告的行為。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 83550fbf0ef1f9adb0bb2c51a4f3c26a7500d352
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 5998d853723f50302d0572a54b073292035ed382
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="site-components-for-system-center-configuration-manager"></a>System Center Configuration Manager 的站台元件
 

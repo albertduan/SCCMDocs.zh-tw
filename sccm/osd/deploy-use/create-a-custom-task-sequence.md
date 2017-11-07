@@ -1,5 +1,6 @@
 ---
-title: "建立自訂工作順序 | Microsoft Docs"
+title: "建立自訂工作順序"
+titleSuffix: Configuration Manager
 description: "在 System Center Configuration Manager 中編輯自訂工作順序，以在工作順序中新增步驟。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 03c844084c72fc52806123d9f4c11a410a3ec775
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: e25b60b64ae2ed75091c4f5b0ffa0f9eca4c6cac
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-a-custom-task-sequence-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立自訂工作順序
 
@@ -34,7 +35,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立工作順序]  啟動 [建立工作順序精靈]。  
 

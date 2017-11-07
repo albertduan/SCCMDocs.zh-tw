@@ -1,5 +1,6 @@
 ---
-title: "使用 PXE 透過網路部署 Windows | Microsoft Docs"
+title: "使用 PXE 透過網路部署 Windows"
+titleSuffix: Configuration Manager
 description: "使用 PXE 起始作業系統部署來重新整理電腦的作業系統，或在新電腦上安裝新的 Windows 版本。"
 ms.custom: na
 ms.date: 06/15/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: 57292b1c6f6e8b6be91eace06dbf12d788522e0b
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: 017a8f0d5b38145f6708e61ff5d7b2c3614b62a0
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-pxe-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>利用 System Center Configuration Manager 使用 PXE 透過網路來部署 Windows
 

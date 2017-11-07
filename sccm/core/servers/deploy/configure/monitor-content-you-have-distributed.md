@@ -1,5 +1,6 @@
 ---
-title: "監視內容 | Microsoft Docs"
+title: "監視內容"
+titleSuffix: Configuration Manager
 description: "使用 Configuration Manager 主控台了解如何監視發佈的內容。"
 ms.custom: na
 ms.date: 4/17/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 7659d5789b8ce4e9e0b585a331c8f68869c9492d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: b260cf989fbda471b514d06d927e9b2c55d35c1b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="monitor-content-you-have-distributed-with-system-center-configuration-manager"></a>監視您已使用 System Center Configuration Manager 所發佈的內容
 
@@ -55,7 +56,7 @@ ms.lasthandoff: 08/07/2017
 您也可以管理對發佈點持續進行的發佈，或是未能成功將內容發佈到發佈點的發佈：  
 
 -   當您在 [資產詳細資料] 窗格中，檢視對發佈點之發佈作業的部署狀態訊息時，可使用取消或重新發佈內容等選項。 在 [進行中] 索引標籤或**內容狀態節點**的 [錯誤] 索引標籤中，可找到此窗格。  
--   此外，當您在 [進行中] 索引標籤上，檢視作業的詳細資料時，工作詳細資料會顯示已完成之作業的百分比。 當您檢視 [錯誤] 索引標籤所提供的作業詳細資料時，工作詳細資料也會顯示作業還有多少次重試次數，以及還有多久才會發生下次重試。  
+-   此外，當您在 [進行中] 索引標籤上，檢視作業的詳細資料時，工作詳細資料會顯示已完成之作業的百分比。當您檢視 [錯誤] 索引標籤所提供的作業詳細資料時，工作詳細資料也會顯示作業還有多少次重試次數，以及還有多久才會發生下次重試。  
 
 當您取消尚未完成的部署時，傳送該內容的發佈工作會停止進行：  
 
@@ -76,7 +77,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視  工作區中，展開 發佈狀態 ，然後按一下內容狀態 。 套件便會顯示。  
+2.  在 [監視]  工作區中，展開 [發佈狀態] ，然後按一下 [內容狀態] 。 套件便會顯示。  
 
 3.  選取需要其詳細狀態資訊的套件。  
 
@@ -86,7 +87,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視  工作區中，展開 發佈狀態 ，然後按一下內容狀態 。 套件便會顯示。  
+2.  在 [監視]  工作區中，展開 [發佈狀態] ，然後按一下 [內容狀態] 。 套件便會顯示。  
 
 3.  選取您要管理的套件，然後在詳細資料窗格中按一下 [檢視狀態] 。  
 
@@ -98,7 +99,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視  工作區中，展開 發佈狀態 ，然後按一下內容狀態 。 套件便會顯示。  
+2.  在 [監視]  工作區中，展開 [發佈狀態] ，然後按一下 [內容狀態] 。 套件便會顯示。  
 
 3.  選取您要管理的套件，然後在詳細資料窗格中按一下 [檢視狀態] 。  
 
@@ -126,7 +127,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視  工作區中，展開 發佈狀態 ，然後按一下發佈點群組狀態 。 發佈點群組隨即顯示。  
+2.  在 [監視]  工作區中，展開 [發佈狀態] ，然後按一下 [發佈點群組狀態] 。 發佈點群組隨即顯示。  
 
 3.  選取需要其詳細狀態資訊的發佈點群組。  
 
@@ -144,11 +145,11 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視  工作區中，展開 發佈狀態 ，然後按一下發佈點設定狀態 。 發佈點隨即顯示。  
+2.  在 [監視]  工作區中，展開 [發佈狀態] ，然後按一下 [發佈點設定狀態] 。 發佈點隨即顯示。  
 
 3.  選取需要其發佈點狀態資訊的發佈點。  
 
-4.  在結果窗格中，按一下 [詳細資料]  索引標籤。 發佈點的狀態資訊隨即顯示。  
+4.  在結果窗格中，按一下 [詳細資料]  索引標籤。發佈點的狀態資訊隨即顯示。  
 
 ## <a name="client-data-sources-dashboard"></a>用戶端資料來源儀表板
 從 1610 版開始，您即可使用新的 [用戶端資料來源] 儀表板，協助了解環境中[對等快取](/sccm/core/plan-design/hierarchy/client-peer-cache)的使用情況。 儀表板會在用戶端下載內容，並將該資訊回報到站台時，開始顯示資料。 最多可能需要 24 小時。

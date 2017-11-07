@@ -1,5 +1,6 @@
 ---
-title: "建立使用 Intune 進行管理之 Windows 8.1 與 Windows 10 裝置的設定項目 | Microsoft Docs"
+title: "建立使用 Intune 進行管理之 Windows 8.1 與 Windows 10 裝置的設定項目"
+titleSuffix: Configuration Manager
 description: "使用 System Center Configuration Manager Windows 10 設定項目管理 Windows 10 電腦的設定。"
 ms.custom: na
 ms.date: 07/31/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: f691ef725e969f55044bafef3fdd66ead2366a6c
-ms.sourcegitcommit: f6a428a8db7145affa388f59e0ad880bdfcf17b5
+ms.openlocfilehash: 7f5a50ae6ea05af7e864cf94df3063d70bd737b4
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="how-to-create-configuration-items-for-windows-81-and-windows-10-devices-managed-without-the-system-center-configuration-manager-client"></a>如何為不是使用 System Center Configuration Manager 用戶端所管理的 Windows 8.1 和 Windows 10 裝置建立組態項目
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/14/2017
   
 1.  在 Configuration Manager 主控台中，按一下 [資產與合規性]。  
   
-2.  在 資產與相容性  工作區中，展開 相容性設定 ，然後按一下設定項目 。  
+2.  在 [資產與相容性]  工作區中，展開 [相容性設定] ，然後按一下 [設定項目] 。  
   
 3.  在 [常用]  索引標籤上，按一下 [建立]  群組中的 [建立設定項目] 。  
   
@@ -42,7 +43,7 @@ ms.lasthandoff: 09/14/2017
   
 7.  在精靈的 [支援的平台]  頁面上，選取評估組態項目的特定 Windows 平台。  
   
-8.  在精靈的 [裝置設定]  頁面上，選取您想要設定的設定群組。 請參閱本主題的 [Windows 8.1 和 Windows 10 組態項目設定參考](#BKMK_Setref) 以取得詳細資訊，然後按一下下一步 。  
+8.  在精靈的 [裝置設定]  頁面上，選取您想要設定的設定群組。 請參閱本主題的 [Windows 8.1 和 Windows 10 組態項目設定參考](#BKMK_Setref) 以取得詳細資訊，然後按一下 [下一步] 。  
   
     > [!TIP]  
     >  如果未列出您想要的設定，請選取 [設定不在預設設定群組中的其他設定] 核取方塊。  

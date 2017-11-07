@@ -1,5 +1,6 @@
 ---
-title: "自訂作業系統映像 - Configuration Manager | Microsoft Docs"
+title: "自訂作業系統映像 "
+titleSuffix: Configuration Manager
 description: "使用擷取組建工作順序、手動設定或兩者的組合，來自訂作業系統映像。"
 ms.custom: na
 ms.date: 01/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 485cb3ca4988f983c1ec71b6c8daf136571bf0ea
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 973a8df54d1acab48803b34bf18494b2ae7f6054
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="customize-operating-system-images-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 自訂作業系統映像
 

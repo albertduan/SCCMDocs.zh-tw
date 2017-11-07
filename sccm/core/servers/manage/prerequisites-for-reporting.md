@@ -1,5 +1,6 @@
 ---
-title: "報告的必要條件 | Microsoft Docs"
+title: "報告的必要條件"
+titleSuffix: Configuration Manager
 description: "了解影響您在 System Center Configuration Manager 中使用報告的各種相依性。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 2e624eb2ea061a4eb7d92365410fada335640224
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 09f6ebd47070c63d238a74242d4b04b84c95ef49
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="prerequisites-for-reporting-in-system-center-configuration-manager"></a>System Center Configuration Manager 中報告的必要條件
 

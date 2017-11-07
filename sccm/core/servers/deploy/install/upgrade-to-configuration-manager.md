@@ -1,5 +1,5 @@
 ---
-title: "升級至 System Center Configuration Manager | Microsoft Docs"
+title: "升級至 System Center Configuration Manager"
 description: "了解從執行 System Center 2012 Configuration Manager 的站台和階層中執行成功就地升級的步驟。"
 ms.custom: na
 ms.date: 6/6/2017
@@ -14,11 +14,11 @@ caps.latest.revision: "21"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: e65c22240555563cdb011849562069baf5d5887f
-ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
+ms.openlocfilehash: b16d9779c130bd83304d1b369c48c7e691bd8db3
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="upgrade-to-system-center-configuration-manager"></a>升級至 System Center Configuration Manager
 
@@ -384,7 +384,7 @@ Configuration Manager 不支援次要站台的備份或次要站台資料庫的�
     </br>
 2.  在 Configuration Manager 主控台中，按一下 [系統管理] 。  
 
-3.  在 系統管理  工作區中，展開 網站設定 ，然後按一下網站 。  
+3.  在 [系統管理]  工作區中，展開 [網站設定] ，然後按一下 [網站] 。  
 
 4.  選取您要升級的次要站台，然後在 [首頁]  索引標籤的 [站台]  群組中，按一下 [升級] 。  
 

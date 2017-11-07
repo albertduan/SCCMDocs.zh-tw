@@ -1,5 +1,6 @@
 ---
-title: "管理來自商務用 Windows 市集的應用程式 | Microsoft Docs"
+title: "從商務用 Windows 市集管理應用程式"
+titleSuffix: Configuration Manager
 description: "使用 System Center Configuration Manager，從商務用 Windows 市集管理和部署應用程式。"
 ms.custom: na
 ms.date: 7/31/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "11"
 author: mattbriggs
 ms.author: mabrigg
 manager: angrobe
-ms.openlocfilehash: ed7c3724e4804911f713e1239661fc53514300b2
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 2dd6a2f9c62903119ba8c8374dcf222199c19fd5
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-apps-from-the-windows-store-for-business-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理從商務用 Windows 市集購買的應用程式
 [商務用 Windows 市集](https://www.microsoft.com/business-store)是您可以在其中為您的組織尋找並個別或大量購買 Windows 應用程式的地方。 藉由將市集連線到 Configuration Manager，您便可以同步使用 Configuration Manager 購買的應用程式清單。 您接著便可以在 Configuration Manager 主控台中檢視這些應用程式，並如同部署任何其他應用程式般加以部署。

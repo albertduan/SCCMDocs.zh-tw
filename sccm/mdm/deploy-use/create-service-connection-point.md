@@ -1,5 +1,6 @@
 ---
-title: "使用 System Center Configuration Manager 建立服務連接點 | Microsoft Docs"
+title: "建立服務連接點"
+titleSuffix: Configuration Manager
 description: "使用 System Center Configuration Manager 建立服務連接點。"
 ms.custom: na
 ms.date: 03/05/2017
@@ -12,14 +13,14 @@ ms.topic: article
 ms.assetid: 617abb22-d22f-41fb-a76b-1c4259e419d2
 caps.latest.revision: "18"
 caps.handback.revision: "0"
-author: mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 9a21d02cb2a50162e5de50481f0f27f2dd7a616c
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 9ae26c55cf92c954a54311e2e698353bbe359a83
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-a-service-connection-point-with-system-center-configuration-manager-and-microsoft-intune"></a>使用 System Center Configuration Manager 和 Microsoft Intune 建立服務連接點
 
@@ -37,7 +38,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [系統管理] 。
 
-2.  在 系統管理 工作區中，展開 站台，然後按一下伺服器和站台系統角色。
+2.  在 [系統管理] 工作區中，展開 [站台]，然後按一下 [伺服器和站台系統角色]。
 
 3.  使用關聯步驟，將 [服務連接點] 角色新增至新的或現有的站台系統伺服器：
 

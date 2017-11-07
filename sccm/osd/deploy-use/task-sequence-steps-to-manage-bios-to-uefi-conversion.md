@@ -1,5 +1,6 @@
 ---
-title: "用於管理 BIOS 轉換到 UEFI 的工作順序步驟 | Configuration Manager"
+title: "用於管理 BIOS 轉換到 UEFI 的工作順序步驟"
+titleSuffix: Configuration Manager
 description: "了解如何自訂作業系統部署工作順序，以準備轉換到 UEFI 的 FAT32 磁碟分割。"
 ms.custom: na
 ms.date: 03/24/2017
@@ -13,11 +14,11 @@ ms.assetid: bd3df04a-902f-4e91-89eb-5584b47d9efa
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 528ce515c86c4e778532290026a90a46476c4576
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 58a5c60e2d8b819051916b49911a236a9c5ac4ee
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="task-sequence-steps-to-manage-bios-to-uefi-conversion"></a>用於管理 BIOS 轉換到 UEFI 的工作順序步驟
 Windows 10 提供許多新安全性功能，都需要啟用 UEFI 的裝置。 您可能有支援 UEFI，不過是使用傳統 BIOS 的新型 Windows 電腦。 在過去，將裝置轉換為 UEFI 需要您實際操作每部電腦，重新分割硬碟，並重新設定韌體。 透過使用 Configuration Manager 中的工作順序，您可以準備硬碟以進行 BIOS 至 UEFI 轉換，以就地升級程序之一部分的方式從 BIOS 轉換至 UEFI，並以硬體清查之一部分的方式收集 UEFI 資訊。

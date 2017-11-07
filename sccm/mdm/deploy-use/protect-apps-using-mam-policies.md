@@ -1,5 +1,6 @@
 ---
-title: "使用行動應用程式管理原則來保護應用程式 | Microsoft Docs"
+title: "使用行動應用程式管理原則來保護應用程式"
+titleSuffix: Configuration Manager
 description: "修改您部署之應用程式的功能，讓這些應用程式符合公司的相容性和安全性原則。"
 ms.custom: na
 ms.date: 03/05/2017
@@ -12,14 +13,14 @@ ms.topic: article
 ms.assetid: 28115475-e563-4e16-bf30-f4c9fe704754
 caps.latest.revision: "18"
 caps.handback.revision: "0"
-author: mtillman
-ms.author: mtillman
+author: dougeby
+ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 50c137f159b0ef631f7173b8eec190182ce41cee
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 12633eced1850b718bf7cad019cd943305a7d9fb
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="protect-apps-using-mobile-application-management-policies-in-system-center-configuration-manager"></a>使用 System Center Configuration Manager 中的行動應用程式管理原則來保護應用程式
 
@@ -131,7 +132,7 @@ System Center Configuration Manager 應用程式管理原則可讓您修改所�
 |**需要公司認證才能存取**|要求使用者必須輸入其公司的登入資訊，才能存取應用程式。|  
 |**需要裝置符合公司原則才能存取**|只允許在裝置未進行 JB 或 Root 破解時使用應用程式。|  
 |**重新檢查存取需求前等候時間 (分鐘)**|在 [逾時] 欄位中，指定啟動應用程式之後，重新檢查應用程式存取需求之前的時間間隔。<br /><br /> 在 [離線寬限期] 欄位中，如果裝置已離線，請指定重新檢查應用程式存取需求之前的時間間隔。|  
-|**加密應用程式資料**|指定加密與此應用程式相關聯的所有資料，包括儲存在外部的資料，例如 SD 卡上儲存的資料。<br /><br /> **iOS 的加密**<br /><br /> 針對與 Configuration Manager 行動應用程式管理原則相關聯的應用程式，資料會使用作業系統所提供的裝置層級加密在靜止時加密。 您可以透過必須由 IT 管理員所設定的裝置 PIN 碼原則予以啟用。 需要 PIN 碼時，會根據行動應用程式管理原則中的設定來加密資料。 如 Apple 文件 [iOS 7 所使用的模組經 FIPS 140-2 認證](http://support.apple.com/en-us/HT202739)中所述。<br /><br /> **Android 的加密**<br /><br /> 針對與 Configuration Manager 行動應用程式管理原則相關聯的應用程式，加密由 Microsoft 所提供。 資料會在檔案 I/O 作業期間，根據行動應用程式管理原則中的設定，以同步方式加密。 Android 上的受管理應用程式使用 CBC 模式的 AES-128 加密，並利用平台的密碼編譯程式庫。 加密方法未經 FIPS 140-2 認證。 將一律加密裝置儲存空間上的內容。|  
+|**加密應用程式資料**|指定加密與此應用程式相關聯的所有資料，包括儲存在外部的資料，例如 SD 卡上儲存的資料。<br /><br /> **iOS 的加密**<br /><br /> 針對與 Configuration Manager 行動應用程式管理原則相關聯的應用程式，資料會使用作業系統所提供的裝置層級加密在靜止時加密。 您可以透過必須由 IT 管理員所設定的裝置 PIN 碼原則予以啟用。需要 PIN 碼時，會根據行動應用程式管理原則中的設定來加密資料。 如 Apple 文件 [iOS 7 所使用的模組經 FIPS 140-2 認證](http://support.apple.com/en-us/HT202739)中所述。<br /><br /> **Android 的加密**<br /><br /> 針對與 Configuration Manager 行動應用程式管理原則相關聯的應用程式，加密由 Microsoft 所提供。 資料會在檔案 I/O 作業期間，根據行動應用程式管理原則中的設定，以同步方式加密。 Android 上的受管理應用程式使用 CBC 模式的 AES-128 加密，並利用平台的密碼編譯程式庫。 加密方法未經 FIPS 140-2 認證。 將一律加密裝置儲存空間上的內容。|  
     |**封鎖螢幕擷取** (僅限 Android 裝置)|指定在使用此應用程式時，裝置的螢幕擷取功能會遭到封鎖。|  
 
 6)  在 [受管理的瀏覽器] 頁面上，選取是否允許受管理的瀏覽器只開啟清單中的 URL 或封鎖受管理的瀏覽器開啟清單中的 URL，然後選擇 [下一步]。  

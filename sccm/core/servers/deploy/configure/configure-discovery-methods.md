@@ -1,5 +1,6 @@
 ---
-title: "設定探索 | Microsoft Docs"
+title: "設定探索"
+titleSuffix: Configuration Manager
 description: "設定在 Configuration Manager 站台上執行的探索方法，以尋找您可以從網路基礎結構與 Active Directory 管理的資源。"
 ms.custom: na
 ms.date: 7/31/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 34a539ceaea6b070f81a28d2c0a9ce388e26cfeb
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 108721f0ad5107a3b61cfeb82120a275f2f96fdf
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configure-discovery-methods-for-system-center-configuration-manager"></a>設定 System Center Configuration Manager 的探索方法
 
@@ -391,7 +392,7 @@ Azure AD 使用者探索可設定為*雲端管理*的一部分。 *設定要與 
 
 8.  若要設定 SNMP 使用的路由器躍點數上限，請選擇 [SNMP] 索引標籤，然後從 [躍點數上限] 下拉式清單選取躍點數。  
 
-9. 若要設定 SNMP 裝置，請選擇 [SNMP 裝置] 索引標籤。 如果未列出裝置，請選擇 [新增] 圖示 ![[新增] 圖示](media/Disc_new_Icon.gif)。 在 [新增 SNMP 裝置] 對話方塊中，指定 SNMP 裝置的 IP 位址或裝置名稱，然後選擇 [確定]。  
+9. 若要設定 SNMP 裝置，請選擇 [SNMP 裝置] 索引標籤。如果未列出裝置，請選擇 [新增] 圖示 ![[新增] 圖示](media/Disc_new_Icon.gif)。 在 [新增 SNMP 裝置] 對話方塊中，指定 SNMP 裝置的 IP 位址或裝置名稱，然後選擇 [確定]。  
 
     > [!NOTE]  
     >  如果指定裝置名稱，Configuration Manager 必須能夠將 NetBIOS 名稱解析為 IP 位址。  

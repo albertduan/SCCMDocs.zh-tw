@@ -1,5 +1,6 @@
 ---
-title: "工作順序動作變數 | Microsoft Docs"
+title: "工作順序動作變數"
+titleSuffix: Configuration Manager
 description: "使用順序動作變數 (例如網路設定變數) 指定 Configuration Manager 工作順序中單一步驟的組態設定。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 675ebf053de98c6ad93a53ae218696012aef96f7
-ms.sourcegitcommit: 5b4fd2d36f06be5bcc7f8ebbfb92c48b7240085d
+ms.openlocfilehash: 8c1462ca922f23250ffa44c6433f01a8220d3ad7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/30/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="task-sequence-action-variables-in-system-center-configuration-manager"></a>System Center Configuration Manager 中的工作順序動作變數
 

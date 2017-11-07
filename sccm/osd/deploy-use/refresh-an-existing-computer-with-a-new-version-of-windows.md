@@ -1,5 +1,6 @@
 ---
-title: "使用新的 Windows 版本重新整理現有的電腦 | Microsoft Docs"
+title: "使用新的 Windows 版本重新整理現有的電腦"
+titleSuffix: Configuration Manager
 description: "您可以在 Configuration Manager 中使用多種方法來磁碟分割和格式化 (抹除) 現有電腦，並在電腦上安裝新作業系統。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "7"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 4a87b8489e9f0ed72426364a1de02e033c1c6f82
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: a7a3f61793e92453b8ccc048192d3ae858a78a4a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="refresh-an-existing-computer-with-a-new-version-of-windows-using-system-center-configuration-manager"></a>使用 System Center Configuration Manager 以新的 Windows 版本重新整理現有的電腦
 

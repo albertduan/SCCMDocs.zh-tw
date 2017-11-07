@@ -1,5 +1,6 @@
 ---
-title: "安裝程式下載程式 | Microsoft Docs"
+title: "安裝程式下載程式"
+titleSuffix: Configuration Manager
 description: "請閱讀這個獨立應用程式，設計成確保您的站台安裝使用最新版本的金鑰安裝檔案。"
 ms.custom: na
 ms.date: 3/1/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "3"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: b72148ecc16141843178cbd220fe021fab8be992
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8b98e8578c61ab4c212aa0e0b1e1a40e95e95b9e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="setup-downloader-for-system-center-configuration-manager"></a>System Center Configuration Manager 的安裝程式下載程式
 
@@ -48,7 +49,7 @@ ms.lasthandoff: 08/07/2017
 
 2.  若要開啟安裝程式下載程式，請按兩下 **Setupdl.exe**。   
 
-3. 指定要裝載更新的安裝檔案的資料夾路徑，然後按一下下載。 安裝程式下載程式會驗證目前在下載資料夾中的檔案。 它只會下載遺漏的檔案，或是比現有檔案還要新的檔案。 安裝程式下載程式會針對下載的語言建立子資料夾以及其他必要子資料夾。  
+3. 指定要裝載更新的安裝檔案的資料夾路徑，然後按一下 [下載]。 安裝程式下載程式會驗證目前在下載資料夾中的檔案。 它只會下載遺漏的檔案，或是比現有檔案還要新的檔案。 安裝程式下載程式會針對下載的語言建立子資料夾以及其他必要子資料夾。  
 
 4.  若要檢閱下載結果，請在磁碟機 C 的根目錄中開啟 **ConfigMgrSetup.log** 檔案。  
 

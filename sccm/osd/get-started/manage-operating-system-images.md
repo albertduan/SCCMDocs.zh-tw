@@ -1,5 +1,6 @@
 ---
-title: "管理作業系統映像 | Microsoft Docs"
+title: "管理作業系統映像"
+titleSuffix: Configuration Manager
 description: "在 Configuration Manager 中，深入了解儲存在 Windows 映像處理 (WIM) 檔案中的作業系統映像管理方法。"
 ms.custom: na
 ms.date: 12/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 9edefdbe77085d157b524904a514a2b5c472b1be
-ms.sourcegitcommit: 31c670a4bce74fd64a7d46ebf7702f65b80d4147
+ms.openlocfilehash: 4408865626009b35162e4d7408248d9ab2bdd7d2
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/13/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-operating-system-images-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理作業系統映像
 
@@ -62,7 +63,7 @@ Configuration Manager 中的作業系統映像儲存為 Windows 映像 (WIM) 檔
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下作業系統映像 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [作業系統映像] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [新增作業系統映像]  啟動 [新增作業系統映像精靈]。  
 
@@ -94,7 +95,7 @@ Configuration Manager 中的作業系統映像儲存為 Windows 映像 (WIM) 檔
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下作業系統映像 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [作業系統映像] 。  
 
 3.  選取要套用軟體更新的作業系統映像。  
 
@@ -121,7 +122,7 @@ Configuration Manager 中的作業系統映像儲存為 Windows 映像 (WIM) 檔
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下作業系統映像 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [作業系統映像] 。  
 
 3.  選取您要發佈至支援多點傳送之發佈點的作業系統映像。  
 

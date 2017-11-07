@@ -1,5 +1,6 @@
 ---
 title: "將您的 MDM 授權單位變更為 Intune"
+titleSuffix: Configuration Manager
 description: "了解如何將 MDM 授權單位從 Configuration Manager (混合式) 變更為 Intune 獨立部署。"
 keywords: 
 author: dougeby
@@ -9,11 +10,11 @@ ms.topic: article
 ms.prod: configuration-manager
 ms.technology: configmgr-hybrid
 ms.assetid: be503ec9-5324-4f7c-bcf5-77204328e99c
-ms.openlocfilehash: 12218472aa3f06ae041134f6cc092430e406c542
-ms.sourcegitcommit: 948644072bd158b156f782a4376bcd50fac7c73a
+ms.openlocfilehash: 746bf7d7ef7dd411c47840731edfe664510e5a77
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/14/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="change-your-mdm-authority-to-intune-standalone"></a>將您的 MDM 授權單位變更為 Intune 獨立部署
 
@@ -40,7 +41,7 @@ ms.lasthandoff: 09/14/2017
 ## <a name="prerequisites"></a>先決條件
 檢閱下列資訊以準備變更 MDM 授權單位：
 - 您必須有 Configuration Manager 1610 版或更新版本，才有變更 MDM 授權單位的選項可供選擇。
-- 在變更 MDM 授權單位之前，請務必將 Intune/EMS 授權指派給所有目前由混合式 MDM 管理的使用者。 在變更 MDM 授權單位之後，擁有授權可確保使用者及其裝置會由 Intune 獨立部署所管理。 如需詳細資訊，請參閱[將 Intune 授權指派給您的使用者帳戶](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4)。
+- 在變更 MDM 授權單位之前，請務必將 Intune/EMS 授權指派給所有目前由混合式 MDM 管理的使用者。 在變更 MDM 授權單位之後，擁有授權可確保使用者及其裝置會由 Intune 獨立部署所管理。 如需詳細資訊，請參閱[將 Intune 授權指派給使用者帳戶](https://docs.microsoft.com/intune/get-started/start-with-a-paid-subscription-to-microsoft-intune-step-4) \(英文\)。
 - 請確定已指派 Intune/EMS 授權給系統管理使用者帳戶。
 
 ### <a name="change-the-mdm-authority-to-intune"></a>將 MDM 授權單位變更為 Intune
@@ -51,7 +52,7 @@ ms.lasthandoff: 09/14/2017
 
     ![移除 Microsoft Intune 訂閱對話方塊](media/mdm-change-delete-subscription.png)
 3.  登入您原本在 Configuration Manager 中設定 MDM 授權單位時所使用的 Intune 租用戶。
-4.  按一下 [下一步] ，並完成精靈。
+4.  按 [下一步]  ，並且完成精靈。
 5.  MDM 授權單位已重設完畢。 Intune 訂閱應該不會再顯示於 Configuration Manager 主控台的 [Microsoft Intune 訂閱] 節點中。
 6.  使用您先前使用的 Intune 租用戶登入 [Azure 入口網站中的 Intune](https://portal.azure.com/#blade/Microsoft_Intune_DeviceSettings/ExtensionLandingBlade/overview)。    
 

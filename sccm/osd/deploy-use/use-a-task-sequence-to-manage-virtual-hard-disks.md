@@ -1,5 +1,6 @@
 ---
-title: "使用工作順序以管理虛擬硬碟 | Microsoft Docs"
+title: "使用工作順序來管理虛擬硬碟"
+titleSuffix: Configuration Manager
 description: "建立和修改 VHD、新增應用程式和軟體更新，並將 VHD 從 Configuration Manager 發行至 System Center Virtual Machine Manager (VMM)。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: f77af4b8fcb193ed44511c0e5eea7290f55dbbf8
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 586eec745bdf86a42a9d33fb9e1163f03efa1c59
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-a-task-sequence-to-manage-virtual-hard-disks-in-system-center-configuration-manager"></a>使用工作順序管理 System Center Configuration Manager 中的虛擬硬碟
 
@@ -74,7 +75,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立工作順序]  啟動 [建立工作順序精靈]。  
 
@@ -135,7 +136,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下虛擬硬碟 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [虛擬硬碟] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立虛擬硬碟]  啟動 [建立虛擬硬碟精靈]。  
 
@@ -193,7 +194,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立工作順序]  啟動 [建立工作順序精靈]。  
 
@@ -284,7 +285,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下虛擬硬碟 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [虛擬硬碟] 。  
 
 3.  選取要套用軟體更新的 VHD。  
 
@@ -314,7 +315,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下虛擬硬碟 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [虛擬硬碟] 。  
 
 3.  在 [首頁]  索引標籤的 [虛擬硬碟]  群組中，按一下 [上傳到 Virtual Machine Manager]  以開始上傳到 Virtual Machine Manager 精靈。  
 

@@ -1,5 +1,6 @@
 ---
-title: "管理開機映像 - Configuration Manager | Microsoft Docs"
+title: "管理開機映像 "
+titleSuffix: Configuration Manager
 description: "在 Configuration Manager 中，了解如何管理在作業系統部署期間所使用的 Windows PE 開機映像。"
 ms.custom: na
 ms.date: 01/23/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 5668ba3ead3b7415508f9ecf02f2e119c3cd9cc6
-ms.sourcegitcommit: 2a1328da3facb20b0c78f3b12adbb5fdbe0dcc11
+ms.openlocfilehash: 1f169dbf645096777f3fd244d24ca5be92efa180
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/08/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-boot-images-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 管理開機映像
 
@@ -87,7 +88,7 @@ Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台�
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下開機映像 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [開機映像] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [新增開機映像]  ，啟動 [新增開機映像精靈]。  
 
@@ -143,7 +144,7 @@ Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台�
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下開機映像 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [開機映像] 。  
 
 3.  選取要修改的開機映像。  
 
@@ -237,7 +238,7 @@ Configuration Manager 提供兩種預設開機映像：一種支援 x86 平台�
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下開機映像 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [開機映像] 。  
 
 3.  選取要修改的開機映像。  
 

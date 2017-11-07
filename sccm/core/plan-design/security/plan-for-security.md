@@ -1,5 +1,6 @@
 ---
-title: "在 System Center Configuration Manager 中規劃安全性 | Microsoft Docs"
+title: "規劃安全性"
+titleSuffix: Configuration Manager
 description: "取得 System Center Configuration Manager 的安全性最佳做法與相關資訊。"
 ms.custom: na
 ms.date: 01/04/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 6145cb69c69dba1eb1b9842079ee1a33686bb18a
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8f63d1b762b296cb6b6aa56480a5cddf7a3249dc
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="plan-for-security-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中規劃安全性
 
@@ -131,7 +132,7 @@ ms.lasthandoff: 08/07/2017
 
 在多數情況下，Configuration Manager 用戶端會正確地識別出唯一且適當的 PKI 憑證。 然而，若情況並非如此，就不需根據用戶端驗證功能來選取憑證，您可以設定其他兩種選擇方法：  
 
--   用戶端憑證主體名稱的部分相符字串。 這是一項不區分大小寫的配對，如果主旨欄位正在使用電腦完整網域名稱 (FQDN)，而且是根據網域尾碼選擇憑證時 (例如 **contoso.com**)，便適用此配對法。 然而，您可使用此選擇方法來識別憑證主體名稱 (用以區分與用戶端憑證存放區其他憑證的不同) 中循序字元的任何字串。  
+-   用戶端憑證主體名稱的部分相符字串。 這是一項不區分大小寫的配對，如果主旨欄位正在使用電腦完整網域名稱 (FQDN)，而且是根據網域尾碼選擇憑證時 (例如 **contoso.com**)，便適用此配對法。然而，您可使用此選擇方法來識別憑證主體名稱 (用以區分與用戶端憑證存放區其他憑證的不同) 中循序字元的任何字串。  
 
     > [!NOTE]  
     >  您不可將主體別名 (SAN) 的部分相符字串當成網站設定來使用。 雖然您可使用 CCMSetup 為 SAN 指定部分相符字串，在以下案例中，該相符字串將會被網站內容覆寫：  

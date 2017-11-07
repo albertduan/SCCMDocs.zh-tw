@@ -1,5 +1,6 @@
 ---
-title: "監視作業系統部署 | Microsoft Docs"
+title: "監視作業系統部署"
+titleSuffix: Configuration Manager
 description: "Configuration Manager 主控台提供警示、報告和各種狀態指標，協助您監視作業系統部署物件。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 154c0a286e6b9ccedc7545eb010967ac00d35407
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 2e738b0ae9bd16829857edfaae0fb7e398979627
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="monitor-operating-system-deployments-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中監視作業系統部署
 
@@ -63,7 +64,7 @@ Configuration Manager 主控台提供下列方式協助您監視作業系統部�
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視 工作區中，展開 發佈狀態 ，然後按一下內容狀態 。 套件便會顯示。  
+2.  在 [監視] 工作區中，展開 [發佈狀態] ，然後按一下 [內容狀態] 。 套件便會顯示。  
 
 3.  選取要檢視其詳細狀態資訊的套件。  
 
@@ -76,7 +77,7 @@ Configuration Manager 主控台提供下列方式協助您監視作業系統部�
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視 工作區中，展開 發佈狀態 ，然後按一下發佈點群組狀態 。 發佈點群組隨即顯示。  
+2.  在 [監視] 工作區中，展開 [發佈狀態] ，然後按一下 [發佈點群組狀態] 。 發佈點群組隨即顯示。  
 
 3.  選取要檢視其詳細狀態資訊的發佈點群組。  
 
@@ -89,8 +90,8 @@ Configuration Manager 主控台提供下列方式協助您監視作業系統部�
 
 1.  在 Configuration Manager 主控台中，按一下 [監視] 。  
 
-2.  在 監視 工作區中，展開 發佈狀態 ，然後按一下發佈點設定狀態 。 發佈點隨即顯示。  
+2.  在 [監視] 工作區中，展開 [發佈狀態] ，然後按一下 [發佈點設定狀態] 。 發佈點隨即顯示。  
 
 3.  選取要檢視其發佈點狀態資訊的發佈點。  
 
-4.  在結果窗格中，按一下 [詳細資料]  索引標籤。 發佈點的狀態資訊隨即顯示。  
+4.  在結果窗格中，按一下 [詳細資料]  索引標籤。發佈點的狀態資訊隨即顯示。  

@@ -1,5 +1,6 @@
 ---
-title: "建立工作順序以安裝作業系統 | Microsoft Docs"
+title: "建立工作順序以安裝作業系統"
+titleSuffix: Configuration Manager
 description: "在 System Center Configuration Manager 中使用工作順序，在目的地電腦上自動安裝作業系統映像和其他內容。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -14,11 +15,11 @@ caps.latest.revision: "13"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: 41aa6cf69a746f0ab67d804f1ee0c70db05d65ee
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 47210939c66bb31d173c7e406a66c764d5008879
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-a-task-sequence-to-install-an-operating-system-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 中建立安裝作業系統的工作順序
 
@@ -45,7 +46,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立工作順序]  啟動 [建立工作順序精靈]。  
 

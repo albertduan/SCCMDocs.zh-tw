@@ -1,5 +1,6 @@
 ---
-title: "設定 System Center Configuration Manager 實驗室 | Microsoft Docs"
+title: "設定實驗室"
+titleSuffix: Configuration Manager
 description: "設定實驗室，以使用模擬實際活動來評估 Configuration Manager。"
 ms.custom: na
 ms.date: 09/21/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: a8bacdbde00973cfd45963b355c8f810ab06a83d
-ms.sourcegitcommit: 4c3906cf9614420cb8527da9e48978eb0b8f0e7a
+ms.openlocfilehash: df0997f921bfe31bd5bac0d530d4c4fac7331a6e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/22/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="set-up-your-system-center-configuration-manager-lab"></a>設定 System Center Configuration Manager 實驗室
 
@@ -163,7 +164,7 @@ ms.lasthandoff: 09/22/2017
 
 #### <a name="to-install-net-and-activate-windows-communication-foundation"></a>安裝 .NET 並啟動 Windows Communication Foundation：  
 
-1.  開啟 **Server Manager**，然後瀏覽至 [管理] 。 按一下 [新增角色及功能]  開啟 [新增角色及功能精靈] ** Wizard.**。  
+1.  開啟 **Server Manager**，然後瀏覽至 [管理] 。 按一下 [新增角色及功能]  開啟 [新增角色及功能精靈]  **Wizard.**。  
 
 2.  檢閱 [開始之前]  面板中所提供的資訊，然後按一下 [下一步] 。  
 

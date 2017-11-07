@@ -1,5 +1,6 @@
 ---
-title: "站台復原 | Microsoft Docs"
+title: "站台復原"
+titleSuffix: Configuration Manager
 description: "了解在 System Center Configuration Manager 中復原站台。"
 ms.custom: na
 ms.date: 6/5/2017
@@ -14,11 +15,11 @@ caps.latest.revision:
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: f5aff56e9948536944140fbadb0539c7a4e20f26
-ms.sourcegitcommit: 5ca89204716750eaaceb01bba40b35b85c7122ba
+ms.openlocfilehash: 96785ea5abcb4ae67952ad8243c36bf6b238daca
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/18/2017
+ms.lasthandoff: 10/12/2017
 ---
 #  <a name="recover-a-configuration-manager-site"></a>復原 Configuration Manager 站台
 
@@ -30,7 +31,7 @@ ms.lasthandoff: 09/18/2017
 
 ## <a name="considerations-before-recovering-a-site"></a>復原站台前的考量
 **您必須使用相同的 SQL Server 版本 (Version 與 Edition 都必須相同)：**例如，不支援將 SQL Server 2014 上執行的資料庫還原至 SQL Server 2016。 同樣地，不支援將 SQL Server 2016 Standard 版上執行的站台資料庫還原至 SQL Server 2016 Enterprise 版。
--   SQL Server 絕不能設定為「單一使用者模式」。
+-   SQL Server 絕不能設為 **單一使用者模式**。
 -   確定 .MDF 和 .LDF 檔案有效。 復原站台時，不會檢查正要還原的檔案狀態。
 
 **如果您使用 SQL Server Always On 可用性群組裝載站台資料庫：**請根據[準備使用 SQL Server Always On](/sccm/core/servers/deploy/configure/sql-server-alwayson-for-a-highly-available-site-database#changes-for-site-recovery) 中所述來修改復原計劃。
@@ -126,7 +127,7 @@ ms.lasthandoff: 09/18/2017
 1.  將 [CD.Latest 資料夾](/sccm/core/servers/manage/the-cd.latest-folde)複製到 Configuration Manager 安裝資料夾外部的位置。
 從 CD.Latest 資料夾的複本執行 [Configuration Manager 安裝精靈]。
 
-2.  在 開始使用 頁面上，選取 復原網站，然後按一下下一步。
+2.  在 [開始使用]  頁面上，選取 [復原網站] ，然後按 [下一步] 。
 
 3.  使用適合復原網站的選項來完成精靈。
 
@@ -161,7 +162,7 @@ ms.lasthandoff: 09/18/2017
 
 2.  在 Configuration Manager 主控台中，按一下 [系統管理] 。
 
-3.  在 系統管理  工作區中，展開 安全性 ，然後按一下帳戶 。
+3.  在 [系統管理]  工作區中，展開 [安全性] ，然後按一下 [帳戶] 。
 
 4.  針對重新輸入其密碼的每個帳戶執行下列操作：
 
@@ -171,9 +172,9 @@ ms.lasthandoff: 09/18/2017
 
     3.  在 [一般]  索引標籤上按一下 [設定] ，然後重新輸入帳戶的密碼。
 
-    4.  按一下 確認 ，為所選取使用者帳戶選取適當的資料來源，然後按一下測試連線  確認使用者帳戶能夠連線至資料來源。
+    4.  按一下 [確認] ，為所選取使用者帳戶選取適當的資料來源，然後按一下 [測試連線]  確認使用者帳戶能夠連線至資料來源。
 
-    5.  按一下 確定  儲存密碼變更，然後按一下確定 。
+    5.  按一下 [確定]  儲存密碼變更，然後按一下 [確定] 。
 
 ### <a name="re-enter-sideloading-keys"></a>重新輸入側載金鑰
 網站伺服器復原後，您必須重新輸入指定給網站的 Windows 側載金鑰，因為在網站復原期間會重設這些金鑰。 重新輸入側載金鑰之後，Configuration Manager 主控台中 Windows 側載金鑰的 [已使用的啟用數量] 欄中的計數便會重設。 例如，假設在站台失敗前，您的 [啟用總數] 計數設為 [100]，而代表裝置已用金鑰數目的 [已使用的啟用數量] 是 [90]。 在網站復原之後，[啟用總數]  欄仍會顯示 [100] ，但是 [已使用的啟用數量]  欄會不正確地顯示 [0] 。 不過，在 10 個新裝置使用側載金鑰之後，就不會有任何剩餘的側載金鑰，因此下一個裝置將無法套用側載金鑰。

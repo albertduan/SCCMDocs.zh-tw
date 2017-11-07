@@ -1,5 +1,6 @@
 ---
-title: "為使用者與目的地電腦建立關聯 | Microsoft Docs"
+title: "為使用者與目的地電腦建立關聯"
+titleSuffix: Configuration Manager
 description: "部署作業系統時，設定 System Center Configuration Manager 將使用者與目的地電腦產生關聯。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: c0331567b94a99b29cc73c16de17a9f3bc6b9e43
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 4c0231057c2ac154b050cc7020eb1fbb4ed93228
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="associate-users-with-a-destination-computer-in-system-center-configuration-manager"></a>將使用者與 System Center Configuration Manager 中的目的地電腦產生關聯
 

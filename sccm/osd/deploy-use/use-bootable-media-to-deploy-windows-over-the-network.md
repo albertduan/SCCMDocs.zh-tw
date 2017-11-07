@@ -1,5 +1,6 @@
 ---
-title: "透過網路使用可開機媒體部署 Windows | Microsoft Docs"
+title: "透過網路使用可開機媒體部署 Windows"
+titleSuffix: Configuration Manager
 description: "使用 System Center Configuration Manager 中的可開機媒體部署，以在啟動目的地電腦時部署作業系統。"
 ms.custom: na
 ms.date: 6/16/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "5"
 author: mattbriggs
 ms.author: mattbriggs
 manager: angrobe
-ms.openlocfilehash: 9b20e5e2a66d92038033e816e6fc701581c48a7f
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: ca5cabc18659ed52cd4e0b9130f0179faf2c9d28
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-bootable-media-to-deploy-windows-over-the-network-with-system-center-configuration-manager"></a>透過網路利用 System Center Configuration Manager 使用可開機媒體部署 Windows
 

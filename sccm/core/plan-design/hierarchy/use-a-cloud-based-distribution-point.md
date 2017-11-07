@@ -1,5 +1,6 @@
 ---
-title: "雲端架構發佈點 | Microsoft Docs"
+title: "雲端發佈點"
+titleSuffix: Configuration Manager
 description: "了解搭配使用雲端發佈點與 System Center Configuration Manager 的設定和限制。"
 ms.custom: na
 ms.date: 3/27/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "9"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: 8caf3319d93b98680ed4a719a8db714c7e4e96ce
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 7defec5e771fa210d25bfa0cbfab5216fcabcf6b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="use-a-cloud-based-distribution-point-with-system-center-configuration-manager"></a>使用雲端架構發佈點搭配 System Center Configuration Manager
 

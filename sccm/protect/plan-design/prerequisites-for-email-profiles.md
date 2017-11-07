@@ -1,5 +1,6 @@
 ---
-title: "電子郵件設定檔的必要條件 | Microsoft Docs"
+title: "電子郵件設定檔的必要條件"
+titleSuffix: Configuration Manager
 description: "了解 System Center Configuration Manager 中的電子郵件設定檔和其產品內外部的相依性。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: 451317db1d7aab888c03d1a099b9ce25311e06d0
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 599c8f921da3aa06dabd8e7e41f59d93ee7942bc
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="email-profile-prerequisites"></a>電子郵件設定檔必要條件
 

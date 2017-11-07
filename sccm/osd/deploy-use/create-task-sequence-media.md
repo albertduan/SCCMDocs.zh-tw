@@ -1,5 +1,6 @@
 ---
-title: "使用 System Center Configuration Manager 建立工作順序媒體 | Microsoft Docs"
+title: "建立工作順序媒體"
+titleSuffix: Configuration Manager
 description: "建立工作順序媒體 (例如 CD)，以將作業系統部署至 Configuration Manager 環境中的目的地電腦。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: bd5448d70c2d465347de840cb197d4c33075c90a
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: d3ba78ae32f62a74b73d7b1387d11265a9e41f77
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-task-sequence-media-with-system-center-configuration-manager"></a>使用 System Center Configuration Manager 建立工作順序媒體
 

@@ -1,5 +1,6 @@
 ---
-title: "設定憑證基礎結構 | Microsoft Docs"
+title: "設定憑證基礎結構"
+titleSuffix: Configuration Manager
 description: "了解如何在 Configuration Manager 中設定憑證註冊。"
 ms.custom: na
 ms.date: 07/25/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: lleonard-msft
 ms.author: alleonar
 manager: angrobe
-ms.openlocfilehash: 640eb1df9d53fc83d93c39a7ecbaf2668e176805
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 9ef62bbf6269a6090f2345b10c24cc4df16c1e3b
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="configure-certificate-infrastructure"></a>設定憑證基礎結構
 

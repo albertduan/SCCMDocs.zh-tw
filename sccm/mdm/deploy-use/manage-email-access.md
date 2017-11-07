@@ -1,5 +1,6 @@
 ---
-title: "管理電子郵件存取 | Microsoft Docs"
+title: "管理電子郵件存取"
+titleSuffix: Configuration Manager
 description: "了解如何使用 System Center Configuration Manager 條件存取，以管理 Exchange 電子郵件的存取。"
 ms.custom: na
 ms.date: 03/05/2017
@@ -14,11 +15,11 @@ caps.latest.revision: "24"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: a5c2a8912cd2ef95a778b81d0b7f1f98315b8413
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 8ab177067d0308b863274a7ae05574374b0af4ba
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="manage-email-access-in-system-center-configuration-manager"></a>管理 System Center Configuration Manager 中的電子郵件存取
 
@@ -216,7 +217,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
-2.  依序展開 相容性設定 和 條件式存取 ，然後按一下Exchange Online 。  
+2.  依序展開 [相容性設定] 和 [條件式存取] ，然後按一下 [Exchange Online] 。  
 
 3.  在 [常用]  索引標籤的 [連結]  群組中，按一下 [在 Intune 主控台中設定條件存取原則] 。 您可能需要提供以 Intune 服務的任何全域管理員身分連線到 Configuration Manager 時，所使用的帳戶使用者名稱和密碼。  
 
@@ -302,7 +303,7 @@ Office 桌面應用程式可以在執行下列項目的電腦上存取 Exchange 
 
 1.  在 Configuration Manager 主控台中，按一下 [資產與相容性] 。  
 
-2.  依序展開 相容性設定 和 條件式存取 ，然後按一下內部部署 Exchange 。  
+2.  依序展開 [相容性設定] 和 [條件式存取] ，然後按一下 [內部部署 Exchange] 。  
 
 3.  在 [常用]  索引標籤的 [內部部署 Exchange]  群組中，按一下 [設定條件存取原則] 。  
 

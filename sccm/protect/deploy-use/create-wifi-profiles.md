@@ -1,5 +1,6 @@
 ---
-title: "如何建立 Wi-Fi 設定檔 | Microsoft Docs"
+title: "如何建立 Wi-Fi 設定檔"
+titleSuffix: Configuration Manager
 description: "了解如何在 System Center Configuration Manager 中使用 Wi-Fi 設定檔，將無線網路設定部署至組織中的使用者。"
 ms.custom: na
 ms.date: 12/11/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: arob98
 ms.author: angrobe
 manager: angrobe
-ms.openlocfilehash: f1ae976899de1fd3efcbde0c7268f071a5d0218b
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 24bc4ad8290bfa1a8b298374d5adf7ab1841398e
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-wi-fi-profiles"></a>建立 Wi-Fi 設定檔
 
@@ -106,7 +107,7 @@ ms.lasthandoff: 08/07/2017
 6. **僅適用於 iOS 裝置：**  
  設定 Wi-Fi 連線所需要的任何憑證資訊。 您必須設定用戶端憑證，以及信任的伺服器憑證名稱或根憑證，如下所示：  
 
-    -   **信任的伺服器憑證名稱**：如果裝置連線的伺服器使用伺服器驗證憑證來識別伺服器並協助保護通訊通道，請在該憑證的主體名稱或主體別名中輸入一個或多個名稱。 這些名稱通常是伺服器的完整網域名稱。 例如，如果伺服器憑證在憑證主體中的一般名稱是 srv1.contoso.com，則輸入 **srv1.contoso.com**。 如果伺服器憑證在主體別名中指定多個名稱，請使用分號分隔輸入的每個名稱。  
+    -   **信任的伺服器憑證名稱**：如果裝置連線的伺服器使用伺服器驗證憑證來識別伺服器並協助保護通訊通道，請在該憑證的主體名稱或主體別名中輸入一個或多個名稱。 這些名稱通常是伺服器的完整網域名稱。 例如，如果伺服器憑證在憑證主體中的一般名稱是 srv1.contoso.com，則輸入 **srv1.contoso.com**。如果伺服器憑證在主體別名中指定多個名稱，請使用分號分隔輸入的每個名稱。  
 
     > [!TIP]  
     >  如果您為 EAP 選取的用戶端憑證或 iOS 裝置的用戶端驗證將用來驗證遠端驗證撥入使用者服務 (RADIUS) 伺服器 (例如執行網路原則伺服器的伺服器)，您必須將 [主體別名] 設定為使用者主體名稱。  

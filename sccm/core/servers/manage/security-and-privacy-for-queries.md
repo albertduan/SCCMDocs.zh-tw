@@ -1,5 +1,6 @@
 ---
-title: "查詢的安全性和隱私權 | Microsoft Docs"
+title: "查詢的安全性和隱私權"
+titleSuffix: Configuration Manager
 description: "當您查詢站台資料庫中的資訊時，請了解安全性和隱私權的最佳做法。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: andredm7
 ms.author: andredm
 manager: angrobe
-ms.openlocfilehash: f844b44333f5bf2c728ce84588210212ee270eec
-ms.sourcegitcommit: b438515490e04fb09c82a8af642d38e9a0605178
+ms.openlocfilehash: 6ab8498a2153dd272e9451aa58b68b4f804cd93a
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 09/15/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="security-and-privacy-for-queries-in-system-center-configuration-manager"></a>System Center Configuration Manager 的查詢安全性和隱私權
 

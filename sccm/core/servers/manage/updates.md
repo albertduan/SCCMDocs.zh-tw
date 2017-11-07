@@ -1,5 +1,6 @@
 ---
-title: "更新 | Microsoft Docs"
+title: "更新"
+titleSuffix: Configuration Manager
 description: "了解稱為「更新和服務」的主控台內服務方式，可讓您輕鬆尋找並安裝建議的更新。"
 ms.custom: na
 ms.date: 07/31/2017
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Brenduns
 ms.author: brenduns
 manager: angrobe
-ms.openlocfilehash: d46aca88111d4ee0e96b75ca5a3ec57aa4274d6d
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: bca724f15dc18d7273bbca122b6428b4704a5d43
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="updates-for-system-center-configuration-manager"></a>System Center Configuration Manager 的更新
 
@@ -111,7 +112,7 @@ System Center Configuration Manager 使用稱為「更新與服務」的主控�
 
 Configuration Manager 會在您同步服務連接點站台系統角色與 Microsoft 雲端服務和下載中心時，為您探索新的更新：  
 
--   當您的服務連線端點處於線上模式時，您的站台會每天自動與 Microsoft 同步，以自動識別適用於您基礎結構的新更新。  若要下載更新和更新的可轉散發檔案，裝載服務連接點站台系統角色的電腦會使用**系統**內容來存取下列網際網路位置︰go.microsoft.com 和 download.microsoft.com。 如需服務連接點所連線之其他位置的相關資訊，請參閱[關於 System Center Configuration Manager 中的服務連接點](../../../core/servers/deploy/configure/about-the-service-connection-point.md)中的[網際網路存取需求](../../../core/servers/deploy/configure/about-the-service-connection-point.md#bkmk_urls)。  
+-   當您的服務連線端點處於線上模式時，您的站台會每天自動與 Microsoft 同步，以自動識別適用於您基礎結構的新更新。  若要下載更新和更新的可轉散發檔案，裝載服務連接點站台系統角色的電腦會使用**系統**內容來存取下列網際網路位置︰go.microsoft.com 和 download.microsoft.com。如需服務連接點所連線之其他位置的相關資訊，請參閱[關於 System Center Configuration Manager 中的服務連接點](../../../core/servers/deploy/configure/about-the-service-connection-point.md)中的[網際網路存取需求](../../../core/servers/deploy/configure/about-the-service-connection-point.md#bkmk_urls)。  
 
 -   當您的服務連線端點處於離線模式時，請使用服務連線工具來手動與 Microsoft 雲端進行同步。 如需詳細資訊，請參閱 [使用 System Center Configuration Manager 的服務連接工具](../../../core/servers/manage/use-the-service-connection-tool.md)。  
 

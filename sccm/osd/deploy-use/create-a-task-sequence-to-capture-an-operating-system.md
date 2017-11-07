@@ -1,5 +1,6 @@
 ---
-title: "建立工作順序以擷取作業系統 | Microsoft Docs"
+title: "建立工作順序以擷取作業系統"
+titleSuffix: Configuration Manager
 description: "組建和擷取工作順序會建立參照電腦，包含特定的驅動程式和軟體更新與作業系統。"
 ms.custom: na
 ms.date: 10/06/2016
@@ -15,11 +16,11 @@ caps.handback.revision: "0"
 author: Dougeby
 ms.author: dougeby
 manager: angrobe
-ms.openlocfilehash: e9320e40b8e5031ffa3da5e5149c7da718cc87d5
-ms.sourcegitcommit: 51fc48fb023f1e8d995c6c4eacfda7dbec4d0b2f
+ms.openlocfilehash: 98f9f44373b854b61714c21105a28b3240b4a7f7
+ms.sourcegitcommit: c236214b2fcc13dae7bad96d7fb33f692868191d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2017
+ms.lasthandoff: 10/12/2017
 ---
 # <a name="create-a-task-sequence-to-capture-an-operating-system-in-system-center-configuration-manager"></a>在 System Center Configuration Manager 建立工作順序以擷取作業系統
 
@@ -54,7 +55,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立工作順序]  啟動 [建立工作順序精靈]。  
 
@@ -103,7 +104,7 @@ ms.lasthandoff: 08/07/2017
         > [!IMPORTANT]  
         >  如果您打算移轉網域設定或工作群組設定，則必須輸入適當的網域認證。  
 
-8.  在 安裝 Configuration Manager 頁面上，指定包含來源檔案的 Configuration Manager 用戶端套件，以安裝 Configuration Manager 用戶端，並新增安裝用戶端所需的任何其他內容，然後按一下下一步。  
+8.  在 [安裝 Configuration Manager] 頁面上，指定包含來源檔案的 Configuration Manager 用戶端套件，以安裝 Configuration Manager 用戶端，並新增安裝用戶端所需的任何其他內容，然後按一下 [下一步]。  
 
      如需可用來安裝用戶端的內容詳細資訊，請參閱[關於 Configuration Manager 中的用戶端安裝內容](../../core/clients/deploy/about-client-installation-properties.md)。  
 
@@ -153,7 +154,7 @@ ms.lasthandoff: 08/07/2017
 
 1.  在 Configuration Manager 主控台中，按一下 [軟體程式庫] 。  
 
-2.  在 軟體程式庫  工作區中，展開 作業系統 ，然後按一下工作順序 。  
+2.  在 [軟體程式庫]  工作區中，展開 [作業系統] ，然後按一下 [工作順序] 。  
 
 3.  在 [首頁]  索引標籤的 [建立]  群組中，按一下 [建立工作順序]  啟動 [建立工作順序精靈]。  
 
